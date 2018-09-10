@@ -37,5 +37,15 @@ namespace Crowdin.Api
         {
             return SendApiRequest("project/{ProjectID}/delete-project", credentials, null, cancellationToken);
         }
+
+        public Task<HttpResponseMessage> GetProjectStatus(ProjectCredentials credentials, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/status", credentials, null, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> GetLanguageStatus(ProjectCredentials credentials, GetLanguageStatusParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/language-status", credentials, parameters, cancellationToken);
+        }
     }
 }
