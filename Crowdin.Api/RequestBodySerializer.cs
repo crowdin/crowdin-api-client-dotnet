@@ -14,7 +14,7 @@ namespace Crowdin.Api
             Type bodyType = body.GetType();
             return bodyType
                 .GetProperties(BindingFlags.Public | BindingFlags.Instance)
-                .Where(property => property.CanRead)
+                .Where(ConsiderProperty)
                 .Select(property => (property.ResolveMemberName().ToLower(), GetPropertyValue(body, property)))
                 .SelectMany(ExpandMember);
         }
@@ -113,9 +113,20 @@ namespace Crowdin.Api
             Type type = value.GetType();
             return type
                 .GetProperties(BindingFlags.Public | BindingFlags.Instance)
-                .Where(property => property.CanRead)
+                .Where(ConsiderProperty)
                 .Select(property => ($"[{property.ResolveMemberName().ToLower()}]", property.GetValue(value)))
                 .SelectMany(ExpandMember);
+        }
+
+        private static Boolean ConsiderProperty(this PropertyInfo property)
+        {
+            if (!property.CanRead)
+            {
+                return false;
+            }
+
+            var attribute = (IgnoreAttribute) Attribute.GetCustomAttribute(property, typeof(IgnoreAttribute));
+            return attribute == null;
         }
 
         private static String ResolveMemberName(this MemberInfo member)
