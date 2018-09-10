@@ -17,5 +17,25 @@ namespace Crowdin.Api
         {
             return SendApiRequest("account/get-projects", credentials, null, cancellationToken);
         }
+
+        public Task<HttpResponseMessage> CreateProject(AccountCredentials credentials, CreateProjectParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("account/create-project", credentials, parameters, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> GetProjectInfo(ProjectCredentials credentials, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/info", credentials, null, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> EditProject(ProjectCredentials credentials, EditProjectParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/edit-project", credentials, parameters, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> DeleteProject(ProjectCredentials credentials, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/delete-project", credentials, null, cancellationToken);
+        }
     }
 }
