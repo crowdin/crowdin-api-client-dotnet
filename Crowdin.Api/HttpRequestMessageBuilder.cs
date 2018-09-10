@@ -7,7 +7,7 @@ using System.Web;
 
 namespace Crowdin.Api
 {
-    public sealed class HttpRequestMessageBuilder
+    internal sealed class HttpRequestMessageBuilder
     {
         public HttpRequestMessageBuilder Clear()
         {
@@ -53,6 +53,7 @@ namespace Crowdin.Api
 
         private Uri BuildUri()
         {
+            String uri = _uri;
             String queryString = null;
             if (_credentials != null)
             {
@@ -65,13 +66,15 @@ namespace Crowdin.Api
                 else
                 {
                     var projectCredentials = (ProjectCredentials)_credentials;
+                    String projectId = HttpUtility.UrlEncode(projectCredentials.ProjectId);
+                    uri = uri.Replace("{ProjectID}", projectId);
                     query["key"] = projectCredentials.ProjectKey;
                 }
 
                 queryString = "&" + query;
             }
 
-            return new Uri(_uri + "?json=1" + queryString, UriKind.Relative);
+            return new Uri(uri + "?json=1" + queryString, UriKind.Relative);
         }
 
         private HttpRequestMessage BuildGetRequestMessage(Uri requestUri)
