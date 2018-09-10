@@ -133,5 +133,40 @@ namespace Crowdin.Api
         {
             return SendApiRequest("project/{ProjectID}/pseudo-download", credentials, null, cancellationToken);
         }
+
+        public Task<HttpResponseMessage> GetProjectIssues(ProjectCredentials credentials, GetProjectIssuesParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/issues", credentials, parameters, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> ExportCostsEstimationReport(ProjectCredentials credentials, ExportCostsEstimationReportParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/reports/costs-estimation/export", credentials, parameters, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> DownloadCostsEstimationReport(ProjectCredentials credentials, DownloadReportParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/reports/costs-estimation/download", credentials, parameters, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> ExportTranslationCostsReport(ProjectCredentials credentials, ExportTranslationCostsReportParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/reports/translation-costs/export", credentials, parameters, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> DownloadTranslationCostsReport(ProjectCredentials credentials, DownloadReportParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/reports/translation-costs/download", credentials, parameters, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> ExportTopMembersReport(ProjectCredentials credentials, ExportTopMembersReportParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/reports/top-members/export", credentials, parameters, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> DownloadTopMembersReport(ProjectCredentials credentials, DownloadReportParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/reports/top-members/download", credentials, parameters, cancellationToken);
+        }
     }
 }
