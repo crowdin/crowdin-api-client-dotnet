@@ -102,5 +102,36 @@ namespace Crowdin.Api
         {
             return SendApiRequest("project/{ProjectID}/download-tm", credentials, parameters, cancellationToken);
         }
+
+        public Task<HttpResponseMessage> Pretranslate(ProjectCredentials credentials, PretranslateParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/pre-translate", credentials, parameters, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> UploadTranslation(ProjectCredentials credentials, UploadTranslationParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/upload-translation", credentials, parameters, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> ExportTranslation(ProjectCredentials credentials, ExportTranslationParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/export", credentials, parameters, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> DownloadTranslation(ProjectCredentials credentials, DownloadTranslationParameters parameters, CancellationToken cancellationToken = default)
+        {
+            String package = HttpUtility.UrlEncode(parameters.Package);
+            return SendApiRequest($"project/{{ProjectID}}/download/{package}.zip", credentials, parameters, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> ExportPseudotranslation(ProjectCredentials credentials, ExportPseudotranslationParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/pseudo-export", credentials, parameters, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> DownloadPseudotranslation(ProjectCredentials credentials, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/pseudo-download", credentials, null, cancellationToken);
+        }
     }
 }
