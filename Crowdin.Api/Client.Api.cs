@@ -82,5 +82,25 @@ namespace Crowdin.Api
         {
             return SendApiRequest("project/{ProjectID}/delete-directory", credentials, parameters, cancellationToken);
         }
+
+        public Task<HttpResponseMessage> UploadGlossary(ProjectCredentials credentials, UploadGlossaryParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/upload-glossary", credentials, parameters, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> DownloadGlossary(ProjectCredentials credentials, DownloadGlossaryParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/download-glossary", credentials, parameters, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> UploadTranslationMemory(ProjectCredentials credentials, UploadTranslationMemoryParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/upload-tm", credentials, parameters, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> DownloadTranslationMemory(ProjectCredentials credentials, DownloadTranslationMemoryParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/download-tm", credentials, parameters, cancellationToken);
+        }
     }
 }
