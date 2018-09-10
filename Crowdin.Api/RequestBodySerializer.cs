@@ -81,7 +81,7 @@ namespace Crowdin.Api
             else
             {
                 FieldInfo enumField = enumType.GetField(value.ToString());
-                resolvedValue = ResolveMemberName(enumField);
+                resolvedValue = ResolveMemberName(enumField).ToLower();
             }
 
             yield return (String.Empty, resolvedValue);
