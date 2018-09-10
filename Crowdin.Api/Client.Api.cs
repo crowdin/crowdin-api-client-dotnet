@@ -67,5 +67,20 @@ namespace Crowdin.Api
         {
             return SendApiRequest("project/{ProjectID}/delete-file", credentials, parameters, cancellationToken);
         }
+
+        public Task<HttpResponseMessage> CreateFolder(ProjectCredentials credentials, CreateFolderParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/add-directory", credentials, parameters, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> EditFolder(ProjectCredentials credentials, EditFolderParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/change-directory", credentials, parameters, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> DeleteFolder(ProjectCredentials credentials, DeleteFolderParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/delete-directory", credentials, parameters, cancellationToken);
+        }
     }
 }
