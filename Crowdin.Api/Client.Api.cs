@@ -47,5 +47,25 @@ namespace Crowdin.Api
         {
             return SendApiRequest("project/{ProjectID}/language-status", credentials, parameters, cancellationToken);
         }
+
+        public Task<HttpResponseMessage> AddFile(ProjectCredentials credentials, AddFileParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/add-file", credentials, parameters, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> UpdateFile(ProjectCredentials credentials, UpdateFileParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/update-file", credentials, parameters, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> ExportFile(ProjectCredentials credentials, ExportFileParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/export-file", credentials, parameters, cancellationToken);
+        }
+
+        public Task<HttpResponseMessage> DeleteFile(ProjectCredentials credentials, DeleteFileParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/delete-file", credentials, parameters, cancellationToken);
+        }
     }
 }
