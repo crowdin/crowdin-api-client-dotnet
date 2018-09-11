@@ -31,21 +31,21 @@ namespace CrowdinClient
 
         private async Task Run()
         {
-            using (var crowdin = new Client(new Uri("https://api.crowdin.com/api/")))
-            {
-                Console.WriteLine("Press [Enter] to list Crowdin supported languages");
-                Console.ReadLine();
-                HttpResponseMessage response = await crowdin.GetSupportedLanguages();
-                String content = await response.Content.ReadAsStringAsync();
-                Console.WriteLine(content);
+            var httpClient = new HttpClient {BaseAddress = new Uri(Configuration["api"])};
+            var crowdin = new Client(httpClient);
 
-                Console.WriteLine("Press [Enter] to list account projects");
-                Console.ReadLine();
-                var accountCredentials = GetConfigValue<AccountCredentials>("account");
-                response = await crowdin.GetAccountProjects(accountCredentials);
-                content = await response.Content.ReadAsStringAsync();
-                Console.WriteLine(content);
-            }
+            Console.WriteLine("Press [Enter] to list Crowdin supported languages");
+            Console.ReadLine();
+            HttpResponseMessage response = await crowdin.GetSupportedLanguages();
+            String content = await response.Content.ReadAsStringAsync();
+            Console.WriteLine(content);
+
+            Console.WriteLine("Press [Enter] to list account projects");
+            Console.ReadLine();
+            var accountCredentials = GetConfigValue<AccountCredentials>("account");
+            response = await crowdin.GetAccountProjects(accountCredentials);
+            content = await response.Content.ReadAsStringAsync();
+            Console.WriteLine(content);
         }
 
         private T GetConfigValue<T>(String key)
