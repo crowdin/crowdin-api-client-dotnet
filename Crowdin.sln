@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crowdin.Api", "Crowdin.Api\Crowdin.Api.csproj", "{8C2A4D16-6968-48CC-AAB1-38448E2C0E72}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{D5A6CE5D-1E86-48C9-9781-052F7C6C459F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2863307B-E5DC-47CB-98F6-B297645FCCC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{5C17110A-A041-4DEB-A941-8729F47FFEFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crowdin.Api", "src\Crowdin.Api\Crowdin.Api.csproj", "{8C2A4D16-6968-48CC-AAB1-38448E2C0E72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +24,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8C2A4D16-6968-48CC-AAB1-38448E2C0E72} = {D5A6CE5D-1E86-48C9-9781-052F7C6C459F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6EB922AA-9F52-4960-A0E5-0DDE11A7F0A8}
