@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{5C17
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crowdin.Api", "src\Crowdin.Api\Crowdin.Api.csproj", "{8C2A4D16-6968-48CC-AAB1-38448E2C0E72}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrowdinClient", "samples\CrowdinClient\CrowdinClient.csproj", "{B7D44E11-7752-4121-AD64-0913EF6D6591}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,12 +23,17 @@ Global
 		{8C2A4D16-6968-48CC-AAB1-38448E2C0E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C2A4D16-6968-48CC-AAB1-38448E2C0E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C2A4D16-6968-48CC-AAB1-38448E2C0E72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7D44E11-7752-4121-AD64-0913EF6D6591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7D44E11-7752-4121-AD64-0913EF6D6591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7D44E11-7752-4121-AD64-0913EF6D6591}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7D44E11-7752-4121-AD64-0913EF6D6591}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8C2A4D16-6968-48CC-AAB1-38448E2C0E72} = {D5A6CE5D-1E86-48C9-9781-052F7C6C459F}
+		{B7D44E11-7752-4121-AD64-0913EF6D6591} = {5C17110A-A041-4DEB-A941-8729F47FFEFE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6EB922AA-9F52-4960-A0E5-0DDE11A7F0A8}
