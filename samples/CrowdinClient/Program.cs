@@ -24,9 +24,7 @@ namespace CrowdinClient
             var program = new Program(config);
             await program.Run();
 
-            Console.WriteLine();
-            Console.WriteLine("Press [Enter] to exit.");
-            Console.ReadLine();
+            ConsoleWriteMessage("Press [Enter] to exit.");
         }
 
         private async Task Run()
@@ -34,23 +32,46 @@ namespace CrowdinClient
             var httpClient = new HttpClient {BaseAddress = new Uri(Configuration["api"])};
             var crowdin = new Client(httpClient);
 
-            Console.WriteLine("Press [Enter] to list Crowdin supported languages");
-            Console.ReadLine();
-            HttpResponseMessage response = await crowdin.GetSupportedLanguages();
-            String content = await response.Content.ReadAsStringAsync();
-            Console.WriteLine(content);
+            ConsoleWriteMessage("Press [Enter] to list Crowdin supported languages");
+            LanguageInfo[] languages = await crowdin.GetSupportedLanguages();
+            ConsoleOutput(languages);
 
-            Console.WriteLine("Press [Enter] to list account projects");
-            Console.ReadLine();
+            ConsoleWriteMessage("Press [Enter] to list account projects");
             var accountCredentials = GetConfigValue<AccountCredentials>("account");
-            response = await crowdin.GetAccountProjects(accountCredentials);
-            content = await response.Content.ReadAsStringAsync();
-            Console.WriteLine(content);
+            AccountProjectInfo[] accountProjects = await crowdin.GetAccountProjects(accountCredentials);
+            ConsoleOutput(accountProjects);
         }
 
         private T GetConfigValue<T>(String key)
         {
             return Configuration.GetSection(key).Get<T>();
+        }
+
+        private static void ConsoleWriteMessage(String message)
+        {
+            Console.WriteLine();
+            Console.WriteLine(message);
+            Console.ReadLine();
+        }
+
+        private static void ConsoleOutput(Object value)
+        {
+            Console.WriteLine(value);
+        }
+
+        private static void ConsoleOutput<T>(T[] values)
+        {
+            Int32 outputItems = Math.Min(3, values.Length);
+            for (Int32 i = 0; i < outputItems; i++)
+            {
+                ConsoleOutput(values[i]);
+            }
+
+            Int32 restItems = values.Length - outputItems;
+            if (restItems > 0)
+            {
+                Console.WriteLine($"...({restItems} more items)");
+            }
         }
 
         private IConfiguration Configuration { get; }
