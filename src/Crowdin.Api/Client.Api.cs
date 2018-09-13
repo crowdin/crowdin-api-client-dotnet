@@ -8,14 +8,14 @@ namespace Crowdin.Api
 {
     partial class Client
     {
-        public Task<HttpResponseMessage> GetSupportedLanguages(CancellationToken cancellationToken = default)
+        public Task<LanguageInfo[]> GetSupportedLanguages(CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("supported-languages", (AccountCredentials)null, null, cancellationToken);
+            return SendApiRequest<LanguageInfo[]>("supported-languages", (AccountCredentials)null, cancellationToken: cancellationToken);
         }
 
-        public Task<HttpResponseMessage> GetAccountProjects(AccountCredentials credentials, CancellationToken cancellationToken = default)
+        public Task<AccountProjectInfo[]> GetAccountProjects(AccountCredentials credentials, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("account/get-projects", credentials, null, cancellationToken);
+            return SendApiRequest<AccountProjectInfo[]>("account/get-projects", credentials, payloadProperty: "projects", cancellationToken: cancellationToken);
         }
 
         public Task<HttpResponseMessage> CreateProject(AccountCredentials credentials, CreateProjectParameters parameters, CancellationToken cancellationToken = default)
