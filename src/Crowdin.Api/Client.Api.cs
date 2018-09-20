@@ -23,9 +23,9 @@ namespace Crowdin.Api
             return SendApiRequest("account/create-project", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> GetProjectInfo(ProjectCredentials credentials, CancellationToken cancellationToken = default)
+        public Task<ProjectInfo> GetProjectInfo(ProjectCredentials credentials, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/info", credentials, null, cancellationToken);
+            return SendApiRequest<ProjectInfo>("project/{ProjectID}/info", credentials, payloadProperty: null, cancellationToken: cancellationToken);
         }
 
         public Task<HttpResponseMessage> EditProject(ProjectCredentials credentials, EditProjectParameters parameters, CancellationToken cancellationToken = default)
