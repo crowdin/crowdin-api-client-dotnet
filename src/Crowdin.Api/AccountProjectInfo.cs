@@ -22,9 +22,6 @@ namespace Crowdin.Api
         [JsonProperty("key")]
         public String Key { get; private set; }
 
-        public override String ToString()
-        {
-            return Name;
-        }
+        public override String ToString() => Name;
     }
 }

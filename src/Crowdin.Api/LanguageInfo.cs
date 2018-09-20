@@ -32,9 +32,6 @@ namespace Crowdin.Api
         [JsonProperty("osx_locale")]
         public String OsXLocale { get; private set; }
 
-        public override String ToString()
-        {
-            return Name;
-        }
+        public override String ToString() => Name;
     }
 }
