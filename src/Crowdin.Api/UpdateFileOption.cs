@@ -1,4 +1,6 @@
-﻿namespace Crowdin.Api
+﻿using Crowdin.Api.Protocol;
+
+namespace Crowdin.Api
 {
     public enum UpdateFileOption
     {

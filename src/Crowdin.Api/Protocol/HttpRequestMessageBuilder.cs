@@ -5,7 +5,7 @@ using System.IO;
 using System.Net.Http;
 using System.Web;
 
-namespace Crowdin.Api
+namespace Crowdin.Api.Protocol
 {
     internal sealed class HttpRequestMessageBuilder
     {

@@ -3,6 +3,7 @@ using System.IO;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
+using Crowdin.Api.Protocol;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 

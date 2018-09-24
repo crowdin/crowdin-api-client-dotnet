@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using Crowdin.Api.Protocol;
 
 namespace Crowdin.Api
 {

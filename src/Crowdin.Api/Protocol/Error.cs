@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace Crowdin.Api
+namespace Crowdin.Api.Protocol
 {
     internal sealed class Error
     {
