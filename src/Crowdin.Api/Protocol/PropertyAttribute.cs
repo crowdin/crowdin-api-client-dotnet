@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Crowdin.Api
+namespace Crowdin.Api.Protocol
 {
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
     internal sealed class PropertyAttribute : Attribute

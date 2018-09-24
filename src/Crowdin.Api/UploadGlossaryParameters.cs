@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using Crowdin.Api.Protocol;
 
 namespace Crowdin.Api
 {

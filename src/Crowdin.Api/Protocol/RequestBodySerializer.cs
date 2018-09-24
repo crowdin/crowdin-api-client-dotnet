@@ -5,7 +5,7 @@ using System.Collections.Specialized;
 using System.Linq;
 using System.Reflection;
 
-namespace Crowdin.Api
+namespace Crowdin.Api.Protocol
 {
     internal static class RequestBodySerializer
     {
