@@ -2,10 +2,8 @@
 
 namespace Crowdin.Api
 {
-    public class ExportTranslationParameters
+    public class GetTranslationExportStatusParameters
     {
         public String Branch { get; set; }
-
-        public Boolean? Async { get; set; }
     }
 }

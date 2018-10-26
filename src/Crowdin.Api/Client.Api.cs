@@ -118,6 +118,11 @@ namespace Crowdin.Api
             return SendApiRequest("project/{ProjectID}/export", credentials, parameters, cancellationToken);
         }
 
+        public Task<HttpResponseMessage> GetTranslationExportStatus(ProjectCredentials credentials, GetTranslationExportStatusParameters parameters, CancellationToken cancellationToken = default)
+        {
+            return SendApiRequest("project/{ProjectID}/export-status", credentials, parameters, cancellationToken);
+        }
+
         public Task<HttpResponseMessage> DownloadTranslation(ProjectCredentials credentials, DownloadTranslationParameters parameters, CancellationToken cancellationToken = default)
         {
             String package = HttpUtility.UrlEncode(parameters.Package);
