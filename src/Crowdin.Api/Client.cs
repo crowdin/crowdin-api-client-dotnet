@@ -18,7 +18,7 @@ namespace Crowdin.Api
 
         private HttpClient HttpClient { get; }
 
-        public async Task<T> SendApiRequest<T>(String url, AccountCredentials credentials,
+        public async Task<T> SendApiRequest<T>(String url, Credentials credentials,
             Object body = null,
             String payloadProperty = null,
             CancellationToken cancellationToken = default)
@@ -28,29 +28,7 @@ namespace Crowdin.Api
             return result;
         }
 
-        public async Task<T> SendApiRequest<T>(String url, ProjectCredentials credentials,
-            Object body = null,
-            String payloadProperty = null,
-            CancellationToken cancellationToken = default)
-        {
-            HttpResponseMessage response = await SendApiRequest(url, credentials, body, cancellationToken);
-            T result = await ReadApiResponse<T>(response, payloadProperty, cancellationToken);
-            return result;
-        }
-
-        public Task<HttpResponseMessage> SendApiRequest(String url, AccountCredentials credentials,
-            Object body = null,
-            CancellationToken cancellationToken = default)
-        {
-            HttpRequestMessage request = new HttpRequestMessageBuilder()
-                .SetUri(url)
-                .SetCredentials(credentials)
-                .SetBody(body)
-                .Build();
-            return SendApiRequest(request, cancellationToken);
-        }
-
-        public Task<HttpResponseMessage> SendApiRequest(String url, ProjectCredentials credentials,
+        public Task<HttpResponseMessage> SendApiRequest(String url, Credentials credentials,
             Object body = null,
             CancellationToken cancellationToken = default)
         {

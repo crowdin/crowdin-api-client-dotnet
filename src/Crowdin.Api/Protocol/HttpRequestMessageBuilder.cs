@@ -23,13 +23,7 @@ namespace Crowdin.Api.Protocol
             return this;
         }
 
-        public HttpRequestMessageBuilder SetCredentials(AccountCredentials credentials)
-        {
-            _credentials = credentials;
-            return this;
-        }
-
-        public HttpRequestMessageBuilder SetCredentials(ProjectCredentials credentials)
+        public HttpRequestMessageBuilder SetCredentials(Credentials credentials)
         {
             _credentials = credentials;
             return this;
@@ -66,8 +60,6 @@ namespace Crowdin.Api.Protocol
                 else
                 {
                     var projectCredentials = (ProjectCredentials)_credentials;
-                    String projectId = HttpUtility.UrlEncode(projectCredentials.ProjectId);
-                    uri = uri.Replace("{ProjectID}", projectId);
                     query["key"] = projectCredentials.ProjectKey;
                 }
 
@@ -114,7 +106,7 @@ namespace Crowdin.Api.Protocol
         }
 
         private String _uri;
-        private Object _credentials;
+        private Credentials _credentials;
         private Object _body;
     }
 }
