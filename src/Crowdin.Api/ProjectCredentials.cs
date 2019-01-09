@@ -2,10 +2,8 @@
 
 namespace Crowdin.Api
 {
-    public sealed class ProjectCredentials
+    public sealed class ProjectCredentials : Credentials
     {
-        public String ProjectId { get; set; }
-
         public String ProjectKey { get; set; }
     }
 }

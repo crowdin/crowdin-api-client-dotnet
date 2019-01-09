@@ -2,7 +2,7 @@
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Web;
+using static System.Web.HttpUtility;
 
 namespace Crowdin.Api
 {
@@ -10,7 +10,7 @@ namespace Crowdin.Api
     {
         public Task<LanguageInfo[]> GetSupportedLanguages(CancellationToken cancellationToken = default)
         {
-            return SendApiRequest<LanguageInfo[]>("supported-languages", (AccountCredentials)null, cancellationToken: cancellationToken);
+            return SendApiRequest<LanguageInfo[]>("supported-languages", null, cancellationToken: cancellationToken);
         }
 
         public Task<AccountProjectInfo[]> GetAccountProjects(AccountCredentials credentials, CancellationToken cancellationToken = default)
@@ -23,155 +23,155 @@ namespace Crowdin.Api
             return SendApiRequest("account/create-project", credentials, parameters, cancellationToken);
         }
 
-        public Task<ProjectInfo> GetProjectInfo(ProjectCredentials credentials, CancellationToken cancellationToken = default)
+        public Task<ProjectInfo> GetProjectInfo(String projectId, Credentials credentials, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest<ProjectInfo>("project/{ProjectID}/info", credentials, payloadProperty: null, cancellationToken: cancellationToken);
+            return SendApiRequest<ProjectInfo>($"project/{UrlEncode(projectId)}/info", credentials, payloadProperty: null, cancellationToken: cancellationToken);
         }
 
-        public Task<HttpResponseMessage> EditProject(ProjectCredentials credentials, EditProjectParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> EditProject(String projectId, Credentials credentials, EditProjectParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/edit-project", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/edit-project", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> DeleteProject(ProjectCredentials credentials, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> DeleteProject(String projectId, Credentials credentials, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/delete-project", credentials, null, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/delete-project", credentials, null, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> GetProjectStatus(ProjectCredentials credentials, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> GetProjectStatus(String projectId, Credentials credentials, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/status", credentials, null, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/status", credentials, null, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> GetLanguageStatus(ProjectCredentials credentials, GetLanguageStatusParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> GetLanguageStatus(String projectId, Credentials credentials, GetLanguageStatusParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/language-status", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/language-status", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> AddFile(ProjectCredentials credentials, AddFileParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> AddFile(String projectId, Credentials credentials, AddFileParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/add-file", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/add-file", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> UpdateFile(ProjectCredentials credentials, UpdateFileParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> UpdateFile(String projectId, Credentials credentials, UpdateFileParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/update-file", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/update-file", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> ExportFile(ProjectCredentials credentials, ExportFileParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> ExportFile(String projectId, Credentials credentials, ExportFileParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/export-file", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/export-file", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> DeleteFile(ProjectCredentials credentials, DeleteFileParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> DeleteFile(String projectId, Credentials credentials, DeleteFileParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/delete-file", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/delete-file", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> CreateFolder(ProjectCredentials credentials, CreateFolderParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> CreateFolder(String projectId, Credentials credentials, CreateFolderParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/add-directory", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/add-directory", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> EditFolder(ProjectCredentials credentials, EditFolderParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> EditFolder(String projectId, Credentials credentials, EditFolderParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/change-directory", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/change-directory", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> DeleteFolder(ProjectCredentials credentials, DeleteFolderParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> DeleteFolder(String projectId, Credentials credentials, DeleteFolderParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/delete-directory", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/delete-directory", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> UploadGlossary(ProjectCredentials credentials, UploadGlossaryParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> UploadGlossary(String projectId, Credentials credentials, UploadGlossaryParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/upload-glossary", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/upload-glossary", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> DownloadGlossary(ProjectCredentials credentials, DownloadGlossaryParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> DownloadGlossary(String projectId, Credentials credentials, DownloadGlossaryParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/download-glossary", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/download-glossary", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> UploadTranslationMemory(ProjectCredentials credentials, UploadTranslationMemoryParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> UploadTranslationMemory(String projectId, Credentials credentials, UploadTranslationMemoryParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/upload-tm", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/upload-tm", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> DownloadTranslationMemory(ProjectCredentials credentials, DownloadTranslationMemoryParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> DownloadTranslationMemory(String projectId, Credentials credentials, DownloadTranslationMemoryParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/download-tm", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/download-tm", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> Pretranslate(ProjectCredentials credentials, PretranslateParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> Pretranslate(String projectId, Credentials credentials, PretranslateParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/pre-translate", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/pre-translate", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> UploadTranslation(ProjectCredentials credentials, UploadTranslationParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> UploadTranslation(String projectId, Credentials credentials, UploadTranslationParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/upload-translation", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/upload-translation", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> ExportTranslation(ProjectCredentials credentials, ExportTranslationParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> ExportTranslation(String projectId, Credentials credentials, ExportTranslationParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/export", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/export", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> GetTranslationExportStatus(ProjectCredentials credentials, GetTranslationExportStatusParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> GetTranslationExportStatus(String projectId, Credentials credentials, GetTranslationExportStatusParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/export-status", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/export-status", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> DownloadTranslation(ProjectCredentials credentials, DownloadTranslationParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> DownloadTranslation(String projectId, Credentials credentials, DownloadTranslationParameters parameters, CancellationToken cancellationToken = default)
         {
-            String package = HttpUtility.UrlEncode(parameters.Package);
-            return SendApiRequest($"project/{{ProjectID}}/download/{package}.zip", credentials, parameters, cancellationToken);
+            String package = UrlEncode(parameters.Package);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/download/{package}.zip", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> ExportPseudotranslation(ProjectCredentials credentials, ExportPseudotranslationParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> ExportPseudotranslation(String projectId, Credentials credentials, ExportPseudotranslationParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/pseudo-export", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/pseudo-export", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> DownloadPseudotranslation(ProjectCredentials credentials, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> DownloadPseudotranslation(String projectId, Credentials credentials, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/pseudo-download", credentials, null, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/pseudo-download", credentials, null, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> GetProjectIssues(ProjectCredentials credentials, GetProjectIssuesParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> GetProjectIssues(String projectId, Credentials credentials, GetProjectIssuesParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/issues", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/issues", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> ExportCostsEstimationReport(ProjectCredentials credentials, ExportCostsEstimationReportParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> ExportCostsEstimationReport(String projectId, Credentials credentials, ExportCostsEstimationReportParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/reports/costs-estimation/export", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/reports/costs-estimation/export", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> DownloadCostsEstimationReport(ProjectCredentials credentials, DownloadReportParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> DownloadCostsEstimationReport(String projectId, Credentials credentials, DownloadReportParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/reports/costs-estimation/download", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/reports/costs-estimation/download", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> ExportTranslationCostsReport(ProjectCredentials credentials, ExportTranslationCostsReportParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> ExportTranslationCostsReport(String projectId, Credentials credentials, ExportTranslationCostsReportParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/reports/translation-costs/export", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/reports/translation-costs/export", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> DownloadTranslationCostsReport(ProjectCredentials credentials, DownloadReportParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> DownloadTranslationCostsReport(String projectId, Credentials credentials, DownloadReportParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/reports/translation-costs/download", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/reports/translation-costs/download", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> ExportTopMembersReport(ProjectCredentials credentials, ExportTopMembersReportParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> ExportTopMembersReport(String projectId, Credentials credentials, ExportTopMembersReportParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/reports/top-members/export", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/reports/top-members/export", credentials, parameters, cancellationToken);
         }
 
-        public Task<HttpResponseMessage> DownloadTopMembersReport(ProjectCredentials credentials, DownloadReportParameters parameters, CancellationToken cancellationToken = default)
+        public Task<HttpResponseMessage> DownloadTopMembersReport(String projectId, Credentials credentials, DownloadReportParameters parameters, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest("project/{ProjectID}/reports/top-members/download", credentials, parameters, cancellationToken);
+            return SendApiRequest($"project/{UrlEncode(projectId)}/reports/top-members/download", credentials, parameters, cancellationToken);
         }
     }
 }

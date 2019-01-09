@@ -2,7 +2,7 @@
 
 namespace Crowdin.Api
 {
-    public sealed class AccountCredentials
+    public sealed class AccountCredentials : Credentials
     {
         public String LoginName { get; set; }
 
