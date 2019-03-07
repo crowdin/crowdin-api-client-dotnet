@@ -13,7 +13,7 @@
     <RepositoryUrl>git@github.com:crowdin/crowdin-dotnet-client.git</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>Crowdin API</PackageTags>
-    <LangVersion>7.2</LangVersion>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
