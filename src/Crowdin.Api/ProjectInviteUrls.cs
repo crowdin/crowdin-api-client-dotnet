@@ -1,14 +1,25 @@
 ﻿using System;
-using Newtonsoft.Json;
+using System.Xml;
+using System.Xml.Schema;
+using System.Xml.Serialization;
 
 namespace Crowdin.Api
 {
-    public class ProjectInviteUrls
+    public sealed class ProjectInviteUrls : IXmlSerializable
     {
-        [JsonProperty("translator")]
         public Uri Translator { get; private set; }
 
-        [JsonProperty("proofreader")]
         public Uri Proofreader { get; private set; }
+
+        XmlSchema IXmlSerializable.GetSchema() => null;
+
+        void IXmlSerializable.ReadXml(XmlReader reader)
+        {
+            reader.ReadStartElement();
+            Translator = reader.ReadRequiredSiblingElementContentAsUri("translator");
+            Proofreader = reader.ReadRequiredSiblingElementContentAsUri("proofreader");
+        }
+
+        void IXmlSerializable.WriteXml(XmlWriter writer) => throw new NotSupportedException();
     }
 }

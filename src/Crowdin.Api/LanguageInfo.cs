@@ -1,37 +1,68 @@
 ﻿using System;
-using Newtonsoft.Json;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Xml;
+using System.Xml.Schema;
+using System.Xml.Serialization;
 
 namespace Crowdin.Api
 {
-    public sealed class LanguageInfo
+    [XmlRoot("languages")]
+    public sealed class SupportedLanguages : IXmlSerializable
     {
-        [JsonProperty("name")]
+        public ReadOnlyCollection<LanguageInfo> Languages { get; private set; }
+
+        XmlSchema IXmlSerializable.GetSchema() => null;
+
+        void IXmlSerializable.ReadXml(XmlReader reader)
+        {
+            reader.ReadStartElement();
+            Languages = reader.ReadSiblingElementsAsCollection<LanguageInfo>("language")
+                .ToList()
+                .AsReadOnly();
+        }
+
+        void IXmlSerializable.WriteXml(XmlWriter writer) => throw new NotSupportedException();
+    }
+
+    public sealed class LanguageInfo : IXmlSerializable
+    {
         public String Name { get; private set; }
 
-        [JsonProperty("crowdin_code")]
         public String CrowdinCode { get; private set; }
 
-        [JsonProperty("editor_code")]
         public String EditorCode { get; private set; }
 
-        [JsonProperty("iso_639_1")]
         public String Iso6391 { get; private set; }
 
-        [JsonProperty("iso_639_3")]
         public String Iso6393 { get; private set; }
 
-        [JsonProperty("locale")]
         public String Locale { get; private set; }
 
-        [JsonProperty("android_code")]
         public String AndroidCode { get; private set; }
 
-        [JsonProperty("osx_code")]
         public String OsXCode { get; private set; }
 
-        [JsonProperty("osx_locale")]
         public String OsXLocale { get; private set; }
 
         public override String ToString() => Name;
+
+        XmlSchema IXmlSerializable.GetSchema() => null;
+
+        void IXmlSerializable.ReadXml(XmlReader reader)
+        {
+            reader.ReadStartElement();
+            Name = reader.ReadRequiredSiblingElementContentAsString("name");
+            CrowdinCode = reader.ReadRequiredSiblingElementContentAsString("crowdin_code");
+            EditorCode = reader.ReadRequiredSiblingElementContentAsString("editor_code");
+            Iso6391 = reader.ReadRequiredSiblingElementContentAsString("iso_639_1");
+            Iso6393 = reader.ReadRequiredSiblingElementContentAsString("iso_639_3");
+            Locale = reader.ReadRequiredSiblingElementContentAsString("locale");
+            AndroidCode = reader.ReadRequiredSiblingElementContentAsString("android_code");
+            OsXCode = reader.ReadRequiredSiblingElementContentAsString("osx_code");
+            OsXLocale = reader.ReadRequiredSiblingElementContentAsString("osx_locale");
+        }
+
+        void IXmlSerializable.WriteXml(XmlWriter writer) => throw new NotSupportedException();
     }
 }
