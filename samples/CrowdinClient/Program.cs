@@ -57,6 +57,13 @@ namespace CrowdinClient
             ConsoleWriteMessage("Press [Enter] to get project translation status");
             ReadOnlyCollection<TargetLanguageStatus> projectTranslationStatus = await crowdin.GetProjectStatus(projectId, accountCredentials);
             ConsoleOutput(projectTranslationStatus);
+
+            ConsoleWriteMessage("Press [Enter] to get language translation status");
+            var getLanguageStatusParameters = new GetLanguageStatusParameters {
+                Language = "de"
+            };
+            LanguageTranslationStatus languageTranslationStatus = await crowdin.GetLanguageStatus(projectId, accountCredentials, getLanguageStatusParameters);
+            ConsoleOutput(languageTranslationStatus.Files);
         }
 
         private T GetConfigValue<T>(String key)
