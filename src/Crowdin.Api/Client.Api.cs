@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
@@ -8,14 +9,16 @@ namespace Crowdin.Api
 {
     partial class Client
     {
-        public Task<LanguageInfo[]> GetSupportedLanguages(CancellationToken cancellationToken = default)
+        public async Task<ReadOnlyCollection<LanguageInfo>> GetSupportedLanguages(CancellationToken cancellationToken = default)
         {
-            return SendApiRequest<LanguageInfo[]>("supported-languages", null, cancellationToken: cancellationToken);
+            SupportedLanguages supportedLanguages = await SendApiRequest<SupportedLanguages>("supported-languages", null, cancellationToken: cancellationToken);
+            return supportedLanguages.Languages;
         }
 
-        public Task<AccountProjectInfo[]> GetAccountProjects(AccountCredentials credentials, CancellationToken cancellationToken = default)
+        public async Task<ReadOnlyCollection<AccountProjectInfo>> GetAccountProjects(AccountCredentials credentials, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest<AccountProjectInfo[]>("account/get-projects", credentials, payloadProperty: "projects", cancellationToken: cancellationToken);
+            AccountProjects accountProjects = await SendApiRequest<AccountProjects>("account/get-projects", credentials, cancellationToken: cancellationToken);
+            return accountProjects.Projects;
         }
 
         public Task<HttpResponseMessage> CreateProject(AccountCredentials credentials, CreateProjectParameters parameters, CancellationToken cancellationToken = default)
@@ -25,7 +28,7 @@ namespace Crowdin.Api
 
         public Task<ProjectInfo> GetProjectInfo(String projectId, Credentials credentials, CancellationToken cancellationToken = default)
         {
-            return SendApiRequest<ProjectInfo>($"project/{UrlEncode(projectId)}/info", credentials, payloadProperty: null, cancellationToken: cancellationToken);
+            return SendApiRequest<ProjectInfo>($"project/{UrlEncode(projectId)}/info", credentials, cancellationToken: cancellationToken);
         }
 
         public Task<HttpResponseMessage> EditProject(String projectId, Credentials credentials, EditProjectParameters parameters, CancellationToken cancellationToken = default)

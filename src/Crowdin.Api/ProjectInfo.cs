@@ -1,68 +1,94 @@
 ﻿using System;
-using Crowdin.Api.Json;
-using Newtonsoft.Json;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Xml;
+using System.Xml.Schema;
+using System.Xml.Serialization;
 
 namespace Crowdin.Api
 {
-    public sealed class ProjectInfo
+    [XmlRoot("info")]
+    public sealed class ProjectInfo : IXmlSerializable
     {
-        [JsonProperty("languages")]
-        public TargetLanguage[] TargetLanguages { get; private set; }
-
-        [JsonProperty("files", ItemConverterType = typeof(ProjectNodeConverter))]
-        public ProjectNode[] Files { get; private set; }
-
-        [JsonProperty("details")]
-        public ProjectDetails Details { get; private set; }
-
-        public override String ToString() => Details?.Name ?? base.ToString();
-    }
-
-    public sealed class ProjectDetails
-    {
-        [JsonProperty("source_language")]
         public Language SourceLanguage { get; private set; }
 
-        [JsonProperty("name")]
         public String Name { get; private set; }
 
-        [JsonProperty("identifier")]
         public String Identifier { get; private set; }
 
-        [JsonProperty("created")]
         public DateTime Created { get; private set; }
 
-        [JsonProperty("description")]
         public String Description { get; private set; }
 
-        [JsonProperty("join_policy")]
         public ProjectJoinPolicy JoinPolicy { get; private set; }
 
-        [JsonProperty("last_build")]
         public DateTime? LastBuild { get; private set; }
 
-        [JsonProperty("last_activity")]
         public DateTime LastActivity { get; private set; }
 
-        [JsonProperty("participants_count")]
         public Int32 ParticipantsCount { get; private set; }
 
-        [JsonProperty("logo_url")]
         public Uri LogoUrl { get; private set; }
 
-        [JsonProperty("total_strings_count")]
         public Int32 TotalStringsCount { get; private set; }
 
-        [JsonProperty("total_words_count")]
         public Int32 TotalWordsCount { get; private set; }
 
-        [JsonProperty("duplicate_strings_count")]
         public Int32 DuplicateStringsCount { get; private set; }
 
-        [JsonProperty("duplicate_words_count")]
         public Int32 DuplicateWordsCount { get; private set; }
 
-        [JsonProperty("invite_url")]
         public ProjectInviteUrls InviteUrls { get; private set; }
+
+        public ReadOnlyCollection<TargetLanguage> TargetLanguages { get; private set; }
+
+        public ReadOnlyCollection<ProjectNode> Files { get; private set; }
+
+        public override String ToString() => Name;
+
+        XmlSchema IXmlSerializable.GetSchema() => null;
+
+        void IXmlSerializable.ReadXml(XmlReader reader)
+        {
+            reader.ReadStartElement();
+
+            if (reader.ReadToNextSibling("languages"))
+            {
+                reader.Read();
+                TargetLanguages = reader.ReadSiblingElementsAsCollection<TargetLanguage>("item")
+                    .ToList()
+                    .AsReadOnly();
+            }
+
+            if (reader.ReadToNextSibling("files"))
+            {
+                reader.Read();
+                Files = reader.ReadSiblingElementsAsCollection("item", ProjectNode.LoadFromXml)
+                    .ToList()
+                    .AsReadOnly();
+            }
+
+            if (reader.ReadToNextSibling("details"))
+            {
+                reader.Read();
+                SourceLanguage = reader.ReadRequiredSiblingElementSubtreeAsObject<Language>("source_language");
+                Name = reader.ReadRequiredSiblingElementContentAsString("name");
+                Identifier = reader.ReadRequiredSiblingElementContentAsString("identifier");
+                Created = reader.ReadRequiredSiblingElementContentAsIsoDateTime("created");
+                Description = reader.ReadRequiredSiblingElementContentAsString("description");
+                JoinPolicy = reader.ReadRequiredSiblingElementContentAsEnum<ProjectJoinPolicy>("join_policy");
+                LastBuild = reader.ReadOptionalSiblingElementContentAsIsoDateTime("last_build");
+                LastActivity = reader.ReadRequiredSiblingElementContentAsIsoDateTime("last_activity");
+                ParticipantsCount = reader.ReadRequiredSiblingElementContentAsInt("participants_count");
+                LogoUrl = reader.ReadRequiredSiblingElementContentAsUri("logo_url");
+                TotalStringsCount = reader.ReadRequiredSiblingElementContentAsInt("total_strings_count");
+                TotalWordsCount = reader.ReadRequiredSiblingElementContentAsInt("total_words_count");
+                DuplicateStringsCount = reader.ReadRequiredSiblingElementContentAsInt("duplicate_strings_count");
+                DuplicateWordsCount = reader.ReadRequiredSiblingElementContentAsInt("duplicate_words_count");
+                InviteUrls = reader.ReadRequiredSiblingElementSubtreeAsObject<ProjectInviteUrls>("invite_url");
+            }
+        }
+
+        void IXmlSerializable.WriteXml(XmlWriter writer) => throw new NotSupportedException();
     }
 }

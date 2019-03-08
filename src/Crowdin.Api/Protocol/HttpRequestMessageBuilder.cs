@@ -14,6 +14,7 @@ namespace Crowdin.Api.Protocol
             _uri = null;
             _credentials = null;
             _body = null;
+            _responseType = ResponseType.Xml;
             return this;
         }
 
@@ -32,6 +33,18 @@ namespace Crowdin.Api.Protocol
         public HttpRequestMessageBuilder SetBody(Object body)
         {
             _body = body;
+            return this;
+        }
+
+        public HttpRequestMessageBuilder ExpectXml()
+        {
+            _responseType = ResponseType.Xml;
+            return this;
+        }
+
+        public HttpRequestMessageBuilder ExpectJson()
+        {
+            _responseType = ResponseType.Json;
             return this;
         }
 
@@ -66,7 +79,8 @@ namespace Crowdin.Api.Protocol
                 queryString = "&" + query;
             }
 
-            return new Uri(uri + "?json=1" + queryString, UriKind.Relative);
+            String responseType = _responseType == ResponseType.Json ? "json" : "xml";
+            return new Uri($"{uri}?{responseType}{queryString}", UriKind.Relative);
         }
 
         private HttpRequestMessage BuildGetRequestMessage(Uri requestUri)
@@ -108,5 +122,6 @@ namespace Crowdin.Api.Protocol
         private String _uri;
         private Credentials _credentials;
         private Object _body;
+        private ResponseType _responseType;
     }
 }

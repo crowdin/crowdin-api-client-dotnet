@@ -1,16 +1,27 @@
 ﻿using System;
-using Newtonsoft.Json;
+using System.Xml;
+using System.Xml.Schema;
+using System.Xml.Serialization;
 
 namespace Crowdin.Api
 {
-    public class Language
+    public sealed class Language : IXmlSerializable
     {
-        [JsonProperty("name")]
         public String Name { get; private set; }
 
-        [JsonProperty("code")]
         public String CrowdinCode { get; private set; }
 
         public override String ToString() => Name;
+
+        XmlSchema IXmlSerializable.GetSchema() => null;
+
+        void IXmlSerializable.ReadXml(XmlReader reader)
+        {
+            reader.ReadStartElement();
+            Name = reader.ReadRequiredSiblingElementContentAsString("name");
+            CrowdinCode = reader.ReadRequiredSiblingElementContentAsString("code");
+        }
+
+        void IXmlSerializable.WriteXml(XmlWriter writer) => throw new NotSupportedException();
     }
 }

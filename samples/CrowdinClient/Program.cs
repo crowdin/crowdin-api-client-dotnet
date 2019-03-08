@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Crowdin.Api;
@@ -33,13 +35,23 @@ namespace CrowdinClient
             var crowdin = new Client(httpClient);
 
             ConsoleWriteMessage("Press [Enter] to list Crowdin supported languages");
-            LanguageInfo[] languages = await crowdin.GetSupportedLanguages();
+            ReadOnlyCollection<LanguageInfo> languages = await crowdin.GetSupportedLanguages();
             ConsoleOutput(languages);
 
             ConsoleWriteMessage("Press [Enter] to list account projects");
             var accountCredentials = GetConfigValue<AccountCredentials>("account");
-            AccountProjectInfo[] accountProjects = await crowdin.GetAccountProjects(accountCredentials);
+            ReadOnlyCollection<AccountProjectInfo> accountProjects = await crowdin.GetAccountProjects(accountCredentials);
             ConsoleOutput(accountProjects);
+
+            ConsoleWriteMessage("Press [Enter] to get project information using project API key");
+            var projectId = Configuration["project:projectId"];
+            var projectCredentials = GetConfigValue<ProjectCredentials>("project");
+            ProjectInfo project = await crowdin.GetProjectInfo(projectId, projectCredentials);
+            ConsoleOutput(project);
+
+            ConsoleWriteMessage("Press [Enter] to get project information using account API key");
+            project = await crowdin.GetProjectInfo(projectId, accountCredentials);
+            ConsoleOutput(project);
         }
 
         private T GetConfigValue<T>(String key)
@@ -59,15 +71,15 @@ namespace CrowdinClient
             Console.WriteLine(value);
         }
 
-        private static void ConsoleOutput<T>(T[] values)
+        private static void ConsoleOutput<T>(IList<T> values)
         {
-            Int32 outputItems = Math.Min(3, values.Length);
+            Int32 outputItems = Math.Min(3, values.Count);
             for (Int32 i = 0; i < outputItems; i++)
             {
                 ConsoleOutput(values[i]);
             }
 
-            Int32 restItems = values.Length - outputItems;
+            Int32 restItems = values.Count - outputItems;
             if (restItems > 0)
             {
                 Console.WriteLine($"...({restItems} more items)");
