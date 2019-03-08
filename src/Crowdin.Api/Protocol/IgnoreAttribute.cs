@@ -3,6 +3,6 @@
 namespace Crowdin.Api.Protocol
 {
     [AttributeUsage(AttributeTargets.Property)]
-    internal sealed class IgnoreAttribute : Attribute
+    public sealed class IgnoreAttribute : Attribute
     { }
 }

@@ -36,15 +36,9 @@ namespace Crowdin.Api.Protocol
             return this;
         }
 
-        public HttpRequestMessageBuilder ExpectXml()
+        public HttpRequestMessageBuilder SetResponseType(ResponseType responseType)
         {
-            _responseType = ResponseType.Xml;
-            return this;
-        }
-
-        public HttpRequestMessageBuilder ExpectJson()
-        {
-            _responseType = ResponseType.Json;
+            _responseType = responseType;
             return this;
         }
 

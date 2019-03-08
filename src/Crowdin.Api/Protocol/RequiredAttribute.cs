@@ -3,6 +3,6 @@
 namespace Crowdin.Api.Protocol
 {
     [AttributeUsage(AttributeTargets.Property)]
-    internal sealed class RequiredAttribute : Attribute
+    public sealed class RequiredAttribute : Attribute
     { }
 }
