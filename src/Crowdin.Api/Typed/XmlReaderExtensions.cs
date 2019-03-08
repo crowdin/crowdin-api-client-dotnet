@@ -28,6 +28,15 @@ namespace Crowdin.Api.Typed
             return reader.ReadElementContentAsInt();
         }
 
+        public static Int32? ReadOptionalSiblingElementContentAsInt(this XmlReader reader, String elementName)
+        {
+            if (reader.ReadToNextSibling(elementName) && !reader.IsEmptyElement)
+            {
+                return reader.ReadElementContentAsInt();
+            }
+            return null;
+        }
+
         public static String ReadRequiredSiblingElementContentAsString(this XmlReader reader, String elementName)
         {
             reader.ReadToNextRequiredSibling(elementName);
