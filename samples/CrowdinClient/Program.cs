@@ -53,6 +53,10 @@ namespace CrowdinClient
             ConsoleWriteMessage("Press [Enter] to get project information using account API key");
             project = await crowdin.GetProjectInfo(projectId, accountCredentials);
             ConsoleOutput(project);
+
+            ConsoleWriteMessage("Press [Enter] to get project translation status");
+            ReadOnlyCollection<TargetLanguageStatus> projectTranslationStatus = await crowdin.GetProjectStatus(projectId, accountCredentials);
+            ConsoleOutput(projectTranslationStatus);
         }
 
         private T GetConfigValue<T>(String key)

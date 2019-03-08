@@ -56,9 +56,10 @@ namespace Crowdin.Api.Typed
             return client.SendApiRequest($"project/{UrlEncode(projectId)}/delete-project", credentials, cancellationToken: cancellationToken);
         }
 
-        public static Task<HttpResponseMessage> GetProjectStatus(this Client client, String projectId, Credentials credentials, CancellationToken cancellationToken = default)
+        public static async Task<ReadOnlyCollection<TargetLanguageStatus>> GetProjectStatus(this Client client, String projectId, Credentials credentials, CancellationToken cancellationToken = default)
         {
-            return client.SendApiRequest($"project/{UrlEncode(projectId)}/status", credentials, cancellationToken: cancellationToken);
+            ProjectTranslationStatus projectTranslationStatus = await client.SendApiRequest<ProjectTranslationStatus>($"project/{UrlEncode(projectId)}/status", credentials, cancellationToken: cancellationToken);
+            return projectTranslationStatus.Languages;
         }
 
         public static Task<HttpResponseMessage> GetLanguageStatus(this Client client, String projectId, Credentials credentials, GetLanguageStatusParameters parameters, CancellationToken cancellationToken = default)
