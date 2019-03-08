@@ -120,13 +120,22 @@ namespace Crowdin.Api.Typed
             }
         }
 
-        public static IEnumerable<T> ReadSiblingElementsAsCollection<T>(this XmlReader reader, String itemElementName, Func<XmlReader, T> factory)
+        public static IEnumerable<T> ReadRequiredSiblingElementSubtreeAsCollection<T>(this XmlReader reader, String elementName, String itemElementName)
         {
+            reader.ReadToNextRequiredSibling(elementName);
+            reader.ReadStartElement();
+            return reader.ReadSiblingElementsAsCollection<T>(itemElementName);
+        }
+
+        public static IEnumerable<T> ReadRequiredSiblingElementSubtreeAsCollection<T>(this XmlReader reader, String elementName, String itemElementName, Func<XmlReader, T> deserializer)
+        {
+            reader.ReadToNextRequiredSibling(elementName);
+            reader.ReadStartElement();
             while (reader.ReadToNextSibling(itemElementName))
             {
                 using (XmlReader itemReader = reader.ReadSubtree())
                 {
-                    T item = factory(itemReader);
+                    T item = deserializer(itemReader);
                     yield return item;
                 }
             }
