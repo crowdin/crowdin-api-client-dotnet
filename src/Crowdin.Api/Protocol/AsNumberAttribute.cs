@@ -3,6 +3,6 @@
 namespace Crowdin.Api.Protocol
 {
     [AttributeUsage(AttributeTargets.Enum)]
-    internal sealed class AsNumberAttribute : Attribute
+    public sealed class AsNumberAttribute : Attribute
     { }
 }

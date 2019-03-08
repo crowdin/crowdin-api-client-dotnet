@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Crowdin.Api;
+using Crowdin.Api.Typed;
 using Microsoft.Extensions.Configuration;
 
 namespace CrowdinClient
