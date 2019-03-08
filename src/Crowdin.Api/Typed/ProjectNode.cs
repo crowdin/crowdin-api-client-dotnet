@@ -30,13 +30,13 @@ namespace Crowdin.Api.Typed
             switch (projectNodeType)
             {
                 case ProjectNodeType.File:
-                    projectNode = new ProjectFileNode();
+                    projectNode = new ProjectFile();
                     break;
                 case ProjectNodeType.Directory:
-                    projectNode = new ProjectFolderNode();
+                    projectNode = new ProjectFolder();
                     break;
                 case ProjectNodeType.Branch:
-                    projectNode = new ProjectBranchNode();
+                    projectNode = new ProjectBranch();
                     break;
                 default:
                     throw new XmlException();
@@ -52,7 +52,7 @@ namespace Crowdin.Api.Typed
         }
     }
 
-    public sealed class ProjectFileNode : ProjectNode
+    public sealed class ProjectFile : ProjectNode
     {
         public DateTime Created { get; private set; }
 
@@ -74,7 +74,7 @@ namespace Crowdin.Api.Typed
         }
     }
 
-    public class ProjectFolderNode : ProjectNode
+    public class ProjectFolder : ProjectNode
     {
         public ReadOnlyCollection<ProjectNode> Files { get; private set; }
 
@@ -83,17 +83,13 @@ namespace Crowdin.Api.Typed
         protected override void ReadXml(XmlReader reader)
         {
             base.ReadXml(reader);
-            if (reader.ReadToNextSibling("files"))
-            {
-                reader.Read();
-                Files = reader.ReadSiblingElementsAsCollection("item", ProjectNode.LoadFromXml)
-                    .ToList()
-                    .AsReadOnly();
-            }
+            Files = reader.ReadRequiredSiblingElementSubtreeAsCollection("files", "item", ProjectNode.LoadFromXml)
+                .ToList()
+                .AsReadOnly();
         }
     }
 
-    public sealed class ProjectBranchNode : ProjectFolderNode
+    public sealed class ProjectBranch : ProjectFolder
     {
         public override String ToString() => $"{{{Name}}}";
     }

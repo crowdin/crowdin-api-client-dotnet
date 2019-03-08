@@ -52,41 +52,31 @@ namespace Crowdin.Api.Typed
         {
             reader.ReadStartElement();
 
-            if (reader.ReadToNextSibling("languages"))
-            {
-                reader.Read();
-                TargetLanguages = reader.ReadSiblingElementsAsCollection<TargetLanguage>("item")
-                    .ToList()
-                    .AsReadOnly();
-            }
+            TargetLanguages = reader.ReadRequiredSiblingElementSubtreeAsCollection<TargetLanguage>("languages", "item")
+                .ToList()
+                .AsReadOnly();
 
-            if (reader.ReadToNextSibling("files"))
-            {
-                reader.Read();
-                Files = reader.ReadSiblingElementsAsCollection("item", ProjectNode.LoadFromXml)
-                    .ToList()
-                    .AsReadOnly();
-            }
+            Files = reader.ReadRequiredSiblingElementSubtreeAsCollection("files", "item", ProjectNode.LoadFromXml)
+                .ToList()
+                .AsReadOnly();
 
-            if (reader.ReadToNextSibling("details"))
-            {
-                reader.Read();
-                SourceLanguage = reader.ReadRequiredSiblingElementSubtreeAsObject<Language>("source_language");
-                Name = reader.ReadRequiredSiblingElementContentAsString("name");
-                Identifier = reader.ReadRequiredSiblingElementContentAsString("identifier");
-                Created = reader.ReadRequiredSiblingElementContentAsIsoDateTime("created");
-                Description = reader.ReadRequiredSiblingElementContentAsString("description");
-                JoinPolicy = reader.ReadRequiredSiblingElementContentAsEnum<ProjectJoinPolicy>("join_policy");
-                LastBuild = reader.ReadOptionalSiblingElementContentAsIsoDateTime("last_build");
-                LastActivity = reader.ReadRequiredSiblingElementContentAsIsoDateTime("last_activity");
-                ParticipantsCount = reader.ReadRequiredSiblingElementContentAsInt("participants_count");
-                LogoUrl = reader.ReadRequiredSiblingElementContentAsUri("logo_url");
-                TotalStringsCount = reader.ReadRequiredSiblingElementContentAsInt("total_strings_count");
-                TotalWordsCount = reader.ReadRequiredSiblingElementContentAsInt("total_words_count");
-                DuplicateStringsCount = reader.ReadRequiredSiblingElementContentAsInt("duplicate_strings_count");
-                DuplicateWordsCount = reader.ReadRequiredSiblingElementContentAsInt("duplicate_words_count");
-                InviteUrls = reader.ReadRequiredSiblingElementSubtreeAsObject<ProjectInviteUrls>("invite_url");
-            }
+            reader.ReadToNextRequiredSibling("details");
+            reader.ReadStartElement();
+            SourceLanguage = reader.ReadRequiredSiblingElementSubtreeAsObject<Language>("source_language");
+            Name = reader.ReadRequiredSiblingElementContentAsString("name");
+            Identifier = reader.ReadRequiredSiblingElementContentAsString("identifier");
+            Created = reader.ReadRequiredSiblingElementContentAsIsoDateTime("created");
+            Description = reader.ReadRequiredSiblingElementContentAsString("description");
+            JoinPolicy = reader.ReadRequiredSiblingElementContentAsEnum<ProjectJoinPolicy>("join_policy");
+            LastBuild = reader.ReadOptionalSiblingElementContentAsIsoDateTime("last_build");
+            LastActivity = reader.ReadRequiredSiblingElementContentAsIsoDateTime("last_activity");
+            ParticipantsCount = reader.ReadRequiredSiblingElementContentAsInt("participants_count");
+            LogoUrl = reader.ReadRequiredSiblingElementContentAsUri("logo_url");
+            TotalStringsCount = reader.ReadRequiredSiblingElementContentAsInt("total_strings_count");
+            TotalWordsCount = reader.ReadRequiredSiblingElementContentAsInt("total_words_count");
+            DuplicateStringsCount = reader.ReadRequiredSiblingElementContentAsInt("duplicate_strings_count");
+            DuplicateWordsCount = reader.ReadRequiredSiblingElementContentAsInt("duplicate_words_count");
+            InviteUrls = reader.ReadRequiredSiblingElementSubtreeAsObject<ProjectInviteUrls>("invite_url");
         }
 
         void IXmlSerializable.WriteXml(XmlWriter writer) => throw new NotSupportedException();
