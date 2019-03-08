@@ -62,9 +62,9 @@ namespace Crowdin.Api.Typed
             return projectTranslationStatus.Languages;
         }
 
-        public static Task<HttpResponseMessage> GetLanguageStatus(this Client client, String projectId, Credentials credentials, GetLanguageStatusParameters parameters, CancellationToken cancellationToken = default)
+        public static Task<LanguageTranslationStatus> GetLanguageStatus(this Client client, String projectId, Credentials credentials, GetLanguageStatusParameters parameters, CancellationToken cancellationToken = default)
         {
-            return client.SendApiRequest($"project/{UrlEncode(projectId)}/language-status", credentials, parameters, cancellationToken: cancellationToken);
+            return client.SendApiRequest<LanguageTranslationStatus>($"project/{UrlEncode(projectId)}/language-status", credentials, parameters, cancellationToken: cancellationToken);
         }
 
         public static Task<HttpResponseMessage> AddFile(this Client client, String projectId, Credentials credentials, AddFileParameters parameters, CancellationToken cancellationToken = default)
