@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 
@@ -51,7 +52,7 @@ namespace Crowdin.Api.Protocol
                 case IEnumerable typedValue when !(typedValue is String):
                     return typedValue.Expand();
 
-                case var obj when Type.GetTypeCode(obj.GetType()) == TypeCode.Object:
+                case var obj when (Type.GetTypeCode(obj.GetType()) == TypeCode.Object) && !(obj is FileInfo):
                     return obj.Expand();
 
                 default:
