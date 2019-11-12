@@ -81,8 +81,7 @@ namespace Crowdin.Api.Typed
         public static Uri ReadElementContentAsUri(this XmlReader reader)
         {
             var uriString = reader.ReadElementContentAsString();
-            Uri uri = new Uri(uriString);
-            return uri;
+            return string.IsNullOrEmpty(uriString) ? null : new Uri(uriString);
         }
 
         public static Uri ReadRequiredSiblingElementContentAsUri(this XmlReader reader, String elementName)
