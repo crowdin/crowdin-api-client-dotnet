@@ -129,7 +129,10 @@ namespace Crowdin.Api.Typed
         public static IEnumerable<T> ReadRequiredSiblingElementSubtreeAsCollection<T>(this XmlReader reader, String elementName, String itemElementName, Func<XmlReader, T> deserializer)
         {
             reader.ReadToNextRequiredSibling(elementName);
+            var isEmptyElement = reader.IsEmptyElement;
             reader.ReadStartElement();
+            if(isEmptyElement) // There are no child elements of elementName so return an empty IEnumerable
+                yield break;
             while (reader.ReadToNextSibling(itemElementName))
             {
                 using (XmlReader itemReader = reader.ReadSubtree())
