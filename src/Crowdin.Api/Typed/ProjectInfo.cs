@@ -32,7 +32,9 @@ namespace Crowdin.Api.Typed
 
         public Int32 TotalStringsCount { get; private set; }
 
-        public Int32 TotalWordsCount { get; private set; }
+        /// <summary/>
+        /// <remarks>Projects with no files return an empty total_words_count element from api version 1</remarks>
+        public Int32? TotalWordsCount { get; private set; }
 
         public Int32 DuplicateStringsCount { get; private set; }
 
@@ -73,7 +75,7 @@ namespace Crowdin.Api.Typed
             ParticipantsCount = reader.ReadRequiredSiblingElementContentAsInt("participants_count");
             LogoUrl = reader.ReadRequiredSiblingElementContentAsUri("logo_url");
             TotalStringsCount = reader.ReadRequiredSiblingElementContentAsInt("total_strings_count");
-            TotalWordsCount = reader.ReadRequiredSiblingElementContentAsInt("total_words_count");
+            TotalWordsCount = reader.ReadOptionalSiblingElementContentAsInt("total_words_count");
             DuplicateStringsCount = reader.ReadRequiredSiblingElementContentAsInt("duplicate_strings_count");
             DuplicateWordsCount = reader.ReadRequiredSiblingElementContentAsInt("duplicate_words_count");
             InviteUrls = reader.ReadRequiredSiblingElementSubtreeAsObject<ProjectInviteUrls>("invite_url");
