@@ -8,18 +8,24 @@ Our API is a full-featured RESTful API that helps you to integrate localization 
 
 For more about Crowdin API v1 see the [documentation](https://support.crowdin.com/api/api-integration-setup/).
 
+### Status
+
+[![GitHub issues](https://img.shields.io/github/issues/crowdin/crowdin-dotnet-client?cacheSeconds=10000)](https://github.com/crowdin/crowdin-dotnet-client/issues)
+[![GitHub contributors](https://img.shields.io/github/contributors/crowdin/crowdin-dotnet-client?cacheSeconds=10000)](https://github.com/crowdin/crowdin-dotnet-client/graphs/contributors)
+[![GitHub](https://img.shields.io/github/license/crowdin/crowdin-dotnet-client)](https://github.com/crowdin/crowdin-dotnet-client/blob/master/LICENSE)
+
 ### Requirements
 
 * .NET Core - 2.1
 * C# language version - 7.3
 
-## Installation
+### Installation
 
 1. Install via Nuget [TBA]
 2. Download this library to your project's 3rd party libraries path:
 
     ```
-    git clone https://github.com/crowdin/crowdin-dotnet-client-php.git </your-project/src/Crowdin.Api>
+    git clone https://github.com/crowdin/crowdin-dotnet-client.git </your-project/src/Crowdin.Api>
     ```
 
     include library:
