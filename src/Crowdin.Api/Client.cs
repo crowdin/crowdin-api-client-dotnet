@@ -6,7 +6,7 @@ using Crowdin.Api.Protocol;
 
 namespace Crowdin.Api
 {
-    public sealed class Client
+    public sealed class Client : IClient
     {
         public Client(HttpClient httpClient)
         {
