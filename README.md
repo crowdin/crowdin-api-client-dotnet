@@ -25,7 +25,7 @@ For more about Crowdin API v1 see the [documentation](https://support.crowdin.co
 
 1. Install via NuGet:
 
-```
+```C#
 // Package Manager
 Install-Package Crowdin.Api -Version 1.0.1
 
