@@ -1,0 +1,65 @@
+# ASP.NET Core (.NET Framework)
+# Build and test ASP.NET Core projects targeting the full .NET Framework.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger:
+  branches:
+    include:
+    - refs/heads/*
+    - refs/tags/*
+  paths:
+    exclude:
+    - README.md
+    - LICENSE
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+  - task: NuGetToolInstaller@1
+
+  - task: NuGetCommand@2
+    inputs:
+      restoreSolution: '$(solution)'
+
+  - task: VSBuild@1
+    inputs:
+      solution: '$(solution)'
+      msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(build.artifactStagingDirectory)\WebApp.zip" /p:DeployIisAppPath="Default Web Site"'
+      platform: '$(buildPlatform)'
+      configuration: '$(buildConfiguration)'
+
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: test
+      projects: '**/*tests/*.csproj'
+      arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
+    displayName: "Running tests"
+
+  - script: |
+      choco install xunit
+      choco install opencover.portable
+      OpenCover.Console.exe -register:user -targetargs:".\tests\Crowdin.Api.Tests\bin\Release\netcoreapp2.1\Crowdin.Api.dll -noshadow" -target:"xunit.console.x86.exe" -filter:"+[tests*]*" -output:".\MyProject_coverage.xml"
+    displayName: "Generating code coverage report"
+
+  - script: |
+      choco install codecov
+      codecov -f "MyProject_coverage.xml" -t $(CODECOV_TOKEN)
+    displayName: "Publishing code coverage report"
+
+  - task: NuGetCommand@2
+    inputs:
+      command: pack
+      packagesToPack: '**/*.csproj'
+    displayName: "Pack the package"
+
+  - script: |
+      dotnet nuget push $(Build.ArtifactStagingDirectory)\Crowdin.Api.*.nupkg -s https://nuget.org -k $(NUGET_KEY)
+    displayName: "Publish the package"
+    condition: and(succeeded(), startsWith(variables['Build.SourceBranch'], 'refs/tags/'))
