@@ -10,6 +10,8 @@ For more about Crowdin API v1 see the [documentation](https://support.crowdin.co
 
 ### Status
 
+[![Nuget](https://img.shields.io/nuget/v/Crowdin.Api?cacheSeconds=5000)](https://www.nuget.org/packages/Crowdin.Api/)
+[![Nuget](https://img.shields.io/nuget/dt/Crowdin.Api?cacheSeconds=1000)](https://www.nuget.org/packages/Crowdin.Api/)
 [![GitHub issues](https://img.shields.io/github/issues/crowdin/crowdin-dotnet-client?cacheSeconds=10000)](https://github.com/crowdin/crowdin-dotnet-client/issues)
 [![GitHub contributors](https://img.shields.io/github/contributors/crowdin/crowdin-dotnet-client?cacheSeconds=10000)](https://github.com/crowdin/crowdin-dotnet-client/graphs/contributors)
 [![GitHub](https://img.shields.io/github/license/crowdin/crowdin-dotnet-client)](https://github.com/crowdin/crowdin-dotnet-client/blob/master/LICENSE)
@@ -21,7 +23,22 @@ For more about Crowdin API v1 see the [documentation](https://support.crowdin.co
 
 ### Installation
 
-1. Install via Nuget [TBA]
+1. Install via NuGet:
+
+```
+// Package Manager
+Install-Package Crowdin.Api -Version 1.0.1
+
+// .Net CLI
+dotnet add package Crowdin.Api --version 1.0.1
+
+// PackageReference
+<PackageReference Include="Crowdin.Api" Version="1.0.1" />
+
+// Paket CLI
+paket add Crowdin.Api --version 1.0.1
+```
+
 2. Download this library to your project's 3rd party libraries path:
 
     ```
