@@ -14,7 +14,10 @@ For more about Crowdin API v1 see the [documentation](https://support.crowdin.co
 [![Nuget](https://img.shields.io/nuget/dt/Crowdin.Api?cacheSeconds=1000)](https://www.nuget.org/packages/Crowdin.Api/)
 [![GitHub issues](https://img.shields.io/github/issues/crowdin/crowdin-dotnet-client?cacheSeconds=10000)](https://github.com/crowdin/crowdin-dotnet-client/issues)
 [![GitHub contributors](https://img.shields.io/github/contributors/crowdin/crowdin-dotnet-client?cacheSeconds=10000)](https://github.com/crowdin/crowdin-dotnet-client/graphs/contributors)
-[![GitHub](https://img.shields.io/github/license/crowdin/crowdin-dotnet-client)](https://github.com/crowdin/crowdin-dotnet-client/blob/master/LICENSE)
+[![GitHub](https://img.shields.io/github/license/crowdin/crowdin-dotnet-client?cacheSeconds=20000)](https://github.com/crowdin/crowdin-dotnet-client/blob/master/LICENSE)
+
+[![Azure DevOps builds (branch)](https://img.shields.io/azure-devops/build/crowdin/crowdin-dotnet-client/19/master?cacheSeconds=1000)](https://dev.azure.com/crowdin/crowdin-dotnet-client/_build/latest?definitionId=19&branchName=master)
+[![Azure DevOps tests (branch)](https://img.shields.io/azure-devops/tests/crowdin/crowdin-dotnet-client/19/master?cacheSeconds=1000)](https://dev.azure.com/crowdin/crowdin-dotnet-client/_build/latest?definitionId=19&branchName=master)
 
 ### Requirements
 
@@ -27,16 +30,16 @@ For more about Crowdin API v1 see the [documentation](https://support.crowdin.co
 
 ```C#
 // Package Manager
-Install-Package Crowdin.Api -Version 1.0.1
+Install-Package Crowdin.Api
 
 // .Net CLI
-dotnet add package Crowdin.Api --version 1.0.1
+dotnet add package Crowdin.Api
 
 // PackageReference
-<PackageReference Include="Crowdin.Api" Version="1.0.1" />
+<PackageReference Include="Crowdin.Api" />
 
 // Paket CLI
-paket add Crowdin.Api --version 1.0.1
+paket add Crowdin.Api
 ```
 
 2. Download this library to your project's 3rd party libraries path:
