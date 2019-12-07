@@ -6,10 +6,10 @@
     <title>Crowdin API v1 client</title>
     <authors>Crowdin</authors>
     <owners>Crowdin</owners>
-    <licenseUrl>https://github.com/crowdin/crowdin-dotnet-client/blob/master/LICENSE</licenseUrl>
+    <license>https://github.com/crowdin/crowdin-dotnet-client/blob/master/LICENSE</license>
     <projectUrl>https://github.com/crowdin/crowdin-dotnet-client</projectUrl>
     <repository type="git" url="https://github.com/crowdin/crowdin-dotnet-client"/>
-    <iconUrl>https://support.crowdin.com/assets/logos/crowdin-dark-symbol.png</iconUrl>
+    <icon>https://support.crowdin.com/assets/logos/crowdin-dark-symbol.png</icon>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>.NET client library for Crowdin API v1</description>
     <copyright>Copyright 2019 Crowdin</copyright>
