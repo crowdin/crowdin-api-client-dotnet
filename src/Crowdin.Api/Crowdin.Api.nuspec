@@ -20,6 +20,6 @@
     <summary>The Crowdin .NET client is a lightweight interface to the Crowdin API v1.</summary>
   </metadata>
   <files>
-    <file src="README.md" target="" />
+    <file src="../../README.md" target="" />
   </files>
 </package>
