@@ -11,7 +11,7 @@ For more about Crowdin API v1 see the [documentation](https://support.crowdin.co
 ### Status
 
 [![Nuget](https://img.shields.io/nuget/v/Crowdin.Api?cacheSeconds=5000)](https://www.nuget.org/packages/Crowdin.Api/)
-[![Nuget](https://img.shields.io/nuget/dt/Crowdin.Api?cacheSeconds=1000)](https://www.nuget.org/packages/Crowdin.Api/)
+[![Nuget](https://img.shields.io/nuget/dt/crowdin.api?cacheSeconds=800)](https://www.nuget.org/packages/Crowdin.Api/)
 [![GitHub issues](https://img.shields.io/github/issues/crowdin/crowdin-dotnet-client?cacheSeconds=10000)](https://github.com/crowdin/crowdin-dotnet-client/issues)
 [![GitHub contributors](https://img.shields.io/github/contributors/crowdin/crowdin-dotnet-client?cacheSeconds=10000)](https://github.com/crowdin/crowdin-dotnet-client/graphs/contributors)
 [![GitHub](https://img.shields.io/github/license/crowdin/crowdin-dotnet-client?cacheSeconds=20000)](https://github.com/crowdin/crowdin-dotnet-client/blob/master/LICENSE)
