@@ -56,7 +56,7 @@ steps:
   - task: NuGetCommand@2
     inputs:
       command: pack
-      packagesToPack: '**/*.csproj'
+      packagesToPack: 'src/Crowdin.Api/Crowdin.Api.csproj'
     displayName: "Pack the package"
 
   - script: |
