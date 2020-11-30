@@ -16,8 +16,8 @@ For more about Crowdin API v1 see the [documentation](https://support.crowdin.co
 [![GitHub contributors](https://img.shields.io/github/contributors/crowdin/crowdin-dotnet-client?cacheSeconds=10000)](https://github.com/crowdin/crowdin-dotnet-client/graphs/contributors)
 [![GitHub](https://img.shields.io/github/license/crowdin/crowdin-dotnet-client?cacheSeconds=20000)](https://github.com/crowdin/crowdin-dotnet-client/blob/master/LICENSE)
 
-[![Azure DevOps builds (branch)](https://img.shields.io/azure-devops/build/crowdin/crowdin-dotnet-client/19/master?cacheSeconds=1000)](https://dev.azure.com/crowdin/crowdin-dotnet-client/_build/latest?definitionId=19&branchName=master)
-[![Azure DevOps tests (branch)](https://img.shields.io/azure-devops/tests/crowdin/crowdin-dotnet-client/19/master?cacheSeconds=1000)](https://dev.azure.com/crowdin/crowdin-dotnet-client/_build/latest?definitionId=19&branchName=master)
+[![Azure DevOps builds (branch)](https://img.shields.io/azure-devops/build/crowdin/crowdin-dotnet-client/19/master?cacheSeconds=1000)](https://dev.azure.com/crowdin/crowdin-dotnet-client/_build/latest?definitionId=27&branchName=master)
+[![Azure DevOps tests (branch)](https://img.shields.io/azure-devops/tests/crowdin/crowdin-dotnet-client/19/master?cacheSeconds=1000)](https://dev.azure.com/crowdin/crowdin-dotnet-client/_build/latest?definitionId=27&branchName=master)
 
 ### Requirements
 
