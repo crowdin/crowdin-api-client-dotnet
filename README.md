@@ -96,8 +96,6 @@ Need help working with Crowdin .NET client or have any questions?
 
 ### License
 <pre>
-Copyright © 2020 Crowdin
-
 The Crowdin .NET client is licensed under the MIT License.
 See the LICENSE file distributed with this work for additional
 information regarding copyright ownership.
