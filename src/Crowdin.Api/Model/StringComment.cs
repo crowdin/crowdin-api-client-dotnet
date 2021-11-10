@@ -1,0 +1,392 @@
+/*
+ * Crowdin API v2
+ *
+ *  # Introduction Welcome to Crowdin API v2 documentation.  Our API is a full-featured RESTful API that helps you to integrate localization into your development process. The endpoints that we use allow you to easily make calls to retrieve information and to execute actions needed.  Most of the functionality of Crowdin is available through the API. It allows you to create projects for translations, add and update files, download translations, and much more. In this way, you can script the complex actions that your situation requires.  Documentation starts with a general overview of the design and technology that was implemented and is followed by detailed information on specific methods and endpoints.  ## Asynchronous Operations Methods such as report generation, project build, and file download need some time to be completed and are finalized in several steps. It is what we call asynchronous operations. This  approach allows the application to work without interruptions while the method is running at the background.  To run asynchronous operations, 3 subsequent API methods are used:  *     Method to start operation – returns the status __Found__ if the resource you’re requesting is already generated. Typically, __201 Accepted__ status is returned along with the operation identifier. The operation status is then checked with the help of this identifier.  *     Method to check the status of operation – returns  the completion percentage.  *     Method to get the temporary link for resource download – mostly used for export operations. When the operation is completed, you can run this method to get a temporary link for resource download.  __Note:__ Download link is active for a few minutes.  For example, to download a Translation Memory (TM), you need to run following sequence of API methods:  *     [_Export TM_](#operation/api.tms.exports.post)  *     [_Check TM Export Status_](#operation/api.tms.exports.get)  *     [_Download TM_](#operation/api.tms.exports.getMany)  ## File Upload With Crowdin API v2 all files such as files for localization, screenshots, Glossaries, and Translation Memories should be first uploaded to the [Storage](#tag/Storage). After you upload file to the Storage it will have a unique storage id using which you can then add the file to the project.  For example, to upload a localization file to your project, you need to run the following sequence of API methods:  *     [_Add Storage_](#operation/api.storages.post) – upload localization file body to storage at Crowdin server  *     [_Add File_](#operation/api.projects.files.post) – define where to add the localization file with specific _storage id_  ## Authorization To work with Crowdin API v2 generate the personal access token by going to __Crowdin Account Settings > API & SSO > New Token__  Make sure to use the following __header__ in your requests:  `Authorization: Bearer ACCESS_TOKEN`  Responses in case authorization fail:  __401 Unauthorized__ ``` {   \"error\": {     \"message\": \"Unauthorized\",     \"code\": 401   } } ```  __403 Forbidden__ ``` {   \"error\": {     \"message\": \"Not allowed endpoint for token scopes\",     \"code\": 403   } } ``` ``` {   \"error\": {     \"message\": \"Not allowed space for your token\",     \"code\": 403   } } ```  ## Requests All requests should be made using the HTTPS protocol so that traffic is encrypted. The interface responds to different methods depending on the action required.  When a request is successful, a response will typically be sent back in the form of a JSON object. If you specify `Accept` header response will be `application/json`. It’s not required to specify `Accept` header so you can leave it empty.  The API expects all writing requests (_POST_, _PUT_, _PATCH_) in JSON format with the `Content-Type: application/json` header. This ensures that your request is interpreted correctly.  __Note:__ `Content-Type` header can be different (e.g. `image/jpeg`, `text/csv`) if you upload the file using _POST_ methods with a specified content type.  RESTful APIs enable you to call individual API endpoints to perform the following requests:  *     <span class='http-method method-list get'>GET</span> - for simple retrieval of information about source files, translations, or projects. The information you request will be returned to you as a JSON object. The attributes defined by the JSON object can be used to form additional requests.  *     <span class='http-method method-list post'>POST</span> - to create or add a new element. This request includes all of the attributes necessary to create a new object.  *     <span class='http-method method-list put'>PUT</span> - to update or replace the specific element. This request sets the state of the target using the provided values, regardless of their current values.  *     <span class='http-method method-list patch'>PATCH</span> - to edit some specific fields of an entity. With these requests, you only need to provide the data you want to change.  *     <span class='http-method method-list delete'>DELETE</span> - to remove element from your account. Request works if specified object is found. If it is not found, the operation will return a response indicating that the object was not found.  For example, to edit the name and description of a project, where the requested resource is the project with `id` = 1, the request is the following:  __Example Endpoint__ <div class='well well-sm'> <span class='http-method patch'>PATCH</span> https://api.crowdin.com/api/v2/<span class='api-section-block-highlighted'>projects/1</span> </div>  where <span class='api-section-block-highlighted'>projects/1</span> is the requested resource.  __Content-Type header:__ `application/json`  __Request body__ ``` [   {\"op\":\"replace\", \"path\":\"/name\", \"value\":\"Project new name\"},   {\"op\":\"replace\", \"path\":\"/description\", \"value\":\"New description for the project\"} ] ```  ## Rate Limits The number of simultaneous API requests per account is 20 requests. Response code __429 Too Many Requests__ is returned when the limit is exceeded.  ## Crowdin API Clients The Crowdin API clients are the lightweight interfaces developed for the Crowdin API v2. They provide common services for making API requests.  You may find detailed information on each client in its respective GitHub repository:  [_Crowdin JavaScript client_](https://github.com/crowdin/crowdin-api-client-js)\\ [_Crowdin PHP client_](https://github.com/crowdin/crowdin-api-client-php)\\ [_Crowdin Java client_](https://github.com/crowdin/crowdin-api-client-java)\\ [_Crowdin Python client_](https://github.com/crowdin/crowdin-api-client-python)\\ _Crowdin .NET client_ _(Coming soon)_  
+ *
+ * The version of the OpenAPI document: 2.0
+ * Contact: support@crowdin.com
+ * Generated by: https://github.com/openapitools/openapi-generator.git
+ */
+
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Text;
+using System.Text.RegularExpressions;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using Newtonsoft.Json.Linq;
+using System.ComponentModel.DataAnnotations;
+using OpenAPIDateConverter = Crowdin.Api.Client.OpenAPIDateConverter;
+
+namespace Crowdin.Api.Model
+{
+    /// <summary>
+    /// String Comment Response Model
+    /// </summary>
+    [DataContract(Name = "StringComment")]
+    public partial class StringComment : IEquatable<StringComment>, IValidatableObject
+    {
+        /// <summary>
+        /// Defines Type
+        /// </summary>
+        [JsonConverter(typeof(StringEnumConverter))]
+        public enum TypeEnum
+        {
+            /// <summary>
+            /// Enum Comment for value: comment
+            /// </summary>
+            [EnumMember(Value = "comment")]
+            Comment = 1,
+
+            /// <summary>
+            /// Enum Issue for value: issue
+            /// </summary>
+            [EnumMember(Value = "issue")]
+            Issue = 2
+
+        }
+
+
+        /// <summary>
+        /// Gets or Sets Type
+        /// </summary>
+        [DataMember(Name = "type", EmitDefaultValue = false)]
+        public TypeEnum? Type { get; set; }
+        /// <summary>
+        /// Defines IssueType
+        /// </summary>
+        [JsonConverter(typeof(StringEnumConverter))]
+        public enum IssueTypeEnum
+        {
+            /// <summary>
+            /// Enum GeneralQuestion for value: general_question
+            /// </summary>
+            [EnumMember(Value = "general_question")]
+            GeneralQuestion = 1,
+
+            /// <summary>
+            /// Enum TranslationMistake for value: translation_mistake
+            /// </summary>
+            [EnumMember(Value = "translation_mistake")]
+            TranslationMistake = 2,
+
+            /// <summary>
+            /// Enum ContextRequest for value: context_request
+            /// </summary>
+            [EnumMember(Value = "context_request")]
+            ContextRequest = 3,
+
+            /// <summary>
+            /// Enum SourceMistake for value: source_mistake
+            /// </summary>
+            [EnumMember(Value = "source_mistake")]
+            SourceMistake = 4
+
+        }
+
+
+        /// <summary>
+        /// Gets or Sets IssueType
+        /// </summary>
+        [DataMember(Name = "issueType", EmitDefaultValue = true)]
+        public IssueTypeEnum? IssueType { get; set; }
+        /// <summary>
+        /// Defines IssueStatus
+        /// </summary>
+        [JsonConverter(typeof(StringEnumConverter))]
+        public enum IssueStatusEnum
+        {
+            /// <summary>
+            /// Enum Resolved for value: resolved
+            /// </summary>
+            [EnumMember(Value = "resolved")]
+            Resolved = 1,
+
+            /// <summary>
+            /// Enum Unresolved for value: unresolved
+            /// </summary>
+            [EnumMember(Value = "unresolved")]
+            Unresolved = 2
+
+        }
+
+
+        /// <summary>
+        /// Gets or Sets IssueStatus
+        /// </summary>
+        [DataMember(Name = "issueStatus", EmitDefaultValue = true)]
+        public IssueStatusEnum? IssueStatus { get; set; }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="StringComment" /> class.
+        /// </summary>
+        /// <param name="id">id.</param>
+        /// <param name="text">text.</param>
+        /// <param name="userId">userId.</param>
+        /// <param name="stringId">stringId.</param>
+        /// <param name="user">user.</param>
+        /// <param name="_string">_string.</param>
+        /// <param name="languageId">languageId.</param>
+        /// <param name="type">type.</param>
+        /// <param name="issueType">issueType.</param>
+        /// <param name="issueStatus">issueStatus.</param>
+        /// <param name="resolverId">resolverId.</param>
+        /// <param name="resolver">resolver.</param>
+        /// <param name="resolvedAt">resolvedAt.</param>
+        /// <param name="createdAt">createdAt.</param>
+        public StringComment(int id = default(int), string text = default(string), int userId = default(int), int stringId = default(int), IssueUser user = default(IssueUser), IssueString _string = default(IssueString), string languageId = default(string), TypeEnum? type = default(TypeEnum?), IssueTypeEnum? issueType = default(IssueTypeEnum?), IssueStatusEnum? issueStatus = default(IssueStatusEnum?), int resolverId = default(int), IssueUser resolver = default(IssueUser), DateTime resolvedAt = default(DateTime), DateTime createdAt = default(DateTime))
+        {
+            this.Id = id;
+            this.Text = text;
+            this.UserId = userId;
+            this.StringId = stringId;
+            this.User = user;
+            this.String = _string;
+            this.LanguageId = languageId;
+            this.Type = type;
+            this.IssueType = issueType;
+            this.IssueStatus = issueStatus;
+            this.ResolverId = resolverId;
+            this.Resolver = resolver;
+            this.ResolvedAt = resolvedAt;
+            this.CreatedAt = createdAt;
+        }
+
+        /// <summary>
+        /// Gets or Sets Id
+        /// </summary>
+        [DataMember(Name = "id", EmitDefaultValue = false)]
+        public int Id { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Text
+        /// </summary>
+        [DataMember(Name = "text", EmitDefaultValue = false)]
+        public string Text { get; set; }
+
+        /// <summary>
+        /// Gets or Sets UserId
+        /// </summary>
+        [DataMember(Name = "userId", EmitDefaultValue = false)]
+        public int UserId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets StringId
+        /// </summary>
+        [DataMember(Name = "stringId", EmitDefaultValue = false)]
+        public int StringId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets User
+        /// </summary>
+        [DataMember(Name = "user", EmitDefaultValue = false)]
+        public IssueUser User { get; set; }
+
+        /// <summary>
+        /// Gets or Sets String
+        /// </summary>
+        [DataMember(Name = "string", EmitDefaultValue = false)]
+        public IssueString String { get; set; }
+
+        /// <summary>
+        /// Gets or Sets LanguageId
+        /// </summary>
+        [DataMember(Name = "languageId", EmitDefaultValue = false)]
+        public string LanguageId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ResolverId
+        /// </summary>
+        [DataMember(Name = "resolverId", EmitDefaultValue = false)]
+        public int ResolverId { get; set; }
+
+        /// <summary>
+        /// Gets or Sets Resolver
+        /// </summary>
+        [DataMember(Name = "resolver", EmitDefaultValue = false)]
+        public IssueUser Resolver { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ResolvedAt
+        /// </summary>
+        [DataMember(Name = "resolvedAt", EmitDefaultValue = false)]
+        public DateTime ResolvedAt { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CreatedAt
+        /// </summary>
+        [DataMember(Name = "createdAt", EmitDefaultValue = false)]
+        public DateTime CreatedAt { get; set; }
+
+        /// <summary>
+        /// Returns the string presentation of the object
+        /// </summary>
+        /// <returns>String presentation of the object</returns>
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.Append("class StringComment {\n");
+            sb.Append("  Id: ").Append(Id).Append("\n");
+            sb.Append("  Text: ").Append(Text).Append("\n");
+            sb.Append("  UserId: ").Append(UserId).Append("\n");
+            sb.Append("  StringId: ").Append(StringId).Append("\n");
+            sb.Append("  User: ").Append(User).Append("\n");
+            sb.Append("  String: ").Append(String).Append("\n");
+            sb.Append("  LanguageId: ").Append(LanguageId).Append("\n");
+            sb.Append("  Type: ").Append(Type).Append("\n");
+            sb.Append("  IssueType: ").Append(IssueType).Append("\n");
+            sb.Append("  IssueStatus: ").Append(IssueStatus).Append("\n");
+            sb.Append("  ResolverId: ").Append(ResolverId).Append("\n");
+            sb.Append("  Resolver: ").Append(Resolver).Append("\n");
+            sb.Append("  ResolvedAt: ").Append(ResolvedAt).Append("\n");
+            sb.Append("  CreatedAt: ").Append(CreatedAt).Append("\n");
+            sb.Append("}\n");
+            return sb.ToString();
+        }
+
+        /// <summary>
+        /// Returns the JSON string presentation of the object
+        /// </summary>
+        /// <returns>JSON string presentation of the object</returns>
+        public virtual string ToJson()
+        {
+            return Newtonsoft.Json.JsonConvert.SerializeObject(this, Newtonsoft.Json.Formatting.Indented);
+        }
+
+        /// <summary>
+        /// Returns true if objects are equal
+        /// </summary>
+        /// <param name="input">Object to be compared</param>
+        /// <returns>Boolean</returns>
+        public override bool Equals(object input)
+        {
+            return this.Equals(input as StringComment);
+        }
+
+        /// <summary>
+        /// Returns true if StringComment instances are equal
+        /// </summary>
+        /// <param name="input">Instance of StringComment to be compared</param>
+        /// <returns>Boolean</returns>
+        public bool Equals(StringComment input)
+        {
+            if (input == null)
+                return false;
+
+            return 
+                (
+                    this.Id == input.Id ||
+                    this.Id.Equals(input.Id)
+                ) && 
+                (
+                    this.Text == input.Text ||
+                    (this.Text != null &&
+                    this.Text.Equals(input.Text))
+                ) && 
+                (
+                    this.UserId == input.UserId ||
+                    this.UserId.Equals(input.UserId)
+                ) && 
+                (
+                    this.StringId == input.StringId ||
+                    this.StringId.Equals(input.StringId)
+                ) && 
+                (
+                    this.User == input.User ||
+                    (this.User != null &&
+                    this.User.Equals(input.User))
+                ) && 
+                (
+                    this.String == input.String ||
+                    (this.String != null &&
+                    this.String.Equals(input.String))
+                ) && 
+                (
+                    this.LanguageId == input.LanguageId ||
+                    (this.LanguageId != null &&
+                    this.LanguageId.Equals(input.LanguageId))
+                ) && 
+                (
+                    this.Type == input.Type ||
+                    this.Type.Equals(input.Type)
+                ) && 
+                (
+                    this.IssueType == input.IssueType ||
+                    this.IssueType.Equals(input.IssueType)
+                ) && 
+                (
+                    this.IssueStatus == input.IssueStatus ||
+                    this.IssueStatus.Equals(input.IssueStatus)
+                ) && 
+                (
+                    this.ResolverId == input.ResolverId ||
+                    this.ResolverId.Equals(input.ResolverId)
+                ) && 
+                (
+                    this.Resolver == input.Resolver ||
+                    (this.Resolver != null &&
+                    this.Resolver.Equals(input.Resolver))
+                ) && 
+                (
+                    this.ResolvedAt == input.ResolvedAt ||
+                    (this.ResolvedAt != null &&
+                    this.ResolvedAt.Equals(input.ResolvedAt))
+                ) && 
+                (
+                    this.CreatedAt == input.CreatedAt ||
+                    (this.CreatedAt != null &&
+                    this.CreatedAt.Equals(input.CreatedAt))
+                );
+        }
+
+        /// <summary>
+        /// Gets the hash code
+        /// </summary>
+        /// <returns>Hash code</returns>
+        public override int GetHashCode()
+        {
+            unchecked // Overflow is fine, just wrap
+            {
+                int hashCode = 41;
+                hashCode = hashCode * 59 + this.Id.GetHashCode();
+                if (this.Text != null)
+                    hashCode = hashCode * 59 + this.Text.GetHashCode();
+                hashCode = hashCode * 59 + this.UserId.GetHashCode();
+                hashCode = hashCode * 59 + this.StringId.GetHashCode();
+                if (this.User != null)
+                    hashCode = hashCode * 59 + this.User.GetHashCode();
+                if (this.String != null)
+                    hashCode = hashCode * 59 + this.String.GetHashCode();
+                if (this.LanguageId != null)
+                    hashCode = hashCode * 59 + this.LanguageId.GetHashCode();
+                hashCode = hashCode * 59 + this.Type.GetHashCode();
+                hashCode = hashCode * 59 + this.IssueType.GetHashCode();
+                hashCode = hashCode * 59 + this.IssueStatus.GetHashCode();
+                hashCode = hashCode * 59 + this.ResolverId.GetHashCode();
+                if (this.Resolver != null)
+                    hashCode = hashCode * 59 + this.Resolver.GetHashCode();
+                if (this.ResolvedAt != null)
+                    hashCode = hashCode * 59 + this.ResolvedAt.GetHashCode();
+                if (this.CreatedAt != null)
+                    hashCode = hashCode * 59 + this.CreatedAt.GetHashCode();
+                return hashCode;
+            }
+        }
+
+        /// <summary>
+        /// To validate all properties of the instance
+        /// </summary>
+        /// <param name="validationContext">Validation context</param>
+        /// <returns>Validation Result</returns>
+        public IEnumerable<System.ComponentModel.DataAnnotations.ValidationResult> Validate(ValidationContext validationContext)
+        {
+            yield break;
+        }
+    }
+
+}
