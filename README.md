@@ -44,6 +44,15 @@ dotnet add package Crowdin.Api --version 2.0.0
 paket add Crowdin.Api --version 2.0.0
 ```
 
+
+---
+
+:bookmark_tabs: For versions *1.x.x* and lower see the [branch api/v1](https://github.com/crowdin/crowdin-api-client-dotnet/tree/api/v1). Please note that these versions are no longer supported.
+
+:exclamation: Migration from version *1.x.x* to *2.x.x* requires changes in your code.
+
+---
+
 ### Usage examples
 
 Instantiate a client with all available APIs
