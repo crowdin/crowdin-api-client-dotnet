@@ -1,29 +1,11 @@
+
 <Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
-    <AssemblyVersion>0.0.1.0</AssemblyVersion>
-    <FileVersion>0.0.1.0</FileVersion>
-    <Version>1.0.3</Version>
-    <PackageId>Crowdin.Api.Client</PackageId>
-    <Authors>Crowdin</Authors>
-    <Product>Crowdin Api</Product>
-    <PackageLicenseUrl>https://github.com/crowdin/crowdin-dotnet-client/raw/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/crowdin/crowdin-dotnet-client</PackageProjectUrl>
-    <RepositoryUrl>git@github.com:crowdin/crowdin-dotnet-client.git</RepositoryUrl>
-    <RepositoryType>Git</RepositoryType>
-    <PackageTags>Crowdin API</PackageTags>
-    <LangVersion>7.3</LangVersion>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <WarningsAsErrors />
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <WarningsAsErrors />
-  </PropertyGroup>
-
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <LangVersion>8</LangVersion>
+    </PropertyGroup>
+    <ItemGroup>
+      <PackageReference Include="JetBrains.Annotations" Version="2021.3.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    </ItemGroup>
 </Project>

@@ -1,92 +1,126 @@
 [<p align='center'><img src='https://support.crowdin.com/assets/logos/crowdin-dark-symbol.png' data-canonical-src='https://support.crowdin.com/assets/logos/crowdin-dark-symbol.png' width='200' height='200' align='center'/></p>](https://crowdin.com)
 
-# Crowdin .NET client (v1)
+# Crowdin .NET client
 
-The Crowdin .NET client is a lightweight interface to the Crowdin API v1. It provides common services for making API requests.
+The Crowdin .NET client is a lightweight interface to the Crowdin API v2. It provides common services for making API requests.
 
 Our API is a full-featured RESTful API that helps you to integrate localization into your development process. The endpoints that we use allow you to easily make calls to retrieve information and to execute actions needed.
 
-For more about Crowdin API v1 see the [documentation](https://support.crowdin.com/api/api-integration-setup/).
-
-### Status
-
-[![Nuget](https://img.shields.io/nuget/v/Crowdin.Api?cacheSeconds=5000)](https://www.nuget.org/packages/Crowdin.Api/)
-[![Nuget](https://img.shields.io/nuget/dt/crowdin.api?cacheSeconds=800)](https://www.nuget.org/packages/Crowdin.Api/)
-[![GitHub issues](https://img.shields.io/github/issues/crowdin/crowdin-dotnet-client?cacheSeconds=10000)](https://github.com/crowdin/crowdin-dotnet-client/issues)
-[![GitHub contributors](https://img.shields.io/github/contributors/crowdin/crowdin-dotnet-client?cacheSeconds=10000)](https://github.com/crowdin/crowdin-dotnet-client/graphs/contributors)
-[![GitHub](https://img.shields.io/github/license/crowdin/crowdin-dotnet-client?cacheSeconds=20000)](https://github.com/crowdin/crowdin-dotnet-client/blob/master/LICENSE)
-
-[![Azure DevOps builds (branch)](https://img.shields.io/azure-devops/build/crowdin/crowdin-dotnet-client/19/master?cacheSeconds=1000)](https://dev.azure.com/crowdin/crowdin-dotnet-client/_build/latest?definitionId=27&branchName=master)
-[![Azure DevOps tests (branch)](https://img.shields.io/azure-devops/tests/crowdin/crowdin-dotnet-client/19/master?cacheSeconds=1000)](https://dev.azure.com/crowdin/crowdin-dotnet-client/_build/latest?definitionId=27&branchName=master)
+For more about Crowdin API v2 see the documentation:
+- [Crowdin](https://support.crowdin.com/api/v2/)
+- [Crowdin Enterprise](https://support.crowdin.com/enterprise/api/)
 
 ### Requirements
 
-* .NET Core - 2.1
-* C# language version - 7.3
+* .NET Standard 2.0 support
+* C# language version - 8.0+
 
 ### Installation
 
-1. Install via NuGet:
+Install via NuGet:
 
-```C#
+```
 // Package Manager
-Install-Package Crowdin.Api
+Install-Package Crowdin.Api -Version 2.0.0
 
 // .Net CLI
-dotnet add package Crowdin.Api
+dotnet add package Crowdin.Api --version 2.0.0
 
-// PackageReference
-<PackageReference Include="Crowdin.Api" />
+// Package Reference
+<PackageReference Include="Crowdin.Api" Version="2.0.0" />
 
 // Paket CLI
-paket add Crowdin.Api
+paket add Crowdin.Api --version 2.0.0
 ```
 
-2. Download this library to your project's 3rd party libraries path:
+### Usage examples
 
-    ```
-    git clone https://github.com/crowdin/crowdin-dotnet-client.git </your-project/src/Crowdin.Api>
-    ```
-
-    include library:
-
-    ```C#
-    <ItemGroup>
-      <ProjectReference Include="src\Crowdin.Api\Crowdin.Api.csproj" />
-    </ItemGroup>
-    ```
-
-    and start using it in your project:
-
-    ```C#
-    using Crowdin.Api;
-    ```
-
-### Quick Start
-
-The API client must be instantiated and configured before calling any API method.
+Instantiate a client with all available APIs
 
 ```C#
 
-var httpClient = new HttpClient {BaseAddress = new Uri(Configuration["api"])};
-var crowdin = new Client(httpClient);
-
-var projectId = Configuration["project:projectId"];
-var projectCredentials = GetConfigValue<ProjectCredentials>("project");
-
-ProjectInfo project = await crowdin.GetProjectInfo(projectId, projectCredentials);
-
-ConsoleOutput(project);
+var credentials = new CrowdinCredentials
+{
+    AccessToken = "<paste token here>",
+    Organization = "organizationName (for Crowdin Enterprise only)"
+};
+var client = new CrowdinApiClient(credentials);
 ```
 
-Please go to the [samples](https://github.com/crowdin/crowdin-dotnet-client/tree/master/samples) section to see more API calls examples.
+Or use only needed executors
+```C#
+var credentials = new CrowdinCredentials
+{
+    AccessToken = "<paste token here>",
+    Organization = "organizationName (for Crowdin Enterprise only)"
+};
+
+var client = new CrowdinApiClient(credentials);
+var executor = new SourceFilesApiExecutor(client);
+```
+
+Storage
+
+1. List storages
+
+```C#
+ResponseList<StorageResource> storages = await client.Storage.ListStorages();
+```
+
+2. Add storage
+
+```C#
+FileStream fileStream = File.Open("/path/to/file", FileMode.Open);
+StorageResource storageResource = await client.Storage.AddStorage(fileStream, filename: "MyFile");
+```
+
+Projects
+
+1. List projects
+
+```C#
+ResponseList<EnterpriseProject> response = await client.ProjectsGroups.ListProjects<EnterpriseProject>();
+```
+
+2. Edit project
+
+```C#
+const int projectId = 1;
+
+// Edit info & settings with one request
+var patches = new List<ProjectPatch>
+{
+    // Edit project info
+    new ProjectInfoPatch
+    {
+        Value = "name",
+        Path = ProjectInfoPathCode.Cname,
+        Operation = PatchOperation.Replace
+    },
+    new ProjectInfoPatch
+    {
+        Value = "value here",
+        Path = new ProjectInfoPath(ProjectInfoPathCode.LanguageMapping, "languageId", "mapping"),
+        Operation = PatchOperation.Test
+    },
+    
+    // Edit project settings
+    new ProjectSettingPatch
+    {
+        Value = true,
+        Path = ProjectSettingPathCode.AutoSubstitution,
+        Operation = PatchOperation.Replace
+    }
+};
+
+// PATCH request
+var projectSettingsResponse = await client.ProjectsGroups.EditProject<ProjectSettings>(projectId, patches);
+Console.WriteLine(projectSettingsResponse);
+```
 
 ### Contribution
-We are happy to accept contributions to the Crowdin .NET client. To contribute please do the following:
-1. Fork the repository on GitHub.
-2. Decide which code you want to submit. Commit your changes and push to the new branch.
-3. Ensure that your code adheres to standard conventions, as used in the rest of the library.
-4. Submit a pull request with your patch on Github.
+
+If you want to contribute please read the [Contributing](/CONTRIBUTING.md) guidelines.
 
 ### Seeking Assistance
 If you find any problems or would like to suggest a feature, please feel free to file an issue on Github at [Issues Page](https://github.com/crowdin/crowdin-dotnet-client/issues).
