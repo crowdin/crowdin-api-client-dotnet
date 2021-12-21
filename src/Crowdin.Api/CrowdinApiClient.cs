@@ -189,13 +189,12 @@ namespace Crowdin.Api
             await CheckDefaultPreconditionsAndErrors(response);
             result.StatusCode = response.StatusCode;
             
-            if (!response.Content.Headers.ContentType.Equals(DefaultContentType))
+            if (response.Content.Headers.ContentType.Equals(DefaultContentType))
             {
-                throw new CrowdinApiException("Response Content-Type is not application/json");
+                result.JsonObject = await response.Content.ParseJsonBodyAsync();
             }
 
             result.Headers = response.Headers;
-            result.JsonObject = await response.Content.ParseJsonBodyAsync();
             return result;
         }
 
