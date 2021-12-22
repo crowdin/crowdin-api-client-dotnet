@@ -32,16 +32,16 @@ Install via NuGet:
 
 ```
 // Package Manager
-Install-Package Crowdin.Api -Version 2.0.0
+Install-Package Crowdin.Api -Version 2.1.0
 
 // .Net CLI
-dotnet add package Crowdin.Api --version 2.0.0
+dotnet add package Crowdin.Api --version 2.1.0
 
 // Package Reference
-<PackageReference Include="Crowdin.Api" Version="2.0.0" />
+<PackageReference Include="Crowdin.Api" Version="2.1.0" />
 
 // Paket CLI
-paket add Crowdin.Api --version 2.0.0
+paket add Crowdin.Api --version 2.1.0
 ```
 
 
@@ -123,7 +123,7 @@ var patches = new List<ProjectPatch>
         Path = new ProjectInfoPath(ProjectInfoPathCode.LanguageMapping, "languageId", "mapping"),
         Operation = PatchOperation.Test
     },
-    
+
     // Edit project settings
     new ProjectSettingPatch
     {
