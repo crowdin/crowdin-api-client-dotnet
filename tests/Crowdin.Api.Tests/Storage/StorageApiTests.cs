@@ -50,7 +50,7 @@ namespace Crowdin.Api.Tests.Storage
             var mockClient = new Mock<ICrowdinApiClient>();
 
             mockClient
-                .Setup(client => client.SendDeleteRequest($"/storages/{storageId}"))
+                .Setup(client => client.SendDeleteRequest($"/storages/{storageId}", null))
                 .ReturnsAsync(HttpStatusCode.NoContent);
 
             var storageApi = new StorageApiExecutor(mockClient.Object);
@@ -64,7 +64,7 @@ namespace Crowdin.Api.Tests.Storage
             var mockClient = new Mock<ICrowdinApiClient>();
 
             mockClient
-                .Setup(client => client.SendDeleteRequest($"/storages/{storageId}"))
+                .Setup(client => client.SendDeleteRequest($"/storages/{storageId}", null))
                 .ReturnsAsync(HttpStatusCode.OK);
 
             var storageApi = new StorageApiExecutor(mockClient.Object);

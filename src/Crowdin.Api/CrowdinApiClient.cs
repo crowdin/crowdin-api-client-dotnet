@@ -12,8 +12,12 @@ using Crowdin.Api.Core;
 using Crowdin.Api.Core.Converters;
 using Crowdin.Api.Languages;
 using Crowdin.Api.ProjectsGroups;
+using Crowdin.Api.Reports;
+using Crowdin.Api.Screenshots;
 using Crowdin.Api.SourceFiles;
+using Crowdin.Api.SourceStrings;
 using Crowdin.Api.Storage;
+using Crowdin.Api.StringTranslations;
 using Crowdin.Api.Translations;
 using Crowdin.Api.TranslationStatus;
 
@@ -32,9 +36,17 @@ namespace Crowdin.Api
         
         public ProjectsGroupsApiExecutor ProjectsGroups { get; }
         
+        public ReportsApiExecutor Reports { get; }
+        
+        public ScreenshotsApiExecutor Screenshots { get; }
+        
         public SourceFilesApiExecutor SourceFiles { get; }
         
+        public SourceStringsApiExecutor SourceStrings { get; }
+        
         public StorageApiExecutor Storage { get; }
+        
+        public StringTranslationsApiExecutor StringTranslations { get; }
         
         public TranslationsApiExecutor Translations { get; }
         
@@ -85,8 +97,12 @@ namespace Crowdin.Api
 
             Languages = new LanguagesApiExecutor(this);
             ProjectsGroups = new ProjectsGroupsApiExecutor(this);
+            Reports = new ReportsApiExecutor(this);
+            Screenshots = new ScreenshotsApiExecutor(this);
             SourceFiles = new SourceFilesApiExecutor(this);
+            SourceStrings = new SourceStringsApiExecutor(this);
             Storage = new StorageApiExecutor(this);
+            StringTranslations = new StringTranslationsApiExecutor(this);
             Translations = new TranslationsApiExecutor(this);
             TranslationStatus = new TranslationStatusApiExecutor(this);
         }
@@ -130,14 +146,18 @@ namespace Crowdin.Api
             return SendRequest(request);
         }
 
-        public Task<CrowdinApiResult> SendPutRequest(string subUrl, object body)
+        public Task<CrowdinApiResult> SendPutRequest(string subUrl, object? body = null)
         {
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Put,
-                RequestUri = new Uri(FormRequestUrl(subUrl)),
-                Content = CreateJsonContent(body)
+                RequestUri = new Uri(FormRequestUrl(subUrl))
             };
+
+            if (body != null)
+            {
+                request.Content = CreateJsonContent(body);
+            }
 
             return SendRequest(request);
         }
@@ -154,12 +174,12 @@ namespace Crowdin.Api
             return SendRequest(request);
         }
 
-        public Task<HttpStatusCode> SendDeleteRequest(string subUrl)
+        public Task<HttpStatusCode> SendDeleteRequest(string subUrl, IDictionary<string, string>? queryParams = null)
         {
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Delete,
-                RequestUri = new Uri(FormRequestUrl(subUrl))
+                RequestUri = new Uri(FormRequestUrl(subUrl, queryParams))
             };
 
             return SendRequest(request).ContinueWith(task => task.Result.StatusCode);

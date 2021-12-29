@@ -19,20 +19,30 @@ namespace Crowdin.Api.Core.Converters
         
         public override void WriteJson(JsonWriter writer, object? value, JsonSerializer serializer)
         {
-            if (value != null)
+            if (value is null) return;
+            Type valueType = value.GetType();
+            
+            if (valueType.IsDefined(typeof(StrictStringRepresentation)))
             {
-                if (value
-                    .GetType()
-                    .GetMember(value.ToString())
-                    .First()
-                    .IsDefined(typeof(DescriptionAttribute), false))
+                string? memberName = Enum.GetName(valueType, value);
+
+                if (memberName is null)
                 {
-                    writer.WriteValue((value as Enum).ToDescriptionString());
+                    throw new Exception($"Value {value} not found on enum type {valueType.Name}");
                 }
-                else
-                {
-                    writer.WriteValue(Convert.ToInt32(value));
-                }
+                
+                writer.WriteValue(memberName);
+            }
+            else if (valueType
+                     .GetMember(value.ToString())
+                     .First()
+                     .IsDefined(typeof(DescriptionAttribute), false))
+            {
+                writer.WriteValue((value as Enum).ToDescriptionString());
+            }
+            else
+            {
+                writer.WriteValue(Convert.ToInt32(value));
             }
         }
 
@@ -70,5 +80,11 @@ namespace Crowdin.Api.Core.Converters
 
             throw new ArgumentException();
         }
+    }
+
+    [AttributeUsage(AttributeTargets.Enum)]
+    public class StrictStringRepresentation : Attribute
+    {
+        
     }
 }

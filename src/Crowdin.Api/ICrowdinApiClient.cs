@@ -17,11 +17,11 @@ namespace Crowdin.Api
 
         Task<CrowdinApiResult> SendPostRequest(string subUrl, object body, IDictionary<string, string>? extraHeaders = null);
 
-        Task<CrowdinApiResult> SendPutRequest(string subUrl, object body);
+        Task<CrowdinApiResult> SendPutRequest(string subUrl, object? body = null);
 
         Task<CrowdinApiResult> SendPatchRequest(string subUrl, IEnumerable<PatchEntry> body);
 
-        Task<HttpStatusCode> SendDeleteRequest(string subUrl);
+        Task<HttpStatusCode> SendDeleteRequest(string subUrl, IDictionary<string, string>? queryParams = null);
 
         Task<CrowdinApiResult> UploadFile(string subUrl, string filename, Stream fileStream);
     }
