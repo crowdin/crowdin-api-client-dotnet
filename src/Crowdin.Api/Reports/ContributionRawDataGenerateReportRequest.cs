@@ -15,7 +15,9 @@ namespace Crowdin.Api.Reports
         public string Name => "contribution-raw-data";
         
         [JsonProperty("schema")]
+#pragma warning disable CS8618
         public RequestSchema Schema { get; set; }
+#pragma warning restore CS8618
 
         [PublicAPI]
         public class RequestSchema

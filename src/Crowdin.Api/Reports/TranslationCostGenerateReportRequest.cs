@@ -16,7 +16,9 @@ namespace Crowdin.Api.Reports
         public string Name => "translation-costs";
         
         [JsonProperty("schema")]
+#pragma warning disable CS8618
         public SchemaBase Schema { get; set; }
+#pragma warning restore CS8618
 
         [PublicAPI]
         public abstract class SchemaBase

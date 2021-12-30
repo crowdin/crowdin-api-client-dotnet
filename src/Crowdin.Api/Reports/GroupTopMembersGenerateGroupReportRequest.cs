@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
+#nullable enable
+
 namespace Crowdin.Api.Reports
 {
     [PublicAPI]
@@ -13,7 +15,9 @@ namespace Crowdin.Api.Reports
         public string Name => "group-top-members";
         
         [JsonProperty("schema")]
+#pragma warning disable CS8618
         public RequestSchema Schema { get; set; }
+#pragma warning restore CS8618
 
         [PublicAPI]
         public class RequestSchema

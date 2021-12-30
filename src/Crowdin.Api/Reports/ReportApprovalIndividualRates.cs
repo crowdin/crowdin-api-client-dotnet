@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
+#nullable enable
+
 namespace Crowdin.Api.Reports
 {
     [PublicAPI]

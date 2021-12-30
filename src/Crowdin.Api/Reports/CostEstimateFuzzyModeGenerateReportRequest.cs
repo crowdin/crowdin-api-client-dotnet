@@ -16,7 +16,9 @@ namespace Crowdin.Api.Reports
         public string Name => "costs-estimation";
         
         [JsonProperty("schema")]
+#pragma warning disable CS8618
         public SchemaBase Schema { get; set; }
+#pragma warning restore CS8618
 
         [PublicAPI]
         public abstract class SchemaBase
@@ -72,7 +74,7 @@ namespace Crowdin.Api.Reports
         public class GeneralSchema : GeneralSchemaBase
         {
             [JsonProperty("mode")]
-            public string? Mode => "fuzzy";
+            public string Mode => "fuzzy";
             
             [JsonProperty("calculateInternalFuzzyMatches")]
             public bool? CalculateInternalFuzzyMatches { get; set; }
@@ -88,7 +90,7 @@ namespace Crowdin.Api.Reports
         public class ByTaskSchema : ByTaskSchemaBase
         {
             [JsonProperty("mode")]
-            public string? Mode => "fuzzy";
+            public string Mode => "fuzzy";
             
             [JsonProperty("calculateInternalFuzzyMatches")]
             public bool? CalculateInternalFuzzyMatches { get; set; }
