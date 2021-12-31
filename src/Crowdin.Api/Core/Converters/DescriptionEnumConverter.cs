@@ -22,7 +22,14 @@ namespace Crowdin.Api.Core.Converters
             if (value is null) return;
             Type valueType = value.GetType();
             
-            if (valueType.IsDefined(typeof(StrictStringRepresentation)))
+            if (valueType
+                     .GetMember(value.ToString())
+                     .First()
+                     .IsDefined(typeof(DescriptionAttribute), false))
+            {
+                writer.WriteValue((value as Enum).ToDescriptionString());
+            }
+            else if (valueType.IsDefined(typeof(StrictStringRepresentation)))
             {
                 string? memberName = Enum.GetName(valueType, value);
 
@@ -32,13 +39,6 @@ namespace Crowdin.Api.Core.Converters
                 }
                 
                 writer.WriteValue(memberName);
-            }
-            else if (valueType
-                     .GetMember(value.ToString())
-                     .First()
-                     .IsDefined(typeof(DescriptionAttribute), false))
-            {
-                writer.WriteValue((value as Enum).ToDescriptionString());
             }
             else
             {

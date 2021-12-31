@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
-using Crowdin.Api;
 using Crowdin.Api.Core;
 using Crowdin.Api.SourceFiles;
 using Crowdin.Api.Tests.Core;
@@ -47,7 +46,7 @@ namespace Crowdin.Api.Tests.SourceFiles
 
             mockClient
                 .Setup(client => client
-                    .SendPatchRequest($"/projects/{projectId}/files/{fileId}", patches))
+                    .SendPatchRequest($"/projects/{projectId}/files/{fileId}", patches, null))
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,

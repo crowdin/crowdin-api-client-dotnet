@@ -125,15 +125,19 @@ namespace Crowdin.Api
         }
 
         public Task<CrowdinApiResult> SendPostRequest(
-            string subUrl, object body,
+            string subUrl, object? body = null,
             IDictionary<string, string>? extraHeaders = null)
         {
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Post,
-                Content = CreateJsonContent(body),
                 RequestUri = new Uri(FormRequestUrl(subUrl))
             };
+            
+            if (body != null)
+            {
+                request.Content = CreateJsonContent(body);
+            }
 
             if (extraHeaders != null && extraHeaders.Count > 0)
             {
@@ -162,13 +166,15 @@ namespace Crowdin.Api
             return SendRequest(request);
         }
 
-        public Task<CrowdinApiResult> SendPatchRequest(string subUrl, IEnumerable<PatchEntry> body)
+        public Task<CrowdinApiResult> SendPatchRequest(
+            string subUrl, IEnumerable<PatchEntry> body,
+            IDictionary<string, string>? queryParams = null)
         {
             var request = new HttpRequestMessage
             {
                 Method = new HttpMethod("PATCH"),
                 Content = CreateJsonContent(body, true),
-                RequestUri = new Uri(FormRequestUrl(subUrl))
+                RequestUri = new Uri(FormRequestUrl(subUrl, queryParams))
             };
 
             return SendRequest(request);
