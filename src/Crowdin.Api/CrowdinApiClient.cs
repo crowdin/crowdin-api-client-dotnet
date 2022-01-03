@@ -18,6 +18,7 @@ using Crowdin.Api.SourceFiles;
 using Crowdin.Api.SourceStrings;
 using Crowdin.Api.Storage;
 using Crowdin.Api.StringTranslations;
+using Crowdin.Api.Tasks;
 using Crowdin.Api.Translations;
 using Crowdin.Api.TranslationStatus;
 
@@ -47,6 +48,8 @@ namespace Crowdin.Api
         public StorageApiExecutor Storage { get; }
         
         public StringTranslationsApiExecutor StringTranslations { get; }
+        
+        public TasksApiExecutor Tasks { get; }
         
         public TranslationsApiExecutor Translations { get; }
         
@@ -103,6 +106,7 @@ namespace Crowdin.Api
             SourceStrings = new SourceStringsApiExecutor(this);
             Storage = new StorageApiExecutor(this);
             StringTranslations = new StringTranslationsApiExecutor(this);
+            Tasks = new TasksApiExecutor(this);
             Translations = new TranslationsApiExecutor(this);
             TranslationStatus = new TranslationStatusApiExecutor(this);
         }
