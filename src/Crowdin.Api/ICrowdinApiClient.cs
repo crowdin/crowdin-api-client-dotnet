@@ -22,6 +22,8 @@ namespace Crowdin.Api
         Task<CrowdinApiResult> SendPatchRequest(string subUrl, IEnumerable<PatchEntry> body);
 
         Task<HttpStatusCode> SendDeleteRequest(string subUrl, IDictionary<string, string>? queryParams = null);
+        
+        Task<CrowdinApiResult> SendDeleteRequest_FullResult(string subUrl, IDictionary<string, string>? queryParams = null);
 
         Task<CrowdinApiResult> UploadFile(string subUrl, string filename, Stream fileStream);
     }
