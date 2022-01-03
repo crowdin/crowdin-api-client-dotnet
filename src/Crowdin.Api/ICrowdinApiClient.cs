@@ -15,7 +15,7 @@ namespace Crowdin.Api
         
         Task<CrowdinApiResult> SendGetRequest(string subUrl, IDictionary<string, string>? queryParams = null);
 
-        Task<CrowdinApiResult> SendPostRequest(string subUrl, object body, IDictionary<string, string>? extraHeaders = null);
+        Task<CrowdinApiResult> SendPostRequest(string subUrl, object? body = null, IDictionary<string, string>? extraHeaders = null);
 
         Task<CrowdinApiResult> SendPutRequest(string subUrl, object? body = null);
 

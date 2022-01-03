@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.Core.Converters;
+using Crowdin.Api.Distributions;
 using Crowdin.Api.Languages;
 using Crowdin.Api.ProjectsGroups;
 using Crowdin.Api.Reports;
@@ -32,6 +33,8 @@ namespace Crowdin.Api
     [PublicAPI]
     public class CrowdinApiClient : ICrowdinApiClient
     {
+        public DistributionsApiExecutor Distributions { get; }
+        
         public LanguagesApiExecutor Languages { get; }
         
         public ProjectsGroupsApiExecutor ProjectsGroups { get; }
@@ -95,6 +98,7 @@ namespace Crowdin.Api
                 _baseUrl = "https://api.crowdin.com/api/v2";
             }
 
+            Distributions = new DistributionsApiExecutor(this);
             Languages = new LanguagesApiExecutor(this);
             ProjectsGroups = new ProjectsGroupsApiExecutor(this);
             Reports = new ReportsApiExecutor(this);
@@ -125,15 +129,19 @@ namespace Crowdin.Api
         }
 
         public Task<CrowdinApiResult> SendPostRequest(
-            string subUrl, object body,
+            string subUrl, object? body = null,
             IDictionary<string, string>? extraHeaders = null)
         {
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Post,
-                Content = CreateJsonContent(body),
                 RequestUri = new Uri(FormRequestUrl(subUrl))
             };
+            
+            if (body != null)
+            {
+                request.Content = CreateJsonContent(body);
+            }
 
             if (extraHeaders != null && extraHeaders.Count > 0)
             {
