@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.Core.Converters;
+using Crowdin.Api.Distributions;
 using Crowdin.Api.Languages;
 using Crowdin.Api.ProjectsGroups;
 using Crowdin.Api.Reports;
@@ -33,6 +34,8 @@ namespace Crowdin.Api
     [PublicAPI]
     public class CrowdinApiClient : ICrowdinApiClient
     {
+        public DistributionsApiExecutor Distributions { get; }
+        
         public LanguagesApiExecutor Languages { get; }
         
         public ProjectsGroupsApiExecutor ProjectsGroups { get; }
@@ -98,6 +101,7 @@ namespace Crowdin.Api
                 _baseUrl = "https://api.crowdin.com/api/v2";
             }
 
+            Distributions = new DistributionsApiExecutor(this);
             Languages = new LanguagesApiExecutor(this);
             ProjectsGroups = new ProjectsGroupsApiExecutor(this);
             Reports = new ReportsApiExecutor(this);
