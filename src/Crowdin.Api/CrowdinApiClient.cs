@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using Crowdin.Api.Core;
 using Crowdin.Api.Core.Converters;
 using Crowdin.Api.Distributions;
+using Crowdin.Api.Labels;
 using Crowdin.Api.Languages;
 using Crowdin.Api.ProjectsGroups;
 using Crowdin.Api.Reports;
@@ -35,6 +36,8 @@ namespace Crowdin.Api
     public class CrowdinApiClient : ICrowdinApiClient
     {
         public DistributionsApiExecutor Distributions { get; }
+        
+        public LabelsApiExecutor Labels { get; }
         
         public LanguagesApiExecutor Languages { get; }
         
@@ -102,6 +105,7 @@ namespace Crowdin.Api
             }
 
             Distributions = new DistributionsApiExecutor(this);
+            Labels = new LabelsApiExecutor(this);
             Languages = new LanguagesApiExecutor(this);
             ProjectsGroups = new ProjectsGroupsApiExecutor(this);
             Reports = new ReportsApiExecutor(this);
@@ -190,13 +194,18 @@ namespace Crowdin.Api
 
         public Task<HttpStatusCode> SendDeleteRequest(string subUrl, IDictionary<string, string>? queryParams = null)
         {
+            return SendDeleteRequest_FullResult(subUrl, queryParams).ContinueWith(task => task.Result.StatusCode);
+        }
+        
+        public Task<CrowdinApiResult> SendDeleteRequest_FullResult(string subUrl, IDictionary<string, string>? queryParams = null)
+        {
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Delete,
                 RequestUri = new Uri(FormRequestUrl(subUrl, queryParams))
             };
 
-            return SendRequest(request).ContinueWith(task => task.Result.StatusCode);
+            return SendRequest(request);
         }
 
         public Task<CrowdinApiResult> UploadFile(string subUrl, string filename, Stream fileStream)
