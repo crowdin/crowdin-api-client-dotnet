@@ -20,6 +20,7 @@ using Crowdin.Api.Screenshots;
 using Crowdin.Api.SourceFiles;
 using Crowdin.Api.SourceStrings;
 using Crowdin.Api.Storage;
+using Crowdin.Api.StringComments;
 using Crowdin.Api.StringTranslations;
 using Crowdin.Api.Tasks;
 using Crowdin.Api.Translations;
@@ -55,6 +56,8 @@ namespace Crowdin.Api
         public SourceStringsApiExecutor SourceStrings { get; }
         
         public StorageApiExecutor Storage { get; }
+        
+        public StringCommentsApiExecutor StringComments { get; }
         
         public StringTranslationsApiExecutor StringTranslations { get; }
         
@@ -117,6 +120,7 @@ namespace Crowdin.Api
             SourceFiles = new SourceFilesApiExecutor(this);
             SourceStrings = new SourceStringsApiExecutor(this);
             Storage = new StorageApiExecutor(this);
+            StringComments = new StringCommentsApiExecutor(this);
             StringTranslations = new StringTranslationsApiExecutor(this);
             Tasks = new TasksApiExecutor(this);
             Translations = new TranslationsApiExecutor(this);

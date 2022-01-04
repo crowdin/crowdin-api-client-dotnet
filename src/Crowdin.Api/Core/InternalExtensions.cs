@@ -58,5 +58,15 @@ namespace Crowdin.Api.Core
                 queryParams.Add(key, value!);
             }
         }
+
+        internal static void AddDescriptionEnumValueIfPresent<TEnum>(
+            this IDictionary<string, string> queryParams, string key, TEnum? enumMember)
+            where TEnum : struct, Enum
+        {
+            if (enumMember.HasValue)
+            {
+                queryParams.Add(key, enumMember.Value.ToDescriptionString());
+            }
+        }
     }
 }

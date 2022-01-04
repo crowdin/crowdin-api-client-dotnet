@@ -1,5 +1,7 @@
 ﻿
-using Crowdin.Api;
+using System.Collections.Generic;
+using System.Linq;
+
 using Crowdin.Api.Core;
 using Crowdin.Api.Core.Converters;
 
@@ -45,6 +47,11 @@ namespace Crowdin.Api.Tests.Core
                     new ToStringConverter(),
                 }
             };
+        }
+        
+        public static string ToQueryString(this IDictionary<string, string> queryParams)
+        {
+            return string.Join("&", queryParams.Select(kvPair => $"{kvPair.Key}={kvPair.Value}"));
         }
     }
 }
