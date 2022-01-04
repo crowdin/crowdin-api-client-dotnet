@@ -13,6 +13,7 @@ using Crowdin.Api.Core.Converters;
 using Crowdin.Api.Distributions;
 using Crowdin.Api.Labels;
 using Crowdin.Api.Languages;
+using Crowdin.Api.MachineTranslationEngines;
 using Crowdin.Api.ProjectsGroups;
 using Crowdin.Api.Reports;
 using Crowdin.Api.Screenshots;
@@ -40,6 +41,8 @@ namespace Crowdin.Api
         public LabelsApiExecutor Labels { get; }
         
         public LanguagesApiExecutor Languages { get; }
+        
+        public MachineTranslationEnginesApiExecutor MachineTranslationEngines { get; }
         
         public ProjectsGroupsApiExecutor ProjectsGroups { get; }
         
@@ -107,6 +110,7 @@ namespace Crowdin.Api
             Distributions = new DistributionsApiExecutor(this);
             Labels = new LabelsApiExecutor(this);
             Languages = new LanguagesApiExecutor(this);
+            MachineTranslationEngines = new MachineTranslationEnginesApiExecutor(this);
             ProjectsGroups = new ProjectsGroupsApiExecutor(this);
             Reports = new ReportsApiExecutor(this);
             Screenshots = new ScreenshotsApiExecutor(this);
