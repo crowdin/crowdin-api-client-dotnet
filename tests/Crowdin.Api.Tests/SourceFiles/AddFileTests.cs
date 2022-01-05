@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
-using Crowdin.Api;
+
 using Crowdin.Api.Core;
 using Crowdin.Api.SourceFiles;
 using Crowdin.Api.Tests.Core;
+
 using Moq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -87,11 +88,11 @@ namespace Crowdin.Api.Tests.SourceFiles
 
             JsonSerializerSettings options = TestUtils.CreateJsonSerializerOptions();
 
-            var obj = JsonConvert.DeserializeObject<AddFileRequest>(rightRequestJson, options);
+            var obj = JsonConvert.DeserializeObject<AddFileRequest>(rightRequestJson, options)!;
             
             Assert.NotNull(obj);
-            Assert.IsType<SpreadsheetFileImportOptions>(obj?.ImportOptions);
-            Assert.Equal(4, (obj.ImportOptions as SpreadsheetFileImportOptions).Scheme.Count);
+            Assert.IsType<SpreadsheetFileImportOptions>(obj.ImportOptions);
+            Assert.Equal(4, (obj.ImportOptions as SpreadsheetFileImportOptions)!.Scheme!.Count);
         }
     }
 }
