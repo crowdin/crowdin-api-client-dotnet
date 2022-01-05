@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using Crowdin.Api.Core;
 using Crowdin.Api.Core.Converters;
 using Crowdin.Api.Distributions;
+using Crowdin.Api.Glossaries;
 using Crowdin.Api.Labels;
 using Crowdin.Api.Languages;
 using Crowdin.Api.MachineTranslationEngines;
@@ -38,6 +39,8 @@ namespace Crowdin.Api
     public class CrowdinApiClient : ICrowdinApiClient
     {
         public DistributionsApiExecutor Distributions { get; }
+        
+        public GlossariesApiExecutor Glossaries { get; }
         
         public LabelsApiExecutor Labels { get; }
         
@@ -111,6 +114,7 @@ namespace Crowdin.Api
             }
 
             Distributions = new DistributionsApiExecutor(this);
+            Glossaries = new GlossariesApiExecutor(this);
             Labels = new LabelsApiExecutor(this);
             Languages = new LanguagesApiExecutor(this);
             MachineTranslationEngines = new MachineTranslationEnginesApiExecutor(this);
