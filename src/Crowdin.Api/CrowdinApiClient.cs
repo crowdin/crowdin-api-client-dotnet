@@ -24,6 +24,7 @@ using Crowdin.Api.Storage;
 using Crowdin.Api.StringComments;
 using Crowdin.Api.StringTranslations;
 using Crowdin.Api.Tasks;
+using Crowdin.Api.TranslationMemory;
 using Crowdin.Api.Translations;
 using Crowdin.Api.TranslationStatus;
 
@@ -65,6 +66,8 @@ namespace Crowdin.Api
         public StringTranslationsApiExecutor StringTranslations { get; }
         
         public TasksApiExecutor Tasks { get; }
+        
+        public TranslationMemoryApiExecutor TranslationMemory { get; }
         
         public TranslationsApiExecutor Translations { get; }
         
@@ -127,6 +130,7 @@ namespace Crowdin.Api
             StringComments = new StringCommentsApiExecutor(this);
             StringTranslations = new StringTranslationsApiExecutor(this);
             Tasks = new TasksApiExecutor(this);
+            TranslationMemory = new TranslationMemoryApiExecutor(this);
             Translations = new TranslationsApiExecutor(this);
             TranslationStatus = new TranslationStatusApiExecutor(this);
         }
