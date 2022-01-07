@@ -28,6 +28,7 @@ using Crowdin.Api.Tasks;
 using Crowdin.Api.TranslationMemory;
 using Crowdin.Api.Translations;
 using Crowdin.Api.TranslationStatus;
+using Crowdin.Api.Users;
 
 using JetBrains.Annotations;
 using Newtonsoft.Json;
@@ -75,6 +76,8 @@ namespace Crowdin.Api
         public TranslationsApiExecutor Translations { get; }
         
         public TranslationStatusApiExecutor TranslationStatus { get; set; }
+        
+        public UsersApiExecutor Users { get; }
 
         private readonly string _baseUrl;
         private readonly string _accessToken;
@@ -137,6 +140,7 @@ namespace Crowdin.Api
             TranslationMemory = new TranslationMemoryApiExecutor(this);
             Translations = new TranslationsApiExecutor(this);
             TranslationStatus = new TranslationStatusApiExecutor(this);
+            Users = new UsersApiExecutor(this);
         }
 
         public CrowdinApiClient(CrowdinCredentials credentials, IJsonParser defaultJsonParser)

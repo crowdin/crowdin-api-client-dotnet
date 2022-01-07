@@ -10,6 +10,10 @@ namespace Crowdin.Api.Core
 {
     public interface IJsonParser
     {
+        TData[] ParseArray<TData>(JToken token);
+        
+        TData ParseResponseObject<TData>(JToken token);
+
         TData ParseResponseObject<TData>(JObject rootElement);
 
         ResponseList<TData> ParseResponseList<TData>(JObject rootElement);
@@ -22,6 +26,21 @@ namespace Crowdin.Api.Core
         public JsonParser(JsonSerializerSettings options)
         {
             _options = options ?? throw new ArgumentNullException(nameof(options));
+        }
+
+        public TData[] ParseArray<TData>(JToken token)
+        {
+            CheckJTokenTypeOrThrow(token.Type, JTokenType.Array);
+            
+            return token
+                .Select(ParseResponseObject<TData>)
+                .ToArray();
+        }
+        
+        public TData ParseResponseObject<TData>(JToken token)
+        {
+            CheckJTokenTypeOrThrow(token.Type, JTokenType.Object);
+            return ParseResponseObject<TData>((JObject) token);
         }
 
         public TData ParseResponseObject<TData>(JObject rootElement)
@@ -49,6 +68,17 @@ namespace Crowdin.Api.Core
                     JsonConvert.DeserializeObject<Pagination>(
                         rootElement["pagination"]!.ToString(), _options)
             };
+        }
+        
+        private static void CheckJTokenTypeOrThrow(JTokenType actualType, JTokenType neededType)
+        {
+            if (actualType != neededType)
+            {
+                string actualTypeString = Enum.GetName(typeof(JTokenType), actualType) ?? "<unknown>";
+                string neededTypeString = Enum.GetName(typeof(JTokenType), neededType) ?? "<unknown>";
+                
+                throw new ArgumentException($"Token is not a JSON {neededTypeString}. Passed token type: {actualTypeString}");
+            }
         }
     }
 }
