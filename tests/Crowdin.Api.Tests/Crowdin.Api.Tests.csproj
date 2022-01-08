@@ -49,6 +49,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Tasks.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\Dictionaries.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Dictionaries.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -81,6 +85,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>Tasks.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\Dictionaries.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Dictionaries.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 

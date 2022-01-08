@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="EditDictionary_OpAdd_RightPatchesListJson" xml:space="preserve">
+        <value>[{"path":"/words","value":"word 1","op":"add"},{"path":"/words","value":"word 2","op":"add"}]</value>
+    </data>
+    <data name="EditDictionary_OpRemove_RightPatchesListJson_SingleIndex" xml:space="preserve">
+        <value>[{"path":"/words/3","op":"remove"}]</value>
+    </data>
+    <data name="EditDictionary_OpRemove_RightPatchesListJson_MultiIndexesWithDuplicates" xml:space="preserve">
+        <value>[{"path":"/words/3,2,1,0","op":"remove"}]</value>
+    </data>
+</root>
