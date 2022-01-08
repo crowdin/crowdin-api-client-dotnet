@@ -30,6 +30,7 @@ using Crowdin.Api.TranslationMemory;
 using Crowdin.Api.Translations;
 using Crowdin.Api.TranslationStatus;
 using Crowdin.Api.Users;
+using Crowdin.Api.Vendors;
 using Crowdin.Api.Webhooks;
 
 using JetBrains.Annotations;
@@ -82,6 +83,8 @@ namespace Crowdin.Api
         public TranslationStatusApiExecutor TranslationStatus { get; set; }
         
         public UsersApiExecutor Users { get; }
+        
+        public VendorsApiExecutor Vendors { get; }
         
         public WebhooksApiExecutor Webhooks { get; }
 
@@ -148,6 +151,7 @@ namespace Crowdin.Api
             Translations = new TranslationsApiExecutor(this);
             TranslationStatus = new TranslationStatusApiExecutor(this);
             Users = new UsersApiExecutor(this);
+            Vendors = new VendorsApiExecutor(this);
             Webhooks = new WebhooksApiExecutor(this);
         }
 
