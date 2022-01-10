@@ -10,9 +10,6 @@ namespace Crowdin.Api.Labels
     {
         [JsonProperty("path")]
         public LabelPatchPath Path { get; set; }
-        
-        [JsonProperty("value")]
-        public new string Value { get; set; }
     }
 
     [PublicAPI]

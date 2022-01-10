@@ -10,9 +10,6 @@ namespace Crowdin.Api.Distributions
     {
         [JsonProperty("path")]
         public DistributionPatchPath Path { get; set; }
-        
-        [JsonProperty("value")]
-        public new string Value { get; set; }
     }
 
     [PublicAPI]

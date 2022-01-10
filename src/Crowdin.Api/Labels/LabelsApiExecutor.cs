@@ -67,17 +67,6 @@ namespace Crowdin.Api.Labels
         }
 
         [PublicAPI]
-        public Task<Label> EditLabel(int projectId, int labelId, string title)
-        {
-            var patches = new[]
-            {
-                new LabelPatch { Value = title }
-            };
-
-            return EditLabel(projectId, labelId, patches);
-        }
-
-        [PublicAPI]
         public async Task<Label> EditLabel(int projectId, int labelId, IEnumerable<LabelPatch> patches)
         {
             string url = FormUrl_LabelId(projectId, labelId);

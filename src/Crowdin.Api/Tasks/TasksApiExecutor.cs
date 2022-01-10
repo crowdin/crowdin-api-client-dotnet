@@ -101,17 +101,6 @@ namespace Crowdin.Api.Tasks
         }
 
         [PublicAPI]
-        public Task<TaskResource> EditTaskArchivedStatus(int projectId, int taskId, bool isArchived)
-        {
-            var patches = new[]
-            {
-                new TaskArchivedStatusPatch { Value = isArchived }
-            };
-            
-            return EditTaskArchivedStatus(projectId, taskId, patches);
-        }
-
-        [PublicAPI]
         public async Task<TaskResource> EditTaskArchivedStatus(
             int projectId, int taskId, IEnumerable<TaskArchivedStatusPatch> patches)
         {

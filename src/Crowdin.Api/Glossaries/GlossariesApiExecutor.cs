@@ -68,17 +68,6 @@ namespace Crowdin.Api.Glossaries
         }
 
         [PublicAPI]
-        public Task<Glossary> EditGlossary(int glossaryId, string newGlossaryName)
-        {
-            var patches = new[]
-            {
-                new GlossaryPatch { Value = newGlossaryName }
-            };
-
-            return EditGlossary(glossaryId, patches);
-        }
-
-        [PublicAPI]
         public async Task<Glossary> EditGlossary(int glossaryId, IEnumerable<GlossaryPatch> patches)
         {
             string url = FormUrl_GlossaryId(glossaryId);

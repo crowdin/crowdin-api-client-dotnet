@@ -13,9 +13,6 @@ namespace Crowdin.Api.Dictionaries
     {
         [JsonProperty("path")]
         public DictionaryPatchPath Path { get; set; }
-        
-        [JsonProperty("value")]
-        public new string Value { get; set; }
     }
 
     [PublicAPI]

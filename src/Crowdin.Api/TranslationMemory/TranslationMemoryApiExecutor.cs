@@ -64,17 +64,6 @@ namespace Crowdin.Api.TranslationMemory
         }
 
         [PublicAPI]
-        public Task<TranslationMemory> EditTm(int tmId, string newTmName)
-        {
-            var patches = new[]
-            {
-                new TmPatch { Value = newTmName }
-            };
-
-            return EditTm(tmId, patches);
-        }
-
-        [PublicAPI]
         public async Task<TranslationMemory> EditTm(int tmId, IEnumerable<TmPatch> patches)
         {
             string url = FormUrl_TmId(tmId);

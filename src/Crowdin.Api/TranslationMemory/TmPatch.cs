@@ -9,10 +9,7 @@ namespace Crowdin.Api.TranslationMemory
     public class TmPatch : PatchEntry
     {
         [JsonProperty("path")]
-        public TmPatchPath Path => TmPatchPath.Name;
-        
-        [JsonProperty("value")]
-        public new string Value { get; set; }
+        public TmPatchPath Path { get; set; }
     }
 
     [PublicAPI]

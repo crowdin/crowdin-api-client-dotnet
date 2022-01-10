@@ -9,10 +9,7 @@ namespace Crowdin.Api.Glossaries
     public class GlossaryPatch : PatchEntry
     {
         [JsonProperty("path")]
-        public GlossaryPatchPath Path => GlossaryPatchPath.Name;
-        
-        [JsonProperty("value")]
-        public new string Value { get; set; }
+        public GlossaryPatchPath Path { get; set; }
     }
 
     [PublicAPI]
