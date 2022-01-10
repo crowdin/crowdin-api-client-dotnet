@@ -32,6 +32,11 @@ namespace Crowdin.Api.SourceStrings
         
         public int Offset { get; set; }
 
+        public StringsListParams()
+        {
+            
+        }
+
         public StringsListParams(
             int? denormalizePlaceholders,
             string? labelIds,
@@ -68,7 +73,7 @@ namespace Crowdin.Api.SourceStrings
             queryParams.AddParamIfPresent("directoryId", DirectoryId);
             queryParams.AddParamIfPresent("croql", CroQL);
             queryParams.AddParamIfPresent("filter", Filter);
-            queryParams.AddParamIfPresent("scope", Scope);
+            queryParams.AddDescriptionEnumValueIfPresent("scope", Scope);
 
             return queryParams;
         }

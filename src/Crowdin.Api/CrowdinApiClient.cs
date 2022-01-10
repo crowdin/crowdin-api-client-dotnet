@@ -10,16 +10,29 @@ using System.Threading.Tasks;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.Core.Converters;
+using Crowdin.Api.Dictionaries;
+using Crowdin.Api.Distributions;
+using Crowdin.Api.Glossaries;
+using Crowdin.Api.Issues;
+using Crowdin.Api.Labels;
 using Crowdin.Api.Languages;
+using Crowdin.Api.MachineTranslationEngines;
 using Crowdin.Api.ProjectsGroups;
 using Crowdin.Api.Reports;
 using Crowdin.Api.Screenshots;
 using Crowdin.Api.SourceFiles;
 using Crowdin.Api.SourceStrings;
 using Crowdin.Api.Storage;
+using Crowdin.Api.StringComments;
 using Crowdin.Api.StringTranslations;
+using Crowdin.Api.Tasks;
+using Crowdin.Api.Teams;
+using Crowdin.Api.TranslationMemory;
 using Crowdin.Api.Translations;
 using Crowdin.Api.TranslationStatus;
+using Crowdin.Api.Users;
+using Crowdin.Api.Vendors;
+using Crowdin.Api.Webhooks;
 
 using JetBrains.Annotations;
 using Newtonsoft.Json;
@@ -32,7 +45,19 @@ namespace Crowdin.Api
     [PublicAPI]
     public class CrowdinApiClient : ICrowdinApiClient
     {
+        public DictionariesApiExecutor Dictionaries { get; }
+        
+        public DistributionsApiExecutor Distributions { get; }
+        
+        public GlossariesApiExecutor Glossaries { get; }
+        
+        public IssuesApiExecutor Issues { get; }
+        
+        public LabelsApiExecutor Labels { get; }
+        
         public LanguagesApiExecutor Languages { get; }
+        
+        public MachineTranslationEnginesApiExecutor MachineTranslationEngines { get; }
         
         public ProjectsGroupsApiExecutor ProjectsGroups { get; }
         
@@ -46,11 +71,25 @@ namespace Crowdin.Api
         
         public StorageApiExecutor Storage { get; }
         
+        public StringCommentsApiExecutor StringComments { get; }
+        
         public StringTranslationsApiExecutor StringTranslations { get; }
+        
+        public TasksApiExecutor Tasks { get; }
+        
+        public TeamsApiExecutor Teams { get; }
+        
+        public TranslationMemoryApiExecutor TranslationMemory { get; }
         
         public TranslationsApiExecutor Translations { get; }
         
-        public TranslationStatusApiExecutor TranslationStatus { get; set; }
+        public TranslationStatusApiExecutor TranslationStatus { get; }
+        
+        public UsersApiExecutor Users { get; }
+        
+        public VendorsApiExecutor Vendors { get; }
+        
+        public WebhooksApiExecutor Webhooks { get; }
 
         private readonly string _baseUrl;
         private readonly string _accessToken;
@@ -95,16 +134,29 @@ namespace Crowdin.Api
                 _baseUrl = "https://api.crowdin.com/api/v2";
             }
 
+            Dictionaries = new DictionariesApiExecutor(this);
+            Distributions = new DistributionsApiExecutor(this);
+            Glossaries = new GlossariesApiExecutor(this);
+            Issues = new IssuesApiExecutor(this);
+            Labels = new LabelsApiExecutor(this);
             Languages = new LanguagesApiExecutor(this);
+            MachineTranslationEngines = new MachineTranslationEnginesApiExecutor(this);
             ProjectsGroups = new ProjectsGroupsApiExecutor(this);
             Reports = new ReportsApiExecutor(this);
             Screenshots = new ScreenshotsApiExecutor(this);
             SourceFiles = new SourceFilesApiExecutor(this);
             SourceStrings = new SourceStringsApiExecutor(this);
             Storage = new StorageApiExecutor(this);
+            StringComments = new StringCommentsApiExecutor(this);
             StringTranslations = new StringTranslationsApiExecutor(this);
+            Tasks = new TasksApiExecutor(this);
+            Teams = new TeamsApiExecutor(this);
+            TranslationMemory = new TranslationMemoryApiExecutor(this);
             Translations = new TranslationsApiExecutor(this);
             TranslationStatus = new TranslationStatusApiExecutor(this);
+            Users = new UsersApiExecutor(this);
+            Vendors = new VendorsApiExecutor(this);
+            Webhooks = new WebhooksApiExecutor(this);
         }
 
         public CrowdinApiClient(CrowdinCredentials credentials, IJsonParser defaultJsonParser)
@@ -125,15 +177,19 @@ namespace Crowdin.Api
         }
 
         public Task<CrowdinApiResult> SendPostRequest(
-            string subUrl, object body,
+            string subUrl, object? body = null,
             IDictionary<string, string>? extraHeaders = null)
         {
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Post,
-                Content = CreateJsonContent(body),
                 RequestUri = new Uri(FormRequestUrl(subUrl))
             };
+            
+            if (body != null)
+            {
+                request.Content = CreateJsonContent(body);
+            }
 
             if (extraHeaders != null && extraHeaders.Count > 0)
             {
@@ -162,13 +218,15 @@ namespace Crowdin.Api
             return SendRequest(request);
         }
 
-        public Task<CrowdinApiResult> SendPatchRequest(string subUrl, IEnumerable<PatchEntry> body)
+        public Task<CrowdinApiResult> SendPatchRequest(
+            string subUrl, IEnumerable<PatchEntry> body,
+            IDictionary<string, string>? queryParams = null)
         {
             var request = new HttpRequestMessage
             {
                 Method = new HttpMethod("PATCH"),
                 Content = CreateJsonContent(body, true),
-                RequestUri = new Uri(FormRequestUrl(subUrl))
+                RequestUri = new Uri(FormRequestUrl(subUrl, queryParams))
             };
 
             return SendRequest(request);
@@ -176,13 +234,18 @@ namespace Crowdin.Api
 
         public Task<HttpStatusCode> SendDeleteRequest(string subUrl, IDictionary<string, string>? queryParams = null)
         {
+            return SendDeleteRequest_FullResult(subUrl, queryParams).ContinueWith(task => task.Result.StatusCode);
+        }
+        
+        public Task<CrowdinApiResult> SendDeleteRequest_FullResult(string subUrl, IDictionary<string, string>? queryParams = null)
+        {
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Delete,
                 RequestUri = new Uri(FormRequestUrl(subUrl, queryParams))
             };
 
-            return SendRequest(request).ContinueWith(task => task.Result.StatusCode);
+            return SendRequest(request);
         }
 
         public Task<CrowdinApiResult> UploadFile(string subUrl, string filename, Stream fileStream)

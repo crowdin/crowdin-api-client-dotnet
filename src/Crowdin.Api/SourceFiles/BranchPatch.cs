@@ -10,9 +10,6 @@ namespace Crowdin.Api.SourceFiles
     {
         [JsonProperty("path")]
         public BranchPatchPath Path { get; set; }
-        
-        [JsonProperty("value")]
-        public new string Value { get; set; }
     }
 
     [PublicAPI]

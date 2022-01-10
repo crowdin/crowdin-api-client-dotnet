@@ -15,13 +15,15 @@ namespace Crowdin.Api
         
         Task<CrowdinApiResult> SendGetRequest(string subUrl, IDictionary<string, string>? queryParams = null);
 
-        Task<CrowdinApiResult> SendPostRequest(string subUrl, object body, IDictionary<string, string>? extraHeaders = null);
+        Task<CrowdinApiResult> SendPostRequest(string subUrl, object? body = null, IDictionary<string, string>? extraHeaders = null);
 
         Task<CrowdinApiResult> SendPutRequest(string subUrl, object? body = null);
 
-        Task<CrowdinApiResult> SendPatchRequest(string subUrl, IEnumerable<PatchEntry> body);
+        Task<CrowdinApiResult> SendPatchRequest(string subUrl, IEnumerable<PatchEntry> body, IDictionary<string, string>? queryParams = null);
 
         Task<HttpStatusCode> SendDeleteRequest(string subUrl, IDictionary<string, string>? queryParams = null);
+        
+        Task<CrowdinApiResult> SendDeleteRequest_FullResult(string subUrl, IDictionary<string, string>? queryParams = null);
 
         Task<CrowdinApiResult> UploadFile(string subUrl, string filename, Stream fileStream);
     }
