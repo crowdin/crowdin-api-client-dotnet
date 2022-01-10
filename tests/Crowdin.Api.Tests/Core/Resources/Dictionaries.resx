@@ -19,7 +19,7 @@
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <data name="EditDictionary_OpAdd_RightPatchesListJson" xml:space="preserve">
-        <value>[{"path":"/words","value":"word 1","op":"add"},{"path":"/words","value":"word 2","op":"add"}]</value>
+        <value>[{"path":"/words","op":"add","value":"word 1"},{"path":"/words","op":"add","value":"word 2"}]</value>
     </data>
     <data name="EditDictionary_OpRemove_RightPatchesListJson_SingleIndex" xml:space="preserve">
         <value>[{"path":"/words/3","op":"remove"}]</value>

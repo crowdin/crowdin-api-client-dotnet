@@ -61,7 +61,7 @@ namespace Crowdin.Api.Tests.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/words&quot;,&quot;value&quot;:&quot;word 1&quot;,&quot;op&quot;:&quot;add&quot;},{&quot;path&quot;:&quot;/words&quot;,&quot;value&quot;:&quot;word 2&quot;,&quot;op&quot;:&quot;add&quot;}].
+        ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/words&quot;,&quot;op&quot;:&quot;add&quot;,&quot;value&quot;:&quot;word 1&quot;},{&quot;path&quot;:&quot;/words&quot;,&quot;op&quot;:&quot;add&quot;,&quot;value&quot;:&quot;word 2&quot;}].
         /// </summary>
         internal static string EditDictionary_OpAdd_RightPatchesListJson {
             get {

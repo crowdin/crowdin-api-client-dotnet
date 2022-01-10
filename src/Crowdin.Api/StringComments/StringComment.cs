@@ -1,6 +1,5 @@
 ﻿
 using System;
-using Crowdin.Api.StringTranslations;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
@@ -22,7 +21,7 @@ namespace Crowdin.Api.StringComments
         public int StringId { get; set; }
         
         [JsonProperty("user")]
-        public User User { get; set; }
+        public UserObject User { get; set; }
 
         [JsonProperty("string")]
         public StringObject String { get; set; }
@@ -43,13 +42,29 @@ namespace Crowdin.Api.StringComments
         public int ResolverId { get; set; }
         
         [JsonProperty("resolver")]
-        public User Resolver { get; set; }
+        public UserObject Resolver { get; set; }
         
         [JsonProperty("resolvedAt")]
         public DateTimeOffset ResolvedAt { get; set; }
         
         [JsonProperty("createdAt")]
         public DateTimeOffset CreatedAt { get; set; }
+        
+        [PublicAPI]
+        public class UserObject
+        {
+            [JsonProperty("id")]
+            public int Id { get; set; }
+        
+            [JsonProperty("username")]
+            public string Username { get; set; }
+        
+            [JsonProperty("fullName")]
+            public string FullName { get; set; }
+        
+            [JsonProperty("avatarUrl")]
+            public string AvatarUrl { get; set; }
+        }
 
         [PublicAPI]
         public class StringObject

@@ -17,6 +17,6 @@ namespace Crowdin.Api.Vendors
         public string Description { get; set; }
         
         [JsonProperty("status")]
-        public string Status { get; set; }
+        public VendorStatus Status { get; set; }
     }
 }

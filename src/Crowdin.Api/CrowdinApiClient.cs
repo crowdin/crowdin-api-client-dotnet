@@ -83,7 +83,7 @@ namespace Crowdin.Api
         
         public TranslationsApiExecutor Translations { get; }
         
-        public TranslationStatusApiExecutor TranslationStatus { get; set; }
+        public TranslationStatusApiExecutor TranslationStatus { get; }
         
         public UsersApiExecutor Users { get; }
         

@@ -58,15 +58,10 @@ namespace Crowdin.Api.Core
             return new ResponseList<TData>
             {
                 Data = rootElement["data"]!
-                    .AsJEnumerable()
-                    .Select(jToken =>
-                        JsonConvert.DeserializeObject<TData>(
-                            jToken["data"]!.ToString(), _options))
-                    .ToList()!,
+                    .Select(ParseResponseObject<TData>)
+                    .ToList(),
                 
-                Pagination =
-                    JsonConvert.DeserializeObject<Pagination>(
-                        rootElement["pagination"]!.ToString(), _options)
+                Pagination = ParseResponseObject<Pagination>(rootElement["pagination"]!)
             };
         }
         
