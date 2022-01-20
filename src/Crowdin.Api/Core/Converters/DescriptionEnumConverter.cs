@@ -61,24 +61,38 @@ namespace Crowdin.Api.Core.Converters
             object? value = reader.Value;
             if (value is null) return null;
 
+            // String enum
             if (value is string descriptionValue)
             {
-                MemberInfo field = objectType
+                // Check if value has own string representation in [Description] attribute
+                MemberInfo? field = objectType
                     .GetMembers(BindingFlags.Public | BindingFlags.Static)
-                    .First(member =>
+                    .FirstOrDefault(member =>
                         member.IsDefined(typeof(DescriptionAttribute)) &&
                         member.GetCustomAttribute<DescriptionAttribute>().Description.Equals(descriptionValue));
-                
-                return Enum.Parse(objectType, field.Name);
+
+                if (field != null)
+                {
+                    return Enum.Parse(objectType, field.Name);
+                }
+
+                // Check if enum has strict string representation for all members
+                if (objectType.IsDefined(typeof(StrictStringRepresentation)))
+                {
+                    return Enum.Parse(objectType, descriptionValue);
+                }
+
+                throw new ArgumentException("Error occurred during deserialization from JSON String");
             }
 
+            // Numeric value -> simple int-to-enum conversion
             if (int.TryParse(value.ToString(), out int intValue) &&
                 Enum.IsDefined(objectType, intValue))
             {
                 return Enum.ToObject(objectType, intValue);
             }
 
-            throw new ArgumentException();
+            throw new ArgumentException("Error occurred during deserialization from JSON Number");
         }
     }
 

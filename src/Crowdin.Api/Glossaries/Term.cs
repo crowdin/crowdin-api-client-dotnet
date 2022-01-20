@@ -27,7 +27,7 @@ namespace Crowdin.Api.Glossaries
         public string Description { get; set; }
         
         [JsonProperty("partOfSpeech")]
-        public string PartOfSpeech { get; set; }
+        public PartOfSpeech PartOfSpeech { get; set; }
         
         [JsonProperty("lemma")]
         public string Lemma { get; set; }

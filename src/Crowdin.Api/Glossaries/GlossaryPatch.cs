@@ -16,6 +16,9 @@ namespace Crowdin.Api.Glossaries
     public enum GlossaryPatchPath
     {
         [Description("/name")]
-        Name
+        Name,
+        
+        [Description("/languageId")]
+        LanguageId
     }
 }
