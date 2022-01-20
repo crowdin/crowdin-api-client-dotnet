@@ -22,14 +22,14 @@ namespace Crowdin.Api.Tests.Core.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Dictionaries {
+    internal class Screenshots {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Dictionaries() {
+        internal Screenshots() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Crowdin.Api.Tests.Core.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Crowdin.Api.Tests.Core.Resources.Dictionaries", typeof(Dictionaries).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Crowdin.Api.Tests.Core.Resources.Screenshots", typeof(Screenshots).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,53 +61,31 @@ namespace Crowdin.Api.Tests.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/words&quot;,&quot;op&quot;:&quot;add&quot;,&quot;value&quot;:&quot;word 1&quot;},{&quot;path&quot;:&quot;/words&quot;,&quot;op&quot;:&quot;add&quot;,&quot;value&quot;:&quot;word 2&quot;}].
+        ///   Looks up a localized string similar to {
+        ///  &quot;storageId&quot;: 71,
+        ///  &quot;name&quot;: &quot;translate_with_siri.jpg&quot;,
+        ///  &quot;autoTag&quot;: true
+        ///}.
         /// </summary>
-        internal static string EditDictionary_OpAdd_RightPatchesListJson {
+        internal static string AddScreenshot_Request {
             get {
-                return ResourceManager.GetString("EditDictionary_OpAdd_RightPatchesListJson", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/words/3,2,1,0&quot;,&quot;op&quot;:&quot;remove&quot;}].
-        /// </summary>
-        internal static string EditDictionary_OpRemove_RightPatchesListJson_MultiIndexesWithDuplicates {
-            get {
-                return ResourceManager.GetString("EditDictionary_OpRemove_RightPatchesListJson_MultiIndexesWithDuplicates", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/words/3&quot;,&quot;op&quot;:&quot;remove&quot;}].
-        /// </summary>
-        internal static string EditDictionary_OpRemove_RightPatchesListJson_SingleIndex {
-            get {
-                return ResourceManager.GetString("EditDictionary_OpRemove_RightPatchesListJson_SingleIndex", resourceCulture);
+                return ResourceManager.GetString("AddScreenshot_Request", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to {
-        ///  &quot;data&quot;: [
-        ///    {
-        ///      &quot;data&quot;: {
-        ///        &quot;languageId&quot;: &quot;en&quot;,
-        ///        &quot;words&quot;: [
-        ///          &quot;string&quot;
-        ///        ]
-        ///      }
-        ///    }
-        ///  ],
-        ///  &quot;pagination&quot;: {
-        ///    &quot;offset&quot;: 0,
-        ///    &quot;limit&quot;: 25
-        ///  }
-        ///}.
+        ///  &quot;data&quot;: {
+        ///    &quot;id&quot;: 2,
+        ///    &quot;userId&quot;: 6,
+        ///    &quot;url&quot;: &quot;https://production-enterprise-screenshots.downloads.crowdin.com/992000002/6/2/middle.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIGJKLQV66ZXPMMEA%2F20190923%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190923T093016Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=120&amp;X-Amz-Signature=8df06f57594f7d1804b7c037629f6916224415e9b935c4f6619fbe002fb25e73&quot;,
+        ///    &quot;name&quot;: &quot;translate_with_siri.jpg&quot;,
+        ///    &quot;size&quot;: {
+        ///  [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string ListDictionaries {
+        internal static string AddScreenshot_Response {
             get {
-                return ResourceManager.GetString("ListDictionaries", resourceCulture);
+                return ResourceManager.GetString("AddScreenshot_Response", resourceCulture);
             }
         }
     }

@@ -22,14 +22,14 @@ namespace Crowdin.Api.Tests.Core.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Dictionaries {
+    internal class Labels {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Dictionaries() {
+        internal Labels() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Crowdin.Api.Tests.Core.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Crowdin.Api.Tests.Core.Resources.Dictionaries", typeof(Dictionaries).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Crowdin.Api.Tests.Core.Resources.Labels", typeof(Labels).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,29 +61,38 @@ namespace Crowdin.Api.Tests.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/words&quot;,&quot;op&quot;:&quot;add&quot;,&quot;value&quot;:&quot;word 1&quot;},{&quot;path&quot;:&quot;/words&quot;,&quot;op&quot;:&quot;add&quot;,&quot;value&quot;:&quot;word 2&quot;}].
+        ///   Looks up a localized string similar to {&quot;title&quot;: &quot;main&quot;}.
         /// </summary>
-        internal static string EditDictionary_OpAdd_RightPatchesListJson {
+        internal static string AddLabel_Request {
             get {
-                return ResourceManager.GetString("EditDictionary_OpAdd_RightPatchesListJson", resourceCulture);
+                return ResourceManager.GetString("AddLabel_Request", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/words/3,2,1,0&quot;,&quot;op&quot;:&quot;remove&quot;}].
+        ///   Looks up a localized string similar to {
+        ///  &quot;data&quot;: {
+        ///    &quot;id&quot;: 34,
+        ///    &quot;title&quot;: &quot;main&quot;
+        ///  }
+        ///}.
         /// </summary>
-        internal static string EditDictionary_OpRemove_RightPatchesListJson_MultiIndexesWithDuplicates {
+        internal static string AddLabel_Response {
             get {
-                return ResourceManager.GetString("EditDictionary_OpRemove_RightPatchesListJson_MultiIndexesWithDuplicates", resourceCulture);
+                return ResourceManager.GetString("AddLabel_Response", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/words/3&quot;,&quot;op&quot;:&quot;remove&quot;}].
+        ///   Looks up a localized string similar to {
+        ///  &quot;stringIds&quot;: [
+        ///    1, 2, 3, 4, 5
+        ///  ]
+        ///}.
         /// </summary>
-        internal static string EditDictionary_OpRemove_RightPatchesListJson_SingleIndex {
+        internal static string AssignLabelToStrings_Request {
             get {
-                return ResourceManager.GetString("EditDictionary_OpRemove_RightPatchesListJson_SingleIndex", resourceCulture);
+                return ResourceManager.GetString("AssignLabelToStrings_Request", resourceCulture);
             }
         }
         
@@ -92,22 +101,28 @@ namespace Crowdin.Api.Tests.Core.Resources {
         ///  &quot;data&quot;: [
         ///    {
         ///      &quot;data&quot;: {
-        ///        &quot;languageId&quot;: &quot;en&quot;,
-        ///        &quot;words&quot;: [
-        ///          &quot;string&quot;
-        ///        ]
-        ///      }
-        ///    }
-        ///  ],
-        ///  &quot;pagination&quot;: {
-        ///    &quot;offset&quot;: 0,
-        ///    &quot;limit&quot;: 25
-        ///  }
-        ///}.
+        ///        &quot;id&quot;: 2814,
+        ///        &quot;projectId&quot;: 2,
+        ///        &quot;fileId&quot;: 48,
+        ///        &quot;branchId&quot;: 12,
+        ///        &quot;directoryId&quot;: 13,
+        ///        &quot;identifier&quot;: &quot;name&quot;,
+        ///        &quot;text&quot;: &quot;Not all videos are shown to users. See more&quot;,
+        ///        &quot;type&quot;: &quot;text&quot;,
+        ///        &quot;context&quot;: &quot;shown on main page&quot;,
+        ///        &quot;maxLength&quot;: 35,
+        ///        &quot;isHidden&quot;: false,
+        ///        &quot;revision&quot;: 1,
+        ///        &quot;hasPlurals&quot;: false,
+        ///        &quot;isIcu&quot;: false,
+        ///        &quot;labelIds&quot;: [
+        ///          3
+        ///        ],
+        ///        [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string ListDictionaries {
+        internal static string AssignLabelToStrings_Response {
             get {
-                return ResourceManager.GetString("ListDictionaries", resourceCulture);
+                return ResourceManager.GetString("AssignLabelToStrings_Response", resourceCulture);
             }
         }
     }

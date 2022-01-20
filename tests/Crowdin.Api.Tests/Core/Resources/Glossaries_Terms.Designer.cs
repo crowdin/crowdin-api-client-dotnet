@@ -22,14 +22,14 @@ namespace Crowdin.Api.Tests.Core.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Dictionaries {
+    internal class Glossaries_Terms {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Dictionaries() {
+        internal Glossaries_Terms() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Crowdin.Api.Tests.Core.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Crowdin.Api.Tests.Core.Resources.Dictionaries", typeof(Dictionaries).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Crowdin.Api.Tests.Core.Resources.Glossaries_Terms", typeof(Glossaries_Terms).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,53 +61,70 @@ namespace Crowdin.Api.Tests.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/words&quot;,&quot;op&quot;:&quot;add&quot;,&quot;value&quot;:&quot;word 1&quot;},{&quot;path&quot;:&quot;/words&quot;,&quot;op&quot;:&quot;add&quot;,&quot;value&quot;:&quot;word 2&quot;}].
+        ///   Looks up a localized string similar to {
+        ///&quot;languageId&quot;: &quot;fr&quot;,
+        ///&quot;text&quot;: &quot;voir&quot;,
+        ///
+        ///&quot;description&quot;: &quot;use for pages only (check screenshots)&quot;,
+        ///&quot;partOfSpeech&quot;: &quot;subordinating conjunction&quot;
+        ///}.
         /// </summary>
-        internal static string EditDictionary_OpAdd_RightPatchesListJson {
+        internal static string AddTerm_Request {
             get {
-                return ResourceManager.GetString("EditDictionary_OpAdd_RightPatchesListJson", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/words/3,2,1,0&quot;,&quot;op&quot;:&quot;remove&quot;}].
-        /// </summary>
-        internal static string EditDictionary_OpRemove_RightPatchesListJson_MultiIndexesWithDuplicates {
-            get {
-                return ResourceManager.GetString("EditDictionary_OpRemove_RightPatchesListJson_MultiIndexesWithDuplicates", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/words/3&quot;,&quot;op&quot;:&quot;remove&quot;}].
-        /// </summary>
-        internal static string EditDictionary_OpRemove_RightPatchesListJson_SingleIndex {
-            get {
-                return ResourceManager.GetString("EditDictionary_OpRemove_RightPatchesListJson_SingleIndex", resourceCulture);
+                return ResourceManager.GetString("AddTerm_Request", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to {
-        ///  &quot;data&quot;: [
-        ///    {
-        ///      &quot;data&quot;: {
-        ///        &quot;languageId&quot;: &quot;en&quot;,
-        ///        &quot;words&quot;: [
-        ///          &quot;string&quot;
-        ///        ]
-        ///      }
-        ///    }
-        ///  ],
-        ///  &quot;pagination&quot;: {
-        ///    &quot;offset&quot;: 0,
-        ///    &quot;limit&quot;: 25
+        ///  &quot;data&quot;: {
+        ///    &quot;id&quot;: 2,
+        ///    &quot;userId&quot;: 6,
+        ///    &quot;glossaryId&quot;: 1,
+        ///    &quot;languageId&quot;: &quot;fr&quot;,
+        ///    &quot;text&quot;: &quot;voir&quot;,
+        ///    &quot;description&quot;: &quot;use for pages only (check screenshots)&quot;,
+        ///    &quot;partOfSpeech&quot;: &quot;subordinating conjunction&quot;,
+        ///    &quot;lemma&quot;: &quot;voir&quot;,
+        ///    &quot;createdAt&quot;: &quot;2019-09-23T07:19:47+00:00&quot;,
+        ///    &quot;updatedAt&quot;: &quot;2019-09-23T07:19:47+00:00&quot;
         ///  }
         ///}.
         /// </summary>
-        internal static string ListDictionaries {
+        internal static string AddTerm_Response {
             get {
-                return ResourceManager.GetString("ListDictionaries", resourceCulture);
+                return ResourceManager.GetString("AddTerm_Response", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/text&quot;,&quot;op&quot;:&quot;replace&quot;,&quot;value&quot;:&quot;Voir&quot;},{&quot;path&quot;:&quot;/description&quot;,&quot;op&quot;:&quot;replace&quot;,&quot;value&quot;:&quot;use for pages only (check screenshots)&quot;},{&quot;path&quot;:&quot;/partOfSpeech&quot;,&quot;op&quot;:&quot;replace&quot;,&quot;value&quot;:&quot;subordinating conjunction&quot;}].
+        /// </summary>
+        internal static string EditTerm_Request {
+            get {
+                return ResourceManager.GetString("EditTerm_Request", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;data&quot;: {
+        ///    &quot;id&quot;: 2,
+        ///    &quot;userId&quot;: 6,
+        ///    &quot;glossaryId&quot;: 6,
+        ///    &quot;languageId&quot;: &quot;fr&quot;,
+        ///    &quot;text&quot;: &quot;Voir&quot;,
+        ///    &quot;description&quot;: &quot;use for pages only (check screenshots)&quot;,
+        ///    &quot;partOfSpeech&quot;: &quot;subordinating conjunction&quot;,
+        ///    &quot;lemma&quot;: &quot;voir&quot;,
+        ///    &quot;createdAt&quot;: &quot;2019-09-23T07:19:47+00:00&quot;,
+        ///    &quot;updatedAt&quot;: &quot;2019-09-23T07:19:47+00:00&quot;
+        ///  }
+        ///}.
+        /// </summary>
+        internal static string EditTerm_Response {
+            get {
+                return ResourceManager.GetString("EditTerm_Response", resourceCulture);
             }
         }
     }

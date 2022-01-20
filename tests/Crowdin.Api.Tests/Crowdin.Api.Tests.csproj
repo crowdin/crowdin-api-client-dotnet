@@ -53,6 +53,38 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Dictionaries.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\Distributions.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Distributions.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\Glossaries.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Glossaries.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\Glossaries_Terms.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Glossaries_Terms.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\Labels.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Labels.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\Languages.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Languages.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\MachineTranslationEngines.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>MachineTranslationEngines.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\Screenshots.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Screenshots.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\Screenshots_Tags.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Screenshots_Tags.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -90,6 +122,46 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>Dictionaries.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\Distributions.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Distributions.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\Glossaries.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Glossaries.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\Glossaries_Terms.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Glossaries_Terms.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\Labels.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Labels.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\Languages.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Languages.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\MachineTranslationEngines.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>MachineTranslationEngines.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\Screenshots.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Screenshots.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\Screenshots_Tags.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Screenshots_Tags.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 
