@@ -22,14 +22,14 @@ namespace Crowdin.Api.Tests.Core.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Dictionaries {
+    internal class Glossaries {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Dictionaries() {
+        internal Glossaries() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Crowdin.Api.Tests.Core.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Crowdin.Api.Tests.Core.Resources.Dictionaries", typeof(Dictionaries).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Crowdin.Api.Tests.Core.Resources.Glossaries", typeof(Glossaries).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,29 +61,36 @@ namespace Crowdin.Api.Tests.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/words&quot;,&quot;op&quot;:&quot;add&quot;,&quot;value&quot;:&quot;word 1&quot;},{&quot;path&quot;:&quot;/words&quot;,&quot;op&quot;:&quot;add&quot;,&quot;value&quot;:&quot;word 2&quot;}].
+        ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/name&quot;,&quot;op&quot;:&quot;replace&quot;,&quot;value&quot;:&quot;Be My Eyes iOS&apos;s Glossary&quot;},{&quot;path&quot;:&quot;/languageId&quot;,&quot;op&quot;:&quot;replace&quot;,&quot;value&quot;:&quot;fr&quot;}].
         /// </summary>
-        internal static string EditDictionary_OpAdd_RightPatchesListJson {
+        internal static string EditGlossary_Request {
             get {
-                return ResourceManager.GetString("EditDictionary_OpAdd_RightPatchesListJson", resourceCulture);
+                return ResourceManager.GetString("EditGlossary_Request", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/words/3,2,1,0&quot;,&quot;op&quot;:&quot;remove&quot;}].
+        ///   Looks up a localized string similar to {
+        ///  &quot;data&quot;: {
+        ///    &quot;id&quot;: 2,
+        ///    &quot;name&quot;: &quot;Be My Eyes iOS&apos;s Glossary&quot;,
+        ///    &quot;groupId&quot;: 2,
+        ///    &quot;userId&quot;: 2,
+        ///    &quot;terms&quot;: 25,
+        ///    &quot;languageId&quot;: &quot;fr&quot;,
+        ///    &quot;languageIds&quot;: [
+        ///      &quot;ro&quot;
+        ///    ],
+        ///    &quot;projectIds&quot;: [
+        ///      6
+        ///    ],
+        ///    &quot;createdAt&quot;: &quot;2019-09-16T13:42:04+00:00&quot;
+        ///  }
+        ///}.
         /// </summary>
-        internal static string EditDictionary_OpRemove_RightPatchesListJson_MultiIndexesWithDuplicates {
+        internal static string EditGlossary_Response {
             get {
-                return ResourceManager.GetString("EditDictionary_OpRemove_RightPatchesListJson_MultiIndexesWithDuplicates", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/words/3&quot;,&quot;op&quot;:&quot;remove&quot;}].
-        /// </summary>
-        internal static string EditDictionary_OpRemove_RightPatchesListJson_SingleIndex {
-            get {
-                return ResourceManager.GetString("EditDictionary_OpRemove_RightPatchesListJson_SingleIndex", resourceCulture);
+                return ResourceManager.GetString("EditGlossary_Response", resourceCulture);
             }
         }
         
@@ -92,10 +99,19 @@ namespace Crowdin.Api.Tests.Core.Resources {
         ///  &quot;data&quot;: [
         ///    {
         ///      &quot;data&quot;: {
-        ///        &quot;languageId&quot;: &quot;en&quot;,
-        ///        &quot;words&quot;: [
-        ///          &quot;string&quot;
-        ///        ]
+        ///        &quot;id&quot;: 2,
+        ///        &quot;name&quot;: &quot;Be My Eyes iOS&apos;s Glossary&quot;,
+        ///        &quot;groupId&quot;: 2,
+        ///        &quot;userId&quot;: 2,
+        ///        &quot;terms&quot;: 25,
+        ///        &quot;languageId&quot;: &quot;fr&quot;,
+        ///        &quot;languageIds&quot;: [
+        ///          &quot;ro&quot;
+        ///        ],
+        ///        &quot;projectIds&quot;: [
+        ///          6
+        ///        ],
+        ///        &quot;createdAt&quot;: &quot;2019-09-16T13:42:04+00:00&quot;
         ///      }
         ///    }
         ///  ],
@@ -105,9 +121,9 @@ namespace Crowdin.Api.Tests.Core.Resources {
         ///  }
         ///}.
         /// </summary>
-        internal static string ListDictionaries {
+        internal static string ListGlossaries_Response {
             get {
-                return ResourceManager.GetString("ListDictionaries", resourceCulture);
+                return ResourceManager.GetString("ListGlossaries_Response", resourceCulture);
             }
         }
     }

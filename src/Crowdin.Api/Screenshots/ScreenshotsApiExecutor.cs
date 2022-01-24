@@ -106,7 +106,7 @@ namespace Crowdin.Api.Screenshots
         }
         
         [PublicAPI]
-        public async Task ReplaceTags(int projectId, int screenshotId, ReplaceTagsRequest request)
+        public async Task ReplaceTags(int projectId, int screenshotId, IEnumerable<AddTagRequest> request)
         {
             string url = FormUrl_ScreenshotTags(projectId, screenshotId);
             CrowdinApiResult result = await _apiClient.SendPutRequest(url, request);
@@ -114,6 +114,18 @@ namespace Crowdin.Api.Screenshots
             if (result.StatusCode != HttpStatusCode.OK)
             {
                 throw new CrowdinApiException($"Failed to replace tags of screenshot {screenshotId}");
+            }
+        }
+        
+        [PublicAPI]
+        public async Task ReplaceTags(int projectId, int screenshotId, AutoTagReplaceTagsRequest request)
+        {
+            string url = FormUrl_ScreenshotTags(projectId, screenshotId);
+            CrowdinApiResult result = await _apiClient.SendPutRequest(url, request);
+
+            if (result.StatusCode != HttpStatusCode.OK)
+            {
+                throw new CrowdinApiException($"Failed to set AutoTag flag for screenshot {screenshotId}");
             }
         }
 

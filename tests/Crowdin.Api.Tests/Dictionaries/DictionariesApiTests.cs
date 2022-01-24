@@ -1,7 +1,15 @@
 ﻿
+using System.Collections.Generic;
+using System.Net;
+using System.Threading.Tasks;
+
+using Crowdin.Api.Core;
 using Crowdin.Api.Dictionaries;
 using Crowdin.Api.Tests.Core;
+
+using Moq;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using Xunit;
 
 namespace Crowdin.Api.Tests.Dictionaries
@@ -9,6 +17,35 @@ namespace Crowdin.Api.Tests.Dictionaries
     public class DictionariesApiTests
     {
         private static readonly JsonSerializerSettings DefaultSettings = TestUtils.CreateJsonSerializerOptions();
+
+        [Fact]
+        public async Task ListDictionaries()
+        {
+            const int projectId = 1;
+            const string languageIds = "en";
+
+            var url = $"/projects/{projectId}/dictionaries";
+            var queryParams = new Dictionary<string, string>
+            {
+                { "languageIds", languageIds }
+            };
+            
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            mockClient
+                .Setup(client => client.SendGetRequest(url, queryParams))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Core.Resources.Dictionaries.ListDictionaries)
+                });
+
+            var executor = new DictionariesApiExecutor(mockClient.Object);
+            ResponseList<Dictionary> response = await executor.ListDictionaries(projectId, languageIds);
+            
+            Assert.NotNull(response);
+            Assert.Single(response.Data);
+        }
 
         [Fact]
         public void EditDictionary_Add_PatchesSerialization()

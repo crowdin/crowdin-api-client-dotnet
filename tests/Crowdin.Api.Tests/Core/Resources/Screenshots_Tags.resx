@@ -18,31 +18,22 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="EditDictionary_OpAdd_RightPatchesListJson" xml:space="preserve">
-        <value>[{"path":"/words","op":"add","value":"word 1"},{"path":"/words","op":"add","value":"word 2"}]</value>
-    </data>
-    <data name="EditDictionary_OpRemove_RightPatchesListJson_SingleIndex" xml:space="preserve">
-        <value>[{"path":"/words/3","op":"remove"}]</value>
-    </data>
-    <data name="EditDictionary_OpRemove_RightPatchesListJson_MultiIndexesWithDuplicates" xml:space="preserve">
-        <value>[{"path":"/words/3,2,1,0","op":"remove"}]</value>
-    </data>
-    <data name="ListDictionaries" xml:space="preserve">
-        <value>{
-  "data": [
-    {
-      "data": {
-        "languageId": "en",
-        "words": [
-          "string"
-        ]
-      }
+    <data name="ReplaceTags_Request" xml:space="preserve">
+        <value>[
+  {
+    "stringId": 1,
+    "position": {
+      "x": 1,
+      "y": 2,
+      "width": 3,
+      "height": 4
     }
-  ],
-  "pagination": {
-    "offset": 0,
-    "limit": 25
   }
+]</value>
+    </data>
+    <data name="ReplaceTags_AutoTag_Request" xml:space="preserve">
+        <value>{
+  "autoTag": true
 }</value>
     </data>
 </root>

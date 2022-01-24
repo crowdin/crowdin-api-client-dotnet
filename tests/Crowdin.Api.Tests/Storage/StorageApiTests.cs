@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
-using Crowdin.Api;
 using Crowdin.Api.Core;
 using Crowdin.Api.Storage;
 using Crowdin.Api.Tests.Core;
+
 using Moq;
 using Newtonsoft.Json.Linq;
 using Xunit;
@@ -20,13 +20,9 @@ namespace Crowdin.Api.Tests.Storage
         {
             string responseJson = Core.Resources.Storage.ListStorages;
 
-            var mockClient = TestUtils.CreateMockClientWithDefaultParser();
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
             
-            var queryParams = new Dictionary<string, string>
-            {
-                { "limit", "25" },
-                { "offset", "0" }
-            };
+            IDictionary<string, string> queryParams = TestUtils.CreateQueryParamsFromPaging();
             
             mockClient
                 .Setup(client => client.SendGetRequest("/storages", queryParams))

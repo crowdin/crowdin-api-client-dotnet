@@ -22,14 +22,14 @@ namespace Crowdin.Api.Tests.Core.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Dictionaries {
+    internal class Distributions {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Dictionaries() {
+        internal Distributions() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Crowdin.Api.Tests.Core.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Crowdin.Api.Tests.Core.Resources.Dictionaries", typeof(Dictionaries).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Crowdin.Api.Tests.Core.Resources.Distributions", typeof(Distributions).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,53 +61,40 @@ namespace Crowdin.Api.Tests.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/words&quot;,&quot;op&quot;:&quot;add&quot;,&quot;value&quot;:&quot;word 1&quot;},{&quot;path&quot;:&quot;/words&quot;,&quot;op&quot;:&quot;add&quot;,&quot;value&quot;:&quot;word 2&quot;}].
+        ///   Looks up a localized string similar to {
+        ///  &quot;data&quot;: {
+        ///    &quot;hash&quot;: &quot;string&quot;,
+        ///    &quot;name&quot;: &quot;string&quot;,
+        ///    &quot;fileIds&quot;: [
+        ///      0
+        ///    ],
+        ///    &quot;createdAt&quot;: &quot;2019-09-16T13:48:04+00:00&quot;,
+        ///    &quot;updatedAt&quot;: &quot;2019-09-19T13:25:27+00:00&quot;
+        ///  }
+        ///}.
         /// </summary>
-        internal static string EditDictionary_OpAdd_RightPatchesListJson {
+        internal static string AddDistribution_Response {
             get {
-                return ResourceManager.GetString("EditDictionary_OpAdd_RightPatchesListJson", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/words/3,2,1,0&quot;,&quot;op&quot;:&quot;remove&quot;}].
-        /// </summary>
-        internal static string EditDictionary_OpRemove_RightPatchesListJson_MultiIndexesWithDuplicates {
-            get {
-                return ResourceManager.GetString("EditDictionary_OpRemove_RightPatchesListJson_MultiIndexesWithDuplicates", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/words/3&quot;,&quot;op&quot;:&quot;remove&quot;}].
-        /// </summary>
-        internal static string EditDictionary_OpRemove_RightPatchesListJson_SingleIndex {
-            get {
-                return ResourceManager.GetString("EditDictionary_OpRemove_RightPatchesListJson_SingleIndex", resourceCulture);
+                return ResourceManager.GetString("AddDistribution_Response", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to {
-        ///  &quot;data&quot;: [
-        ///    {
-        ///      &quot;data&quot;: {
-        ///        &quot;languageId&quot;: &quot;en&quot;,
-        ///        &quot;words&quot;: [
-        ///          &quot;string&quot;
-        ///        ]
-        ///      }
-        ///    }
-        ///  ],
-        ///  &quot;pagination&quot;: {
-        ///    &quot;offset&quot;: 0,
-        ///    &quot;limit&quot;: 25
+        ///  &quot;data&quot;: {
+        ///    &quot;hash&quot;: &quot;someHash&quot;,
+        ///    &quot;name&quot;: &quot;some name&quot;,
+        ///    &quot;fileIds&quot;: [
+        ///      0
+        ///    ],
+        ///    &quot;createdAt&quot;: &quot;2019-09-16T13:48:04+00:00&quot;,
+        ///    &quot;updatedAt&quot;: &quot;2019-09-19T13:25:27+00:00&quot;
         ///  }
         ///}.
         /// </summary>
-        internal static string ListDictionaries {
+        internal static string EditDistribution_Response {
             get {
-                return ResourceManager.GetString("ListDictionaries", resourceCulture);
+                return ResourceManager.GetString("EditDistribution_Response", resourceCulture);
             }
         }
     }
