@@ -16,9 +16,13 @@
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FScreenshots/@EntryIndexedValue">False</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FScreenshots_005FTags/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FSourceFiles/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FStringTranslations/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FStringTranslations_005FVotes/@EntryIndexedValue">False</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FTasks/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FTeams/@EntryIndexedValue">True</s:Boolean>
 	
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FTranslations/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FWebhooks/@EntryIndexedValue">False</s:Boolean>
 	
 	
 	

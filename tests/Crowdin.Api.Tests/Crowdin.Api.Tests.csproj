@@ -85,6 +85,22 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Screenshots_Tags.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\StringTranslations.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>StringTranslations.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\StringTranslations_Votes.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>StringTranslations_Votes.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\Teams.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Teams.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\Webhooks.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Webhooks.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -162,6 +178,26 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>Screenshots_Tags.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\StringTranslations.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>StringTranslations.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\StringTranslations_Votes.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>StringTranslations_Votes.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\Teams.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Teams.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\Webhooks.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Webhooks.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 
