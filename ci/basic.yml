@@ -45,7 +45,7 @@ steps:
   - script: |
       choco install xunit
       choco install opencover.portable
-      OpenCover.Console.exe -register:user -targetargs:".\tests\Crowdin.Api.Tests\bin\Release\netcoreapp2.1\Crowdin.Api.dll -noshadow" -target:"xunit.console.x86.exe" -filter:"+[tests*]*" -output:".\MyProject_coverage.xml"
+      OpenCover.Console.exe -register:user -targetargs:".\tests\Crowdin.Api.Tests\bin\Release\net5.0\Crowdin.Api.dll -noshadow" -target:"xunit.console.x86.exe" -filter:"+[tests*]*" -output:".\MyProject_coverage.xml"
     displayName: "Generating code coverage report"
 
   - script: |
