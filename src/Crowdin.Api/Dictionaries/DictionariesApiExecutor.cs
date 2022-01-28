@@ -26,6 +26,11 @@ namespace Crowdin.Api.Dictionaries
             _jsonParser = jsonParser;
         }
 
+        /// <summary>
+        /// List dictionaries. Documentation: 
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.dictionaries.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.dictionaries.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Dictionary>> ListDictionaries(int projectId, string? languageIds = null)
         {
@@ -43,6 +48,11 @@ namespace Crowdin.Api.Dictionaries
             return _jsonParser.ParseResponseList<Dictionary>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Edit dictionary. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.dictionaries.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.dictionaries.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Dictionary> EditDictionary(int projectId, string languageId, IEnumerable<DictionaryPatch> patches)
         {

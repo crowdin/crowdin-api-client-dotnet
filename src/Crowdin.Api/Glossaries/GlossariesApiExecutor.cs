@@ -30,6 +30,11 @@ namespace Crowdin.Api.Glossaries
 
         #region Glossaries
 
+        /// <summary>
+        /// List glossaries. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.glossaries.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public Task<ResponseList<Glossary>> ListGlossaries(
             int limit = 25, int offset = 0, int? userId = null, int? groupId = null)
@@ -37,6 +42,11 @@ namespace Crowdin.Api.Glossaries
             return ListGlossaries(new GlossariesListParams(limit, offset, userId, groupId));
         }
 
+        /// <summary>
+        /// List glossaries. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.glossaries.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Glossary>> ListGlossaries(GlossariesListParams @params)
         {
@@ -44,6 +54,11 @@ namespace Crowdin.Api.Glossaries
             return _jsonParser.ParseResponseList<Glossary>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Add glossary. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.glossaries.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Glossary> AddGlossary(AddGlossaryRequest request)
         {
@@ -51,6 +66,11 @@ namespace Crowdin.Api.Glossaries
             return _jsonParser.ParseResponseObject<Glossary>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Get glossary. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.glossaries.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Glossary> GetGlossary(int glossaryId)
         {
@@ -59,6 +79,11 @@ namespace Crowdin.Api.Glossaries
             return _jsonParser.ParseResponseObject<Glossary>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete glossary. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.glossaries.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteGlossary(int glossaryId)
         {
@@ -67,6 +92,11 @@ namespace Crowdin.Api.Glossaries
             Utils.ThrowIfStatusNot204(statusCode, $"Glossary {glossaryId} removal failed");
         }
 
+        /// <summary>
+        /// Edit glossary. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.glossaries.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Glossary> EditGlossary(int glossaryId, IEnumerable<GlossaryPatch> patches)
         {
@@ -79,6 +109,11 @@ namespace Crowdin.Api.Glossaries
 
         #region Glossaries : Export
 
+        /// <summary>
+        /// Export glossary. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.glossaries.exports.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.exports.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<GlossaryExportStatus> ExportGlossary(int glossaryId, ExportGlossaryRequest request)
         {
@@ -87,6 +122,11 @@ namespace Crowdin.Api.Glossaries
             return _jsonParser.ParseResponseObject<GlossaryExportStatus>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Check glossary export status. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.glossaries.exports.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.exports.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<GlossaryExportStatus> CheckGlossaryExportStatus(int glossaryId, string exportId)
         {
@@ -95,6 +135,11 @@ namespace Crowdin.Api.Glossaries
             return _jsonParser.ParseResponseObject<GlossaryExportStatus>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Download glossary. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.glossaries.exports.download.download">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.exports.download.download">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<DownloadLink> DownloadGlossary(int glossaryId, string exportId)
         {
@@ -107,6 +152,11 @@ namespace Crowdin.Api.Glossaries
 
         #region Glossaries : Import
 
+        /// <summary>
+        /// Import glossary. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.glossaries.imports.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.imports.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<GlossaryImportStatus> ImportGlossary(int glossaryId, ImportGlossaryRequest request)
         {
@@ -115,6 +165,11 @@ namespace Crowdin.Api.Glossaries
             return _jsonParser.ParseResponseObject<GlossaryImportStatus>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Check glossary import status. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.glossaries.imports.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.imports.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<GlossaryImportStatus> CheckGlossaryImportStatus(int glossaryId, string importId)
         {
@@ -127,6 +182,11 @@ namespace Crowdin.Api.Glossaries
 
         #region Terms
 
+        /// <summary>
+        /// List terms. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.glossaries.terms.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.terms.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public Task<ResponseList<Term>> ListTerms(
             int glossaryId, int? userId = null, string? languageId = null,
@@ -136,6 +196,11 @@ namespace Crowdin.Api.Glossaries
                 new TermsListParams(limit, offset, userId, languageId, translationOfTermId));
         }
 
+        /// <summary>
+        /// List terms. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.glossaries.terms.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.terms.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Term>> ListTerms(int glossaryId, TermsListParams @params)
         {
@@ -144,6 +209,11 @@ namespace Crowdin.Api.Glossaries
             return _jsonParser.ParseResponseList<Term>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Add term. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.glossaries.terms.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.terms.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Term> AddTerm(int glossaryId, AddTermRequest request)
         {
@@ -152,6 +222,11 @@ namespace Crowdin.Api.Glossaries
             return _jsonParser.ParseResponseObject<Term>(result.JsonObject);
         }
         
+        /// <summary>
+        /// Clear glossary. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.glossaries.terms.deleteMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.terms.deleteMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task ClearGlossary(int glossaryId, string? languageId = null, int? translationOfTermId = null)
         {
@@ -165,6 +240,11 @@ namespace Crowdin.Api.Glossaries
             Utils.ThrowIfStatusNot204(statusCode, $"Glossary {glossaryId} cleanup failed");
         }
 
+        /// <summary>
+        /// Get term. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.glossaries.terms.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.terms.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Term> GetTerm(int glossaryId, int termId)
         {
@@ -173,6 +253,11 @@ namespace Crowdin.Api.Glossaries
             return _jsonParser.ParseResponseObject<Term>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete term. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.glossaries.terms.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.terms.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteTerm(int glossaryId, int termId)
         {
@@ -181,6 +266,11 @@ namespace Crowdin.Api.Glossaries
             Utils.ThrowIfStatusNot204(statusCode, $"Term {termId} removal failed");
         }
 
+        /// <summary>
+        /// Edit term. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.glossaries.terms.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.terms.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Term> EditTerm(int glossaryId, int termId, IEnumerable<TermPatch> patches)
         {

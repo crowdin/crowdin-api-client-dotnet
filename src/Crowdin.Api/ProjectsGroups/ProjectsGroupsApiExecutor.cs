@@ -30,6 +30,10 @@ namespace Crowdin.Api.ProjectsGroups
 
         #region Groups
 
+        /// <summary>
+        /// List groups. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.groups.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Group>> ListGroups(int? parentId, int limit = 25, int offset = 0)
         {
@@ -40,6 +44,10 @@ namespace Crowdin.Api.ProjectsGroups
             return _jsonParser.ParseResponseList<Group>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Add group. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.groups.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Group> AddGroup(AddGroupRequest request)
         {
@@ -47,6 +55,10 @@ namespace Crowdin.Api.ProjectsGroups
             return _jsonParser.ParseResponseObject<Group>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Get group. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.groups.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Group> GetGroup(int groupId)
         {
@@ -55,6 +67,10 @@ namespace Crowdin.Api.ProjectsGroups
             return _jsonParser.ParseResponseObject<Group>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete group. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.groups.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteGroup(int groupId)
         {
@@ -63,6 +79,10 @@ namespace Crowdin.Api.ProjectsGroups
             Utils.ThrowIfStatusNot204(statusCode, $"Group {groupId} removal failed");
         }
 
+        /// <summary>
+        /// Edit group. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.groups.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Group> EditGroup(int groupId, IEnumerable<GroupPatch> patches)
         {
@@ -81,6 +101,11 @@ namespace Crowdin.Api.ProjectsGroups
 
         #region Projects
 
+        /// <summary>
+        /// List projects. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TProject>> ListProjects<TProject>(
             int? userId = null, int? groupId = null,
@@ -98,6 +123,11 @@ namespace Crowdin.Api.ProjectsGroups
             return _jsonParser.ParseResponseList<TProject>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Add project. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<T> AddProject<T>(AddProjectRequest request)
             where T : ProjectBase // Project { ProjectSettings }, EnterpriseProject
@@ -106,6 +136,11 @@ namespace Crowdin.Api.ProjectsGroups
             return _jsonParser.ParseResponseObject<T>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Get project. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<T> GetProject<T>(int projectId)
             where T : ProjectBase
@@ -114,6 +149,11 @@ namespace Crowdin.Api.ProjectsGroups
             return _jsonParser.ParseResponseObject<T>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete project. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteProject(int projectId)
         {
@@ -121,6 +161,11 @@ namespace Crowdin.Api.ProjectsGroups
             Utils.ThrowIfStatusNot204(statusCode, $"Project {projectId} removal failed");
         }
 
+        /// <summary>
+        /// Edit project. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<T> EditProject<T>(int projectId, IEnumerable<ProjectPatch> patches)
             where T : ProjectBase

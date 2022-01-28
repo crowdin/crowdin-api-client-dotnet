@@ -24,6 +24,11 @@ namespace Crowdin.Api.Issues
             _jsonParser = jsonParser;
         }
 
+        /// <summary>
+        /// List reported issues. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.issues.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.issues.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public Task<ResponseList<Issue>> ListReportedIssues(
             int projectId, int limit = 25, int offset = 0,
@@ -32,6 +37,11 @@ namespace Crowdin.Api.Issues
             return ListReportedIssues(projectId, new IssuesListParams(limit, offset, type, status));
         }
 
+        /// <summary>
+        /// List reported issues. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.issues.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.issues.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Issue>> ListReportedIssues(int projectId, IssuesListParams @params)
         {
@@ -40,6 +50,11 @@ namespace Crowdin.Api.Issues
             return _jsonParser.ParseResponseList<Issue>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Edit issue. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.issues.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.issues.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Issue> EditIssue(int projectId, int issueId, IEnumerable<IssuePatch> patches)
         {

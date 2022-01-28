@@ -24,6 +24,10 @@ namespace Crowdin.Api.Reports
 
         #region Group Reports
 
+        /// <summary>
+        /// Generate group report. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.groups.reports.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<GroupReportStatus> GenerateGroupReport(int groupId, GenerateGroupReportRequest request)
         {
@@ -32,6 +36,10 @@ namespace Crowdin.Api.Reports
             return _jsonParser.ParseResponseObject<GroupReportStatus>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Check group report generation status. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.groups.reports.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<GroupReportStatus> CheckGroupReportGenerationStatus(int groupId, int reportId)
         {
@@ -40,6 +48,10 @@ namespace Crowdin.Api.Reports
             return _jsonParser.ParseResponseObject<GroupReportStatus>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Download group report. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.groups.reports.download.download">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<DownloadLink> DownloadGroupReport(int groupId, int reportId)
         {
@@ -52,6 +64,10 @@ namespace Crowdin.Api.Reports
 
         #region Organization Reports
 
+        /// <summary>
+        /// Generate organization report. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.reports.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<GroupReportStatus> GenerateOrganizationReport(GenerateGroupReportRequest request)
         {
@@ -59,6 +75,10 @@ namespace Crowdin.Api.Reports
             return _jsonParser.ParseResponseObject<GroupReportStatus>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Check organization report generation status. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.reports.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<GroupReportStatus> CheckOrganizationReportGenerationStatus(int reportId)
         {
@@ -66,6 +86,10 @@ namespace Crowdin.Api.Reports
             return _jsonParser.ParseResponseObject<GroupReportStatus>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Download organization report. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.reports.download.download">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<DownloadLink> DownloadOrganizationReport(int reportId)
         {
@@ -77,6 +101,11 @@ namespace Crowdin.Api.Reports
 
         #region Reports
 
+        /// <summary>
+        /// Generate report. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.reports.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.reports.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ReportStatus> GenerateReport(int projectId, GenerateReportRequest request)
         {
@@ -85,6 +114,11 @@ namespace Crowdin.Api.Reports
             return _jsonParser.ParseResponseObject<ReportStatus>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Check report generation status. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.reports.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.reports.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ReportStatus> CheckReportGenerationStatus(int projectId, string reportId)
         {
@@ -93,6 +127,11 @@ namespace Crowdin.Api.Reports
             return _jsonParser.ParseResponseObject<ReportStatus>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Download report. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.reports.download.download">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.reports.download.download">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<DownloadLink> DownloadReport(int projectId, string reportId)
         {

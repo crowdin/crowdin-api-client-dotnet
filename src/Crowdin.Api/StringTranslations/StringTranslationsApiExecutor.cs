@@ -28,6 +28,11 @@ namespace Crowdin.Api.StringTranslations
 
         #region Approvals
 
+        /// <summary>
+        /// List translation approvals. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.approvals.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.approvals.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public Task<ResponseList<TranslationApproval>> ListTranslationApprovals(
             int projectId,
@@ -39,6 +44,11 @@ namespace Crowdin.Api.StringTranslations
                 new TranslationApprovalsListParams(fileId, stringId, languageId, translationId, limit, offset));
         }
 
+        /// <summary>
+        /// List translation approvals. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.approvals.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.approvals.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TranslationApproval>> ListTranslationApprovals(
             int projectId, TranslationApprovalsListParams @params)
@@ -48,6 +58,11 @@ namespace Crowdin.Api.StringTranslations
             return _jsonParser.ParseResponseList<TranslationApproval>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Add approval. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.approvals.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.approvals.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<TranslationApproval> AddApproval(int projectId, AddApprovalRequest request)
         {
@@ -56,6 +71,11 @@ namespace Crowdin.Api.StringTranslations
             return _jsonParser.ParseResponseObject<TranslationApproval>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Get approval. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.approvals.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.approvals.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<TranslationApproval> GetApproval(int projectId, int approvalId)
         {
@@ -64,6 +84,11 @@ namespace Crowdin.Api.StringTranslations
             return _jsonParser.ParseResponseObject<TranslationApproval>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Remove approval. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.approvals.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.approvals.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task RemoveApproval(int projectId, int approvalId)
         {
@@ -88,6 +113,11 @@ namespace Crowdin.Api.StringTranslations
 
         #endregion
 
+        /// <summary>
+        /// List language translations. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.languages.translations.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.languages.translations.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public Task<ResponseList<LanguageTranslations>> ListLanguageTranslations(
             int projectId, string languageId,
@@ -100,6 +130,11 @@ namespace Crowdin.Api.StringTranslations
                     fileId, croql, denormalizePlaceholders, limit, offset));
         }
 
+        /// <summary>
+        /// List language translations. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.languages.translations.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.languages.translations.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<LanguageTranslations>> ListLanguageTranslations(
             int projectId, string languageId, LanguageTranslationsListParams @params)
@@ -111,6 +146,11 @@ namespace Crowdin.Api.StringTranslations
 
         #region Translations
 
+        /// <summary>
+        /// List string translations. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.translations.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public Task<ResponseList<StringTranslation>> ListStringTranslations(
             int projectId, int stringId, string languageId,
@@ -120,6 +160,11 @@ namespace Crowdin.Api.StringTranslations
                 new StringTranslationsListParams(stringId, languageId, denormalizePlaceholders, limit, offset));
         }
 
+        /// <summary>
+        /// List string translations. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.translations.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<StringTranslation>> ListStringTranslations(
             int projectId, StringTranslationsListParams @params)
@@ -129,6 +174,11 @@ namespace Crowdin.Api.StringTranslations
             return _jsonParser.ParseResponseList<StringTranslation>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Add translation. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.translations.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<StringTranslation> AddTranslation(int projectId, AddTranslationRequest request)
         {
@@ -137,6 +187,11 @@ namespace Crowdin.Api.StringTranslations
             return _jsonParser.ParseResponseObject<StringTranslation>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete string translations. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.translations.deleteMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.deleteMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteStringTranslations(int projectId, int stringId, string languageId)
         {
@@ -152,6 +207,11 @@ namespace Crowdin.Api.StringTranslations
             Utils.ThrowIfStatusNot204(statusCode, "String translation removal failed");
         }
 
+        /// <summary>
+        /// Get translation. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.translations.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<StringTranslation> GetTranslation(int projectId, int translationId, bool? denormalizePlaceholders = null)
         {
@@ -169,6 +229,11 @@ namespace Crowdin.Api.StringTranslations
             return _jsonParser.ParseResponseObject<StringTranslation>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Restore translation. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.translations.put">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.put">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<StringTranslation> RestoreTranslation(int projectId, int translationId)
         {
@@ -177,6 +242,11 @@ namespace Crowdin.Api.StringTranslations
             return _jsonParser.ParseResponseObject<StringTranslation>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete translation. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.translations.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteTranslation(int projectId, int translationId)
         {
@@ -203,6 +273,11 @@ namespace Crowdin.Api.StringTranslations
 
         #region Votes
 
+        /// <summary>
+        /// List translation votes. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.votes.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.votes.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public Task<ResponseList<TranslationVote>> ListTranslationVotes(
             int projectId, int? stringId = null, string? languageId = null,
@@ -212,6 +287,11 @@ namespace Crowdin.Api.StringTranslations
                 new TranslationVotesListParams(stringId, languageId, translationId, limit, offset));
         }
 
+        /// <summary>
+        /// List translation votes. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.votes.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.votes.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TranslationVote>> ListTranslationVotes(
             int projectId, TranslationVotesListParams @params)
@@ -221,6 +301,11 @@ namespace Crowdin.Api.StringTranslations
             return _jsonParser.ParseResponseList<TranslationVote>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Add vote. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.votes.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.votes.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<TranslationVote> AddVote(int projectId, AddVoteRequest request)
         {
@@ -229,6 +314,11 @@ namespace Crowdin.Api.StringTranslations
             return _jsonParser.ParseResponseObject<TranslationVote>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Get vote. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.votes.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.votes.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<TranslationVote> GetVote(int projectId, int voteId)
         {
@@ -237,6 +327,11 @@ namespace Crowdin.Api.StringTranslations
             return _jsonParser.ParseResponseObject<TranslationVote>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Cancel vote. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.votes.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.votes.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task CancelVote(int projectId, int voteId)
         {

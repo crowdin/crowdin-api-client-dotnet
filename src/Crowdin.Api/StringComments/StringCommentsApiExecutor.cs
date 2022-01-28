@@ -27,6 +27,11 @@ namespace Crowdin.Api.StringComments
             _jsonParser = jsonParser;
         }
 
+        /// <summary>
+        /// List string comments. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.comments.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.comments.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public Task ListStringComments(
             int projectId, int limit = 25, int offset = 0,
@@ -37,6 +42,11 @@ namespace Crowdin.Api.StringComments
                 new StringCommentsListParams(limit, offset, stringId, type, issueTypes, issueStatus));
         }
 
+        /// <summary>
+        /// List string comments. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.comments.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.comments.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<StringComment>> ListStringComments(
             int projectId, StringCommentsListParams @params)
@@ -46,6 +56,11 @@ namespace Crowdin.Api.StringComments
             return _jsonParser.ParseResponseList<StringComment>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Add string comment. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.comments.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.comments.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<StringComment> AddStringComment(int projectId, AddStringCommentRequest request)
         {
@@ -54,6 +69,11 @@ namespace Crowdin.Api.StringComments
             return _jsonParser.ParseResponseObject<StringComment>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Get string comment. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.comments.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.comments.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<StringComment> GetStringComment(int projectId, int stringCommentId)
         {
@@ -62,6 +82,11 @@ namespace Crowdin.Api.StringComments
             return _jsonParser.ParseResponseObject<StringComment>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete string comment. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.comments.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.comments.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteStringComment(int projectId, int stringCommentId)
         {
@@ -70,6 +95,11 @@ namespace Crowdin.Api.StringComments
             Utils.ThrowIfStatusNot204(statusCode, $"String Comment {stringCommentId} removal failed");
         }
 
+        /// <summary>
+        /// Edit string comment. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.comments.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.comments.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<StringComment> EditStringComment(
             int projectId, int stringCommentId, IEnumerable<StringCommentPatch> patches)

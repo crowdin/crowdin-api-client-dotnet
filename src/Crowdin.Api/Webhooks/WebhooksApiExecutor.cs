@@ -25,6 +25,11 @@ namespace Crowdin.Api.Webhooks
             _jsonParser = jsonParser;
         }
 
+        /// <summary>
+        /// List webhooks. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.webhooks.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.webhooks.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Webhook>> ListWebhooks(int projectId, int limit = 25, int offset = 0)
         {
@@ -35,6 +40,11 @@ namespace Crowdin.Api.Webhooks
             return _jsonParser.ParseResponseList<Webhook>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Add webhook. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.webhooks.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.webhooks.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Webhook> AddWebhook(int projectId, AddWebhookRequest request)
         {
@@ -43,6 +53,11 @@ namespace Crowdin.Api.Webhooks
             return _jsonParser.ParseResponseObject<Webhook>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Get webhook. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.webhooks.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.webhooks.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Webhook> GetWebhook(int projectId, int webhookId)
         {
@@ -51,6 +66,11 @@ namespace Crowdin.Api.Webhooks
             return _jsonParser.ParseResponseObject<Webhook>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete webhook. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.webhooks.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.webhooks.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteWebhook(int projectId, int webhookId)
         {
@@ -59,6 +79,11 @@ namespace Crowdin.Api.Webhooks
             Utils.ThrowIfStatusNot204(statusCode, $"Webhook {webhookId} removal failed");
         }
 
+        /// <summary>
+        /// Edit webhook. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.webhooks.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.webhooks.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Webhook> EditWebhook(int projectId, int webhookId, IEnumerable<WebhookPatch> patches)
         {

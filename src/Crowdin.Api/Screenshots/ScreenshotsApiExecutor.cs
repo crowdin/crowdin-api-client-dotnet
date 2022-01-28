@@ -27,6 +27,11 @@ namespace Crowdin.Api.Screenshots
 
         #region Screenshots
         
+        /// <summary>
+        /// List screenshots. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.screenshots.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Screenshot>> ListScreenshots(int projectId, int limit = 25, int offset = 0)
         {
@@ -37,6 +42,11 @@ namespace Crowdin.Api.Screenshots
             return _jsonParser.ParseResponseList<Screenshot>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Add screenshot. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.screenshots.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Screenshot> AddScreenshot(int projectId, AddScreenshotRequest request)
         {
@@ -45,6 +55,11 @@ namespace Crowdin.Api.Screenshots
             return _jsonParser.ParseResponseObject<Screenshot>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Get screenshot. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.screenshots.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Screenshot> GetScreenshot(int projectId, int screenshotId)
         {
@@ -53,6 +68,11 @@ namespace Crowdin.Api.Screenshots
             return _jsonParser.ParseResponseObject<Screenshot>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Update screenshot. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.screenshots.put">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.put">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Screenshot> UpdateScreenshot(int projectId, int screenshotId, UpdateScreenshotRequest request)
         {
@@ -61,6 +81,11 @@ namespace Crowdin.Api.Screenshots
             return _jsonParser.ParseResponseObject<Screenshot>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete screenshot. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.screenshots.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteScreenshot(int projectId, int screenshotId)
         {
@@ -69,6 +94,11 @@ namespace Crowdin.Api.Screenshots
             Utils.ThrowIfStatusNot204(statusCode, $"Screenshot {screenshotId} removal failed");
         }
 
+        /// <summary>
+        /// Edit screenshot. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.screenshots.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Screenshot> EditScreenshot(int projectId, int screenshotId, IEnumerable<ScreenshotPatch> patches)
         {
@@ -95,6 +125,11 @@ namespace Crowdin.Api.Screenshots
 
         #region Tags
 
+        /// <summary>
+        /// List tags. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.screenshots.tags.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.tags.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Tag>> ListTags(int projectId, int screenshotId, int limit = 25, int offset = 0)
         {
@@ -105,6 +140,11 @@ namespace Crowdin.Api.Screenshots
             return _jsonParser.ParseResponseList<Tag>(result.JsonObject);
         }
         
+        /// <summary>
+        /// Replace tags. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.screenshots.tags.putMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.tags.putMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task ReplaceTags(int projectId, int screenshotId, IEnumerable<AddTagRequest> request)
         {
@@ -117,6 +157,11 @@ namespace Crowdin.Api.Screenshots
             }
         }
         
+        /// <summary>
+        /// Replace tags. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.screenshots.tags.putMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.tags.putMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task ReplaceTags(int projectId, int screenshotId, AutoTagReplaceTagsRequest request)
         {
@@ -129,6 +174,11 @@ namespace Crowdin.Api.Screenshots
             }
         }
 
+        /// <summary>
+        /// Add tag. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.screenshots.tags.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.tags.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Tag> AddTag(int projectId, int screenshotId, IEnumerable<AddTagRequest> request)
         {
@@ -137,6 +187,11 @@ namespace Crowdin.Api.Screenshots
             return _jsonParser.ParseResponseObject<Tag>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Clear tags. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.screenshots.tags.deleteMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.tags.deleteMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task ClearTags(int projectId, int screenshotId)
         {
@@ -145,6 +200,11 @@ namespace Crowdin.Api.Screenshots
             Utils.ThrowIfStatusNot204(statusCode, $"Tags cleanup failed");
         }
 
+        /// <summary>
+        /// Get tag. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.screenshots.tags.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.tags.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Tag> GetTag(int projectId, int screenshotId, int tagId)
         {
@@ -153,6 +213,11 @@ namespace Crowdin.Api.Screenshots
             return _jsonParser.ParseResponseObject<Tag>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete tag. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.screenshots.tags.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.tags.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteTag(int projectId, int screenshotId, int tagId)
         {
@@ -161,6 +226,11 @@ namespace Crowdin.Api.Screenshots
             Utils.ThrowIfStatusNot204(statusCode, $"Tag {tagId} removal failed");
         }
 
+        /// <summary>
+        /// Edit tag. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.screenshots.tags.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.tags.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Screenshot> EditTag(int projectId, int screenshotId, int tagId, IEnumerable<TagPatch> patches)
         {

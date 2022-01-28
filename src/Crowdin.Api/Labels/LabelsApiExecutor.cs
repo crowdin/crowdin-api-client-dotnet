@@ -26,6 +26,11 @@ namespace Crowdin.Api.Labels
             _jsonParser = jsonParser;
         }
 
+        /// <summary>
+        /// List labels. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.labels.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.labels.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Label>> ListLabels(int projectId, int limit = 25, int offset = 0)
         {
@@ -36,12 +41,22 @@ namespace Crowdin.Api.Labels
             return _jsonParser.ParseResponseList<Label>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Add label. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.labels.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.labels.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public Task<Label> AddLabel(int projectId, string title)
         {
             return AddLabel(projectId, new AddLabelRequest { Title = title });
         }
 
+        /// <summary>
+        /// Add label. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.labels.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.labels.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Label> AddLabel(int projectId, AddLabelRequest request)
         {
@@ -50,6 +65,11 @@ namespace Crowdin.Api.Labels
             return _jsonParser.ParseResponseObject<Label>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Get label. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.labels.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.labels.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Label> GetLabel(int projectId, int labelId)
         {
@@ -58,6 +78,11 @@ namespace Crowdin.Api.Labels
             return _jsonParser.ParseResponseObject<Label>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete label. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.labels.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.labels.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteLabel(int projectId, int labelId)
         {
@@ -66,6 +91,11 @@ namespace Crowdin.Api.Labels
             Utils.ThrowIfStatusNot204(statusCode, $"Label {labelId} removal failed");
         }
 
+        /// <summary>
+        /// Edit label. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.labels.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.labels.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Label> EditLabel(int projectId, int labelId, IEnumerable<LabelPatch> patches)
         {
@@ -74,6 +104,11 @@ namespace Crowdin.Api.Labels
             return _jsonParser.ParseResponseObject<Label>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Assign label to strings. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.labels.strings.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.labels.strings.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public Task<ResponseList<SourceString>> AssignLabelToStrings(
             int projectId, int labelId, ICollection<int> stringIds)
@@ -86,6 +121,11 @@ namespace Crowdin.Api.Labels
             return AssignLabelToStrings(projectId, labelId, request);
         }
 
+        /// <summary>
+        /// Assign label to strings. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.labels.strings.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.labels.strings.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<SourceString>> AssignLabelToStrings(
             int projectId, int labelId, AssignLabelToStringsRequest request)
@@ -95,6 +135,11 @@ namespace Crowdin.Api.Labels
             return _jsonParser.ParseResponseList<SourceString>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Unassign label from strings. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.labels.strings.deleteMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.labels.strings.deleteMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<SourceString>> UnassignLabelFromStrings(
             int projectId, int labelId, ICollection<int> stringIds)

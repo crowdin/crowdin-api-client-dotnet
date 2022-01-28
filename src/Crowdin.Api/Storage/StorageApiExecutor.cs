@@ -28,6 +28,11 @@ namespace Crowdin.Api.Storage
             _jsonParser = jsonParser;
         }
         
+        /// <summary>
+        /// List storages. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.storages.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.storages.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<StorageResource>> ListStorages(int limit = 25, int offset = 0)
         {
@@ -36,6 +41,11 @@ namespace Crowdin.Api.Storage
             return _jsonParser.ParseResponseList<StorageResource>(result.JsonObject);
         }
         
+        /// <summary>
+        /// Add storage. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.storages.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.storages.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<StorageResource> AddStorage(Stream fileStream, string filename)
         {
@@ -43,6 +53,11 @@ namespace Crowdin.Api.Storage
             return _jsonParser.ParseResponseObject<StorageResource>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Get storage. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.storages.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.storages.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<StorageResource> GetStorage(int storageId)
         {
@@ -50,6 +65,11 @@ namespace Crowdin.Api.Storage
             return _jsonParser.ParseResponseObject<StorageResource>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete storage. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.storages.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.storages.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteStorage(int storageId)
         {

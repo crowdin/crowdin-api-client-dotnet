@@ -26,6 +26,10 @@ namespace Crowdin.Api.MachineTranslationEngines
             _jsonParser = jsonParser;
         }
 
+        /// <summary>
+        /// List MTs. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.mts.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<MtEngine>> ListMts(int? groupId = null, int limit = 25, int offset = 0)
         {
@@ -36,6 +40,10 @@ namespace Crowdin.Api.MachineTranslationEngines
             return _jsonParser.ParseResponseList<MtEngine>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Add MT. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.mts.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<MtEngine> AddMt(AddMtEngineRequest request)
         {
@@ -43,6 +51,10 @@ namespace Crowdin.Api.MachineTranslationEngines
             return _jsonParser.ParseResponseObject<MtEngine>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Get MT. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.mts.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<MtEngine> GetMt(int mtId)
         {
@@ -51,6 +63,10 @@ namespace Crowdin.Api.MachineTranslationEngines
             return _jsonParser.ParseResponseObject<MtEngine>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete MT. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.mts.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteMt(int mtId)
         {
@@ -59,6 +75,10 @@ namespace Crowdin.Api.MachineTranslationEngines
             Utils.ThrowIfStatusNot204(statusCode, $"Machine Translation Engine {mtId} removal failed");
         }
 
+        /// <summary>
+        /// Edit MT. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.mts.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<MtEngine> EditMt(int mtId, IEnumerable<MtEnginePatch> patches)
         {
