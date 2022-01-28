@@ -26,6 +26,11 @@ namespace Crowdin.Api.Translations
             _jsonParser = jsonParser;
         }
 
+        /// <summary>
+        /// Get pre-translation status. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#tag/Translations/paths/~1projects~1{projectId}~1pre-translations~1{preTranslationId}/get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#tag/Translations/paths/~1projects~1{projectId}~1pre-translations~1{preTranslationId}/get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<PreTranslation> GetPreTranslationStatus(int projectId, int preTranslationId)
         {
@@ -34,6 +39,11 @@ namespace Crowdin.Api.Translations
             return _jsonParser.ParseResponseObject<PreTranslation>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Apply pre-translation. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.pre-translations.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.pre-translations.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<PreTranslation> ApplyPreTranslation(int projectId, ApplyPreTranslationRequest request)
         {
@@ -42,6 +52,11 @@ namespace Crowdin.Api.Translations
             return _jsonParser.ParseResponseObject<PreTranslation>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Build project directory translation. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.translations.builds.directories.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.builds.directories.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<DirectoryBuild> BuildProjectDirectoryTranslation(
             int projectId, int directoryId,
@@ -52,6 +67,11 @@ namespace Crowdin.Api.Translations
             return _jsonParser.ParseResponseObject<DirectoryBuild>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Build project file translation. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.translations.builds.files.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.builds.files.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<BuildProjectFileTranslationResponse> BuildProjectFileTranslation(
             int projectId, int fileId,
@@ -89,6 +109,11 @@ namespace Crowdin.Api.Translations
             }
         }
 
+        /// <summary>
+        /// List project builds. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.translations.builds.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.builds.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TranslationProjectBuild>> ListProjectBuilds(
             int projectId, int? branchId = null, int limit = 25, int offset = 0)
@@ -102,6 +127,11 @@ namespace Crowdin.Api.Translations
             return _jsonParser.ParseResponseList<TranslationProjectBuild>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Build project translation. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.translations.builds.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.builds.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ProjectBuild> BuildProjectTranslation(int projectId, BuildProjectTranslationRequest request)
         {
@@ -111,6 +141,11 @@ namespace Crowdin.Api.Translations
             return _jsonParser.ParseResponseObject<ProjectBuild>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Upload translations. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.translations.postOnLanguage">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.postOnLanguage">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<UploadTranslationsResponse> UploadTranslations(
             int projectId, int languageId, UploadTranslationsRequest request)
@@ -121,6 +156,11 @@ namespace Crowdin.Api.Translations
             return _jsonParser.ParseResponseObject<UploadTranslationsResponse>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Download project translations. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.translations.builds.download.download">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.builds.download.download">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<DownloadProjectTranslationsResponse> DownloadProjectTranslations(int projectId, int buildId)
         {
@@ -136,6 +176,11 @@ namespace Crowdin.Api.Translations
                     _jsonParser.ParseResponseObject<DownloadLink>(result.JsonObject));
         }
 
+        /// <summary>
+        /// Check project build status. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.translations.builds.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.builds.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ProjectBuild> CheckProjectBuildStatus(int projectId, int buildId)
         {
@@ -144,6 +189,11 @@ namespace Crowdin.Api.Translations
             return _jsonParser.ParseResponseObject<ProjectBuild>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Cancel build. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.translations.builds.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.builds.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task CancelBuild(int projectId, int buildId)
         {
@@ -152,6 +202,11 @@ namespace Crowdin.Api.Translations
             Utils.ThrowIfStatusNot204(statusCode, $"Build {buildId} cancellation failed");
         }
 
+        /// <summary>
+        /// Export project translation. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.translations.exports.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.exports.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<DownloadLink?> ExportProjectTranslation(int projectId, ExportProjectTranslationRequest request)
         {

@@ -26,6 +26,11 @@ namespace Crowdin.Api.Tasks
             _jsonParser = jsonParser;
         }
 
+        /// <summary>
+        /// List tasks. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.tasks.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.tasks.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public Task<ResponseList<TaskResource>> ListTasks(
             int projectId, int limit = 25, int offset = 0,
@@ -34,6 +39,11 @@ namespace Crowdin.Api.Tasks
             return ListTasks(projectId, new TasksListParams(limit, offset, status, assigneeId));
         }
 
+        /// <summary>
+        /// List tasks. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.tasks.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.tasks.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TaskResource>> ListTasks(int projectId, TasksListParams @params)
         {
@@ -42,6 +52,11 @@ namespace Crowdin.Api.Tasks
             return _jsonParser.ParseResponseList<TaskResource>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Add task. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.tasks.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.tasks.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<TaskResource> AddTask(int projectId, AddTaskRequest request)
         {
@@ -50,6 +65,11 @@ namespace Crowdin.Api.Tasks
             return _jsonParser.ParseResponseObject<TaskResource>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Export task strings. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.tasks.exports.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.tasks.exports.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<DownloadLink?> ExportTaskStrings(int projectId, int taskId)
         {
@@ -61,6 +81,11 @@ namespace Crowdin.Api.Tasks
                 : null;
         }
 
+        /// <summary>
+        /// Get task. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.tasks.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.tasks.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<TaskResource> GetTask(int projectId, int taskId)
         {
@@ -69,6 +94,11 @@ namespace Crowdin.Api.Tasks
             return _jsonParser.ParseResponseObject<TaskResource>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete task. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.tasks.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.tasks.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteTask(int projectId, int taskId)
         {
@@ -77,6 +107,11 @@ namespace Crowdin.Api.Tasks
             Utils.ThrowIfStatusNot204(statusCode, $"Task {taskId} removal failed");
         }
 
+        /// <summary>
+        /// Edit task. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.tasks.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.tasks.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<TaskResource> EditTask(int projectId, int taskId, IEnumerable<TaskPatchBase> patches)
         {
@@ -85,6 +120,11 @@ namespace Crowdin.Api.Tasks
             return _jsonParser.ParseResponseObject<TaskResource>(result.JsonObject);
         }
 
+        /// <summary>
+        /// List user tasks. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.user.tasks.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.user.tasks.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public Task<ResponseList<TaskResource>> ListUserTasks(
             int limit = 25, int offset = 0,
@@ -93,6 +133,11 @@ namespace Crowdin.Api.Tasks
             return ListUserTasks(new UserTasksListParams(limit, offset, status, isArchived));
         }
 
+        /// <summary>
+        /// List user tasks. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.user.tasks.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.user.tasks.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TaskResource>> ListUserTasks(UserTasksListParams @params)
         {
@@ -100,6 +145,11 @@ namespace Crowdin.Api.Tasks
             return _jsonParser.ParseResponseList<TaskResource>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Edit task archived status. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.user.tasks.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.user.tasks.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<TaskResource> EditTaskArchivedStatus(
             int projectId, int taskId, IEnumerable<TaskArchivedStatusPatch> patches)

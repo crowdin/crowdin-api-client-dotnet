@@ -25,6 +25,11 @@ namespace Crowdin.Api.Languages
             _jsonParser = jsonParser;
         }
         
+        /// <summary>
+        /// List supported languages. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.languages.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.languages.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Language>> ListSupportedLanguages(int limit = 25, int offset = 0)
         {
@@ -34,6 +39,11 @@ namespace Crowdin.Api.Languages
             return _jsonParser.ParseResponseList<Language>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Add custom language. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.languages.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.languages.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Language> AddCustomLanguage(AddCustomLanguageRequest request)
         {
@@ -42,6 +52,11 @@ namespace Crowdin.Api.Languages
             return _jsonParser.ParseResponseObject<Language>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Get language. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.languages.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.languages.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Language> GetLanguage(string languageId)
         {
@@ -49,6 +64,11 @@ namespace Crowdin.Api.Languages
             return _jsonParser.ParseResponseObject<Language>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete custom language. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.languages.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.languages.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteCustomLanguage(string languageId)
         {
@@ -56,6 +76,11 @@ namespace Crowdin.Api.Languages
             Utils.ThrowIfStatusNot204(statusCode, $"Language {languageId} removal failed");
         }
 
+        /// <summary>
+        /// Edit custom language. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.languages.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.languages.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Language> EditCustomLanguage(string languageId, IEnumerable<LanguagePatch> patches)
         {

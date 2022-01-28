@@ -26,6 +26,10 @@ namespace Crowdin.Api.Teams
             _jsonParser = jsonParser;
         }
 
+        /// <summary>
+        /// Add team to project. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.teams.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ProjectTeamResources> AddTeamToProject(int projectId, AddTeamToProjectRequest request)
         {
@@ -34,6 +38,10 @@ namespace Crowdin.Api.Teams
             return _jsonParser.ParseResponseObject<ProjectTeamResources>(result.JsonObject);
         }
 
+        /// <summary>
+        /// List teams. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.teams.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Team>> ListTeams(int limit = 25, int offset = 0)
         {
@@ -43,6 +51,10 @@ namespace Crowdin.Api.Teams
             return _jsonParser.ParseResponseList<Team>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Add team. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.teams.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Team> AddTeam(AddTeamRequest request)
         {
@@ -50,6 +62,10 @@ namespace Crowdin.Api.Teams
             return _jsonParser.ParseResponseObject<Team>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Get team. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.teams.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Team> GetTeam(int teamId)
         {
@@ -58,6 +74,10 @@ namespace Crowdin.Api.Teams
             return _jsonParser.ParseResponseObject<Team>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete team. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.teams.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteTeam(int teamId)
         {
@@ -66,6 +86,10 @@ namespace Crowdin.Api.Teams
             Utils.ThrowIfStatusNot204(statusCode, $"Team {teamId} removal failed");
         }
 
+        /// <summary>
+        /// Edit team. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.teams.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Team> EditTeam(int teamId, IEnumerable<TeamPatch> patches)
         {
@@ -74,6 +98,10 @@ namespace Crowdin.Api.Teams
             return _jsonParser.ParseResponseObject<Team>(result.JsonObject);
         }
 
+        /// <summary>
+        /// List team members. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.teams.members.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TeamMember>> ListTeamMembers(int teamId, int limit = 25, int offset = 0)
         {
@@ -84,6 +112,10 @@ namespace Crowdin.Api.Teams
             return _jsonParser.ParseResponseList<TeamMember>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Add team members. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.teams.members.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<AddTeamMembersResponse> AddTeamMembers(int teamId, AddTeamMembersRequest request)
         {
@@ -98,6 +130,10 @@ namespace Crowdin.Api.Teams
             };
         }
 
+        /// <summary>
+        /// Delete all team members. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.teams.members.deleteMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteAllTeamMembers(int teamId)
         {
@@ -106,6 +142,10 @@ namespace Crowdin.Api.Teams
             Utils.ThrowIfStatusNot204(statusCode, $"All team members removal failed");
         }
 
+        /// <summary>
+        /// Delete team member. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.teams.members.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteTeamMember(int teamId, int memberId)
         {

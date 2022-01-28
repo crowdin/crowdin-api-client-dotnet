@@ -24,6 +24,10 @@ namespace Crowdin.Api.Vendors
             _jsonParser = jsonParser;
         }
 
+        /// <summary>
+        /// List vendors. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.vendors.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Vendor>> ListVendors(int limit = 25, int offset = 0)
         {

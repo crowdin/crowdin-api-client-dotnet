@@ -27,6 +27,11 @@ namespace Crowdin.Api.SourceStrings
             _jsonParser = jsonParser;
         }
 
+        /// <summary>
+        /// List strings. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.strings.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public Task<ResponseList<SourceString>> ListStrings(
             int projectId, int limit = 25, int offset = 0,
@@ -38,6 +43,11 @@ namespace Crowdin.Api.SourceStrings
                 denormalizePlaceholders, labelIds, fileId, branchId, directoryId, croql, filter, scope, limit, offset));
         }
 
+        /// <summary>
+        /// List strings. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.strings.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<SourceString>> ListStrings(int projectId, StringsListParams @params)
         {
@@ -46,6 +56,11 @@ namespace Crowdin.Api.SourceStrings
             return _jsonParser.ParseResponseList<SourceString>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Add string. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.strings.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<SourceString> AddString(int projectId, AddStringRequest request)
         {
@@ -54,6 +69,11 @@ namespace Crowdin.Api.SourceStrings
             return _jsonParser.ParseResponseObject<SourceString>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Get string. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.strings.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<SourceString> GetString(int projectId, int stringId, bool denormalizePlaceholders = false)
         {
@@ -66,6 +86,11 @@ namespace Crowdin.Api.SourceStrings
             return _jsonParser.ParseResponseObject<SourceString>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete string. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.strings.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteString(int projectId, int stringId)
         {
@@ -74,6 +99,11 @@ namespace Crowdin.Api.SourceStrings
             Utils.ThrowIfStatusNot204(statusCode, $"String {stringId} removal failed");
         }
 
+        /// <summary>
+        /// Edit string. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.strings.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<SourceString> EditString(int projectId, int stringId, IEnumerable<SourceStringPatch> patches)
         {

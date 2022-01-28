@@ -29,6 +29,11 @@ namespace Crowdin.Api.SourceFiles
         
         #region Branches
 
+        /// <summary>
+        /// List branches. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.branches.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.branches.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Branch>> ListBranches(
             int projectId, string? name = null, int limit = 25, int offset = 0)
@@ -41,6 +46,11 @@ namespace Crowdin.Api.SourceFiles
             return _jsonParser.ParseResponseList<Branch>(result.JsonObject);
         }
         
+        /// <summary>
+        /// Add branch. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.branches.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.branches.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Branch> AddBranch(int projectId, AddBranchRequest request)
         {
@@ -49,6 +59,11 @@ namespace Crowdin.Api.SourceFiles
             return _jsonParser.ParseResponseObject<Branch>(result.JsonObject);
         }
         
+        /// <summary>
+        /// Get branch. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.branches.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.branches.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Branch> GetBranch(int projectId, int branchId)
         {
@@ -57,6 +72,11 @@ namespace Crowdin.Api.SourceFiles
             return _jsonParser.ParseResponseObject<Branch>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete branch. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.branches.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.branches.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteBranch(int projectId, int branchId)
         {
@@ -65,6 +85,11 @@ namespace Crowdin.Api.SourceFiles
             Utils.ThrowIfStatusNot204(statusCode, $"Branch {branchId} removal failed");
         }
 
+        /// <summary>
+        /// Edit branch. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.branches.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.branches.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Branch> EditBranch(int projectId, int branchId, IEnumerable<BranchPatch> patches)
         {
@@ -91,6 +116,11 @@ namespace Crowdin.Api.SourceFiles
 
         #region Directories
 
+        /// <summary>
+        /// List directories. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.directories.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.directories.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public Task<ResponseList<Directory>> ListDirectories(
             int projectId, int limit = 25, int offset = 0,
@@ -101,6 +131,11 @@ namespace Crowdin.Api.SourceFiles
                 new DirectoriesListParams(branchId, directoryId, filter, recursion, limit, offset));
         }
 
+        /// <summary>
+        /// List directories. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.directories.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.directories.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Directory>> ListDirectories(int projectId, DirectoriesListParams @params)
         {
@@ -109,6 +144,11 @@ namespace Crowdin.Api.SourceFiles
             return _jsonParser.ParseResponseList<Directory>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Add directory. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.directories.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.directories.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Directory> AddDirectory(int projectId, AddDirectoryRequest request)
         {
@@ -117,6 +157,11 @@ namespace Crowdin.Api.SourceFiles
             return _jsonParser.ParseResponseObject<Directory>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Get directory. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.directories.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.directories.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Directory> GetDirectory(int projectId, int directoryId)
         {
@@ -125,6 +170,11 @@ namespace Crowdin.Api.SourceFiles
             return _jsonParser.ParseResponseObject<Directory>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete directory. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.directories.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.directories.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteDirectory(int projectId, int directoryId)
         {
@@ -133,6 +183,11 @@ namespace Crowdin.Api.SourceFiles
             Utils.ThrowIfStatusNot204(statusCode, $"Directory {directoryId} removal failed");
         }
 
+        /// <summary>
+        /// Edit directory. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.directories.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.directories.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Directory> EditDirectory(int projectId, int directoryId, IEnumerable<DirectoryPatch> patches)
         {
@@ -159,6 +214,11 @@ namespace Crowdin.Api.SourceFiles
 
         #region Files
         
+        /// <summary>
+        /// List files. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.files.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public Task<ResponseList<T>> ListFiles<T>(int projectId,
             int limit = 25, int offset = 0,
@@ -170,6 +230,11 @@ namespace Crowdin.Api.SourceFiles
                 new FilesListParams(branchId, directoryId, filter, recursion, limit, offset));
         }
         
+        /// <summary>
+        /// List files. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.files.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<T>> ListFiles<T>(int projectId, FilesListParams @params)
             where T : FileResourceBase // FileInfoCollectionResource, FileCollectionResource
@@ -179,6 +244,11 @@ namespace Crowdin.Api.SourceFiles
             return _jsonParser.ParseResponseList<T>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Add file. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.files.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<File> AddFile(int projectId, AddFileRequest request)
         {
@@ -187,6 +257,11 @@ namespace Crowdin.Api.SourceFiles
             return _jsonParser.ParseResponseObject<File>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Get file. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.files.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<TResponse> GetFile<TResponse>(int projectId, int fileId)
             where TResponse : FileInfoResource // FileInfoResource, FileResource
@@ -196,6 +271,11 @@ namespace Crowdin.Api.SourceFiles
             return _jsonParser.ParseResponseObject<TResponse>(result.JsonObject);
         }
         
+        /// <summary>
+        /// Update or Restore file. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.files.put">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.put">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<(File File, bool? IsModified)>
             UpdateOrRestoreFile(int projectId, int fileId, UpdateOrRestoreFileRequest request)
@@ -222,6 +302,11 @@ namespace Crowdin.Api.SourceFiles
             return (file, isModified);
         }
 
+        /// <summary>
+        /// Delete file. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.files.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteFile(int projectId, int fileId)
         {
@@ -230,6 +315,11 @@ namespace Crowdin.Api.SourceFiles
             Utils.ThrowIfStatusNot204(statusCode, $"File {fileId} from project {projectId} removal failed");
         }
 
+        /// <summary>
+        /// Edit file. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.files.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<File> EditFile(int projectId, int fileId, IEnumerable<FilePatch> patches)
         {
@@ -238,6 +328,11 @@ namespace Crowdin.Api.SourceFiles
             return _jsonParser.ParseResponseObject<File>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Download file. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.files.download.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.download.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<DownloadLink> DownloadFile(int projectId, int fileId)
         {
@@ -246,6 +341,11 @@ namespace Crowdin.Api.SourceFiles
             return _jsonParser.ParseResponseObject<DownloadLink>(result.JsonObject);
         }
 
+        /// <summary>
+        /// List file revisions. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.files.revisions.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.revisions.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<RevisionResource>> ListFileRevisions(
             int projectId, int fileId, int limit = 25, int offset = 0)
@@ -257,6 +357,11 @@ namespace Crowdin.Api.SourceFiles
             return _jsonParser.ParseResponseList<RevisionResource>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Get file revision. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.files.revisions.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.revisions.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<RevisionResource> GetFileRevision(int projectId, int fileId, int revisionId)
         {
@@ -283,6 +388,10 @@ namespace Crowdin.Api.SourceFiles
 
         #region Reviewed Source Files
 
+        /// <summary>
+        /// List reviewed source files builds. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.reviewed-builds.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<ReviewedStringBuild>> ListReviewedSourceFilesBuilds(
             int projectId, int? branchId, int limit = 25, int offset = 0)
@@ -295,6 +404,10 @@ namespace Crowdin.Api.SourceFiles
             return _jsonParser.ParseResponseList<ReviewedStringBuild>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Build reviewed source files. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.reviewed-builds.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ReviewedStringBuild> BuildReviewedSourceFiles(int projectId, BuildReviewedSourceFilesRequest request)
         {
@@ -303,6 +416,10 @@ namespace Crowdin.Api.SourceFiles
             return _jsonParser.ParseResponseObject<ReviewedStringBuild>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Check reviewed source files build status. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.reviewed-builds.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ReviewedStringBuild> CheckReviewedSourceFilesBuildStatus(int projectId, int buildId)
         {
@@ -311,6 +428,10 @@ namespace Crowdin.Api.SourceFiles
             return _jsonParser.ParseResponseObject<ReviewedStringBuild>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Download reviewed source files. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.reviewed-builds.download.download">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<DownloadLink> DownloadReviewedSourceFiles(int projectId, int buildId)
         {

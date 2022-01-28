@@ -26,6 +26,11 @@ namespace Crowdin.Api.TranslationMemory
             _jsonParser = jsonParser;
         }
 
+        /// <summary>
+        /// List TMs. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.tms.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public Task<ResponseList<TranslationMemory>> ListTms(
             int? userId = null, int? groupId = null, int limit = 25, int offset = 0)
@@ -33,6 +38,11 @@ namespace Crowdin.Api.TranslationMemory
             return ListTms(new TmsListParams(userId, groupId, limit, offset));
         }
 
+        /// <summary>
+        /// List TMs. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.tms.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TranslationMemory>> ListTms(TmsListParams @params)
         {
@@ -40,6 +50,11 @@ namespace Crowdin.Api.TranslationMemory
             return _jsonParser.ParseResponseList<TranslationMemory>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Add TM. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.tms.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<TranslationMemory> AddTm(AddTmRequest request)
         {
@@ -47,6 +62,11 @@ namespace Crowdin.Api.TranslationMemory
             return _jsonParser.ParseResponseObject<TranslationMemory>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Get TM. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.tms.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<TranslationMemory> GetTm(int tmId)
         {
@@ -55,6 +75,11 @@ namespace Crowdin.Api.TranslationMemory
             return _jsonParser.ParseResponseObject<TranslationMemory>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete TM. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.tms.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteTm(int tmId)
         {
@@ -63,6 +88,11 @@ namespace Crowdin.Api.TranslationMemory
             Utils.ThrowIfStatusNot204(statusCode, $"Translation Memory {tmId} removal failed");
         }
 
+        /// <summary>
+        /// Edit TM. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.tms.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<TranslationMemory> EditTm(int tmId, IEnumerable<TmPatch> patches)
         {
@@ -71,6 +101,11 @@ namespace Crowdin.Api.TranslationMemory
             return _jsonParser.ParseResponseObject<TranslationMemory>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Clear TM. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.tms.segments.clear">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.segments.clear">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task ClearTm(int tmId)
         {
@@ -79,6 +114,11 @@ namespace Crowdin.Api.TranslationMemory
             Utils.ThrowIfStatusNot204(statusCode, $"Translation Memory {tmId} cleanup failed");
         }
 
+        /// <summary>
+        /// Export TM. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.tms.exports.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.exports.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<TmExportStatus> ExportTm(int tmId, ExportTmRequest request)
         {
@@ -87,6 +127,11 @@ namespace Crowdin.Api.TranslationMemory
             return _jsonParser.ParseResponseObject<TmExportStatus>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Check TM export status. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.tms.exports.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.exports.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<TmExportStatus> CheckTmExportStatus(int tmId, string exportId)
         {
@@ -95,6 +140,11 @@ namespace Crowdin.Api.TranslationMemory
             return _jsonParser.ParseResponseObject<TmExportStatus>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Download TM. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.tms.exports.download.download">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.exports.download.download">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<DownloadLink> DownloadTm(int tmId, string exportId)
         {
@@ -103,6 +153,11 @@ namespace Crowdin.Api.TranslationMemory
             return _jsonParser.ParseResponseObject<DownloadLink>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Import TM. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.tms.imports.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.imports.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<TmImportStatus> ImportTm(int tmId, ImportTmRequest request)
         {
@@ -111,6 +166,11 @@ namespace Crowdin.Api.TranslationMemory
             return _jsonParser.ParseResponseObject<TmImportStatus>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Check TM import status. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.tms.imports.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.imports.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<TmImportStatus> CheckTmImportStatus(int tmId, string importId)
         {

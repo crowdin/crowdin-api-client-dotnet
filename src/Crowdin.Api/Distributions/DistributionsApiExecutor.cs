@@ -24,6 +24,11 @@ namespace Crowdin.Api.Distributions
             _jsonParser = jsonParser;
         }
 
+        /// <summary>
+        /// List distributions. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.distributions.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.distributions.getMany">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Distribution>> ListDistributions(int projectId, int limit = 25, int offset = 0)
         {
@@ -34,6 +39,11 @@ namespace Crowdin.Api.Distributions
             return _jsonParser.ParseResponseList<Distribution>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Add distribution. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.distributions.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.distributions.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Distribution> AddDistribution(int projectId, AddDistributionRequest request)
         {
@@ -42,6 +52,11 @@ namespace Crowdin.Api.Distributions
             return _jsonParser.ParseResponseObject<Distribution>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Get distribution. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.distributions.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.distributions.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Distribution> GetDistribution(int projectId, string hash)
         {
@@ -50,6 +65,11 @@ namespace Crowdin.Api.Distributions
             return _jsonParser.ParseResponseObject<Distribution>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete distribution. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.distributions.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.distributions.delete">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task DeleteDistribution(int projectId, string hash)
         {
@@ -58,6 +78,11 @@ namespace Crowdin.Api.Distributions
             Utils.ThrowIfStatusNot204(statusCode, $"Distribution {hash} removal failed");
         }
 
+        /// <summary>
+        /// Edit distribution. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.distributions.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.distributions.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<Distribution> EditDistribution(int projectId, string hash, IEnumerable<DistributionPatch> patches)
         {
@@ -66,6 +91,11 @@ namespace Crowdin.Api.Distributions
             return _jsonParser.ParseResponseObject<Distribution>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Get distribution release. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.distributions.release.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.distributions.release.get">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<DistributionRelease> GetDistributionRelease(int projectId, string hash)
         {
@@ -74,6 +104,11 @@ namespace Crowdin.Api.Distributions
             return _jsonParser.ParseResponseObject<DistributionRelease>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Release distribution. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.distributions.release.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.distributions.release.post">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
         public async Task<DistributionRelease> ReleaseDistribution(int projectId, string hash)
         {
