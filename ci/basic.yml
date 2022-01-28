@@ -39,18 +39,17 @@ steps:
     inputs:
       command: test
       projects: '**/*tests/*.csproj'
-      arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
+      arguments: '--configuration $(BuildConfiguration) /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura'
     displayName: "Running tests"
-
+    
   - script: |
-      choco install xunit
-      choco install opencover.portable
-      OpenCover.Console.exe -register:user -targetargs:".\tests\Crowdin.Api.Tests\bin\Release\net5.0\Crowdin.Api.dll -noshadow" -target:"xunit.console.x86.exe" -filter:"+[tests*]*" -output:".\MyProject_coverage.xml"
+      dotnet tool install -g dotnet-reportgenerator-globaltool
+      reportgenerator -reports:$(Build.SourcesDirectory)/tests/**/coverage.cobertura.xml -targetdir:$(Build.SourcesDirectory)/CodeCoverage -reporttypes:HtmlInline_AzurePipelines;Cobertura
     displayName: "Generating code coverage report"
 
   - script: |
       choco install codecov
-      codecov -f "MyProject_coverage.xml" -t $(CODECOV_TOKEN)
+      codecov -f "$(Build.SourcesDirectory)/tests/**/coverage.cobertura.xml" -t $(CODECOV_TOKEN)
     displayName: "Publishing code coverage report"
 
   - task: NuGetCommand@2
