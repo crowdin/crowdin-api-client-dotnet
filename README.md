@@ -20,6 +20,7 @@ For more about Crowdin API v2 see the documentation:
 
 [![Azure DevOps builds (branch)](https://img.shields.io/azure-devops/build/crowdin/crowdin-dotnet-client/44/main?cacheSeconds=1000)](https://dev.azure.com/crowdin/crowdin-dotnet-client/_build/latest?definitionId=44)
 [![Azure DevOps tests](https://img.shields.io/azure-devops/tests/crowdin/crowdin-dotnet-client/44/main?cacheSeconds=1000)](https://dev.azure.com/crowdin/crowdin-dotnet-client/_build/latest?definitionId=44)
+[![codecov](https://codecov.io/gh/crowdin/crowdin-api-client-dotnet/branch/main/graph/badge.svg?token=rvpbEqBcLU)](https://codecov.io/gh/crowdin/crowdin-api-client-dotnet)
 
 ### Requirements
 
