@@ -87,6 +87,19 @@ namespace Crowdin.Api.MachineTranslationEngines
             return _jsonParser.ParseResponseObject<MtEngine>(result.JsonObject);
         }
 
+        /// <summary>
+        /// List supported languages. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.mts.translations.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.mts.translations.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<MtTranslation> TranslateViaMt(int mtId, TranslateViaMtRequest request)
+        {
+            var url = $"/mts/{mtId}/translations";
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<MtTranslation>(result.JsonObject);
+        }
+
         #region Helper methods
 
         private static string FormUrl_MtId(int mtId) => $"{BaseUrl}/{mtId}";

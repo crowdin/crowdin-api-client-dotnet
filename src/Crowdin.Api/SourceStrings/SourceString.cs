@@ -41,6 +41,12 @@ namespace Crowdin.Api.SourceStrings
         [JsonProperty("isHidden")]
         public bool IsHidden { get; set; }
         
+        [JsonProperty("isDuplicate")]
+        public bool IsDuplicate { get; set; }
+        
+        [JsonProperty("masterStringId")]
+        public int? MasterStringId { get; set; }
+        
         [JsonProperty("revision")]
         public int Revision { get; set; }
         
