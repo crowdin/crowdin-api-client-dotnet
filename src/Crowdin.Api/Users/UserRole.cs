@@ -10,6 +10,9 @@ namespace Crowdin.Api.Users
         [Description("all")]
         All,
         
+        [Description("owner")]
+        Owner,
+        
         [Description("manager")]
         Manager,
         
