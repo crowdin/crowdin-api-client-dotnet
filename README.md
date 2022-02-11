@@ -91,7 +91,7 @@ ResponseList<StorageResource> storages = await client.Storage.ListStorages();
 2. Add storage
 
 ```C#
-FileStream fileStream = File.Open("/path/to/file", FileMode.Open);
+await using FileStream fileStream = File.Open("/path/to/file", FileMode.Open);
 StorageResource storageResource = await client.Storage.AddStorage(fileStream, filename: "MyFile");
 ```
 
