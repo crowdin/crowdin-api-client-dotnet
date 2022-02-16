@@ -250,12 +250,10 @@ namespace Crowdin.Api
 
         public Task<CrowdinApiResult> UploadFile(string subUrl, string filename, Stream fileStream)
         {
-            using Stream stream = fileStream;
-
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Post,
-                Content = new StreamContent(stream),
+                Content = new StreamContent(fileStream),
                 RequestUri = new Uri(FormRequestUrl(subUrl)),
             };
             request.Headers.Add("Crowdin-API-FileName", filename);
