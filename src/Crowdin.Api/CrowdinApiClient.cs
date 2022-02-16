@@ -225,7 +225,7 @@ namespace Crowdin.Api
             var request = new HttpRequestMessage
             {
                 Method = new HttpMethod("PATCH"),
-                Content = CreateJsonContent(body, true),
+                Content = CreateJsonContent(body),
                 RequestUri = new Uri(FormRequestUrl(subUrl, queryParams))
             };
 
@@ -281,13 +281,11 @@ namespace Crowdin.Api
             return result;
         }
 
-        private HttpContent CreateJsonContent(object body, bool isPatch = false)
+        private HttpContent CreateJsonContent(object body)
         {
             string bodyJson = JsonConvert.SerializeObject(body, DefaultJsonSerializerOptions);
 
-            MediaTypeHeaderValue contentType = isPatch
-                ? MediaTypeHeaderValue.Parse("application/json-patch+json")
-                : DefaultContentType;
+            MediaTypeHeaderValue contentType = DefaultContentType;
             
             return new StringContent(bodyJson, Encoding.UTF8, contentType.MediaType);
         }
