@@ -26,5 +26,8 @@ namespace Crowdin.Api.Translations
         // only enterprise API
         [JsonProperty("exportWithMinApprovalsCount")]
         public int? ExportWithMinApprovalsCount { get; set; }
+        
+        [JsonProperty("preserveFolderHierarchy")]
+        public bool? PreserveFolderHierarchy { get; set; }
     }
 }
