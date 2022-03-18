@@ -99,6 +99,35 @@ namespace Crowdin.Api.Tests.Core.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to {
+        ///    &quot;data&quot;: [
+        ///      {
+        ///        &quot;data&quot;: {
+        ///          &quot;stringId&quot;: 6356,
+        ///          &quot;contentType&quot;: &quot;text/plain&quot;,
+        ///          &quot;translationId&quot;: 732,
+        ///          &quot;text&quot;: &quot;Confirm New Password&quot;,
+        ///          &quot;user&quot;: {
+        ///            &quot;id&quot;: 19,
+        ///            &quot;username&quot;: &quot;john_doe&quot;,
+        ///            &quot;fullName&quot;: &quot;John Smith&quot;,
+        ///            &quot;avatarUrl&quot;: &quot;&quot;
+        ///          },
+        ///          &quot;createdAt&quot;: &quot;2019-09-23T11:26:54+00:00&quot;
+        ///        }
+        ///      },
+        ///      {
+        ///          &quot;data&quot;: {
+        ///              &quot;stringId&quot;: 6357,
+        ///              &quot;content [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ListLanguageTranslations_Response {
+            get {
+                return ResourceManager.GetString("ListLanguageTranslations_Response", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
         ///  &quot;data&quot;: {
         ///    &quot;id&quot;: 190695,
         ///    &quot;text&quot;: &quot;Цю стрічку перекладено&quot;,
