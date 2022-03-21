@@ -106,6 +106,7 @@ namespace Crowdin.Api
                     new FileExportOptionsConverter(),
                     new FileImportOptionsConverter(),
                     new FileInfoConverter(),
+                    new LanguageTranslationsConverter(),
                     new ToStringConverter()
                 }
             };

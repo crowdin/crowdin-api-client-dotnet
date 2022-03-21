@@ -1,4 +1,5 @@
 ﻿
+using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -16,6 +17,35 @@ namespace Crowdin.Api.Tests.StringTranslations
     public class StringTranslationsApiTests
     {
         private static readonly JsonSerializerSettings DefaultSettings = TestUtils.CreateJsonSerializerOptions();
+
+        [Fact]
+        public async Task ListLanguageTranslations()
+        {
+            const int projectId = 1;
+            const string languageId = "en";
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/languages/{languageId}/translations";
+
+            IDictionary<string, string> queryParams = TestUtils.CreateQueryParamsFromPaging();
+
+            mockClient
+                .Setup(client => client.SendGetRequest(url, queryParams))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Core.Resources.StringTranslations.ListLanguageTranslations_Response)
+                });
+
+            var executor = new StringTranslationsApiExecutor(mockClient.Object);
+            ResponseList<LanguageTranslations> response = await executor.ListLanguageTranslations(projectId, languageId);
+            
+            Assert.NotNull(response);
+            Assert.IsType<PlainLanguageTranslations>(response.Data[0]);
+            Assert.IsType<PluralLanguageTranslations>(response.Data[1]);
+            Assert.IsType<IcuLanguageTranslations>(response.Data[2]);
+        }
         
         [Fact]
         public async Task AddTranslation()
