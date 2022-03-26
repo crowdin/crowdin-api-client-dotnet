@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.Core.Converters;
+using Crowdin.Api.Core.Resilience;
 using Crowdin.Api.Dictionaries;
 using Crowdin.Api.Distributions;
 using Crowdin.Api.Glossaries;
@@ -94,8 +95,9 @@ namespace Crowdin.Api
         private readonly string _baseUrl;
         private readonly string _accessToken;
         private readonly HttpClient _httpClient = new HttpClient();
+        private readonly IRetryService? _retryService;
+        
         private static readonly MediaTypeHeaderValue DefaultContentType = MediaTypeHeaderValue.Parse("application/json");
-
         private static readonly JsonSerializerSettings DefaultJsonSerializerOptions =
             new JsonSerializerSettings
             {
@@ -111,10 +113,16 @@ namespace Crowdin.Api
                 }
             };
 
-        public IJsonParser DefaultJsonParser { get; } = new JsonParser(DefaultJsonSerializerOptions);
+        public IJsonParser DefaultJsonParser { get; }
 
-        public CrowdinApiClient(CrowdinCredentials credentials)
+        public CrowdinApiClient(
+            CrowdinCredentials credentials,
+            IJsonParser? jsonParser = null,
+            IRetryService? retryService = null)
         {
+            DefaultJsonParser = jsonParser ?? new JsonParser(DefaultJsonSerializerOptions);
+            _retryService = retryService;
+            
             _accessToken = credentials.AccessToken;
             _httpClient.DefaultRequestHeaders.Authorization =
                 new AuthenticationHeaderValue("Bearer", credentials.AccessToken);
@@ -158,12 +166,6 @@ namespace Crowdin.Api
             Users = new UsersApiExecutor(this);
             Vendors = new VendorsApiExecutor(this);
             Webhooks = new WebhooksApiExecutor(this);
-        }
-
-        public CrowdinApiClient(CrowdinCredentials credentials, IJsonParser defaultJsonParser)
-            : this(credentials)
-        {
-            DefaultJsonParser = defaultJsonParser;
         }
 
         public Task<CrowdinApiResult> SendGetRequest(string subUrl, IDictionary<string, string>? queryParams = null)
@@ -267,7 +269,11 @@ namespace Crowdin.Api
         {
             var result = new CrowdinApiResult();
             
-            HttpResponseMessage response = await _httpClient.SendAsync(request);
+            HttpResponseMessage response =
+                _retryService != null
+                ? await _retryService.ExecuteRequestAsync(() => _httpClient.SendAsync(request))
+                : await _httpClient.SendAsync(request);
+
             await CheckDefaultPreconditionsAndErrors(response);
             result.StatusCode = response.StatusCode;
             
