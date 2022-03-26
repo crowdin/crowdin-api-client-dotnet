@@ -94,7 +94,7 @@ namespace Crowdin.Api
 
         private readonly string _baseUrl;
         private readonly string _accessToken;
-        private readonly HttpClient _httpClient = new HttpClient();
+        private readonly HttpClient _httpClient;
         private readonly IRetryService? _retryService;
         
         private static readonly MediaTypeHeaderValue DefaultContentType = MediaTypeHeaderValue.Parse("application/json");
@@ -117,9 +117,11 @@ namespace Crowdin.Api
 
         public CrowdinApiClient(
             CrowdinCredentials credentials,
+            HttpClient? httpClient = null,
             IJsonParser? jsonParser = null,
             IRetryService? retryService = null)
         {
+            _httpClient = httpClient ?? new HttpClient();
             DefaultJsonParser = jsonParser ?? new JsonParser(DefaultJsonSerializerOptions);
             _retryService = retryService;
             
