@@ -139,6 +139,22 @@ var projectSettingsResponse = await client.ProjectsGroups.EditProject<ProjectSet
 Console.WriteLine(projectSettingsResponse);
 ```
 
+Get list of all the data available from API via automatic pagination control
+
+```C#
+const int parentId = 1;
+const int maxAmountOfItems = 50; // amount of needed items. Optional parameter, default: no limit
+const int amountPerRequest = 10; // amount of items in response per 1 request. Optional parameter, default: 25
+
+Group[] allGroups = await CrowdinApiClient.WithFetchAll((limit, offset) =>
+{
+    Console.WriteLine("Limit: {0} | Offset: {1}", limit, offset);
+    return client.ProjectsGroups.ListGroups(parentId, limit, offset);
+}, maxAmountOfItems, amountPerRequest);
+```
+
+Only for list async methods that return `Task<ResponseList<T>>`.
+
 ### Contribution
 
 If you want to contribute please read the [Contributing](/CONTRIBUTING.md) guidelines.

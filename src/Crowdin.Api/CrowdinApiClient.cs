@@ -267,6 +267,39 @@ namespace Crowdin.Api
             return SendRequest(request);
         }
 
+        public static async Task<T[]> WithFetchAll<T>(
+            Func<int, int, Task<ResponseList<T>>> runRequest,
+            int? maxAmountOfItems = null,
+            int amountPerRequest = 25)
+        {
+            int limit = maxAmountOfItems < amountPerRequest ? maxAmountOfItems.Value : amountPerRequest;
+            
+            var offset = 0;
+            var outResultList = new List<T>();
+
+            while (true)
+            {
+                ResponseList<T> response = await runRequest(limit, offset);
+                outResultList.AddRange(response.Data);
+                
+                if (response.Data.Count < limit) break;
+                
+                offset += limit;
+                
+                if (maxAmountOfItems.HasValue)
+                {
+                    if (outResultList.Count == maxAmountOfItems.Value) break;
+                    
+                    if (maxAmountOfItems.Value - outResultList.Count < limit)
+                    {
+                        limit = maxAmountOfItems.Value - outResultList.Count;
+                    }
+                }
+            }
+
+            return outResultList.ToArray();
+        }
+
         private async Task<CrowdinApiResult> SendRequest(HttpRequestMessage request)
         {
             var result = new CrowdinApiResult();
