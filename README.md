@@ -139,6 +139,8 @@ var projectSettingsResponse = await client.ProjectsGroups.EditProject<ProjectSet
 Console.WriteLine(projectSettingsResponse);
 ```
 
+#### Fetch all records
+
 Get list of all the data available from API via automatic pagination control
 
 ```C#
@@ -154,6 +156,8 @@ Group[] allGroups = await CrowdinApiClient.WithFetchAll((limit, offset) =>
 ```
 
 Only for list async methods that return `Task<ResponseList<T>>`.
+
+#### Retry configuration
 
 Pass retry service (built-in or custom) if needed
 
