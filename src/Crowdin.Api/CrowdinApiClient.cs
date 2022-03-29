@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.Core.Converters;
+using Crowdin.Api.Core.Resilience;
 using Crowdin.Api.Dictionaries;
 using Crowdin.Api.Distributions;
 using Crowdin.Api.Glossaries;
@@ -93,9 +94,10 @@ namespace Crowdin.Api
 
         private readonly string _baseUrl;
         private readonly string _accessToken;
-        private readonly HttpClient _httpClient = new HttpClient();
+        private readonly HttpClient _httpClient;
+        private readonly IRetryService? _retryService;
+        
         private static readonly MediaTypeHeaderValue DefaultContentType = MediaTypeHeaderValue.Parse("application/json");
-
         private static readonly JsonSerializerSettings DefaultJsonSerializerOptions =
             new JsonSerializerSettings
             {
@@ -111,10 +113,18 @@ namespace Crowdin.Api
                 }
             };
 
-        public IJsonParser DefaultJsonParser { get; } = new JsonParser(DefaultJsonSerializerOptions);
+        public IJsonParser DefaultJsonParser { get; }
 
-        public CrowdinApiClient(CrowdinCredentials credentials)
+        public CrowdinApiClient(
+            CrowdinCredentials credentials,
+            HttpClient? httpClient = null,
+            IJsonParser? jsonParser = null,
+            IRetryService? retryService = null)
         {
+            _httpClient = httpClient ?? new HttpClient();
+            DefaultJsonParser = jsonParser ?? new JsonParser(DefaultJsonSerializerOptions);
+            _retryService = retryService;
+            
             _accessToken = credentials.AccessToken;
             _httpClient.DefaultRequestHeaders.Authorization =
                 new AuthenticationHeaderValue("Bearer", credentials.AccessToken);
@@ -158,12 +168,6 @@ namespace Crowdin.Api
             Users = new UsersApiExecutor(this);
             Vendors = new VendorsApiExecutor(this);
             Webhooks = new WebhooksApiExecutor(this);
-        }
-
-        public CrowdinApiClient(CrowdinCredentials credentials, IJsonParser defaultJsonParser)
-            : this(credentials)
-        {
-            DefaultJsonParser = defaultJsonParser;
         }
 
         public Task<CrowdinApiResult> SendGetRequest(string subUrl, IDictionary<string, string>? queryParams = null)
@@ -263,11 +267,48 @@ namespace Crowdin.Api
             return SendRequest(request);
         }
 
+        public static async Task<T[]> WithFetchAll<T>(
+            Func<int, int, Task<ResponseList<T>>> runRequest,
+            int? maxAmountOfItems = null,
+            int amountPerRequest = 25)
+        {
+            int limit = maxAmountOfItems < amountPerRequest ? maxAmountOfItems.Value : amountPerRequest;
+            
+            var offset = 0;
+            var outResultList = new List<T>();
+
+            while (true)
+            {
+                ResponseList<T> response = await runRequest(limit, offset);
+                outResultList.AddRange(response.Data);
+                
+                if (response.Data.Count < limit) break;
+                
+                offset += limit;
+                
+                if (maxAmountOfItems.HasValue)
+                {
+                    if (outResultList.Count == maxAmountOfItems.Value) break;
+                    
+                    if (maxAmountOfItems.Value - outResultList.Count < limit)
+                    {
+                        limit = maxAmountOfItems.Value - outResultList.Count;
+                    }
+                }
+            }
+
+            return outResultList.ToArray();
+        }
+
         private async Task<CrowdinApiResult> SendRequest(HttpRequestMessage request)
         {
             var result = new CrowdinApiResult();
             
-            HttpResponseMessage response = await _httpClient.SendAsync(request);
+            HttpResponseMessage response =
+                _retryService != null
+                ? await _retryService.ExecuteRequestAsync(() => _httpClient.SendAsync(request))
+                : await _httpClient.SendAsync(request);
+
             await CheckDefaultPreconditionsAndErrors(response);
             result.StatusCode = response.StatusCode;
             

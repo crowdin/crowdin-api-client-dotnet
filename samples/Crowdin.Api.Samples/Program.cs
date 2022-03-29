@@ -40,3 +40,17 @@ var operations = new List<ProjectPatch>
 
 var projectSettingsResponse = await client.ProjectsGroups.EditProject<ProjectSettings>(projectId, operations);
 Console.WriteLine(projectSettingsResponse);
+
+// Get all elements by automatic pagination control
+
+const int parentId = 1;
+const int maxAmountOfItems = 50;
+const int amountPerRequest = 10;
+
+Group[] allGroups = await CrowdinApiClient.WithFetchAll((limit, offset) =>
+{
+    Console.WriteLine("{0} {1}", limit, offset);
+    return client.ProjectsGroups.ListGroups(parentId, limit, offset);
+}, maxAmountOfItems, amountPerRequest);
+
+Console.WriteLine(allGroups);
