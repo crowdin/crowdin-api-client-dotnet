@@ -155,6 +155,28 @@ Group[] allGroups = await CrowdinApiClient.WithFetchAll((limit, offset) =>
 
 Only for list async methods that return `Task<ResponseList<T>>`.
 
+Pass retry service (built-in or custom) if needed
+
+```C#
+IRetryService myRetryService = new RetryService(new RetryConfiguration
+{
+    RetriesCount = 5,
+    WaitIntervalMilliseconds = 1000,
+    SkipRetryConditions =
+    {
+        exception => ((CrowdinApiException) exception).Code.GetValueOrDefault() == 1
+    }
+});
+
+var apiClient = new CrowdinApiClient(new CrowdinCredentials
+{
+    AccessToken = "<paste token here>",
+    Organization = "optional organization (for Enterprise API)"
+}, retryService: myRetryService);
+```
+
+A custom retry service should also implement interface `IRetryService`.
+
 ### Contribution
 
 If you want to contribute please read the [Contributing](/CONTRIBUTING.md) guidelines.
