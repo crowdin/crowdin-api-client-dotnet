@@ -80,7 +80,7 @@ namespace Crowdin.Api.TranslationStatus
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<LanguageProgressResource>> GetLanguageProgress(
-            int projectId, int languageId, int limit = 25, int offset = 0)
+            int projectId, string languageId, int limit = 25, int offset = 0)
         {
             var url = $"/projects/{projectId}/languages/{languageId}/progress";
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
