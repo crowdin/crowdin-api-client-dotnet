@@ -59,9 +59,6 @@ namespace Crowdin.Api.ProjectsGroups
         [JsonProperty("hiddenStringsProofreadersAccess")]
         public bool? HiddenStringsProofreadersAccess { get; set; }
         
-        [JsonProperty("useGlobalTm")]
-        public bool? UseGlobalTm { get; set; }
-        
         [JsonProperty("delayedWorkflowStart")]
         public bool? DelayedWorkflowStart { get; set; }
         
