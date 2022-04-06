@@ -148,7 +148,7 @@ namespace Crowdin.Api.Translations
         /// </summary>
         [PublicAPI]
         public async Task<UploadTranslationsResponse> UploadTranslations(
-            int projectId, int languageId, UploadTranslationsRequest request)
+            int projectId, string languageId, UploadTranslationsRequest request)
         {
             var url = $"/projects/{projectId}/translations/{languageId}";
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);

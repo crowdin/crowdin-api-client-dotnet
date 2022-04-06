@@ -87,5 +87,55 @@ namespace Crowdin.Api.Tests.Core.Resources {
                 return ResourceManager.GetString("ApplyPreTranslationResponse", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;data&quot;: [
+        ///    {
+        ///      &quot;data&quot;: {
+        ///        &quot;words&quot;: {
+        ///          &quot;total&quot;: 7249,
+        ///          &quot;translated&quot;: 3651,
+        ///          &quot;approved&quot;: 3637
+        ///        },
+        ///        &quot;phrases&quot;: {
+        ///          &quot;total&quot;: 3041,
+        ///          &quot;translated&quot;: 2631,
+        ///          &quot;approved&quot;: 2622
+        ///        },
+        ///        &quot;translationProgress&quot;: 86,
+        ///        &quot;approvalProgress&quot;: 86,
+        ///        &quot;fileId&quot;: 12,
+        ///        &quot;eTag&quot;: &quot;fd0ea167420ef1687fd16635b9fb67a3&quot;
+        ///      }
+        ///    }
+        ///  ],
+        ///  &quot;pagination&quot;: {
+        ///    &quot;offset&quot;: 0,
+        ///    &quot;limit&quot;: 25
+        ///  }
+        ///}.
+        /// </summary>
+        internal static string GetLanguageStatusResponse {
+            get {
+                return ResourceManager.GetString("GetLanguageStatusResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;data&quot;: {
+        ///    &quot;projectId&quot;: 1,
+        ///    &quot;storageId&quot;: 34,
+        ///    &quot;languageId&quot;: &quot;es&quot;,
+        ///    &quot;fileId&quot;: 56
+        ///  }
+        ///}.
+        /// </summary>
+        internal static string UploadTranslationsResponse {
+            get {
+                return ResourceManager.GetString("UploadTranslationsResponse", resourceCulture);
+            }
+        }
     }
 }

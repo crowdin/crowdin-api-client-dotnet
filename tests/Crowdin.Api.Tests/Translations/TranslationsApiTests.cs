@@ -50,5 +50,37 @@ namespace Crowdin.Api.Tests.Translations
             PreTranslation preTranslation = await executor.ApplyPreTranslation(projectId, body);
             Assert.NotNull(preTranslation);
         }
+
+        [Fact]
+        public async Task UploadTranslations()
+        {
+            const int projectId = 1;
+            const string languageId = "es";
+
+            var body = new UploadTranslationsRequest
+            {
+                FileId = 56,
+                AutoApproveImported = false,
+                ImportEqSuggestions = false,
+                MarkAddedTranslationsAsDone = false,
+                StorageId = 34,
+                TranslateHidden = false
+            };
+
+            var mockClient = new Mock<ICrowdinApiClient>();
+            mockClient
+                .Setup(client => client.SendPostRequest(
+                    $"/projects/{projectId}/translations/{languageId}", body, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Core.Resources.Translations.UploadTranslationsResponse)
+                });
+
+            var executor = new TranslationsApiExecutor(mockClient.Object, TestUtils.CreateJsonParser());
+
+            UploadTranslationsResponse response = await executor.UploadTranslations(projectId, languageId, body);
+            Assert.NotNull(response);
+        }
     }
 }
