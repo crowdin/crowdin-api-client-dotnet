@@ -76,9 +76,6 @@ namespace Crowdin.Api.ProjectsGroups
         [Description("/publicDownloads")]
         PublicDownloads,
         
-        [Description("/useGlobalTm")]
-        UseGlobalTm,
-        
         [Description("/normalizePlaceholder")]
         NormalizePlaceholder,
         
