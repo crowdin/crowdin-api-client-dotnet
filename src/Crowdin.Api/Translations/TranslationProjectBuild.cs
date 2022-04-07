@@ -41,8 +41,8 @@ namespace Crowdin.Api.Translations
             [JsonProperty("directoryId")]
             public int? DirectoryId { get; set; }
             
-            [JsonProperty("targetLanguagesId")]
-            public string[] TargetLanguagesId { get; set; }
+            [JsonProperty("targetLanguageIds")]
+            public string[] TargetLanguageIds { get; set; }
         
             [JsonProperty("skipUntranslatedStrings")]
             public bool SkipUntranslatedStrings { get; set; }
