@@ -106,6 +106,8 @@ namespace Crowdin.Api.Tests.Translations
 
             Assert.Single(response.Data);
             Assert.Equal(projectId, response.Data[0].ProjectId);
+            Assert.Null(response.Data[0].Attributes.BranchId);
+            Assert.Null(response.Data[0].Attributes.DirectoryId);
         }
     }
 }
