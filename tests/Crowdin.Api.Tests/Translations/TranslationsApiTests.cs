@@ -82,5 +82,30 @@ namespace Crowdin.Api.Tests.Translations
             UploadTranslationsResponse response = await executor.UploadTranslations(projectId, languageId, body);
             Assert.NotNull(response);
         }
+
+        [Fact]
+        public async Task ListProjectBuilds()
+        {
+            const int projectId = 12345;
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/translations/builds";
+            IDictionary<string, string> queryParams = TestUtils.CreateQueryParamsFromPaging();
+
+            mockClient
+                .Setup(client => client.SendGetRequest(url, queryParams))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Core.Resources.Translations.ListProjectBuildsResponse)
+                });
+
+            var executor = new TranslationsApiExecutor(mockClient.Object);
+            ResponseList<TranslationProjectBuild> response = await executor.ListProjectBuilds(projectId);
+
+            Assert.Single(response.Data);
+            Assert.Equal(projectId, response.Data[0].ProjectId);
+        }
     }
 }

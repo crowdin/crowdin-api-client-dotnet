@@ -30,7 +30,7 @@ namespace Crowdin.Api.Translations
         public DateTimeOffset FinishedAt { get; set; }
         
         [JsonProperty("attributes")]
-        public AttributesHolder[] Attributes { get; set; }
+        public AttributesHolder Attributes { get; set; }
         
         [PublicAPI]
         public class AttributesHolder
