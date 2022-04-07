@@ -124,6 +124,29 @@ namespace Crowdin.Api.Tests.Core.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to {
+        ///    &quot;data&quot;: [
+        ///        {
+        ///            &quot;data&quot;: {
+        ///                &quot;id&quot;: 13,
+        ///                &quot;projectId&quot;: 12345,
+        ///                &quot;status&quot;: &quot;finished&quot;,
+        ///                &quot;progress&quot;: 100,
+        ///                &quot;createdAt&quot;: &quot;2022-03-31T18:31:28+00:00&quot;,
+        ///                &quot;updatedAt&quot;: &quot;2022-03-31T18:45:15+00:00&quot;,
+        ///                &quot;finishedAt&quot;: &quot;2022-03-31T18:45:15+00:00&quot;,
+        ///                &quot;attributes&quot;: {
+        ///                    &quot;branchId&quot;: null,
+        ///                    &quot;directoryId&quot;: null,
+        ///                    &quot;targetLang [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ListProjectBuildsResponse {
+            get {
+                return ResourceManager.GetString("ListProjectBuildsResponse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
         ///  &quot;data&quot;: {
         ///    &quot;projectId&quot;: 1,
         ///    &quot;storageId&quot;: 34,

@@ -83,4 +83,33 @@
   }
 }</value>
   </data>
+  <data name="ListProjectBuildsResponse" xml:space="preserve">
+    <value>{
+    "data": [
+        {
+            "data": {
+                "id": 13,
+                "projectId": 12345,
+                "status": "finished",
+                "progress": 100,
+                "createdAt": "2022-03-31T18:31:28+00:00",
+                "updatedAt": "2022-03-31T18:45:15+00:00",
+                "finishedAt": "2022-03-31T18:45:15+00:00",
+                "attributes": {
+                    "branchId": null,
+                    "directoryId": null,
+                    "targetLanguageIds": [],
+                    "skipUntranslatedStrings": false,
+                    "skipUntranslatedFiles": false,
+                    "exportApprovedOnly": false
+                }
+            }
+        }
+    ],
+    "pagination": {
+        "offset": 0,
+        "limit": 25
+    }
+}</value>
+  </data>
 </root>
