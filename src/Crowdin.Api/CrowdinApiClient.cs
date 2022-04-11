@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -350,10 +351,20 @@ namespace Crowdin.Api
 
             if (response.StatusCode is HttpStatusCode.BadRequest)
             {
-                ErrorResource[]? errorResources =
-                    JsonConvert.DeserializeObject<ErrorResource[]>(doc["errors"]!.ToString());
+                ErrorResource[] errorResources = doc["errors"]!
+                    .Select(subObject => JsonConvert.DeserializeObject<ErrorResource>(subObject["error"]!.ToString()))
+                    .ToArray()!;
 
-                throw new CrowdinApiException("Invalid Request Parameters", errorResources);
+                var messageBuilder = new StringBuilder("Invalid Request Parameters: ");
+                messageBuilder.Append(errorResources[0].Errors[0].Message);
+
+                if (errorResources.Length > 1 ||
+                    errorResources[0].Errors.Length > 1)
+                {
+                    messageBuilder.Append(" + more in Related property");
+                }
+
+                throw new CrowdinApiException(messageBuilder.ToString(), errorResources);
             }
             
             JToken error = doc["error"]!;
