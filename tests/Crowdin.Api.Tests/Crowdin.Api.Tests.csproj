@@ -105,6 +105,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Webhooks.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\Users.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Users.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -202,6 +206,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>Webhooks.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\Users.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Users.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 
