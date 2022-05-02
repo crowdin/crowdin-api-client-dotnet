@@ -1,4 +1,5 @@
 ﻿
+using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -156,6 +157,17 @@ namespace Crowdin.Api.Users
         }
 
         /// <summary>
+        /// Invite user. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.users.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<UserEnterprise> InviteUser(EnterpriseInviteUserRequest request)
+        {
+            CrowdinApiResult result = await _apiClient.SendPostRequest("/users", request);
+            return _jsonParser.ParseResponseObject<UserEnterprise>(result.JsonObject);
+        }
+
+        /// <summary>
         /// Get user. Documentation:
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.users.getById">Crowdin Enterprise API</a>
         /// </summary>
@@ -167,6 +179,30 @@ namespace Crowdin.Api.Users
             return _jsonParser.ParseResponseObject<UserEnterprise>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Delete user. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.users.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task DeleteUser(int userId)
+        {
+            string url = FormUrl_UserId(userId);
+            HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
+            Utils.ThrowIfStatusNot204(statusCode, $"User {userId} removal failed");
+        }
+        
+        /// <summary>
+        /// Edit user. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.users.patch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<UserEnterprise> EditUser(int userId, IEnumerable<EnterpriseUserPatch> patches)
+        {
+            string url = FormUrl_UserId(userId);
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            return _jsonParser.ParseResponseObject<UserEnterprise>(result.JsonObject);
+        }
+        
         /// <summary>
         /// Get authenticated user. Documentation:
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.user.get">Crowdin API</a>
@@ -202,6 +238,11 @@ namespace Crowdin.Api.Users
         private static string FormUrl_MemberId(int projectId, int memberId)
         {
             return $"/projects/{projectId}/members/{memberId}";
+        }
+
+        private static string FormUrl_UserId(int userId)
+        {
+            return $"/users/{userId}";
         }
 
         #endregion
