@@ -1,0 +1,39 @@
+
+name: Documentation
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup .NET Core SDK
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: 3.1.x
+
+      - name: Install DocFX
+        uses: crazy-max/ghaction-chocolatey@v1
+        with:
+          args: install docfx
+
+      - name: Generate documentation
+        working-directory: docs
+        run: docfx docfx.json
+        continue-on-error: false
+
+      - name: Copy README.html -> index.html
+        run: cp docs/_site/README.html docs/_site/index.html
+
+      - name: Deploy to GitHub Pages 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages
+          folder: docs/_site

@@ -183,7 +183,7 @@ A custom retry service should also implement interface `IRetryService`.
 
 ### Contribution
 
-If you want to contribute please read the [Contributing](/CONTRIBUTING.md) guidelines.
+If you want to contribute please read the [Contributing](CONTRIBUTING.md) guidelines.
 
 ### Seeking Assistance
 If you find any problems or would like to suggest a feature, please feel free to file an issue on Github at [Issues Page](https://github.com/crowdin/crowdin-dotnet-client/issues).
