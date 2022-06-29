@@ -1,16 +1,16 @@
-[<p align='center'><img src='https://support.crowdin.com/assets/logos/crowdin-dark-symbol.png' data-canonical-src='https://support.crowdin.com/assets/logos/crowdin-dark-symbol.png' width='200' height='200' align='center'/></p>](https://crowdin.com)
+[<p align='center'><img src='https://support.crowdin.com/assets/logos/crowdin-dark-symbol.png' data-canonical-src='https://support.crowdin.com/assets/logos/crowdin-dark-symbol.png' width='150' height='150' align='center'/></p>](https://crowdin.com)
 
-# Crowdin .NET client
+# Crowdin .NET client [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fcrowdin%2Fcrowdin-api-client-dotnet&text=The%20Crowdin%20.NET%20client%20is%20a%20lightweight%20interface%20to%20the%20Crowdin%20API)&nbsp;[![GitHub Repo stars](https://img.shields.io/github/stars/crowdin/crowdin-api-client-dotnet?style=social&cacheSeconds=1800)](https://github.com/crowdin/crowdin-api-client-dotnet/stargazers)
 
 The Crowdin .NET client is a lightweight interface to the Crowdin API v2. It provides common services for making API requests.
 
 Our API is a full-featured RESTful API that helps you to integrate localization into your development process. The endpoints that we use allow you to easily make calls to retrieve information and to execute actions needed.
 
-For more about Crowdin API v2 see the documentation:
-- [Crowdin](https://support.crowdin.com/api/v2/)
-- [Crowdin Enterprise](https://support.crowdin.com/enterprise/api/)
+<div align="center">
 
-### Status
+[**`API Client Docs`**](https://crowdin.github.io/crowdin-api-client-dotnet/api/Crowdin.Api.html) &nbsp;|&nbsp;
+[**`Crowdin API`**](https://developer.crowdin.com/api/v2/) &nbsp;|&nbsp;
+[**`Crowdin Enterprise API`**](https://developer.crowdin.com/enterprise/api/v2/)
 
 [![Nuget](https://img.shields.io/nuget/v/Crowdin.Api?cacheSeconds=5000)](https://www.nuget.org/packages/Crowdin.Api/)
 [![Nuget](https://img.shields.io/nuget/dt/crowdin.api?cacheSeconds=800)](https://www.nuget.org/packages/Crowdin.Api/)
@@ -21,6 +21,8 @@ For more about Crowdin API v2 see the documentation:
 [![Azure DevOps builds (branch)](https://img.shields.io/azure-devops/build/crowdin/crowdin-dotnet-client/44/main?cacheSeconds=1000)](https://dev.azure.com/crowdin/crowdin-dotnet-client/_build/latest?definitionId=44)
 [![Azure DevOps tests](https://img.shields.io/azure-devops/tests/crowdin/crowdin-dotnet-client/44/main?cacheSeconds=1000)](https://dev.azure.com/crowdin/crowdin-dotnet-client/_build/latest?definitionId=44)
 [![codecov](https://codecov.io/gh/crowdin/crowdin-api-client-dotnet/branch/main/graph/badge.svg?token=rvpbEqBcLU)](https://codecov.io/gh/crowdin/crowdin-api-client-dotnet)
+
+</div>
 
 ### Requirements
 
