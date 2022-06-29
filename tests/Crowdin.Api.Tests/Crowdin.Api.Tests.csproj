@@ -109,6 +109,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Users.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\Bundles.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Bundles.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -211,6 +215,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>Users.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\Bundles.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Bundles.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 
