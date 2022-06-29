@@ -1,0 +1,37 @@
+{
+    "metadata": [
+      {
+        "src": [
+          {
+            "files": [ "src/Crowdin.Api/Crowdin.Api.csproj" ],
+            "exclude": [ "**/bin/**", "**/obj/**" ],
+            "src": ".."
+          }
+        ],
+        "dest": "obj/api"
+      }
+    ],
+    "build": {
+      "content": [
+        {
+          "files": [ "**/*.yml" ],
+          "src": "obj/api",
+          "dest": "api"
+        },
+        {
+          "files": [ "toc.yml" ]
+        },
+        {
+          "files": [ "*.md" ],
+          "src": ".."
+        }
+      ],
+      "globalMetadata": {
+        "_appTitle": "Docs",
+        "_enableSearch": true
+      },
+      "markdownEngineName": "markdig",
+      "dest": "_site",
+      "xrefService": [ "https://xref.docs.microsoft.com/query?uid={uid}" ]
+    }
+}
