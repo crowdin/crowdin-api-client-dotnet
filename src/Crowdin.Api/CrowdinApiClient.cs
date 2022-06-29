@@ -9,6 +9,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
+using Crowdin.Api.Bundles;
 using Crowdin.Api.Core;
 using Crowdin.Api.Core.Converters;
 using Crowdin.Api.Core.Resilience;
@@ -47,6 +48,8 @@ namespace Crowdin.Api
     [PublicAPI]
     public class CrowdinApiClient : ICrowdinApiClient
     {
+        public BundlesApiExecutor Bundles { get; }
+        
         public DictionariesApiExecutor Dictionaries { get; }
         
         public DistributionsApiExecutor Distributions { get; }
@@ -146,6 +149,7 @@ namespace Crowdin.Api
                 _baseUrl = "https://api.crowdin.com/api/v2";
             }
 
+            Bundles = new BundlesApiExecutor(this);
             Dictionaries = new DictionariesApiExecutor(this);
             Distributions = new DistributionsApiExecutor(this);
             Glossaries = new GlossariesApiExecutor(this);

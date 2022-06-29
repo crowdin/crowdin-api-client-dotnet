@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="ListBundles_Response" xml:space="preserve">
+        <value>{
+  "data": [
+    {
+      "data": {
+        "id": 1,
+        "applicationId": "resx-string-exporter",
+        "sourcePatterns": [
+          "/master/"
+        ],
+        "ignorePatterns": [
+          "/master/environments/"
+        ],
+        "exportPattern": "strings-%two_letters_code%.resx",
+        "labelIds": [
+          0
+        ],
+        "createdAt": "2019-09-20T11:11:05+00:00",
+        "updatedAt": "2019-09-20T12:22:20+00:00"
+      }
+    }
+  ],
+  "pagination": {
+    "offset": 0,
+    "limit": 25
+  }
+}</value>
+    </data>
+    <data name="AddBundle_Request" xml:space="preserve">
+        <value>{
+  "applicationId": "resx-string-exporter",
+  "sourcePatterns": [
+    "/master/"
+  ],
+  "ignorePatterns": [
+    "/master/environments/"
+  ],
+  "exportPattern": "strings-%two_letter_code%.resx",
+  "labelIds": [
+    0
+  ]
+}</value>
+    </data>
+    <data name="AddBundle_Response" xml:space="preserve">
+        <value>{
+  "data": {
+    "id": 1,
+    "applicationId": "resx-string-exporter",
+    "sourcePatterns": [
+      "/master/"
+    ],
+    "ignorePatterns": [
+      "/master/environments/"
+    ],
+    "exportPattern": "strings-%two_letters_code%.resx",
+    "labelIds": [
+      0
+    ],
+    "createdAt": "2019-09-20T11:11:05+00:00",
+    "updatedAt": "2019-09-20T12:22:20+00:00"
+  }
+}</value>
+    </data>
+  <data name="EditBundle_Request" xml:space="preserve">
+    <value>[
+  {
+    "path": "/applicationId",
+    "op": "replace",
+
+    "value": "resx-string-exporter"
+  }
+]</value>
+  </data>
+  <data name="EditBundle_Response" xml:space="preserve">
+    <value>{
+  "data": {
+    "id": 1,
+    "applicationId": "resx-string-exporter",
+    "sourcePatterns": [
+      "/master/"
+    ],
+    "ignorePatterns": [
+      "/master/environments/"
+    ],
+    "exportPattern": "strings-%two_letters_code%.resx",
+    "labelIds": [
+      0
+    ],
+    "createdAt": "2019-09-20T11:11:05+00:00",
+    "updatedAt": "2019-09-20T12:22:20+00:00"
+  }
+}</value>
+  </data>
+  <data name="ListBundleFiles_Response_AsTranslator" xml:space="preserve">
+    <value>{
+  "data": [
+    {
+      "data": {
+        "id": 44,
+        "projectId": 2,
+        "branchId": 34,
+        "directoryId": 4,
+        "name": "umbrella_app.xliff",
+        "title": "source_app_info",
+        "type": "xliff",
+        "path": "/directory1/directory2/filename.extension",
+        "status": "active"
+      }
+    }
+  ],
+  "pagination": {
+    "offset": 0,
+    "limit": 25
+  }
+}</value>
+  </data>
+  <data name="ListBundleFiles_Response_AsProjectOwner" xml:space="preserve">
+    <value>{
+  "data": [
+    {
+      "data": {
+        "id": 44,
+        "projectId": 2,
+        "branchId": 34,
+        "directoryId": 4,
+        "name": "umbrella_app.xliff",
+        "title": "source_app_info",
+        "type": "xliff",
+        "path": "/directory1/directory2/filename.extension",
+        "status": "active",
+        "revisionId": 1,
+        "priority": "normal",
+        "importOptions": {
+          "firstLineContainsHeader": false,
+          "importTranslations": true,
+          "scheme": {
+            "identifier": 0,
+            "sourcePhrase": 1,
+            "en": 2,
+            "de": 3
+          }
+        },
+        "exportOptions": {
+          "exportPattern": "/localization/%locale%/%file_name%.%file_extension%"
+        },
+        "excludedTargetLanguages": [
+          "en",
+          "es",
+          "pl"
+        ],
+        "createdAt": "2019-09-19T15:10:43+00:00",
+        "updatedAt": "2019-09-19T15:10:46+00:00"
+      }
+    }
+  ],
+  "pagination": {
+    "offset": 0,
+    "limit": 25
+  }
+}</value>
+  </data>
+</root>
