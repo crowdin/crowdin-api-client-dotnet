@@ -30,6 +30,6 @@ namespace Crowdin.Api.Bundles
         public DateTimeOffset CreatedAt { get; set; }
         
         [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt { get; set; }
+        public DateTimeOffset? UpdatedAt { get; set; }
     }
 }

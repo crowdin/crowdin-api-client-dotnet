@@ -63,6 +63,6 @@ namespace Crowdin.Api.SourceStrings
         public DateTimeOffset CreatedAt { get; set; }
         
         [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt { get; set; }
+        public DateTimeOffset? UpdatedAt { get; set; }
     }
 }

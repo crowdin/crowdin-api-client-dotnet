@@ -45,6 +45,6 @@ namespace Crowdin.Api.Webhooks
         public DateTimeOffset CreatedAt { get; set; }
         
         [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt { get; set; }
+        public DateTimeOffset? UpdatedAt { get; set; }
     }
 }

@@ -40,10 +40,10 @@ namespace Crowdin.Api.ProjectsGroups
         public DateTimeOffset CreatedAt { get; set; }
         
         [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt { get; set; }
+        public DateTimeOffset? UpdatedAt { get; set; }
         
         [JsonProperty("lastActivity")]
-        public DateTimeOffset LastActivity { get; set; }
+        public DateTimeOffset? LastActivity { get; set; }
         
         [JsonProperty("targetLanguages")]
         public Language[] TargetLanguages { get; set; }
