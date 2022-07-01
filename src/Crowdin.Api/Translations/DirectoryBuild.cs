@@ -24,9 +24,9 @@ namespace Crowdin.Api.Translations
         public DateTimeOffset CreatedAt { get; set; }
         
         [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt { get; set; }
+        public DateTimeOffset? UpdatedAt { get; set; }
         
         [JsonProperty("finishedAt")]
-        public DateTimeOffset FinishedAt { get; set; }
+        public DateTimeOffset? FinishedAt { get; set; }
     }
 }

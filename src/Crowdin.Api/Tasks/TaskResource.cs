@@ -84,7 +84,7 @@ namespace Crowdin.Api.Tasks
         public DateTimeOffset CreatedAt { get; set; }
         
         [JsonProperty("updatedAt")]
-        public DateTimeOffset UpdatedAt { get; set; }
+        public DateTimeOffset? UpdatedAt { get; set; }
         
         [JsonProperty("isArchived")]
         public bool? IsArchived { get; set; }
