@@ -44,4 +44,52 @@
   }
 }</value>
     </data>
+    <data name="AddDistribution_Request" xml:space="preserve">
+        <value>{
+  "exportMode": "bundle",
+  "name": "distribution 1",
+  "fileIds": [
+    0
+  ],
+  "format": "crowdin-resx",
+  "exportPattern": "strings-%two_letter_code%.resx",
+  "labelIds": [
+    0
+  ]
+}</value>
+    </data>
+    <data name="EditDistribution_Request_AllPaths" xml:space="preserve">
+        <value>[
+  {
+    "path": "/exportMode",
+    "op": "replace",
+    "value": "bundle"
+  },
+  {
+    "path": "/name",
+    "op": "replace",
+    "value": "distribution 2"
+  },
+  {
+    "path": "/fileIds",
+    "op": "replace",
+    "value": [123]
+  },
+  {
+    "path": "/format",
+    "op": "replace",
+    "value": "crowdin-resx"
+  },
+  {
+    "path": "/exportPattern",
+    "op": "replace",
+    "value": "strings-%two_letters_code%.resx"
+  },
+  {
+    "path": "/labelIds",
+    "op": "replace",
+    "value": [321]
+  },
+]</value>
+    </data>
 </root>
