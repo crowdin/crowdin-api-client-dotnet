@@ -1816,6 +1816,32 @@ references:
   commentId: T:Crowdin.Api.Distributions.AddDistributionRequest
   fullName: Crowdin.Api.Distributions.AddDistributionRequest
   nameWithType: AddDistributionRequest
+- uid: Crowdin.Api.Distributions.AddDistributionRequest.ExportMode
+  name: ExportMode
+  href: api/Crowdin.Api.Distributions.AddDistributionRequest.html#Crowdin_Api_Distributions_AddDistributionRequest_ExportMode
+  commentId: P:Crowdin.Api.Distributions.AddDistributionRequest.ExportMode
+  fullName: Crowdin.Api.Distributions.AddDistributionRequest.ExportMode
+  nameWithType: AddDistributionRequest.ExportMode
+- uid: Crowdin.Api.Distributions.AddDistributionRequest.ExportMode*
+  name: ExportMode
+  href: api/Crowdin.Api.Distributions.AddDistributionRequest.html#Crowdin_Api_Distributions_AddDistributionRequest_ExportMode_
+  commentId: Overload:Crowdin.Api.Distributions.AddDistributionRequest.ExportMode
+  isSpec: "True"
+  fullName: Crowdin.Api.Distributions.AddDistributionRequest.ExportMode
+  nameWithType: AddDistributionRequest.ExportMode
+- uid: Crowdin.Api.Distributions.AddDistributionRequest.ExportPattern
+  name: ExportPattern
+  href: api/Crowdin.Api.Distributions.AddDistributionRequest.html#Crowdin_Api_Distributions_AddDistributionRequest_ExportPattern
+  commentId: P:Crowdin.Api.Distributions.AddDistributionRequest.ExportPattern
+  fullName: Crowdin.Api.Distributions.AddDistributionRequest.ExportPattern
+  nameWithType: AddDistributionRequest.ExportPattern
+- uid: Crowdin.Api.Distributions.AddDistributionRequest.ExportPattern*
+  name: ExportPattern
+  href: api/Crowdin.Api.Distributions.AddDistributionRequest.html#Crowdin_Api_Distributions_AddDistributionRequest_ExportPattern_
+  commentId: Overload:Crowdin.Api.Distributions.AddDistributionRequest.ExportPattern
+  isSpec: "True"
+  fullName: Crowdin.Api.Distributions.AddDistributionRequest.ExportPattern
+  nameWithType: AddDistributionRequest.ExportPattern
 - uid: Crowdin.Api.Distributions.AddDistributionRequest.FileIds
   name: FileIds
   href: api/Crowdin.Api.Distributions.AddDistributionRequest.html#Crowdin_Api_Distributions_AddDistributionRequest_FileIds
@@ -1829,6 +1855,32 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Distributions.AddDistributionRequest.FileIds
   nameWithType: AddDistributionRequest.FileIds
+- uid: Crowdin.Api.Distributions.AddDistributionRequest.Format
+  name: Format
+  href: api/Crowdin.Api.Distributions.AddDistributionRequest.html#Crowdin_Api_Distributions_AddDistributionRequest_Format
+  commentId: P:Crowdin.Api.Distributions.AddDistributionRequest.Format
+  fullName: Crowdin.Api.Distributions.AddDistributionRequest.Format
+  nameWithType: AddDistributionRequest.Format
+- uid: Crowdin.Api.Distributions.AddDistributionRequest.Format*
+  name: Format
+  href: api/Crowdin.Api.Distributions.AddDistributionRequest.html#Crowdin_Api_Distributions_AddDistributionRequest_Format_
+  commentId: Overload:Crowdin.Api.Distributions.AddDistributionRequest.Format
+  isSpec: "True"
+  fullName: Crowdin.Api.Distributions.AddDistributionRequest.Format
+  nameWithType: AddDistributionRequest.Format
+- uid: Crowdin.Api.Distributions.AddDistributionRequest.LabelIds
+  name: LabelIds
+  href: api/Crowdin.Api.Distributions.AddDistributionRequest.html#Crowdin_Api_Distributions_AddDistributionRequest_LabelIds
+  commentId: P:Crowdin.Api.Distributions.AddDistributionRequest.LabelIds
+  fullName: Crowdin.Api.Distributions.AddDistributionRequest.LabelIds
+  nameWithType: AddDistributionRequest.LabelIds
+- uid: Crowdin.Api.Distributions.AddDistributionRequest.LabelIds*
+  name: LabelIds
+  href: api/Crowdin.Api.Distributions.AddDistributionRequest.html#Crowdin_Api_Distributions_AddDistributionRequest_LabelIds_
+  commentId: Overload:Crowdin.Api.Distributions.AddDistributionRequest.LabelIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Distributions.AddDistributionRequest.LabelIds
+  nameWithType: AddDistributionRequest.LabelIds
 - uid: Crowdin.Api.Distributions.AddDistributionRequest.Name
   name: Name
   href: api/Crowdin.Api.Distributions.AddDistributionRequest.html#Crowdin_Api_Distributions_AddDistributionRequest_Name
@@ -1861,6 +1913,32 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Distributions.Distribution.CreatedAt
   nameWithType: Distribution.CreatedAt
+- uid: Crowdin.Api.Distributions.Distribution.ExportMode
+  name: ExportMode
+  href: api/Crowdin.Api.Distributions.Distribution.html#Crowdin_Api_Distributions_Distribution_ExportMode
+  commentId: P:Crowdin.Api.Distributions.Distribution.ExportMode
+  fullName: Crowdin.Api.Distributions.Distribution.ExportMode
+  nameWithType: Distribution.ExportMode
+- uid: Crowdin.Api.Distributions.Distribution.ExportMode*
+  name: ExportMode
+  href: api/Crowdin.Api.Distributions.Distribution.html#Crowdin_Api_Distributions_Distribution_ExportMode_
+  commentId: Overload:Crowdin.Api.Distributions.Distribution.ExportMode
+  isSpec: "True"
+  fullName: Crowdin.Api.Distributions.Distribution.ExportMode
+  nameWithType: Distribution.ExportMode
+- uid: Crowdin.Api.Distributions.Distribution.ExportPattern
+  name: ExportPattern
+  href: api/Crowdin.Api.Distributions.Distribution.html#Crowdin_Api_Distributions_Distribution_ExportPattern
+  commentId: P:Crowdin.Api.Distributions.Distribution.ExportPattern
+  fullName: Crowdin.Api.Distributions.Distribution.ExportPattern
+  nameWithType: Distribution.ExportPattern
+- uid: Crowdin.Api.Distributions.Distribution.ExportPattern*
+  name: ExportPattern
+  href: api/Crowdin.Api.Distributions.Distribution.html#Crowdin_Api_Distributions_Distribution_ExportPattern_
+  commentId: Overload:Crowdin.Api.Distributions.Distribution.ExportPattern
+  isSpec: "True"
+  fullName: Crowdin.Api.Distributions.Distribution.ExportPattern
+  nameWithType: Distribution.ExportPattern
 - uid: Crowdin.Api.Distributions.Distribution.FileIds
   name: FileIds
   href: api/Crowdin.Api.Distributions.Distribution.html#Crowdin_Api_Distributions_Distribution_FileIds
@@ -1874,6 +1952,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Distributions.Distribution.FileIds
   nameWithType: Distribution.FileIds
+- uid: Crowdin.Api.Distributions.Distribution.Format
+  name: Format
+  href: api/Crowdin.Api.Distributions.Distribution.html#Crowdin_Api_Distributions_Distribution_Format
+  commentId: P:Crowdin.Api.Distributions.Distribution.Format
+  fullName: Crowdin.Api.Distributions.Distribution.Format
+  nameWithType: Distribution.Format
+- uid: Crowdin.Api.Distributions.Distribution.Format*
+  name: Format
+  href: api/Crowdin.Api.Distributions.Distribution.html#Crowdin_Api_Distributions_Distribution_Format_
+  commentId: Overload:Crowdin.Api.Distributions.Distribution.Format
+  isSpec: "True"
+  fullName: Crowdin.Api.Distributions.Distribution.Format
+  nameWithType: Distribution.Format
 - uid: Crowdin.Api.Distributions.Distribution.Hash
   name: Hash
   href: api/Crowdin.Api.Distributions.Distribution.html#Crowdin_Api_Distributions_Distribution_Hash
@@ -1887,6 +1978,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Distributions.Distribution.Hash
   nameWithType: Distribution.Hash
+- uid: Crowdin.Api.Distributions.Distribution.LabelIds
+  name: LabelIds
+  href: api/Crowdin.Api.Distributions.Distribution.html#Crowdin_Api_Distributions_Distribution_LabelIds
+  commentId: P:Crowdin.Api.Distributions.Distribution.LabelIds
+  fullName: Crowdin.Api.Distributions.Distribution.LabelIds
+  nameWithType: Distribution.LabelIds
+- uid: Crowdin.Api.Distributions.Distribution.LabelIds*
+  name: LabelIds
+  href: api/Crowdin.Api.Distributions.Distribution.html#Crowdin_Api_Distributions_Distribution_LabelIds_
+  commentId: Overload:Crowdin.Api.Distributions.Distribution.LabelIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Distributions.Distribution.LabelIds
+  nameWithType: Distribution.LabelIds
 - uid: Crowdin.Api.Distributions.Distribution.Name
   name: Name
   href: api/Crowdin.Api.Distributions.Distribution.html#Crowdin_Api_Distributions_Distribution_Name
@@ -1913,6 +2017,24 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Distributions.Distribution.UpdatedAt
   nameWithType: Distribution.UpdatedAt
+- uid: Crowdin.Api.Distributions.DistributionExportMode
+  name: DistributionExportMode
+  href: api/Crowdin.Api.Distributions.DistributionExportMode.html
+  commentId: T:Crowdin.Api.Distributions.DistributionExportMode
+  fullName: Crowdin.Api.Distributions.DistributionExportMode
+  nameWithType: DistributionExportMode
+- uid: Crowdin.Api.Distributions.DistributionExportMode.Bundle
+  name: Bundle
+  href: api/Crowdin.Api.Distributions.DistributionExportMode.html#Crowdin_Api_Distributions_DistributionExportMode_Bundle
+  commentId: F:Crowdin.Api.Distributions.DistributionExportMode.Bundle
+  fullName: Crowdin.Api.Distributions.DistributionExportMode.Bundle
+  nameWithType: DistributionExportMode.Bundle
+- uid: Crowdin.Api.Distributions.DistributionExportMode.Default
+  name: Default
+  href: api/Crowdin.Api.Distributions.DistributionExportMode.html#Crowdin_Api_Distributions_DistributionExportMode_Default
+  commentId: F:Crowdin.Api.Distributions.DistributionExportMode.Default
+  fullName: Crowdin.Api.Distributions.DistributionExportMode.Default
+  nameWithType: DistributionExportMode.Default
 - uid: Crowdin.Api.Distributions.DistributionPatch
   name: DistributionPatch
   href: api/Crowdin.Api.Distributions.DistributionPatch.html
@@ -1938,30 +2060,42 @@ references:
   commentId: T:Crowdin.Api.Distributions.DistributionPatchPath
   fullName: Crowdin.Api.Distributions.DistributionPatchPath
   nameWithType: DistributionPatchPath
+- uid: Crowdin.Api.Distributions.DistributionPatchPath.ExportMode
+  name: ExportMode
+  href: api/Crowdin.Api.Distributions.DistributionPatchPath.html#Crowdin_Api_Distributions_DistributionPatchPath_ExportMode
+  commentId: F:Crowdin.Api.Distributions.DistributionPatchPath.ExportMode
+  fullName: Crowdin.Api.Distributions.DistributionPatchPath.ExportMode
+  nameWithType: DistributionPatchPath.ExportMode
 - uid: Crowdin.Api.Distributions.DistributionPatchPath.ExportPattern
   name: ExportPattern
   href: api/Crowdin.Api.Distributions.DistributionPatchPath.html#Crowdin_Api_Distributions_DistributionPatchPath_ExportPattern
   commentId: F:Crowdin.Api.Distributions.DistributionPatchPath.ExportPattern
   fullName: Crowdin.Api.Distributions.DistributionPatchPath.ExportPattern
   nameWithType: DistributionPatchPath.ExportPattern
+- uid: Crowdin.Api.Distributions.DistributionPatchPath.FileIds
+  name: FileIds
+  href: api/Crowdin.Api.Distributions.DistributionPatchPath.html#Crowdin_Api_Distributions_DistributionPatchPath_FileIds
+  commentId: F:Crowdin.Api.Distributions.DistributionPatchPath.FileIds
+  fullName: Crowdin.Api.Distributions.DistributionPatchPath.FileIds
+  nameWithType: DistributionPatchPath.FileIds
+- uid: Crowdin.Api.Distributions.DistributionPatchPath.Format
+  name: Format
+  href: api/Crowdin.Api.Distributions.DistributionPatchPath.html#Crowdin_Api_Distributions_DistributionPatchPath_Format
+  commentId: F:Crowdin.Api.Distributions.DistributionPatchPath.Format
+  fullName: Crowdin.Api.Distributions.DistributionPatchPath.Format
+  nameWithType: DistributionPatchPath.Format
+- uid: Crowdin.Api.Distributions.DistributionPatchPath.LabelIds
+  name: LabelIds
+  href: api/Crowdin.Api.Distributions.DistributionPatchPath.html#Crowdin_Api_Distributions_DistributionPatchPath_LabelIds
+  commentId: F:Crowdin.Api.Distributions.DistributionPatchPath.LabelIds
+  fullName: Crowdin.Api.Distributions.DistributionPatchPath.LabelIds
+  nameWithType: DistributionPatchPath.LabelIds
 - uid: Crowdin.Api.Distributions.DistributionPatchPath.Name
   name: Name
   href: api/Crowdin.Api.Distributions.DistributionPatchPath.html#Crowdin_Api_Distributions_DistributionPatchPath_Name
   commentId: F:Crowdin.Api.Distributions.DistributionPatchPath.Name
   fullName: Crowdin.Api.Distributions.DistributionPatchPath.Name
   nameWithType: DistributionPatchPath.Name
-- uid: Crowdin.Api.Distributions.DistributionPatchPath.Priority
-  name: Priority
-  href: api/Crowdin.Api.Distributions.DistributionPatchPath.html#Crowdin_Api_Distributions_DistributionPatchPath_Priority
-  commentId: F:Crowdin.Api.Distributions.DistributionPatchPath.Priority
-  fullName: Crowdin.Api.Distributions.DistributionPatchPath.Priority
-  nameWithType: DistributionPatchPath.Priority
-- uid: Crowdin.Api.Distributions.DistributionPatchPath.Title
-  name: Title
-  href: api/Crowdin.Api.Distributions.DistributionPatchPath.html#Crowdin_Api_Distributions_DistributionPatchPath_Title
-  commentId: F:Crowdin.Api.Distributions.DistributionPatchPath.Title
-  fullName: Crowdin.Api.Distributions.DistributionPatchPath.Title
-  nameWithType: DistributionPatchPath.Title
 - uid: Crowdin.Api.Distributions.DistributionRelease
   name: DistributionRelease
   href: api/Crowdin.Api.Distributions.DistributionRelease.html
