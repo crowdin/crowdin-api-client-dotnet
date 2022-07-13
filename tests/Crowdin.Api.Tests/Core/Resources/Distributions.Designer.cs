@@ -62,6 +62,26 @@ namespace Crowdin.Api.Tests.Core.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to {
+        ///  &quot;exportMode&quot;: &quot;bundle&quot;,
+        ///  &quot;name&quot;: &quot;distribution 1&quot;,
+        ///  &quot;fileIds&quot;: [
+        ///    0
+        ///  ],
+        ///  &quot;format&quot;: &quot;crowdin-resx&quot;,
+        ///  &quot;exportPattern&quot;: &quot;strings-%two_letter_code%.resx&quot;,
+        ///  &quot;labelIds&quot;: [
+        ///    0
+        ///  ]
+        ///}.
+        /// </summary>
+        internal static string AddDistribution_Request {
+            get {
+                return ResourceManager.GetString("AddDistribution_Request", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
         ///  &quot;data&quot;: {
         ///    &quot;hash&quot;: &quot;string&quot;,
         ///    &quot;name&quot;: &quot;string&quot;,
@@ -76,6 +96,44 @@ namespace Crowdin.Api.Tests.Core.Resources {
         internal static string AddDistribution_Response {
             get {
                 return ResourceManager.GetString("AddDistribution_Response", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [
+        ///  {
+        ///    &quot;path&quot;: &quot;/exportMode&quot;,
+        ///    &quot;op&quot;: &quot;replace&quot;,
+        ///    &quot;value&quot;: &quot;bundle&quot;
+        ///  },
+        ///  {
+        ///    &quot;path&quot;: &quot;/name&quot;,
+        ///    &quot;op&quot;: &quot;replace&quot;,
+        ///    &quot;value&quot;: &quot;distribution 2&quot;
+        ///  },
+        ///  {
+        ///    &quot;path&quot;: &quot;/fileIds&quot;,
+        ///    &quot;op&quot;: &quot;replace&quot;,
+        ///    &quot;value&quot;: [123]
+        ///  },
+        ///  {
+        ///    &quot;path&quot;: &quot;/format&quot;,
+        ///    &quot;op&quot;: &quot;replace&quot;,
+        ///    &quot;value&quot;: &quot;crowdin-resx&quot;
+        ///  },
+        ///  {
+        ///    &quot;path&quot;: &quot;/exportPattern&quot;,
+        ///    &quot;op&quot;: &quot;replace&quot;,
+        ///    &quot;value&quot;: &quot;strings-%two_letters_code%.resx&quot;
+        ///  },
+        ///  {
+        ///    &quot;path&quot;: &quot;/labelIds&quot;,
+        ///    &quot;op&quot;: &quot;replace&quot;,
+        ///    &quot;value [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EditDistribution_Request_AllPaths {
+            get {
+                return ResourceManager.GetString("EditDistribution_Request_AllPaths", resourceCulture);
             }
         }
         
