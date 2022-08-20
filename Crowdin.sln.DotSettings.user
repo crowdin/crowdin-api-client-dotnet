@@ -6,7 +6,7 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=543d1dcd_002D06cd_002D4d39_002Dbe60_002D7b3b2223f491/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FBundles/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FBundles/@EntryIndexedValue">False</s:Boolean>
 	
 	
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FDictionaries/@EntryIndexedValue">False</s:Boolean>
@@ -17,6 +17,7 @@
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FLanguages/@EntryIndexedValue">False</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FMachineTranslationEngines/@EntryIndexedValue">False</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FReports/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FReports_005FSettingsTemplates/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FScreenshots/@EntryIndexedValue">False</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FScreenshots_005FTags/@EntryIndexedValue">False</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FSourceFiles/@EntryIndexedValue">False</s:Boolean>
