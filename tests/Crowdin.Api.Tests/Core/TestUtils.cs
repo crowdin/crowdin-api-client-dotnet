@@ -47,6 +47,7 @@ namespace Crowdin.Api.Tests.Core
                     new FileInfoConverter(),
                     new LanguageTranslationsConverter(),
                     new ToStringConverter(),
+                    new ReportSettingsTemplateConverter()
                 }
             };
         }

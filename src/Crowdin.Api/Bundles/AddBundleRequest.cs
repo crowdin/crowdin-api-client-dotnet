@@ -10,6 +10,16 @@ namespace Crowdin.Api.Bundles
     [PublicAPI]
     public class AddBundleRequest
     {
+        [JsonProperty("name")]
+#pragma warning disable CS8618
+        public string Name { get; set; }
+#pragma warning restore CS8618
+        
+        [JsonProperty("format")]
+#pragma warning disable CS8618
+        public string Format { get; set; }
+#pragma warning restore CS8618
+        
         [JsonProperty("applicationId")]
 #pragma warning disable CS8618
         public string ApplicationId { get; set; }

@@ -113,7 +113,8 @@ namespace Crowdin.Api
                     new FileImportOptionsConverter(),
                     new FileInfoConverter(),
                     new LanguageTranslationsConverter(),
-                    new ToStringConverter()
+                    new ToStringConverter(),
+                    new ReportSettingsTemplateConverter()
                 }
             };
 
