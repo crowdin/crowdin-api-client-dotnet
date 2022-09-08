@@ -51,5 +51,32 @@ namespace Crowdin.Api.Tests.Tasks
             Assert.NotNull(requestJson);
             Assert.Equal(Core.Resources.Tasks.AddTask_RightRequestJson_VendorGengo_ToneOther, requestJson);
         }
+
+        [Fact]
+        public void AddTask_VendorManual_RequestSerialization()
+        {
+            var request = new VendorManualTaskCreateForm
+            {
+                Title = "My task",
+                LanguageId = "es",
+                FileIds = new[] { 1, 2, 3 },
+                Type = TaskType.TranslateByVendor,
+                Vendor = TaskVendor.Lingo24,
+                Status = TaskStatus.InProgress,
+                Description = "My amazing task",
+                SkipAssignedStrings = true,
+                SkipUntranslatedStrings = true,
+                LabelIds = new[] { 1 },
+                Assignees = new[]
+                {
+                    new TaskAssigneeForm { Id = 1, WordsCount = 20 },
+                    new TaskAssigneeForm { Id = 2, WordsCount = 30 }
+                }
+            };
+
+            string actualRequestJson = JsonConvert.SerializeObject(request, Settings);
+            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Tasks.AddTask_RightRequestJson_VendorManual);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+        }
     }
 }

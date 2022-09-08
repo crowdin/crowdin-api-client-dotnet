@@ -27,4 +27,33 @@
     <data name="AddTask_RightRequestJson_VendorGengo_ToneOther" xml:space="preserve">
         <value>{"type":2,"vendor":"gengo","tone":"other"}</value>
     </data>
+    <data name="AddTask_RightRequestJson_VendorManual" xml:space="preserve">
+        <value>{
+  "title": "My task",
+  "languageId": "es",
+  "fileIds": [
+    1,2,3
+  ],
+  "type": 2,
+  "vendor": "lingo24",
+  "status": "in_progress",
+  "description": "My amazing task",
+  "skipAssignedStrings": true,
+  "skipUntranslatedStrings": true,
+  "labelIds": [
+    1
+  ],
+  "assignees": [
+    {
+      "id": 1,
+      "wordsCount": 20
+    },
+
+    {
+      "id": 2,
+      "wordsCount": 30
+    }
+  ]
+}</value>
+    </data>
 </root>
