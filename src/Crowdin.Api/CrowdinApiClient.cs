@@ -361,12 +361,12 @@ namespace Crowdin.Api
                     .ToArray()!;
 
                 var messageBuilder = new StringBuilder("Invalid Request Parameters: ");
-                messageBuilder.Append(errorResources[0].Errors[0].Message);
+                messageBuilder.Append($"Key [{errorResources[0].Key}]: {errorResources[0].Errors[0].Message}");
 
                 if (errorResources.Length > 1 ||
                     errorResources[0].Errors.Length > 1)
                 {
-                    messageBuilder.Append(" + more in Related property");
+                    messageBuilder.Append(". More errors see in Related property");
                 }
 
                 throw new CrowdinApiException(messageBuilder.ToString(), errorResources);
