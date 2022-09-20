@@ -1,5 +1,7 @@
 ﻿
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
@@ -24,10 +26,10 @@ namespace Crowdin.Api.Webhooks
         public EventType[] Events { get; set; }
         
         [JsonProperty("headers")]
-        public string[] Headers { get; set; }
+        public IDictionary<string, string> Headers { get; set; }
         
         [JsonProperty("payload")]
-        public string[] Payload { get; set; }
+        public IDictionary<string, IDictionary<string, string>> Payload { get; set; }
         
         [JsonProperty("isActive")]
         public bool IsActive { get; set; }

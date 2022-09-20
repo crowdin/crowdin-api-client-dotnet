@@ -19,7 +19,7 @@ namespace Crowdin.Api.Tests.Core.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Webhooks {
@@ -66,15 +66,21 @@ namespace Crowdin.Api.Tests.Core.Resources {
         ///  &quot;url&quot;: &quot;https://webhook.site/1c20d9b5-6e6a-4522-974d-9da7ea7595c9&quot;,
         ///  &quot;events&quot;: [
         ///    &quot;file.approved&quot;,
-        ///
         ///    &quot;translation.updated&quot;,
-        ///
         ///    &quot;suggestion.deleted&quot;
         ///  ],
         ///  &quot;requestType&quot;: &quot;POST&quot;,
         ///  &quot;isActive&quot;: true,
         ///  &quot;batchingEnabled&quot;: true,
-        ///  &quot;contentType&quot;: &quot;application/json&quot;
+        ///  &quot;contentType&quot;: &quot;application/json&quot;,
+        ///  &quot;headers&quot;: {
+        ///     &quot;apiKey&quot;:&quot;key&quot;
+        ///    },
+        ///    &quot;payload&quot;: {
+        ///      &quot;file.approved&quot;: {
+        ///        &quot;eventType&quot;: &quot;{{event}}&quot;       
+        ///      }
+        ///    }
         ///}.
         /// </summary>
         internal static string AddWebhook_Request {
@@ -97,14 +103,18 @@ namespace Crowdin.Api.Tests.Core.Resources {
         ///
         ///      &quot;suggestion.deleted&quot;
         ///    ],
-        ///    &quot;headers&quot;: [],
-        ///    &quot;payload&quot;: [],
+        ///  &quot;headers&quot;: {
+        ///     &quot;apiKey&quot;:&quot;key&quot;
+        ///    },
+        ///    &quot;payload&quot;: {
+        ///      &quot;file.approved&quot;: {
+        ///        &quot;eventType&quot;: &quot;{{event}}&quot;       
+        ///      }
+        ///    },
         ///    &quot;isActive&quot;: true,
         ///    &quot;batchingEnabled&quot;: true,
         ///    &quot;requestType&quot;: &quot;GET&quot;,
-        ///    &quot;contentType&quot;: &quot;application/json&quot;,
-        ///    &quot;createdAt&quot;: &quot;2019-09-23T09:19:07+00:00&quot;,
-        ///    &quot;updatedAt&quot;: &quot;2019-09-23T09:19:07+00:00&quot; [rest of string was truncated]&quot;;.
+        ///    &quot;contentType&quot;: &quot;appl [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string AddWebhook_Response {
             get {
@@ -144,16 +154,19 @@ namespace Crowdin.Api.Tests.Core.Resources {
         ///    &quot;events&quot;: [
         ///      &quot;file.approved&quot;
         ///    ],
-        ///    &quot;headers&quot;: [],
-        ///    &quot;payload&quot;: [],
+        ///   &quot;headers&quot;: {
+        ///     &quot;apiKey&quot;:&quot;key&quot;
+        ///    },
+        ///    &quot;payload&quot;: {
+        ///      &quot;file.approved&quot;: {
+        ///        &quot;eventType&quot;: &quot;{{event}}&quot;       
+        ///      }
+        ///    },
         ///    &quot;isActive&quot;: true,
         ///    &quot;batchingEnabled&quot;: true,
         ///    &quot;requestType&quot;: &quot;GET&quot;,
         ///    &quot;contentType&quot;: &quot;application/json&quot;,
-        ///    &quot;createdAt&quot;: &quot;2019-09-23T09:19:07+00:00&quot;,
-        ///    &quot;updatedAt&quot;: &quot;2019-09-23T09:19:07+00:00&quot;
-        ///  }
-        ///}.
+        ///    &quot;createdAt&quot;: &quot;2019-09-23T09:19:07+00:00&quot;,        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string EditWebhook_Response {
             get {
