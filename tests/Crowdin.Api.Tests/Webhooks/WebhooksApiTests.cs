@@ -35,7 +35,21 @@ namespace Crowdin.Api.Tests.Webhooks
                 RequestType = RequestType.POST,
                 IsActive = true,
                 BatchingEnabled = true,
-                ContentType = ContentType.ApplicationJson
+                ContentType = ContentType.ApplicationJson,
+                Headers = new JObject
+                {
+                    new JProperty("apiKey", "key")
+                },
+                Payload = new JObject
+                {
+                    {
+                        "file.approved",
+                        new JObject
+                        {
+                            new JProperty("eventType", "{{event}}")
+                        }
+                    }
+                },
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
@@ -56,7 +70,7 @@ namespace Crowdin.Api.Tests.Webhooks
 
             var executor = new WebhooksApiExecutor(mockClient.Object);
             Webhook response = await executor.AddWebhook(projectId, request);
-            
+
             Assert.NotNull(response);
             Assert.Equal(request.Events, response.Events);
             Assert.Equal(RequestType.GET, response.RequestType);
@@ -106,7 +120,7 @@ namespace Crowdin.Api.Tests.Webhooks
 
             var executor = new WebhooksApiExecutor(mockClient.Object);
             Webhook response = await executor.EditWebhook(projectId, webhookId, patches);
-            
+
             Assert.NotNull(response);
             Assert.Equal(newName, response.Name);
             Assert.Equal(newRequestType, response.RequestType);
