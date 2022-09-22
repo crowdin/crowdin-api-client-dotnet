@@ -21,17 +21,13 @@ namespace Crowdin.Api.Tests.Webhooks
         public async Task AddWebhook()
         {
             const int projectId = 2;
-            JObject header = new() { new JProperty("apiKey", "key") };
-            JObject payloadProperties = new() { new JProperty("eventType", "{{event}}") };
-            JObject payload = new();
-            payload.Add("file.approved", payloadProperties);
 
             var request = new AddWebhookRequest
             {
                 Name = "Proofread",
                 Url = "https://webhook.site/1c20d9b5-6e6a-4522-974d-9da7ea7595c9",
                 Events = new[]
-                        {
+                {
                     EventType.FileApproved,
                     EventType.TranslationUpdated,
                     EventType.SuggestionDeleted
@@ -40,8 +36,20 @@ namespace Crowdin.Api.Tests.Webhooks
                 IsActive = true,
                 BatchingEnabled = true,
                 ContentType = ContentType.ApplicationJson,
-                Headers = header,
-                Payload = payload,
+                Headers = new JObject
+                {
+                    new JProperty("apiKey", "key")
+                },
+                Payload = new JObject
+                {
+                    {
+                        "file.approved",
+                        new JObject
+                        {
+                            new JProperty("eventType", "{{event}}")
+                        }
+                    }
+                },
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
@@ -54,11 +62,11 @@ namespace Crowdin.Api.Tests.Webhooks
 
             mockClient
                 .Setup(client => client.SendPostRequest(url, request, null))
-                        .ReturnsAsync(new CrowdinApiResult
-                        {
-                            StatusCode = HttpStatusCode.Created,
-                            JsonObject = JObject.Parse(Core.Resources.Webhooks.AddWebhook_Response)
-                        });
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.Created,
+                    JsonObject = JObject.Parse(Core.Resources.Webhooks.AddWebhook_Response)
+                });
 
             var executor = new WebhooksApiExecutor(mockClient.Object);
             Webhook response = await executor.AddWebhook(projectId, request);
