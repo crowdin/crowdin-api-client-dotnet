@@ -22,6 +22,21 @@ namespace Crowdin.Api.Glossaries
         Description,
         
         [Description("/partOfSpeech")]
-        PartOfSpeech
+        PartOfSpeech,
+        
+        [Description("/status")]
+        Status,
+        
+        [Description("/type")]
+        Type,
+        
+        [Description("/gender")]
+        Gender,
+        
+        [Description("/url")]
+        Url,
+        
+        [Description("/note")]
+        Note
     }
 }

@@ -19,6 +19,8 @@ namespace Crowdin.Api.Glossaries
         public string? LanguageId { get; set; }
         
         public int? TranslationOfTermId { get; set; }
+        
+        public int? ConceptId { get; set; }
 
         public TermsListParams()
         {
@@ -27,13 +29,15 @@ namespace Crowdin.Api.Glossaries
 
         public TermsListParams(
             int limit, int offset, int? userId,
-            string? languageId, int? translationOfTermId)
+            string? languageId, int? translationOfTermId,
+            int? conceptId)
         {
             Limit = limit;
             Offset = offset;
             UserId = userId;
             LanguageId = languageId;
             TranslationOfTermId = translationOfTermId;
+            ConceptId = conceptId;
         }
 
         public IDictionary<string, string> ToQueryParams()
@@ -44,6 +48,7 @@ namespace Crowdin.Api.Glossaries
             queryParams.AddParamIfPresent("userId", UserId);
             queryParams.AddParamIfPresent("languageId", LanguageId);
             queryParams.AddParamIfPresent("translationOfTermId", TranslationOfTermId);
+            queryParams.AddParamIfPresent("conceptId", ConceptId);
 
             return queryParams;
         }

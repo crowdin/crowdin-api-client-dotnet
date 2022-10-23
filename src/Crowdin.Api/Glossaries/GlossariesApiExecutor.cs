@@ -190,10 +190,10 @@ namespace Crowdin.Api.Glossaries
         [PublicAPI]
         public Task<ResponseList<Term>> ListTerms(
             int glossaryId, int? userId = null, string? languageId = null,
-            int? translationOfTermId = null, int limit = 25, int offset = 0)
+            int? translationOfTermId = null, int? conceptId = null, int limit = 25, int offset = 0)
         {
             return ListTerms(glossaryId,
-                new TermsListParams(limit, offset, userId, languageId, translationOfTermId));
+                new TermsListParams(limit, offset, userId, languageId, translationOfTermId, conceptId));
         }
 
         /// <summary>
@@ -228,12 +228,15 @@ namespace Crowdin.Api.Glossaries
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.terms.deleteMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task ClearGlossary(int glossaryId, string? languageId = null, int? translationOfTermId = null)
+        public async Task ClearGlossary(
+            int glossaryId, string? languageId = null,
+            int? conceptId = null, int? translationOfTermId = null)
         {
             string url = FormUrl_Terms(glossaryId);
 
             var queryParams = new Dictionary<string, string>();
             queryParams.AddParamIfPresent("languageId", languageId);
+            queryParams.AddParamIfPresent("conceptId", conceptId);
             queryParams.AddParamIfPresent("translationOfTermId", translationOfTermId);
 
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url, queryParams);
