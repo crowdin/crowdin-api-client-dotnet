@@ -3,6 +3,7 @@ using System;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 
 using Moq;
 using Newtonsoft.Json;
@@ -18,13 +19,84 @@ namespace Crowdin.Api.Tests.Reports
 {
     public class ReportSettingsTemplatesApiTests
     {
+        private const int projectId = 1;
+        private const int reportSettingsTemplateId = 2;
+
         private static readonly JsonSerializerSettings DefaultSettings = TestUtils.CreateJsonSerializerOptions();
+
+        [Fact]
+        public async Task ListReportSettingsTemplate()
+        {
+            var mockResponseObject = JObject.Parse(@"
+                {
+                      ""data"": [
+                        {
+                          ""data"": {
+                            ""id"": 1,
+                            ""name"": ""Default template"",
+                            ""currency"": ""USD"",
+                            ""unit"": ""words"",
+                            ""mode"": ""simple"",
+                            ""config"": {
+                              ""regularRates"": [
+                                {
+                                  ""mode"": ""tm_match"",
+                                  ""value"": 0.1
+                                }
+                              ],
+                              ""individualRates"": [
+                                {
+                                  ""languageIds"": [
+                                    ""uk""
+                                  ],
+                                  ""userIds"": [
+                                    1
+                                  ],
+                                  ""rates"": [
+                                    {
+                                      ""mode"": ""tm_match"",
+                                      ""value"": 0.1
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            ""createdAt"": ""2019-09-23T11:26:54+00:00"",
+                            ""updatedAt"": ""2019-09-23T11:26:54+00:00""
+                          }
+                        }
+                      ],
+                      ""pagination"": {
+                        ""offset"": 0,
+                        ""limit"": 25
+                      }
+                    }"
+            );
+
+            IDictionary<string, string> queryParams = TestUtils.CreateQueryParamsFromPaging();
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/reports/settings-templates";
+
+            mockClient
+                .Setup(client => client.SendGetRequest(url, queryParams))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = mockResponseObject
+                });
+
+            var executor = new ReportsApiExecutor(mockClient.Object);
+            var response = await executor.ListReportSettingsTemplates(projectId);
+
+            Assert.NotNull(response);
+            Assert.IsType<ResponseList<ReportSettingsTemplateBase>>(response);
+        }
 
         [Fact]
         public async Task AddReportSettingsTemplate_Simple()
         {
-            const int projectId = 1;
-
             var request = new AddReportSettingsTemplateSimpleModeRequest
             {
                 Name = "Default template",
@@ -82,7 +154,7 @@ namespace Crowdin.Api.Tests.Reports
                 });
 
             var executor = new ReportsApiExecutor(mockClient.Object);
-            var response = (ReportSettingsTemplateSimple) await executor.AddReportSettingsTemplate(projectId, request);
+            var response = (ReportSettingsTemplateSimple)await executor.AddReportSettingsTemplate(projectId, request);
 
             Assert.Equal(ReportSettingsTemplateMode.Simple, response.Mode);
             Assert.Equal(ReportCurrency.USD, response.Currency);
@@ -96,8 +168,6 @@ namespace Crowdin.Api.Tests.Reports
         [Fact]
         public async Task AddReportSettingsTemplate_Fuzzy()
         {
-            const int projectId = 1;
-
             var request = new AddReportSettingsTemplateFuzzyModeRequest
             {
                 Name = "Default template",
@@ -155,7 +225,7 @@ namespace Crowdin.Api.Tests.Reports
                 });
 
             var executor = new ReportsApiExecutor(mockClient.Object);
-            var response = (ReportSettingsTemplateFuzzy) await executor.AddReportSettingsTemplate(projectId, request);
+            var response = (ReportSettingsTemplateFuzzy)await executor.AddReportSettingsTemplate(projectId, request);
 
             Assert.Equal(ReportSettingsTemplateMode.Fuzzy, response.Mode);
             Assert.Equal(ReportCurrency.USD, response.Currency);
@@ -167,7 +237,66 @@ namespace Crowdin.Api.Tests.Reports
         }
 
         [Fact]
-        public void EditReportSettingsTemplate_RequestSerialization()
+        public async Task GetReportSettingsTemplate()
+        {
+            var mockResponseObject = JObject.Parse(@"
+                {
+                   
+                      ""data"": {
+                        ""id"": 1,
+                        ""name"": ""Default template"",
+                        ""currency"": ""USD"",
+                        ""unit"": ""words"",
+                        ""mode"": ""simple"",
+                        ""config"": {
+                          ""regularRates"": [
+                            {
+                              ""mode"": ""tm_match"",
+                              ""value"": 0.1
+                            }
+                          ],
+                          ""individualRates"": [
+                            {
+                              ""languageIds"": [
+                                ""uk""
+                              ],
+                              ""userIds"": [
+                                1
+                              ],
+                              ""rates"": [
+                                {
+                                  ""mode"": ""tm_match"",
+                                  ""value"": 0.1
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        ""createdAt"": ""2019-09-23T11:26:54+00:00"",
+                        ""updatedAt"": ""2019-09-23T11:26:54+00:00""
+                    }
+                }");
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/reports/settings-templates/{reportSettingsTemplateId}";
+
+            mockClient
+                .Setup(client => client.SendGetRequest(url, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = mockResponseObject
+                });
+
+            var executor = new ReportsApiExecutor(mockClient.Object);
+            var response = await executor.GetReportSettingsTemplate(projectId, reportSettingsTemplateId);
+
+            Assert.NotNull(response);
+        }
+
+        [Fact]
+        public void EditReportSettingsTemplate_RequestSerializationAsync()
         {
             var patches = new[]
             {
@@ -188,6 +317,48 @@ namespace Crowdin.Api.Tests.Reports
             string actualRequestJson = JsonConvert.SerializeObject(patches, DefaultSettings);
             string expectedRequestJson = TestUtils.CompactJson(Reports_SettingsTemplates.EditReportSettingsTemplate_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
+        }
+
+        [Fact]
+        public async Task DeleteReportSettingsTemplate()
+        {
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/settings-templates/{reportSettingsTemplateId}";
+
+            mockClient
+                .Setup(client => client.SendDeleteRequest(url, null))
+                .ReturnsAsync(HttpStatusCode.NoContent);
+
+            var executor = new ReportsApiExecutor(mockClient.Object);
+
+            try
+            {
+                await executor.DeleteReportSettingsTemplate(projectId, reportSettingsTemplateId);
+            }
+            catch (CrowdinApiException e)
+            {
+                Assert.True(true, e.Message);
+                return;
+            }
+
+            Assert.True(false);
+        }
+
+        [Fact]
+        public async Task DeleteReportSettingsTemplate_Throw()
+        {
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/settings-templates/{reportSettingsTemplateId}";
+
+            mockClient
+                .Setup(client => client.SendDeleteRequest(url, null))
+                .ReturnsAsync(HttpStatusCode.Unauthorized);
+
+            var executor = new ReportsApiExecutor(mockClient.Object);
+
+            await Assert.ThrowsAsync<CrowdinApiException>(async () => await executor.DeleteReportSettingsTemplate(projectId, reportSettingsTemplateId));
         }
     }
 }

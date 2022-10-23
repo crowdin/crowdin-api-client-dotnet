@@ -1,13 +1,43 @@
 ﻿
+using System.Net;
+using System.Threading.Tasks;
+
+using Moq;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using Xunit;
+
+using Crowdin.Api.Core;
 using Crowdin.Api.Reports;
 using Crowdin.Api.Tests.Core;
-using Newtonsoft.Json;
-using Xunit;
 
 namespace Crowdin.Api.Tests.Reports
 {
     public class ReportsApiTests
     {
+        
+        private const int projectId = 1;
+        private const string reportId = "50fb3506-4127-4ba8-8296-f97dc7e3e0c3";
+        private readonly JObject mockResponseObject = JObject.Parse(@"
+                {
+                  ""data"": {
+                    ""identifier"": ""50fb3506-4127-4ba8-8296-f97dc7e3e0c3"",
+                    ""status"": ""finished"",
+                    ""progress"": 100,
+                    ""attributes"": {
+                      ""format"": ""xlsx"",
+                      ""reportName"": ""costs-estimation"",
+                      ""schema"": {}
+                    },
+                    ""createdAt"": ""2019-09-23T11:26:54+00:00"",
+                    ""updatedAt"": ""2019-09-23T11:26:54+00:00"",
+                    ""startedAt"": ""2019-09-23T11:26:54+00:00"",
+                    ""finishedAt"": ""2019-09-23T11:26:54+00:00"",
+                    ""eta"": ""1 second""
+                  }
+                }
+            ");
+
         [Fact]
         public void GenerateReport_RequestSerialization()
         {
@@ -24,6 +54,128 @@ namespace Crowdin.Api.Tests.Reports
             
             Assert.NotNull(requestJson);
             Assert.Equal(Core.Resources.Reports.GenerateReport_Request, requestJson);
+        }
+
+        [Fact]
+        public async Task GenerateReport_Simple_CostsEstimation()
+        {
+            var request = new CostEstimateGenerateReportRequest
+            {
+                Schema = new CostEstimateGenerateReportRequest.GeneralSchema
+                {
+                    Unit = ReportUnit.Words,
+                    Currency = ReportCurrency.USD,
+                    Format = ReportFormat.Xlsx,
+                }
+            };
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/reports";
+
+            mockClient
+                .Setup(client => client.SendPostRequest(url, request, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = mockResponseObject
+                });
+
+            var executor = new ReportsApiExecutor(mockClient.Object);
+            var response = (ReportStatus)await executor.GenerateReport(projectId, request);
+
+            Assert.NotNull(response);
+            Assert.IsType<ReportStatus>(response);
+            Assert.Equal(reportId, response.Identifier);
+        }
+
+        [Fact]
+        public async Task GenerateReport_Fuzzy_CostsEstimation()
+        {
+            var request = new CostEstimateFuzzyModeGenerateReportRequest
+            {
+                Schema = new CostEstimateFuzzyModeGenerateReportRequest.GeneralSchema
+                {
+                    Unit = ReportUnit.Words,
+                    Currency = ReportCurrency.USD,
+                    Format = ReportFormat.Xlsx
+                }
+            };
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/reports";
+
+            mockClient
+                .Setup(client => client.SendPostRequest(url, request, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = mockResponseObject
+                });
+
+            var executor = new ReportsApiExecutor(mockClient.Object);
+            var response = (ReportStatus)await executor.GenerateReport(projectId, request);
+
+            Assert.NotNull(response);
+            Assert.IsType<ReportStatus>(response);
+            Assert.Equal(reportId, response.Identifier);
+        }
+
+        [Fact]
+        public async Task CheckReportGenerationStatus()
+        {
+            
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/reports/{reportId}";
+
+            mockClient
+                .Setup(client => client.SendGetRequest(url, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = mockResponseObject
+                });
+
+            var executor = new ReportsApiExecutor(mockClient.Object);
+            var response = await executor.CheckReportGenerationStatus(projectId, reportId);
+
+            Assert.NotNull(response);
+            Assert.IsType<ReportStatus>(response);
+        }
+
+        [Fact]
+        public async Task DownloadReport()
+        {
+            var mockResponseObject = JObject.Parse(@"
+                {
+                  ""data"": {
+                    ""url"": ""https://production-enterprise-importer.downloads.crowdin.com/992000002/2/14.xliff?response-content-disposition=attachment%3B%20filename%3D%22APP.xliff%22&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIGJKLQV66ZXPMMEA%2F20190920%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20190920T093121Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=439ebd69a1b7e4c23e6d17891a491c94f832e0c82e4692dedb35a6cd1e624b62"",
+                    ""expireIn"": ""2019-09-20T10:31:21+00:00""
+                  }
+                }
+            "
+            );
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/reports/{reportId}/download";
+
+            mockClient
+                .Setup(client => client.SendGetRequest(url, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = mockResponseObject
+                });
+
+            var executor = new ReportsApiExecutor(mockClient.Object);
+            var response = await executor.DownloadReport(projectId, reportId);
+
+            Assert.NotNull(response);
+            Assert.IsType<DownloadLink>(response);
         }
     }
 }
