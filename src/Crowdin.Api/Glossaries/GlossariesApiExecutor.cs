@@ -190,10 +190,10 @@ namespace Crowdin.Api.Glossaries
         [PublicAPI]
         public Task<ResponseList<Term>> ListTerms(
             int glossaryId, int? userId = null, string? languageId = null,
-            int? translationOfTermId = null, int limit = 25, int offset = 0)
+            int? translationOfTermId = null, int? conceptId = null, int limit = 25, int offset = 0)
         {
             return ListTerms(glossaryId,
-                new TermsListParams(limit, offset, userId, languageId, translationOfTermId));
+                new TermsListParams(limit, offset, userId, languageId, translationOfTermId, conceptId));
         }
 
         /// <summary>
@@ -228,12 +228,15 @@ namespace Crowdin.Api.Glossaries
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.terms.deleteMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task ClearGlossary(int glossaryId, string? languageId = null, int? translationOfTermId = null)
+        public async Task ClearGlossary(
+            int glossaryId, string? languageId = null,
+            int? conceptId = null, int? translationOfTermId = null)
         {
             string url = FormUrl_Terms(glossaryId);
 
             var queryParams = new Dictionary<string, string>();
             queryParams.AddParamIfPresent("languageId", languageId);
+            queryParams.AddParamIfPresent("conceptId", conceptId);
             queryParams.AddParamIfPresent("translationOfTermId", translationOfTermId);
 
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url, queryParams);
@@ -280,6 +283,64 @@ namespace Crowdin.Api.Glossaries
         }
 
         #endregion
+        
+        #region Concepts
+        
+        /// <summary>
+        /// List terms. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.glossaries.concepts.getMany">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.glossaries.concepts.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<Concept>> ListConcepts(int glossaryId, int limit = 25, int offset = 0)
+        {
+            string url = FormUrl_Concepts(glossaryId);
+            IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
+            
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
+            return _jsonParser.ParseResponseList<Concept>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// List terms. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.glossaries.concepts.get">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.glossaries.concepts.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<Concept> GetConcept(int glossaryId, int conceptId)
+        {
+            string url = FormUrl_ConceptId(glossaryId, conceptId);
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<Concept>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// List terms. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.glossaries.concepts.put">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.glossaries.concepts.put">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<Concept> UpdateConcept(int glossaryId, int conceptId, UpdateConceptRequest request)
+        {
+            string url = FormUrl_ConceptId(glossaryId, conceptId);
+            CrowdinApiResult result = await _apiClient.SendPutRequest(url, request);
+            return _jsonParser.ParseResponseObject<Concept>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// List terms. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.glossaries.concepts.delete">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.glossaries.concepts.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task DeleteConcept(int glossaryId, int conceptId)
+        {
+            string url = FormUrl_ConceptId(glossaryId, conceptId);
+            HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
+            Utils.ThrowIfStatusNot204(statusCode, $"Concept {conceptId} removal failed");
+        }
+        
+        #endregion
 
         #region Helper methods
 
@@ -296,6 +357,16 @@ namespace Crowdin.Api.Glossaries
         private static string FormUrl_TermId(int glossaryId, int termId)
         {
             return $"{BaseUrl}/{glossaryId}/terms/{termId}";
+        }
+
+        private static string FormUrl_Concepts(int glossaryId)
+        {
+            return $"{BaseUrl}/{glossaryId}/concepts";
+        }
+
+        private static string FormUrl_ConceptId(int glossaryId, int conceptId)
+        {
+            return $"{BaseUrl}/{glossaryId}/concepts/{conceptId}";
         }
 
         #endregion

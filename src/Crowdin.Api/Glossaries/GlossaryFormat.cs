@@ -10,6 +10,9 @@ namespace Crowdin.Api.Glossaries
         [Description("tbx")]
         Tbx,
         
+        [Description("tbx_v3")]
+        TbxV3,
+        
         [Description("csv")]
         Csv,
         

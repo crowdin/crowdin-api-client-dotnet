@@ -117,6 +117,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Reports_SettingsTemplates.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\Glossaries_Concepts.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Glossaries_Concepts.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -229,6 +233,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>Reports_SettingsTemplates.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\Glossaries_Concepts.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Glossaries_Concepts.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 
