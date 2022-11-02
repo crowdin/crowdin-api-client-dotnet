@@ -35,16 +35,16 @@ Install via NuGet:
 
 ```
 // Package Manager
-Install-Package Crowdin.Api -Version 2.9.1
+Install-Package Crowdin.Api -Version 2.10.0
 
 // .Net CLI
-dotnet add package Crowdin.Api --version 2.9.1
+dotnet add package Crowdin.Api --version 2.10.0
 
 // Package Reference
-<PackageReference Include="Crowdin.Api" Version="2.9.1" />
+<PackageReference Include="Crowdin.Api" Version="2.10.0" />
 
 // Paket CLI
-paket add Crowdin.Api --version 2.9.1
+paket add Crowdin.Api --version 2.10.0
 ```
 
 ---
