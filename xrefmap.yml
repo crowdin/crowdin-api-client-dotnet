@@ -2502,6 +2502,19 @@ references:
   commentId: T:Crowdin.Api.Glossaries.AddTermRequest
   fullName: Crowdin.Api.Glossaries.AddTermRequest
   nameWithType: AddTermRequest
+- uid: Crowdin.Api.Glossaries.AddTermRequest.ConceptId
+  name: ConceptId
+  href: api/Crowdin.Api.Glossaries.AddTermRequest.html#Crowdin_Api_Glossaries_AddTermRequest_ConceptId
+  commentId: P:Crowdin.Api.Glossaries.AddTermRequest.ConceptId
+  fullName: Crowdin.Api.Glossaries.AddTermRequest.ConceptId
+  nameWithType: AddTermRequest.ConceptId
+- uid: Crowdin.Api.Glossaries.AddTermRequest.ConceptId*
+  name: ConceptId
+  href: api/Crowdin.Api.Glossaries.AddTermRequest.html#Crowdin_Api_Glossaries_AddTermRequest_ConceptId_
+  commentId: Overload:Crowdin.Api.Glossaries.AddTermRequest.ConceptId
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.AddTermRequest.ConceptId
+  nameWithType: AddTermRequest.ConceptId
 - uid: Crowdin.Api.Glossaries.AddTermRequest.Description
   name: Description
   href: api/Crowdin.Api.Glossaries.AddTermRequest.html#Crowdin_Api_Glossaries_AddTermRequest_Description
@@ -2515,6 +2528,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.AddTermRequest.Description
   nameWithType: AddTermRequest.Description
+- uid: Crowdin.Api.Glossaries.AddTermRequest.Gender
+  name: Gender
+  href: api/Crowdin.Api.Glossaries.AddTermRequest.html#Crowdin_Api_Glossaries_AddTermRequest_Gender
+  commentId: P:Crowdin.Api.Glossaries.AddTermRequest.Gender
+  fullName: Crowdin.Api.Glossaries.AddTermRequest.Gender
+  nameWithType: AddTermRequest.Gender
+- uid: Crowdin.Api.Glossaries.AddTermRequest.Gender*
+  name: Gender
+  href: api/Crowdin.Api.Glossaries.AddTermRequest.html#Crowdin_Api_Glossaries_AddTermRequest_Gender_
+  commentId: Overload:Crowdin.Api.Glossaries.AddTermRequest.Gender
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.AddTermRequest.Gender
+  nameWithType: AddTermRequest.Gender
 - uid: Crowdin.Api.Glossaries.AddTermRequest.LanguageId
   name: LanguageId
   href: api/Crowdin.Api.Glossaries.AddTermRequest.html#Crowdin_Api_Glossaries_AddTermRequest_LanguageId
@@ -2528,6 +2554,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.AddTermRequest.LanguageId
   nameWithType: AddTermRequest.LanguageId
+- uid: Crowdin.Api.Glossaries.AddTermRequest.Note
+  name: Note
+  href: api/Crowdin.Api.Glossaries.AddTermRequest.html#Crowdin_Api_Glossaries_AddTermRequest_Note
+  commentId: P:Crowdin.Api.Glossaries.AddTermRequest.Note
+  fullName: Crowdin.Api.Glossaries.AddTermRequest.Note
+  nameWithType: AddTermRequest.Note
+- uid: Crowdin.Api.Glossaries.AddTermRequest.Note*
+  name: Note
+  href: api/Crowdin.Api.Glossaries.AddTermRequest.html#Crowdin_Api_Glossaries_AddTermRequest_Note_
+  commentId: Overload:Crowdin.Api.Glossaries.AddTermRequest.Note
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.AddTermRequest.Note
+  nameWithType: AddTermRequest.Note
 - uid: Crowdin.Api.Glossaries.AddTermRequest.PartOfSpeech
   name: PartOfSpeech
   href: api/Crowdin.Api.Glossaries.AddTermRequest.html#Crowdin_Api_Glossaries_AddTermRequest_PartOfSpeech
@@ -2541,6 +2580,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.AddTermRequest.PartOfSpeech
   nameWithType: AddTermRequest.PartOfSpeech
+- uid: Crowdin.Api.Glossaries.AddTermRequest.Status
+  name: Status
+  href: api/Crowdin.Api.Glossaries.AddTermRequest.html#Crowdin_Api_Glossaries_AddTermRequest_Status
+  commentId: P:Crowdin.Api.Glossaries.AddTermRequest.Status
+  fullName: Crowdin.Api.Glossaries.AddTermRequest.Status
+  nameWithType: AddTermRequest.Status
+- uid: Crowdin.Api.Glossaries.AddTermRequest.Status*
+  name: Status
+  href: api/Crowdin.Api.Glossaries.AddTermRequest.html#Crowdin_Api_Glossaries_AddTermRequest_Status_
+  commentId: Overload:Crowdin.Api.Glossaries.AddTermRequest.Status
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.AddTermRequest.Status
+  nameWithType: AddTermRequest.Status
 - uid: Crowdin.Api.Glossaries.AddTermRequest.Text
   name: Text
   href: api/Crowdin.Api.Glossaries.AddTermRequest.html#Crowdin_Api_Glossaries_AddTermRequest_Text
@@ -2567,12 +2619,329 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.AddTermRequest.TranslationOfTermId
   nameWithType: AddTermRequest.TranslationOfTermId
+- uid: Crowdin.Api.Glossaries.AddTermRequest.Type
+  name: Type
+  href: api/Crowdin.Api.Glossaries.AddTermRequest.html#Crowdin_Api_Glossaries_AddTermRequest_Type
+  commentId: P:Crowdin.Api.Glossaries.AddTermRequest.Type
+  fullName: Crowdin.Api.Glossaries.AddTermRequest.Type
+  nameWithType: AddTermRequest.Type
+- uid: Crowdin.Api.Glossaries.AddTermRequest.Type*
+  name: Type
+  href: api/Crowdin.Api.Glossaries.AddTermRequest.html#Crowdin_Api_Glossaries_AddTermRequest_Type_
+  commentId: Overload:Crowdin.Api.Glossaries.AddTermRequest.Type
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.AddTermRequest.Type
+  nameWithType: AddTermRequest.Type
+- uid: Crowdin.Api.Glossaries.AddTermRequest.Url
+  name: Url
+  href: api/Crowdin.Api.Glossaries.AddTermRequest.html#Crowdin_Api_Glossaries_AddTermRequest_Url
+  commentId: P:Crowdin.Api.Glossaries.AddTermRequest.Url
+  fullName: Crowdin.Api.Glossaries.AddTermRequest.Url
+  nameWithType: AddTermRequest.Url
+- uid: Crowdin.Api.Glossaries.AddTermRequest.Url*
+  name: Url
+  href: api/Crowdin.Api.Glossaries.AddTermRequest.html#Crowdin_Api_Glossaries_AddTermRequest_Url_
+  commentId: Overload:Crowdin.Api.Glossaries.AddTermRequest.Url
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.AddTermRequest.Url
+  nameWithType: AddTermRequest.Url
+- uid: Crowdin.Api.Glossaries.Concept
+  name: Concept
+  href: api/Crowdin.Api.Glossaries.Concept.html
+  commentId: T:Crowdin.Api.Glossaries.Concept
+  fullName: Crowdin.Api.Glossaries.Concept
+  nameWithType: Concept
+- uid: Crowdin.Api.Glossaries.Concept.CreatedAt
+  name: CreatedAt
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_CreatedAt
+  commentId: P:Crowdin.Api.Glossaries.Concept.CreatedAt
+  fullName: Crowdin.Api.Glossaries.Concept.CreatedAt
+  nameWithType: Concept.CreatedAt
+- uid: Crowdin.Api.Glossaries.Concept.CreatedAt*
+  name: CreatedAt
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_CreatedAt_
+  commentId: Overload:Crowdin.Api.Glossaries.Concept.CreatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.Concept.CreatedAt
+  nameWithType: Concept.CreatedAt
+- uid: Crowdin.Api.Glossaries.Concept.Definition
+  name: Definition
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_Definition
+  commentId: P:Crowdin.Api.Glossaries.Concept.Definition
+  fullName: Crowdin.Api.Glossaries.Concept.Definition
+  nameWithType: Concept.Definition
+- uid: Crowdin.Api.Glossaries.Concept.Definition*
+  name: Definition
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_Definition_
+  commentId: Overload:Crowdin.Api.Glossaries.Concept.Definition
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.Concept.Definition
+  nameWithType: Concept.Definition
+- uid: Crowdin.Api.Glossaries.Concept.Figure
+  name: Figure
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_Figure
+  commentId: P:Crowdin.Api.Glossaries.Concept.Figure
+  fullName: Crowdin.Api.Glossaries.Concept.Figure
+  nameWithType: Concept.Figure
+- uid: Crowdin.Api.Glossaries.Concept.Figure*
+  name: Figure
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_Figure_
+  commentId: Overload:Crowdin.Api.Glossaries.Concept.Figure
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.Concept.Figure
+  nameWithType: Concept.Figure
+- uid: Crowdin.Api.Glossaries.Concept.GlossaryId
+  name: GlossaryId
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_GlossaryId
+  commentId: P:Crowdin.Api.Glossaries.Concept.GlossaryId
+  fullName: Crowdin.Api.Glossaries.Concept.GlossaryId
+  nameWithType: Concept.GlossaryId
+- uid: Crowdin.Api.Glossaries.Concept.GlossaryId*
+  name: GlossaryId
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_GlossaryId_
+  commentId: Overload:Crowdin.Api.Glossaries.Concept.GlossaryId
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.Concept.GlossaryId
+  nameWithType: Concept.GlossaryId
+- uid: Crowdin.Api.Glossaries.Concept.Id
+  name: Id
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_Id
+  commentId: P:Crowdin.Api.Glossaries.Concept.Id
+  fullName: Crowdin.Api.Glossaries.Concept.Id
+  nameWithType: Concept.Id
+- uid: Crowdin.Api.Glossaries.Concept.Id*
+  name: Id
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_Id_
+  commentId: Overload:Crowdin.Api.Glossaries.Concept.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.Concept.Id
+  nameWithType: Concept.Id
+- uid: Crowdin.Api.Glossaries.Concept.LanguagesDetails
+  name: LanguagesDetails
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_LanguagesDetails
+  commentId: P:Crowdin.Api.Glossaries.Concept.LanguagesDetails
+  fullName: Crowdin.Api.Glossaries.Concept.LanguagesDetails
+  nameWithType: Concept.LanguagesDetails
+- uid: Crowdin.Api.Glossaries.Concept.LanguagesDetails*
+  name: LanguagesDetails
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_LanguagesDetails_
+  commentId: Overload:Crowdin.Api.Glossaries.Concept.LanguagesDetails
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.Concept.LanguagesDetails
+  nameWithType: Concept.LanguagesDetails
+- uid: Crowdin.Api.Glossaries.Concept.Note
+  name: Note
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_Note
+  commentId: P:Crowdin.Api.Glossaries.Concept.Note
+  fullName: Crowdin.Api.Glossaries.Concept.Note
+  nameWithType: Concept.Note
+- uid: Crowdin.Api.Glossaries.Concept.Note*
+  name: Note
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_Note_
+  commentId: Overload:Crowdin.Api.Glossaries.Concept.Note
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.Concept.Note
+  nameWithType: Concept.Note
+- uid: Crowdin.Api.Glossaries.Concept.Subject
+  name: Subject
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_Subject
+  commentId: P:Crowdin.Api.Glossaries.Concept.Subject
+  fullName: Crowdin.Api.Glossaries.Concept.Subject
+  nameWithType: Concept.Subject
+- uid: Crowdin.Api.Glossaries.Concept.Subject*
+  name: Subject
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_Subject_
+  commentId: Overload:Crowdin.Api.Glossaries.Concept.Subject
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.Concept.Subject
+  nameWithType: Concept.Subject
+- uid: Crowdin.Api.Glossaries.Concept.UpdatedAt
+  name: UpdatedAt
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_UpdatedAt
+  commentId: P:Crowdin.Api.Glossaries.Concept.UpdatedAt
+  fullName: Crowdin.Api.Glossaries.Concept.UpdatedAt
+  nameWithType: Concept.UpdatedAt
+- uid: Crowdin.Api.Glossaries.Concept.UpdatedAt*
+  name: UpdatedAt
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_UpdatedAt_
+  commentId: Overload:Crowdin.Api.Glossaries.Concept.UpdatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.Concept.UpdatedAt
+  nameWithType: Concept.UpdatedAt
+- uid: Crowdin.Api.Glossaries.Concept.Url
+  name: Url
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_Url
+  commentId: P:Crowdin.Api.Glossaries.Concept.Url
+  fullName: Crowdin.Api.Glossaries.Concept.Url
+  nameWithType: Concept.Url
+- uid: Crowdin.Api.Glossaries.Concept.Url*
+  name: Url
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_Url_
+  commentId: Overload:Crowdin.Api.Glossaries.Concept.Url
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.Concept.Url
+  nameWithType: Concept.Url
+- uid: Crowdin.Api.Glossaries.Concept.UserId
+  name: UserId
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_UserId
+  commentId: P:Crowdin.Api.Glossaries.Concept.UserId
+  fullName: Crowdin.Api.Glossaries.Concept.UserId
+  nameWithType: Concept.UserId
+- uid: Crowdin.Api.Glossaries.Concept.UserId*
+  name: UserId
+  href: api/Crowdin.Api.Glossaries.Concept.html#Crowdin_Api_Glossaries_Concept_UserId_
+  commentId: Overload:Crowdin.Api.Glossaries.Concept.UserId
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.Concept.UserId
+  nameWithType: Concept.UserId
+- uid: Crowdin.Api.Glossaries.ConceptLanguageDetails
+  name: ConceptLanguageDetails
+  href: api/Crowdin.Api.Glossaries.ConceptLanguageDetails.html
+  commentId: T:Crowdin.Api.Glossaries.ConceptLanguageDetails
+  fullName: Crowdin.Api.Glossaries.ConceptLanguageDetails
+  nameWithType: ConceptLanguageDetails
+- uid: Crowdin.Api.Glossaries.ConceptLanguageDetails.CreatedAt
+  name: CreatedAt
+  href: api/Crowdin.Api.Glossaries.ConceptLanguageDetails.html#Crowdin_Api_Glossaries_ConceptLanguageDetails_CreatedAt
+  commentId: P:Crowdin.Api.Glossaries.ConceptLanguageDetails.CreatedAt
+  fullName: Crowdin.Api.Glossaries.ConceptLanguageDetails.CreatedAt
+  nameWithType: ConceptLanguageDetails.CreatedAt
+- uid: Crowdin.Api.Glossaries.ConceptLanguageDetails.CreatedAt*
+  name: CreatedAt
+  href: api/Crowdin.Api.Glossaries.ConceptLanguageDetails.html#Crowdin_Api_Glossaries_ConceptLanguageDetails_CreatedAt_
+  commentId: Overload:Crowdin.Api.Glossaries.ConceptLanguageDetails.CreatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.ConceptLanguageDetails.CreatedAt
+  nameWithType: ConceptLanguageDetails.CreatedAt
+- uid: Crowdin.Api.Glossaries.ConceptLanguageDetails.Definition
+  name: Definition
+  href: api/Crowdin.Api.Glossaries.ConceptLanguageDetails.html#Crowdin_Api_Glossaries_ConceptLanguageDetails_Definition
+  commentId: P:Crowdin.Api.Glossaries.ConceptLanguageDetails.Definition
+  fullName: Crowdin.Api.Glossaries.ConceptLanguageDetails.Definition
+  nameWithType: ConceptLanguageDetails.Definition
+- uid: Crowdin.Api.Glossaries.ConceptLanguageDetails.Definition*
+  name: Definition
+  href: api/Crowdin.Api.Glossaries.ConceptLanguageDetails.html#Crowdin_Api_Glossaries_ConceptLanguageDetails_Definition_
+  commentId: Overload:Crowdin.Api.Glossaries.ConceptLanguageDetails.Definition
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.ConceptLanguageDetails.Definition
+  nameWithType: ConceptLanguageDetails.Definition
+- uid: Crowdin.Api.Glossaries.ConceptLanguageDetails.LanguageId
+  name: LanguageId
+  href: api/Crowdin.Api.Glossaries.ConceptLanguageDetails.html#Crowdin_Api_Glossaries_ConceptLanguageDetails_LanguageId
+  commentId: P:Crowdin.Api.Glossaries.ConceptLanguageDetails.LanguageId
+  fullName: Crowdin.Api.Glossaries.ConceptLanguageDetails.LanguageId
+  nameWithType: ConceptLanguageDetails.LanguageId
+- uid: Crowdin.Api.Glossaries.ConceptLanguageDetails.LanguageId*
+  name: LanguageId
+  href: api/Crowdin.Api.Glossaries.ConceptLanguageDetails.html#Crowdin_Api_Glossaries_ConceptLanguageDetails_LanguageId_
+  commentId: Overload:Crowdin.Api.Glossaries.ConceptLanguageDetails.LanguageId
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.ConceptLanguageDetails.LanguageId
+  nameWithType: ConceptLanguageDetails.LanguageId
+- uid: Crowdin.Api.Glossaries.ConceptLanguageDetails.Note
+  name: Note
+  href: api/Crowdin.Api.Glossaries.ConceptLanguageDetails.html#Crowdin_Api_Glossaries_ConceptLanguageDetails_Note
+  commentId: P:Crowdin.Api.Glossaries.ConceptLanguageDetails.Note
+  fullName: Crowdin.Api.Glossaries.ConceptLanguageDetails.Note
+  nameWithType: ConceptLanguageDetails.Note
+- uid: Crowdin.Api.Glossaries.ConceptLanguageDetails.Note*
+  name: Note
+  href: api/Crowdin.Api.Glossaries.ConceptLanguageDetails.html#Crowdin_Api_Glossaries_ConceptLanguageDetails_Note_
+  commentId: Overload:Crowdin.Api.Glossaries.ConceptLanguageDetails.Note
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.ConceptLanguageDetails.Note
+  nameWithType: ConceptLanguageDetails.Note
+- uid: Crowdin.Api.Glossaries.ConceptLanguageDetails.UpdatedAt
+  name: UpdatedAt
+  href: api/Crowdin.Api.Glossaries.ConceptLanguageDetails.html#Crowdin_Api_Glossaries_ConceptLanguageDetails_UpdatedAt
+  commentId: P:Crowdin.Api.Glossaries.ConceptLanguageDetails.UpdatedAt
+  fullName: Crowdin.Api.Glossaries.ConceptLanguageDetails.UpdatedAt
+  nameWithType: ConceptLanguageDetails.UpdatedAt
+- uid: Crowdin.Api.Glossaries.ConceptLanguageDetails.UpdatedAt*
+  name: UpdatedAt
+  href: api/Crowdin.Api.Glossaries.ConceptLanguageDetails.html#Crowdin_Api_Glossaries_ConceptLanguageDetails_UpdatedAt_
+  commentId: Overload:Crowdin.Api.Glossaries.ConceptLanguageDetails.UpdatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.ConceptLanguageDetails.UpdatedAt
+  nameWithType: ConceptLanguageDetails.UpdatedAt
+- uid: Crowdin.Api.Glossaries.ConceptLanguageDetails.UserId
+  name: UserId
+  href: api/Crowdin.Api.Glossaries.ConceptLanguageDetails.html#Crowdin_Api_Glossaries_ConceptLanguageDetails_UserId
+  commentId: P:Crowdin.Api.Glossaries.ConceptLanguageDetails.UserId
+  fullName: Crowdin.Api.Glossaries.ConceptLanguageDetails.UserId
+  nameWithType: ConceptLanguageDetails.UserId
+- uid: Crowdin.Api.Glossaries.ConceptLanguageDetails.UserId*
+  name: UserId
+  href: api/Crowdin.Api.Glossaries.ConceptLanguageDetails.html#Crowdin_Api_Glossaries_ConceptLanguageDetails_UserId_
+  commentId: Overload:Crowdin.Api.Glossaries.ConceptLanguageDetails.UserId
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.ConceptLanguageDetails.UserId
+  nameWithType: ConceptLanguageDetails.UserId
+- uid: Crowdin.Api.Glossaries.ConceptLanguageDetailsForm
+  name: ConceptLanguageDetailsForm
+  href: api/Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.html
+  commentId: T:Crowdin.Api.Glossaries.ConceptLanguageDetailsForm
+  fullName: Crowdin.Api.Glossaries.ConceptLanguageDetailsForm
+  nameWithType: ConceptLanguageDetailsForm
+- uid: Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.Definition
+  name: Definition
+  href: api/Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.html#Crowdin_Api_Glossaries_ConceptLanguageDetailsForm_Definition
+  commentId: P:Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.Definition
+  fullName: Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.Definition
+  nameWithType: ConceptLanguageDetailsForm.Definition
+- uid: Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.Definition*
+  name: Definition
+  href: api/Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.html#Crowdin_Api_Glossaries_ConceptLanguageDetailsForm_Definition_
+  commentId: Overload:Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.Definition
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.Definition
+  nameWithType: ConceptLanguageDetailsForm.Definition
+- uid: Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.LanguageId
+  name: LanguageId
+  href: api/Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.html#Crowdin_Api_Glossaries_ConceptLanguageDetailsForm_LanguageId
+  commentId: P:Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.LanguageId
+  fullName: Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.LanguageId
+  nameWithType: ConceptLanguageDetailsForm.LanguageId
+- uid: Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.LanguageId*
+  name: LanguageId
+  href: api/Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.html#Crowdin_Api_Glossaries_ConceptLanguageDetailsForm_LanguageId_
+  commentId: Overload:Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.LanguageId
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.LanguageId
+  nameWithType: ConceptLanguageDetailsForm.LanguageId
+- uid: Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.Note
+  name: Note
+  href: api/Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.html#Crowdin_Api_Glossaries_ConceptLanguageDetailsForm_Note
+  commentId: P:Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.Note
+  fullName: Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.Note
+  nameWithType: ConceptLanguageDetailsForm.Note
+- uid: Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.Note*
+  name: Note
+  href: api/Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.html#Crowdin_Api_Glossaries_ConceptLanguageDetailsForm_Note_
+  commentId: Overload:Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.Note
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.Note
+  nameWithType: ConceptLanguageDetailsForm.Note
 - uid: Crowdin.Api.Glossaries.ExportGlossaryRequest
   name: ExportGlossaryRequest
   href: api/Crowdin.Api.Glossaries.ExportGlossaryRequest.html
   commentId: T:Crowdin.Api.Glossaries.ExportGlossaryRequest
   fullName: Crowdin.Api.Glossaries.ExportGlossaryRequest
   nameWithType: ExportGlossaryRequest
+- uid: Crowdin.Api.Glossaries.ExportGlossaryRequest.ExportFields
+  name: ExportFields
+  href: api/Crowdin.Api.Glossaries.ExportGlossaryRequest.html#Crowdin_Api_Glossaries_ExportGlossaryRequest_ExportFields
+  commentId: P:Crowdin.Api.Glossaries.ExportGlossaryRequest.ExportFields
+  fullName: Crowdin.Api.Glossaries.ExportGlossaryRequest.ExportFields
+  nameWithType: ExportGlossaryRequest.ExportFields
+- uid: Crowdin.Api.Glossaries.ExportGlossaryRequest.ExportFields*
+  name: ExportFields
+  href: api/Crowdin.Api.Glossaries.ExportGlossaryRequest.html#Crowdin_Api_Glossaries_ExportGlossaryRequest_ExportFields_
+  commentId: Overload:Crowdin.Api.Glossaries.ExportGlossaryRequest.ExportFields
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.ExportGlossaryRequest.ExportFields
+  nameWithType: ExportGlossaryRequest.ExportFields
 - uid: Crowdin.Api.Glossaries.ExportGlossaryRequest.Format
   name: Format
   href: api/Crowdin.Api.Glossaries.ExportGlossaryRequest.html#Crowdin_Api_Glossaries_ExportGlossaryRequest_Format
@@ -2663,15 +3032,15 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.CheckGlossaryImportStatus
   nameWithType: GlossariesApiExecutor.CheckGlossaryImportStatus
-- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ClearGlossary(System.Int32,System.Nullable{System.String},System.Nullable{System.Int32})
-  name: ClearGlossary(Int32, Nullable<String>, Nullable<Int32>)
-  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ClearGlossary_System_Int32_System_Nullable_System_String__System_Nullable_System_Int32__
-  commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.ClearGlossary(System.Int32,System.Nullable{System.String},System.Nullable{System.Int32})
-  name.vb: ClearGlossary(Int32, Nullable(Of String), Nullable(Of Int32))
-  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ClearGlossary(System.Int32, System.Nullable<System.String>, System.Nullable<System.Int32>)
-  fullName.vb: Crowdin.Api.Glossaries.GlossariesApiExecutor.ClearGlossary(System.Int32, System.Nullable(Of System.String), System.Nullable(Of System.Int32))
-  nameWithType: GlossariesApiExecutor.ClearGlossary(Int32, Nullable<String>, Nullable<Int32>)
-  nameWithType.vb: GlossariesApiExecutor.ClearGlossary(Int32, Nullable(Of String), Nullable(Of Int32))
+- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ClearGlossary(System.Int32,System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32})
+  name: ClearGlossary(Int32, Nullable<String>, Nullable<Int32>, Nullable<Int32>)
+  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ClearGlossary_System_Int32_System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__
+  commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.ClearGlossary(System.Int32,System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32})
+  name.vb: ClearGlossary(Int32, Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32))
+  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ClearGlossary(System.Int32, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>)
+  fullName.vb: Crowdin.Api.Glossaries.GlossariesApiExecutor.ClearGlossary(System.Int32, System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32))
+  nameWithType: GlossariesApiExecutor.ClearGlossary(Int32, Nullable<String>, Nullable<Int32>, Nullable<Int32>)
+  nameWithType.vb: GlossariesApiExecutor.ClearGlossary(Int32, Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32))
 - uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ClearGlossary*
   name: ClearGlossary
   href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ClearGlossary_
@@ -2679,6 +3048,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ClearGlossary
   nameWithType: GlossariesApiExecutor.ClearGlossary
+- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.DeleteConcept(System.Int32,System.Int32)
+  name: DeleteConcept(Int32, Int32)
+  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_DeleteConcept_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.DeleteConcept(System.Int32,System.Int32)
+  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.DeleteConcept(System.Int32, System.Int32)
+  nameWithType: GlossariesApiExecutor.DeleteConcept(Int32, Int32)
+- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.DeleteConcept*
+  name: DeleteConcept
+  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_DeleteConcept_
+  commentId: Overload:Crowdin.Api.Glossaries.GlossariesApiExecutor.DeleteConcept
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.DeleteConcept
+  nameWithType: GlossariesApiExecutor.DeleteConcept
 - uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.DeleteGlossary(System.Int32)
   name: DeleteGlossary(Int32)
   href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_DeleteGlossary_System_Int32_
@@ -2763,6 +3145,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ExportGlossary
   nameWithType: GlossariesApiExecutor.ExportGlossary
+- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.GetConcept(System.Int32,System.Int32)
+  name: GetConcept(Int32, Int32)
+  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_GetConcept_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.GetConcept(System.Int32,System.Int32)
+  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.GetConcept(System.Int32, System.Int32)
+  nameWithType: GlossariesApiExecutor.GetConcept(Int32, Int32)
+- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.GetConcept*
+  name: GetConcept
+  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_GetConcept_
+  commentId: Overload:Crowdin.Api.Glossaries.GlossariesApiExecutor.GetConcept
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.GetConcept
+  nameWithType: GlossariesApiExecutor.GetConcept
 - uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.GetGlossary(System.Int32)
   name: GetGlossary(Int32)
   href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_GetGlossary_System_Int32_
@@ -2802,6 +3197,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ImportGlossary
   nameWithType: GlossariesApiExecutor.ImportGlossary
+- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListConcepts(System.Int32,System.Int32,System.Int32)
+  name: ListConcepts(Int32, Int32, Int32)
+  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ListConcepts_System_Int32_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.ListConcepts(System.Int32,System.Int32,System.Int32)
+  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListConcepts(System.Int32, System.Int32, System.Int32)
+  nameWithType: GlossariesApiExecutor.ListConcepts(Int32, Int32, Int32)
+- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListConcepts*
+  name: ListConcepts
+  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ListConcepts_
+  commentId: Overload:Crowdin.Api.Glossaries.GlossariesApiExecutor.ListConcepts
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListConcepts
+  nameWithType: GlossariesApiExecutor.ListConcepts
 - uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListGlossaries(Crowdin.Api.Glossaries.GlossariesListParams)
   name: ListGlossaries(GlossariesListParams)
   href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ListGlossaries_Crowdin_Api_Glossaries_GlossariesListParams_
@@ -2830,15 +3238,15 @@ references:
   commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32,Crowdin.Api.Glossaries.TermsListParams)
   fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32, Crowdin.Api.Glossaries.TermsListParams)
   nameWithType: GlossariesApiExecutor.ListTerms(Int32, TermsListParams)
-- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32)
-  name: ListTerms(Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32)
-  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ListTerms_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32)
-  name.vb: ListTerms(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32)
-  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Int32, System.Int32)
-  nameWithType: GlossariesApiExecutor.ListTerms(Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32)
-  nameWithType.vb: GlossariesApiExecutor.ListTerms(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32)
+- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32)
+  name: ListTerms(Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Int32, Int32)
+  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ListTerms_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32)
+  name.vb: ListTerms(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Int32, Int32)
+  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Int32, System.Int32)
+  fullName.vb: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Int32, System.Int32)
+  nameWithType: GlossariesApiExecutor.ListTerms(Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Int32, Int32)
+  nameWithType.vb: GlossariesApiExecutor.ListTerms(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Int32, Int32)
 - uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms*
   name: ListTerms
   href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ListTerms_
@@ -2846,6 +3254,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms
   nameWithType: GlossariesApiExecutor.ListTerms
+- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.UpdateConcept(System.Int32,System.Int32,Crowdin.Api.Glossaries.UpdateConceptRequest)
+  name: UpdateConcept(Int32, Int32, UpdateConceptRequest)
+  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_UpdateConcept_System_Int32_System_Int32_Crowdin_Api_Glossaries_UpdateConceptRequest_
+  commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.UpdateConcept(System.Int32,System.Int32,Crowdin.Api.Glossaries.UpdateConceptRequest)
+  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.UpdateConcept(System.Int32, System.Int32, Crowdin.Api.Glossaries.UpdateConceptRequest)
+  nameWithType: GlossariesApiExecutor.UpdateConcept(Int32, Int32, UpdateConceptRequest)
+- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.UpdateConcept*
+  name: UpdateConcept
+  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_UpdateConcept_
+  commentId: Overload:Crowdin.Api.Glossaries.GlossariesApiExecutor.UpdateConcept
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.UpdateConcept
+  nameWithType: GlossariesApiExecutor.UpdateConcept
 - uid: Crowdin.Api.Glossaries.GlossariesListParams
   name: GlossariesListParams
   href: api/Crowdin.Api.Glossaries.GlossariesListParams.html
@@ -3062,6 +3483,60 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.Glossary.UserId
   nameWithType: Glossary.UserId
+- uid: Crowdin.Api.Glossaries.GlossaryExportFieldId
+  name: GlossaryExportFieldId
+  href: api/Crowdin.Api.Glossaries.GlossaryExportFieldId.html
+  commentId: T:Crowdin.Api.Glossaries.GlossaryExportFieldId
+  fullName: Crowdin.Api.Glossaries.GlossaryExportFieldId
+  nameWithType: GlossaryExportFieldId
+- uid: Crowdin.Api.Glossaries.GlossaryExportFieldId.Description
+  name: Description
+  href: api/Crowdin.Api.Glossaries.GlossaryExportFieldId.html#Crowdin_Api_Glossaries_GlossaryExportFieldId_Description
+  commentId: F:Crowdin.Api.Glossaries.GlossaryExportFieldId.Description
+  fullName: Crowdin.Api.Glossaries.GlossaryExportFieldId.Description
+  nameWithType: GlossaryExportFieldId.Description
+- uid: Crowdin.Api.Glossaries.GlossaryExportFieldId.Gender
+  name: Gender
+  href: api/Crowdin.Api.Glossaries.GlossaryExportFieldId.html#Crowdin_Api_Glossaries_GlossaryExportFieldId_Gender
+  commentId: F:Crowdin.Api.Glossaries.GlossaryExportFieldId.Gender
+  fullName: Crowdin.Api.Glossaries.GlossaryExportFieldId.Gender
+  nameWithType: GlossaryExportFieldId.Gender
+- uid: Crowdin.Api.Glossaries.GlossaryExportFieldId.Note
+  name: Note
+  href: api/Crowdin.Api.Glossaries.GlossaryExportFieldId.html#Crowdin_Api_Glossaries_GlossaryExportFieldId_Note
+  commentId: F:Crowdin.Api.Glossaries.GlossaryExportFieldId.Note
+  fullName: Crowdin.Api.Glossaries.GlossaryExportFieldId.Note
+  nameWithType: GlossaryExportFieldId.Note
+- uid: Crowdin.Api.Glossaries.GlossaryExportFieldId.PartOfSpeech
+  name: PartOfSpeech
+  href: api/Crowdin.Api.Glossaries.GlossaryExportFieldId.html#Crowdin_Api_Glossaries_GlossaryExportFieldId_PartOfSpeech
+  commentId: F:Crowdin.Api.Glossaries.GlossaryExportFieldId.PartOfSpeech
+  fullName: Crowdin.Api.Glossaries.GlossaryExportFieldId.PartOfSpeech
+  nameWithType: GlossaryExportFieldId.PartOfSpeech
+- uid: Crowdin.Api.Glossaries.GlossaryExportFieldId.Status
+  name: Status
+  href: api/Crowdin.Api.Glossaries.GlossaryExportFieldId.html#Crowdin_Api_Glossaries_GlossaryExportFieldId_Status
+  commentId: F:Crowdin.Api.Glossaries.GlossaryExportFieldId.Status
+  fullName: Crowdin.Api.Glossaries.GlossaryExportFieldId.Status
+  nameWithType: GlossaryExportFieldId.Status
+- uid: Crowdin.Api.Glossaries.GlossaryExportFieldId.Term
+  name: Term
+  href: api/Crowdin.Api.Glossaries.GlossaryExportFieldId.html#Crowdin_Api_Glossaries_GlossaryExportFieldId_Term
+  commentId: F:Crowdin.Api.Glossaries.GlossaryExportFieldId.Term
+  fullName: Crowdin.Api.Glossaries.GlossaryExportFieldId.Term
+  nameWithType: GlossaryExportFieldId.Term
+- uid: Crowdin.Api.Glossaries.GlossaryExportFieldId.Type
+  name: Type
+  href: api/Crowdin.Api.Glossaries.GlossaryExportFieldId.html#Crowdin_Api_Glossaries_GlossaryExportFieldId_Type
+  commentId: F:Crowdin.Api.Glossaries.GlossaryExportFieldId.Type
+  fullName: Crowdin.Api.Glossaries.GlossaryExportFieldId.Type
+  nameWithType: GlossaryExportFieldId.Type
+- uid: Crowdin.Api.Glossaries.GlossaryExportFieldId.Url
+  name: Url
+  href: api/Crowdin.Api.Glossaries.GlossaryExportFieldId.html#Crowdin_Api_Glossaries_GlossaryExportFieldId_Url
+  commentId: F:Crowdin.Api.Glossaries.GlossaryExportFieldId.Url
+  fullName: Crowdin.Api.Glossaries.GlossaryExportFieldId.Url
+  nameWithType: GlossaryExportFieldId.Url
 - uid: Crowdin.Api.Glossaries.GlossaryExportStatus
   name: GlossaryExportStatus
   href: api/Crowdin.Api.Glossaries.GlossaryExportStatus.html
@@ -3222,6 +3697,12 @@ references:
   commentId: F:Crowdin.Api.Glossaries.GlossaryFormat.Tbx
   fullName: Crowdin.Api.Glossaries.GlossaryFormat.Tbx
   nameWithType: GlossaryFormat.Tbx
+- uid: Crowdin.Api.Glossaries.GlossaryFormat.TbxV3
+  name: TbxV3
+  href: api/Crowdin.Api.Glossaries.GlossaryFormat.html#Crowdin_Api_Glossaries_GlossaryFormat_TbxV3
+  commentId: F:Crowdin.Api.Glossaries.GlossaryFormat.TbxV3
+  fullName: Crowdin.Api.Glossaries.GlossaryFormat.TbxV3
+  nameWithType: GlossaryFormat.TbxV3
 - uid: Crowdin.Api.Glossaries.GlossaryFormat.Xlsx
   name: Xlsx
   href: api/Crowdin.Api.Glossaries.GlossaryFormat.html#Crowdin_Api_Glossaries_GlossaryFormat_Xlsx
@@ -3580,6 +4061,19 @@ references:
   commentId: T:Crowdin.Api.Glossaries.Term
   fullName: Crowdin.Api.Glossaries.Term
   nameWithType: Term
+- uid: Crowdin.Api.Glossaries.Term.ConceptId
+  name: ConceptId
+  href: api/Crowdin.Api.Glossaries.Term.html#Crowdin_Api_Glossaries_Term_ConceptId
+  commentId: P:Crowdin.Api.Glossaries.Term.ConceptId
+  fullName: Crowdin.Api.Glossaries.Term.ConceptId
+  nameWithType: Term.ConceptId
+- uid: Crowdin.Api.Glossaries.Term.ConceptId*
+  name: ConceptId
+  href: api/Crowdin.Api.Glossaries.Term.html#Crowdin_Api_Glossaries_Term_ConceptId_
+  commentId: Overload:Crowdin.Api.Glossaries.Term.ConceptId
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.Term.ConceptId
+  nameWithType: Term.ConceptId
 - uid: Crowdin.Api.Glossaries.Term.CreatedAt
   name: CreatedAt
   href: api/Crowdin.Api.Glossaries.Term.html#Crowdin_Api_Glossaries_Term_CreatedAt
@@ -3606,6 +4100,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.Term.Description
   nameWithType: Term.Description
+- uid: Crowdin.Api.Glossaries.Term.Gender
+  name: Gender
+  href: api/Crowdin.Api.Glossaries.Term.html#Crowdin_Api_Glossaries_Term_Gender
+  commentId: P:Crowdin.Api.Glossaries.Term.Gender
+  fullName: Crowdin.Api.Glossaries.Term.Gender
+  nameWithType: Term.Gender
+- uid: Crowdin.Api.Glossaries.Term.Gender*
+  name: Gender
+  href: api/Crowdin.Api.Glossaries.Term.html#Crowdin_Api_Glossaries_Term_Gender_
+  commentId: Overload:Crowdin.Api.Glossaries.Term.Gender
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.Term.Gender
+  nameWithType: Term.Gender
 - uid: Crowdin.Api.Glossaries.Term.GlossaryId
   name: GlossaryId
   href: api/Crowdin.Api.Glossaries.Term.html#Crowdin_Api_Glossaries_Term_GlossaryId
@@ -3658,6 +4165,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.Term.Lemma
   nameWithType: Term.Lemma
+- uid: Crowdin.Api.Glossaries.Term.Note
+  name: Note
+  href: api/Crowdin.Api.Glossaries.Term.html#Crowdin_Api_Glossaries_Term_Note
+  commentId: P:Crowdin.Api.Glossaries.Term.Note
+  fullName: Crowdin.Api.Glossaries.Term.Note
+  nameWithType: Term.Note
+- uid: Crowdin.Api.Glossaries.Term.Note*
+  name: Note
+  href: api/Crowdin.Api.Glossaries.Term.html#Crowdin_Api_Glossaries_Term_Note_
+  commentId: Overload:Crowdin.Api.Glossaries.Term.Note
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.Term.Note
+  nameWithType: Term.Note
 - uid: Crowdin.Api.Glossaries.Term.PartOfSpeech
   name: PartOfSpeech
   href: api/Crowdin.Api.Glossaries.Term.html#Crowdin_Api_Glossaries_Term_PartOfSpeech
@@ -3671,6 +4191,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.Term.PartOfSpeech
   nameWithType: Term.PartOfSpeech
+- uid: Crowdin.Api.Glossaries.Term.Status
+  name: Status
+  href: api/Crowdin.Api.Glossaries.Term.html#Crowdin_Api_Glossaries_Term_Status
+  commentId: P:Crowdin.Api.Glossaries.Term.Status
+  fullName: Crowdin.Api.Glossaries.Term.Status
+  nameWithType: Term.Status
+- uid: Crowdin.Api.Glossaries.Term.Status*
+  name: Status
+  href: api/Crowdin.Api.Glossaries.Term.html#Crowdin_Api_Glossaries_Term_Status_
+  commentId: Overload:Crowdin.Api.Glossaries.Term.Status
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.Term.Status
+  nameWithType: Term.Status
 - uid: Crowdin.Api.Glossaries.Term.Text
   name: Text
   href: api/Crowdin.Api.Glossaries.Term.html#Crowdin_Api_Glossaries_Term_Text
@@ -3684,6 +4217,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.Term.Text
   nameWithType: Term.Text
+- uid: Crowdin.Api.Glossaries.Term.Type
+  name: Type
+  href: api/Crowdin.Api.Glossaries.Term.html#Crowdin_Api_Glossaries_Term_Type
+  commentId: P:Crowdin.Api.Glossaries.Term.Type
+  fullName: Crowdin.Api.Glossaries.Term.Type
+  nameWithType: Term.Type
+- uid: Crowdin.Api.Glossaries.Term.Type*
+  name: Type
+  href: api/Crowdin.Api.Glossaries.Term.html#Crowdin_Api_Glossaries_Term_Type_
+  commentId: Overload:Crowdin.Api.Glossaries.Term.Type
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.Term.Type
+  nameWithType: Term.Type
 - uid: Crowdin.Api.Glossaries.Term.UpdatedAt
   name: UpdatedAt
   href: api/Crowdin.Api.Glossaries.Term.html#Crowdin_Api_Glossaries_Term_UpdatedAt
@@ -3697,6 +4243,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.Term.UpdatedAt
   nameWithType: Term.UpdatedAt
+- uid: Crowdin.Api.Glossaries.Term.Url
+  name: Url
+  href: api/Crowdin.Api.Glossaries.Term.html#Crowdin_Api_Glossaries_Term_Url
+  commentId: P:Crowdin.Api.Glossaries.Term.Url
+  fullName: Crowdin.Api.Glossaries.Term.Url
+  nameWithType: Term.Url
+- uid: Crowdin.Api.Glossaries.Term.Url*
+  name: Url
+  href: api/Crowdin.Api.Glossaries.Term.html#Crowdin_Api_Glossaries_Term_Url_
+  commentId: Overload:Crowdin.Api.Glossaries.Term.Url
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.Term.Url
+  nameWithType: Term.Url
 - uid: Crowdin.Api.Glossaries.Term.UserId
   name: UserId
   href: api/Crowdin.Api.Glossaries.Term.html#Crowdin_Api_Glossaries_Term_UserId
@@ -3710,6 +4269,36 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.Term.UserId
   nameWithType: Term.UserId
+- uid: Crowdin.Api.Glossaries.TermGender
+  name: TermGender
+  href: api/Crowdin.Api.Glossaries.TermGender.html
+  commentId: T:Crowdin.Api.Glossaries.TermGender
+  fullName: Crowdin.Api.Glossaries.TermGender
+  nameWithType: TermGender
+- uid: Crowdin.Api.Glossaries.TermGender.Feminine
+  name: Feminine
+  href: api/Crowdin.Api.Glossaries.TermGender.html#Crowdin_Api_Glossaries_TermGender_Feminine
+  commentId: F:Crowdin.Api.Glossaries.TermGender.Feminine
+  fullName: Crowdin.Api.Glossaries.TermGender.Feminine
+  nameWithType: TermGender.Feminine
+- uid: Crowdin.Api.Glossaries.TermGender.Masculine
+  name: Masculine
+  href: api/Crowdin.Api.Glossaries.TermGender.html#Crowdin_Api_Glossaries_TermGender_Masculine
+  commentId: F:Crowdin.Api.Glossaries.TermGender.Masculine
+  fullName: Crowdin.Api.Glossaries.TermGender.Masculine
+  nameWithType: TermGender.Masculine
+- uid: Crowdin.Api.Glossaries.TermGender.Neuter
+  name: Neuter
+  href: api/Crowdin.Api.Glossaries.TermGender.html#Crowdin_Api_Glossaries_TermGender_Neuter
+  commentId: F:Crowdin.Api.Glossaries.TermGender.Neuter
+  fullName: Crowdin.Api.Glossaries.TermGender.Neuter
+  nameWithType: TermGender.Neuter
+- uid: Crowdin.Api.Glossaries.TermGender.Other
+  name: Other
+  href: api/Crowdin.Api.Glossaries.TermGender.html#Crowdin_Api_Glossaries_TermGender_Other
+  commentId: F:Crowdin.Api.Glossaries.TermGender.Other
+  fullName: Crowdin.Api.Glossaries.TermGender.Other
+  nameWithType: TermGender.Other
 - uid: Crowdin.Api.Glossaries.TermPatch
   name: TermPatch
   href: api/Crowdin.Api.Glossaries.TermPatch.html
@@ -3741,18 +4330,48 @@ references:
   commentId: F:Crowdin.Api.Glossaries.TermPatchPath.Description
   fullName: Crowdin.Api.Glossaries.TermPatchPath.Description
   nameWithType: TermPatchPath.Description
+- uid: Crowdin.Api.Glossaries.TermPatchPath.Gender
+  name: Gender
+  href: api/Crowdin.Api.Glossaries.TermPatchPath.html#Crowdin_Api_Glossaries_TermPatchPath_Gender
+  commentId: F:Crowdin.Api.Glossaries.TermPatchPath.Gender
+  fullName: Crowdin.Api.Glossaries.TermPatchPath.Gender
+  nameWithType: TermPatchPath.Gender
+- uid: Crowdin.Api.Glossaries.TermPatchPath.Note
+  name: Note
+  href: api/Crowdin.Api.Glossaries.TermPatchPath.html#Crowdin_Api_Glossaries_TermPatchPath_Note
+  commentId: F:Crowdin.Api.Glossaries.TermPatchPath.Note
+  fullName: Crowdin.Api.Glossaries.TermPatchPath.Note
+  nameWithType: TermPatchPath.Note
 - uid: Crowdin.Api.Glossaries.TermPatchPath.PartOfSpeech
   name: PartOfSpeech
   href: api/Crowdin.Api.Glossaries.TermPatchPath.html#Crowdin_Api_Glossaries_TermPatchPath_PartOfSpeech
   commentId: F:Crowdin.Api.Glossaries.TermPatchPath.PartOfSpeech
   fullName: Crowdin.Api.Glossaries.TermPatchPath.PartOfSpeech
   nameWithType: TermPatchPath.PartOfSpeech
+- uid: Crowdin.Api.Glossaries.TermPatchPath.Status
+  name: Status
+  href: api/Crowdin.Api.Glossaries.TermPatchPath.html#Crowdin_Api_Glossaries_TermPatchPath_Status
+  commentId: F:Crowdin.Api.Glossaries.TermPatchPath.Status
+  fullName: Crowdin.Api.Glossaries.TermPatchPath.Status
+  nameWithType: TermPatchPath.Status
 - uid: Crowdin.Api.Glossaries.TermPatchPath.Text
   name: Text
   href: api/Crowdin.Api.Glossaries.TermPatchPath.html#Crowdin_Api_Glossaries_TermPatchPath_Text
   commentId: F:Crowdin.Api.Glossaries.TermPatchPath.Text
   fullName: Crowdin.Api.Glossaries.TermPatchPath.Text
   nameWithType: TermPatchPath.Text
+- uid: Crowdin.Api.Glossaries.TermPatchPath.Type
+  name: Type
+  href: api/Crowdin.Api.Glossaries.TermPatchPath.html#Crowdin_Api_Glossaries_TermPatchPath_Type
+  commentId: F:Crowdin.Api.Glossaries.TermPatchPath.Type
+  fullName: Crowdin.Api.Glossaries.TermPatchPath.Type
+  nameWithType: TermPatchPath.Type
+- uid: Crowdin.Api.Glossaries.TermPatchPath.Url
+  name: Url
+  href: api/Crowdin.Api.Glossaries.TermPatchPath.html#Crowdin_Api_Glossaries_TermPatchPath_Url
+  commentId: F:Crowdin.Api.Glossaries.TermPatchPath.Url
+  fullName: Crowdin.Api.Glossaries.TermPatchPath.Url
+  nameWithType: TermPatchPath.Url
 - uid: Crowdin.Api.Glossaries.TermsListParams
   name: TermsListParams
   href: api/Crowdin.Api.Glossaries.TermsListParams.html
@@ -3765,15 +4384,15 @@ references:
   commentId: M:Crowdin.Api.Glossaries.TermsListParams.#ctor
   fullName: Crowdin.Api.Glossaries.TermsListParams.TermsListParams()
   nameWithType: TermsListParams.TermsListParams()
-- uid: Crowdin.Api.Glossaries.TermsListParams.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32})
-  name: TermsListParams(Int32, Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>)
-  href: api/Crowdin.Api.Glossaries.TermsListParams.html#Crowdin_Api_Glossaries_TermsListParams__ctor_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__
-  commentId: M:Crowdin.Api.Glossaries.TermsListParams.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32})
-  name.vb: TermsListParams(Int32, Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32))
-  fullName: Crowdin.Api.Glossaries.TermsListParams.TermsListParams(System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>)
-  fullName.vb: Crowdin.Api.Glossaries.TermsListParams.TermsListParams(System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32))
-  nameWithType: TermsListParams.TermsListParams(Int32, Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>)
-  nameWithType.vb: TermsListParams.TermsListParams(Int32, Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32))
+- uid: Crowdin.Api.Glossaries.TermsListParams.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32})
+  name: TermsListParams(Int32, Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>)
+  href: api/Crowdin.Api.Glossaries.TermsListParams.html#Crowdin_Api_Glossaries_TermsListParams__ctor_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__
+  commentId: M:Crowdin.Api.Glossaries.TermsListParams.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32})
+  name.vb: TermsListParams(Int32, Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32))
+  fullName: Crowdin.Api.Glossaries.TermsListParams.TermsListParams(System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>)
+  fullName.vb: Crowdin.Api.Glossaries.TermsListParams.TermsListParams(System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32))
+  nameWithType: TermsListParams.TermsListParams(Int32, Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>)
+  nameWithType.vb: TermsListParams.TermsListParams(Int32, Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32))
 - uid: Crowdin.Api.Glossaries.TermsListParams.#ctor*
   name: TermsListParams
   href: api/Crowdin.Api.Glossaries.TermsListParams.html#Crowdin_Api_Glossaries_TermsListParams__ctor_
@@ -3781,6 +4400,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.TermsListParams.TermsListParams
   nameWithType: TermsListParams.TermsListParams
+- uid: Crowdin.Api.Glossaries.TermsListParams.ConceptId
+  name: ConceptId
+  href: api/Crowdin.Api.Glossaries.TermsListParams.html#Crowdin_Api_Glossaries_TermsListParams_ConceptId
+  commentId: P:Crowdin.Api.Glossaries.TermsListParams.ConceptId
+  fullName: Crowdin.Api.Glossaries.TermsListParams.ConceptId
+  nameWithType: TermsListParams.ConceptId
+- uid: Crowdin.Api.Glossaries.TermsListParams.ConceptId*
+  name: ConceptId
+  href: api/Crowdin.Api.Glossaries.TermsListParams.html#Crowdin_Api_Glossaries_TermsListParams_ConceptId_
+  commentId: Overload:Crowdin.Api.Glossaries.TermsListParams.ConceptId
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.TermsListParams.ConceptId
+  nameWithType: TermsListParams.ConceptId
 - uid: Crowdin.Api.Glossaries.TermsListParams.LanguageId
   name: LanguageId
   href: api/Crowdin.Api.Glossaries.TermsListParams.html#Crowdin_Api_Glossaries_TermsListParams_LanguageId
@@ -3859,6 +4491,162 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.TermsListParams.UserId
   nameWithType: TermsListParams.UserId
+- uid: Crowdin.Api.Glossaries.TermStatus
+  name: TermStatus
+  href: api/Crowdin.Api.Glossaries.TermStatus.html
+  commentId: T:Crowdin.Api.Glossaries.TermStatus
+  fullName: Crowdin.Api.Glossaries.TermStatus
+  nameWithType: TermStatus
+- uid: Crowdin.Api.Glossaries.TermStatus.Admitted
+  name: Admitted
+  href: api/Crowdin.Api.Glossaries.TermStatus.html#Crowdin_Api_Glossaries_TermStatus_Admitted
+  commentId: F:Crowdin.Api.Glossaries.TermStatus.Admitted
+  fullName: Crowdin.Api.Glossaries.TermStatus.Admitted
+  nameWithType: TermStatus.Admitted
+- uid: Crowdin.Api.Glossaries.TermStatus.NotRecommended
+  name: NotRecommended
+  href: api/Crowdin.Api.Glossaries.TermStatus.html#Crowdin_Api_Glossaries_TermStatus_NotRecommended
+  commentId: F:Crowdin.Api.Glossaries.TermStatus.NotRecommended
+  fullName: Crowdin.Api.Glossaries.TermStatus.NotRecommended
+  nameWithType: TermStatus.NotRecommended
+- uid: Crowdin.Api.Glossaries.TermStatus.Obsolete
+  name: Obsolete
+  href: api/Crowdin.Api.Glossaries.TermStatus.html#Crowdin_Api_Glossaries_TermStatus_Obsolete
+  commentId: F:Crowdin.Api.Glossaries.TermStatus.Obsolete
+  fullName: Crowdin.Api.Glossaries.TermStatus.Obsolete
+  nameWithType: TermStatus.Obsolete
+- uid: Crowdin.Api.Glossaries.TermStatus.Preferred
+  name: Preferred
+  href: api/Crowdin.Api.Glossaries.TermStatus.html#Crowdin_Api_Glossaries_TermStatus_Preferred
+  commentId: F:Crowdin.Api.Glossaries.TermStatus.Preferred
+  fullName: Crowdin.Api.Glossaries.TermStatus.Preferred
+  nameWithType: TermStatus.Preferred
+- uid: Crowdin.Api.Glossaries.TermType
+  name: TermType
+  href: api/Crowdin.Api.Glossaries.TermType.html
+  commentId: T:Crowdin.Api.Glossaries.TermType
+  fullName: Crowdin.Api.Glossaries.TermType
+  nameWithType: TermType
+- uid: Crowdin.Api.Glossaries.TermType.Abbreviation
+  name: Abbreviation
+  href: api/Crowdin.Api.Glossaries.TermType.html#Crowdin_Api_Glossaries_TermType_Abbreviation
+  commentId: F:Crowdin.Api.Glossaries.TermType.Abbreviation
+  fullName: Crowdin.Api.Glossaries.TermType.Abbreviation
+  nameWithType: TermType.Abbreviation
+- uid: Crowdin.Api.Glossaries.TermType.Acronym
+  name: Acronym
+  href: api/Crowdin.Api.Glossaries.TermType.html#Crowdin_Api_Glossaries_TermType_Acronym
+  commentId: F:Crowdin.Api.Glossaries.TermType.Acronym
+  fullName: Crowdin.Api.Glossaries.TermType.Acronym
+  nameWithType: TermType.Acronym
+- uid: Crowdin.Api.Glossaries.TermType.FullForm
+  name: FullForm
+  href: api/Crowdin.Api.Glossaries.TermType.html#Crowdin_Api_Glossaries_TermType_FullForm
+  commentId: F:Crowdin.Api.Glossaries.TermType.FullForm
+  fullName: Crowdin.Api.Glossaries.TermType.FullForm
+  nameWithType: TermType.FullForm
+- uid: Crowdin.Api.Glossaries.TermType.Phrase
+  name: Phrase
+  href: api/Crowdin.Api.Glossaries.TermType.html#Crowdin_Api_Glossaries_TermType_Phrase
+  commentId: F:Crowdin.Api.Glossaries.TermType.Phrase
+  fullName: Crowdin.Api.Glossaries.TermType.Phrase
+  nameWithType: TermType.Phrase
+- uid: Crowdin.Api.Glossaries.TermType.ShortForm
+  name: ShortForm
+  href: api/Crowdin.Api.Glossaries.TermType.html#Crowdin_Api_Glossaries_TermType_ShortForm
+  commentId: F:Crowdin.Api.Glossaries.TermType.ShortForm
+  fullName: Crowdin.Api.Glossaries.TermType.ShortForm
+  nameWithType: TermType.ShortForm
+- uid: Crowdin.Api.Glossaries.TermType.Variant
+  name: Variant
+  href: api/Crowdin.Api.Glossaries.TermType.html#Crowdin_Api_Glossaries_TermType_Variant
+  commentId: F:Crowdin.Api.Glossaries.TermType.Variant
+  fullName: Crowdin.Api.Glossaries.TermType.Variant
+  nameWithType: TermType.Variant
+- uid: Crowdin.Api.Glossaries.UpdateConceptRequest
+  name: UpdateConceptRequest
+  href: api/Crowdin.Api.Glossaries.UpdateConceptRequest.html
+  commentId: T:Crowdin.Api.Glossaries.UpdateConceptRequest
+  fullName: Crowdin.Api.Glossaries.UpdateConceptRequest
+  nameWithType: UpdateConceptRequest
+- uid: Crowdin.Api.Glossaries.UpdateConceptRequest.Definition
+  name: Definition
+  href: api/Crowdin.Api.Glossaries.UpdateConceptRequest.html#Crowdin_Api_Glossaries_UpdateConceptRequest_Definition
+  commentId: P:Crowdin.Api.Glossaries.UpdateConceptRequest.Definition
+  fullName: Crowdin.Api.Glossaries.UpdateConceptRequest.Definition
+  nameWithType: UpdateConceptRequest.Definition
+- uid: Crowdin.Api.Glossaries.UpdateConceptRequest.Definition*
+  name: Definition
+  href: api/Crowdin.Api.Glossaries.UpdateConceptRequest.html#Crowdin_Api_Glossaries_UpdateConceptRequest_Definition_
+  commentId: Overload:Crowdin.Api.Glossaries.UpdateConceptRequest.Definition
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.UpdateConceptRequest.Definition
+  nameWithType: UpdateConceptRequest.Definition
+- uid: Crowdin.Api.Glossaries.UpdateConceptRequest.Figure
+  name: Figure
+  href: api/Crowdin.Api.Glossaries.UpdateConceptRequest.html#Crowdin_Api_Glossaries_UpdateConceptRequest_Figure
+  commentId: P:Crowdin.Api.Glossaries.UpdateConceptRequest.Figure
+  fullName: Crowdin.Api.Glossaries.UpdateConceptRequest.Figure
+  nameWithType: UpdateConceptRequest.Figure
+- uid: Crowdin.Api.Glossaries.UpdateConceptRequest.Figure*
+  name: Figure
+  href: api/Crowdin.Api.Glossaries.UpdateConceptRequest.html#Crowdin_Api_Glossaries_UpdateConceptRequest_Figure_
+  commentId: Overload:Crowdin.Api.Glossaries.UpdateConceptRequest.Figure
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.UpdateConceptRequest.Figure
+  nameWithType: UpdateConceptRequest.Figure
+- uid: Crowdin.Api.Glossaries.UpdateConceptRequest.LanguagesDetails
+  name: LanguagesDetails
+  href: api/Crowdin.Api.Glossaries.UpdateConceptRequest.html#Crowdin_Api_Glossaries_UpdateConceptRequest_LanguagesDetails
+  commentId: P:Crowdin.Api.Glossaries.UpdateConceptRequest.LanguagesDetails
+  fullName: Crowdin.Api.Glossaries.UpdateConceptRequest.LanguagesDetails
+  nameWithType: UpdateConceptRequest.LanguagesDetails
+- uid: Crowdin.Api.Glossaries.UpdateConceptRequest.LanguagesDetails*
+  name: LanguagesDetails
+  href: api/Crowdin.Api.Glossaries.UpdateConceptRequest.html#Crowdin_Api_Glossaries_UpdateConceptRequest_LanguagesDetails_
+  commentId: Overload:Crowdin.Api.Glossaries.UpdateConceptRequest.LanguagesDetails
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.UpdateConceptRequest.LanguagesDetails
+  nameWithType: UpdateConceptRequest.LanguagesDetails
+- uid: Crowdin.Api.Glossaries.UpdateConceptRequest.Note
+  name: Note
+  href: api/Crowdin.Api.Glossaries.UpdateConceptRequest.html#Crowdin_Api_Glossaries_UpdateConceptRequest_Note
+  commentId: P:Crowdin.Api.Glossaries.UpdateConceptRequest.Note
+  fullName: Crowdin.Api.Glossaries.UpdateConceptRequest.Note
+  nameWithType: UpdateConceptRequest.Note
+- uid: Crowdin.Api.Glossaries.UpdateConceptRequest.Note*
+  name: Note
+  href: api/Crowdin.Api.Glossaries.UpdateConceptRequest.html#Crowdin_Api_Glossaries_UpdateConceptRequest_Note_
+  commentId: Overload:Crowdin.Api.Glossaries.UpdateConceptRequest.Note
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.UpdateConceptRequest.Note
+  nameWithType: UpdateConceptRequest.Note
+- uid: Crowdin.Api.Glossaries.UpdateConceptRequest.Subject
+  name: Subject
+  href: api/Crowdin.Api.Glossaries.UpdateConceptRequest.html#Crowdin_Api_Glossaries_UpdateConceptRequest_Subject
+  commentId: P:Crowdin.Api.Glossaries.UpdateConceptRequest.Subject
+  fullName: Crowdin.Api.Glossaries.UpdateConceptRequest.Subject
+  nameWithType: UpdateConceptRequest.Subject
+- uid: Crowdin.Api.Glossaries.UpdateConceptRequest.Subject*
+  name: Subject
+  href: api/Crowdin.Api.Glossaries.UpdateConceptRequest.html#Crowdin_Api_Glossaries_UpdateConceptRequest_Subject_
+  commentId: Overload:Crowdin.Api.Glossaries.UpdateConceptRequest.Subject
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.UpdateConceptRequest.Subject
+  nameWithType: UpdateConceptRequest.Subject
+- uid: Crowdin.Api.Glossaries.UpdateConceptRequest.Url
+  name: Url
+  href: api/Crowdin.Api.Glossaries.UpdateConceptRequest.html#Crowdin_Api_Glossaries_UpdateConceptRequest_Url
+  commentId: P:Crowdin.Api.Glossaries.UpdateConceptRequest.Url
+  fullName: Crowdin.Api.Glossaries.UpdateConceptRequest.Url
+  nameWithType: UpdateConceptRequest.Url
+- uid: Crowdin.Api.Glossaries.UpdateConceptRequest.Url*
+  name: Url
+  href: api/Crowdin.Api.Glossaries.UpdateConceptRequest.html#Crowdin_Api_Glossaries_UpdateConceptRequest_Url_
+  commentId: Overload:Crowdin.Api.Glossaries.UpdateConceptRequest.Url
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.UpdateConceptRequest.Url
+  nameWithType: UpdateConceptRequest.Url
 - uid: Crowdin.Api.ICrowdinApiClient
   name: ICrowdinApiClient
   href: api/Crowdin.Api.ICrowdinApiClient.html
