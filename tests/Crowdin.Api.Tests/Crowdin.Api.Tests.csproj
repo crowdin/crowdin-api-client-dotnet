@@ -121,6 +121,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Glossaries_Concepts.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\Workflows.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Workflows.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -238,6 +242,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>Glossaries_Concepts.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\Workflows.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Workflows.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 
