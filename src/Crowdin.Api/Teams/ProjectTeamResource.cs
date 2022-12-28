@@ -22,5 +22,8 @@ namespace Crowdin.Api.Teams
 #pragma warning disable CS8618
         public IDictionary<string, LanguagePermission> Permissions { get; set; }
 #pragma warning restore CS8618
+        
+        [JsonProperty("roles")]
+        public ICollection<TranslatorRole> Roles { get; set; }
     }
 }
