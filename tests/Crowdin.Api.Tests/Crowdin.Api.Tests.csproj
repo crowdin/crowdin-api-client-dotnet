@@ -27,6 +27,11 @@
     <ItemGroup>
       <ProjectReference Include="..\..\src\Crowdin.Api\Crowdin.Api.csproj" />
     </ItemGroup>
+    
+    <PropertyGroup>
+        <!-- CS0618: member is obsolete -->
+        <NoWarn>0618</NoWarn>
+    </PropertyGroup>
 
     <ItemGroup>
       <EmbeddedResource Update="Core\Resources\Translations.resx">

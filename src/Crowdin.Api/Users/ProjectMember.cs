@@ -25,6 +25,11 @@ namespace Crowdin.Api.Users
         [JsonProperty("lastName")]
         public string? LastName { get; set; }
         
+        [JsonProperty("roles")]
+#pragma warning disable CS8618
+        public TranslatorRole[] Roles { get; set; }
+#pragma warning restore CS8618
+        
         [JsonProperty("isManager")]
         public bool IsManager { get; set; }
         

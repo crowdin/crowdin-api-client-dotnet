@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
@@ -28,7 +29,7 @@ namespace Crowdin.Api.Tests.Teams
             {
                 TeamId = 1,
                 AccessToAllWorkflowSteps = false,
-                ManagerAccess = true,
+                ManagerAccess = false,
                 Permissions = new Dictionary<string, LanguagePermission>
                 {
                     {
@@ -43,6 +44,38 @@ namespace Crowdin.Api.Tests.Teams
                         new LanguagePermission
                         {
                             WorkflowStepIds = "all"
+                        }
+                    }
+                },
+                Roles = new[]
+                {
+                    new TranslatorRole
+                    {
+                        Name = TranslatorRoleName.Translator,
+                        Permissions = new TranslatorRolePermissions
+                        {
+                            AllLanguages = false,
+                            LanguagesAccess = new Dictionary<string, LanguageAccessRule>
+                            {
+                                ["uk"] = new LanguageAccessRule
+                                {
+                                    AllContent = false,
+                                    WorkflowStepIds = new[] { 882 }
+                                },
+                                ["it"] = new LanguageAccessRule
+                                {
+                                    AllContent = true
+                                }
+                            }
+                        }
+                    },
+                    new TranslatorRole
+                    {
+                        Name = TranslatorRoleName.Proofreader,
+                        Permissions = new TranslatorRolePermissions
+                        {
+                            AllLanguages = true,
+                            LanguagesAccess = Array.Empty<object>()
                         }
                     }
                 }

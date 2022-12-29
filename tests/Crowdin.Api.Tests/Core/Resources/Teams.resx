@@ -22,7 +22,7 @@
         <value>{
   "teamId": 1,
   "accessToAllWorkflowSteps": false,
-  "managerAccess": true,
+  "managerAccess": false,
   "permissions": {
     "it": {
       "workflowStepIds": [
@@ -32,7 +32,33 @@
     "de": {
       "workflowStepIds": "all"
     }
-  }
+  },
+  "roles": [
+    {
+      "name": "translator",
+      "permissions": {
+        "allLanguages": false,
+        "languagesAccess": {
+          "uk": {
+            "allContent": false,
+            "workflowStepIds": [
+              882
+            ]
+          },
+          "it": {
+            "allContent": true
+          }
+        }
+      }
+    },
+    {
+      "name": "proofreader",
+      "permissions": {
+        "allLanguages": true,
+        "languagesAccess": []
+      }
+    }
+  ]
 }</value>
     </data>
     <data name="AddTeamToProject_Response" xml:space="preserve">
@@ -47,7 +73,33 @@
           313
         ]
       }
-    }
+    },
+    "roles": [
+      {
+        "name": "translator",
+        "permissions": {
+          "allLanguages": false,
+          "languagesAccess": {
+            "uk": {
+              "allContent": false,
+              "workflowStepIds": [
+                882
+              ]
+            },
+            "it": {
+              "allContent": true
+            }
+          }
+        }
+      },
+      {
+        "name": "proofreader",
+        "permissions": {
+          "allLanguages": true,
+          "languagesAccess": []
+        }
+      }
+    ]
   },
   "added": {}
 }</value>
