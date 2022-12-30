@@ -177,5 +177,92 @@ namespace Crowdin.Api.Tasks
         }
 
         #endregion
+
+        #region Task Settings Templates
+        
+        /// <summary>
+        /// List Task Settings Templates. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.tasks.settings-templates.getMany">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.tasks.settings-templates.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<TaskSettingsTemplate>> ListTaskSettingsTemplates(
+            int projectId, int limit = 25, int offset = 0)
+        {
+            string url = FormUrl_TaskSettingsTemplates(projectId);
+            IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
+
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
+            return _jsonParser.ParseResponseList<TaskSettingsTemplate>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// Add Task Settings Template. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.tasks.settings-templates.post">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.tasks.settings-templates.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<TaskSettingsTemplate> AddTaskSettingsTemplate(int projectId, AddTaskSettingsTemplate request)
+        {
+            string url = FormUrl_TaskSettingsTemplates(projectId);
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<TaskSettingsTemplate>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// Get Task Settings Template. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.tasks.settings-templates.get">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.tasks.settings-templates.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<TaskSettingsTemplate> GetTaskSettingsTemplate(int projectId, int taskSettingsTemplateId)
+        {
+            string url = FormUrl_TaskSettingsTemplateId(projectId, taskSettingsTemplateId);
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<TaskSettingsTemplate>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// Delete Task Settings Template. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.tasks.settings-templates.delete">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.tasks.settings-templates.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task DeleteTaskSettingsTemplate(int projectId, int taskSettingsTemplateId)
+        {
+            string url = FormUrl_TaskSettingsTemplateId(projectId, taskSettingsTemplateId);
+            HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
+            Utils.ThrowIfStatusNot204(statusCode, $"Task Settings Template {taskSettingsTemplateId} removal failed");
+        }
+        
+        /// <summary>
+        /// Edit Task Settings Template. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.tasks.settings-templates.patch">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.tasks.settings-templates.patch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<TaskSettingsTemplate> EditTaskSettingsTemplate(
+            int projectId, int taskSettingsTemplateId, IEnumerable<TaskSettingsTemplatePatch> patches)
+        {
+            string url = FormUrl_TaskSettingsTemplateId(projectId, taskSettingsTemplateId);
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            return _jsonParser.ParseResponseObject<TaskSettingsTemplate>(result.JsonObject);
+        }
+
+        #region Helper methods
+
+        private static string FormUrl_TaskSettingsTemplates(int projectId)
+        {
+            return $"/projects/{projectId}/tasks/settings-templates";
+        }
+
+        private static string FormUrl_TaskSettingsTemplateId(int projectId, int taskSettingsTemplateId)
+        {
+            return $"/projects/{projectId}/tasks/settings-templates/{taskSettingsTemplateId}";
+        }
+
+        #endregion
+
+        #endregion
     }
 }
