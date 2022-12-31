@@ -16,6 +16,8 @@ namespace Crowdin.Api.Tests.SourceFiles
 {
     public class AddFileTests
     {
+        private static readonly JsonSerializerSettings JsonSettings = TestUtils.CreateJsonSerializerOptions();
+        
         [Fact]
         public async Task AddFile()
         {
@@ -52,6 +54,33 @@ namespace Crowdin.Api.Tests.SourceFiles
             
             Assert.NotNull(responseFile);
             Assert.IsType<SpreadsheetFileImportOptions>(responseFile.ImportOptions);
+        }
+
+        [Fact]
+        public void AddFile_DocxFileImportOptions_RequestSerialization()
+        {
+            var request = new AddFileRequest
+            {
+                StorageId = 61,
+                Name = "umbrella_app.docx",
+                BranchId = 34,
+                DirectoryId = 4,
+                Title = "source_app_info",
+                Type = ProjectFileType.DocX,
+                ImportOptions = new DocxFileImportOptions
+                {
+                    CleanTagsAggressively = false,
+                    TranslateHiddenRowsAndColumns = null,
+                    ContentSegmentation = true,
+                    SrxStorageId = 1
+                },
+                ExcludedTargetLanguages = new List<string>() { "en", "es", "pl" },
+                AttachLabelIds = new[] { 1 }
+            };
+
+            string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
+            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.SourceFiles.AddFile_Docx_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
         }
         
         [Fact]

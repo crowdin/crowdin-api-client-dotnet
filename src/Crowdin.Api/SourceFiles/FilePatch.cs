@@ -32,6 +32,45 @@ namespace Crowdin.Api.SourceFiles
         [Description("/priority")]
         Priority,
         
+        [Description("/importOptions/cleanTagsAggressively")]
+        CleanTagsAggressively,
+        
+        [Description("/importOptions/translateHiddenText")]
+        TranslateHiddenText,
+        
+        [Description("/importOptions/translateHyperlinkUrls")]
+        TranslateHyperlinkUrls,
+        
+        [Description("/importOptions/translateHiddenRowsAndColumns")]
+        TranslateHiddenRowsAndColumns,
+        
+        [Description("/importOptions/importNotes")]
+        ImportNotes,
+        
+        [Description("/importOptions/importHiddenSlides")]
+        ImportHiddenSlides,
+        
+        [Description("/importOptions/firstLineContainsHeader")]
+        FirstLineContainsHeader,
+        
+        [Description("/importOptions/importTranslations")]
+        ImportTranslations,
+        
+        [Description("/importOptions/scheme")]
+        Scheme,
+        
+        [Description("/importOptions/translateContent")]
+        TranslateContent,
+        
+        [Description("/importOptions/translateAttributes")]
+        TranslateAttributes,
+        
+        [Description("/importOptions/contentSegmentation")]
+        ContentSegmentation,
+        
+        [Description("/importOptions/translatableElements")]
+        TranslatableElements,
+
         [Description("/importOptions/srxStorageId")]
         SrxStorageId,
         
