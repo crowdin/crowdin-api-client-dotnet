@@ -88,4 +88,27 @@
     <data name="EditFile_Request" xml:space="preserve">
         <value>[{"path":"/priority","op":"replace","value":"high"},{"path":"/directoryId","op":"replace","value":3}]</value>
     </data>
+    <data name="AddFile_Docx_Request" xml:space="preserve">
+        <value>{
+  "storageId": 61,
+  "name": "umbrella_app.docx",
+  "branchId": 34,
+  "directoryId": 4,
+  "title": "source_app_info",
+  "type": "docx",
+  "importOptions": {
+    "cleanTagsAggressively": false,
+    "contentSegmentation": true,
+    "srxStorageId": 1
+  },
+  "excludedTargetLanguages": [
+    "en",
+    "es",
+    "pl"
+  ],
+  "attachLabelIds": [
+    1
+  ]
+}</value>
+    </data>
 </root>
