@@ -181,5 +181,130 @@ namespace Crowdin.Api.ProjectsGroups
         #endregion
 
         #endregion
+
+        #region Project File Formats Settings
+        
+        /// <summary>
+        /// Download Project File Format Settings Custom Segmentation. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.file-format-settings.custom-segmentations.get">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.file-format-settings.custom-segmentations.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<DownloadLink> DownloadProjectFileFormatSettingsCustomSegmentation(
+            int projectId,
+            int fileFormatSettingsId)
+        {
+            string url = FormUrl_ProjectFileFormatSettingsId(projectId, fileFormatSettingsId);
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<DownloadLink>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// Reset Project File Format Settings Custom Segmentation. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.file-format-settings.custom-segmentations.delete">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.file-format-settings.custom-segmentations.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task ResetProjectFileFormatSettingsCustomSegmentation(
+            int projectId,
+            int fileFormatSettingsId)
+        {
+            string url = FormUrl_ProjectFileFormatSettingsId(projectId, fileFormatSettingsId);
+            HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
+            Utils.ThrowIfStatusNot204(statusCode, $"Project file format settings custom segmentation" +
+                                                  $"{fileFormatSettingsId} removal failed");
+        }
+        
+        /// <summary>
+        /// List Project File Format Settings. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.file-format-settings.getMany">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.file-format-settings.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<FileFormatSettingsResource>> ListProjectFileFormatSettings(int projectId)
+        {
+            string url = FormUrl_ProjectFileFormatSettings(projectId);
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseList<FileFormatSettingsResource>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// Add Project File Format Settings. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.file-format-settings.post">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.file-format-settings.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<FileFormatSettingsResource> AddProjectFileFormatSettings(
+            int projectId,
+            AddProjectFileFormatSettingsRequest request)
+        {
+            string url = FormUrl_ProjectFileFormatSettings(projectId);
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<FileFormatSettingsResource>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// Get Project File Format Settings. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.file-format-settings.get">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.file-format-settings.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<FileFormatSettingsResource> GetProjectFileFormatSettings(
+            int projectId,
+            int fileFormatSettingsId)
+        {
+            string url = FormUrl_ProjectFileFormatSettingsId(projectId, fileFormatSettingsId);
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<FileFormatSettingsResource>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// Delete Project File Format Settings. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.file-format-settings.delete">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.file-format-settings.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task DeleteProjectFileFormatSettings(
+            int projectId,
+            int fileFormatSettingsId)
+        {
+            string url = FormUrl_ProjectFileFormatSettingsId(projectId, fileFormatSettingsId);
+            HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
+            Utils.ThrowIfStatusNot204(statusCode, $"Project File Format Settings {fileFormatSettingsId} removal failed");
+        }
+        
+        /// <summary>
+        /// Edit Project File Format Settings. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.file-format-settings.patch">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.file-format-settings.patch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<FileFormatSettingsResource> EditProjectFileFormatSettings(
+            int projectId,
+            int fileFormatSettingsId,
+            IEnumerable<ProjectFileFormatSettingsPatch> patches)
+        {
+            string url = FormUrl_ProjectFileFormatSettingsId(projectId, fileFormatSettingsId);
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            return _jsonParser.ParseResponseObject<FileFormatSettingsResource>(result.JsonObject);
+        }
+        
+        #region Helper methods
+        
+        private static string FormUrl_ProjectFileFormatSettings(int projectId)
+        {
+            return $"/projects/{projectId}/file-format-settings";
+        }
+        
+        private static string FormUrl_ProjectFileFormatSettingsId(
+            int projectId,
+            int fileFormatSettingsId)
+        {
+            return $"/projects/{projectId}/file-format-settings/{fileFormatSettingsId}";
+        }
+        
+        #endregion
+        
+        #endregion
     }
 }

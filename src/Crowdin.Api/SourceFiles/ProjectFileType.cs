@@ -76,6 +76,9 @@ namespace Crowdin.Api.SourceFiles
         [Description("xliff")]
         Xliff,
         
+        [Description("xliff_two")]
+        XliffTwo,
+        
         [Description("html")]
         Html,
         
@@ -133,11 +136,20 @@ namespace Crowdin.Api.SourceFiles
         [Description("stringsdict")]
         StringsDict,
         
+        [Description("plist")]
+        Plist,
+        
         [Description("vtt")]
         Vtt,
         
+        [Description("vdf")]
+        Vdf,
+        
         [Description("srt")]
         Srt,
+        
+        [Description("stf")]
+        Stf,
         
         [Description("toml")]
         Toml,
@@ -166,7 +178,13 @@ namespace Crowdin.Api.SourceFiles
         [Description("xaml")]
         Xaml,
         
+        [Description("arb")]
+        Arb,
+        
         [Description("adoc")]
-        Adoc
+        Adoc,
+        
+        [Description("webxml")]
+        WebXml
     }
 }
