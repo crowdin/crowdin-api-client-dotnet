@@ -6,29 +6,58 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=543d1dcd_002D06cd_002D4d39_002Dbe60_002D7b3b2223f491/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Solution /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FBundles/@EntryIndexedValue">False</s:Boolean>
-	
-	
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FDictionaries/@EntryIndexedValue">False</s:Boolean>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5cb90221_002D3c50_002D4ff4_002D8a08_002D719e96be8d62/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Solution /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FBundles/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FDictionaries/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FDistributions/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FGlossaries/@EntryIndexedValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FGlossaries_005FTerms/@EntryIndexedValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FLabels/@EntryIndexedValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FLanguages/@EntryIndexedValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FMachineTranslationEngines/@EntryIndexedValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FReports/@EntryIndexedValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FReports_005FSettingsTemplates/@EntryIndexedValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FScreenshots/@EntryIndexedValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FScreenshots_005FTags/@EntryIndexedValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FSourceFiles/@EntryIndexedValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FStringTranslations/@EntryIndexedValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FStringTranslations_005FVotes/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FGlossaries_005FConcepts/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FGlossaries_005FTerms/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FGlossaries/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FLabels/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FLanguages/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FMachineTranslationEngines/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FProjects_005FFileFormatSettings/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FProjects/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FReports_005FSettingsTemplates/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FReports/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FScreenshots_005FTags/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FScreenshots/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FSourceFiles/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FStorage/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FStringTranslations_005FVotes/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FStringTranslations/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FTasks_005FSettingsTemplates/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FTasks/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FTeams/@EntryIndexedValue">False</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FTeams/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FTranslations/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FUsers/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FWebhooks/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FWorkflows/@EntryIndexedValue">True</s:Boolean>
 	
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FTranslations/@EntryIndexedValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FUsers/@EntryIndexedValue">False</s:Boolean>
-	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=tests_002FCrowdin_002EApi_002ETests_002FCore_002FResources_002FWebhooks/@EntryIndexedValue">False</s:Boolean>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

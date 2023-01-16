@@ -42,6 +42,34 @@ namespace Crowdin.Api.SourceFiles
     }
 
     [PublicAPI]
+    public class DocxFileImportOptions : FileImportOptions
+    {
+        [JsonProperty("cleanTagsAggressively")]
+        public bool? CleanTagsAggressively { get; set; }
+        
+        [JsonProperty("translateHiddenText")]
+        public bool? TranslateHiddenText { get; set; }
+        
+        [JsonProperty("translateHyperlinkUrls")]
+        public bool? TranslateHyperlinkUrls { get; set; }
+        
+        [JsonProperty("translateHiddenRowsAndColumns")]
+        public bool? TranslateHiddenRowsAndColumns { get; set; }
+        
+        [JsonProperty("importNotes")]
+        public bool? ImportNotes { get; set; }
+        
+        [JsonProperty("importHiddenSlides")]
+        public bool? ImportHiddenSlides { get; set; }
+        
+        [JsonProperty("contentSegmentation")]
+        public bool? ContentSegmentation { get; set; }
+        
+        [JsonProperty("srxStorageId")]
+        public int? SrxStorageId { get; set; }
+    }
+
+    [PublicAPI]
     public class OtherFilesImportOptions : FileImportOptions
     {
         [JsonProperty("contentSegmentation")]
