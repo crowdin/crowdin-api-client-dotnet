@@ -701,6 +701,51 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Core.Converters.LanguageTranslationsConverter.WriteJson
   nameWithType: LanguageTranslationsConverter.WriteJson
+- uid: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter
+  name: ProjectFileFormatSettingsConverter
+  href: api/Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.html
+  commentId: T:Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter
+  fullName: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter
+  nameWithType: ProjectFileFormatSettingsConverter
+- uid: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.CanWrite
+  name: CanWrite
+  href: api/Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.html#Crowdin_Api_Core_Converters_ProjectFileFormatSettingsConverter_CanWrite
+  commentId: P:Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.CanWrite
+  fullName: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.CanWrite
+  nameWithType: ProjectFileFormatSettingsConverter.CanWrite
+- uid: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.CanWrite*
+  name: CanWrite
+  href: api/Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.html#Crowdin_Api_Core_Converters_ProjectFileFormatSettingsConverter_CanWrite_
+  commentId: Overload:Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.CanWrite
+  isSpec: "True"
+  fullName: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.CanWrite
+  nameWithType: ProjectFileFormatSettingsConverter.CanWrite
+- uid: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.ReadJson(JsonReader,Type,Crowdin.Api.ProjectsGroups.FileFormatSettingsResource,System.Boolean,JsonSerializer)
+  name: ReadJson(JsonReader, Type, FileFormatSettingsResource, Boolean, JsonSerializer)
+  href: api/Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.html#Crowdin_Api_Core_Converters_ProjectFileFormatSettingsConverter_ReadJson_JsonReader_Type_Crowdin_Api_ProjectsGroups_FileFormatSettingsResource_System_Boolean_JsonSerializer_
+  commentId: M:Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.ReadJson(JsonReader,Type,Crowdin.Api.ProjectsGroups.FileFormatSettingsResource,System.Boolean,JsonSerializer)
+  fullName: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.ReadJson(JsonReader, Type, Crowdin.Api.ProjectsGroups.FileFormatSettingsResource, System.Boolean, JsonSerializer)
+  nameWithType: ProjectFileFormatSettingsConverter.ReadJson(JsonReader, Type, FileFormatSettingsResource, Boolean, JsonSerializer)
+- uid: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.ReadJson*
+  name: ReadJson
+  href: api/Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.html#Crowdin_Api_Core_Converters_ProjectFileFormatSettingsConverter_ReadJson_
+  commentId: Overload:Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.ReadJson
+  isSpec: "True"
+  fullName: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.ReadJson
+  nameWithType: ProjectFileFormatSettingsConverter.ReadJson
+- uid: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.WriteJson(JsonWriter,Crowdin.Api.ProjectsGroups.FileFormatSettingsResource,JsonSerializer)
+  name: WriteJson(JsonWriter, FileFormatSettingsResource, JsonSerializer)
+  href: api/Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.html#Crowdin_Api_Core_Converters_ProjectFileFormatSettingsConverter_WriteJson_JsonWriter_Crowdin_Api_ProjectsGroups_FileFormatSettingsResource_JsonSerializer_
+  commentId: M:Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.WriteJson(JsonWriter,Crowdin.Api.ProjectsGroups.FileFormatSettingsResource,JsonSerializer)
+  fullName: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.WriteJson(JsonWriter, Crowdin.Api.ProjectsGroups.FileFormatSettingsResource, JsonSerializer)
+  nameWithType: ProjectFileFormatSettingsConverter.WriteJson(JsonWriter, FileFormatSettingsResource, JsonSerializer)
+- uid: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.WriteJson*
+  name: WriteJson
+  href: api/Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.html#Crowdin_Api_Core_Converters_ProjectFileFormatSettingsConverter_WriteJson_
+  commentId: Overload:Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.WriteJson
+  isSpec: "True"
+  fullName: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.WriteJson
+  nameWithType: ProjectFileFormatSettingsConverter.WriteJson
 - uid: Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter
   name: ReportSettingsTemplateConverter
   href: api/Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.html
@@ -816,6 +861,51 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Core.Converters.ToStringConverter.WriteJson
   nameWithType: ToStringConverter.WriteJson
+- uid: Crowdin.Api.Core.Converters.WorkflowStepConverter
+  name: WorkflowStepConverter
+  href: api/Crowdin.Api.Core.Converters.WorkflowStepConverter.html
+  commentId: T:Crowdin.Api.Core.Converters.WorkflowStepConverter
+  fullName: Crowdin.Api.Core.Converters.WorkflowStepConverter
+  nameWithType: WorkflowStepConverter
+- uid: Crowdin.Api.Core.Converters.WorkflowStepConverter.CanWrite
+  name: CanWrite
+  href: api/Crowdin.Api.Core.Converters.WorkflowStepConverter.html#Crowdin_Api_Core_Converters_WorkflowStepConverter_CanWrite
+  commentId: P:Crowdin.Api.Core.Converters.WorkflowStepConverter.CanWrite
+  fullName: Crowdin.Api.Core.Converters.WorkflowStepConverter.CanWrite
+  nameWithType: WorkflowStepConverter.CanWrite
+- uid: Crowdin.Api.Core.Converters.WorkflowStepConverter.CanWrite*
+  name: CanWrite
+  href: api/Crowdin.Api.Core.Converters.WorkflowStepConverter.html#Crowdin_Api_Core_Converters_WorkflowStepConverter_CanWrite_
+  commentId: Overload:Crowdin.Api.Core.Converters.WorkflowStepConverter.CanWrite
+  isSpec: "True"
+  fullName: Crowdin.Api.Core.Converters.WorkflowStepConverter.CanWrite
+  nameWithType: WorkflowStepConverter.CanWrite
+- uid: Crowdin.Api.Core.Converters.WorkflowStepConverter.ReadJson(JsonReader,Type,Crowdin.Api.Workflows.WorkflowStep,System.Boolean,JsonSerializer)
+  name: ReadJson(JsonReader, Type, WorkflowStep, Boolean, JsonSerializer)
+  href: api/Crowdin.Api.Core.Converters.WorkflowStepConverter.html#Crowdin_Api_Core_Converters_WorkflowStepConverter_ReadJson_JsonReader_Type_Crowdin_Api_Workflows_WorkflowStep_System_Boolean_JsonSerializer_
+  commentId: M:Crowdin.Api.Core.Converters.WorkflowStepConverter.ReadJson(JsonReader,Type,Crowdin.Api.Workflows.WorkflowStep,System.Boolean,JsonSerializer)
+  fullName: Crowdin.Api.Core.Converters.WorkflowStepConverter.ReadJson(JsonReader, Type, Crowdin.Api.Workflows.WorkflowStep, System.Boolean, JsonSerializer)
+  nameWithType: WorkflowStepConverter.ReadJson(JsonReader, Type, WorkflowStep, Boolean, JsonSerializer)
+- uid: Crowdin.Api.Core.Converters.WorkflowStepConverter.ReadJson*
+  name: ReadJson
+  href: api/Crowdin.Api.Core.Converters.WorkflowStepConverter.html#Crowdin_Api_Core_Converters_WorkflowStepConverter_ReadJson_
+  commentId: Overload:Crowdin.Api.Core.Converters.WorkflowStepConverter.ReadJson
+  isSpec: "True"
+  fullName: Crowdin.Api.Core.Converters.WorkflowStepConverter.ReadJson
+  nameWithType: WorkflowStepConverter.ReadJson
+- uid: Crowdin.Api.Core.Converters.WorkflowStepConverter.WriteJson(JsonWriter,Crowdin.Api.Workflows.WorkflowStep,JsonSerializer)
+  name: WriteJson(JsonWriter, WorkflowStep, JsonSerializer)
+  href: api/Crowdin.Api.Core.Converters.WorkflowStepConverter.html#Crowdin_Api_Core_Converters_WorkflowStepConverter_WriteJson_JsonWriter_Crowdin_Api_Workflows_WorkflowStep_JsonSerializer_
+  commentId: M:Crowdin.Api.Core.Converters.WorkflowStepConverter.WriteJson(JsonWriter,Crowdin.Api.Workflows.WorkflowStep,JsonSerializer)
+  fullName: Crowdin.Api.Core.Converters.WorkflowStepConverter.WriteJson(JsonWriter, Crowdin.Api.Workflows.WorkflowStep, JsonSerializer)
+  nameWithType: WorkflowStepConverter.WriteJson(JsonWriter, WorkflowStep, JsonSerializer)
+- uid: Crowdin.Api.Core.Converters.WorkflowStepConverter.WriteJson*
+  name: WriteJson
+  href: api/Crowdin.Api.Core.Converters.WorkflowStepConverter.html#Crowdin_Api_Core_Converters_WorkflowStepConverter_WriteJson_
+  commentId: Overload:Crowdin.Api.Core.Converters.WorkflowStepConverter.WriteJson
+  isSpec: "True"
+  fullName: Crowdin.Api.Core.Converters.WorkflowStepConverter.WriteJson
+  nameWithType: WorkflowStepConverter.WriteJson
 - uid: Crowdin.Api.Core.CrowdinApiResult
   name: CrowdinApiResult
   href: api/Crowdin.Api.Core.CrowdinApiResult.html
@@ -5524,6 +5614,38 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Labels.LabelsApiExecutor.UnassignLabelFromStrings
   nameWithType: LabelsApiExecutor.UnassignLabelFromStrings
+- uid: Crowdin.Api.LanguageAccessRule
+  name: LanguageAccessRule
+  href: api/Crowdin.Api.LanguageAccessRule.html
+  commentId: T:Crowdin.Api.LanguageAccessRule
+  fullName: Crowdin.Api.LanguageAccessRule
+  nameWithType: LanguageAccessRule
+- uid: Crowdin.Api.LanguageAccessRule.AllContent
+  name: AllContent
+  href: api/Crowdin.Api.LanguageAccessRule.html#Crowdin_Api_LanguageAccessRule_AllContent
+  commentId: P:Crowdin.Api.LanguageAccessRule.AllContent
+  fullName: Crowdin.Api.LanguageAccessRule.AllContent
+  nameWithType: LanguageAccessRule.AllContent
+- uid: Crowdin.Api.LanguageAccessRule.AllContent*
+  name: AllContent
+  href: api/Crowdin.Api.LanguageAccessRule.html#Crowdin_Api_LanguageAccessRule_AllContent_
+  commentId: Overload:Crowdin.Api.LanguageAccessRule.AllContent
+  isSpec: "True"
+  fullName: Crowdin.Api.LanguageAccessRule.AllContent
+  nameWithType: LanguageAccessRule.AllContent
+- uid: Crowdin.Api.LanguageAccessRule.WorkflowStepIds
+  name: WorkflowStepIds
+  href: api/Crowdin.Api.LanguageAccessRule.html#Crowdin_Api_LanguageAccessRule_WorkflowStepIds
+  commentId: P:Crowdin.Api.LanguageAccessRule.WorkflowStepIds
+  fullName: Crowdin.Api.LanguageAccessRule.WorkflowStepIds
+  nameWithType: LanguageAccessRule.WorkflowStepIds
+- uid: Crowdin.Api.LanguageAccessRule.WorkflowStepIds*
+  name: WorkflowStepIds
+  href: api/Crowdin.Api.LanguageAccessRule.html#Crowdin_Api_LanguageAccessRule_WorkflowStepIds_
+  commentId: Overload:Crowdin.Api.LanguageAccessRule.WorkflowStepIds
+  isSpec: "True"
+  fullName: Crowdin.Api.LanguageAccessRule.WorkflowStepIds
+  nameWithType: LanguageAccessRule.WorkflowStepIds
 - uid: Crowdin.Api.Languages
   name: Crowdin.Api.Languages
   href: api/Crowdin.Api.Languages.html
@@ -6873,12 +6995,218 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.AddGroupRequest.ParentId
   nameWithType: AddGroupRequest.ParentId
+- uid: Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest
+  name: AddProjectFileFormatSettingsRequest
+  href: api/Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest.html
+  commentId: T:Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest
+  fullName: Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest
+  nameWithType: AddProjectFileFormatSettingsRequest
+- uid: Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest.Format
+  name: Format
+  href: api/Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest.html#Crowdin_Api_ProjectsGroups_AddProjectFileFormatSettingsRequest_Format
+  commentId: P:Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest.Format
+  fullName: Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest.Format
+  nameWithType: AddProjectFileFormatSettingsRequest.Format
+- uid: Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest.Format*
+  name: Format
+  href: api/Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest.html#Crowdin_Api_ProjectsGroups_AddProjectFileFormatSettingsRequest_Format_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest.Format
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest.Format
+  nameWithType: AddProjectFileFormatSettingsRequest.Format
+- uid: Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest.Settings
+  name: Settings
+  href: api/Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest.html#Crowdin_Api_ProjectsGroups_AddProjectFileFormatSettingsRequest_Settings
+  commentId: P:Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest.Settings
+  fullName: Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest.Settings
+  nameWithType: AddProjectFileFormatSettingsRequest.Settings
+- uid: Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest.Settings*
+  name: Settings
+  href: api/Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest.html#Crowdin_Api_ProjectsGroups_AddProjectFileFormatSettingsRequest_Settings_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest.Settings
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest.Settings
+  nameWithType: AddProjectFileFormatSettingsRequest.Settings
 - uid: Crowdin.Api.ProjectsGroups.AddProjectRequest
   name: AddProjectRequest
   href: api/Crowdin.Api.ProjectsGroups.AddProjectRequest.html
   commentId: T:Crowdin.Api.ProjectsGroups.AddProjectRequest
   fullName: Crowdin.Api.ProjectsGroups.AddProjectRequest
   nameWithType: AddProjectRequest
+- uid: Crowdin.Api.ProjectsGroups.AdocFileFormatSettings
+  name: AdocFileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.AdocFileFormatSettings.html
+  commentId: T:Crowdin.Api.ProjectsGroups.AdocFileFormatSettings
+  fullName: Crowdin.Api.ProjectsGroups.AdocFileFormatSettings
+  nameWithType: AdocFileFormatSettings
+- uid: Crowdin.Api.ProjectsGroups.AdocFileFormatSettings.ContentSegmentation
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.AdocFileFormatSettings.html#Crowdin_Api_ProjectsGroups_AdocFileFormatSettings_ContentSegmentation
+  commentId: P:Crowdin.Api.ProjectsGroups.AdocFileFormatSettings.ContentSegmentation
+  fullName: Crowdin.Api.ProjectsGroups.AdocFileFormatSettings.ContentSegmentation
+  nameWithType: AdocFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.AdocFileFormatSettings.ContentSegmentation*
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.AdocFileFormatSettings.html#Crowdin_Api_ProjectsGroups_AdocFileFormatSettings_ContentSegmentation_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.AdocFileFormatSettings.ContentSegmentation
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.AdocFileFormatSettings.ContentSegmentation
+  nameWithType: AdocFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.AdocFileFormatSettings.SrxStorageId
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.AdocFileFormatSettings.html#Crowdin_Api_ProjectsGroups_AdocFileFormatSettings_SrxStorageId
+  commentId: P:Crowdin.Api.ProjectsGroups.AdocFileFormatSettings.SrxStorageId
+  fullName: Crowdin.Api.ProjectsGroups.AdocFileFormatSettings.SrxStorageId
+  nameWithType: AdocFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.AdocFileFormatSettings.SrxStorageId*
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.AdocFileFormatSettings.html#Crowdin_Api_ProjectsGroups_AdocFileFormatSettings_SrxStorageId_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.AdocFileFormatSettings.SrxStorageId
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.AdocFileFormatSettings.SrxStorageId
+  nameWithType: AdocFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.DitaFileFormatSettings
+  name: DitaFileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.DitaFileFormatSettings.html
+  commentId: T:Crowdin.Api.ProjectsGroups.DitaFileFormatSettings
+  fullName: Crowdin.Api.ProjectsGroups.DitaFileFormatSettings
+  nameWithType: DitaFileFormatSettings
+- uid: Crowdin.Api.ProjectsGroups.DitaFileFormatSettings.ContentSegmentation
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.DitaFileFormatSettings.html#Crowdin_Api_ProjectsGroups_DitaFileFormatSettings_ContentSegmentation
+  commentId: P:Crowdin.Api.ProjectsGroups.DitaFileFormatSettings.ContentSegmentation
+  fullName: Crowdin.Api.ProjectsGroups.DitaFileFormatSettings.ContentSegmentation
+  nameWithType: DitaFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.DitaFileFormatSettings.ContentSegmentation*
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.DitaFileFormatSettings.html#Crowdin_Api_ProjectsGroups_DitaFileFormatSettings_ContentSegmentation_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.DitaFileFormatSettings.ContentSegmentation
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.DitaFileFormatSettings.ContentSegmentation
+  nameWithType: DitaFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.DitaFileFormatSettings.SrxStorageId
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.DitaFileFormatSettings.html#Crowdin_Api_ProjectsGroups_DitaFileFormatSettings_SrxStorageId
+  commentId: P:Crowdin.Api.ProjectsGroups.DitaFileFormatSettings.SrxStorageId
+  fullName: Crowdin.Api.ProjectsGroups.DitaFileFormatSettings.SrxStorageId
+  nameWithType: DitaFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.DitaFileFormatSettings.SrxStorageId*
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.DitaFileFormatSettings.html#Crowdin_Api_ProjectsGroups_DitaFileFormatSettings_SrxStorageId_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.DitaFileFormatSettings.SrxStorageId
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.DitaFileFormatSettings.SrxStorageId
+  nameWithType: DitaFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings
+  name: DocxFileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.html
+  commentId: T:Crowdin.Api.ProjectsGroups.DocxFileFormatSettings
+  fullName: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings
+  nameWithType: DocxFileFormatSettings
+- uid: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.CleanTagsAggressively
+  name: CleanTagsAggressively
+  href: api/Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.html#Crowdin_Api_ProjectsGroups_DocxFileFormatSettings_CleanTagsAggressively
+  commentId: P:Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.CleanTagsAggressively
+  fullName: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.CleanTagsAggressively
+  nameWithType: DocxFileFormatSettings.CleanTagsAggressively
+- uid: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.CleanTagsAggressively*
+  name: CleanTagsAggressively
+  href: api/Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.html#Crowdin_Api_ProjectsGroups_DocxFileFormatSettings_CleanTagsAggressively_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.CleanTagsAggressively
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.CleanTagsAggressively
+  nameWithType: DocxFileFormatSettings.CleanTagsAggressively
+- uid: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.ContentSegmentation
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.html#Crowdin_Api_ProjectsGroups_DocxFileFormatSettings_ContentSegmentation
+  commentId: P:Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.ContentSegmentation
+  fullName: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.ContentSegmentation
+  nameWithType: DocxFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.ContentSegmentation*
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.html#Crowdin_Api_ProjectsGroups_DocxFileFormatSettings_ContentSegmentation_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.ContentSegmentation
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.ContentSegmentation
+  nameWithType: DocxFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.ImportHiddenSlides
+  name: ImportHiddenSlides
+  href: api/Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.html#Crowdin_Api_ProjectsGroups_DocxFileFormatSettings_ImportHiddenSlides
+  commentId: P:Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.ImportHiddenSlides
+  fullName: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.ImportHiddenSlides
+  nameWithType: DocxFileFormatSettings.ImportHiddenSlides
+- uid: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.ImportHiddenSlides*
+  name: ImportHiddenSlides
+  href: api/Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.html#Crowdin_Api_ProjectsGroups_DocxFileFormatSettings_ImportHiddenSlides_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.ImportHiddenSlides
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.ImportHiddenSlides
+  nameWithType: DocxFileFormatSettings.ImportHiddenSlides
+- uid: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.ImportNotes
+  name: ImportNotes
+  href: api/Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.html#Crowdin_Api_ProjectsGroups_DocxFileFormatSettings_ImportNotes
+  commentId: P:Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.ImportNotes
+  fullName: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.ImportNotes
+  nameWithType: DocxFileFormatSettings.ImportNotes
+- uid: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.ImportNotes*
+  name: ImportNotes
+  href: api/Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.html#Crowdin_Api_ProjectsGroups_DocxFileFormatSettings_ImportNotes_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.ImportNotes
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.ImportNotes
+  nameWithType: DocxFileFormatSettings.ImportNotes
+- uid: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.SrxStorageId
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.html#Crowdin_Api_ProjectsGroups_DocxFileFormatSettings_SrxStorageId
+  commentId: P:Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.SrxStorageId
+  fullName: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.SrxStorageId
+  nameWithType: DocxFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.SrxStorageId*
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.html#Crowdin_Api_ProjectsGroups_DocxFileFormatSettings_SrxStorageId_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.SrxStorageId
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.SrxStorageId
+  nameWithType: DocxFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.TranslateHiddenRowsAndColumns
+  name: TranslateHiddenRowsAndColumns
+  href: api/Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.html#Crowdin_Api_ProjectsGroups_DocxFileFormatSettings_TranslateHiddenRowsAndColumns
+  commentId: P:Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.TranslateHiddenRowsAndColumns
+  fullName: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.TranslateHiddenRowsAndColumns
+  nameWithType: DocxFileFormatSettings.TranslateHiddenRowsAndColumns
+- uid: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.TranslateHiddenRowsAndColumns*
+  name: TranslateHiddenRowsAndColumns
+  href: api/Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.html#Crowdin_Api_ProjectsGroups_DocxFileFormatSettings_TranslateHiddenRowsAndColumns_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.TranslateHiddenRowsAndColumns
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.TranslateHiddenRowsAndColumns
+  nameWithType: DocxFileFormatSettings.TranslateHiddenRowsAndColumns
+- uid: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.TranslateHiddenText
+  name: TranslateHiddenText
+  href: api/Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.html#Crowdin_Api_ProjectsGroups_DocxFileFormatSettings_TranslateHiddenText
+  commentId: P:Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.TranslateHiddenText
+  fullName: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.TranslateHiddenText
+  nameWithType: DocxFileFormatSettings.TranslateHiddenText
+- uid: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.TranslateHiddenText*
+  name: TranslateHiddenText
+  href: api/Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.html#Crowdin_Api_ProjectsGroups_DocxFileFormatSettings_TranslateHiddenText_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.TranslateHiddenText
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.TranslateHiddenText
+  nameWithType: DocxFileFormatSettings.TranslateHiddenText
+- uid: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.TranslateHyperlinkUrls
+  name: TranslateHyperlinkUrls
+  href: api/Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.html#Crowdin_Api_ProjectsGroups_DocxFileFormatSettings_TranslateHyperlinkUrls
+  commentId: P:Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.TranslateHyperlinkUrls
+  fullName: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.TranslateHyperlinkUrls
+  nameWithType: DocxFileFormatSettings.TranslateHyperlinkUrls
+- uid: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.TranslateHyperlinkUrls*
+  name: TranslateHyperlinkUrls
+  href: api/Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.html#Crowdin_Api_ProjectsGroups_DocxFileFormatSettings_TranslateHyperlinkUrls_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.TranslateHyperlinkUrls
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.TranslateHyperlinkUrls
+  nameWithType: DocxFileFormatSettings.TranslateHyperlinkUrls
 - uid: Crowdin.Api.ProjectsGroups.DupTranslateAction
   name: DupTranslateAction
   href: api/Crowdin.Api.ProjectsGroups.DupTranslateAction.html
@@ -8003,6 +8331,186 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.FileBasedProjectForm.Visibility
   nameWithType: FileBasedProjectForm.Visibility
+- uid: Crowdin.Api.ProjectsGroups.FileFormatSettings
+  name: FileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.FileFormatSettings.html
+  commentId: T:Crowdin.Api.ProjectsGroups.FileFormatSettings
+  fullName: Crowdin.Api.ProjectsGroups.FileFormatSettings
+  nameWithType: FileFormatSettings
+- uid: Crowdin.Api.ProjectsGroups.FileFormatSettings.ExportPattern
+  name: ExportPattern
+  href: api/Crowdin.Api.ProjectsGroups.FileFormatSettings.html#Crowdin_Api_ProjectsGroups_FileFormatSettings_ExportPattern
+  commentId: P:Crowdin.Api.ProjectsGroups.FileFormatSettings.ExportPattern
+  fullName: Crowdin.Api.ProjectsGroups.FileFormatSettings.ExportPattern
+  nameWithType: FileFormatSettings.ExportPattern
+- uid: Crowdin.Api.ProjectsGroups.FileFormatSettings.ExportPattern*
+  name: ExportPattern
+  href: api/Crowdin.Api.ProjectsGroups.FileFormatSettings.html#Crowdin_Api_ProjectsGroups_FileFormatSettings_ExportPattern_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.FileFormatSettings.ExportPattern
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.FileFormatSettings.ExportPattern
+  nameWithType: FileFormatSettings.ExportPattern
+- uid: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource
+  name: FileFormatSettingsResource
+  href: api/Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.html
+  commentId: T:Crowdin.Api.ProjectsGroups.FileFormatSettingsResource
+  fullName: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource
+  nameWithType: FileFormatSettingsResource
+- uid: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.CreatedAt
+  name: CreatedAt
+  href: api/Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.html#Crowdin_Api_ProjectsGroups_FileFormatSettingsResource_CreatedAt
+  commentId: P:Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.CreatedAt
+  fullName: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.CreatedAt
+  nameWithType: FileFormatSettingsResource.CreatedAt
+- uid: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.CreatedAt*
+  name: CreatedAt
+  href: api/Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.html#Crowdin_Api_ProjectsGroups_FileFormatSettingsResource_CreatedAt_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.CreatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.CreatedAt
+  nameWithType: FileFormatSettingsResource.CreatedAt
+- uid: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Extensions
+  name: Extensions
+  href: api/Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.html#Crowdin_Api_ProjectsGroups_FileFormatSettingsResource_Extensions
+  commentId: P:Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Extensions
+  fullName: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Extensions
+  nameWithType: FileFormatSettingsResource.Extensions
+- uid: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Extensions*
+  name: Extensions
+  href: api/Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.html#Crowdin_Api_ProjectsGroups_FileFormatSettingsResource_Extensions_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Extensions
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Extensions
+  nameWithType: FileFormatSettingsResource.Extensions
+- uid: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Format
+  name: Format
+  href: api/Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.html#Crowdin_Api_ProjectsGroups_FileFormatSettingsResource_Format
+  commentId: P:Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Format
+  fullName: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Format
+  nameWithType: FileFormatSettingsResource.Format
+- uid: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Format*
+  name: Format
+  href: api/Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.html#Crowdin_Api_ProjectsGroups_FileFormatSettingsResource_Format_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Format
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Format
+  nameWithType: FileFormatSettingsResource.Format
+- uid: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Id
+  name: Id
+  href: api/Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.html#Crowdin_Api_ProjectsGroups_FileFormatSettingsResource_Id
+  commentId: P:Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Id
+  fullName: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Id
+  nameWithType: FileFormatSettingsResource.Id
+- uid: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Id*
+  name: Id
+  href: api/Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.html#Crowdin_Api_ProjectsGroups_FileFormatSettingsResource_Id_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Id
+  nameWithType: FileFormatSettingsResource.Id
+- uid: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Name
+  name: Name
+  href: api/Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.html#Crowdin_Api_ProjectsGroups_FileFormatSettingsResource_Name
+  commentId: P:Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Name
+  fullName: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Name
+  nameWithType: FileFormatSettingsResource.Name
+- uid: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Name*
+  name: Name
+  href: api/Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.html#Crowdin_Api_ProjectsGroups_FileFormatSettingsResource_Name_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Name
+  nameWithType: FileFormatSettingsResource.Name
+- uid: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Settings
+  name: Settings
+  href: api/Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.html#Crowdin_Api_ProjectsGroups_FileFormatSettingsResource_Settings
+  commentId: P:Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Settings
+  fullName: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Settings
+  nameWithType: FileFormatSettingsResource.Settings
+- uid: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Settings*
+  name: Settings
+  href: api/Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.html#Crowdin_Api_ProjectsGroups_FileFormatSettingsResource_Settings_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Settings
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.Settings
+  nameWithType: FileFormatSettingsResource.Settings
+- uid: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.UpdatedAt
+  name: UpdatedAt
+  href: api/Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.html#Crowdin_Api_ProjectsGroups_FileFormatSettingsResource_UpdatedAt
+  commentId: P:Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.UpdatedAt
+  fullName: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.UpdatedAt
+  nameWithType: FileFormatSettingsResource.UpdatedAt
+- uid: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.UpdatedAt*
+  name: UpdatedAt
+  href: api/Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.html#Crowdin_Api_ProjectsGroups_FileFormatSettingsResource_UpdatedAt_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.UpdatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.FileFormatSettingsResource.UpdatedAt
+  nameWithType: FileFormatSettingsResource.UpdatedAt
+- uid: Crowdin.Api.ProjectsGroups.FmHtmlFileFormatSettings
+  name: FmHtmlFileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.FmHtmlFileFormatSettings.html
+  commentId: T:Crowdin.Api.ProjectsGroups.FmHtmlFileFormatSettings
+  fullName: Crowdin.Api.ProjectsGroups.FmHtmlFileFormatSettings
+  nameWithType: FmHtmlFileFormatSettings
+- uid: Crowdin.Api.ProjectsGroups.FmHtmlFileFormatSettings.ContentSegmentation
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.FmHtmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_FmHtmlFileFormatSettings_ContentSegmentation
+  commentId: P:Crowdin.Api.ProjectsGroups.FmHtmlFileFormatSettings.ContentSegmentation
+  fullName: Crowdin.Api.ProjectsGroups.FmHtmlFileFormatSettings.ContentSegmentation
+  nameWithType: FmHtmlFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.FmHtmlFileFormatSettings.ContentSegmentation*
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.FmHtmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_FmHtmlFileFormatSettings_ContentSegmentation_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.FmHtmlFileFormatSettings.ContentSegmentation
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.FmHtmlFileFormatSettings.ContentSegmentation
+  nameWithType: FmHtmlFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.FmHtmlFileFormatSettings.SrxStorageId
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.FmHtmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_FmHtmlFileFormatSettings_SrxStorageId
+  commentId: P:Crowdin.Api.ProjectsGroups.FmHtmlFileFormatSettings.SrxStorageId
+  fullName: Crowdin.Api.ProjectsGroups.FmHtmlFileFormatSettings.SrxStorageId
+  nameWithType: FmHtmlFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.FmHtmlFileFormatSettings.SrxStorageId*
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.FmHtmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_FmHtmlFileFormatSettings_SrxStorageId_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.FmHtmlFileFormatSettings.SrxStorageId
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.FmHtmlFileFormatSettings.SrxStorageId
+  nameWithType: FmHtmlFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.FmMdFileFormatSettings
+  name: FmMdFileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.FmMdFileFormatSettings.html
+  commentId: T:Crowdin.Api.ProjectsGroups.FmMdFileFormatSettings
+  fullName: Crowdin.Api.ProjectsGroups.FmMdFileFormatSettings
+  nameWithType: FmMdFileFormatSettings
+- uid: Crowdin.Api.ProjectsGroups.FmMdFileFormatSettings.ContentSegmentation
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.FmMdFileFormatSettings.html#Crowdin_Api_ProjectsGroups_FmMdFileFormatSettings_ContentSegmentation
+  commentId: P:Crowdin.Api.ProjectsGroups.FmMdFileFormatSettings.ContentSegmentation
+  fullName: Crowdin.Api.ProjectsGroups.FmMdFileFormatSettings.ContentSegmentation
+  nameWithType: FmMdFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.FmMdFileFormatSettings.ContentSegmentation*
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.FmMdFileFormatSettings.html#Crowdin_Api_ProjectsGroups_FmMdFileFormatSettings_ContentSegmentation_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.FmMdFileFormatSettings.ContentSegmentation
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.FmMdFileFormatSettings.ContentSegmentation
+  nameWithType: FmMdFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.FmMdFileFormatSettings.SrxStorageId
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.FmMdFileFormatSettings.html#Crowdin_Api_ProjectsGroups_FmMdFileFormatSettings_SrxStorageId
+  commentId: P:Crowdin.Api.ProjectsGroups.FmMdFileFormatSettings.SrxStorageId
+  fullName: Crowdin.Api.ProjectsGroups.FmMdFileFormatSettings.SrxStorageId
+  nameWithType: FmMdFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.FmMdFileFormatSettings.SrxStorageId*
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.FmMdFileFormatSettings.html#Crowdin_Api_ProjectsGroups_FmMdFileFormatSettings_SrxStorageId_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.FmMdFileFormatSettings.SrxStorageId
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.FmMdFileFormatSettings.SrxStorageId
+  nameWithType: FmMdFileFormatSettings.SrxStorageId
 - uid: Crowdin.Api.ProjectsGroups.Group
   name: Group
   href: api/Crowdin.Api.ProjectsGroups.Group.html
@@ -8182,6 +8690,70 @@ references:
   commentId: F:Crowdin.Api.ProjectsGroups.GroupPatchPath.ParentId
   fullName: Crowdin.Api.ProjectsGroups.GroupPatchPath.ParentId
   nameWithType: GroupPatchPath.ParentId
+- uid: Crowdin.Api.ProjectsGroups.HtmlFileFormatSettings
+  name: HtmlFileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.HtmlFileFormatSettings.html
+  commentId: T:Crowdin.Api.ProjectsGroups.HtmlFileFormatSettings
+  fullName: Crowdin.Api.ProjectsGroups.HtmlFileFormatSettings
+  nameWithType: HtmlFileFormatSettings
+- uid: Crowdin.Api.ProjectsGroups.HtmlFileFormatSettings.ContentSegmentation
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.HtmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_HtmlFileFormatSettings_ContentSegmentation
+  commentId: P:Crowdin.Api.ProjectsGroups.HtmlFileFormatSettings.ContentSegmentation
+  fullName: Crowdin.Api.ProjectsGroups.HtmlFileFormatSettings.ContentSegmentation
+  nameWithType: HtmlFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.HtmlFileFormatSettings.ContentSegmentation*
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.HtmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_HtmlFileFormatSettings_ContentSegmentation_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.HtmlFileFormatSettings.ContentSegmentation
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.HtmlFileFormatSettings.ContentSegmentation
+  nameWithType: HtmlFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.HtmlFileFormatSettings.SrxStorageId
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.HtmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_HtmlFileFormatSettings_SrxStorageId
+  commentId: P:Crowdin.Api.ProjectsGroups.HtmlFileFormatSettings.SrxStorageId
+  fullName: Crowdin.Api.ProjectsGroups.HtmlFileFormatSettings.SrxStorageId
+  nameWithType: HtmlFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.HtmlFileFormatSettings.SrxStorageId*
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.HtmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_HtmlFileFormatSettings_SrxStorageId_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.HtmlFileFormatSettings.SrxStorageId
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.HtmlFileFormatSettings.SrxStorageId
+  nameWithType: HtmlFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.IdmlFileFormatSettings
+  name: IdmlFileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.IdmlFileFormatSettings.html
+  commentId: T:Crowdin.Api.ProjectsGroups.IdmlFileFormatSettings
+  fullName: Crowdin.Api.ProjectsGroups.IdmlFileFormatSettings
+  nameWithType: IdmlFileFormatSettings
+- uid: Crowdin.Api.ProjectsGroups.IdmlFileFormatSettings.ContentSegmentation
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.IdmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_IdmlFileFormatSettings_ContentSegmentation
+  commentId: P:Crowdin.Api.ProjectsGroups.IdmlFileFormatSettings.ContentSegmentation
+  fullName: Crowdin.Api.ProjectsGroups.IdmlFileFormatSettings.ContentSegmentation
+  nameWithType: IdmlFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.IdmlFileFormatSettings.ContentSegmentation*
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.IdmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_IdmlFileFormatSettings_ContentSegmentation_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.IdmlFileFormatSettings.ContentSegmentation
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.IdmlFileFormatSettings.ContentSegmentation
+  nameWithType: IdmlFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.IdmlFileFormatSettings.SrxStorageId
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.IdmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_IdmlFileFormatSettings_SrxStorageId
+  commentId: P:Crowdin.Api.ProjectsGroups.IdmlFileFormatSettings.SrxStorageId
+  fullName: Crowdin.Api.ProjectsGroups.IdmlFileFormatSettings.SrxStorageId
+  nameWithType: IdmlFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.IdmlFileFormatSettings.SrxStorageId*
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.IdmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_IdmlFileFormatSettings_SrxStorageId_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.IdmlFileFormatSettings.SrxStorageId
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.IdmlFileFormatSettings.SrxStorageId
+  nameWithType: IdmlFileFormatSettings.SrxStorageId
 - uid: Crowdin.Api.ProjectsGroups.LanguageAccessPolicy
   name: LanguageAccessPolicy
   href: api/Crowdin.Api.ProjectsGroups.LanguageAccessPolicy.html
@@ -8310,6 +8882,121 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.LanguageMapping.TwoLettersCode
   nameWithType: LanguageMapping.TwoLettersCode
+- uid: Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings
+  name: MadcapFlsnpFileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings.html
+  commentId: T:Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings
+  fullName: Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings
+  nameWithType: MadcapFlsnpFileFormatSettings
+- uid: Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings.ContentSegmentation
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings.html#Crowdin_Api_ProjectsGroups_MadcapFlsnpFileFormatSettings_ContentSegmentation
+  commentId: P:Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings.ContentSegmentation
+  fullName: Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings.ContentSegmentation
+  nameWithType: MadcapFlsnpFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings.ContentSegmentation*
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings.html#Crowdin_Api_ProjectsGroups_MadcapFlsnpFileFormatSettings_ContentSegmentation_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings.ContentSegmentation
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings.ContentSegmentation
+  nameWithType: MadcapFlsnpFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings.SrxStorageId
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings.html#Crowdin_Api_ProjectsGroups_MadcapFlsnpFileFormatSettings_SrxStorageId
+  commentId: P:Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings.SrxStorageId
+  fullName: Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings.SrxStorageId
+  nameWithType: MadcapFlsnpFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings.SrxStorageId*
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings.html#Crowdin_Api_ProjectsGroups_MadcapFlsnpFileFormatSettings_SrxStorageId_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings.SrxStorageId
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings.SrxStorageId
+  nameWithType: MadcapFlsnpFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.MdFileFormatSettings
+  name: MdFileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.MdFileFormatSettings.html
+  commentId: T:Crowdin.Api.ProjectsGroups.MdFileFormatSettings
+  fullName: Crowdin.Api.ProjectsGroups.MdFileFormatSettings
+  nameWithType: MdFileFormatSettings
+- uid: Crowdin.Api.ProjectsGroups.MdFileFormatSettings.ContentSegmentation
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.MdFileFormatSettings.html#Crowdin_Api_ProjectsGroups_MdFileFormatSettings_ContentSegmentation
+  commentId: P:Crowdin.Api.ProjectsGroups.MdFileFormatSettings.ContentSegmentation
+  fullName: Crowdin.Api.ProjectsGroups.MdFileFormatSettings.ContentSegmentation
+  nameWithType: MdFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.MdFileFormatSettings.ContentSegmentation*
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.MdFileFormatSettings.html#Crowdin_Api_ProjectsGroups_MdFileFormatSettings_ContentSegmentation_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.MdFileFormatSettings.ContentSegmentation
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.MdFileFormatSettings.ContentSegmentation
+  nameWithType: MdFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.MdFileFormatSettings.SrxStorageId
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.MdFileFormatSettings.html#Crowdin_Api_ProjectsGroups_MdFileFormatSettings_SrxStorageId
+  commentId: P:Crowdin.Api.ProjectsGroups.MdFileFormatSettings.SrxStorageId
+  fullName: Crowdin.Api.ProjectsGroups.MdFileFormatSettings.SrxStorageId
+  nameWithType: MdFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.MdFileFormatSettings.SrxStorageId*
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.MdFileFormatSettings.html#Crowdin_Api_ProjectsGroups_MdFileFormatSettings_SrxStorageId_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.MdFileFormatSettings.SrxStorageId
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.MdFileFormatSettings.SrxStorageId
+  nameWithType: MdFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.MediaWikiFileFormatSettings
+  name: MediaWikiFileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.MediaWikiFileFormatSettings.html
+  commentId: T:Crowdin.Api.ProjectsGroups.MediaWikiFileFormatSettings
+  fullName: Crowdin.Api.ProjectsGroups.MediaWikiFileFormatSettings
+  nameWithType: MediaWikiFileFormatSettings
+- uid: Crowdin.Api.ProjectsGroups.MediaWikiFileFormatSettings.SrxStorageId
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.MediaWikiFileFormatSettings.html#Crowdin_Api_ProjectsGroups_MediaWikiFileFormatSettings_SrxStorageId
+  commentId: P:Crowdin.Api.ProjectsGroups.MediaWikiFileFormatSettings.SrxStorageId
+  fullName: Crowdin.Api.ProjectsGroups.MediaWikiFileFormatSettings.SrxStorageId
+  nameWithType: MediaWikiFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.MediaWikiFileFormatSettings.SrxStorageId*
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.MediaWikiFileFormatSettings.html#Crowdin_Api_ProjectsGroups_MediaWikiFileFormatSettings_SrxStorageId_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.MediaWikiFileFormatSettings.SrxStorageId
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.MediaWikiFileFormatSettings.SrxStorageId
+  nameWithType: MediaWikiFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.MifFileFormatSettings
+  name: MifFileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.MifFileFormatSettings.html
+  commentId: T:Crowdin.Api.ProjectsGroups.MifFileFormatSettings
+  fullName: Crowdin.Api.ProjectsGroups.MifFileFormatSettings
+  nameWithType: MifFileFormatSettings
+- uid: Crowdin.Api.ProjectsGroups.MifFileFormatSettings.ContentSegmentation
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.MifFileFormatSettings.html#Crowdin_Api_ProjectsGroups_MifFileFormatSettings_ContentSegmentation
+  commentId: P:Crowdin.Api.ProjectsGroups.MifFileFormatSettings.ContentSegmentation
+  fullName: Crowdin.Api.ProjectsGroups.MifFileFormatSettings.ContentSegmentation
+  nameWithType: MifFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.MifFileFormatSettings.ContentSegmentation*
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.MifFileFormatSettings.html#Crowdin_Api_ProjectsGroups_MifFileFormatSettings_ContentSegmentation_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.MifFileFormatSettings.ContentSegmentation
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.MifFileFormatSettings.ContentSegmentation
+  nameWithType: MifFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.MifFileFormatSettings.SrxStorageId
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.MifFileFormatSettings.html#Crowdin_Api_ProjectsGroups_MifFileFormatSettings_SrxStorageId
+  commentId: P:Crowdin.Api.ProjectsGroups.MifFileFormatSettings.SrxStorageId
+  fullName: Crowdin.Api.ProjectsGroups.MifFileFormatSettings.SrxStorageId
+  nameWithType: MifFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.MifFileFormatSettings.SrxStorageId*
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.MifFileFormatSettings.html#Crowdin_Api_ProjectsGroups_MifFileFormatSettings_SrxStorageId_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.MifFileFormatSettings.SrxStorageId
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.MifFileFormatSettings.SrxStorageId
+  nameWithType: MifFileFormatSettings.SrxStorageId
 - uid: Crowdin.Api.ProjectsGroups.NotificationSettings
   name: NotificationSettings
   href: api/Crowdin.Api.ProjectsGroups.NotificationSettings.html
@@ -8355,6 +9042,12 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.NotificationSettings.TranslatorNewStrings
   nameWithType: NotificationSettings.TranslatorNewStrings
+- uid: Crowdin.Api.ProjectsGroups.OtherFileFormatSettings
+  name: OtherFileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.OtherFileFormatSettings.html
+  commentId: T:Crowdin.Api.ProjectsGroups.OtherFileFormatSettings
+  fullName: Crowdin.Api.ProjectsGroups.OtherFileFormatSettings
+  nameWithType: OtherFileFormatSettings
 - uid: Crowdin.Api.ProjectsGroups.Project
   name: Project
   href: api/Crowdin.Api.ProjectsGroups.Project.html
@@ -8593,6 +9286,43 @@ references:
   commentId: F:Crowdin.Api.ProjectsGroups.ProjectExternalType.Translate
   fullName: Crowdin.Api.ProjectsGroups.ProjectExternalType.Translate
   nameWithType: ProjectExternalType.Translate
+- uid: Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatch
+  name: ProjectFileFormatSettingsPatch
+  href: api/Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatch.html
+  commentId: T:Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatch
+  fullName: Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatch
+  nameWithType: ProjectFileFormatSettingsPatch
+- uid: Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatch.Path
+  name: Path
+  href: api/Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatch.html#Crowdin_Api_ProjectsGroups_ProjectFileFormatSettingsPatch_Path
+  commentId: P:Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatch.Path
+  fullName: Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatch.Path
+  nameWithType: ProjectFileFormatSettingsPatch.Path
+- uid: Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatch.Path*
+  name: Path
+  href: api/Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatch.html#Crowdin_Api_ProjectsGroups_ProjectFileFormatSettingsPatch_Path_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatch.Path
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatch.Path
+  nameWithType: ProjectFileFormatSettingsPatch.Path
+- uid: Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatchPath
+  name: ProjectFileFormatSettingsPatchPath
+  href: api/Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatchPath.html
+  commentId: T:Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatchPath
+  fullName: Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatchPath
+  nameWithType: ProjectFileFormatSettingsPatchPath
+- uid: Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatchPath.Format
+  name: Format
+  href: api/Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatchPath.html#Crowdin_Api_ProjectsGroups_ProjectFileFormatSettingsPatchPath_Format
+  commentId: F:Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatchPath.Format
+  fullName: Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatchPath.Format
+  nameWithType: ProjectFileFormatSettingsPatchPath.Format
+- uid: Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatchPath.Settings
+  name: Settings
+  href: api/Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatchPath.html#Crowdin_Api_ProjectsGroups_ProjectFileFormatSettingsPatchPath_Settings
+  commentId: F:Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatchPath.Settings
+  fullName: Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatchPath.Settings
+  nameWithType: ProjectFileFormatSettingsPatchPath.Settings
 - uid: Crowdin.Api.ProjectsGroups.ProjectForm
   name: ProjectForm
   href: api/Crowdin.Api.ProjectsGroups.ProjectForm.html
@@ -9469,6 +10199,19 @@ references:
   fullName.vb: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.AddProject(Of T)(Crowdin.Api.ProjectsGroups.AddProjectRequest)
   nameWithType: ProjectsGroupsApiExecutor.AddProject<T>(AddProjectRequest)
   nameWithType.vb: ProjectsGroupsApiExecutor.AddProject(Of T)(AddProjectRequest)
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.AddProjectFileFormatSettings(System.Int32,Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest)
+  name: AddProjectFileFormatSettings(Int32, AddProjectFileFormatSettingsRequest)
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_AddProjectFileFormatSettings_System_Int32_Crowdin_Api_ProjectsGroups_AddProjectFileFormatSettingsRequest_
+  commentId: M:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.AddProjectFileFormatSettings(System.Int32,Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest)
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.AddProjectFileFormatSettings(System.Int32, Crowdin.Api.ProjectsGroups.AddProjectFileFormatSettingsRequest)
+  nameWithType: ProjectsGroupsApiExecutor.AddProjectFileFormatSettings(Int32, AddProjectFileFormatSettingsRequest)
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.AddProjectFileFormatSettings*
+  name: AddProjectFileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_AddProjectFileFormatSettings_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.AddProjectFileFormatSettings
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.AddProjectFileFormatSettings
+  nameWithType: ProjectsGroupsApiExecutor.AddProjectFileFormatSettings
 - uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DeleteGroup(System.Int32)
   name: DeleteGroup(Int32)
   href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_DeleteGroup_System_Int32_
@@ -9495,6 +10238,32 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DeleteProject
   nameWithType: ProjectsGroupsApiExecutor.DeleteProject
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DeleteProjectFileFormatSettings(System.Int32,System.Int32)
+  name: DeleteProjectFileFormatSettings(Int32, Int32)
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_DeleteProjectFileFormatSettings_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DeleteProjectFileFormatSettings(System.Int32,System.Int32)
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DeleteProjectFileFormatSettings(System.Int32, System.Int32)
+  nameWithType: ProjectsGroupsApiExecutor.DeleteProjectFileFormatSettings(Int32, Int32)
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DeleteProjectFileFormatSettings*
+  name: DeleteProjectFileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_DeleteProjectFileFormatSettings_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DeleteProjectFileFormatSettings
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DeleteProjectFileFormatSettings
+  nameWithType: ProjectsGroupsApiExecutor.DeleteProjectFileFormatSettings
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DownloadProjectFileFormatSettingsCustomSegmentation(System.Int32,System.Int32)
+  name: DownloadProjectFileFormatSettingsCustomSegmentation(Int32, Int32)
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_DownloadProjectFileFormatSettingsCustomSegmentation_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DownloadProjectFileFormatSettingsCustomSegmentation(System.Int32,System.Int32)
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DownloadProjectFileFormatSettingsCustomSegmentation(System.Int32, System.Int32)
+  nameWithType: ProjectsGroupsApiExecutor.DownloadProjectFileFormatSettingsCustomSegmentation(Int32, Int32)
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DownloadProjectFileFormatSettingsCustomSegmentation*
+  name: DownloadProjectFileFormatSettingsCustomSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_DownloadProjectFileFormatSettingsCustomSegmentation_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DownloadProjectFileFormatSettingsCustomSegmentation
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DownloadProjectFileFormatSettingsCustomSegmentation
+  nameWithType: ProjectsGroupsApiExecutor.DownloadProjectFileFormatSettingsCustomSegmentation
 - uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.EditGroup(System.Int32,IEnumerable{Crowdin.Api.ProjectsGroups.GroupPatch})
   name: EditGroup(Int32, IEnumerable<GroupPatch>)
   href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_EditGroup_System_Int32_IEnumerable_Crowdin_Api_ProjectsGroups_GroupPatch__
@@ -9527,6 +10296,22 @@ references:
   fullName.vb: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.EditProject(Of T)(System.Int32, IEnumerable(Of Crowdin.Api.ProjectsGroups.ProjectPatch))
   nameWithType: ProjectsGroupsApiExecutor.EditProject<T>(Int32, IEnumerable<ProjectPatch>)
   nameWithType.vb: ProjectsGroupsApiExecutor.EditProject(Of T)(Int32, IEnumerable(Of ProjectPatch))
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.EditProjectFileFormatSettings(System.Int32,System.Int32,IEnumerable{Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatch})
+  name: EditProjectFileFormatSettings(Int32, Int32, IEnumerable<ProjectFileFormatSettingsPatch>)
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_EditProjectFileFormatSettings_System_Int32_System_Int32_IEnumerable_Crowdin_Api_ProjectsGroups_ProjectFileFormatSettingsPatch__
+  commentId: M:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.EditProjectFileFormatSettings(System.Int32,System.Int32,IEnumerable{Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatch})
+  name.vb: EditProjectFileFormatSettings(Int32, Int32, IEnumerable(Of ProjectFileFormatSettingsPatch))
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.EditProjectFileFormatSettings(System.Int32, System.Int32, IEnumerable<Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatch>)
+  fullName.vb: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.EditProjectFileFormatSettings(System.Int32, System.Int32, IEnumerable(Of Crowdin.Api.ProjectsGroups.ProjectFileFormatSettingsPatch))
+  nameWithType: ProjectsGroupsApiExecutor.EditProjectFileFormatSettings(Int32, Int32, IEnumerable<ProjectFileFormatSettingsPatch>)
+  nameWithType.vb: ProjectsGroupsApiExecutor.EditProjectFileFormatSettings(Int32, Int32, IEnumerable(Of ProjectFileFormatSettingsPatch))
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.EditProjectFileFormatSettings*
+  name: EditProjectFileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_EditProjectFileFormatSettings_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.EditProjectFileFormatSettings
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.EditProjectFileFormatSettings
+  nameWithType: ProjectsGroupsApiExecutor.EditProjectFileFormatSettings
 - uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.GetGroup(System.Int32)
   name: GetGroup(Int32)
   href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_GetGroup_System_Int32_
@@ -9556,6 +10341,19 @@ references:
   fullName.vb: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.GetProject(Of T)(System.Int32)
   nameWithType: ProjectsGroupsApiExecutor.GetProject<T>(Int32)
   nameWithType.vb: ProjectsGroupsApiExecutor.GetProject(Of T)(Int32)
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.GetProjectFileFormatSettings(System.Int32,System.Int32)
+  name: GetProjectFileFormatSettings(Int32, Int32)
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_GetProjectFileFormatSettings_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.GetProjectFileFormatSettings(System.Int32,System.Int32)
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.GetProjectFileFormatSettings(System.Int32, System.Int32)
+  nameWithType: ProjectsGroupsApiExecutor.GetProjectFileFormatSettings(Int32, Int32)
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.GetProjectFileFormatSettings*
+  name: GetProjectFileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_GetProjectFileFormatSettings_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.GetProjectFileFormatSettings
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.GetProjectFileFormatSettings
+  nameWithType: ProjectsGroupsApiExecutor.GetProjectFileFormatSettings
 - uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListGroups(System.Nullable{System.Int32},System.Int32,System.Int32)
   name: ListGroups(Nullable<Int32>, Int32, Int32)
   href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_ListGroups_System_Nullable_System_Int32__System_Int32_System_Int32_
@@ -9572,6 +10370,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListGroups
   nameWithType: ProjectsGroupsApiExecutor.ListGroups
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjectFileFormatSettings(System.Int32)
+  name: ListProjectFileFormatSettings(Int32)
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_ListProjectFileFormatSettings_System_Int32_
+  commentId: M:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjectFileFormatSettings(System.Int32)
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjectFileFormatSettings(System.Int32)
+  nameWithType: ProjectsGroupsApiExecutor.ListProjectFileFormatSettings(Int32)
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjectFileFormatSettings*
+  name: ListProjectFileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_ListProjectFileFormatSettings_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjectFileFormatSettings
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjectFileFormatSettings
+  nameWithType: ProjectsGroupsApiExecutor.ListProjectFileFormatSettings
 - uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjects*
   name: ListProjects
   href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_ListProjects_
@@ -9588,6 +10399,19 @@ references:
   fullName.vb: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjects(Of TProject)(System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Boolean, System.Int32, System.Int32)
   nameWithType: ProjectsGroupsApiExecutor.ListProjects<TProject>(Nullable<Int32>, Nullable<Int32>, Boolean, Int32, Int32)
   nameWithType.vb: ProjectsGroupsApiExecutor.ListProjects(Of TProject)(Nullable(Of Int32), Nullable(Of Int32), Boolean, Int32, Int32)
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ResetProjectFileFormatSettingsCustomSegmentation(System.Int32,System.Int32)
+  name: ResetProjectFileFormatSettingsCustomSegmentation(Int32, Int32)
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_ResetProjectFileFormatSettingsCustomSegmentation_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ResetProjectFileFormatSettingsCustomSegmentation(System.Int32,System.Int32)
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ResetProjectFileFormatSettingsCustomSegmentation(System.Int32, System.Int32)
+  nameWithType: ProjectsGroupsApiExecutor.ResetProjectFileFormatSettingsCustomSegmentation(Int32, Int32)
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ResetProjectFileFormatSettingsCustomSegmentation*
+  name: ResetProjectFileFormatSettingsCustomSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_ResetProjectFileFormatSettingsCustomSegmentation_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ResetProjectFileFormatSettingsCustomSegmentation
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ResetProjectFileFormatSettingsCustomSegmentation
+  nameWithType: ProjectsGroupsApiExecutor.ResetProjectFileFormatSettingsCustomSegmentation
 - uid: Crowdin.Api.ProjectsGroups.ProjectType
   name: ProjectType
   href: api/Crowdin.Api.ProjectsGroups.ProjectType.html
@@ -9624,6 +10448,38 @@ references:
   commentId: F:Crowdin.Api.ProjectsGroups.ProjectVisibility.Private
   fullName: Crowdin.Api.ProjectsGroups.ProjectVisibility.Private
   nameWithType: ProjectVisibility.Private
+- uid: Crowdin.Api.ProjectsGroups.PropertyFileFormatSettings
+  name: PropertyFileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.PropertyFileFormatSettings.html
+  commentId: T:Crowdin.Api.ProjectsGroups.PropertyFileFormatSettings
+  fullName: Crowdin.Api.ProjectsGroups.PropertyFileFormatSettings
+  nameWithType: PropertyFileFormatSettings
+- uid: Crowdin.Api.ProjectsGroups.PropertyFileFormatSettings.EscapeQuotes
+  name: EscapeQuotes
+  href: api/Crowdin.Api.ProjectsGroups.PropertyFileFormatSettings.html#Crowdin_Api_ProjectsGroups_PropertyFileFormatSettings_EscapeQuotes
+  commentId: P:Crowdin.Api.ProjectsGroups.PropertyFileFormatSettings.EscapeQuotes
+  fullName: Crowdin.Api.ProjectsGroups.PropertyFileFormatSettings.EscapeQuotes
+  nameWithType: PropertyFileFormatSettings.EscapeQuotes
+- uid: Crowdin.Api.ProjectsGroups.PropertyFileFormatSettings.EscapeQuotes*
+  name: EscapeQuotes
+  href: api/Crowdin.Api.ProjectsGroups.PropertyFileFormatSettings.html#Crowdin_Api_ProjectsGroups_PropertyFileFormatSettings_EscapeQuotes_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.PropertyFileFormatSettings.EscapeQuotes
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.PropertyFileFormatSettings.EscapeQuotes
+  nameWithType: PropertyFileFormatSettings.EscapeQuotes
+- uid: Crowdin.Api.ProjectsGroups.PropertyFileFormatSettings.EscapeSpecialCharacters
+  name: EscapeSpecialCharacters
+  href: api/Crowdin.Api.ProjectsGroups.PropertyFileFormatSettings.html#Crowdin_Api_ProjectsGroups_PropertyFileFormatSettings_EscapeSpecialCharacters
+  commentId: P:Crowdin.Api.ProjectsGroups.PropertyFileFormatSettings.EscapeSpecialCharacters
+  fullName: Crowdin.Api.ProjectsGroups.PropertyFileFormatSettings.EscapeSpecialCharacters
+  nameWithType: PropertyFileFormatSettings.EscapeSpecialCharacters
+- uid: Crowdin.Api.ProjectsGroups.PropertyFileFormatSettings.EscapeSpecialCharacters*
+  name: EscapeSpecialCharacters
+  href: api/Crowdin.Api.ProjectsGroups.PropertyFileFormatSettings.html#Crowdin_Api_ProjectsGroups_PropertyFileFormatSettings_EscapeSpecialCharacters_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.PropertyFileFormatSettings.EscapeSpecialCharacters
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.PropertyFileFormatSettings.EscapeSpecialCharacters
+  nameWithType: PropertyFileFormatSettings.EscapeSpecialCharacters
 - uid: Crowdin.Api.ProjectsGroups.QaCheckCategories
   name: QaCheckCategories
   href: api/Crowdin.Api.ProjectsGroups.QaCheckCategories.html
@@ -10167,6 +11023,128 @@ references:
   commentId: F:Crowdin.Api.ProjectsGroups.TagsDetectionAction.Skip
   fullName: Crowdin.Api.ProjectsGroups.TagsDetectionAction.Skip
   nameWithType: TagsDetectionAction.Skip
+- uid: Crowdin.Api.ProjectsGroups.TxtFileFormatSettings
+  name: TxtFileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.TxtFileFormatSettings.html
+  commentId: T:Crowdin.Api.ProjectsGroups.TxtFileFormatSettings
+  fullName: Crowdin.Api.ProjectsGroups.TxtFileFormatSettings
+  nameWithType: TxtFileFormatSettings
+- uid: Crowdin.Api.ProjectsGroups.TxtFileFormatSettings.SrxStorageId
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.TxtFileFormatSettings.html#Crowdin_Api_ProjectsGroups_TxtFileFormatSettings_SrxStorageId
+  commentId: P:Crowdin.Api.ProjectsGroups.TxtFileFormatSettings.SrxStorageId
+  fullName: Crowdin.Api.ProjectsGroups.TxtFileFormatSettings.SrxStorageId
+  nameWithType: TxtFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.TxtFileFormatSettings.SrxStorageId*
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.TxtFileFormatSettings.html#Crowdin_Api_ProjectsGroups_TxtFileFormatSettings_SrxStorageId_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.TxtFileFormatSettings.SrxStorageId
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.TxtFileFormatSettings.SrxStorageId
+  nameWithType: TxtFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.WebXmlFileFormatSettings
+  name: WebXmlFileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.WebXmlFileFormatSettings.html
+  commentId: T:Crowdin.Api.ProjectsGroups.WebXmlFileFormatSettings
+  fullName: Crowdin.Api.ProjectsGroups.WebXmlFileFormatSettings
+  nameWithType: WebXmlFileFormatSettings
+- uid: Crowdin.Api.ProjectsGroups.WebXmlFileFormatSettings.ContentSegmentation
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.WebXmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_WebXmlFileFormatSettings_ContentSegmentation
+  commentId: P:Crowdin.Api.ProjectsGroups.WebXmlFileFormatSettings.ContentSegmentation
+  fullName: Crowdin.Api.ProjectsGroups.WebXmlFileFormatSettings.ContentSegmentation
+  nameWithType: WebXmlFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.WebXmlFileFormatSettings.ContentSegmentation*
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.WebXmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_WebXmlFileFormatSettings_ContentSegmentation_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.WebXmlFileFormatSettings.ContentSegmentation
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.WebXmlFileFormatSettings.ContentSegmentation
+  nameWithType: WebXmlFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.WebXmlFileFormatSettings.SrxStorageId
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.WebXmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_WebXmlFileFormatSettings_SrxStorageId
+  commentId: P:Crowdin.Api.ProjectsGroups.WebXmlFileFormatSettings.SrxStorageId
+  fullName: Crowdin.Api.ProjectsGroups.WebXmlFileFormatSettings.SrxStorageId
+  nameWithType: WebXmlFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.WebXmlFileFormatSettings.SrxStorageId*
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.WebXmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_WebXmlFileFormatSettings_SrxStorageId_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.WebXmlFileFormatSettings.SrxStorageId
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.WebXmlFileFormatSettings.SrxStorageId
+  nameWithType: WebXmlFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings
+  name: XmlFileFormatSettings
+  href: api/Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.html
+  commentId: T:Crowdin.Api.ProjectsGroups.XmlFileFormatSettings
+  fullName: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings
+  nameWithType: XmlFileFormatSettings
+- uid: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.ContentSegmentation
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_XmlFileFormatSettings_ContentSegmentation
+  commentId: P:Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.ContentSegmentation
+  fullName: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.ContentSegmentation
+  nameWithType: XmlFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.ContentSegmentation*
+  name: ContentSegmentation
+  href: api/Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_XmlFileFormatSettings_ContentSegmentation_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.ContentSegmentation
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.ContentSegmentation
+  nameWithType: XmlFileFormatSettings.ContentSegmentation
+- uid: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.SrxStorageId
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_XmlFileFormatSettings_SrxStorageId
+  commentId: P:Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.SrxStorageId
+  fullName: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.SrxStorageId
+  nameWithType: XmlFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.SrxStorageId*
+  name: SrxStorageId
+  href: api/Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_XmlFileFormatSettings_SrxStorageId_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.SrxStorageId
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.SrxStorageId
+  nameWithType: XmlFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.TranslatableElements
+  name: TranslatableElements
+  href: api/Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_XmlFileFormatSettings_TranslatableElements
+  commentId: P:Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.TranslatableElements
+  fullName: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.TranslatableElements
+  nameWithType: XmlFileFormatSettings.TranslatableElements
+- uid: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.TranslatableElements*
+  name: TranslatableElements
+  href: api/Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_XmlFileFormatSettings_TranslatableElements_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.TranslatableElements
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.TranslatableElements
+  nameWithType: XmlFileFormatSettings.TranslatableElements
+- uid: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.TranslateAttributes
+  name: TranslateAttributes
+  href: api/Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_XmlFileFormatSettings_TranslateAttributes
+  commentId: P:Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.TranslateAttributes
+  fullName: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.TranslateAttributes
+  nameWithType: XmlFileFormatSettings.TranslateAttributes
+- uid: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.TranslateAttributes*
+  name: TranslateAttributes
+  href: api/Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_XmlFileFormatSettings_TranslateAttributes_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.TranslateAttributes
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.TranslateAttributes
+  nameWithType: XmlFileFormatSettings.TranslateAttributes
+- uid: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.TranslateContent
+  name: TranslateContent
+  href: api/Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_XmlFileFormatSettings_TranslateContent
+  commentId: P:Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.TranslateContent
+  fullName: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.TranslateContent
+  nameWithType: XmlFileFormatSettings.TranslateContent
+- uid: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.TranslateContent*
+  name: TranslateContent
+  href: api/Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.html#Crowdin_Api_ProjectsGroups_XmlFileFormatSettings_TranslateContent_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.TranslateContent
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.XmlFileFormatSettings.TranslateContent
+  nameWithType: XmlFileFormatSettings.TranslateContent
 - uid: Crowdin.Api.Reports
   name: Crowdin.Api.Reports
   href: api/Crowdin.Api.Reports.html
@@ -15996,6 +16974,116 @@ references:
   commentId: F:Crowdin.Api.SourceFiles.DirectoryPatchPath.Title
   fullName: Crowdin.Api.SourceFiles.DirectoryPatchPath.Title
   nameWithType: DirectoryPatchPath.Title
+- uid: Crowdin.Api.SourceFiles.DocxFileImportOptions
+  name: DocxFileImportOptions
+  href: api/Crowdin.Api.SourceFiles.DocxFileImportOptions.html
+  commentId: T:Crowdin.Api.SourceFiles.DocxFileImportOptions
+  fullName: Crowdin.Api.SourceFiles.DocxFileImportOptions
+  nameWithType: DocxFileImportOptions
+- uid: Crowdin.Api.SourceFiles.DocxFileImportOptions.CleanTagsAggressively
+  name: CleanTagsAggressively
+  href: api/Crowdin.Api.SourceFiles.DocxFileImportOptions.html#Crowdin_Api_SourceFiles_DocxFileImportOptions_CleanTagsAggressively
+  commentId: P:Crowdin.Api.SourceFiles.DocxFileImportOptions.CleanTagsAggressively
+  fullName: Crowdin.Api.SourceFiles.DocxFileImportOptions.CleanTagsAggressively
+  nameWithType: DocxFileImportOptions.CleanTagsAggressively
+- uid: Crowdin.Api.SourceFiles.DocxFileImportOptions.CleanTagsAggressively*
+  name: CleanTagsAggressively
+  href: api/Crowdin.Api.SourceFiles.DocxFileImportOptions.html#Crowdin_Api_SourceFiles_DocxFileImportOptions_CleanTagsAggressively_
+  commentId: Overload:Crowdin.Api.SourceFiles.DocxFileImportOptions.CleanTagsAggressively
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.DocxFileImportOptions.CleanTagsAggressively
+  nameWithType: DocxFileImportOptions.CleanTagsAggressively
+- uid: Crowdin.Api.SourceFiles.DocxFileImportOptions.ContentSegmentation
+  name: ContentSegmentation
+  href: api/Crowdin.Api.SourceFiles.DocxFileImportOptions.html#Crowdin_Api_SourceFiles_DocxFileImportOptions_ContentSegmentation
+  commentId: P:Crowdin.Api.SourceFiles.DocxFileImportOptions.ContentSegmentation
+  fullName: Crowdin.Api.SourceFiles.DocxFileImportOptions.ContentSegmentation
+  nameWithType: DocxFileImportOptions.ContentSegmentation
+- uid: Crowdin.Api.SourceFiles.DocxFileImportOptions.ContentSegmentation*
+  name: ContentSegmentation
+  href: api/Crowdin.Api.SourceFiles.DocxFileImportOptions.html#Crowdin_Api_SourceFiles_DocxFileImportOptions_ContentSegmentation_
+  commentId: Overload:Crowdin.Api.SourceFiles.DocxFileImportOptions.ContentSegmentation
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.DocxFileImportOptions.ContentSegmentation
+  nameWithType: DocxFileImportOptions.ContentSegmentation
+- uid: Crowdin.Api.SourceFiles.DocxFileImportOptions.ImportHiddenSlides
+  name: ImportHiddenSlides
+  href: api/Crowdin.Api.SourceFiles.DocxFileImportOptions.html#Crowdin_Api_SourceFiles_DocxFileImportOptions_ImportHiddenSlides
+  commentId: P:Crowdin.Api.SourceFiles.DocxFileImportOptions.ImportHiddenSlides
+  fullName: Crowdin.Api.SourceFiles.DocxFileImportOptions.ImportHiddenSlides
+  nameWithType: DocxFileImportOptions.ImportHiddenSlides
+- uid: Crowdin.Api.SourceFiles.DocxFileImportOptions.ImportHiddenSlides*
+  name: ImportHiddenSlides
+  href: api/Crowdin.Api.SourceFiles.DocxFileImportOptions.html#Crowdin_Api_SourceFiles_DocxFileImportOptions_ImportHiddenSlides_
+  commentId: Overload:Crowdin.Api.SourceFiles.DocxFileImportOptions.ImportHiddenSlides
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.DocxFileImportOptions.ImportHiddenSlides
+  nameWithType: DocxFileImportOptions.ImportHiddenSlides
+- uid: Crowdin.Api.SourceFiles.DocxFileImportOptions.ImportNotes
+  name: ImportNotes
+  href: api/Crowdin.Api.SourceFiles.DocxFileImportOptions.html#Crowdin_Api_SourceFiles_DocxFileImportOptions_ImportNotes
+  commentId: P:Crowdin.Api.SourceFiles.DocxFileImportOptions.ImportNotes
+  fullName: Crowdin.Api.SourceFiles.DocxFileImportOptions.ImportNotes
+  nameWithType: DocxFileImportOptions.ImportNotes
+- uid: Crowdin.Api.SourceFiles.DocxFileImportOptions.ImportNotes*
+  name: ImportNotes
+  href: api/Crowdin.Api.SourceFiles.DocxFileImportOptions.html#Crowdin_Api_SourceFiles_DocxFileImportOptions_ImportNotes_
+  commentId: Overload:Crowdin.Api.SourceFiles.DocxFileImportOptions.ImportNotes
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.DocxFileImportOptions.ImportNotes
+  nameWithType: DocxFileImportOptions.ImportNotes
+- uid: Crowdin.Api.SourceFiles.DocxFileImportOptions.SrxStorageId
+  name: SrxStorageId
+  href: api/Crowdin.Api.SourceFiles.DocxFileImportOptions.html#Crowdin_Api_SourceFiles_DocxFileImportOptions_SrxStorageId
+  commentId: P:Crowdin.Api.SourceFiles.DocxFileImportOptions.SrxStorageId
+  fullName: Crowdin.Api.SourceFiles.DocxFileImportOptions.SrxStorageId
+  nameWithType: DocxFileImportOptions.SrxStorageId
+- uid: Crowdin.Api.SourceFiles.DocxFileImportOptions.SrxStorageId*
+  name: SrxStorageId
+  href: api/Crowdin.Api.SourceFiles.DocxFileImportOptions.html#Crowdin_Api_SourceFiles_DocxFileImportOptions_SrxStorageId_
+  commentId: Overload:Crowdin.Api.SourceFiles.DocxFileImportOptions.SrxStorageId
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.DocxFileImportOptions.SrxStorageId
+  nameWithType: DocxFileImportOptions.SrxStorageId
+- uid: Crowdin.Api.SourceFiles.DocxFileImportOptions.TranslateHiddenRowsAndColumns
+  name: TranslateHiddenRowsAndColumns
+  href: api/Crowdin.Api.SourceFiles.DocxFileImportOptions.html#Crowdin_Api_SourceFiles_DocxFileImportOptions_TranslateHiddenRowsAndColumns
+  commentId: P:Crowdin.Api.SourceFiles.DocxFileImportOptions.TranslateHiddenRowsAndColumns
+  fullName: Crowdin.Api.SourceFiles.DocxFileImportOptions.TranslateHiddenRowsAndColumns
+  nameWithType: DocxFileImportOptions.TranslateHiddenRowsAndColumns
+- uid: Crowdin.Api.SourceFiles.DocxFileImportOptions.TranslateHiddenRowsAndColumns*
+  name: TranslateHiddenRowsAndColumns
+  href: api/Crowdin.Api.SourceFiles.DocxFileImportOptions.html#Crowdin_Api_SourceFiles_DocxFileImportOptions_TranslateHiddenRowsAndColumns_
+  commentId: Overload:Crowdin.Api.SourceFiles.DocxFileImportOptions.TranslateHiddenRowsAndColumns
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.DocxFileImportOptions.TranslateHiddenRowsAndColumns
+  nameWithType: DocxFileImportOptions.TranslateHiddenRowsAndColumns
+- uid: Crowdin.Api.SourceFiles.DocxFileImportOptions.TranslateHiddenText
+  name: TranslateHiddenText
+  href: api/Crowdin.Api.SourceFiles.DocxFileImportOptions.html#Crowdin_Api_SourceFiles_DocxFileImportOptions_TranslateHiddenText
+  commentId: P:Crowdin.Api.SourceFiles.DocxFileImportOptions.TranslateHiddenText
+  fullName: Crowdin.Api.SourceFiles.DocxFileImportOptions.TranslateHiddenText
+  nameWithType: DocxFileImportOptions.TranslateHiddenText
+- uid: Crowdin.Api.SourceFiles.DocxFileImportOptions.TranslateHiddenText*
+  name: TranslateHiddenText
+  href: api/Crowdin.Api.SourceFiles.DocxFileImportOptions.html#Crowdin_Api_SourceFiles_DocxFileImportOptions_TranslateHiddenText_
+  commentId: Overload:Crowdin.Api.SourceFiles.DocxFileImportOptions.TranslateHiddenText
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.DocxFileImportOptions.TranslateHiddenText
+  nameWithType: DocxFileImportOptions.TranslateHiddenText
+- uid: Crowdin.Api.SourceFiles.DocxFileImportOptions.TranslateHyperlinkUrls
+  name: TranslateHyperlinkUrls
+  href: api/Crowdin.Api.SourceFiles.DocxFileImportOptions.html#Crowdin_Api_SourceFiles_DocxFileImportOptions_TranslateHyperlinkUrls
+  commentId: P:Crowdin.Api.SourceFiles.DocxFileImportOptions.TranslateHyperlinkUrls
+  fullName: Crowdin.Api.SourceFiles.DocxFileImportOptions.TranslateHyperlinkUrls
+  nameWithType: DocxFileImportOptions.TranslateHyperlinkUrls
+- uid: Crowdin.Api.SourceFiles.DocxFileImportOptions.TranslateHyperlinkUrls*
+  name: TranslateHyperlinkUrls
+  href: api/Crowdin.Api.SourceFiles.DocxFileImportOptions.html#Crowdin_Api_SourceFiles_DocxFileImportOptions_TranslateHyperlinkUrls_
+  commentId: Overload:Crowdin.Api.SourceFiles.DocxFileImportOptions.TranslateHyperlinkUrls
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.DocxFileImportOptions.TranslateHyperlinkUrls
+  nameWithType: DocxFileImportOptions.TranslateHyperlinkUrls
 - uid: Crowdin.Api.SourceFiles.EscapeQuotesMode
   name: EscapeQuotesMode
   href: api/Crowdin.Api.SourceFiles.EscapeQuotesMode.html
@@ -16650,6 +17738,18 @@ references:
   commentId: F:Crowdin.Api.SourceFiles.FilePatchPath.BranchId
   fullName: Crowdin.Api.SourceFiles.FilePatchPath.BranchId
   nameWithType: FilePatchPath.BranchId
+- uid: Crowdin.Api.SourceFiles.FilePatchPath.CleanTagsAggressively
+  name: CleanTagsAggressively
+  href: api/Crowdin.Api.SourceFiles.FilePatchPath.html#Crowdin_Api_SourceFiles_FilePatchPath_CleanTagsAggressively
+  commentId: F:Crowdin.Api.SourceFiles.FilePatchPath.CleanTagsAggressively
+  fullName: Crowdin.Api.SourceFiles.FilePatchPath.CleanTagsAggressively
+  nameWithType: FilePatchPath.CleanTagsAggressively
+- uid: Crowdin.Api.SourceFiles.FilePatchPath.ContentSegmentation
+  name: ContentSegmentation
+  href: api/Crowdin.Api.SourceFiles.FilePatchPath.html#Crowdin_Api_SourceFiles_FilePatchPath_ContentSegmentation
+  commentId: F:Crowdin.Api.SourceFiles.FilePatchPath.ContentSegmentation
+  fullName: Crowdin.Api.SourceFiles.FilePatchPath.ContentSegmentation
+  nameWithType: FilePatchPath.ContentSegmentation
 - uid: Crowdin.Api.SourceFiles.FilePatchPath.CustomSegmentation
   name: CustomSegmentation
   href: api/Crowdin.Api.SourceFiles.FilePatchPath.html#Crowdin_Api_SourceFiles_FilePatchPath_CustomSegmentation
@@ -16686,6 +17786,30 @@ references:
   commentId: F:Crowdin.Api.SourceFiles.FilePatchPath.ExportPattern
   fullName: Crowdin.Api.SourceFiles.FilePatchPath.ExportPattern
   nameWithType: FilePatchPath.ExportPattern
+- uid: Crowdin.Api.SourceFiles.FilePatchPath.FirstLineContainsHeader
+  name: FirstLineContainsHeader
+  href: api/Crowdin.Api.SourceFiles.FilePatchPath.html#Crowdin_Api_SourceFiles_FilePatchPath_FirstLineContainsHeader
+  commentId: F:Crowdin.Api.SourceFiles.FilePatchPath.FirstLineContainsHeader
+  fullName: Crowdin.Api.SourceFiles.FilePatchPath.FirstLineContainsHeader
+  nameWithType: FilePatchPath.FirstLineContainsHeader
+- uid: Crowdin.Api.SourceFiles.FilePatchPath.ImportHiddenSlides
+  name: ImportHiddenSlides
+  href: api/Crowdin.Api.SourceFiles.FilePatchPath.html#Crowdin_Api_SourceFiles_FilePatchPath_ImportHiddenSlides
+  commentId: F:Crowdin.Api.SourceFiles.FilePatchPath.ImportHiddenSlides
+  fullName: Crowdin.Api.SourceFiles.FilePatchPath.ImportHiddenSlides
+  nameWithType: FilePatchPath.ImportHiddenSlides
+- uid: Crowdin.Api.SourceFiles.FilePatchPath.ImportNotes
+  name: ImportNotes
+  href: api/Crowdin.Api.SourceFiles.FilePatchPath.html#Crowdin_Api_SourceFiles_FilePatchPath_ImportNotes
+  commentId: F:Crowdin.Api.SourceFiles.FilePatchPath.ImportNotes
+  fullName: Crowdin.Api.SourceFiles.FilePatchPath.ImportNotes
+  nameWithType: FilePatchPath.ImportNotes
+- uid: Crowdin.Api.SourceFiles.FilePatchPath.ImportTranslations
+  name: ImportTranslations
+  href: api/Crowdin.Api.SourceFiles.FilePatchPath.html#Crowdin_Api_SourceFiles_FilePatchPath_ImportTranslations
+  commentId: F:Crowdin.Api.SourceFiles.FilePatchPath.ImportTranslations
+  fullName: Crowdin.Api.SourceFiles.FilePatchPath.ImportTranslations
+  nameWithType: FilePatchPath.ImportTranslations
 - uid: Crowdin.Api.SourceFiles.FilePatchPath.Name
   name: Name
   href: api/Crowdin.Api.SourceFiles.FilePatchPath.html#Crowdin_Api_SourceFiles_FilePatchPath_Name
@@ -16698,6 +17822,12 @@ references:
   commentId: F:Crowdin.Api.SourceFiles.FilePatchPath.Priority
   fullName: Crowdin.Api.SourceFiles.FilePatchPath.Priority
   nameWithType: FilePatchPath.Priority
+- uid: Crowdin.Api.SourceFiles.FilePatchPath.Scheme
+  name: Scheme
+  href: api/Crowdin.Api.SourceFiles.FilePatchPath.html#Crowdin_Api_SourceFiles_FilePatchPath_Scheme
+  commentId: F:Crowdin.Api.SourceFiles.FilePatchPath.Scheme
+  fullName: Crowdin.Api.SourceFiles.FilePatchPath.Scheme
+  nameWithType: FilePatchPath.Scheme
 - uid: Crowdin.Api.SourceFiles.FilePatchPath.SrxStorageId
   name: SrxStorageId
   href: api/Crowdin.Api.SourceFiles.FilePatchPath.html#Crowdin_Api_SourceFiles_FilePatchPath_SrxStorageId
@@ -16710,6 +17840,42 @@ references:
   commentId: F:Crowdin.Api.SourceFiles.FilePatchPath.Title
   fullName: Crowdin.Api.SourceFiles.FilePatchPath.Title
   nameWithType: FilePatchPath.Title
+- uid: Crowdin.Api.SourceFiles.FilePatchPath.TranslatableElements
+  name: TranslatableElements
+  href: api/Crowdin.Api.SourceFiles.FilePatchPath.html#Crowdin_Api_SourceFiles_FilePatchPath_TranslatableElements
+  commentId: F:Crowdin.Api.SourceFiles.FilePatchPath.TranslatableElements
+  fullName: Crowdin.Api.SourceFiles.FilePatchPath.TranslatableElements
+  nameWithType: FilePatchPath.TranslatableElements
+- uid: Crowdin.Api.SourceFiles.FilePatchPath.TranslateAttributes
+  name: TranslateAttributes
+  href: api/Crowdin.Api.SourceFiles.FilePatchPath.html#Crowdin_Api_SourceFiles_FilePatchPath_TranslateAttributes
+  commentId: F:Crowdin.Api.SourceFiles.FilePatchPath.TranslateAttributes
+  fullName: Crowdin.Api.SourceFiles.FilePatchPath.TranslateAttributes
+  nameWithType: FilePatchPath.TranslateAttributes
+- uid: Crowdin.Api.SourceFiles.FilePatchPath.TranslateContent
+  name: TranslateContent
+  href: api/Crowdin.Api.SourceFiles.FilePatchPath.html#Crowdin_Api_SourceFiles_FilePatchPath_TranslateContent
+  commentId: F:Crowdin.Api.SourceFiles.FilePatchPath.TranslateContent
+  fullName: Crowdin.Api.SourceFiles.FilePatchPath.TranslateContent
+  nameWithType: FilePatchPath.TranslateContent
+- uid: Crowdin.Api.SourceFiles.FilePatchPath.TranslateHiddenRowsAndColumns
+  name: TranslateHiddenRowsAndColumns
+  href: api/Crowdin.Api.SourceFiles.FilePatchPath.html#Crowdin_Api_SourceFiles_FilePatchPath_TranslateHiddenRowsAndColumns
+  commentId: F:Crowdin.Api.SourceFiles.FilePatchPath.TranslateHiddenRowsAndColumns
+  fullName: Crowdin.Api.SourceFiles.FilePatchPath.TranslateHiddenRowsAndColumns
+  nameWithType: FilePatchPath.TranslateHiddenRowsAndColumns
+- uid: Crowdin.Api.SourceFiles.FilePatchPath.TranslateHiddenText
+  name: TranslateHiddenText
+  href: api/Crowdin.Api.SourceFiles.FilePatchPath.html#Crowdin_Api_SourceFiles_FilePatchPath_TranslateHiddenText
+  commentId: F:Crowdin.Api.SourceFiles.FilePatchPath.TranslateHiddenText
+  fullName: Crowdin.Api.SourceFiles.FilePatchPath.TranslateHiddenText
+  nameWithType: FilePatchPath.TranslateHiddenText
+- uid: Crowdin.Api.SourceFiles.FilePatchPath.TranslateHyperlinkUrls
+  name: TranslateHyperlinkUrls
+  href: api/Crowdin.Api.SourceFiles.FilePatchPath.html#Crowdin_Api_SourceFiles_FilePatchPath_TranslateHyperlinkUrls
+  commentId: F:Crowdin.Api.SourceFiles.FilePatchPath.TranslateHyperlinkUrls
+  fullName: Crowdin.Api.SourceFiles.FilePatchPath.TranslateHyperlinkUrls
+  nameWithType: FilePatchPath.TranslateHyperlinkUrls
 - uid: Crowdin.Api.SourceFiles.FileResource
   name: FileResource
   href: api/Crowdin.Api.SourceFiles.FileResource.html
@@ -17049,6 +18215,12 @@ references:
   commentId: F:Crowdin.Api.SourceFiles.ProjectFileType.Android
   fullName: Crowdin.Api.SourceFiles.ProjectFileType.Android
   nameWithType: ProjectFileType.Android
+- uid: Crowdin.Api.SourceFiles.ProjectFileType.Arb
+  name: Arb
+  href: api/Crowdin.Api.SourceFiles.ProjectFileType.html#Crowdin_Api_SourceFiles_ProjectFileType_Arb
+  commentId: F:Crowdin.Api.SourceFiles.ProjectFileType.Arb
+  fullName: Crowdin.Api.SourceFiles.ProjectFileType.Arb
+  nameWithType: ProjectFileType.Arb
 - uid: Crowdin.Api.SourceFiles.ProjectFileType.Auto
   name: Auto
   href: api/Crowdin.Api.SourceFiles.ProjectFileType.html#Crowdin_Api_SourceFiles_ProjectFileType_Auto
@@ -17235,6 +18407,12 @@ references:
   commentId: F:Crowdin.Api.SourceFiles.ProjectFileType.Php
   fullName: Crowdin.Api.SourceFiles.ProjectFileType.Php
   nameWithType: ProjectFileType.Php
+- uid: Crowdin.Api.SourceFiles.ProjectFileType.Plist
+  name: Plist
+  href: api/Crowdin.Api.SourceFiles.ProjectFileType.html#Crowdin_Api_SourceFiles_ProjectFileType_Plist
+  commentId: F:Crowdin.Api.SourceFiles.ProjectFileType.Plist
+  fullName: Crowdin.Api.SourceFiles.ProjectFileType.Plist
+  nameWithType: ProjectFileType.Plist
 - uid: Crowdin.Api.SourceFiles.ProjectFileType.Properties
   name: Properties
   href: api/Crowdin.Api.SourceFiles.ProjectFileType.html#Crowdin_Api_SourceFiles_ProjectFileType_Properties
@@ -17295,6 +18473,12 @@ references:
   commentId: F:Crowdin.Api.SourceFiles.ProjectFileType.Srt
   fullName: Crowdin.Api.SourceFiles.ProjectFileType.Srt
   nameWithType: ProjectFileType.Srt
+- uid: Crowdin.Api.SourceFiles.ProjectFileType.Stf
+  name: Stf
+  href: api/Crowdin.Api.SourceFiles.ProjectFileType.html#Crowdin_Api_SourceFiles_ProjectFileType_Stf
+  commentId: F:Crowdin.Api.SourceFiles.ProjectFileType.Stf
+  fullName: Crowdin.Api.SourceFiles.ProjectFileType.Stf
+  nameWithType: ProjectFileType.Stf
 - uid: Crowdin.Api.SourceFiles.ProjectFileType.StringsDict
   name: StringsDict
   href: api/Crowdin.Api.SourceFiles.ProjectFileType.html#Crowdin_Api_SourceFiles_ProjectFileType_StringsDict
@@ -17325,12 +18509,24 @@ references:
   commentId: F:Crowdin.Api.SourceFiles.ProjectFileType.Txt
   fullName: Crowdin.Api.SourceFiles.ProjectFileType.Txt
   nameWithType: ProjectFileType.Txt
+- uid: Crowdin.Api.SourceFiles.ProjectFileType.Vdf
+  name: Vdf
+  href: api/Crowdin.Api.SourceFiles.ProjectFileType.html#Crowdin_Api_SourceFiles_ProjectFileType_Vdf
+  commentId: F:Crowdin.Api.SourceFiles.ProjectFileType.Vdf
+  fullName: Crowdin.Api.SourceFiles.ProjectFileType.Vdf
+  nameWithType: ProjectFileType.Vdf
 - uid: Crowdin.Api.SourceFiles.ProjectFileType.Vtt
   name: Vtt
   href: api/Crowdin.Api.SourceFiles.ProjectFileType.html#Crowdin_Api_SourceFiles_ProjectFileType_Vtt
   commentId: F:Crowdin.Api.SourceFiles.ProjectFileType.Vtt
   fullName: Crowdin.Api.SourceFiles.ProjectFileType.Vtt
   nameWithType: ProjectFileType.Vtt
+- uid: Crowdin.Api.SourceFiles.ProjectFileType.WebXml
+  name: WebXml
+  href: api/Crowdin.Api.SourceFiles.ProjectFileType.html#Crowdin_Api_SourceFiles_ProjectFileType_WebXml
+  commentId: F:Crowdin.Api.SourceFiles.ProjectFileType.WebXml
+  fullName: Crowdin.Api.SourceFiles.ProjectFileType.WebXml
+  nameWithType: ProjectFileType.WebXml
 - uid: Crowdin.Api.SourceFiles.ProjectFileType.Wxl
   name: Wxl
   href: api/Crowdin.Api.SourceFiles.ProjectFileType.html#Crowdin_Api_SourceFiles_ProjectFileType_Wxl
@@ -17349,6 +18545,12 @@ references:
   commentId: F:Crowdin.Api.SourceFiles.ProjectFileType.Xliff
   fullName: Crowdin.Api.SourceFiles.ProjectFileType.Xliff
   nameWithType: ProjectFileType.Xliff
+- uid: Crowdin.Api.SourceFiles.ProjectFileType.XliffTwo
+  name: XliffTwo
+  href: api/Crowdin.Api.SourceFiles.ProjectFileType.html#Crowdin_Api_SourceFiles_ProjectFileType_XliffTwo
+  commentId: F:Crowdin.Api.SourceFiles.ProjectFileType.XliffTwo
+  fullName: Crowdin.Api.SourceFiles.ProjectFileType.XliffTwo
+  nameWithType: ProjectFileType.XliffTwo
 - uid: Crowdin.Api.SourceFiles.ProjectFileType.Xml
   name: Xml
   href: api/Crowdin.Api.SourceFiles.ProjectFileType.html#Crowdin_Api_SourceFiles_ProjectFileType_Xml
@@ -21308,6 +22510,38 @@ references:
   commentId: T:Crowdin.Api.Tasks.AddTaskRequest
   fullName: Crowdin.Api.Tasks.AddTaskRequest
   nameWithType: AddTaskRequest
+- uid: Crowdin.Api.Tasks.AddTaskSettingsTemplate
+  name: AddTaskSettingsTemplate
+  href: api/Crowdin.Api.Tasks.AddTaskSettingsTemplate.html
+  commentId: T:Crowdin.Api.Tasks.AddTaskSettingsTemplate
+  fullName: Crowdin.Api.Tasks.AddTaskSettingsTemplate
+  nameWithType: AddTaskSettingsTemplate
+- uid: Crowdin.Api.Tasks.AddTaskSettingsTemplate.Config
+  name: Config
+  href: api/Crowdin.Api.Tasks.AddTaskSettingsTemplate.html#Crowdin_Api_Tasks_AddTaskSettingsTemplate_Config
+  commentId: P:Crowdin.Api.Tasks.AddTaskSettingsTemplate.Config
+  fullName: Crowdin.Api.Tasks.AddTaskSettingsTemplate.Config
+  nameWithType: AddTaskSettingsTemplate.Config
+- uid: Crowdin.Api.Tasks.AddTaskSettingsTemplate.Config*
+  name: Config
+  href: api/Crowdin.Api.Tasks.AddTaskSettingsTemplate.html#Crowdin_Api_Tasks_AddTaskSettingsTemplate_Config_
+  commentId: Overload:Crowdin.Api.Tasks.AddTaskSettingsTemplate.Config
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.AddTaskSettingsTemplate.Config
+  nameWithType: AddTaskSettingsTemplate.Config
+- uid: Crowdin.Api.Tasks.AddTaskSettingsTemplate.Name
+  name: Name
+  href: api/Crowdin.Api.Tasks.AddTaskSettingsTemplate.html#Crowdin_Api_Tasks_AddTaskSettingsTemplate_Name
+  commentId: P:Crowdin.Api.Tasks.AddTaskSettingsTemplate.Name
+  fullName: Crowdin.Api.Tasks.AddTaskSettingsTemplate.Name
+  nameWithType: AddTaskSettingsTemplate.Name
+- uid: Crowdin.Api.Tasks.AddTaskSettingsTemplate.Name*
+  name: Name
+  href: api/Crowdin.Api.Tasks.AddTaskSettingsTemplate.html#Crowdin_Api_Tasks_AddTaskSettingsTemplate_Name_
+  commentId: Overload:Crowdin.Api.Tasks.AddTaskSettingsTemplate.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.AddTaskSettingsTemplate.Name
+  nameWithType: AddTaskSettingsTemplate.Name
 - uid: Crowdin.Api.Tasks.EnterpriseTaskCreateForm
   name: EnterpriseTaskCreateForm
   href: api/Crowdin.Api.Tasks.EnterpriseTaskCreateForm.html
@@ -21483,6 +22717,51 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.EnterpriseTaskCreateForm.WorkflowStepId
   nameWithType: EnterpriseTaskCreateForm.WorkflowStepId
+- uid: Crowdin.Api.Tasks.LanguageReference
+  name: LanguageReference
+  href: api/Crowdin.Api.Tasks.LanguageReference.html
+  commentId: T:Crowdin.Api.Tasks.LanguageReference
+  fullName: Crowdin.Api.Tasks.LanguageReference
+  nameWithType: LanguageReference
+- uid: Crowdin.Api.Tasks.LanguageReference.LanguageId
+  name: LanguageId
+  href: api/Crowdin.Api.Tasks.LanguageReference.html#Crowdin_Api_Tasks_LanguageReference_LanguageId
+  commentId: P:Crowdin.Api.Tasks.LanguageReference.LanguageId
+  fullName: Crowdin.Api.Tasks.LanguageReference.LanguageId
+  nameWithType: LanguageReference.LanguageId
+- uid: Crowdin.Api.Tasks.LanguageReference.LanguageId*
+  name: LanguageId
+  href: api/Crowdin.Api.Tasks.LanguageReference.html#Crowdin_Api_Tasks_LanguageReference_LanguageId_
+  commentId: Overload:Crowdin.Api.Tasks.LanguageReference.LanguageId
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.LanguageReference.LanguageId
+  nameWithType: LanguageReference.LanguageId
+- uid: Crowdin.Api.Tasks.LanguageReference.TeamIds
+  name: TeamIds
+  href: api/Crowdin.Api.Tasks.LanguageReference.html#Crowdin_Api_Tasks_LanguageReference_TeamIds
+  commentId: P:Crowdin.Api.Tasks.LanguageReference.TeamIds
+  fullName: Crowdin.Api.Tasks.LanguageReference.TeamIds
+  nameWithType: LanguageReference.TeamIds
+- uid: Crowdin.Api.Tasks.LanguageReference.TeamIds*
+  name: TeamIds
+  href: api/Crowdin.Api.Tasks.LanguageReference.html#Crowdin_Api_Tasks_LanguageReference_TeamIds_
+  commentId: Overload:Crowdin.Api.Tasks.LanguageReference.TeamIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.LanguageReference.TeamIds
+  nameWithType: LanguageReference.TeamIds
+- uid: Crowdin.Api.Tasks.LanguageReference.UserIds
+  name: UserIds
+  href: api/Crowdin.Api.Tasks.LanguageReference.html#Crowdin_Api_Tasks_LanguageReference_UserIds
+  commentId: P:Crowdin.Api.Tasks.LanguageReference.UserIds
+  fullName: Crowdin.Api.Tasks.LanguageReference.UserIds
+  nameWithType: LanguageReference.UserIds
+- uid: Crowdin.Api.Tasks.LanguageReference.UserIds*
+  name: UserIds
+  href: api/Crowdin.Api.Tasks.LanguageReference.html#Crowdin_Api_Tasks_LanguageReference_UserIds_
+  commentId: Overload:Crowdin.Api.Tasks.LanguageReference.UserIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.LanguageReference.UserIds
+  nameWithType: LanguageReference.UserIds
 - uid: Crowdin.Api.Tasks.TaskArchivedStatusPatch
   name: TaskArchivedStatusPatch
   href: api/Crowdin.Api.Tasks.TaskArchivedStatusPatch.html
@@ -22381,6 +23660,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TasksApiExecutor.AddTask
   nameWithType: TasksApiExecutor.AddTask
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.AddTaskSettingsTemplate(System.Int32,Crowdin.Api.Tasks.AddTaskSettingsTemplate)
+  name: AddTaskSettingsTemplate(Int32, AddTaskSettingsTemplate)
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_AddTaskSettingsTemplate_System_Int32_Crowdin_Api_Tasks_AddTaskSettingsTemplate_
+  commentId: M:Crowdin.Api.Tasks.TasksApiExecutor.AddTaskSettingsTemplate(System.Int32,Crowdin.Api.Tasks.AddTaskSettingsTemplate)
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.AddTaskSettingsTemplate(System.Int32, Crowdin.Api.Tasks.AddTaskSettingsTemplate)
+  nameWithType: TasksApiExecutor.AddTaskSettingsTemplate(Int32, AddTaskSettingsTemplate)
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.AddTaskSettingsTemplate*
+  name: AddTaskSettingsTemplate
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_AddTaskSettingsTemplate_
+  commentId: Overload:Crowdin.Api.Tasks.TasksApiExecutor.AddTaskSettingsTemplate
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.AddTaskSettingsTemplate
+  nameWithType: TasksApiExecutor.AddTaskSettingsTemplate
 - uid: Crowdin.Api.Tasks.TasksApiExecutor.DeleteTask(System.Int32,System.Int32)
   name: DeleteTask(Int32, Int32)
   href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_DeleteTask_System_Int32_System_Int32_
@@ -22394,6 +23686,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TasksApiExecutor.DeleteTask
   nameWithType: TasksApiExecutor.DeleteTask
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.DeleteTaskSettingsTemplate(System.Int32,System.Int32)
+  name: DeleteTaskSettingsTemplate(Int32, Int32)
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_DeleteTaskSettingsTemplate_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.Tasks.TasksApiExecutor.DeleteTaskSettingsTemplate(System.Int32,System.Int32)
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.DeleteTaskSettingsTemplate(System.Int32, System.Int32)
+  nameWithType: TasksApiExecutor.DeleteTaskSettingsTemplate(Int32, Int32)
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.DeleteTaskSettingsTemplate*
+  name: DeleteTaskSettingsTemplate
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_DeleteTaskSettingsTemplate_
+  commentId: Overload:Crowdin.Api.Tasks.TasksApiExecutor.DeleteTaskSettingsTemplate
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.DeleteTaskSettingsTemplate
+  nameWithType: TasksApiExecutor.DeleteTaskSettingsTemplate
 - uid: Crowdin.Api.Tasks.TasksApiExecutor.EditTask(System.Int32,System.Int32,IEnumerable{Crowdin.Api.Tasks.TaskPatchBase})
   name: EditTask(Int32, Int32, IEnumerable<TaskPatchBase>)
   href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_EditTask_System_Int32_System_Int32_IEnumerable_Crowdin_Api_Tasks_TaskPatchBase__
@@ -22426,6 +23731,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TasksApiExecutor.EditTaskArchivedStatus
   nameWithType: TasksApiExecutor.EditTaskArchivedStatus
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.EditTaskSettingsTemplate(System.Int32,System.Int32,IEnumerable{Crowdin.Api.Tasks.TaskSettingsTemplatePatch})
+  name: EditTaskSettingsTemplate(Int32, Int32, IEnumerable<TaskSettingsTemplatePatch>)
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_EditTaskSettingsTemplate_System_Int32_System_Int32_IEnumerable_Crowdin_Api_Tasks_TaskSettingsTemplatePatch__
+  commentId: M:Crowdin.Api.Tasks.TasksApiExecutor.EditTaskSettingsTemplate(System.Int32,System.Int32,IEnumerable{Crowdin.Api.Tasks.TaskSettingsTemplatePatch})
+  name.vb: EditTaskSettingsTemplate(Int32, Int32, IEnumerable(Of TaskSettingsTemplatePatch))
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.EditTaskSettingsTemplate(System.Int32, System.Int32, IEnumerable<Crowdin.Api.Tasks.TaskSettingsTemplatePatch>)
+  fullName.vb: Crowdin.Api.Tasks.TasksApiExecutor.EditTaskSettingsTemplate(System.Int32, System.Int32, IEnumerable(Of Crowdin.Api.Tasks.TaskSettingsTemplatePatch))
+  nameWithType: TasksApiExecutor.EditTaskSettingsTemplate(Int32, Int32, IEnumerable<TaskSettingsTemplatePatch>)
+  nameWithType.vb: TasksApiExecutor.EditTaskSettingsTemplate(Int32, Int32, IEnumerable(Of TaskSettingsTemplatePatch))
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.EditTaskSettingsTemplate*
+  name: EditTaskSettingsTemplate
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_EditTaskSettingsTemplate_
+  commentId: Overload:Crowdin.Api.Tasks.TasksApiExecutor.EditTaskSettingsTemplate
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.EditTaskSettingsTemplate
+  nameWithType: TasksApiExecutor.EditTaskSettingsTemplate
 - uid: Crowdin.Api.Tasks.TasksApiExecutor.ExportTaskStrings(System.Int32,System.Int32)
   name: ExportTaskStrings(Int32, Int32)
   href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_ExportTaskStrings_System_Int32_System_Int32_
@@ -22452,6 +23773,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TasksApiExecutor.GetTask
   nameWithType: TasksApiExecutor.GetTask
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.GetTaskSettingsTemplate(System.Int32,System.Int32)
+  name: GetTaskSettingsTemplate(Int32, Int32)
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_GetTaskSettingsTemplate_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.Tasks.TasksApiExecutor.GetTaskSettingsTemplate(System.Int32,System.Int32)
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.GetTaskSettingsTemplate(System.Int32, System.Int32)
+  nameWithType: TasksApiExecutor.GetTaskSettingsTemplate(Int32, Int32)
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.GetTaskSettingsTemplate*
+  name: GetTaskSettingsTemplate
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_GetTaskSettingsTemplate_
+  commentId: Overload:Crowdin.Api.Tasks.TasksApiExecutor.GetTaskSettingsTemplate
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.GetTaskSettingsTemplate
+  nameWithType: TasksApiExecutor.GetTaskSettingsTemplate
 - uid: Crowdin.Api.Tasks.TasksApiExecutor.ListTasks(System.Int32,Crowdin.Api.Tasks.TasksListParams)
   name: ListTasks(Int32, TasksListParams)
   href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_ListTasks_System_Int32_Crowdin_Api_Tasks_TasksListParams_
@@ -22474,6 +23808,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TasksApiExecutor.ListTasks
   nameWithType: TasksApiExecutor.ListTasks
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.ListTaskSettingsTemplates(System.Int32,System.Int32,System.Int32)
+  name: ListTaskSettingsTemplates(Int32, Int32, Int32)
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_ListTaskSettingsTemplates_System_Int32_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.Tasks.TasksApiExecutor.ListTaskSettingsTemplates(System.Int32,System.Int32,System.Int32)
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.ListTaskSettingsTemplates(System.Int32, System.Int32, System.Int32)
+  nameWithType: TasksApiExecutor.ListTaskSettingsTemplates(Int32, Int32, Int32)
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.ListTaskSettingsTemplates*
+  name: ListTaskSettingsTemplates
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_ListTaskSettingsTemplates_
+  commentId: Overload:Crowdin.Api.Tasks.TasksApiExecutor.ListTaskSettingsTemplates
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.ListTaskSettingsTemplates
+  nameWithType: TasksApiExecutor.ListTaskSettingsTemplates
 - uid: Crowdin.Api.Tasks.TasksApiExecutor.ListUserTasks(Crowdin.Api.Tasks.UserTasksListParams)
   name: ListUserTasks(UserTasksListParams)
   href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_ListUserTasks_Crowdin_Api_Tasks_UserTasksListParams_
@@ -22496,6 +23843,152 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TasksApiExecutor.ListUserTasks
   nameWithType: TasksApiExecutor.ListUserTasks
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplate
+  name: TaskSettingsTemplate
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplate.html
+  commentId: T:Crowdin.Api.Tasks.TaskSettingsTemplate
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplate
+  nameWithType: TaskSettingsTemplate
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplate.Config
+  name: Config
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplate.html#Crowdin_Api_Tasks_TaskSettingsTemplate_Config
+  commentId: P:Crowdin.Api.Tasks.TaskSettingsTemplate.Config
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplate.Config
+  nameWithType: TaskSettingsTemplate.Config
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplate.Config*
+  name: Config
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplate.html#Crowdin_Api_Tasks_TaskSettingsTemplate_Config_
+  commentId: Overload:Crowdin.Api.Tasks.TaskSettingsTemplate.Config
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplate.Config
+  nameWithType: TaskSettingsTemplate.Config
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplate.CreatedAt
+  name: CreatedAt
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplate.html#Crowdin_Api_Tasks_TaskSettingsTemplate_CreatedAt
+  commentId: P:Crowdin.Api.Tasks.TaskSettingsTemplate.CreatedAt
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplate.CreatedAt
+  nameWithType: TaskSettingsTemplate.CreatedAt
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplate.CreatedAt*
+  name: CreatedAt
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplate.html#Crowdin_Api_Tasks_TaskSettingsTemplate_CreatedAt_
+  commentId: Overload:Crowdin.Api.Tasks.TaskSettingsTemplate.CreatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplate.CreatedAt
+  nameWithType: TaskSettingsTemplate.CreatedAt
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplate.Id
+  name: Id
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplate.html#Crowdin_Api_Tasks_TaskSettingsTemplate_Id
+  commentId: P:Crowdin.Api.Tasks.TaskSettingsTemplate.Id
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplate.Id
+  nameWithType: TaskSettingsTemplate.Id
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplate.Id*
+  name: Id
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplate.html#Crowdin_Api_Tasks_TaskSettingsTemplate_Id_
+  commentId: Overload:Crowdin.Api.Tasks.TaskSettingsTemplate.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplate.Id
+  nameWithType: TaskSettingsTemplate.Id
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplate.Name
+  name: Name
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplate.html#Crowdin_Api_Tasks_TaskSettingsTemplate_Name
+  commentId: P:Crowdin.Api.Tasks.TaskSettingsTemplate.Name
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplate.Name
+  nameWithType: TaskSettingsTemplate.Name
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplate.Name*
+  name: Name
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplate.html#Crowdin_Api_Tasks_TaskSettingsTemplate_Name_
+  commentId: Overload:Crowdin.Api.Tasks.TaskSettingsTemplate.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplate.Name
+  nameWithType: TaskSettingsTemplate.Name
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplate.UpdatedAt
+  name: UpdatedAt
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplate.html#Crowdin_Api_Tasks_TaskSettingsTemplate_UpdatedAt
+  commentId: P:Crowdin.Api.Tasks.TaskSettingsTemplate.UpdatedAt
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplate.UpdatedAt
+  nameWithType: TaskSettingsTemplate.UpdatedAt
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplate.UpdatedAt*
+  name: UpdatedAt
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplate.html#Crowdin_Api_Tasks_TaskSettingsTemplate_UpdatedAt_
+  commentId: Overload:Crowdin.Api.Tasks.TaskSettingsTemplate.UpdatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplate.UpdatedAt
+  nameWithType: TaskSettingsTemplate.UpdatedAt
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplateConfig
+  name: TaskSettingsTemplateConfig
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplateConfig.html
+  commentId: T:Crowdin.Api.Tasks.TaskSettingsTemplateConfig
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplateConfig
+  nameWithType: TaskSettingsTemplateConfig
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplateConfig.Languages
+  name: Languages
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplateConfig.html#Crowdin_Api_Tasks_TaskSettingsTemplateConfig_Languages
+  commentId: P:Crowdin.Api.Tasks.TaskSettingsTemplateConfig.Languages
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplateConfig.Languages
+  nameWithType: TaskSettingsTemplateConfig.Languages
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplateConfig.Languages*
+  name: Languages
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplateConfig.html#Crowdin_Api_Tasks_TaskSettingsTemplateConfig_Languages_
+  commentId: Overload:Crowdin.Api.Tasks.TaskSettingsTemplateConfig.Languages
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplateConfig.Languages
+  nameWithType: TaskSettingsTemplateConfig.Languages
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplateConfigForm
+  name: TaskSettingsTemplateConfigForm
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplateConfigForm.html
+  commentId: T:Crowdin.Api.Tasks.TaskSettingsTemplateConfigForm
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplateConfigForm
+  nameWithType: TaskSettingsTemplateConfigForm
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplateConfigForm.Languages
+  name: Languages
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplateConfigForm.html#Crowdin_Api_Tasks_TaskSettingsTemplateConfigForm_Languages
+  commentId: P:Crowdin.Api.Tasks.TaskSettingsTemplateConfigForm.Languages
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplateConfigForm.Languages
+  nameWithType: TaskSettingsTemplateConfigForm.Languages
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplateConfigForm.Languages*
+  name: Languages
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplateConfigForm.html#Crowdin_Api_Tasks_TaskSettingsTemplateConfigForm_Languages_
+  commentId: Overload:Crowdin.Api.Tasks.TaskSettingsTemplateConfigForm.Languages
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplateConfigForm.Languages
+  nameWithType: TaskSettingsTemplateConfigForm.Languages
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplatePatch
+  name: TaskSettingsTemplatePatch
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplatePatch.html
+  commentId: T:Crowdin.Api.Tasks.TaskSettingsTemplatePatch
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplatePatch
+  nameWithType: TaskSettingsTemplatePatch
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplatePatch.Path
+  name: Path
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplatePatch.html#Crowdin_Api_Tasks_TaskSettingsTemplatePatch_Path
+  commentId: P:Crowdin.Api.Tasks.TaskSettingsTemplatePatch.Path
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplatePatch.Path
+  nameWithType: TaskSettingsTemplatePatch.Path
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplatePatch.Path*
+  name: Path
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplatePatch.html#Crowdin_Api_Tasks_TaskSettingsTemplatePatch_Path_
+  commentId: Overload:Crowdin.Api.Tasks.TaskSettingsTemplatePatch.Path
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplatePatch.Path
+  nameWithType: TaskSettingsTemplatePatch.Path
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplatePatchPath
+  name: TaskSettingsTemplatePatchPath
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplatePatchPath.html
+  commentId: T:Crowdin.Api.Tasks.TaskSettingsTemplatePatchPath
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplatePatchPath
+  nameWithType: TaskSettingsTemplatePatchPath
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplatePatchPath.Config
+  name: Config
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplatePatchPath.html#Crowdin_Api_Tasks_TaskSettingsTemplatePatchPath_Config
+  commentId: F:Crowdin.Api.Tasks.TaskSettingsTemplatePatchPath.Config
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplatePatchPath.Config
+  nameWithType: TaskSettingsTemplatePatchPath.Config
+- uid: Crowdin.Api.Tasks.TaskSettingsTemplatePatchPath.Name
+  name: Name
+  href: api/Crowdin.Api.Tasks.TaskSettingsTemplatePatchPath.html#Crowdin_Api_Tasks_TaskSettingsTemplatePatchPath_Name
+  commentId: F:Crowdin.Api.Tasks.TaskSettingsTemplatePatchPath.Name
+  fullName: Crowdin.Api.Tasks.TaskSettingsTemplatePatchPath.Name
+  nameWithType: TaskSettingsTemplatePatchPath.Name
 - uid: Crowdin.Api.Tasks.TasksListParams
   name: TasksListParams
   href: api/Crowdin.Api.Tasks.TasksListParams.html
@@ -24210,6 +25703,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Teams.AddTeamToProjectRequest.Permissions
   nameWithType: AddTeamToProjectRequest.Permissions
+- uid: Crowdin.Api.Teams.AddTeamToProjectRequest.Roles
+  name: Roles
+  href: api/Crowdin.Api.Teams.AddTeamToProjectRequest.html#Crowdin_Api_Teams_AddTeamToProjectRequest_Roles
+  commentId: P:Crowdin.Api.Teams.AddTeamToProjectRequest.Roles
+  fullName: Crowdin.Api.Teams.AddTeamToProjectRequest.Roles
+  nameWithType: AddTeamToProjectRequest.Roles
+- uid: Crowdin.Api.Teams.AddTeamToProjectRequest.Roles*
+  name: Roles
+  href: api/Crowdin.Api.Teams.AddTeamToProjectRequest.html#Crowdin_Api_Teams_AddTeamToProjectRequest_Roles_
+  commentId: Overload:Crowdin.Api.Teams.AddTeamToProjectRequest.Roles
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.AddTeamToProjectRequest.Roles
+  nameWithType: AddTeamToProjectRequest.Roles
 - uid: Crowdin.Api.Teams.AddTeamToProjectRequest.TeamId
   name: TeamId
   href: api/Crowdin.Api.Teams.AddTeamToProjectRequest.html#Crowdin_Api_Teams_AddTeamToProjectRequest_TeamId
@@ -24281,6 +25787,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Teams.ProjectTeamResource.Permissions
   nameWithType: ProjectTeamResource.Permissions
+- uid: Crowdin.Api.Teams.ProjectTeamResource.Roles
+  name: Roles
+  href: api/Crowdin.Api.Teams.ProjectTeamResource.html#Crowdin_Api_Teams_ProjectTeamResource_Roles
+  commentId: P:Crowdin.Api.Teams.ProjectTeamResource.Roles
+  fullName: Crowdin.Api.Teams.ProjectTeamResource.Roles
+  nameWithType: ProjectTeamResource.Roles
+- uid: Crowdin.Api.Teams.ProjectTeamResource.Roles*
+  name: Roles
+  href: api/Crowdin.Api.Teams.ProjectTeamResource.html#Crowdin_Api_Teams_ProjectTeamResource_Roles_
+  commentId: Overload:Crowdin.Api.Teams.ProjectTeamResource.Roles
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.ProjectTeamResource.Roles
+  nameWithType: ProjectTeamResource.Roles
 - uid: Crowdin.Api.Teams.ProjectTeamResources
   name: ProjectTeamResources
   href: api/Crowdin.Api.Teams.ProjectTeamResources.html
@@ -28549,6 +30068,100 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.ListQaCheckIssues
   nameWithType: TranslationStatusApiExecutor.ListQaCheckIssues
+- uid: Crowdin.Api.TranslatorRole
+  name: TranslatorRole
+  href: api/Crowdin.Api.TranslatorRole.html
+  commentId: T:Crowdin.Api.TranslatorRole
+  fullName: Crowdin.Api.TranslatorRole
+  nameWithType: TranslatorRole
+- uid: Crowdin.Api.TranslatorRole.Name
+  name: Name
+  href: api/Crowdin.Api.TranslatorRole.html#Crowdin_Api_TranslatorRole_Name
+  commentId: P:Crowdin.Api.TranslatorRole.Name
+  fullName: Crowdin.Api.TranslatorRole.Name
+  nameWithType: TranslatorRole.Name
+- uid: Crowdin.Api.TranslatorRole.Name*
+  name: Name
+  href: api/Crowdin.Api.TranslatorRole.html#Crowdin_Api_TranslatorRole_Name_
+  commentId: Overload:Crowdin.Api.TranslatorRole.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslatorRole.Name
+  nameWithType: TranslatorRole.Name
+- uid: Crowdin.Api.TranslatorRole.Permissions
+  name: Permissions
+  href: api/Crowdin.Api.TranslatorRole.html#Crowdin_Api_TranslatorRole_Permissions
+  commentId: P:Crowdin.Api.TranslatorRole.Permissions
+  fullName: Crowdin.Api.TranslatorRole.Permissions
+  nameWithType: TranslatorRole.Permissions
+- uid: Crowdin.Api.TranslatorRole.Permissions*
+  name: Permissions
+  href: api/Crowdin.Api.TranslatorRole.html#Crowdin_Api_TranslatorRole_Permissions_
+  commentId: Overload:Crowdin.Api.TranslatorRole.Permissions
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslatorRole.Permissions
+  nameWithType: TranslatorRole.Permissions
+- uid: Crowdin.Api.TranslatorRoleName
+  name: TranslatorRoleName
+  href: api/Crowdin.Api.TranslatorRoleName.html
+  commentId: T:Crowdin.Api.TranslatorRoleName
+  fullName: Crowdin.Api.TranslatorRoleName
+  nameWithType: TranslatorRoleName
+- uid: Crowdin.Api.TranslatorRoleName.Manager
+  name: Manager
+  href: api/Crowdin.Api.TranslatorRoleName.html#Crowdin_Api_TranslatorRoleName_Manager
+  commentId: F:Crowdin.Api.TranslatorRoleName.Manager
+  fullName: Crowdin.Api.TranslatorRoleName.Manager
+  nameWithType: TranslatorRoleName.Manager
+- uid: Crowdin.Api.TranslatorRoleName.Owner
+  name: Owner
+  href: api/Crowdin.Api.TranslatorRoleName.html#Crowdin_Api_TranslatorRoleName_Owner
+  commentId: F:Crowdin.Api.TranslatorRoleName.Owner
+  fullName: Crowdin.Api.TranslatorRoleName.Owner
+  nameWithType: TranslatorRoleName.Owner
+- uid: Crowdin.Api.TranslatorRoleName.Proofreader
+  name: Proofreader
+  href: api/Crowdin.Api.TranslatorRoleName.html#Crowdin_Api_TranslatorRoleName_Proofreader
+  commentId: F:Crowdin.Api.TranslatorRoleName.Proofreader
+  fullName: Crowdin.Api.TranslatorRoleName.Proofreader
+  nameWithType: TranslatorRoleName.Proofreader
+- uid: Crowdin.Api.TranslatorRoleName.Translator
+  name: Translator
+  href: api/Crowdin.Api.TranslatorRoleName.html#Crowdin_Api_TranslatorRoleName_Translator
+  commentId: F:Crowdin.Api.TranslatorRoleName.Translator
+  fullName: Crowdin.Api.TranslatorRoleName.Translator
+  nameWithType: TranslatorRoleName.Translator
+- uid: Crowdin.Api.TranslatorRolePermissions
+  name: TranslatorRolePermissions
+  href: api/Crowdin.Api.TranslatorRolePermissions.html
+  commentId: T:Crowdin.Api.TranslatorRolePermissions
+  fullName: Crowdin.Api.TranslatorRolePermissions
+  nameWithType: TranslatorRolePermissions
+- uid: Crowdin.Api.TranslatorRolePermissions.AllLanguages
+  name: AllLanguages
+  href: api/Crowdin.Api.TranslatorRolePermissions.html#Crowdin_Api_TranslatorRolePermissions_AllLanguages
+  commentId: P:Crowdin.Api.TranslatorRolePermissions.AllLanguages
+  fullName: Crowdin.Api.TranslatorRolePermissions.AllLanguages
+  nameWithType: TranslatorRolePermissions.AllLanguages
+- uid: Crowdin.Api.TranslatorRolePermissions.AllLanguages*
+  name: AllLanguages
+  href: api/Crowdin.Api.TranslatorRolePermissions.html#Crowdin_Api_TranslatorRolePermissions_AllLanguages_
+  commentId: Overload:Crowdin.Api.TranslatorRolePermissions.AllLanguages
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslatorRolePermissions.AllLanguages
+  nameWithType: TranslatorRolePermissions.AllLanguages
+- uid: Crowdin.Api.TranslatorRolePermissions.LanguagesAccess
+  name: LanguagesAccess
+  href: api/Crowdin.Api.TranslatorRolePermissions.html#Crowdin_Api_TranslatorRolePermissions_LanguagesAccess
+  commentId: P:Crowdin.Api.TranslatorRolePermissions.LanguagesAccess
+  fullName: Crowdin.Api.TranslatorRolePermissions.LanguagesAccess
+  nameWithType: TranslatorRolePermissions.LanguagesAccess
+- uid: Crowdin.Api.TranslatorRolePermissions.LanguagesAccess*
+  name: LanguagesAccess
+  href: api/Crowdin.Api.TranslatorRolePermissions.html#Crowdin_Api_TranslatorRolePermissions_LanguagesAccess_
+  commentId: Overload:Crowdin.Api.TranslatorRolePermissions.LanguagesAccess
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslatorRolePermissions.LanguagesAccess
+  nameWithType: TranslatorRolePermissions.LanguagesAccess
 - uid: Crowdin.Api.Users
   name: Crowdin.Api.Users
   href: api/Crowdin.Api.Users.html
@@ -28600,6 +30213,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Users.AddProjectMemberRequest.Permissions
   nameWithType: AddProjectMemberRequest.Permissions
+- uid: Crowdin.Api.Users.AddProjectMemberRequest.Roles
+  name: Roles
+  href: api/Crowdin.Api.Users.AddProjectMemberRequest.html#Crowdin_Api_Users_AddProjectMemberRequest_Roles
+  commentId: P:Crowdin.Api.Users.AddProjectMemberRequest.Roles
+  fullName: Crowdin.Api.Users.AddProjectMemberRequest.Roles
+  nameWithType: AddProjectMemberRequest.Roles
+- uid: Crowdin.Api.Users.AddProjectMemberRequest.Roles*
+  name: Roles
+  href: api/Crowdin.Api.Users.AddProjectMemberRequest.html#Crowdin_Api_Users_AddProjectMemberRequest_Roles_
+  commentId: Overload:Crowdin.Api.Users.AddProjectMemberRequest.Roles
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.AddProjectMemberRequest.Roles
+  nameWithType: AddProjectMemberRequest.Roles
 - uid: Crowdin.Api.Users.AddProjectMemberRequest.UserIds
   name: UserIds
   href: api/Crowdin.Api.Users.AddProjectMemberRequest.html#Crowdin_Api_Users_AddProjectMemberRequest_UserIds
@@ -29093,6 +30719,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Users.ProjectMember.Permissions
   nameWithType: ProjectMember.Permissions
+- uid: Crowdin.Api.Users.ProjectMember.Roles
+  name: Roles
+  href: api/Crowdin.Api.Users.ProjectMember.html#Crowdin_Api_Users_ProjectMember_Roles
+  commentId: P:Crowdin.Api.Users.ProjectMember.Roles
+  fullName: Crowdin.Api.Users.ProjectMember.Roles
+  nameWithType: ProjectMember.Roles
+- uid: Crowdin.Api.Users.ProjectMember.Roles*
+  name: Roles
+  href: api/Crowdin.Api.Users.ProjectMember.html#Crowdin_Api_Users_ProjectMember_Roles_
+  commentId: Overload:Crowdin.Api.Users.ProjectMember.Roles
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.ProjectMember.Roles
+  nameWithType: ProjectMember.Roles
 - uid: Crowdin.Api.Users.ProjectMember.Username
   name: Username
   href: api/Crowdin.Api.Users.ProjectMember.html#Crowdin_Api_Users_ProjectMember_Username
@@ -29302,6 +30941,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Users.ReplaceProjectMemberPermissionsRequest.Permissions
   nameWithType: ReplaceProjectMemberPermissionsRequest.Permissions
+- uid: Crowdin.Api.Users.ReplaceProjectMemberPermissionsRequest.Roles
+  name: Roles
+  href: api/Crowdin.Api.Users.ReplaceProjectMemberPermissionsRequest.html#Crowdin_Api_Users_ReplaceProjectMemberPermissionsRequest_Roles
+  commentId: P:Crowdin.Api.Users.ReplaceProjectMemberPermissionsRequest.Roles
+  fullName: Crowdin.Api.Users.ReplaceProjectMemberPermissionsRequest.Roles
+  nameWithType: ReplaceProjectMemberPermissionsRequest.Roles
+- uid: Crowdin.Api.Users.ReplaceProjectMemberPermissionsRequest.Roles*
+  name: Roles
+  href: api/Crowdin.Api.Users.ReplaceProjectMemberPermissionsRequest.html#Crowdin_Api_Users_ReplaceProjectMemberPermissionsRequest_Roles_
+  commentId: Overload:Crowdin.Api.Users.ReplaceProjectMemberPermissionsRequest.Roles
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.ReplaceProjectMemberPermissionsRequest.Roles
+  nameWithType: ReplaceProjectMemberPermissionsRequest.Roles
 - uid: Crowdin.Api.Users.TeamMember
   name: TeamMember
   href: api/Crowdin.Api.Users.TeamMember.html
@@ -30748,3 +32400,451 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Webhooks.WebhooksApiExecutor.ListWebhooks
   nameWithType: WebhooksApiExecutor.ListWebhooks
+- uid: Crowdin.Api.Workflows
+  name: Crowdin.Api.Workflows
+  href: api/Crowdin.Api.Workflows.html
+  commentId: N:Crowdin.Api.Workflows
+  fullName: Crowdin.Api.Workflows
+  nameWithType: Crowdin.Api.Workflows
+- uid: Crowdin.Api.Workflows.WorkflowConfig
+  name: WorkflowConfig
+  href: api/Crowdin.Api.Workflows.WorkflowConfig.html
+  commentId: T:Crowdin.Api.Workflows.WorkflowConfig
+  fullName: Crowdin.Api.Workflows.WorkflowConfig
+  nameWithType: WorkflowConfig
+- uid: Crowdin.Api.Workflows.WorkflowCrowdsourcingConfig
+  name: WorkflowCrowdsourcingConfig
+  href: api/Crowdin.Api.Workflows.WorkflowCrowdsourcingConfig.html
+  commentId: T:Crowdin.Api.Workflows.WorkflowCrowdsourcingConfig
+  fullName: Crowdin.Api.Workflows.WorkflowCrowdsourcingConfig
+  nameWithType: WorkflowCrowdsourcingConfig
+- uid: Crowdin.Api.Workflows.WorkflowMtPreTranslationConfig
+  name: WorkflowMtPreTranslationConfig
+  href: api/Crowdin.Api.Workflows.WorkflowMtPreTranslationConfig.html
+  commentId: T:Crowdin.Api.Workflows.WorkflowMtPreTranslationConfig
+  fullName: Crowdin.Api.Workflows.WorkflowMtPreTranslationConfig
+  nameWithType: WorkflowMtPreTranslationConfig
+- uid: Crowdin.Api.Workflows.WorkflowMtPreTranslationConfig.MtId
+  name: MtId
+  href: api/Crowdin.Api.Workflows.WorkflowMtPreTranslationConfig.html#Crowdin_Api_Workflows_WorkflowMtPreTranslationConfig_MtId
+  commentId: P:Crowdin.Api.Workflows.WorkflowMtPreTranslationConfig.MtId
+  fullName: Crowdin.Api.Workflows.WorkflowMtPreTranslationConfig.MtId
+  nameWithType: WorkflowMtPreTranslationConfig.MtId
+- uid: Crowdin.Api.Workflows.WorkflowMtPreTranslationConfig.MtId*
+  name: MtId
+  href: api/Crowdin.Api.Workflows.WorkflowMtPreTranslationConfig.html#Crowdin_Api_Workflows_WorkflowMtPreTranslationConfig_MtId_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowMtPreTranslationConfig.MtId
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowMtPreTranslationConfig.MtId
+  nameWithType: WorkflowMtPreTranslationConfig.MtId
+- uid: Crowdin.Api.Workflows.WorkflowProofreadingByVendorConfig
+  name: WorkflowProofreadingByVendorConfig
+  href: api/Crowdin.Api.Workflows.WorkflowProofreadingByVendorConfig.html
+  commentId: T:Crowdin.Api.Workflows.WorkflowProofreadingByVendorConfig
+  fullName: Crowdin.Api.Workflows.WorkflowProofreadingByVendorConfig
+  nameWithType: WorkflowProofreadingByVendorConfig
+- uid: Crowdin.Api.Workflows.WorkflowProofreadingByVendorConfig.VendorId
+  name: VendorId
+  href: api/Crowdin.Api.Workflows.WorkflowProofreadingByVendorConfig.html#Crowdin_Api_Workflows_WorkflowProofreadingByVendorConfig_VendorId
+  commentId: P:Crowdin.Api.Workflows.WorkflowProofreadingByVendorConfig.VendorId
+  fullName: Crowdin.Api.Workflows.WorkflowProofreadingByVendorConfig.VendorId
+  nameWithType: WorkflowProofreadingByVendorConfig.VendorId
+- uid: Crowdin.Api.Workflows.WorkflowProofreadingByVendorConfig.VendorId*
+  name: VendorId
+  href: api/Crowdin.Api.Workflows.WorkflowProofreadingByVendorConfig.html#Crowdin_Api_Workflows_WorkflowProofreadingByVendorConfig_VendorId_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowProofreadingByVendorConfig.VendorId
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowProofreadingByVendorConfig.VendorId
+  nameWithType: WorkflowProofreadingByVendorConfig.VendorId
+- uid: Crowdin.Api.Workflows.WorkflowProofreadingConfig
+  name: WorkflowProofreadingConfig
+  href: api/Crowdin.Api.Workflows.WorkflowProofreadingConfig.html
+  commentId: T:Crowdin.Api.Workflows.WorkflowProofreadingConfig
+  fullName: Crowdin.Api.Workflows.WorkflowProofreadingConfig
+  nameWithType: WorkflowProofreadingConfig
+- uid: Crowdin.Api.Workflows.WorkflowProofreadingConfig.Assignees
+  name: Assignees
+  href: api/Crowdin.Api.Workflows.WorkflowProofreadingConfig.html#Crowdin_Api_Workflows_WorkflowProofreadingConfig_Assignees
+  commentId: P:Crowdin.Api.Workflows.WorkflowProofreadingConfig.Assignees
+  fullName: Crowdin.Api.Workflows.WorkflowProofreadingConfig.Assignees
+  nameWithType: WorkflowProofreadingConfig.Assignees
+- uid: Crowdin.Api.Workflows.WorkflowProofreadingConfig.Assignees*
+  name: Assignees
+  href: api/Crowdin.Api.Workflows.WorkflowProofreadingConfig.html#Crowdin_Api_Workflows_WorkflowProofreadingConfig_Assignees_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowProofreadingConfig.Assignees
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowProofreadingConfig.Assignees
+  nameWithType: WorkflowProofreadingConfig.Assignees
+- uid: Crowdin.Api.Workflows.WorkflowsApiExecutor
+  name: WorkflowsApiExecutor
+  href: api/Crowdin.Api.Workflows.WorkflowsApiExecutor.html
+  commentId: T:Crowdin.Api.Workflows.WorkflowsApiExecutor
+  fullName: Crowdin.Api.Workflows.WorkflowsApiExecutor
+  nameWithType: WorkflowsApiExecutor
+- uid: Crowdin.Api.Workflows.WorkflowsApiExecutor.#ctor(Crowdin.Api.ICrowdinApiClient)
+  name: WorkflowsApiExecutor(ICrowdinApiClient)
+  href: api/Crowdin.Api.Workflows.WorkflowsApiExecutor.html#Crowdin_Api_Workflows_WorkflowsApiExecutor__ctor_Crowdin_Api_ICrowdinApiClient_
+  commentId: M:Crowdin.Api.Workflows.WorkflowsApiExecutor.#ctor(Crowdin.Api.ICrowdinApiClient)
+  fullName: Crowdin.Api.Workflows.WorkflowsApiExecutor.WorkflowsApiExecutor(Crowdin.Api.ICrowdinApiClient)
+  nameWithType: WorkflowsApiExecutor.WorkflowsApiExecutor(ICrowdinApiClient)
+- uid: Crowdin.Api.Workflows.WorkflowsApiExecutor.#ctor(Crowdin.Api.ICrowdinApiClient,Crowdin.Api.Core.IJsonParser)
+  name: WorkflowsApiExecutor(ICrowdinApiClient, IJsonParser)
+  href: api/Crowdin.Api.Workflows.WorkflowsApiExecutor.html#Crowdin_Api_Workflows_WorkflowsApiExecutor__ctor_Crowdin_Api_ICrowdinApiClient_Crowdin_Api_Core_IJsonParser_
+  commentId: M:Crowdin.Api.Workflows.WorkflowsApiExecutor.#ctor(Crowdin.Api.ICrowdinApiClient,Crowdin.Api.Core.IJsonParser)
+  fullName: Crowdin.Api.Workflows.WorkflowsApiExecutor.WorkflowsApiExecutor(Crowdin.Api.ICrowdinApiClient, Crowdin.Api.Core.IJsonParser)
+  nameWithType: WorkflowsApiExecutor.WorkflowsApiExecutor(ICrowdinApiClient, IJsonParser)
+- uid: Crowdin.Api.Workflows.WorkflowsApiExecutor.#ctor*
+  name: WorkflowsApiExecutor
+  href: api/Crowdin.Api.Workflows.WorkflowsApiExecutor.html#Crowdin_Api_Workflows_WorkflowsApiExecutor__ctor_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowsApiExecutor.#ctor
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowsApiExecutor.WorkflowsApiExecutor
+  nameWithType: WorkflowsApiExecutor.WorkflowsApiExecutor
+- uid: Crowdin.Api.Workflows.WorkflowsApiExecutor.GetWorkflowStep(System.Int32,System.Int32)
+  name: GetWorkflowStep(Int32, Int32)
+  href: api/Crowdin.Api.Workflows.WorkflowsApiExecutor.html#Crowdin_Api_Workflows_WorkflowsApiExecutor_GetWorkflowStep_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.Workflows.WorkflowsApiExecutor.GetWorkflowStep(System.Int32,System.Int32)
+  fullName: Crowdin.Api.Workflows.WorkflowsApiExecutor.GetWorkflowStep(System.Int32, System.Int32)
+  nameWithType: WorkflowsApiExecutor.GetWorkflowStep(Int32, Int32)
+- uid: Crowdin.Api.Workflows.WorkflowsApiExecutor.GetWorkflowStep*
+  name: GetWorkflowStep
+  href: api/Crowdin.Api.Workflows.WorkflowsApiExecutor.html#Crowdin_Api_Workflows_WorkflowsApiExecutor_GetWorkflowStep_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowsApiExecutor.GetWorkflowStep
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowsApiExecutor.GetWorkflowStep
+  nameWithType: WorkflowsApiExecutor.GetWorkflowStep
+- uid: Crowdin.Api.Workflows.WorkflowsApiExecutor.GetWorkflowTemplate(System.Int32)
+  name: GetWorkflowTemplate(Int32)
+  href: api/Crowdin.Api.Workflows.WorkflowsApiExecutor.html#Crowdin_Api_Workflows_WorkflowsApiExecutor_GetWorkflowTemplate_System_Int32_
+  commentId: M:Crowdin.Api.Workflows.WorkflowsApiExecutor.GetWorkflowTemplate(System.Int32)
+  fullName: Crowdin.Api.Workflows.WorkflowsApiExecutor.GetWorkflowTemplate(System.Int32)
+  nameWithType: WorkflowsApiExecutor.GetWorkflowTemplate(Int32)
+- uid: Crowdin.Api.Workflows.WorkflowsApiExecutor.GetWorkflowTemplate*
+  name: GetWorkflowTemplate
+  href: api/Crowdin.Api.Workflows.WorkflowsApiExecutor.html#Crowdin_Api_Workflows_WorkflowsApiExecutor_GetWorkflowTemplate_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowsApiExecutor.GetWorkflowTemplate
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowsApiExecutor.GetWorkflowTemplate
+  nameWithType: WorkflowsApiExecutor.GetWorkflowTemplate
+- uid: Crowdin.Api.Workflows.WorkflowsApiExecutor.ListWorkflowSteps(System.Int32)
+  name: ListWorkflowSteps(Int32)
+  href: api/Crowdin.Api.Workflows.WorkflowsApiExecutor.html#Crowdin_Api_Workflows_WorkflowsApiExecutor_ListWorkflowSteps_System_Int32_
+  commentId: M:Crowdin.Api.Workflows.WorkflowsApiExecutor.ListWorkflowSteps(System.Int32)
+  fullName: Crowdin.Api.Workflows.WorkflowsApiExecutor.ListWorkflowSteps(System.Int32)
+  nameWithType: WorkflowsApiExecutor.ListWorkflowSteps(Int32)
+- uid: Crowdin.Api.Workflows.WorkflowsApiExecutor.ListWorkflowSteps*
+  name: ListWorkflowSteps
+  href: api/Crowdin.Api.Workflows.WorkflowsApiExecutor.html#Crowdin_Api_Workflows_WorkflowsApiExecutor_ListWorkflowSteps_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowsApiExecutor.ListWorkflowSteps
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowsApiExecutor.ListWorkflowSteps
+  nameWithType: WorkflowsApiExecutor.ListWorkflowSteps
+- uid: Crowdin.Api.Workflows.WorkflowsApiExecutor.ListWorkflowTemplates(System.Int32,System.Int32,System.Int32)
+  name: ListWorkflowTemplates(Int32, Int32, Int32)
+  href: api/Crowdin.Api.Workflows.WorkflowsApiExecutor.html#Crowdin_Api_Workflows_WorkflowsApiExecutor_ListWorkflowTemplates_System_Int32_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.Workflows.WorkflowsApiExecutor.ListWorkflowTemplates(System.Int32,System.Int32,System.Int32)
+  fullName: Crowdin.Api.Workflows.WorkflowsApiExecutor.ListWorkflowTemplates(System.Int32, System.Int32, System.Int32)
+  nameWithType: WorkflowsApiExecutor.ListWorkflowTemplates(Int32, Int32, Int32)
+- uid: Crowdin.Api.Workflows.WorkflowsApiExecutor.ListWorkflowTemplates*
+  name: ListWorkflowTemplates
+  href: api/Crowdin.Api.Workflows.WorkflowsApiExecutor.html#Crowdin_Api_Workflows_WorkflowsApiExecutor_ListWorkflowTemplates_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowsApiExecutor.ListWorkflowTemplates
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowsApiExecutor.ListWorkflowTemplates
+  nameWithType: WorkflowsApiExecutor.ListWorkflowTemplates
+- uid: Crowdin.Api.Workflows.WorkflowStep
+  name: WorkflowStep
+  href: api/Crowdin.Api.Workflows.WorkflowStep.html
+  commentId: T:Crowdin.Api.Workflows.WorkflowStep
+  fullName: Crowdin.Api.Workflows.WorkflowStep
+  nameWithType: WorkflowStep
+- uid: Crowdin.Api.Workflows.WorkflowStep.Config
+  name: Config
+  href: api/Crowdin.Api.Workflows.WorkflowStep.html#Crowdin_Api_Workflows_WorkflowStep_Config
+  commentId: P:Crowdin.Api.Workflows.WorkflowStep.Config
+  fullName: Crowdin.Api.Workflows.WorkflowStep.Config
+  nameWithType: WorkflowStep.Config
+- uid: Crowdin.Api.Workflows.WorkflowStep.Config*
+  name: Config
+  href: api/Crowdin.Api.Workflows.WorkflowStep.html#Crowdin_Api_Workflows_WorkflowStep_Config_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowStep.Config
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowStep.Config
+  nameWithType: WorkflowStep.Config
+- uid: Crowdin.Api.Workflows.WorkflowStep.Id
+  name: Id
+  href: api/Crowdin.Api.Workflows.WorkflowStep.html#Crowdin_Api_Workflows_WorkflowStep_Id
+  commentId: P:Crowdin.Api.Workflows.WorkflowStep.Id
+  fullName: Crowdin.Api.Workflows.WorkflowStep.Id
+  nameWithType: WorkflowStep.Id
+- uid: Crowdin.Api.Workflows.WorkflowStep.Id*
+  name: Id
+  href: api/Crowdin.Api.Workflows.WorkflowStep.html#Crowdin_Api_Workflows_WorkflowStep_Id_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowStep.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowStep.Id
+  nameWithType: WorkflowStep.Id
+- uid: Crowdin.Api.Workflows.WorkflowStep.Languages
+  name: Languages
+  href: api/Crowdin.Api.Workflows.WorkflowStep.html#Crowdin_Api_Workflows_WorkflowStep_Languages
+  commentId: P:Crowdin.Api.Workflows.WorkflowStep.Languages
+  fullName: Crowdin.Api.Workflows.WorkflowStep.Languages
+  nameWithType: WorkflowStep.Languages
+- uid: Crowdin.Api.Workflows.WorkflowStep.Languages*
+  name: Languages
+  href: api/Crowdin.Api.Workflows.WorkflowStep.html#Crowdin_Api_Workflows_WorkflowStep_Languages_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowStep.Languages
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowStep.Languages
+  nameWithType: WorkflowStep.Languages
+- uid: Crowdin.Api.Workflows.WorkflowStep.Title
+  name: Title
+  href: api/Crowdin.Api.Workflows.WorkflowStep.html#Crowdin_Api_Workflows_WorkflowStep_Title
+  commentId: P:Crowdin.Api.Workflows.WorkflowStep.Title
+  fullName: Crowdin.Api.Workflows.WorkflowStep.Title
+  nameWithType: WorkflowStep.Title
+- uid: Crowdin.Api.Workflows.WorkflowStep.Title*
+  name: Title
+  href: api/Crowdin.Api.Workflows.WorkflowStep.html#Crowdin_Api_Workflows_WorkflowStep_Title_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowStep.Title
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowStep.Title
+  nameWithType: WorkflowStep.Title
+- uid: Crowdin.Api.Workflows.WorkflowStep.Type
+  name: Type
+  href: api/Crowdin.Api.Workflows.WorkflowStep.html#Crowdin_Api_Workflows_WorkflowStep_Type
+  commentId: P:Crowdin.Api.Workflows.WorkflowStep.Type
+  fullName: Crowdin.Api.Workflows.WorkflowStep.Type
+  nameWithType: WorkflowStep.Type
+- uid: Crowdin.Api.Workflows.WorkflowStep.Type*
+  name: Type
+  href: api/Crowdin.Api.Workflows.WorkflowStep.html#Crowdin_Api_Workflows_WorkflowStep_Type_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowStep.Type
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowStep.Type
+  nameWithType: WorkflowStep.Type
+- uid: Crowdin.Api.Workflows.WorkflowStepType
+  name: WorkflowStepType
+  href: api/Crowdin.Api.Workflows.WorkflowStepType.html
+  commentId: T:Crowdin.Api.Workflows.WorkflowStepType
+  fullName: Crowdin.Api.Workflows.WorkflowStepType
+  nameWithType: WorkflowStepType
+- uid: Crowdin.Api.Workflows.WorkflowStepType.CrowdSource
+  name: CrowdSource
+  href: api/Crowdin.Api.Workflows.WorkflowStepType.html#Crowdin_Api_Workflows_WorkflowStepType_CrowdSource
+  commentId: F:Crowdin.Api.Workflows.WorkflowStepType.CrowdSource
+  fullName: Crowdin.Api.Workflows.WorkflowStepType.CrowdSource
+  nameWithType: WorkflowStepType.CrowdSource
+- uid: Crowdin.Api.Workflows.WorkflowStepType.CustomCode
+  name: CustomCode
+  href: api/Crowdin.Api.Workflows.WorkflowStepType.html#Crowdin_Api_Workflows_WorkflowStepType_CustomCode
+  commentId: F:Crowdin.Api.Workflows.WorkflowStepType.CustomCode
+  fullName: Crowdin.Api.Workflows.WorkflowStepType.CustomCode
+  nameWithType: WorkflowStepType.CustomCode
+- uid: Crowdin.Api.Workflows.WorkflowStepType.End
+  name: End
+  href: api/Crowdin.Api.Workflows.WorkflowStepType.html#Crowdin_Api_Workflows_WorkflowStepType_End
+  commentId: F:Crowdin.Api.Workflows.WorkflowStepType.End
+  fullName: Crowdin.Api.Workflows.WorkflowStepType.End
+  nameWithType: WorkflowStepType.End
+- uid: Crowdin.Api.Workflows.WorkflowStepType.MachinePreTranslate
+  name: MachinePreTranslate
+  href: api/Crowdin.Api.Workflows.WorkflowStepType.html#Crowdin_Api_Workflows_WorkflowStepType_MachinePreTranslate
+  commentId: F:Crowdin.Api.Workflows.WorkflowStepType.MachinePreTranslate
+  fullName: Crowdin.Api.Workflows.WorkflowStepType.MachinePreTranslate
+  nameWithType: WorkflowStepType.MachinePreTranslate
+- uid: Crowdin.Api.Workflows.WorkflowStepType.Proofread
+  name: Proofread
+  href: api/Crowdin.Api.Workflows.WorkflowStepType.html#Crowdin_Api_Workflows_WorkflowStepType_Proofread
+  commentId: F:Crowdin.Api.Workflows.WorkflowStepType.Proofread
+  fullName: Crowdin.Api.Workflows.WorkflowStepType.Proofread
+  nameWithType: WorkflowStepType.Proofread
+- uid: Crowdin.Api.Workflows.WorkflowStepType.ProofreadByVendor
+  name: ProofreadByVendor
+  href: api/Crowdin.Api.Workflows.WorkflowStepType.html#Crowdin_Api_Workflows_WorkflowStepType_ProofreadByVendor
+  commentId: F:Crowdin.Api.Workflows.WorkflowStepType.ProofreadByVendor
+  fullName: Crowdin.Api.Workflows.WorkflowStepType.ProofreadByVendor
+  nameWithType: WorkflowStepType.ProofreadByVendor
+- uid: Crowdin.Api.Workflows.WorkflowStepType.SourceTextReview
+  name: SourceTextReview
+  href: api/Crowdin.Api.Workflows.WorkflowStepType.html#Crowdin_Api_Workflows_WorkflowStepType_SourceTextReview
+  commentId: F:Crowdin.Api.Workflows.WorkflowStepType.SourceTextReview
+  fullName: Crowdin.Api.Workflows.WorkflowStepType.SourceTextReview
+  nameWithType: WorkflowStepType.SourceTextReview
+- uid: Crowdin.Api.Workflows.WorkflowStepType.Start
+  name: Start
+  href: api/Crowdin.Api.Workflows.WorkflowStepType.html#Crowdin_Api_Workflows_WorkflowStepType_Start
+  commentId: F:Crowdin.Api.Workflows.WorkflowStepType.Start
+  fullName: Crowdin.Api.Workflows.WorkflowStepType.Start
+  nameWithType: WorkflowStepType.Start
+- uid: Crowdin.Api.Workflows.WorkflowStepType.SwitchLanguage
+  name: SwitchLanguage
+  href: api/Crowdin.Api.Workflows.WorkflowStepType.html#Crowdin_Api_Workflows_WorkflowStepType_SwitchLanguage
+  commentId: F:Crowdin.Api.Workflows.WorkflowStepType.SwitchLanguage
+  fullName: Crowdin.Api.Workflows.WorkflowStepType.SwitchLanguage
+  nameWithType: WorkflowStepType.SwitchLanguage
+- uid: Crowdin.Api.Workflows.WorkflowStepType.TmPreTranslate
+  name: TmPreTranslate
+  href: api/Crowdin.Api.Workflows.WorkflowStepType.html#Crowdin_Api_Workflows_WorkflowStepType_TmPreTranslate
+  commentId: F:Crowdin.Api.Workflows.WorkflowStepType.TmPreTranslate
+  fullName: Crowdin.Api.Workflows.WorkflowStepType.TmPreTranslate
+  nameWithType: WorkflowStepType.TmPreTranslate
+- uid: Crowdin.Api.Workflows.WorkflowStepType.Translate
+  name: Translate
+  href: api/Crowdin.Api.Workflows.WorkflowStepType.html#Crowdin_Api_Workflows_WorkflowStepType_Translate
+  commentId: F:Crowdin.Api.Workflows.WorkflowStepType.Translate
+  fullName: Crowdin.Api.Workflows.WorkflowStepType.Translate
+  nameWithType: WorkflowStepType.Translate
+- uid: Crowdin.Api.Workflows.WorkflowStepType.TranslateByApiVendor
+  name: TranslateByApiVendor
+  href: api/Crowdin.Api.Workflows.WorkflowStepType.html#Crowdin_Api_Workflows_WorkflowStepType_TranslateByApiVendor
+  commentId: F:Crowdin.Api.Workflows.WorkflowStepType.TranslateByApiVendor
+  fullName: Crowdin.Api.Workflows.WorkflowStepType.TranslateByApiVendor
+  nameWithType: WorkflowStepType.TranslateByApiVendor
+- uid: Crowdin.Api.Workflows.WorkflowStepType.TranslateByVendor
+  name: TranslateByVendor
+  href: api/Crowdin.Api.Workflows.WorkflowStepType.html#Crowdin_Api_Workflows_WorkflowStepType_TranslateByVendor
+  commentId: F:Crowdin.Api.Workflows.WorkflowStepType.TranslateByVendor
+  fullName: Crowdin.Api.Workflows.WorkflowStepType.TranslateByVendor
+  nameWithType: WorkflowStepType.TranslateByVendor
+- uid: Crowdin.Api.Workflows.WorkflowTemplate
+  name: WorkflowTemplate
+  href: api/Crowdin.Api.Workflows.WorkflowTemplate.html
+  commentId: T:Crowdin.Api.Workflows.WorkflowTemplate
+  fullName: Crowdin.Api.Workflows.WorkflowTemplate
+  nameWithType: WorkflowTemplate
+- uid: Crowdin.Api.Workflows.WorkflowTemplate.Description
+  name: Description
+  href: api/Crowdin.Api.Workflows.WorkflowTemplate.html#Crowdin_Api_Workflows_WorkflowTemplate_Description
+  commentId: P:Crowdin.Api.Workflows.WorkflowTemplate.Description
+  fullName: Crowdin.Api.Workflows.WorkflowTemplate.Description
+  nameWithType: WorkflowTemplate.Description
+- uid: Crowdin.Api.Workflows.WorkflowTemplate.Description*
+  name: Description
+  href: api/Crowdin.Api.Workflows.WorkflowTemplate.html#Crowdin_Api_Workflows_WorkflowTemplate_Description_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowTemplate.Description
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowTemplate.Description
+  nameWithType: WorkflowTemplate.Description
+- uid: Crowdin.Api.Workflows.WorkflowTemplate.GroupId
+  name: GroupId
+  href: api/Crowdin.Api.Workflows.WorkflowTemplate.html#Crowdin_Api_Workflows_WorkflowTemplate_GroupId
+  commentId: P:Crowdin.Api.Workflows.WorkflowTemplate.GroupId
+  fullName: Crowdin.Api.Workflows.WorkflowTemplate.GroupId
+  nameWithType: WorkflowTemplate.GroupId
+- uid: Crowdin.Api.Workflows.WorkflowTemplate.GroupId*
+  name: GroupId
+  href: api/Crowdin.Api.Workflows.WorkflowTemplate.html#Crowdin_Api_Workflows_WorkflowTemplate_GroupId_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowTemplate.GroupId
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowTemplate.GroupId
+  nameWithType: WorkflowTemplate.GroupId
+- uid: Crowdin.Api.Workflows.WorkflowTemplate.Id
+  name: Id
+  href: api/Crowdin.Api.Workflows.WorkflowTemplate.html#Crowdin_Api_Workflows_WorkflowTemplate_Id
+  commentId: P:Crowdin.Api.Workflows.WorkflowTemplate.Id
+  fullName: Crowdin.Api.Workflows.WorkflowTemplate.Id
+  nameWithType: WorkflowTemplate.Id
+- uid: Crowdin.Api.Workflows.WorkflowTemplate.Id*
+  name: Id
+  href: api/Crowdin.Api.Workflows.WorkflowTemplate.html#Crowdin_Api_Workflows_WorkflowTemplate_Id_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowTemplate.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowTemplate.Id
+  nameWithType: WorkflowTemplate.Id
+- uid: Crowdin.Api.Workflows.WorkflowTemplate.IsDefault
+  name: IsDefault
+  href: api/Crowdin.Api.Workflows.WorkflowTemplate.html#Crowdin_Api_Workflows_WorkflowTemplate_IsDefault
+  commentId: P:Crowdin.Api.Workflows.WorkflowTemplate.IsDefault
+  fullName: Crowdin.Api.Workflows.WorkflowTemplate.IsDefault
+  nameWithType: WorkflowTemplate.IsDefault
+- uid: Crowdin.Api.Workflows.WorkflowTemplate.IsDefault*
+  name: IsDefault
+  href: api/Crowdin.Api.Workflows.WorkflowTemplate.html#Crowdin_Api_Workflows_WorkflowTemplate_IsDefault_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowTemplate.IsDefault
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowTemplate.IsDefault
+  nameWithType: WorkflowTemplate.IsDefault
+- uid: Crowdin.Api.Workflows.WorkflowTemplate.Title
+  name: Title
+  href: api/Crowdin.Api.Workflows.WorkflowTemplate.html#Crowdin_Api_Workflows_WorkflowTemplate_Title
+  commentId: P:Crowdin.Api.Workflows.WorkflowTemplate.Title
+  fullName: Crowdin.Api.Workflows.WorkflowTemplate.Title
+  nameWithType: WorkflowTemplate.Title
+- uid: Crowdin.Api.Workflows.WorkflowTemplate.Title*
+  name: Title
+  href: api/Crowdin.Api.Workflows.WorkflowTemplate.html#Crowdin_Api_Workflows_WorkflowTemplate_Title_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowTemplate.Title
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowTemplate.Title
+  nameWithType: WorkflowTemplate.Title
+- uid: Crowdin.Api.Workflows.WorkflowTmPreTranslationConfig
+  name: WorkflowTmPreTranslationConfig
+  href: api/Crowdin.Api.Workflows.WorkflowTmPreTranslationConfig.html
+  commentId: T:Crowdin.Api.Workflows.WorkflowTmPreTranslationConfig
+  fullName: Crowdin.Api.Workflows.WorkflowTmPreTranslationConfig
+  nameWithType: WorkflowTmPreTranslationConfig
+- uid: Crowdin.Api.Workflows.WorkflowTmPreTranslationConfig.AutoSubstitution
+  name: AutoSubstitution
+  href: api/Crowdin.Api.Workflows.WorkflowTmPreTranslationConfig.html#Crowdin_Api_Workflows_WorkflowTmPreTranslationConfig_AutoSubstitution
+  commentId: P:Crowdin.Api.Workflows.WorkflowTmPreTranslationConfig.AutoSubstitution
+  fullName: Crowdin.Api.Workflows.WorkflowTmPreTranslationConfig.AutoSubstitution
+  nameWithType: WorkflowTmPreTranslationConfig.AutoSubstitution
+- uid: Crowdin.Api.Workflows.WorkflowTmPreTranslationConfig.AutoSubstitution*
+  name: AutoSubstitution
+  href: api/Crowdin.Api.Workflows.WorkflowTmPreTranslationConfig.html#Crowdin_Api_Workflows_WorkflowTmPreTranslationConfig_AutoSubstitution_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowTmPreTranslationConfig.AutoSubstitution
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowTmPreTranslationConfig.AutoSubstitution
+  nameWithType: WorkflowTmPreTranslationConfig.AutoSubstitution
+- uid: Crowdin.Api.Workflows.WorkflowTmPreTranslationConfig.MinRelevant
+  name: MinRelevant
+  href: api/Crowdin.Api.Workflows.WorkflowTmPreTranslationConfig.html#Crowdin_Api_Workflows_WorkflowTmPreTranslationConfig_MinRelevant
+  commentId: P:Crowdin.Api.Workflows.WorkflowTmPreTranslationConfig.MinRelevant
+  fullName: Crowdin.Api.Workflows.WorkflowTmPreTranslationConfig.MinRelevant
+  nameWithType: WorkflowTmPreTranslationConfig.MinRelevant
+- uid: Crowdin.Api.Workflows.WorkflowTmPreTranslationConfig.MinRelevant*
+  name: MinRelevant
+  href: api/Crowdin.Api.Workflows.WorkflowTmPreTranslationConfig.html#Crowdin_Api_Workflows_WorkflowTmPreTranslationConfig_MinRelevant_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowTmPreTranslationConfig.MinRelevant
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowTmPreTranslationConfig.MinRelevant
+  nameWithType: WorkflowTmPreTranslationConfig.MinRelevant
+- uid: Crowdin.Api.Workflows.WorkflowTranslationByVendorConfig
+  name: WorkflowTranslationByVendorConfig
+  href: api/Crowdin.Api.Workflows.WorkflowTranslationByVendorConfig.html
+  commentId: T:Crowdin.Api.Workflows.WorkflowTranslationByVendorConfig
+  fullName: Crowdin.Api.Workflows.WorkflowTranslationByVendorConfig
+  nameWithType: WorkflowTranslationByVendorConfig
+- uid: Crowdin.Api.Workflows.WorkflowTranslationByVendorConfig.VendorId
+  name: VendorId
+  href: api/Crowdin.Api.Workflows.WorkflowTranslationByVendorConfig.html#Crowdin_Api_Workflows_WorkflowTranslationByVendorConfig_VendorId
+  commentId: P:Crowdin.Api.Workflows.WorkflowTranslationByVendorConfig.VendorId
+  fullName: Crowdin.Api.Workflows.WorkflowTranslationByVendorConfig.VendorId
+  nameWithType: WorkflowTranslationByVendorConfig.VendorId
+- uid: Crowdin.Api.Workflows.WorkflowTranslationByVendorConfig.VendorId*
+  name: VendorId
+  href: api/Crowdin.Api.Workflows.WorkflowTranslationByVendorConfig.html#Crowdin_Api_Workflows_WorkflowTranslationByVendorConfig_VendorId_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowTranslationByVendorConfig.VendorId
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowTranslationByVendorConfig.VendorId
+  nameWithType: WorkflowTranslationByVendorConfig.VendorId
+- uid: Crowdin.Api.Workflows.WorkflowTranslationConfig
+  name: WorkflowTranslationConfig
+  href: api/Crowdin.Api.Workflows.WorkflowTranslationConfig.html
+  commentId: T:Crowdin.Api.Workflows.WorkflowTranslationConfig
+  fullName: Crowdin.Api.Workflows.WorkflowTranslationConfig
+  nameWithType: WorkflowTranslationConfig
+- uid: Crowdin.Api.Workflows.WorkflowTranslationConfig.Assignees
+  name: Assignees
+  href: api/Crowdin.Api.Workflows.WorkflowTranslationConfig.html#Crowdin_Api_Workflows_WorkflowTranslationConfig_Assignees
+  commentId: P:Crowdin.Api.Workflows.WorkflowTranslationConfig.Assignees
+  fullName: Crowdin.Api.Workflows.WorkflowTranslationConfig.Assignees
+  nameWithType: WorkflowTranslationConfig.Assignees
+- uid: Crowdin.Api.Workflows.WorkflowTranslationConfig.Assignees*
+  name: Assignees
+  href: api/Crowdin.Api.Workflows.WorkflowTranslationConfig.html#Crowdin_Api_Workflows_WorkflowTranslationConfig_Assignees_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowTranslationConfig.Assignees
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowTranslationConfig.Assignees
+  nameWithType: WorkflowTranslationConfig.Assignees
