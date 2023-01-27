@@ -33,7 +33,6 @@ namespace Crowdin.Api.Tests.Reports
                     ""updatedAt"": ""2019-09-23T11:26:54+00:00"",
                     ""startedAt"": ""2019-09-23T11:26:54+00:00"",
                     ""finishedAt"": ""2019-09-23T11:26:54+00:00"",
-                    ""eta"": ""1 second""
                   }
                 }
             ");
