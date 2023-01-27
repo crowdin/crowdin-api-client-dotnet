@@ -32,9 +32,6 @@ namespace Crowdin.Api.Reports
         
         [JsonProperty("finishedAt")]
         public DateTimeOffset? FinishedAt { get; set; }
-        
-        [JsonProperty("eta")]
-        public string Eta { get; set; }
 
         [PublicAPI]
         public class ReportAttributes

@@ -31,9 +31,6 @@ namespace Crowdin.Api.Glossaries
         
         [JsonProperty("finishedAt")]
         public DateTimeOffset? FinishedAt { get; set; }
-        
-        [JsonProperty("eta")]
-        public string Eta { get; set; }
 
         [PublicAPI]
         public class ExportAttributes
