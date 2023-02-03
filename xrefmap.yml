@@ -3659,19 +3659,6 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.GlossaryExportStatus.CreatedAt
   nameWithType: GlossaryExportStatus.CreatedAt
-- uid: Crowdin.Api.Glossaries.GlossaryExportStatus.Eta
-  name: Eta
-  href: api/Crowdin.Api.Glossaries.GlossaryExportStatus.html#Crowdin_Api_Glossaries_GlossaryExportStatus_Eta
-  commentId: P:Crowdin.Api.Glossaries.GlossaryExportStatus.Eta
-  fullName: Crowdin.Api.Glossaries.GlossaryExportStatus.Eta
-  nameWithType: GlossaryExportStatus.Eta
-- uid: Crowdin.Api.Glossaries.GlossaryExportStatus.Eta*
-  name: Eta
-  href: api/Crowdin.Api.Glossaries.GlossaryExportStatus.html#Crowdin_Api_Glossaries_GlossaryExportStatus_Eta_
-  commentId: Overload:Crowdin.Api.Glossaries.GlossaryExportStatus.Eta
-  isSpec: "True"
-  fullName: Crowdin.Api.Glossaries.GlossaryExportStatus.Eta
-  nameWithType: GlossaryExportStatus.Eta
 - uid: Crowdin.Api.Glossaries.GlossaryExportStatus.ExportAttributes
   name: GlossaryExportStatus.ExportAttributes
   href: api/Crowdin.Api.Glossaries.GlossaryExportStatus.ExportAttributes.html
@@ -3831,19 +3818,6 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.GlossaryImportStatus.CreatedAt
   nameWithType: GlossaryImportStatus.CreatedAt
-- uid: Crowdin.Api.Glossaries.GlossaryImportStatus.Eta
-  name: Eta
-  href: api/Crowdin.Api.Glossaries.GlossaryImportStatus.html#Crowdin_Api_Glossaries_GlossaryImportStatus_Eta
-  commentId: P:Crowdin.Api.Glossaries.GlossaryImportStatus.Eta
-  fullName: Crowdin.Api.Glossaries.GlossaryImportStatus.Eta
-  nameWithType: GlossaryImportStatus.Eta
-- uid: Crowdin.Api.Glossaries.GlossaryImportStatus.Eta*
-  name: Eta
-  href: api/Crowdin.Api.Glossaries.GlossaryImportStatus.html#Crowdin_Api_Glossaries_GlossaryImportStatus_Eta_
-  commentId: Overload:Crowdin.Api.Glossaries.GlossaryImportStatus.Eta
-  isSpec: "True"
-  fullName: Crowdin.Api.Glossaries.GlossaryImportStatus.Eta
-  nameWithType: GlossaryImportStatus.Eta
 - uid: Crowdin.Api.Glossaries.GlossaryImportStatus.FinishedAt
   name: FinishedAt
   href: api/Crowdin.Api.Glossaries.GlossaryImportStatus.html#Crowdin_Api_Glossaries_GlossaryImportStatus_FinishedAt
@@ -12646,19 +12620,6 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Reports.GroupReportStatus.CreatedAt
   nameWithType: GroupReportStatus.CreatedAt
-- uid: Crowdin.Api.Reports.GroupReportStatus.Eta
-  name: Eta
-  href: api/Crowdin.Api.Reports.GroupReportStatus.html#Crowdin_Api_Reports_GroupReportStatus_Eta
-  commentId: P:Crowdin.Api.Reports.GroupReportStatus.Eta
-  fullName: Crowdin.Api.Reports.GroupReportStatus.Eta
-  nameWithType: GroupReportStatus.Eta
-- uid: Crowdin.Api.Reports.GroupReportStatus.Eta*
-  name: Eta
-  href: api/Crowdin.Api.Reports.GroupReportStatus.html#Crowdin_Api_Reports_GroupReportStatus_Eta_
-  commentId: Overload:Crowdin.Api.Reports.GroupReportStatus.Eta
-  isSpec: "True"
-  fullName: Crowdin.Api.Reports.GroupReportStatus.Eta
-  nameWithType: GroupReportStatus.Eta
 - uid: Crowdin.Api.Reports.GroupReportStatus.FinishedAt
   name: FinishedAt
   href: api/Crowdin.Api.Reports.GroupReportStatus.html#Crowdin_Api_Reports_GroupReportStatus_FinishedAt
@@ -14307,19 +14268,6 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Reports.ReportStatus.CreatedAt
   nameWithType: ReportStatus.CreatedAt
-- uid: Crowdin.Api.Reports.ReportStatus.Eta
-  name: Eta
-  href: api/Crowdin.Api.Reports.ReportStatus.html#Crowdin_Api_Reports_ReportStatus_Eta
-  commentId: P:Crowdin.Api.Reports.ReportStatus.Eta
-  fullName: Crowdin.Api.Reports.ReportStatus.Eta
-  nameWithType: ReportStatus.Eta
-- uid: Crowdin.Api.Reports.ReportStatus.Eta*
-  name: Eta
-  href: api/Crowdin.Api.Reports.ReportStatus.html#Crowdin_Api_Reports_ReportStatus_Eta_
-  commentId: Overload:Crowdin.Api.Reports.ReportStatus.Eta
-  isSpec: "True"
-  fullName: Crowdin.Api.Reports.ReportStatus.Eta
-  nameWithType: ReportStatus.Eta
 - uid: Crowdin.Api.Reports.ReportStatus.FinishedAt
   name: FinishedAt
   href: api/Crowdin.Api.Reports.ReportStatus.html#Crowdin_Api_Reports_ReportStatus_FinishedAt
@@ -26367,19 +26315,6 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.TranslationMemory.TmExportStatus.CreatedAt
   nameWithType: TmExportStatus.CreatedAt
-- uid: Crowdin.Api.TranslationMemory.TmExportStatus.Eta
-  name: Eta
-  href: api/Crowdin.Api.TranslationMemory.TmExportStatus.html#Crowdin_Api_TranslationMemory_TmExportStatus_Eta
-  commentId: P:Crowdin.Api.TranslationMemory.TmExportStatus.Eta
-  fullName: Crowdin.Api.TranslationMemory.TmExportStatus.Eta
-  nameWithType: TmExportStatus.Eta
-- uid: Crowdin.Api.TranslationMemory.TmExportStatus.Eta*
-  name: Eta
-  href: api/Crowdin.Api.TranslationMemory.TmExportStatus.html#Crowdin_Api_TranslationMemory_TmExportStatus_Eta_
-  commentId: Overload:Crowdin.Api.TranslationMemory.TmExportStatus.Eta
-  isSpec: "True"
-  fullName: Crowdin.Api.TranslationMemory.TmExportStatus.Eta
-  nameWithType: TmExportStatus.Eta
 - uid: Crowdin.Api.TranslationMemory.TmExportStatus.ExportAttributes
   name: TmExportStatus.ExportAttributes
   href: api/Crowdin.Api.TranslationMemory.TmExportStatus.ExportAttributes.html
@@ -26559,19 +26494,6 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.TranslationMemory.TmImportStatus.CreatedAt
   nameWithType: TmImportStatus.CreatedAt
-- uid: Crowdin.Api.TranslationMemory.TmImportStatus.Eta
-  name: Eta
-  href: api/Crowdin.Api.TranslationMemory.TmImportStatus.html#Crowdin_Api_TranslationMemory_TmImportStatus_Eta
-  commentId: P:Crowdin.Api.TranslationMemory.TmImportStatus.Eta
-  fullName: Crowdin.Api.TranslationMemory.TmImportStatus.Eta
-  nameWithType: TmImportStatus.Eta
-- uid: Crowdin.Api.TranslationMemory.TmImportStatus.Eta*
-  name: Eta
-  href: api/Crowdin.Api.TranslationMemory.TmImportStatus.html#Crowdin_Api_TranslationMemory_TmImportStatus_Eta_
-  commentId: Overload:Crowdin.Api.TranslationMemory.TmImportStatus.Eta
-  isSpec: "True"
-  fullName: Crowdin.Api.TranslationMemory.TmImportStatus.Eta
-  nameWithType: TmImportStatus.Eta
 - uid: Crowdin.Api.TranslationMemory.TmImportStatus.FinishedAt
   name: FinishedAt
   href: api/Crowdin.Api.TranslationMemory.TmImportStatus.html#Crowdin_Api_TranslationMemory_TmImportStatus_FinishedAt
