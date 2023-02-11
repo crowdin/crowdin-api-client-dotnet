@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -180,69 +180,79 @@ namespace Crowdin.Api
 
         public Task<CrowdinApiResult> SendGetRequest(string subUrl, IDictionary<string, string>? queryParams = null)
         {
-            var request = new HttpRequestMessage
+            Func<HttpRequestMessage> requestFn = () => new HttpRequestMessage
             {
                 Method = HttpMethod.Get,
                 RequestUri = new Uri(FormRequestUrl(subUrl, queryParams))
             };
 
-            return SendRequest(request);
+            return SendRequest(requestFn);
         }
 
         public Task<CrowdinApiResult> SendPostRequest(
             string subUrl, object? body = null,
             IDictionary<string, string>? extraHeaders = null)
         {
-            var request = new HttpRequestMessage
+            Func<HttpRequestMessage> requestFn = () =>
             {
-                Method = HttpMethod.Post,
-                RequestUri = new Uri(FormRequestUrl(subUrl))
-            };
-            
-            if (body != null)
-            {
-                request.Content = CreateJsonContent(body);
-            }
-
-            if (extraHeaders != null && extraHeaders.Count > 0)
-            {
-                foreach (KeyValuePair<string, string> kvp in extraHeaders)
+                var request = new HttpRequestMessage
                 {
-                    request.Headers.Add(kvp.Key, kvp.Value);
-                }
-            }
+                    Method = HttpMethod.Post,
+                    RequestUri = new Uri(FormRequestUrl(subUrl))
+                };
 
-            return SendRequest(request);
+                if (body != null)
+                {
+                    request.Content = CreateJsonContent(body);
+                }
+
+                if (extraHeaders != null && extraHeaders.Count > 0)
+                {
+                    foreach (KeyValuePair<string, string> kvp in extraHeaders)
+                    {
+                        request.Headers.Add(kvp.Key, kvp.Value);
+                    }
+                }
+
+                return request;
+            };
+
+            return SendRequest(requestFn);
         }
 
         public Task<CrowdinApiResult> SendPutRequest(string subUrl, object? body = null)
         {
-            var request = new HttpRequestMessage
+            Func<HttpRequestMessage> requestFn = () =>
             {
-                Method = HttpMethod.Put,
-                RequestUri = new Uri(FormRequestUrl(subUrl))
+                var request = new HttpRequestMessage
+                {
+                    Method = HttpMethod.Put,
+                    RequestUri = new Uri(FormRequestUrl(subUrl))
+                };
+
+                if (body != null)
+                {
+                    request.Content = CreateJsonContent(body);
+                }
+
+                return request;
             };
-
-            if (body != null)
-            {
-                request.Content = CreateJsonContent(body);
-            }
-
-            return SendRequest(request);
+            
+            return SendRequest(requestFn);
         }
 
         public Task<CrowdinApiResult> SendPatchRequest(
             string subUrl, IEnumerable<PatchEntry> body,
             IDictionary<string, string>? queryParams = null)
         {
-            var request = new HttpRequestMessage
+            Func<HttpRequestMessage> requestFn = () => new HttpRequestMessage
             {
                 Method = new HttpMethod("PATCH"),
                 Content = CreateJsonContent(body),
                 RequestUri = new Uri(FormRequestUrl(subUrl, queryParams))
             };
 
-            return SendRequest(request);
+            return SendRequest(requestFn);
         }
 
         public Task<HttpStatusCode> SendDeleteRequest(string subUrl, IDictionary<string, string>? queryParams = null)
@@ -252,27 +262,34 @@ namespace Crowdin.Api
         
         public Task<CrowdinApiResult> SendDeleteRequest_FullResult(string subUrl, IDictionary<string, string>? queryParams = null)
         {
-            var request = new HttpRequestMessage
+            Func<HttpRequestMessage> requestFn = () => new HttpRequestMessage
             {
                 Method = HttpMethod.Delete,
                 RequestUri = new Uri(FormRequestUrl(subUrl, queryParams))
             };
 
-            return SendRequest(request);
+            return SendRequest(requestFn);
         }
 
         public Task<CrowdinApiResult> UploadFile(string subUrl, string filename, Stream fileStream)
         {
-            var request = new HttpRequestMessage
+            Func<HttpRequestMessage> requestFn = () =>
             {
-                Method = HttpMethod.Post,
-                Content = new StreamContent(fileStream),
-                RequestUri = new Uri(FormRequestUrl(subUrl)),
-            };
-            request.Headers.Add("Crowdin-API-FileName", filename);
-            request.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
+                var request = new HttpRequestMessage
+                {
+                    Method = HttpMethod.Post,
+                    Content = new StreamContent(fileStream),
+                    RequestUri = new Uri(FormRequestUrl(subUrl)),
+                };
 
-            return SendRequest(request);
+                request.Headers.Add("Crowdin-API-FileName", filename);
+                request.Content.Headers.ContentType = new MediaTypeHeaderValue("application/octet-stream");
+
+                return request;
+            };
+            
+
+            return SendRequest(requestFn);
         }
 
         public static async Task<T[]> WithFetchAll<T>(
@@ -308,14 +325,14 @@ namespace Crowdin.Api
             return outResultList.ToArray();
         }
 
-        private async Task<CrowdinApiResult> SendRequest(HttpRequestMessage request)
+        private async Task<CrowdinApiResult> SendRequest(Func<HttpRequestMessage> requestFn)
         {
             var result = new CrowdinApiResult();
-            
+
             HttpResponseMessage response =
                 _retryService != null
-                ? await _retryService.ExecuteRequestAsync(() => _httpClient.SendAsync(request))
-                : await _httpClient.SendAsync(request);
+                ? await _retryService.ExecuteRequestAsync(() => _httpClient.SendAsync(requestFn()))
+                : await _httpClient.SendAsync(requestFn());
 
             await CheckDefaultPreconditionsAndErrors(response);
             result.StatusCode = response.StatusCode;
