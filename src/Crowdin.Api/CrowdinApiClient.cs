@@ -337,7 +337,7 @@ namespace Crowdin.Api
             await CheckDefaultPreconditionsAndErrors(response);
             result.StatusCode = response.StatusCode;
             
-            if (response.Content.Headers.ContentType.Equals(DefaultContentType))
+            if (response.Content.Headers.ContentType.MediaType.Contains(DefaultContentType.MediaType))
             {
                 result.JsonObject = await response.Content.ParseJsonBodyAsync();
             }
