@@ -11,8 +11,11 @@ namespace Crowdin.Api.Bundles
         [JsonProperty("id")]
         public int Id { get; set; }
         
-        [JsonProperty("applicationId")]
-        public string ApplicationId { get; set; }
+        [JsonProperty("name")]
+        public string Name { get; set; }
+        
+        [JsonProperty("format")]
+        public string Format { get; set; }
         
         [JsonProperty("sourcePatterns")]
         public string[] SourcePatterns { get; set; }
@@ -22,6 +25,9 @@ namespace Crowdin.Api.Bundles
         
         [JsonProperty("exportPattern")]
         public string ExportPattern { get; set; }
+        
+        [JsonProperty("isMultilingual")]
+        public bool IsMultilingual { get; set; }
         
         [JsonProperty("labelIds")]
         public int[] LabelIds { get; set; }
