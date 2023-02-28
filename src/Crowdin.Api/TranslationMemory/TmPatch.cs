@@ -16,6 +16,12 @@ namespace Crowdin.Api.TranslationMemory
     public enum TmPatchPath
     {
         [Description("/name")]
-        Name
+        Name,
+        
+        [Description("/groupId")]
+        GroupId,
+        
+        [Description("/languageId")]
+        LanguageId
     }
 }
