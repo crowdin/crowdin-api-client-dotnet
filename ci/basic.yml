@@ -57,6 +57,8 @@ steps:
       command: pack
       packagesToPack: 'src/Crowdin.Api/Crowdin.Api.csproj'
     displayName: "Pack the package"
+    env:
+      NUGET_ENABLE_LEGACY_CSPROJ_PACK: true
 
   - script: |
       dotnet nuget push $(Build.ArtifactStagingDirectory)\Crowdin.Api.*.nupkg -s https://nuget.org -k $(NUGET_KEY)

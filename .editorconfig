@@ -5,3 +5,6 @@ charset = utf-8
 trim_trailing_whitespace = false
 insert_final_newline = false
 max_line_length = 120
+
+[*.yml]
+indent_size = 2
