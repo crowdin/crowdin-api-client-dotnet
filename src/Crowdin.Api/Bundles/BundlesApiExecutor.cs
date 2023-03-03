@@ -95,6 +95,45 @@ namespace Crowdin.Api.Bundles
         }
         
         /// <summary>
+        /// Download Bundle. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.bundles.exports.download.get">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.bundles.exports.download.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<DownloadLink> DownloadBundle(int projectId, int bundleId, string exportId)
+        {
+            string url = FormUrl_BundleExportId(projectId, bundleId, exportId) + "/download";
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<DownloadLink>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// Export Bundle. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.bundles.exports.post">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.bundles.exports.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<BundleExport> ExportBundle(int projectId, int bundleId)
+        {
+            string url = FormUrl_BundleExports(projectId, bundleId);
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url);
+            return _jsonParser.ParseResponseObject<BundleExport>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// Check Bundle Export Status. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.bundles.exports.get">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.bundles.exports.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<BundleExport> CheckBundleExportStatus(int projectId, int bundleId, string exportId)
+        {
+            string url = FormUrl_BundleExportId(projectId, bundleId, exportId);
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<BundleExport>(result.JsonObject);
+        }
+        
+        /// <summary>
         /// Bundle list files. Documentation:
         /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.bundles.files.getMany">Crowdin API</a>
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.bundles.files.getMany">Crowdin Enterprise API</a>
@@ -126,6 +165,16 @@ namespace Crowdin.Api.Bundles
         private static string FormUrl_BundleFiles(int projectId, int bundleId)
         {
             return $"/projects/{projectId}/bundles/{bundleId}/files";
+        }
+
+        private static string FormUrl_BundleExports(int projectId, int bundleId)
+        {
+            return $"/projects/{projectId}/bundles/{bundleId}/exports";
+        }
+
+        private static string FormUrl_BundleExportId(int projectId, int bundleId, string exportId)
+        {
+            return $"/projects/{projectId}/bundles/{bundleId}/exports/{exportId}";
         }
         
         #endregion

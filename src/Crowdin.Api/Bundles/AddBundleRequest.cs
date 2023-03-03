@@ -20,11 +20,6 @@ namespace Crowdin.Api.Bundles
         public string Format { get; set; }
 #pragma warning restore CS8618
         
-        [JsonProperty("applicationId")]
-#pragma warning disable CS8618
-        public string ApplicationId { get; set; }
-#pragma warning restore CS8618
-        
         [JsonProperty("sourcePatterns")]
 #pragma warning disable CS8618
         public ICollection<string> SourcePatterns { get; set; }
@@ -37,6 +32,9 @@ namespace Crowdin.Api.Bundles
 #pragma warning disable CS8618
         public string ExportPattern { get; set; }
 #pragma warning restore CS8618
+        
+        [JsonProperty("isMultilingual")]
+        public bool? IsMultilingual { get; set; }
         
         [JsonProperty("labelIds")]
         public ICollection<int>? LabelIds { get; set; }

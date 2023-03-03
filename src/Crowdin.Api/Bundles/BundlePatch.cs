@@ -15,8 +15,11 @@ namespace Crowdin.Api.Bundles
     [PublicAPI]
     public enum BundlePatchPath
     {
-        [Description("/applicationId")]
-        ApplicationId,
+        [Description("/name")]
+        Name,
+        
+        [Description("/format")]
+        Format,
         
         [Description("/sourcePatterns")]
         SourcePatterns,
@@ -26,6 +29,9 @@ namespace Crowdin.Api.Bundles
         
         [Description("/exportPattern")]
         ExportPattern,
+        
+        [Description("/isMultilingual")]
+        IsMultilingual,
         
         [Description("/labelIds")]
         LabelIds
