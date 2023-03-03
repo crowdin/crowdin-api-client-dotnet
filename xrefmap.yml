@@ -87,19 +87,6 @@ references:
   commentId: T:Crowdin.Api.Bundles.AddBundleRequest
   fullName: Crowdin.Api.Bundles.AddBundleRequest
   nameWithType: AddBundleRequest
-- uid: Crowdin.Api.Bundles.AddBundleRequest.ApplicationId
-  name: ApplicationId
-  href: api/Crowdin.Api.Bundles.AddBundleRequest.html#Crowdin_Api_Bundles_AddBundleRequest_ApplicationId
-  commentId: P:Crowdin.Api.Bundles.AddBundleRequest.ApplicationId
-  fullName: Crowdin.Api.Bundles.AddBundleRequest.ApplicationId
-  nameWithType: AddBundleRequest.ApplicationId
-- uid: Crowdin.Api.Bundles.AddBundleRequest.ApplicationId*
-  name: ApplicationId
-  href: api/Crowdin.Api.Bundles.AddBundleRequest.html#Crowdin_Api_Bundles_AddBundleRequest_ApplicationId_
-  commentId: Overload:Crowdin.Api.Bundles.AddBundleRequest.ApplicationId
-  isSpec: "True"
-  fullName: Crowdin.Api.Bundles.AddBundleRequest.ApplicationId
-  nameWithType: AddBundleRequest.ApplicationId
 - uid: Crowdin.Api.Bundles.AddBundleRequest.ExportPattern
   name: ExportPattern
   href: api/Crowdin.Api.Bundles.AddBundleRequest.html#Crowdin_Api_Bundles_AddBundleRequest_ExportPattern
@@ -139,6 +126,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Bundles.AddBundleRequest.IgnorePatterns
   nameWithType: AddBundleRequest.IgnorePatterns
+- uid: Crowdin.Api.Bundles.AddBundleRequest.IsMultilingual
+  name: IsMultilingual
+  href: api/Crowdin.Api.Bundles.AddBundleRequest.html#Crowdin_Api_Bundles_AddBundleRequest_IsMultilingual
+  commentId: P:Crowdin.Api.Bundles.AddBundleRequest.IsMultilingual
+  fullName: Crowdin.Api.Bundles.AddBundleRequest.IsMultilingual
+  nameWithType: AddBundleRequest.IsMultilingual
+- uid: Crowdin.Api.Bundles.AddBundleRequest.IsMultilingual*
+  name: IsMultilingual
+  href: api/Crowdin.Api.Bundles.AddBundleRequest.html#Crowdin_Api_Bundles_AddBundleRequest_IsMultilingual_
+  commentId: Overload:Crowdin.Api.Bundles.AddBundleRequest.IsMultilingual
+  isSpec: "True"
+  fullName: Crowdin.Api.Bundles.AddBundleRequest.IsMultilingual
+  nameWithType: AddBundleRequest.IsMultilingual
 - uid: Crowdin.Api.Bundles.AddBundleRequest.LabelIds
   name: LabelIds
   href: api/Crowdin.Api.Bundles.AddBundleRequest.html#Crowdin_Api_Bundles_AddBundleRequest_LabelIds
@@ -184,19 +184,6 @@ references:
   commentId: T:Crowdin.Api.Bundles.Bundle
   fullName: Crowdin.Api.Bundles.Bundle
   nameWithType: Bundle
-- uid: Crowdin.Api.Bundles.Bundle.ApplicationId
-  name: ApplicationId
-  href: api/Crowdin.Api.Bundles.Bundle.html#Crowdin_Api_Bundles_Bundle_ApplicationId
-  commentId: P:Crowdin.Api.Bundles.Bundle.ApplicationId
-  fullName: Crowdin.Api.Bundles.Bundle.ApplicationId
-  nameWithType: Bundle.ApplicationId
-- uid: Crowdin.Api.Bundles.Bundle.ApplicationId*
-  name: ApplicationId
-  href: api/Crowdin.Api.Bundles.Bundle.html#Crowdin_Api_Bundles_Bundle_ApplicationId_
-  commentId: Overload:Crowdin.Api.Bundles.Bundle.ApplicationId
-  isSpec: "True"
-  fullName: Crowdin.Api.Bundles.Bundle.ApplicationId
-  nameWithType: Bundle.ApplicationId
 - uid: Crowdin.Api.Bundles.Bundle.CreatedAt
   name: CreatedAt
   href: api/Crowdin.Api.Bundles.Bundle.html#Crowdin_Api_Bundles_Bundle_CreatedAt
@@ -223,6 +210,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Bundles.Bundle.ExportPattern
   nameWithType: Bundle.ExportPattern
+- uid: Crowdin.Api.Bundles.Bundle.Format
+  name: Format
+  href: api/Crowdin.Api.Bundles.Bundle.html#Crowdin_Api_Bundles_Bundle_Format
+  commentId: P:Crowdin.Api.Bundles.Bundle.Format
+  fullName: Crowdin.Api.Bundles.Bundle.Format
+  nameWithType: Bundle.Format
+- uid: Crowdin.Api.Bundles.Bundle.Format*
+  name: Format
+  href: api/Crowdin.Api.Bundles.Bundle.html#Crowdin_Api_Bundles_Bundle_Format_
+  commentId: Overload:Crowdin.Api.Bundles.Bundle.Format
+  isSpec: "True"
+  fullName: Crowdin.Api.Bundles.Bundle.Format
+  nameWithType: Bundle.Format
 - uid: Crowdin.Api.Bundles.Bundle.Id
   name: Id
   href: api/Crowdin.Api.Bundles.Bundle.html#Crowdin_Api_Bundles_Bundle_Id
@@ -249,6 +249,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Bundles.Bundle.IgnorePatterns
   nameWithType: Bundle.IgnorePatterns
+- uid: Crowdin.Api.Bundles.Bundle.IsMultilingual
+  name: IsMultilingual
+  href: api/Crowdin.Api.Bundles.Bundle.html#Crowdin_Api_Bundles_Bundle_IsMultilingual
+  commentId: P:Crowdin.Api.Bundles.Bundle.IsMultilingual
+  fullName: Crowdin.Api.Bundles.Bundle.IsMultilingual
+  nameWithType: Bundle.IsMultilingual
+- uid: Crowdin.Api.Bundles.Bundle.IsMultilingual*
+  name: IsMultilingual
+  href: api/Crowdin.Api.Bundles.Bundle.html#Crowdin_Api_Bundles_Bundle_IsMultilingual_
+  commentId: Overload:Crowdin.Api.Bundles.Bundle.IsMultilingual
+  isSpec: "True"
+  fullName: Crowdin.Api.Bundles.Bundle.IsMultilingual
+  nameWithType: Bundle.IsMultilingual
 - uid: Crowdin.Api.Bundles.Bundle.LabelIds
   name: LabelIds
   href: api/Crowdin.Api.Bundles.Bundle.html#Crowdin_Api_Bundles_Bundle_LabelIds
@@ -262,6 +275,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Bundles.Bundle.LabelIds
   nameWithType: Bundle.LabelIds
+- uid: Crowdin.Api.Bundles.Bundle.Name
+  name: Name
+  href: api/Crowdin.Api.Bundles.Bundle.html#Crowdin_Api_Bundles_Bundle_Name
+  commentId: P:Crowdin.Api.Bundles.Bundle.Name
+  fullName: Crowdin.Api.Bundles.Bundle.Name
+  nameWithType: Bundle.Name
+- uid: Crowdin.Api.Bundles.Bundle.Name*
+  name: Name
+  href: api/Crowdin.Api.Bundles.Bundle.html#Crowdin_Api_Bundles_Bundle_Name_
+  commentId: Overload:Crowdin.Api.Bundles.Bundle.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.Bundles.Bundle.Name
+  nameWithType: Bundle.Name
 - uid: Crowdin.Api.Bundles.Bundle.SourcePatterns
   name: SourcePatterns
   href: api/Crowdin.Api.Bundles.Bundle.html#Crowdin_Api_Bundles_Bundle_SourcePatterns
@@ -288,6 +314,135 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Bundles.Bundle.UpdatedAt
   nameWithType: Bundle.UpdatedAt
+- uid: Crowdin.Api.Bundles.BundleExport
+  name: BundleExport
+  href: api/Crowdin.Api.Bundles.BundleExport.html
+  commentId: T:Crowdin.Api.Bundles.BundleExport
+  fullName: Crowdin.Api.Bundles.BundleExport
+  nameWithType: BundleExport
+- uid: Crowdin.Api.Bundles.BundleExport.Attributes
+  name: Attributes
+  href: api/Crowdin.Api.Bundles.BundleExport.html#Crowdin_Api_Bundles_BundleExport_Attributes
+  commentId: P:Crowdin.Api.Bundles.BundleExport.Attributes
+  fullName: Crowdin.Api.Bundles.BundleExport.Attributes
+  nameWithType: BundleExport.Attributes
+- uid: Crowdin.Api.Bundles.BundleExport.Attributes*
+  name: Attributes
+  href: api/Crowdin.Api.Bundles.BundleExport.html#Crowdin_Api_Bundles_BundleExport_Attributes_
+  commentId: Overload:Crowdin.Api.Bundles.BundleExport.Attributes
+  isSpec: "True"
+  fullName: Crowdin.Api.Bundles.BundleExport.Attributes
+  nameWithType: BundleExport.Attributes
+- uid: Crowdin.Api.Bundles.BundleExport.CreatedAt
+  name: CreatedAt
+  href: api/Crowdin.Api.Bundles.BundleExport.html#Crowdin_Api_Bundles_BundleExport_CreatedAt
+  commentId: P:Crowdin.Api.Bundles.BundleExport.CreatedAt
+  fullName: Crowdin.Api.Bundles.BundleExport.CreatedAt
+  nameWithType: BundleExport.CreatedAt
+- uid: Crowdin.Api.Bundles.BundleExport.CreatedAt*
+  name: CreatedAt
+  href: api/Crowdin.Api.Bundles.BundleExport.html#Crowdin_Api_Bundles_BundleExport_CreatedAt_
+  commentId: Overload:Crowdin.Api.Bundles.BundleExport.CreatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Bundles.BundleExport.CreatedAt
+  nameWithType: BundleExport.CreatedAt
+- uid: Crowdin.Api.Bundles.BundleExport.FinishedAt
+  name: FinishedAt
+  href: api/Crowdin.Api.Bundles.BundleExport.html#Crowdin_Api_Bundles_BundleExport_FinishedAt
+  commentId: P:Crowdin.Api.Bundles.BundleExport.FinishedAt
+  fullName: Crowdin.Api.Bundles.BundleExport.FinishedAt
+  nameWithType: BundleExport.FinishedAt
+- uid: Crowdin.Api.Bundles.BundleExport.FinishedAt*
+  name: FinishedAt
+  href: api/Crowdin.Api.Bundles.BundleExport.html#Crowdin_Api_Bundles_BundleExport_FinishedAt_
+  commentId: Overload:Crowdin.Api.Bundles.BundleExport.FinishedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Bundles.BundleExport.FinishedAt
+  nameWithType: BundleExport.FinishedAt
+- uid: Crowdin.Api.Bundles.BundleExport.Identifier
+  name: Identifier
+  href: api/Crowdin.Api.Bundles.BundleExport.html#Crowdin_Api_Bundles_BundleExport_Identifier
+  commentId: P:Crowdin.Api.Bundles.BundleExport.Identifier
+  fullName: Crowdin.Api.Bundles.BundleExport.Identifier
+  nameWithType: BundleExport.Identifier
+- uid: Crowdin.Api.Bundles.BundleExport.Identifier*
+  name: Identifier
+  href: api/Crowdin.Api.Bundles.BundleExport.html#Crowdin_Api_Bundles_BundleExport_Identifier_
+  commentId: Overload:Crowdin.Api.Bundles.BundleExport.Identifier
+  isSpec: "True"
+  fullName: Crowdin.Api.Bundles.BundleExport.Identifier
+  nameWithType: BundleExport.Identifier
+- uid: Crowdin.Api.Bundles.BundleExport.Progress
+  name: Progress
+  href: api/Crowdin.Api.Bundles.BundleExport.html#Crowdin_Api_Bundles_BundleExport_Progress
+  commentId: P:Crowdin.Api.Bundles.BundleExport.Progress
+  fullName: Crowdin.Api.Bundles.BundleExport.Progress
+  nameWithType: BundleExport.Progress
+- uid: Crowdin.Api.Bundles.BundleExport.Progress*
+  name: Progress
+  href: api/Crowdin.Api.Bundles.BundleExport.html#Crowdin_Api_Bundles_BundleExport_Progress_
+  commentId: Overload:Crowdin.Api.Bundles.BundleExport.Progress
+  isSpec: "True"
+  fullName: Crowdin.Api.Bundles.BundleExport.Progress
+  nameWithType: BundleExport.Progress
+- uid: Crowdin.Api.Bundles.BundleExport.StartedAt
+  name: StartedAt
+  href: api/Crowdin.Api.Bundles.BundleExport.html#Crowdin_Api_Bundles_BundleExport_StartedAt
+  commentId: P:Crowdin.Api.Bundles.BundleExport.StartedAt
+  fullName: Crowdin.Api.Bundles.BundleExport.StartedAt
+  nameWithType: BundleExport.StartedAt
+- uid: Crowdin.Api.Bundles.BundleExport.StartedAt*
+  name: StartedAt
+  href: api/Crowdin.Api.Bundles.BundleExport.html#Crowdin_Api_Bundles_BundleExport_StartedAt_
+  commentId: Overload:Crowdin.Api.Bundles.BundleExport.StartedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Bundles.BundleExport.StartedAt
+  nameWithType: BundleExport.StartedAt
+- uid: Crowdin.Api.Bundles.BundleExport.Status
+  name: Status
+  href: api/Crowdin.Api.Bundles.BundleExport.html#Crowdin_Api_Bundles_BundleExport_Status
+  commentId: P:Crowdin.Api.Bundles.BundleExport.Status
+  fullName: Crowdin.Api.Bundles.BundleExport.Status
+  nameWithType: BundleExport.Status
+- uid: Crowdin.Api.Bundles.BundleExport.Status*
+  name: Status
+  href: api/Crowdin.Api.Bundles.BundleExport.html#Crowdin_Api_Bundles_BundleExport_Status_
+  commentId: Overload:Crowdin.Api.Bundles.BundleExport.Status
+  isSpec: "True"
+  fullName: Crowdin.Api.Bundles.BundleExport.Status
+  nameWithType: BundleExport.Status
+- uid: Crowdin.Api.Bundles.BundleExport.UpdatedAt
+  name: UpdatedAt
+  href: api/Crowdin.Api.Bundles.BundleExport.html#Crowdin_Api_Bundles_BundleExport_UpdatedAt
+  commentId: P:Crowdin.Api.Bundles.BundleExport.UpdatedAt
+  fullName: Crowdin.Api.Bundles.BundleExport.UpdatedAt
+  nameWithType: BundleExport.UpdatedAt
+- uid: Crowdin.Api.Bundles.BundleExport.UpdatedAt*
+  name: UpdatedAt
+  href: api/Crowdin.Api.Bundles.BundleExport.html#Crowdin_Api_Bundles_BundleExport_UpdatedAt_
+  commentId: Overload:Crowdin.Api.Bundles.BundleExport.UpdatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Bundles.BundleExport.UpdatedAt
+  nameWithType: BundleExport.UpdatedAt
+- uid: Crowdin.Api.Bundles.BundleExportAttributes
+  name: BundleExportAttributes
+  href: api/Crowdin.Api.Bundles.BundleExportAttributes.html
+  commentId: T:Crowdin.Api.Bundles.BundleExportAttributes
+  fullName: Crowdin.Api.Bundles.BundleExportAttributes
+  nameWithType: BundleExportAttributes
+- uid: Crowdin.Api.Bundles.BundleExportAttributes.BundleId
+  name: BundleId
+  href: api/Crowdin.Api.Bundles.BundleExportAttributes.html#Crowdin_Api_Bundles_BundleExportAttributes_BundleId
+  commentId: P:Crowdin.Api.Bundles.BundleExportAttributes.BundleId
+  fullName: Crowdin.Api.Bundles.BundleExportAttributes.BundleId
+  nameWithType: BundleExportAttributes.BundleId
+- uid: Crowdin.Api.Bundles.BundleExportAttributes.BundleId*
+  name: BundleId
+  href: api/Crowdin.Api.Bundles.BundleExportAttributes.html#Crowdin_Api_Bundles_BundleExportAttributes_BundleId_
+  commentId: Overload:Crowdin.Api.Bundles.BundleExportAttributes.BundleId
+  isSpec: "True"
+  fullName: Crowdin.Api.Bundles.BundleExportAttributes.BundleId
+  nameWithType: BundleExportAttributes.BundleId
 - uid: Crowdin.Api.Bundles.BundlePatch
   name: BundlePatch
   href: api/Crowdin.Api.Bundles.BundlePatch.html
@@ -313,30 +468,42 @@ references:
   commentId: T:Crowdin.Api.Bundles.BundlePatchPath
   fullName: Crowdin.Api.Bundles.BundlePatchPath
   nameWithType: BundlePatchPath
-- uid: Crowdin.Api.Bundles.BundlePatchPath.ApplicationId
-  name: ApplicationId
-  href: api/Crowdin.Api.Bundles.BundlePatchPath.html#Crowdin_Api_Bundles_BundlePatchPath_ApplicationId
-  commentId: F:Crowdin.Api.Bundles.BundlePatchPath.ApplicationId
-  fullName: Crowdin.Api.Bundles.BundlePatchPath.ApplicationId
-  nameWithType: BundlePatchPath.ApplicationId
 - uid: Crowdin.Api.Bundles.BundlePatchPath.ExportPattern
   name: ExportPattern
   href: api/Crowdin.Api.Bundles.BundlePatchPath.html#Crowdin_Api_Bundles_BundlePatchPath_ExportPattern
   commentId: F:Crowdin.Api.Bundles.BundlePatchPath.ExportPattern
   fullName: Crowdin.Api.Bundles.BundlePatchPath.ExportPattern
   nameWithType: BundlePatchPath.ExportPattern
+- uid: Crowdin.Api.Bundles.BundlePatchPath.Format
+  name: Format
+  href: api/Crowdin.Api.Bundles.BundlePatchPath.html#Crowdin_Api_Bundles_BundlePatchPath_Format
+  commentId: F:Crowdin.Api.Bundles.BundlePatchPath.Format
+  fullName: Crowdin.Api.Bundles.BundlePatchPath.Format
+  nameWithType: BundlePatchPath.Format
 - uid: Crowdin.Api.Bundles.BundlePatchPath.IgnorePatterns
   name: IgnorePatterns
   href: api/Crowdin.Api.Bundles.BundlePatchPath.html#Crowdin_Api_Bundles_BundlePatchPath_IgnorePatterns
   commentId: F:Crowdin.Api.Bundles.BundlePatchPath.IgnorePatterns
   fullName: Crowdin.Api.Bundles.BundlePatchPath.IgnorePatterns
   nameWithType: BundlePatchPath.IgnorePatterns
+- uid: Crowdin.Api.Bundles.BundlePatchPath.IsMultilingual
+  name: IsMultilingual
+  href: api/Crowdin.Api.Bundles.BundlePatchPath.html#Crowdin_Api_Bundles_BundlePatchPath_IsMultilingual
+  commentId: F:Crowdin.Api.Bundles.BundlePatchPath.IsMultilingual
+  fullName: Crowdin.Api.Bundles.BundlePatchPath.IsMultilingual
+  nameWithType: BundlePatchPath.IsMultilingual
 - uid: Crowdin.Api.Bundles.BundlePatchPath.LabelIds
   name: LabelIds
   href: api/Crowdin.Api.Bundles.BundlePatchPath.html#Crowdin_Api_Bundles_BundlePatchPath_LabelIds
   commentId: F:Crowdin.Api.Bundles.BundlePatchPath.LabelIds
   fullName: Crowdin.Api.Bundles.BundlePatchPath.LabelIds
   nameWithType: BundlePatchPath.LabelIds
+- uid: Crowdin.Api.Bundles.BundlePatchPath.Name
+  name: Name
+  href: api/Crowdin.Api.Bundles.BundlePatchPath.html#Crowdin_Api_Bundles_BundlePatchPath_Name
+  commentId: F:Crowdin.Api.Bundles.BundlePatchPath.Name
+  fullName: Crowdin.Api.Bundles.BundlePatchPath.Name
+  nameWithType: BundlePatchPath.Name
 - uid: Crowdin.Api.Bundles.BundlePatchPath.SourcePatterns
   name: SourcePatterns
   href: api/Crowdin.Api.Bundles.BundlePatchPath.html#Crowdin_Api_Bundles_BundlePatchPath_SourcePatterns
@@ -397,6 +564,19 @@ references:
   fullName.vb: Crowdin.Api.Bundles.BundlesApiExecutor.BundleListFiles(Of T)(System.Int32, System.Int32, System.Int32, System.Int32)
   nameWithType: BundlesApiExecutor.BundleListFiles<T>(Int32, Int32, Int32, Int32)
   nameWithType.vb: BundlesApiExecutor.BundleListFiles(Of T)(Int32, Int32, Int32, Int32)
+- uid: Crowdin.Api.Bundles.BundlesApiExecutor.CheckBundleExportStatus(System.Int32,System.Int32,System.String)
+  name: CheckBundleExportStatus(Int32, Int32, String)
+  href: api/Crowdin.Api.Bundles.BundlesApiExecutor.html#Crowdin_Api_Bundles_BundlesApiExecutor_CheckBundleExportStatus_System_Int32_System_Int32_System_String_
+  commentId: M:Crowdin.Api.Bundles.BundlesApiExecutor.CheckBundleExportStatus(System.Int32,System.Int32,System.String)
+  fullName: Crowdin.Api.Bundles.BundlesApiExecutor.CheckBundleExportStatus(System.Int32, System.Int32, System.String)
+  nameWithType: BundlesApiExecutor.CheckBundleExportStatus(Int32, Int32, String)
+- uid: Crowdin.Api.Bundles.BundlesApiExecutor.CheckBundleExportStatus*
+  name: CheckBundleExportStatus
+  href: api/Crowdin.Api.Bundles.BundlesApiExecutor.html#Crowdin_Api_Bundles_BundlesApiExecutor_CheckBundleExportStatus_
+  commentId: Overload:Crowdin.Api.Bundles.BundlesApiExecutor.CheckBundleExportStatus
+  isSpec: "True"
+  fullName: Crowdin.Api.Bundles.BundlesApiExecutor.CheckBundleExportStatus
+  nameWithType: BundlesApiExecutor.CheckBundleExportStatus
 - uid: Crowdin.Api.Bundles.BundlesApiExecutor.DeleteBundle(System.Int32,System.Int32)
   name: DeleteBundle(Int32, Int32)
   href: api/Crowdin.Api.Bundles.BundlesApiExecutor.html#Crowdin_Api_Bundles_BundlesApiExecutor_DeleteBundle_System_Int32_System_Int32_
@@ -410,6 +590,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Bundles.BundlesApiExecutor.DeleteBundle
   nameWithType: BundlesApiExecutor.DeleteBundle
+- uid: Crowdin.Api.Bundles.BundlesApiExecutor.DownloadBundle(System.Int32,System.Int32,System.String)
+  name: DownloadBundle(Int32, Int32, String)
+  href: api/Crowdin.Api.Bundles.BundlesApiExecutor.html#Crowdin_Api_Bundles_BundlesApiExecutor_DownloadBundle_System_Int32_System_Int32_System_String_
+  commentId: M:Crowdin.Api.Bundles.BundlesApiExecutor.DownloadBundle(System.Int32,System.Int32,System.String)
+  fullName: Crowdin.Api.Bundles.BundlesApiExecutor.DownloadBundle(System.Int32, System.Int32, System.String)
+  nameWithType: BundlesApiExecutor.DownloadBundle(Int32, Int32, String)
+- uid: Crowdin.Api.Bundles.BundlesApiExecutor.DownloadBundle*
+  name: DownloadBundle
+  href: api/Crowdin.Api.Bundles.BundlesApiExecutor.html#Crowdin_Api_Bundles_BundlesApiExecutor_DownloadBundle_
+  commentId: Overload:Crowdin.Api.Bundles.BundlesApiExecutor.DownloadBundle
+  isSpec: "True"
+  fullName: Crowdin.Api.Bundles.BundlesApiExecutor.DownloadBundle
+  nameWithType: BundlesApiExecutor.DownloadBundle
 - uid: Crowdin.Api.Bundles.BundlesApiExecutor.EditBundle(System.Int32,System.Int32,IEnumerable{Crowdin.Api.Bundles.BundlePatch})
   name: EditBundle(Int32, Int32, IEnumerable<BundlePatch>)
   href: api/Crowdin.Api.Bundles.BundlesApiExecutor.html#Crowdin_Api_Bundles_BundlesApiExecutor_EditBundle_System_Int32_System_Int32_IEnumerable_Crowdin_Api_Bundles_BundlePatch__
@@ -426,6 +619,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Bundles.BundlesApiExecutor.EditBundle
   nameWithType: BundlesApiExecutor.EditBundle
+- uid: Crowdin.Api.Bundles.BundlesApiExecutor.ExportBundle(System.Int32,System.Int32)
+  name: ExportBundle(Int32, Int32)
+  href: api/Crowdin.Api.Bundles.BundlesApiExecutor.html#Crowdin_Api_Bundles_BundlesApiExecutor_ExportBundle_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.Bundles.BundlesApiExecutor.ExportBundle(System.Int32,System.Int32)
+  fullName: Crowdin.Api.Bundles.BundlesApiExecutor.ExportBundle(System.Int32, System.Int32)
+  nameWithType: BundlesApiExecutor.ExportBundle(Int32, Int32)
+- uid: Crowdin.Api.Bundles.BundlesApiExecutor.ExportBundle*
+  name: ExportBundle
+  href: api/Crowdin.Api.Bundles.BundlesApiExecutor.html#Crowdin_Api_Bundles_BundlesApiExecutor_ExportBundle_
+  commentId: Overload:Crowdin.Api.Bundles.BundlesApiExecutor.ExportBundle
+  isSpec: "True"
+  fullName: Crowdin.Api.Bundles.BundlesApiExecutor.ExportBundle
+  nameWithType: BundlesApiExecutor.ExportBundle
 - uid: Crowdin.Api.Bundles.BundlesApiExecutor.GetBundle(System.Int32,System.Int32)
   name: GetBundle(Int32, Int32)
   href: api/Crowdin.Api.Bundles.BundlesApiExecutor.html#Crowdin_Api_Bundles_BundlesApiExecutor_GetBundle_System_Int32_System_Int32_
@@ -26655,6 +26861,18 @@ references:
   commentId: T:Crowdin.Api.TranslationMemory.TmPatchPath
   fullName: Crowdin.Api.TranslationMemory.TmPatchPath
   nameWithType: TmPatchPath
+- uid: Crowdin.Api.TranslationMemory.TmPatchPath.GroupId
+  name: GroupId
+  href: api/Crowdin.Api.TranslationMemory.TmPatchPath.html#Crowdin_Api_TranslationMemory_TmPatchPath_GroupId
+  commentId: F:Crowdin.Api.TranslationMemory.TmPatchPath.GroupId
+  fullName: Crowdin.Api.TranslationMemory.TmPatchPath.GroupId
+  nameWithType: TmPatchPath.GroupId
+- uid: Crowdin.Api.TranslationMemory.TmPatchPath.LanguageId
+  name: LanguageId
+  href: api/Crowdin.Api.TranslationMemory.TmPatchPath.html#Crowdin_Api_TranslationMemory_TmPatchPath_LanguageId
+  commentId: F:Crowdin.Api.TranslationMemory.TmPatchPath.LanguageId
+  fullName: Crowdin.Api.TranslationMemory.TmPatchPath.LanguageId
+  nameWithType: TmPatchPath.LanguageId
 - uid: Crowdin.Api.TranslationMemory.TmPatchPath.Name
   name: Name
   href: api/Crowdin.Api.TranslationMemory.TmPatchPath.html#Crowdin_Api_TranslationMemory_TmPatchPath_Name
