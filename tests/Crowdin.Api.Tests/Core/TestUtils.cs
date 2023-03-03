@@ -81,7 +81,7 @@ namespace Crowdin.Api.Tests.Core
                 { "offset", offset.ToString() }
             };
         }
-
+        
         public static string SerializeEnum(Enum enumValue, JsonSerializerSettings? settings = null)
         {
             settings ??= CreateJsonSerializerOptions();

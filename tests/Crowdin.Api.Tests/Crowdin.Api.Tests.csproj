@@ -138,6 +138,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Tasks_SettingsTemplates.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\TranslationMemory.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>TranslationMemory.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -270,6 +274,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>Tasks_SettingsTemplates.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\TranslationMemory.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>TranslationMemory.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 
