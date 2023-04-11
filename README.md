@@ -158,6 +158,38 @@ Group[] allGroups = await CrowdinApiClient.WithFetchAll((limit, offset) =>
 
 Only for list async methods that return `Task<ResponseList<T>>`.
 
+#### Rate limiting
+
+API client has built-in support for rate limiting services.
+The library provides an implementation of Exponential Backoff Algorithm.
+
+Usage:
+
+```C#
+var rateLimiter = new ExponentialBackoffRateLimiter(new RateLimitConfiguration
+{
+    // Maximum attempts count
+    MaxAttempts = 5,
+    // Maximum delay (top limit)
+    MaxDelay = TimeSpan.FromSeconds(5),
+    // Initial delay (bottom limit)
+    InitialDelay = TimeSpan.FromMilliseconds(200),
+});
+
+// Pass created Rate Limiter instance as named argument to API client instance
+// If rate limiter not passed - the request will fail immediately after HTTP 429 Too Many Requests error
+var client = new CrowdinApiClient(new CrowdinCredentials
+{
+    AccessToken = "<paste token here>",
+    Organization = "optional organization (for Enterprise API)"
+}, rateLimiter: rateLimiter);
+```
+
+A custom rate limiting service should also implement interface `IRateLimiter`.
+Rate limiting disabled by default because of possible usage of custom resilience approaches (such as `Polly`) by users, which may conflict with each other.
+This solution covers only simple cases of resilience. 
+If you need advanced customization - please try `Polly` or alternatives.
+
 #### Retry configuration
 
 Pass retry service (built-in or custom) if needed
