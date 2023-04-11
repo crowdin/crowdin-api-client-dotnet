@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 
 namespace Crowdin.Api.Core.Converters
 {
-    public class DescriptionEnumConverter : JsonConverter
+    internal class DescriptionEnumConverter : JsonConverter
     {
         public override bool CanConvert(Type objectType)
         {

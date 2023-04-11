@@ -10,7 +10,7 @@ using Crowdin.Api.SourceFiles;
 
 namespace Crowdin.Api.Core.Converters
 {
-    public class ProjectFileFormatSettingsConverter : JsonConverter<FileFormatSettingsResource>
+    internal class ProjectFileFormatSettingsConverter : JsonConverter<FileFormatSettingsResource>
     {
         public override bool CanWrite => false;
         

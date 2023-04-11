@@ -182,7 +182,7 @@ namespace Crowdin.Api
             Webhooks = new WebhooksApiExecutor(this);
         }
 
-        public Task<CrowdinApiResult> SendGetRequest(string subUrl, IDictionary<string, string>? queryParams = null)
+        Task<CrowdinApiResult> ICrowdinApiClient.SendGetRequest(string subUrl, IDictionary<string, string>? queryParams)
         {
             Func<HttpRequestMessage> requestFn = () => new HttpRequestMessage
             {
@@ -193,9 +193,9 @@ namespace Crowdin.Api
             return SendRequest(requestFn);
         }
 
-        public Task<CrowdinApiResult> SendPostRequest(
-            string subUrl, object? body = null,
-            IDictionary<string, string>? extraHeaders = null)
+        Task<CrowdinApiResult> ICrowdinApiClient.SendPostRequest(
+            string subUrl, object? body,
+            IDictionary<string, string>? extraHeaders)
         {
             Func<HttpRequestMessage> requestFn = () =>
             {
@@ -224,7 +224,7 @@ namespace Crowdin.Api
             return SendRequest(requestFn);
         }
 
-        public Task<CrowdinApiResult> SendPutRequest(string subUrl, object? body = null)
+        Task<CrowdinApiResult> ICrowdinApiClient.SendPutRequest(string subUrl, object? body)
         {
             Func<HttpRequestMessage> requestFn = () =>
             {
@@ -245,9 +245,9 @@ namespace Crowdin.Api
             return SendRequest(requestFn);
         }
 
-        public Task<CrowdinApiResult> SendPatchRequest(
+        Task<CrowdinApiResult> ICrowdinApiClient.SendPatchRequest(
             string subUrl, IEnumerable<PatchEntry> body,
-            IDictionary<string, string>? queryParams = null)
+            IDictionary<string, string>? queryParams)
         {
             Func<HttpRequestMessage> requestFn = () => new HttpRequestMessage
             {
@@ -259,12 +259,14 @@ namespace Crowdin.Api
             return SendRequest(requestFn);
         }
 
-        public Task<HttpStatusCode> SendDeleteRequest(string subUrl, IDictionary<string, string>? queryParams = null)
+        Task<HttpStatusCode> ICrowdinApiClient.SendDeleteRequest(string subUrl, IDictionary<string, string>? queryParams)
         {
-            return SendDeleteRequest_FullResult(subUrl, queryParams).ContinueWith(task => task.Result.StatusCode);
+            return ((ICrowdinApiClient) this)
+                .SendDeleteRequest_FullResult(subUrl, queryParams)
+                .ContinueWith(task => task.Result.StatusCode);
         }
         
-        public Task<CrowdinApiResult> SendDeleteRequest_FullResult(string subUrl, IDictionary<string, string>? queryParams = null)
+        Task<CrowdinApiResult> ICrowdinApiClient.SendDeleteRequest_FullResult(string subUrl, IDictionary<string, string>? queryParams)
         {
             Func<HttpRequestMessage> requestFn = () => new HttpRequestMessage
             {
@@ -275,7 +277,7 @@ namespace Crowdin.Api
             return SendRequest(requestFn);
         }
 
-        public Task<CrowdinApiResult> UploadFile(string subUrl, string filename, Stream fileStream)
+        Task<CrowdinApiResult> ICrowdinApiClient.UploadFile(string subUrl, string filename, Stream fileStream)
         {
             Func<HttpRequestMessage> requestFn = () =>
             {

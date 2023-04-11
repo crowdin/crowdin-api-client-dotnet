@@ -5,12 +5,12 @@ using Newtonsoft.Json.Linq;
 
 namespace Crowdin.Api.Core
 {
-    public class CrowdinApiResult
+    internal class CrowdinApiResult
     {
-        public HttpStatusCode StatusCode { get; set; }
+        internal HttpStatusCode StatusCode { get; set; }
 
-        public JObject JsonObject { get; set; }
+        internal JObject JsonObject { get; set; }
 
-        public HttpResponseHeaders Headers { get; set; }
+        internal HttpResponseHeaders Headers { get; set; }
     }
 }

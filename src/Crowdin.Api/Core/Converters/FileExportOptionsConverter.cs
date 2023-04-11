@@ -8,7 +8,7 @@ using Newtonsoft.Json.Linq;
 
 namespace Crowdin.Api.Core.Converters
 {
-    public class FileExportOptionsConverter : JsonConverter<FileExportOptions>
+    internal class FileExportOptionsConverter : JsonConverter<FileExportOptions>
     {
         public override bool CanWrite => false;
 
