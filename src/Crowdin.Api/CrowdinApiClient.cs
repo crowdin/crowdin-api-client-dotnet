@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using Crowdin.Api.Bundles;
 using Crowdin.Api.Core;
 using Crowdin.Api.Core.Converters;
+using Crowdin.Api.Core.RateLimiting;
 using Crowdin.Api.Core.Resilience;
 using Crowdin.Api.Dictionaries;
 using Crowdin.Api.Distributions;
@@ -99,6 +100,7 @@ namespace Crowdin.Api
         private readonly string _baseUrl;
         private readonly string _accessToken;
         private readonly HttpClient _httpClient;
+        private readonly IRateLimiter? _rateLimiter;
         private readonly IRetryService? _retryService;
         
         private static readonly MediaTypeHeaderValue DefaultContentType = MediaTypeHeaderValue.Parse("application/json");
@@ -126,10 +128,12 @@ namespace Crowdin.Api
             CrowdinCredentials credentials,
             HttpClient? httpClient = null,
             IJsonParser? jsonParser = null,
+            IRateLimiter? rateLimiter = null,
             IRetryService? retryService = null)
         {
             _httpClient = httpClient ?? new HttpClient();
             DefaultJsonParser = jsonParser ?? new JsonParser(DefaultJsonSerializerOptions);
+            _rateLimiter = rateLimiter;
             _retryService = retryService;
             
             _accessToken = credentials.AccessToken;
@@ -325,14 +329,25 @@ namespace Crowdin.Api
             return outResultList.ToArray();
         }
 
-        private async Task<CrowdinApiResult> SendRequest(Func<HttpRequestMessage> requestFn)
+        private async Task<CrowdinApiResult> SendRequest(Func<HttpRequestMessage> createRequestMessage)
         {
+            Task<HttpResponseMessage> SendHttpRequest(int _ = default)
+            {
+                return _httpClient.SendAsync(createRequestMessage());
+            }
+
+            Task<HttpResponseMessage> SendRequestViaRateLimiterIfAvailable()
+            {
+                return _rateLimiter != null
+                    ? _rateLimiter.ExecuteRequest(SendHttpRequest)
+                    : SendHttpRequest();
+            }
+            
             var result = new CrowdinApiResult();
 
-            HttpResponseMessage response =
-                _retryService != null
-                ? await _retryService.ExecuteRequestAsync(() => _httpClient.SendAsync(requestFn()))
-                : await _httpClient.SendAsync(requestFn());
+            HttpResponseMessage response = _retryService != null
+                ? await _retryService.ExecuteRequestAsync(SendRequestViaRateLimiterIfAvailable)
+                : await SendRequestViaRateLimiterIfAvailable();
 
             await CheckDefaultPreconditionsAndErrors(response);
             result.StatusCode = response.StatusCode;
