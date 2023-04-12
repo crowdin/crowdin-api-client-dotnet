@@ -6,7 +6,7 @@ using Newtonsoft.Json;
 
 namespace Crowdin.Api.Core.Converters
 {
-    public class ToStringConverter : JsonConverter
+    internal class ToStringConverter : JsonConverter
     {
         public override bool CanRead => false;
 

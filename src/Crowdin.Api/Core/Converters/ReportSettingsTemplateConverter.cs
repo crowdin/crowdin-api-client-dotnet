@@ -7,7 +7,7 @@ using Newtonsoft.Json.Linq;
 
 namespace Crowdin.Api.Core.Converters
 {
-    public class ReportSettingsTemplateConverter : JsonConverter<ReportSettingsTemplateBase>
+    internal class ReportSettingsTemplateConverter : JsonConverter<ReportSettingsTemplateBase>
     {
         public override bool CanWrite => false;
 

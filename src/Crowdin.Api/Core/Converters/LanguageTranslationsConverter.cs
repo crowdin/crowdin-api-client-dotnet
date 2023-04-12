@@ -8,7 +8,7 @@ using Newtonsoft.Json.Linq;
 
 namespace Crowdin.Api.Core.Converters
 {
-    public class LanguageTranslationsConverter : JsonConverter<LanguageTranslations>
+    internal class LanguageTranslationsConverter : JsonConverter<LanguageTranslations>
     {
         public override bool CanWrite => false;
 

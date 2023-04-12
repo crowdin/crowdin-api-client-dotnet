@@ -8,7 +8,7 @@ using Newtonsoft.Json.Linq;
 
 namespace Crowdin.Api.Core.Converters
 {
-    public class WorkflowStepConverter : JsonConverter<WorkflowStep>
+    internal class WorkflowStepConverter : JsonConverter<WorkflowStep>
     {
         public override bool CanWrite => false;
 

@@ -11,7 +11,7 @@ using Newtonsoft.Json.Linq;
 
 namespace Crowdin.Api.Core.Converters
 {
-    public class FileInfoConverter : JsonConverter<FileInfoResource>
+    internal class FileInfoConverter : JsonConverter<FileInfoResource>
     {
         public override bool CanWrite => false;
 
