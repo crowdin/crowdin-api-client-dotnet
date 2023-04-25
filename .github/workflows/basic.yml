@@ -1,4 +1,4 @@
-name: Build, tests, publish
+name: Build, tests, code coverage
 
 on:
   pull_request:
@@ -21,23 +21,23 @@ jobs:
         dotnet-version: [ '3.1.x', '7.0.x' ]
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-    
-    - name: Setup .NET SDK ${{ matrix.dotnet-version }}
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: ${{ matrix.dotnet-version }}
+      - name: Checkout
+        uses: actions/checkout@v3
         
-    - name: Restore dependencies
-      run: dotnet restore
-      
-    - name: Build
-      run: dotnet build -c Release --no-restore
-      
-    - name: Test
-      run: dotnet test --no-restore --verbosity normal
-      
+      - name: Setup .NET SDK ${{ matrix.dotnet-version }}
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
+          
+      - name: Restore dependencies
+        run: dotnet restore
+        
+      - name: Build
+        run: dotnet build -c Release --no-restore
+        
+      - name: Test
+        run: dotnet test --no-restore --verbosity normal
+
   code-coverage:
     runs-on: ubuntu-latest
     
