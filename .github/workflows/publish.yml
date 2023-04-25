@@ -1,0 +1,36 @@
+﻿name: Publish
+
+on:
+  release:
+    types: [created]
+    
+env:
+  PROJECT_PATH: src/Crowdin.Api
+  PROJECT_CSPROJ_PATH: ${{ env.PROJECT_PATH }}/Crowdin.Api.csproj
+  
+jobs:
+  publish-nuget:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
+      
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7.0.x
+        env:
+          NUGET_AUTH_TOKEN: ${{ secrets.NUGET_KEY }}
+          
+      - name: Build the project
+        run: dotnet build -c Release $PROJECT_CSPROJ_PATH
+        
+      - name: Create the package
+        run: dotnet pack -c Release -property:NuspecFile=Crowdin.Api.nuspec $PROJECT_CSPROJ_PATH
+        
+      - name: Publish the package to NuGet
+        run: dotnet nuget push $PROJECT_PATH/bin/Release/*.nupkg
