@@ -37,3 +37,31 @@ jobs:
       
     - name: Test
       run: dotnet test --no-restore --verbosity normal
+      
+  code-coverage:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 7.0.x
+          
+      - name: Test
+        run: dotnet test --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura
+        
+      - name: Generate code coverage report
+        uses: danielpalme/ReportGenerator-GitHub-Action@5.1.19
+        with:
+          reports: '**/coverage.cobertura.xml'
+          targetdir: 'CodeCoverage'
+          reporttypes: 'Cobertura'
+          
+      - name: Publish code coverage report
+        uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: '**/coverage.cobertura.xml'
