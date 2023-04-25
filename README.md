@@ -14,13 +14,10 @@ Our API is a full-featured RESTful API that helps you to integrate localization 
 
 [![Nuget](https://img.shields.io/nuget/v/Crowdin.Api?cacheSeconds=5000)](https://www.nuget.org/packages/Crowdin.Api/)
 [![Nuget](https://img.shields.io/nuget/dt/crowdin.api?cacheSeconds=800)](https://www.nuget.org/packages/Crowdin.Api/)
-[![GitHub issues](https://img.shields.io/github/issues/crowdin/crowdin-api-client-dotnet?cacheSeconds=10000)](https://github.com/crowdin/crowdin-api-client-dotnet/issues)
+[![Tests](https://github.com/crowdin/crowdin-api-client-dotnet/actions/workflows/basic.yml/badge.svg)](https://github.com/crowdin/crowdin-api-client-dotnet/actions/workflows/basic.yml)
+[![codecov](https://codecov.io/gh/crowdin/crowdin-api-client-dotnet/branch/main/graph/badge.svg?token=rvpbEqBcLU)](https://codecov.io/gh/crowdin/crowdin-api-client-dotnet)
 [![GitHub contributors](https://img.shields.io/github/contributors/crowdin/crowdin-api-client-dotnet?cacheSeconds=10000)](https://github.com/crowdin/crowdin-api-client-dotnet/graphs/contributors)
 [![GitHub](https://img.shields.io/github/license/crowdin/crowdin-api-client-dotnet?cacheSeconds=20000)](https://github.com/crowdin/crowdin-api-client-dotnet/blob/master/LICENSE)
-
-[![Azure DevOps builds (branch)](https://img.shields.io/azure-devops/build/crowdin/crowdin-dotnet-client/44/main?cacheSeconds=1000)](https://dev.azure.com/crowdin/crowdin-dotnet-client/_build/latest?definitionId=44)
-[![Azure DevOps tests](https://img.shields.io/azure-devops/tests/crowdin/crowdin-dotnet-client/44/main?cacheSeconds=1000)](https://dev.azure.com/crowdin/crowdin-dotnet-client/_build/latest?definitionId=44)
-[![codecov](https://codecov.io/gh/crowdin/crowdin-api-client-dotnet/branch/main/graph/badge.svg?token=rvpbEqBcLU)](https://codecov.io/gh/crowdin/crowdin-api-client-dotnet)
 
 </div>
 
