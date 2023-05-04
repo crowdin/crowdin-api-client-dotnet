@@ -676,487 +676,12 @@ references:
   commentId: T:Crowdin.Api.Core.Converters.CallToStringForSerializationAttribute
   fullName: Crowdin.Api.Core.Converters.CallToStringForSerializationAttribute
   nameWithType: CallToStringForSerializationAttribute
-- uid: Crowdin.Api.Core.Converters.DescriptionEnumConverter
-  name: DescriptionEnumConverter
-  href: api/Crowdin.Api.Core.Converters.DescriptionEnumConverter.html
-  commentId: T:Crowdin.Api.Core.Converters.DescriptionEnumConverter
-  fullName: Crowdin.Api.Core.Converters.DescriptionEnumConverter
-  nameWithType: DescriptionEnumConverter
-- uid: Crowdin.Api.Core.Converters.DescriptionEnumConverter.CanConvert(Type)
-  name: CanConvert(Type)
-  href: api/Crowdin.Api.Core.Converters.DescriptionEnumConverter.html#Crowdin_Api_Core_Converters_DescriptionEnumConverter_CanConvert_Type_
-  commentId: M:Crowdin.Api.Core.Converters.DescriptionEnumConverter.CanConvert(Type)
-  fullName: Crowdin.Api.Core.Converters.DescriptionEnumConverter.CanConvert(Type)
-  nameWithType: DescriptionEnumConverter.CanConvert(Type)
-- uid: Crowdin.Api.Core.Converters.DescriptionEnumConverter.CanConvert*
-  name: CanConvert
-  href: api/Crowdin.Api.Core.Converters.DescriptionEnumConverter.html#Crowdin_Api_Core_Converters_DescriptionEnumConverter_CanConvert_
-  commentId: Overload:Crowdin.Api.Core.Converters.DescriptionEnumConverter.CanConvert
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.DescriptionEnumConverter.CanConvert
-  nameWithType: DescriptionEnumConverter.CanConvert
-- uid: Crowdin.Api.Core.Converters.DescriptionEnumConverter.ReadJson(JsonReader,Type,System.Nullable{System.Object},JsonSerializer)
-  name: ReadJson(JsonReader, Type, Nullable<Object>, JsonSerializer)
-  href: api/Crowdin.Api.Core.Converters.DescriptionEnumConverter.html#Crowdin_Api_Core_Converters_DescriptionEnumConverter_ReadJson_JsonReader_Type_System_Nullable_System_Object__JsonSerializer_
-  commentId: M:Crowdin.Api.Core.Converters.DescriptionEnumConverter.ReadJson(JsonReader,Type,System.Nullable{System.Object},JsonSerializer)
-  name.vb: ReadJson(JsonReader, Type, Nullable(Of Object), JsonSerializer)
-  fullName: Crowdin.Api.Core.Converters.DescriptionEnumConverter.ReadJson(JsonReader, Type, System.Nullable<System.Object>, JsonSerializer)
-  fullName.vb: Crowdin.Api.Core.Converters.DescriptionEnumConverter.ReadJson(JsonReader, Type, System.Nullable(Of System.Object), JsonSerializer)
-  nameWithType: DescriptionEnumConverter.ReadJson(JsonReader, Type, Nullable<Object>, JsonSerializer)
-  nameWithType.vb: DescriptionEnumConverter.ReadJson(JsonReader, Type, Nullable(Of Object), JsonSerializer)
-- uid: Crowdin.Api.Core.Converters.DescriptionEnumConverter.ReadJson*
-  name: ReadJson
-  href: api/Crowdin.Api.Core.Converters.DescriptionEnumConverter.html#Crowdin_Api_Core_Converters_DescriptionEnumConverter_ReadJson_
-  commentId: Overload:Crowdin.Api.Core.Converters.DescriptionEnumConverter.ReadJson
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.DescriptionEnumConverter.ReadJson
-  nameWithType: DescriptionEnumConverter.ReadJson
-- uid: Crowdin.Api.Core.Converters.DescriptionEnumConverter.WriteJson(JsonWriter,System.Nullable{System.Object},JsonSerializer)
-  name: WriteJson(JsonWriter, Nullable<Object>, JsonSerializer)
-  href: api/Crowdin.Api.Core.Converters.DescriptionEnumConverter.html#Crowdin_Api_Core_Converters_DescriptionEnumConverter_WriteJson_JsonWriter_System_Nullable_System_Object__JsonSerializer_
-  commentId: M:Crowdin.Api.Core.Converters.DescriptionEnumConverter.WriteJson(JsonWriter,System.Nullable{System.Object},JsonSerializer)
-  name.vb: WriteJson(JsonWriter, Nullable(Of Object), JsonSerializer)
-  fullName: Crowdin.Api.Core.Converters.DescriptionEnumConverter.WriteJson(JsonWriter, System.Nullable<System.Object>, JsonSerializer)
-  fullName.vb: Crowdin.Api.Core.Converters.DescriptionEnumConverter.WriteJson(JsonWriter, System.Nullable(Of System.Object), JsonSerializer)
-  nameWithType: DescriptionEnumConverter.WriteJson(JsonWriter, Nullable<Object>, JsonSerializer)
-  nameWithType.vb: DescriptionEnumConverter.WriteJson(JsonWriter, Nullable(Of Object), JsonSerializer)
-- uid: Crowdin.Api.Core.Converters.DescriptionEnumConverter.WriteJson*
-  name: WriteJson
-  href: api/Crowdin.Api.Core.Converters.DescriptionEnumConverter.html#Crowdin_Api_Core_Converters_DescriptionEnumConverter_WriteJson_
-  commentId: Overload:Crowdin.Api.Core.Converters.DescriptionEnumConverter.WriteJson
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.DescriptionEnumConverter.WriteJson
-  nameWithType: DescriptionEnumConverter.WriteJson
-- uid: Crowdin.Api.Core.Converters.FileExportOptionsConverter
-  name: FileExportOptionsConverter
-  href: api/Crowdin.Api.Core.Converters.FileExportOptionsConverter.html
-  commentId: T:Crowdin.Api.Core.Converters.FileExportOptionsConverter
-  fullName: Crowdin.Api.Core.Converters.FileExportOptionsConverter
-  nameWithType: FileExportOptionsConverter
-- uid: Crowdin.Api.Core.Converters.FileExportOptionsConverter.CanWrite
-  name: CanWrite
-  href: api/Crowdin.Api.Core.Converters.FileExportOptionsConverter.html#Crowdin_Api_Core_Converters_FileExportOptionsConverter_CanWrite
-  commentId: P:Crowdin.Api.Core.Converters.FileExportOptionsConverter.CanWrite
-  fullName: Crowdin.Api.Core.Converters.FileExportOptionsConverter.CanWrite
-  nameWithType: FileExportOptionsConverter.CanWrite
-- uid: Crowdin.Api.Core.Converters.FileExportOptionsConverter.CanWrite*
-  name: CanWrite
-  href: api/Crowdin.Api.Core.Converters.FileExportOptionsConverter.html#Crowdin_Api_Core_Converters_FileExportOptionsConverter_CanWrite_
-  commentId: Overload:Crowdin.Api.Core.Converters.FileExportOptionsConverter.CanWrite
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.FileExportOptionsConverter.CanWrite
-  nameWithType: FileExportOptionsConverter.CanWrite
-- uid: Crowdin.Api.Core.Converters.FileExportOptionsConverter.ReadJson(JsonReader,Type,Crowdin.Api.SourceFiles.FileExportOptions,System.Boolean,JsonSerializer)
-  name: ReadJson(JsonReader, Type, FileExportOptions, Boolean, JsonSerializer)
-  href: api/Crowdin.Api.Core.Converters.FileExportOptionsConverter.html#Crowdin_Api_Core_Converters_FileExportOptionsConverter_ReadJson_JsonReader_Type_Crowdin_Api_SourceFiles_FileExportOptions_System_Boolean_JsonSerializer_
-  commentId: M:Crowdin.Api.Core.Converters.FileExportOptionsConverter.ReadJson(JsonReader,Type,Crowdin.Api.SourceFiles.FileExportOptions,System.Boolean,JsonSerializer)
-  fullName: Crowdin.Api.Core.Converters.FileExportOptionsConverter.ReadJson(JsonReader, Type, Crowdin.Api.SourceFiles.FileExportOptions, System.Boolean, JsonSerializer)
-  nameWithType: FileExportOptionsConverter.ReadJson(JsonReader, Type, FileExportOptions, Boolean, JsonSerializer)
-- uid: Crowdin.Api.Core.Converters.FileExportOptionsConverter.ReadJson*
-  name: ReadJson
-  href: api/Crowdin.Api.Core.Converters.FileExportOptionsConverter.html#Crowdin_Api_Core_Converters_FileExportOptionsConverter_ReadJson_
-  commentId: Overload:Crowdin.Api.Core.Converters.FileExportOptionsConverter.ReadJson
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.FileExportOptionsConverter.ReadJson
-  nameWithType: FileExportOptionsConverter.ReadJson
-- uid: Crowdin.Api.Core.Converters.FileExportOptionsConverter.WriteJson(JsonWriter,Crowdin.Api.SourceFiles.FileExportOptions,JsonSerializer)
-  name: WriteJson(JsonWriter, FileExportOptions, JsonSerializer)
-  href: api/Crowdin.Api.Core.Converters.FileExportOptionsConverter.html#Crowdin_Api_Core_Converters_FileExportOptionsConverter_WriteJson_JsonWriter_Crowdin_Api_SourceFiles_FileExportOptions_JsonSerializer_
-  commentId: M:Crowdin.Api.Core.Converters.FileExportOptionsConverter.WriteJson(JsonWriter,Crowdin.Api.SourceFiles.FileExportOptions,JsonSerializer)
-  fullName: Crowdin.Api.Core.Converters.FileExportOptionsConverter.WriteJson(JsonWriter, Crowdin.Api.SourceFiles.FileExportOptions, JsonSerializer)
-  nameWithType: FileExportOptionsConverter.WriteJson(JsonWriter, FileExportOptions, JsonSerializer)
-- uid: Crowdin.Api.Core.Converters.FileExportOptionsConverter.WriteJson*
-  name: WriteJson
-  href: api/Crowdin.Api.Core.Converters.FileExportOptionsConverter.html#Crowdin_Api_Core_Converters_FileExportOptionsConverter_WriteJson_
-  commentId: Overload:Crowdin.Api.Core.Converters.FileExportOptionsConverter.WriteJson
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.FileExportOptionsConverter.WriteJson
-  nameWithType: FileExportOptionsConverter.WriteJson
-- uid: Crowdin.Api.Core.Converters.FileImportOptionsConverter
-  name: FileImportOptionsConverter
-  href: api/Crowdin.Api.Core.Converters.FileImportOptionsConverter.html
-  commentId: T:Crowdin.Api.Core.Converters.FileImportOptionsConverter
-  fullName: Crowdin.Api.Core.Converters.FileImportOptionsConverter
-  nameWithType: FileImportOptionsConverter
-- uid: Crowdin.Api.Core.Converters.FileImportOptionsConverter.CanWrite
-  name: CanWrite
-  href: api/Crowdin.Api.Core.Converters.FileImportOptionsConverter.html#Crowdin_Api_Core_Converters_FileImportOptionsConverter_CanWrite
-  commentId: P:Crowdin.Api.Core.Converters.FileImportOptionsConverter.CanWrite
-  fullName: Crowdin.Api.Core.Converters.FileImportOptionsConverter.CanWrite
-  nameWithType: FileImportOptionsConverter.CanWrite
-- uid: Crowdin.Api.Core.Converters.FileImportOptionsConverter.CanWrite*
-  name: CanWrite
-  href: api/Crowdin.Api.Core.Converters.FileImportOptionsConverter.html#Crowdin_Api_Core_Converters_FileImportOptionsConverter_CanWrite_
-  commentId: Overload:Crowdin.Api.Core.Converters.FileImportOptionsConverter.CanWrite
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.FileImportOptionsConverter.CanWrite
-  nameWithType: FileImportOptionsConverter.CanWrite
-- uid: Crowdin.Api.Core.Converters.FileImportOptionsConverter.ReadJson(JsonReader,Type,Crowdin.Api.SourceFiles.FileImportOptions,System.Boolean,JsonSerializer)
-  name: ReadJson(JsonReader, Type, FileImportOptions, Boolean, JsonSerializer)
-  href: api/Crowdin.Api.Core.Converters.FileImportOptionsConverter.html#Crowdin_Api_Core_Converters_FileImportOptionsConverter_ReadJson_JsonReader_Type_Crowdin_Api_SourceFiles_FileImportOptions_System_Boolean_JsonSerializer_
-  commentId: M:Crowdin.Api.Core.Converters.FileImportOptionsConverter.ReadJson(JsonReader,Type,Crowdin.Api.SourceFiles.FileImportOptions,System.Boolean,JsonSerializer)
-  fullName: Crowdin.Api.Core.Converters.FileImportOptionsConverter.ReadJson(JsonReader, Type, Crowdin.Api.SourceFiles.FileImportOptions, System.Boolean, JsonSerializer)
-  nameWithType: FileImportOptionsConverter.ReadJson(JsonReader, Type, FileImportOptions, Boolean, JsonSerializer)
-- uid: Crowdin.Api.Core.Converters.FileImportOptionsConverter.ReadJson*
-  name: ReadJson
-  href: api/Crowdin.Api.Core.Converters.FileImportOptionsConverter.html#Crowdin_Api_Core_Converters_FileImportOptionsConverter_ReadJson_
-  commentId: Overload:Crowdin.Api.Core.Converters.FileImportOptionsConverter.ReadJson
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.FileImportOptionsConverter.ReadJson
-  nameWithType: FileImportOptionsConverter.ReadJson
-- uid: Crowdin.Api.Core.Converters.FileImportOptionsConverter.WriteJson(JsonWriter,Crowdin.Api.SourceFiles.FileImportOptions,JsonSerializer)
-  name: WriteJson(JsonWriter, FileImportOptions, JsonSerializer)
-  href: api/Crowdin.Api.Core.Converters.FileImportOptionsConverter.html#Crowdin_Api_Core_Converters_FileImportOptionsConverter_WriteJson_JsonWriter_Crowdin_Api_SourceFiles_FileImportOptions_JsonSerializer_
-  commentId: M:Crowdin.Api.Core.Converters.FileImportOptionsConverter.WriteJson(JsonWriter,Crowdin.Api.SourceFiles.FileImportOptions,JsonSerializer)
-  fullName: Crowdin.Api.Core.Converters.FileImportOptionsConverter.WriteJson(JsonWriter, Crowdin.Api.SourceFiles.FileImportOptions, JsonSerializer)
-  nameWithType: FileImportOptionsConverter.WriteJson(JsonWriter, FileImportOptions, JsonSerializer)
-- uid: Crowdin.Api.Core.Converters.FileImportOptionsConverter.WriteJson*
-  name: WriteJson
-  href: api/Crowdin.Api.Core.Converters.FileImportOptionsConverter.html#Crowdin_Api_Core_Converters_FileImportOptionsConverter_WriteJson_
-  commentId: Overload:Crowdin.Api.Core.Converters.FileImportOptionsConverter.WriteJson
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.FileImportOptionsConverter.WriteJson
-  nameWithType: FileImportOptionsConverter.WriteJson
-- uid: Crowdin.Api.Core.Converters.FileInfoConverter
-  name: FileInfoConverter
-  href: api/Crowdin.Api.Core.Converters.FileInfoConverter.html
-  commentId: T:Crowdin.Api.Core.Converters.FileInfoConverter
-  fullName: Crowdin.Api.Core.Converters.FileInfoConverter
-  nameWithType: FileInfoConverter
-- uid: Crowdin.Api.Core.Converters.FileInfoConverter.CanWrite
-  name: CanWrite
-  href: api/Crowdin.Api.Core.Converters.FileInfoConverter.html#Crowdin_Api_Core_Converters_FileInfoConverter_CanWrite
-  commentId: P:Crowdin.Api.Core.Converters.FileInfoConverter.CanWrite
-  fullName: Crowdin.Api.Core.Converters.FileInfoConverter.CanWrite
-  nameWithType: FileInfoConverter.CanWrite
-- uid: Crowdin.Api.Core.Converters.FileInfoConverter.CanWrite*
-  name: CanWrite
-  href: api/Crowdin.Api.Core.Converters.FileInfoConverter.html#Crowdin_Api_Core_Converters_FileInfoConverter_CanWrite_
-  commentId: Overload:Crowdin.Api.Core.Converters.FileInfoConverter.CanWrite
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.FileInfoConverter.CanWrite
-  nameWithType: FileInfoConverter.CanWrite
-- uid: Crowdin.Api.Core.Converters.FileInfoConverter.ReadJson(JsonReader,Type,Crowdin.Api.SourceFiles.FileInfoResource,System.Boolean,JsonSerializer)
-  name: ReadJson(JsonReader, Type, FileInfoResource, Boolean, JsonSerializer)
-  href: api/Crowdin.Api.Core.Converters.FileInfoConverter.html#Crowdin_Api_Core_Converters_FileInfoConverter_ReadJson_JsonReader_Type_Crowdin_Api_SourceFiles_FileInfoResource_System_Boolean_JsonSerializer_
-  commentId: M:Crowdin.Api.Core.Converters.FileInfoConverter.ReadJson(JsonReader,Type,Crowdin.Api.SourceFiles.FileInfoResource,System.Boolean,JsonSerializer)
-  fullName: Crowdin.Api.Core.Converters.FileInfoConverter.ReadJson(JsonReader, Type, Crowdin.Api.SourceFiles.FileInfoResource, System.Boolean, JsonSerializer)
-  nameWithType: FileInfoConverter.ReadJson(JsonReader, Type, FileInfoResource, Boolean, JsonSerializer)
-- uid: Crowdin.Api.Core.Converters.FileInfoConverter.ReadJson*
-  name: ReadJson
-  href: api/Crowdin.Api.Core.Converters.FileInfoConverter.html#Crowdin_Api_Core_Converters_FileInfoConverter_ReadJson_
-  commentId: Overload:Crowdin.Api.Core.Converters.FileInfoConverter.ReadJson
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.FileInfoConverter.ReadJson
-  nameWithType: FileInfoConverter.ReadJson
-- uid: Crowdin.Api.Core.Converters.FileInfoConverter.WriteJson(JsonWriter,Crowdin.Api.SourceFiles.FileInfoResource,JsonSerializer)
-  name: WriteJson(JsonWriter, FileInfoResource, JsonSerializer)
-  href: api/Crowdin.Api.Core.Converters.FileInfoConverter.html#Crowdin_Api_Core_Converters_FileInfoConverter_WriteJson_JsonWriter_Crowdin_Api_SourceFiles_FileInfoResource_JsonSerializer_
-  commentId: M:Crowdin.Api.Core.Converters.FileInfoConverter.WriteJson(JsonWriter,Crowdin.Api.SourceFiles.FileInfoResource,JsonSerializer)
-  fullName: Crowdin.Api.Core.Converters.FileInfoConverter.WriteJson(JsonWriter, Crowdin.Api.SourceFiles.FileInfoResource, JsonSerializer)
-  nameWithType: FileInfoConverter.WriteJson(JsonWriter, FileInfoResource, JsonSerializer)
-- uid: Crowdin.Api.Core.Converters.FileInfoConverter.WriteJson*
-  name: WriteJson
-  href: api/Crowdin.Api.Core.Converters.FileInfoConverter.html#Crowdin_Api_Core_Converters_FileInfoConverter_WriteJson_
-  commentId: Overload:Crowdin.Api.Core.Converters.FileInfoConverter.WriteJson
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.FileInfoConverter.WriteJson
-  nameWithType: FileInfoConverter.WriteJson
-- uid: Crowdin.Api.Core.Converters.LanguageTranslationsConverter
-  name: LanguageTranslationsConverter
-  href: api/Crowdin.Api.Core.Converters.LanguageTranslationsConverter.html
-  commentId: T:Crowdin.Api.Core.Converters.LanguageTranslationsConverter
-  fullName: Crowdin.Api.Core.Converters.LanguageTranslationsConverter
-  nameWithType: LanguageTranslationsConverter
-- uid: Crowdin.Api.Core.Converters.LanguageTranslationsConverter.CanWrite
-  name: CanWrite
-  href: api/Crowdin.Api.Core.Converters.LanguageTranslationsConverter.html#Crowdin_Api_Core_Converters_LanguageTranslationsConverter_CanWrite
-  commentId: P:Crowdin.Api.Core.Converters.LanguageTranslationsConverter.CanWrite
-  fullName: Crowdin.Api.Core.Converters.LanguageTranslationsConverter.CanWrite
-  nameWithType: LanguageTranslationsConverter.CanWrite
-- uid: Crowdin.Api.Core.Converters.LanguageTranslationsConverter.CanWrite*
-  name: CanWrite
-  href: api/Crowdin.Api.Core.Converters.LanguageTranslationsConverter.html#Crowdin_Api_Core_Converters_LanguageTranslationsConverter_CanWrite_
-  commentId: Overload:Crowdin.Api.Core.Converters.LanguageTranslationsConverter.CanWrite
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.LanguageTranslationsConverter.CanWrite
-  nameWithType: LanguageTranslationsConverter.CanWrite
-- uid: Crowdin.Api.Core.Converters.LanguageTranslationsConverter.ReadJson(JsonReader,Type,Crowdin.Api.StringTranslations.LanguageTranslations,System.Boolean,JsonSerializer)
-  name: ReadJson(JsonReader, Type, LanguageTranslations, Boolean, JsonSerializer)
-  href: api/Crowdin.Api.Core.Converters.LanguageTranslationsConverter.html#Crowdin_Api_Core_Converters_LanguageTranslationsConverter_ReadJson_JsonReader_Type_Crowdin_Api_StringTranslations_LanguageTranslations_System_Boolean_JsonSerializer_
-  commentId: M:Crowdin.Api.Core.Converters.LanguageTranslationsConverter.ReadJson(JsonReader,Type,Crowdin.Api.StringTranslations.LanguageTranslations,System.Boolean,JsonSerializer)
-  fullName: Crowdin.Api.Core.Converters.LanguageTranslationsConverter.ReadJson(JsonReader, Type, Crowdin.Api.StringTranslations.LanguageTranslations, System.Boolean, JsonSerializer)
-  nameWithType: LanguageTranslationsConverter.ReadJson(JsonReader, Type, LanguageTranslations, Boolean, JsonSerializer)
-- uid: Crowdin.Api.Core.Converters.LanguageTranslationsConverter.ReadJson*
-  name: ReadJson
-  href: api/Crowdin.Api.Core.Converters.LanguageTranslationsConverter.html#Crowdin_Api_Core_Converters_LanguageTranslationsConverter_ReadJson_
-  commentId: Overload:Crowdin.Api.Core.Converters.LanguageTranslationsConverter.ReadJson
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.LanguageTranslationsConverter.ReadJson
-  nameWithType: LanguageTranslationsConverter.ReadJson
-- uid: Crowdin.Api.Core.Converters.LanguageTranslationsConverter.WriteJson(JsonWriter,Crowdin.Api.StringTranslations.LanguageTranslations,JsonSerializer)
-  name: WriteJson(JsonWriter, LanguageTranslations, JsonSerializer)
-  href: api/Crowdin.Api.Core.Converters.LanguageTranslationsConverter.html#Crowdin_Api_Core_Converters_LanguageTranslationsConverter_WriteJson_JsonWriter_Crowdin_Api_StringTranslations_LanguageTranslations_JsonSerializer_
-  commentId: M:Crowdin.Api.Core.Converters.LanguageTranslationsConverter.WriteJson(JsonWriter,Crowdin.Api.StringTranslations.LanguageTranslations,JsonSerializer)
-  fullName: Crowdin.Api.Core.Converters.LanguageTranslationsConverter.WriteJson(JsonWriter, Crowdin.Api.StringTranslations.LanguageTranslations, JsonSerializer)
-  nameWithType: LanguageTranslationsConverter.WriteJson(JsonWriter, LanguageTranslations, JsonSerializer)
-- uid: Crowdin.Api.Core.Converters.LanguageTranslationsConverter.WriteJson*
-  name: WriteJson
-  href: api/Crowdin.Api.Core.Converters.LanguageTranslationsConverter.html#Crowdin_Api_Core_Converters_LanguageTranslationsConverter_WriteJson_
-  commentId: Overload:Crowdin.Api.Core.Converters.LanguageTranslationsConverter.WriteJson
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.LanguageTranslationsConverter.WriteJson
-  nameWithType: LanguageTranslationsConverter.WriteJson
-- uid: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter
-  name: ProjectFileFormatSettingsConverter
-  href: api/Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.html
-  commentId: T:Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter
-  fullName: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter
-  nameWithType: ProjectFileFormatSettingsConverter
-- uid: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.CanWrite
-  name: CanWrite
-  href: api/Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.html#Crowdin_Api_Core_Converters_ProjectFileFormatSettingsConverter_CanWrite
-  commentId: P:Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.CanWrite
-  fullName: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.CanWrite
-  nameWithType: ProjectFileFormatSettingsConverter.CanWrite
-- uid: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.CanWrite*
-  name: CanWrite
-  href: api/Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.html#Crowdin_Api_Core_Converters_ProjectFileFormatSettingsConverter_CanWrite_
-  commentId: Overload:Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.CanWrite
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.CanWrite
-  nameWithType: ProjectFileFormatSettingsConverter.CanWrite
-- uid: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.ReadJson(JsonReader,Type,Crowdin.Api.ProjectsGroups.FileFormatSettingsResource,System.Boolean,JsonSerializer)
-  name: ReadJson(JsonReader, Type, FileFormatSettingsResource, Boolean, JsonSerializer)
-  href: api/Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.html#Crowdin_Api_Core_Converters_ProjectFileFormatSettingsConverter_ReadJson_JsonReader_Type_Crowdin_Api_ProjectsGroups_FileFormatSettingsResource_System_Boolean_JsonSerializer_
-  commentId: M:Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.ReadJson(JsonReader,Type,Crowdin.Api.ProjectsGroups.FileFormatSettingsResource,System.Boolean,JsonSerializer)
-  fullName: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.ReadJson(JsonReader, Type, Crowdin.Api.ProjectsGroups.FileFormatSettingsResource, System.Boolean, JsonSerializer)
-  nameWithType: ProjectFileFormatSettingsConverter.ReadJson(JsonReader, Type, FileFormatSettingsResource, Boolean, JsonSerializer)
-- uid: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.ReadJson*
-  name: ReadJson
-  href: api/Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.html#Crowdin_Api_Core_Converters_ProjectFileFormatSettingsConverter_ReadJson_
-  commentId: Overload:Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.ReadJson
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.ReadJson
-  nameWithType: ProjectFileFormatSettingsConverter.ReadJson
-- uid: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.WriteJson(JsonWriter,Crowdin.Api.ProjectsGroups.FileFormatSettingsResource,JsonSerializer)
-  name: WriteJson(JsonWriter, FileFormatSettingsResource, JsonSerializer)
-  href: api/Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.html#Crowdin_Api_Core_Converters_ProjectFileFormatSettingsConverter_WriteJson_JsonWriter_Crowdin_Api_ProjectsGroups_FileFormatSettingsResource_JsonSerializer_
-  commentId: M:Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.WriteJson(JsonWriter,Crowdin.Api.ProjectsGroups.FileFormatSettingsResource,JsonSerializer)
-  fullName: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.WriteJson(JsonWriter, Crowdin.Api.ProjectsGroups.FileFormatSettingsResource, JsonSerializer)
-  nameWithType: ProjectFileFormatSettingsConverter.WriteJson(JsonWriter, FileFormatSettingsResource, JsonSerializer)
-- uid: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.WriteJson*
-  name: WriteJson
-  href: api/Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.html#Crowdin_Api_Core_Converters_ProjectFileFormatSettingsConverter_WriteJson_
-  commentId: Overload:Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.WriteJson
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.ProjectFileFormatSettingsConverter.WriteJson
-  nameWithType: ProjectFileFormatSettingsConverter.WriteJson
-- uid: Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter
-  name: ReportSettingsTemplateConverter
-  href: api/Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.html
-  commentId: T:Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter
-  fullName: Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter
-  nameWithType: ReportSettingsTemplateConverter
-- uid: Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.CanWrite
-  name: CanWrite
-  href: api/Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.html#Crowdin_Api_Core_Converters_ReportSettingsTemplateConverter_CanWrite
-  commentId: P:Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.CanWrite
-  fullName: Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.CanWrite
-  nameWithType: ReportSettingsTemplateConverter.CanWrite
-- uid: Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.CanWrite*
-  name: CanWrite
-  href: api/Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.html#Crowdin_Api_Core_Converters_ReportSettingsTemplateConverter_CanWrite_
-  commentId: Overload:Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.CanWrite
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.CanWrite
-  nameWithType: ReportSettingsTemplateConverter.CanWrite
-- uid: Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.ReadJson(JsonReader,Type,Crowdin.Api.Reports.ReportSettingsTemplateBase,System.Boolean,JsonSerializer)
-  name: ReadJson(JsonReader, Type, ReportSettingsTemplateBase, Boolean, JsonSerializer)
-  href: api/Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.html#Crowdin_Api_Core_Converters_ReportSettingsTemplateConverter_ReadJson_JsonReader_Type_Crowdin_Api_Reports_ReportSettingsTemplateBase_System_Boolean_JsonSerializer_
-  commentId: M:Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.ReadJson(JsonReader,Type,Crowdin.Api.Reports.ReportSettingsTemplateBase,System.Boolean,JsonSerializer)
-  fullName: Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.ReadJson(JsonReader, Type, Crowdin.Api.Reports.ReportSettingsTemplateBase, System.Boolean, JsonSerializer)
-  nameWithType: ReportSettingsTemplateConverter.ReadJson(JsonReader, Type, ReportSettingsTemplateBase, Boolean, JsonSerializer)
-- uid: Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.ReadJson*
-  name: ReadJson
-  href: api/Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.html#Crowdin_Api_Core_Converters_ReportSettingsTemplateConverter_ReadJson_
-  commentId: Overload:Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.ReadJson
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.ReadJson
-  nameWithType: ReportSettingsTemplateConverter.ReadJson
-- uid: Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.WriteJson(JsonWriter,Crowdin.Api.Reports.ReportSettingsTemplateBase,JsonSerializer)
-  name: WriteJson(JsonWriter, ReportSettingsTemplateBase, JsonSerializer)
-  href: api/Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.html#Crowdin_Api_Core_Converters_ReportSettingsTemplateConverter_WriteJson_JsonWriter_Crowdin_Api_Reports_ReportSettingsTemplateBase_JsonSerializer_
-  commentId: M:Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.WriteJson(JsonWriter,Crowdin.Api.Reports.ReportSettingsTemplateBase,JsonSerializer)
-  fullName: Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.WriteJson(JsonWriter, Crowdin.Api.Reports.ReportSettingsTemplateBase, JsonSerializer)
-  nameWithType: ReportSettingsTemplateConverter.WriteJson(JsonWriter, ReportSettingsTemplateBase, JsonSerializer)
-- uid: Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.WriteJson*
-  name: WriteJson
-  href: api/Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.html#Crowdin_Api_Core_Converters_ReportSettingsTemplateConverter_WriteJson_
-  commentId: Overload:Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.WriteJson
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.ReportSettingsTemplateConverter.WriteJson
-  nameWithType: ReportSettingsTemplateConverter.WriteJson
 - uid: Crowdin.Api.Core.Converters.StrictStringRepresentation
   name: StrictStringRepresentation
   href: api/Crowdin.Api.Core.Converters.StrictStringRepresentation.html
   commentId: T:Crowdin.Api.Core.Converters.StrictStringRepresentation
   fullName: Crowdin.Api.Core.Converters.StrictStringRepresentation
   nameWithType: StrictStringRepresentation
-- uid: Crowdin.Api.Core.Converters.ToStringConverter
-  name: ToStringConverter
-  href: api/Crowdin.Api.Core.Converters.ToStringConverter.html
-  commentId: T:Crowdin.Api.Core.Converters.ToStringConverter
-  fullName: Crowdin.Api.Core.Converters.ToStringConverter
-  nameWithType: ToStringConverter
-- uid: Crowdin.Api.Core.Converters.ToStringConverter.CanConvert(Type)
-  name: CanConvert(Type)
-  href: api/Crowdin.Api.Core.Converters.ToStringConverter.html#Crowdin_Api_Core_Converters_ToStringConverter_CanConvert_Type_
-  commentId: M:Crowdin.Api.Core.Converters.ToStringConverter.CanConvert(Type)
-  fullName: Crowdin.Api.Core.Converters.ToStringConverter.CanConvert(Type)
-  nameWithType: ToStringConverter.CanConvert(Type)
-- uid: Crowdin.Api.Core.Converters.ToStringConverter.CanConvert*
-  name: CanConvert
-  href: api/Crowdin.Api.Core.Converters.ToStringConverter.html#Crowdin_Api_Core_Converters_ToStringConverter_CanConvert_
-  commentId: Overload:Crowdin.Api.Core.Converters.ToStringConverter.CanConvert
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.ToStringConverter.CanConvert
-  nameWithType: ToStringConverter.CanConvert
-- uid: Crowdin.Api.Core.Converters.ToStringConverter.CanRead
-  name: CanRead
-  href: api/Crowdin.Api.Core.Converters.ToStringConverter.html#Crowdin_Api_Core_Converters_ToStringConverter_CanRead
-  commentId: P:Crowdin.Api.Core.Converters.ToStringConverter.CanRead
-  fullName: Crowdin.Api.Core.Converters.ToStringConverter.CanRead
-  nameWithType: ToStringConverter.CanRead
-- uid: Crowdin.Api.Core.Converters.ToStringConverter.CanRead*
-  name: CanRead
-  href: api/Crowdin.Api.Core.Converters.ToStringConverter.html#Crowdin_Api_Core_Converters_ToStringConverter_CanRead_
-  commentId: Overload:Crowdin.Api.Core.Converters.ToStringConverter.CanRead
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.ToStringConverter.CanRead
-  nameWithType: ToStringConverter.CanRead
-- uid: Crowdin.Api.Core.Converters.ToStringConverter.ReadJson(JsonReader,Type,System.Nullable{System.Object},JsonSerializer)
-  name: ReadJson(JsonReader, Type, Nullable<Object>, JsonSerializer)
-  href: api/Crowdin.Api.Core.Converters.ToStringConverter.html#Crowdin_Api_Core_Converters_ToStringConverter_ReadJson_JsonReader_Type_System_Nullable_System_Object__JsonSerializer_
-  commentId: M:Crowdin.Api.Core.Converters.ToStringConverter.ReadJson(JsonReader,Type,System.Nullable{System.Object},JsonSerializer)
-  name.vb: ReadJson(JsonReader, Type, Nullable(Of Object), JsonSerializer)
-  fullName: Crowdin.Api.Core.Converters.ToStringConverter.ReadJson(JsonReader, Type, System.Nullable<System.Object>, JsonSerializer)
-  fullName.vb: Crowdin.Api.Core.Converters.ToStringConverter.ReadJson(JsonReader, Type, System.Nullable(Of System.Object), JsonSerializer)
-  nameWithType: ToStringConverter.ReadJson(JsonReader, Type, Nullable<Object>, JsonSerializer)
-  nameWithType.vb: ToStringConverter.ReadJson(JsonReader, Type, Nullable(Of Object), JsonSerializer)
-- uid: Crowdin.Api.Core.Converters.ToStringConverter.ReadJson*
-  name: ReadJson
-  href: api/Crowdin.Api.Core.Converters.ToStringConverter.html#Crowdin_Api_Core_Converters_ToStringConverter_ReadJson_
-  commentId: Overload:Crowdin.Api.Core.Converters.ToStringConverter.ReadJson
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.ToStringConverter.ReadJson
-  nameWithType: ToStringConverter.ReadJson
-- uid: Crowdin.Api.Core.Converters.ToStringConverter.WriteJson(JsonWriter,System.Nullable{System.Object},JsonSerializer)
-  name: WriteJson(JsonWriter, Nullable<Object>, JsonSerializer)
-  href: api/Crowdin.Api.Core.Converters.ToStringConverter.html#Crowdin_Api_Core_Converters_ToStringConverter_WriteJson_JsonWriter_System_Nullable_System_Object__JsonSerializer_
-  commentId: M:Crowdin.Api.Core.Converters.ToStringConverter.WriteJson(JsonWriter,System.Nullable{System.Object},JsonSerializer)
-  name.vb: WriteJson(JsonWriter, Nullable(Of Object), JsonSerializer)
-  fullName: Crowdin.Api.Core.Converters.ToStringConverter.WriteJson(JsonWriter, System.Nullable<System.Object>, JsonSerializer)
-  fullName.vb: Crowdin.Api.Core.Converters.ToStringConverter.WriteJson(JsonWriter, System.Nullable(Of System.Object), JsonSerializer)
-  nameWithType: ToStringConverter.WriteJson(JsonWriter, Nullable<Object>, JsonSerializer)
-  nameWithType.vb: ToStringConverter.WriteJson(JsonWriter, Nullable(Of Object), JsonSerializer)
-- uid: Crowdin.Api.Core.Converters.ToStringConverter.WriteJson*
-  name: WriteJson
-  href: api/Crowdin.Api.Core.Converters.ToStringConverter.html#Crowdin_Api_Core_Converters_ToStringConverter_WriteJson_
-  commentId: Overload:Crowdin.Api.Core.Converters.ToStringConverter.WriteJson
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.ToStringConverter.WriteJson
-  nameWithType: ToStringConverter.WriteJson
-- uid: Crowdin.Api.Core.Converters.WorkflowStepConverter
-  name: WorkflowStepConverter
-  href: api/Crowdin.Api.Core.Converters.WorkflowStepConverter.html
-  commentId: T:Crowdin.Api.Core.Converters.WorkflowStepConverter
-  fullName: Crowdin.Api.Core.Converters.WorkflowStepConverter
-  nameWithType: WorkflowStepConverter
-- uid: Crowdin.Api.Core.Converters.WorkflowStepConverter.CanWrite
-  name: CanWrite
-  href: api/Crowdin.Api.Core.Converters.WorkflowStepConverter.html#Crowdin_Api_Core_Converters_WorkflowStepConverter_CanWrite
-  commentId: P:Crowdin.Api.Core.Converters.WorkflowStepConverter.CanWrite
-  fullName: Crowdin.Api.Core.Converters.WorkflowStepConverter.CanWrite
-  nameWithType: WorkflowStepConverter.CanWrite
-- uid: Crowdin.Api.Core.Converters.WorkflowStepConverter.CanWrite*
-  name: CanWrite
-  href: api/Crowdin.Api.Core.Converters.WorkflowStepConverter.html#Crowdin_Api_Core_Converters_WorkflowStepConverter_CanWrite_
-  commentId: Overload:Crowdin.Api.Core.Converters.WorkflowStepConverter.CanWrite
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.WorkflowStepConverter.CanWrite
-  nameWithType: WorkflowStepConverter.CanWrite
-- uid: Crowdin.Api.Core.Converters.WorkflowStepConverter.ReadJson(JsonReader,Type,Crowdin.Api.Workflows.WorkflowStep,System.Boolean,JsonSerializer)
-  name: ReadJson(JsonReader, Type, WorkflowStep, Boolean, JsonSerializer)
-  href: api/Crowdin.Api.Core.Converters.WorkflowStepConverter.html#Crowdin_Api_Core_Converters_WorkflowStepConverter_ReadJson_JsonReader_Type_Crowdin_Api_Workflows_WorkflowStep_System_Boolean_JsonSerializer_
-  commentId: M:Crowdin.Api.Core.Converters.WorkflowStepConverter.ReadJson(JsonReader,Type,Crowdin.Api.Workflows.WorkflowStep,System.Boolean,JsonSerializer)
-  fullName: Crowdin.Api.Core.Converters.WorkflowStepConverter.ReadJson(JsonReader, Type, Crowdin.Api.Workflows.WorkflowStep, System.Boolean, JsonSerializer)
-  nameWithType: WorkflowStepConverter.ReadJson(JsonReader, Type, WorkflowStep, Boolean, JsonSerializer)
-- uid: Crowdin.Api.Core.Converters.WorkflowStepConverter.ReadJson*
-  name: ReadJson
-  href: api/Crowdin.Api.Core.Converters.WorkflowStepConverter.html#Crowdin_Api_Core_Converters_WorkflowStepConverter_ReadJson_
-  commentId: Overload:Crowdin.Api.Core.Converters.WorkflowStepConverter.ReadJson
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.WorkflowStepConverter.ReadJson
-  nameWithType: WorkflowStepConverter.ReadJson
-- uid: Crowdin.Api.Core.Converters.WorkflowStepConverter.WriteJson(JsonWriter,Crowdin.Api.Workflows.WorkflowStep,JsonSerializer)
-  name: WriteJson(JsonWriter, WorkflowStep, JsonSerializer)
-  href: api/Crowdin.Api.Core.Converters.WorkflowStepConverter.html#Crowdin_Api_Core_Converters_WorkflowStepConverter_WriteJson_JsonWriter_Crowdin_Api_Workflows_WorkflowStep_JsonSerializer_
-  commentId: M:Crowdin.Api.Core.Converters.WorkflowStepConverter.WriteJson(JsonWriter,Crowdin.Api.Workflows.WorkflowStep,JsonSerializer)
-  fullName: Crowdin.Api.Core.Converters.WorkflowStepConverter.WriteJson(JsonWriter, Crowdin.Api.Workflows.WorkflowStep, JsonSerializer)
-  nameWithType: WorkflowStepConverter.WriteJson(JsonWriter, WorkflowStep, JsonSerializer)
-- uid: Crowdin.Api.Core.Converters.WorkflowStepConverter.WriteJson*
-  name: WriteJson
-  href: api/Crowdin.Api.Core.Converters.WorkflowStepConverter.html#Crowdin_Api_Core_Converters_WorkflowStepConverter_WriteJson_
-  commentId: Overload:Crowdin.Api.Core.Converters.WorkflowStepConverter.WriteJson
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.Converters.WorkflowStepConverter.WriteJson
-  nameWithType: WorkflowStepConverter.WriteJson
-- uid: Crowdin.Api.Core.CrowdinApiResult
-  name: CrowdinApiResult
-  href: api/Crowdin.Api.Core.CrowdinApiResult.html
-  commentId: T:Crowdin.Api.Core.CrowdinApiResult
-  fullName: Crowdin.Api.Core.CrowdinApiResult
-  nameWithType: CrowdinApiResult
-- uid: Crowdin.Api.Core.CrowdinApiResult.Headers
-  name: Headers
-  href: api/Crowdin.Api.Core.CrowdinApiResult.html#Crowdin_Api_Core_CrowdinApiResult_Headers
-  commentId: P:Crowdin.Api.Core.CrowdinApiResult.Headers
-  fullName: Crowdin.Api.Core.CrowdinApiResult.Headers
-  nameWithType: CrowdinApiResult.Headers
-- uid: Crowdin.Api.Core.CrowdinApiResult.Headers*
-  name: Headers
-  href: api/Crowdin.Api.Core.CrowdinApiResult.html#Crowdin_Api_Core_CrowdinApiResult_Headers_
-  commentId: Overload:Crowdin.Api.Core.CrowdinApiResult.Headers
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.CrowdinApiResult.Headers
-  nameWithType: CrowdinApiResult.Headers
-- uid: Crowdin.Api.Core.CrowdinApiResult.JsonObject
-  name: JsonObject
-  href: api/Crowdin.Api.Core.CrowdinApiResult.html#Crowdin_Api_Core_CrowdinApiResult_JsonObject
-  commentId: P:Crowdin.Api.Core.CrowdinApiResult.JsonObject
-  fullName: Crowdin.Api.Core.CrowdinApiResult.JsonObject
-  nameWithType: CrowdinApiResult.JsonObject
-- uid: Crowdin.Api.Core.CrowdinApiResult.JsonObject*
-  name: JsonObject
-  href: api/Crowdin.Api.Core.CrowdinApiResult.html#Crowdin_Api_Core_CrowdinApiResult_JsonObject_
-  commentId: Overload:Crowdin.Api.Core.CrowdinApiResult.JsonObject
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.CrowdinApiResult.JsonObject
-  nameWithType: CrowdinApiResult.JsonObject
-- uid: Crowdin.Api.Core.CrowdinApiResult.StatusCode
-  name: StatusCode
-  href: api/Crowdin.Api.Core.CrowdinApiResult.html#Crowdin_Api_Core_CrowdinApiResult_StatusCode
-  commentId: P:Crowdin.Api.Core.CrowdinApiResult.StatusCode
-  fullName: Crowdin.Api.Core.CrowdinApiResult.StatusCode
-  nameWithType: CrowdinApiResult.StatusCode
-- uid: Crowdin.Api.Core.CrowdinApiResult.StatusCode*
-  name: StatusCode
-  href: api/Crowdin.Api.Core.CrowdinApiResult.html#Crowdin_Api_Core_CrowdinApiResult_StatusCode_
-  commentId: Overload:Crowdin.Api.Core.CrowdinApiResult.StatusCode
-  isSpec: "True"
-  fullName: Crowdin.Api.Core.CrowdinApiResult.StatusCode
-  nameWithType: CrowdinApiResult.StatusCode
 - uid: Crowdin.Api.Core.IJsonParser
   name: IJsonParser
   href: api/Crowdin.Api.Core.IJsonParser.html
@@ -1296,6 +821,133 @@ references:
   fullName.vb: Crowdin.Api.Core.JsonParser.ParseResponseObject(Of TData)(JToken)
   nameWithType: JsonParser.ParseResponseObject<TData>(JToken)
   nameWithType.vb: JsonParser.ParseResponseObject(Of TData)(JToken)
+- uid: Crowdin.Api.Core.RateLimiting
+  name: Crowdin.Api.Core.RateLimiting
+  href: api/Crowdin.Api.Core.RateLimiting.html
+  commentId: N:Crowdin.Api.Core.RateLimiting
+  fullName: Crowdin.Api.Core.RateLimiting
+  nameWithType: Crowdin.Api.Core.RateLimiting
+- uid: Crowdin.Api.Core.RateLimiting.ExponentialBackoffRateLimiter
+  name: ExponentialBackoffRateLimiter
+  href: api/Crowdin.Api.Core.RateLimiting.ExponentialBackoffRateLimiter.html
+  commentId: T:Crowdin.Api.Core.RateLimiting.ExponentialBackoffRateLimiter
+  fullName: Crowdin.Api.Core.RateLimiting.ExponentialBackoffRateLimiter
+  nameWithType: ExponentialBackoffRateLimiter
+- uid: Crowdin.Api.Core.RateLimiting.ExponentialBackoffRateLimiter.#ctor(Crowdin.Api.Core.RateLimiting.RateLimitConfiguration)
+  name: ExponentialBackoffRateLimiter(RateLimitConfiguration)
+  href: api/Crowdin.Api.Core.RateLimiting.ExponentialBackoffRateLimiter.html#Crowdin_Api_Core_RateLimiting_ExponentialBackoffRateLimiter__ctor_Crowdin_Api_Core_RateLimiting_RateLimitConfiguration_
+  commentId: M:Crowdin.Api.Core.RateLimiting.ExponentialBackoffRateLimiter.#ctor(Crowdin.Api.Core.RateLimiting.RateLimitConfiguration)
+  fullName: Crowdin.Api.Core.RateLimiting.ExponentialBackoffRateLimiter.ExponentialBackoffRateLimiter(Crowdin.Api.Core.RateLimiting.RateLimitConfiguration)
+  nameWithType: ExponentialBackoffRateLimiter.ExponentialBackoffRateLimiter(RateLimitConfiguration)
+- uid: Crowdin.Api.Core.RateLimiting.ExponentialBackoffRateLimiter.#ctor*
+  name: ExponentialBackoffRateLimiter
+  href: api/Crowdin.Api.Core.RateLimiting.ExponentialBackoffRateLimiter.html#Crowdin_Api_Core_RateLimiting_ExponentialBackoffRateLimiter__ctor_
+  commentId: Overload:Crowdin.Api.Core.RateLimiting.ExponentialBackoffRateLimiter.#ctor
+  isSpec: "True"
+  fullName: Crowdin.Api.Core.RateLimiting.ExponentialBackoffRateLimiter.ExponentialBackoffRateLimiter
+  nameWithType: ExponentialBackoffRateLimiter.ExponentialBackoffRateLimiter
+- uid: Crowdin.Api.Core.RateLimiting.ExponentialBackoffRateLimiter.ExecuteRequest(Func{System.Int32,Task{HttpResponseMessage}})
+  name: ExecuteRequest(Func<Int32, Task<HttpResponseMessage>>)
+  href: api/Crowdin.Api.Core.RateLimiting.ExponentialBackoffRateLimiter.html#Crowdin_Api_Core_RateLimiting_ExponentialBackoffRateLimiter_ExecuteRequest_Func_System_Int32_Task_HttpResponseMessage___
+  commentId: M:Crowdin.Api.Core.RateLimiting.ExponentialBackoffRateLimiter.ExecuteRequest(Func{System.Int32,Task{HttpResponseMessage}})
+  name.vb: ExecuteRequest(Func(Of Int32, Task(Of HttpResponseMessage)))
+  fullName: Crowdin.Api.Core.RateLimiting.ExponentialBackoffRateLimiter.ExecuteRequest(Func<System.Int32, Task<HttpResponseMessage>>)
+  fullName.vb: Crowdin.Api.Core.RateLimiting.ExponentialBackoffRateLimiter.ExecuteRequest(Func(Of System.Int32, Task(Of HttpResponseMessage)))
+  nameWithType: ExponentialBackoffRateLimiter.ExecuteRequest(Func<Int32, Task<HttpResponseMessage>>)
+  nameWithType.vb: ExponentialBackoffRateLimiter.ExecuteRequest(Func(Of Int32, Task(Of HttpResponseMessage)))
+- uid: Crowdin.Api.Core.RateLimiting.ExponentialBackoffRateLimiter.ExecuteRequest*
+  name: ExecuteRequest
+  href: api/Crowdin.Api.Core.RateLimiting.ExponentialBackoffRateLimiter.html#Crowdin_Api_Core_RateLimiting_ExponentialBackoffRateLimiter_ExecuteRequest_
+  commentId: Overload:Crowdin.Api.Core.RateLimiting.ExponentialBackoffRateLimiter.ExecuteRequest
+  isSpec: "True"
+  fullName: Crowdin.Api.Core.RateLimiting.ExponentialBackoffRateLimiter.ExecuteRequest
+  nameWithType: ExponentialBackoffRateLimiter.ExecuteRequest
+- uid: Crowdin.Api.Core.RateLimiting.IRateLimiter
+  name: IRateLimiter
+  href: api/Crowdin.Api.Core.RateLimiting.IRateLimiter.html
+  commentId: T:Crowdin.Api.Core.RateLimiting.IRateLimiter
+  fullName: Crowdin.Api.Core.RateLimiting.IRateLimiter
+  nameWithType: IRateLimiter
+- uid: Crowdin.Api.Core.RateLimiting.IRateLimiter.ExecuteRequest(Func{System.Int32,Task{HttpResponseMessage}})
+  name: ExecuteRequest(Func<Int32, Task<HttpResponseMessage>>)
+  href: api/Crowdin.Api.Core.RateLimiting.IRateLimiter.html#Crowdin_Api_Core_RateLimiting_IRateLimiter_ExecuteRequest_Func_System_Int32_Task_HttpResponseMessage___
+  commentId: M:Crowdin.Api.Core.RateLimiting.IRateLimiter.ExecuteRequest(Func{System.Int32,Task{HttpResponseMessage}})
+  name.vb: ExecuteRequest(Func(Of Int32, Task(Of HttpResponseMessage)))
+  fullName: Crowdin.Api.Core.RateLimiting.IRateLimiter.ExecuteRequest(Func<System.Int32, Task<HttpResponseMessage>>)
+  fullName.vb: Crowdin.Api.Core.RateLimiting.IRateLimiter.ExecuteRequest(Func(Of System.Int32, Task(Of HttpResponseMessage)))
+  nameWithType: IRateLimiter.ExecuteRequest(Func<Int32, Task<HttpResponseMessage>>)
+  nameWithType.vb: IRateLimiter.ExecuteRequest(Func(Of Int32, Task(Of HttpResponseMessage)))
+- uid: Crowdin.Api.Core.RateLimiting.IRateLimiter.ExecuteRequest*
+  name: ExecuteRequest
+  href: api/Crowdin.Api.Core.RateLimiting.IRateLimiter.html#Crowdin_Api_Core_RateLimiting_IRateLimiter_ExecuteRequest_
+  commentId: Overload:Crowdin.Api.Core.RateLimiting.IRateLimiter.ExecuteRequest
+  isSpec: "True"
+  fullName: Crowdin.Api.Core.RateLimiting.IRateLimiter.ExecuteRequest
+  nameWithType: IRateLimiter.ExecuteRequest
+- uid: Crowdin.Api.Core.RateLimiting.RateException
+  name: RateException
+  href: api/Crowdin.Api.Core.RateLimiting.RateException.html
+  commentId: T:Crowdin.Api.Core.RateLimiting.RateException
+  fullName: Crowdin.Api.Core.RateLimiting.RateException
+  nameWithType: RateException
+- uid: Crowdin.Api.Core.RateLimiting.RateException.#ctor(System.String)
+  name: RateException(String)
+  href: api/Crowdin.Api.Core.RateLimiting.RateException.html#Crowdin_Api_Core_RateLimiting_RateException__ctor_System_String_
+  commentId: M:Crowdin.Api.Core.RateLimiting.RateException.#ctor(System.String)
+  fullName: Crowdin.Api.Core.RateLimiting.RateException.RateException(System.String)
+  nameWithType: RateException.RateException(String)
+- uid: Crowdin.Api.Core.RateLimiting.RateException.#ctor*
+  name: RateException
+  href: api/Crowdin.Api.Core.RateLimiting.RateException.html#Crowdin_Api_Core_RateLimiting_RateException__ctor_
+  commentId: Overload:Crowdin.Api.Core.RateLimiting.RateException.#ctor
+  isSpec: "True"
+  fullName: Crowdin.Api.Core.RateLimiting.RateException.RateException
+  nameWithType: RateException.RateException
+- uid: Crowdin.Api.Core.RateLimiting.RateLimitConfiguration
+  name: RateLimitConfiguration
+  href: api/Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.html
+  commentId: T:Crowdin.Api.Core.RateLimiting.RateLimitConfiguration
+  fullName: Crowdin.Api.Core.RateLimiting.RateLimitConfiguration
+  nameWithType: RateLimitConfiguration
+- uid: Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.InitialDelay
+  name: InitialDelay
+  href: api/Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.html#Crowdin_Api_Core_RateLimiting_RateLimitConfiguration_InitialDelay
+  commentId: P:Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.InitialDelay
+  fullName: Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.InitialDelay
+  nameWithType: RateLimitConfiguration.InitialDelay
+- uid: Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.InitialDelay*
+  name: InitialDelay
+  href: api/Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.html#Crowdin_Api_Core_RateLimiting_RateLimitConfiguration_InitialDelay_
+  commentId: Overload:Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.InitialDelay
+  isSpec: "True"
+  fullName: Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.InitialDelay
+  nameWithType: RateLimitConfiguration.InitialDelay
+- uid: Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.MaxAttempts
+  name: MaxAttempts
+  href: api/Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.html#Crowdin_Api_Core_RateLimiting_RateLimitConfiguration_MaxAttempts
+  commentId: P:Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.MaxAttempts
+  fullName: Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.MaxAttempts
+  nameWithType: RateLimitConfiguration.MaxAttempts
+- uid: Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.MaxAttempts*
+  name: MaxAttempts
+  href: api/Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.html#Crowdin_Api_Core_RateLimiting_RateLimitConfiguration_MaxAttempts_
+  commentId: Overload:Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.MaxAttempts
+  isSpec: "True"
+  fullName: Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.MaxAttempts
+  nameWithType: RateLimitConfiguration.MaxAttempts
+- uid: Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.MaxDelay
+  name: MaxDelay
+  href: api/Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.html#Crowdin_Api_Core_RateLimiting_RateLimitConfiguration_MaxDelay
+  commentId: P:Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.MaxDelay
+  fullName: Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.MaxDelay
+  nameWithType: RateLimitConfiguration.MaxDelay
+- uid: Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.MaxDelay*
+  name: MaxDelay
+  href: api/Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.html#Crowdin_Api_Core_RateLimiting_RateLimitConfiguration_MaxDelay_
+  commentId: Overload:Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.MaxDelay
+  isSpec: "True"
+  fullName: Crowdin.Api.Core.RateLimiting.RateLimitConfiguration.MaxDelay
+  nameWithType: RateLimitConfiguration.MaxDelay
 - uid: Crowdin.Api.Core.Resilience
   name: Crowdin.Api.Core.Resilience
   href: api/Crowdin.Api.Core.Resilience.html
@@ -1410,15 +1062,15 @@ references:
   commentId: T:Crowdin.Api.CrowdinApiClient
   fullName: Crowdin.Api.CrowdinApiClient
   nameWithType: CrowdinApiClient
-- uid: Crowdin.Api.CrowdinApiClient.#ctor(Crowdin.Api.CrowdinCredentials,System.Nullable{HttpClient},Crowdin.Api.Core.IJsonParser,Crowdin.Api.Core.Resilience.IRetryService)
-  name: CrowdinApiClient(CrowdinCredentials, Nullable<HttpClient>, IJsonParser, IRetryService)
-  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient__ctor_Crowdin_Api_CrowdinCredentials_System_Nullable_HttpClient__Crowdin_Api_Core_IJsonParser_Crowdin_Api_Core_Resilience_IRetryService_
-  commentId: M:Crowdin.Api.CrowdinApiClient.#ctor(Crowdin.Api.CrowdinCredentials,System.Nullable{HttpClient},Crowdin.Api.Core.IJsonParser,Crowdin.Api.Core.Resilience.IRetryService)
-  name.vb: CrowdinApiClient(CrowdinCredentials, Nullable(Of HttpClient), IJsonParser, IRetryService)
-  fullName: Crowdin.Api.CrowdinApiClient.CrowdinApiClient(Crowdin.Api.CrowdinCredentials, System.Nullable<HttpClient>, Crowdin.Api.Core.IJsonParser, Crowdin.Api.Core.Resilience.IRetryService)
-  fullName.vb: Crowdin.Api.CrowdinApiClient.CrowdinApiClient(Crowdin.Api.CrowdinCredentials, System.Nullable(Of HttpClient), Crowdin.Api.Core.IJsonParser, Crowdin.Api.Core.Resilience.IRetryService)
-  nameWithType: CrowdinApiClient.CrowdinApiClient(CrowdinCredentials, Nullable<HttpClient>, IJsonParser, IRetryService)
-  nameWithType.vb: CrowdinApiClient.CrowdinApiClient(CrowdinCredentials, Nullable(Of HttpClient), IJsonParser, IRetryService)
+- uid: Crowdin.Api.CrowdinApiClient.#ctor(Crowdin.Api.CrowdinCredentials,System.Nullable{HttpClient},Crowdin.Api.Core.IJsonParser,Crowdin.Api.Core.RateLimiting.IRateLimiter,Crowdin.Api.Core.Resilience.IRetryService)
+  name: CrowdinApiClient(CrowdinCredentials, Nullable<HttpClient>, IJsonParser, IRateLimiter, IRetryService)
+  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient__ctor_Crowdin_Api_CrowdinCredentials_System_Nullable_HttpClient__Crowdin_Api_Core_IJsonParser_Crowdin_Api_Core_RateLimiting_IRateLimiter_Crowdin_Api_Core_Resilience_IRetryService_
+  commentId: M:Crowdin.Api.CrowdinApiClient.#ctor(Crowdin.Api.CrowdinCredentials,System.Nullable{HttpClient},Crowdin.Api.Core.IJsonParser,Crowdin.Api.Core.RateLimiting.IRateLimiter,Crowdin.Api.Core.Resilience.IRetryService)
+  name.vb: CrowdinApiClient(CrowdinCredentials, Nullable(Of HttpClient), IJsonParser, IRateLimiter, IRetryService)
+  fullName: Crowdin.Api.CrowdinApiClient.CrowdinApiClient(Crowdin.Api.CrowdinCredentials, System.Nullable<HttpClient>, Crowdin.Api.Core.IJsonParser, Crowdin.Api.Core.RateLimiting.IRateLimiter, Crowdin.Api.Core.Resilience.IRetryService)
+  fullName.vb: Crowdin.Api.CrowdinApiClient.CrowdinApiClient(Crowdin.Api.CrowdinCredentials, System.Nullable(Of HttpClient), Crowdin.Api.Core.IJsonParser, Crowdin.Api.Core.RateLimiting.IRateLimiter, Crowdin.Api.Core.Resilience.IRetryService)
+  nameWithType: CrowdinApiClient.CrowdinApiClient(CrowdinCredentials, Nullable<HttpClient>, IJsonParser, IRateLimiter, IRetryService)
+  nameWithType.vb: CrowdinApiClient.CrowdinApiClient(CrowdinCredentials, Nullable(Of HttpClient), IJsonParser, IRateLimiter, IRetryService)
 - uid: Crowdin.Api.CrowdinApiClient.#ctor*
   name: CrowdinApiClient
   href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient__ctor_
@@ -1582,102 +1234,6 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.CrowdinApiClient.Screenshots
   nameWithType: CrowdinApiClient.Screenshots
-- uid: Crowdin.Api.CrowdinApiClient.SendDeleteRequest(System.String,System.Nullable{IDictionary{System.String,System.String}})
-  name: SendDeleteRequest(String, Nullable<IDictionary<String, String>>)
-  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_SendDeleteRequest_System_String_System_Nullable_IDictionary_System_String_System_String___
-  commentId: M:Crowdin.Api.CrowdinApiClient.SendDeleteRequest(System.String,System.Nullable{IDictionary{System.String,System.String}})
-  name.vb: SendDeleteRequest(String, Nullable(Of IDictionary(Of String, String)))
-  fullName: Crowdin.Api.CrowdinApiClient.SendDeleteRequest(System.String, System.Nullable<IDictionary<System.String, System.String>>)
-  fullName.vb: Crowdin.Api.CrowdinApiClient.SendDeleteRequest(System.String, System.Nullable(Of IDictionary(Of System.String, System.String)))
-  nameWithType: CrowdinApiClient.SendDeleteRequest(String, Nullable<IDictionary<String, String>>)
-  nameWithType.vb: CrowdinApiClient.SendDeleteRequest(String, Nullable(Of IDictionary(Of String, String)))
-- uid: Crowdin.Api.CrowdinApiClient.SendDeleteRequest*
-  name: SendDeleteRequest
-  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_SendDeleteRequest_
-  commentId: Overload:Crowdin.Api.CrowdinApiClient.SendDeleteRequest
-  isSpec: "True"
-  fullName: Crowdin.Api.CrowdinApiClient.SendDeleteRequest
-  nameWithType: CrowdinApiClient.SendDeleteRequest
-- uid: Crowdin.Api.CrowdinApiClient.SendDeleteRequest_FullResult(System.String,System.Nullable{IDictionary{System.String,System.String}})
-  name: SendDeleteRequest_FullResult(String, Nullable<IDictionary<String, String>>)
-  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_SendDeleteRequest_FullResult_System_String_System_Nullable_IDictionary_System_String_System_String___
-  commentId: M:Crowdin.Api.CrowdinApiClient.SendDeleteRequest_FullResult(System.String,System.Nullable{IDictionary{System.String,System.String}})
-  name.vb: SendDeleteRequest_FullResult(String, Nullable(Of IDictionary(Of String, String)))
-  fullName: Crowdin.Api.CrowdinApiClient.SendDeleteRequest_FullResult(System.String, System.Nullable<IDictionary<System.String, System.String>>)
-  fullName.vb: Crowdin.Api.CrowdinApiClient.SendDeleteRequest_FullResult(System.String, System.Nullable(Of IDictionary(Of System.String, System.String)))
-  nameWithType: CrowdinApiClient.SendDeleteRequest_FullResult(String, Nullable<IDictionary<String, String>>)
-  nameWithType.vb: CrowdinApiClient.SendDeleteRequest_FullResult(String, Nullable(Of IDictionary(Of String, String)))
-- uid: Crowdin.Api.CrowdinApiClient.SendDeleteRequest_FullResult*
-  name: SendDeleteRequest_FullResult
-  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_SendDeleteRequest_FullResult_
-  commentId: Overload:Crowdin.Api.CrowdinApiClient.SendDeleteRequest_FullResult
-  isSpec: "True"
-  fullName: Crowdin.Api.CrowdinApiClient.SendDeleteRequest_FullResult
-  nameWithType: CrowdinApiClient.SendDeleteRequest_FullResult
-- uid: Crowdin.Api.CrowdinApiClient.SendGetRequest(System.String,System.Nullable{IDictionary{System.String,System.String}})
-  name: SendGetRequest(String, Nullable<IDictionary<String, String>>)
-  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_SendGetRequest_System_String_System_Nullable_IDictionary_System_String_System_String___
-  commentId: M:Crowdin.Api.CrowdinApiClient.SendGetRequest(System.String,System.Nullable{IDictionary{System.String,System.String}})
-  name.vb: SendGetRequest(String, Nullable(Of IDictionary(Of String, String)))
-  fullName: Crowdin.Api.CrowdinApiClient.SendGetRequest(System.String, System.Nullable<IDictionary<System.String, System.String>>)
-  fullName.vb: Crowdin.Api.CrowdinApiClient.SendGetRequest(System.String, System.Nullable(Of IDictionary(Of System.String, System.String)))
-  nameWithType: CrowdinApiClient.SendGetRequest(String, Nullable<IDictionary<String, String>>)
-  nameWithType.vb: CrowdinApiClient.SendGetRequest(String, Nullable(Of IDictionary(Of String, String)))
-- uid: Crowdin.Api.CrowdinApiClient.SendGetRequest*
-  name: SendGetRequest
-  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_SendGetRequest_
-  commentId: Overload:Crowdin.Api.CrowdinApiClient.SendGetRequest
-  isSpec: "True"
-  fullName: Crowdin.Api.CrowdinApiClient.SendGetRequest
-  nameWithType: CrowdinApiClient.SendGetRequest
-- uid: Crowdin.Api.CrowdinApiClient.SendPatchRequest(System.String,IEnumerable{Crowdin.Api.PatchEntry},System.Nullable{IDictionary{System.String,System.String}})
-  name: SendPatchRequest(String, IEnumerable<PatchEntry>, Nullable<IDictionary<String, String>>)
-  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_SendPatchRequest_System_String_IEnumerable_Crowdin_Api_PatchEntry__System_Nullable_IDictionary_System_String_System_String___
-  commentId: M:Crowdin.Api.CrowdinApiClient.SendPatchRequest(System.String,IEnumerable{Crowdin.Api.PatchEntry},System.Nullable{IDictionary{System.String,System.String}})
-  name.vb: SendPatchRequest(String, IEnumerable(Of PatchEntry), Nullable(Of IDictionary(Of String, String)))
-  fullName: Crowdin.Api.CrowdinApiClient.SendPatchRequest(System.String, IEnumerable<Crowdin.Api.PatchEntry>, System.Nullable<IDictionary<System.String, System.String>>)
-  fullName.vb: Crowdin.Api.CrowdinApiClient.SendPatchRequest(System.String, IEnumerable(Of Crowdin.Api.PatchEntry), System.Nullable(Of IDictionary(Of System.String, System.String)))
-  nameWithType: CrowdinApiClient.SendPatchRequest(String, IEnumerable<PatchEntry>, Nullable<IDictionary<String, String>>)
-  nameWithType.vb: CrowdinApiClient.SendPatchRequest(String, IEnumerable(Of PatchEntry), Nullable(Of IDictionary(Of String, String)))
-- uid: Crowdin.Api.CrowdinApiClient.SendPatchRequest*
-  name: SendPatchRequest
-  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_SendPatchRequest_
-  commentId: Overload:Crowdin.Api.CrowdinApiClient.SendPatchRequest
-  isSpec: "True"
-  fullName: Crowdin.Api.CrowdinApiClient.SendPatchRequest
-  nameWithType: CrowdinApiClient.SendPatchRequest
-- uid: Crowdin.Api.CrowdinApiClient.SendPostRequest(System.String,System.Nullable{System.Object},System.Nullable{IDictionary{System.String,System.String}})
-  name: SendPostRequest(String, Nullable<Object>, Nullable<IDictionary<String, String>>)
-  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_SendPostRequest_System_String_System_Nullable_System_Object__System_Nullable_IDictionary_System_String_System_String___
-  commentId: M:Crowdin.Api.CrowdinApiClient.SendPostRequest(System.String,System.Nullable{System.Object},System.Nullable{IDictionary{System.String,System.String}})
-  name.vb: SendPostRequest(String, Nullable(Of Object), Nullable(Of IDictionary(Of String, String)))
-  fullName: Crowdin.Api.CrowdinApiClient.SendPostRequest(System.String, System.Nullable<System.Object>, System.Nullable<IDictionary<System.String, System.String>>)
-  fullName.vb: Crowdin.Api.CrowdinApiClient.SendPostRequest(System.String, System.Nullable(Of System.Object), System.Nullable(Of IDictionary(Of System.String, System.String)))
-  nameWithType: CrowdinApiClient.SendPostRequest(String, Nullable<Object>, Nullable<IDictionary<String, String>>)
-  nameWithType.vb: CrowdinApiClient.SendPostRequest(String, Nullable(Of Object), Nullable(Of IDictionary(Of String, String)))
-- uid: Crowdin.Api.CrowdinApiClient.SendPostRequest*
-  name: SendPostRequest
-  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_SendPostRequest_
-  commentId: Overload:Crowdin.Api.CrowdinApiClient.SendPostRequest
-  isSpec: "True"
-  fullName: Crowdin.Api.CrowdinApiClient.SendPostRequest
-  nameWithType: CrowdinApiClient.SendPostRequest
-- uid: Crowdin.Api.CrowdinApiClient.SendPutRequest(System.String,System.Nullable{System.Object})
-  name: SendPutRequest(String, Nullable<Object>)
-  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_SendPutRequest_System_String_System_Nullable_System_Object__
-  commentId: M:Crowdin.Api.CrowdinApiClient.SendPutRequest(System.String,System.Nullable{System.Object})
-  name.vb: SendPutRequest(String, Nullable(Of Object))
-  fullName: Crowdin.Api.CrowdinApiClient.SendPutRequest(System.String, System.Nullable<System.Object>)
-  fullName.vb: Crowdin.Api.CrowdinApiClient.SendPutRequest(System.String, System.Nullable(Of System.Object))
-  nameWithType: CrowdinApiClient.SendPutRequest(String, Nullable<Object>)
-  nameWithType.vb: CrowdinApiClient.SendPutRequest(String, Nullable(Of Object))
-- uid: Crowdin.Api.CrowdinApiClient.SendPutRequest*
-  name: SendPutRequest
-  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_SendPutRequest_
-  commentId: Overload:Crowdin.Api.CrowdinApiClient.SendPutRequest
-  isSpec: "True"
-  fullName: Crowdin.Api.CrowdinApiClient.SendPutRequest
-  nameWithType: CrowdinApiClient.SendPutRequest
 - uid: Crowdin.Api.CrowdinApiClient.SourceFiles
   name: SourceFiles
   href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_SourceFiles
@@ -1808,19 +1364,6 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.CrowdinApiClient.TranslationStatus
   nameWithType: CrowdinApiClient.TranslationStatus
-- uid: Crowdin.Api.CrowdinApiClient.UploadFile(System.String,System.String,Stream)
-  name: UploadFile(String, String, Stream)
-  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_UploadFile_System_String_System_String_Stream_
-  commentId: M:Crowdin.Api.CrowdinApiClient.UploadFile(System.String,System.String,Stream)
-  fullName: Crowdin.Api.CrowdinApiClient.UploadFile(System.String, System.String, Stream)
-  nameWithType: CrowdinApiClient.UploadFile(String, String, Stream)
-- uid: Crowdin.Api.CrowdinApiClient.UploadFile*
-  name: UploadFile
-  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_UploadFile_
-  commentId: Overload:Crowdin.Api.CrowdinApiClient.UploadFile
-  isSpec: "True"
-  fullName: Crowdin.Api.CrowdinApiClient.UploadFile
-  nameWithType: CrowdinApiClient.UploadFile
 - uid: Crowdin.Api.CrowdinApiClient.Users
   name: Users
   href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_Users
@@ -4923,6 +4466,19 @@ references:
   commentId: T:Crowdin.Api.ICrowdinApiClient
   fullName: Crowdin.Api.ICrowdinApiClient
   nameWithType: ICrowdinApiClient
+- uid: Crowdin.Api.ICrowdinApiClient.Bundles
+  name: Bundles
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Bundles
+  commentId: P:Crowdin.Api.ICrowdinApiClient.Bundles
+  fullName: Crowdin.Api.ICrowdinApiClient.Bundles
+  nameWithType: ICrowdinApiClient.Bundles
+- uid: Crowdin.Api.ICrowdinApiClient.Bundles*
+  name: Bundles
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Bundles_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.Bundles
+  isSpec: "True"
+  fullName: Crowdin.Api.ICrowdinApiClient.Bundles
+  nameWithType: ICrowdinApiClient.Bundles
 - uid: Crowdin.Api.ICrowdinApiClient.DefaultJsonParser
   name: DefaultJsonParser
   href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_DefaultJsonParser
@@ -4936,115 +4492,305 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ICrowdinApiClient.DefaultJsonParser
   nameWithType: ICrowdinApiClient.DefaultJsonParser
-- uid: Crowdin.Api.ICrowdinApiClient.SendDeleteRequest(System.String,System.Nullable{IDictionary{System.String,System.String}})
-  name: SendDeleteRequest(String, Nullable<IDictionary<String, String>>)
-  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_SendDeleteRequest_System_String_System_Nullable_IDictionary_System_String_System_String___
-  commentId: M:Crowdin.Api.ICrowdinApiClient.SendDeleteRequest(System.String,System.Nullable{IDictionary{System.String,System.String}})
-  name.vb: SendDeleteRequest(String, Nullable(Of IDictionary(Of String, String)))
-  fullName: Crowdin.Api.ICrowdinApiClient.SendDeleteRequest(System.String, System.Nullable<IDictionary<System.String, System.String>>)
-  fullName.vb: Crowdin.Api.ICrowdinApiClient.SendDeleteRequest(System.String, System.Nullable(Of IDictionary(Of System.String, System.String)))
-  nameWithType: ICrowdinApiClient.SendDeleteRequest(String, Nullable<IDictionary<String, String>>)
-  nameWithType.vb: ICrowdinApiClient.SendDeleteRequest(String, Nullable(Of IDictionary(Of String, String)))
-- uid: Crowdin.Api.ICrowdinApiClient.SendDeleteRequest*
-  name: SendDeleteRequest
-  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_SendDeleteRequest_
-  commentId: Overload:Crowdin.Api.ICrowdinApiClient.SendDeleteRequest
+- uid: Crowdin.Api.ICrowdinApiClient.Dictionaries
+  name: Dictionaries
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Dictionaries
+  commentId: P:Crowdin.Api.ICrowdinApiClient.Dictionaries
+  fullName: Crowdin.Api.ICrowdinApiClient.Dictionaries
+  nameWithType: ICrowdinApiClient.Dictionaries
+- uid: Crowdin.Api.ICrowdinApiClient.Dictionaries*
+  name: Dictionaries
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Dictionaries_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.Dictionaries
   isSpec: "True"
-  fullName: Crowdin.Api.ICrowdinApiClient.SendDeleteRequest
-  nameWithType: ICrowdinApiClient.SendDeleteRequest
-- uid: Crowdin.Api.ICrowdinApiClient.SendDeleteRequest_FullResult(System.String,System.Nullable{IDictionary{System.String,System.String}})
-  name: SendDeleteRequest_FullResult(String, Nullable<IDictionary<String, String>>)
-  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_SendDeleteRequest_FullResult_System_String_System_Nullable_IDictionary_System_String_System_String___
-  commentId: M:Crowdin.Api.ICrowdinApiClient.SendDeleteRequest_FullResult(System.String,System.Nullable{IDictionary{System.String,System.String}})
-  name.vb: SendDeleteRequest_FullResult(String, Nullable(Of IDictionary(Of String, String)))
-  fullName: Crowdin.Api.ICrowdinApiClient.SendDeleteRequest_FullResult(System.String, System.Nullable<IDictionary<System.String, System.String>>)
-  fullName.vb: Crowdin.Api.ICrowdinApiClient.SendDeleteRequest_FullResult(System.String, System.Nullable(Of IDictionary(Of System.String, System.String)))
-  nameWithType: ICrowdinApiClient.SendDeleteRequest_FullResult(String, Nullable<IDictionary<String, String>>)
-  nameWithType.vb: ICrowdinApiClient.SendDeleteRequest_FullResult(String, Nullable(Of IDictionary(Of String, String)))
-- uid: Crowdin.Api.ICrowdinApiClient.SendDeleteRequest_FullResult*
-  name: SendDeleteRequest_FullResult
-  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_SendDeleteRequest_FullResult_
-  commentId: Overload:Crowdin.Api.ICrowdinApiClient.SendDeleteRequest_FullResult
+  fullName: Crowdin.Api.ICrowdinApiClient.Dictionaries
+  nameWithType: ICrowdinApiClient.Dictionaries
+- uid: Crowdin.Api.ICrowdinApiClient.Distributions
+  name: Distributions
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Distributions
+  commentId: P:Crowdin.Api.ICrowdinApiClient.Distributions
+  fullName: Crowdin.Api.ICrowdinApiClient.Distributions
+  nameWithType: ICrowdinApiClient.Distributions
+- uid: Crowdin.Api.ICrowdinApiClient.Distributions*
+  name: Distributions
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Distributions_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.Distributions
   isSpec: "True"
-  fullName: Crowdin.Api.ICrowdinApiClient.SendDeleteRequest_FullResult
-  nameWithType: ICrowdinApiClient.SendDeleteRequest_FullResult
-- uid: Crowdin.Api.ICrowdinApiClient.SendGetRequest(System.String,System.Nullable{IDictionary{System.String,System.String}})
-  name: SendGetRequest(String, Nullable<IDictionary<String, String>>)
-  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_SendGetRequest_System_String_System_Nullable_IDictionary_System_String_System_String___
-  commentId: M:Crowdin.Api.ICrowdinApiClient.SendGetRequest(System.String,System.Nullable{IDictionary{System.String,System.String}})
-  name.vb: SendGetRequest(String, Nullable(Of IDictionary(Of String, String)))
-  fullName: Crowdin.Api.ICrowdinApiClient.SendGetRequest(System.String, System.Nullable<IDictionary<System.String, System.String>>)
-  fullName.vb: Crowdin.Api.ICrowdinApiClient.SendGetRequest(System.String, System.Nullable(Of IDictionary(Of System.String, System.String)))
-  nameWithType: ICrowdinApiClient.SendGetRequest(String, Nullable<IDictionary<String, String>>)
-  nameWithType.vb: ICrowdinApiClient.SendGetRequest(String, Nullable(Of IDictionary(Of String, String)))
-- uid: Crowdin.Api.ICrowdinApiClient.SendGetRequest*
-  name: SendGetRequest
-  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_SendGetRequest_
-  commentId: Overload:Crowdin.Api.ICrowdinApiClient.SendGetRequest
+  fullName: Crowdin.Api.ICrowdinApiClient.Distributions
+  nameWithType: ICrowdinApiClient.Distributions
+- uid: Crowdin.Api.ICrowdinApiClient.Glossaries
+  name: Glossaries
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Glossaries
+  commentId: P:Crowdin.Api.ICrowdinApiClient.Glossaries
+  fullName: Crowdin.Api.ICrowdinApiClient.Glossaries
+  nameWithType: ICrowdinApiClient.Glossaries
+- uid: Crowdin.Api.ICrowdinApiClient.Glossaries*
+  name: Glossaries
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Glossaries_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.Glossaries
   isSpec: "True"
-  fullName: Crowdin.Api.ICrowdinApiClient.SendGetRequest
-  nameWithType: ICrowdinApiClient.SendGetRequest
-- uid: Crowdin.Api.ICrowdinApiClient.SendPatchRequest(System.String,IEnumerable{Crowdin.Api.PatchEntry},System.Nullable{IDictionary{System.String,System.String}})
-  name: SendPatchRequest(String, IEnumerable<PatchEntry>, Nullable<IDictionary<String, String>>)
-  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_SendPatchRequest_System_String_IEnumerable_Crowdin_Api_PatchEntry__System_Nullable_IDictionary_System_String_System_String___
-  commentId: M:Crowdin.Api.ICrowdinApiClient.SendPatchRequest(System.String,IEnumerable{Crowdin.Api.PatchEntry},System.Nullable{IDictionary{System.String,System.String}})
-  name.vb: SendPatchRequest(String, IEnumerable(Of PatchEntry), Nullable(Of IDictionary(Of String, String)))
-  fullName: Crowdin.Api.ICrowdinApiClient.SendPatchRequest(System.String, IEnumerable<Crowdin.Api.PatchEntry>, System.Nullable<IDictionary<System.String, System.String>>)
-  fullName.vb: Crowdin.Api.ICrowdinApiClient.SendPatchRequest(System.String, IEnumerable(Of Crowdin.Api.PatchEntry), System.Nullable(Of IDictionary(Of System.String, System.String)))
-  nameWithType: ICrowdinApiClient.SendPatchRequest(String, IEnumerable<PatchEntry>, Nullable<IDictionary<String, String>>)
-  nameWithType.vb: ICrowdinApiClient.SendPatchRequest(String, IEnumerable(Of PatchEntry), Nullable(Of IDictionary(Of String, String)))
-- uid: Crowdin.Api.ICrowdinApiClient.SendPatchRequest*
-  name: SendPatchRequest
-  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_SendPatchRequest_
-  commentId: Overload:Crowdin.Api.ICrowdinApiClient.SendPatchRequest
+  fullName: Crowdin.Api.ICrowdinApiClient.Glossaries
+  nameWithType: ICrowdinApiClient.Glossaries
+- uid: Crowdin.Api.ICrowdinApiClient.Issues
+  name: Issues
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Issues
+  commentId: P:Crowdin.Api.ICrowdinApiClient.Issues
+  fullName: Crowdin.Api.ICrowdinApiClient.Issues
+  nameWithType: ICrowdinApiClient.Issues
+- uid: Crowdin.Api.ICrowdinApiClient.Issues*
+  name: Issues
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Issues_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.Issues
   isSpec: "True"
-  fullName: Crowdin.Api.ICrowdinApiClient.SendPatchRequest
-  nameWithType: ICrowdinApiClient.SendPatchRequest
-- uid: Crowdin.Api.ICrowdinApiClient.SendPostRequest(System.String,System.Nullable{System.Object},System.Nullable{IDictionary{System.String,System.String}})
-  name: SendPostRequest(String, Nullable<Object>, Nullable<IDictionary<String, String>>)
-  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_SendPostRequest_System_String_System_Nullable_System_Object__System_Nullable_IDictionary_System_String_System_String___
-  commentId: M:Crowdin.Api.ICrowdinApiClient.SendPostRequest(System.String,System.Nullable{System.Object},System.Nullable{IDictionary{System.String,System.String}})
-  name.vb: SendPostRequest(String, Nullable(Of Object), Nullable(Of IDictionary(Of String, String)))
-  fullName: Crowdin.Api.ICrowdinApiClient.SendPostRequest(System.String, System.Nullable<System.Object>, System.Nullable<IDictionary<System.String, System.String>>)
-  fullName.vb: Crowdin.Api.ICrowdinApiClient.SendPostRequest(System.String, System.Nullable(Of System.Object), System.Nullable(Of IDictionary(Of System.String, System.String)))
-  nameWithType: ICrowdinApiClient.SendPostRequest(String, Nullable<Object>, Nullable<IDictionary<String, String>>)
-  nameWithType.vb: ICrowdinApiClient.SendPostRequest(String, Nullable(Of Object), Nullable(Of IDictionary(Of String, String)))
-- uid: Crowdin.Api.ICrowdinApiClient.SendPostRequest*
-  name: SendPostRequest
-  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_SendPostRequest_
-  commentId: Overload:Crowdin.Api.ICrowdinApiClient.SendPostRequest
+  fullName: Crowdin.Api.ICrowdinApiClient.Issues
+  nameWithType: ICrowdinApiClient.Issues
+- uid: Crowdin.Api.ICrowdinApiClient.Labels
+  name: Labels
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Labels
+  commentId: P:Crowdin.Api.ICrowdinApiClient.Labels
+  fullName: Crowdin.Api.ICrowdinApiClient.Labels
+  nameWithType: ICrowdinApiClient.Labels
+- uid: Crowdin.Api.ICrowdinApiClient.Labels*
+  name: Labels
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Labels_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.Labels
   isSpec: "True"
-  fullName: Crowdin.Api.ICrowdinApiClient.SendPostRequest
-  nameWithType: ICrowdinApiClient.SendPostRequest
-- uid: Crowdin.Api.ICrowdinApiClient.SendPutRequest(System.String,System.Nullable{System.Object})
-  name: SendPutRequest(String, Nullable<Object>)
-  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_SendPutRequest_System_String_System_Nullable_System_Object__
-  commentId: M:Crowdin.Api.ICrowdinApiClient.SendPutRequest(System.String,System.Nullable{System.Object})
-  name.vb: SendPutRequest(String, Nullable(Of Object))
-  fullName: Crowdin.Api.ICrowdinApiClient.SendPutRequest(System.String, System.Nullable<System.Object>)
-  fullName.vb: Crowdin.Api.ICrowdinApiClient.SendPutRequest(System.String, System.Nullable(Of System.Object))
-  nameWithType: ICrowdinApiClient.SendPutRequest(String, Nullable<Object>)
-  nameWithType.vb: ICrowdinApiClient.SendPutRequest(String, Nullable(Of Object))
-- uid: Crowdin.Api.ICrowdinApiClient.SendPutRequest*
-  name: SendPutRequest
-  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_SendPutRequest_
-  commentId: Overload:Crowdin.Api.ICrowdinApiClient.SendPutRequest
+  fullName: Crowdin.Api.ICrowdinApiClient.Labels
+  nameWithType: ICrowdinApiClient.Labels
+- uid: Crowdin.Api.ICrowdinApiClient.Languages
+  name: Languages
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Languages
+  commentId: P:Crowdin.Api.ICrowdinApiClient.Languages
+  fullName: Crowdin.Api.ICrowdinApiClient.Languages
+  nameWithType: ICrowdinApiClient.Languages
+- uid: Crowdin.Api.ICrowdinApiClient.Languages*
+  name: Languages
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Languages_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.Languages
   isSpec: "True"
-  fullName: Crowdin.Api.ICrowdinApiClient.SendPutRequest
-  nameWithType: ICrowdinApiClient.SendPutRequest
-- uid: Crowdin.Api.ICrowdinApiClient.UploadFile(System.String,System.String,Stream)
-  name: UploadFile(String, String, Stream)
-  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_UploadFile_System_String_System_String_Stream_
-  commentId: M:Crowdin.Api.ICrowdinApiClient.UploadFile(System.String,System.String,Stream)
-  fullName: Crowdin.Api.ICrowdinApiClient.UploadFile(System.String, System.String, Stream)
-  nameWithType: ICrowdinApiClient.UploadFile(String, String, Stream)
-- uid: Crowdin.Api.ICrowdinApiClient.UploadFile*
-  name: UploadFile
-  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_UploadFile_
-  commentId: Overload:Crowdin.Api.ICrowdinApiClient.UploadFile
+  fullName: Crowdin.Api.ICrowdinApiClient.Languages
+  nameWithType: ICrowdinApiClient.Languages
+- uid: Crowdin.Api.ICrowdinApiClient.MachineTranslationEngines
+  name: MachineTranslationEngines
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_MachineTranslationEngines
+  commentId: P:Crowdin.Api.ICrowdinApiClient.MachineTranslationEngines
+  fullName: Crowdin.Api.ICrowdinApiClient.MachineTranslationEngines
+  nameWithType: ICrowdinApiClient.MachineTranslationEngines
+- uid: Crowdin.Api.ICrowdinApiClient.MachineTranslationEngines*
+  name: MachineTranslationEngines
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_MachineTranslationEngines_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.MachineTranslationEngines
   isSpec: "True"
-  fullName: Crowdin.Api.ICrowdinApiClient.UploadFile
-  nameWithType: ICrowdinApiClient.UploadFile
+  fullName: Crowdin.Api.ICrowdinApiClient.MachineTranslationEngines
+  nameWithType: ICrowdinApiClient.MachineTranslationEngines
+- uid: Crowdin.Api.ICrowdinApiClient.ProjectsGroups
+  name: ProjectsGroups
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_ProjectsGroups
+  commentId: P:Crowdin.Api.ICrowdinApiClient.ProjectsGroups
+  fullName: Crowdin.Api.ICrowdinApiClient.ProjectsGroups
+  nameWithType: ICrowdinApiClient.ProjectsGroups
+- uid: Crowdin.Api.ICrowdinApiClient.ProjectsGroups*
+  name: ProjectsGroups
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_ProjectsGroups_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.ProjectsGroups
+  isSpec: "True"
+  fullName: Crowdin.Api.ICrowdinApiClient.ProjectsGroups
+  nameWithType: ICrowdinApiClient.ProjectsGroups
+- uid: Crowdin.Api.ICrowdinApiClient.Reports
+  name: Reports
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Reports
+  commentId: P:Crowdin.Api.ICrowdinApiClient.Reports
+  fullName: Crowdin.Api.ICrowdinApiClient.Reports
+  nameWithType: ICrowdinApiClient.Reports
+- uid: Crowdin.Api.ICrowdinApiClient.Reports*
+  name: Reports
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Reports_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.Reports
+  isSpec: "True"
+  fullName: Crowdin.Api.ICrowdinApiClient.Reports
+  nameWithType: ICrowdinApiClient.Reports
+- uid: Crowdin.Api.ICrowdinApiClient.Screenshots
+  name: Screenshots
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Screenshots
+  commentId: P:Crowdin.Api.ICrowdinApiClient.Screenshots
+  fullName: Crowdin.Api.ICrowdinApiClient.Screenshots
+  nameWithType: ICrowdinApiClient.Screenshots
+- uid: Crowdin.Api.ICrowdinApiClient.Screenshots*
+  name: Screenshots
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Screenshots_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.Screenshots
+  isSpec: "True"
+  fullName: Crowdin.Api.ICrowdinApiClient.Screenshots
+  nameWithType: ICrowdinApiClient.Screenshots
+- uid: Crowdin.Api.ICrowdinApiClient.SourceFiles
+  name: SourceFiles
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_SourceFiles
+  commentId: P:Crowdin.Api.ICrowdinApiClient.SourceFiles
+  fullName: Crowdin.Api.ICrowdinApiClient.SourceFiles
+  nameWithType: ICrowdinApiClient.SourceFiles
+- uid: Crowdin.Api.ICrowdinApiClient.SourceFiles*
+  name: SourceFiles
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_SourceFiles_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.SourceFiles
+  isSpec: "True"
+  fullName: Crowdin.Api.ICrowdinApiClient.SourceFiles
+  nameWithType: ICrowdinApiClient.SourceFiles
+- uid: Crowdin.Api.ICrowdinApiClient.SourceStrings
+  name: SourceStrings
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_SourceStrings
+  commentId: P:Crowdin.Api.ICrowdinApiClient.SourceStrings
+  fullName: Crowdin.Api.ICrowdinApiClient.SourceStrings
+  nameWithType: ICrowdinApiClient.SourceStrings
+- uid: Crowdin.Api.ICrowdinApiClient.SourceStrings*
+  name: SourceStrings
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_SourceStrings_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.SourceStrings
+  isSpec: "True"
+  fullName: Crowdin.Api.ICrowdinApiClient.SourceStrings
+  nameWithType: ICrowdinApiClient.SourceStrings
+- uid: Crowdin.Api.ICrowdinApiClient.Storage
+  name: Storage
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Storage
+  commentId: P:Crowdin.Api.ICrowdinApiClient.Storage
+  fullName: Crowdin.Api.ICrowdinApiClient.Storage
+  nameWithType: ICrowdinApiClient.Storage
+- uid: Crowdin.Api.ICrowdinApiClient.Storage*
+  name: Storage
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Storage_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.Storage
+  isSpec: "True"
+  fullName: Crowdin.Api.ICrowdinApiClient.Storage
+  nameWithType: ICrowdinApiClient.Storage
+- uid: Crowdin.Api.ICrowdinApiClient.StringComments
+  name: StringComments
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_StringComments
+  commentId: P:Crowdin.Api.ICrowdinApiClient.StringComments
+  fullName: Crowdin.Api.ICrowdinApiClient.StringComments
+  nameWithType: ICrowdinApiClient.StringComments
+- uid: Crowdin.Api.ICrowdinApiClient.StringComments*
+  name: StringComments
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_StringComments_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.StringComments
+  isSpec: "True"
+  fullName: Crowdin.Api.ICrowdinApiClient.StringComments
+  nameWithType: ICrowdinApiClient.StringComments
+- uid: Crowdin.Api.ICrowdinApiClient.StringTranslations
+  name: StringTranslations
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_StringTranslations
+  commentId: P:Crowdin.Api.ICrowdinApiClient.StringTranslations
+  fullName: Crowdin.Api.ICrowdinApiClient.StringTranslations
+  nameWithType: ICrowdinApiClient.StringTranslations
+- uid: Crowdin.Api.ICrowdinApiClient.StringTranslations*
+  name: StringTranslations
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_StringTranslations_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.StringTranslations
+  isSpec: "True"
+  fullName: Crowdin.Api.ICrowdinApiClient.StringTranslations
+  nameWithType: ICrowdinApiClient.StringTranslations
+- uid: Crowdin.Api.ICrowdinApiClient.Tasks
+  name: Tasks
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Tasks
+  commentId: P:Crowdin.Api.ICrowdinApiClient.Tasks
+  fullName: Crowdin.Api.ICrowdinApiClient.Tasks
+  nameWithType: ICrowdinApiClient.Tasks
+- uid: Crowdin.Api.ICrowdinApiClient.Tasks*
+  name: Tasks
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Tasks_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.Tasks
+  isSpec: "True"
+  fullName: Crowdin.Api.ICrowdinApiClient.Tasks
+  nameWithType: ICrowdinApiClient.Tasks
+- uid: Crowdin.Api.ICrowdinApiClient.Teams
+  name: Teams
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Teams
+  commentId: P:Crowdin.Api.ICrowdinApiClient.Teams
+  fullName: Crowdin.Api.ICrowdinApiClient.Teams
+  nameWithType: ICrowdinApiClient.Teams
+- uid: Crowdin.Api.ICrowdinApiClient.Teams*
+  name: Teams
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Teams_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.Teams
+  isSpec: "True"
+  fullName: Crowdin.Api.ICrowdinApiClient.Teams
+  nameWithType: ICrowdinApiClient.Teams
+- uid: Crowdin.Api.ICrowdinApiClient.TranslationMemory
+  name: TranslationMemory
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_TranslationMemory
+  commentId: P:Crowdin.Api.ICrowdinApiClient.TranslationMemory
+  fullName: Crowdin.Api.ICrowdinApiClient.TranslationMemory
+  nameWithType: ICrowdinApiClient.TranslationMemory
+- uid: Crowdin.Api.ICrowdinApiClient.TranslationMemory*
+  name: TranslationMemory
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_TranslationMemory_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.TranslationMemory
+  isSpec: "True"
+  fullName: Crowdin.Api.ICrowdinApiClient.TranslationMemory
+  nameWithType: ICrowdinApiClient.TranslationMemory
+- uid: Crowdin.Api.ICrowdinApiClient.Translations
+  name: Translations
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Translations
+  commentId: P:Crowdin.Api.ICrowdinApiClient.Translations
+  fullName: Crowdin.Api.ICrowdinApiClient.Translations
+  nameWithType: ICrowdinApiClient.Translations
+- uid: Crowdin.Api.ICrowdinApiClient.Translations*
+  name: Translations
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Translations_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.Translations
+  isSpec: "True"
+  fullName: Crowdin.Api.ICrowdinApiClient.Translations
+  nameWithType: ICrowdinApiClient.Translations
+- uid: Crowdin.Api.ICrowdinApiClient.TranslationStatus
+  name: TranslationStatus
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_TranslationStatus
+  commentId: P:Crowdin.Api.ICrowdinApiClient.TranslationStatus
+  fullName: Crowdin.Api.ICrowdinApiClient.TranslationStatus
+  nameWithType: ICrowdinApiClient.TranslationStatus
+- uid: Crowdin.Api.ICrowdinApiClient.TranslationStatus*
+  name: TranslationStatus
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_TranslationStatus_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.TranslationStatus
+  isSpec: "True"
+  fullName: Crowdin.Api.ICrowdinApiClient.TranslationStatus
+  nameWithType: ICrowdinApiClient.TranslationStatus
+- uid: Crowdin.Api.ICrowdinApiClient.Users
+  name: Users
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Users
+  commentId: P:Crowdin.Api.ICrowdinApiClient.Users
+  fullName: Crowdin.Api.ICrowdinApiClient.Users
+  nameWithType: ICrowdinApiClient.Users
+- uid: Crowdin.Api.ICrowdinApiClient.Users*
+  name: Users
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Users_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.Users
+  isSpec: "True"
+  fullName: Crowdin.Api.ICrowdinApiClient.Users
+  nameWithType: ICrowdinApiClient.Users
+- uid: Crowdin.Api.ICrowdinApiClient.Vendors
+  name: Vendors
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Vendors
+  commentId: P:Crowdin.Api.ICrowdinApiClient.Vendors
+  fullName: Crowdin.Api.ICrowdinApiClient.Vendors
+  nameWithType: ICrowdinApiClient.Vendors
+- uid: Crowdin.Api.ICrowdinApiClient.Vendors*
+  name: Vendors
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Vendors_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.Vendors
+  isSpec: "True"
+  fullName: Crowdin.Api.ICrowdinApiClient.Vendors
+  nameWithType: ICrowdinApiClient.Vendors
+- uid: Crowdin.Api.ICrowdinApiClient.Webhooks
+  name: Webhooks
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Webhooks
+  commentId: P:Crowdin.Api.ICrowdinApiClient.Webhooks
+  fullName: Crowdin.Api.ICrowdinApiClient.Webhooks
+  nameWithType: ICrowdinApiClient.Webhooks
+- uid: Crowdin.Api.ICrowdinApiClient.Webhooks*
+  name: Webhooks
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Webhooks_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.Webhooks
+  isSpec: "True"
+  fullName: Crowdin.Api.ICrowdinApiClient.Webhooks
+  nameWithType: ICrowdinApiClient.Webhooks
 - uid: Crowdin.Api.IQueryParamsProvider
   name: IQueryParamsProvider
   href: api/Crowdin.Api.IQueryParamsProvider.html
@@ -32097,24 +31843,54 @@ references:
   commentId: T:Crowdin.Api.Webhooks.EventType
   fullName: Crowdin.Api.Webhooks.EventType
   nameWithType: EventType
+- uid: Crowdin.Api.Webhooks.EventType.FileAdded
+  name: FileAdded
+  href: api/Crowdin.Api.Webhooks.EventType.html#Crowdin_Api_Webhooks_EventType_FileAdded
+  commentId: F:Crowdin.Api.Webhooks.EventType.FileAdded
+  fullName: Crowdin.Api.Webhooks.EventType.FileAdded
+  nameWithType: EventType.FileAdded
 - uid: Crowdin.Api.Webhooks.EventType.FileApproved
   name: FileApproved
   href: api/Crowdin.Api.Webhooks.EventType.html#Crowdin_Api_Webhooks_EventType_FileApproved
   commentId: F:Crowdin.Api.Webhooks.EventType.FileApproved
   fullName: Crowdin.Api.Webhooks.EventType.FileApproved
   nameWithType: EventType.FileApproved
+- uid: Crowdin.Api.Webhooks.EventType.FileDeleted
+  name: FileDeleted
+  href: api/Crowdin.Api.Webhooks.EventType.html#Crowdin_Api_Webhooks_EventType_FileDeleted
+  commentId: F:Crowdin.Api.Webhooks.EventType.FileDeleted
+  fullName: Crowdin.Api.Webhooks.EventType.FileDeleted
+  nameWithType: EventType.FileDeleted
+- uid: Crowdin.Api.Webhooks.EventType.FileReverted
+  name: FileReverted
+  href: api/Crowdin.Api.Webhooks.EventType.html#Crowdin_Api_Webhooks_EventType_FileReverted
+  commentId: F:Crowdin.Api.Webhooks.EventType.FileReverted
+  fullName: Crowdin.Api.Webhooks.EventType.FileReverted
+  nameWithType: EventType.FileReverted
 - uid: Crowdin.Api.Webhooks.EventType.FileTranslated
   name: FileTranslated
   href: api/Crowdin.Api.Webhooks.EventType.html#Crowdin_Api_Webhooks_EventType_FileTranslated
   commentId: F:Crowdin.Api.Webhooks.EventType.FileTranslated
   fullName: Crowdin.Api.Webhooks.EventType.FileTranslated
   nameWithType: EventType.FileTranslated
+- uid: Crowdin.Api.Webhooks.EventType.FileUpdated
+  name: FileUpdated
+  href: api/Crowdin.Api.Webhooks.EventType.html#Crowdin_Api_Webhooks_EventType_FileUpdated
+  commentId: F:Crowdin.Api.Webhooks.EventType.FileUpdated
+  fullName: Crowdin.Api.Webhooks.EventType.FileUpdated
+  nameWithType: EventType.FileUpdated
 - uid: Crowdin.Api.Webhooks.EventType.ProjectApproved
   name: ProjectApproved
   href: api/Crowdin.Api.Webhooks.EventType.html#Crowdin_Api_Webhooks_EventType_ProjectApproved
   commentId: F:Crowdin.Api.Webhooks.EventType.ProjectApproved
   fullName: Crowdin.Api.Webhooks.EventType.ProjectApproved
   nameWithType: EventType.ProjectApproved
+- uid: Crowdin.Api.Webhooks.EventType.ProjectBuilt
+  name: ProjectBuilt
+  href: api/Crowdin.Api.Webhooks.EventType.html#Crowdin_Api_Webhooks_EventType_ProjectBuilt
+  commentId: F:Crowdin.Api.Webhooks.EventType.ProjectBuilt
+  fullName: Crowdin.Api.Webhooks.EventType.ProjectBuilt
+  nameWithType: EventType.ProjectBuilt
 - uid: Crowdin.Api.Webhooks.EventType.ProjectTranslated
   name: ProjectTranslated
   href: api/Crowdin.Api.Webhooks.EventType.html#Crowdin_Api_Webhooks_EventType_ProjectTranslated
@@ -32127,6 +31903,30 @@ references:
   commentId: F:Crowdin.Api.Webhooks.EventType.StringAdded
   fullName: Crowdin.Api.Webhooks.EventType.StringAdded
   nameWithType: EventType.StringAdded
+- uid: Crowdin.Api.Webhooks.EventType.StringCommentCreated
+  name: StringCommentCreated
+  href: api/Crowdin.Api.Webhooks.EventType.html#Crowdin_Api_Webhooks_EventType_StringCommentCreated
+  commentId: F:Crowdin.Api.Webhooks.EventType.StringCommentCreated
+  fullName: Crowdin.Api.Webhooks.EventType.StringCommentCreated
+  nameWithType: EventType.StringCommentCreated
+- uid: Crowdin.Api.Webhooks.EventType.StringCommentDeleted
+  name: StringCommentDeleted
+  href: api/Crowdin.Api.Webhooks.EventType.html#Crowdin_Api_Webhooks_EventType_StringCommentDeleted
+  commentId: F:Crowdin.Api.Webhooks.EventType.StringCommentDeleted
+  fullName: Crowdin.Api.Webhooks.EventType.StringCommentDeleted
+  nameWithType: EventType.StringCommentDeleted
+- uid: Crowdin.Api.Webhooks.EventType.StringCommentRestored
+  name: StringCommentRestored
+  href: api/Crowdin.Api.Webhooks.EventType.html#Crowdin_Api_Webhooks_EventType_StringCommentRestored
+  commentId: F:Crowdin.Api.Webhooks.EventType.StringCommentRestored
+  fullName: Crowdin.Api.Webhooks.EventType.StringCommentRestored
+  nameWithType: EventType.StringCommentRestored
+- uid: Crowdin.Api.Webhooks.EventType.StringCommentUpdated
+  name: StringCommentUpdated
+  href: api/Crowdin.Api.Webhooks.EventType.html#Crowdin_Api_Webhooks_EventType_StringCommentUpdated
+  commentId: F:Crowdin.Api.Webhooks.EventType.StringCommentUpdated
+  fullName: Crowdin.Api.Webhooks.EventType.StringCommentUpdated
+  nameWithType: EventType.StringCommentUpdated
 - uid: Crowdin.Api.Webhooks.EventType.StringDeleted
   name: StringDeleted
   href: api/Crowdin.Api.Webhooks.EventType.html#Crowdin_Api_Webhooks_EventType_StringDeleted
@@ -32169,6 +31969,24 @@ references:
   commentId: F:Crowdin.Api.Webhooks.EventType.SuggestionUpdated
   fullName: Crowdin.Api.Webhooks.EventType.SuggestionUpdated
   nameWithType: EventType.SuggestionUpdated
+- uid: Crowdin.Api.Webhooks.EventType.TaskAdded
+  name: TaskAdded
+  href: api/Crowdin.Api.Webhooks.EventType.html#Crowdin_Api_Webhooks_EventType_TaskAdded
+  commentId: F:Crowdin.Api.Webhooks.EventType.TaskAdded
+  fullName: Crowdin.Api.Webhooks.EventType.TaskAdded
+  nameWithType: EventType.TaskAdded
+- uid: Crowdin.Api.Webhooks.EventType.TaskDeleted
+  name: TaskDeleted
+  href: api/Crowdin.Api.Webhooks.EventType.html#Crowdin_Api_Webhooks_EventType_TaskDeleted
+  commentId: F:Crowdin.Api.Webhooks.EventType.TaskDeleted
+  fullName: Crowdin.Api.Webhooks.EventType.TaskDeleted
+  nameWithType: EventType.TaskDeleted
+- uid: Crowdin.Api.Webhooks.EventType.TaskStatusChanged
+  name: TaskStatusChanged
+  href: api/Crowdin.Api.Webhooks.EventType.html#Crowdin_Api_Webhooks_EventType_TaskStatusChanged
+  commentId: F:Crowdin.Api.Webhooks.EventType.TaskStatusChanged
+  fullName: Crowdin.Api.Webhooks.EventType.TaskStatusChanged
+  nameWithType: EventType.TaskStatusChanged
 - uid: Crowdin.Api.Webhooks.EventType.TranslationUpdated
   name: TranslationUpdated
   href: api/Crowdin.Api.Webhooks.EventType.html#Crowdin_Api_Webhooks_EventType_TranslationUpdated

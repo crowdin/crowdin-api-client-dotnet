@@ -81,12 +81,10 @@
 <a href="https://developer.crowdin.com/enterprise/api/v2/"><strong><code>Crowdin Enterprise API</code></strong></a></p>
 <p><a href="https://www.nuget.org/packages/Crowdin.Api/"><img src="https://img.shields.io/nuget/v/Crowdin.Api?cacheSeconds=5000" alt="Nuget"></a>
 <a href="https://www.nuget.org/packages/Crowdin.Api/"><img src="https://img.shields.io/nuget/dt/crowdin.api?cacheSeconds=800" alt="Nuget"></a>
-<a href="https://github.com/crowdin/crowdin-api-client-dotnet/issues"><img src="https://img.shields.io/github/issues/crowdin/crowdin-api-client-dotnet?cacheSeconds=10000" alt="GitHub issues"></a>
+<a href="https://github.com/crowdin/crowdin-api-client-dotnet/actions/workflows/basic.yml"><img src="https://github.com/crowdin/crowdin-api-client-dotnet/actions/workflows/basic.yml/badge.svg" alt="Tests"></a>
+<a href="https://codecov.io/gh/crowdin/crowdin-api-client-dotnet"><img src="https://codecov.io/gh/crowdin/crowdin-api-client-dotnet/branch/main/graph/badge.svg?token=rvpbEqBcLU" alt="codecov"></a>
 <a href="https://github.com/crowdin/crowdin-api-client-dotnet/graphs/contributors"><img src="https://img.shields.io/github/contributors/crowdin/crowdin-api-client-dotnet?cacheSeconds=10000" alt="GitHub contributors"></a>
 <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/master/LICENSE"><img src="https://img.shields.io/github/license/crowdin/crowdin-api-client-dotnet?cacheSeconds=20000" alt="GitHub"></a></p>
-<p><a href="https://dev.azure.com/crowdin/crowdin-dotnet-client/_build/latest?definitionId=44"><img src="https://img.shields.io/azure-devops/build/crowdin/crowdin-dotnet-client/44/main?cacheSeconds=1000" alt="Azure DevOps builds (branch)"></a>
-<a href="https://dev.azure.com/crowdin/crowdin-dotnet-client/_build/latest?definitionId=44"><img src="https://img.shields.io/azure-devops/tests/crowdin/crowdin-dotnet-client/44/main?cacheSeconds=1000" alt="Azure DevOps tests"></a>
-<a href="https://codecov.io/gh/crowdin/crowdin-api-client-dotnet"><img src="https://codecov.io/gh/crowdin/crowdin-api-client-dotnet/branch/main/graph/badge.svg?token=rvpbEqBcLU" alt="codecov"></a></p>
 </div>
 <h3 id="requirements">Requirements</h3>
 <ul>
@@ -96,16 +94,16 @@
 <h3 id="installation">Installation</h3>
 <p>Install via NuGet:</p>
 <pre><code>// Package Manager
-Install-Package Crowdin.Api -Version 2.12.0
+Install-Package Crowdin.Api -Version 2.13.0
 
 // .Net CLI
-dotnet add package Crowdin.Api --version 2.12.0
+dotnet add package Crowdin.Api --version 2.13.0
 
 // Package Reference
-&lt;PackageReference Include=&quot;Crowdin.Api&quot; Version=&quot;2.12.0&quot; /&gt;
+&lt;PackageReference Include=&quot;Crowdin.Api&quot; Version=&quot;2.13.0&quot; /&gt;
 
 // Paket CLI
-paket add Crowdin.Api --version 2.12.0
+paket add Crowdin.Api --version 2.13.0
 </code></pre>
 <hr>
 <p>📑 For versions <em>1.x.x</em> and lower see the <a href="https://github.com/crowdin/crowdin-api-client-dotnet/tree/api/v1">branch api/v1</a>. Please note that these versions are no longer supported.</p>
@@ -197,6 +195,32 @@ Group[] allGroups = await CrowdinApiClient.WithFetchAll((limit, offset) =&gt;
 }, maxAmountOfItems, amountPerRequest);
 </code></pre>
 <p>Only for list async methods that return <code>Task&lt;ResponseList&lt;T&gt;&gt;</code>.</p>
+<h4 id="rate-limiting">Rate limiting</h4>
+<p>API client has built-in support for rate limiting services.
+The library provides an implementation of Exponential Backoff Algorithm.</p>
+<p>Usage:</p>
+<pre><code class="lang-C#">var rateLimiter = new ExponentialBackoffRateLimiter(new RateLimitConfiguration
+{
+    // Maximum attempts count
+    MaxAttempts = 5,
+    // Maximum delay (top limit)
+    MaxDelay = TimeSpan.FromSeconds(5),
+    // Initial delay (bottom limit)
+    InitialDelay = TimeSpan.FromMilliseconds(200),
+});
+
+// Pass created Rate Limiter instance as named argument to API client instance
+// If rate limiter not passed - the request will fail immediately after HTTP 429 Too Many Requests error
+var client = new CrowdinApiClient(new CrowdinCredentials
+{
+    AccessToken = &quot;&lt;paste token here&gt;&quot;,
+    Organization = &quot;optional organization (for Enterprise API)&quot;
+}, rateLimiter: rateLimiter);
+</code></pre>
+<p>A custom rate limiting service should also implement interface <code>IRateLimiter</code>.
+Rate limiting disabled by default because of possible usage of custom resilience approaches (such as <code>Polly</code>) by users, which may conflict with each other.
+This solution covers only simple cases of resilience.
+If you need advanced customization - please try <code>Polly</code> or alternatives.</p>
 <h4 id="retry-configuration">Retry configuration</h4>
 <p>Pass retry service (built-in or custom) if needed</p>
 <pre><code class="lang-C#">IRetryService myRetryService = new RetryService(new RetryConfiguration
@@ -240,7 +264,7 @@ use or other dealings in this Software without prior written authorization.
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/633fed3346922b8a529171941cf67a65fe9af701/README.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/da50e80b095a2aab72d5a6e2153faa6e301ee8ac/README.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
