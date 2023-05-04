@@ -24,10 +24,10 @@ jobs:
           NUGET_AUTH_TOKEN: ${{ secrets.NUGET_KEY }}
 
       - name: Build the project
-        run: dotnet build -c Release $PROJECT_CSPROJ_PATH
+        run: dotnet build -c Release ${{ env.PROJECT_CSPROJ_PATH }}
 
       - name: Create the package
-        run: dotnet pack -c Release -property:NuspecFile=Crowdin.Api.nuspec $PROJECT_CSPROJ_PATH
+        run: dotnet pack -c Release -property:NuspecFile=Crowdin.Api.nuspec ${{ env.PROJECT_CSPROJ_PATH }}
 
       - name: Publish the package to NuGet
-        run: dotnet nuget push $PROJECT_PATH/bin/Release/*.nupkg
+        run: dotnet nuget push ${{ env.PROJECT_PATH }}/bin/Release/*.nupkg
