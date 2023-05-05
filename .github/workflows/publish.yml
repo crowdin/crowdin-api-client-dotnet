@@ -25,7 +25,7 @@ jobs:
         run: dotnet build -c Release ${{ env.PROJECT_CSPROJ_PATH }}
 
       - name: Create the package
-        run: dotnet pack -c Release -property:NuspecFile=Crowdin.Api.nuspec ${{ env.PROJECT_CSPROJ_PATH }}
+        run: dotnet pack -c Release ${{ env.PROJECT_CSPROJ_PATH }}
 
       - name: Publish the package to NuGet
         run: dotnet nuget push ${{ env.PROJECT_PATH }}/bin/Release/*.nupkg -s https://nuget.org -k ${{ secrets.NUGET_KEY }}

@@ -1,8 +1,23 @@
 
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
+        <Version>2.13.0</Version>
         <TargetFramework>netstandard2.0</TargetFramework>
         <LangVersion>8</LangVersion>
+        
+        <Title>Crowdin API client</Title>
+        <Description>.NET client library for Crowdin API v2</Description>
+        <Authors>Crowdin</Authors>
+        <Copyright>Copyright 2023 Crowdin</Copyright>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/crowdin/crowdin-api-client-dotnet</RepositoryUrl>
+        
+        <PackageId>Crowdin.Api</PackageId>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <PackageIconUrl>https://support.crowdin.com/assets/logos/crowdin-dark-symbol.png</PackageIconUrl>
+        <PackageProjectUrl>https://github.com/crowdin/crowdin-api-client-dotnet</PackageProjectUrl>
+        <PackageTags>crowdin; api; client; sdk</PackageTags>
     </PropertyGroup>
     <ItemGroup>
       <PackageReference Include="JetBrains.Annotations" Version="2021.3.0" />
