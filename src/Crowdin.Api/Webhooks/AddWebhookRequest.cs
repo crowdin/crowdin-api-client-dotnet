@@ -38,7 +38,7 @@ namespace Crowdin.Api.Webhooks
         public ContentType? ContentType { get; set; }
         
         [JsonProperty("headers")]
-        public object? Headers { get; set; }
+        public IDictionary<string, string>? Headers { get; set; }
         
         [JsonProperty("payload")]
         public object? Payload { get; set; }
