@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -124,6 +125,45 @@ namespace Crowdin.Api.Tests.Webhooks
             Assert.NotNull(response);
             Assert.Equal(newName, response.Name);
             Assert.Equal(newRequestType, response.RequestType);
+        }
+
+        [Fact]
+        public async Task GetWebhook()
+        {
+            const int projectId = 7;
+            const int webhookId = 9;
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/webhooks/{webhookId}";
+
+            mockClient
+                .Setup(client => client.SendGetRequest(url, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Core.Resources.Webhooks.GetWebhook_Response)
+                });
+
+            var executor = new WebhooksApiExecutor(mockClient.Object);
+            Webhook? response = await executor.GetWebhook(projectId, webhookId);
+            
+            Assert.NotNull(response);
+            
+            Assert.Single(response.Events);
+            Assert.Equal(EventType.ProjectApproved, response.Events[0]);
+            
+            Assert.Single(response.Headers);
+            Assert.Equal("secret", response.Headers["x-api-key"]);
+
+            var payload = response.Payload as JObject;
+            Assert.NotNull(payload);
+            Assert.NotNull(payload!["project.approved"]);
+            
+            Assert.Equal(ContentType.ApplicationJson, response.ContentType);
+            Assert.Equal(RequestType.POST, response.RequestType);
+            Assert.Equal(DateTimeOffset.Parse("2023-05-05T10:22:40+02:00"), response.CreatedAt);
+            Assert.Equal(DateTimeOffset.Parse("2023-05-05T10:22:40+02:00"), response.UpdatedAt);
         }
     }
 }

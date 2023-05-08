@@ -29,7 +29,7 @@ namespace Crowdin.Api.Webhooks
         public IDictionary<string, string> Headers { get; set; }
         
         [JsonProperty("payload")]
-        public IDictionary<string, IDictionary<string, string>> Payload { get; set; }
+        public object Payload { get; set; }
         
         [JsonProperty("isActive")]
         public bool IsActive { get; set; }

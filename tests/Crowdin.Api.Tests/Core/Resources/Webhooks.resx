@@ -214,4 +214,62 @@
   }
 }</value>
   </data>
+  <data name="GetWebhook_Response" xml:space="preserve">
+      <value>{
+  "data": {
+    "id": 9,
+    "projectId": 7,
+    "name": "File proofreading complete",
+    "url": "https://something.com",
+    "events": [
+      "project.approved"
+    ],
+    "headers": {
+      "x-api-key": "secret"
+    },
+    "payload": {
+      "project.approved": {
+        "event": "{{event}}",
+        "project": {
+          "id": "{{projectId}}",
+          "userId": "{{projectUserId}}",
+          "sourceLanguageId": "{{projectSourceLanguageId}}",
+          "targetLanguageIds": "{{projectTargetLanguageIds}}",
+          "identifier": "{{projectIdentifier}}",
+          "name": "{{projectName}}",
+          "createdAt": "{{projectCreatedAt}}",
+          "updatedAt": "{{projectUpdatedAt}}",
+          "lastActivity": "{{projectLastActivity}}",
+          "description": "{{projectDescription}}",
+          "url": "{{projectUrl}}",
+          "cname": "{{projectCname}}",
+          "logo": "{{projectLogo}}",
+          "isExternal": "{{projectIsExternal}}",
+          "externalType": "{{projectExternalType}}",
+          "hasCrowdsourcing": "{{projectHasCrowdsourcing}}"
+        },
+        "targetLanguage": {
+          "id": "{{targetLanguageId}}",
+          "name": "{{targetLanguageName}}",
+          "editorCode": "{{targetLanguageEditorCode}}",
+          "twoLettersCode": "{{targetLanguageTwoLettersCode}}",
+          "threeLettersCode": "{{targetLanguageThreeLettersCode}}",
+          "locale": "{{targetLanguageLocale}}",
+          "androidCode": "{{targetLanguageAndroidCode}}",
+          "osxCode": "{{targetLanguageOsxCode}}",
+          "osxLocale": "{{targetLanguageOsxLocale}}",
+          "textDirection": "{{targetLanguageTextDirection}}",
+          "dialectOf": "{{targetLanguageDialectOf}}"
+        }
+      }
+    },
+    "isActive": true,
+    "batchingEnabled": false,
+    "requestType": "POST",
+    "contentType": "application/json",
+    "createdAt": "2023-05-05T10:22:40+02:00",
+    "updatedAt": "2023-05-05T10:22:40+02:00"
+  }
+}</value>
+  </data>
 </root>
