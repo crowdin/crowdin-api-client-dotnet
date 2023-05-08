@@ -121,6 +121,18 @@ namespace Crowdin.Api.Tests.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;data&quot;: {
+        ///    &quot;url&quot;: &quot;https://production-enterprise-importer.downloads.crowdin.com/992000002/2/14.xliff?response-content-disposition=attachment%3B%20filename%3D%22APP.xliff%22&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIGJKLQV66ZXPMMEA%2F20190920%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190920T093121Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=439ebd69a1b7e4c23e6d17891a491c94f832e0c82e4692dedb35a6cd1e624b62&quot;,
+        ///    &quot;expireIn&quot;: &quot;2019- [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string DownloadFilePreview_Response {
+            get {
+                return ResourceManager.GetString("DownloadFilePreview_Response", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/priority&quot;,&quot;op&quot;:&quot;replace&quot;,&quot;value&quot;:&quot;high&quot;},{&quot;path&quot;:&quot;/directoryId&quot;,&quot;op&quot;:&quot;replace&quot;,&quot;value&quot;:3}].
         /// </summary>
         internal static string EditFile_Request {

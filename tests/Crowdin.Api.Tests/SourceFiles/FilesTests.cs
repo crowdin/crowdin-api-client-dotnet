@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Crowdin.Api.SourceFiles;
 using Crowdin.Api.Tests.Core;
 using System.Threading.Tasks;
@@ -320,6 +321,29 @@ namespace Crowdin.Api.Tests.SourceFiles {
 
             Assert.NotNull(result);
             Assert.IsType<DownloadLink>(result);
+        }
+
+        [Fact]
+        public async Task DownloadFilePreview()
+        {
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+            
+            var url = $"/projects/{projectId}/files/{fileId}/preview";
+            
+            mockClient
+                .Setup(client => client.SendGetRequest(url, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Core.Resources.SourceFiles.DownloadFilePreview_Response)
+                });
+            
+            var executor = new SourceFilesApiExecutor(mockClient.Object);
+            DownloadLink response = await executor.DownloadFilePreview(projectId, fileId);
+            
+            Assert.NotNull(response);
+            Assert.StartsWith("https", response.Url);
+            Assert.Equal(DateTimeOffset.Parse("2019-09-20T10:31:21+00:00"), response.ExpireIn);
         }
 
         [Fact]
