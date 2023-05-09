@@ -1,4 +1,5 @@
 ﻿
+using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -36,9 +37,9 @@ namespace Crowdin.Api.Tests.Webhooks
                 IsActive = true,
                 BatchingEnabled = true,
                 ContentType = ContentType.ApplicationJson,
-                Headers = new JObject
+                Headers = new Dictionary<string, string>
                 {
-                    new JProperty("apiKey", "key")
+                    ["apiKey"] = "key"
                 },
                 Payload = new JObject
                 {
