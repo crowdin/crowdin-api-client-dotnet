@@ -178,6 +178,110 @@ namespace Crowdin.Api.TranslationMemory
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
             return _jsonParser.ParseResponseObject<TmImportStatus>(result.JsonObject);
         }
+        
+        #region Segments
+        
+        /// <summary>
+        /// List TM Segments. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.tms.segments.getMany">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.tms.segments.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<TmSegmentResource>> ListTmSegments(int tmId, int limit = 25, int offset = 0)
+        {
+            string url = FormUrl_TmSegments(tmId);
+            IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
+            
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
+            return _jsonParser.ParseResponseList<TmSegmentResource>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// Create TM Segment. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.tms.segments.post">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.tms.segments.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<TmSegmentResource> CreateTmSegment(int tmId, CreateTmSegmentRequest request)
+        {
+            string url = FormUrl_TmSegments(tmId);
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<TmSegmentResource>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// Get TM Segment. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.tms.segments.get">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.tms.segments.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<TmSegmentResource> GetTmSegment(int tmId, int segmentId)
+        {
+            string url = FormUrl_TmSegmentId(tmId, segmentId);
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<TmSegmentResource>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// Delete TM Segment. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.tms.segments.delete">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.tms.segments.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task DeleteTmSegment(int tmId, int segmentId)
+        {
+            string url = FormUrl_TmSegmentId(tmId, segmentId);
+            HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
+            Utils.ThrowIfStatusNot204(statusCode, $"TM Segment {segmentId} removal failed");
+        }
+        
+        /// <summary>
+        /// Delete TM Segment Record. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.tms.segments.records.delete">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.tms.segments.records.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task DeleteTmSegmentRecord(int tmId, int segmentId, int recordId)
+        {
+            string url = FormUrl_TmSegmentRecordId(tmId, segmentId, recordId);
+            HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
+            Utils.ThrowIfStatusNot204(statusCode, $"TM Segment Record {recordId} removal failed");
+        }
+        
+        /// <summary>
+        /// Edit TM Segment Record. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.tms.segments.records.patch">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.tms.segments.records.patch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<TmSegmentResource> EditTmSegmentRecord(
+            int tmId,
+            int segmentId,
+            int recordId,
+            IEnumerable<TmSegmentRecordPatch> patches)
+        {
+            string url = FormUrl_TmSegmentRecordId(tmId, segmentId, recordId);
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            return _jsonParser.ParseResponseObject<TmSegmentResource>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// Create TM Segment Records. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.tms.segments.records.post">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.tms.segments.records.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<TmSegmentResource> CreateTmSegmentRecords(
+            int tmId,
+            int segmentId,
+            CreateTmSegmentRecordsRequest request)
+        {
+            string url = FormUrl_TmSegmentRecords(tmId, segmentId);
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<TmSegmentResource>(result.JsonObject);
+        }
+
+        #endregion
 
         #region Helper methods
 
@@ -185,6 +289,30 @@ namespace Crowdin.Api.TranslationMemory
         {
             return $"{BaseUrl}/{tmId}";
         }
+
+        #region Segments
+
+        private static string FormUrl_TmSegments(int tmId)
+        {
+            return $"/tms/{tmId}/segments";
+        }
+
+        private static string FormUrl_TmSegmentId(int tmId, int segmentId)
+        {
+            return $"/tms/{tmId}/segments/{segmentId}";
+        }
+
+        private static string FormUrl_TmSegmentRecords(int tmId, int segmentId)
+        {
+            return $"/tms/{tmId}/segments/{segmentId}/records";
+        }
+
+        private static string FormUrl_TmSegmentRecordId(int tmId, int segmentId, int recordId)
+        {
+            return $"/tms/{tmId}/segments/{segmentId}/records/{recordId}";
+        }
+
+        #endregion
 
         #endregion
     }
