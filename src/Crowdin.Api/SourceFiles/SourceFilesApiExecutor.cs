@@ -340,6 +340,19 @@ namespace Crowdin.Api.SourceFiles
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
             return _jsonParser.ParseResponseObject<DownloadLink>(result.JsonObject);
         }
+        
+        /// <summary>
+        /// Download file preview. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.files.preview.get">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.files.preview.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<DownloadLink> DownloadFilePreview(int projectId, int fileId)
+        {
+            var url = $"/projects/{projectId}/files/{fileId}/preview";
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<DownloadLink>(result.JsonObject);
+        }
 
         /// <summary>
         /// List file revisions. Documentation:
