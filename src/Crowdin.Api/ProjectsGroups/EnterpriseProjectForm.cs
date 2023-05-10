@@ -21,7 +21,7 @@ namespace Crowdin.Api.ProjectsGroups
 #pragma warning restore CS8618
         
         [JsonProperty("templateId")]
-        public int TemplateId { get; set; }
+        public int? TemplateId { get; set; }
         
         [JsonProperty("groupId")]
         public int? GroupId { get; set; }
