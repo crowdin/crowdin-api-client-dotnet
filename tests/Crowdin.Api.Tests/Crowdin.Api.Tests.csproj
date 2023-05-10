@@ -142,6 +142,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>TranslationMemory.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\TranslationMemory_Segments.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>TranslationMemory_Segments.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -279,6 +283,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>TranslationMemory.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\TranslationMemory_Segments.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>TranslationMemory_Segments.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 
