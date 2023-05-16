@@ -45,5 +45,11 @@ namespace Crowdin.Api.ProjectsGroups
         
         [JsonProperty("duplicate")]
         public bool? Duplicate { get; set; }
+        
+        [JsonProperty("ftl")]
+        public bool? Ftl { get; set; }
+        
+        [JsonProperty("android")]
+        public bool? Android { get; set; }
     }
 }
