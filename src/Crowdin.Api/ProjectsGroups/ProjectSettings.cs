@@ -27,6 +27,9 @@ namespace Crowdin.Api.ProjectsGroups
         [JsonProperty("autoSubstitution")]
         public bool AutoSubstitution { get; set; }
         
+        [JsonProperty("showTmSuggestionsDialects")]
+        public bool ShowTmSuggestionsDialects { get; set; }
+        
         [JsonProperty("exportTranslatedOnly")]
         public bool ExportTranslatedOnly { get; set; }
         
@@ -43,7 +46,7 @@ namespace Crowdin.Api.ProjectsGroups
         public bool AutoTranslateDialects { get; set; }
         
         [JsonProperty("useGlobalTm")]
-        public bool UseGlobalMachineTranslator { get; set; }
+        public bool UseGlobalTm { get; set; }
         
         [JsonProperty("normalizePlaceholder")]
         public bool NormalizePlaceholder { get; set; }
@@ -68,7 +71,7 @@ namespace Crowdin.Api.ProjectsGroups
         public bool IsSuspended { get; set; }
         
         [JsonProperty("qaCheckIsActive")]
-        public bool QaCheckIsActive { get; set; } = true;
+        public bool QaCheckIsActive { get; set; }
         
         [JsonProperty("qaCheckCategories")]
         public QaCheckCategories QaCheckCategories { get; set; }
@@ -81,5 +84,17 @@ namespace Crowdin.Api.ProjectsGroups
         
         [JsonProperty("notificationSettings")]
         public NotificationSettings NotificationSettings { get; set; }
+        
+        [JsonProperty("defaultTmId")]
+        public int DefaultTmId { get; set; }
+        
+        [JsonProperty("defaultGlossaryId")]
+        public int DefaultGlossaryId { get; set; }
+        
+        [JsonProperty("assignedTms")]
+        public IDictionary<int, AssignedTm> AssignedTms { get; set; }
+        
+        [JsonProperty("assignedGlossaries")]
+        public int[] AssignedGlossaries { get; set; }
     }
 }
