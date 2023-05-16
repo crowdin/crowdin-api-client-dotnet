@@ -97,6 +97,9 @@ namespace Crowdin.Api.ProjectsGroups
         [Description("/qaCheckCategories")]
         QaCheckCategories,
         
+        [Description("/qaChecksIgnorableCategories")]
+        QaChecksIgnorableCategories,
+        
         // /qaCheckCategories/{category}
         
         [Description("/languageMapping")]
