@@ -1,13 +1,14 @@
 ﻿
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
-using Crowdin.Api;
 using Crowdin.Api.Core;
 using Crowdin.Api.ProjectsGroups;
 using Crowdin.Api.Tests.Core;
 using Crowdin.Api.Tests.Core.Resources;
+
 using Moq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -74,6 +75,12 @@ namespace Crowdin.Api.Tests.ProjectsGroups
             Assert.NotNull(projectSettings);
             Assert.Equal(DupTranslateAction.Hide, projectSettings.TranslateDuplicates);
             Assert.Equal(TagsDetectionAction.Auto, projectSettings.TagsDetection);
+
+            IDictionary<int, AssignedTm>? assignedTms = projectSettings.AssignedTms;
+            Assert.NotNull(assignedTms);
+            Assert.Equal(1, assignedTms.Keys.Single());
+            Assert.NotNull(assignedTms[1]);
+            Assert.Equal(1, assignedTms[1].Priority);
         }
 
         [Fact]
