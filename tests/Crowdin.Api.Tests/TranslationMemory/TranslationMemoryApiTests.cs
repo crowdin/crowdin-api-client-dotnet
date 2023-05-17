@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -320,6 +321,61 @@ namespace Crowdin.Api.Tests.TranslationMemory
             TmImportStatus? response = await executor.CheckTmImportStatus(tmId, importId);
             
             Assert_TmImportStatus(response);
+        }
+
+        [Fact]
+        public async Task ConcordanceSearch()
+        {
+            const int projectId = 1;
+
+            var request = new ConcordanceSearchRequest
+            {
+                SourceLanguageId = "en",
+                TargetLanguageId = "de",
+                AutoSubstitution = true,
+                MinRelevant = 60,
+                Expression = "Welcome!"
+            };
+
+            string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
+            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.TranslationMemory.ConcordanceSearch_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/tms/concordance";
+
+            mockClient
+                .Setup(client => client.SendPostRequest(url, request, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Core.Resources.TranslationMemory.ConcordanceSearch_Response)
+                });
+
+            var executor = new TranslationMemoryApiExecutor(mockClient.Object);
+            ResponseList<TmConcordanceResultResource>? response = await executor.ConcordanceSearch(projectId, request);
+            
+            Assert.NotNull(response);
+
+            TmConcordanceResultResource? resource = response.Data?.Single();
+            Assert.NotNull(resource);
+
+            TranslationMemoryResource tm = resource!.Tm;
+            Assert.NotNull(tm);
+            Assert.Equal(4, tm.Id);
+            Assert.Equal("Knowledge Base's TM", tm.Name);
+            Assert.Equal("el", tm.LanguageIds?.Single());
+            Assert.Equal(21, tm.SegmentsCount);
+            Assert.Equal(2, tm.ProjectIds?.Single());
+            Assert.Equal(DateTimeOffset.Parse("2019-09-16T13:42:04+00:00"), tm.CreatedAt);
+            
+            Assert.Equal(34, resource.RecordId);
+            Assert.Equal("Welcome!", resource.Source);
+            Assert.Equal("Ласкаво просимо!", resource.Target);
+            Assert.Equal(100, resource.Relevant);
+            Assert.Equal("62→100", resource.Substituted);
+            Assert.Equal(DateTimeOffset.Parse("2022-09-28T12:29:34+00:00"), resource.UpdatedAt);
         }
 
         private static void Assert_TmExportStatus(TmExportStatus? model)

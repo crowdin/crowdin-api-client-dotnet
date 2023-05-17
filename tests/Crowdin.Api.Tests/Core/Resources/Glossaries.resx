@@ -67,4 +67,104 @@
     <data name="EditGlossary_Request" xml:space="preserve">
         <value>[{"path":"/name","op":"replace","value":"Be My Eyes iOS's Glossary"},{"path":"/languageId","op":"replace","value":"fr"}]</value>
     </data>
+    <data name="ConcordanceSearch_Request" xml:space="preserve">
+        <value>{
+  "sourceLanguageId": "en",
+  "targetLanguageId": "de",
+  "expression": "Welcome!"
+}</value>
+    </data>
+    <data name="ConcordanceSearch_Response" xml:space="preserve">
+        <value>{
+  "data": [
+    {
+      "data": {
+        "glossary": {
+          "id": 2,
+          "name": "Be My Eyes iOS's Glossary",
+          "userId": 2,
+          "terms": 25,
+          "languageId": "fr",
+          "languageIds": [
+            "ro"
+          ],
+          "defaultProjectIds": [
+            2
+          ],
+          "projectIds": [
+            6
+          ],
+          "createdAt": "2019-09-16T13:42:04+00:00"
+        },
+        "concept": {
+          "id": 2,
+          "userId": 6,
+          "glossaryId": 6,
+          "subject": "general",
+          "definition": "Some definition",
+          "note": "Any kind of note, such as a usage note, explanation, or instruction",
+          "url": "Base URL",
+          "figure": "Figure URL",
+          "languagesDetails": [
+            {
+              "languageId": "en",
+              "userId": 12,
+              "definition": "Some definition",
+              "note": "Some note",
+              "createdAt": "2019-09-19T14:14:00+00:00",
+              "updatedAt": "2019-09-19T14:14:00+00:00"
+            }
+          ],
+          "createdAt": "2019-09-23T07:19:47+00:00",
+          "updatedAt": "2019-09-23T07:19:47+00:00"
+        },
+        "sourceTerms": [
+          {
+            "id": 2,
+            "userId": 6,
+            "glossaryId": 6,
+            "languageId": "fr",
+            "text": "Voir",
+            "description": "use for pages only (check screenshots)",
+            "partOfSpeech": "verb",
+            "status": "preferred",
+            "type": "abbreviation",
+            "gender": "masculine",
+            "note": "Any kind of note, such as a usage note, explanation, or instruction",
+            "url": "Base URL",
+            "conceptId": 6,
+            "lemma": "voir",
+            "createdAt": "2019-09-23T07:19:47+00:00",
+            "updatedAt": "2019-09-23T07:19:47+00:00"
+          }
+        ],
+        "targetTerms": [
+          {
+            "id": 2,
+            "userId": 6,
+            "glossaryId": 6,
+            "languageId": "fr",
+            "text": "Voir",
+            "description": "use for pages only (check screenshots)",
+            "partOfSpeech": "verb",
+            "status": "preferred",
+            "type": "abbreviation",
+            "gender": "masculine",
+            "note": "Any kind of note, such as a usage note, explanation, or instruction",
+            "url": "Base URL",
+            "conceptId": 6,
+            "lemma": "voir",
+            "createdAt": "2019-09-23T07:19:47+00:00",
+            "updatedAt": "2019-09-23T07:19:47+00:00"
+          }
+        ]
+      }
+    }
+  ],
+  "pagination": {
+    "offset": 0,
+    "limit": 25
+  }
+}</value>
+    </data>
 </root>

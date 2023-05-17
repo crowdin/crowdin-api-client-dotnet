@@ -147,6 +147,19 @@ namespace Crowdin.Api.StringTranslations
         #region Translations
 
         /// <summary>
+        /// Translation Alignment. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.translations.alignment.post">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.translations.alignment.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<TranslationAlignment> TranslationAlignment(int projectId, TranslationAlignmentRequest request)
+        {
+            var url = $"/projects/{projectId}/translations/alignment";
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<TranslationAlignment>(result.JsonObject);
+        }
+
+        /// <summary>
         /// List string translations. Documentation:
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.translations.getMany">Crowdin API</a>
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.getMany">Crowdin Enterprise API</a>
