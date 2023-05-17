@@ -4,6 +4,7 @@ using System.Net;
 using System.Threading.Tasks;
 
 using Crowdin.Api.Core;
+using Crowdin.Api.Screenshots;
 using Crowdin.Api.SourceStrings;
 using JetBrains.Annotations;
 
@@ -155,6 +156,44 @@ namespace Crowdin.Api.Labels
             return _jsonParser.ParseResponseList<SourceString>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Assign Label to Screenshots. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.labels.screenshots.post">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.labels.screenshots.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<Screenshot>> AssignLabelToScreenshots(
+            int projectId,
+            int labelId,
+            AssignLabelToScreenshotsRequest request)
+        {
+            string url = FormUrl_LabelScreenshots(projectId, labelId);
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseList<Screenshot>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// UnAssign Label from Screenshots. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.labels.screenshots.deleteMany">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.labels.screenshots.deleteMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<Screenshot>> UnAssignLabelFromScreenshots(
+            int projectId,
+            int labelId,
+            IEnumerable<int> screenshotIds)
+        {
+            string url = FormUrl_LabelScreenshots(projectId, labelId);
+            
+            var queryParams = new Dictionary<string, string>
+            {
+                { "screenshotIds", string.Join(",", screenshotIds) }
+            };
+
+            CrowdinApiResult result = await _apiClient.SendDeleteRequest_FullResult(url, queryParams);
+            return _jsonParser.ParseResponseList<Screenshot>(result.JsonObject);
+        }
+
         #region Helper methods
 
         private static string FormUrl_Labels(int projectId)
@@ -170,6 +209,11 @@ namespace Crowdin.Api.Labels
         private static string FormUrl_LabelStrings(int projectId, int labelId)
         {
             return $"/projects/{projectId}/labels/{labelId}/strings";
+        }
+
+        private static string FormUrl_LabelScreenshots(int projectId, int labelId)
+        {
+            return $"/projects/{projectId}/labels/{labelId}/screenshots";
         }
 
         #endregion
