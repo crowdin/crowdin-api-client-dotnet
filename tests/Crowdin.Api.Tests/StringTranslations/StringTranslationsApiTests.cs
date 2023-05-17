@@ -1,5 +1,6 @@
 ﻿
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -108,6 +109,53 @@ namespace Crowdin.Api.Tests.StringTranslations
             Assert.NotNull(response);
             Assert.Equal(19, response.User.Id);
             Assert.Equal(PluralCategoryName.Few, response.PluralCategoryName);
+        }
+
+        [Fact]
+        public async Task TranslationAlignment()
+        {
+            const int projectId = 1;
+
+            var request = new TranslationAlignmentRequest
+            {
+                SourceLanguageId = "en",
+                TargetLanguageId = "de",
+                Text = "Your password has been reset successfully!"
+            };
+
+            string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
+            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.StringTranslations.TranslationAlignment_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/translations/alignment";
+
+            mockClient
+                .Setup(client => client.SendPostRequest(url, request, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Core.Resources.StringTranslations.TranslationAlignment_Response)
+                });
+
+            var executor = new StringTranslationsApiExecutor(mockClient.Object);
+            TranslationAlignment response = await executor.TranslationAlignment(projectId, request);
+            
+            Assert.NotNull(response);
+            
+            WordAlignment? wordAlignment = response.Words?.Single();
+            Assert.NotNull(wordAlignment);
+            Assert.Equal("password", wordAlignment!.Text);
+
+            Alignment? alignment = wordAlignment.Alignments?.Single();
+            Assert.NotNull(alignment);
+            Assert.Equal("Password", alignment!.SourceWord);
+            Assert.Equal("password", alignment.SourceLemma);
+            Assert.Equal("Пароль", alignment.TargetWord);
+            Assert.Equal("пароль", alignment.TargetLemma);
+            Assert.Equal(2, alignment.Match);
+            Assert.Equal(2, alignment.Probability);
         }
     }
 }

@@ -154,6 +154,21 @@ namespace Crowdin.Api.TranslationMemory
         }
 
         /// <summary>
+        /// Concordance search in TMs. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.tms.concordance.post">Crowdin API</a>
+        /// <a href="hhttps://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.tms.concordance.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<TmConcordanceResultResource>> ConcordanceSearch(
+            int projectId,
+            ConcordanceSearchRequest request)
+        {
+            var url = $"/projects/{projectId}/tms/concordance";
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseList<TmConcordanceResultResource>(result.JsonObject);
+        }
+
+        /// <summary>
         /// Import TM. Documentation:
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.tms.imports.post">Crowdin API</a>
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.imports.post">Crowdin Enterprise API</a>

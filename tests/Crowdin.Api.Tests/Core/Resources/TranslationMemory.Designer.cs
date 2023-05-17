@@ -190,6 +190,53 @@ namespace Crowdin.Api.Tests.Core.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to {
+        ///  &quot;sourceLanguageId&quot;: &quot;en&quot;,
+        ///  &quot;targetLanguageId&quot;: &quot;de&quot;,
+        ///  &quot;autoSubstitution&quot;: true,
+        ///  &quot;minRelevant&quot;: 60,
+        ///  &quot;expression&quot;: &quot;Welcome!&quot;
+        ///}.
+        /// </summary>
+        internal static string ConcordanceSearch_Request {
+            get {
+                return ResourceManager.GetString("ConcordanceSearch_Request", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;data&quot;: [
+        ///    {
+        ///      &quot;data&quot;: {
+        ///        &quot;tm&quot;: {
+        ///          &quot;id&quot;: 4,
+        ///          &quot;userId&quot;: 2,
+        ///          &quot;name&quot;: &quot;Knowledge Base&apos;s TM&quot;,
+        ///          &quot;languageId&quot;: &quot;fr&quot;,
+        ///          &quot;languageIds&quot;: [
+        ///            &quot;el&quot;
+        ///          ],
+        ///          &quot;segmentsCount&quot;: 21,
+        ///          &quot;defaultProjectIds&quot;: [
+        ///            2
+        ///          ],
+        ///          &quot;projectIds&quot;: [
+        ///            2
+        ///          ],
+        ///          &quot;createdAt&quot;: &quot;2019-09-16T13:42:04+00:00&quot;
+        ///        },
+        ///        &quot;recordId&quot;: 34,
+        ///        &quot;source&quot;: &quot;Welcome!&quot;,
+        ///        [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ConcordanceSearch_Response {
+            get {
+                return ResourceManager.GetString("ConcordanceSearch_Response", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
         ///  &quot;data&quot;: {
         ///    &quot;url&quot;: &quot;https://production-enterprise-importer.downloads.crowdin.com/992000002/2/14.xliff?response-content-disposition=attachment%3B%20filename%3D%22APP.xliff%22&amp;X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIGJKLQV66ZXPMMEA%2F20190920%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20190920T093121Z&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Expires=3600&amp;X-Amz-Signature=439ebd69a1b7e4c23e6d17891a491c94f832e0c82e4692dedb35a6cd1e624b62&quot;,
         ///    &quot;expireIn&quot;: &quot;2019- [rest of string was truncated]&quot;;.

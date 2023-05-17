@@ -105,6 +105,21 @@ namespace Crowdin.Api.Glossaries
             return _jsonParser.ParseResponseObject<Glossary>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Concordance search in Glossaries. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.glossaries.concordance.post">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.glossaries.concordance.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<GlossaryConcordanceResultResource>> ConcordanceSearch(
+            int projectId,
+            ConcordanceSearchRequest request)
+        {
+            var url = $"/projects/{projectId}/glossaries/concordance";
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseList<GlossaryConcordanceResultResource>(result.JsonObject);
+        }
+
         #endregion
 
         #region Glossaries : Export
