@@ -171,7 +171,6 @@ namespace Crowdin.Api.Tests.Core.Resources {
         ///      &quot;el&quot;
         ///    ],
         ///    &quot;segmentsCount&quot;: 21,
-        ///    &quot;defaultProjectId&quot;: 0,
         ///    &quot;defaultProjectIds&quot;: [
         ///      2
         ///    ],

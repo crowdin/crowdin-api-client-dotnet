@@ -26,8 +26,8 @@ namespace Crowdin.Api.TranslationMemory
         [JsonProperty("segmentsCount")]
         public int SegmentsCount { get; set; }
         
-        [JsonProperty("defaultProjectId")]
-        public int DefaultProjectId { get; set; }
+        [JsonProperty("defaultProjectIds")]
+        public int[] DefaultProjectIds { get; set; }
         
         [JsonProperty("projectIds")]
         public int[] ProjectIds { get; set; }
