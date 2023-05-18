@@ -173,12 +173,12 @@ namespace Crowdin.Api.Labels
         }
 
         /// <summary>
-        /// UnAssign Label from Screenshots. Documentation:
+        /// Unassign Label from Screenshots. Documentation:
         /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.labels.screenshots.deleteMany">Crowdin API</a>
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.labels.screenshots.deleteMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<Screenshot>> UnAssignLabelFromScreenshots(
+        public async Task<ResponseList<Screenshot>> UnassignLabelFromScreenshots(
             int projectId,
             int labelId,
             IEnumerable<int> screenshotIds)

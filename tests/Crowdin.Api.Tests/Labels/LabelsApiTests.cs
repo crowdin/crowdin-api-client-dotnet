@@ -126,7 +126,7 @@ namespace Crowdin.Api.Tests.Labels
         }
 
         [Fact]
-        public async Task UnAssignLabelFromScreenshots()
+        public async Task UnassignLabelFromScreenshots()
         {
             const int projectId = 1;
             const int labelId = 2;
@@ -152,7 +152,7 @@ namespace Crowdin.Api.Tests.Labels
 
             var executor = new LabelsApiExecutor(mockClient.Object);
             ResponseList<Screenshot>? response =
-                await executor.UnAssignLabelFromScreenshots(projectId, labelId, screenshotIds);
+                await executor.UnassignLabelFromScreenshots(projectId, labelId, screenshotIds);
             
             Assert_Screenshots(response);
         }
