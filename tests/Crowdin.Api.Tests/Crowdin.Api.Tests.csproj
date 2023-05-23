@@ -146,6 +146,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>TranslationMemory_Segments.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\Webhooks_Organization.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Webhooks_Organization.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -288,6 +292,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>TranslationMemory_Segments.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\Webhooks_Organization.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Webhooks_Organization.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 
