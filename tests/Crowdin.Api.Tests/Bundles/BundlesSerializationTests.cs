@@ -25,7 +25,7 @@ namespace Crowdin.Api.Tests.Bundles
 
         private static void SerializeAndAssert(BundlePatchPath actualPath, string expectedPathString)
         {
-            string actualPathString = TestUtils.SerializeEnum(actualPath, JsonSettings);
+            string actualPathString = TestUtils.SerializeValue(actualPath, JsonSettings);
             
             Assert.Equal(expectedPathString, actualPathString);
         }

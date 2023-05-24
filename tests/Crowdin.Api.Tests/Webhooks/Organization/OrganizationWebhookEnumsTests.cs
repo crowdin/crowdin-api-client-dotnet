@@ -44,7 +44,7 @@ namespace Crowdin.Api.Tests.Webhooks.Organization
         
         private static void SerializeAndAssert(Enum enumValue, string expectedValueString)
         {
-            string actualValueString = TestUtils.SerializeEnum(enumValue, JsonSettings);
+            string actualValueString = TestUtils.SerializeValue(enumValue, JsonSettings);
             Assert.Equal(expectedValueString, actualValueString);
         }
     }

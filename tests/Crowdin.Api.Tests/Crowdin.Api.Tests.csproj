@@ -150,6 +150,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Webhooks_Organization.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\SourceStrings.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>SourceStrings.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -297,6 +301,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>Webhooks_Organization.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\SourceStrings.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>SourceStrings.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 
