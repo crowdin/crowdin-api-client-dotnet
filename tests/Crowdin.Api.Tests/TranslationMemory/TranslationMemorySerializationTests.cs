@@ -21,7 +21,7 @@ namespace Crowdin.Api.Tests.TranslationMemory
 
         private static void SerializeAndAssert(TmPatchPath actualPath, string expectedPathString)
         {
-            string actualPathString = TestUtils.SerializeEnum(actualPath, JsonSettings);
+            string actualPathString = TestUtils.SerializeValue(actualPath, JsonSettings);
             
             Assert.Equal(expectedPathString, actualPathString);
         }

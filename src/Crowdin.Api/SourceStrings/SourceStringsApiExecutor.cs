@@ -70,6 +70,21 @@ namespace Crowdin.Api.SourceStrings
         }
 
         /// <summary>
+        /// String Batch Operations. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.strings.batchPatch">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.strings.batchPatch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<SourceString>> StringBatchOperations(
+            int projectId,
+            IEnumerable<StringBatchOpPatch> patches)
+        {
+            string url = FormUrl_Strings(projectId);
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            return _jsonParser.ParseResponseList<SourceString>(result.JsonObject);
+        }
+
+        /// <summary>
         /// Get string. Documentation:
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.strings.get">Crowdin API</a>
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.get">Crowdin Enterprise API</a>

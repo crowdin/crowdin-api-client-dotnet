@@ -82,7 +82,7 @@ namespace Crowdin.Api.Tests.Core
             };
         }
         
-        public static string SerializeEnum(Enum enumValue, JsonSerializerSettings? settings = null)
+        public static string SerializeValue(object enumValue, JsonSerializerSettings? settings = null)
         {
             settings ??= CreateJsonSerializerOptions();
             return JsonConvert.SerializeObject(enumValue, settings).Replace("\"", string.Empty);
