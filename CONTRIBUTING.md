@@ -65,6 +65,9 @@ Before sending your pull requests, make sure you followed the list below:
 - Ensure that there are unit tests for your code.
 - Run unit tests.
 
+> **Note**
+> This project uses the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification for commit messages and PR titles.
+
 #### Philosophy of code contribution
 
 - Include unit tests when you contribute new features, as they help to a) prove that your code works correctly, and b) guard against future breaking changes to lower the maintenance cost.
