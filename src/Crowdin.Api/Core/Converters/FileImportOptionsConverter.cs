@@ -32,6 +32,14 @@ namespace Crowdin.Api.Core.Converters
             {
                 options = JsonConvert.DeserializeObject<XmlFileImportOptions>(jObject.ToString());
             }
+            else if (jObject.TryGetValue("excludedFrontMatterElements", out _))
+            {
+                options = JsonConvert.DeserializeObject<HtmlWithFrontMatterFileImportOptions>(jObject.ToString());
+            }
+            else if (jObject.TryGetValue("excludedElements", out _))
+            {
+                options = JsonConvert.DeserializeObject<HtmlFileImportOptions>(jObject.ToString());
+            }
             else
             {
                 options = JsonConvert.DeserializeObject<OtherFilesImportOptions>(jObject.ToString());

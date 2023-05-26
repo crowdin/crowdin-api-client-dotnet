@@ -70,6 +70,35 @@ namespace Crowdin.Api.SourceFiles
     }
 
     [PublicAPI]
+    public class HtmlFileImportOptions : FileImportOptions
+    {
+        [JsonProperty("excludedElements")]
+        public IList<string>? ExcludedElements { get; set; }
+        
+        [JsonProperty("contentSegmentation")]
+        public bool? ContentSegmentation { get; set; }
+        
+        [JsonProperty("srxStorageId")]
+        public int? SrxStorageId { get; set; }
+    }
+
+    [PublicAPI]
+    public class HtmlWithFrontMatterFileImportOptions : FileImportOptions
+    {
+        [JsonProperty("excludedElements")]
+        public IList<string>? ExcludedElements { get; set; }
+        
+        [JsonProperty("excludedFrontMatterElements")]
+        public IList<string>? ExcludedFrontMatterElements { get; set; }
+        
+        [JsonProperty("contentSegmentation")]
+        public bool? ContentSegmentation { get; set; }
+        
+        [JsonProperty("srxStorageId")]
+        public int? SrxStorageId { get; set; }
+    }
+
+    [PublicAPI]
     public class OtherFilesImportOptions : FileImportOptions
     {
         [JsonProperty("contentSegmentation")]
