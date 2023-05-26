@@ -56,6 +56,8 @@ namespace Crowdin.Api.Tests.SourceFiles
             Assert.IsType<SpreadsheetFileImportOptions>(responseFile.ImportOptions);
         }
 
+        #region DocxFileImportOptions
+
         [Fact]
         public void AddFile_DocxFileImportOptions_RequestSerialization()
         {
@@ -82,6 +84,22 @@ namespace Crowdin.Api.Tests.SourceFiles
             string expectedRequestJson = TestUtils.CompactJson(Core.Resources.SourceFiles.AddFile_Docx_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
         }
+
+        [Fact]
+        public void AddFile_DocxFileImportOptions_RequestDeserialization()
+        {
+            string requestJson = Core.Resources.SourceFiles.AddFile_Docx_Request;
+            var request = JsonConvert.DeserializeObject<AddFileRequest>(requestJson, JsonSettings);
+            
+            Assert.NotNull(request);
+            Assert.IsType<DocxFileImportOptions>(request!.ImportOptions);
+            
+            var importOptions = (DocxFileImportOptions) request.ImportOptions!;
+            Assert.True(importOptions.ContentSegmentation);
+            Assert.Equal(1, importOptions.SrxStorageId);
+        }
+
+        #endregion
         
         #region HtmlFileImportOptions
 

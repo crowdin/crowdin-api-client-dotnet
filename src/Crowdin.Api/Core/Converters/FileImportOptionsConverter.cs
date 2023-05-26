@@ -28,6 +28,10 @@ namespace Crowdin.Api.Core.Converters
             {
                 options = JsonConvert.DeserializeObject<SpreadsheetFileImportOptions>(jObject.ToString());
             }
+            else if (jObject.TryGetValue("cleanTagsAggressively", out _))
+            {
+                options = JsonConvert.DeserializeObject<DocxFileImportOptions>(jObject.ToString());
+            }
             else if (jObject.TryGetValue("translateContent", out _))
             {
                 options = JsonConvert.DeserializeObject<XmlFileImportOptions>(jObject.ToString());
