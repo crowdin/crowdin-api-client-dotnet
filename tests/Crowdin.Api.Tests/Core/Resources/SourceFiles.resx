@@ -119,4 +119,44 @@
   }
 }</value>
     </data>
+    <data name="AddFile_Html_Request" xml:space="preserve">
+        <value>{
+    "storageId": 1,
+    "importOptions": {
+        "excludedElements": [
+            ".div"
+        ],
+        "contentSegmentation": true,
+        "srxStorageId": 2
+    }
+}</value>
+    </data>
+    <data name="AddFile_HtmlWithFrontMatter_Request" xml:space="preserve">
+        <value>{
+    "storageId": 1,
+    "importOptions": {
+        "excludedElements": [
+            ".div"
+        ],
+        "excludedFrontMatterElements": [
+            "br"
+        ],
+        "contentSegmentation": true,
+        "srxStorageId": 2
+    }
+}</value>
+    </data>
+    <data name="AddFile_MdxV1_Request" xml:space="preserve">
+        <value>{
+    "storageId": 1,
+    "importOptions": {
+        "excludedFrontMatterElements": [
+            "br"
+        ],
+        "excludeCodeBlocks": true,
+        "contentSegmentation": true,
+        "srxStorageId": 2
+    }
+}</value>
+    </data>
 </root>

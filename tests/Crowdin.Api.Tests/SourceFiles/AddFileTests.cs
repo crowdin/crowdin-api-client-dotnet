@@ -56,6 +56,8 @@ namespace Crowdin.Api.Tests.SourceFiles
             Assert.IsType<SpreadsheetFileImportOptions>(responseFile.ImportOptions);
         }
 
+        #region DocxFileImportOptions
+
         [Fact]
         public void AddFile_DocxFileImportOptions_RequestSerialization()
         {
@@ -82,7 +84,141 @@ namespace Crowdin.Api.Tests.SourceFiles
             string expectedRequestJson = TestUtils.CompactJson(Core.Resources.SourceFiles.AddFile_Docx_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
         }
+
+        [Fact]
+        public void AddFile_DocxFileImportOptions_RequestDeserialization()
+        {
+            string requestJson = Core.Resources.SourceFiles.AddFile_Docx_Request;
+            var request = JsonConvert.DeserializeObject<AddFileRequest>(requestJson, JsonSettings);
+            
+            Assert.NotNull(request);
+            Assert.IsType<DocxFileImportOptions>(request!.ImportOptions);
+            
+            var importOptions = (DocxFileImportOptions) request.ImportOptions!;
+            Assert.True(importOptions.ContentSegmentation);
+            Assert.Equal(1, importOptions.SrxStorageId);
+        }
+
+        #endregion
         
+        #region HtmlFileImportOptions
+
+        [Fact]
+        public void AddFile_HtmlFileImportOptions_RequestSerialization()
+        {
+            var request = new AddFileRequest
+            {
+                StorageId = 1,
+                ImportOptions = new HtmlFileImportOptions
+                {
+                    ExcludedElements = new List<string> { ".div" },
+                    ContentSegmentation = true,
+                    SrxStorageId = 2
+                }
+            };
+            
+            string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
+            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.SourceFiles.AddFile_Html_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+        }
+
+        [Fact]
+        public void AddFile_HtmlFileImportOptions_RequestDeserialization()
+        {
+            string requestJson = Core.Resources.SourceFiles.AddFile_Html_Request;
+            var request = JsonConvert.DeserializeObject<AddFileRequest>(requestJson, JsonSettings);
+            
+            Assert.NotNull(request);
+            Assert.IsType<HtmlFileImportOptions>(request!.ImportOptions);
+            
+            var importOptions = (HtmlFileImportOptions) request.ImportOptions!;
+            Assert.Equal(new List<string> { ".div" }, importOptions.ExcludedElements);
+            Assert.True(importOptions.ContentSegmentation);
+            Assert.Equal(2, importOptions.SrxStorageId);
+        }
+
+        #endregion
+
+        #region HtmlWithFrontMatterFileImportOptions
+
+        [Fact]
+        public void AddFile_HtmlWithFrontMatterFileImportOptions_RequestSerialization()
+        {
+            var request = new AddFileRequest
+            {
+                StorageId = 1,
+                ImportOptions = new HtmlWithFrontMatterFileImportOptions
+                {
+                    ExcludedElements = new List<string> { ".div" },
+                    ExcludedFrontMatterElements = new List<string> { "br" },
+                    ContentSegmentation = true,
+                    SrxStorageId = 2
+                }
+            };
+            
+            string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
+            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.SourceFiles.AddFile_HtmlWithFrontMatter_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+        }
+
+        [Fact]
+        public void AddFile_HtmlWithFrontMatterFileImportOptions_RequestDeserialization()
+        {
+            string requestJson = Core.Resources.SourceFiles.AddFile_HtmlWithFrontMatter_Request;
+            var request = JsonConvert.DeserializeObject<AddFileRequest>(requestJson, JsonSettings);
+            
+            Assert.NotNull(request);
+            Assert.IsType<HtmlWithFrontMatterFileImportOptions>(request!.ImportOptions);
+            
+            var importOptions = (HtmlWithFrontMatterFileImportOptions) request.ImportOptions!;
+            Assert.Equal(new List<string> { ".div" }, importOptions.ExcludedElements);
+            Assert.Equal(new List<string> { "br" }, importOptions.ExcludedFrontMatterElements);
+            Assert.True(importOptions.ContentSegmentation);
+            Assert.Equal(2, importOptions.SrxStorageId);
+        }
+
+        #endregion
+
+        #region MdxV1FileImportOptions
+
+        [Fact]
+        public void AddFile_MdxV1FileImportOptions_RequestSerialization()
+        {
+            var request = new AddFileRequest
+            {
+                StorageId = 1,
+                ImportOptions = new MdxV1FileImportOptions()
+                {
+                    ExcludedFrontMatterElements = new List<string> { "br" },
+                    ExcludeCodeBlocks = true,
+                    ContentSegmentation = true,
+                    SrxStorageId = 2
+                }
+            };
+            
+            string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
+            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.SourceFiles.AddFile_MdxV1_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+        }
+        
+        [Fact]
+        public void AddFile_MdxV1FileImportOptions_RequestDeserialization()
+        {
+            string requestJson = Core.Resources.SourceFiles.AddFile_MdxV1_Request;
+            var request = JsonConvert.DeserializeObject<AddFileRequest>(requestJson, JsonSettings);
+            
+            Assert.NotNull(request);
+            Assert.IsType<MdxV1FileImportOptions>(request!.ImportOptions);
+            
+            var importOptions = (MdxV1FileImportOptions) request.ImportOptions!;
+            Assert.Equal(new List<string> { "br" }, importOptions.ExcludedFrontMatterElements);
+            Assert.True(importOptions.ExcludeCodeBlocks);
+            Assert.True(importOptions.ContentSegmentation);
+            Assert.Equal(2, importOptions.SrxStorageId);
+        }
+
+        #endregion
+
         [Fact]
         public void AddFile_RequestSerialization()
         {

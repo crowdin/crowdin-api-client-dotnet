@@ -28,9 +28,25 @@ namespace Crowdin.Api.Core.Converters
             {
                 options = JsonConvert.DeserializeObject<SpreadsheetFileImportOptions>(jObject.ToString());
             }
+            else if (jObject.TryGetValue("cleanTagsAggressively", out _))
+            {
+                options = JsonConvert.DeserializeObject<DocxFileImportOptions>(jObject.ToString());
+            }
             else if (jObject.TryGetValue("translateContent", out _))
             {
                 options = JsonConvert.DeserializeObject<XmlFileImportOptions>(jObject.ToString());
+            }
+            else if (jObject.TryGetValue("excludeCodeBlocks", out _))
+            {
+                options = JsonConvert.DeserializeObject<MdxV1FileImportOptions>(jObject.ToString());
+            }
+            else if (jObject.TryGetValue("excludedFrontMatterElements", out _))
+            {
+                options = JsonConvert.DeserializeObject<HtmlWithFrontMatterFileImportOptions>(jObject.ToString());
+            }
+            else if (jObject.TryGetValue("excludedElements", out _))
+            {
+                options = JsonConvert.DeserializeObject<HtmlFileImportOptions>(jObject.ToString());
             }
             else
             {
