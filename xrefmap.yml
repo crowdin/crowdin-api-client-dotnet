@@ -2762,6 +2762,51 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.ConceptLanguageDetailsForm.Note
   nameWithType: ConceptLanguageDetailsForm.Note
+- uid: Crowdin.Api.Glossaries.ConcordanceSearchRequest
+  name: ConcordanceSearchRequest
+  href: api/Crowdin.Api.Glossaries.ConcordanceSearchRequest.html
+  commentId: T:Crowdin.Api.Glossaries.ConcordanceSearchRequest
+  fullName: Crowdin.Api.Glossaries.ConcordanceSearchRequest
+  nameWithType: ConcordanceSearchRequest
+- uid: Crowdin.Api.Glossaries.ConcordanceSearchRequest.Expression
+  name: Expression
+  href: api/Crowdin.Api.Glossaries.ConcordanceSearchRequest.html#Crowdin_Api_Glossaries_ConcordanceSearchRequest_Expression
+  commentId: P:Crowdin.Api.Glossaries.ConcordanceSearchRequest.Expression
+  fullName: Crowdin.Api.Glossaries.ConcordanceSearchRequest.Expression
+  nameWithType: ConcordanceSearchRequest.Expression
+- uid: Crowdin.Api.Glossaries.ConcordanceSearchRequest.Expression*
+  name: Expression
+  href: api/Crowdin.Api.Glossaries.ConcordanceSearchRequest.html#Crowdin_Api_Glossaries_ConcordanceSearchRequest_Expression_
+  commentId: Overload:Crowdin.Api.Glossaries.ConcordanceSearchRequest.Expression
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.ConcordanceSearchRequest.Expression
+  nameWithType: ConcordanceSearchRequest.Expression
+- uid: Crowdin.Api.Glossaries.ConcordanceSearchRequest.SourceLanguageId
+  name: SourceLanguageId
+  href: api/Crowdin.Api.Glossaries.ConcordanceSearchRequest.html#Crowdin_Api_Glossaries_ConcordanceSearchRequest_SourceLanguageId
+  commentId: P:Crowdin.Api.Glossaries.ConcordanceSearchRequest.SourceLanguageId
+  fullName: Crowdin.Api.Glossaries.ConcordanceSearchRequest.SourceLanguageId
+  nameWithType: ConcordanceSearchRequest.SourceLanguageId
+- uid: Crowdin.Api.Glossaries.ConcordanceSearchRequest.SourceLanguageId*
+  name: SourceLanguageId
+  href: api/Crowdin.Api.Glossaries.ConcordanceSearchRequest.html#Crowdin_Api_Glossaries_ConcordanceSearchRequest_SourceLanguageId_
+  commentId: Overload:Crowdin.Api.Glossaries.ConcordanceSearchRequest.SourceLanguageId
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.ConcordanceSearchRequest.SourceLanguageId
+  nameWithType: ConcordanceSearchRequest.SourceLanguageId
+- uid: Crowdin.Api.Glossaries.ConcordanceSearchRequest.TargetLanguageId
+  name: TargetLanguageId
+  href: api/Crowdin.Api.Glossaries.ConcordanceSearchRequest.html#Crowdin_Api_Glossaries_ConcordanceSearchRequest_TargetLanguageId
+  commentId: P:Crowdin.Api.Glossaries.ConcordanceSearchRequest.TargetLanguageId
+  fullName: Crowdin.Api.Glossaries.ConcordanceSearchRequest.TargetLanguageId
+  nameWithType: ConcordanceSearchRequest.TargetLanguageId
+- uid: Crowdin.Api.Glossaries.ConcordanceSearchRequest.TargetLanguageId*
+  name: TargetLanguageId
+  href: api/Crowdin.Api.Glossaries.ConcordanceSearchRequest.html#Crowdin_Api_Glossaries_ConcordanceSearchRequest_TargetLanguageId_
+  commentId: Overload:Crowdin.Api.Glossaries.ConcordanceSearchRequest.TargetLanguageId
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.ConcordanceSearchRequest.TargetLanguageId
+  nameWithType: ConcordanceSearchRequest.TargetLanguageId
 - uid: Crowdin.Api.Glossaries.ExportGlossaryRequest
   name: ExportGlossaryRequest
   href: api/Crowdin.Api.Glossaries.ExportGlossaryRequest.html
@@ -2887,6 +2932,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ClearGlossary
   nameWithType: GlossariesApiExecutor.ClearGlossary
+- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ConcordanceSearch(System.Int32,Crowdin.Api.Glossaries.ConcordanceSearchRequest)
+  name: ConcordanceSearch(Int32, ConcordanceSearchRequest)
+  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ConcordanceSearch_System_Int32_Crowdin_Api_Glossaries_ConcordanceSearchRequest_
+  commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.ConcordanceSearch(System.Int32,Crowdin.Api.Glossaries.ConcordanceSearchRequest)
+  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ConcordanceSearch(System.Int32, Crowdin.Api.Glossaries.ConcordanceSearchRequest)
+  nameWithType: GlossariesApiExecutor.ConcordanceSearch(Int32, ConcordanceSearchRequest)
+- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ConcordanceSearch*
+  name: ConcordanceSearch
+  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ConcordanceSearch_
+  commentId: Overload:Crowdin.Api.Glossaries.GlossariesApiExecutor.ConcordanceSearch
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ConcordanceSearch
+  nameWithType: GlossariesApiExecutor.ConcordanceSearch
 - uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.DeleteConcept(System.Int32,System.Int32)
   name: DeleteConcept(Int32, Int32)
   href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_DeleteConcept_System_Int32_System_Int32_
@@ -3218,6 +3276,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.Glossary.CreatedAt
   nameWithType: Glossary.CreatedAt
+- uid: Crowdin.Api.Glossaries.Glossary.DefaultProjectIds
+  name: DefaultProjectIds
+  href: api/Crowdin.Api.Glossaries.Glossary.html#Crowdin_Api_Glossaries_Glossary_DefaultProjectIds
+  commentId: P:Crowdin.Api.Glossaries.Glossary.DefaultProjectIds
+  fullName: Crowdin.Api.Glossaries.Glossary.DefaultProjectIds
+  nameWithType: Glossary.DefaultProjectIds
+- uid: Crowdin.Api.Glossaries.Glossary.DefaultProjectIds*
+  name: DefaultProjectIds
+  href: api/Crowdin.Api.Glossaries.Glossary.html#Crowdin_Api_Glossaries_Glossary_DefaultProjectIds_
+  commentId: Overload:Crowdin.Api.Glossaries.Glossary.DefaultProjectIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.Glossary.DefaultProjectIds
+  nameWithType: Glossary.DefaultProjectIds
 - uid: Crowdin.Api.Glossaries.Glossary.GroupId
   name: GroupId
   href: api/Crowdin.Api.Glossaries.Glossary.html#Crowdin_Api_Glossaries_Glossary_GroupId
@@ -3322,6 +3393,64 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.Glossary.UserId
   nameWithType: Glossary.UserId
+- uid: Crowdin.Api.Glossaries.GlossaryConcordanceResultResource
+  name: GlossaryConcordanceResultResource
+  href: api/Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.html
+  commentId: T:Crowdin.Api.Glossaries.GlossaryConcordanceResultResource
+  fullName: Crowdin.Api.Glossaries.GlossaryConcordanceResultResource
+  nameWithType: GlossaryConcordanceResultResource
+- uid: Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.Concept
+  name: Concept
+  href: api/Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.html#Crowdin_Api_Glossaries_GlossaryConcordanceResultResource_Concept
+  commentId: P:Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.Concept
+  fullName: Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.Concept
+  nameWithType: GlossaryConcordanceResultResource.Concept
+- uid: Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.Concept*
+  name: Concept
+  href: api/Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.html#Crowdin_Api_Glossaries_GlossaryConcordanceResultResource_Concept_
+  commentId: Overload:Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.Concept
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.Concept
+  nameWithType: GlossaryConcordanceResultResource.Concept
+- uid: Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.Glossary
+  name: Glossary
+  href: api/Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.html#Crowdin_Api_Glossaries_GlossaryConcordanceResultResource_Glossary
+  commentId: P:Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.Glossary
+  fullName: Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.Glossary
+  nameWithType: GlossaryConcordanceResultResource.Glossary
+- uid: Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.Glossary*
+  name: Glossary
+  href: api/Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.html#Crowdin_Api_Glossaries_GlossaryConcordanceResultResource_Glossary_
+  commentId: Overload:Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.Glossary
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.Glossary
+  nameWithType: GlossaryConcordanceResultResource.Glossary
+- uid: Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.SourceTerms
+  name: SourceTerms
+  href: api/Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.html#Crowdin_Api_Glossaries_GlossaryConcordanceResultResource_SourceTerms
+  commentId: P:Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.SourceTerms
+  fullName: Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.SourceTerms
+  nameWithType: GlossaryConcordanceResultResource.SourceTerms
+- uid: Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.SourceTerms*
+  name: SourceTerms
+  href: api/Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.html#Crowdin_Api_Glossaries_GlossaryConcordanceResultResource_SourceTerms_
+  commentId: Overload:Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.SourceTerms
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.SourceTerms
+  nameWithType: GlossaryConcordanceResultResource.SourceTerms
+- uid: Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.TargetTerms
+  name: TargetTerms
+  href: api/Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.html#Crowdin_Api_Glossaries_GlossaryConcordanceResultResource_TargetTerms
+  commentId: P:Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.TargetTerms
+  fullName: Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.TargetTerms
+  nameWithType: GlossaryConcordanceResultResource.TargetTerms
+- uid: Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.TargetTerms*
+  name: TargetTerms
+  href: api/Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.html#Crowdin_Api_Glossaries_GlossaryConcordanceResultResource_TargetTerms_
+  commentId: Overload:Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.TargetTerms
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.GlossaryConcordanceResultResource.TargetTerms
+  nameWithType: GlossaryConcordanceResultResource.TargetTerms
 - uid: Crowdin.Api.Glossaries.GlossaryExportFieldId
   name: GlossaryExportFieldId
   href: api/Crowdin.Api.Glossaries.GlossaryExportFieldId.html
@@ -5321,6 +5450,25 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Labels.AddLabelRequest.Title
   nameWithType: AddLabelRequest.Title
+- uid: Crowdin.Api.Labels.AssignLabelToScreenshotsRequest
+  name: AssignLabelToScreenshotsRequest
+  href: api/Crowdin.Api.Labels.AssignLabelToScreenshotsRequest.html
+  commentId: T:Crowdin.Api.Labels.AssignLabelToScreenshotsRequest
+  fullName: Crowdin.Api.Labels.AssignLabelToScreenshotsRequest
+  nameWithType: AssignLabelToScreenshotsRequest
+- uid: Crowdin.Api.Labels.AssignLabelToScreenshotsRequest.ScreenshotIds
+  name: ScreenshotIds
+  href: api/Crowdin.Api.Labels.AssignLabelToScreenshotsRequest.html#Crowdin_Api_Labels_AssignLabelToScreenshotsRequest_ScreenshotIds
+  commentId: P:Crowdin.Api.Labels.AssignLabelToScreenshotsRequest.ScreenshotIds
+  fullName: Crowdin.Api.Labels.AssignLabelToScreenshotsRequest.ScreenshotIds
+  nameWithType: AssignLabelToScreenshotsRequest.ScreenshotIds
+- uid: Crowdin.Api.Labels.AssignLabelToScreenshotsRequest.ScreenshotIds*
+  name: ScreenshotIds
+  href: api/Crowdin.Api.Labels.AssignLabelToScreenshotsRequest.html#Crowdin_Api_Labels_AssignLabelToScreenshotsRequest_ScreenshotIds_
+  commentId: Overload:Crowdin.Api.Labels.AssignLabelToScreenshotsRequest.ScreenshotIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Labels.AssignLabelToScreenshotsRequest.ScreenshotIds
+  nameWithType: AssignLabelToScreenshotsRequest.ScreenshotIds
 - uid: Crowdin.Api.Labels.AssignLabelToStringsRequest
   name: AssignLabelToStringsRequest
   href: api/Crowdin.Api.Labels.AssignLabelToStringsRequest.html
@@ -5447,6 +5595,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Labels.LabelsApiExecutor.AddLabel
   nameWithType: LabelsApiExecutor.AddLabel
+- uid: Crowdin.Api.Labels.LabelsApiExecutor.AssignLabelToScreenshots(System.Int32,System.Int32,Crowdin.Api.Labels.AssignLabelToScreenshotsRequest)
+  name: AssignLabelToScreenshots(Int32, Int32, AssignLabelToScreenshotsRequest)
+  href: api/Crowdin.Api.Labels.LabelsApiExecutor.html#Crowdin_Api_Labels_LabelsApiExecutor_AssignLabelToScreenshots_System_Int32_System_Int32_Crowdin_Api_Labels_AssignLabelToScreenshotsRequest_
+  commentId: M:Crowdin.Api.Labels.LabelsApiExecutor.AssignLabelToScreenshots(System.Int32,System.Int32,Crowdin.Api.Labels.AssignLabelToScreenshotsRequest)
+  fullName: Crowdin.Api.Labels.LabelsApiExecutor.AssignLabelToScreenshots(System.Int32, System.Int32, Crowdin.Api.Labels.AssignLabelToScreenshotsRequest)
+  nameWithType: LabelsApiExecutor.AssignLabelToScreenshots(Int32, Int32, AssignLabelToScreenshotsRequest)
+- uid: Crowdin.Api.Labels.LabelsApiExecutor.AssignLabelToScreenshots*
+  name: AssignLabelToScreenshots
+  href: api/Crowdin.Api.Labels.LabelsApiExecutor.html#Crowdin_Api_Labels_LabelsApiExecutor_AssignLabelToScreenshots_
+  commentId: Overload:Crowdin.Api.Labels.LabelsApiExecutor.AssignLabelToScreenshots
+  isSpec: "True"
+  fullName: Crowdin.Api.Labels.LabelsApiExecutor.AssignLabelToScreenshots
+  nameWithType: LabelsApiExecutor.AssignLabelToScreenshots
 - uid: Crowdin.Api.Labels.LabelsApiExecutor.AssignLabelToStrings(System.Int32,System.Int32,Crowdin.Api.Labels.AssignLabelToStringsRequest)
   name: AssignLabelToStrings(Int32, Int32, AssignLabelToStringsRequest)
   href: api/Crowdin.Api.Labels.LabelsApiExecutor.html#Crowdin_Api_Labels_LabelsApiExecutor_AssignLabelToStrings_System_Int32_System_Int32_Crowdin_Api_Labels_AssignLabelToStringsRequest_
@@ -5524,6 +5685,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Labels.LabelsApiExecutor.ListLabels
   nameWithType: LabelsApiExecutor.ListLabels
+- uid: Crowdin.Api.Labels.LabelsApiExecutor.UnassignLabelFromScreenshots(System.Int32,System.Int32,IEnumerable{System.Int32})
+  name: UnassignLabelFromScreenshots(Int32, Int32, IEnumerable<Int32>)
+  href: api/Crowdin.Api.Labels.LabelsApiExecutor.html#Crowdin_Api_Labels_LabelsApiExecutor_UnassignLabelFromScreenshots_System_Int32_System_Int32_IEnumerable_System_Int32__
+  commentId: M:Crowdin.Api.Labels.LabelsApiExecutor.UnassignLabelFromScreenshots(System.Int32,System.Int32,IEnumerable{System.Int32})
+  name.vb: UnassignLabelFromScreenshots(Int32, Int32, IEnumerable(Of Int32))
+  fullName: Crowdin.Api.Labels.LabelsApiExecutor.UnassignLabelFromScreenshots(System.Int32, System.Int32, IEnumerable<System.Int32>)
+  fullName.vb: Crowdin.Api.Labels.LabelsApiExecutor.UnassignLabelFromScreenshots(System.Int32, System.Int32, IEnumerable(Of System.Int32))
+  nameWithType: LabelsApiExecutor.UnassignLabelFromScreenshots(Int32, Int32, IEnumerable<Int32>)
+  nameWithType.vb: LabelsApiExecutor.UnassignLabelFromScreenshots(Int32, Int32, IEnumerable(Of Int32))
+- uid: Crowdin.Api.Labels.LabelsApiExecutor.UnassignLabelFromScreenshots*
+  name: UnassignLabelFromScreenshots
+  href: api/Crowdin.Api.Labels.LabelsApiExecutor.html#Crowdin_Api_Labels_LabelsApiExecutor_UnassignLabelFromScreenshots_
+  commentId: Overload:Crowdin.Api.Labels.LabelsApiExecutor.UnassignLabelFromScreenshots
+  isSpec: "True"
+  fullName: Crowdin.Api.Labels.LabelsApiExecutor.UnassignLabelFromScreenshots
+  nameWithType: LabelsApiExecutor.UnassignLabelFromScreenshots
 - uid: Crowdin.Api.Labels.LabelsApiExecutor.UnassignLabelFromStrings(System.Int32,System.Int32,ICollection{System.Int32})
   name: UnassignLabelFromStrings(Int32, Int32, ICollection<Int32>)
   href: api/Crowdin.Api.Labels.LabelsApiExecutor.html#Crowdin_Api_Labels_LabelsApiExecutor_UnassignLabelFromStrings_System_Int32_System_Int32_ICollection_System_Int32__
@@ -6991,6 +7168,25 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.AdocFileFormatSettings.SrxStorageId
   nameWithType: AdocFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.AssignedTm
+  name: AssignedTm
+  href: api/Crowdin.Api.ProjectsGroups.AssignedTm.html
+  commentId: T:Crowdin.Api.ProjectsGroups.AssignedTm
+  fullName: Crowdin.Api.ProjectsGroups.AssignedTm
+  nameWithType: AssignedTm
+- uid: Crowdin.Api.ProjectsGroups.AssignedTm.Priority
+  name: Priority
+  href: api/Crowdin.Api.ProjectsGroups.AssignedTm.html#Crowdin_Api_ProjectsGroups_AssignedTm_Priority
+  commentId: P:Crowdin.Api.ProjectsGroups.AssignedTm.Priority
+  fullName: Crowdin.Api.ProjectsGroups.AssignedTm.Priority
+  nameWithType: AssignedTm.Priority
+- uid: Crowdin.Api.ProjectsGroups.AssignedTm.Priority*
+  name: Priority
+  href: api/Crowdin.Api.ProjectsGroups.AssignedTm.html#Crowdin_Api_ProjectsGroups_AssignedTm_Priority_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.AssignedTm.Priority
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.AssignedTm.Priority
+  nameWithType: AssignedTm.Priority
 - uid: Crowdin.Api.ProjectsGroups.DitaFileFormatSettings
   name: DitaFileFormatSettings
   href: api/Crowdin.Api.ProjectsGroups.DitaFileFormatSettings.html
@@ -7538,6 +7734,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.QaCheckIsActive
   nameWithType: EnterpriseProjectForm.QaCheckIsActive
+- uid: Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.QaChecksIgnorableCategories
+  name: QaChecksIgnorableCategories
+  href: api/Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.html#Crowdin_Api_ProjectsGroups_EnterpriseProjectForm_QaChecksIgnorableCategories
+  commentId: P:Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.QaChecksIgnorableCategories
+  fullName: Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.QaChecksIgnorableCategories
+  nameWithType: EnterpriseProjectForm.QaChecksIgnorableCategories
+- uid: Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.QaChecksIgnorableCategories*
+  name: QaChecksIgnorableCategories
+  href: api/Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.html#Crowdin_Api_ProjectsGroups_EnterpriseProjectForm_QaChecksIgnorableCategories_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.QaChecksIgnorableCategories
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.QaChecksIgnorableCategories
+  nameWithType: EnterpriseProjectForm.QaChecksIgnorableCategories
 - uid: Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.SaveMetaInfoInSource
   name: SaveMetaInfoInSource
   href: api/Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.html#Crowdin_Api_ProjectsGroups_EnterpriseProjectForm_SaveMetaInfoInSource
@@ -8140,6 +8349,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.FileBasedProjectForm.QaCheckIsActive
   nameWithType: FileBasedProjectForm.QaCheckIsActive
+- uid: Crowdin.Api.ProjectsGroups.FileBasedProjectForm.QaChecksIgnorableCategories
+  name: QaChecksIgnorableCategories
+  href: api/Crowdin.Api.ProjectsGroups.FileBasedProjectForm.html#Crowdin_Api_ProjectsGroups_FileBasedProjectForm_QaChecksIgnorableCategories
+  commentId: P:Crowdin.Api.ProjectsGroups.FileBasedProjectForm.QaChecksIgnorableCategories
+  fullName: Crowdin.Api.ProjectsGroups.FileBasedProjectForm.QaChecksIgnorableCategories
+  nameWithType: FileBasedProjectForm.QaChecksIgnorableCategories
+- uid: Crowdin.Api.ProjectsGroups.FileBasedProjectForm.QaChecksIgnorableCategories*
+  name: QaChecksIgnorableCategories
+  href: api/Crowdin.Api.ProjectsGroups.FileBasedProjectForm.html#Crowdin_Api_ProjectsGroups_FileBasedProjectForm_QaChecksIgnorableCategories_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.FileBasedProjectForm.QaChecksIgnorableCategories
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.FileBasedProjectForm.QaChecksIgnorableCategories
+  nameWithType: FileBasedProjectForm.QaChecksIgnorableCategories
 - uid: Crowdin.Api.ProjectsGroups.FileBasedProjectForm.SaveMetaInfoInSource
   name: SaveMetaInfoInSource
   href: api/Crowdin.Api.ProjectsGroups.FileBasedProjectForm.html#Crowdin_Api_ProjectsGroups_FileBasedProjectForm_SaveMetaInfoInSource
@@ -9742,6 +9964,12 @@ references:
   commentId: F:Crowdin.Api.ProjectsGroups.ProjectSettingPathCode.QaCheckIsActive
   fullName: Crowdin.Api.ProjectsGroups.ProjectSettingPathCode.QaCheckIsActive
   nameWithType: ProjectSettingPathCode.QaCheckIsActive
+- uid: Crowdin.Api.ProjectsGroups.ProjectSettingPathCode.QaChecksIgnorableCategories
+  name: QaChecksIgnorableCategories
+  href: api/Crowdin.Api.ProjectsGroups.ProjectSettingPathCode.html#Crowdin_Api_ProjectsGroups_ProjectSettingPathCode_QaChecksIgnorableCategories
+  commentId: F:Crowdin.Api.ProjectsGroups.ProjectSettingPathCode.QaChecksIgnorableCategories
+  fullName: Crowdin.Api.ProjectsGroups.ProjectSettingPathCode.QaChecksIgnorableCategories
+  nameWithType: ProjectSettingPathCode.QaChecksIgnorableCategories
 - uid: Crowdin.Api.ProjectsGroups.ProjectSettingPathCode.SaveMetaInfoInSource
   name: SaveMetaInfoInSource
   href: api/Crowdin.Api.ProjectsGroups.ProjectSettingPathCode.html#Crowdin_Api_ProjectsGroups_ProjectSettingPathCode_SaveMetaInfoInSource
@@ -9772,6 +10000,32 @@ references:
   commentId: T:Crowdin.Api.ProjectsGroups.ProjectSettings
   fullName: Crowdin.Api.ProjectsGroups.ProjectSettings
   nameWithType: ProjectSettings
+- uid: Crowdin.Api.ProjectsGroups.ProjectSettings.AssignedGlossaries
+  name: AssignedGlossaries
+  href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_AssignedGlossaries
+  commentId: P:Crowdin.Api.ProjectsGroups.ProjectSettings.AssignedGlossaries
+  fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.AssignedGlossaries
+  nameWithType: ProjectSettings.AssignedGlossaries
+- uid: Crowdin.Api.ProjectsGroups.ProjectSettings.AssignedGlossaries*
+  name: AssignedGlossaries
+  href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_AssignedGlossaries_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectSettings.AssignedGlossaries
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.AssignedGlossaries
+  nameWithType: ProjectSettings.AssignedGlossaries
+- uid: Crowdin.Api.ProjectsGroups.ProjectSettings.AssignedTms
+  name: AssignedTms
+  href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_AssignedTms
+  commentId: P:Crowdin.Api.ProjectsGroups.ProjectSettings.AssignedTms
+  fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.AssignedTms
+  nameWithType: ProjectSettings.AssignedTms
+- uid: Crowdin.Api.ProjectsGroups.ProjectSettings.AssignedTms*
+  name: AssignedTms
+  href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_AssignedTms_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectSettings.AssignedTms
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.AssignedTms
+  nameWithType: ProjectSettings.AssignedTms
 - uid: Crowdin.Api.ProjectsGroups.ProjectSettings.AutoSubstitution
   name: AutoSubstitution
   href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_AutoSubstitution
@@ -9798,6 +10052,32 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.AutoTranslateDialects
   nameWithType: ProjectSettings.AutoTranslateDialects
+- uid: Crowdin.Api.ProjectsGroups.ProjectSettings.DefaultGlossaryId
+  name: DefaultGlossaryId
+  href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_DefaultGlossaryId
+  commentId: P:Crowdin.Api.ProjectsGroups.ProjectSettings.DefaultGlossaryId
+  fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.DefaultGlossaryId
+  nameWithType: ProjectSettings.DefaultGlossaryId
+- uid: Crowdin.Api.ProjectsGroups.ProjectSettings.DefaultGlossaryId*
+  name: DefaultGlossaryId
+  href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_DefaultGlossaryId_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectSettings.DefaultGlossaryId
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.DefaultGlossaryId
+  nameWithType: ProjectSettings.DefaultGlossaryId
+- uid: Crowdin.Api.ProjectsGroups.ProjectSettings.DefaultTmId
+  name: DefaultTmId
+  href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_DefaultTmId
+  commentId: P:Crowdin.Api.ProjectsGroups.ProjectSettings.DefaultTmId
+  fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.DefaultTmId
+  nameWithType: ProjectSettings.DefaultTmId
+- uid: Crowdin.Api.ProjectsGroups.ProjectSettings.DefaultTmId*
+  name: DefaultTmId
+  href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_DefaultTmId_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectSettings.DefaultTmId
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.DefaultTmId
+  nameWithType: ProjectSettings.DefaultTmId
 - uid: Crowdin.Api.ProjectsGroups.ProjectSettings.ExportApprovedOnly
   name: ExportApprovedOnly
   href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_ExportApprovedOnly
@@ -9993,6 +10273,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.QaCheckIsActive
   nameWithType: ProjectSettings.QaCheckIsActive
+- uid: Crowdin.Api.ProjectsGroups.ProjectSettings.QaChecksIgnorableCategories
+  name: QaChecksIgnorableCategories
+  href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_QaChecksIgnorableCategories
+  commentId: P:Crowdin.Api.ProjectsGroups.ProjectSettings.QaChecksIgnorableCategories
+  fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.QaChecksIgnorableCategories
+  nameWithType: ProjectSettings.QaChecksIgnorableCategories
+- uid: Crowdin.Api.ProjectsGroups.ProjectSettings.QaChecksIgnorableCategories*
+  name: QaChecksIgnorableCategories
+  href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_QaChecksIgnorableCategories_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectSettings.QaChecksIgnorableCategories
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.QaChecksIgnorableCategories
+  nameWithType: ProjectSettings.QaChecksIgnorableCategories
 - uid: Crowdin.Api.ProjectsGroups.ProjectSettings.SaveMetaInfoInSource
   name: SaveMetaInfoInSource
   href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_SaveMetaInfoInSource
@@ -10006,6 +10299,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.SaveMetaInfoInSource
   nameWithType: ProjectSettings.SaveMetaInfoInSource
+- uid: Crowdin.Api.ProjectsGroups.ProjectSettings.ShowTmSuggestionsDialects
+  name: ShowTmSuggestionsDialects
+  href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_ShowTmSuggestionsDialects
+  commentId: P:Crowdin.Api.ProjectsGroups.ProjectSettings.ShowTmSuggestionsDialects
+  fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.ShowTmSuggestionsDialects
+  nameWithType: ProjectSettings.ShowTmSuggestionsDialects
+- uid: Crowdin.Api.ProjectsGroups.ProjectSettings.ShowTmSuggestionsDialects*
+  name: ShowTmSuggestionsDialects
+  href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_ShowTmSuggestionsDialects_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectSettings.ShowTmSuggestionsDialects
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.ShowTmSuggestionsDialects
+  nameWithType: ProjectSettings.ShowTmSuggestionsDialects
 - uid: Crowdin.Api.ProjectsGroups.ProjectSettings.SkipUntranslatedFiles
   name: SkipUntranslatedFiles
   href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_SkipUntranslatedFiles
@@ -10058,19 +10364,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.TranslateDuplicates
   nameWithType: ProjectSettings.TranslateDuplicates
-- uid: Crowdin.Api.ProjectsGroups.ProjectSettings.UseGlobalMachineTranslator
-  name: UseGlobalMachineTranslator
-  href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_UseGlobalMachineTranslator
-  commentId: P:Crowdin.Api.ProjectsGroups.ProjectSettings.UseGlobalMachineTranslator
-  fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.UseGlobalMachineTranslator
-  nameWithType: ProjectSettings.UseGlobalMachineTranslator
-- uid: Crowdin.Api.ProjectsGroups.ProjectSettings.UseGlobalMachineTranslator*
-  name: UseGlobalMachineTranslator
-  href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_UseGlobalMachineTranslator_
-  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectSettings.UseGlobalMachineTranslator
+- uid: Crowdin.Api.ProjectsGroups.ProjectSettings.UseGlobalTm
+  name: UseGlobalTm
+  href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_UseGlobalTm
+  commentId: P:Crowdin.Api.ProjectsGroups.ProjectSettings.UseGlobalTm
+  fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.UseGlobalTm
+  nameWithType: ProjectSettings.UseGlobalTm
+- uid: Crowdin.Api.ProjectsGroups.ProjectSettings.UseGlobalTm*
+  name: UseGlobalTm
+  href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_UseGlobalTm_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectSettings.UseGlobalTm
   isSpec: "True"
-  fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.UseGlobalMachineTranslator
-  nameWithType: ProjectSettings.UseGlobalMachineTranslator
+  fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.UseGlobalTm
+  nameWithType: ProjectSettings.UseGlobalTm
 - uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor
   name: ProjectsGroupsApiExecutor
   href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html
@@ -10412,6 +10718,19 @@ references:
   commentId: T:Crowdin.Api.ProjectsGroups.QaCheckCategories
   fullName: Crowdin.Api.ProjectsGroups.QaCheckCategories
   nameWithType: QaCheckCategories
+- uid: Crowdin.Api.ProjectsGroups.QaCheckCategories.Android
+  name: Android
+  href: api/Crowdin.Api.ProjectsGroups.QaCheckCategories.html#Crowdin_Api_ProjectsGroups_QaCheckCategories_Android
+  commentId: P:Crowdin.Api.ProjectsGroups.QaCheckCategories.Android
+  fullName: Crowdin.Api.ProjectsGroups.QaCheckCategories.Android
+  nameWithType: QaCheckCategories.Android
+- uid: Crowdin.Api.ProjectsGroups.QaCheckCategories.Android*
+  name: Android
+  href: api/Crowdin.Api.ProjectsGroups.QaCheckCategories.html#Crowdin_Api_ProjectsGroups_QaCheckCategories_Android_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.QaCheckCategories.Android
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.QaCheckCategories.Android
+  nameWithType: QaCheckCategories.Android
 - uid: Crowdin.Api.ProjectsGroups.QaCheckCategories.Duplicate
   name: Duplicate
   href: api/Crowdin.Api.ProjectsGroups.QaCheckCategories.html#Crowdin_Api_ProjectsGroups_QaCheckCategories_Duplicate
@@ -10438,6 +10757,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.QaCheckCategories.Empty
   nameWithType: QaCheckCategories.Empty
+- uid: Crowdin.Api.ProjectsGroups.QaCheckCategories.Ftl
+  name: Ftl
+  href: api/Crowdin.Api.ProjectsGroups.QaCheckCategories.html#Crowdin_Api_ProjectsGroups_QaCheckCategories_Ftl
+  commentId: P:Crowdin.Api.ProjectsGroups.QaCheckCategories.Ftl
+  fullName: Crowdin.Api.ProjectsGroups.QaCheckCategories.Ftl
+  nameWithType: QaCheckCategories.Ftl
+- uid: Crowdin.Api.ProjectsGroups.QaCheckCategories.Ftl*
+  name: Ftl
+  href: api/Crowdin.Api.ProjectsGroups.QaCheckCategories.html#Crowdin_Api_ProjectsGroups_QaCheckCategories_Ftl_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.QaCheckCategories.Ftl
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.QaCheckCategories.Ftl
+  nameWithType: QaCheckCategories.Ftl
 - uid: Crowdin.Api.ProjectsGroups.QaCheckCategories.Icu
   name: Icu
   href: api/Crowdin.Api.ProjectsGroups.QaCheckCategories.html#Crowdin_Api_ProjectsGroups_QaCheckCategories_Icu
@@ -10821,6 +11153,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.QaCheckIsActive
   nameWithType: StringsBasedProjectForm.QaCheckIsActive
+- uid: Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.QaChecksIgnorableCategories
+  name: QaChecksIgnorableCategories
+  href: api/Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.html#Crowdin_Api_ProjectsGroups_StringsBasedProjectForm_QaChecksIgnorableCategories
+  commentId: P:Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.QaChecksIgnorableCategories
+  fullName: Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.QaChecksIgnorableCategories
+  nameWithType: StringsBasedProjectForm.QaChecksIgnorableCategories
+- uid: Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.QaChecksIgnorableCategories*
+  name: QaChecksIgnorableCategories
+  href: api/Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.html#Crowdin_Api_ProjectsGroups_StringsBasedProjectForm_QaChecksIgnorableCategories_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.QaChecksIgnorableCategories
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.QaChecksIgnorableCategories
+  nameWithType: StringsBasedProjectForm.QaChecksIgnorableCategories
 - uid: Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.SkipUntranslatedFiles
   name: SkipUntranslatedFiles
   href: api/Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.html#Crowdin_Api_ProjectsGroups_StringsBasedProjectForm_SkipUntranslatedFiles
@@ -18065,6 +18410,167 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.SourceFiles.GeneralFileExportOptions.ExportPattern
   nameWithType: GeneralFileExportOptions.ExportPattern
+- uid: Crowdin.Api.SourceFiles.HtmlFileImportOptions
+  name: HtmlFileImportOptions
+  href: api/Crowdin.Api.SourceFiles.HtmlFileImportOptions.html
+  commentId: T:Crowdin.Api.SourceFiles.HtmlFileImportOptions
+  fullName: Crowdin.Api.SourceFiles.HtmlFileImportOptions
+  nameWithType: HtmlFileImportOptions
+- uid: Crowdin.Api.SourceFiles.HtmlFileImportOptions.ContentSegmentation
+  name: ContentSegmentation
+  href: api/Crowdin.Api.SourceFiles.HtmlFileImportOptions.html#Crowdin_Api_SourceFiles_HtmlFileImportOptions_ContentSegmentation
+  commentId: P:Crowdin.Api.SourceFiles.HtmlFileImportOptions.ContentSegmentation
+  fullName: Crowdin.Api.SourceFiles.HtmlFileImportOptions.ContentSegmentation
+  nameWithType: HtmlFileImportOptions.ContentSegmentation
+- uid: Crowdin.Api.SourceFiles.HtmlFileImportOptions.ContentSegmentation*
+  name: ContentSegmentation
+  href: api/Crowdin.Api.SourceFiles.HtmlFileImportOptions.html#Crowdin_Api_SourceFiles_HtmlFileImportOptions_ContentSegmentation_
+  commentId: Overload:Crowdin.Api.SourceFiles.HtmlFileImportOptions.ContentSegmentation
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.HtmlFileImportOptions.ContentSegmentation
+  nameWithType: HtmlFileImportOptions.ContentSegmentation
+- uid: Crowdin.Api.SourceFiles.HtmlFileImportOptions.ExcludedElements
+  name: ExcludedElements
+  href: api/Crowdin.Api.SourceFiles.HtmlFileImportOptions.html#Crowdin_Api_SourceFiles_HtmlFileImportOptions_ExcludedElements
+  commentId: P:Crowdin.Api.SourceFiles.HtmlFileImportOptions.ExcludedElements
+  fullName: Crowdin.Api.SourceFiles.HtmlFileImportOptions.ExcludedElements
+  nameWithType: HtmlFileImportOptions.ExcludedElements
+- uid: Crowdin.Api.SourceFiles.HtmlFileImportOptions.ExcludedElements*
+  name: ExcludedElements
+  href: api/Crowdin.Api.SourceFiles.HtmlFileImportOptions.html#Crowdin_Api_SourceFiles_HtmlFileImportOptions_ExcludedElements_
+  commentId: Overload:Crowdin.Api.SourceFiles.HtmlFileImportOptions.ExcludedElements
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.HtmlFileImportOptions.ExcludedElements
+  nameWithType: HtmlFileImportOptions.ExcludedElements
+- uid: Crowdin.Api.SourceFiles.HtmlFileImportOptions.SrxStorageId
+  name: SrxStorageId
+  href: api/Crowdin.Api.SourceFiles.HtmlFileImportOptions.html#Crowdin_Api_SourceFiles_HtmlFileImportOptions_SrxStorageId
+  commentId: P:Crowdin.Api.SourceFiles.HtmlFileImportOptions.SrxStorageId
+  fullName: Crowdin.Api.SourceFiles.HtmlFileImportOptions.SrxStorageId
+  nameWithType: HtmlFileImportOptions.SrxStorageId
+- uid: Crowdin.Api.SourceFiles.HtmlFileImportOptions.SrxStorageId*
+  name: SrxStorageId
+  href: api/Crowdin.Api.SourceFiles.HtmlFileImportOptions.html#Crowdin_Api_SourceFiles_HtmlFileImportOptions_SrxStorageId_
+  commentId: Overload:Crowdin.Api.SourceFiles.HtmlFileImportOptions.SrxStorageId
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.HtmlFileImportOptions.SrxStorageId
+  nameWithType: HtmlFileImportOptions.SrxStorageId
+- uid: Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions
+  name: HtmlWithFrontMatterFileImportOptions
+  href: api/Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.html
+  commentId: T:Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions
+  fullName: Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions
+  nameWithType: HtmlWithFrontMatterFileImportOptions
+- uid: Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.ContentSegmentation
+  name: ContentSegmentation
+  href: api/Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.html#Crowdin_Api_SourceFiles_HtmlWithFrontMatterFileImportOptions_ContentSegmentation
+  commentId: P:Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.ContentSegmentation
+  fullName: Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.ContentSegmentation
+  nameWithType: HtmlWithFrontMatterFileImportOptions.ContentSegmentation
+- uid: Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.ContentSegmentation*
+  name: ContentSegmentation
+  href: api/Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.html#Crowdin_Api_SourceFiles_HtmlWithFrontMatterFileImportOptions_ContentSegmentation_
+  commentId: Overload:Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.ContentSegmentation
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.ContentSegmentation
+  nameWithType: HtmlWithFrontMatterFileImportOptions.ContentSegmentation
+- uid: Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.ExcludedElements
+  name: ExcludedElements
+  href: api/Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.html#Crowdin_Api_SourceFiles_HtmlWithFrontMatterFileImportOptions_ExcludedElements
+  commentId: P:Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.ExcludedElements
+  fullName: Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.ExcludedElements
+  nameWithType: HtmlWithFrontMatterFileImportOptions.ExcludedElements
+- uid: Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.ExcludedElements*
+  name: ExcludedElements
+  href: api/Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.html#Crowdin_Api_SourceFiles_HtmlWithFrontMatterFileImportOptions_ExcludedElements_
+  commentId: Overload:Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.ExcludedElements
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.ExcludedElements
+  nameWithType: HtmlWithFrontMatterFileImportOptions.ExcludedElements
+- uid: Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.ExcludedFrontMatterElements
+  name: ExcludedFrontMatterElements
+  href: api/Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.html#Crowdin_Api_SourceFiles_HtmlWithFrontMatterFileImportOptions_ExcludedFrontMatterElements
+  commentId: P:Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.ExcludedFrontMatterElements
+  fullName: Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.ExcludedFrontMatterElements
+  nameWithType: HtmlWithFrontMatterFileImportOptions.ExcludedFrontMatterElements
+- uid: Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.ExcludedFrontMatterElements*
+  name: ExcludedFrontMatterElements
+  href: api/Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.html#Crowdin_Api_SourceFiles_HtmlWithFrontMatterFileImportOptions_ExcludedFrontMatterElements_
+  commentId: Overload:Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.ExcludedFrontMatterElements
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.ExcludedFrontMatterElements
+  nameWithType: HtmlWithFrontMatterFileImportOptions.ExcludedFrontMatterElements
+- uid: Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.SrxStorageId
+  name: SrxStorageId
+  href: api/Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.html#Crowdin_Api_SourceFiles_HtmlWithFrontMatterFileImportOptions_SrxStorageId
+  commentId: P:Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.SrxStorageId
+  fullName: Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.SrxStorageId
+  nameWithType: HtmlWithFrontMatterFileImportOptions.SrxStorageId
+- uid: Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.SrxStorageId*
+  name: SrxStorageId
+  href: api/Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.html#Crowdin_Api_SourceFiles_HtmlWithFrontMatterFileImportOptions_SrxStorageId_
+  commentId: Overload:Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.SrxStorageId
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.SrxStorageId
+  nameWithType: HtmlWithFrontMatterFileImportOptions.SrxStorageId
+- uid: Crowdin.Api.SourceFiles.MdxV1FileImportOptions
+  name: MdxV1FileImportOptions
+  href: api/Crowdin.Api.SourceFiles.MdxV1FileImportOptions.html
+  commentId: T:Crowdin.Api.SourceFiles.MdxV1FileImportOptions
+  fullName: Crowdin.Api.SourceFiles.MdxV1FileImportOptions
+  nameWithType: MdxV1FileImportOptions
+- uid: Crowdin.Api.SourceFiles.MdxV1FileImportOptions.ContentSegmentation
+  name: ContentSegmentation
+  href: api/Crowdin.Api.SourceFiles.MdxV1FileImportOptions.html#Crowdin_Api_SourceFiles_MdxV1FileImportOptions_ContentSegmentation
+  commentId: P:Crowdin.Api.SourceFiles.MdxV1FileImportOptions.ContentSegmentation
+  fullName: Crowdin.Api.SourceFiles.MdxV1FileImportOptions.ContentSegmentation
+  nameWithType: MdxV1FileImportOptions.ContentSegmentation
+- uid: Crowdin.Api.SourceFiles.MdxV1FileImportOptions.ContentSegmentation*
+  name: ContentSegmentation
+  href: api/Crowdin.Api.SourceFiles.MdxV1FileImportOptions.html#Crowdin_Api_SourceFiles_MdxV1FileImportOptions_ContentSegmentation_
+  commentId: Overload:Crowdin.Api.SourceFiles.MdxV1FileImportOptions.ContentSegmentation
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.MdxV1FileImportOptions.ContentSegmentation
+  nameWithType: MdxV1FileImportOptions.ContentSegmentation
+- uid: Crowdin.Api.SourceFiles.MdxV1FileImportOptions.ExcludeCodeBlocks
+  name: ExcludeCodeBlocks
+  href: api/Crowdin.Api.SourceFiles.MdxV1FileImportOptions.html#Crowdin_Api_SourceFiles_MdxV1FileImportOptions_ExcludeCodeBlocks
+  commentId: P:Crowdin.Api.SourceFiles.MdxV1FileImportOptions.ExcludeCodeBlocks
+  fullName: Crowdin.Api.SourceFiles.MdxV1FileImportOptions.ExcludeCodeBlocks
+  nameWithType: MdxV1FileImportOptions.ExcludeCodeBlocks
+- uid: Crowdin.Api.SourceFiles.MdxV1FileImportOptions.ExcludeCodeBlocks*
+  name: ExcludeCodeBlocks
+  href: api/Crowdin.Api.SourceFiles.MdxV1FileImportOptions.html#Crowdin_Api_SourceFiles_MdxV1FileImportOptions_ExcludeCodeBlocks_
+  commentId: Overload:Crowdin.Api.SourceFiles.MdxV1FileImportOptions.ExcludeCodeBlocks
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.MdxV1FileImportOptions.ExcludeCodeBlocks
+  nameWithType: MdxV1FileImportOptions.ExcludeCodeBlocks
+- uid: Crowdin.Api.SourceFiles.MdxV1FileImportOptions.ExcludedFrontMatterElements
+  name: ExcludedFrontMatterElements
+  href: api/Crowdin.Api.SourceFiles.MdxV1FileImportOptions.html#Crowdin_Api_SourceFiles_MdxV1FileImportOptions_ExcludedFrontMatterElements
+  commentId: P:Crowdin.Api.SourceFiles.MdxV1FileImportOptions.ExcludedFrontMatterElements
+  fullName: Crowdin.Api.SourceFiles.MdxV1FileImportOptions.ExcludedFrontMatterElements
+  nameWithType: MdxV1FileImportOptions.ExcludedFrontMatterElements
+- uid: Crowdin.Api.SourceFiles.MdxV1FileImportOptions.ExcludedFrontMatterElements*
+  name: ExcludedFrontMatterElements
+  href: api/Crowdin.Api.SourceFiles.MdxV1FileImportOptions.html#Crowdin_Api_SourceFiles_MdxV1FileImportOptions_ExcludedFrontMatterElements_
+  commentId: Overload:Crowdin.Api.SourceFiles.MdxV1FileImportOptions.ExcludedFrontMatterElements
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.MdxV1FileImportOptions.ExcludedFrontMatterElements
+  nameWithType: MdxV1FileImportOptions.ExcludedFrontMatterElements
+- uid: Crowdin.Api.SourceFiles.MdxV1FileImportOptions.SrxStorageId
+  name: SrxStorageId
+  href: api/Crowdin.Api.SourceFiles.MdxV1FileImportOptions.html#Crowdin_Api_SourceFiles_MdxV1FileImportOptions_SrxStorageId
+  commentId: P:Crowdin.Api.SourceFiles.MdxV1FileImportOptions.SrxStorageId
+  fullName: Crowdin.Api.SourceFiles.MdxV1FileImportOptions.SrxStorageId
+  nameWithType: MdxV1FileImportOptions.SrxStorageId
+- uid: Crowdin.Api.SourceFiles.MdxV1FileImportOptions.SrxStorageId*
+  name: SrxStorageId
+  href: api/Crowdin.Api.SourceFiles.MdxV1FileImportOptions.html#Crowdin_Api_SourceFiles_MdxV1FileImportOptions_SrxStorageId_
+  commentId: Overload:Crowdin.Api.SourceFiles.MdxV1FileImportOptions.SrxStorageId
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.MdxV1FileImportOptions.SrxStorageId
+  nameWithType: MdxV1FileImportOptions.SrxStorageId
 - uid: Crowdin.Api.SourceFiles.OtherFilesImportOptions
   name: OtherFilesImportOptions
   href: api/Crowdin.Api.SourceFiles.OtherFilesImportOptions.html
@@ -19004,6 +19510,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.DownloadFile
   nameWithType: SourceFilesApiExecutor.DownloadFile
+- uid: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.DownloadFilePreview(System.Int32,System.Int32)
+  name: DownloadFilePreview(Int32, Int32)
+  href: api/Crowdin.Api.SourceFiles.SourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_SourceFilesApiExecutor_DownloadFilePreview_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.SourceFiles.SourceFilesApiExecutor.DownloadFilePreview(System.Int32,System.Int32)
+  fullName: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.DownloadFilePreview(System.Int32, System.Int32)
+  nameWithType: SourceFilesApiExecutor.DownloadFilePreview(Int32, Int32)
+- uid: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.DownloadFilePreview*
+  name: DownloadFilePreview
+  href: api/Crowdin.Api.SourceFiles.SourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_SourceFilesApiExecutor_DownloadFilePreview_
+  commentId: Overload:Crowdin.Api.SourceFiles.SourceFilesApiExecutor.DownloadFilePreview
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.DownloadFilePreview
+  nameWithType: SourceFilesApiExecutor.DownloadFilePreview
 - uid: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.DownloadReviewedSourceFiles(System.Int32,System.Int32)
   name: DownloadReviewedSourceFiles(Int32, Int32)
   href: api/Crowdin.Api.SourceFiles.SourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_SourceFilesApiExecutor_DownloadReviewedSourceFiles_System_Int32_System_Int32_
@@ -19811,6 +20330,150 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.ListStrings
   nameWithType: SourceStringsApiExecutor.ListStrings
+- uid: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.StringBatchOperations(System.Int32,IEnumerable{Crowdin.Api.SourceStrings.StringBatchOpPatch})
+  name: StringBatchOperations(Int32, IEnumerable<StringBatchOpPatch>)
+  href: api/Crowdin.Api.SourceStrings.SourceStringsApiExecutor.html#Crowdin_Api_SourceStrings_SourceStringsApiExecutor_StringBatchOperations_System_Int32_IEnumerable_Crowdin_Api_SourceStrings_StringBatchOpPatch__
+  commentId: M:Crowdin.Api.SourceStrings.SourceStringsApiExecutor.StringBatchOperations(System.Int32,IEnumerable{Crowdin.Api.SourceStrings.StringBatchOpPatch})
+  name.vb: StringBatchOperations(Int32, IEnumerable(Of StringBatchOpPatch))
+  fullName: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.StringBatchOperations(System.Int32, IEnumerable<Crowdin.Api.SourceStrings.StringBatchOpPatch>)
+  fullName.vb: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.StringBatchOperations(System.Int32, IEnumerable(Of Crowdin.Api.SourceStrings.StringBatchOpPatch))
+  nameWithType: SourceStringsApiExecutor.StringBatchOperations(Int32, IEnumerable<StringBatchOpPatch>)
+  nameWithType.vb: SourceStringsApiExecutor.StringBatchOperations(Int32, IEnumerable(Of StringBatchOpPatch))
+- uid: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.StringBatchOperations*
+  name: StringBatchOperations
+  href: api/Crowdin.Api.SourceStrings.SourceStringsApiExecutor.html#Crowdin_Api_SourceStrings_SourceStringsApiExecutor_StringBatchOperations_
+  commentId: Overload:Crowdin.Api.SourceStrings.SourceStringsApiExecutor.StringBatchOperations
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.StringBatchOperations
+  nameWithType: SourceStringsApiExecutor.StringBatchOperations
+- uid: Crowdin.Api.SourceStrings.StringBatchOpPatch
+  name: StringBatchOpPatch
+  href: api/Crowdin.Api.SourceStrings.StringBatchOpPatch.html
+  commentId: T:Crowdin.Api.SourceStrings.StringBatchOpPatch
+  fullName: Crowdin.Api.SourceStrings.StringBatchOpPatch
+  nameWithType: StringBatchOpPatch
+- uid: Crowdin.Api.SourceStrings.StringBatchOpPatch.Path
+  name: Path
+  href: api/Crowdin.Api.SourceStrings.StringBatchOpPatch.html#Crowdin_Api_SourceStrings_StringBatchOpPatch_Path
+  commentId: P:Crowdin.Api.SourceStrings.StringBatchOpPatch.Path
+  fullName: Crowdin.Api.SourceStrings.StringBatchOpPatch.Path
+  nameWithType: StringBatchOpPatch.Path
+- uid: Crowdin.Api.SourceStrings.StringBatchOpPatch.Path*
+  name: Path
+  href: api/Crowdin.Api.SourceStrings.StringBatchOpPatch.html#Crowdin_Api_SourceStrings_StringBatchOpPatch_Path_
+  commentId: Overload:Crowdin.Api.SourceStrings.StringBatchOpPatch.Path
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceStrings.StringBatchOpPatch.Path
+  nameWithType: StringBatchOpPatch.Path
+- uid: Crowdin.Api.SourceStrings.StringBatchOpPatchPath
+  name: StringBatchOpPatchPath
+  href: api/Crowdin.Api.SourceStrings.StringBatchOpPatchPath.html
+  commentId: T:Crowdin.Api.SourceStrings.StringBatchOpPatchPath
+  fullName: Crowdin.Api.SourceStrings.StringBatchOpPatchPath
+  nameWithType: StringBatchOpPatchPath
+- uid: Crowdin.Api.SourceStrings.StringBatchOpPatchPath.#ctor
+  name: StringBatchOpPatchPath()
+  href: api/Crowdin.Api.SourceStrings.StringBatchOpPatchPath.html#Crowdin_Api_SourceStrings_StringBatchOpPatchPath__ctor
+  commentId: M:Crowdin.Api.SourceStrings.StringBatchOpPatchPath.#ctor
+  fullName: Crowdin.Api.SourceStrings.StringBatchOpPatchPath.StringBatchOpPatchPath()
+  nameWithType: StringBatchOpPatchPath.StringBatchOpPatchPath()
+- uid: Crowdin.Api.SourceStrings.StringBatchOpPatchPath.#ctor(System.Nullable{System.Int32},System.Nullable{Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry})
+  name: StringBatchOpPatchPath(Nullable<Int32>, Nullable<StringBatchOpPatchPathEntry>)
+  href: api/Crowdin.Api.SourceStrings.StringBatchOpPatchPath.html#Crowdin_Api_SourceStrings_StringBatchOpPatchPath__ctor_System_Nullable_System_Int32__System_Nullable_Crowdin_Api_SourceStrings_StringBatchOpPatchPathEntry__
+  commentId: M:Crowdin.Api.SourceStrings.StringBatchOpPatchPath.#ctor(System.Nullable{System.Int32},System.Nullable{Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry})
+  name.vb: StringBatchOpPatchPath(Nullable(Of Int32), Nullable(Of StringBatchOpPatchPathEntry))
+  fullName: Crowdin.Api.SourceStrings.StringBatchOpPatchPath.StringBatchOpPatchPath(System.Nullable<System.Int32>, System.Nullable<Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry>)
+  fullName.vb: Crowdin.Api.SourceStrings.StringBatchOpPatchPath.StringBatchOpPatchPath(System.Nullable(Of System.Int32), System.Nullable(Of Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry))
+  nameWithType: StringBatchOpPatchPath.StringBatchOpPatchPath(Nullable<Int32>, Nullable<StringBatchOpPatchPathEntry>)
+  nameWithType.vb: StringBatchOpPatchPath.StringBatchOpPatchPath(Nullable(Of Int32), Nullable(Of StringBatchOpPatchPathEntry))
+- uid: Crowdin.Api.SourceStrings.StringBatchOpPatchPath.#ctor*
+  name: StringBatchOpPatchPath
+  href: api/Crowdin.Api.SourceStrings.StringBatchOpPatchPath.html#Crowdin_Api_SourceStrings_StringBatchOpPatchPath__ctor_
+  commentId: Overload:Crowdin.Api.SourceStrings.StringBatchOpPatchPath.#ctor
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceStrings.StringBatchOpPatchPath.StringBatchOpPatchPath
+  nameWithType: StringBatchOpPatchPath.StringBatchOpPatchPath
+- uid: Crowdin.Api.SourceStrings.StringBatchOpPatchPath.Property
+  name: Property
+  href: api/Crowdin.Api.SourceStrings.StringBatchOpPatchPath.html#Crowdin_Api_SourceStrings_StringBatchOpPatchPath_Property
+  commentId: P:Crowdin.Api.SourceStrings.StringBatchOpPatchPath.Property
+  fullName: Crowdin.Api.SourceStrings.StringBatchOpPatchPath.Property
+  nameWithType: StringBatchOpPatchPath.Property
+- uid: Crowdin.Api.SourceStrings.StringBatchOpPatchPath.Property*
+  name: Property
+  href: api/Crowdin.Api.SourceStrings.StringBatchOpPatchPath.html#Crowdin_Api_SourceStrings_StringBatchOpPatchPath_Property_
+  commentId: Overload:Crowdin.Api.SourceStrings.StringBatchOpPatchPath.Property
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceStrings.StringBatchOpPatchPath.Property
+  nameWithType: StringBatchOpPatchPath.Property
+- uid: Crowdin.Api.SourceStrings.StringBatchOpPatchPath.StringId
+  name: StringId
+  href: api/Crowdin.Api.SourceStrings.StringBatchOpPatchPath.html#Crowdin_Api_SourceStrings_StringBatchOpPatchPath_StringId
+  commentId: P:Crowdin.Api.SourceStrings.StringBatchOpPatchPath.StringId
+  fullName: Crowdin.Api.SourceStrings.StringBatchOpPatchPath.StringId
+  nameWithType: StringBatchOpPatchPath.StringId
+- uid: Crowdin.Api.SourceStrings.StringBatchOpPatchPath.StringId*
+  name: StringId
+  href: api/Crowdin.Api.SourceStrings.StringBatchOpPatchPath.html#Crowdin_Api_SourceStrings_StringBatchOpPatchPath_StringId_
+  commentId: Overload:Crowdin.Api.SourceStrings.StringBatchOpPatchPath.StringId
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceStrings.StringBatchOpPatchPath.StringId
+  nameWithType: StringBatchOpPatchPath.StringId
+- uid: Crowdin.Api.SourceStrings.StringBatchOpPatchPath.ToString
+  name: ToString()
+  href: api/Crowdin.Api.SourceStrings.StringBatchOpPatchPath.html#Crowdin_Api_SourceStrings_StringBatchOpPatchPath_ToString
+  commentId: M:Crowdin.Api.SourceStrings.StringBatchOpPatchPath.ToString
+  fullName: Crowdin.Api.SourceStrings.StringBatchOpPatchPath.ToString()
+  nameWithType: StringBatchOpPatchPath.ToString()
+- uid: Crowdin.Api.SourceStrings.StringBatchOpPatchPath.ToString*
+  name: ToString
+  href: api/Crowdin.Api.SourceStrings.StringBatchOpPatchPath.html#Crowdin_Api_SourceStrings_StringBatchOpPatchPath_ToString_
+  commentId: Overload:Crowdin.Api.SourceStrings.StringBatchOpPatchPath.ToString
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceStrings.StringBatchOpPatchPath.ToString
+  nameWithType: StringBatchOpPatchPath.ToString
+- uid: Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry
+  name: StringBatchOpPatchPathEntry
+  href: api/Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.html
+  commentId: T:Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry
+  fullName: Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry
+  nameWithType: StringBatchOpPatchPathEntry
+- uid: Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.Context
+  name: Context
+  href: api/Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.html#Crowdin_Api_SourceStrings_StringBatchOpPatchPathEntry_Context
+  commentId: F:Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.Context
+  fullName: Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.Context
+  nameWithType: StringBatchOpPatchPathEntry.Context
+- uid: Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.Identifier
+  name: Identifier
+  href: api/Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.html#Crowdin_Api_SourceStrings_StringBatchOpPatchPathEntry_Identifier
+  commentId: F:Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.Identifier
+  fullName: Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.Identifier
+  nameWithType: StringBatchOpPatchPathEntry.Identifier
+- uid: Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.IsHidden
+  name: IsHidden
+  href: api/Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.html#Crowdin_Api_SourceStrings_StringBatchOpPatchPathEntry_IsHidden
+  commentId: F:Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.IsHidden
+  fullName: Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.IsHidden
+  nameWithType: StringBatchOpPatchPathEntry.IsHidden
+- uid: Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.LabelIds
+  name: LabelIds
+  href: api/Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.html#Crowdin_Api_SourceStrings_StringBatchOpPatchPathEntry_LabelIds
+  commentId: F:Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.LabelIds
+  fullName: Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.LabelIds
+  nameWithType: StringBatchOpPatchPathEntry.LabelIds
+- uid: Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.MaxLength
+  name: MaxLength
+  href: api/Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.html#Crowdin_Api_SourceStrings_StringBatchOpPatchPathEntry_MaxLength
+  commentId: F:Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.MaxLength
+  fullName: Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.MaxLength
+  nameWithType: StringBatchOpPatchPathEntry.MaxLength
+- uid: Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.Text
+  name: Text
+  href: api/Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.html#Crowdin_Api_SourceStrings_StringBatchOpPatchPathEntry_Text
+  commentId: F:Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.Text
+  fullName: Crowdin.Api.SourceStrings.StringBatchOpPatchPathEntry.Text
+  nameWithType: StringBatchOpPatchPathEntry.Text
 - uid: Crowdin.Api.SourceStrings.StringPatchPath
   name: StringPatchPath
   href: api/Crowdin.Api.SourceStrings.StringPatchPath.html
@@ -21016,6 +21679,90 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringTranslations.AddVoteRequest.TranslationId
   nameWithType: AddVoteRequest.TranslationId
+- uid: Crowdin.Api.StringTranslations.Alignment
+  name: Alignment
+  href: api/Crowdin.Api.StringTranslations.Alignment.html
+  commentId: T:Crowdin.Api.StringTranslations.Alignment
+  fullName: Crowdin.Api.StringTranslations.Alignment
+  nameWithType: Alignment
+- uid: Crowdin.Api.StringTranslations.Alignment.Match
+  name: Match
+  href: api/Crowdin.Api.StringTranslations.Alignment.html#Crowdin_Api_StringTranslations_Alignment_Match
+  commentId: P:Crowdin.Api.StringTranslations.Alignment.Match
+  fullName: Crowdin.Api.StringTranslations.Alignment.Match
+  nameWithType: Alignment.Match
+- uid: Crowdin.Api.StringTranslations.Alignment.Match*
+  name: Match
+  href: api/Crowdin.Api.StringTranslations.Alignment.html#Crowdin_Api_StringTranslations_Alignment_Match_
+  commentId: Overload:Crowdin.Api.StringTranslations.Alignment.Match
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.Alignment.Match
+  nameWithType: Alignment.Match
+- uid: Crowdin.Api.StringTranslations.Alignment.Probability
+  name: Probability
+  href: api/Crowdin.Api.StringTranslations.Alignment.html#Crowdin_Api_StringTranslations_Alignment_Probability
+  commentId: P:Crowdin.Api.StringTranslations.Alignment.Probability
+  fullName: Crowdin.Api.StringTranslations.Alignment.Probability
+  nameWithType: Alignment.Probability
+- uid: Crowdin.Api.StringTranslations.Alignment.Probability*
+  name: Probability
+  href: api/Crowdin.Api.StringTranslations.Alignment.html#Crowdin_Api_StringTranslations_Alignment_Probability_
+  commentId: Overload:Crowdin.Api.StringTranslations.Alignment.Probability
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.Alignment.Probability
+  nameWithType: Alignment.Probability
+- uid: Crowdin.Api.StringTranslations.Alignment.SourceLemma
+  name: SourceLemma
+  href: api/Crowdin.Api.StringTranslations.Alignment.html#Crowdin_Api_StringTranslations_Alignment_SourceLemma
+  commentId: P:Crowdin.Api.StringTranslations.Alignment.SourceLemma
+  fullName: Crowdin.Api.StringTranslations.Alignment.SourceLemma
+  nameWithType: Alignment.SourceLemma
+- uid: Crowdin.Api.StringTranslations.Alignment.SourceLemma*
+  name: SourceLemma
+  href: api/Crowdin.Api.StringTranslations.Alignment.html#Crowdin_Api_StringTranslations_Alignment_SourceLemma_
+  commentId: Overload:Crowdin.Api.StringTranslations.Alignment.SourceLemma
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.Alignment.SourceLemma
+  nameWithType: Alignment.SourceLemma
+- uid: Crowdin.Api.StringTranslations.Alignment.SourceWord
+  name: SourceWord
+  href: api/Crowdin.Api.StringTranslations.Alignment.html#Crowdin_Api_StringTranslations_Alignment_SourceWord
+  commentId: P:Crowdin.Api.StringTranslations.Alignment.SourceWord
+  fullName: Crowdin.Api.StringTranslations.Alignment.SourceWord
+  nameWithType: Alignment.SourceWord
+- uid: Crowdin.Api.StringTranslations.Alignment.SourceWord*
+  name: SourceWord
+  href: api/Crowdin.Api.StringTranslations.Alignment.html#Crowdin_Api_StringTranslations_Alignment_SourceWord_
+  commentId: Overload:Crowdin.Api.StringTranslations.Alignment.SourceWord
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.Alignment.SourceWord
+  nameWithType: Alignment.SourceWord
+- uid: Crowdin.Api.StringTranslations.Alignment.TargetLemma
+  name: TargetLemma
+  href: api/Crowdin.Api.StringTranslations.Alignment.html#Crowdin_Api_StringTranslations_Alignment_TargetLemma
+  commentId: P:Crowdin.Api.StringTranslations.Alignment.TargetLemma
+  fullName: Crowdin.Api.StringTranslations.Alignment.TargetLemma
+  nameWithType: Alignment.TargetLemma
+- uid: Crowdin.Api.StringTranslations.Alignment.TargetLemma*
+  name: TargetLemma
+  href: api/Crowdin.Api.StringTranslations.Alignment.html#Crowdin_Api_StringTranslations_Alignment_TargetLemma_
+  commentId: Overload:Crowdin.Api.StringTranslations.Alignment.TargetLemma
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.Alignment.TargetLemma
+  nameWithType: Alignment.TargetLemma
+- uid: Crowdin.Api.StringTranslations.Alignment.TargetWord
+  name: TargetWord
+  href: api/Crowdin.Api.StringTranslations.Alignment.html#Crowdin_Api_StringTranslations_Alignment_TargetWord
+  commentId: P:Crowdin.Api.StringTranslations.Alignment.TargetWord
+  fullName: Crowdin.Api.StringTranslations.Alignment.TargetWord
+  nameWithType: Alignment.TargetWord
+- uid: Crowdin.Api.StringTranslations.Alignment.TargetWord*
+  name: TargetWord
+  href: api/Crowdin.Api.StringTranslations.Alignment.html#Crowdin_Api_StringTranslations_Alignment_TargetWord_
+  commentId: Overload:Crowdin.Api.StringTranslations.Alignment.TargetWord
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.Alignment.TargetWord
+  nameWithType: Alignment.TargetWord
 - uid: Crowdin.Api.StringTranslations.IcuLanguageTranslations
   name: IcuLanguageTranslations
   href: api/Crowdin.Api.StringTranslations.IcuLanguageTranslations.html
@@ -21823,6 +22570,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.RestoreTranslation
   nameWithType: StringTranslationsApiExecutor.RestoreTranslation
+- uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.TranslationAlignment(System.Int32,Crowdin.Api.StringTranslations.TranslationAlignmentRequest)
+  name: TranslationAlignment(Int32, TranslationAlignmentRequest)
+  href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_TranslationAlignment_System_Int32_Crowdin_Api_StringTranslations_TranslationAlignmentRequest_
+  commentId: M:Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.TranslationAlignment(System.Int32,Crowdin.Api.StringTranslations.TranslationAlignmentRequest)
+  fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.TranslationAlignment(System.Int32, Crowdin.Api.StringTranslations.TranslationAlignmentRequest)
+  nameWithType: StringTranslationsApiExecutor.TranslationAlignment(Int32, TranslationAlignmentRequest)
+- uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.TranslationAlignment*
+  name: TranslationAlignment
+  href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_TranslationAlignment_
+  commentId: Overload:Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.TranslationAlignment
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.TranslationAlignment
+  nameWithType: StringTranslationsApiExecutor.TranslationAlignment
 - uid: Crowdin.Api.StringTranslations.StringTranslationsListParams
   name: StringTranslationsListParams
   href: api/Crowdin.Api.StringTranslations.StringTranslationsListParams.html
@@ -21929,6 +22689,70 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringTranslations.StringTranslationsListParams.ToQueryParams
   nameWithType: StringTranslationsListParams.ToQueryParams
+- uid: Crowdin.Api.StringTranslations.TranslationAlignment
+  name: TranslationAlignment
+  href: api/Crowdin.Api.StringTranslations.TranslationAlignment.html
+  commentId: T:Crowdin.Api.StringTranslations.TranslationAlignment
+  fullName: Crowdin.Api.StringTranslations.TranslationAlignment
+  nameWithType: TranslationAlignment
+- uid: Crowdin.Api.StringTranslations.TranslationAlignment.Words
+  name: Words
+  href: api/Crowdin.Api.StringTranslations.TranslationAlignment.html#Crowdin_Api_StringTranslations_TranslationAlignment_Words
+  commentId: P:Crowdin.Api.StringTranslations.TranslationAlignment.Words
+  fullName: Crowdin.Api.StringTranslations.TranslationAlignment.Words
+  nameWithType: TranslationAlignment.Words
+- uid: Crowdin.Api.StringTranslations.TranslationAlignment.Words*
+  name: Words
+  href: api/Crowdin.Api.StringTranslations.TranslationAlignment.html#Crowdin_Api_StringTranslations_TranslationAlignment_Words_
+  commentId: Overload:Crowdin.Api.StringTranslations.TranslationAlignment.Words
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.TranslationAlignment.Words
+  nameWithType: TranslationAlignment.Words
+- uid: Crowdin.Api.StringTranslations.TranslationAlignmentRequest
+  name: TranslationAlignmentRequest
+  href: api/Crowdin.Api.StringTranslations.TranslationAlignmentRequest.html
+  commentId: T:Crowdin.Api.StringTranslations.TranslationAlignmentRequest
+  fullName: Crowdin.Api.StringTranslations.TranslationAlignmentRequest
+  nameWithType: TranslationAlignmentRequest
+- uid: Crowdin.Api.StringTranslations.TranslationAlignmentRequest.SourceLanguageId
+  name: SourceLanguageId
+  href: api/Crowdin.Api.StringTranslations.TranslationAlignmentRequest.html#Crowdin_Api_StringTranslations_TranslationAlignmentRequest_SourceLanguageId
+  commentId: P:Crowdin.Api.StringTranslations.TranslationAlignmentRequest.SourceLanguageId
+  fullName: Crowdin.Api.StringTranslations.TranslationAlignmentRequest.SourceLanguageId
+  nameWithType: TranslationAlignmentRequest.SourceLanguageId
+- uid: Crowdin.Api.StringTranslations.TranslationAlignmentRequest.SourceLanguageId*
+  name: SourceLanguageId
+  href: api/Crowdin.Api.StringTranslations.TranslationAlignmentRequest.html#Crowdin_Api_StringTranslations_TranslationAlignmentRequest_SourceLanguageId_
+  commentId: Overload:Crowdin.Api.StringTranslations.TranslationAlignmentRequest.SourceLanguageId
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.TranslationAlignmentRequest.SourceLanguageId
+  nameWithType: TranslationAlignmentRequest.SourceLanguageId
+- uid: Crowdin.Api.StringTranslations.TranslationAlignmentRequest.TargetLanguageId
+  name: TargetLanguageId
+  href: api/Crowdin.Api.StringTranslations.TranslationAlignmentRequest.html#Crowdin_Api_StringTranslations_TranslationAlignmentRequest_TargetLanguageId
+  commentId: P:Crowdin.Api.StringTranslations.TranslationAlignmentRequest.TargetLanguageId
+  fullName: Crowdin.Api.StringTranslations.TranslationAlignmentRequest.TargetLanguageId
+  nameWithType: TranslationAlignmentRequest.TargetLanguageId
+- uid: Crowdin.Api.StringTranslations.TranslationAlignmentRequest.TargetLanguageId*
+  name: TargetLanguageId
+  href: api/Crowdin.Api.StringTranslations.TranslationAlignmentRequest.html#Crowdin_Api_StringTranslations_TranslationAlignmentRequest_TargetLanguageId_
+  commentId: Overload:Crowdin.Api.StringTranslations.TranslationAlignmentRequest.TargetLanguageId
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.TranslationAlignmentRequest.TargetLanguageId
+  nameWithType: TranslationAlignmentRequest.TargetLanguageId
+- uid: Crowdin.Api.StringTranslations.TranslationAlignmentRequest.Text
+  name: Text
+  href: api/Crowdin.Api.StringTranslations.TranslationAlignmentRequest.html#Crowdin_Api_StringTranslations_TranslationAlignmentRequest_Text
+  commentId: P:Crowdin.Api.StringTranslations.TranslationAlignmentRequest.Text
+  fullName: Crowdin.Api.StringTranslations.TranslationAlignmentRequest.Text
+  nameWithType: TranslationAlignmentRequest.Text
+- uid: Crowdin.Api.StringTranslations.TranslationAlignmentRequest.Text*
+  name: Text
+  href: api/Crowdin.Api.StringTranslations.TranslationAlignmentRequest.html#Crowdin_Api_StringTranslations_TranslationAlignmentRequest_Text_
+  commentId: Overload:Crowdin.Api.StringTranslations.TranslationAlignmentRequest.Text
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.TranslationAlignmentRequest.Text
+  nameWithType: TranslationAlignmentRequest.Text
 - uid: Crowdin.Api.StringTranslations.TranslationApproval
   name: TranslationApproval
   href: api/Crowdin.Api.StringTranslations.TranslationApproval.html
@@ -22398,6 +23222,38 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringTranslations.User.Username
   nameWithType: User.Username
+- uid: Crowdin.Api.StringTranslations.WordAlignment
+  name: WordAlignment
+  href: api/Crowdin.Api.StringTranslations.WordAlignment.html
+  commentId: T:Crowdin.Api.StringTranslations.WordAlignment
+  fullName: Crowdin.Api.StringTranslations.WordAlignment
+  nameWithType: WordAlignment
+- uid: Crowdin.Api.StringTranslations.WordAlignment.Alignments
+  name: Alignments
+  href: api/Crowdin.Api.StringTranslations.WordAlignment.html#Crowdin_Api_StringTranslations_WordAlignment_Alignments
+  commentId: P:Crowdin.Api.StringTranslations.WordAlignment.Alignments
+  fullName: Crowdin.Api.StringTranslations.WordAlignment.Alignments
+  nameWithType: WordAlignment.Alignments
+- uid: Crowdin.Api.StringTranslations.WordAlignment.Alignments*
+  name: Alignments
+  href: api/Crowdin.Api.StringTranslations.WordAlignment.html#Crowdin_Api_StringTranslations_WordAlignment_Alignments_
+  commentId: Overload:Crowdin.Api.StringTranslations.WordAlignment.Alignments
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.WordAlignment.Alignments
+  nameWithType: WordAlignment.Alignments
+- uid: Crowdin.Api.StringTranslations.WordAlignment.Text
+  name: Text
+  href: api/Crowdin.Api.StringTranslations.WordAlignment.html#Crowdin_Api_StringTranslations_WordAlignment_Text
+  commentId: P:Crowdin.Api.StringTranslations.WordAlignment.Text
+  fullName: Crowdin.Api.StringTranslations.WordAlignment.Text
+  nameWithType: WordAlignment.Text
+- uid: Crowdin.Api.StringTranslations.WordAlignment.Text*
+  name: Text
+  href: api/Crowdin.Api.StringTranslations.WordAlignment.html#Crowdin_Api_StringTranslations_WordAlignment_Text_
+  commentId: Overload:Crowdin.Api.StringTranslations.WordAlignment.Text
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.WordAlignment.Text
+  nameWithType: WordAlignment.Text
 - uid: Crowdin.Api.Tasks
   name: Crowdin.Api.Tasks
   href: api/Crowdin.Api.Tasks.html
@@ -26145,6 +27001,115 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.TranslationMemory.AddTmRequest.Name
   nameWithType: AddTmRequest.Name
+- uid: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest
+  name: ConcordanceSearchRequest
+  href: api/Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.html
+  commentId: T:Crowdin.Api.TranslationMemory.ConcordanceSearchRequest
+  fullName: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest
+  nameWithType: ConcordanceSearchRequest
+- uid: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.AutoSubstitution
+  name: AutoSubstitution
+  href: api/Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_ConcordanceSearchRequest_AutoSubstitution
+  commentId: P:Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.AutoSubstitution
+  fullName: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.AutoSubstitution
+  nameWithType: ConcordanceSearchRequest.AutoSubstitution
+- uid: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.AutoSubstitution*
+  name: AutoSubstitution
+  href: api/Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_ConcordanceSearchRequest_AutoSubstitution_
+  commentId: Overload:Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.AutoSubstitution
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.AutoSubstitution
+  nameWithType: ConcordanceSearchRequest.AutoSubstitution
+- uid: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.Expression
+  name: Expression
+  href: api/Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_ConcordanceSearchRequest_Expression
+  commentId: P:Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.Expression
+  fullName: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.Expression
+  nameWithType: ConcordanceSearchRequest.Expression
+- uid: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.Expression*
+  name: Expression
+  href: api/Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_ConcordanceSearchRequest_Expression_
+  commentId: Overload:Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.Expression
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.Expression
+  nameWithType: ConcordanceSearchRequest.Expression
+- uid: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.MinRelevant
+  name: MinRelevant
+  href: api/Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_ConcordanceSearchRequest_MinRelevant
+  commentId: P:Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.MinRelevant
+  fullName: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.MinRelevant
+  nameWithType: ConcordanceSearchRequest.MinRelevant
+- uid: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.MinRelevant*
+  name: MinRelevant
+  href: api/Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_ConcordanceSearchRequest_MinRelevant_
+  commentId: Overload:Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.MinRelevant
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.MinRelevant
+  nameWithType: ConcordanceSearchRequest.MinRelevant
+- uid: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.SourceLanguageId
+  name: SourceLanguageId
+  href: api/Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_ConcordanceSearchRequest_SourceLanguageId
+  commentId: P:Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.SourceLanguageId
+  fullName: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.SourceLanguageId
+  nameWithType: ConcordanceSearchRequest.SourceLanguageId
+- uid: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.SourceLanguageId*
+  name: SourceLanguageId
+  href: api/Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_ConcordanceSearchRequest_SourceLanguageId_
+  commentId: Overload:Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.SourceLanguageId
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.SourceLanguageId
+  nameWithType: ConcordanceSearchRequest.SourceLanguageId
+- uid: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.TargetLanguageId
+  name: TargetLanguageId
+  href: api/Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_ConcordanceSearchRequest_TargetLanguageId
+  commentId: P:Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.TargetLanguageId
+  fullName: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.TargetLanguageId
+  nameWithType: ConcordanceSearchRequest.TargetLanguageId
+- uid: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.TargetLanguageId*
+  name: TargetLanguageId
+  href: api/Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_ConcordanceSearchRequest_TargetLanguageId_
+  commentId: Overload:Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.TargetLanguageId
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.ConcordanceSearchRequest.TargetLanguageId
+  nameWithType: ConcordanceSearchRequest.TargetLanguageId
+- uid: Crowdin.Api.TranslationMemory.CreateTmSegmentRecordsRequest
+  name: CreateTmSegmentRecordsRequest
+  href: api/Crowdin.Api.TranslationMemory.CreateTmSegmentRecordsRequest.html
+  commentId: T:Crowdin.Api.TranslationMemory.CreateTmSegmentRecordsRequest
+  fullName: Crowdin.Api.TranslationMemory.CreateTmSegmentRecordsRequest
+  nameWithType: CreateTmSegmentRecordsRequest
+- uid: Crowdin.Api.TranslationMemory.CreateTmSegmentRecordsRequest.Records
+  name: Records
+  href: api/Crowdin.Api.TranslationMemory.CreateTmSegmentRecordsRequest.html#Crowdin_Api_TranslationMemory_CreateTmSegmentRecordsRequest_Records
+  commentId: P:Crowdin.Api.TranslationMemory.CreateTmSegmentRecordsRequest.Records
+  fullName: Crowdin.Api.TranslationMemory.CreateTmSegmentRecordsRequest.Records
+  nameWithType: CreateTmSegmentRecordsRequest.Records
+- uid: Crowdin.Api.TranslationMemory.CreateTmSegmentRecordsRequest.Records*
+  name: Records
+  href: api/Crowdin.Api.TranslationMemory.CreateTmSegmentRecordsRequest.html#Crowdin_Api_TranslationMemory_CreateTmSegmentRecordsRequest_Records_
+  commentId: Overload:Crowdin.Api.TranslationMemory.CreateTmSegmentRecordsRequest.Records
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.CreateTmSegmentRecordsRequest.Records
+  nameWithType: CreateTmSegmentRecordsRequest.Records
+- uid: Crowdin.Api.TranslationMemory.CreateTmSegmentRequest
+  name: CreateTmSegmentRequest
+  href: api/Crowdin.Api.TranslationMemory.CreateTmSegmentRequest.html
+  commentId: T:Crowdin.Api.TranslationMemory.CreateTmSegmentRequest
+  fullName: Crowdin.Api.TranslationMemory.CreateTmSegmentRequest
+  nameWithType: CreateTmSegmentRequest
+- uid: Crowdin.Api.TranslationMemory.CreateTmSegmentRequest.Records
+  name: Records
+  href: api/Crowdin.Api.TranslationMemory.CreateTmSegmentRequest.html#Crowdin_Api_TranslationMemory_CreateTmSegmentRequest_Records
+  commentId: P:Crowdin.Api.TranslationMemory.CreateTmSegmentRequest.Records
+  fullName: Crowdin.Api.TranslationMemory.CreateTmSegmentRequest.Records
+  nameWithType: CreateTmSegmentRequest.Records
+- uid: Crowdin.Api.TranslationMemory.CreateTmSegmentRequest.Records*
+  name: Records
+  href: api/Crowdin.Api.TranslationMemory.CreateTmSegmentRequest.html#Crowdin_Api_TranslationMemory_CreateTmSegmentRequest_Records_
+  commentId: Overload:Crowdin.Api.TranslationMemory.CreateTmSegmentRequest.Records
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.CreateTmSegmentRequest.Records
+  nameWithType: CreateTmSegmentRequest.Records
 - uid: Crowdin.Api.TranslationMemory.ExportTmRequest
   name: ExportTmRequest
   href: api/Crowdin.Api.TranslationMemory.ExportTmRequest.html
@@ -26235,6 +27200,103 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.TranslationMemory.ImportTmRequest.StorageId
   nameWithType: ImportTmRequest.StorageId
+- uid: Crowdin.Api.TranslationMemory.TmConcordanceResultResource
+  name: TmConcordanceResultResource
+  href: api/Crowdin.Api.TranslationMemory.TmConcordanceResultResource.html
+  commentId: T:Crowdin.Api.TranslationMemory.TmConcordanceResultResource
+  fullName: Crowdin.Api.TranslationMemory.TmConcordanceResultResource
+  nameWithType: TmConcordanceResultResource
+- uid: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.RecordId
+  name: RecordId
+  href: api/Crowdin.Api.TranslationMemory.TmConcordanceResultResource.html#Crowdin_Api_TranslationMemory_TmConcordanceResultResource_RecordId
+  commentId: P:Crowdin.Api.TranslationMemory.TmConcordanceResultResource.RecordId
+  fullName: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.RecordId
+  nameWithType: TmConcordanceResultResource.RecordId
+- uid: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.RecordId*
+  name: RecordId
+  href: api/Crowdin.Api.TranslationMemory.TmConcordanceResultResource.html#Crowdin_Api_TranslationMemory_TmConcordanceResultResource_RecordId_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TmConcordanceResultResource.RecordId
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.RecordId
+  nameWithType: TmConcordanceResultResource.RecordId
+- uid: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Relevant
+  name: Relevant
+  href: api/Crowdin.Api.TranslationMemory.TmConcordanceResultResource.html#Crowdin_Api_TranslationMemory_TmConcordanceResultResource_Relevant
+  commentId: P:Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Relevant
+  fullName: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Relevant
+  nameWithType: TmConcordanceResultResource.Relevant
+- uid: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Relevant*
+  name: Relevant
+  href: api/Crowdin.Api.TranslationMemory.TmConcordanceResultResource.html#Crowdin_Api_TranslationMemory_TmConcordanceResultResource_Relevant_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Relevant
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Relevant
+  nameWithType: TmConcordanceResultResource.Relevant
+- uid: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Source
+  name: Source
+  href: api/Crowdin.Api.TranslationMemory.TmConcordanceResultResource.html#Crowdin_Api_TranslationMemory_TmConcordanceResultResource_Source
+  commentId: P:Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Source
+  fullName: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Source
+  nameWithType: TmConcordanceResultResource.Source
+- uid: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Source*
+  name: Source
+  href: api/Crowdin.Api.TranslationMemory.TmConcordanceResultResource.html#Crowdin_Api_TranslationMemory_TmConcordanceResultResource_Source_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Source
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Source
+  nameWithType: TmConcordanceResultResource.Source
+- uid: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Substituted
+  name: Substituted
+  href: api/Crowdin.Api.TranslationMemory.TmConcordanceResultResource.html#Crowdin_Api_TranslationMemory_TmConcordanceResultResource_Substituted
+  commentId: P:Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Substituted
+  fullName: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Substituted
+  nameWithType: TmConcordanceResultResource.Substituted
+- uid: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Substituted*
+  name: Substituted
+  href: api/Crowdin.Api.TranslationMemory.TmConcordanceResultResource.html#Crowdin_Api_TranslationMemory_TmConcordanceResultResource_Substituted_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Substituted
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Substituted
+  nameWithType: TmConcordanceResultResource.Substituted
+- uid: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Target
+  name: Target
+  href: api/Crowdin.Api.TranslationMemory.TmConcordanceResultResource.html#Crowdin_Api_TranslationMemory_TmConcordanceResultResource_Target
+  commentId: P:Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Target
+  fullName: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Target
+  nameWithType: TmConcordanceResultResource.Target
+- uid: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Target*
+  name: Target
+  href: api/Crowdin.Api.TranslationMemory.TmConcordanceResultResource.html#Crowdin_Api_TranslationMemory_TmConcordanceResultResource_Target_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Target
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Target
+  nameWithType: TmConcordanceResultResource.Target
+- uid: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Tm
+  name: Tm
+  href: api/Crowdin.Api.TranslationMemory.TmConcordanceResultResource.html#Crowdin_Api_TranslationMemory_TmConcordanceResultResource_Tm
+  commentId: P:Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Tm
+  fullName: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Tm
+  nameWithType: TmConcordanceResultResource.Tm
+- uid: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Tm*
+  name: Tm
+  href: api/Crowdin.Api.TranslationMemory.TmConcordanceResultResource.html#Crowdin_Api_TranslationMemory_TmConcordanceResultResource_Tm_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Tm
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.Tm
+  nameWithType: TmConcordanceResultResource.Tm
+- uid: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.UpdatedAt
+  name: UpdatedAt
+  href: api/Crowdin.Api.TranslationMemory.TmConcordanceResultResource.html#Crowdin_Api_TranslationMemory_TmConcordanceResultResource_UpdatedAt
+  commentId: P:Crowdin.Api.TranslationMemory.TmConcordanceResultResource.UpdatedAt
+  fullName: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.UpdatedAt
+  nameWithType: TmConcordanceResultResource.UpdatedAt
+- uid: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.UpdatedAt*
+  name: UpdatedAt
+  href: api/Crowdin.Api.TranslationMemory.TmConcordanceResultResource.html#Crowdin_Api_TranslationMemory_TmConcordanceResultResource_UpdatedAt_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TmConcordanceResultResource.UpdatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TmConcordanceResultResource.UpdatedAt
+  nameWithType: TmConcordanceResultResource.UpdatedAt
 - uid: Crowdin.Api.TranslationMemory.TmExportStatus
   name: TmExportStatus
   href: api/Crowdin.Api.TranslationMemory.TmExportStatus.html
@@ -26625,6 +27687,211 @@ references:
   commentId: F:Crowdin.Api.TranslationMemory.TmPatchPath.Name
   fullName: Crowdin.Api.TranslationMemory.TmPatchPath.Name
   nameWithType: TmPatchPath.Name
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecord
+  name: TmSegmentRecord
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecord.html
+  commentId: T:Crowdin.Api.TranslationMemory.TmSegmentRecord
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecord
+  nameWithType: TmSegmentRecord
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecord.CreatedAt
+  name: CreatedAt
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecord.html#Crowdin_Api_TranslationMemory_TmSegmentRecord_CreatedAt
+  commentId: P:Crowdin.Api.TranslationMemory.TmSegmentRecord.CreatedAt
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecord.CreatedAt
+  nameWithType: TmSegmentRecord.CreatedAt
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecord.CreatedAt*
+  name: CreatedAt
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecord.html#Crowdin_Api_TranslationMemory_TmSegmentRecord_CreatedAt_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TmSegmentRecord.CreatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecord.CreatedAt
+  nameWithType: TmSegmentRecord.CreatedAt
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecord.CreatedBy
+  name: CreatedBy
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecord.html#Crowdin_Api_TranslationMemory_TmSegmentRecord_CreatedBy
+  commentId: P:Crowdin.Api.TranslationMemory.TmSegmentRecord.CreatedBy
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecord.CreatedBy
+  nameWithType: TmSegmentRecord.CreatedBy
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecord.CreatedBy*
+  name: CreatedBy
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecord.html#Crowdin_Api_TranslationMemory_TmSegmentRecord_CreatedBy_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TmSegmentRecord.CreatedBy
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecord.CreatedBy
+  nameWithType: TmSegmentRecord.CreatedBy
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecord.Id
+  name: Id
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecord.html#Crowdin_Api_TranslationMemory_TmSegmentRecord_Id
+  commentId: P:Crowdin.Api.TranslationMemory.TmSegmentRecord.Id
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecord.Id
+  nameWithType: TmSegmentRecord.Id
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecord.Id*
+  name: Id
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecord.html#Crowdin_Api_TranslationMemory_TmSegmentRecord_Id_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TmSegmentRecord.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecord.Id
+  nameWithType: TmSegmentRecord.Id
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecord.LanguageId
+  name: LanguageId
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecord.html#Crowdin_Api_TranslationMemory_TmSegmentRecord_LanguageId
+  commentId: P:Crowdin.Api.TranslationMemory.TmSegmentRecord.LanguageId
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecord.LanguageId
+  nameWithType: TmSegmentRecord.LanguageId
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecord.LanguageId*
+  name: LanguageId
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecord.html#Crowdin_Api_TranslationMemory_TmSegmentRecord_LanguageId_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TmSegmentRecord.LanguageId
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecord.LanguageId
+  nameWithType: TmSegmentRecord.LanguageId
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecord.Text
+  name: Text
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecord.html#Crowdin_Api_TranslationMemory_TmSegmentRecord_Text
+  commentId: P:Crowdin.Api.TranslationMemory.TmSegmentRecord.Text
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecord.Text
+  nameWithType: TmSegmentRecord.Text
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecord.Text*
+  name: Text
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecord.html#Crowdin_Api_TranslationMemory_TmSegmentRecord_Text_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TmSegmentRecord.Text
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecord.Text
+  nameWithType: TmSegmentRecord.Text
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecord.UpdatedAt
+  name: UpdatedAt
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecord.html#Crowdin_Api_TranslationMemory_TmSegmentRecord_UpdatedAt
+  commentId: P:Crowdin.Api.TranslationMemory.TmSegmentRecord.UpdatedAt
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecord.UpdatedAt
+  nameWithType: TmSegmentRecord.UpdatedAt
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecord.UpdatedAt*
+  name: UpdatedAt
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecord.html#Crowdin_Api_TranslationMemory_TmSegmentRecord_UpdatedAt_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TmSegmentRecord.UpdatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecord.UpdatedAt
+  nameWithType: TmSegmentRecord.UpdatedAt
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecord.UpdatedBy
+  name: UpdatedBy
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecord.html#Crowdin_Api_TranslationMemory_TmSegmentRecord_UpdatedBy
+  commentId: P:Crowdin.Api.TranslationMemory.TmSegmentRecord.UpdatedBy
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecord.UpdatedBy
+  nameWithType: TmSegmentRecord.UpdatedBy
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecord.UpdatedBy*
+  name: UpdatedBy
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecord.html#Crowdin_Api_TranslationMemory_TmSegmentRecord_UpdatedBy_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TmSegmentRecord.UpdatedBy
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecord.UpdatedBy
+  nameWithType: TmSegmentRecord.UpdatedBy
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecord.UsageCount
+  name: UsageCount
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecord.html#Crowdin_Api_TranslationMemory_TmSegmentRecord_UsageCount
+  commentId: P:Crowdin.Api.TranslationMemory.TmSegmentRecord.UsageCount
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecord.UsageCount
+  nameWithType: TmSegmentRecord.UsageCount
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecord.UsageCount*
+  name: UsageCount
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecord.html#Crowdin_Api_TranslationMemory_TmSegmentRecord_UsageCount_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TmSegmentRecord.UsageCount
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecord.UsageCount
+  nameWithType: TmSegmentRecord.UsageCount
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecordForm
+  name: TmSegmentRecordForm
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecordForm.html
+  commentId: T:Crowdin.Api.TranslationMemory.TmSegmentRecordForm
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecordForm
+  nameWithType: TmSegmentRecordForm
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecordForm.LanguageId
+  name: LanguageId
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecordForm.html#Crowdin_Api_TranslationMemory_TmSegmentRecordForm_LanguageId
+  commentId: P:Crowdin.Api.TranslationMemory.TmSegmentRecordForm.LanguageId
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecordForm.LanguageId
+  nameWithType: TmSegmentRecordForm.LanguageId
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecordForm.LanguageId*
+  name: LanguageId
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecordForm.html#Crowdin_Api_TranslationMemory_TmSegmentRecordForm_LanguageId_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TmSegmentRecordForm.LanguageId
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecordForm.LanguageId
+  nameWithType: TmSegmentRecordForm.LanguageId
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecordForm.Text
+  name: Text
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecordForm.html#Crowdin_Api_TranslationMemory_TmSegmentRecordForm_Text
+  commentId: P:Crowdin.Api.TranslationMemory.TmSegmentRecordForm.Text
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecordForm.Text
+  nameWithType: TmSegmentRecordForm.Text
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecordForm.Text*
+  name: Text
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecordForm.html#Crowdin_Api_TranslationMemory_TmSegmentRecordForm_Text_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TmSegmentRecordForm.Text
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecordForm.Text
+  nameWithType: TmSegmentRecordForm.Text
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecordPatch
+  name: TmSegmentRecordPatch
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecordPatch.html
+  commentId: T:Crowdin.Api.TranslationMemory.TmSegmentRecordPatch
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecordPatch
+  nameWithType: TmSegmentRecordPatch
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecordPatch.Path
+  name: Path
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecordPatch.html#Crowdin_Api_TranslationMemory_TmSegmentRecordPatch_Path
+  commentId: P:Crowdin.Api.TranslationMemory.TmSegmentRecordPatch.Path
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecordPatch.Path
+  nameWithType: TmSegmentRecordPatch.Path
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecordPatch.Path*
+  name: Path
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecordPatch.html#Crowdin_Api_TranslationMemory_TmSegmentRecordPatch_Path_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TmSegmentRecordPatch.Path
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecordPatch.Path
+  nameWithType: TmSegmentRecordPatch.Path
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecordPatchPath
+  name: TmSegmentRecordPatchPath
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecordPatchPath.html
+  commentId: T:Crowdin.Api.TranslationMemory.TmSegmentRecordPatchPath
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecordPatchPath
+  nameWithType: TmSegmentRecordPatchPath
+- uid: Crowdin.Api.TranslationMemory.TmSegmentRecordPatchPath.Text
+  name: Text
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentRecordPatchPath.html#Crowdin_Api_TranslationMemory_TmSegmentRecordPatchPath_Text
+  commentId: F:Crowdin.Api.TranslationMemory.TmSegmentRecordPatchPath.Text
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentRecordPatchPath.Text
+  nameWithType: TmSegmentRecordPatchPath.Text
+- uid: Crowdin.Api.TranslationMemory.TmSegmentResource
+  name: TmSegmentResource
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentResource.html
+  commentId: T:Crowdin.Api.TranslationMemory.TmSegmentResource
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentResource
+  nameWithType: TmSegmentResource
+- uid: Crowdin.Api.TranslationMemory.TmSegmentResource.Id
+  name: Id
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentResource.html#Crowdin_Api_TranslationMemory_TmSegmentResource_Id
+  commentId: P:Crowdin.Api.TranslationMemory.TmSegmentResource.Id
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentResource.Id
+  nameWithType: TmSegmentResource.Id
+- uid: Crowdin.Api.TranslationMemory.TmSegmentResource.Id*
+  name: Id
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentResource.html#Crowdin_Api_TranslationMemory_TmSegmentResource_Id_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TmSegmentResource.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentResource.Id
+  nameWithType: TmSegmentResource.Id
+- uid: Crowdin.Api.TranslationMemory.TmSegmentResource.Records
+  name: Records
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentResource.html#Crowdin_Api_TranslationMemory_TmSegmentResource_Records
+  commentId: P:Crowdin.Api.TranslationMemory.TmSegmentResource.Records
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentResource.Records
+  nameWithType: TmSegmentResource.Records
+- uid: Crowdin.Api.TranslationMemory.TmSegmentResource.Records*
+  name: Records
+  href: api/Crowdin.Api.TranslationMemory.TmSegmentResource.html#Crowdin_Api_TranslationMemory_TmSegmentResource_Records_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TmSegmentResource.Records
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TmSegmentResource.Records
+  nameWithType: TmSegmentResource.Records
 - uid: Crowdin.Api.TranslationMemory.TmsListParams
   name: TmsListParams
   href: api/Crowdin.Api.TranslationMemory.TmsListParams.html
@@ -26737,19 +28004,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.TranslationMemory.TranslationMemory.CreatedAt
   nameWithType: TranslationMemory.CreatedAt
-- uid: Crowdin.Api.TranslationMemory.TranslationMemory.DefaultProjectId
-  name: DefaultProjectId
-  href: api/Crowdin.Api.TranslationMemory.TranslationMemory.html#Crowdin_Api_TranslationMemory_TranslationMemory_DefaultProjectId
-  commentId: P:Crowdin.Api.TranslationMemory.TranslationMemory.DefaultProjectId
-  fullName: Crowdin.Api.TranslationMemory.TranslationMemory.DefaultProjectId
-  nameWithType: TranslationMemory.DefaultProjectId
-- uid: Crowdin.Api.TranslationMemory.TranslationMemory.DefaultProjectId*
-  name: DefaultProjectId
-  href: api/Crowdin.Api.TranslationMemory.TranslationMemory.html#Crowdin_Api_TranslationMemory_TranslationMemory_DefaultProjectId_
-  commentId: Overload:Crowdin.Api.TranslationMemory.TranslationMemory.DefaultProjectId
+- uid: Crowdin.Api.TranslationMemory.TranslationMemory.DefaultProjectIds
+  name: DefaultProjectIds
+  href: api/Crowdin.Api.TranslationMemory.TranslationMemory.html#Crowdin_Api_TranslationMemory_TranslationMemory_DefaultProjectIds
+  commentId: P:Crowdin.Api.TranslationMemory.TranslationMemory.DefaultProjectIds
+  fullName: Crowdin.Api.TranslationMemory.TranslationMemory.DefaultProjectIds
+  nameWithType: TranslationMemory.DefaultProjectIds
+- uid: Crowdin.Api.TranslationMemory.TranslationMemory.DefaultProjectIds*
+  name: DefaultProjectIds
+  href: api/Crowdin.Api.TranslationMemory.TranslationMemory.html#Crowdin_Api_TranslationMemory_TranslationMemory_DefaultProjectIds_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TranslationMemory.DefaultProjectIds
   isSpec: "True"
-  fullName: Crowdin.Api.TranslationMemory.TranslationMemory.DefaultProjectId
-  nameWithType: TranslationMemory.DefaultProjectId
+  fullName: Crowdin.Api.TranslationMemory.TranslationMemory.DefaultProjectIds
+  nameWithType: TranslationMemory.DefaultProjectIds
 - uid: Crowdin.Api.TranslationMemory.TranslationMemory.GroupId
   name: GroupId
   href: api/Crowdin.Api.TranslationMemory.TranslationMemory.html#Crowdin_Api_TranslationMemory_TranslationMemory_GroupId
@@ -26918,6 +28185,45 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ClearTm
   nameWithType: TranslationMemoryApiExecutor.ClearTm
+- uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ConcordanceSearch(System.Int32,Crowdin.Api.TranslationMemory.ConcordanceSearchRequest)
+  name: ConcordanceSearch(Int32, ConcordanceSearchRequest)
+  href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ConcordanceSearch_System_Int32_Crowdin_Api_TranslationMemory_ConcordanceSearchRequest_
+  commentId: M:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ConcordanceSearch(System.Int32,Crowdin.Api.TranslationMemory.ConcordanceSearchRequest)
+  fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ConcordanceSearch(System.Int32, Crowdin.Api.TranslationMemory.ConcordanceSearchRequest)
+  nameWithType: TranslationMemoryApiExecutor.ConcordanceSearch(Int32, ConcordanceSearchRequest)
+- uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ConcordanceSearch*
+  name: ConcordanceSearch
+  href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ConcordanceSearch_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ConcordanceSearch
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ConcordanceSearch
+  nameWithType: TranslationMemoryApiExecutor.ConcordanceSearch
+- uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.CreateTmSegment(System.Int32,Crowdin.Api.TranslationMemory.CreateTmSegmentRequest)
+  name: CreateTmSegment(Int32, CreateTmSegmentRequest)
+  href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_CreateTmSegment_System_Int32_Crowdin_Api_TranslationMemory_CreateTmSegmentRequest_
+  commentId: M:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.CreateTmSegment(System.Int32,Crowdin.Api.TranslationMemory.CreateTmSegmentRequest)
+  fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.CreateTmSegment(System.Int32, Crowdin.Api.TranslationMemory.CreateTmSegmentRequest)
+  nameWithType: TranslationMemoryApiExecutor.CreateTmSegment(Int32, CreateTmSegmentRequest)
+- uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.CreateTmSegment*
+  name: CreateTmSegment
+  href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_CreateTmSegment_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.CreateTmSegment
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.CreateTmSegment
+  nameWithType: TranslationMemoryApiExecutor.CreateTmSegment
+- uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.CreateTmSegmentRecords(System.Int32,System.Int32,Crowdin.Api.TranslationMemory.CreateTmSegmentRecordsRequest)
+  name: CreateTmSegmentRecords(Int32, Int32, CreateTmSegmentRecordsRequest)
+  href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_CreateTmSegmentRecords_System_Int32_System_Int32_Crowdin_Api_TranslationMemory_CreateTmSegmentRecordsRequest_
+  commentId: M:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.CreateTmSegmentRecords(System.Int32,System.Int32,Crowdin.Api.TranslationMemory.CreateTmSegmentRecordsRequest)
+  fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.CreateTmSegmentRecords(System.Int32, System.Int32, Crowdin.Api.TranslationMemory.CreateTmSegmentRecordsRequest)
+  nameWithType: TranslationMemoryApiExecutor.CreateTmSegmentRecords(Int32, Int32, CreateTmSegmentRecordsRequest)
+- uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.CreateTmSegmentRecords*
+  name: CreateTmSegmentRecords
+  href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_CreateTmSegmentRecords_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.CreateTmSegmentRecords
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.CreateTmSegmentRecords
+  nameWithType: TranslationMemoryApiExecutor.CreateTmSegmentRecords
 - uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.DeleteTm(System.Int32)
   name: DeleteTm(Int32)
   href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_DeleteTm_System_Int32_
@@ -26931,6 +28237,32 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.DeleteTm
   nameWithType: TranslationMemoryApiExecutor.DeleteTm
+- uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.DeleteTmSegment(System.Int32,System.Int32)
+  name: DeleteTmSegment(Int32, Int32)
+  href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_DeleteTmSegment_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.DeleteTmSegment(System.Int32,System.Int32)
+  fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.DeleteTmSegment(System.Int32, System.Int32)
+  nameWithType: TranslationMemoryApiExecutor.DeleteTmSegment(Int32, Int32)
+- uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.DeleteTmSegment*
+  name: DeleteTmSegment
+  href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_DeleteTmSegment_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.DeleteTmSegment
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.DeleteTmSegment
+  nameWithType: TranslationMemoryApiExecutor.DeleteTmSegment
+- uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.DeleteTmSegmentRecord(System.Int32,System.Int32,System.Int32)
+  name: DeleteTmSegmentRecord(Int32, Int32, Int32)
+  href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_DeleteTmSegmentRecord_System_Int32_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.DeleteTmSegmentRecord(System.Int32,System.Int32,System.Int32)
+  fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.DeleteTmSegmentRecord(System.Int32, System.Int32, System.Int32)
+  nameWithType: TranslationMemoryApiExecutor.DeleteTmSegmentRecord(Int32, Int32, Int32)
+- uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.DeleteTmSegmentRecord*
+  name: DeleteTmSegmentRecord
+  href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_DeleteTmSegmentRecord_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.DeleteTmSegmentRecord
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.DeleteTmSegmentRecord
+  nameWithType: TranslationMemoryApiExecutor.DeleteTmSegmentRecord
 - uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.DownloadTm(System.Int32,System.String)
   name: DownloadTm(Int32, String)
   href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_DownloadTm_System_Int32_System_String_
@@ -26960,6 +28292,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.EditTm
   nameWithType: TranslationMemoryApiExecutor.EditTm
+- uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.EditTmSegmentRecord(System.Int32,System.Int32,System.Int32,IEnumerable{Crowdin.Api.TranslationMemory.TmSegmentRecordPatch})
+  name: EditTmSegmentRecord(Int32, Int32, Int32, IEnumerable<TmSegmentRecordPatch>)
+  href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_EditTmSegmentRecord_System_Int32_System_Int32_System_Int32_IEnumerable_Crowdin_Api_TranslationMemory_TmSegmentRecordPatch__
+  commentId: M:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.EditTmSegmentRecord(System.Int32,System.Int32,System.Int32,IEnumerable{Crowdin.Api.TranslationMemory.TmSegmentRecordPatch})
+  name.vb: EditTmSegmentRecord(Int32, Int32, Int32, IEnumerable(Of TmSegmentRecordPatch))
+  fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.EditTmSegmentRecord(System.Int32, System.Int32, System.Int32, IEnumerable<Crowdin.Api.TranslationMemory.TmSegmentRecordPatch>)
+  fullName.vb: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.EditTmSegmentRecord(System.Int32, System.Int32, System.Int32, IEnumerable(Of Crowdin.Api.TranslationMemory.TmSegmentRecordPatch))
+  nameWithType: TranslationMemoryApiExecutor.EditTmSegmentRecord(Int32, Int32, Int32, IEnumerable<TmSegmentRecordPatch>)
+  nameWithType.vb: TranslationMemoryApiExecutor.EditTmSegmentRecord(Int32, Int32, Int32, IEnumerable(Of TmSegmentRecordPatch))
+- uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.EditTmSegmentRecord*
+  name: EditTmSegmentRecord
+  href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_EditTmSegmentRecord_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.EditTmSegmentRecord
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.EditTmSegmentRecord
+  nameWithType: TranslationMemoryApiExecutor.EditTmSegmentRecord
 - uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ExportTm(System.Int32,Crowdin.Api.TranslationMemory.ExportTmRequest)
   name: ExportTm(Int32, ExportTmRequest)
   href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ExportTm_System_Int32_Crowdin_Api_TranslationMemory_ExportTmRequest_
@@ -26986,6 +28334,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.GetTm
   nameWithType: TranslationMemoryApiExecutor.GetTm
+- uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.GetTmSegment(System.Int32,System.Int32)
+  name: GetTmSegment(Int32, Int32)
+  href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_GetTmSegment_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.GetTmSegment(System.Int32,System.Int32)
+  fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.GetTmSegment(System.Int32, System.Int32)
+  nameWithType: TranslationMemoryApiExecutor.GetTmSegment(Int32, Int32)
+- uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.GetTmSegment*
+  name: GetTmSegment
+  href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_GetTmSegment_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.GetTmSegment
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.GetTmSegment
+  nameWithType: TranslationMemoryApiExecutor.GetTmSegment
 - uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ImportTm(System.Int32,Crowdin.Api.TranslationMemory.ImportTmRequest)
   name: ImportTm(Int32, ImportTmRequest)
   href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ImportTm_System_Int32_Crowdin_Api_TranslationMemory_ImportTmRequest_
@@ -27021,6 +28382,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTms
   nameWithType: TranslationMemoryApiExecutor.ListTms
+- uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTmSegments(System.Int32,System.Int32,System.Int32)
+  name: ListTmSegments(Int32, Int32, Int32)
+  href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ListTmSegments_System_Int32_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTmSegments(System.Int32,System.Int32,System.Int32)
+  fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTmSegments(System.Int32, System.Int32, System.Int32)
+  nameWithType: TranslationMemoryApiExecutor.ListTmSegments(Int32, Int32, Int32)
+- uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTmSegments*
+  name: ListTmSegments
+  href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ListTmSegments_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTmSegments
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTmSegments
+  nameWithType: TranslationMemoryApiExecutor.ListTmSegments
 - uid: Crowdin.Api.Translations
   name: Crowdin.Api.Translations
   href: api/Crowdin.Api.Translations.html
@@ -31993,6 +33367,542 @@ references:
   commentId: F:Crowdin.Api.Webhooks.EventType.TranslationUpdated
   fullName: Crowdin.Api.Webhooks.EventType.TranslationUpdated
   nameWithType: EventType.TranslationUpdated
+- uid: Crowdin.Api.Webhooks.Organization
+  name: Crowdin.Api.Webhooks.Organization
+  href: api/Crowdin.Api.Webhooks.Organization.html
+  commentId: N:Crowdin.Api.Webhooks.Organization
+  fullName: Crowdin.Api.Webhooks.Organization
+  nameWithType: Crowdin.Api.Webhooks.Organization
+- uid: Crowdin.Api.Webhooks.Organization.AddWebhookRequest
+  name: AddWebhookRequest
+  href: api/Crowdin.Api.Webhooks.Organization.AddWebhookRequest.html
+  commentId: T:Crowdin.Api.Webhooks.Organization.AddWebhookRequest
+  fullName: Crowdin.Api.Webhooks.Organization.AddWebhookRequest
+  nameWithType: AddWebhookRequest
+- uid: Crowdin.Api.Webhooks.Organization.AddWebhookRequest.Events
+  name: Events
+  href: api/Crowdin.Api.Webhooks.Organization.AddWebhookRequest.html#Crowdin_Api_Webhooks_Organization_AddWebhookRequest_Events
+  commentId: P:Crowdin.Api.Webhooks.Organization.AddWebhookRequest.Events
+  fullName: Crowdin.Api.Webhooks.Organization.AddWebhookRequest.Events
+  nameWithType: AddWebhookRequest.Events
+- uid: Crowdin.Api.Webhooks.Organization.AddWebhookRequest.Events*
+  name: Events
+  href: api/Crowdin.Api.Webhooks.Organization.AddWebhookRequest.html#Crowdin_Api_Webhooks_Organization_AddWebhookRequest_Events_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.AddWebhookRequest.Events
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.AddWebhookRequest.Events
+  nameWithType: AddWebhookRequest.Events
+- uid: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase
+  name: AddWebhookRequestBase
+  href: api/Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.html
+  commentId: T:Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase
+  fullName: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase
+  nameWithType: AddWebhookRequestBase
+- uid: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.BatchingEnabled
+  name: BatchingEnabled
+  href: api/Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.html#Crowdin_Api_Webhooks_Organization_AddWebhookRequestBase_BatchingEnabled
+  commentId: P:Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.BatchingEnabled
+  fullName: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.BatchingEnabled
+  nameWithType: AddWebhookRequestBase.BatchingEnabled
+- uid: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.BatchingEnabled*
+  name: BatchingEnabled
+  href: api/Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.html#Crowdin_Api_Webhooks_Organization_AddWebhookRequestBase_BatchingEnabled_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.BatchingEnabled
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.BatchingEnabled
+  nameWithType: AddWebhookRequestBase.BatchingEnabled
+- uid: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.ContentType
+  name: ContentType
+  href: api/Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.html#Crowdin_Api_Webhooks_Organization_AddWebhookRequestBase_ContentType
+  commentId: P:Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.ContentType
+  fullName: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.ContentType
+  nameWithType: AddWebhookRequestBase.ContentType
+- uid: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.ContentType*
+  name: ContentType
+  href: api/Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.html#Crowdin_Api_Webhooks_Organization_AddWebhookRequestBase_ContentType_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.ContentType
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.ContentType
+  nameWithType: AddWebhookRequestBase.ContentType
+- uid: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Headers
+  name: Headers
+  href: api/Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.html#Crowdin_Api_Webhooks_Organization_AddWebhookRequestBase_Headers
+  commentId: P:Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Headers
+  fullName: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Headers
+  nameWithType: AddWebhookRequestBase.Headers
+- uid: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Headers*
+  name: Headers
+  href: api/Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.html#Crowdin_Api_Webhooks_Organization_AddWebhookRequestBase_Headers_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Headers
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Headers
+  nameWithType: AddWebhookRequestBase.Headers
+- uid: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.IsActive
+  name: IsActive
+  href: api/Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.html#Crowdin_Api_Webhooks_Organization_AddWebhookRequestBase_IsActive
+  commentId: P:Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.IsActive
+  fullName: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.IsActive
+  nameWithType: AddWebhookRequestBase.IsActive
+- uid: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.IsActive*
+  name: IsActive
+  href: api/Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.html#Crowdin_Api_Webhooks_Organization_AddWebhookRequestBase_IsActive_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.IsActive
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.IsActive
+  nameWithType: AddWebhookRequestBase.IsActive
+- uid: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Name
+  name: Name
+  href: api/Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.html#Crowdin_Api_Webhooks_Organization_AddWebhookRequestBase_Name
+  commentId: P:Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Name
+  fullName: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Name
+  nameWithType: AddWebhookRequestBase.Name
+- uid: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Name*
+  name: Name
+  href: api/Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.html#Crowdin_Api_Webhooks_Organization_AddWebhookRequestBase_Name_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Name
+  nameWithType: AddWebhookRequestBase.Name
+- uid: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Payload
+  name: Payload
+  href: api/Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.html#Crowdin_Api_Webhooks_Organization_AddWebhookRequestBase_Payload
+  commentId: P:Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Payload
+  fullName: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Payload
+  nameWithType: AddWebhookRequestBase.Payload
+- uid: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Payload*
+  name: Payload
+  href: api/Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.html#Crowdin_Api_Webhooks_Organization_AddWebhookRequestBase_Payload_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Payload
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Payload
+  nameWithType: AddWebhookRequestBase.Payload
+- uid: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.RequestType
+  name: RequestType
+  href: api/Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.html#Crowdin_Api_Webhooks_Organization_AddWebhookRequestBase_RequestType
+  commentId: P:Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.RequestType
+  fullName: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.RequestType
+  nameWithType: AddWebhookRequestBase.RequestType
+- uid: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.RequestType*
+  name: RequestType
+  href: api/Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.html#Crowdin_Api_Webhooks_Organization_AddWebhookRequestBase_RequestType_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.RequestType
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.RequestType
+  nameWithType: AddWebhookRequestBase.RequestType
+- uid: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Url
+  name: Url
+  href: api/Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.html#Crowdin_Api_Webhooks_Organization_AddWebhookRequestBase_Url
+  commentId: P:Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Url
+  fullName: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Url
+  nameWithType: AddWebhookRequestBase.Url
+- uid: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Url*
+  name: Url
+  href: api/Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.html#Crowdin_Api_Webhooks_Organization_AddWebhookRequestBase_Url_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Url
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase.Url
+  nameWithType: AddWebhookRequestBase.Url
+- uid: Crowdin.Api.Webhooks.Organization.EnterpriseAddWebhookRequest
+  name: EnterpriseAddWebhookRequest
+  href: api/Crowdin.Api.Webhooks.Organization.EnterpriseAddWebhookRequest.html
+  commentId: T:Crowdin.Api.Webhooks.Organization.EnterpriseAddWebhookRequest
+  fullName: Crowdin.Api.Webhooks.Organization.EnterpriseAddWebhookRequest
+  nameWithType: EnterpriseAddWebhookRequest
+- uid: Crowdin.Api.Webhooks.Organization.EnterpriseAddWebhookRequest.Events
+  name: Events
+  href: api/Crowdin.Api.Webhooks.Organization.EnterpriseAddWebhookRequest.html#Crowdin_Api_Webhooks_Organization_EnterpriseAddWebhookRequest_Events
+  commentId: P:Crowdin.Api.Webhooks.Organization.EnterpriseAddWebhookRequest.Events
+  fullName: Crowdin.Api.Webhooks.Organization.EnterpriseAddWebhookRequest.Events
+  nameWithType: EnterpriseAddWebhookRequest.Events
+- uid: Crowdin.Api.Webhooks.Organization.EnterpriseAddWebhookRequest.Events*
+  name: Events
+  href: api/Crowdin.Api.Webhooks.Organization.EnterpriseAddWebhookRequest.html#Crowdin_Api_Webhooks_Organization_EnterpriseAddWebhookRequest_Events_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.EnterpriseAddWebhookRequest.Events
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.EnterpriseAddWebhookRequest.Events
+  nameWithType: EnterpriseAddWebhookRequest.Events
+- uid: Crowdin.Api.Webhooks.Organization.EnterpriseOrgEventType
+  name: EnterpriseOrgEventType
+  href: api/Crowdin.Api.Webhooks.Organization.EnterpriseOrgEventType.html
+  commentId: T:Crowdin.Api.Webhooks.Organization.EnterpriseOrgEventType
+  fullName: Crowdin.Api.Webhooks.Organization.EnterpriseOrgEventType
+  nameWithType: EnterpriseOrgEventType
+- uid: Crowdin.Api.Webhooks.Organization.EnterpriseOrgEventType.GroupCreated
+  name: GroupCreated
+  href: api/Crowdin.Api.Webhooks.Organization.EnterpriseOrgEventType.html#Crowdin_Api_Webhooks_Organization_EnterpriseOrgEventType_GroupCreated
+  commentId: F:Crowdin.Api.Webhooks.Organization.EnterpriseOrgEventType.GroupCreated
+  fullName: Crowdin.Api.Webhooks.Organization.EnterpriseOrgEventType.GroupCreated
+  nameWithType: EnterpriseOrgEventType.GroupCreated
+- uid: Crowdin.Api.Webhooks.Organization.EnterpriseOrgEventType.GroupDeleted
+  name: GroupDeleted
+  href: api/Crowdin.Api.Webhooks.Organization.EnterpriseOrgEventType.html#Crowdin_Api_Webhooks_Organization_EnterpriseOrgEventType_GroupDeleted
+  commentId: F:Crowdin.Api.Webhooks.Organization.EnterpriseOrgEventType.GroupDeleted
+  fullName: Crowdin.Api.Webhooks.Organization.EnterpriseOrgEventType.GroupDeleted
+  nameWithType: EnterpriseOrgEventType.GroupDeleted
+- uid: Crowdin.Api.Webhooks.Organization.EnterpriseOrgEventType.ProjectCreated
+  name: ProjectCreated
+  href: api/Crowdin.Api.Webhooks.Organization.EnterpriseOrgEventType.html#Crowdin_Api_Webhooks_Organization_EnterpriseOrgEventType_ProjectCreated
+  commentId: F:Crowdin.Api.Webhooks.Organization.EnterpriseOrgEventType.ProjectCreated
+  fullName: Crowdin.Api.Webhooks.Organization.EnterpriseOrgEventType.ProjectCreated
+  nameWithType: EnterpriseOrgEventType.ProjectCreated
+- uid: Crowdin.Api.Webhooks.Organization.EnterpriseOrgEventType.ProjectDeleted
+  name: ProjectDeleted
+  href: api/Crowdin.Api.Webhooks.Organization.EnterpriseOrgEventType.html#Crowdin_Api_Webhooks_Organization_EnterpriseOrgEventType_ProjectDeleted
+  commentId: F:Crowdin.Api.Webhooks.Organization.EnterpriseOrgEventType.ProjectDeleted
+  fullName: Crowdin.Api.Webhooks.Organization.EnterpriseOrgEventType.ProjectDeleted
+  nameWithType: EnterpriseOrgEventType.ProjectDeleted
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationEventType
+  name: OrganizationEventType
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationEventType.html
+  commentId: T:Crowdin.Api.Webhooks.Organization.OrganizationEventType
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationEventType
+  nameWithType: OrganizationEventType
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationEventType.ProjectCreated
+  name: ProjectCreated
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationEventType.html#Crowdin_Api_Webhooks_Organization_OrganizationEventType_ProjectCreated
+  commentId: F:Crowdin.Api.Webhooks.Organization.OrganizationEventType.ProjectCreated
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationEventType.ProjectCreated
+  nameWithType: OrganizationEventType.ProjectCreated
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationEventType.ProjectDeleted
+  name: ProjectDeleted
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationEventType.html#Crowdin_Api_Webhooks_Organization_OrganizationEventType_ProjectDeleted
+  commentId: F:Crowdin.Api.Webhooks.Organization.OrganizationEventType.ProjectDeleted
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationEventType.ProjectDeleted
+  nameWithType: OrganizationEventType.ProjectDeleted
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatch
+  name: OrganizationWebhookPatch
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatch.html
+  commentId: T:Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatch
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatch
+  nameWithType: OrganizationWebhookPatch
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatch.Path
+  name: Path
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatch.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookPatch_Path
+  commentId: P:Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatch.Path
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatch.Path
+  nameWithType: OrganizationWebhookPatch.Path
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatch.Path*
+  name: Path
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatch.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookPatch_Path_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatch.Path
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatch.Path
+  nameWithType: OrganizationWebhookPatch.Path
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath
+  name: OrganizationWebhookPatchPath
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.html
+  commentId: T:Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath
+  nameWithType: OrganizationWebhookPatchPath
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.BatchingEnabled
+  name: BatchingEnabled
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookPatchPath_BatchingEnabled
+  commentId: F:Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.BatchingEnabled
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.BatchingEnabled
+  nameWithType: OrganizationWebhookPatchPath.BatchingEnabled
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.ContentType
+  name: ContentType
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookPatchPath_ContentType
+  commentId: F:Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.ContentType
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.ContentType
+  nameWithType: OrganizationWebhookPatchPath.ContentType
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.Events
+  name: Events
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookPatchPath_Events
+  commentId: F:Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.Events
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.Events
+  nameWithType: OrganizationWebhookPatchPath.Events
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.Headers
+  name: Headers
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookPatchPath_Headers
+  commentId: F:Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.Headers
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.Headers
+  nameWithType: OrganizationWebhookPatchPath.Headers
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.IsActive
+  name: IsActive
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookPatchPath_IsActive
+  commentId: F:Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.IsActive
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.IsActive
+  nameWithType: OrganizationWebhookPatchPath.IsActive
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.Name
+  name: Name
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookPatchPath_Name
+  commentId: F:Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.Name
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.Name
+  nameWithType: OrganizationWebhookPatchPath.Name
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.Payload
+  name: Payload
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookPatchPath_Payload
+  commentId: F:Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.Payload
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.Payload
+  nameWithType: OrganizationWebhookPatchPath.Payload
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.RequestType
+  name: RequestType
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookPatchPath_RequestType
+  commentId: F:Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.RequestType
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.RequestType
+  nameWithType: OrganizationWebhookPatchPath.RequestType
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.Url
+  name: Url
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookPatchPath_Url
+  commentId: F:Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.Url
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatchPath.Url
+  nameWithType: OrganizationWebhookPatchPath.Url
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource
+  name: OrganizationWebhookResource
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html
+  commentId: T:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource
+  nameWithType: OrganizationWebhookResource
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.BatchingEnabled
+  name: BatchingEnabled
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_BatchingEnabled
+  commentId: P:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.BatchingEnabled
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.BatchingEnabled
+  nameWithType: OrganizationWebhookResource.BatchingEnabled
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.BatchingEnabled*
+  name: BatchingEnabled
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_BatchingEnabled_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.BatchingEnabled
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.BatchingEnabled
+  nameWithType: OrganizationWebhookResource.BatchingEnabled
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.ContentType
+  name: ContentType
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_ContentType
+  commentId: P:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.ContentType
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.ContentType
+  nameWithType: OrganizationWebhookResource.ContentType
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.ContentType*
+  name: ContentType
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_ContentType_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.ContentType
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.ContentType
+  nameWithType: OrganizationWebhookResource.ContentType
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.CreatedAt
+  name: CreatedAt
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_CreatedAt
+  commentId: P:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.CreatedAt
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.CreatedAt
+  nameWithType: OrganizationWebhookResource.CreatedAt
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.CreatedAt*
+  name: CreatedAt
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_CreatedAt_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.CreatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.CreatedAt
+  nameWithType: OrganizationWebhookResource.CreatedAt
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Events
+  name: Events
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_Events
+  commentId: P:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Events
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Events
+  nameWithType: OrganizationWebhookResource.Events
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Events*
+  name: Events
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_Events_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Events
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Events
+  nameWithType: OrganizationWebhookResource.Events
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Headers
+  name: Headers
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_Headers
+  commentId: P:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Headers
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Headers
+  nameWithType: OrganizationWebhookResource.Headers
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Headers*
+  name: Headers
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_Headers_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Headers
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Headers
+  nameWithType: OrganizationWebhookResource.Headers
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Id
+  name: Id
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_Id
+  commentId: P:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Id
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Id
+  nameWithType: OrganizationWebhookResource.Id
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Id*
+  name: Id
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_Id_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Id
+  nameWithType: OrganizationWebhookResource.Id
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.IsActive
+  name: IsActive
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_IsActive
+  commentId: P:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.IsActive
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.IsActive
+  nameWithType: OrganizationWebhookResource.IsActive
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.IsActive*
+  name: IsActive
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_IsActive_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.IsActive
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.IsActive
+  nameWithType: OrganizationWebhookResource.IsActive
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Name
+  name: Name
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_Name
+  commentId: P:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Name
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Name
+  nameWithType: OrganizationWebhookResource.Name
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Name*
+  name: Name
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_Name_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Name
+  nameWithType: OrganizationWebhookResource.Name
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Payload
+  name: Payload
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_Payload
+  commentId: P:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Payload
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Payload
+  nameWithType: OrganizationWebhookResource.Payload
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Payload*
+  name: Payload
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_Payload_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Payload
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Payload
+  nameWithType: OrganizationWebhookResource.Payload
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.RequestType
+  name: RequestType
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_RequestType
+  commentId: P:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.RequestType
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.RequestType
+  nameWithType: OrganizationWebhookResource.RequestType
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.RequestType*
+  name: RequestType
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_RequestType_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.RequestType
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.RequestType
+  nameWithType: OrganizationWebhookResource.RequestType
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.UpdatedAt
+  name: UpdatedAt
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_UpdatedAt
+  commentId: P:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.UpdatedAt
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.UpdatedAt
+  nameWithType: OrganizationWebhookResource.UpdatedAt
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.UpdatedAt*
+  name: UpdatedAt
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_UpdatedAt_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.UpdatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.UpdatedAt
+  nameWithType: OrganizationWebhookResource.UpdatedAt
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Url
+  name: Url
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_Url
+  commentId: P:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Url
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Url
+  nameWithType: OrganizationWebhookResource.Url
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Url*
+  name: Url
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhookResource_Url_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Url
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhookResource.Url
+  nameWithType: OrganizationWebhookResource.Url
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor
+  name: OrganizationWebhooksApiExecutor
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.html
+  commentId: T:Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor
+  nameWithType: OrganizationWebhooksApiExecutor
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.#ctor(Crowdin.Api.ICrowdinApiClient)
+  name: OrganizationWebhooksApiExecutor(ICrowdinApiClient)
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhooksApiExecutor__ctor_Crowdin_Api_ICrowdinApiClient_
+  commentId: M:Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.#ctor(Crowdin.Api.ICrowdinApiClient)
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.OrganizationWebhooksApiExecutor(Crowdin.Api.ICrowdinApiClient)
+  nameWithType: OrganizationWebhooksApiExecutor.OrganizationWebhooksApiExecutor(ICrowdinApiClient)
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.#ctor(Crowdin.Api.ICrowdinApiClient,Crowdin.Api.Core.IJsonParser)
+  name: OrganizationWebhooksApiExecutor(ICrowdinApiClient, IJsonParser)
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhooksApiExecutor__ctor_Crowdin_Api_ICrowdinApiClient_Crowdin_Api_Core_IJsonParser_
+  commentId: M:Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.#ctor(Crowdin.Api.ICrowdinApiClient,Crowdin.Api.Core.IJsonParser)
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.OrganizationWebhooksApiExecutor(Crowdin.Api.ICrowdinApiClient, Crowdin.Api.Core.IJsonParser)
+  nameWithType: OrganizationWebhooksApiExecutor.OrganizationWebhooksApiExecutor(ICrowdinApiClient, IJsonParser)
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.#ctor*
+  name: OrganizationWebhooksApiExecutor
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhooksApiExecutor__ctor_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.#ctor
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.OrganizationWebhooksApiExecutor
+  nameWithType: OrganizationWebhooksApiExecutor.OrganizationWebhooksApiExecutor
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.AddWebhook(Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase)
+  name: AddWebhook(AddWebhookRequestBase)
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhooksApiExecutor_AddWebhook_Crowdin_Api_Webhooks_Organization_AddWebhookRequestBase_
+  commentId: M:Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.AddWebhook(Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase)
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.AddWebhook(Crowdin.Api.Webhooks.Organization.AddWebhookRequestBase)
+  nameWithType: OrganizationWebhooksApiExecutor.AddWebhook(AddWebhookRequestBase)
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.AddWebhook*
+  name: AddWebhook
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhooksApiExecutor_AddWebhook_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.AddWebhook
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.AddWebhook
+  nameWithType: OrganizationWebhooksApiExecutor.AddWebhook
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.DeleteWebhook(System.Int32)
+  name: DeleteWebhook(Int32)
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhooksApiExecutor_DeleteWebhook_System_Int32_
+  commentId: M:Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.DeleteWebhook(System.Int32)
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.DeleteWebhook(System.Int32)
+  nameWithType: OrganizationWebhooksApiExecutor.DeleteWebhook(Int32)
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.DeleteWebhook*
+  name: DeleteWebhook
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhooksApiExecutor_DeleteWebhook_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.DeleteWebhook
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.DeleteWebhook
+  nameWithType: OrganizationWebhooksApiExecutor.DeleteWebhook
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.EditWebhook(System.Int32,IEnumerable{Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatch})
+  name: EditWebhook(Int32, IEnumerable<OrganizationWebhookPatch>)
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhooksApiExecutor_EditWebhook_System_Int32_IEnumerable_Crowdin_Api_Webhooks_Organization_OrganizationWebhookPatch__
+  commentId: M:Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.EditWebhook(System.Int32,IEnumerable{Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatch})
+  name.vb: EditWebhook(Int32, IEnumerable(Of OrganizationWebhookPatch))
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.EditWebhook(System.Int32, IEnumerable<Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatch>)
+  fullName.vb: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.EditWebhook(System.Int32, IEnumerable(Of Crowdin.Api.Webhooks.Organization.OrganizationWebhookPatch))
+  nameWithType: OrganizationWebhooksApiExecutor.EditWebhook(Int32, IEnumerable<OrganizationWebhookPatch>)
+  nameWithType.vb: OrganizationWebhooksApiExecutor.EditWebhook(Int32, IEnumerable(Of OrganizationWebhookPatch))
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.EditWebhook*
+  name: EditWebhook
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhooksApiExecutor_EditWebhook_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.EditWebhook
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.EditWebhook
+  nameWithType: OrganizationWebhooksApiExecutor.EditWebhook
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.GetWebhook(System.Int32)
+  name: GetWebhook(Int32)
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhooksApiExecutor_GetWebhook_System_Int32_
+  commentId: M:Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.GetWebhook(System.Int32)
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.GetWebhook(System.Int32)
+  nameWithType: OrganizationWebhooksApiExecutor.GetWebhook(Int32)
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.GetWebhook*
+  name: GetWebhook
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhooksApiExecutor_GetWebhook_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.GetWebhook
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.GetWebhook
+  nameWithType: OrganizationWebhooksApiExecutor.GetWebhook
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.ListWebhooks(System.Int32,System.Int32)
+  name: ListWebhooks(Int32, Int32)
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhooksApiExecutor_ListWebhooks_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.ListWebhooks(System.Int32,System.Int32)
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.ListWebhooks(System.Int32, System.Int32)
+  nameWithType: OrganizationWebhooksApiExecutor.ListWebhooks(Int32, Int32)
+- uid: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.ListWebhooks*
+  name: ListWebhooks
+  href: api/Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.html#Crowdin_Api_Webhooks_Organization_OrganizationWebhooksApiExecutor_ListWebhooks_
+  commentId: Overload:Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.ListWebhooks
+  isSpec: "True"
+  fullName: Crowdin.Api.Webhooks.Organization.OrganizationWebhooksApiExecutor.ListWebhooks
+  nameWithType: OrganizationWebhooksApiExecutor.ListWebhooks
 - uid: Crowdin.Api.Webhooks.RequestType
   name: RequestType
   href: api/Crowdin.Api.Webhooks.RequestType.html
