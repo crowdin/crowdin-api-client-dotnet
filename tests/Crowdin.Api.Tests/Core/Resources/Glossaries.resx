@@ -32,6 +32,9 @@
         "languageIds": [
           "ro"
         ],
+        "defaultProjectIds": [
+          2
+        ],
         "projectIds": [
           6
         ],
