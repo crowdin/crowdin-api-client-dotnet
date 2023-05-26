@@ -128,6 +128,25 @@ namespace Crowdin.Api.Tests.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {
+        ///    &quot;storageId&quot;: 1,
+        ///    &quot;importOptions&quot;: {
+        ///        &quot;excludedFrontMatterElements&quot;: [
+        ///            &quot;br&quot;
+        ///        ],
+        ///        &quot;excludeCodeBlocks&quot;: true,
+        ///        &quot;contentSegmentation&quot;: true,
+        ///        &quot;srxStorageId&quot;: 2
+        ///    }
+        ///}.
+        /// </summary>
+        internal static string AddFile_MdxV1_Request {
+            get {
+                return ResourceManager.GetString("AddFile_MdxV1_Request", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {&quot;storageId&quot;:1,&quot;name&quot;:&quot;Test name&quot;,&quot;importOptions&quot;:{&quot;scheme&quot;:{&quot;context&quot;:123,&quot;ua&quot;:1,&quot;ru&quot;:2,&quot;en&quot;:3}}}.
         /// </summary>
         internal static string AddFile_Request {

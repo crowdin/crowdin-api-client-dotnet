@@ -146,4 +146,17 @@
     }
 }</value>
     </data>
+    <data name="AddFile_MdxV1_Request" xml:space="preserve">
+        <value>{
+    "storageId": 1,
+    "importOptions": {
+        "excludedFrontMatterElements": [
+            "br"
+        ],
+        "excludeCodeBlocks": true,
+        "contentSegmentation": true,
+        "srxStorageId": 2
+    }
+}</value>
+    </data>
 </root>

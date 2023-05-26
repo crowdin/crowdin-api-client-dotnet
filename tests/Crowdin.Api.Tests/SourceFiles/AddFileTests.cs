@@ -161,6 +161,46 @@ namespace Crowdin.Api.Tests.SourceFiles
 
         #endregion
 
+        #region MdxV1FileImportOptions
+
+        [Fact]
+        public void AddFile_MdxV1FileImportOptions_RequestSerialization()
+        {
+            var request = new AddFileRequest
+            {
+                StorageId = 1,
+                ImportOptions = new MdxV1FileImportOptions()
+                {
+                    ExcludedFrontMatterElements = new List<string> { "br" },
+                    ExcludeCodeBlocks = true,
+                    ContentSegmentation = true,
+                    SrxStorageId = 2
+                }
+            };
+            
+            string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
+            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.SourceFiles.AddFile_MdxV1_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+        }
+        
+        [Fact]
+        public void AddFile_MdxV1FileImportOptions_RequestDeserialization()
+        {
+            string requestJson = Core.Resources.SourceFiles.AddFile_MdxV1_Request;
+            var request = JsonConvert.DeserializeObject<AddFileRequest>(requestJson, JsonSettings);
+            
+            Assert.NotNull(request);
+            Assert.IsType<MdxV1FileImportOptions>(request!.ImportOptions);
+            
+            var importOptions = (MdxV1FileImportOptions) request.ImportOptions!;
+            Assert.Equal(new List<string> { "br" }, importOptions.ExcludedFrontMatterElements);
+            Assert.True(importOptions.ExcludeCodeBlocks);
+            Assert.True(importOptions.ContentSegmentation);
+            Assert.Equal(2, importOptions.SrxStorageId);
+        }
+
+        #endregion
+
         [Fact]
         public void AddFile_RequestSerialization()
         {

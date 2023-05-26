@@ -99,6 +99,22 @@ namespace Crowdin.Api.SourceFiles
     }
 
     [PublicAPI]
+    public class MdxV1FileImportOptions : FileImportOptions
+    {
+        [JsonProperty("excludedFrontMatterElements")]
+        public IList<string>? ExcludedFrontMatterElements { get; set; }
+        
+        [JsonProperty("excludeCodeBlocks")]
+        public bool? ExcludeCodeBlocks { get; set; }
+        
+        [JsonProperty("contentSegmentation")]
+        public bool? ContentSegmentation { get; set; }
+        
+        [JsonProperty("srxStorageId")]
+        public int? SrxStorageId { get; set; }
+    }
+
+    [PublicAPI]
     public class OtherFilesImportOptions : FileImportOptions
     {
         [JsonProperty("contentSegmentation")]
