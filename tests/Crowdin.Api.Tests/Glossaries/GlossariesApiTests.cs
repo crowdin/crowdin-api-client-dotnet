@@ -44,6 +44,7 @@ namespace Crowdin.Api.Tests.Glossaries
             Assert.NotNull(response);
             Assert.Single(response.Data);
             Assert.Equal(groupId, response.Data[0].GroupId);
+            Assert.Equal(2, response.Data[0].DefaultProjectIds?.Single());
         }
 
         [Fact]

@@ -29,6 +29,9 @@ namespace Crowdin.Api.Glossaries
         [JsonProperty("languageIds")]
         public string[] LanguageIds { get; set; }
         
+        [JsonProperty("defaultProjectIds")]
+        public int[] DefaultProjectIds { get; set; }
+        
         [JsonProperty("projectIds")]
         public int[] ProjectIds { get; set; }
         

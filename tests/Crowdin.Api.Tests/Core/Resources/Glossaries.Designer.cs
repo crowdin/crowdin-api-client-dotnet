@@ -152,6 +152,9 @@ namespace Crowdin.Api.Tests.Core.Resources {
         ///        &quot;languageIds&quot;: [
         ///          &quot;ro&quot;
         ///        ],
+        ///        &quot;defaultProjectIds&quot;: [
+        ///          2
+        ///        ],
         ///        &quot;projectIds&quot;: [
         ///          6
         ///        ],
