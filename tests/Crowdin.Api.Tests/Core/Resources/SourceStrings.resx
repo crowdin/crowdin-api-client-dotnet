@@ -122,4 +122,33 @@
   }
 }</value>
     </data>
+    <data name="StringBatchOperations_Response_NoPagination" xml:space="preserve">
+        <value>{
+    "data": [
+        {
+            "data": {
+                "id": 468549,
+                "projectId": 11,
+                "fileId": 1533,
+                "branchId": null,
+                "directoryId": 1535,
+                "identifier": "bulk_edit_6",
+                "text": "Batch operations with send patch request",
+                "type": "text",
+                "context": "edited context using patch request",
+                "maxLength": 0,
+                "isHidden": false,
+                "isDuplicate": false,
+                "masterStringId": null,
+                "revision": 58,
+                "hasPlurals": false,
+                "isIcu": false,
+                "labelIds": [],
+                "createdAt": "2023-06-05T12:00:32+02:00",
+                "updatedAt": "2023-06-05T18:38:26+02:00"
+            }
+        }
+    ]
+}</value>
+    </data>
 </root>

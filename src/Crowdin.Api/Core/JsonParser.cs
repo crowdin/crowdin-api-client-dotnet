@@ -61,7 +61,10 @@ namespace Crowdin.Api.Core
                     .Select(ParseResponseObject<TData>)
                     .ToList(),
                 
-                Pagination = ParseResponseObject<Pagination>(rootElement["pagination"]!)
+                Pagination =
+                    rootElement["pagination"] != null
+                    ? ParseResponseObject<Pagination>(rootElement["pagination"]!)
+                    : null
             };
         }
         

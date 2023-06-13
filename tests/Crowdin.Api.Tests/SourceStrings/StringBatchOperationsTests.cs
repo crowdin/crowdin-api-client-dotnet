@@ -98,6 +98,31 @@ namespace Crowdin.Api.Tests.SourceStrings
             Assert_SourceString(response.Data?.Single());
         }
 
+        [Fact]
+        public async Task StringBatchOperations_NoPagination()
+        {
+            const int projectId = 1;
+
+            StringBatchOpPatch[] patches = Array.Empty<StringBatchOpPatch>();
+            
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/strings";
+
+            mockClient
+                .Setup(client => client.SendPatchRequest(url, patches, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Core.Resources.SourceStrings.StringBatchOperations_Response_NoPagination)
+                });
+
+            var executor = new SourceStringsApiExecutor(mockClient.Object);
+            ResponseList<SourceString> response = await executor.StringBatchOperations(projectId, patches);
+            
+            Assert.NotNull(response);
+        }
+
         private static void Assert_SourceString(SourceString? sourceString)
         {
             Assert.NotNull(sourceString);

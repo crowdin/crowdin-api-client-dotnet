@@ -154,5 +154,29 @@ namespace Crowdin.Api.Tests.Core.Resources {
                 return ResourceManager.GetString("StringBatchOperations_Response", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///    &quot;data&quot;: [
+        ///        {
+        ///            &quot;data&quot;: {
+        ///                &quot;id&quot;: 468549,
+        ///                &quot;projectId&quot;: 11,
+        ///                &quot;fileId&quot;: 1533,
+        ///                &quot;branchId&quot;: null,
+        ///                &quot;directoryId&quot;: 1535,
+        ///                &quot;identifier&quot;: &quot;bulk_edit_6&quot;,
+        ///                &quot;text&quot;: &quot;Batch operations with send patch request&quot;,
+        ///                &quot;type&quot;: &quot;text&quot;,
+        ///                &quot;context&quot;: &quot;edited context using patch request&quot;,
+        ///                &quot;maxLength&quot;: 0,
+        ///                &quot;isHidden&quot;: false,
+        ///       [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string StringBatchOperations_Response_NoPagination {
+            get {
+                return ResourceManager.GetString("StringBatchOperations_Response_NoPagination", resourceCulture);
+            }
+        }
     }
 }
