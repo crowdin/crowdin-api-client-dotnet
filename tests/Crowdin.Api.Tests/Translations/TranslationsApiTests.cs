@@ -1,12 +1,14 @@
 ﻿
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
-using Crowdin.Api;
 using Crowdin.Api.Core;
 using Crowdin.Api.Tests.Core;
 using Crowdin.Api.Translations;
+
 using Moq;
 using Newtonsoft.Json.Linq;
 using Xunit;
@@ -111,6 +113,51 @@ namespace Crowdin.Api.Tests.Translations
             
             Assert.NotNull(response.Data[0].Attributes.TargetLanguageIds);
             Assert.Empty(response.Data[0].Attributes.TargetLanguageIds);
+        }
+
+        [Fact]
+        public async Task GetPreTranslationStatus()
+        {
+            const int projectId = 1;
+            const string preTranslationId = "9e7de270-4f83-41cb-b606-2f90631f26e2";
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/pre-translations/{preTranslationId}";
+
+            mockClient
+                .Setup(client => client.SendGetRequest(url, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Core.Resources.Translations.GetPreTranslationStatus_Response)
+                });
+
+            var executor = new TranslationsApiExecutor(mockClient.Object);
+            PreTranslation response = await executor.GetPreTranslationStatus(projectId, preTranslationId);
+            
+            Assert.NotNull(response);
+            
+            Assert.Equal(preTranslationId, response.Identifier);
+            Assert.Equal(BuildStatus.Created, response.Status);
+            Assert.Equal(90, response.Progress);
+            Assert.Equal(DateTimeOffset.Parse("2019-09-20T14:05:50+00:00"), response.CreatedAt);
+            Assert.Equal(DateTimeOffset.Parse("2019-09-20T14:05:50+00:00"), response.UpdatedAt);
+            Assert.Equal(DateTimeOffset.Parse("2019-08-24T14:15:22Z"), response.StartedAt);
+            Assert.Equal(DateTimeOffset.Parse("2019-08-24T14:15:22Z"), response.FinishedAt);
+
+            PreTranslateAttributes? attributes = response.Attributes;
+            Assert.NotNull(response.Attributes);
+            Assert.Equal("uk", attributes.LanguageIds.Single());
+            Assert.Equal(0, attributes.FileIds.Single());
+            Assert.Equal(PreTranslationMethod.Tm, attributes.Method);
+            Assert.Equal(AutoApproveOption.All, attributes.AutoApproveOption);
+            
+            Assert.True(attributes.DuplicateTranslations);
+            //Assert.True(attributes.SkipApprovedTranslations);
+            Assert.True(attributes.TranslateUntranslatedOnly);
+            Assert.True(attributes.TranslateWithPerfectMatchOnly);
+            Assert.True(attributes.MarkAddedTranslationsAsDone);
         }
     }
 }
