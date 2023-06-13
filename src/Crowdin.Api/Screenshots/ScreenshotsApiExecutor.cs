@@ -180,11 +180,11 @@ namespace Crowdin.Api.Screenshots
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.tags.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Tag> AddTag(int projectId, int screenshotId, IEnumerable<AddTagRequest> request)
+        public async Task<ResponseList<Tag>> AddTag(int projectId, int screenshotId, IEnumerable<AddTagRequest> request)
         {
             string url = FormUrl_ScreenshotTags(projectId, screenshotId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
-            return _jsonParser.ParseResponseObject<Tag>(result.JsonObject);
+            return _jsonParser.ParseResponseList<Tag>(result.JsonObject);
         }
 
         /// <summary>
