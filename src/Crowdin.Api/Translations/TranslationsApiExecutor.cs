@@ -32,7 +32,7 @@ namespace Crowdin.Api.Translations
         /// <a href="https://support.crowdin.com/enterprise/api/#tag/Translations/paths/~1projects~1{projectId}~1pre-translations~1{preTranslationId}/get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<PreTranslation> GetPreTranslationStatus(int projectId, int preTranslationId)
+        public async Task<PreTranslation> GetPreTranslationStatus(int projectId, string preTranslationId)
         {
             var url = $"/projects/{projectId}/pre-translations/{preTranslationId}";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);

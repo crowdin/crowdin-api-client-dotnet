@@ -25,6 +25,9 @@ namespace Crowdin.Api.Translations
         [JsonProperty("duplicateTranslations")]
         public bool DuplicateTranslations { get; set; }
         
+        [JsonProperty("skipApprovedTranslations")]
+        public bool SkipApprovedTranslations { get; set; }
+        
         [JsonProperty("translateUntranslatedOnly")]
         public bool TranslateUntranslatedOnly { get; set; }
         
