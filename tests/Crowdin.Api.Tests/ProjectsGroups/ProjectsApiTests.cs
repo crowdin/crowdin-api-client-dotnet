@@ -49,7 +49,7 @@ namespace Crowdin.Api.Tests.ProjectsGroups
                 await executor.ListProjects<EnterpriseProject>(userId, groupId, hasManagerAccess);
             
             Assert.NotNull(projectsList);
-            Assert.Equal(25, projectsList.Pagination.Limit);
+            Assert.Equal(25, projectsList.Pagination?.Limit);
             Assert.Single(projectsList.Data);
             Assert.NotNull(projectsList.Data[0].TargetLanguages);
             Assert.Single(projectsList.Data[0].TargetLanguages);

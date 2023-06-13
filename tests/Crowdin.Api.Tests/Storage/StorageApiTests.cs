@@ -36,7 +36,7 @@ namespace Crowdin.Api.Tests.Storage
             ResponseList<StorageResource> response = await storageApi.ListStorages();
             
             Assert.NotEmpty(response.Data);
-            Assert.Equal(0, response.Pagination.Offset);
+            Assert.Equal(0, response.Pagination?.Offset);
         }
 
         [Fact]
