@@ -2,9 +2,9 @@
 
 # Crowdin .NET client [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fcrowdin%2Fcrowdin-api-client-dotnet&text=The%20Crowdin%20.NET%20client%20is%20a%20lightweight%20interface%20to%20the%20Crowdin%20API)&nbsp;[![GitHub Repo stars](https://img.shields.io/github/stars/crowdin/crowdin-api-client-dotnet?style=social&cacheSeconds=1800)](https://github.com/crowdin/crowdin-api-client-dotnet/stargazers)
 
-The Crowdin .NET client is a lightweight interface to the Crowdin API v2. It provides common services for making API requests.
+The Crowdin .NET client is a lightweight interface to the Crowdin API. It provides common services for making API requests.
 
-Our API is a full-featured RESTful API that helps you to integrate localization into your development process. The endpoints that we use allow you to easily make calls to retrieve information and to execute actions needed.
+Our API is a full-featured RESTful API that helps you to integrate localization into your development process. The endpoints that we use allow you to easily make calls to retrieve information and perform necessary actions.
 
 <div align="center">
 
@@ -44,17 +44,11 @@ dotnet add package Crowdin.Api --version 2.14.0
 paket add Crowdin.Api --version 2.14.0
 ```
 
----
-
-:bookmark_tabs: For versions *1.x.x* and lower see the [branch api/v1](https://github.com/crowdin/crowdin-api-client-dotnet/tree/api/v1). Please note that these versions are no longer supported.
-
-:exclamation: Migration from version *1.x.x* to *2.x.x* requires changes in your code.
-
----
-
 ### Usage examples
 
-Instantiate a client with all available APIs
+#### Initialization
+
+Instantiate a client with all available APIs:
 
 ```C#
 
@@ -66,7 +60,8 @@ var credentials = new CrowdinCredentials
 var client = new CrowdinApiClient(credentials);
 ```
 
-Or use only needed executors
+Or use only the executors you need:
+
 ```C#
 var credentials = new CrowdinCredentials
 {
@@ -78,7 +73,7 @@ var client = new CrowdinApiClient(credentials);
 var executor = new SourceFilesApiExecutor(client);
 ```
 
-Storage
+#### Storage
 
 1. List storages
 
@@ -93,7 +88,7 @@ await using FileStream fileStream = File.Open("/path/to/file", FileMode.Open);
 StorageResource storageResource = await client.Storage.AddStorage(fileStream, filename: "MyFile");
 ```
 
-Projects
+#### Projects
 
 1. List projects
 
@@ -139,7 +134,7 @@ Console.WriteLine(projectSettingsResponse);
 
 #### Fetch all records
 
-Get list of all the data available from API via automatic pagination control
+Get a list of all the data available from the API via automatic pagination control:
 
 ```C#
 const int parentId = 1;
@@ -157,8 +152,7 @@ Only for list async methods that return `Task<ResponseList<T>>`.
 
 #### Rate limiting
 
-API client has built-in support for rate limiting services.
-The library provides an implementation of Exponential Backoff Algorithm.
+API client has built-in support for rate limiting services. The library provides an implementation of Exponential Backoff Algorithm.
 
 Usage:
 
@@ -182,14 +176,11 @@ var client = new CrowdinApiClient(new CrowdinCredentials
 }, rateLimiter: rateLimiter);
 ```
 
-A custom rate limiting service should also implement interface `IRateLimiter`.
-Rate limiting disabled by default because of possible usage of custom resilience approaches (such as `Polly`) by users, which may conflict with each other.
-This solution covers only simple cases of resilience. 
-If you need advanced customization - please try `Polly` or alternatives.
+A custom rate limiting service should also implement the `IRateLimiter` interface. Rate limiting is disabled by default because users may be using custom resilience approaches (such as `Polly`) that may conflict with each other. This solution only covers simple resilience cases. If you need advanced customization - please try `Polly` or alternatives.
 
 #### Retry configuration
 
-Pass retry service (built-in or custom) if needed
+Pass retry service (built-in or custom):
 
 ```C#
 IRetryService myRetryService = new RetryService(new RetryConfiguration
@@ -209,19 +200,18 @@ var apiClient = new CrowdinApiClient(new CrowdinCredentials
 }, retryService: myRetryService);
 ```
 
-A custom retry service should also implement interface `IRetryService`.
+A custom retry service should also implement the `IRetryService` interface.
 
 ### Contribution
 
-If you want to contribute please read the [Contributing](CONTRIBUTING.md) guidelines.
+If you would like to contribute please read the [Contributing](CONTRIBUTING.md) guidelines.
 
 ### Seeking Assistance
-If you find any problems or would like to suggest a feature, please feel free to file an issue on Github at [Issues Page](https://github.com/crowdin/crowdin-dotnet-client/issues).
 
-Need help working with Crowdin .NET client or have any questions?
-[Contact Customer Success Service](https://crowdin.com/contacts).
+If you find any problems or would like to suggest a feature, please feel free to file an issue on GitHub at the [Issues Page](https://github.com/crowdin/crowdin-dotnet-client/issues).
 
 ### License
+
 <pre>
 The Crowdin .NET client is licensed under the MIT License.
 See the LICENSE file distributed with this work for additional
