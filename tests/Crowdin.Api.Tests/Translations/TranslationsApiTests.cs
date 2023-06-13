@@ -154,7 +154,7 @@ namespace Crowdin.Api.Tests.Translations
             Assert.Equal(AutoApproveOption.All, attributes.AutoApproveOption);
             
             Assert.True(attributes.DuplicateTranslations);
-            //Assert.True(attributes.SkipApprovedTranslations);
+            Assert.True(attributes.SkipApprovedTranslations);
             Assert.True(attributes.TranslateUntranslatedOnly);
             Assert.True(attributes.TranslateWithPerfectMatchOnly);
             Assert.True(attributes.MarkAddedTranslationsAsDone);
