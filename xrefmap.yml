@@ -29335,6 +29335,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Translations.PreTranslateAttributes.Method
   nameWithType: PreTranslateAttributes.Method
+- uid: Crowdin.Api.Translations.PreTranslateAttributes.SkipApprovedTranslations
+  name: SkipApprovedTranslations
+  href: api/Crowdin.Api.Translations.PreTranslateAttributes.html#Crowdin_Api_Translations_PreTranslateAttributes_SkipApprovedTranslations
+  commentId: P:Crowdin.Api.Translations.PreTranslateAttributes.SkipApprovedTranslations
+  fullName: Crowdin.Api.Translations.PreTranslateAttributes.SkipApprovedTranslations
+  nameWithType: PreTranslateAttributes.SkipApprovedTranslations
+- uid: Crowdin.Api.Translations.PreTranslateAttributes.SkipApprovedTranslations*
+  name: SkipApprovedTranslations
+  href: api/Crowdin.Api.Translations.PreTranslateAttributes.html#Crowdin_Api_Translations_PreTranslateAttributes_SkipApprovedTranslations_
+  commentId: Overload:Crowdin.Api.Translations.PreTranslateAttributes.SkipApprovedTranslations
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.PreTranslateAttributes.SkipApprovedTranslations
+  nameWithType: PreTranslateAttributes.SkipApprovedTranslations
 - uid: Crowdin.Api.Translations.PreTranslateAttributes.TranslateUntranslatedOnly
   name: TranslateUntranslatedOnly
   href: api/Crowdin.Api.Translations.PreTranslateAttributes.html#Crowdin_Api_Translations_PreTranslateAttributes_TranslateUntranslatedOnly
@@ -30291,12 +30304,12 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Translations.TranslationsApiExecutor.ExportProjectTranslation
   nameWithType: TranslationsApiExecutor.ExportProjectTranslation
-- uid: Crowdin.Api.Translations.TranslationsApiExecutor.GetPreTranslationStatus(System.Int32,System.Int32)
-  name: GetPreTranslationStatus(Int32, Int32)
-  href: api/Crowdin.Api.Translations.TranslationsApiExecutor.html#Crowdin_Api_Translations_TranslationsApiExecutor_GetPreTranslationStatus_System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.Translations.TranslationsApiExecutor.GetPreTranslationStatus(System.Int32,System.Int32)
-  fullName: Crowdin.Api.Translations.TranslationsApiExecutor.GetPreTranslationStatus(System.Int32, System.Int32)
-  nameWithType: TranslationsApiExecutor.GetPreTranslationStatus(Int32, Int32)
+- uid: Crowdin.Api.Translations.TranslationsApiExecutor.GetPreTranslationStatus(System.Int32,System.String)
+  name: GetPreTranslationStatus(Int32, String)
+  href: api/Crowdin.Api.Translations.TranslationsApiExecutor.html#Crowdin_Api_Translations_TranslationsApiExecutor_GetPreTranslationStatus_System_Int32_System_String_
+  commentId: M:Crowdin.Api.Translations.TranslationsApiExecutor.GetPreTranslationStatus(System.Int32,System.String)
+  fullName: Crowdin.Api.Translations.TranslationsApiExecutor.GetPreTranslationStatus(System.Int32, System.String)
+  nameWithType: TranslationsApiExecutor.GetPreTranslationStatus(Int32, String)
 - uid: Crowdin.Api.Translations.TranslationsApiExecutor.GetPreTranslationStatus*
   name: GetPreTranslationStatus
   href: api/Crowdin.Api.Translations.TranslationsApiExecutor.html#Crowdin_Api_Translations_TranslationsApiExecutor_GetPreTranslationStatus_

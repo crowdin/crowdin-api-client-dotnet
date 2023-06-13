@@ -73,8 +73,8 @@
 
 <p><a href="https://crowdin.com"><p align='center'><img src='https://support.crowdin.com/assets/logos/crowdin-dark-symbol.png' data-canonical-src='https://support.crowdin.com/assets/logos/crowdin-dark-symbol.png' width='150' height='150' align='center'></p></a></p>
 <h1 id="crowdin-net-client-tweetgithub-repo-stars">Crowdin .NET client <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fcrowdin%2Fcrowdin-api-client-dotnet&amp;text=The%20Crowdin%20.NET%20client%20is%20a%20lightweight%20interface%20to%20the%20Crowdin%20API"><img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social" alt="Tweet"></a> <a href="https://github.com/crowdin/crowdin-api-client-dotnet/stargazers"><img src="https://img.shields.io/github/stars/crowdin/crowdin-api-client-dotnet?style=social&amp;cacheSeconds=1800" alt="GitHub Repo stars"></a></h1>
-<p>The Crowdin .NET client is a lightweight interface to the Crowdin API v2. It provides common services for making API requests.</p>
-<p>Our API is a full-featured RESTful API that helps you to integrate localization into your development process. The endpoints that we use allow you to easily make calls to retrieve information and to execute actions needed.</p>
+<p>The Crowdin .NET client is a lightweight interface to the Crowdin API. It provides common services for making API requests.</p>
+<p>Our API is a full-featured RESTful API that helps you to integrate localization into your development process. The endpoints that we use allow you to easily make calls to retrieve information and perform necessary actions.</p>
 <div align="center">
 <p><a href="https://crowdin.github.io/crowdin-api-client-dotnet/api/Crowdin.Api.html"><strong><code>API Client Docs</code></strong></a>  | 
 <a href="https://developer.crowdin.com/api/v2/"><strong><code>Crowdin API</code></strong></a>  | 
@@ -94,23 +94,20 @@
 <h3 id="installation">Installation</h3>
 <p>Install via NuGet:</p>
 <pre><code>// Package Manager
-Install-Package Crowdin.Api -Version 2.14.0
+Install-Package Crowdin.Api -Version 2.14.1
 
 // .Net CLI
-dotnet add package Crowdin.Api --version 2.14.0
+dotnet add package Crowdin.Api --version 2.14.1
 
 // Package Reference
-&lt;PackageReference Include=&quot;Crowdin.Api&quot; Version=&quot;2.14.0&quot; /&gt;
+&lt;PackageReference Include=&quot;Crowdin.Api&quot; Version=&quot;2.14.1&quot; /&gt;
 
 // Paket CLI
-paket add Crowdin.Api --version 2.14.0
+paket add Crowdin.Api --version 2.14.1
 </code></pre>
-<hr>
-<p>📑 For versions <em>1.x.x</em> and lower see the <a href="https://github.com/crowdin/crowdin-api-client-dotnet/tree/api/v1">branch api/v1</a>. Please note that these versions are no longer supported.</p>
-<p>❗ Migration from version <em>1.x.x</em> to <em>2.x.x</em> requires changes in your code.</p>
-<hr>
 <h3 id="usage-examples">Usage examples</h3>
-<p>Instantiate a client with all available APIs</p>
+<h4 id="initialization">Initialization</h4>
+<p>Instantiate a client with all available APIs:</p>
 <pre><code class="lang-C#">
 var credentials = new CrowdinCredentials
 {
@@ -119,7 +116,7 @@ var credentials = new CrowdinCredentials
 };
 var client = new CrowdinApiClient(credentials);
 </code></pre>
-<p>Or use only needed executors</p>
+<p>Or use only the executors you need:</p>
 <pre><code class="lang-C#">var credentials = new CrowdinCredentials
 {
     AccessToken = &quot;&lt;paste token here&gt;&quot;,
@@ -129,7 +126,7 @@ var client = new CrowdinApiClient(credentials);
 var client = new CrowdinApiClient(credentials);
 var executor = new SourceFilesApiExecutor(client);
 </code></pre>
-<p>Storage</p>
+<h4 id="storage">Storage</h4>
 <ol>
 <li>List storages</li>
 </ol>
@@ -141,7 +138,7 @@ var executor = new SourceFilesApiExecutor(client);
 <pre><code class="lang-C#">await using FileStream fileStream = File.Open(&quot;/path/to/file&quot;, FileMode.Open);
 StorageResource storageResource = await client.Storage.AddStorage(fileStream, filename: &quot;MyFile&quot;);
 </code></pre>
-<p>Projects</p>
+<h4 id="projects">Projects</h4>
 <ol>
 <li>List projects</li>
 </ol>
@@ -183,7 +180,7 @@ var projectSettingsResponse = await client.ProjectsGroups.EditProject&lt;Project
 Console.WriteLine(projectSettingsResponse);
 </code></pre>
 <h4 id="fetch-all-records">Fetch all records</h4>
-<p>Get list of all the data available from API via automatic pagination control</p>
+<p>Get a list of all the data available from the API via automatic pagination control:</p>
 <pre><code class="lang-C#">const int parentId = 1;
 const int maxAmountOfItems = 50; // amount of needed items. Optional parameter, default: no limit
 const int amountPerRequest = 10; // amount of items in response per 1 request. Optional parameter, default: 25
@@ -196,8 +193,7 @@ Group[] allGroups = await CrowdinApiClient.WithFetchAll((limit, offset) =&gt;
 </code></pre>
 <p>Only for list async methods that return <code>Task&lt;ResponseList&lt;T&gt;&gt;</code>.</p>
 <h4 id="rate-limiting">Rate limiting</h4>
-<p>API client has built-in support for rate limiting services.
-The library provides an implementation of Exponential Backoff Algorithm.</p>
+<p>API client has built-in support for rate limiting services. The library provides an implementation of Exponential Backoff Algorithm.</p>
 <p>Usage:</p>
 <pre><code class="lang-C#">var rateLimiter = new ExponentialBackoffRateLimiter(new RateLimitConfiguration
 {
@@ -217,12 +213,9 @@ var client = new CrowdinApiClient(new CrowdinCredentials
     Organization = &quot;optional organization (for Enterprise API)&quot;
 }, rateLimiter: rateLimiter);
 </code></pre>
-<p>A custom rate limiting service should also implement interface <code>IRateLimiter</code>.
-Rate limiting disabled by default because of possible usage of custom resilience approaches (such as <code>Polly</code>) by users, which may conflict with each other.
-This solution covers only simple cases of resilience.
-If you need advanced customization - please try <code>Polly</code> or alternatives.</p>
+<p>A custom rate limiting service should also implement the <code>IRateLimiter</code> interface. Rate limiting is disabled by default because users may be using custom resilience approaches (such as <code>Polly</code>) that may conflict with each other. This solution only covers simple resilience cases. If you need advanced customization - please try <code>Polly</code> or alternatives.</p>
 <h4 id="retry-configuration">Retry configuration</h4>
-<p>Pass retry service (built-in or custom) if needed</p>
+<p>Pass retry service (built-in or custom):</p>
 <pre><code class="lang-C#">IRetryService myRetryService = new RetryService(new RetryConfiguration
 {
     RetriesCount = 5,
@@ -239,13 +232,11 @@ var apiClient = new CrowdinApiClient(new CrowdinCredentials
     Organization = &quot;optional organization (for Enterprise API)&quot;
 }, retryService: myRetryService);
 </code></pre>
-<p>A custom retry service should also implement interface <code>IRetryService</code>.</p>
+<p>A custom retry service should also implement the <code>IRetryService</code> interface.</p>
 <h3 id="contribution">Contribution</h3>
-<p>If you want to contribute please read the <a href="CONTRIBUTING.html">Contributing</a> guidelines.</p>
+<p>If you would like to contribute please read the <a href="CONTRIBUTING.html">Contributing</a> guidelines.</p>
 <h3 id="seeking-assistance">Seeking Assistance</h3>
-<p>If you find any problems or would like to suggest a feature, please feel free to file an issue on Github at <a href="https://github.com/crowdin/crowdin-dotnet-client/issues">Issues Page</a>.</p>
-<p>Need help working with Crowdin .NET client or have any questions?
-<a href="https://crowdin.com/contacts">Contact Customer Success Service</a>.</p>
+<p>If you find any problems or would like to suggest a feature, please feel free to file an issue on GitHub at the <a href="https://github.com/crowdin/crowdin-dotnet-client/issues">Issues Page</a>.</p>
 <h3 id="license">License</h3>
 <pre>
 The Crowdin .NET client is licensed under the MIT License.
@@ -264,7 +255,7 @@ use or other dealings in this Software without prior written authorization.
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/7497aae755e4842d668d943a94b029f1e1ea7c75/README.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/c97be5d9d4c828e1df723d671c67fa8304655c3e/README.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
