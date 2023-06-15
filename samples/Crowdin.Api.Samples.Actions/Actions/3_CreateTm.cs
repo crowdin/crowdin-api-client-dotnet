@@ -19,7 +19,7 @@ namespace Crowdin.Api.Samples.Actions
 
             StorageResource storage = await _crowdinApiClient.AddStorage(filePath);
 
-            TmImportStatus? importStatus = await _crowdinApiClient.TranslationMemory.ImportTm(
+            TmImportStatus importStatus = await _crowdinApiClient.TranslationMemory.ImportTm(
                 tm.Id,
                 new ImportTmRequest
                 {

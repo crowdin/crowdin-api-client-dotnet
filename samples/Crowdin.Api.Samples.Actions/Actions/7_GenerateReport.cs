@@ -8,7 +8,7 @@ namespace Crowdin.Api.Samples.Actions
         public async Task GenerateReport(int projectId, int directoryId, int fileId)
         {
             // Start report generation task
-            ReportStatus? reportStatus = await _crowdinApiClient.Reports.GenerateReport(
+            ReportStatus reportStatus = await _crowdinApiClient.Reports.GenerateReport(
                 projectId,
                 new CostEstimateGenerateReportRequest
                 {
@@ -37,7 +37,7 @@ namespace Crowdin.Api.Samples.Actions
             }
             
             // Report generation task is finished -> download report
-            DownloadLink? link = await _crowdinApiClient.Reports.DownloadReport(projectId, reportStatus.Identifier);
+            DownloadLink link = await _crowdinApiClient.Reports.DownloadReport(projectId, reportStatus.Identifier);
             
             Console.WriteLine("Report created. Download link: {0} (expire in {1})", link.Url, link.ExpireIn);
         }
