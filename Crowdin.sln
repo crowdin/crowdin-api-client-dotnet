@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crowdin.Api.Tests", "tests\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crowdin.Api.Samples", "samples\Crowdin.Api.Samples\Crowdin.Api.Samples.csproj", "{A4B9BA6F-97B1-441C-81E6-4EED514C9521}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crowdin.Api.Samples.Actions", "samples\Crowdin.Api.Samples.Actions\Crowdin.Api.Samples.Actions.csproj", "{92F23B17-3B1C-4098-ACAD-781F1E3BBAA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,10 +32,15 @@ Global
 		{304B7B61-1620-4FFF-967B-BB40F4B60F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{304B7B61-1620-4FFF-967B-BB40F4B60F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{304B7B61-1620-4FFF-967B-BB40F4B60F2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92F23B17-3B1C-4098-ACAD-781F1E3BBAA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92F23B17-3B1C-4098-ACAD-781F1E3BBAA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92F23B17-3B1C-4098-ACAD-781F1E3BBAA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92F23B17-3B1C-4098-ACAD-781F1E3BBAA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D71FBEB4-C2D5-4B8D-A48A-303815807DF5} = {582FDBF8-1C4D-45E8-B9FC-0E3B10510287}
 		{304B7B61-1620-4FFF-967B-BB40F4B60F2A} = {303E8173-0F2B-4F6C-A9D7-170EAB8461DE}
 		{A4B9BA6F-97B1-441C-81E6-4EED514C9521} = {A73C101F-4383-42BE-B624-DB88836FE6B5}
+		{92F23B17-3B1C-4098-ACAD-781F1E3BBAA1} = {A73C101F-4383-42BE-B624-DB88836FE6B5}
 	EndGlobalSection
 EndGlobal
