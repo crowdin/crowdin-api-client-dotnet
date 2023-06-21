@@ -31,7 +31,7 @@ namespace Crowdin.Api.Samples.Actions
                 });
 
             // Wait until the import finished
-            while (importStatus.Status is not "finished")
+            while (importStatus.Status is not OperationStatus.Finished)
             {
                 // Wait 5 seconds between check requests
                 await Task.Delay(TimeSpan.FromSeconds(5));
