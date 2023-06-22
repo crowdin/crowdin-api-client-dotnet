@@ -658,6 +658,60 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Bundles.BundlesApiExecutor.ListBundles
   nameWithType: BundlesApiExecutor.ListBundles
+- uid: Crowdin.Api.ColumnType
+  name: ColumnType
+  href: api/Crowdin.Api.ColumnType.html
+  commentId: T:Crowdin.Api.ColumnType
+  fullName: Crowdin.Api.ColumnType
+  nameWithType: ColumnType
+- uid: Crowdin.Api.ColumnType.Context
+  name: Context
+  href: api/Crowdin.Api.ColumnType.html#Crowdin_Api_ColumnType_Context
+  commentId: F:Crowdin.Api.ColumnType.Context
+  fullName: Crowdin.Api.ColumnType.Context
+  nameWithType: ColumnType.Context
+- uid: Crowdin.Api.ColumnType.Identifier
+  name: Identifier
+  href: api/Crowdin.Api.ColumnType.html#Crowdin_Api_ColumnType_Identifier
+  commentId: F:Crowdin.Api.ColumnType.Identifier
+  fullName: Crowdin.Api.ColumnType.Identifier
+  nameWithType: ColumnType.Identifier
+- uid: Crowdin.Api.ColumnType.Labels
+  name: Labels
+  href: api/Crowdin.Api.ColumnType.html#Crowdin_Api_ColumnType_Labels
+  commentId: F:Crowdin.Api.ColumnType.Labels
+  fullName: Crowdin.Api.ColumnType.Labels
+  nameWithType: ColumnType.Labels
+- uid: Crowdin.Api.ColumnType.MaxLength
+  name: MaxLength
+  href: api/Crowdin.Api.ColumnType.html#Crowdin_Api_ColumnType_MaxLength
+  commentId: F:Crowdin.Api.ColumnType.MaxLength
+  fullName: Crowdin.Api.ColumnType.MaxLength
+  nameWithType: ColumnType.MaxLength
+- uid: Crowdin.Api.ColumnType.None
+  name: None
+  href: api/Crowdin.Api.ColumnType.html#Crowdin_Api_ColumnType_None
+  commentId: F:Crowdin.Api.ColumnType.None
+  fullName: Crowdin.Api.ColumnType.None
+  nameWithType: ColumnType.None
+- uid: Crowdin.Api.ColumnType.SourceOrTranslation
+  name: SourceOrTranslation
+  href: api/Crowdin.Api.ColumnType.html#Crowdin_Api_ColumnType_SourceOrTranslation
+  commentId: F:Crowdin.Api.ColumnType.SourceOrTranslation
+  fullName: Crowdin.Api.ColumnType.SourceOrTranslation
+  nameWithType: ColumnType.SourceOrTranslation
+- uid: Crowdin.Api.ColumnType.SourcePhrase
+  name: SourcePhrase
+  href: api/Crowdin.Api.ColumnType.html#Crowdin_Api_ColumnType_SourcePhrase
+  commentId: F:Crowdin.Api.ColumnType.SourcePhrase
+  fullName: Crowdin.Api.ColumnType.SourcePhrase
+  nameWithType: ColumnType.SourcePhrase
+- uid: Crowdin.Api.ColumnType.Translation
+  name: Translation
+  href: api/Crowdin.Api.ColumnType.html#Crowdin_Api_ColumnType_Translation
+  commentId: F:Crowdin.Api.ColumnType.Translation
+  fullName: Crowdin.Api.ColumnType.Translation
+  nameWithType: ColumnType.Translation
 - uid: Crowdin.Api.Core
   name: Crowdin.Api.Core
   href: api/Crowdin.Api.Core.html
@@ -6917,6 +6971,42 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.MachineTranslationEngines.YandexTranslateCredentials.ApiKey
   nameWithType: YandexTranslateCredentials.ApiKey
+- uid: Crowdin.Api.OperationStatus
+  name: OperationStatus
+  href: api/Crowdin.Api.OperationStatus.html
+  commentId: T:Crowdin.Api.OperationStatus
+  fullName: Crowdin.Api.OperationStatus
+  nameWithType: OperationStatus
+- uid: Crowdin.Api.OperationStatus.Canceled
+  name: Canceled
+  href: api/Crowdin.Api.OperationStatus.html#Crowdin_Api_OperationStatus_Canceled
+  commentId: F:Crowdin.Api.OperationStatus.Canceled
+  fullName: Crowdin.Api.OperationStatus.Canceled
+  nameWithType: OperationStatus.Canceled
+- uid: Crowdin.Api.OperationStatus.Created
+  name: Created
+  href: api/Crowdin.Api.OperationStatus.html#Crowdin_Api_OperationStatus_Created
+  commentId: F:Crowdin.Api.OperationStatus.Created
+  fullName: Crowdin.Api.OperationStatus.Created
+  nameWithType: OperationStatus.Created
+- uid: Crowdin.Api.OperationStatus.Failed
+  name: Failed
+  href: api/Crowdin.Api.OperationStatus.html#Crowdin_Api_OperationStatus_Failed
+  commentId: F:Crowdin.Api.OperationStatus.Failed
+  fullName: Crowdin.Api.OperationStatus.Failed
+  nameWithType: OperationStatus.Failed
+- uid: Crowdin.Api.OperationStatus.Finished
+  name: Finished
+  href: api/Crowdin.Api.OperationStatus.html#Crowdin_Api_OperationStatus_Finished
+  commentId: F:Crowdin.Api.OperationStatus.Finished
+  fullName: Crowdin.Api.OperationStatus.Finished
+  nameWithType: OperationStatus.Finished
+- uid: Crowdin.Api.OperationStatus.InProgress
+  name: InProgress
+  href: api/Crowdin.Api.OperationStatus.html#Crowdin_Api_OperationStatus_InProgress
+  commentId: F:Crowdin.Api.OperationStatus.InProgress
+  fullName: Crowdin.Api.OperationStatus.InProgress
+  nameWithType: OperationStatus.InProgress
 - uid: Crowdin.Api.Pagination
   name: Pagination
   href: api/Crowdin.Api.Pagination.html
