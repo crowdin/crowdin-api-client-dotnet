@@ -12,7 +12,7 @@ namespace Crowdin.Api.Reports
         public string Identifier { get; set; }
         
         [JsonProperty("status")]
-        public string Status { get; set; }
+        public OperationStatus Status { get; set; }
         
         [JsonProperty("progress")]
         public int Progress { get; set; }

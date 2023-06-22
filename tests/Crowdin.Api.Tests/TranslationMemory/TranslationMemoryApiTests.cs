@@ -381,7 +381,7 @@ namespace Crowdin.Api.Tests.TranslationMemory
         private static void Assert_TmExportStatus(TmExportStatus? model)
         {
             Assert.NotNull(model);
-            Assert.Equal("finished", model!.Status);
+            Assert.Equal(OperationStatus.Finished, model!.Status);
             
             Assert.NotNull(model.Attributes);
             Assert.Equal("en", model.Attributes.SourceLanguageId);
@@ -398,7 +398,7 @@ namespace Crowdin.Api.Tests.TranslationMemory
         private static void Assert_TmImportStatus(TmImportStatus? model)
         {
             Assert.NotNull(model);
-            Assert.Equal("created", model!.Status);
+            Assert.Equal(OperationStatus.Created, model!.Status);
             
             Assert.NotNull(model.Attributes);
             Assert.Equal(10, model.Attributes.TmId);

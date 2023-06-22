@@ -24,9 +24,9 @@ namespace Crowdin.Api.Samples.Actions
                         FirstLineContainsHeader = true,
                         Scheme = new Dictionary<string, int>
                         {
-                            ["identifier"] = 1,
-                            ["sourcePhrase"] = 2,
-                            ["translation"] = 3
+                            [ColumnType.Identifier] = 1,
+                            [ColumnType.SourcePhrase] = 2,
+                            [ColumnType.Translation] = 3
                         }
                     }
                 });
