@@ -45,8 +45,14 @@ namespace Crowdin.Api.Core.Converters
                 ProjectFileType.Adoc =>
                     typeof(AdocFileFormatSettings),
                 
+                ProjectFileType.Android =>
+                    typeof(AndroidFileFormatSettings),
+                
                 ProjectFileType.Md =>
                     typeof(MdFileFormatSettings),
+                
+                ProjectFileType.MdxV1 =>
+                    typeof(MdxV1FileFormatSettings),
                 
                 ProjectFileType.FmMd =>
                     typeof(FmMdFileFormatSettings),
@@ -71,6 +77,24 @@ namespace Crowdin.Api.Core.Converters
                 
                 ProjectFileType.MediaWiki =>
                     typeof(MediaWikiFileFormatSettings),
+                
+                ProjectFileType.Arb =>
+                    typeof(ArbFileFormatSettings),
+                
+                ProjectFileType.Json =>
+                    typeof(JsonFileFormatSettings),
+                
+                ProjectFileType.Fjs =>
+                    typeof(FJsFileFormatSettings),
+                
+                ProjectFileType.MacOsX =>
+                    typeof(MacOsXFileFormatSettings),
+                
+                ProjectFileType.Chrome =>
+                    typeof(ChromeFileFormatSettings),
+                
+                ProjectFileType.ReactIntl =>
+                    typeof(ReactIntlFileFormatSettings),
                 
                 ProjectFileType.Txt =>
                     typeof(TxtFileFormatSettings),
