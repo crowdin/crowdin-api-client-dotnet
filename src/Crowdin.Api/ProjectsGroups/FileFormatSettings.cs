@@ -75,6 +75,16 @@ namespace Crowdin.Api.ProjectsGroups
     }
 
     [PublicAPI]
+    public class AndroidFileFormatSettings : FileFormatSettings
+    {
+        [JsonProperty("contentSegmentation")]
+        public bool? ContentSegmentation { get; set; }
+        
+        [JsonProperty("srxStorageId")]
+        public int? SrxStorageId { get; set; }
+    }
+
+    [PublicAPI]
     public class MdFileFormatSettings : FileFormatSettings
     {
         [JsonProperty("contentSegmentation")]
@@ -82,6 +92,22 @@ namespace Crowdin.Api.ProjectsGroups
         
         [JsonProperty("srxStorageId")]
         public int? SrxStorageId { get; set; }
+    }
+
+    [PublicAPI]
+    public class MdxV1FileFormatSettings : FileFormatSettings
+    {
+        [JsonProperty("contentSegmentation")]
+        public bool? ContentSegmentation { get; set; }
+        
+        [JsonProperty("srxStorageId")]
+        public int? SrxStorageId { get; set; }
+        
+        [JsonProperty("excludedFrontMatterElements")]
+        public List<string>? ExcludedFrontMatterElements { get; set; }
+        
+        [JsonProperty("excludeCodeBlocks")]
+        public bool? ExcludeCodeBlocks { get; set; }
     }
 
     [PublicAPI]
@@ -175,6 +201,69 @@ namespace Crowdin.Api.ProjectsGroups
     [PublicAPI]
     public class MediaWikiFileFormatSettings : FileFormatSettings
     {
+        [JsonProperty("srxStorageId")]
+        public int? SrxStorageId { get; set; }
+    }
+
+    [PublicAPI]
+    public class ArbFileFormatSettings : FileFormatSettings
+    {
+        [JsonProperty("contentSegmentation")]
+        public bool? ContentSegmentation { get; set; }
+        
+        [JsonProperty("srxStorageId")]
+        public int? SrxStorageId { get; set; }
+    }
+
+    [PublicAPI]
+    public class JsonFileFormatSettings : FileFormatSettings
+    {
+        [JsonProperty("contentSegmentation")]
+        public bool? ContentSegmentation { get; set; }
+        
+        [JsonProperty("srxStorageId")]
+        public int? SrxStorageId { get; set; }
+        
+        [JsonProperty("type")]
+        public JsonFileType? Type { get; set; }
+    }
+
+    [PublicAPI]
+    public class FJsFileFormatSettings : FileFormatSettings
+    {
+        [JsonProperty("contentSegmentation")]
+        public bool? ContentSegmentation { get; set; }
+        
+        [JsonProperty("srxStorageId")]
+        public int? SrxStorageId { get; set; }
+    }
+
+    [PublicAPI]
+    public class MacOsXFileFormatSettings : FileFormatSettings
+    {
+        [JsonProperty("contentSegmentation")]
+        public bool? ContentSegmentation { get; set; }
+        
+        [JsonProperty("srxStorageId")]
+        public int? SrxStorageId { get; set; }
+    }
+
+    [PublicAPI]
+    public class ChromeFileFormatSettings : FileFormatSettings
+    {
+        [JsonProperty("contentSegmentation")]
+        public bool? ContentSegmentation { get; set; }
+        
+        [JsonProperty("srxStorageId")]
+        public int? SrxStorageId { get; set; }
+    }
+
+    [PublicAPI]
+    public class ReactIntlFileFormatSettings : FileFormatSettings
+    {
+        [JsonProperty("contentSegmentation")]
+        public bool? ContentSegmentation { get; set; }
+        
         [JsonProperty("srxStorageId")]
         public int? SrxStorageId { get; set; }
     }

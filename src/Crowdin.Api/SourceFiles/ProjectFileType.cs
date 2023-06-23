@@ -34,6 +34,9 @@ namespace Crowdin.Api.SourceFiles
         [Description("json")]
         Json,
         
+        [Description("fjs")]
+        Fjs,
+        
         [Description("xml")]
         Xml,
         
@@ -57,6 +60,9 @@ namespace Crowdin.Api.SourceFiles
         
         [Description("chrome")]
         Chrome,
+        
+        [Description("react_intl")]
+        ReactIntl,
         
         [Description("dtd")]
         Dtd,
@@ -93,6 +99,9 @@ namespace Crowdin.Api.SourceFiles
         
         [Description("md")]
         Md,
+        
+        [Description("mdx_v1")]
+        MdxV1,
         
         [Description("flsnp")]
         Flsnp,
