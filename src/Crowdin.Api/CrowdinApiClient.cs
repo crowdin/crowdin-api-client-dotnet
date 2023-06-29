@@ -384,7 +384,7 @@ namespace Crowdin.Api
                 : FormRequestUrl(relativeUrlPart) + '?' + queryParams.ToQueryString();
         }
 
-        private static async Task CheckDefaultPreconditionsAndErrors(HttpResponseMessage response)
+        internal static async Task CheckDefaultPreconditionsAndErrors(HttpResponseMessage response)
         {
             if (response.IsSuccessStatusCode) return;
             
