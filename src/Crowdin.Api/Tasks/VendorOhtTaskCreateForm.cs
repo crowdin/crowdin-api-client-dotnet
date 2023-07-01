@@ -47,6 +47,9 @@ namespace Crowdin.Api.Tasks
         
         [JsonProperty("skipUntranslatedStrings")]
         public bool? SkipUntranslatedStrings { get; set; }
+
+        [JsonProperty("includePreTranslatedStringsOnly")]
+        public bool? IncludePreTranslatedStringsOnly { get; set; }
         
         [JsonProperty("includeUntranslatedStringsOnly")]
         public bool? IncludeUntranslatedStringsOnly { get; set; }
