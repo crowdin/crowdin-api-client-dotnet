@@ -98,7 +98,6 @@ namespace Crowdin.Api
         public WebhooksApiExecutor Webhooks { get; }
 
         private readonly string _baseUrl;
-        private readonly string _accessToken;
         private readonly HttpClient _httpClient;
         private readonly IRateLimiter? _rateLimiter;
         private readonly IRetryService? _retryService;
@@ -136,7 +135,6 @@ namespace Crowdin.Api
             _rateLimiter = rateLimiter;
             _retryService = retryService;
             
-            _accessToken = credentials.AccessToken;
             _httpClient.DefaultRequestHeaders.Authorization =
                 new AuthenticationHeaderValue("Bearer", credentials.AccessToken);
             
