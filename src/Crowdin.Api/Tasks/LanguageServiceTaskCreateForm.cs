@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
@@ -9,7 +8,7 @@ using Newtonsoft.Json;
 namespace Crowdin.Api.Tasks
 {
     [PublicAPI]
-    public class TaskCreateForm : AddTaskRequest
+    public class LanguageServiceTaskCreateForm : AddTaskRequest
     {
         [JsonProperty("title")]
 #pragma warning disable CS8618
@@ -29,17 +28,17 @@ namespace Crowdin.Api.Tasks
         [JsonProperty("type")]
         public TaskType Type { get; set; }
         
+        [JsonProperty("vendor")]
+        public string Vendor => "crowdin_language_service";
+        
         [JsonProperty("status")]
         public TaskStatus? Status { get; set; }
         
         [JsonProperty("description")]
         public string? Description { get; set; }
         
-        [JsonProperty("splitFiles")]
-        public bool? SplitFiles { get; set; }
-        
-        [JsonProperty("skipAssignedStrings")]
-        public bool? SkipAssignedStrings { get; set; }
+        [JsonProperty("labelIds")]
+        public ICollection<int>? LabelIds { get; set; }
         
         [JsonProperty("skipUntranslatedStrings")]
         public bool? SkipUntranslatedStrings { get; set; }
@@ -47,15 +46,9 @@ namespace Crowdin.Api.Tasks
         [JsonProperty("includePreTranslatedStringsOnly")]
         public bool? IncludePreTranslatedStringsOnly { get; set; }
         
-        [JsonProperty("labelIds")]
-        public ICollection<int>? LabelIds { get; set; }
-        
-        [JsonProperty("assignees")]
-        public ICollection<TaskAssigneeForm>? Assignees { get; set; }
-        
-        [JsonProperty("deadline")]
-        public DateTimeOffset? DeadLine { get; set; }
-        
+        [JsonProperty("includeUntranslatedStringsOnly")]
+        public bool? IncludeUntranslatedStringsOnly { get; set; }
+
         [JsonProperty("dateFrom")]
         public DateTimeOffset? DateFrom { get; set; }
         
