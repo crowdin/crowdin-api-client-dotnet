@@ -66,7 +66,7 @@ namespace Crowdin.Api.Core.Converters
             {
                 // Temporary Workaround for Issue #167: https://github.com/crowdin/crowdin-api-client-dotnet/issues/167
                 // Remove this once the issue has been fixed in the Crowdin API (v2).
-                if(descriptionValue.Equals("in_progress"))
+                if(objectType == typeof(BuildStatus) && descriptionValue.Equals("in_progress"))
                     return BuildStatus.InProgress;
 
                 // Check if value has own string representation in [Description] attribute
