@@ -205,10 +205,7 @@ namespace Crowdin.Api
                     RequestUri = new Uri(FormRequestUrl(subUrl))
                 };
 
-                if (body != null)
-                {
-                    request.Content = CreateJsonContent(body);
-                }
+                request.Content = body != null ? CreateJsonContent(body) : CreateEmptyJsonContent();
 
                 if (extraHeaders != null && extraHeaders.Count > 0)
                 {
@@ -361,6 +358,13 @@ namespace Crowdin.Api
 
             result.Headers = response.Headers;
             return result;
+        }
+
+        private HttpContent CreateEmptyJsonContent()
+        {
+            MediaTypeHeaderValue contentType = DefaultContentType;
+
+            return new StringContent("{}", Encoding.UTF8, contentType.MediaType);
         }
 
         private HttpContent CreateJsonContent(object body)
