@@ -12,6 +12,9 @@ namespace Crowdin.Api.TranslationStatus
             
         [JsonProperty("translated")]
         public int Translated { get; set; }
+
+        [JsonProperty("preTranslateAppliedTo")]
+        public int PreTranslateAppliedTo { get; set; }
             
         [JsonProperty("approved")]
         public int Approved { get; set; }
