@@ -28,14 +28,10 @@ namespace Crowdin.Api.Distributions
         public int[] FileIds { get; set; }
 #pragma warning restore CS8618
         
-        [JsonProperty("format")]
-        public string? Format { get; set; }
-        
-        [JsonProperty("exportPattern")]
-        public string? ExportPattern { get; set; }
-        
-        [JsonProperty("labelIds")]
-        public int[]? LabelIds { get; set; }
+        [JsonProperty("bundleIds")]
+#pragma warning disable CS8618
+        public int[] BundleIds { get; set; }
+#pragma warning restore CS8618
         
         [JsonProperty("createdAt")]
         public DateTimeOffset CreatedAt { get; set; }

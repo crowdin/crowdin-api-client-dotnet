@@ -27,9 +27,7 @@ namespace Crowdin.Api.Tests.Distributions
                 ExportMode = DistributionExportMode.Bundle,
                 Name = "distribution 1",
                 FileIds = new[] { 0 },
-                Format = "crowdin-resx",
-                ExportPattern = "strings-%two_letter_code%.resx",
-                LabelIds = new[] { 0 }
+                BundleIds = new[] { 1, 2 }
             };
             
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
@@ -52,6 +50,8 @@ namespace Crowdin.Api.Tests.Distributions
             
             Assert.NotNull(response);
             Assert.Contains(0, response.FileIds);
+            Assert.Contains(1, response.BundleIds);
+            Assert.Contains(2, response.BundleIds);
         }
 
         [Fact]
@@ -60,7 +60,7 @@ namespace Crowdin.Api.Tests.Distributions
             const int projectId = 1;
             const string hash = "someHash";
             const string newName = "some name";
-            
+            int[] newBundleIds = { 123, 456 };
             var patches = new[]
             {
                 new DistributionPatch
@@ -68,6 +68,12 @@ namespace Crowdin.Api.Tests.Distributions
                     Operation = PatchOperation.Replace,
                     Path = DistributionPatchPath.Name,
                     Value = newName
+                },
+                new DistributionPatch
+                {
+                    Operation = PatchOperation.Replace,
+                    Path = DistributionPatchPath.BundleIds,
+                    Value = newBundleIds
                 }
             };
 
@@ -88,6 +94,8 @@ namespace Crowdin.Api.Tests.Distributions
             
             Assert.NotNull(response);
             Assert.Equal(newName, response.Name);
+            Assert.Contains(newBundleIds[0], response.BundleIds);
+            Assert.Contains(newBundleIds[1], response.BundleIds);
         }
         
         [Fact]
@@ -116,20 +124,8 @@ namespace Crowdin.Api.Tests.Distributions
                 new DistributionPatch
                 {
                     Operation = PatchOperation.Replace,
-                    Path = DistributionPatchPath.Format,
-                    Value = "crowdin-resx"
-                },
-                new DistributionPatch
-                {
-                    Operation = PatchOperation.Replace,
-                    Path = DistributionPatchPath.ExportPattern,
-                    Value = "strings-%two_letters_code%.resx"
-                },
-                new DistributionPatch
-                {
-                    Operation = PatchOperation.Replace,
-                    Path = DistributionPatchPath.LabelIds,
-                    Value = new[] { 321 }
+                    Path = DistributionPatchPath.BundleIds,
+                    Value = new[] { 123, 456 }
                 }
             };
             
