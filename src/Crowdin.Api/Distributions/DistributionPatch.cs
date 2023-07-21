@@ -24,13 +24,7 @@ namespace Crowdin.Api.Distributions
         [Description("/fileIds")]
         FileIds,
         
-        [Description("/format")]
-        Format,
-        
-        [Description("/exportPattern")]
-        ExportPattern,
-        
-        [Description("/labelIds")]
-        LabelIds
+        [Description("/bundleIds")]
+        BundleIds,
     }
 }
