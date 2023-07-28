@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
+using Crowdin.Api.Core.Converters;
+
 namespace Crowdin.Api.Webhooks.Organization
 {
     [PublicAPI]
@@ -23,6 +25,7 @@ namespace Crowdin.Api.Webhooks.Organization
         public OrganizationEventType[] Events { get; set; }
         
         [JsonProperty("headers")]
+        [JsonConverter(typeof(EmptyArrayAsObjectConverter))]
         public IDictionary<string, string> Headers { get; set; }
         
         [JsonProperty("payload")]

@@ -158,6 +158,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Core_ErrorResponses.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\Core_BugCases.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Core_BugCases.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -315,6 +319,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>Core_ErrorResponses.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\Core_BugCases.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Core_BugCases.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 
