@@ -71,6 +71,7 @@ namespace Crowdin.Api.Tests.Core.Resources {
         ///  ],
         ///  &quot;exportPattern&quot;: &quot;strings-%two_letter_code%.resx&quot;,
         ///  &quot;isMultilingual&quot;: false,
+        ///  &quot;includeProjectSourceLanguage&quot;: false,
         ///  &quot;labelIds&quot;: [
         ///    0
         ///  ]
@@ -96,6 +97,7 @@ namespace Crowdin.Api.Tests.Core.Resources {
         ///    ],
         ///    &quot;exportPattern&quot;: &quot;strings-%two_letters_code%.resx&quot;,
         ///    &quot;isMultilingual&quot;: false,
+        ///    &quot;includeProjectSourceLanguage&quot;: false,
         ///    &quot;labelIds&quot;: [
         ///      0
         ///    ],
@@ -152,6 +154,11 @@ namespace Crowdin.Api.Tests.Core.Resources {
         ///    &quot;op&quot;: &quot;replace&quot;,
         ///
         ///    &quot;value&quot;: &quot;Resx bundle&quot;
+        ///  },
+        ///  {
+        ///    &quot;path&quot;: &quot;/includeProjectSourceLanguage&quot;,
+        ///    &quot;op&quot;: &quot;replace&quot;,
+        ///    &quot;value&quot;: false
         ///  }
         ///].
         /// </summary>
