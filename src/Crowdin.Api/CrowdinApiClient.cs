@@ -37,6 +37,7 @@ using Crowdin.Api.TranslationStatus;
 using Crowdin.Api.Users;
 using Crowdin.Api.Vendors;
 using Crowdin.Api.Webhooks;
+using Crowdin.Api.Webhooks.Organization;
 
 using JetBrains.Annotations;
 using Newtonsoft.Json;
@@ -96,6 +97,8 @@ namespace Crowdin.Api
         public VendorsApiExecutor Vendors { get; }
         
         public WebhooksApiExecutor Webhooks { get; }
+        
+        public OrganizationWebhooksApiExecutor OrganizationWebhooks { get; }
 
         private readonly string _baseUrl;
         private readonly HttpClient _httpClient;
@@ -178,6 +181,7 @@ namespace Crowdin.Api
             Users = new UsersApiExecutor(this);
             Vendors = new VendorsApiExecutor(this);
             Webhooks = new WebhooksApiExecutor(this);
+            OrganizationWebhooks = new OrganizationWebhooksApiExecutor(this);
         }
 
         Task<CrowdinApiResult> ICrowdinApiClient.SendGetRequest(string subUrl, IDictionary<string, string>? queryParams)
