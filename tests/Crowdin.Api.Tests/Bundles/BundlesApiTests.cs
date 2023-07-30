@@ -65,6 +65,7 @@ namespace Crowdin.Api.Tests.Bundles
                 },
                 ExportPattern = "strings-%two_letter_code%.resx",
                 IsMultilingual = false,
+                IncludeProjectSourceLanguage = false,
                 LabelIds = new[]
                 {
                     0
@@ -146,6 +147,12 @@ namespace Crowdin.Api.Tests.Bundles
                     Operation = PatchOperation.Replace,
                     Path = BundlePatchPath.Name,
                     Value = "Resx bundle"
+                },
+                new BundlePatch
+                {
+                    Operation = PatchOperation.Replace,
+                    Path = BundlePatchPath.IncludeProjectSourceLanguage,
+                    Value = false
                 }
             };
             
@@ -263,6 +270,8 @@ namespace Crowdin.Api.Tests.Bundles
             
             Assert.Equal("strings-%two_letters_code%.resx", model.ExportPattern);
             Assert.False(model.IsMultilingual);
+            
+            Assert.False(model.IncludeProjectSourceLanguage);
             
             Assert.NotNull(model.LabelIds);
             Assert.Single(model.LabelIds);
