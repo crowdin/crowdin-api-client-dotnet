@@ -29,6 +29,9 @@ namespace Crowdin.Api.Bundles
         [JsonProperty("isMultilingual")]
         public bool IsMultilingual { get; set; }
         
+        [JsonProperty("includeProjectSourceLanguage")]
+        public bool IncludeProjectSourceLanguage  { get; set; }
+        
         [JsonProperty("labelIds")]
         public int[] LabelIds { get; set; }
         

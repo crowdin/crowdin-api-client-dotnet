@@ -33,6 +33,9 @@ namespace Crowdin.Api.Bundles
         [Description("/isMultilingual")]
         IsMultilingual,
         
+        [Description("/includeProjectSourceLanguage")]
+        IncludeProjectSourceLanguage,
+        
         [Description("/labelIds")]
         LabelIds
     }

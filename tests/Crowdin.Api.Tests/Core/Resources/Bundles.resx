@@ -60,6 +60,7 @@
   ],
   "exportPattern": "strings-%two_letter_code%.resx",
   "isMultilingual": false,
+  "includeProjectSourceLanguage": false,
   "labelIds": [
     0
   ]
@@ -72,6 +73,11 @@
     "op": "replace",
 
     "value": "Resx bundle"
+  },
+  {
+    "path": "/includeProjectSourceLanguage",
+    "op": "replace",
+    "value": false
   }
 ]</value>
     </data>
@@ -182,6 +188,7 @@
     ],
     "exportPattern": "strings-%two_letters_code%.resx",
     "isMultilingual": false,
+    "includeProjectSourceLanguage": false,
     "labelIds": [
       0
     ],
