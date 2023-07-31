@@ -1,10 +1,11 @@
 ﻿
 using System.Collections.Generic;
-using Crowdin.Api;
-using Crowdin.Api.ProjectsGroups;
-using Crowdin.Api.Tests.Core;
+
 using Newtonsoft.Json;
 using Xunit;
+
+using Crowdin.Api.ProjectsGroups;
+using Crowdin.Api.Tests.Core;
 
 namespace Crowdin.Api.Tests.ProjectsGroups
 {
@@ -60,11 +61,21 @@ namespace Crowdin.Api.Tests.ProjectsGroups
                     },
                     Value = "another category"
                 },
+                new ProjectSettingPatch
+                {
+                    Operation = PatchOperation.Replace,
+                    Path = new ProjectSettingPath
+                    {
+                        Code = ProjectSettingPathCode.TmPenalties,
+                        SubCodes = new[] { "multipleTranslations" }
+                    },
+                    Value = 1
+                }
             };
             
             JsonSerializerSettings options = TestUtils.CreateJsonSerializerOptions();
             string requestJson = JsonConvert.SerializeObject(patches, options);
-            string rightRequestJson = Core.Resources.Projects.EditProject_RightRequestJson_ProjectSettingPatches;
+            string rightRequestJson = TestUtils.CompactJson(Core.Resources.Projects.EditProject_RightRequestJson_ProjectSettingPatches);
             Assert.Equal(rightRequestJson, requestJson);
         }
 

@@ -96,5 +96,8 @@ namespace Crowdin.Api.ProjectsGroups
         
         [JsonProperty("assignedGlossaries")]
         public int[] AssignedGlossaries { get; set; }
+        
+        [JsonProperty("tmPenalties")]
+        public TmPenalties TmPenalties { get; set; }
     }
 }

@@ -22,7 +22,23 @@
         <value>[{"path":"/name","op":"replace","value":"Another project name"},{"path":"/languageMapping/languageId/mappingKey","op":"replace","value":["set","of","values"]}]</value>
     </data>
     <data name="EditProject_RightRequestJson_ProjectSettingPatches" xml:space="preserve">
-        <value>[{"path":"/isMtAllowed","op":"replace","value":false},{"path":"/qaCheckCategories/category","op":"add","value":"another category"}]</value>
+        <value>[
+    {
+        "path": "/isMtAllowed",
+        "op": "replace",
+        "value": false
+    },
+    {
+        "path": "/qaCheckCategories/category",
+        "op": "add",
+        "value": "another category"
+    },
+    {
+        "path": "/tmPenalties/multipleTranslations",
+        "op": "replace",
+        "value": 1
+    }
+]</value>
     </data>
     <data name="EditProject_RightRequestJson_PolymorphicPatches" xml:space="preserve">
         <value>[{"path":"/name","op":"replace","value":"Another project name"},{"path":"/languageMapping/languageId/mappingKey","op":"replace","value":["set","of","values"]},{"path":"/isMtAllowed","op":"replace","value":false},{"path":"/qaCheckCategories/category","op":"add","value":"another category"},{"path":"/isMtAllowed","op":"replace","value":true},{"path":"/languageMapping/languageId","op":"add","value":"new language"}]</value>
@@ -230,7 +246,24 @@
       "textDirection": "ltr",
       "dialectOf": "string"
     }
-  ]
+  ],
+
+  "tmPenalties": {
+    "autoSubstitution": 1,
+    "tmPriority": {
+      "priority": 2,
+      "penalty": 1
+    },
+    "multipleTranslations": 1,
+    "timeSinceLastUsage": {
+      "months": 2,
+      "penalty": 1
+    },
+    "timeSinceLastModified": {
+      "months": 2,
+      "penalty": 1
+    }
+}
 }</value>
     </data>
   <data name="AddProject_RightResponseJson_ProjectInfo" xml:space="preserve">
