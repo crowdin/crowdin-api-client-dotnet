@@ -107,7 +107,23 @@ namespace Crowdin.Api.Tests.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/isMtAllowed&quot;,&quot;op&quot;:&quot;replace&quot;,&quot;value&quot;:false},{&quot;path&quot;:&quot;/qaCheckCategories/category&quot;,&quot;op&quot;:&quot;add&quot;,&quot;value&quot;:&quot;another category&quot;}].
+        ///   Looks up a localized string similar to [
+        ///    {
+        ///        &quot;path&quot;: &quot;/isMtAllowed&quot;,
+        ///        &quot;op&quot;: &quot;replace&quot;,
+        ///        &quot;value&quot;: false
+        ///    },
+        ///    {
+        ///        &quot;path&quot;: &quot;/qaCheckCategories/category&quot;,
+        ///        &quot;op&quot;: &quot;add&quot;,
+        ///        &quot;value&quot;: &quot;another category&quot;
+        ///    },
+        ///    {
+        ///        &quot;path&quot;: &quot;/tmPenalties/multipleTranslations&quot;,
+        ///        &quot;op&quot;: &quot;replace&quot;,
+        ///        &quot;value&quot;: 1
+        ///    }
+        ///].
         /// </summary>
         internal static string EditProject_RightRequestJson_ProjectSettingPatches {
             get {

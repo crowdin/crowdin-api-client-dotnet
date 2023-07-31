@@ -81,6 +81,26 @@ namespace Crowdin.Api.Tests.ProjectsGroups
             Assert.Equal(1, assignedTms.Keys.Single());
             Assert.NotNull(assignedTms[1]);
             Assert.Equal(1, assignedTms[1].Priority);
+
+            TmPenalties? tmPenalties = projectSettings.TmPenalties;
+            Assert.NotNull(tmPenalties);
+            Assert.Equal(1, tmPenalties.AutoSubstitution);
+            Assert.Equal(1, tmPenalties.MultipleTranslations);
+
+            TmPriority? tmPriority = tmPenalties.TmPriority;
+            Assert.NotNull(tmPriority);
+            Assert.Equal(2, tmPriority.Priority);
+            Assert.Equal(1, tmPriority.Penalty);
+
+            TmTimeElapsed? timeSinceLastUsage = tmPenalties.TimeSinceLastUsage;
+            Assert.NotNull(timeSinceLastUsage);
+            Assert.Equal(2, timeSinceLastUsage.Months);
+            Assert.Equal(1, timeSinceLastUsage.Penalty);
+
+            TmTimeElapsed? timeSinceLastModified = tmPenalties.TimeSinceLastModified;
+            Assert.NotNull(timeSinceLastModified);
+            Assert.Equal(2, timeSinceLastModified.Months);
+            Assert.Equal(1, timeSinceLastModified.Penalty);
         }
 
         [Fact]

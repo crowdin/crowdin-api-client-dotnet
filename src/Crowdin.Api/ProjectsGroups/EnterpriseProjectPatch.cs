@@ -1,10 +1,12 @@
 ﻿
 using System.Collections.Generic;
 using System.ComponentModel;
-using Crowdin.Api.Core;
-using Crowdin.Api.Core.Converters;
+
 using JetBrains.Annotations;
 using Newtonsoft.Json;
+
+using Crowdin.Api.Core;
+using Crowdin.Api.Core.Converters;
 
 namespace Crowdin.Api.ProjectsGroups
 {
@@ -55,11 +57,29 @@ namespace Crowdin.Api.ProjectsGroups
     [PublicAPI]
     public enum EnterpriseProjectPathCode
     {
+        [Description("/groupId")]
+        GroupId,
+        
+        [Description("/name")]
+        Name,
+        
+        [Description("/targetLanguageIds")]
+        TargetLanguageIds,
+        
+        [Description("/cname")]
+        Cname,
+        
+        [Description("/description")]
+        Description,
+        
         [Description("/translateDuplicates")]
         TranslateDuplicates,
         
         [Description("/isMtAllowed")]
         IsMtAllowed,
+        
+        [Description("/taskBasedAccessControl")]
+        TaskBasedAccessControl,
         
         [Description("/autoSubstitution")]
         AutoSubstitution,
@@ -67,14 +87,29 @@ namespace Crowdin.Api.ProjectsGroups
         [Description("/skipUntranslatedStrings")]
         SkipUntranslatedStrings,
         
+        [Description("/skipUntranslatedFiles")]
+        SkipUntranslatedFiles,
+        
         [Description("/exportWithMinApprovalsCount")]
         ExportWithMinApprovalsCount,
+        
+        [Description("/exportStringsThatPassedWorkflow")]
+        ExportStringsThatPassedWorkflow,
         
         [Description("/autoTranslateDialects")]
         AutoTranslateDialects,
         
+        [Description("/showTmSuggestionsDialects")]
+        ShowTmSuggestionsDialects,
+        
+        [Description("/glossaryAccess")]
+        GlossaryAccess,
+
         [Description("/publicDownloads")]
         PublicDownloads,
+        
+        [Description("/hiddenStringsProofreadersAccess")]
+        HiddenStringsProofreadersAccess,
         
         [Description("/normalizePlaceholder")]
         NormalizePlaceholder,
@@ -84,6 +119,12 @@ namespace Crowdin.Api.ProjectsGroups
         
         [Description("/inContext")]
         InContext,
+        
+        [Description("/inContextProcessHiddenStrings")]
+        InContextProcessHiddenStrings,
+        
+        [Description("/inContextPseudoLanguageId")]
+        InContextPseudoLanguageId,
         
         [Description("/pseudoLanguageId")]
         PseudoLanguageId,
@@ -95,6 +136,11 @@ namespace Crowdin.Api.ProjectsGroups
         QaCheckCategories,
         
         // /qaCheckCategories/{category}
+        
+        [Description("/qaChecksIgnorableCategories")]
+        QaChecksIgnorableCategories,
+        
+        // /qaChecksIgnorableCategories/{category}
         
         [Description("/languageMapping")]
         LanguageMapping,
@@ -110,6 +156,25 @@ namespace Crowdin.Api.ProjectsGroups
         NotificationsManagerNewStrings,
         
         [Description("/notificationSettings/managerLanguageCompleted")]
-        NotificationsManagerLanguageCompleted
+        NotificationsManagerLanguageCompleted,
+        
+        [Description("/defaultTmId")]
+        DefaultTmId,
+        
+        [Description("/defaultGlossaryId")]
+        DefaultGlossaryId,
+        
+        [Description("/assignedGlossaries")]
+        AssignedGlossaries,
+        
+        [Description("/assignedTms")]
+        AssignedTms,
+        
+        // /assignedTms/{tmId}
+        
+        [Description("/tmPenalties")]
+        TmPenalties
+        
+        // /tmPenalties/{penaltyKey}
     }
 }

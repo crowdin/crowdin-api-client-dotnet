@@ -108,5 +108,10 @@ namespace Crowdin.Api.ProjectsGroups
         // /languageMapping/{languageId}
         
         // /languageMapping/{languageId}/{mappingKey}
+        
+        [Description("/tmPenalties")]
+        TmPenalties,
+        
+        // /tmPenalties/{penaltyKey}
     }
 }
