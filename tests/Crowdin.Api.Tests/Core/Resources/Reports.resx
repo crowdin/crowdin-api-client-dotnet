@@ -21,4 +21,256 @@
     <data name="GenerateReport_Request" xml:space="preserve">
         <value>{"name":"costs-estimation","schema":{"mode":"simple","currency":"UAH"}}</value>
     </data>
+    <data name="CostEstimationPostEditing_GeneralSchema_Request" xml:space="preserve">
+        <value>{
+    "name": "costs-estimation-pe",
+    "schema": {
+      "baseRates": {
+        "fullTranslation": 0.1,
+        "proofread": 0.12
+      },
+      "individualRates": [
+        {
+          "languageIds": [
+            "uk", "es"
+          ],
+          "userIds": [
+            1, 2, 3
+          ],
+          "fullTranslation": 0.1,
+          "proofread": 0.12
+        }
+      ],
+      "netRateSchemes": {
+        "tmMatch": [
+          {
+            "matchType": "100",
+            "price": 0.1
+          }
+        ]
+      },
+      "languageId": "ach",
+      "fileIds": [
+        138
+      ],
+      "directoryIds": [
+        11
+      ],
+      "branchIds": [
+        18
+      ],
+      "dateFrom": "2019-09-23T07:00:14+00:00",
+      "dateTo": "2019-09-27T07:00:14+00:00",
+      "labelIds": [
+        13
+      ],
+      "labelIncludeType": "strings_with_label",
+     
+ "unit": "chars_with_spaces",
+      "currency": "EUR",
+      "format": "json",
+
+      "calculateInternalMatches": false,
+      "includePreTranslatedStrings": true
+    }
+}</value>
+    </data>
+    <data name="CostEstimationPostEditing_ByTaskSchema_Request" xml:space="preserve">
+        <value>{
+    "name": "costs-estimation-pe",
+    "schema": {
+      "baseRates": {
+        "fullTranslation": 0.1,
+        "proofread": 0.12
+      },
+      "individualRates": [
+        {
+          "languageIds": [
+            "uk", "es"
+          ],
+          "userIds": [
+            1, 2, 3
+          ],
+          "fullTranslation": 0.1,
+          "proofread": 0.12
+        }
+      ],
+      "netRateSchemes": {
+        "tmMatch": [
+          {
+            "matchType": "100",
+            "price": 0.1
+          }
+        ]
+      },
+      "taskId": 1
+    }
+}</value>
+    </data>
+    <data name="TranslationCostsPostEditing_GeneralSchema_Request" xml:space="preserve">
+        <value>{
+  "name": "translation-costs-pe",
+  "schema": {
+
+   "groupBy": "user",
+    "dateFrom": "2019-09-23T07:00:14+00:00",
+    "dateTo": "2019-09-27T07:00:14+00:00",
+    "languageId": "ach",
+    "userIds": [
+      13
+    ],
+    "fileIds": [
+      138
+    ],
+    "directoryIds": [
+      11
+    ],
+    "branchIds": [
+      18
+    ],
+    "unit": "words",
+    "currency": "USD",
+    "format": "xlsx",
+    "baseRates": {
+      "fullTranslation": 0.1,
+      "proofread": 0.12
+    },
+    "individualRates": [
+      {
+        "languageIds": [
+          "uk"
+        ],
+        "userIds": [
+          1
+        ],
+        "fullTranslation": 0.1,
+        "proofread": 0.12
+      }
+    ],
+    "netRateSchemes": {
+      "tmMatch": [
+        {
+          "matchType": "perfect",
+          "price": 0.1
+        }
+      ],
+      "mtMatch": [
+        {
+          "matchType": "99-82",
+          "price": 0.1
+        }
+      ],
+      "suggestionMatch": [
+        {
+          "matchType": "81-60",
+          "price": 0.1
+        }
+      ]
+    }
+  }
+}</value>
+    </data>
+    <data name="TranslationCostsPostEditing_ByTaskSchema_Request" xml:space="preserve">
+        <value>{
+  "name": "translation-costs-pe",
+  "schema": {
+
+    "taskId": 1,
+    "unit": "words",
+    "currency": "USD",
+    "format": "xlsx",
+    "baseRates": {
+      "fullTranslation": 0.1,
+      "proofread": 0.12
+    },
+    "individualRates": [
+      {
+        "languageIds": [
+          "uk"
+        ],
+        "userIds": [
+          1
+        ],
+        "fullTranslation": 0.1,
+        "proofread": 0.12
+      }
+    ],
+    "netRateSchemes": {
+      "tmMatch": [
+        {
+          "matchType": "perfect",
+          "price": 0.1
+        }
+      ],
+      "mtMatch": [
+        {
+          "matchType": "99-82",
+          "price": 0.1
+        }
+      ],
+      "suggestionMatch": [
+        {
+          "matchType": "81-60",
+          "price": 0.1
+        }
+      ]
+    }
+  }
+}</value>
+    </data>
+    <data name="Group_TranslationCostsPostEditing_GeneralSchema_Request" xml:space="preserve">
+        <value>{
+  "name": "group-translation-costs-pe",
+  "schema": {
+    "projectIds": [
+      13
+    ],
+    "unit": "words",
+    "currency": "USD",
+    "format": "xlsx",
+    "baseRates": {
+      "fullTranslation": 0.1,
+      "proofread": 0.12
+    },
+    "individualRates": [
+      {
+        "languageIds": [
+          "uk"
+        ],
+        "userIds": [
+          1
+        ],
+        "fullTranslation": 0.1,
+        "proofread": 0.12
+      }
+    ],
+    "netRateSchemes": {
+      "tmMatch": [
+        {
+          "matchType": "perfect",
+          "price": 0.1
+        }
+      ],
+      "mtMatch": [
+        {
+          "matchType": "99-82",
+          "price": 0.1
+        }
+      ],
+      "suggestionMatch": [
+        {
+          "matchType": "81-60",
+          "price": 0.1
+        }
+      ]
+    },
+    "groupBy": "language",
+    "dateFrom": "2019-09-23T07:00:14+00:00",
+    "dateTo": "2019-09-27T07:00:14+00:00",
+    "userIds": [
+      13
+    ]
+  }
+}</value>
+    </data>
 </root>
