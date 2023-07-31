@@ -55,8 +55,6 @@ namespace Crowdin.Api.Tests.Reports
                     FileIds = new[] { 138 },
                     DirectoryIds = new[] { 11 },
                     BranchIds = new[] { 18 },
-                    DateFrom = DateTimeOffset.Parse("2019-09-23T10:00:14+03:00"),
-                    DateTo = DateTimeOffset.Parse("2019-09-27T10:00:14+03:00"),
                     LabelIds = new[] { 13 },
                     LabelIncludeType = ReportLabelIncludeType.StringsWithLabel
                 }
@@ -166,8 +164,6 @@ namespace Crowdin.Api.Tests.Reports
                         }
                     },
                     GroupBy = TranslationCostsPostEditingGenerateReportRequest.GeneralSchema.GroupingParameter.User,
-                    DateFrom = DateTimeOffset.Parse("2019-09-23T10:00:14+03:00"),
-                    DateTo = DateTimeOffset.Parse("2019-09-27T10:00:14+03:00"),
                     LanguageId = "ach",
                     UserIds = new[] { 13 },
                     FileIds = new[] { 138 },
@@ -300,8 +296,6 @@ namespace Crowdin.Api.Tests.Reports
                         }
                     },
                     GroupBy = GroupTranslationCostsPostEditingGenerateGroupReportRequest.GeneralSchema.GroupingParameter.Language,
-                    DateFrom = DateTimeOffset.Parse("2019-09-23T10:00:14+03:00"),
-                    DateTo = DateTimeOffset.Parse("2019-09-27T10:00:14+03:00"),
                     UserIds = new[] { 13 }
                 }
             };

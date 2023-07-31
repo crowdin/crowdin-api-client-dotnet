@@ -210,8 +210,6 @@ namespace Crowdin.Api.Tests.Core.Resources {
         ///  &quot;schema&quot;: {
         ///
         ///   &quot;groupBy&quot;: &quot;user&quot;,
-        ///    &quot;dateFrom&quot;: &quot;2019-09-23T07:00:14+00:00&quot;,
-        ///    &quot;dateTo&quot;: &quot;2019-09-27T07:00:14+00:00&quot;,
         ///    &quot;languageId&quot;: &quot;ach&quot;,
         ///    &quot;userIds&quot;: [
         ///      13
@@ -232,7 +230,12 @@ namespace Crowdin.Api.Tests.Core.Resources {
         ///      &quot;fullTranslation&quot;: 0.1,
         ///      &quot;proofread&quot;: 0.12
         ///    },
-        ///    &quot;individu [rest of string was truncated]&quot;;.
+        ///    &quot;individualRates&quot;: [
+        ///      {
+        ///        &quot;languageIds&quot;: [
+        ///          &quot;uk&quot;
+        ///        ],
+        ///        &quot;userI [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string TranslationCostsPostEditing_GeneralSchema_Request {
             get {
