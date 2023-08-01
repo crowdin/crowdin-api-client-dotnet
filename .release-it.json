@@ -1,0 +1,33 @@
+{
+  "git": {
+    "push": true,
+    "commit": true,
+    "commitMessage": "chore: version ${version} [skip ci]",
+    "requireBranch": "main",
+    "changelog": false,
+    "tag": true
+  },
+  "github": {
+    "release": false
+  },
+  "plugins": {
+    "@j-ulrich/release-it-regex-bumper": {
+      "in": "src/Crowdin.Api/Crowdin.Api.csproj",
+      "out": [
+        {
+          "file": "README.md",
+          "search": {
+            "pattern": "\\d+\\.\\d+\\.\\d+",
+            "flags": "g"
+          },
+          "replace": "{{versionWithoutPrerelease}}"
+        },
+        {
+          "file": "src/Crowdin.Api/Crowdin.Api.csproj",
+          "search": "<Version>\\d+\\.\\d+\\.\\d+</Version>",
+          "replace": "<Version>{{versionWithoutPrerelease}}</Version>"
+        }
+      ]
+    }
+  }
+}
