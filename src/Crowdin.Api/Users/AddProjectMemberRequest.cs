@@ -20,14 +20,14 @@ namespace Crowdin.Api.Users
 #pragma warning restore CS8618
         
         [JsonProperty("accessToAllWorkflowSteps")]
-        [Obsolete(MessageTexts.DeprecatedButStillAvailable)]
+        [Obsolete(MessageTexts.DeprecatedProperty)]
         public bool? AccessToAllWorkflowSteps { get; set; }
         
         [JsonProperty("managerAccess")]
         public bool? ManagerAccess { get; set; }
         
         [JsonProperty("permissions")]
-        [Obsolete(MessageTexts.DeprecatedButStillAvailable)]
+        [Obsolete(MessageTexts.DeprecatedProperty)]
         public IDictionary<string, LanguagePermission>? Permissions { get; set; }
         
         [JsonProperty("roles")]

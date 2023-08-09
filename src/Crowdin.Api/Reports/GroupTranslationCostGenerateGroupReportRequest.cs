@@ -1,14 +1,18 @@
 
 using System;
 using System.Collections.Generic;
+
 using JetBrains.Annotations;
 using Newtonsoft.Json;
+
+using Crowdin.Api.Core;
 
 #nullable enable
 
 namespace Crowdin.Api.Reports
 {
     [PublicAPI]
+    [Obsolete(MessageTexts.DeprecatedModel)]
     public class GroupTranslationCostGenerateGroupReportRequest : GenerateGroupReportRequest
     {
         [JsonProperty("name")]

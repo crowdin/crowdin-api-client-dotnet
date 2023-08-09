@@ -1,5 +1,6 @@
 ﻿
 using Crowdin.Api.Reports;
+using MatchType = Crowdin.Api.Reports.MatchType;
 
 namespace Crowdin.Api.Samples.Actions
 {
@@ -10,18 +11,36 @@ namespace Crowdin.Api.Samples.Actions
             // Start report generation task
             ReportStatus reportStatus = await _crowdinApiClient.Reports.GenerateReport(
                 projectId,
-                new CostEstimateGenerateReportRequest
+                new CostEstimationPostEditingGenerateReportRequest
                 {
-                    Schema = new CostEstimateGenerateReportRequest.GeneralSchema
+                    Schema = new CostEstimationPostEditingGenerateReportRequest.GeneralSchema
                     {
-                        Unit = ReportUnit.Words,
-                        Currency = ReportCurrency.USD,
-                        Format = ReportFormat.Xlsx,
-                        LanguageId = "uk",
-                        FileIds = new[] { fileId },
-                        DirectoryIds = new[] { directoryId },
-                        DateFrom = DateTimeOffset.Parse("2019-09-23T07:00:14+00:00"),
-                        LabelIncludeType = ReportLabelIncludeType.StringsWithLabel
+                        BaseRates = new BaseRatesForm
+                        {
+                            FullTranslation = 0.1f,
+                            Proofread = 0.12f
+                        },
+                        IndividualRates = new[]
+                        {
+                            new CostEstimationPostEditingGenerateReportRequest.IndividualRate
+                            {
+                                LanguageIds = new[] { "uk", "es" },
+                                UserIds = new[] { 1, 2, 3 },
+                                FullTranslation = 0.1f,
+                                Proofread = 0.12f
+                            }
+                        },
+                        NetRateSchemes = new CostEstimationPostEditingGenerateReportRequest.NetRateSchemes
+                        {
+                            TmMatch = new[]
+                            {
+                                new Match
+                                {
+                                    MatchType = MatchType.Option_100,
+                                    Price = 0.1f
+                                }
+                            }
+                        },
                     }
                 });
 

@@ -19,14 +19,14 @@ namespace Crowdin.Api.Teams
         public int TeamId { get; set; }
         
         [JsonProperty("accessToAllWorkflowSteps")]
-        [Obsolete(MessageTexts.DeprecatedButStillAvailable)]
+        [Obsolete(MessageTexts.DeprecatedProperty)]
         public bool? AccessToAllWorkflowSteps { get; set; }
         
         [JsonProperty("managerAccess")]
         public bool? ManagerAccess { get; set; }
         
         [JsonProperty("permissions")]
-        [Obsolete(MessageTexts.DeprecatedButStillAvailable)]
+        [Obsolete(MessageTexts.DeprecatedProperty)]
         public IDictionary<string, LanguagePermission>? Permissions { get; set; }
         
         [JsonProperty("roles")]
