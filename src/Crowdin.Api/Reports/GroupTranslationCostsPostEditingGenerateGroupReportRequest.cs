@@ -1,7 +1,6 @@
 ﻿
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 
 using JetBrains.Annotations;
 using Newtonsoft.Json;
@@ -64,26 +63,6 @@ namespace Crowdin.Api.Reports
             
             [JsonProperty("userIds")]
             public ICollection<int>? UserIds { get; set; }
-            
-            [PublicAPI]
-            public enum GroupingParameter
-            {
-                [Description("user")]
-                User,
-                
-                [Description("language")]
-                Language
-            }
-        }
-        
-        [PublicAPI]
-        public class BaseRatesForm
-        {
-            [JsonProperty("fullTranslation")]
-            public float FullTranslation { get; set; }
-                
-            [JsonProperty("proofread")]
-            public float Proofread { get; set; }
         }
         
         [PublicAPI]
@@ -117,34 +96,6 @@ namespace Crowdin.Api.Reports
             [JsonProperty("suggestionMatch")]
             public ICollection<Match> SuggestionMatch { get; set; }
 #pragma warning restore CS8618
-        }
-
-        [PublicAPI]
-        public class Match
-        {
-            [JsonProperty("matchType")]
-            public MatchType MatchType { get; set; }
-            
-            [JsonProperty("price")]
-            public float Price { get; set; }
-        }
-        
-        [PublicAPI]
-        public enum MatchType
-        {
-            [Description("perfect")]
-            Perfect,
-
-            // ReSharper disable InconsistentNaming
-            [Description("100")]
-            Option_100,
-
-            [Description("99-82")]
-            Option_99_82,
-
-            [Description("81-60")]
-            Option_81_60
-            // ReSharper restore InconsistentNaming
         }
     }
 }

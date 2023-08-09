@@ -1,6 +1,4 @@
 ﻿
-using System;
-
 using Newtonsoft.Json;
 using Xunit;
 
@@ -23,7 +21,7 @@ namespace Crowdin.Api.Tests.Reports
                     Unit = ReportUnit.CharsWithSpaces,
                     Currency = ReportCurrency.EUR,
                     Format = ReportFormat.Json,
-                    BaseRates = new CostEstimationPostEditingGenerateReportRequest.BaseRatesForm
+                    BaseRates = new BaseRatesForm
                     {
                         FullTranslation = 0.1f,
                         Proofread = 0.12f
@@ -42,9 +40,9 @@ namespace Crowdin.Api.Tests.Reports
                     {
                         TmMatch = new[]
                         {
-                            new CostEstimationPostEditingGenerateReportRequest.Match
+                            new Match
                             {
-                                MatchType = CostEstimationPostEditingGenerateReportRequest.MatchType.Option_100,
+                                MatchType = MatchType.Option_100,
                                 Price = 0.1f
                             }
                         }
@@ -74,7 +72,7 @@ namespace Crowdin.Api.Tests.Reports
             {
                 Schema = new CostEstimationPostEditingGenerateReportRequest.ByTaskSchema
                 {
-                    BaseRates = new CostEstimationPostEditingGenerateReportRequest.BaseRatesForm
+                    BaseRates = new BaseRatesForm
                     {
                         FullTranslation = 0.1f,
                         Proofread = 0.12f
@@ -93,9 +91,9 @@ namespace Crowdin.Api.Tests.Reports
                     {
                         TmMatch = new[]
                         {
-                            new CostEstimationPostEditingGenerateReportRequest.Match
+                            new Match
                             {
-                                MatchType = CostEstimationPostEditingGenerateReportRequest.MatchType.Option_100,
+                                MatchType = MatchType.Option_100,
                                 Price = 0.1f
                             }
                         }
@@ -121,7 +119,7 @@ namespace Crowdin.Api.Tests.Reports
                     Unit = ReportUnit.Words,
                     Currency = ReportCurrency.USD,
                     Format = ReportFormat.Xlsx,
-                    BaseRates = new TranslationCostsPostEditingGenerateReportRequest.BaseRatesForm
+                    BaseRates = new BaseRatesForm
                     {
                         FullTranslation = 0.1f,
                         Proofread = 0.12f
@@ -140,30 +138,30 @@ namespace Crowdin.Api.Tests.Reports
                     {
                         TmMatch = new[]
                         {
-                            new TranslationCostsPostEditingGenerateReportRequest.Match
+                            new Match
                             {
-                                MatchType = TranslationCostsPostEditingGenerateReportRequest.MatchType.Perfect,
+                                MatchType = MatchType.Perfect,
                                 Price = 0.1f
                             }
                         },
                         MtMatch = new[]
                         {
-                            new TranslationCostsPostEditingGenerateReportRequest.Match
+                            new Match
                             {
-                                MatchType = TranslationCostsPostEditingGenerateReportRequest.MatchType.Option_99_82,
+                                MatchType = MatchType.Option_99_82,
                                 Price = 0.1f
                             }
                         },
                         SuggestionMatch = new[]
                         {
-                            new TranslationCostsPostEditingGenerateReportRequest.Match
+                            new Match
                             {
-                                MatchType = TranslationCostsPostEditingGenerateReportRequest.MatchType.Option_81_60,
+                                MatchType = MatchType.Option_81_60,
                                 Price = 0.1f
                             }
                         }
                     },
-                    GroupBy = TranslationCostsPostEditingGenerateReportRequest.GeneralSchema.GroupingParameter.User,
+                    GroupBy = GroupingParameter.User,
                     LanguageId = "ach",
                     UserIds = new[] { 13 },
                     FileIds = new[] { 138 },
@@ -189,7 +187,7 @@ namespace Crowdin.Api.Tests.Reports
                     Unit = ReportUnit.Words,
                     Currency = ReportCurrency.USD,
                     Format = ReportFormat.Xlsx,
-                    BaseRates = new TranslationCostsPostEditingGenerateReportRequest.BaseRatesForm
+                    BaseRates = new BaseRatesForm
                     {
                         FullTranslation = 0.1f,
                         Proofread = 0.12f
@@ -208,25 +206,25 @@ namespace Crowdin.Api.Tests.Reports
                     {
                         TmMatch = new[]
                         {
-                            new TranslationCostsPostEditingGenerateReportRequest.Match
+                            new Match
                             {
-                                MatchType = TranslationCostsPostEditingGenerateReportRequest.MatchType.Perfect,
+                                MatchType = MatchType.Perfect,
                                 Price = 0.1f
                             }
                         },
                         MtMatch = new[]
                         {
-                            new TranslationCostsPostEditingGenerateReportRequest.Match
+                            new Match
                             {
-                                MatchType = TranslationCostsPostEditingGenerateReportRequest.MatchType.Option_99_82,
+                                MatchType = MatchType.Option_99_82,
                                 Price = 0.1f
                             }
                         },
                         SuggestionMatch = new[]
                         {
-                            new TranslationCostsPostEditingGenerateReportRequest.Match
+                            new Match
                             {
-                                MatchType = TranslationCostsPostEditingGenerateReportRequest.MatchType.Option_81_60,
+                                MatchType = MatchType.Option_81_60,
                                 Price = 0.1f
                             }
                         }
@@ -253,7 +251,7 @@ namespace Crowdin.Api.Tests.Reports
                     Unit = ReportUnit.Words,
                     Currency = ReportCurrency.USD,
                     Format = ReportFormat.Xlsx,
-                    BaseRates = new GroupTranslationCostsPostEditingGenerateGroupReportRequest.BaseRatesForm
+                    BaseRates = new BaseRatesForm
                     {
                         FullTranslation = 0.1f,
                         Proofread = 0.12f
@@ -272,30 +270,30 @@ namespace Crowdin.Api.Tests.Reports
                     {
                         TmMatch = new[]
                         {
-                            new GroupTranslationCostsPostEditingGenerateGroupReportRequest.Match
+                            new Match
                             {
-                                MatchType = GroupTranslationCostsPostEditingGenerateGroupReportRequest.MatchType.Perfect,
+                                MatchType = MatchType.Perfect,
                                 Price = 0.1f
                             }
                         },
                         MtMatch = new[]
                         {
-                            new GroupTranslationCostsPostEditingGenerateGroupReportRequest.Match
+                            new Match
                             {
-                                MatchType = GroupTranslationCostsPostEditingGenerateGroupReportRequest.MatchType.Option_99_82,
+                                MatchType = MatchType.Option_99_82,
                                 Price = 0.1f
                             }
                         },
                         SuggestionMatch = new[]
                         {
-                            new GroupTranslationCostsPostEditingGenerateGroupReportRequest.Match
+                            new Match
                             {
-                                MatchType = GroupTranslationCostsPostEditingGenerateGroupReportRequest.MatchType.Option_81_60,
+                                MatchType = MatchType.Option_81_60,
                                 Price = 0.1f
                             }
                         }
                     },
-                    GroupBy = GroupTranslationCostsPostEditingGenerateGroupReportRequest.GeneralSchema.GroupingParameter.Language,
+                    GroupBy = GroupingParameter.Language,
                     UserIds = new[] { 13 }
                 }
             };
