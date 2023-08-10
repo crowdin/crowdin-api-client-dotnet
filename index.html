@@ -71,7 +71,13 @@
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
 
-<p><a href="https://crowdin.com"><p align='center'><img src='https://support.crowdin.com/assets/logos/crowdin-dark-symbol.png' data-canonical-src='https://support.crowdin.com/assets/logos/crowdin-dark-symbol.png' width='150' height='150' align='center'></p></a></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://support.crowdin.com/assets/logos/symbol/png/crowdin-symbol-cWhite.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://support.crowdin.com/assets/logos/symbol/png/crowdin-symbol-cDark.png">
+    <img width="150" height="150" width="" src="[https://support.crowdin.com/assets/logos/symbol/png/crowdin-symbol-cDark.png](https://crowdin.com)">
+  </source></source></picture>
+</p>
 <h1 id="crowdin-net-client-tweetgithub-repo-stars">Crowdin .NET client <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fcrowdin%2Fcrowdin-api-client-dotnet&amp;text=The%20Crowdin%20.NET%20client%20is%20a%20lightweight%20interface%20to%20the%20Crowdin%20API"><img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social" alt="Tweet"></a> <a href="https://github.com/crowdin/crowdin-api-client-dotnet/stargazers"><img src="https://img.shields.io/github/stars/crowdin/crowdin-api-client-dotnet?style=social&amp;cacheSeconds=1800" alt="GitHub Repo stars"></a></h1>
 <p>The Crowdin .NET client is a lightweight interface to the Crowdin API. It provides common services for making API requests.</p>
 <p>Our API is a full-featured RESTful API that helps you to integrate localization into your development process. The endpoints that we use allow you to easily make calls to retrieve information and perform necessary actions.</p>
@@ -95,16 +101,16 @@
 <h3 id="installation">Installation</h3>
 <p>Install via NuGet:</p>
 <pre><code>// Package Manager
-Install-Package Crowdin.Api -Version 2.14.2
+Install-Package Crowdin.Api -Version 2.17.0
 
 // .Net CLI
-dotnet add package Crowdin.Api --version 2.14.2
+dotnet add package Crowdin.Api --version 2.17.0
 
 // Package Reference
-&lt;PackageReference Include=&quot;Crowdin.Api&quot; Version=&quot;2.14.2&quot; /&gt;
+&lt;PackageReference Include=&quot;Crowdin.Api&quot; Version=&quot;2.17.0&quot; /&gt;
 
 // Paket CLI
-paket add Crowdin.Api --version 2.14.2
+paket add Crowdin.Api --version 2.17.0
 </code></pre>
 <h3 id="usage-examples">Usage examples</h3>
 <h4 id="initialization">Initialization</h4>
@@ -256,7 +262,7 @@ use or other dealings in this Software without prior written authorization.
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/bf5165857a840cb5c6183d35299793d07ef1bdbe/README.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/README.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
