@@ -218,6 +218,86 @@ namespace Crowdin.Api.Tests.SourceFiles
         }
 
         #endregion
+        
+        #region JavaScriptFileExportOptions
+
+        [Fact]
+        public void AddFile_JavascriptExportOptions_RequestSerialization()
+        {
+            var request = new AddFileRequest
+            {
+                StorageId = 1,
+                Name = "fooFile.js",
+                BranchId = 34,
+                DirectoryId = 4,
+                Title = "Foo File",
+                Type = ProjectFileType.Js,
+                ExportOptions = new JavaScriptFileExportOptions()
+                {
+                    ExportPattern = "/files/fooFile.js",
+                    ExportQuotes = ExportQuotesMode.ExportDoubleQuote
+                }
+            };
+
+            string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
+            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.SourceFiles.AddFile_JavaScript_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+        }
+
+        [Fact]
+        public void AddFile_JavaScriptExportOptions_RequestDeserialization()
+        {
+            string requestJson = Core.Resources.SourceFiles.AddFile_JavaScript_Request;
+            var request = JsonConvert.DeserializeObject<AddFileRequest>(requestJson, JsonSettings);
+
+            Assert.NotNull(request);
+            Assert.IsType<JavaScriptFileExportOptions>(request!.ExportOptions);
+
+            var exportOptions = request.ExportOptions as JavaScriptFileExportOptions;
+            Assert.Equal("/files/fooFile.js", exportOptions?.ExportPattern);
+            Assert.Equal(ExportQuotesMode.ExportDoubleQuote, exportOptions?.ExportQuotes);
+        }
+
+        [Fact]
+        public async Task AddFile_JavaScriptExportOptions()
+        {
+            const int projectId = 1;
+            var body = new AddFileRequest
+            {
+                StorageId = 1,
+                Name = "fooFile.js",
+                BranchId = 34,
+                DirectoryId = 4,
+                Title = "Foo File",
+                Type = ProjectFileType.Js,
+                ExportOptions = new JavaScriptFileExportOptions()
+                {
+                    ExportPattern = "/files/fooFile.js",
+                    ExportQuotes = ExportQuotesMode.ExportDoubleQuote
+                }
+            };
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            mockClient
+                .Setup(client => client.SendPostRequest($"/projects/{projectId}/files", body, null))
+                .ReturnsAsync(new CrowdinApiResult()
+                {
+                    StatusCode = HttpStatusCode.Created,
+                    JsonObject = JObject.Parse(Core.Resources.SourceFiles.AddFile_JavaScript_Response)
+                });
+
+            var executor = new SourceFilesApiExecutor(mockClient.Object);
+            File responseFile = await executor.AddFile(projectId, body);
+
+            Assert.NotNull(responseFile);
+            Assert.IsType<JavaScriptFileExportOptions>(responseFile.ExportOptions);
+            var exportOptions = responseFile.ExportOptions as JavaScriptFileExportOptions;
+            Assert.Equal("/files/fooFile.js", exportOptions?.ExportPattern);
+            Assert.Equal(ExportQuotesMode.ExportDoubleQuote, exportOptions?.ExportQuotes);
+        }
+
+        #endregion
 
         [Fact]
         public void AddFile_RequestSerialization()

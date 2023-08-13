@@ -1,4 +1,6 @@
 
+using System.ComponentModel;
+using Crowdin.Api.Core.Converters;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
@@ -25,6 +27,17 @@ namespace Crowdin.Api.SourceFiles
         [JsonProperty("escapeSpecialCharacters")]
         public EscapeSpecialCharsMode EscapeSpecialCharacters { get; set; }
     }
+
+    [PublicAPI]
+    public class JavaScriptFileExportOptions : FileExportOptions
+    {
+        [JsonProperty("exportPattern")]
+        public string ExportPattern { get; set; }
+
+        [JsonProperty("exportQuotes")] 
+        [JsonConverter(typeof(DescriptionEnumConverter))]
+        public ExportQuotesMode ExportQuotes { get; set; }
+    }
     
     [PublicAPI]
     public enum EscapeQuotesMode
@@ -40,5 +53,15 @@ namespace Crowdin.Api.SourceFiles
     {
         DoNotEscape = 0,
         EscapeByBackSlash = 1
+    }
+
+    [PublicAPI]
+    public enum ExportQuotesMode
+    {
+        [Description("single")]
+        ExportSingleQuote,
+        
+        [Description("double")]
+        ExportDoubleQuote
     }
 }

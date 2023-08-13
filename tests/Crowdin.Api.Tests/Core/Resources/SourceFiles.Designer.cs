@@ -129,6 +129,50 @@ namespace Crowdin.Api.Tests.Core.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to {
+        ///            &quot;storageId&quot;: 1,
+        ///            &quot;name&quot;: &quot;fooFile.js&quot;,
+        ///            &quot;branchId&quot;: 34,
+        ///            &quot;directoryId&quot;: 4,
+        ///            &quot;title&quot;: &quot;Foo File&quot;,
+        ///            &quot;type&quot;: &quot;js&quot;,
+        ///            &quot;exportOptions&quot;: {
+        ///                &quot;exportPattern&quot;: &quot;/files/fooFile.js&quot;,
+        ///                &quot;exportQuotes&quot;: &quot;double&quot;,
+        ///            },
+        ///        }.
+        /// </summary>
+        internal static string AddFile_JavaScript_Request {
+            get {
+                return ResourceManager.GetString("AddFile_JavaScript_Request", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///            &quot;id&quot;: 44,
+        ///            &quot;projectId&quot; : 1,
+        ///            &quot;branchId&quot;: 34,
+        ///            &quot;directoryId&quot;: 4,
+        ///            &quot;name&quot;: &quot;fooFile.js&quot;,
+        ///            &quot;title&quot;: &quot;Foo File&quot;,
+        ///            &quot;type&quot;: &quot;js&quot;,
+        ///            &quot;path&quot; : &quot;/files/fooFile.js&quot;,
+        ///            &quot;status&quot; : &quot;active&quot;,
+        ///            &quot;revisionId&quot;: 1,
+        ///            &quot;priority&quot; : &quot;normal&quot;,
+        ///            &quot;importOptions&quot;: null,
+        ///            &quot;exportOptions&quot;: {
+        ///                &quot;exportPattern&quot;: &quot;/files/fooFile.js&quot;,
+        ///                &quot;exportQuotes&quot;: &quot;d [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string AddFile_JavaScript_Response {
+            get {
+                return ResourceManager.GetString("AddFile_JavaScript_Response", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
         ///    &quot;storageId&quot;: 1,
         ///    &quot;importOptions&quot;: {
         ///        &quot;excludedFrontMatterElements&quot;: [
@@ -187,6 +231,39 @@ namespace Crowdin.Api.Tests.Core.Resources {
         internal static string DownloadFilePreview_Response {
             get {
                 return ResourceManager.GetString("DownloadFilePreview_Response", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///            &quot;id&quot;: 44,
+        ///            &quot;projectId&quot; : 2,
+        ///            &quot;branchId&quot;: 34,
+        ///            &quot;directoryId&quot;: 4,
+        ///            &quot;name&quot;: &quot;fooFile.js&quot;,
+        ///            &quot;title&quot;: &quot;Foo File&quot;,
+        ///            &quot;type&quot;: &quot;js&quot;,
+        ///            &quot;path&quot; : &quot;/files/fooFile.js&quot;,
+        ///            &quot;status&quot; : &quot;active&quot;,
+        ///            &quot;revisionId&quot;: 1,
+        ///            &quot;priority&quot; : &quot;normal&quot;,
+        ///            &quot;importOptions&quot;: null,
+        ///            &quot;exportOptions&quot;: {
+        ///                &quot;exportPattern&quot;: &quot;/files/fooFile.js&quot;,
+        ///                &quot;exportQuotes&quot;: &quot;s [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string EditFile_JavaScript_Response {
+            get {
+                return ResourceManager.GetString("EditFile_JavaScript_Response", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [{&quot;path&quot;:&quot;/exportOptions/exportQuotes&quot;,&quot;op&quot;:&quot;replace&quot;,&quot;value&quot;:&quot;single&quot;}].
+        /// </summary>
+        internal static string EditFile_JavaScriptRequest {
+            get {
+                return ResourceManager.GetString("EditFile_JavaScriptRequest", resourceCulture);
             }
         }
         

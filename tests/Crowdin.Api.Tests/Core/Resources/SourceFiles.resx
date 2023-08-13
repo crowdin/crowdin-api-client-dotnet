@@ -159,4 +159,69 @@
     }
 }</value>
     </data>
+    <data name="AddFile_JavaScript_Request" xml:space="preserve">
+        <value>{
+            "storageId": 1,
+            "name": "fooFile.js",
+            "branchId": 34,
+            "directoryId": 4,
+            "title": "Foo File",
+            "type": "js",
+            "exportOptions": {
+                "exportPattern": "/files/fooFile.js",
+                "exportQuotes": "double",
+            },
+        }</value>
+    </data>
+    <data name="AddFile_JavaScript_Response" xml:space="preserve">
+        <value>{
+            "id": 44,
+            "projectId" : 1,
+            "branchId": 34,
+            "directoryId": 4,
+            "name": "fooFile.js",
+            "title": "Foo File",
+            "type": "js",
+            "path" : "/files/fooFile.js",
+            "status" : "active",
+            "revisionId": 1,
+            "priority" : "normal",
+            "importOptions": null,
+            "exportOptions": {
+                "exportPattern": "/files/fooFile.js",
+                "exportQuotes": "double"
+            },
+            "excludedTargetLanguages" : null,
+            "parserVersion" : null,
+            "createdAt" : null,
+            "updateAt" : null
+        }</value>
+    </data>
+    <data name="EditFile_JavaScriptRequest" xml:space="preserve">
+        <value>[{"path":"/exportOptions/exportQuotes","op":"replace","value":"single"}]</value>
+    </data>
+    <data name="EditFile_JavaScript_Response" xml:space="preserve">
+        <value>{
+            "id": 44,
+            "projectId" : 2,
+            "branchId": 34,
+            "directoryId": 4,
+            "name": "fooFile.js",
+            "title": "Foo File",
+            "type": "js",
+            "path" : "/files/fooFile.js",
+            "status" : "active",
+            "revisionId": 1,
+            "priority" : "normal",
+            "importOptions": null,
+            "exportOptions": {
+                "exportPattern": "/files/fooFile.js",
+                "exportQuotes": "single"
+            },
+            "excludedTargetLanguages" : null,
+            "parserVersion" : null,
+            "createdAt" : null,
+            "updateAt" : null
+        }</value>
+    </data>
 </root>

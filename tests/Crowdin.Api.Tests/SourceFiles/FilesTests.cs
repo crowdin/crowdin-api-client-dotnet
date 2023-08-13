@@ -190,6 +190,67 @@ namespace Crowdin.Api.Tests.SourceFiles {
             Assert.IsType<SpreadsheetFileImportOptions>(fileResponse.ImportOptions);
         }
 
+        [Fact]
+        public async Task EditFile_JavaScriptExportOptions()
+        {
+            //Add a new JS file
+            var body = new AddFileRequest
+            {
+                StorageId = 1,
+                Name = "fooFile.js",
+                BranchId = 34,
+                DirectoryId = 4,
+                Title = "Foo File",
+                Type = ProjectFileType.Js,
+                ExportOptions = new JavaScriptFileExportOptions()
+                {
+                    ExportPattern = "/files/fooFile.js",
+                    ExportQuotes = ExportQuotesMode.ExportDoubleQuote
+                }
+            };
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+            mockClient
+                .Setup(client => client.SendPostRequest($"/projects/2/files", body, null))
+                .ReturnsAsync(new CrowdinApiResult()
+                {
+                    StatusCode = HttpStatusCode.Created,
+                    JsonObject = JObject.Parse(Core.Resources.SourceFiles.AddFile_JavaScript_Response)
+                });
+
+            //Edit the file export options of the newly created JS file 
+            var patches = new List<FilePatch>
+            {
+                new FilePatch
+                {
+                    Operation = PatchOperation.Replace,
+                    Path = FilePatchPath.ExportQuotes,
+                    Value = ExportQuotesMode.ExportSingleQuote
+                }
+            };
+            var options = TestUtils.CreateJsonSerializerOptions();
+            string actualRequestJson = JsonConvert.SerializeObject(patches, options);
+            string expectedRequestJson = Core.Resources.SourceFiles.EditFile_JavaScriptRequest;
+            Assert.Equal(actualRequestJson, expectedRequestJson);
+
+            mockClient
+                .Setup(client => client
+                    .SendPatchRequest($"/projects/2/files/44", patches, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Core.Resources.SourceFiles.EditFile_JavaScript_Response)
+                });
+
+            var executor = new SourceFilesApiExecutor(mockClient.Object);
+            File fileResponse = await executor.EditFile(2, 44, patches);
+            var exportOptions = fileResponse.ExportOptions as JavaScriptFileExportOptions;
+
+            //Assert
+            Assert.NotNull(fileResponse);
+            Assert.IsType<JavaScriptFileExportOptions>(fileResponse.ExportOptions);
+            Assert.Equal(ExportQuotesMode.ExportSingleQuote, exportOptions!.ExportQuotes);
+}
+
         private async Task GetFileHelper<T>(JObject jObject) where T : FileInfoResource {
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
 
