@@ -28,6 +28,7 @@ namespace Crowdin.Api.Core.Converters
                 obj.TryGetValue("escapeQuotes", out _)
                     ? typeof(PropertyFileExportOptions)
                     : typeof(GeneralFileExportOptions);
+            returnType = obj.TryGetValue("exportQuotes", out _) ? typeof(JavaScriptFileExportOptions) : returnType;
             
             return (FileExportOptions?) JsonConvert.DeserializeObject(obj.ToString(), returnType);
         }

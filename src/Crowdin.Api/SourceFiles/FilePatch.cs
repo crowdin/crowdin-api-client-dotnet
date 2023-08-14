@@ -80,6 +80,9 @@ namespace Crowdin.Api.SourceFiles
         [Description("/exportOptions/exportPattern")]
         ExportPattern,
         
+        [Description("/exportOptions/exportQuotes")]
+        ExportQuotes,
+        
         [Description("/exportOptions/escapeQuotes")]
         EscapeQuotes,
         
