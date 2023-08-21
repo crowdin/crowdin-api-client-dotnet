@@ -208,7 +208,8 @@ namespace Crowdin.Api.Tests.Core.Resources {
         ///  &quot;email&quot;: &quot;john@example.com&quot;,
         ///  &quot;firstName&quot;: &quot;Jon&quot;,
         ///  &quot;lastName&quot;: &quot;Doe&quot;,
-        ///  &quot;timezone&quot;: &quot;America/New_York&quot;
+        ///  &quot;timezone&quot;: &quot;America/New_York&quot;,
+        ///  &quot;adminAccess&quot;: true
         ///}.
         /// </summary>
         internal static string InviteUser_Request {

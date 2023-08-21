@@ -27,7 +27,8 @@ namespace Crowdin.Api.Tests.Users
                 Email = "john@example.com",
                 FirstName = "Jon",
                 LastName = "Doe",
-                TimeZone = "America/New_York"
+                TimeZone = "America/New_York",
+                AdminAccess = true
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
@@ -116,6 +117,7 @@ namespace Crowdin.Api.Tests.Users
             Assert.Equal(DateTimeOffset.Parse("2019-07-11T07:40:22+00:00"), user.CreatedAt);
             Assert.Equal(DateTimeOffset.Parse("2019-10-23T11:44:02+00:00"), user.LastSeen);
             Assert.Equal(UserTwoFactorStatus.Enabled, user.TwoFactor);
+            Assert.True(user.IsAdmin);
         }
 
         [Fact]
