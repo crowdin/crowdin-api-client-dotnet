@@ -19403,6 +19403,24 @@ references:
   commentId: F:Crowdin.Api.SourceFiles.EscapeSpecialCharsMode.EscapeByBackSlash
   fullName: Crowdin.Api.SourceFiles.EscapeSpecialCharsMode.EscapeByBackSlash
   nameWithType: EscapeSpecialCharsMode.EscapeByBackSlash
+- uid: Crowdin.Api.SourceFiles.ExportQuotesMode
+  name: ExportQuotesMode
+  href: api/Crowdin.Api.SourceFiles.ExportQuotesMode.html
+  commentId: T:Crowdin.Api.SourceFiles.ExportQuotesMode
+  fullName: Crowdin.Api.SourceFiles.ExportQuotesMode
+  nameWithType: ExportQuotesMode
+- uid: Crowdin.Api.SourceFiles.ExportQuotesMode.ExportDoubleQuote
+  name: ExportDoubleQuote
+  href: api/Crowdin.Api.SourceFiles.ExportQuotesMode.html#Crowdin_Api_SourceFiles_ExportQuotesMode_ExportDoubleQuote
+  commentId: F:Crowdin.Api.SourceFiles.ExportQuotesMode.ExportDoubleQuote
+  fullName: Crowdin.Api.SourceFiles.ExportQuotesMode.ExportDoubleQuote
+  nameWithType: ExportQuotesMode.ExportDoubleQuote
+- uid: Crowdin.Api.SourceFiles.ExportQuotesMode.ExportSingleQuote
+  name: ExportSingleQuote
+  href: api/Crowdin.Api.SourceFiles.ExportQuotesMode.html#Crowdin_Api_SourceFiles_ExportQuotesMode_ExportSingleQuote
+  commentId: F:Crowdin.Api.SourceFiles.ExportQuotesMode.ExportSingleQuote
+  fullName: Crowdin.Api.SourceFiles.ExportQuotesMode.ExportSingleQuote
+  nameWithType: ExportQuotesMode.ExportSingleQuote
 - uid: Crowdin.Api.SourceFiles.File
   name: File
   href: api/Crowdin.Api.SourceFiles.File.html
@@ -20057,6 +20075,12 @@ references:
   commentId: F:Crowdin.Api.SourceFiles.FilePatchPath.ExportPattern
   fullName: Crowdin.Api.SourceFiles.FilePatchPath.ExportPattern
   nameWithType: FilePatchPath.ExportPattern
+- uid: Crowdin.Api.SourceFiles.FilePatchPath.ExportQuotes
+  name: ExportQuotes
+  href: api/Crowdin.Api.SourceFiles.FilePatchPath.html#Crowdin_Api_SourceFiles_FilePatchPath_ExportQuotes
+  commentId: F:Crowdin.Api.SourceFiles.FilePatchPath.ExportQuotes
+  fullName: Crowdin.Api.SourceFiles.FilePatchPath.ExportQuotes
+  nameWithType: FilePatchPath.ExportQuotes
 - uid: Crowdin.Api.SourceFiles.FilePatchPath.FirstLineContainsHeader
   name: FirstLineContainsHeader
   href: api/Crowdin.Api.SourceFiles.FilePatchPath.html#Crowdin_Api_SourceFiles_FilePatchPath_FirstLineContainsHeader
@@ -20539,6 +20563,38 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.SourceFiles.HtmlWithFrontMatterFileImportOptions.SrxStorageId
   nameWithType: HtmlWithFrontMatterFileImportOptions.SrxStorageId
+- uid: Crowdin.Api.SourceFiles.JavaScriptFileExportOptions
+  name: JavaScriptFileExportOptions
+  href: api/Crowdin.Api.SourceFiles.JavaScriptFileExportOptions.html
+  commentId: T:Crowdin.Api.SourceFiles.JavaScriptFileExportOptions
+  fullName: Crowdin.Api.SourceFiles.JavaScriptFileExportOptions
+  nameWithType: JavaScriptFileExportOptions
+- uid: Crowdin.Api.SourceFiles.JavaScriptFileExportOptions.ExportPattern
+  name: ExportPattern
+  href: api/Crowdin.Api.SourceFiles.JavaScriptFileExportOptions.html#Crowdin_Api_SourceFiles_JavaScriptFileExportOptions_ExportPattern
+  commentId: P:Crowdin.Api.SourceFiles.JavaScriptFileExportOptions.ExportPattern
+  fullName: Crowdin.Api.SourceFiles.JavaScriptFileExportOptions.ExportPattern
+  nameWithType: JavaScriptFileExportOptions.ExportPattern
+- uid: Crowdin.Api.SourceFiles.JavaScriptFileExportOptions.ExportPattern*
+  name: ExportPattern
+  href: api/Crowdin.Api.SourceFiles.JavaScriptFileExportOptions.html#Crowdin_Api_SourceFiles_JavaScriptFileExportOptions_ExportPattern_
+  commentId: Overload:Crowdin.Api.SourceFiles.JavaScriptFileExportOptions.ExportPattern
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.JavaScriptFileExportOptions.ExportPattern
+  nameWithType: JavaScriptFileExportOptions.ExportPattern
+- uid: Crowdin.Api.SourceFiles.JavaScriptFileExportOptions.ExportQuotes
+  name: ExportQuotes
+  href: api/Crowdin.Api.SourceFiles.JavaScriptFileExportOptions.html#Crowdin_Api_SourceFiles_JavaScriptFileExportOptions_ExportQuotes
+  commentId: P:Crowdin.Api.SourceFiles.JavaScriptFileExportOptions.ExportQuotes
+  fullName: Crowdin.Api.SourceFiles.JavaScriptFileExportOptions.ExportQuotes
+  nameWithType: JavaScriptFileExportOptions.ExportQuotes
+- uid: Crowdin.Api.SourceFiles.JavaScriptFileExportOptions.ExportQuotes*
+  name: ExportQuotes
+  href: api/Crowdin.Api.SourceFiles.JavaScriptFileExportOptions.html#Crowdin_Api_SourceFiles_JavaScriptFileExportOptions_ExportQuotes_
+  commentId: Overload:Crowdin.Api.SourceFiles.JavaScriptFileExportOptions.ExportQuotes
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.JavaScriptFileExportOptions.ExportQuotes
+  nameWithType: JavaScriptFileExportOptions.ExportQuotes
 - uid: Crowdin.Api.SourceFiles.MdxV1FileImportOptions
   name: MdxV1FileImportOptions
   href: api/Crowdin.Api.SourceFiles.MdxV1FileImportOptions.html
@@ -33789,6 +33845,19 @@ references:
   commentId: T:Crowdin.Api.Users.EnterpriseInviteUserRequest
   fullName: Crowdin.Api.Users.EnterpriseInviteUserRequest
   nameWithType: EnterpriseInviteUserRequest
+- uid: Crowdin.Api.Users.EnterpriseInviteUserRequest.AdminAccess
+  name: AdminAccess
+  href: api/Crowdin.Api.Users.EnterpriseInviteUserRequest.html#Crowdin_Api_Users_EnterpriseInviteUserRequest_AdminAccess
+  commentId: P:Crowdin.Api.Users.EnterpriseInviteUserRequest.AdminAccess
+  fullName: Crowdin.Api.Users.EnterpriseInviteUserRequest.AdminAccess
+  nameWithType: EnterpriseInviteUserRequest.AdminAccess
+- uid: Crowdin.Api.Users.EnterpriseInviteUserRequest.AdminAccess*
+  name: AdminAccess
+  href: api/Crowdin.Api.Users.EnterpriseInviteUserRequest.html#Crowdin_Api_Users_EnterpriseInviteUserRequest_AdminAccess_
+  commentId: Overload:Crowdin.Api.Users.EnterpriseInviteUserRequest.AdminAccess
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.EnterpriseInviteUserRequest.AdminAccess
+  nameWithType: EnterpriseInviteUserRequest.AdminAccess
 - uid: Crowdin.Api.Users.EnterpriseInviteUserRequest.Email
   name: Email
   href: api/Crowdin.Api.Users.EnterpriseInviteUserRequest.html#Crowdin_Api_Users_EnterpriseInviteUserRequest_Email
