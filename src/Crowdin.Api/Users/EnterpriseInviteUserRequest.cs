@@ -22,5 +22,8 @@ namespace Crowdin.Api.Users
         
         [JsonProperty("timezone")]
         public string? TimeZone { get; set; }
+
+        [JsonProperty("adminAccess")]
+        public bool? AdminAccess { get; set; }
     }
 }

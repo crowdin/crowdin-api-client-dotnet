@@ -23,7 +23,8 @@
   "email": "john@example.com",
   "firstName": "Jon",
   "lastName": "Doe",
-  "timezone": "America/New_York"
+  "timezone": "America/New_York",
+  "adminAccess": true
 }</value>
     </data>
     <data name="InviteUser_Response" xml:space="preserve">
