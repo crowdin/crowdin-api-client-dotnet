@@ -119,6 +119,7 @@ namespace Crowdin.Api
                     new LanguageTranslationsConverter(),
                     new ToStringConverter(),
                     new ProjectFileFormatSettingsConverter(),
+                    new ProjectStringsExporterSettingsConverter(),
                     new ReportSettingsTemplateConverter(),
                     new WorkflowStepConverter()
                 }
