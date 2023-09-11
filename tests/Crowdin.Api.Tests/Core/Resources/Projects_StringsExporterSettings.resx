@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        </value>
+    </resheader>
+
+    <data name="ListProjectStringsExporterSettings_Response" xml:space="preserve">
+        <value>
+            {   
+                "data": [
+                    {
+                        "data": {
+                            "id": 45,
+                            "format": "android",
+                            "settings": {
+                                "convertPlaceHolders": true
+                            },
+                            "createdAt": "2023-09-10T15:10:43+00:00",
+                            "updatedAt": "2023-09-10T15:10:46+00:00"
+                        }
+                    },
+                    {
+                        "data": {
+                            "id": 46,
+                            "format": "macosx",
+                            "settings": {
+                                "convertPlaceHolders": false
+                            },
+                            "createdAt": "2023-09-10T15:10:43+00:00",
+                            "updatedAt": null
+                        }
+                    },
+                ],
+                "pagination": {
+                    "offset": 0,
+                    "limit": 25
+                }
+            }        
+        </value>
+    </data>
+    <data name="AddProjectStringsExporterSettings_Request" xml:space="preserve">
+        <value>
+            {
+                "format": "android",
+                "settings": {
+                    "convertPlaceHolders": true
+                }
+            }
+        </value>
+    </data>
+    <data name="AddProjectStringsExporterSettings_Response" xml:space="preserve">
+        <value>
+            {
+                "id": 44,
+                "format": "android",
+                "settings": {
+                    "convertPlaceHolders": true
+                },
+                "createdAt": "2023-09-10T15:10:43+00:00",
+                "updatedAt": "2023-09-10T15:10:46+00:00"
+            }
+        </value>
+    </data>
+    <data name="GetProjectStringsExporterSettings_Response" xml:space="preserve">
+        <value>
+            {
+                "id": 45,
+                "format": "android",
+                "settings": {
+                    "convertPlaceHolders": true
+                },
+                "createdAt": "2023-09-10T15:10:43+00:00",
+                "updatedAt": "2023-09-10T15:10:46+00:00"
+            }
+        </value>
+    </data>
+    <data name="EditProjectStringsExporterSettings_Request" xml:space="preserve">
+        <value>
+            [
+                {
+                    "path": "/format",
+                    "op": "replace",
+                    "value": "macosx"
+                },
+                {
+                    "path": "/settings",
+                    "op": "replace",
+                    "value": {
+                        "convertPlaceHolders": false
+                    }
+                },
+            ]
+        </value>
+    </data>
+    <data name="EditProjectStringsExporterSettings_Response" xml:space="preserve">
+        <value>
+            {
+                "id": 44,
+                "format": "macosx",
+                "settings": {
+                    "convertPlaceHolders": false
+                },
+                "createdAt": "2023-09-10T15:10:43+00:00",
+                "updatedAt": "2023-09-10T15:10:46+00:00"
+            }
+        </value>
+    </data>
+</root>
+
+
+    

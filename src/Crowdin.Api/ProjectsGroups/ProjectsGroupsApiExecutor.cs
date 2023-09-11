@@ -306,5 +306,100 @@ namespace Crowdin.Api.ProjectsGroups
         #endregion
         
         #endregion
+        
+        #region Project Strings Exporter Settings
+
+        /// <summary>
+        /// List Project Strings Exporter Settings. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.strings-exporter-settings.getMany">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.strings-exporter-settings.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<StringsExporterSettingsResource>> ListProjectStringsExporterSettings(int projectId)
+        {
+            string url = FormUrl_ProjectStringsExporterSettings(projectId);
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseList<StringsExporterSettingsResource>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Add Project Strings Exporter Settings. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.strings-exporter-settings.post">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.strings-exporter-settings.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<StringsExporterSettingsResource> AddProjectStringsExporterSettings(
+            int projectId,
+            AddProjectStringsExporterSettingsRequest request)
+        {
+            string url = FormUrl_ProjectStringsExporterSettings(projectId);
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<StringsExporterSettingsResource>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Get Project Strings Exporter Settings. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.strings-exporter-settings.get">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.strings-exporter-settings.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<StringsExporterSettingsResource> GetProjectStringsExporterSettings(
+            int projectId,
+            int stringsExporterSettingsId)
+        {
+            string url = FormUrl_ProjectStringsExporterSettingsId(projectId, stringsExporterSettingsId);
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<StringsExporterSettingsResource>(result.JsonObject);
+        }
+
+
+        /// <summary>
+        /// Delete Project Strings Exporter Settings. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.strings-exporter-settings.delete">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.strings-exporter-settings.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task DeleteProjectStringsExporterSettings(
+            int projectId,
+            int stringsExporterSettingsId)
+        {
+            string url = FormUrl_ProjectStringsExporterSettingsId(projectId, stringsExporterSettingsId);
+            HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
+            Utils.ThrowIfStatusNot204(statusCode, $"Project Strings Exporter Settings {stringsExporterSettingsId} remove failed");
+        }
+
+        /// <summary>
+        /// Edit Project Strings Exporter Settings. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.strings-exporter-settings.patch">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.strings-exporter-settings.patch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<StringsExporterSettingsResource> EditProjectStringsExporterSettings(
+            int projectId,
+            int stringsExporterSettingsId,
+            IEnumerable<ProjectStringsExporterSettingsPatch> patches)
+        {
+            string url = FormUrl_ProjectStringsExporterSettingsId(projectId, stringsExporterSettingsId);
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            return _jsonParser.ParseResponseObject<StringsExporterSettingsResource>(result.JsonObject);
+        }
+        
+        #region Helper methods
+
+        private static string FormUrl_ProjectStringsExporterSettings(int projectId)
+        {
+            return $"/projects/{projectId}/strings-exporter-settings";
+        }
+
+        private static string FormUrl_ProjectStringsExporterSettingsId(
+            int projectId,
+            int stringsExporterSettingsId)
+        {
+            return $"/projects/{projectId}/strings-exporter-settings/{stringsExporterSettingsId}";
+        }
+        
+        #endregion
+
+        #endregion
     }
 }

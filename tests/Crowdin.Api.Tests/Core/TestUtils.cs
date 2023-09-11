@@ -48,6 +48,7 @@ namespace Crowdin.Api.Tests.Core
                     new LanguageTranslationsConverter(),
                     new ToStringConverter(),
                     new ProjectFileFormatSettingsConverter(),
+                    new ProjectStringsExporterSettingsConverter(),
                     new ReportSettingsTemplateConverter(),
                     new WorkflowStepConverter()
                 }
