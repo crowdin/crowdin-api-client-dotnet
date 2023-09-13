@@ -35,7 +35,9 @@
       "autoApproveOption": "all",
       "duplicateTranslations": true,
       "translateUntranslatedOnly": true,
-      "translateWithPerfectMatchOnly": true
+      "translateWithPerfectMatchOnly": true,
+      "labelIds": [2, 3],
+      "excludeLabelIds": [4]      
     },
     "createdAt": "2019-09-20T14:05:50+00:00",
     "updatedAt": "2019-09-20T14:05:50+00:00",
@@ -130,7 +132,9 @@
       "skipApprovedTranslations": true,
       "translateUntranslatedOnly": true,
       "translateWithPerfectMatchOnly": true,
-      "markAddedTranslationsAsDone": true
+      "markAddedTranslationsAsDone": true,
+      "labelIds": [2, 3],
+      "excludeLabelIds": [4]      
     },
     "createdAt": "2019-09-20T14:05:50+00:00",
     "updatedAt": "2019-09-20T14:05:50+00:00",

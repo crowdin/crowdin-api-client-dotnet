@@ -76,10 +76,11 @@ namespace Crowdin.Api.Tests.Core.Resources {
         ///      &quot;autoApproveOption&quot;: &quot;all&quot;,
         ///      &quot;duplicateTranslations&quot;: true,
         ///      &quot;translateUntranslatedOnly&quot;: true,
-        ///      &quot;translateWithPerfectMatchOnly&quot;: true
+        ///      &quot;translateWithPerfectMatchOnly&quot;: true,
+        ///      &quot;labelIds&quot;: [2, 3],
+        ///      &quot;excludeLabelIds&quot;: [4]      
         ///    },
-        ///    &quot;createdAt&quot;: &quot;2019-09-20T14:05:50+00:00&quot;,
-        ///    &quot;updatedAt&quot;: &quot;2019-09-20T14:05:50+00:0 [rest of string was truncated]&quot;;.
+        ///    &quot;createdAt&quot;: &quot;2019-09 [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ApplyPreTranslationResponse {
             get {
@@ -140,9 +141,8 @@ namespace Crowdin.Api.Tests.Core.Resources {
         ///      &quot;skipApprovedTranslations&quot;: true,
         ///      &quot;translateUntranslatedOnly&quot;: true,
         ///      &quot;translateWithPerfectMatchOnly&quot;: true,
-        ///      &quot;markAddedTranslationsAsDone&quot;: true
-        ///    },
-        ///     [rest of string was truncated]&quot;;.
+        ///      &quot;markAddedTranslationsAsDone&quot;: true,
+        ///      &quot;labe [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GetPreTranslationStatus_Response {
             get {

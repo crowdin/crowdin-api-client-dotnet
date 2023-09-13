@@ -33,5 +33,11 @@ namespace Crowdin.Api.Translations
         
         [JsonProperty("translateWithPerfectMatchOnly")]
         public bool TranslateWithPerfectMatchOnly { get; set; }
+        
+        [JsonProperty("labelIds")]
+        public int[] LabelIds { get; set; }
+
+        [JsonProperty("excludeLabelIds")]
+        public int[] ExcludeLabelIds { get; set; }
     }
 }
