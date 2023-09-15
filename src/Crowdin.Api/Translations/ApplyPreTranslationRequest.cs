@@ -39,5 +39,12 @@ namespace Crowdin.Api.Translations
         
         [JsonProperty("markAddedTranslationsAsDone")]
         public bool? MarkAddedTranslationsAsDone { get; set; }
+        
+        [JsonProperty("labelIds")]
+        public ICollection<int> LabelIds { get; set; } = new List<int>();
+
+        [JsonProperty("excludeLabelIds")]
+        public ICollection<int> ExcludeLabelIds { get; set; } = new List<int>();
+
     }
 }

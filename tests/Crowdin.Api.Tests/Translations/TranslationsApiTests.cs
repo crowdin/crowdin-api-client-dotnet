@@ -34,7 +34,9 @@ namespace Crowdin.Api.Tests.Translations
                 FallbackLanguages = new Dictionary<string, string[]>
                 {
                     { "uk", new[] { "ru", "en" } }
-                }
+                },
+                LabelIds = new HashSet<int> { 2, 3 },
+                ExcludeLabelIds = new HashSet<int> { 4 }
             };
 
             var mockClient = new Mock<ICrowdinApiClient>();
@@ -158,6 +160,11 @@ namespace Crowdin.Api.Tests.Translations
             Assert.True(attributes.TranslateUntranslatedOnly);
             Assert.True(attributes.TranslateWithPerfectMatchOnly);
             Assert.True(attributes.MarkAddedTranslationsAsDone);
+
+            Assert.Equal(2, attributes.LabelIds.Length);
+            Assert.Contains(2, attributes.LabelIds);
+            Assert.Contains(3, attributes.LabelIds);
+            Assert.Equal(4, attributes.ExcludeLabelIds.Single());
         }
     }
 }
