@@ -7462,6 +7462,38 @@ references:
   commentId: T:Crowdin.Api.ProjectsGroups.AddProjectRequest
   fullName: Crowdin.Api.ProjectsGroups.AddProjectRequest
   nameWithType: AddProjectRequest
+- uid: Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest
+  name: AddProjectStringsExporterSettingsRequest
+  href: api/Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest.html
+  commentId: T:Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest
+  fullName: Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest
+  nameWithType: AddProjectStringsExporterSettingsRequest
+- uid: Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest.Format
+  name: Format
+  href: api/Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest.html#Crowdin_Api_ProjectsGroups_AddProjectStringsExporterSettingsRequest_Format
+  commentId: P:Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest.Format
+  fullName: Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest.Format
+  nameWithType: AddProjectStringsExporterSettingsRequest.Format
+- uid: Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest.Format*
+  name: Format
+  href: api/Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest.html#Crowdin_Api_ProjectsGroups_AddProjectStringsExporterSettingsRequest_Format_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest.Format
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest.Format
+  nameWithType: AddProjectStringsExporterSettingsRequest.Format
+- uid: Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest.Settings
+  name: Settings
+  href: api/Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest.html#Crowdin_Api_ProjectsGroups_AddProjectStringsExporterSettingsRequest_Settings
+  commentId: P:Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest.Settings
+  fullName: Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest.Settings
+  nameWithType: AddProjectStringsExporterSettingsRequest.Settings
+- uid: Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest.Settings*
+  name: Settings
+  href: api/Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest.html#Crowdin_Api_ProjectsGroups_AddProjectStringsExporterSettingsRequest_Settings_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest.Settings
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest.Settings
+  nameWithType: AddProjectStringsExporterSettingsRequest.Settings
 - uid: Crowdin.Api.ProjectsGroups.AdocFileFormatSettings
   name: AdocFileFormatSettings
   href: api/Crowdin.Api.ProjectsGroups.AdocFileFormatSettings.html
@@ -7526,6 +7558,12 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.AndroidFileFormatSettings.SrxStorageId
   nameWithType: AndroidFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.AndroidStringsExporterSettings
+  name: AndroidStringsExporterSettings
+  href: api/Crowdin.Api.ProjectsGroups.AndroidStringsExporterSettings.html
+  commentId: T:Crowdin.Api.ProjectsGroups.AndroidStringsExporterSettings
+  fullName: Crowdin.Api.ProjectsGroups.AndroidStringsExporterSettings
+  nameWithType: AndroidStringsExporterSettings
 - uid: Crowdin.Api.ProjectsGroups.ArbFileFormatSettings
   name: ArbFileFormatSettings
   href: api/Crowdin.Api.ProjectsGroups.ArbFileFormatSettings.html
@@ -9675,6 +9713,12 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.MacOsXFileFormatSettings.SrxStorageId
   nameWithType: MacOsXFileFormatSettings.SrxStorageId
+- uid: Crowdin.Api.ProjectsGroups.MacOsxStringsExporterSettings
+  name: MacOsxStringsExporterSettings
+  href: api/Crowdin.Api.ProjectsGroups.MacOsxStringsExporterSettings.html
+  commentId: T:Crowdin.Api.ProjectsGroups.MacOsxStringsExporterSettings
+  fullName: Crowdin.Api.ProjectsGroups.MacOsxStringsExporterSettings
+  nameWithType: MacOsxStringsExporterSettings
 - uid: Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings
   name: MadcapFlsnpFileFormatSettings
   href: api/Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings.html
@@ -11166,6 +11210,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.AddProjectFileFormatSettings
   nameWithType: ProjectsGroupsApiExecutor.AddProjectFileFormatSettings
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.AddProjectStringsExporterSettings(System.Int32,Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest)
+  name: AddProjectStringsExporterSettings(Int32, AddProjectStringsExporterSettingsRequest)
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_AddProjectStringsExporterSettings_System_Int32_Crowdin_Api_ProjectsGroups_AddProjectStringsExporterSettingsRequest_
+  commentId: M:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.AddProjectStringsExporterSettings(System.Int32,Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest)
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.AddProjectStringsExporterSettings(System.Int32, Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest)
+  nameWithType: ProjectsGroupsApiExecutor.AddProjectStringsExporterSettings(Int32, AddProjectStringsExporterSettingsRequest)
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.AddProjectStringsExporterSettings*
+  name: AddProjectStringsExporterSettings
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_AddProjectStringsExporterSettings_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.AddProjectStringsExporterSettings
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.AddProjectStringsExporterSettings
+  nameWithType: ProjectsGroupsApiExecutor.AddProjectStringsExporterSettings
 - uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DeleteGroup(System.Int32)
   name: DeleteGroup(Int32)
   href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_DeleteGroup_System_Int32_
@@ -11205,6 +11262,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DeleteProjectFileFormatSettings
   nameWithType: ProjectsGroupsApiExecutor.DeleteProjectFileFormatSettings
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DeleteProjectStringsExporterSettings(System.Int32,System.Int32)
+  name: DeleteProjectStringsExporterSettings(Int32, Int32)
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_DeleteProjectStringsExporterSettings_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DeleteProjectStringsExporterSettings(System.Int32,System.Int32)
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DeleteProjectStringsExporterSettings(System.Int32, System.Int32)
+  nameWithType: ProjectsGroupsApiExecutor.DeleteProjectStringsExporterSettings(Int32, Int32)
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DeleteProjectStringsExporterSettings*
+  name: DeleteProjectStringsExporterSettings
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_DeleteProjectStringsExporterSettings_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DeleteProjectStringsExporterSettings
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DeleteProjectStringsExporterSettings
+  nameWithType: ProjectsGroupsApiExecutor.DeleteProjectStringsExporterSettings
 - uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.DownloadProjectFileFormatSettingsCustomSegmentation(System.Int32,System.Int32)
   name: DownloadProjectFileFormatSettingsCustomSegmentation(Int32, Int32)
   href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_DownloadProjectFileFormatSettingsCustomSegmentation_System_Int32_System_Int32_
@@ -11266,6 +11336,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.EditProjectFileFormatSettings
   nameWithType: ProjectsGroupsApiExecutor.EditProjectFileFormatSettings
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.EditProjectStringsExporterSettings(System.Int32,System.Int32,IEnumerable{Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatch})
+  name: EditProjectStringsExporterSettings(Int32, Int32, IEnumerable<ProjectStringsExporterSettingsPatch>)
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_EditProjectStringsExporterSettings_System_Int32_System_Int32_IEnumerable_Crowdin_Api_ProjectsGroups_ProjectStringsExporterSettingsPatch__
+  commentId: M:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.EditProjectStringsExporterSettings(System.Int32,System.Int32,IEnumerable{Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatch})
+  name.vb: EditProjectStringsExporterSettings(Int32, Int32, IEnumerable(Of ProjectStringsExporterSettingsPatch))
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.EditProjectStringsExporterSettings(System.Int32, System.Int32, IEnumerable<Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatch>)
+  fullName.vb: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.EditProjectStringsExporterSettings(System.Int32, System.Int32, IEnumerable(Of Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatch))
+  nameWithType: ProjectsGroupsApiExecutor.EditProjectStringsExporterSettings(Int32, Int32, IEnumerable<ProjectStringsExporterSettingsPatch>)
+  nameWithType.vb: ProjectsGroupsApiExecutor.EditProjectStringsExporterSettings(Int32, Int32, IEnumerable(Of ProjectStringsExporterSettingsPatch))
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.EditProjectStringsExporterSettings*
+  name: EditProjectStringsExporterSettings
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_EditProjectStringsExporterSettings_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.EditProjectStringsExporterSettings
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.EditProjectStringsExporterSettings
+  nameWithType: ProjectsGroupsApiExecutor.EditProjectStringsExporterSettings
 - uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.GetGroup(System.Int32)
   name: GetGroup(Int32)
   href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_GetGroup_System_Int32_
@@ -11308,6 +11394,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.GetProjectFileFormatSettings
   nameWithType: ProjectsGroupsApiExecutor.GetProjectFileFormatSettings
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.GetProjectStringsExporterSettings(System.Int32,System.Int32)
+  name: GetProjectStringsExporterSettings(Int32, Int32)
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_GetProjectStringsExporterSettings_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.GetProjectStringsExporterSettings(System.Int32,System.Int32)
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.GetProjectStringsExporterSettings(System.Int32, System.Int32)
+  nameWithType: ProjectsGroupsApiExecutor.GetProjectStringsExporterSettings(Int32, Int32)
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.GetProjectStringsExporterSettings*
+  name: GetProjectStringsExporterSettings
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_GetProjectStringsExporterSettings_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.GetProjectStringsExporterSettings
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.GetProjectStringsExporterSettings
+  nameWithType: ProjectsGroupsApiExecutor.GetProjectStringsExporterSettings
 - uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListGroups(System.Nullable{System.Int32},System.Int32,System.Int32)
   name: ListGroups(Nullable<Int32>, Int32, Int32)
   href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_ListGroups_System_Nullable_System_Int32__System_Int32_System_Int32_
@@ -11353,6 +11452,19 @@ references:
   fullName.vb: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjects(Of TProject)(System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Boolean, System.Int32, System.Int32)
   nameWithType: ProjectsGroupsApiExecutor.ListProjects<TProject>(Nullable<Int32>, Nullable<Int32>, Boolean, Int32, Int32)
   nameWithType.vb: ProjectsGroupsApiExecutor.ListProjects(Of TProject)(Nullable(Of Int32), Nullable(Of Int32), Boolean, Int32, Int32)
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjectStringsExporterSettings(System.Int32)
+  name: ListProjectStringsExporterSettings(Int32)
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_ListProjectStringsExporterSettings_System_Int32_
+  commentId: M:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjectStringsExporterSettings(System.Int32)
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjectStringsExporterSettings(System.Int32)
+  nameWithType: ProjectsGroupsApiExecutor.ListProjectStringsExporterSettings(Int32)
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjectStringsExporterSettings*
+  name: ListProjectStringsExporterSettings
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_ListProjectStringsExporterSettings_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjectStringsExporterSettings
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjectStringsExporterSettings
+  nameWithType: ProjectsGroupsApiExecutor.ListProjectStringsExporterSettings
 - uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ResetProjectFileFormatSettingsCustomSegmentation(System.Int32,System.Int32)
   name: ResetProjectFileFormatSettingsCustomSegmentation(Int32, Int32)
   href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_ResetProjectFileFormatSettingsCustomSegmentation_System_Int32_System_Int32_
@@ -11366,6 +11478,43 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ResetProjectFileFormatSettingsCustomSegmentation
   nameWithType: ProjectsGroupsApiExecutor.ResetProjectFileFormatSettingsCustomSegmentation
+- uid: Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatch
+  name: ProjectStringsExporterSettingsPatch
+  href: api/Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatch.html
+  commentId: T:Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatch
+  fullName: Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatch
+  nameWithType: ProjectStringsExporterSettingsPatch
+- uid: Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatch.Path
+  name: Path
+  href: api/Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatch.html#Crowdin_Api_ProjectsGroups_ProjectStringsExporterSettingsPatch_Path
+  commentId: P:Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatch.Path
+  fullName: Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatch.Path
+  nameWithType: ProjectStringsExporterSettingsPatch.Path
+- uid: Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatch.Path*
+  name: Path
+  href: api/Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatch.html#Crowdin_Api_ProjectsGroups_ProjectStringsExporterSettingsPatch_Path_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatch.Path
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatch.Path
+  nameWithType: ProjectStringsExporterSettingsPatch.Path
+- uid: Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatchPath
+  name: ProjectStringsExporterSettingsPatchPath
+  href: api/Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatchPath.html
+  commentId: T:Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatchPath
+  fullName: Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatchPath
+  nameWithType: ProjectStringsExporterSettingsPatchPath
+- uid: Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatchPath.Format
+  name: Format
+  href: api/Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatchPath.html#Crowdin_Api_ProjectsGroups_ProjectStringsExporterSettingsPatchPath_Format
+  commentId: F:Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatchPath.Format
+  fullName: Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatchPath.Format
+  nameWithType: ProjectStringsExporterSettingsPatchPath.Format
+- uid: Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatchPath.Settings
+  name: Settings
+  href: api/Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatchPath.html#Crowdin_Api_ProjectsGroups_ProjectStringsExporterSettingsPatchPath_Settings
+  commentId: F:Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatchPath.Settings
+  fullName: Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatchPath.Settings
+  nameWithType: ProjectStringsExporterSettingsPatchPath.Settings
 - uid: Crowdin.Api.ProjectsGroups.ProjectType
   name: ProjectType
   href: api/Crowdin.Api.ProjectsGroups.ProjectType.html
@@ -12024,6 +12173,96 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.Visibility
   nameWithType: StringsBasedProjectForm.Visibility
+- uid: Crowdin.Api.ProjectsGroups.StringsExporterSettings
+  name: StringsExporterSettings
+  href: api/Crowdin.Api.ProjectsGroups.StringsExporterSettings.html
+  commentId: T:Crowdin.Api.ProjectsGroups.StringsExporterSettings
+  fullName: Crowdin.Api.ProjectsGroups.StringsExporterSettings
+  nameWithType: StringsExporterSettings
+- uid: Crowdin.Api.ProjectsGroups.StringsExporterSettings.ConvertPlaceHolders
+  name: ConvertPlaceHolders
+  href: api/Crowdin.Api.ProjectsGroups.StringsExporterSettings.html#Crowdin_Api_ProjectsGroups_StringsExporterSettings_ConvertPlaceHolders
+  commentId: P:Crowdin.Api.ProjectsGroups.StringsExporterSettings.ConvertPlaceHolders
+  fullName: Crowdin.Api.ProjectsGroups.StringsExporterSettings.ConvertPlaceHolders
+  nameWithType: StringsExporterSettings.ConvertPlaceHolders
+- uid: Crowdin.Api.ProjectsGroups.StringsExporterSettings.ConvertPlaceHolders*
+  name: ConvertPlaceHolders
+  href: api/Crowdin.Api.ProjectsGroups.StringsExporterSettings.html#Crowdin_Api_ProjectsGroups_StringsExporterSettings_ConvertPlaceHolders_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.StringsExporterSettings.ConvertPlaceHolders
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.StringsExporterSettings.ConvertPlaceHolders
+  nameWithType: StringsExporterSettings.ConvertPlaceHolders
+- uid: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource
+  name: StringsExporterSettingsResource
+  href: api/Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.html
+  commentId: T:Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource
+  fullName: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource
+  nameWithType: StringsExporterSettingsResource
+- uid: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.CreatedAt
+  name: CreatedAt
+  href: api/Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.html#Crowdin_Api_ProjectsGroups_StringsExporterSettingsResource_CreatedAt
+  commentId: P:Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.CreatedAt
+  fullName: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.CreatedAt
+  nameWithType: StringsExporterSettingsResource.CreatedAt
+- uid: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.CreatedAt*
+  name: CreatedAt
+  href: api/Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.html#Crowdin_Api_ProjectsGroups_StringsExporterSettingsResource_CreatedAt_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.CreatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.CreatedAt
+  nameWithType: StringsExporterSettingsResource.CreatedAt
+- uid: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.Format
+  name: Format
+  href: api/Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.html#Crowdin_Api_ProjectsGroups_StringsExporterSettingsResource_Format
+  commentId: P:Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.Format
+  fullName: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.Format
+  nameWithType: StringsExporterSettingsResource.Format
+- uid: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.Format*
+  name: Format
+  href: api/Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.html#Crowdin_Api_ProjectsGroups_StringsExporterSettingsResource_Format_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.Format
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.Format
+  nameWithType: StringsExporterSettingsResource.Format
+- uid: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.Id
+  name: Id
+  href: api/Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.html#Crowdin_Api_ProjectsGroups_StringsExporterSettingsResource_Id
+  commentId: P:Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.Id
+  fullName: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.Id
+  nameWithType: StringsExporterSettingsResource.Id
+- uid: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.Id*
+  name: Id
+  href: api/Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.html#Crowdin_Api_ProjectsGroups_StringsExporterSettingsResource_Id_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.Id
+  nameWithType: StringsExporterSettingsResource.Id
+- uid: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.Settings
+  name: Settings
+  href: api/Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.html#Crowdin_Api_ProjectsGroups_StringsExporterSettingsResource_Settings
+  commentId: P:Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.Settings
+  fullName: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.Settings
+  nameWithType: StringsExporterSettingsResource.Settings
+- uid: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.Settings*
+  name: Settings
+  href: api/Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.html#Crowdin_Api_ProjectsGroups_StringsExporterSettingsResource_Settings_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.Settings
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.Settings
+  nameWithType: StringsExporterSettingsResource.Settings
+- uid: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.UpdatedAt
+  name: UpdatedAt
+  href: api/Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.html#Crowdin_Api_ProjectsGroups_StringsExporterSettingsResource_UpdatedAt
+  commentId: P:Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.UpdatedAt
+  fullName: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.UpdatedAt
+  nameWithType: StringsExporterSettingsResource.UpdatedAt
+- uid: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.UpdatedAt*
+  name: UpdatedAt
+  href: api/Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.html#Crowdin_Api_ProjectsGroups_StringsExporterSettingsResource_UpdatedAt_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.UpdatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.UpdatedAt
+  nameWithType: StringsExporterSettingsResource.UpdatedAt
 - uid: Crowdin.Api.ProjectsGroups.TagsDetectionAction
   name: TagsDetectionAction
   href: api/Crowdin.Api.ProjectsGroups.TagsDetectionAction.html
@@ -30760,6 +30999,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Translations.ApplyPreTranslationRequest.EngineId
   nameWithType: ApplyPreTranslationRequest.EngineId
+- uid: Crowdin.Api.Translations.ApplyPreTranslationRequest.ExcludeLabelIds
+  name: ExcludeLabelIds
+  href: api/Crowdin.Api.Translations.ApplyPreTranslationRequest.html#Crowdin_Api_Translations_ApplyPreTranslationRequest_ExcludeLabelIds
+  commentId: P:Crowdin.Api.Translations.ApplyPreTranslationRequest.ExcludeLabelIds
+  fullName: Crowdin.Api.Translations.ApplyPreTranslationRequest.ExcludeLabelIds
+  nameWithType: ApplyPreTranslationRequest.ExcludeLabelIds
+- uid: Crowdin.Api.Translations.ApplyPreTranslationRequest.ExcludeLabelIds*
+  name: ExcludeLabelIds
+  href: api/Crowdin.Api.Translations.ApplyPreTranslationRequest.html#Crowdin_Api_Translations_ApplyPreTranslationRequest_ExcludeLabelIds_
+  commentId: Overload:Crowdin.Api.Translations.ApplyPreTranslationRequest.ExcludeLabelIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.ApplyPreTranslationRequest.ExcludeLabelIds
+  nameWithType: ApplyPreTranslationRequest.ExcludeLabelIds
 - uid: Crowdin.Api.Translations.ApplyPreTranslationRequest.FallbackLanguages
   name: FallbackLanguages
   href: api/Crowdin.Api.Translations.ApplyPreTranslationRequest.html#Crowdin_Api_Translations_ApplyPreTranslationRequest_FallbackLanguages
@@ -30786,6 +31038,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Translations.ApplyPreTranslationRequest.FileIds
   nameWithType: ApplyPreTranslationRequest.FileIds
+- uid: Crowdin.Api.Translations.ApplyPreTranslationRequest.LabelIds
+  name: LabelIds
+  href: api/Crowdin.Api.Translations.ApplyPreTranslationRequest.html#Crowdin_Api_Translations_ApplyPreTranslationRequest_LabelIds
+  commentId: P:Crowdin.Api.Translations.ApplyPreTranslationRequest.LabelIds
+  fullName: Crowdin.Api.Translations.ApplyPreTranslationRequest.LabelIds
+  nameWithType: ApplyPreTranslationRequest.LabelIds
+- uid: Crowdin.Api.Translations.ApplyPreTranslationRequest.LabelIds*
+  name: LabelIds
+  href: api/Crowdin.Api.Translations.ApplyPreTranslationRequest.html#Crowdin_Api_Translations_ApplyPreTranslationRequest_LabelIds_
+  commentId: Overload:Crowdin.Api.Translations.ApplyPreTranslationRequest.LabelIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.ApplyPreTranslationRequest.LabelIds
+  nameWithType: ApplyPreTranslationRequest.LabelIds
 - uid: Crowdin.Api.Translations.ApplyPreTranslationRequest.LanguageIds
   name: LanguageIds
   href: api/Crowdin.Api.Translations.ApplyPreTranslationRequest.html#Crowdin_Api_Translations_ApplyPreTranslationRequest_LanguageIds
@@ -31597,6 +31862,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Translations.PreTranslateAttributes.DuplicateTranslations
   nameWithType: PreTranslateAttributes.DuplicateTranslations
+- uid: Crowdin.Api.Translations.PreTranslateAttributes.ExcludeLabelIds
+  name: ExcludeLabelIds
+  href: api/Crowdin.Api.Translations.PreTranslateAttributes.html#Crowdin_Api_Translations_PreTranslateAttributes_ExcludeLabelIds
+  commentId: P:Crowdin.Api.Translations.PreTranslateAttributes.ExcludeLabelIds
+  fullName: Crowdin.Api.Translations.PreTranslateAttributes.ExcludeLabelIds
+  nameWithType: PreTranslateAttributes.ExcludeLabelIds
+- uid: Crowdin.Api.Translations.PreTranslateAttributes.ExcludeLabelIds*
+  name: ExcludeLabelIds
+  href: api/Crowdin.Api.Translations.PreTranslateAttributes.html#Crowdin_Api_Translations_PreTranslateAttributes_ExcludeLabelIds_
+  commentId: Overload:Crowdin.Api.Translations.PreTranslateAttributes.ExcludeLabelIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.PreTranslateAttributes.ExcludeLabelIds
+  nameWithType: PreTranslateAttributes.ExcludeLabelIds
 - uid: Crowdin.Api.Translations.PreTranslateAttributes.FileIds
   name: FileIds
   href: api/Crowdin.Api.Translations.PreTranslateAttributes.html#Crowdin_Api_Translations_PreTranslateAttributes_FileIds
@@ -31610,6 +31888,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Translations.PreTranslateAttributes.FileIds
   nameWithType: PreTranslateAttributes.FileIds
+- uid: Crowdin.Api.Translations.PreTranslateAttributes.LabelIds
+  name: LabelIds
+  href: api/Crowdin.Api.Translations.PreTranslateAttributes.html#Crowdin_Api_Translations_PreTranslateAttributes_LabelIds
+  commentId: P:Crowdin.Api.Translations.PreTranslateAttributes.LabelIds
+  fullName: Crowdin.Api.Translations.PreTranslateAttributes.LabelIds
+  nameWithType: PreTranslateAttributes.LabelIds
+- uid: Crowdin.Api.Translations.PreTranslateAttributes.LabelIds*
+  name: LabelIds
+  href: api/Crowdin.Api.Translations.PreTranslateAttributes.html#Crowdin_Api_Translations_PreTranslateAttributes_LabelIds_
+  commentId: Overload:Crowdin.Api.Translations.PreTranslateAttributes.LabelIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.PreTranslateAttributes.LabelIds
+  nameWithType: PreTranslateAttributes.LabelIds
 - uid: Crowdin.Api.Translations.PreTranslateAttributes.LanguageIds
   name: LanguageIds
   href: api/Crowdin.Api.Translations.PreTranslateAttributes.html#Crowdin_Api_Translations_PreTranslateAttributes_LanguageIds

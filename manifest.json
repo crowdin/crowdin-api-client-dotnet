@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "Ko2v751zdi09N3CMqPHFVIuBtOaPC4VjHIzsJPTOTtw="
+          "hash": "TZEd6g6Hh2KGGbq0wGlAa5ptZHFmpL6msDORPyHDANE="
         }
       },
       "is_incremental": false,
@@ -378,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.CrowdinApiClient.html",
-          "hash": "G3q6PNAKZo/aP0qZk196/RH6INYprCG1pb+fUJ/4RBM="
+          "hash": "iqbLfGIZWBF0OtxdQy6nQXuAVVGfiJQ9rb+fljYxcRA="
         }
       },
       "is_incremental": false,
@@ -1614,7 +1614,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.PatchEntry.html",
-          "hash": "12RpYHvZAfc6El1Z6RPFjPqykBkzTJ9RWHxfiqEV//Y="
+          "hash": "xFzHbN3oVi0vkHNqdX2D8H3haZFgg84vNXmoF3a9VSU="
         }
       },
       "is_incremental": false,
@@ -1682,6 +1682,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.ProjectsGroups.AddProjectStringsExporterSettingsRequest.html",
+          "hash": "Oomdn7M9Zu1ymmhuM1eB+U14hSC2+l73Pa1dx5re9V4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.ProjectsGroups.AdocFileFormatSettings.yml",
       "output": {
         ".html": {
@@ -1699,6 +1711,18 @@
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.AndroidFileFormatSettings.html",
           "hash": "1AjRcibWBhSdGIPZ9B+A413A59E/nSGNLtRyQB87v+o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.ProjectsGroups.AndroidStringsExporterSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.ProjectsGroups.AndroidStringsExporterSettings.html",
+          "hash": "W4JThruzIrB3OA9Ig/rwMfUfTkZ5r4cgpAc2C1X9iuQ="
         }
       },
       "is_incremental": false,
@@ -2018,6 +2042,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.ProjectsGroups.MacOsxStringsExporterSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.ProjectsGroups.MacOsxStringsExporterSettings.html",
+          "hash": "qVjpdw/OMfvlyuo255fbEb8DSTX2tn4EXQw9rDFmSYo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings.yml",
       "output": {
         ".html": {
@@ -2270,6 +2306,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatch.html",
+          "hash": "dGuuac/5J4DCfpG746QQ3pKjwRdHg+EXjJs7xKNCgb0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatchPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatchPath.html",
+          "hash": "ExcwibhmmNi4FRb6pBcefagfudKKw4iOUd+lEi5Y8SM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.ProjectsGroups.ProjectType.yml",
       "output": {
         ".html": {
@@ -2298,7 +2358,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html",
-          "hash": "KvrJnuY8e1vzNEkt6wEP7k6VL4ztCACXQV60mb7Ntow="
+          "hash": "9kcjvuae7QBMJS5cJFMriK5fmVYG6NorogURBf7ZjY4="
         }
       },
       "is_incremental": false,
@@ -2347,6 +2407,30 @@
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.html",
           "hash": "JZlhLyFgONYekXA8ku3Vx1cSW81Sf1D1VYVMDE44bRE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.ProjectsGroups.StringsExporterSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.ProjectsGroups.StringsExporterSettings.html",
+          "hash": "8JTJiSv87rCkyqq3ITN1bsoUet20ab63EFQBY5ITaCc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.ProjectsGroups.StringsExporterSettingsResource.html",
+          "hash": "W6kwP/nytGbBrjQo5FzTFGC955b1E/xb2ve3vDLduCA="
         }
       },
       "is_incremental": false,
@@ -2442,7 +2526,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.html",
-          "hash": "P7nlKMivF5bzcV2bJNv4FF16JsMt4jW66IOCyEWxxr8="
+          "hash": "IYP9Z75DIWU0luo5YCPW44R3JhyfWxnJzQEzJ3rRz9c="
         }
       },
       "is_incremental": false,
@@ -6294,7 +6378,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Translations.ApplyPreTranslationRequest.html",
-          "hash": "NMs10R1saFFZxSIQsdv837siEQnXDynFTURs2G++l/k="
+          "hash": "edTBSQQsjBRG6rYXRYJojtNsJ8F3XGv7kQul1PFalLs="
         }
       },
       "is_incremental": false,
@@ -6462,7 +6546,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Translations.PreTranslateAttributes.html",
-          "hash": "u652a4WKg8qpiWteY5u9WI3BK6jGIbVKYFNqy1Gh/FI="
+          "hash": "RZOTgmXrkT1CohhpRbpCCwr0L30OQZGWDj53nQ4yGRE="
         }
       },
       "is_incremental": false,
@@ -7386,7 +7470,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "mEA+EwqIFnNYXIfdscwcX5EmP+mnYIq2hevHC/tyLu8="
+          "hash": "5sOtw/9pc6u6zCkStXZ5EHwlKY4OVXn3bfYH1iZDDN8="
         }
       },
       "is_incremental": false,
@@ -7425,7 +7509,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 611,
+          "total_file_count": 618,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
