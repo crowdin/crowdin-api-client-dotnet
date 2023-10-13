@@ -90,7 +90,7 @@ namespace Crowdin.Api.Tests.Core.Resources {
         ///  &quot;name&quot;: &quot;Default template&quot;,
         ///  &quot;currency&quot;: &quot;USD&quot;,
         ///  &quot;unit&quot;: &quot;words&quot;,
-        ///  &quot;isPublic&quot;: 0
+        ///  &quot;isPublic&quot;: false
         ///}.
         /// </summary>
         internal static string AddReportSettingsTemplate_Fuzzy_Request {
@@ -164,7 +164,7 @@ namespace Crowdin.Api.Tests.Core.Resources {
         ///  &quot;name&quot;: &quot;Default template&quot;,
         ///  &quot;currency&quot;: &quot;USD&quot;,
         ///  &quot;unit&quot;: &quot;words&quot;,
-        ///  &quot;isPublic&quot;: 0
+        ///  &quot;isPublic&quot;: false
         ///}.
         /// </summary>
         internal static string AddReportSettingsTemplate_Simple_Request {

@@ -147,7 +147,7 @@
   "name": "Default template",
   "currency": "USD",
   "unit": "words",
-  "isPublic": 0
+  "isPublic": false
 }</value>
   </data>
   <data name="AddReportSettingsTemplate_Simple_Response" xml:space="preserve">
@@ -217,7 +217,7 @@
   "name": "Default template",
   "currency": "USD",
   "unit": "words",
-  "isPublic": 0
+  "isPublic": false
 }</value>
   </data>
   <data name="AddReportSettingsTemplate_Fuzzy_Response" xml:space="preserve">

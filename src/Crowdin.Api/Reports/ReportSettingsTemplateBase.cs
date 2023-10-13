@@ -25,7 +25,7 @@ namespace Crowdin.Api.Reports
         public ReportUnit Unit { get; set; }
 
         [JsonProperty("isPublic")]
-        public ReportIsPublic IsPublic { get; set; }
+        public bool IsPublic { get; set; }
 
         [JsonProperty("mode")]
         public ReportSettingsTemplateMode Mode { get; set; }
