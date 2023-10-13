@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Linq;
 using System.Net;
@@ -102,6 +102,7 @@ namespace Crowdin.Api.Tests.Reports
                 Name = "Default template",
                 Currency = ReportCurrency.USD,
                 Unit = ReportUnit.Words,
+                IsPublic = false,
                 Config = new ReportSettingsSimpleConfig
                 {
                     RegularRates = new[]
@@ -158,6 +159,7 @@ namespace Crowdin.Api.Tests.Reports
 
             Assert.Equal(ReportSettingsTemplateMode.Simple, response.Mode);
             Assert.Equal(ReportCurrency.USD, response.Currency);
+            Assert.False(response.IsPublic);
             Assert.Equal(DateTimeOffset.Parse("2019-09-23T11:26:54+00:00"), response.CreatedAt);
 
             Assert.Single(response.Config.RegularRates);
@@ -173,6 +175,7 @@ namespace Crowdin.Api.Tests.Reports
                 Name = "Default template",
                 Currency = ReportCurrency.USD,
                 Unit = ReportUnit.Words,
+                IsPublic = false,
                 Config = new ReportSettingsFuzzyConfig
                 {
                     RegularRates = new[]
@@ -229,6 +232,7 @@ namespace Crowdin.Api.Tests.Reports
 
             Assert.Equal(ReportSettingsTemplateMode.Fuzzy, response.Mode);
             Assert.Equal(ReportCurrency.USD, response.Currency);
+            Assert.False(response.IsPublic);
             Assert.Equal(DateTimeOffset.Parse("2019-09-23T11:26:54+00:00"), response.CreatedAt);
 
             Assert.Single(response.Config.RegularRates);

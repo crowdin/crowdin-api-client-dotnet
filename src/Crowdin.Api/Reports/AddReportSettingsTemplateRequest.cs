@@ -1,4 +1,4 @@
-﻿
+
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
@@ -19,6 +19,9 @@ namespace Crowdin.Api.Reports
 
         [JsonProperty("unit")]
         public ReportUnit Unit { get; set; }
+
+        [JsonProperty("isPublic")]
+        public bool IsPublic { get; set; }
     }
 
     [PublicAPI]
