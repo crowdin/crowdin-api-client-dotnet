@@ -10,15 +10,15 @@ namespace Crowdin.Api
         [Description("created")]
         Created,
 
-        [Description("in_progress")]
+        [Description("inProgress")]
         InProgress,
 
         [Description("finished")]
         Finished,
-
+        
         [Description("failed")]
         Failed,
-
+        
         [Description("canceled")]
         Canceled
     }

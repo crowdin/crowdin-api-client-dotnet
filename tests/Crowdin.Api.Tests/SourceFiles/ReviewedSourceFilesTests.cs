@@ -54,7 +54,7 @@ namespace Crowdin.Api.Tests.SourceFiles {
             Assert.NotNull(result);
             Assert.IsType<ResponseList<ReviewedStringBuild>>(result);
             Assert.Single(result.Data);
-            Assert.Equal(LegacyBuildStatus.Finished, result.Data[0].Status);
+            Assert.Equal(BuildStatus.Finished, result.Data[0].Status);
         }
 
         [Fact]
@@ -92,7 +92,7 @@ namespace Crowdin.Api.Tests.SourceFiles {
 
             Assert.NotNull(result);
             Assert.IsType<ReviewedStringBuild>(result);
-            Assert.Equal(LegacyBuildStatus.Finished, result.Status);
+            Assert.Equal(BuildStatus.Finished, result.Status);
         }
 
         [Fact]
@@ -126,7 +126,7 @@ namespace Crowdin.Api.Tests.SourceFiles {
 
             Assert.NotNull(result);
             Assert.IsType<ReviewedStringBuild>(result);
-            Assert.Equal(LegacyBuildStatus.Finished, result.Status);
+            Assert.Equal(BuildStatus.Finished, result.Status);
         }
 
         [Fact]

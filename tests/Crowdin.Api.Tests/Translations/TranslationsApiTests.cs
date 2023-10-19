@@ -1,4 +1,4 @@
-
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -141,7 +141,7 @@ namespace Crowdin.Api.Tests.Translations
             Assert.NotNull(response);
             
             Assert.Equal(preTranslationId, response.Identifier);
-            Assert.Equal(LegacyBuildStatus.Created, response.Status);
+            Assert.Equal(BuildStatus.Created, response.Status);
             Assert.Equal(90, response.Progress);
             Assert.Equal(DateTimeOffset.Parse("2019-09-20T14:05:50+00:00"), response.CreatedAt);
             Assert.Equal(DateTimeOffset.Parse("2019-09-20T14:05:50+00:00"), response.UpdatedAt);

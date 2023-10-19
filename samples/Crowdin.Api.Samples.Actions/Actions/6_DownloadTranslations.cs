@@ -19,7 +19,7 @@ namespace Crowdin.Api.Samples.Actions
                     });
 
             // Wait until the report generation finished
-            while (build.Status is not LegacyBuildStatus.Finished)
+            while (build.Status is not BuildStatus.Finished)
             {
                 // Wait 5 seconds between check requests
                 await Task.Delay(TimeSpan.FromSeconds(5));

@@ -15,7 +15,7 @@ namespace Crowdin.Api.Translations
         public int ProjectId { get; set; }
         
         [JsonProperty("status")]
-        public LegacyBuildStatus Status { get; set; }
+        public BuildStatus Status { get; set; }
         
         [JsonProperty("progress")]
         public int Progress { get; set; }
