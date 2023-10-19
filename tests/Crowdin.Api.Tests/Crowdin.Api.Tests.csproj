@@ -170,6 +170,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Projects_StringsExporterSettings.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\Applications.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Applications.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -342,6 +346,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>Projects_StringsExporterSettings.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\Applications.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Applications.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 

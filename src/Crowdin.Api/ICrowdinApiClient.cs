@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
-
 using JetBrains.Annotations;
 
+using Crowdin.Api.Applications;
 using Crowdin.Api.Bundles;
 using Crowdin.Api.Core;
 using Crowdin.Api.Dictionaries;
@@ -91,6 +91,8 @@ namespace Crowdin.Api
         
         WebhooksApiExecutor Webhooks { get; }
 
+        ApplicationsApiExecutor Applications { get; }
+
         #endregion
 
         #region Internal methods
@@ -102,6 +104,8 @@ namespace Crowdin.Api
         internal Task<CrowdinApiResult> SendPutRequest(string subUrl, object? body = null);
 
         internal Task<CrowdinApiResult> SendPatchRequest(string subUrl, IEnumerable<PatchEntry> body, IDictionary<string, string>? queryParams = null);
+        
+        internal Task<CrowdinApiResult> SendPatchRequest(string subUrl, object body, IDictionary<string, string>? queryParams = null);
 
         internal Task<HttpStatusCode> SendDeleteRequest(string subUrl, IDictionary<string, string>? queryParams = null);
         
