@@ -14,7 +14,7 @@ namespace Crowdin.Api.SourceFiles
         public int ProjectId { get; set; }
         
         [JsonProperty("status")]
-        public BuildStatus Status { get; set; }
+        public LegacyBuildStatus Status { get; set; }
         
         [JsonProperty("progress")]
         public int Progress { get; set; }

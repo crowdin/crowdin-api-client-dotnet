@@ -45,7 +45,7 @@ namespace Crowdin.Api.Samples.Actions
                 });
 
             // Wait until the pre-translation finished
-            while (preTranslation.Status is not BuildStatus.Finished)
+            while (preTranslation.Status is not LegacyBuildStatus.Finished)
             {
                 // Wait 5 seconds between check requests
                 await Task.Delay(TimeSpan.FromSeconds(5));

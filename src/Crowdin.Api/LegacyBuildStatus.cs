@@ -1,24 +1,24 @@
-﻿
+
 using System.ComponentModel;
 using JetBrains.Annotations;
 
 namespace Crowdin.Api
 {
     [PublicAPI]
-    public enum BuildStatus
+    public enum LegacyBuildStatus
     {
         [Description("created")]
         Created,
 
-        [Description("in_progress")]
+        [Description("inProgress")]
         InProgress,
 
         [Description("finished")]
         Finished,
-
+        
         [Description("failed")]
         Failed,
-
+        
         [Description("canceled")]
         Canceled
     }
