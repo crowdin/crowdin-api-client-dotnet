@@ -9,6 +9,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
+using Crowdin.Api.Applications;
 using Crowdin.Api.Bundles;
 using Crowdin.Api.Core;
 using Crowdin.Api.Core.Converters;
@@ -100,6 +101,8 @@ namespace Crowdin.Api
         
         public OrganizationWebhooksApiExecutor OrganizationWebhooks { get; }
 
+        public ApplicationsApiExecutor Applications { get; }
+
         private readonly string _baseUrl;
         private readonly HttpClient _httpClient;
         private readonly IRateLimiter? _rateLimiter;
@@ -183,6 +186,7 @@ namespace Crowdin.Api
             Vendors = new VendorsApiExecutor(this);
             Webhooks = new WebhooksApiExecutor(this);
             OrganizationWebhooks = new OrganizationWebhooksApiExecutor(this);
+            Applications = new ApplicationsApiExecutor(this);
         }
 
         Task<CrowdinApiResult> ICrowdinApiClient.SendGetRequest(string subUrl, IDictionary<string, string>? queryParams)
@@ -256,6 +260,19 @@ namespace Crowdin.Api
                 RequestUri = new Uri(FormRequestUrl(subUrl, queryParams))
             };
 
+            return SendRequest(requestFn);
+        }
+        
+        Task<CrowdinApiResult> ICrowdinApiClient.SendPatchRequest(
+            string subUrl, object body,
+            IDictionary<string, string>? queryParams)
+        {
+            Func<HttpRequestMessage> requestFn = () => new HttpRequestMessage
+            {
+                Method = new HttpMethod("PATCH"),
+                Content = CreateJsonContent(body),
+                RequestUri = new Uri(FormRequestUrl(subUrl, queryParams))
+            };
             return SendRequest(requestFn);
         }
 
