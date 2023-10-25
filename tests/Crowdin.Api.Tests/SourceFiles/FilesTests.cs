@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Crowdin.Api.SourceFiles;
 using Crowdin.Api.Tests.Core;
@@ -201,6 +201,7 @@ namespace Crowdin.Api.Tests.SourceFiles {
                 BranchId = 34,
                 DirectoryId = 4,
                 Title = "Foo File",
+                Context = "Foo File Context",
                 Type = ProjectFileType.Js,
                 ExportOptions = new JavaScriptFileExportOptions()
                 {

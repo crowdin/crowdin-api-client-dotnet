@@ -1,4 +1,4 @@
-﻿
+
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
@@ -23,9 +23,12 @@ namespace Crowdin.Api.SourceFiles
         
         [JsonProperty("directoryId")]
         public int? DirectoryId { get; set; }
-        
+
         [JsonProperty("title")]
         public string? Title { get; set; }
+
+        [JsonProperty("context")]
+        public string? Context { get; set; }
 
         [JsonProperty("type")]
         public ProjectFileType? Type { get; set; }

@@ -1,4 +1,4 @@
-﻿
+
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
@@ -68,6 +68,7 @@ namespace Crowdin.Api.Tests.SourceFiles
                 BranchId = 34,
                 DirectoryId = 4,
                 Title = "source_app_info",
+                Context = "Additional context valuable for translators",
                 Type = ProjectFileType.DocX,
                 ImportOptions = new DocxFileImportOptions
                 {
@@ -231,6 +232,7 @@ namespace Crowdin.Api.Tests.SourceFiles
                 BranchId = 34,
                 DirectoryId = 4,
                 Title = "Foo File",
+                Context = "Foo File Context",
                 Type = ProjectFileType.Js,
                 ExportOptions = new JavaScriptFileExportOptions()
                 {
@@ -269,6 +271,7 @@ namespace Crowdin.Api.Tests.SourceFiles
                 BranchId = 34,
                 DirectoryId = 4,
                 Title = "Foo File",
+                Context = "Foo File Context",
                 Type = ProjectFileType.Js,
                 ExportOptions = new JavaScriptFileExportOptions()
                 {

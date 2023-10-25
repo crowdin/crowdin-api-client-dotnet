@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
@@ -26,10 +26,13 @@ namespace Crowdin.Api.SourceFiles
 #pragma warning disable CS8618
         public string Name { get; set; }
 #pragma warning restore CS8618
-        
+
         [JsonProperty("title")]
         public string? Title { get; set; }
-        
+
+        [JsonProperty("context")]
+        public string? Context { get; set; }
+
         [JsonProperty("type")]
 #pragma warning disable CS8618
         public string Type { get; set; }
