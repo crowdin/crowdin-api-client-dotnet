@@ -1,4 +1,4 @@
-﻿
+
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
@@ -31,6 +31,7 @@ using Crowdin.Api.TranslationStatus;
 using Crowdin.Api.Users;
 using Crowdin.Api.Vendors;
 using Crowdin.Api.Webhooks;
+using Crowdin.Api.Workflows;
 
 #nullable enable
 
@@ -90,6 +91,8 @@ namespace Crowdin.Api
         VendorsApiExecutor Vendors { get; }
         
         WebhooksApiExecutor Webhooks { get; }
+
+        WorkflowsApiExecutor Workflows { get; }
 
         ApplicationsApiExecutor Applications { get; }
 
