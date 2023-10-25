@@ -39,7 +39,7 @@ using Crowdin.Api.Users;
 using Crowdin.Api.Vendors;
 using Crowdin.Api.Webhooks;
 using Crowdin.Api.Webhooks.Organization;
-
+using Crowdin.Api.Workflows;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -98,7 +98,9 @@ namespace Crowdin.Api
         public VendorsApiExecutor Vendors { get; }
         
         public WebhooksApiExecutor Webhooks { get; }
-        
+
+        public WorkflowsApiExecutor Workflows { get; }
+
         public OrganizationWebhooksApiExecutor OrganizationWebhooks { get; }
 
         public ApplicationsApiExecutor Applications { get; }
@@ -185,6 +187,7 @@ namespace Crowdin.Api
             Users = new UsersApiExecutor(this);
             Vendors = new VendorsApiExecutor(this);
             Webhooks = new WebhooksApiExecutor(this);
+            Workflows = new WorkflowsApiExecutor(this);
             OrganizationWebhooks = new OrganizationWebhooksApiExecutor(this);
             Applications = new ApplicationsApiExecutor(this);
         }
