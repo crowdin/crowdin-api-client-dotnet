@@ -157,5 +157,59 @@ namespace Crowdin.Api.Tests.StringTranslations
             Assert.Equal(2, alignment.Match);
             Assert.Equal(2, alignment.Probability);
         }
+
+        [Fact]
+        public async Task ListTranslationApprovals()
+        {
+            const int projectId = 1;
+            var url = $"/projects/{projectId}/approvals";
+            
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var queryParams = TestUtils.CreateQueryParamsFromPaging();
+            
+            mockClient
+                .Setup(client => client.SendGetRequest(url, queryParams))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Core.Resources.StringTranslations.ListTranslationsApproval_Response)
+                });
+
+            var executor = new StringTranslationsApiExecutor(mockClient.Object);
+            ResponseList<TranslationApproval> response = await executor.ListTranslationApprovals(projectId);
+            Assert.NotNull(response);
+            var data = response.Data[1];
+            Assert.Equal(200695, data.TranslationId);
+            Assert.Equal(1234, data.StringId);
+            Assert.IsType<User>(data.User);
+        }
+        
+        [Fact]
+        public async Task ListTranslationVotes()
+        {
+            const int projectId = 1;
+            var url = $"/projects/{projectId}/votes";
+            
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var queryParams = TestUtils.CreateQueryParamsFromPaging();
+            
+            mockClient
+                .Setup(client => client.SendGetRequest(url, queryParams))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Core.Resources.StringTranslations.ListTranslationVotes_Response)
+                });
+
+            var executor = new StringTranslationsApiExecutor(mockClient.Object);
+            ResponseList<TranslationVote> response = await executor.ListTranslationVotes(projectId);
+            Assert.NotNull(response);
+            var data = response.Data[0];
+            Assert.Equal(19069345, data.TranslationId);
+            Assert.Equal(TranslationVoteMark.Up, data.Mark);
+            Assert.IsType<User>(data.User);
+        }
     }
 }

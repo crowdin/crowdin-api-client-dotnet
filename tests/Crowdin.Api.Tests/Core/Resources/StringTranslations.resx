@@ -148,4 +148,72 @@
   }
 }</value>
     </data>
+    <data name="ListTranslationsApproval_Response" xml:space="preserve">
+        <value>
+        {
+            "data": [
+                {
+                    "data": {
+                        "id": 190695,
+                        "user": {
+                            "id": 19,
+                            "username": "john_doe",
+                            "fullName": "John Doe",
+                            "avatarUrl": ""
+                        },
+                        "translationId": 190695,
+                        "stringId": 2345,
+                        "languageId": "uk",
+                        "createdAt": "2019-09-23T11:26:54+00:00"
+                    }
+                },
+                {
+                    "data": {
+                        "id": 200695,
+                        "user": {
+                            "id": 20,
+                            "username": "jane_doe",
+                            "fullName": "Jane Doe",
+                            "avatarUrl": ""
+                        },
+                        "translationId": 200695,
+                        "stringId": 1234,
+                        "languageId": "uk",
+                        "createdAt": "2020-09-23T11:26:54+00:00"
+                    }
+                }
+            ],
+            "pagination": {
+              "offset": 0,
+              "limit": 25
+            }
+        }
+        </value>
+    </data>
+    <data name="ListTranslationVotes_Response" xml:space="preserve">
+        <value>
+        {
+            "data": [
+                {
+                    "data": {
+                        "id": 6643,
+                        "user": {
+                            "id": 19,
+                            "username": "john_doe",
+                            "fullName": "John Smith",
+                            "avatarUrl": ""
+                        },
+                        "translationId": 19069345,
+                        "votedAt": "2019-09-19T12:42:12+00:00",
+                        "mark": "up"
+                    }
+                }
+            ],
+            "pagination": {
+                "offset": 0,
+                "limit": 25
+            }
+        }
+        </value>
+    </data>
 </root>

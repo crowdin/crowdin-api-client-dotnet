@@ -126,6 +126,52 @@ namespace Crowdin.Api.Tests.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 
+        ///        {
+        ///            &quot;data&quot;: [
+        ///                {
+        ///                    &quot;data&quot;: {
+        ///                        &quot;id&quot;: 190695,
+        ///                        &quot;user&quot;: {
+        ///                            &quot;id&quot;: 19,
+        ///                            &quot;username&quot;: &quot;john_doe&quot;,
+        ///                            &quot;fullName&quot;: &quot;John Doe&quot;,
+        ///                            &quot;avatarUrl&quot;: &quot;&quot;
+        ///                        },
+        ///                        &quot;translationId&quot;: 190695,
+        ///                        &quot;stringId&quot;: 2345,
+        ///                        &quot;languageId&quot;: &quot;uk [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ListTranslationsApproval_Response {
+            get {
+                return ResourceManager.GetString("ListTranslationsApproval_Response", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///        {
+        ///            &quot;data&quot;: [
+        ///                {
+        ///                    &quot;data&quot;: {
+        ///                        &quot;id&quot;: 6643,
+        ///                        &quot;user&quot;: {
+        ///                            &quot;id&quot;: 19,
+        ///                            &quot;username&quot;: &quot;john_doe&quot;,
+        ///                            &quot;fullName&quot;: &quot;John Smith&quot;,
+        ///                            &quot;avatarUrl&quot;: &quot;&quot;
+        ///                        },
+        ///                        &quot;translationId&quot;: 19069345,
+        ///                        &quot;votedAt&quot;: &quot;2019-09-19T12:42:12+00:00&quot;,
+        ///                  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ListTranslationVotes_Response {
+            get {
+                return ResourceManager.GetString("ListTranslationVotes_Response", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {
         ///  &quot;data&quot;: {
         ///    &quot;id&quot;: 190695,
