@@ -11,6 +11,10 @@ namespace Crowdin.Api.StringTranslations
     public class TranslationApprovalsListParams : IQueryParamsProvider
     {
         public int? FileId { get; set; }
+
+        public string? LabelIds { get; set; }
+        
+        public string? ExcludeLabelIds { get; set; }
         
         public int? StringId { get; set; }
         
@@ -29,6 +33,8 @@ namespace Crowdin.Api.StringTranslations
 
         public TranslationApprovalsListParams(
             int? fileId,
+            string? labelIds,
+            string? excludeLabelIds,
             int? stringId,
             string? languageId,
             int? translationId,
@@ -36,6 +42,8 @@ namespace Crowdin.Api.StringTranslations
             int offset)
         {
             FileId = fileId;
+            LabelIds = labelIds;
+            ExcludeLabelIds = excludeLabelIds;
             StringId = stringId;
             LanguageId = languageId;
             TranslationId = translationId;
@@ -49,6 +57,8 @@ namespace Crowdin.Api.StringTranslations
                 Utils.CreateQueryParamsFromPaging(Limit, Offset);
             
             queryParams.AddParamIfPresent("fileId", FileId);
+            queryParams.AddParamIfPresent("labelIds", LabelIds);
+            queryParams.AddParamIfPresent("excludeLabelIds", ExcludeLabelIds);
             queryParams.AddParamIfPresent("stringId", StringId);
             queryParams.AddParamIfPresent("languageId", LanguageId);
             queryParams.AddParamIfPresent("translationId", TranslationId);

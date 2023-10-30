@@ -36,12 +36,15 @@ namespace Crowdin.Api.StringTranslations
         [PublicAPI]
         public Task<ResponseList<TranslationApproval>> ListTranslationApprovals(
             int projectId,
-            int? fileId = null, int? stringId = null,
+            int? fileId = null, 
+            string? labelIds = null,
+            string? excludeLabelIds = null,
+            int? stringId = null,
             string? languageId = null, int? translationId = null,
             int limit = 25, int offset = 0)
         {
             return ListTranslationApprovals(projectId,
-                new TranslationApprovalsListParams(fileId, stringId, languageId, translationId, limit, offset));
+                new TranslationApprovalsListParams(fileId, labelIds, excludeLabelIds, stringId, languageId, translationId, limit, offset));
         }
 
         /// <summary>
@@ -294,10 +297,13 @@ namespace Crowdin.Api.StringTranslations
         [PublicAPI]
         public Task<ResponseList<TranslationVote>> ListTranslationVotes(
             int projectId, int? stringId = null, string? languageId = null,
-            int? translationId = null, int limit = 25, int offset = 0)
+            int? translationId = null, 
+            string? labelIds = null,
+            string? excludeLabelIds = null,
+            int limit = 25, int offset = 0)
         {
             return ListTranslationVotes(projectId,
-                new TranslationVotesListParams(stringId, languageId, translationId, limit, offset));
+                new TranslationVotesListParams(stringId, languageId, translationId, labelIds, excludeLabelIds , limit, offset));
         }
 
         /// <summary>

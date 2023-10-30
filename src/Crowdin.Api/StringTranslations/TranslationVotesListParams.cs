@@ -16,6 +16,10 @@ namespace Crowdin.Api.StringTranslations
         
         public int? TranslationId { get; set; }
 
+        public string? LabelIds { get; set; }
+        
+        public string? ExcludeLabelIds { get; set; }
+
         public int Limit { get; set; } = 25;
         
         public int Offset { get; set; }
@@ -29,11 +33,15 @@ namespace Crowdin.Api.StringTranslations
             int? stringId,
             string? languageId,
             int? translationId,
+            string? labelIds,
+            string? excludeLabelIds,
             int limit, int offset)
         {
             StringId = stringId;
             LanguageId = languageId;
             TranslationId = translationId;
+            LabelIds = labelIds;
+            ExcludeLabelIds = excludeLabelIds;
             Limit = limit;
             Offset = offset;
         }
@@ -46,6 +54,8 @@ namespace Crowdin.Api.StringTranslations
             queryParams.AddParamIfPresent("stringId", StringId);
             queryParams.AddParamIfPresent("languageId", LanguageId);
             queryParams.AddParamIfPresent("translationId", TranslationId);
+            queryParams.AddParamIfPresent("labelIds", LabelIds);
+            queryParams.AddParamIfPresent("excludeLabelIds", ExcludeLabelIds);
 
             return queryParams;
         }
