@@ -7,6 +7,102 @@ references:
   commentId: N:Crowdin.Api
   fullName: Crowdin.Api
   nameWithType: Crowdin.Api
+- uid: Crowdin.Api.Applications
+  name: Crowdin.Api.Applications
+  href: api/Crowdin.Api.Applications.html
+  commentId: N:Crowdin.Api.Applications
+  fullName: Crowdin.Api.Applications
+  nameWithType: Crowdin.Api.Applications
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor
+  name: ApplicationsApiExecutor
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html
+  commentId: T:Crowdin.Api.Applications.ApplicationsApiExecutor
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor
+  nameWithType: ApplicationsApiExecutor
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.#ctor(Crowdin.Api.ICrowdinApiClient)
+  name: ApplicationsApiExecutor(ICrowdinApiClient)
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor__ctor_Crowdin_Api_ICrowdinApiClient_
+  commentId: M:Crowdin.Api.Applications.ApplicationsApiExecutor.#ctor(Crowdin.Api.ICrowdinApiClient)
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.ApplicationsApiExecutor(Crowdin.Api.ICrowdinApiClient)
+  nameWithType: ApplicationsApiExecutor.ApplicationsApiExecutor(ICrowdinApiClient)
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.#ctor(Crowdin.Api.ICrowdinApiClient,Crowdin.Api.Core.IJsonParser)
+  name: ApplicationsApiExecutor(ICrowdinApiClient, IJsonParser)
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor__ctor_Crowdin_Api_ICrowdinApiClient_Crowdin_Api_Core_IJsonParser_
+  commentId: M:Crowdin.Api.Applications.ApplicationsApiExecutor.#ctor(Crowdin.Api.ICrowdinApiClient,Crowdin.Api.Core.IJsonParser)
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.ApplicationsApiExecutor(Crowdin.Api.ICrowdinApiClient, Crowdin.Api.Core.IJsonParser)
+  nameWithType: ApplicationsApiExecutor.ApplicationsApiExecutor(ICrowdinApiClient, IJsonParser)
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.#ctor*
+  name: ApplicationsApiExecutor
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor__ctor_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationsApiExecutor.#ctor
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.ApplicationsApiExecutor
+  nameWithType: ApplicationsApiExecutor.ApplicationsApiExecutor
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.AddApplicationData(System.String,System.String,System.Object)
+  name: AddApplicationData(String, String, Object)
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_AddApplicationData_System_String_System_String_System_Object_
+  commentId: M:Crowdin.Api.Applications.ApplicationsApiExecutor.AddApplicationData(System.String,System.String,System.Object)
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.AddApplicationData(System.String, System.String, System.Object)
+  nameWithType: ApplicationsApiExecutor.AddApplicationData(String, String, Object)
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.AddApplicationData*
+  name: AddApplicationData
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_AddApplicationData_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationsApiExecutor.AddApplicationData
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.AddApplicationData
+  nameWithType: ApplicationsApiExecutor.AddApplicationData
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationData(System.String,System.String)
+  name: DeleteApplicationData(String, String)
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_DeleteApplicationData_System_String_System_String_
+  commentId: M:Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationData(System.String,System.String)
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationData(System.String, System.String)
+  nameWithType: ApplicationsApiExecutor.DeleteApplicationData(String, String)
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationData*
+  name: DeleteApplicationData
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_DeleteApplicationData_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationData
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationData
+  nameWithType: ApplicationsApiExecutor.DeleteApplicationData
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationData(System.String,System.String,System.Object)
+  name: EditApplicationData(String, String, Object)
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_EditApplicationData_System_String_System_String_System_Object_
+  commentId: M:Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationData(System.String,System.String,System.Object)
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationData(System.String, System.String, System.Object)
+  nameWithType: ApplicationsApiExecutor.EditApplicationData(String, String, Object)
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationData*
+  name: EditApplicationData
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_EditApplicationData_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationData
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationData
+  nameWithType: ApplicationsApiExecutor.EditApplicationData
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.GetApplicationData(System.String,System.String)
+  name: GetApplicationData(String, String)
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_GetApplicationData_System_String_System_String_
+  commentId: M:Crowdin.Api.Applications.ApplicationsApiExecutor.GetApplicationData(System.String,System.String)
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.GetApplicationData(System.String, System.String)
+  nameWithType: ApplicationsApiExecutor.GetApplicationData(String, String)
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.GetApplicationData*
+  name: GetApplicationData
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_GetApplicationData_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationsApiExecutor.GetApplicationData
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.GetApplicationData
+  nameWithType: ApplicationsApiExecutor.GetApplicationData
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.UpdateOrRestoreApplicationData(System.String,System.String,System.Object)
+  name: UpdateOrRestoreApplicationData(String, String, Object)
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_UpdateOrRestoreApplicationData_System_String_System_String_System_Object_
+  commentId: M:Crowdin.Api.Applications.ApplicationsApiExecutor.UpdateOrRestoreApplicationData(System.String,System.String,System.Object)
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.UpdateOrRestoreApplicationData(System.String, System.String, System.Object)
+  nameWithType: ApplicationsApiExecutor.UpdateOrRestoreApplicationData(String, String, Object)
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.UpdateOrRestoreApplicationData*
+  name: UpdateOrRestoreApplicationData
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_UpdateOrRestoreApplicationData_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationsApiExecutor.UpdateOrRestoreApplicationData
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.UpdateOrRestoreApplicationData
+  nameWithType: ApplicationsApiExecutor.UpdateOrRestoreApplicationData
 - uid: Crowdin.Api.AttributeError
   name: AttributeError
   href: api/Crowdin.Api.AttributeError.html
@@ -1228,6 +1324,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.CrowdinApiClient.CrowdinApiClient
   nameWithType: CrowdinApiClient.CrowdinApiClient
+- uid: Crowdin.Api.CrowdinApiClient.Applications
+  name: Applications
+  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_Applications
+  commentId: P:Crowdin.Api.CrowdinApiClient.Applications
+  fullName: Crowdin.Api.CrowdinApiClient.Applications
+  nameWithType: CrowdinApiClient.Applications
+- uid: Crowdin.Api.CrowdinApiClient.Applications*
+  name: Applications
+  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_Applications_
+  commentId: Overload:Crowdin.Api.CrowdinApiClient.Applications
+  isSpec: "True"
+  fullName: Crowdin.Api.CrowdinApiClient.Applications
+  nameWithType: CrowdinApiClient.Applications
 - uid: Crowdin.Api.CrowdinApiClient.Bundles
   name: Bundles
   href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_Bundles
@@ -1582,6 +1691,19 @@ references:
   fullName.vb: Crowdin.Api.CrowdinApiClient.WithFetchAll(Of T)(Func(Of System.Int32, System.Int32, Task(Of Crowdin.Api.ResponseList(Of T))), System.Nullable(Of System.Int32), System.Int32)
   nameWithType: CrowdinApiClient.WithFetchAll<T>(Func<Int32, Int32, Task<ResponseList<T>>>, Nullable<Int32>, Int32)
   nameWithType.vb: CrowdinApiClient.WithFetchAll(Of T)(Func(Of Int32, Int32, Task(Of ResponseList(Of T))), Nullable(Of Int32), Int32)
+- uid: Crowdin.Api.CrowdinApiClient.Workflows
+  name: Workflows
+  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_Workflows
+  commentId: P:Crowdin.Api.CrowdinApiClient.Workflows
+  fullName: Crowdin.Api.CrowdinApiClient.Workflows
+  nameWithType: CrowdinApiClient.Workflows
+- uid: Crowdin.Api.CrowdinApiClient.Workflows*
+  name: Workflows
+  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_Workflows_
+  commentId: Overload:Crowdin.Api.CrowdinApiClient.Workflows
+  isSpec: "True"
+  fullName: Crowdin.Api.CrowdinApiClient.Workflows
+  nameWithType: CrowdinApiClient.Workflows
 - uid: Crowdin.Api.CrowdinApiException
   name: CrowdinApiException
   href: api/Crowdin.Api.CrowdinApiException.html
@@ -4694,6 +4816,19 @@ references:
   commentId: T:Crowdin.Api.ICrowdinApiClient
   fullName: Crowdin.Api.ICrowdinApiClient
   nameWithType: ICrowdinApiClient
+- uid: Crowdin.Api.ICrowdinApiClient.Applications
+  name: Applications
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Applications
+  commentId: P:Crowdin.Api.ICrowdinApiClient.Applications
+  fullName: Crowdin.Api.ICrowdinApiClient.Applications
+  nameWithType: ICrowdinApiClient.Applications
+- uid: Crowdin.Api.ICrowdinApiClient.Applications*
+  name: Applications
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Applications_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.Applications
+  isSpec: "True"
+  fullName: Crowdin.Api.ICrowdinApiClient.Applications
+  nameWithType: ICrowdinApiClient.Applications
 - uid: Crowdin.Api.ICrowdinApiClient.Bundles
   name: Bundles
   href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Bundles
@@ -5019,6 +5154,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ICrowdinApiClient.Webhooks
   nameWithType: ICrowdinApiClient.Webhooks
+- uid: Crowdin.Api.ICrowdinApiClient.Workflows
+  name: Workflows
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Workflows
+  commentId: P:Crowdin.Api.ICrowdinApiClient.Workflows
+  fullName: Crowdin.Api.ICrowdinApiClient.Workflows
+  nameWithType: ICrowdinApiClient.Workflows
+- uid: Crowdin.Api.ICrowdinApiClient.Workflows*
+  name: Workflows
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Workflows_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.Workflows
+  isSpec: "True"
+  fullName: Crowdin.Api.ICrowdinApiClient.Workflows
+  nameWithType: ICrowdinApiClient.Workflows
 - uid: Crowdin.Api.IQueryParamsProvider
   name: IQueryParamsProvider
   href: api/Crowdin.Api.IQueryParamsProvider.html
@@ -12601,6 +12749,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Reports.AddReportSettingsTemplateRequest.Currency
   nameWithType: AddReportSettingsTemplateRequest.Currency
+- uid: Crowdin.Api.Reports.AddReportSettingsTemplateRequest.IsPublic
+  name: IsPublic
+  href: api/Crowdin.Api.Reports.AddReportSettingsTemplateRequest.html#Crowdin_Api_Reports_AddReportSettingsTemplateRequest_IsPublic
+  commentId: P:Crowdin.Api.Reports.AddReportSettingsTemplateRequest.IsPublic
+  fullName: Crowdin.Api.Reports.AddReportSettingsTemplateRequest.IsPublic
+  nameWithType: AddReportSettingsTemplateRequest.IsPublic
+- uid: Crowdin.Api.Reports.AddReportSettingsTemplateRequest.IsPublic*
+  name: IsPublic
+  href: api/Crowdin.Api.Reports.AddReportSettingsTemplateRequest.html#Crowdin_Api_Reports_AddReportSettingsTemplateRequest_IsPublic_
+  commentId: Overload:Crowdin.Api.Reports.AddReportSettingsTemplateRequest.IsPublic
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.AddReportSettingsTemplateRequest.IsPublic
+  nameWithType: AddReportSettingsTemplateRequest.IsPublic
 - uid: Crowdin.Api.Reports.AddReportSettingsTemplateRequest.Name
   name: Name
   href: api/Crowdin.Api.Reports.AddReportSettingsTemplateRequest.html#Crowdin_Api_Reports_AddReportSettingsTemplateRequest_Name
@@ -16287,6 +16448,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Reports.ReportSettingsTemplateBase.Id
   nameWithType: ReportSettingsTemplateBase.Id
+- uid: Crowdin.Api.Reports.ReportSettingsTemplateBase.IsPublic
+  name: IsPublic
+  href: api/Crowdin.Api.Reports.ReportSettingsTemplateBase.html#Crowdin_Api_Reports_ReportSettingsTemplateBase_IsPublic
+  commentId: P:Crowdin.Api.Reports.ReportSettingsTemplateBase.IsPublic
+  fullName: Crowdin.Api.Reports.ReportSettingsTemplateBase.IsPublic
+  nameWithType: ReportSettingsTemplateBase.IsPublic
+- uid: Crowdin.Api.Reports.ReportSettingsTemplateBase.IsPublic*
+  name: IsPublic
+  href: api/Crowdin.Api.Reports.ReportSettingsTemplateBase.html#Crowdin_Api_Reports_ReportSettingsTemplateBase_IsPublic_
+  commentId: Overload:Crowdin.Api.Reports.ReportSettingsTemplateBase.IsPublic
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ReportSettingsTemplateBase.IsPublic
+  nameWithType: ReportSettingsTemplateBase.IsPublic
 - uid: Crowdin.Api.Reports.ReportSettingsTemplateBase.Mode
   name: Mode
   href: api/Crowdin.Api.Reports.ReportSettingsTemplateBase.html#Crowdin_Api_Reports_ReportSettingsTemplateBase_Mode
@@ -18886,6 +19060,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.SourceFiles.AddFileRequest.BranchId
   nameWithType: AddFileRequest.BranchId
+- uid: Crowdin.Api.SourceFiles.AddFileRequest.Context
+  name: Context
+  href: api/Crowdin.Api.SourceFiles.AddFileRequest.html#Crowdin_Api_SourceFiles_AddFileRequest_Context
+  commentId: P:Crowdin.Api.SourceFiles.AddFileRequest.Context
+  fullName: Crowdin.Api.SourceFiles.AddFileRequest.Context
+  nameWithType: AddFileRequest.Context
+- uid: Crowdin.Api.SourceFiles.AddFileRequest.Context*
+  name: Context
+  href: api/Crowdin.Api.SourceFiles.AddFileRequest.html#Crowdin_Api_SourceFiles_AddFileRequest_Context_
+  commentId: Overload:Crowdin.Api.SourceFiles.AddFileRequest.Context
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.AddFileRequest.Context
+  nameWithType: AddFileRequest.Context
 - uid: Crowdin.Api.SourceFiles.AddFileRequest.DirectoryId
   name: DirectoryId
   href: api/Crowdin.Api.SourceFiles.AddFileRequest.html#Crowdin_Api_SourceFiles_AddFileRequest_DirectoryId
@@ -19679,6 +19866,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.SourceFiles.File.BranchId
   nameWithType: File.BranchId
+- uid: Crowdin.Api.SourceFiles.File.Context
+  name: Context
+  href: api/Crowdin.Api.SourceFiles.File.html#Crowdin_Api_SourceFiles_File_Context
+  commentId: P:Crowdin.Api.SourceFiles.File.Context
+  fullName: Crowdin.Api.SourceFiles.File.Context
+  nameWithType: File.Context
+- uid: Crowdin.Api.SourceFiles.File.Context*
+  name: Context
+  href: api/Crowdin.Api.SourceFiles.File.html#Crowdin_Api_SourceFiles_File_Context_
+  commentId: Overload:Crowdin.Api.SourceFiles.File.Context
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.File.Context
+  nameWithType: File.Context
 - uid: Crowdin.Api.SourceFiles.File.CreatedAt
   name: CreatedAt
   href: api/Crowdin.Api.SourceFiles.File.html#Crowdin_Api_SourceFiles_File_CreatedAt
@@ -24845,15 +25045,15 @@ references:
   commentId: M:Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals(System.Int32,Crowdin.Api.StringTranslations.TranslationApprovalsListParams)
   fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals(System.Int32, Crowdin.Api.StringTranslations.TranslationApprovalsListParams)
   nameWithType: StringTranslationsApiExecutor.ListTranslationApprovals(Int32, TranslationApprovalsListParams)
-- uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32)
-  name: ListTranslationApprovals(Int32, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32)
-  href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListTranslationApprovals_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32)
-  name.vb: ListTranslationApprovals(Int32, Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32)
-  fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals(System.Int32, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals(System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Int32, System.Int32)
-  nameWithType: StringTranslationsApiExecutor.ListTranslationApprovals(Int32, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32)
-  nameWithType.vb: StringTranslationsApiExecutor.ListTranslationApprovals(Int32, Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32)
+- uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32)
+  name: ListTranslationApprovals(Int32, Nullable<Int32>, Nullable<String>, Nullable<String>, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32)
+  href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListTranslationApprovals_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32)
+  name.vb: ListTranslationApprovals(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32)
+  fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals(System.Int32, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Int32, System.Int32)
+  fullName.vb: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals(System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Int32, System.Int32)
+  nameWithType: StringTranslationsApiExecutor.ListTranslationApprovals(Int32, Nullable<Int32>, Nullable<String>, Nullable<String>, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32)
+  nameWithType.vb: StringTranslationsApiExecutor.ListTranslationApprovals(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32)
 - uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals*
   name: ListTranslationApprovals
   href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListTranslationApprovals_
@@ -24867,15 +25067,15 @@ references:
   commentId: M:Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationVotes(System.Int32,Crowdin.Api.StringTranslations.TranslationVotesListParams)
   fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationVotes(System.Int32, Crowdin.Api.StringTranslations.TranslationVotesListParams)
   nameWithType: StringTranslationsApiExecutor.ListTranslationVotes(Int32, TranslationVotesListParams)
-- uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationVotes(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32)
-  name: ListTranslationVotes(Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32)
-  href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListTranslationVotes_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationVotes(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32)
-  name.vb: ListTranslationVotes(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32)
-  fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationVotes(System.Int32, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationVotes(System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Int32, System.Int32)
-  nameWithType: StringTranslationsApiExecutor.ListTranslationVotes(Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32)
-  nameWithType.vb: StringTranslationsApiExecutor.ListTranslationVotes(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32)
+- uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationVotes(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Int32,System.Int32)
+  name: ListTranslationVotes(Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<String>, Nullable<String>, Int32, Int32)
+  href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListTranslationVotes_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_String__System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationVotes(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Int32,System.Int32)
+  name.vb: ListTranslationVotes(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Int32, Int32)
+  fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationVotes(System.Int32, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.String>, System.Int32, System.Int32)
+  fullName.vb: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationVotes(System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.String), System.Int32, System.Int32)
+  nameWithType: StringTranslationsApiExecutor.ListTranslationVotes(Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<String>, Nullable<String>, Int32, Int32)
+  nameWithType.vb: StringTranslationsApiExecutor.ListTranslationVotes(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Int32, Int32)
 - uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationVotes*
   name: ListTranslationVotes
   href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListTranslationVotes_
@@ -25201,15 +25401,15 @@ references:
   commentId: M:Crowdin.Api.StringTranslations.TranslationApprovalsListParams.#ctor
   fullName: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.TranslationApprovalsListParams()
   nameWithType: TranslationApprovalsListParams.TranslationApprovalsListParams()
-- uid: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32)
-  name: TranslationApprovalsListParams(Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32)
-  href: api/Crowdin.Api.StringTranslations.TranslationApprovalsListParams.html#Crowdin_Api_StringTranslations_TranslationApprovalsListParams__ctor_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.StringTranslations.TranslationApprovalsListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32)
-  name.vb: TranslationApprovalsListParams(Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32)
-  fullName: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.TranslationApprovalsListParams(System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.TranslationApprovalsListParams(System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Int32, System.Int32)
-  nameWithType: TranslationApprovalsListParams.TranslationApprovalsListParams(Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32)
-  nameWithType.vb: TranslationApprovalsListParams.TranslationApprovalsListParams(Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32)
+- uid: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32)
+  name: TranslationApprovalsListParams(Nullable<Int32>, Nullable<String>, Nullable<String>, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32)
+  href: api/Crowdin.Api.StringTranslations.TranslationApprovalsListParams.html#Crowdin_Api_StringTranslations_TranslationApprovalsListParams__ctor_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.StringTranslations.TranslationApprovalsListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32)
+  name.vb: TranslationApprovalsListParams(Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32)
+  fullName: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.TranslationApprovalsListParams(System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Int32, System.Int32)
+  fullName.vb: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.TranslationApprovalsListParams(System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Int32, System.Int32)
+  nameWithType: TranslationApprovalsListParams.TranslationApprovalsListParams(Nullable<Int32>, Nullable<String>, Nullable<String>, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32)
+  nameWithType.vb: TranslationApprovalsListParams.TranslationApprovalsListParams(Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32)
 - uid: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.#ctor*
   name: TranslationApprovalsListParams
   href: api/Crowdin.Api.StringTranslations.TranslationApprovalsListParams.html#Crowdin_Api_StringTranslations_TranslationApprovalsListParams__ctor_
@@ -25217,6 +25417,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.TranslationApprovalsListParams
   nameWithType: TranslationApprovalsListParams.TranslationApprovalsListParams
+- uid: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.ExcludeLabelIds
+  name: ExcludeLabelIds
+  href: api/Crowdin.Api.StringTranslations.TranslationApprovalsListParams.html#Crowdin_Api_StringTranslations_TranslationApprovalsListParams_ExcludeLabelIds
+  commentId: P:Crowdin.Api.StringTranslations.TranslationApprovalsListParams.ExcludeLabelIds
+  fullName: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.ExcludeLabelIds
+  nameWithType: TranslationApprovalsListParams.ExcludeLabelIds
+- uid: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.ExcludeLabelIds*
+  name: ExcludeLabelIds
+  href: api/Crowdin.Api.StringTranslations.TranslationApprovalsListParams.html#Crowdin_Api_StringTranslations_TranslationApprovalsListParams_ExcludeLabelIds_
+  commentId: Overload:Crowdin.Api.StringTranslations.TranslationApprovalsListParams.ExcludeLabelIds
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.ExcludeLabelIds
+  nameWithType: TranslationApprovalsListParams.ExcludeLabelIds
 - uid: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.FileId
   name: FileId
   href: api/Crowdin.Api.StringTranslations.TranslationApprovalsListParams.html#Crowdin_Api_StringTranslations_TranslationApprovalsListParams_FileId
@@ -25230,6 +25443,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.FileId
   nameWithType: TranslationApprovalsListParams.FileId
+- uid: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.LabelIds
+  name: LabelIds
+  href: api/Crowdin.Api.StringTranslations.TranslationApprovalsListParams.html#Crowdin_Api_StringTranslations_TranslationApprovalsListParams_LabelIds
+  commentId: P:Crowdin.Api.StringTranslations.TranslationApprovalsListParams.LabelIds
+  fullName: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.LabelIds
+  nameWithType: TranslationApprovalsListParams.LabelIds
+- uid: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.LabelIds*
+  name: LabelIds
+  href: api/Crowdin.Api.StringTranslations.TranslationApprovalsListParams.html#Crowdin_Api_StringTranslations_TranslationApprovalsListParams_LabelIds_
+  commentId: Overload:Crowdin.Api.StringTranslations.TranslationApprovalsListParams.LabelIds
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.LabelIds
+  nameWithType: TranslationApprovalsListParams.LabelIds
 - uid: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.LanguageId
   name: LanguageId
   href: api/Crowdin.Api.StringTranslations.TranslationApprovalsListParams.html#Crowdin_Api_StringTranslations_TranslationApprovalsListParams_LanguageId
@@ -25409,15 +25635,15 @@ references:
   commentId: M:Crowdin.Api.StringTranslations.TranslationVotesListParams.#ctor
   fullName: Crowdin.Api.StringTranslations.TranslationVotesListParams.TranslationVotesListParams()
   nameWithType: TranslationVotesListParams.TranslationVotesListParams()
-- uid: Crowdin.Api.StringTranslations.TranslationVotesListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32)
-  name: TranslationVotesListParams(Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32)
-  href: api/Crowdin.Api.StringTranslations.TranslationVotesListParams.html#Crowdin_Api_StringTranslations_TranslationVotesListParams__ctor_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.StringTranslations.TranslationVotesListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32)
-  name.vb: TranslationVotesListParams(Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32)
-  fullName: Crowdin.Api.StringTranslations.TranslationVotesListParams.TranslationVotesListParams(System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.StringTranslations.TranslationVotesListParams.TranslationVotesListParams(System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Int32, System.Int32)
-  nameWithType: TranslationVotesListParams.TranslationVotesListParams(Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32)
-  nameWithType.vb: TranslationVotesListParams.TranslationVotesListParams(Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32)
+- uid: Crowdin.Api.StringTranslations.TranslationVotesListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Int32,System.Int32)
+  name: TranslationVotesListParams(Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<String>, Nullable<String>, Int32, Int32)
+  href: api/Crowdin.Api.StringTranslations.TranslationVotesListParams.html#Crowdin_Api_StringTranslations_TranslationVotesListParams__ctor_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_String__System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.StringTranslations.TranslationVotesListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Int32,System.Int32)
+  name.vb: TranslationVotesListParams(Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Int32, Int32)
+  fullName: Crowdin.Api.StringTranslations.TranslationVotesListParams.TranslationVotesListParams(System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.String>, System.Int32, System.Int32)
+  fullName.vb: Crowdin.Api.StringTranslations.TranslationVotesListParams.TranslationVotesListParams(System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.String), System.Int32, System.Int32)
+  nameWithType: TranslationVotesListParams.TranslationVotesListParams(Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<String>, Nullable<String>, Int32, Int32)
+  nameWithType.vb: TranslationVotesListParams.TranslationVotesListParams(Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Int32, Int32)
 - uid: Crowdin.Api.StringTranslations.TranslationVotesListParams.#ctor*
   name: TranslationVotesListParams
   href: api/Crowdin.Api.StringTranslations.TranslationVotesListParams.html#Crowdin_Api_StringTranslations_TranslationVotesListParams__ctor_
@@ -25425,6 +25651,32 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringTranslations.TranslationVotesListParams.TranslationVotesListParams
   nameWithType: TranslationVotesListParams.TranslationVotesListParams
+- uid: Crowdin.Api.StringTranslations.TranslationVotesListParams.ExcludeLabelIds
+  name: ExcludeLabelIds
+  href: api/Crowdin.Api.StringTranslations.TranslationVotesListParams.html#Crowdin_Api_StringTranslations_TranslationVotesListParams_ExcludeLabelIds
+  commentId: P:Crowdin.Api.StringTranslations.TranslationVotesListParams.ExcludeLabelIds
+  fullName: Crowdin.Api.StringTranslations.TranslationVotesListParams.ExcludeLabelIds
+  nameWithType: TranslationVotesListParams.ExcludeLabelIds
+- uid: Crowdin.Api.StringTranslations.TranslationVotesListParams.ExcludeLabelIds*
+  name: ExcludeLabelIds
+  href: api/Crowdin.Api.StringTranslations.TranslationVotesListParams.html#Crowdin_Api_StringTranslations_TranslationVotesListParams_ExcludeLabelIds_
+  commentId: Overload:Crowdin.Api.StringTranslations.TranslationVotesListParams.ExcludeLabelIds
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.TranslationVotesListParams.ExcludeLabelIds
+  nameWithType: TranslationVotesListParams.ExcludeLabelIds
+- uid: Crowdin.Api.StringTranslations.TranslationVotesListParams.LabelIds
+  name: LabelIds
+  href: api/Crowdin.Api.StringTranslations.TranslationVotesListParams.html#Crowdin_Api_StringTranslations_TranslationVotesListParams_LabelIds
+  commentId: P:Crowdin.Api.StringTranslations.TranslationVotesListParams.LabelIds
+  fullName: Crowdin.Api.StringTranslations.TranslationVotesListParams.LabelIds
+  nameWithType: TranslationVotesListParams.LabelIds
+- uid: Crowdin.Api.StringTranslations.TranslationVotesListParams.LabelIds*
+  name: LabelIds
+  href: api/Crowdin.Api.StringTranslations.TranslationVotesListParams.html#Crowdin_Api_StringTranslations_TranslationVotesListParams_LabelIds_
+  commentId: Overload:Crowdin.Api.StringTranslations.TranslationVotesListParams.LabelIds
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.TranslationVotesListParams.LabelIds
+  nameWithType: TranslationVotesListParams.LabelIds
 - uid: Crowdin.Api.StringTranslations.TranslationVotesListParams.LanguageId
   name: LanguageId
   href: api/Crowdin.Api.StringTranslations.TranslationVotesListParams.html#Crowdin_Api_StringTranslations_TranslationVotesListParams_LanguageId
