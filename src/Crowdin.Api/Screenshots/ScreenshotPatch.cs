@@ -16,6 +16,9 @@ namespace Crowdin.Api.Screenshots
     public enum ScreenshotPatchPath
     {
         [Description("/name")]
-        Name
+        Name,
+
+        [Description("/labelIds")]
+        LabelIds
     }
 }
