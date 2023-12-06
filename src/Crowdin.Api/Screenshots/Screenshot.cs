@@ -29,6 +29,9 @@ namespace Crowdin.Api.Screenshots
         [JsonProperty("tags")]
         public Tag[] Tags { get; set; }
         
+        [JsonProperty("labelIds")]
+        public int[] LabelIds { get; set; }
+        
         [JsonProperty("createdAt")]
         public DateTimeOffset CreatedAt { get; set; }
         
