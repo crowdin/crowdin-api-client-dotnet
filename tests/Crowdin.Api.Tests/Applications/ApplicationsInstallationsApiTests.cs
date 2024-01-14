@@ -1,6 +1,4 @@
-
 using Crowdin.Api.Applications;
-using Crowdin.Api.Bundles;
 using Crowdin.Api.Core;
 using Crowdin.Api.Tests.Core;
 using Moq;
@@ -8,7 +6,6 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Net;
 using System.Threading.Tasks;
 using Xunit;
@@ -24,12 +21,12 @@ namespace Crowdin.Api.Tests.Applications
         public async Task GetApplicationInstallation()
         {
             var url = $"/applications/installations/{applicationIdentifier}";
-            mockClient.Setup(client => client.SendGetRequest(url,null))
+            mockClient.Setup(client => client.SendGetRequest(url, null))
                       .ReturnsAsync(new CrowdinApiResult
-                        {
-                            StatusCode = HttpStatusCode.OK,
-                            JsonObject = JObject.Parse(Core.Resources.Applications.GetApplicationInstallation_Response)
-                        }); 
+                      {
+                          StatusCode = HttpStatusCode.OK,
+                          JsonObject = JObject.Parse(Core.Resources.Applications.GetApplicationInstallation_Response)
+                      });
             var executor = new ApplicationsApiExecutor(mockClient.Object);
             Application? response = await executor.GetApplicationInstallation(applicationIdentifier);
             Assert_ApplicationInstallation(response);
@@ -72,7 +69,7 @@ namespace Crowdin.Api.Tests.Applications
 
                 }
             };
-            var request = new InstallApplicationRequest { Url="https://localhost.dev", Permissions = permissions };
+            var request = new InstallApplicationRequest { Url = "https://localhost.dev", Permissions = permissions };
             mockClient.Setup(client => client.SendPostRequest(url, request, null))
                       .ReturnsAsync(new CrowdinApiResult
                       {
@@ -162,9 +159,18 @@ namespace Crowdin.Api.Tests.Applications
             Assert.NotNull(application.Scopes);
             Assert.Single(application.Scopes);
             Assert.Equal("project", application.Scopes[0]);
+
             Assert.NotNull(application.Modules);
             Assert.Single(application.Modules);
             Assert.Equal("test-application", application.Modules[0].Key);
+            Assert.Equal("module-type", application.Modules[0].Type);
+            Assert.Equal("none", application.Modules[0].AuthenticationType);
+
+            Assert.NotNull(application.Permissions);
+            Assert.Equal(ApplicationUserValue.Restricted, application.Permissions.User.Value);
+            Assert.Equal(ApplicationProjectValue.Restricted, application.Permissions.Project.Value);
+            Assert.Single(application.Permissions.User.Ids);
+            Assert.Single(application.Permissions.User.Ids);
         }
     }
 }

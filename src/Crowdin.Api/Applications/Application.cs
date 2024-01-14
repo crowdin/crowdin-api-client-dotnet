@@ -8,6 +8,7 @@ namespace Crowdin.Api.Applications
     [PublicAPI]
     public class Application
     {
+        private Application() { }
 
         [JsonProperty("identifier")]
         public string Identifier { get; set; }
