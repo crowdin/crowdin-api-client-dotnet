@@ -13,6 +13,308 @@ references:
   commentId: N:Crowdin.Api.Applications
   fullName: Crowdin.Api.Applications
   nameWithType: Crowdin.Api.Applications
+- uid: Crowdin.Api.Applications.Application
+  name: Application
+  href: api/Crowdin.Api.Applications.Application.html
+  commentId: T:Crowdin.Api.Applications.Application
+  fullName: Crowdin.Api.Applications.Application
+  nameWithType: Application
+- uid: Crowdin.Api.Applications.Application.BaseUrl
+  name: BaseUrl
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_BaseUrl
+  commentId: P:Crowdin.Api.Applications.Application.BaseUrl
+  fullName: Crowdin.Api.Applications.Application.BaseUrl
+  nameWithType: Application.BaseUrl
+- uid: Crowdin.Api.Applications.Application.BaseUrl*
+  name: BaseUrl
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_BaseUrl_
+  commentId: Overload:Crowdin.Api.Applications.Application.BaseUrl
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.Application.BaseUrl
+  nameWithType: Application.BaseUrl
+- uid: Crowdin.Api.Applications.Application.CreatedAt
+  name: CreatedAt
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_CreatedAt
+  commentId: P:Crowdin.Api.Applications.Application.CreatedAt
+  fullName: Crowdin.Api.Applications.Application.CreatedAt
+  nameWithType: Application.CreatedAt
+- uid: Crowdin.Api.Applications.Application.CreatedAt*
+  name: CreatedAt
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_CreatedAt_
+  commentId: Overload:Crowdin.Api.Applications.Application.CreatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.Application.CreatedAt
+  nameWithType: Application.CreatedAt
+- uid: Crowdin.Api.Applications.Application.DefaultPermissions
+  name: DefaultPermissions
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_DefaultPermissions
+  commentId: P:Crowdin.Api.Applications.Application.DefaultPermissions
+  fullName: Crowdin.Api.Applications.Application.DefaultPermissions
+  nameWithType: Application.DefaultPermissions
+- uid: Crowdin.Api.Applications.Application.DefaultPermissions*
+  name: DefaultPermissions
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_DefaultPermissions_
+  commentId: Overload:Crowdin.Api.Applications.Application.DefaultPermissions
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.Application.DefaultPermissions
+  nameWithType: Application.DefaultPermissions
+- uid: Crowdin.Api.Applications.Application.Description
+  name: Description
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_Description
+  commentId: P:Crowdin.Api.Applications.Application.Description
+  fullName: Crowdin.Api.Applications.Application.Description
+  nameWithType: Application.Description
+- uid: Crowdin.Api.Applications.Application.Description*
+  name: Description
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_Description_
+  commentId: Overload:Crowdin.Api.Applications.Application.Description
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.Application.Description
+  nameWithType: Application.Description
+- uid: Crowdin.Api.Applications.Application.Identifier
+  name: Identifier
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_Identifier
+  commentId: P:Crowdin.Api.Applications.Application.Identifier
+  fullName: Crowdin.Api.Applications.Application.Identifier
+  nameWithType: Application.Identifier
+- uid: Crowdin.Api.Applications.Application.Identifier*
+  name: Identifier
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_Identifier_
+  commentId: Overload:Crowdin.Api.Applications.Application.Identifier
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.Application.Identifier
+  nameWithType: Application.Identifier
+- uid: Crowdin.Api.Applications.Application.LimitReached
+  name: LimitReached
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_LimitReached
+  commentId: P:Crowdin.Api.Applications.Application.LimitReached
+  fullName: Crowdin.Api.Applications.Application.LimitReached
+  nameWithType: Application.LimitReached
+- uid: Crowdin.Api.Applications.Application.LimitReached*
+  name: LimitReached
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_LimitReached_
+  commentId: Overload:Crowdin.Api.Applications.Application.LimitReached
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.Application.LimitReached
+  nameWithType: Application.LimitReached
+- uid: Crowdin.Api.Applications.Application.Logo
+  name: Logo
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_Logo
+  commentId: P:Crowdin.Api.Applications.Application.Logo
+  fullName: Crowdin.Api.Applications.Application.Logo
+  nameWithType: Application.Logo
+- uid: Crowdin.Api.Applications.Application.Logo*
+  name: Logo
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_Logo_
+  commentId: Overload:Crowdin.Api.Applications.Application.Logo
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.Application.Logo
+  nameWithType: Application.Logo
+- uid: Crowdin.Api.Applications.Application.ManifestUrl
+  name: ManifestUrl
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_ManifestUrl
+  commentId: P:Crowdin.Api.Applications.Application.ManifestUrl
+  fullName: Crowdin.Api.Applications.Application.ManifestUrl
+  nameWithType: Application.ManifestUrl
+- uid: Crowdin.Api.Applications.Application.ManifestUrl*
+  name: ManifestUrl
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_ManifestUrl_
+  commentId: Overload:Crowdin.Api.Applications.Application.ManifestUrl
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.Application.ManifestUrl
+  nameWithType: Application.ManifestUrl
+- uid: Crowdin.Api.Applications.Application.Modules
+  name: Modules
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_Modules
+  commentId: P:Crowdin.Api.Applications.Application.Modules
+  fullName: Crowdin.Api.Applications.Application.Modules
+  nameWithType: Application.Modules
+- uid: Crowdin.Api.Applications.Application.Modules*
+  name: Modules
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_Modules_
+  commentId: Overload:Crowdin.Api.Applications.Application.Modules
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.Application.Modules
+  nameWithType: Application.Modules
+- uid: Crowdin.Api.Applications.Application.Name
+  name: Name
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_Name
+  commentId: P:Crowdin.Api.Applications.Application.Name
+  fullName: Crowdin.Api.Applications.Application.Name
+  nameWithType: Application.Name
+- uid: Crowdin.Api.Applications.Application.Name*
+  name: Name
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_Name_
+  commentId: Overload:Crowdin.Api.Applications.Application.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.Application.Name
+  nameWithType: Application.Name
+- uid: Crowdin.Api.Applications.Application.Permissions
+  name: Permissions
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_Permissions
+  commentId: P:Crowdin.Api.Applications.Application.Permissions
+  fullName: Crowdin.Api.Applications.Application.Permissions
+  nameWithType: Application.Permissions
+- uid: Crowdin.Api.Applications.Application.Permissions*
+  name: Permissions
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_Permissions_
+  commentId: Overload:Crowdin.Api.Applications.Application.Permissions
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.Application.Permissions
+  nameWithType: Application.Permissions
+- uid: Crowdin.Api.Applications.Application.Scopes
+  name: Scopes
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_Scopes
+  commentId: P:Crowdin.Api.Applications.Application.Scopes
+  fullName: Crowdin.Api.Applications.Application.Scopes
+  nameWithType: Application.Scopes
+- uid: Crowdin.Api.Applications.Application.Scopes*
+  name: Scopes
+  href: api/Crowdin.Api.Applications.Application.html#Crowdin_Api_Applications_Application_Scopes_
+  commentId: Overload:Crowdin.Api.Applications.Application.Scopes
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.Application.Scopes
+  nameWithType: Application.Scopes
+- uid: Crowdin.Api.Applications.ApplicationModule
+  name: ApplicationModule
+  href: api/Crowdin.Api.Applications.ApplicationModule.html
+  commentId: T:Crowdin.Api.Applications.ApplicationModule
+  fullName: Crowdin.Api.Applications.ApplicationModule
+  nameWithType: ApplicationModule
+- uid: Crowdin.Api.Applications.ApplicationModule.AuthenticationType
+  name: AuthenticationType
+  href: api/Crowdin.Api.Applications.ApplicationModule.html#Crowdin_Api_Applications_ApplicationModule_AuthenticationType
+  commentId: P:Crowdin.Api.Applications.ApplicationModule.AuthenticationType
+  fullName: Crowdin.Api.Applications.ApplicationModule.AuthenticationType
+  nameWithType: ApplicationModule.AuthenticationType
+- uid: Crowdin.Api.Applications.ApplicationModule.AuthenticationType*
+  name: AuthenticationType
+  href: api/Crowdin.Api.Applications.ApplicationModule.html#Crowdin_Api_Applications_ApplicationModule_AuthenticationType_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationModule.AuthenticationType
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationModule.AuthenticationType
+  nameWithType: ApplicationModule.AuthenticationType
+- uid: Crowdin.Api.Applications.ApplicationModule.Data
+  name: Data
+  href: api/Crowdin.Api.Applications.ApplicationModule.html#Crowdin_Api_Applications_ApplicationModule_Data
+  commentId: P:Crowdin.Api.Applications.ApplicationModule.Data
+  fullName: Crowdin.Api.Applications.ApplicationModule.Data
+  nameWithType: ApplicationModule.Data
+- uid: Crowdin.Api.Applications.ApplicationModule.Data*
+  name: Data
+  href: api/Crowdin.Api.Applications.ApplicationModule.html#Crowdin_Api_Applications_ApplicationModule_Data_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationModule.Data
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationModule.Data
+  nameWithType: ApplicationModule.Data
+- uid: Crowdin.Api.Applications.ApplicationModule.Key
+  name: Key
+  href: api/Crowdin.Api.Applications.ApplicationModule.html#Crowdin_Api_Applications_ApplicationModule_Key
+  commentId: P:Crowdin.Api.Applications.ApplicationModule.Key
+  fullName: Crowdin.Api.Applications.ApplicationModule.Key
+  nameWithType: ApplicationModule.Key
+- uid: Crowdin.Api.Applications.ApplicationModule.Key*
+  name: Key
+  href: api/Crowdin.Api.Applications.ApplicationModule.html#Crowdin_Api_Applications_ApplicationModule_Key_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationModule.Key
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationModule.Key
+  nameWithType: ApplicationModule.Key
+- uid: Crowdin.Api.Applications.ApplicationModule.Type
+  name: Type
+  href: api/Crowdin.Api.Applications.ApplicationModule.html#Crowdin_Api_Applications_ApplicationModule_Type
+  commentId: P:Crowdin.Api.Applications.ApplicationModule.Type
+  fullName: Crowdin.Api.Applications.ApplicationModule.Type
+  nameWithType: ApplicationModule.Type
+- uid: Crowdin.Api.Applications.ApplicationModule.Type*
+  name: Type
+  href: api/Crowdin.Api.Applications.ApplicationModule.html#Crowdin_Api_Applications_ApplicationModule_Type_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationModule.Type
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationModule.Type
+  nameWithType: ApplicationModule.Type
+- uid: Crowdin.Api.Applications.ApplicationPermissions
+  name: ApplicationPermissions
+  href: api/Crowdin.Api.Applications.ApplicationPermissions.html
+  commentId: T:Crowdin.Api.Applications.ApplicationPermissions
+  fullName: Crowdin.Api.Applications.ApplicationPermissions
+  nameWithType: ApplicationPermissions
+- uid: Crowdin.Api.Applications.ApplicationPermissions.Project
+  name: Project
+  href: api/Crowdin.Api.Applications.ApplicationPermissions.html#Crowdin_Api_Applications_ApplicationPermissions_Project
+  commentId: P:Crowdin.Api.Applications.ApplicationPermissions.Project
+  fullName: Crowdin.Api.Applications.ApplicationPermissions.Project
+  nameWithType: ApplicationPermissions.Project
+- uid: Crowdin.Api.Applications.ApplicationPermissions.Project*
+  name: Project
+  href: api/Crowdin.Api.Applications.ApplicationPermissions.html#Crowdin_Api_Applications_ApplicationPermissions_Project_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationPermissions.Project
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationPermissions.Project
+  nameWithType: ApplicationPermissions.Project
+- uid: Crowdin.Api.Applications.ApplicationPermissions.User
+  name: User
+  href: api/Crowdin.Api.Applications.ApplicationPermissions.html#Crowdin_Api_Applications_ApplicationPermissions_User
+  commentId: P:Crowdin.Api.Applications.ApplicationPermissions.User
+  fullName: Crowdin.Api.Applications.ApplicationPermissions.User
+  nameWithType: ApplicationPermissions.User
+- uid: Crowdin.Api.Applications.ApplicationPermissions.User*
+  name: User
+  href: api/Crowdin.Api.Applications.ApplicationPermissions.html#Crowdin_Api_Applications_ApplicationPermissions_User_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationPermissions.User
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationPermissions.User
+  nameWithType: ApplicationPermissions.User
+- uid: Crowdin.Api.Applications.ApplicationProject
+  name: ApplicationProject
+  href: api/Crowdin.Api.Applications.ApplicationProject.html
+  commentId: T:Crowdin.Api.Applications.ApplicationProject
+  fullName: Crowdin.Api.Applications.ApplicationProject
+  nameWithType: ApplicationProject
+- uid: Crowdin.Api.Applications.ApplicationProject.Ids
+  name: Ids
+  href: api/Crowdin.Api.Applications.ApplicationProject.html#Crowdin_Api_Applications_ApplicationProject_Ids
+  commentId: P:Crowdin.Api.Applications.ApplicationProject.Ids
+  fullName: Crowdin.Api.Applications.ApplicationProject.Ids
+  nameWithType: ApplicationProject.Ids
+- uid: Crowdin.Api.Applications.ApplicationProject.Ids*
+  name: Ids
+  href: api/Crowdin.Api.Applications.ApplicationProject.html#Crowdin_Api_Applications_ApplicationProject_Ids_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationProject.Ids
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationProject.Ids
+  nameWithType: ApplicationProject.Ids
+- uid: Crowdin.Api.Applications.ApplicationProject.Value
+  name: Value
+  href: api/Crowdin.Api.Applications.ApplicationProject.html#Crowdin_Api_Applications_ApplicationProject_Value
+  commentId: P:Crowdin.Api.Applications.ApplicationProject.Value
+  fullName: Crowdin.Api.Applications.ApplicationProject.Value
+  nameWithType: ApplicationProject.Value
+- uid: Crowdin.Api.Applications.ApplicationProject.Value*
+  name: Value
+  href: api/Crowdin.Api.Applications.ApplicationProject.html#Crowdin_Api_Applications_ApplicationProject_Value_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationProject.Value
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationProject.Value
+  nameWithType: ApplicationProject.Value
+- uid: Crowdin.Api.Applications.ApplicationProjectValue
+  name: ApplicationProjectValue
+  href: api/Crowdin.Api.Applications.ApplicationProjectValue.html
+  commentId: T:Crowdin.Api.Applications.ApplicationProjectValue
+  fullName: Crowdin.Api.Applications.ApplicationProjectValue
+  nameWithType: ApplicationProjectValue
+- uid: Crowdin.Api.Applications.ApplicationProjectValue.Own
+  name: Own
+  href: api/Crowdin.Api.Applications.ApplicationProjectValue.html#Crowdin_Api_Applications_ApplicationProjectValue_Own
+  commentId: F:Crowdin.Api.Applications.ApplicationProjectValue.Own
+  fullName: Crowdin.Api.Applications.ApplicationProjectValue.Own
+  nameWithType: ApplicationProjectValue.Own
+- uid: Crowdin.Api.Applications.ApplicationProjectValue.Restricted
+  name: Restricted
+  href: api/Crowdin.Api.Applications.ApplicationProjectValue.html#Crowdin_Api_Applications_ApplicationProjectValue_Restricted
+  commentId: F:Crowdin.Api.Applications.ApplicationProjectValue.Restricted
+  fullName: Crowdin.Api.Applications.ApplicationProjectValue.Restricted
+  nameWithType: ApplicationProjectValue.Restricted
 - uid: Crowdin.Api.Applications.ApplicationsApiExecutor
   name: ApplicationsApiExecutor
   href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html
@@ -64,6 +366,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationData
   nameWithType: ApplicationsApiExecutor.DeleteApplicationData
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationInstallation(System.String,System.Boolean)
+  name: DeleteApplicationInstallation(String, Boolean)
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_DeleteApplicationInstallation_System_String_System_Boolean_
+  commentId: M:Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationInstallation(System.String,System.Boolean)
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationInstallation(System.String, System.Boolean)
+  nameWithType: ApplicationsApiExecutor.DeleteApplicationInstallation(String, Boolean)
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationInstallation*
+  name: DeleteApplicationInstallation
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_DeleteApplicationInstallation_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationInstallation
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationInstallation
+  nameWithType: ApplicationsApiExecutor.DeleteApplicationInstallation
 - uid: Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationData(System.String,System.String,System.Object)
   name: EditApplicationData(String, String, Object)
   href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_EditApplicationData_System_String_System_String_System_Object_
@@ -77,6 +392,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationData
   nameWithType: ApplicationsApiExecutor.EditApplicationData
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationInstallation(System.String,IEnumerable{Crowdin.Api.Applications.InstallationPatch})
+  name: EditApplicationInstallation(String, IEnumerable<InstallationPatch>)
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_EditApplicationInstallation_System_String_IEnumerable_Crowdin_Api_Applications_InstallationPatch__
+  commentId: M:Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationInstallation(System.String,IEnumerable{Crowdin.Api.Applications.InstallationPatch})
+  name.vb: EditApplicationInstallation(String, IEnumerable(Of InstallationPatch))
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationInstallation(System.String, IEnumerable<Crowdin.Api.Applications.InstallationPatch>)
+  fullName.vb: Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationInstallation(System.String, IEnumerable(Of Crowdin.Api.Applications.InstallationPatch))
+  nameWithType: ApplicationsApiExecutor.EditApplicationInstallation(String, IEnumerable<InstallationPatch>)
+  nameWithType.vb: ApplicationsApiExecutor.EditApplicationInstallation(String, IEnumerable(Of InstallationPatch))
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationInstallation*
+  name: EditApplicationInstallation
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_EditApplicationInstallation_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationInstallation
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationInstallation
+  nameWithType: ApplicationsApiExecutor.EditApplicationInstallation
 - uid: Crowdin.Api.Applications.ApplicationsApiExecutor.GetApplicationData(System.String,System.String)
   name: GetApplicationData(String, String)
   href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_GetApplicationData_System_String_System_String_
@@ -90,6 +421,45 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.GetApplicationData
   nameWithType: ApplicationsApiExecutor.GetApplicationData
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.GetApplicationInstallation(System.String)
+  name: GetApplicationInstallation(String)
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_GetApplicationInstallation_System_String_
+  commentId: M:Crowdin.Api.Applications.ApplicationsApiExecutor.GetApplicationInstallation(System.String)
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.GetApplicationInstallation(System.String)
+  nameWithType: ApplicationsApiExecutor.GetApplicationInstallation(String)
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.GetApplicationInstallation*
+  name: GetApplicationInstallation
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_GetApplicationInstallation_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationsApiExecutor.GetApplicationInstallation
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.GetApplicationInstallation
+  nameWithType: ApplicationsApiExecutor.GetApplicationInstallation
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.InstallApplication(Crowdin.Api.Applications.InstallApplicationRequest)
+  name: InstallApplication(InstallApplicationRequest)
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_InstallApplication_Crowdin_Api_Applications_InstallApplicationRequest_
+  commentId: M:Crowdin.Api.Applications.ApplicationsApiExecutor.InstallApplication(Crowdin.Api.Applications.InstallApplicationRequest)
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.InstallApplication(Crowdin.Api.Applications.InstallApplicationRequest)
+  nameWithType: ApplicationsApiExecutor.InstallApplication(InstallApplicationRequest)
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.InstallApplication*
+  name: InstallApplication
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_InstallApplication_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationsApiExecutor.InstallApplication
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.InstallApplication
+  nameWithType: ApplicationsApiExecutor.InstallApplication
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.ListApplicationInstallations(System.Int32,System.Int32)
+  name: ListApplicationInstallations(Int32, Int32)
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_ListApplicationInstallations_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.Applications.ApplicationsApiExecutor.ListApplicationInstallations(System.Int32,System.Int32)
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.ListApplicationInstallations(System.Int32, System.Int32)
+  nameWithType: ApplicationsApiExecutor.ListApplicationInstallations(Int32, Int32)
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.ListApplicationInstallations*
+  name: ListApplicationInstallations
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_ListApplicationInstallations_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationsApiExecutor.ListApplicationInstallations
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.ListApplicationInstallations
+  nameWithType: ApplicationsApiExecutor.ListApplicationInstallations
 - uid: Crowdin.Api.Applications.ApplicationsApiExecutor.UpdateOrRestoreApplicationData(System.String,System.String,System.Object)
   name: UpdateOrRestoreApplicationData(String, String, Object)
   href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_UpdateOrRestoreApplicationData_System_String_System_String_System_Object_
@@ -103,6 +473,137 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.UpdateOrRestoreApplicationData
   nameWithType: ApplicationsApiExecutor.UpdateOrRestoreApplicationData
+- uid: Crowdin.Api.Applications.ApplicationUser
+  name: ApplicationUser
+  href: api/Crowdin.Api.Applications.ApplicationUser.html
+  commentId: T:Crowdin.Api.Applications.ApplicationUser
+  fullName: Crowdin.Api.Applications.ApplicationUser
+  nameWithType: ApplicationUser
+- uid: Crowdin.Api.Applications.ApplicationUser.Ids
+  name: Ids
+  href: api/Crowdin.Api.Applications.ApplicationUser.html#Crowdin_Api_Applications_ApplicationUser_Ids
+  commentId: P:Crowdin.Api.Applications.ApplicationUser.Ids
+  fullName: Crowdin.Api.Applications.ApplicationUser.Ids
+  nameWithType: ApplicationUser.Ids
+- uid: Crowdin.Api.Applications.ApplicationUser.Ids*
+  name: Ids
+  href: api/Crowdin.Api.Applications.ApplicationUser.html#Crowdin_Api_Applications_ApplicationUser_Ids_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationUser.Ids
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationUser.Ids
+  nameWithType: ApplicationUser.Ids
+- uid: Crowdin.Api.Applications.ApplicationUser.Value
+  name: Value
+  href: api/Crowdin.Api.Applications.ApplicationUser.html#Crowdin_Api_Applications_ApplicationUser_Value
+  commentId: P:Crowdin.Api.Applications.ApplicationUser.Value
+  fullName: Crowdin.Api.Applications.ApplicationUser.Value
+  nameWithType: ApplicationUser.Value
+- uid: Crowdin.Api.Applications.ApplicationUser.Value*
+  name: Value
+  href: api/Crowdin.Api.Applications.ApplicationUser.html#Crowdin_Api_Applications_ApplicationUser_Value_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationUser.Value
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationUser.Value
+  nameWithType: ApplicationUser.Value
+- uid: Crowdin.Api.Applications.ApplicationUserValue
+  name: ApplicationUserValue
+  href: api/Crowdin.Api.Applications.ApplicationUserValue.html
+  commentId: T:Crowdin.Api.Applications.ApplicationUserValue
+  fullName: Crowdin.Api.Applications.ApplicationUserValue
+  nameWithType: ApplicationUserValue
+- uid: Crowdin.Api.Applications.ApplicationUserValue.All
+  name: All
+  href: api/Crowdin.Api.Applications.ApplicationUserValue.html#Crowdin_Api_Applications_ApplicationUserValue_All
+  commentId: F:Crowdin.Api.Applications.ApplicationUserValue.All
+  fullName: Crowdin.Api.Applications.ApplicationUserValue.All
+  nameWithType: ApplicationUserValue.All
+- uid: Crowdin.Api.Applications.ApplicationUserValue.Guests
+  name: Guests
+  href: api/Crowdin.Api.Applications.ApplicationUserValue.html#Crowdin_Api_Applications_ApplicationUserValue_Guests
+  commentId: F:Crowdin.Api.Applications.ApplicationUserValue.Guests
+  fullName: Crowdin.Api.Applications.ApplicationUserValue.Guests
+  nameWithType: ApplicationUserValue.Guests
+- uid: Crowdin.Api.Applications.ApplicationUserValue.Managers
+  name: Managers
+  href: api/Crowdin.Api.Applications.ApplicationUserValue.html#Crowdin_Api_Applications_ApplicationUserValue_Managers
+  commentId: F:Crowdin.Api.Applications.ApplicationUserValue.Managers
+  fullName: Crowdin.Api.Applications.ApplicationUserValue.Managers
+  nameWithType: ApplicationUserValue.Managers
+- uid: Crowdin.Api.Applications.ApplicationUserValue.Owner
+  name: Owner
+  href: api/Crowdin.Api.Applications.ApplicationUserValue.html#Crowdin_Api_Applications_ApplicationUserValue_Owner
+  commentId: F:Crowdin.Api.Applications.ApplicationUserValue.Owner
+  fullName: Crowdin.Api.Applications.ApplicationUserValue.Owner
+  nameWithType: ApplicationUserValue.Owner
+- uid: Crowdin.Api.Applications.ApplicationUserValue.Restricted
+  name: Restricted
+  href: api/Crowdin.Api.Applications.ApplicationUserValue.html#Crowdin_Api_Applications_ApplicationUserValue_Restricted
+  commentId: F:Crowdin.Api.Applications.ApplicationUserValue.Restricted
+  fullName: Crowdin.Api.Applications.ApplicationUserValue.Restricted
+  nameWithType: ApplicationUserValue.Restricted
+- uid: Crowdin.Api.Applications.InstallApplicationRequest
+  name: InstallApplicationRequest
+  href: api/Crowdin.Api.Applications.InstallApplicationRequest.html
+  commentId: T:Crowdin.Api.Applications.InstallApplicationRequest
+  fullName: Crowdin.Api.Applications.InstallApplicationRequest
+  nameWithType: InstallApplicationRequest
+- uid: Crowdin.Api.Applications.InstallApplicationRequest.Permissions
+  name: Permissions
+  href: api/Crowdin.Api.Applications.InstallApplicationRequest.html#Crowdin_Api_Applications_InstallApplicationRequest_Permissions
+  commentId: P:Crowdin.Api.Applications.InstallApplicationRequest.Permissions
+  fullName: Crowdin.Api.Applications.InstallApplicationRequest.Permissions
+  nameWithType: InstallApplicationRequest.Permissions
+- uid: Crowdin.Api.Applications.InstallApplicationRequest.Permissions*
+  name: Permissions
+  href: api/Crowdin.Api.Applications.InstallApplicationRequest.html#Crowdin_Api_Applications_InstallApplicationRequest_Permissions_
+  commentId: Overload:Crowdin.Api.Applications.InstallApplicationRequest.Permissions
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.InstallApplicationRequest.Permissions
+  nameWithType: InstallApplicationRequest.Permissions
+- uid: Crowdin.Api.Applications.InstallApplicationRequest.Url
+  name: Url
+  href: api/Crowdin.Api.Applications.InstallApplicationRequest.html#Crowdin_Api_Applications_InstallApplicationRequest_Url
+  commentId: P:Crowdin.Api.Applications.InstallApplicationRequest.Url
+  fullName: Crowdin.Api.Applications.InstallApplicationRequest.Url
+  nameWithType: InstallApplicationRequest.Url
+- uid: Crowdin.Api.Applications.InstallApplicationRequest.Url*
+  name: Url
+  href: api/Crowdin.Api.Applications.InstallApplicationRequest.html#Crowdin_Api_Applications_InstallApplicationRequest_Url_
+  commentId: Overload:Crowdin.Api.Applications.InstallApplicationRequest.Url
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.InstallApplicationRequest.Url
+  nameWithType: InstallApplicationRequest.Url
+- uid: Crowdin.Api.Applications.InstallationPatch
+  name: InstallationPatch
+  href: api/Crowdin.Api.Applications.InstallationPatch.html
+  commentId: T:Crowdin.Api.Applications.InstallationPatch
+  fullName: Crowdin.Api.Applications.InstallationPatch
+  nameWithType: InstallationPatch
+- uid: Crowdin.Api.Applications.InstallationPatch.Path
+  name: Path
+  href: api/Crowdin.Api.Applications.InstallationPatch.html#Crowdin_Api_Applications_InstallationPatch_Path
+  commentId: P:Crowdin.Api.Applications.InstallationPatch.Path
+  fullName: Crowdin.Api.Applications.InstallationPatch.Path
+  nameWithType: InstallationPatch.Path
+- uid: Crowdin.Api.Applications.InstallationPatch.Path*
+  name: Path
+  href: api/Crowdin.Api.Applications.InstallationPatch.html#Crowdin_Api_Applications_InstallationPatch_Path_
+  commentId: Overload:Crowdin.Api.Applications.InstallationPatch.Path
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.InstallationPatch.Path
+  nameWithType: InstallationPatch.Path
+- uid: Crowdin.Api.Applications.InstallationPatchPath
+  name: InstallationPatchPath
+  href: api/Crowdin.Api.Applications.InstallationPatchPath.html
+  commentId: T:Crowdin.Api.Applications.InstallationPatchPath
+  fullName: Crowdin.Api.Applications.InstallationPatchPath
+  nameWithType: InstallationPatchPath
+- uid: Crowdin.Api.Applications.InstallationPatchPath.Permissions
+  name: Permissions
+  href: api/Crowdin.Api.Applications.InstallationPatchPath.html#Crowdin_Api_Applications_InstallationPatchPath_Permissions
+  commentId: F:Crowdin.Api.Applications.InstallationPatchPath.Permissions
+  fullName: Crowdin.Api.Applications.InstallationPatchPath.Permissions
+  nameWithType: InstallationPatchPath.Permissions
 - uid: Crowdin.Api.AttributeError
   name: AttributeError
   href: api/Crowdin.Api.AttributeError.html
@@ -18201,6 +18702,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Screenshots.AddScreenshotRequest.AutoTag
   nameWithType: AddScreenshotRequest.AutoTag
+- uid: Crowdin.Api.Screenshots.AddScreenshotRequest.LabelIds
+  name: LabelIds
+  href: api/Crowdin.Api.Screenshots.AddScreenshotRequest.html#Crowdin_Api_Screenshots_AddScreenshotRequest_LabelIds
+  commentId: P:Crowdin.Api.Screenshots.AddScreenshotRequest.LabelIds
+  fullName: Crowdin.Api.Screenshots.AddScreenshotRequest.LabelIds
+  nameWithType: AddScreenshotRequest.LabelIds
+- uid: Crowdin.Api.Screenshots.AddScreenshotRequest.LabelIds*
+  name: LabelIds
+  href: api/Crowdin.Api.Screenshots.AddScreenshotRequest.html#Crowdin_Api_Screenshots_AddScreenshotRequest_LabelIds_
+  commentId: Overload:Crowdin.Api.Screenshots.AddScreenshotRequest.LabelIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Screenshots.AddScreenshotRequest.LabelIds
+  nameWithType: AddScreenshotRequest.LabelIds
 - uid: Crowdin.Api.Screenshots.AddScreenshotRequest.Name
   name: Name
   href: api/Crowdin.Api.Screenshots.AddScreenshotRequest.html#Crowdin_Api_Screenshots_AddScreenshotRequest_Name
@@ -18374,6 +18888,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Screenshots.Screenshot.Id
   nameWithType: Screenshot.Id
+- uid: Crowdin.Api.Screenshots.Screenshot.LabelIds
+  name: LabelIds
+  href: api/Crowdin.Api.Screenshots.Screenshot.html#Crowdin_Api_Screenshots_Screenshot_LabelIds
+  commentId: P:Crowdin.Api.Screenshots.Screenshot.LabelIds
+  fullName: Crowdin.Api.Screenshots.Screenshot.LabelIds
+  nameWithType: Screenshot.LabelIds
+- uid: Crowdin.Api.Screenshots.Screenshot.LabelIds*
+  name: LabelIds
+  href: api/Crowdin.Api.Screenshots.Screenshot.html#Crowdin_Api_Screenshots_Screenshot_LabelIds_
+  commentId: Overload:Crowdin.Api.Screenshots.Screenshot.LabelIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Screenshots.Screenshot.LabelIds
+  nameWithType: Screenshot.LabelIds
 - uid: Crowdin.Api.Screenshots.Screenshot.Name
   name: Name
   href: api/Crowdin.Api.Screenshots.Screenshot.html#Crowdin_Api_Screenshots_Screenshot_Name
@@ -18490,6 +19017,12 @@ references:
   commentId: T:Crowdin.Api.Screenshots.ScreenshotPatchPath
   fullName: Crowdin.Api.Screenshots.ScreenshotPatchPath
   nameWithType: ScreenshotPatchPath
+- uid: Crowdin.Api.Screenshots.ScreenshotPatchPath.LabelIds
+  name: LabelIds
+  href: api/Crowdin.Api.Screenshots.ScreenshotPatchPath.html#Crowdin_Api_Screenshots_ScreenshotPatchPath_LabelIds
+  commentId: F:Crowdin.Api.Screenshots.ScreenshotPatchPath.LabelIds
+  fullName: Crowdin.Api.Screenshots.ScreenshotPatchPath.LabelIds
+  nameWithType: ScreenshotPatchPath.LabelIds
 - uid: Crowdin.Api.Screenshots.ScreenshotPatchPath.Name
   name: Name
   href: api/Crowdin.Api.Screenshots.ScreenshotPatchPath.html#Crowdin_Api_Screenshots_ScreenshotPatchPath_Name
