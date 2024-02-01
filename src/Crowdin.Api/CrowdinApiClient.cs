@@ -25,6 +25,7 @@ using Crowdin.Api.MachineTranslationEngines;
 using Crowdin.Api.ProjectsGroups;
 using Crowdin.Api.Reports;
 using Crowdin.Api.Screenshots;
+using Crowdin.Api.SecurityLogs;
 using Crowdin.Api.SourceFiles;
 using Crowdin.Api.SourceStrings;
 using Crowdin.Api.Storage;
@@ -72,6 +73,8 @@ namespace Crowdin.Api
         public ReportsApiExecutor Reports { get; }
         
         public ScreenshotsApiExecutor Screenshots { get; }
+        
+        public SecurityLogsApiExecutor SecurityLogs { get; }
         
         public SourceFilesApiExecutor SourceFiles { get; }
         
@@ -174,6 +177,7 @@ namespace Crowdin.Api
             ProjectsGroups = new ProjectsGroupsApiExecutor(this);
             Reports = new ReportsApiExecutor(this);
             Screenshots = new ScreenshotsApiExecutor(this);
+            SecurityLogs = new SecurityLogsApiExecutor(this);
             SourceFiles = new SourceFilesApiExecutor(this);
             SourceStrings = new SourceStringsApiExecutor(this);
             Storage = new StorageApiExecutor(this);
