@@ -34,6 +34,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <EmbeddedResource Update="Core\Resources\Clients.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Clients.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
       <EmbeddedResource Update="Core\Resources\Translations.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Translations.Designer.cs</LastGenOutput>
@@ -177,6 +181,11 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Compile Update="Core\Resources\Clients.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Clients.resx</DependentUpon>
+      </Compile>
       <Compile Update="Core\Resources\Translations.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
