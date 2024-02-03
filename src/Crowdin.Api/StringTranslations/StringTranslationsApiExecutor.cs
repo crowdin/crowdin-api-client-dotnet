@@ -125,12 +125,12 @@ namespace Crowdin.Api.StringTranslations
         public Task<ResponseList<LanguageTranslations>> ListLanguageTranslations(
             int projectId, string languageId,
             string? stringIds = null, string? labelIds = null,
-            int? fileId = null, string? croql = null, bool? denormalizePlaceholders = null,
+            int? fileId = null, int? branchId = null, int? directoryId = null, string? croql = null, bool? denormalizePlaceholders = null,
             int limit = 25, int offset = 0)
         {
             return ListLanguageTranslations(projectId, languageId,
                 new LanguageTranslationsListParams(stringIds, labelIds, 
-                    fileId, croql, denormalizePlaceholders, limit, offset));
+                    fileId, branchId, directoryId, croql, denormalizePlaceholders, limit, offset));
         }
 
         /// <summary>
