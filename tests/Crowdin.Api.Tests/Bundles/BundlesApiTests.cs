@@ -306,6 +306,10 @@ namespace Crowdin.Api.Tests.Bundles
             Assert.Single(model.LabelIds);
             Assert.Equal(0, model.LabelIds[0]);
 
+            Assert.NotNull(model.ExcludeLabelIds);
+            Assert.Single(model.ExcludeLabelIds);
+            Assert.Equal(1, model.ExcludeLabelIds[0]);
+
             Assert.Equal(DateTimeOffset.Parse("2019-09-20T11:11:05+00:00"), model.CreatedAt);
             Assert.Equal(DateTimeOffset.Parse("2019-09-20T12:22:20+00:00"), model.UpdatedAt);
         }

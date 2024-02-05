@@ -1,4 +1,4 @@
-﻿
+
 using System.ComponentModel;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
@@ -35,8 +35,12 @@ namespace Crowdin.Api.Bundles
         
         [Description("/includeProjectSourceLanguage")]
         IncludeProjectSourceLanguage,
-        
+
         [Description("/labelIds")]
-        LabelIds
+        LabelIds,
+
+        [Description("/excludeLabelIds")]
+        ExcludeLabelIds
+            
     }
 }

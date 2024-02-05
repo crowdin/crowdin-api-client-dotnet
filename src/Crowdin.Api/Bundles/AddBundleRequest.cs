@@ -1,4 +1,4 @@
-﻿
+
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
@@ -41,5 +41,8 @@ namespace Crowdin.Api.Bundles
         
         [JsonProperty("labelIds")]
         public ICollection<int>? LabelIds { get; set; }
+        
+        [JsonProperty("excludeLabelIds")]
+        public ICollection<int>? ExcludeLabelIds { get; set; }
     }
 }

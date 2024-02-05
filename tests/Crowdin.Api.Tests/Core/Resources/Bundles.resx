@@ -291,6 +291,9 @@
     "labelIds": [
       0
     ],
+    "excludeLabelIds": [
+      1
+    ],
     "createdAt": "2019-09-20T11:11:05+00:00",
     "updatedAt": "2019-09-20T12:22:20+00:00"
   }

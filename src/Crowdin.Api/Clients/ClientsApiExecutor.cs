@@ -1,9 +1,6 @@
 using Crowdin.Api.Core;
-using Crowdin.Api.Vendors;
 using JetBrains.Annotations;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Crowdin.Api.Clients
