@@ -42,6 +42,14 @@ namespace Crowdin.Api.Core
                 queryParams.AddParamIfPresent(key, value.ToString());
             }
         }
+        
+        internal static void AddParamIfPresent(this IDictionary<string, string> queryParams, string key, long? value)
+        {
+            if (value.HasValue)
+            {
+                queryParams.AddParamIfPresent(key, value.ToString());
+            }
+        }
 
         internal static void AddParamIfPresent(this IDictionary<string, string> queryParams, string key, object? value)
         {
