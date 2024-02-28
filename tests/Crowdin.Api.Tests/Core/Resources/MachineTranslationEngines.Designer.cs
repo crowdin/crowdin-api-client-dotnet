@@ -19,7 +19,7 @@ namespace Crowdin.Api.Tests.Core.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class MachineTranslationEngines {
@@ -67,7 +67,8 @@ namespace Crowdin.Api.Tests.Core.Resources {
         ///  &quot;credentials&quot;: {
         ///    &quot;credentials&quot;: &quot;auto ml credentials&quot;
         ///  },
-        ///  &quot;groupId&quot;: 2
+        ///  &quot;groupId&quot;: 2,
+        ///  &quot;isEnabled&quot;: false
         ///}.
         /// </summary>
         internal static string AddMt_Request {
