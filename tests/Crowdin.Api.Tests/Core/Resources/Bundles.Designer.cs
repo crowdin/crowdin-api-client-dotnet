@@ -273,9 +273,10 @@ namespace Crowdin.Api.Tests.Core.Resources {
         ///        &quot;labelIds&quot;: [
         ///          0
         ///        ],
-        ///        &quot;createdAt&quot;: &quot;2019-09-20T11:11:05+00:00&quot;,
-        ///        &quot;updatedAt&quot;: &quot;2019-09-20T12:22:20+00:00&quot;
-        ///     [rest of string was truncated]&quot;;.
+        ///        &quot;excludeLabelIds&quot;: [
+        ///          1
+        ///        ],
+        ///        &quot;createdAt&quot;: &quot;2019-09-20T11:11:05+00:00&quot;,        /// [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ListBundles_Response {
             get {
