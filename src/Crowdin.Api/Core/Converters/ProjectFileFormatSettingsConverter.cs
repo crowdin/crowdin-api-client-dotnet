@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -53,6 +53,9 @@ namespace Crowdin.Api.Core.Converters
                 
                 ProjectFileType.MdxV1 =>
                     typeof(MdxV1FileFormatSettings),
+
+                ProjectFileType.MdxV2 =>
+                    typeof(MdxV2FileFormatSettings),
                 
                 ProjectFileType.FmMd =>
                     typeof(FmMdFileFormatSettings),
@@ -98,6 +101,9 @@ namespace Crowdin.Api.Core.Converters
                 
                 ProjectFileType.Txt =>
                     typeof(TxtFileFormatSettings),
+
+                ProjectFileType.Js =>    
+                    typeof(JavaScriptFileFormatSettings),
                 
                 _ =>
                     typeof(OtherFileFormatSettings)

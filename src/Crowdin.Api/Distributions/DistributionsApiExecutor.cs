@@ -1,4 +1,4 @@
-﻿
+
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
@@ -46,6 +46,19 @@ namespace Crowdin.Api.Distributions
         /// </summary>
         [PublicAPI]
         public async Task<Distribution> AddDistribution(int projectId, AddDistributionRequest request)
+        {
+            string url = FormUrl_Distributions(projectId);
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<Distribution>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Add distribution. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.distributions.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.distributions.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<Distribution> AddDistributionStringBased(int projectId, AddDistributionStringBasedRequest request)
         {
             string url = FormUrl_Distributions(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -105,6 +118,19 @@ namespace Crowdin.Api.Distributions
         }
 
         /// <summary>
+        /// Get distribution release. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.distributions.release.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.distributions.release.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<DistributionStringBasedRelease> GetDistributionReleaseStringBased(int projectId, string hash)
+        {
+            string url = FormUrl_DistributionRelease(projectId, hash);
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<DistributionStringBasedRelease>(result.JsonObject);
+        }
+
+        /// <summary>
         /// Release distribution. Documentation:
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.distributions.release.post">Crowdin API</a>
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.distributions.release.post">Crowdin Enterprise API</a>
@@ -115,6 +141,17 @@ namespace Crowdin.Api.Distributions
             string url = FormUrl_DistributionRelease(projectId, hash);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url);
             return _jsonParser.ParseResponseObject<DistributionRelease>(result.JsonObject);
+        }
+        /// <summary>
+        /// Release distribution. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.distributions.release.post">Crowdin API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<DistributionStringBasedRelease> StringBasedReleaseDistribution(int projectId, string hash)
+        {
+            string url = FormUrl_DistributionRelease(projectId, hash);
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url);
+            return _jsonParser.ParseResponseObject<DistributionStringBasedRelease>(result.JsonObject);
         }
 
         #region Helper methods

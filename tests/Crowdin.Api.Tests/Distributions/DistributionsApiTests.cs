@@ -1,4 +1,4 @@
-﻿
+
 using System.Net;
 using System.Threading.Tasks;
 
@@ -16,12 +16,12 @@ namespace Crowdin.Api.Tests.Distributions
     public class DistributionsApiTests
     {
         private static readonly JsonSerializerSettings DefaultSettings = TestUtils.CreateJsonSerializerOptions();
-        
+
         [Fact]
         public async Task AddDistribution()
         {
             const int projectId = 1;
-            
+
             var request = new AddDistributionRequest
             {
                 ExportMode = DistributionExportMode.Bundle,
@@ -29,7 +29,7 @@ namespace Crowdin.Api.Tests.Distributions
                 FileIds = new[] { 0 },
                 BundleIds = new[] { 1, 2 }
             };
-            
+
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
             string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Distributions.AddDistribution_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
@@ -47,9 +47,43 @@ namespace Crowdin.Api.Tests.Distributions
 
             var executor = new DistributionsApiExecutor(mockClient.Object);
             Distribution response = await executor.AddDistribution(projectId, request);
-            
+
             Assert.NotNull(response);
             Assert.Contains(0, response.FileIds);
+            Assert.Contains(1, response.BundleIds);
+            Assert.Contains(2, response.BundleIds);
+        }
+
+        [Fact]
+        public async Task AddDistributionStringBased()
+        {
+            const int projectId = 1;
+
+            var request = new AddDistributionStringBasedRequest
+            {
+                Name = "distribution 1",
+                BundleIds = new[] { 1, 2 }
+            };
+
+            string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
+            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Distributions.AddDistributionStringBased_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+
+            var url = $"/projects/{projectId}/distributions";
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            mockClient
+                .Setup(client => client.SendPostRequest(url, request, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.Created,
+                    JsonObject = JObject.Parse(Core.Resources.Distributions.AddDistributionStringBased_Response)
+                });
+
+            var executor = new DistributionsApiExecutor(mockClient.Object);
+            Distribution response = await executor.AddDistributionStringBased(projectId, request);
+
+            Assert.NotNull(response);
             Assert.Contains(1, response.BundleIds);
             Assert.Contains(2, response.BundleIds);
         }
