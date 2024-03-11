@@ -17,6 +17,7 @@ using Crowdin.Api.Core.RateLimiting;
 using Crowdin.Api.Core.Resilience;
 using Crowdin.Api.Dictionaries;
 using Crowdin.Api.Distributions;
+using Crowdin.Api.Fields;
 using Crowdin.Api.Glossaries;
 using Crowdin.Api.Issues;
 using Crowdin.Api.Labels;
@@ -108,6 +109,8 @@ namespace Crowdin.Api
 
         public ApplicationsApiExecutor Applications { get; }
 
+        public FieldsApiExecutor Fields { get; }
+
         private readonly string _baseUrl;
         private readonly HttpClient _httpClient;
         private readonly IRateLimiter? _rateLimiter;
@@ -129,7 +132,8 @@ namespace Crowdin.Api
                     new ProjectFileFormatSettingsConverter(),
                     new ProjectStringsExporterSettingsConverter(),
                     new ReportSettingsTemplateConverter(),
-                    new WorkflowStepConverter()
+                    new WorkflowStepConverter(),
+                    new FieldConfigConverter()
                 }
             };
 
@@ -194,6 +198,7 @@ namespace Crowdin.Api
             Workflows = new WorkflowsApiExecutor(this);
             OrganizationWebhooks = new OrganizationWebhooksApiExecutor(this);
             Applications = new ApplicationsApiExecutor(this);
+            Fields = new FieldsApiExecutor(this);
         }
 
         Task<CrowdinApiResult> ICrowdinApiClient.SendGetRequest(string subUrl, IDictionary<string, string>? queryParams)
