@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "+BBs1/TNudR7YivYc6ogIOXJDwYK91oD5yht2YpywGs="
+          "hash": "l48jjTxxJmNvJkieQOEFzVL4hFhMqkRGpZPK73JpEfU="
         }
       },
       "is_incremental": false,
@@ -522,7 +522,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.CrowdinApiClient.html",
-          "hash": "Ib9nPO1jXklNvcCAINbxb54eiG1s+Vl43U3zKCL0JnU="
+          "hash": "BFE6x77Ldyg6bZNye3JzZp8sR5b9r+4iW9PqoNIg33Q="
         }
       },
       "is_incremental": false,
@@ -739,6 +739,186 @@
         ".html": {
           "relative_path": "api/Crowdin.Api.ErrorResource.html",
           "hash": "K4BOtt7Fbcbh/IfokC93Xt8HgdbaPCKUOhH1Se6xIw4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Fields.AddFieldRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Fields.AddFieldRequest.html",
+          "hash": "gq/4J9Jdz+buCki+4yBfzA+ZEP01lYuhKAS9C1VQEK4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Fields.Field.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Fields.Field.html",
+          "hash": "22ZuURN5IHAX6ctmsQND3eXMIrqfxeY1t2eEuuDUEbo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Fields.FieldConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Fields.FieldConfig.html",
+          "hash": "ZzbxX8944hTg9/aWK1GnG+y8FIZMf49Owcy0ZwD59dc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Fields.FieldEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Fields.FieldEntity.html",
+          "hash": "tZR9oRpNTriKPdFQF+UwKTZIUYJm8XC7Bdz+EHpV8/Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Fields.FieldPatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Fields.FieldPatch.html",
+          "hash": "siBMFWNBti7zqGDYV9Q2SrYW4vpjm37MgitFJ4IpqPw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Fields.FieldPatchPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Fields.FieldPatchPath.html",
+          "hash": "8atc4W3hKkgytfWdxqJ+IlHFiZBsm9k+ab3NnmAMOXw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Fields.FieldType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Fields.FieldType.html",
+          "hash": "bgOmzt9IUzEHmpuUYj39lU8p3lajagZFz+CAb/P0w4A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Fields.FieldsApiExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Fields.FieldsApiExecutor.html",
+          "hash": "dR60wfHz4YKAv7MGCQucyCEDL1VRTNxzsEMLi7Ql1Ow="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Fields.FieldsListParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Fields.FieldsListParams.html",
+          "hash": "4wUBoZf+cibQf2W2JiYtyRchKf0Q/brIzhGnOP8Olj8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Fields.ListFieldConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Fields.ListFieldConfig.html",
+          "hash": "WIa8t9sLcaMDIfy3Hen6ZaCyVCEFvJ+3ejvG+TcqVps="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Fields.Location.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Fields.Location.html",
+          "hash": "21RnNxCpL2qH13twkd9sXrFOxgos3p8QZFQOQ1q5hOE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Fields.NumberFieldConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Fields.NumberFieldConfig.html",
+          "hash": "qx/GSofcgwHcZRFvd4AGt8Kp1Iu79jSkjZnsorxKNiw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Fields.Option.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Fields.Option.html",
+          "hash": "ZACzNBxbt64ctEErNkZebRhbVrdBuC7kUpcxd/UVCfY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Fields.Place.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Fields.Place.html",
+          "hash": "OqROGNSRr3G+i1Ow+wmPF1NO/gD/A8+8rFSZHRyGreM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Fields.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Fields.html",
+          "hash": "5d7ApSwetSfzH2IoFosfsSsoIrorC6o08fIrDJYCdq4="
         }
       },
       "is_incremental": false,
@@ -1110,7 +1290,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ICrowdinApiClient.html",
-          "hash": "i24Xii4nT3PZwdDluT/emPoL43nLkHlLy4QIBKWwzXc="
+          "hash": "0aVX0Js7gVvE0IdeZV5HLrjM3i22VFRGm2sAlDgf8c4="
         }
       },
       "is_incremental": false,
@@ -1758,7 +1938,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.PatchEntry.html",
-          "hash": "YgCtybqN4npUebg2v5kIxGTFMHN+3RKAXYlg8/VBEdo="
+          "hash": "bmFWb3RnrEqaInbIvSysK+7Bm4t8vFHllp213boAAFo="
         }
       },
       "is_incremental": false,
@@ -4310,6 +4490,54 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.SecurityLogs.SecurityLog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.SecurityLogs.SecurityLog.html",
+          "hash": "0gDFGt8RLIlSRF/jfZ+Gpx5eSBZ6FFo5Lc9YvZwSqX8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.SecurityLogs.SecurityLogEventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.SecurityLogs.SecurityLogEventType.html",
+          "hash": "mv92vwYe2UFVUb8iY+EpcelWrUehGwpEmaMD/WYYTXk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.SecurityLogs.SecurityLogsApiExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.SecurityLogs.SecurityLogsApiExecutor.html",
+          "hash": "VgvyKPGW5pklDkNriommyD8xUCFnxRDOxZUb+8tG25o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.SecurityLogs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.SecurityLogs.html",
+          "hash": "TtndRlIIU5iQB51Ksd9a4gUSFouEaasdy5AzcaTFFb4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.SourceFiles.AddBranchRequest.yml",
       "output": {
         ".html": {
@@ -5274,7 +5502,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.StringTranslations.LanguageTranslationsListParams.html",
-          "hash": "+rTtpdvSo460F0qaNhphk/O4CGLAR+GZxl1j5uzyM3c="
+          "hash": "9S+CmMtsGDz3yvRHT8IXhwAiWAnbTykAxzzEEbaRWSM="
         }
       },
       "is_incremental": false,
@@ -5346,7 +5574,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html",
-          "hash": "Jbg6KxRVuAEC8CYVq6tQg277J5OzuQkLf3eaUoc6YqQ="
+          "hash": "MccajfQWL0FRSjwGF3rJZ8DOciJmR+UWFSbc1xszAfk="
         }
       },
       "is_incremental": false,
@@ -7614,7 +7842,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Vz7xAzmyqo/dPEnnB+cmmPRVcwvqx/Uk6zM+7e4pah0="
+          "hash": "AyPvLOd0LgC4gXbiDfl4XjKvj6ONs2o2do5OPj6r03I="
         }
       },
       "is_incremental": false,
@@ -7653,7 +7881,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 630,
+          "total_file_count": 649,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
