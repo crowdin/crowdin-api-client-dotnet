@@ -1,4 +1,4 @@
-﻿
+
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
@@ -21,9 +21,5 @@ namespace Crowdin.Api.Translations
         
         [JsonProperty("translateHidden")]
         public bool? TranslateHidden { get; set; }
-        
-        // only enterprise API
-        [JsonProperty("markAddedTranslationsAsDone")]
-        public bool? MarkAddedTranslationsAsDone { get; set; }
     }
 }

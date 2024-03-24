@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -66,7 +66,6 @@ namespace Crowdin.Api.Tests.Translations
                 FileId = 56,
                 AutoApproveImported = false,
                 ImportEqSuggestions = false,
-                MarkAddedTranslationsAsDone = false,
                 StorageId = 34,
                 TranslateHidden = false
             };
@@ -159,7 +158,6 @@ namespace Crowdin.Api.Tests.Translations
             Assert.True(attributes.SkipApprovedTranslations);
             Assert.True(attributes.TranslateUntranslatedOnly);
             Assert.True(attributes.TranslateWithPerfectMatchOnly);
-            Assert.True(attributes.MarkAddedTranslationsAsDone);
 
             Assert.Equal(2, attributes.LabelIds.Length);
             Assert.Contains(2, attributes.LabelIds);
