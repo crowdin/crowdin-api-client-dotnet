@@ -27,8 +27,9 @@ namespace Crowdin.Api.Bundles
 
         /// <summary>
         /// List bundles. Documentation:
-        /// <a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.bundles.branches.getMany">Crowdin API</a>
-        /// <a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.bundles.branches.getMany">Crowdin Enterprise API</a>
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.bundles.getMany">Crowdin File Based API</a>
+        /// <a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.bundles.getMany">Crowdin String Based API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.bundles.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Bundle>> ListBundles(int projectId, int limit = 25, int offset = 0)
@@ -43,8 +44,7 @@ namespace Crowdin.Api.Bundles
 
         /// <summary>
         /// List bundle branches. Documentation:
-        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.bundles.getMany">Crowdin API</a>
-        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.bundles.getMany">Crowdin Enterprise API</a>
+        /// <a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.bundles.branches.getMany">Crowdin String Based API</a>
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Branch>> ListBundleBranches(int projectId, int bundleId, int limit = 25, int offset = 0)

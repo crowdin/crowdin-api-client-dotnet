@@ -53,9 +53,8 @@ namespace Crowdin.Api.Distributions
         }
 
         /// <summary>
-        /// Add distribution. Documentation:
-        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.distributions.post">Crowdin API</a>
-        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.distributions.post">Crowdin Enterprise API</a>
+        /// Add distribution string based. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.distributions.post">Crowdin String Based API</a>
         /// </summary>
         [PublicAPI]
         public async Task<Distribution> AddDistributionStringBased(int projectId, AddDistributionStringBasedRequest request)
@@ -119,8 +118,7 @@ namespace Crowdin.Api.Distributions
 
         /// <summary>
         /// Get distribution release. Documentation:
-        /// <a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.distributions.release.get">Crowdin API</a>
-        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.distributions.release.get">Crowdin Enterprise API</a>
+        /// <a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.distributions.release.get">Crowdin String Based API</a>
         /// </summary>
         [PublicAPI]
         public async Task<DistributionStringBasedRelease> GetDistributionReleaseStringBased(int projectId, string hash)
@@ -144,7 +142,7 @@ namespace Crowdin.Api.Distributions
         }
         /// <summary>
         /// Release distribution. Documentation:
-        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.distributions.release.post">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.distributions.release.post">Crowdin String Based API</a>
         /// </summary>
         [PublicAPI]
         public async Task<DistributionStringBasedRelease> StringBasedReleaseDistribution(int projectId, string hash)
