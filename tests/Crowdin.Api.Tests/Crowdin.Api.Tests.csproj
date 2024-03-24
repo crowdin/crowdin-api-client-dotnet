@@ -178,6 +178,14 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Applications.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\SecurityLogs.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>SecurityLogs.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\Fields.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Fields.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -360,6 +368,16 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>Applications.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\SecurityLogs.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>SecurityLogs.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\Fields.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Fields.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 

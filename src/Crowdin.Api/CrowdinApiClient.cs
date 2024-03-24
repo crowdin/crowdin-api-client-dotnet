@@ -17,6 +17,7 @@ using Crowdin.Api.Core.RateLimiting;
 using Crowdin.Api.Core.Resilience;
 using Crowdin.Api.Dictionaries;
 using Crowdin.Api.Distributions;
+using Crowdin.Api.Fields;
 using Crowdin.Api.Glossaries;
 using Crowdin.Api.Issues;
 using Crowdin.Api.Labels;
@@ -25,6 +26,7 @@ using Crowdin.Api.MachineTranslationEngines;
 using Crowdin.Api.ProjectsGroups;
 using Crowdin.Api.Reports;
 using Crowdin.Api.Screenshots;
+using Crowdin.Api.SecurityLogs;
 using Crowdin.Api.SourceFiles;
 using Crowdin.Api.SourceStrings;
 using Crowdin.Api.Storage;
@@ -73,6 +75,8 @@ namespace Crowdin.Api
         
         public ScreenshotsApiExecutor Screenshots { get; }
         
+        public SecurityLogsApiExecutor SecurityLogs { get; }
+        
         public SourceFilesApiExecutor SourceFiles { get; }
         
         public SourceStringsApiExecutor SourceStrings { get; }
@@ -105,6 +109,8 @@ namespace Crowdin.Api
 
         public ApplicationsApiExecutor Applications { get; }
 
+        public FieldsApiExecutor Fields { get; }
+
         private readonly string _baseUrl;
         private readonly HttpClient _httpClient;
         private readonly IRateLimiter? _rateLimiter;
@@ -126,7 +132,8 @@ namespace Crowdin.Api
                     new ProjectFileFormatSettingsConverter(),
                     new ProjectStringsExporterSettingsConverter(),
                     new ReportSettingsTemplateConverter(),
-                    new WorkflowStepConverter()
+                    new WorkflowStepConverter(),
+                    new FieldConfigConverter()
                 }
             };
 
@@ -174,6 +181,7 @@ namespace Crowdin.Api
             ProjectsGroups = new ProjectsGroupsApiExecutor(this);
             Reports = new ReportsApiExecutor(this);
             Screenshots = new ScreenshotsApiExecutor(this);
+            SecurityLogs = new SecurityLogsApiExecutor(this);
             SourceFiles = new SourceFilesApiExecutor(this);
             SourceStrings = new SourceStringsApiExecutor(this);
             Storage = new StorageApiExecutor(this);
@@ -190,6 +198,7 @@ namespace Crowdin.Api
             Workflows = new WorkflowsApiExecutor(this);
             OrganizationWebhooks = new OrganizationWebhooksApiExecutor(this);
             Applications = new ApplicationsApiExecutor(this);
+            Fields = new FieldsApiExecutor(this);
         }
 
         Task<CrowdinApiResult> ICrowdinApiClient.SendGetRequest(string subUrl, IDictionary<string, string>? queryParams)
