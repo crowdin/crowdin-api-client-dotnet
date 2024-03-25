@@ -22,14 +22,14 @@ namespace Crowdin.Api.Tests.Core.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class MachineTranslationEngines {
+    internal class Clients {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal MachineTranslationEngines() {
+        internal Clients() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Crowdin.Api.Tests.Core.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Crowdin.Api.Tests.Core.Resources.MachineTranslationEngines", typeof(MachineTranslationEngines).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Crowdin.Api.Tests.Core.Resources.Clients", typeof(Clients).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -62,68 +62,25 @@ namespace Crowdin.Api.Tests.Core.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to {
-        ///  &quot;name&quot;: &quot;engine name&quot;,
-        ///  &quot;type&quot;: &quot;google_automl&quot;,
-        ///  &quot;credentials&quot;: {
-        ///    &quot;credentials&quot;: &quot;auto ml credentials&quot;
-        ///  },
-        ///  &quot;groupId&quot;: 2,
-        ///  &quot;isEnabled&quot;: false
-        ///}.
-        /// </summary>
-        internal static string AddMt_Request {
-            get {
-                return ResourceManager.GetString("AddMt_Request", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {
-        ///  &quot;data&quot;: {
-        ///    &quot;id&quot;: 2,
-        ///    &quot;groupId&quot;: 2,
-        ///    &quot;name&quot;: &quot;Crowdin Translate&quot;,
-        ///    &quot;type&quot;: &quot;crowdin&quot;,
-        ///    &quot;credentials&quot;: {
-        ///      &quot;crowdin_nmt&quot;: 1,
-        ///      &quot;crowdin_nmt_multi_translations&quot;: 1
-        ///    },
-        ///    &quot;projectIds&quot;: [
-        ///      1
-        ///    ]
+        ///  &quot;data&quot;: [
+        ///    {
+        ///      &quot;data&quot;: {
+        ///        &quot;id&quot;: 1,
+        ///        &quot;name&quot;: &quot;John Smith&quot;,
+        ///        &quot;description&quot;: &quot;John Smith Organization&quot;,
+        ///        &quot;status&quot;: &quot;pending&quot;
+        ///      }
+        ///    }
+        ///  ],
+        ///  &quot;pagination&quot;: {
+        ///    &quot;offset&quot;: 0,
+        ///    &quot;limit&quot;: 25
         ///  }
         ///}.
         /// </summary>
-        internal static string AddMt_Response {
+        internal static string ListClientsResponse {
             get {
-                return ResourceManager.GetString("AddMt_Response", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to [
-        ///  {
-        ///    &quot;path&quot;: &quot;/name&quot;,
-        ///
-        ///    &quot;op&quot;: &quot;replace&quot;,
-        ///
-        ///    &quot;value&quot;: &quot;new engine name&quot;
-        ///  },
-        ///
-        ///  {
-        ///
-        ///    &quot;path&quot;: &quot;/type&quot;,
-        ///
-        ///    &quot;op&quot;: &quot;replace&quot;,
-        ///
-        ///    &quot;value&quot;: &quot;custom_mt&quot;
-        ///
-        ///   }
-        ///].
-        /// </summary>
-        internal static string EditMt_Request {
-            get {
-                return ResourceManager.GetString("EditMt_Request", resourceCulture);
+                return ResourceManager.GetString("ListClientsResponse", resourceCulture);
             }
         }
     }

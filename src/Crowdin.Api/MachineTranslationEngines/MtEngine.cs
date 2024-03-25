@@ -1,4 +1,4 @@
-﻿
+
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
@@ -25,5 +25,20 @@ namespace Crowdin.Api.MachineTranslationEngines
         
         [JsonProperty("projectIds")]
         public int[] ProjectIds { get; set; }
+
+        [JsonProperty("supportedLanguageIds")]
+        public int[] SupportedLanguageIds { get; set; }
+
+        [JsonProperty("supportedLanguagePairs")]
+        public IDictionary<string, string[]> SupportedLanguagePairs { get; set; }
+
+        [JsonProperty("enabledProjectIds")]
+        public int[] EnabledProjectIds { get; set; }
+
+        [JsonProperty("enabledLanguageIds")]
+        public string[] EnabledLanguageIds { get; set; }
+
+        [JsonProperty("isEnabled")]
+        public bool IsEnabled { get; set; }
     }
 }

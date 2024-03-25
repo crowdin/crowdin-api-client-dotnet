@@ -117,98 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AddDistribution_Response" xml:space="preserve">
+  <data name="ListClientsResponse" xml:space="preserve">
     <value>{
-  "data": {
-    "hash": "string",
-    "exportMode": "bundle",
-    "name": "distribution 1",
-    "fileIds": [
-      0
-    ],
-    "bundleIds": [
-      1,
-      2
-    ],
-    "createdAt": "2019-09-16T13:48:04+00:00",
-    "updatedAt": "2019-09-19T13:25:27+00:00"
-  }
-}</value>
-  </data>
-  <data name="EditDistribution_Response" xml:space="preserve">
-    <value>{
-  "data": {
-    "hash": "someHash",
-    "name": "some name",
-    "fileIds": [
-      0
-    ],
-    "bundleIds": [
-      123,
-      456  
-    ],
-    "createdAt": "2019-09-16T13:48:04+00:00",
-    "updatedAt": "2019-09-19T13:25:27+00:00"
-  }
-}</value>
-  </data>
-  <data name="AddDistribution_Request" xml:space="preserve">
-    <value>{
-  "exportMode": "bundle",
-  "name": "distribution 1",
-  "fileIds": [
-    0
+  "data": [
+    {
+      "data": {
+        "id": 1,
+        "name": "John Smith",
+        "description": "John Smith Organization",
+        "status": "pending"
+      }
+    }
   ],
-  "bundleIds": [
-    1,
-    2
-  ]
-}</value>
-  </data>
-  <data name="EditDistribution_Request_AllPaths" xml:space="preserve">
-    <value>[
-  {
-    "path": "/exportMode",
-    "op": "replace",
-    "value": "bundle"
-  },
-  {
-    "path": "/name",
-    "op": "replace",
-    "value": "distribution 2"
-  },
-  {
-    "path": "/fileIds",
-    "op": "replace",
-    "value": [123]
-  },
-  {
-    "path": "/bundleIds",
-    "op": "replace",
-    "value": [123, 456]
-  },
-]</value>
-  </data>
-  <data name="AddDistributionStringBased_Request" xml:space="preserve">
-    <value>{
-  "name": "distribution 1",
-  "bundleIds": [
-    1, 
-    2
-  ]
-}</value>
-  </data>
-  <data name="AddDistributionStringBased_Response" xml:space="preserve">
-    <value>{
-  "data": {
-    "hash": "50fb350641274ba88296f97dc7e3e0c3",
-    "name": "Export Bundle",
-    "bundleIds": [
-      1,
-      2
-    ],
-    "createdAt": "2023-09-16T13:48:04+00:00",
-    "updatedAt": "2024-01-20T13:25:27+00:00"
+  "pagination": {
+    "offset": 0,
+    "limit": 25
   }
 }</value>
   </data>

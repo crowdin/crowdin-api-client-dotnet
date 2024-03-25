@@ -1,4 +1,4 @@
-﻿
+
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
@@ -30,13 +30,15 @@ namespace Crowdin.Api.Labels
         /// <summary>
         /// List labels. Documentation:
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.labels.getMany">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.labels.getMany">Crowdin String Based API</a>
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.labels.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<Label>> ListLabels(int projectId, int limit = 25, int offset = 0)
+        public async Task<ResponseList<Label>> ListLabels(int projectId, int limit = 25, int offset = 0, bool isSystem = false)
         {
             string url = FormUrl_Labels(projectId);
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
+            queryParams["isSystem"]= isSystem ? "true" : "false";
             
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
             return _jsonParser.ParseResponseList<Label>(result.JsonObject);
