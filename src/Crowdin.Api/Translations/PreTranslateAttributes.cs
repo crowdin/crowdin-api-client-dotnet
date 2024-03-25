@@ -1,4 +1,4 @@
-﻿
+
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
@@ -6,10 +6,7 @@ namespace Crowdin.Api.Translations
 {
     [PublicAPI]
     public class PreTranslateAttributes
-    {
-        [JsonProperty("markAddedTranslationsAsDone")]
-        public bool? MarkAddedTranslationsAsDone { get; set; }
-        
+    {        
         [JsonProperty("languageIds")]
         public string[] LanguageIds { get; set; }
         

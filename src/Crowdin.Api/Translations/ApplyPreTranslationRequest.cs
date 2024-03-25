@@ -1,4 +1,4 @@
-﻿
+
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
@@ -36,9 +36,6 @@ namespace Crowdin.Api.Translations
 
         [JsonProperty("fallbackLanguages")]
         public IDictionary<string, string[]>? FallbackLanguages { get; set; }
-        
-        [JsonProperty("markAddedTranslationsAsDone")]
-        public bool? MarkAddedTranslationsAsDone { get; set; }
         
         [JsonProperty("labelIds")]
         public ICollection<int> LabelIds { get; set; } = new List<int>();
