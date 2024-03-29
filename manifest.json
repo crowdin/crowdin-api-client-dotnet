@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "l48jjTxxJmNvJkieQOEFzVL4hFhMqkRGpZPK73JpEfU="
+          "hash": "6YmqewGDgFZj16Mx+OYok7XI+JP2oempW3z1keqWK1E="
         }
       },
       "is_incremental": false,
@@ -222,7 +222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Bundles.AddBundleRequest.html",
-          "hash": "pbG1PgzcAqWrGX9mpX5FhR6QnbaGrAkctBECm3/6O6U="
+          "hash": "yzzAMU/Rup+UF+iCstAxfMFVr/wURQIa0UFUsKTlxAs="
         }
       },
       "is_incremental": false,
@@ -234,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Bundles.Bundle.html",
-          "hash": "rBCFnOCJBgKqR1kfZfBKXJwYl0fPMZoMSjZXKihOpX0="
+          "hash": "YERzjxTbMxtBiKJY7L6setjd6FkSRBGbQJCT1zw2qzs="
         }
       },
       "is_incremental": false,
@@ -282,7 +282,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Bundles.BundlePatchPath.html",
-          "hash": "CABTsesiuDW0TtfGlWyJVW5pJ7fS34neFVn3UAT075k="
+          "hash": "QEdsCfyuFf4qb+645nfP2gCv3cQkMqtuZCkoOcSEQrk="
         }
       },
       "is_incremental": false,
@@ -294,7 +294,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Bundles.BundlesApiExecutor.html",
-          "hash": "k1l2noDxHjxd35FaBLUSlIEnHJ6zOb2iKcgTsS3kV20="
+          "hash": "U5Q62UQM4YulRXYKa0BVTfKVZIB/ln2QwJFvOOCbLFQ="
         }
       },
       "is_incremental": false,
@@ -307,6 +307,42 @@
         ".html": {
           "relative_path": "api/Crowdin.Api.Bundles.html",
           "hash": "V0NrrPcAJJBxe6aaepqZ23EOGlKy87dfzPcaji6EX9Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Clients.Client.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Clients.Client.html",
+          "hash": "xFN7Tiv80Y/vY3vMUF5tNhx8VcjmBlpbPx6/L/FNdKU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Clients.ClientStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Clients.ClientStatus.html",
+          "hash": "0Ip19X5uU8p0R0Jz2dr/x/GfPBEuFsicRjfmnRZlJqc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Clients.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Clients.html",
+          "hash": "D3CGlgznFcotYSEwOqvB+Ll3HMEv69P9TOn3jND9WXA="
         }
       },
       "is_incremental": false,
@@ -626,6 +662,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Distributions.AddDistributionStringBasedRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Distributions.AddDistributionStringBasedRequest.html",
+          "hash": "iS8u270HUFbEMWR8IbCJzXo69faFJF1AhrFGXOER0gI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Distributions.Distribution.yml",
       "output": {
         ".html": {
@@ -698,11 +746,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Distributions.DistributionStringBasedRelease.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Distributions.DistributionStringBasedRelease.html",
+          "hash": "0SOPCyr2+K8Tj+92J94q9pt/NZXIG8njbC/yh+5zPuI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Distributions.DistributionsApiExecutor.yml",
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Distributions.DistributionsApiExecutor.html",
-          "hash": "MbmeKEHXws528PvNBc7VcTBq5r+HVYTAjPcUoEk5Dow="
+          "hash": "urvG6Y9FvEcyqUfswxDdfy2r09YPWccPAsYpxDmXMfM="
         }
       },
       "is_incremental": false,
@@ -714,7 +774,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Distributions.html",
-          "hash": "s358+V4Y0DtNmB3HbyQKHANwUIaVtMWwU7BVHQ8h2ZE="
+          "hash": "QSds/yFsaA6lijAWcIYSdy5InwPswWSD+zRSK8oe6r8="
         }
       },
       "is_incremental": false,
@@ -1470,7 +1530,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Labels.Label.html",
-          "hash": "oYgu+n90+eK87haKvmWfMxyOrYw0eX+ur04E0Crl4w8="
+          "hash": "rVACru3zIcbPD0zVFCNd+aeWdTPZrjbQeG4hNA4AK6M="
         }
       },
       "is_incremental": false,
@@ -1506,7 +1566,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Labels.LabelsApiExecutor.html",
-          "hash": "SLBdsX77zgLCpuVCHv1mrOxyKBBiovQwR683V4lDjko="
+          "hash": "87aAqq8J1YGmRTexB+7xJzNF9s0CgLx/BDpyPDzwUVE="
         }
       },
       "is_incremental": false,
@@ -1614,7 +1674,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.MachineTranslationEngines.AddMtEngineRequest.html",
-          "hash": "OYWMx6HeXOZaOTSTsx9ov9hoC01LDVyASFLZBv0+jkQ="
+          "hash": "9n+sd7u1YsnAUGlpGfJ3qbb0jGcKAA+iZ1oqiJdawnM="
         }
       },
       "is_incremental": false,
@@ -1746,7 +1806,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.MachineTranslationEngines.MtEngine.html",
-          "hash": "cFK8/cljqE+IiIEwaMI1Z4uoSE3h+VkjxauA9WZqqTs="
+          "hash": "EPNOWscPrgoBnQVdXVq/tYHP5vbmWBL/hYTYP6YLhVw="
         }
       },
       "is_incremental": false,
@@ -2022,7 +2082,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.AdocFileFormatSettings.html",
-          "hash": "wxvQWe6Wc5ZMluMGAPgQ1RTJRbxrPk8xdtDXJlIMTUk="
+          "hash": "OQBjZrwHm85O/cvrk5x3Y4l7olhKDiQYXTBMqo/6NnQ="
         }
       },
       "is_incremental": false,
@@ -2034,7 +2094,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.AndroidFileFormatSettings.html",
-          "hash": "1AjRcibWBhSdGIPZ9B+A413A59E/nSGNLtRyQB87v+o="
+          "hash": "apKwQLef5eikILb+ecs3qKHP2rZ6MNvWjWN6P+/GwZ8="
         }
       },
       "is_incremental": false,
@@ -2058,7 +2118,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.ArbFileFormatSettings.html",
-          "hash": "eHxp90D375dVfRPt7QvMajHm7QFcXBFsZ3TdEbo7kaY="
+          "hash": "oupdRGwH+VeM3DJgLD8A1FN0OVf1qd2JHS3Yta6Iizg="
         }
       },
       "is_incremental": false,
@@ -2082,7 +2142,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.ChromeFileFormatSettings.html",
-          "hash": "G562byF2cUbQ3Kd57+DYOQaAgpP7TFWeH6CkD8KUHWo="
+          "hash": "HbsD6JWjAX5pLI7VTOkFLI8xL9K8iTjHcmWlVU3jYwM="
         }
       },
       "is_incremental": false,
@@ -2094,7 +2154,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.DitaFileFormatSettings.html",
-          "hash": "K3NzzI3SGTDbJOPE/8yWCSPbgNR9c0ehyUkQycdzSeY="
+          "hash": "KtYcvMgUvfKXcqqfinXOQc1HBQxBUXz+XGygac16BtI="
         }
       },
       "is_incremental": false,
@@ -2106,7 +2166,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.DocxFileFormatSettings.html",
-          "hash": "yLansMINuIVWYQZHbFl203svcSr8Mp93m1OrNPseJnI="
+          "hash": "OqfcDprZmC1X/R0ExVePrTNTdXhOsRyXGyongGsNXSM="
         }
       },
       "is_incremental": false,
@@ -2190,7 +2250,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.FJsFileFormatSettings.html",
-          "hash": "rbbSGGc4q5ntKl+32Eo4XkGHIoGdJ9IV4q8O/YShU5k="
+          "hash": "vvn25k01FHSuPWvvH4GmjN3g0glL1wGAU+dtO/eKYRM="
         }
       },
       "is_incremental": false,
@@ -2214,7 +2274,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.FileFormatSettings.html",
-          "hash": "hE3XrQtMxpmUPe81ixhITwwW+LVbvfvU2Rne7Kd6YfI="
+          "hash": "FvmGBXzReF1G4nv6Ve3SCpZaa9mw9o70O8hNH1S8INE="
         }
       },
       "is_incremental": false,
@@ -2238,7 +2298,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.FmHtmlFileFormatSettings.html",
-          "hash": "ZIoljAX7do+LVq+xkxQ6kW5GpFyX0zeOwi9dOYHRrvI="
+          "hash": "jBfsQIm90tJGrp3C1p4KeX27tJn9CLaAXsJkHewwU7s="
         }
       },
       "is_incremental": false,
@@ -2250,7 +2310,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.FmMdFileFormatSettings.html",
-          "hash": "NtdnQolgcqiJtaNbKJoV2K/INT1966N91StdxN3pnLY="
+          "hash": "AZXxwSeLCcqdoDDsAvmQCYxm9/AKZmbLxZHUpOu0sHc="
         }
       },
       "is_incremental": false,
@@ -2298,7 +2358,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.HtmlFileFormatSettings.html",
-          "hash": "9pIsE7emyNwQ8IDA9ugw9QfFLUSR0hkQEh/K1STOMok="
+          "hash": "rb3uUZNW1EP+ejcwZCWETurPN7hMVmSzzoKxfb2sA+E="
         }
       },
       "is_incremental": false,
@@ -2310,7 +2370,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.IdmlFileFormatSettings.html",
-          "hash": "/M9iGJ6s/pQX8UoKq9fVQEyNOzCgghYV+hPZ/AUPT/o="
+          "hash": "Dod2GDxMxbzrlptpYwoRiE9hG+I22Zl1NbBUdNKFM+Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.ProjectsGroups.JavaScriptFileFormatSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.ProjectsGroups.JavaScriptFileFormatSettings.html",
+          "hash": "Z18bW2pShMx1vlsscIrZpoWdGxpyeBMcH4f6pW1VeTE="
         }
       },
       "is_incremental": false,
@@ -2322,7 +2394,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.JsonFileFormatSettings.html",
-          "hash": "YZcPPrIhegZkq6JalCu9Y89c7Zr5EiTSd5Mm7fCEKWE="
+          "hash": "mQs0ldQwF5++C9TR5qCYh+XM10AVX5q0N2T6MrRPE2c="
         }
       },
       "is_incremental": false,
@@ -2358,7 +2430,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.MacOsXFileFormatSettings.html",
-          "hash": "bZ/G2wCAwzzoBrxYNM/KkDamju092JC6PoACXejRfrY="
+          "hash": "uQJlvmzGteu03B9qWQU+i7SRlDV+gGgbvCIMk1aB8eQ="
         }
       },
       "is_incremental": false,
@@ -2382,7 +2454,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.MadcapFlsnpFileFormatSettings.html",
-          "hash": "KZTfP1C7Hj1TMP/fGShEfk+ef85XWq13d6k3txOq3lc="
+          "hash": "qbY0uuVmNtFC59HfmoPELLoU2qO4Dke1Kua+GkQcc28="
         }
       },
       "is_incremental": false,
@@ -2394,7 +2466,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.MdFileFormatSettings.html",
-          "hash": "OK4vWJbXnmy/wdb4xdxZ7vk2/J1BDPxzyAiL+Qczq88="
+          "hash": "Y3boBlcTdfU8KLEQLM++KukmZ9YKNMXNkmD/FjeuL+8="
         }
       },
       "is_incremental": false,
@@ -2406,7 +2478,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.MdxV1FileFormatSettings.html",
-          "hash": "Xh2N3Pojl6cuEfhdgRx+pgUQH6XdW2AsOOY+AXQfC5w="
+          "hash": "cXdVHSCJ6EmfC8AkikUQyrx6FNVpKSyCqrMIVkx3p3M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.ProjectsGroups.MdxV2FileFormatSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.ProjectsGroups.MdxV2FileFormatSettings.html",
+          "hash": "GJGaY//nF5Lfzt4TDsIGQva5Is0eZlcLAqTwjccNRKE="
         }
       },
       "is_incremental": false,
@@ -2418,7 +2502,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.MediaWikiFileFormatSettings.html",
-          "hash": "+ySv6yPNpq5XPBCq66YjGixv6PKgy2xhXzWHmND9Xhg="
+          "hash": "Nj+qqTNZoMITvGiZqTCz/b+coIzcWnOjy6wUOiyS0bQ="
         }
       },
       "is_incremental": false,
@@ -2430,7 +2514,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.MifFileFormatSettings.html",
-          "hash": "O03WiE+ptP6PrVIdMtXxyQ9oXNsXvAWu9C5DJIUD98E="
+          "hash": "gBTCYrh2kBYFPiIhG0JFyzZHSJnrg8KFQgvy5J/Y4c4="
         }
       },
       "is_incremental": false,
@@ -2454,7 +2538,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.OtherFileFormatSettings.html",
-          "hash": "avRAzC6in2wKJCFFBFG4QVMpBZTj0658RSCXXD+PXUU="
+          "hash": "qsER8yD32GJSfUsIzGLvfOQWvhzukcQue5QWpQkHuyQ="
         }
       },
       "is_incremental": false,
@@ -2718,7 +2802,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.ReactIntlFileFormatSettings.html",
-          "hash": "gYVYc0zgftaMVm2G5QvJyWeYSi3LSYsawoCSylDQCMk="
+          "hash": "p+xU3snDUhP80g9jgfIyi8FC6iy6WwLyJfYkqtGdRUA="
         }
       },
       "is_incremental": false,
@@ -2814,7 +2898,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.TxtFileFormatSettings.html",
-          "hash": "KkMfHVcPbj3QvUC/LtVNIZUUR2a1gzjiPV+W+sHSTrM="
+          "hash": "fWsUYoj6mZObS8eBnwOcMvkdcSK0Z7AwkxnecdjndJ4="
         }
       },
       "is_incremental": false,
@@ -2850,7 +2934,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.html",
-          "hash": "IYP9Z75DIWU0luo5YCPW44R3JhyfWxnJzQEzJ3rRz9c="
+          "hash": "nRNgV4eWPGYCTXeSCNMDeRMEqKYHuT3hkQldsQbh0yE="
         }
       },
       "is_incremental": false,
@@ -4950,7 +5034,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.SourceFiles.ProjectFileType.html",
-          "hash": "O65JRA3iFVknkR5CBYiBEUAddUyODp5/6wTsWLh+S90="
+          "hash": "AlZv2klneVqX1eIfdkh51THrg1OLGz76Ozr6xYG3gFM="
         }
       },
       "is_incremental": false,
@@ -6750,7 +6834,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Translations.ApplyPreTranslationRequest.html",
-          "hash": "edTBSQQsjBRG6rYXRYJojtNsJ8F3XGv7kQul1PFalLs="
+          "hash": "NhgT1TUwhZ661vfeeYNS16fncw1mZs0CVUgPt4ptrkg="
         }
       },
       "is_incremental": false,
@@ -6918,7 +7002,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Translations.PreTranslateAttributes.html",
-          "hash": "RZOTgmXrkT1CohhpRbpCCwr0L30OQZGWDj53nQ4yGRE="
+          "hash": "oWirU2YO9Y+ZSflHwJirFmW8TUwmxBZbEFTbdDrqLOk="
         }
       },
       "is_incremental": false,
@@ -7074,7 +7158,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Translations.UploadTranslationsRequest.html",
-          "hash": "/yO7/j91dl5X9AZpjWzftAA6dG+jO7ke8/znRlXCw3w="
+          "hash": "OTEF5XS6FyA0Cq/e0cVcIOjfoYgY63H5JKLvjQLKGEE="
         }
       },
       "is_incremental": false,
@@ -7842,7 +7926,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "AyPvLOd0LgC4gXbiDfl4XjKvj6ONs2o2do5OPj6r03I="
+          "hash": "+DFL1Pn8C4Pcyuz9oLMhiZPfJ2jJF+V3TZrCZHWISJg="
         }
       },
       "is_incremental": false,
@@ -7881,7 +7965,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 649,
+          "total_file_count": 656,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
