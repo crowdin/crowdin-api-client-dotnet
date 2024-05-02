@@ -1,4 +1,4 @@
-
+﻿
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
@@ -13,8 +13,11 @@ namespace Crowdin.Api.Translations
         [JsonProperty("languageIds")]
         public ICollection<string> LanguageIds { get; set; } = new List<string>();
 
+        [JsonProperty("branchIds")]
+        public ICollection<int>? BranchIds { get; set; }
+        
         [JsonProperty("fileIds")]
-        public ICollection<int> FileIds { get; set; } = new List<int>();
+        public ICollection<int>? FileIds { get; set; }
         
         [JsonProperty("method")]
         public PreTranslationMethod? Method { get; set; }

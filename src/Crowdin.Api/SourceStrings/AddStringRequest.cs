@@ -1,5 +1,4 @@
 ﻿
-using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
@@ -21,6 +20,9 @@ namespace Crowdin.Api.SourceStrings
         
         [JsonProperty("fileId")]
         public int? FileId { get; set; }
+        
+        [JsonProperty("branchId")]
+        public int? BranchId { get; set; }
         
         [JsonProperty("context")]
         public string? Context { get; set; }

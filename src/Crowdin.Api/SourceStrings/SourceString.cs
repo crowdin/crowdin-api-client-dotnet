@@ -15,7 +15,7 @@ namespace Crowdin.Api.SourceStrings
         public int ProjectId { get; set; }
         
         [JsonProperty("fileId")]
-        public int FileId { get; set; }
+        public int? FileId { get; set; }
         
         [JsonProperty("branchId")]
         public int? BranchId { get; set; }
@@ -48,7 +48,7 @@ namespace Crowdin.Api.SourceStrings
         public int? MasterStringId { get; set; }
         
         [JsonProperty("revision")]
-        public int Revision { get; set; }
+        public int? Revision { get; set; }
         
         [JsonProperty("hasPlurals")]
         public bool HasPlurals { get; set; }

@@ -1,10 +1,12 @@
 ﻿
 using System.Collections.Generic;
 using System.ComponentModel;
-using Crowdin.Api.Core;
-using Crowdin.Api.Core.Converters;
+
 using JetBrains.Annotations;
 using Newtonsoft.Json;
+
+using Crowdin.Api.Core;
+using Crowdin.Api.Core.Converters;
 
 namespace Crowdin.Api.ProjectsGroups
 {
@@ -64,6 +66,9 @@ namespace Crowdin.Api.ProjectsGroups
         [Description("/autoSubstitution")]
         AutoSubstitution,
         
+        [Description("/skipUntranslatedFiles")]
+        SkipUntranslatedFiles,
+        
         [Description("/skipUntranslatedStrings")]
         SkipUntranslatedStrings,
         
@@ -79,6 +84,9 @@ namespace Crowdin.Api.ProjectsGroups
         [Description("/useGlobalTm")]
         UseGlobalTm,
         
+        [Description("/showTmSuggestionsDialects")]
+        ShowTmSuggestionsDialects,
+        
         [Description("/normalizePlaceholder")]
         NormalizePlaceholder,
         
@@ -87,6 +95,12 @@ namespace Crowdin.Api.ProjectsGroups
         
         [Description("/inContext")]
         InContext,
+        
+        [Description("/inContextPseudoLanguageId")]
+        InContextPseudoLanguageId,
+        
+        [Description("/inContextProcessHiddenStrings")]
+        InContextProcessHiddenStrings,
         
         [Description("/pseudoLanguageId")]
         PseudoLanguageId,
@@ -113,5 +127,14 @@ namespace Crowdin.Api.ProjectsGroups
         TmPenalties,
         
         // /tmPenalties/{penaltyKey}
+        
+        [Description("/tmContextType")]
+        TmContextType,
+        
+        [Description("/tmPreTranslate")]
+        TmPreTranslate,
+        
+        [Description("/mtPreTranslate")]
+        MtPreTranslate,
     }
 }

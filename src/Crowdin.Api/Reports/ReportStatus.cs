@@ -1,5 +1,7 @@
 ﻿
 using System;
+using System.Collections.Generic;
+
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
@@ -43,6 +45,9 @@ namespace Crowdin.Api.Reports
             
             [JsonProperty("schema")]
             public object Schema { get; set; }
+            
+            [JsonProperty("projectIds")]
+            public List<long> ProjectIds { get; set; }
         }
     }
 }

@@ -23,6 +23,12 @@ namespace Crowdin.Api.StringTranslations
         [JsonProperty("rating")]
         public int Rating { get; set; }
         
+        [JsonProperty("provider")]
+        public string Provider { get; set; }
+        
+        [JsonProperty("isPreTranslated")]
+        public bool IsPreTranslated { get; set; }
+        
         [JsonProperty("createdAt")]
         public DateTimeOffset CreatedAt { get; set; }
     }

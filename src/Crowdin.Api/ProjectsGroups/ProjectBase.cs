@@ -12,6 +12,9 @@ namespace Crowdin.Api.ProjectsGroups
         [JsonProperty("id")]
         public int Id { get; set; }
         
+        [JsonProperty("type")]
+        public ProjectType Type { get; set; }
+        
         [JsonProperty("userId")]
         public int UserId { get; set; }
         
@@ -44,6 +47,9 @@ namespace Crowdin.Api.ProjectsGroups
         
         [JsonProperty("lastActivity")]
         public DateTimeOffset? LastActivity { get; set; }
+        
+        [JsonProperty("sourceLanguage")]
+        public Language SourceLanguage { get; set; }
         
         [JsonProperty("targetLanguages")]
         public Language[] TargetLanguages { get; set; }

@@ -23,6 +23,9 @@ namespace Crowdin.Api.ProjectsGroups
         [JsonProperty("templateId")]
         public int? TemplateId { get; set; }
         
+        [JsonProperty("steps")]
+        public ICollection<WorkflowTemplateStepConfig>? Steps { get; set; }
+        
         [JsonProperty("groupId")]
         public int? GroupId { get; set; }
         
@@ -46,6 +49,9 @@ namespace Crowdin.Api.ProjectsGroups
         
         [JsonProperty("isMtAllowed")]
         public bool? IsMtAllowed { get; set; }
+        
+        [JsonProperty("taskBasedAccessControl")]
+        public bool? TaskBasedAccessControl { get; set; }
         
         [JsonProperty("autoSubstitution")]
         public bool? AutoSubstitution { get; set; }
@@ -89,6 +95,9 @@ namespace Crowdin.Api.ProjectsGroups
         [JsonProperty("qaCheckIsActive")]
         public bool? QaCheckIsActive { get; set; }
         
+        [JsonProperty("qaApprovalsCount")]
+        public int? QaApprovalsCount { get; set; }
+        
         [JsonProperty("qaCheckCategories")]
         public QaCheckCategories? QaCheckCategories { get; set; }
         
@@ -97,6 +106,9 @@ namespace Crowdin.Api.ProjectsGroups
         
         [JsonProperty("customQaCheckIds")]
         public ICollection<int>? CustomQaCheckIds { get; set; }
+        
+        [JsonProperty("tmContextType")]
+        public TmContextType? TmContextType { get; set; }
         
         [JsonProperty("languageMapping")]
         public IDictionary<string, LanguageMapping>? LanguageMapping { get; set; }

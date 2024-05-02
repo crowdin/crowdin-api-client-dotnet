@@ -90,13 +90,14 @@ namespace Crowdin.Api.Tests.Core.Resources {
         ///   Looks up a localized string similar to {
         ///  &quot;title&quot;: &quot;My task&quot;,
         ///  &quot;languageId&quot;: &quot;es&quot;,
-        ///  &quot;fileIds&quot;: [
-        ///    1,2,3
-        ///  ],
         ///  &quot;type&quot;: 2,
         ///  &quot;vendor&quot;: &quot;lingo24&quot;,
         ///  &quot;status&quot;: &quot;in_progress&quot;,
         ///  &quot;description&quot;: &quot;My amazing task&quot;,
+        ///
+        ///  &quot;fileIds&quot;: [
+        ///    1,2,3
+        ///  ],
         ///  &quot;skipAssignedStrings&quot;: true,
         ///  &quot;skipUntranslatedStrings&quot;: true,
         ///  &quot;labelIds&quot;: [

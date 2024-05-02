@@ -19,9 +19,6 @@ namespace Crowdin.Api.Tasks
         [JsonProperty("languageId")]
         public string LanguageId { get; set; }
         
-        [JsonProperty("fileIds")]
-        public ICollection<int> FileIds { get; set; }
-        
         [JsonProperty("type")]
         public TaskType Type { get; set; }
         
@@ -35,6 +32,12 @@ namespace Crowdin.Api.Tasks
         
         [JsonProperty("description")]
         public string? Description { get; set; }
+        
+        [JsonProperty("branchIds")]
+        public ICollection<int>? BranchIds { get; set; }
+        
+        [JsonProperty("fileIds")]
+        public ICollection<int>? FileIds { get; set; }
         
         [JsonProperty("skipAssignedStrings")]
         public bool? SkipAssignedStrings { get; set; }
