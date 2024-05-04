@@ -186,6 +186,14 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Fields.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\AI_Prompts.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>AI.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\AI_Providers.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>AI_Providers.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -378,6 +386,16 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>Fields.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\AI_Prompts.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>AI_Prompts.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\AI_Providers.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>AI_Providers.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 
