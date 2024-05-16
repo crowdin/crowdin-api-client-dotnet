@@ -21,13 +21,13 @@ namespace Crowdin.Api.MachineTranslationEngines
         public string Type { get; set; }
         
         [JsonProperty("credentials")]
-        public IDictionary<string, int> Credentials { get; set; }
+        public IDictionary<string, object> Credentials { get; set; }
         
         [JsonProperty("projectIds")]
         public int[] ProjectIds { get; set; }
 
         [JsonProperty("supportedLanguageIds")]
-        public int[] SupportedLanguageIds { get; set; }
+        public string[] SupportedLanguageIds { get; set; }
 
         [JsonProperty("supportedLanguagePairs")]
         public IDictionary<string, string[]> SupportedLanguagePairs { get; set; }

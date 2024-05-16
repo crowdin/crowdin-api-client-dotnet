@@ -166,4 +166,90 @@
    }
 ]</value>
   </data>
+  <data name="ListMts_Request_IntCredentialsKey" xml:space="preserve">
+      <value>{
+  "data": [
+    {
+      "data": {
+        "id": 2,
+        "name": "Crowdin Translate",
+        "type": "crowdin",
+        "credentials": {
+          "crowdin_nmt": 1,
+          "crowdin_nmt_multi_translations": 2
+        },
+        "supportedLanguageIds": [
+          "en",
+          "es",
+          "pl",
+          "de",
+          "fr",
+          "zh-CN",
+          "ja"
+        ],
+        "supportedLanguagePairs": {
+          "en": [
+            "de",
+            "fr"
+          ],
+          "fr": [
+            "en"
+          ],
+          "zh-CN": [
+            "en",
+            "ja"
+          ]
+        }
+      }
+    }
+  ],
+  "pagination": {
+    "offset": 0,
+    "limit": 25
+  }
+}</value>
+  </data>
+  <data name="ListMts_Request_StringCredentialsKey" xml:space="preserve">
+      <value>{
+  "data": [
+    {
+      "data": {
+        "id": 2,
+        "name": "Crowdin Translate",
+        "type": "crowdin",
+        "credentials": {
+          "crowdin_nmt": "stringValue",
+          "crowdin_nmt_multi_translations": "stringValue"
+        },
+        "supportedLanguageIds": [
+          "en",
+          "es",
+          "pl",
+          "de",
+          "fr",
+          "zh-CN",
+          "ja"
+        ],
+        "supportedLanguagePairs": {
+          "en": [
+            "de",
+            "fr"
+          ],
+          "fr": [
+            "en"
+          ],
+          "zh-CN": [
+            "en",
+            "ja"
+          ]
+        }
+      }
+    }
+  ],
+  "pagination": {
+    "offset": 0,
+    "limit": 25
+  }
+}</value>
+  </data>
 </root>
