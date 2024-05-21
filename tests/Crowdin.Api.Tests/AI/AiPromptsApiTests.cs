@@ -67,7 +67,7 @@ namespace Crowdin.Api.Tests.AI
                 });
             
             var executor = new AiApiExecutor(mockClient.Object);
-            var response = await executor.ListAiPromptsEnterprise();
+            var response = await executor.ListAiPrompts(userId: null);
             
             Assert_AiPrompt(response.Data[0]);
         }
@@ -141,7 +141,7 @@ namespace Crowdin.Api.Tests.AI
                 });
             
             var executor = new AiApiExecutor(mockClient.Object);
-            AiPromptResource? response = await executor.AddAiPromptEnterprise(request);
+            AiPromptResource? response = await executor.AddAiPrompt(userId: null, request);
             
             Assert_AiPrompt(response);
         }
@@ -188,7 +188,7 @@ namespace Crowdin.Api.Tests.AI
                 });
             
             var executor = new AiApiExecutor(mockClient.Object);
-            AiPromptResource? response = await executor.GetAiPromptEnterprise(aiPromptId);
+            AiPromptResource? response = await executor.GetAiPrompt(userId: null, aiPromptId);
             
             Assert_AiPrompt(response);
         }
@@ -225,7 +225,7 @@ namespace Crowdin.Api.Tests.AI
                 .ReturnsAsync(HttpStatusCode.NoContent);
             
             var executor = new AiApiExecutor(mockClient.Object);
-            await executor.DeleteAiPromptEnterprise(aiPromptId);
+            await executor.DeleteAiPrompt(userId: null, aiPromptId);
         }
         
         [Fact]
@@ -292,7 +292,7 @@ namespace Crowdin.Api.Tests.AI
                 });
             
             var executor = new AiApiExecutor(mockClient.Object);
-            AiPromptResource? response = await executor.EditAiPromptEnterprise(aiPromptId, patches);
+            AiPromptResource? response = await executor.EditAiPrompt(userId: null, aiPromptId, patches);
             
             Assert_AiPrompt(response);
         }

@@ -209,7 +209,7 @@ namespace Crowdin.Api.Tests.AI
                 });
             
             var executor = new AiApiExecutor(mockClient.Object);
-            ResponseList<AiProviderResource>? response = await executor.ListAiProvidersEnterprise();
+            ResponseList<AiProviderResource>? response = await executor.ListAiProviders(userId: null);
             
             Assert_AiProvider(response?.Data?.FirstOrDefault());
         }
@@ -260,7 +260,7 @@ namespace Crowdin.Api.Tests.AI
                 });
             
             var executor = new AiApiExecutor(mockClient.Object);
-            AiProviderResource? response = await executor.AddAiProviderEnterprise(request);
+            AiProviderResource? response = await executor.AddAiProvider(userId: null, request);
             
             Assert_AiProvider(response);
         }
@@ -283,7 +283,7 @@ namespace Crowdin.Api.Tests.AI
                 });
             
             var executor = new AiApiExecutor(mockClient.Object);
-            AiProviderResource? response = await executor.GetAiProviderEnterprise(aiProviderId);
+            AiProviderResource? response = await executor.GetAiProvider(userId: null, aiProviderId);
             
             Assert_AiProvider(response);
         }
@@ -302,7 +302,7 @@ namespace Crowdin.Api.Tests.AI
                 .ReturnsAsync(HttpStatusCode.NoContent);
             
             var executor = new AiApiExecutor(mockClient.Object);
-            await executor.DeleteAiProviderEnterprise(aiProviderId);
+            await executor.DeleteAiProvider(userId: null, aiProviderId);
         }
         
         [Fact]
@@ -325,7 +325,7 @@ namespace Crowdin.Api.Tests.AI
                 });
             
             var executor = new AiApiExecutor(mockClient.Object);
-            AiProviderResource? response = await executor.EditAiProviderEnterprise(aiProviderId, request);
+            AiProviderResource? response = await executor.EditAiProvider(userId: null, aiProviderId, request);
             
             Assert_AiProvider(response);
         }
