@@ -130,6 +130,7 @@ namespace Crowdin.Api.SourceStrings
         /// <summary>
         /// Upload strings status. Documentation:
         /// <a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.strings.uploads.get">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.strings.uploads.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
         public async Task<StringUploadResponseModel> UploadStringsStatus(int projectId, string uploadId)
@@ -142,6 +143,7 @@ namespace Crowdin.Api.SourceStrings
         /// <summary>
         /// Upload strings. Documentation:
         /// <a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.strings.uploads.post">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.strings.uploads.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
         public async Task<StringUploadResponseModel> UploadStrings(int projectId, UploadStringsRequest request)
