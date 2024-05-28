@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Response_Common_Multi" xml:space="preserve">
+        <value>{
+  "data": [
+    {
+      "data": {
+        "id": 34,
+        "projectId": 2,
+        "name": "develop-master",
+        "title": "Master branch",
+        "createdAt": "2019-09-16T13:48:04+00:00",
+        "updatedAt": "2019-09-19T13:25:27+00:00"
+      }
+    }
+  ],
+  "pagination": {
+    "offset": 0,
+    "limit": 25
+  }
+}</value>
+    </data>
+    <data name="Request_AddBranch" xml:space="preserve">
+        <value>{
+  "name": "develop-master",
+  "title": "Master branch"
+}</value>
+    </data>
+    <data name="Response_Common_Single" xml:space="preserve">
+        <value>{
+  "data": {
+    "id": 34,
+    "projectId": 2,
+    "name": "develop-master",
+    "title": "Master branch",
+    "createdAt": "2019-09-16T13:48:04+00:00",
+    "updatedAt": "2019-09-19T13:25:27+00:00"
+  }
+}</value>
+    </data>
+    <data name="Request_EditBranch" xml:space="preserve">
+        <value>[
+    {
+        "path": "/name",
+        "op": "replace",
+        "value": "develop-master"
+    },
+    {
+        "path": "/title",
+        "op": "replace",
+        "value": "Master branch"
+    }
+]</value>
+    </data>
+    <data name="Request_CloneBranch" xml:space="preserve">
+        <value>{
+  "name": "develop-master",
+  "title": "Master branch"
+}</value>
+    </data>
+    <data name="Response_BranchCloneStatus" xml:space="preserve">
+        <value>{
+  "data": {
+    "identifier": "50fb3506-4127-4ba8-8296-f97dc7e3e0c3",
+    "status": "finished",
+    "progress": 100,
+    "attributes": {},
+    "createdAt": "2019-09-23T11:26:54+00:00",
+    "updatedAt": "2019-09-23T11:26:54+00:00",
+    "startedAt": "2019-09-23T11:26:54+00:00",
+    "finishedAt": "2019-09-23T11:26:54+00:00"
+  }
+}</value>
+    </data>
+    <data name="Request_MergeBranch" xml:space="preserve">
+        <value>{
+  "deleteAfterMerge": true,
+  "sourceBranchId": 8,
+  "dryRun": true
+}</value>
+    </data>
+    <data name="Response_BranchMergeStatus" xml:space="preserve">
+        <value>{
+  "data": {
+    "identifier": "50fb3506-4127-4ba8-8296-f97dc7e3e0c3",
+    "status": "finished",
+    "progress": 100,
+    "attributes": {
+      "sourceBranchId": 38,
+      "deleteAfterMerge": false
+    },
+    "createdAt": "2019-09-23T11:26:54+00:00",
+    "updatedAt": "2019-09-23T11:26:54+00:00",
+    "startedAt": "2019-09-23T11:26:54+00:00",
+    "finishedAt": "2019-09-23T11:26:54+00:00"
+  }
+}</value>
+    </data>
+    <data name="Response_BranchMergeSummary" xml:space="preserve">
+        <value>{
+  "data": {
+    "status": "merged",
+    "sourceBranchId": 100,
+    "targetBranchId": 100,
+    "dryRun": false,
+    "details": {
+      "added": 1,
+      "deleted": 2,
+      "updated": 3,
+      "conflicted": 7
+    }
+  }
+}</value>
+    </data>
+</root>
