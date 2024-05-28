@@ -120,4 +120,69 @@
   }
 ]</value>
     </data>
+    <data name="ListAiProviderModels_Response" xml:space="preserve">
+        <value>{
+  "data": [
+    {
+      "data": {
+        "id": "gpt-3.5-turbo-instruct"
+      }
+    }
+  ]
+}</value>
+    </data>
+    <data name="Serialization_AiProvider_Credentials_OpenAi" xml:space="preserve">
+        <value>{
+    "type": "open_ai",
+    "credentials": {
+        "apiKey": "key"
+    }
+}</value>
+    </data>
+    <data name="Serialization_AiProvider_Credentials_AzureOpenAi" xml:space="preserve">
+        <value>{
+    "type": "azure_open_ai",
+    "credentials": {
+        "resourceName": "resource",
+        "apiKey": "key",
+        "deploymentName": "deployment",
+        "apiVersion": "1.0.0"
+    }
+}</value>
+    </data>
+    <data name="Serialization_AiProvider_Credentials_GoogleGemini" xml:space="preserve">
+        <value>{
+    "type": "google_gemini",
+    "credentials": {
+        "project": "project",
+        "region": "region",
+        "serviceAccountKey": "serviceAccountKey"
+    }
+}</value>
+    </data>
+    <data name="Serialization_AiProvider_Credentials_MistralAi" xml:space="preserve">
+        <value>{
+    "type": "mistral_ai",
+    "credentials": {
+        "apiKey": "key"
+    }
+}</value>
+    </data>
+    <data name="Serialization_AiProvider_Credentials_Anthropic" xml:space="preserve">
+        <value>{
+    "type": "anthropic",
+    "credentials": {
+        "apiKey": "key"
+    }
+}</value>
+    </data>
+    <data name="Serialization_AiProvider_Credentials_CustomAi" xml:space="preserve">
+        <value>{
+    "type": "custom_ai",
+    "credentials": {
+        "identifier": "id",
+        "key": "key"
+    }
+}</value>
+    </data>
 </root>

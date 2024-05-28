@@ -175,5 +175,112 @@ namespace Crowdin.Api.Tests.Core.Resources {
                 return ResourceManager.GetString("EditAiProvider_Request", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;data&quot;: [
+        ///    {
+        ///      &quot;data&quot;: {
+        ///        &quot;id&quot;: &quot;gpt-3.5-turbo-instruct&quot;
+        ///      }
+        ///    }
+        ///  ]
+        ///}.
+        /// </summary>
+        internal static string ListAiProviderModels_Response {
+            get {
+                return ResourceManager.GetString("ListAiProviderModels_Response", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///    &quot;type&quot;: &quot;anthropic&quot;,
+        ///    &quot;credentials&quot;: {
+        ///        &quot;apiKey&quot;: &quot;key&quot;
+        ///    }
+        ///}.
+        /// </summary>
+        internal static string Serialization_AiProvider_Credentials_Anthropic {
+            get {
+                return ResourceManager.GetString("Serialization_AiProvider_Credentials_Anthropic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///    &quot;type&quot;: &quot;azure_open_ai&quot;,
+        ///    &quot;credentials&quot;: {
+        ///        &quot;resourceName&quot;: &quot;resource&quot;,
+        ///        &quot;apiKey&quot;: &quot;key&quot;,
+        ///        &quot;deploymentName&quot;: &quot;deployment&quot;,
+        ///        &quot;apiVersion&quot;: &quot;1.0.0&quot;
+        ///    }
+        ///}.
+        /// </summary>
+        internal static string Serialization_AiProvider_Credentials_AzureOpenAi {
+            get {
+                return ResourceManager.GetString("Serialization_AiProvider_Credentials_AzureOpenAi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///    &quot;type&quot;: &quot;custom_ai&quot;,
+        ///    &quot;credentials&quot;: {
+        ///        &quot;identifier&quot;: &quot;id&quot;,
+        ///        &quot;key&quot;: &quot;key&quot;
+        ///    }
+        ///}.
+        /// </summary>
+        internal static string Serialization_AiProvider_Credentials_CustomAi {
+            get {
+                return ResourceManager.GetString("Serialization_AiProvider_Credentials_CustomAi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///    &quot;type&quot;: &quot;google_gemini&quot;,
+        ///    &quot;credentials&quot;: {
+        ///        &quot;project&quot;: &quot;project&quot;,
+        ///        &quot;region&quot;: &quot;region&quot;,
+        ///        &quot;serviceAccountKey&quot;: &quot;serviceAccountKey&quot;
+        ///    }
+        ///}.
+        /// </summary>
+        internal static string Serialization_AiProvider_Credentials_GoogleGemini {
+            get {
+                return ResourceManager.GetString("Serialization_AiProvider_Credentials_GoogleGemini", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///    &quot;type&quot;: &quot;mistral_ai&quot;,
+        ///    &quot;credentials&quot;: {
+        ///        &quot;apiKey&quot;: &quot;key&quot;
+        ///    }
+        ///}.
+        /// </summary>
+        internal static string Serialization_AiProvider_Credentials_MistralAi {
+            get {
+                return ResourceManager.GetString("Serialization_AiProvider_Credentials_MistralAi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///    &quot;type&quot;: &quot;open_ai&quot;,
+        ///    &quot;credentials&quot;: {
+        ///        &quot;apiKey&quot;: &quot;key&quot;
+        ///    }
+        ///}.
+        /// </summary>
+        internal static string Serialization_AiProvider_Credentials_OpenAi {
+            get {
+                return ResourceManager.GetString("Serialization_AiProvider_Credentials_OpenAi", resourceCulture);
+            }
+        }
     }
 }

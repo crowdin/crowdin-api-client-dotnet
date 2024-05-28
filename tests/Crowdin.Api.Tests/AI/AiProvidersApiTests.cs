@@ -188,6 +188,33 @@ namespace Crowdin.Api.Tests.AI
             Assert_AiProvider(response);
         }
         
+        [Fact]
+        public async Task ListAiProviderModels()
+        {
+            const int userId = 1;
+            const int aiProviderId = 2;
+            
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+            
+            var url = $"/users/{userId}/ai/providers/{aiProviderId}/models";
+            
+            mockClient
+                .Setup(client => client.SendGetRequest(url, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(AI_Providers.ListAiProviderModels_Response)
+                });
+            
+            var executor = new AiApiExecutor(mockClient.Object);
+            ResponseList<AiProviderModelResource>? response = await executor.ListAiProviderModels(userId, aiProviderId);
+            
+            AiProviderModelResource? model = response?.Data?.FirstOrDefault();
+            ArgumentNullException.ThrowIfNull(model);
+            
+            Assert.Equal("gpt-3.5-turbo-instruct", model.Id);
+        }
+        
         #endregion
         
         #region Enterprise
@@ -328,6 +355,33 @@ namespace Crowdin.Api.Tests.AI
             AiProviderResource? response = await executor.EditAiProvider(userId: null, aiProviderId, request);
             
             Assert_AiProvider(response);
+        }
+        
+        [Fact]
+        public async Task ListAiProviderModelsEnterprise()
+        {
+            const int aiProviderId = 1;
+            
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+            
+            var url = $"/ai/providers/{aiProviderId}/models";
+            
+            mockClient
+                .Setup(client => client.SendGetRequest(url, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(AI_Providers.ListAiProviderModels_Response)
+                });
+            
+            var executor = new AiApiExecutor(mockClient.Object);
+            ResponseList<AiProviderModelResource>? response =
+                await executor.ListAiProviderModels(userId: null, aiProviderId);
+            
+            AiProviderModelResource? model = response?.Data.FirstOrDefault();
+            ArgumentNullException.ThrowIfNull(model);
+            
+            Assert.Equal("gpt-3.5-turbo-instruct", model.Id);
         }
         
         #endregion

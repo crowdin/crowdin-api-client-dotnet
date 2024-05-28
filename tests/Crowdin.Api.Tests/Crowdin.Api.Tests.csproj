@@ -194,6 +194,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>AI_Providers.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\AI_Misc.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>AI_Misc.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -396,6 +400,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>AI_Providers.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\AI_Misc.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>AI_Misc.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 
