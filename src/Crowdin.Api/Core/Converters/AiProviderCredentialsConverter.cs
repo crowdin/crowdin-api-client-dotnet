@@ -41,8 +41,7 @@ namespace Crowdin.Api.Core.Converters
             };
             
             var credentialsRawObject = (JObject) jObject["credentials"]!;
-            var credentialsRawObjectJson = credentialsRawObject.ToString();
-            existingValue.Credentials = (AiProviderCredentials) JsonConvert.DeserializeObject(credentialsRawObjectJson, returnType);
+            existingValue.Credentials = (AiProviderCredentials) credentialsRawObject.ToObject(returnType);
             
             return existingValue;
         }
