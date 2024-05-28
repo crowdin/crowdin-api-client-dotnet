@@ -1,21 +1,78 @@
 ﻿
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
-
-using Crowdin.Api.Core;
-using Crowdin.Api.MachineTranslationEngines;
-using Crowdin.Api.Tests.Core;
 
 using Moq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Xunit;
 
+using Crowdin.Api.Core;
+using Crowdin.Api.MachineTranslationEngines;
+using Crowdin.Api.Tests.Core;
+
 namespace Crowdin.Api.Tests.MachineTranslationEngines
 {
     public class MachineTranslationEnginesApiTests
     {
         private static readonly JsonSerializerSettings DefaultSettings = TestUtils.CreateJsonSerializerOptions();
+
+        [Fact]
+        public async Task ListMts_IntCredentialsKey()
+        {
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+            
+            IDictionary<string, string> queryParams = TestUtils.CreateQueryParamsFromPaging();
+            
+            mockClient
+                .Setup(client => client.SendGetRequest("/mts", queryParams))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Core.Resources.MachineTranslationEngines.ListMts_Request_IntCredentialsKey)
+                });
+            
+            var executor = new MachineTranslationEnginesApiExecutor(mockClient.Object);
+            ResponseList<MtEngine>? response = await executor.ListMts();
+            
+            MtEngine? mt = response?.Data?.FirstOrDefault();
+            ArgumentNullException.ThrowIfNull(mt);
+            
+            Assert.Equal((long) 1, mt.Credentials["crowdin_nmt"]);
+            Assert.Equal((long) 2, mt.Credentials["crowdin_nmt_multi_translations"]);
+            
+            Assert.Equal(7, mt.SupportedLanguageIds.Length);
+        }
+        
+        [Fact]
+        public async Task ListMts_StringCredentialsKey()
+        {
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+            
+            IDictionary<string, string> queryParams = TestUtils.CreateQueryParamsFromPaging();
+            
+            mockClient
+                .Setup(client => client.SendGetRequest("/mts", queryParams))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Core.Resources.MachineTranslationEngines.ListMts_Request_StringCredentialsKey)
+                });
+            
+            var executor = new MachineTranslationEnginesApiExecutor(mockClient.Object);
+            ResponseList<MtEngine>? response = await executor.ListMts();
+            
+            MtEngine? mt = response?.Data?.FirstOrDefault();
+            ArgumentNullException.ThrowIfNull(mt);
+            
+            Assert.Equal("stringValue", mt.Credentials["crowdin_nmt"]);
+            Assert.Equal("stringValue", mt.Credentials["crowdin_nmt_multi_translations"]);
+            
+            Assert.Equal(7, mt.SupportedLanguageIds.Length);
+        }
         
         [Fact]
         public async Task AddMt()

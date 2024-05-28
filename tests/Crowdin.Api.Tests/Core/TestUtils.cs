@@ -51,7 +51,9 @@ namespace Crowdin.Api.Tests.Core
                     new ProjectStringsExporterSettingsConverter(),
                     new ReportSettingsTemplateConverter(),
                     new WorkflowStepConverter(),
-                    new FieldConfigConverter()
+                    new FieldConfigConverter(),
+                    new AiPromptConfigurationConverter(),
+                    new AiProviderCredentialsConverter()
                 }
             };
         }
