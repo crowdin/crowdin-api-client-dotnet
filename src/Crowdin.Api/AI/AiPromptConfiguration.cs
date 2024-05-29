@@ -45,7 +45,7 @@ namespace Crowdin.Api.AI
         public bool PublicProjectDescription { get; set; }
         
         [PublicAPI]
-        public class OtherLanguageTranslationsConfig // TODO: to outer?
+        public class OtherLanguageTranslationsConfig
         {
             [JsonProperty("isEnabled")]
             public bool IsEnabled { get; set; }

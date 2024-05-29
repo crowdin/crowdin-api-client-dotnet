@@ -12,13 +12,13 @@ namespace Crowdin.Api.Branches
         public string Identifier { get; set; }
         
         [JsonProperty("status")]
-        public OperationStatus Status { get; set; } // TODO: in_progress or inProgress?
+        public OperationStatus Status { get; set; }
         
         [JsonProperty("progress")]
         public int Progress { get; set; }
         
         [JsonProperty("attributes")]
-        public object Attributes { get; set; } // TODO: empty object?
+        public object Attributes { get; set; }
         
         [JsonProperty("createdAt")]
         public DateTimeOffset CreatedAt { get; set; }
