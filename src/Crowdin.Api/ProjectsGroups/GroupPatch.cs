@@ -15,13 +15,13 @@ namespace Crowdin.Api.ProjectsGroups
     [PublicAPI]
     public enum GroupPatchPath
     {
-        [Description("/name")]
+        [SerializedValue("/name")]
         Name,
         
-        [Description("/description")]
+        [SerializedValue("/description")]
         Description,
         
-        [Description("/parentId")]
+        [SerializedValue("/parentId")]
         ParentId
     }
 }

@@ -7,22 +7,22 @@ namespace Crowdin.Api.Glossaries
     [PublicAPI]
     public enum TermType
     {
-        [Description("full form")]
+        [SerializedValue("full form")]
         FullForm,
         
-        [Description("acronym")]
+        [SerializedValue("acronym")]
         Acronym,
         
-        [Description("abbreviation")]
+        [SerializedValue("abbreviation")]
         Abbreviation,
         
-        [Description("short form")]
+        [SerializedValue("short form")]
         ShortForm,
         
-        [Description("phrase")]
+        [SerializedValue("phrase")]
         Phrase,
         
-        [Description("variant")]
+        [SerializedValue("variant")]
         Variant
     }
 }

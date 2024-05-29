@@ -64,52 +64,52 @@ namespace Crowdin.Api.Tasks
         [PublicAPI]
         public enum TaskExpertise
         {
-            [Description("standard")]
+            [SerializedValue("standard")]
             Standard,
         
-            [Description("mobile-applications")]
+            [SerializedValue("mobile-applications")]
             MobileApplications,
         
-            [Description("software-it")]
+            [SerializedValue("software-it")]
             SoftwareIt,
         
-            [Description("gaming-video-games")]
+            [SerializedValue("gaming-video-games")]
             GamingVideoGames,
         
-            [Description("technical-engineering")]
+            [SerializedValue("technical-engineering")]
             TechnicalEngineering,
         
-            [Description("marketing-consumer-media")]
+            [SerializedValue("marketing-consumer-media")]
             MarketingConsumerMedia,
         
-            [Description("business-finance")]
+            [SerializedValue("business-finance")]
             BusinessFinance,
         
-            [Description("legal-certificate")]
+            [SerializedValue("legal-certificate")]
             LegalCertificate,
         
-            [Description("medical")]
+            [SerializedValue("medical")]
             Medical,
         
-            [Description("ad-words-banners")]
+            [SerializedValue("ad-words-banners")]
             AdWordsBanners,
         
-            [Description("automotive-aerospace")]
+            [SerializedValue("automotive-aerospace")]
             AutomotiveAerospace,
         
-            [Description("scientific")]
+            [SerializedValue("scientific")]
             Scientific,
         
-            [Description("scientific-academic")]
+            [SerializedValue("scientific-academic")]
             ScientificAcademic,
         
-            [Description("tourism")]
+            [SerializedValue("tourism")]
             Tourism,
         
-            [Description("training-employee-handbooks")]
+            [SerializedValue("training-employee-handbooks")]
             TrainingEmployeeHandbooks,
         
-            [Description("forex-crypto")]
+            [SerializedValue("forex-crypto")]
             ForexCrypto
         }
     }

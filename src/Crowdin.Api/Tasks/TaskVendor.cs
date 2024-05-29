@@ -9,43 +9,43 @@ namespace Crowdin.Api.Tasks
     {
         // ReSharper disable IdentifierTypo
         
-        [Description("alconost")]
+        [SerializedValue("alconost")]
         Alconost,
         
-        [Description("babbleon")]
+        [SerializedValue("babbleon")]
         BabbleOn,
         
-        [Description("tomedes")]
+        [SerializedValue("tomedes")]
         Tomedes,
         
-        [Description("e2f")]
+        [SerializedValue("e2f")]
         E2F,
         
-        [Description("write_path_admin")]
+        [SerializedValue("write_path_admin")]
         WritePath,
         
-        [Description("inlingo")]
+        [SerializedValue("inlingo")]
         Inlingo,
         
-        [Description("acclaro")]
+        [SerializedValue("acclaro")]
         Acclaro,
         
-        [Description("translate_by_humans")]
+        [SerializedValue("translate_by_humans")]
         TranslateByHumans,
         
-        [Description("lingo24")]
+        [SerializedValue("lingo24")]
         Lingo24,
         
-        [Description("assertio_language_services")]
+        [SerializedValue("assertio_language_services")]
         AssertioLanguageServices,
         
-        [Description("gte_localize")]
+        [SerializedValue("gte_localize")]
         GteLocalize,
         
-        [Description("kettu_solutions")]
+        [SerializedValue("kettu_solutions")]
         KettuSolutions,
         
-        [Description("languageline_solutions")]
+        [SerializedValue("languageline_solutions")]
         LanguageLineTranslationSolutions
         
         // ReSharper restore IdentifierTypo

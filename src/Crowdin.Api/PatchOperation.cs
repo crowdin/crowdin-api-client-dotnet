@@ -7,22 +7,22 @@ namespace Crowdin.Api
     [PublicAPI]
     public enum PatchOperation
     {
-        [Description("add")]
+        [SerializedValue("add")]
         Add,
         
-        [Description("copy")]
+        [SerializedValue("copy")]
         Copy,
         
-        [Description("move")]
+        [SerializedValue("move")]
         Move,
 
-        [Description("remove")]
+        [SerializedValue("remove")]
         Remove,
         
-        [Description("replace")]
+        [SerializedValue("replace")]
         Replace,
         
-        [Description("test")]
+        [SerializedValue("test")]
         Test
     }
 }

@@ -7,13 +7,13 @@ namespace Crowdin.Api.ProjectsGroups
     [PublicAPI]
     public enum TmContextType
     {
-        [Description("segmentContext")]
+        [SerializedValue("segmentContext")]
         SegmentContext,
         
-        [Description("auto")]
+        [SerializedValue("auto")]
         Auto,
         
-        [Description("prevAndNextSegment")]
+        [SerializedValue("prevAndNextSegment")]
         PrevAndNextSegment
     }
 }

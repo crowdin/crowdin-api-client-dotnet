@@ -15,34 +15,34 @@ namespace Crowdin.Api.Tasks
     [PublicAPI]
     public enum TaskPatchPath
     {
-        [Description("/status")]
+        [SerializedValue("/status")]
         Status,
         
-        [Description("/title")]
+        [SerializedValue("/title")]
         Title,
         
-        [Description("/description")]
+        [SerializedValue("/description")]
         Description,
         
-        [Description("/deadline")]
+        [SerializedValue("/deadline")]
         DeadLine,
         
-        [Description("/splitFiles")]
+        [SerializedValue("/splitFiles")]
         SplitFiles,
         
-        [Description("/fileIds")]
+        [SerializedValue("/fileIds")]
         FileIds,
         
-        [Description("/assignees")]
+        [SerializedValue("/assignees")]
         Assignees,
         
-        [Description("/dateFrom")]
+        [SerializedValue("/dateFrom")]
         DateFrom,
         
-        [Description("/dateTo")]
+        [SerializedValue("/dateTo")]
         DateTo,
         
-        [Description("labelIds")]
+        [SerializedValue("labelIds")]
         LabelIds
     }
 }

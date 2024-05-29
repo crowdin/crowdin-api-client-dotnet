@@ -7,16 +7,16 @@ namespace Crowdin.Api.Translations
     [PublicAPI]
     public enum AutoApproveOption
     {
-        [Description("all")]
+        [SerializedValue("all")]
         All,
         
-        [Description("exceptAutoSubstituted")]
+        [SerializedValue("exceptAutoSubstituted")]
         ExceptAutoSubstituted,
         
-        [Description("perfectMatchOnly")]
+        [SerializedValue("perfectMatchOnly")]
         PerfectMatchOnly,
         
-        [Description("none")]
+        [SerializedValue("none")]
         None
     }
 }

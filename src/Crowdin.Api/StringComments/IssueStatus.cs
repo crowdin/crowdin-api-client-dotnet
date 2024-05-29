@@ -7,10 +7,10 @@ namespace Crowdin.Api.StringComments
     [PublicAPI]
     public enum IssueStatus
     {
-        [Description("resolved")]
+        [SerializedValue("resolved")]
         Resolved,
         
-        [Description("unresolved")]
+        [SerializedValue("unresolved")]
         UnResolved
     }
 }

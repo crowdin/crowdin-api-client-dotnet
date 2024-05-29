@@ -7,10 +7,10 @@ namespace Crowdin.Api.ProjectsGroups
     [PublicAPI]
     public enum ProjectVisibility
     {
-        [Description("open")]
+        [SerializedValue("open")]
         Open,
         
-        [Description("private")]
+        [SerializedValue("private")]
         Private
     }
 }

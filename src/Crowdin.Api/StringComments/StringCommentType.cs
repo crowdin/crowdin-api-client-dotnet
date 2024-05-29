@@ -7,10 +7,10 @@ namespace Crowdin.Api.StringComments
     [PublicAPI]
     public enum StringCommentType
     {
-        [Description("comment")]
+        [SerializedValue("comment")]
         Comment,
         
-        [Description("issue")]
+        [SerializedValue("issue")]
         Issue
     }
 }

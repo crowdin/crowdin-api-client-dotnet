@@ -7,43 +7,43 @@ namespace Crowdin.Api.Workflows
     [PublicAPI]
     public enum WorkflowStepType
     {
-        [Description("Start")]
+        [SerializedValue("Start")]
         Start,
         
-        [Description("Crowdsource")]
+        [SerializedValue("Crowdsource")]
         CrowdSource,
         
-        [Description("CustomCode")]
+        [SerializedValue("CustomCode")]
         CustomCode,
         
-        [Description("MachinePreTranslate")]
+        [SerializedValue("MachinePreTranslate")]
         MachinePreTranslate,
         
-        [Description("ProofreadByVendor")]
+        [SerializedValue("ProofreadByVendor")]
         ProofreadByVendor,
         
-        [Description("Proofread")]
+        [SerializedValue("Proofread")]
         Proofread,
         
-        [Description("SourceTextReview")]
+        [SerializedValue("SourceTextReview")]
         SourceTextReview,
         
-        [Description("SwitchLanguage")]
+        [SerializedValue("SwitchLanguage")]
         SwitchLanguage,
         
-        [Description("TMPreTranslate")]
+        [SerializedValue("TMPreTranslate")]
         TmPreTranslate,
         
-        [Description("TranslateByApiVendor")]
+        [SerializedValue("TranslateByApiVendor")]
         TranslateByApiVendor,
         
-        [Description("TranslateByVendor")]
+        [SerializedValue("TranslateByVendor")]
         TranslateByVendor,
         
-        [Description("Translate")]
+        [SerializedValue("Translate")]
         Translate,
         
-        [Description("End")]
+        [SerializedValue("End")]
         End
     }
 }

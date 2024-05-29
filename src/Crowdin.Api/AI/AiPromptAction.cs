@@ -7,7 +7,7 @@ namespace Crowdin.Api.AI
     [PublicAPI]
     public enum AiPromptAction
     {
-        [Description("pre_translate")]
+        [SerializedValue("pre_translate")]
         PreTranslate
     }
 }

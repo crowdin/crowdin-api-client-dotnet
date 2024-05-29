@@ -7,16 +7,16 @@ namespace Crowdin.Api.Glossaries
     [PublicAPI]
     public enum GlossaryFormat
     {
-        [Description("tbx")]
+        [SerializedValue("tbx")]
         Tbx,
         
-        [Description("tbx_v3")]
+        [SerializedValue("tbx_v3")]
         TbxV3,
         
-        [Description("csv")]
+        [SerializedValue("csv")]
         Csv,
         
-        [Description("xlsx")]
+        [SerializedValue("xlsx")]
         Xlsx
     }
 }

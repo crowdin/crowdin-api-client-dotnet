@@ -15,7 +15,7 @@ namespace Crowdin.Api.TranslationMemory
     [PublicAPI]
     public enum TmSegmentRecordPatchPath
     {
-        [Description("/text")]
+        [SerializedValue("/text")]
         Text
     }
 }

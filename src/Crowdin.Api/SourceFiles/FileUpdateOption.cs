@@ -7,13 +7,13 @@ namespace Crowdin.Api.SourceFiles
     [PublicAPI]
     public enum FileUpdateOption
     {
-        [Description("clear_translations_and_approvals")]
+        [SerializedValue("clear_translations_and_approvals")]
         ClearTranslationsAndApprovals,
         
-        [Description("keep_translations")]
+        [SerializedValue("keep_translations")]
         KeepTranslations,
         
-        [Description("keep_translations_and_approvals")]
+        [SerializedValue("keep_translations_and_approvals")]
         KeepTranslationsAndApprovals
     }
 }

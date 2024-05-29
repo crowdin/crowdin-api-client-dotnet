@@ -58,10 +58,10 @@ namespace Crowdin.Api.SourceFiles
     [PublicAPI]
     public enum ExportQuotesMode
     {
-        [Description("single")]
+        [SerializedValue("single")]
         ExportSingleQuote,
         
-        [Description("double")]
+        [SerializedValue("double")]
         ExportDoubleQuote
     }
 }

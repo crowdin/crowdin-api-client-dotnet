@@ -58,128 +58,128 @@ namespace Crowdin.Api.Tasks
         [PublicAPI]
         public enum TaskExpertise
         {
-            [Description("P")]
+            [SerializedValue("P")]
             Economy,
             
-            [Description("T")]
+            [SerializedValue("T")]
             Professional,
             
-            [Description("R")]
+            [SerializedValue("R")]
             Premium
         }
 
         [PublicAPI]
         public enum TaskSubject
         {
-            [Description("general")]
+            [SerializedValue("general")]
             General,
             
-            [Description("accounting_finance")]
+            [SerializedValue("accounting_finance")]
             AccountingFinance,
             
-            [Description("aerospace_defence")]
+            [SerializedValue("aerospace_defence")]
             AerospaceDefence,
             
-            [Description("architecture")]
+            [SerializedValue("architecture")]
             Architecture,
             
-            [Description("art")]
+            [SerializedValue("art")]
             Art,
             
-            [Description("automotive")]
+            [SerializedValue("automotive")]
             Automotive,
             
-            [Description("certificates_diplomas_licenses_cv_etc")]
+            [SerializedValue("certificates_diplomas_licenses_cv_etc")]
             CertificatesDiplomasLicensesCvEtc,
             
-            [Description("chemical")]
+            [SerializedValue("chemical")]
             Chemical,
             
-            [Description("civil_engineering_construction")]
+            [SerializedValue("civil_engineering_construction")]
             CivilEngineeringConstruction,
             
-            [Description("corporate_social_responsibility")]
+            [SerializedValue("corporate_social_responsibility")]
             CorporateSocialResponsibility,
             
-            [Description("cosmetics")]
+            [SerializedValue("cosmetics")]
             Cosmetics,
             
-            [Description("culinary")]
+            [SerializedValue("culinary")]
             Culinary,
             
-            [Description("electronics_electrical_engineering")]
+            [SerializedValue("electronics_electrical_engineering")]
             ElectronicsElectricalEngineering,
             
-            [Description("energy_power_generation_oil_gas")]
+            [SerializedValue("energy_power_generation_oil_gas")]
             EnergyPowerGenerationOilGas,
             
-            [Description("environment")]
+            [SerializedValue("environment")]
             Environment,
             
-            [Description("fashion")]
+            [SerializedValue("fashion")]
             Fashion,
             
-            [Description("games_videogames_casino")]
+            [SerializedValue("games_videogames_casino")]
             GamesVideoGamesCasino,
             
-            [Description("general_business_commerce")]
+            [SerializedValue("general_business_commerce")]
             GeneralBusinessCommerce,
             
-            [Description("history_archaeology")]
+            [SerializedValue("history_archaeology")]
             HistoryArchaeology,
             
-            [Description("information_technology")]
+            [SerializedValue("information_technology")]
             InformationTechnology,
             
-            [Description("insurance")]
+            [SerializedValue("insurance")]
             Insurance,
             
-            [Description("internet_e-commerce")]
+            [SerializedValue("internet_e-commerce")]
             InternetECommerce,
             
-            [Description("legal_documents_contracts")]
+            [SerializedValue("legal_documents_contracts")]
             LegalDocumentsContracts,
             
-            [Description("literary_translations")]
+            [SerializedValue("literary_translations")]
             LiteraryTranslations,
             
-            [Description("marketing_advertising_material_public_relations")]
+            [SerializedValue("marketing_advertising_material_public_relations")]
             MarketingAdvertisingMaterialPublicRelations,
             
-            [Description("matematics_and_physics")]
+            [SerializedValue("matematics_and_physics")]
             MathematicsAndPhysics,
             
-            [Description("mechanical_manufacturing")]
+            [SerializedValue("mechanical_manufacturing")]
             MechanicalManufacturing,
             
-            [Description("media_journalism_publishing")]
+            [SerializedValue("media_journalism_publishing")]
             MediaJournalismPublishing,
             
-            [Description("medical_pharmaceutical")]
+            [SerializedValue("medical_pharmaceutical")]
             MedicalPharmaceutical,
             
-            [Description("music")]
+            [SerializedValue("music")]
             Music,
             
-            [Description("private_correspondence_letters")]
+            [SerializedValue("private_correspondence_letters")]
             PrivateCorrespondenceLetters,
             
-            [Description("religion")]
+            [SerializedValue("religion")]
             Religion,
             
-            [Description("science")]
+            [SerializedValue("science")]
             Science,
             
-            [Description("shipping_sailing_maritime")]
+            [SerializedValue("shipping_sailing_maritime")]
             ShippingSailingMaritime,
             
-            [Description("social_science")]
+            [SerializedValue("social_science")]
             SocialScience,
             
-            [Description("telecommunications")]
+            [SerializedValue("telecommunications")]
             Telecommunications,
             
-            [Description("travel_tourism")]
+            [SerializedValue("travel_tourism")]
             TravelTourism
         }
     }

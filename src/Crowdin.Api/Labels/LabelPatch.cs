@@ -15,7 +15,7 @@ namespace Crowdin.Api.Labels
     [PublicAPI]
     public enum LabelPatchPath
     {
-        [Description("/title")]
+        [SerializedValue("/title")]
         Title
     }
 }

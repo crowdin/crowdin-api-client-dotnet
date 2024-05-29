@@ -15,7 +15,7 @@ namespace Crowdin.Api.Tasks
     [PublicAPI]
     public enum TaskArchivedStatusPatchPath
     {
-        [Description("/isArchived")]
+        [SerializedValue("/isArchived")]
         IsArchived
     }
 }

@@ -7,13 +7,13 @@ namespace Crowdin.Api.Translations
     [PublicAPI]
     public enum TranslationFormat
     {
-        [Description("xliff")]
+        [SerializedValue("xliff")]
         Xliff,
         
-        [Description("android")]
+        [SerializedValue("android")]
         Android,
         
-        [Description("macosx")]
+        [SerializedValue("macosx")]
         MacOsX
     }
 }

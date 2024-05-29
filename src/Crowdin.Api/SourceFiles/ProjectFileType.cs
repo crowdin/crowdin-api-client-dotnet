@@ -7,196 +7,196 @@ namespace Crowdin.Api.SourceFiles
     [PublicAPI]
     public enum ProjectFileType
     {
-        [Description("auto")]
+        [SerializedValue("auto")]
         Auto,
 
-        [Description("android")]
+        [SerializedValue("android")]
         Android,
 
-        [Description("macosx")]
+        [SerializedValue("macosx")]
         MacOsX,
 
-        [Description("resx")]
+        [SerializedValue("resx")]
         ResX,
 
-        [Description("properties")]
+        [SerializedValue("properties")]
         Properties,
 
-        [Description("gettext")]
+        [SerializedValue("gettext")]
         GetText,
 
-        [Description("yaml")]
+        [SerializedValue("yaml")]
         Yaml,
 
-        [Description("php")]
+        [SerializedValue("php")]
         Php,
 
-        [Description("json")]
+        [SerializedValue("json")]
         Json,
 
-        [Description("fjs")]
+        [SerializedValue("fjs")]
         Fjs,
 
-        [Description("xml")]
+        [SerializedValue("xml")]
         Xml,
 
-        [Description("ini")]
+        [SerializedValue("ini")]
         Ini,
 
-        [Description("rc")]
+        [SerializedValue("rc")]
         Rc,
 
-        [Description("resw")]
+        [SerializedValue("resw")]
         Resw,
 
-        [Description("resjson")]
+        [SerializedValue("resjson")]
         ResJson,
 
-        [Description("qtts")]
+        [SerializedValue("qtts")]
         Qtts,
 
-        [Description("joomla")]
+        [SerializedValue("joomla")]
         Joomla,
 
-        [Description("chrome")]
+        [SerializedValue("chrome")]
         Chrome,
 
-        [Description("react_intl")]
+        [SerializedValue("react_intl")]
         ReactIntl,
 
-        [Description("dtd")]
+        [SerializedValue("dtd")]
         Dtd,
 
-        [Description("dklang")]
+        [SerializedValue("dklang")]
         Dklang,
 
-        [Description("flex")]
+        [SerializedValue("flex")]
         Flex,
 
-        [Description("nsh")]
+        [SerializedValue("nsh")]
         Nsh,
 
-        [Description("wxl")]
+        [SerializedValue("wxl")]
         Wxl,
 
-        [Description("xliff")]
+        [SerializedValue("xliff")]
         Xliff,
 
-        [Description("xliff_two")]
+        [SerializedValue("xliff_two")]
         XliffTwo,
 
-        [Description("html")]
+        [SerializedValue("html")]
         Html,
 
-        [Description("haml")]
+        [SerializedValue("haml")]
         Haml,
 
-        [Description("txt")]
+        [SerializedValue("txt")]
         Txt,
 
-        [Description("csv")]
+        [SerializedValue("csv")]
         Csv,
 
-        [Description("md")]
+        [SerializedValue("md")]
         Md,
 
-        [Description("mdx_v1")]
+        [SerializedValue("mdx_v1")]
         MdxV1,
 
-        [Description("mdx_v2")]
+        [SerializedValue("mdx_v2")]
         MdxV2,
 
-        [Description("flsnp")]
+        [SerializedValue("flsnp")]
         Flsnp,
 
-        [Description("fm_html")]
+        [SerializedValue("fm_html")]
         FmHtml,
 
-        [Description("fm_md")]
+        [SerializedValue("fm_md")]
         FmMd,
 
-        [Description("mediawiki")]
+        [SerializedValue("mediawiki")]
         MediaWiki,
 
-        [Description("docx")]
+        [SerializedValue("docx")]
         DocX,
 
-        [Description("sbv")]
+        [SerializedValue("sbv")]
         Sbv,
 
-        [Description("properties_play")]
+        [SerializedValue("properties_play")]
         PropertiesPlay,
 
-        [Description("properties_xml")]
+        [SerializedValue("properties_xml")]
         PropertiesXml,
 
-        [Description("maxthon")]
+        [SerializedValue("maxthon")]
         Maxthon,
 
-        [Description("go_json")]
+        [SerializedValue("go_json")]
         GoJson,
 
-        [Description("dita")]
+        [SerializedValue("dita")]
         Dita,
 
-        [Description("mif")]
+        [SerializedValue("mif")]
         Mif,
 
-        [Description("idml")]
+        [SerializedValue("idml")]
         Idml,
 
-        [Description("stringsdict")]
+        [SerializedValue("stringsdict")]
         StringsDict,
 
-        [Description("plist")]
+        [SerializedValue("plist")]
         Plist,
 
-        [Description("vtt")]
+        [SerializedValue("vtt")]
         Vtt,
 
-        [Description("vdf")]
+        [SerializedValue("vdf")]
         Vdf,
 
-        [Description("srt")]
+        [SerializedValue("srt")]
         Srt,
 
-        [Description("stf")]
+        [SerializedValue("stf")]
         Stf,
 
-        [Description("toml")]
+        [SerializedValue("toml")]
         Toml,
 
-        [Description("contentful_rt")]
+        [SerializedValue("contentful_rt")]
         ContentfulRt,
 
-        [Description("svg")]
+        [SerializedValue("svg")]
         Svg,
 
-        [Description("js")]
+        [SerializedValue("js")]
         Js,
 
-        [Description("coffee")]
+        [SerializedValue("coffee")]
         Coffee,
 
-        [Description("ts")]
+        [SerializedValue("ts")]
         Ts,
 
-        [Description("fbt")]
+        [SerializedValue("fbt")]
         Fbt,
 
-        [Description("i18next_json")]
+        [SerializedValue("i18next_json")]
         I18NextJson,
 
-        [Description("xaml")]
+        [SerializedValue("xaml")]
         Xaml,
 
-        [Description("arb")]
+        [SerializedValue("arb")]
         Arb,
 
-        [Description("adoc")]
+        [SerializedValue("adoc")]
         Adoc,
 
-        [Description("webxml")]
+        [SerializedValue("webxml")]
         WebXml
     }
 }

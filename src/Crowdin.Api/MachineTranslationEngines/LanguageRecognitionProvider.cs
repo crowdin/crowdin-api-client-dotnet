@@ -7,10 +7,10 @@ namespace Crowdin.Api.MachineTranslationEngines
     [PublicAPI]
     public enum LanguageRecognitionProvider
     {
-        [Description("crowdin")]
+        [SerializedValue("crowdin")]
         Crowdin,
         
-        [Description("engine")]
+        [SerializedValue("engine")]
         Engine
     }
 }

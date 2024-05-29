@@ -7,10 +7,10 @@ namespace Crowdin.Api.ProjectsGroups
     [PublicAPI]
     public enum ProjectExternalType
     {
-        [Description("translate")]
+        [SerializedValue("translate")]
         Translate,
         
-        [Description("proofread")]
+        [SerializedValue("proofread")]
         Proofread
     }
 }

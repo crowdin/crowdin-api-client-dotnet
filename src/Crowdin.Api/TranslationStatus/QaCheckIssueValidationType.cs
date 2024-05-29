@@ -7,115 +7,115 @@ namespace Crowdin.Api.TranslationStatus
     [PublicAPI]
     public enum QaCheckIssueValidationType
     {
-        [Description("empty_string_check")]
+        [SerializedValue("empty_string_check")]
         EmptyStringCheck,
         
-        [Description("empty_suggestion_check")]
+        [SerializedValue("empty_suggestion_check")]
         EmptySuggestionCheck,
         
-        [Description("max_length_check")]
+        [SerializedValue("max_length_check")]
         MaxLengthCheck,
         
-        [Description("tags_check")]
+        [SerializedValue("tags_check")]
         TagsCheck,
         
-        [Description("mismatch_ids_check")]
+        [SerializedValue("mismatch_ids_check")]
         MismatchIdsCheck,
         
-        [Description("cdata_check")]
+        [SerializedValue("cdata_check")]
         CdataCheck,
         
-        [Description("specials_symbols_check")]
+        [SerializedValue("specials_symbols_check")]
         SpecialSymbolsCheck,
         
-        [Description("leading_newlines_check")]
+        [SerializedValue("leading_newlines_check")]
         LeadingNewlinesCheck,
         
-        [Description("trailing_newlines_check")]
+        [SerializedValue("trailing_newlines_check")]
         TrailingNewlinesCheck,
         
-        [Description("leading_spaces_check")]
+        [SerializedValue("leading_spaces_check")]
         LeadingSpacesCheck,
         
-        [Description("trailing_spaces_check")]
+        [SerializedValue("trailing_spaces_check")]
         TrailingSpacesCheck,
         
-        [Description("multiple_spaces_check")]
+        [SerializedValue("multiple_spaces_check")]
         MultipleSpacesCheck,
         
-        [Description("custom_blocked_variables_check")]
+        [SerializedValue("custom_blocked_variables_check")]
         CustomBlockedVariablesCheck,
         
-        [Description("highest_priority_custom_variables_check")]
+        [SerializedValue("highest_priority_custom_variables_check")]
         HighestPriorityCustomBlockedVariablesCheck,
         
-        [Description("highest_priority_variables_check")]
+        [SerializedValue("highest_priority_variables_check")]
         HighestPriorityVariablesCheck,
         
-        [Description("c_variables_check")]
+        [SerializedValue("c_variables_check")]
         CVariablesCheck,
         
-        [Description("python_variables_check")]
+        [SerializedValue("python_variables_check")]
         PythonVariablesCheck,
         
-        [Description("rails_variables_check")]
+        [SerializedValue("rails_variables_check")]
         RailsVariablesCheck,
         
-        [Description("java_variables_check")]
+        [SerializedValue("java_variables_check")]
         JavaVariablesCheck,
         
-        [Description("dot_net_variables_check")]
+        [SerializedValue("dot_net_variables_check")]
         DotNetVariablesCheck,
         
-        [Description("twig_variables_check")]
+        [SerializedValue("twig_variables_check")]
         TwigVariablesCheck,
         
-        [Description("php_variables_check")]
+        [SerializedValue("php_variables_check")]
         PhpVariablesCheck,
         
-        [Description("freemarker_variables_check")]
+        [SerializedValue("freemarker_variables_check")]
         FreeMakerVariablesCheck,
         
-        [Description("lowest_priority_variable_check")]
+        [SerializedValue("lowest_priority_variable_check")]
         LowestPriorityVariableCheck,
         
-        [Description("lowest_priority_custom_variables_check")]
+        [SerializedValue("lowest_priority_custom_variables_check")]
         LowestPriorityCustomVariablesCheck,
         
-        [Description("punctuation_check")]
+        [SerializedValue("punctuation_check")]
         PunctuationCheck,
         
-        [Description("spaces_before_punctuation_check")]
+        [SerializedValue("spaces_before_punctuation_check")]
         SpacesBeforePunctuationCheck,
         
-        [Description("spaces_after_punctuation_check")]
+        [SerializedValue("spaces_after_punctuation_check")]
         SpacesAfterPunctuationCheck,
         
-        [Description("non_breaking_spaces_check")]
+        [SerializedValue("non_breaking_spaces_check")]
         NonBreakingSpacesCheck,
         
-        [Description("capitalize_check")]
+        [SerializedValue("capitalize_check")]
         CapitalizeCheck,
         
-        [Description("multiple_uppercase_check")]
+        [SerializedValue("multiple_uppercase_check")]
         MultipleUppercaseCheck,
         
-        [Description("parentheses_check")]
+        [SerializedValue("parentheses_check")]
         ParenthesesCheck,
         
-        [Description("entities_check")]
+        [SerializedValue("entities_check")]
         EntitiesCheck,
         
-        [Description("escaped_quotes_check")]
+        [SerializedValue("escaped_quotes_check")]
         EscapedQuotesCheck,
         
-        [Description("wrong_translation_issue_check")]
+        [SerializedValue("wrong_translation_issue_check")]
         WrongTranslationIssueCheck,
         
-        [Description("spellcheck")]
+        [SerializedValue("spellcheck")]
         SpellCheck,
         
-        [Description("icu_check")]
+        [SerializedValue("icu_check")]
         IcuCheck
     }
 }

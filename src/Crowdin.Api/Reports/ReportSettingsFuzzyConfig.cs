@@ -26,27 +26,27 @@ namespace Crowdin.Api.Reports
         [PublicAPI]
         public enum RateMode
         {
-            [Description("no_match")]
+            [SerializedValue("no_match")]
             NoMatch,
 
-            [Description("perfect")]
+            [SerializedValue("perfect")]
             Perfect,
 
             // ReSharper disable InconsistentNaming
-            [Description("100")]
+            [SerializedValue("100")]
             Option_100,
 
-            [Description("99-95")]
+            [SerializedValue("99-95")]
             Option_99_95,
 
-            [Description("94-90")]
+            [SerializedValue("94-90")]
             Option_94_90,
 
-            [Description("89-80")]
+            [SerializedValue("89-80")]
             Option_89_80,
             // ReSharper restore InconsistentNaming
 
-            [Description("approval")]
+            [SerializedValue("approval")]
             Approval
         }
 

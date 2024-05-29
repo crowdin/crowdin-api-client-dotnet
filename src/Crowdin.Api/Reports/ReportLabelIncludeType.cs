@@ -7,10 +7,10 @@ namespace Crowdin.Api.Reports
     [PublicAPI]
     public enum ReportLabelIncludeType
     {
-        [Description("strings_with_label")]
+        [SerializedValue("strings_with_label")]
         StringsWithLabel,
         
-        [Description("strings_without_label")]
+        [SerializedValue("strings_without_label")]
         StringsWithoutLabel
     }
 }

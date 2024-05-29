@@ -6,37 +6,37 @@ namespace Crowdin.Api.Fields
     [PublicAPI]
     public enum FieldType
     {
-        [Description("checkbox")]
+        [SerializedValue("checkbox")]
         CheckBox,
         
-        [Description("radiobuttons")]
+        [SerializedValue("radiobuttons")]
         RadioButtons,
         
-        [Description("date")]
+        [SerializedValue("date")]
         Date,
         
-        [Description("datetime")]
+        [SerializedValue("datetime")]
         DateTime,
         
-        [Description("number")]
+        [SerializedValue("number")]
         Number,
         
-        [Description("labels")]
+        [SerializedValue("labels")]
         Labels,
 
-        [Description("select")]
+        [SerializedValue("select")]
         Select,
 
-        [Description("multiselect")]
+        [SerializedValue("multiselect")]
         MultiSelect,
 
-        [Description("text")]
+        [SerializedValue("text")]
         Text,
 
-        [Description("textarea")]
+        [SerializedValue("textarea")]
         TextArea,
 
-        [Description("url")]
+        [SerializedValue("url")]
         Url
     }
 }

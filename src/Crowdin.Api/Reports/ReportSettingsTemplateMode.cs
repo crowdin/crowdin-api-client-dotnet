@@ -7,10 +7,10 @@ namespace Crowdin.Api.Reports
     [PublicAPI]
     public enum ReportSettingsTemplateMode
     {
-        [Description("simple")]
+        [SerializedValue("simple")]
         Simple,
         
-        [Description("fuzzy")]
+        [SerializedValue("fuzzy")]
         Fuzzy
     }
 }

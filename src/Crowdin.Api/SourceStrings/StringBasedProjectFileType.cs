@@ -7,31 +7,31 @@ namespace Crowdin.Api.SourceStrings
     [PublicAPI]
     public enum StringBasedProjectFileType
     {
-        [Description("auto")]
+        [SerializedValue("auto")]
         Auto,
         
-        [Description("android")]
+        [SerializedValue("android")]
         Android,
         
-        [Description("macosx")]
+        [SerializedValue("macosx")]
         MacOsX,
         
-        [Description("arb")]
+        [SerializedValue("arb")]
         Arb,
         
-        [Description("csv")]
+        [SerializedValue("csv")]
         Csv,
         
-        [Description("json")]
+        [SerializedValue("json")]
         Json,
         
-        [Description("xlsx")]
+        [SerializedValue("xlsx")]
         Xlsx,
         
-        [Description("xliff")]
+        [SerializedValue("xliff")]
         Xliff,
         
-        [Description("xliff_two")]
+        [SerializedValue("xliff_two")]
         XliffTwo
     }
 }

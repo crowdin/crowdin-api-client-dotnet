@@ -82,13 +82,13 @@ namespace Crowdin.Api.SourceStrings
     [PublicAPI]
     public enum StringScope
     {
-        [Description("identifier")]
+        [SerializedValue("identifier")]
         Identifier,
         
-        [Description("text")]
+        [SerializedValue("text")]
         Text,
         
-        [Description("context")]
+        [SerializedValue("context")]
         Context
     }
 }

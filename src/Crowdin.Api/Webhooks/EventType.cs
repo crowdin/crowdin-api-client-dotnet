@@ -7,79 +7,79 @@ namespace Crowdin.Api.Webhooks
     [PublicAPI]
     public enum EventType
     {
-        [Description("file.added")]
+        [SerializedValue("file.added")]
         FileAdded,
 
-        [Description("file.updated")]
+        [SerializedValue("file.updated")]
         FileUpdated,
 
-        [Description("file.reverted")]
+        [SerializedValue("file.reverted")]
         FileReverted,
 
-        [Description("file.deleted")]
+        [SerializedValue("file.deleted")]
         FileDeleted,
 
-        [Description("file.translated")]
+        [SerializedValue("file.translated")]
         FileTranslated,
 
-        [Description("file.approved")]
+        [SerializedValue("file.approved")]
         FileApproved,
 
-        [Description("project.translated")]
+        [SerializedValue("project.translated")]
         ProjectTranslated,
 
-        [Description("project.approved")]
+        [SerializedValue("project.approved")]
         ProjectApproved,
 
-        [Description("project.built")]
+        [SerializedValue("project.built")]
         ProjectBuilt,
 
-        [Description("translation.updated")]
+        [SerializedValue("translation.updated")]
         TranslationUpdated,
 
-        [Description("string.added")]
+        [SerializedValue("string.added")]
         StringAdded,
 
-        [Description("string.updated")]
+        [SerializedValue("string.updated")]
         StringUpdated,
 
-        [Description("string.deleted")]
+        [SerializedValue("string.deleted")]
         StringDeleted,
 
-        [Description("stringComment.created")]
+        [SerializedValue("stringComment.created")]
         StringCommentCreated,
 
-        [Description("stringComment.updated")]
+        [SerializedValue("stringComment.updated")]
         StringCommentUpdated,
 
-        [Description("stringComment.deleted")]
+        [SerializedValue("stringComment.deleted")]
         StringCommentDeleted,
 
-        [Description("stringComment.restored")]
+        [SerializedValue("stringComment.restored")]
         StringCommentRestored,
 
-        [Description("suggestion.added")]
+        [SerializedValue("suggestion.added")]
         SuggestionAdded,
 
-        [Description("suggestion.updated")]
+        [SerializedValue("suggestion.updated")]
         SuggestionUpdated,
 
-        [Description("suggestion.deleted")]
+        [SerializedValue("suggestion.deleted")]
         SuggestionDeleted,
 
-        [Description("suggestion.approved")]
+        [SerializedValue("suggestion.approved")]
         SuggestionApproved,
 
-        [Description("suggestion.disapproved")]
+        [SerializedValue("suggestion.disapproved")]
         SuggestionDisapproved,
 
-        [Description("task.added")]
+        [SerializedValue("task.added")]
         TaskAdded,
 
-        [Description("task.statusChanged")]
+        [SerializedValue("task.statusChanged")]
         TaskStatusChanged,
 
-        [Description("task.deleted")]
+        [SerializedValue("task.deleted")]
         TaskDeleted,
     }
 }

@@ -7,10 +7,10 @@ namespace Crowdin.Api.AI
     [PublicAPI]
     public enum AiPromptMode
     {
-        [Description("basic")]
+        [SerializedValue("basic")]
         Basic,
         
-        [Description("advanced")]
+        [SerializedValue("advanced")]
         Advanced
     }
 }

@@ -15,10 +15,10 @@ namespace Crowdin.Api.ProjectsGroups
     [PublicAPI]
     public enum ProjectFileFormatSettingsPatchPath
     {
-        [Description("/format")]
+        [SerializedValue("/format")]
         Format,
         
-        [Description("/settings")]
+        [SerializedValue("/settings")]
         Settings
     }
 }

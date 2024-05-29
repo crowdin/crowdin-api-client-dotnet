@@ -15,10 +15,10 @@ namespace Crowdin.Api.Tasks
     [PublicAPI]
     public enum TaskSettingsTemplatePatchPath
     {
-        [Description("/name")]
+        [SerializedValue("/name")]
         Name,
         
-        [Description("/config")]
+        [SerializedValue("/config")]
         Config
     }
 }

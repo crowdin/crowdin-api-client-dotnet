@@ -7,16 +7,16 @@ namespace Crowdin.Api.Branches
     [PublicAPI]
     public enum BranchMergeStatusId
     {
-        [Description("conflict")]
+        [SerializedValue("conflict")]
         Conflict,
         
-        [Description("failed")]
+        [SerializedValue("failed")]
         Failed,
         
-        [Description("inProgress")]
+        [SerializedValue("inProgress")]
         InProgress,
         
-        [Description("merged")]
+        [SerializedValue("merged")]
         Merged
     }
 }

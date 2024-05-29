@@ -15,10 +15,10 @@ namespace Crowdin.Api.Screenshots
     [PublicAPI]
     public enum ScreenshotPatchPath
     {
-        [Description("/name")]
+        [SerializedValue("/name")]
         Name,
 
-        [Description("/labelIds")]
+        [SerializedValue("/labelIds")]
         LabelIds
     }
 }

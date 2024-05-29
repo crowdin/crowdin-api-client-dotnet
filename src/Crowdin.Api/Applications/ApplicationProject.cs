@@ -18,9 +18,9 @@ namespace Crowdin.Api.Applications
     [PublicAPI]
     public enum ApplicationProjectValue
     {
-        [Description("own")]
+        [SerializedValue("own")]
         Own,
-        [Description("restricted")]
+        [SerializedValue("restricted")]
         Restricted
     }
 }

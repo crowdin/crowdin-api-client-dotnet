@@ -15,28 +15,28 @@ namespace Crowdin.Api.Glossaries
     [PublicAPI]
     public enum TermPatchPath
     {
-        [Description("/text")]
+        [SerializedValue("/text")]
         Text,
         
-        [Description("/description")]
+        [SerializedValue("/description")]
         Description,
         
-        [Description("/partOfSpeech")]
+        [SerializedValue("/partOfSpeech")]
         PartOfSpeech,
         
-        [Description("/status")]
+        [SerializedValue("/status")]
         Status,
         
-        [Description("/type")]
+        [SerializedValue("/type")]
         Type,
         
-        [Description("/gender")]
+        [SerializedValue("/gender")]
         Gender,
         
-        [Description("/url")]
+        [SerializedValue("/url")]
         Url,
         
-        [Description("/note")]
+        [SerializedValue("/note")]
         Note
     }
 }

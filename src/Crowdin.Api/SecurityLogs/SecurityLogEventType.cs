@@ -7,70 +7,70 @@ namespace Crowdin.Api.SecurityLogs
     [PublicAPI]
     public enum SecurityLogEventType
     {
-        [Description("login")]
+        [SerializedValue("login")]
         Login,
         
-        [Description("password.set")]
+        [SerializedValue("password.set")]
         PasswordSet,
         
-        [Description("password.change")]
+        [SerializedValue("password.change")]
         PasswordChange,
         
-        [Description("email.change")]
+        [SerializedValue("email.change")]
         EmailChange,
         
-        [Description("login.change")]
+        [SerializedValue("login.change")]
         LoginChange,
         
-        [Description("personal_token.issued")]
+        [SerializedValue("personal_token.issued")]
         PersonalTokenIssued,
         
-        [Description("personal_token.revoked")]
+        [SerializedValue("personal_token.revoked")]
         PersonalTokenRevoked,
         
-        [Description("mfa.enabled")]
+        [SerializedValue("mfa.enabled")]
         MfaEnabled,
         
-        [Description("mfa.disabled")]
+        [SerializedValue("mfa.disabled")]
         MfaDisabled,
         
-        [Description("session.revoke")]
+        [SerializedValue("session.revoke")]
         SessionRevoke,
         
-        [Description("session.revoke_all")]
+        [SerializedValue("session.revoke_all")]
         SessionRevokeAll,
         
-        [Description("sso.connect")]
+        [SerializedValue("sso.connect")]
         SsoConnect,
         
-        [Description("sso.disconnect")]
+        [SerializedValue("sso.disconnect")]
         SsoDisconnect,
         
-        [Description("user.remove")]
+        [SerializedValue("user.remove")]
         UserRemove,
         
-        [Description("application.connected")]
+        [SerializedValue("application.connected")]
         ApplicationConnected,
         
-        [Description("application.disconnected")]
+        [SerializedValue("application.disconnected")]
         ApplicationDisconnected,
         
-        [Description("webauthn.created")]
+        [SerializedValue("webauthn.created")]
         WebAuthNCreated,
         
-        [Description("webauthn.deleted")]
+        [SerializedValue("webauthn.deleted")]
         WebAuthNDeleted,
         
-        [Description("trusted_device.remove")]
+        [SerializedValue("trusted_device.remove")]
         TrustedDeviceRemove,
         
-        [Description("trusted_device.remove_all")]
+        [SerializedValue("trusted_device.remove_all")]
         TrustedDeviceRemoveAll,
         
-        [Description("device_verification.enabled")]
+        [SerializedValue("device_verification.enabled")]
         DeviceVerificationEnabled,
         
-        [Description("device_verification.disabled")]
+        [SerializedValue("device_verification.disabled")]
         DeviceVerificationDisabled
     }
 }

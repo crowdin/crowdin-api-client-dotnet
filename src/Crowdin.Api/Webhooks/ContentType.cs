@@ -7,13 +7,13 @@ namespace Crowdin.Api.Webhooks
     [PublicAPI]
     public enum ContentType
     {
-        [Description("multipart/form-data")]
+        [SerializedValue("multipart/form-data")]
         MultipartFormData,
         
-        [Description("application/json")]
+        [SerializedValue("application/json")]
         ApplicationJson,
         
-        [Description("application/x-www-form-urlencoded")]
+        [SerializedValue("application/x-www-form-urlencoded")]
         ApplicationFormUrlencoded
     }
 }

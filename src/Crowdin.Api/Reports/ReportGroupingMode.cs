@@ -7,10 +7,10 @@ namespace Crowdin.Api.Reports
     [PublicAPI]
     public enum ReportGroupingMode
     {
-        [Description("user")]
+        [SerializedValue("user")]
         User,
             
-        [Description("language")]
+        [SerializedValue("language")]
         Language
     }
 }

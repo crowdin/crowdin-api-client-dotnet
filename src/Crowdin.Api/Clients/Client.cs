@@ -23,16 +23,16 @@ namespace Crowdin.Api.Clients
     [PublicAPI]
     public enum ClientStatus
     {
-        [Description("pending")]
+        [SerializedValue("pending")]
         Pending,
 
-        [Description("confirmed")]
+        [SerializedValue("confirmed")]
         Confirmed,
 
-        [Description("rejected")]
+        [SerializedValue("rejected")]
         Rejected,
 
-        [Description("deleted")]
+        [SerializedValue("deleted")]
         Deleted
     }
 }

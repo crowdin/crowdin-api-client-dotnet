@@ -15,31 +15,31 @@ namespace Crowdin.Api.Webhooks.Organization
     [PublicAPI]
     public enum OrganizationWebhookPatchPath
     {
-        [Description("/name")]
+        [SerializedValue("/name")]
         Name,
         
-        [Description("/url")]
+        [SerializedValue("/url")]
         Url,
         
-        [Description("/isActive")]
+        [SerializedValue("/isActive")]
         IsActive,
         
-        [Description("/batchingEnabled")]
+        [SerializedValue("/batchingEnabled")]
         BatchingEnabled,
         
-        [Description("/contentType")]
+        [SerializedValue("/contentType")]
         ContentType,
         
-        [Description("/events")]
+        [SerializedValue("/events")]
         Events,
         
-        [Description("/headers")]
+        [SerializedValue("/headers")]
         Headers,
         
-        [Description("/requestType")]
+        [SerializedValue("/requestType")]
         RequestType,
         
-        [Description("/payload")]
+        [SerializedValue("/payload")]
         Payload
     }
 }

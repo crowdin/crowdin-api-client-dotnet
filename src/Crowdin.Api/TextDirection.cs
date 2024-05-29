@@ -7,10 +7,10 @@ namespace Crowdin.Api
     [PublicAPI]
     public enum TextDirection
     {
-        [Description("ltr")]
+        [SerializedValue("ltr")]
         LeftToRight,
         
-        [Description("rtl")]
+        [SerializedValue("rtl")]
         RightToLeft
     }
 }

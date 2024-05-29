@@ -7,17 +7,17 @@ namespace Crowdin.Api.Reports
     [PublicAPI]
     public enum MatchType
     {
-        [Description("perfect")]
+        [SerializedValue("perfect")]
         Perfect,
 
         // ReSharper disable InconsistentNaming
-        [Description("100")]
+        [SerializedValue("100")]
         Option_100,
 
-        [Description("99-82")]
+        [SerializedValue("99-82")]
         Option_99_82,
 
-        [Description("81-60")]
+        [SerializedValue("81-60")]
         Option_81_60
         // ReSharper restore InconsistentNaming
     }

@@ -7,33 +7,33 @@ namespace Crowdin.Api.MachineTranslationEngines
     [PublicAPI]
     public enum MtEngineType
     {
-        [Description("google")]
+        [SerializedValue("google")]
         Google,
         
-        [Description("google_automl")]
+        [SerializedValue("google_automl")]
         // ReSharper disable once InconsistentNaming
         GoogleAutoML,
         
-        [Description("microsoft")]
+        [SerializedValue("microsoft")]
         Microsoft,
         
-        [Description("yandex")]
+        [SerializedValue("yandex")]
         Yandex,
         
-        [Description("deepl")]
+        [SerializedValue("deepl")]
         DeepL,
         
-        [Description("amazon")]
+        [SerializedValue("amazon")]
         Amazon,
         
-        [Description("watson")]
+        [SerializedValue("watson")]
         Watson,
         
-        [Description("modernmt")]
+        [SerializedValue("modernmt")]
         // ReSharper disable once InconsistentNaming
         ModernMT,
         
-        [Description("custom_mt")]
+        [SerializedValue("custom_mt")]
         // ReSharper disable once InconsistentNaming
         CustomMT
     }

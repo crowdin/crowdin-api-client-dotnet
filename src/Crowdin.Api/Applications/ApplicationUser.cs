@@ -18,19 +18,19 @@ namespace Crowdin.Api.Applications
     [PublicAPI]
     public enum ApplicationUserValue
     {
-        [Description("owner")]
+        [SerializedValue("owner")]
         Owner,
 
-        [Description("managers")]
+        [SerializedValue("managers")]
         Managers,
 
-        [Description("all")]
+        [SerializedValue("all")]
         All,
 
-        [Description("guests")]
+        [SerializedValue("guests")]
         Guests,
 
-        [Description("restricted")]
+        [SerializedValue("restricted")]
         Restricted
     }
 }

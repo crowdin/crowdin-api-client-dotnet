@@ -14,7 +14,7 @@ namespace Crowdin.Api.Applications
     [PublicAPI]
     public enum InstallationPatchPath
     {
-        [Description("/permissions")]
+        [SerializedValue("/permissions")]
         Permissions
     }
 }

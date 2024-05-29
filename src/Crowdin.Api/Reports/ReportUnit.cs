@@ -7,16 +7,16 @@ namespace Crowdin.Api.Reports
     [PublicAPI]
     public enum ReportUnit
     {
-        [Description("strings")]
+        [SerializedValue("strings")]
         Strings,
         
-        [Description("words")]
+        [SerializedValue("words")]
         Words,
         
-        [Description("chars")]
+        [SerializedValue("chars")]
         Chars,
         
-        [Description("chars_with_spaces")]
+        [SerializedValue("chars_with_spaces")]
         CharsWithSpaces
     }
 }

@@ -15,31 +15,31 @@ namespace Crowdin.Api.Bundles
     [PublicAPI]
     public enum BundlePatchPath
     {
-        [Description("/name")]
+        [SerializedValue("/name")]
         Name,
         
-        [Description("/format")]
+        [SerializedValue("/format")]
         Format,
         
-        [Description("/sourcePatterns")]
+        [SerializedValue("/sourcePatterns")]
         SourcePatterns,
         
-        [Description("/ignorePatterns")]
+        [SerializedValue("/ignorePatterns")]
         IgnorePatterns,
         
-        [Description("/exportPattern")]
+        [SerializedValue("/exportPattern")]
         ExportPattern,
         
-        [Description("/isMultilingual")]
+        [SerializedValue("/isMultilingual")]
         IsMultilingual,
         
-        [Description("/includeProjectSourceLanguage")]
+        [SerializedValue("/includeProjectSourceLanguage")]
         IncludeProjectSourceLanguage,
 
-        [Description("/labelIds")]
+        [SerializedValue("/labelIds")]
         LabelIds,
 
-        [Description("/excludeLabelIds")]
+        [SerializedValue("/excludeLabelIds")]
         ExcludeLabelIds
             
     }

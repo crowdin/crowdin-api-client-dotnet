@@ -7,10 +7,10 @@ namespace Crowdin.Api.Distributions
     [PublicAPI]
     public enum DistributionExportMode
     {
-        [Description("default")]
+        [SerializedValue("default")]
         Default,
         
-        [Description("bundle")]
+        [SerializedValue("bundle")]
         Bundle
     }
 }

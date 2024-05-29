@@ -15,13 +15,13 @@ namespace Crowdin.Api.MachineTranslationEngines
     [PublicAPI]
     public enum MtEnginePatchPath
     {
-        [Description("/name")]
+        [SerializedValue("/name")]
         Name,
         
-        [Description("/type")]
+        [SerializedValue("/type")]
         Type,
         
-        [Description("/credentials")]
+        [SerializedValue("/credentials")]
         Credentials
     }
 }

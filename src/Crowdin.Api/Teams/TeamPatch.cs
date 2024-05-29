@@ -15,7 +15,7 @@ namespace Crowdin.Api.Teams
     [PublicAPI]
     public enum TeamPatchPath
     {
-        [Description("/name")]
+        [SerializedValue("/name")]
         Name
     }
 }

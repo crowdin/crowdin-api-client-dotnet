@@ -7,49 +7,49 @@ namespace Crowdin.Api.Glossaries
     [PublicAPI]
     public enum PartOfSpeech
     {
-        [Description("adjective")]
+        [SerializedValue("adjective")]
         Adjective,
         
-        [Description("adposition")]
+        [SerializedValue("adposition")]
         AdPosition,
         
-        [Description("adverb")]
+        [SerializedValue("adverb")]
         AdVerb,
         
-        [Description("auxiliary")]
+        [SerializedValue("auxiliary")]
         Auxiliary,
         
-        [Description("coordinating conjunction")]
+        [SerializedValue("coordinating conjunction")]
         CoordinatingConjunction,
         
-        [Description("determiner")]
+        [SerializedValue("determiner")]
         Determiner,
         
-        [Description("interjection")]
+        [SerializedValue("interjection")]
         Interjection,
         
-        [Description("noun")]
+        [SerializedValue("noun")]
         Noun,
         
-        [Description("numeral")]
+        [SerializedValue("numeral")]
         Numeral,
         
-        [Description("particle")]
+        [SerializedValue("particle")]
         Particle,
         
-        [Description("pronoun")]
+        [SerializedValue("pronoun")]
         Pronoun,
         
-        [Description("proper noun")]
+        [SerializedValue("proper noun")]
         ProperNoun,
         
-        [Description("subordinating conjunction")]
+        [SerializedValue("subordinating conjunction")]
         SubordinatingConjunction,
         
-        [Description("verb")]
+        [SerializedValue("verb")]
         Verb,
         
-        [Description("other")]
+        [SerializedValue("other")]
         Other
     }
 }

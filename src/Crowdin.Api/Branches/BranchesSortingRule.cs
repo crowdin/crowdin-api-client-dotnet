@@ -7,25 +7,25 @@ namespace Crowdin.Api.Branches
     [PublicAPI]
     public enum BranchesSortingRule
     {
-        [Description("id")]
+        [SerializedValue("id")]
         Id,
         
-        [Description("name")]
+        [SerializedValue("name")]
         Name,
         
-        [Description("title")]
+        [SerializedValue("title")]
         Title,
         
-        [Description("createdAt")]
+        [SerializedValue("createdAt")]
         CreatedAt,
         
-        [Description("updatedAt")]
+        [SerializedValue("updatedAt")]
         UpdatedAt,
         
-        [Description("exportPattern")]
+        [SerializedValue("exportPattern")]
         ExportPattern,
         
-        [Description("priority")]
+        [SerializedValue("priority")]
         Priority
     }
 }

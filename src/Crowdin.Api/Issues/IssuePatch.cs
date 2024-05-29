@@ -15,7 +15,7 @@ namespace Crowdin.Api.Issues
     [PublicAPI]
     public enum IssuePatchPath
     {
-        [Description("/status")]
+        [SerializedValue("/status")]
         Status
     }
 }

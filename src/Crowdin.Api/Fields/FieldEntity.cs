@@ -7,22 +7,22 @@ namespace Crowdin.Api.Fields
 
     public enum FieldEntity
     {
-        [Description("project")]
+        [SerializedValue("project")]
         Project,
         
-        [Description("user")]
+        [SerializedValue("user")]
         User,
         
-        [Description("task")]
+        [SerializedValue("task")]
         Task,
         
-        [Description("file")]
+        [SerializedValue("file")]
         File,
         
-        [Description("translation")]
+        [SerializedValue("translation")]
         Translation,
         
-        [Description("string")]
+        [SerializedValue("string")]
         String,
     }
 }

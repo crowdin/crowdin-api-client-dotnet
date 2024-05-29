@@ -57,122 +57,122 @@ namespace Crowdin.Api.ProjectsGroups
     [PublicAPI]
     public enum EnterpriseProjectPathCode
     {
-        [Description("/groupId")]
+        [SerializedValue("/groupId")]
         GroupId,
         
-        [Description("/name")]
+        [SerializedValue("/name")]
         Name,
         
-        [Description("/targetLanguageIds")]
+        [SerializedValue("/targetLanguageIds")]
         TargetLanguageIds,
         
-        [Description("/cname")]
+        [SerializedValue("/cname")]
         Cname,
         
-        [Description("/description")]
+        [SerializedValue("/description")]
         Description,
         
-        [Description("/translateDuplicates")]
+        [SerializedValue("/translateDuplicates")]
         TranslateDuplicates,
         
-        [Description("/isMtAllowed")]
+        [SerializedValue("/isMtAllowed")]
         IsMtAllowed,
         
-        [Description("/taskBasedAccessControl")]
+        [SerializedValue("/taskBasedAccessControl")]
         TaskBasedAccessControl,
         
-        [Description("/autoSubstitution")]
+        [SerializedValue("/autoSubstitution")]
         AutoSubstitution,
         
-        [Description("/skipUntranslatedStrings")]
+        [SerializedValue("/skipUntranslatedStrings")]
         SkipUntranslatedStrings,
         
-        [Description("/skipUntranslatedFiles")]
+        [SerializedValue("/skipUntranslatedFiles")]
         SkipUntranslatedFiles,
         
-        [Description("/exportWithMinApprovalsCount")]
+        [SerializedValue("/exportWithMinApprovalsCount")]
         ExportWithMinApprovalsCount,
         
-        [Description("/exportStringsThatPassedWorkflow")]
+        [SerializedValue("/exportStringsThatPassedWorkflow")]
         ExportStringsThatPassedWorkflow,
         
-        [Description("/autoTranslateDialects")]
+        [SerializedValue("/autoTranslateDialects")]
         AutoTranslateDialects,
         
-        [Description("/showTmSuggestionsDialects")]
+        [SerializedValue("/showTmSuggestionsDialects")]
         ShowTmSuggestionsDialects,
         
-        [Description("/glossaryAccess")]
+        [SerializedValue("/glossaryAccess")]
         GlossaryAccess,
 
-        [Description("/publicDownloads")]
+        [SerializedValue("/publicDownloads")]
         PublicDownloads,
         
-        [Description("/hiddenStringsProofreadersAccess")]
+        [SerializedValue("/hiddenStringsProofreadersAccess")]
         HiddenStringsProofreadersAccess,
         
-        [Description("/normalizePlaceholder")]
+        [SerializedValue("/normalizePlaceholder")]
         NormalizePlaceholder,
         
-        [Description("/saveMetaInfoInSource")]
+        [SerializedValue("/saveMetaInfoInSource")]
         SaveMetaInfoInSource,
         
-        [Description("/inContext")]
+        [SerializedValue("/inContext")]
         InContext,
         
-        [Description("/inContextProcessHiddenStrings")]
+        [SerializedValue("/inContextProcessHiddenStrings")]
         InContextProcessHiddenStrings,
         
-        [Description("/inContextPseudoLanguageId")]
+        [SerializedValue("/inContextPseudoLanguageId")]
         InContextPseudoLanguageId,
         
-        [Description("/pseudoLanguageId")]
+        [SerializedValue("/pseudoLanguageId")]
         PseudoLanguageId,
         
-        [Description("/qaCheckIsActive")]
+        [SerializedValue("/qaCheckIsActive")]
         QaCheckIsActive,
         
-        [Description("/qaCheckCategories")]
+        [SerializedValue("/qaCheckCategories")]
         QaCheckCategories,
         
         // /qaCheckCategories/{category}
         
-        [Description("/qaChecksIgnorableCategories")]
+        [SerializedValue("/qaChecksIgnorableCategories")]
         QaChecksIgnorableCategories,
         
         // /qaChecksIgnorableCategories/{category}
         
-        [Description("/languageMapping")]
+        [SerializedValue("/languageMapping")]
         LanguageMapping,
         
         // /languageMapping/{languageId}
         
         // /languageMapping/{languageId}/{mappingKey}
         
-        [Description("/notificationSettings/translatorNewStrings")]
+        [SerializedValue("/notificationSettings/translatorNewStrings")]
         NotificationsTranslatorNewStrings,
         
-        [Description("/notificationSettings/managerNewStrings")]
+        [SerializedValue("/notificationSettings/managerNewStrings")]
         NotificationsManagerNewStrings,
         
-        [Description("/notificationSettings/managerLanguageCompleted")]
+        [SerializedValue("/notificationSettings/managerLanguageCompleted")]
         NotificationsManagerLanguageCompleted,
         
-        [Description("/defaultTmId")]
+        [SerializedValue("/defaultTmId")]
         DefaultTmId,
         
-        [Description("/defaultGlossaryId")]
+        [SerializedValue("/defaultGlossaryId")]
         DefaultGlossaryId,
         
-        [Description("/assignedGlossaries")]
+        [SerializedValue("/assignedGlossaries")]
         AssignedGlossaries,
         
-        [Description("/assignedTms")]
+        [SerializedValue("/assignedTms")]
         AssignedTms,
         
         // /assignedTms/{tmId}
         
-        [Description("/tmPenalties")]
+        [SerializedValue("/tmPenalties")]
         TmPenalties
         
         // /tmPenalties/{penaltyKey}

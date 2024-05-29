@@ -45,13 +45,13 @@ namespace Crowdin.Api.Reports
     [PublicAPI]
     public enum ContributionReportMode
     {
-        [Description("translations")]
+        [SerializedValue("translations")]
         Translations,
         
-        [Description("approvals")]
+        [SerializedValue("approvals")]
         Approvals,
         
-        [Description("votes")]
+        [SerializedValue("votes")]
         Votes
     }
 }

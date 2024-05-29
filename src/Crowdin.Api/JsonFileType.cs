@@ -7,10 +7,10 @@ namespace Crowdin.Api
     [PublicAPI]
     public enum JsonFileType
     {
-        [Description("i18next_json")]
+        [SerializedValue("i18next_json")]
         I18NextJson,
         
-        [Description("nestjs_i18n")]
+        [SerializedValue("nestjs_i18n")]
         NestJsI18N
     }
 }

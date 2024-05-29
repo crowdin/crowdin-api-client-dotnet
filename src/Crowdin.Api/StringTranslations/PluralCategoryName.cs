@@ -7,22 +7,22 @@ namespace Crowdin.Api.StringTranslations
     [PublicAPI]
     public enum PluralCategoryName
     {
-        [Description("zero")]
+        [SerializedValue("zero")]
         Zero,
         
-        [Description("one")]
+        [SerializedValue("one")]
         One,
         
-        [Description("two")]
+        [SerializedValue("two")]
         Two,
         
-        [Description("few")]
+        [SerializedValue("few")]
         Few,
         
-        [Description("many")]
+        [SerializedValue("many")]
         Many,
         
-        [Description("other")]
+        [SerializedValue("other")]
         Other
     }
 }

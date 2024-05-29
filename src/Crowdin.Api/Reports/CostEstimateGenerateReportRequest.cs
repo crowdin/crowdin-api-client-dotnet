@@ -147,10 +147,10 @@ namespace Crowdin.Api.Reports
             [PublicAPI]
             public enum RateMode
             {
-                [Description("no_match")]
+                [SerializedValue("no_match")]
                 NoMatch,
                     
-                [Description("tm_match")]
+                [SerializedValue("tm_match")]
                 TmMatch
             }
 

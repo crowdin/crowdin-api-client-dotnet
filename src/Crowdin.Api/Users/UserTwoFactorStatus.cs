@@ -7,10 +7,10 @@ namespace Crowdin.Api.Users
     [PublicAPI]
     public enum UserTwoFactorStatus
     {
-        [Description("enabled")]
+        [SerializedValue("enabled")]
         Enabled,
         
-        [Description("disabled")]
+        [SerializedValue("disabled")]
         Disabled
     }
 }

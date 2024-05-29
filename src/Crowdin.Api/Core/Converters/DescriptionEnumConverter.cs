@@ -25,7 +25,7 @@ namespace Crowdin.Api.Core.Converters
             if (valueType
                      .GetMember(value.ToString())
                      .First()
-                     .IsDefined(typeof(DescriptionAttribute), false))
+                     .IsDefined(typeof(SerializedValueAttribute), false))
             {
                 writer.WriteValue((value as Enum).ToDescriptionString());
             }
@@ -65,15 +65,17 @@ namespace Crowdin.Api.Core.Converters
             if (value is string descriptionValue)
             {
                 // Workaround for Issue #167: https://github.com/crowdin/crowdin-api-client-dotnet/issues/167
-                if(objectType == typeof(BuildStatus) && descriptionValue.Equals("inProgress"))
-                    return BuildStatus.InProgress;
+                // if(objectType == typeof(BuildStatus) && descriptionValue.Equals("inProgress"))
+                //     return BuildStatus.InProgress;
 
-                // Check if value has own string representation in [Description] attribute
+                // Check if value has own string representation in [SerializedValue] attribute
                 MemberInfo? field = objectType
                     .GetMembers(BindingFlags.Public | BindingFlags.Static)
                     .FirstOrDefault(member =>
-                        member.IsDefined(typeof(DescriptionAttribute)) &&
-                        member.GetCustomAttribute<DescriptionAttribute>().Description.Equals(descriptionValue));
+                        member.IsDefined(typeof(SerializedValueAttribute)) &&
+                        member
+                            .GetCustomAttributes<SerializedValueAttribute>()
+                            .Any(attribute => attribute.Name.Equals(descriptionValue)));
 
                 if (field != null)
                 {
@@ -99,7 +101,7 @@ namespace Crowdin.Api.Core.Converters
             throw new ArgumentException("Error occurred during deserialization from JSON Number");
         }
     }
-
+    
     [AttributeUsage(AttributeTargets.Enum)]
     public class StrictStringRepresentation : Attribute
     {

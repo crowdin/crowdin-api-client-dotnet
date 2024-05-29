@@ -7,13 +7,13 @@ namespace Crowdin.Api.Issues
     [PublicAPI]
     public enum IssueStatus
     {
-        [Description("all")]
+        [SerializedValue("all")]
         All,
         
-        [Description("resolved")]
+        [SerializedValue("resolved")]
         Resolved,
         
-        [Description("unresolved")]
+        [SerializedValue("unresolved")]
         UnResolved
     }
 }

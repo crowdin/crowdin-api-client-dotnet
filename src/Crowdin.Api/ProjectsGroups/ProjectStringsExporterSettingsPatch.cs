@@ -14,10 +14,10 @@ namespace Crowdin.Api.ProjectsGroups
     [PublicAPI]
     public enum ProjectStringsExporterSettingsPatchPath
     {
-        [Description("/format")]
+        [SerializedValue("/format")]
         Format,
         
-        [Description("/settings")]
+        [SerializedValue("/settings")]
         Settings
     }
 }

@@ -7,13 +7,13 @@ namespace Crowdin.Api.Distributions
     [PublicAPI]
     public enum DistributionReleaseStatus
     {
-        [Description("inProgress")]
+        [SerializedValue("inProgress")]
         InProgress,
         
-        [Description("success")]
+        [SerializedValue("success")]
         Success,
         
-        [Description("failed")]
+        [SerializedValue("failed")]
         Failed
     }
 }

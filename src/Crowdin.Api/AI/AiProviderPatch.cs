@@ -15,22 +15,22 @@ namespace Crowdin.Api.AI
     [PublicAPI]
     public enum AiProviderPatchPath
     {
-        [Description("/name")]
+        [SerializedValue("/name")]
         Name,
         
-        [Description("/type")]
+        [SerializedValue("/type")]
         Type,
         
-        [Description("/credentials")]
+        [SerializedValue("/credentials")]
         Credentials,
         
-        [Description("/config")]
+        [SerializedValue("/config")]
         Config,
         
-        [Description("/isEnabled")]
+        [SerializedValue("/isEnabled")]
         IsEnabled,
         
-        [Description("/useSystemCredentials")]
+        [SerializedValue("/useSystemCredentials")]
         UseSystemCredentials
     }
 }

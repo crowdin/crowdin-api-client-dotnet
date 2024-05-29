@@ -7,22 +7,22 @@ namespace Crowdin.Api.Users
     [PublicAPI]
     public enum UserRole
     {
-        [Description("all")]
+        [SerializedValue("all")]
         All,
         
-        [Description("owner")]
+        [SerializedValue("owner")]
         Owner,
         
-        [Description("manager")]
+        [SerializedValue("manager")]
         Manager,
         
-        [Description("proofreader")]
+        [SerializedValue("proofreader")]
         Proofreader,
         
-        [Description("translator")]
+        [SerializedValue("translator")]
         Translator,
         
-        [Description("blocked")]
+        [SerializedValue("blocked")]
         Blocked
     }
 }

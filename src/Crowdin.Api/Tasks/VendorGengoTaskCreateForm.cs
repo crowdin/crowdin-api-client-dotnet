@@ -71,10 +71,10 @@ namespace Crowdin.Api.Tasks
         [PublicAPI]
         public enum TaskExpertise
         {
-            [Description("standard")]
+            [SerializedValue("standard")]
             Standard,
         
-            [Description("pro")]
+            [SerializedValue("pro")]
             Pro
         }
 
@@ -82,7 +82,7 @@ namespace Crowdin.Api.Tasks
         [StrictStringRepresentation]
         public enum TaskTone
         {
-            [Description("")]
+            [SerializedValue("")]
             NotSet,
         
             Informal,
@@ -90,35 +90,35 @@ namespace Crowdin.Api.Tasks
             Business,
             Formal,
         
-            [Description("other")]
+            [SerializedValue("other")]
             Other
         }
         
         [PublicAPI]
         public enum TaskPurpose
         {
-            [Description("standard")]
+            [SerializedValue("standard")]
             Standard,
         
-            [Description("Personal use")]
+            [SerializedValue("Personal use")]
             PersonalUse,
         
-            [Description("Business")]
+            [SerializedValue("Business")]
             Business,
         
-            [Description("Online content")]
+            [SerializedValue("Online content")]
             OnlineContent,
         
-            [Description("App/Web localization")]
+            [SerializedValue("App/Web localization")]
             AppWebLocalization,
         
-            [Description("Media content")]
+            [SerializedValue("Media content")]
             MediaContent,
         
-            [Description("Semi-technical")]
+            [SerializedValue("Semi-technical")]
             SemiTechnical,
         
-            [Description("other")]
+            [SerializedValue("other")]
             Other
         }
     }

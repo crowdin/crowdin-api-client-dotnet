@@ -15,13 +15,13 @@ namespace Crowdin.Api.Branches
     [PublicAPI]
     public enum BranchPatchPath
     {
-        [Description("/name")]
+        [SerializedValue("/name")]
         Name,
         
-        [Description("/title")]
+        [SerializedValue("/title")]
         Title,
         
-        [Description("/priority")]
+        [SerializedValue("/priority")]
         Priority
     }
 }

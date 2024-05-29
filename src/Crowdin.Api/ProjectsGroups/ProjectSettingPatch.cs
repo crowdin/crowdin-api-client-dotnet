@@ -57,84 +57,84 @@ namespace Crowdin.Api.ProjectsGroups
     [PublicAPI]
     public enum ProjectSettingPathCode
     {
-        [Description("/translateDuplicates")]
+        [SerializedValue("/translateDuplicates")]
         TranslateDuplicates,
         
-        [Description("/isMtAllowed")]
+        [SerializedValue("/isMtAllowed")]
         IsMtAllowed,
         
-        [Description("/autoSubstitution")]
+        [SerializedValue("/autoSubstitution")]
         AutoSubstitution,
         
-        [Description("/skipUntranslatedFiles")]
+        [SerializedValue("/skipUntranslatedFiles")]
         SkipUntranslatedFiles,
         
-        [Description("/skipUntranslatedStrings")]
+        [SerializedValue("/skipUntranslatedStrings")]
         SkipUntranslatedStrings,
         
-        [Description("/exportApprovedOnly")]
+        [SerializedValue("/exportApprovedOnly")]
         ExportApprovedOnly,
         
-        [Description("/autoTranslateDialects")]
+        [SerializedValue("/autoTranslateDialects")]
         AutoTranslateDialects,
         
-        [Description("/publicDownloads")]
+        [SerializedValue("/publicDownloads")]
         PublicDownloads,
         
-        [Description("/useGlobalTm")]
+        [SerializedValue("/useGlobalTm")]
         UseGlobalTm,
         
-        [Description("/showTmSuggestionsDialects")]
+        [SerializedValue("/showTmSuggestionsDialects")]
         ShowTmSuggestionsDialects,
         
-        [Description("/normalizePlaceholder")]
+        [SerializedValue("/normalizePlaceholder")]
         NormalizePlaceholder,
         
-        [Description("/saveMetaInfoInSource")]
+        [SerializedValue("/saveMetaInfoInSource")]
         SaveMetaInfoInSource,
         
-        [Description("/inContext")]
+        [SerializedValue("/inContext")]
         InContext,
         
-        [Description("/inContextPseudoLanguageId")]
+        [SerializedValue("/inContextPseudoLanguageId")]
         InContextPseudoLanguageId,
         
-        [Description("/inContextProcessHiddenStrings")]
+        [SerializedValue("/inContextProcessHiddenStrings")]
         InContextProcessHiddenStrings,
         
-        [Description("/pseudoLanguageId")]
+        [SerializedValue("/pseudoLanguageId")]
         PseudoLanguageId,
         
-        [Description("/qaCheckIsActive")]
+        [SerializedValue("/qaCheckIsActive")]
         QaCheckIsActive,
         
-        [Description("/qaCheckCategories")]
+        [SerializedValue("/qaCheckCategories")]
         QaCheckCategories,
         
-        [Description("/qaChecksIgnorableCategories")]
+        [SerializedValue("/qaChecksIgnorableCategories")]
         QaChecksIgnorableCategories,
         
         // /qaCheckCategories/{category}
         
-        [Description("/languageMapping")]
+        [SerializedValue("/languageMapping")]
         LanguageMapping,
         
         // /languageMapping/{languageId}
         
         // /languageMapping/{languageId}/{mappingKey}
         
-        [Description("/tmPenalties")]
+        [SerializedValue("/tmPenalties")]
         TmPenalties,
         
         // /tmPenalties/{penaltyKey}
         
-        [Description("/tmContextType")]
+        [SerializedValue("/tmContextType")]
         TmContextType,
         
-        [Description("/tmPreTranslate")]
+        [SerializedValue("/tmPreTranslate")]
         TmPreTranslate,
         
-        [Description("/mtPreTranslate")]
+        [SerializedValue("/mtPreTranslate")]
         MtPreTranslate,
     }
 }

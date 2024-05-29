@@ -28,10 +28,10 @@ namespace Crowdin.Api.StringTranslations
     [PublicAPI]
     public enum TranslationVoteMark
     {
-        [Description("up")]
+        [SerializedValue("up")]
         Up,
         
-        [Description("down")]
+        [SerializedValue("down")]
         Down
     }
 }

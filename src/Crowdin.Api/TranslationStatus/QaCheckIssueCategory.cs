@@ -7,37 +7,37 @@ namespace Crowdin.Api.TranslationStatus
     [PublicAPI]
     public enum QaCheckIssueCategory
     {
-        [Description("empty")]
+        [SerializedValue("empty")]
         Empty,
         
-        [Description("variables")]
+        [SerializedValue("variables")]
         Variables,
         
-        [Description("tags")]
+        [SerializedValue("tags")]
         Tags,
         
-        [Description("punctuation")]
+        [SerializedValue("punctuation")]
         Punctuation,
         
-        [Description("symbol_register")]
+        [SerializedValue("symbol_register")]
         SymbolRegister,
         
-        [Description("spaces")]
+        [SerializedValue("spaces")]
         Spaces,
         
-        [Description("size")]
+        [SerializedValue("size")]
         Size,
         
-        [Description("special_symbols")]
+        [SerializedValue("special_symbols")]
         SpecialSymbols,
         
-        [Description("wrong_translation")]
+        [SerializedValue("wrong_translation")]
         WrongTranslation,
         
-        [Description("spellcheck")]
+        [SerializedValue("spellcheck")]
         SpellCheck,
         
-        [Description("icu")]
+        [SerializedValue("icu")]
         Icu
     }
 }

@@ -15,19 +15,19 @@ namespace Crowdin.Api.SourceStrings
     [PublicAPI]
     public enum StringPatchPath
     {
-        [Description("/text")]
+        [SerializedValue("/text")]
         Text,
         
-        [Description("/context")]
+        [SerializedValue("/context")]
         Context,
         
-        [Description("/isHidden")]
+        [SerializedValue("/isHidden")]
         IsHidden,
         
-        [Description("/maxLength")]
+        [SerializedValue("/maxLength")]
         MaxLength,
         
-        [Description("/labelIds")]
+        [SerializedValue("/labelIds")]
         LabelIds
     }
 }

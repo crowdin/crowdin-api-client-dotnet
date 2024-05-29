@@ -25,6 +25,20 @@ namespace Crowdin.Api.Tests.Common
             var deserializedEnumValue = JsonConvert.DeserializeObject<DistributionReleaseStatus>(serializedEnumValue, DefaultSettings);
             Assert.Equal(enumValue, deserializedEnumValue);
         }
+        
+        [Fact]
+        public void DescriptionEnums_MultipleValues()
+        {
+            var enumValue = OperationStatus.InProgress;
+            string serializedEnumValue = JsonConvert.SerializeObject(enumValue, DefaultSettings);
+            Assert.Equal("inProgress", StripQuotes(serializedEnumValue));
+            
+            Assert.Equal(OperationStatus.InProgress, JsonConvert.DeserializeObject<OperationStatus>("\"inProgress\"", DefaultSettings));
+            Assert.Equal(OperationStatus.InProgress, JsonConvert.DeserializeObject<OperationStatus>("\"in_progress\"", DefaultSettings));
+            
+            Assert.Equal(BuildStatus.InProgress, JsonConvert.DeserializeObject<BuildStatus>("\"inProgress\"", DefaultSettings));
+            Assert.Equal(BuildStatus.InProgress, JsonConvert.DeserializeObject<BuildStatus>("\"in_progress\"", DefaultSettings));
+        }
 
         [Fact]
         public void StrictStringEnums()

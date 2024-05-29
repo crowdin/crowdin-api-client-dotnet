@@ -7,16 +7,16 @@ namespace Crowdin.Api.Tasks
     [PublicAPI]
     public enum TaskStatus
     {
-        [Description("todo")]
+        [SerializedValue("todo")]
         Todo,
         
-        [Description("in_progress")]
+        [SerializedValue("in_progress")]
         InProgress,
         
-        [Description("done")]
+        [SerializedValue("done")]
         Done,
         
-        [Description("closed")]
+        [SerializedValue("closed")]
         Closed
     }
 }

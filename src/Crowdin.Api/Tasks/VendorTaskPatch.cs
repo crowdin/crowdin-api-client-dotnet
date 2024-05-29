@@ -15,13 +15,13 @@ namespace Crowdin.Api.Tasks
     [PublicAPI]
     public enum VendorTaskPatchPath
     {
-        [Description("/title")]
+        [SerializedValue("/title")]
         Title,
         
-        [Description("/description")]
+        [SerializedValue("/description")]
         Description,
         
-        [Description("/status")]
+        [SerializedValue("/status")]
         Status
     }
 }

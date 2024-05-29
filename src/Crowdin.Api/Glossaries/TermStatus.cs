@@ -7,16 +7,16 @@ namespace Crowdin.Api.Glossaries
     [PublicAPI]
     public enum TermStatus
     {
-        [Description("preferred")]
+        [SerializedValue("preferred")]
         Preferred,
         
-        [Description("admitted")]
+        [SerializedValue("admitted")]
         Admitted,
         
-        [Description("not recommended")]
+        [SerializedValue("not recommended")]
         NotRecommended,
         
-        [Description("obsolete")]
+        [SerializedValue("obsolete")]
         Obsolete
     }
 }

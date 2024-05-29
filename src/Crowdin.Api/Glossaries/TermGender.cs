@@ -7,16 +7,16 @@ namespace Crowdin.Api.Glossaries
     [PublicAPI]
     public enum TermGender
     {
-        [Description("masculine")]
+        [SerializedValue("masculine")]
         Masculine,
         
-        [Description("feminine")]
+        [SerializedValue("feminine")]
         Feminine,
         
-        [Description("neuter")]
+        [SerializedValue("neuter")]
         Neuter,
         
-        [Description("other")]
+        [SerializedValue("other")]
         Other
     }
 }

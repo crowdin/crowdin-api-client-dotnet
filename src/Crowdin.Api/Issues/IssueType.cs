@@ -7,19 +7,19 @@ namespace Crowdin.Api.Issues
     [PublicAPI]
     public enum IssueType
     {
-        [Description("all")]
+        [SerializedValue("all")]
         All,
         
-        [Description("general_question")]
+        [SerializedValue("general_question")]
         GeneralQuestion,
         
-        [Description("translation_mistake")]
+        [SerializedValue("translation_mistake")]
         TranslationMistake,
         
-        [Description("context_request")]
+        [SerializedValue("context_request")]
         ContextRequest,
         
-        [Description("source_mistake")]
+        [SerializedValue("source_mistake")]
         SourceMistake
     }
 }

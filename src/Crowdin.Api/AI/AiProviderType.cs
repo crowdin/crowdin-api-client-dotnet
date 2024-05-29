@@ -7,22 +7,22 @@ namespace Crowdin.Api.AI
     [PublicAPI]
     public enum AiProviderType
     {
-        [Description("open_ai")]
+        [SerializedValue("open_ai")]
         OpenAi,
         
-        [Description("azure_open_ai")]
+        [SerializedValue("azure_open_ai")]
         AzureOpenAi,
         
-        [Description("google_gemini")]
+        [SerializedValue("google_gemini")]
         GoogleGemini,
         
-        [Description("mistral_ai")]
+        [SerializedValue("mistral_ai")]
         MistralAi,
         
-        [Description("anthropic")]
+        [SerializedValue("anthropic")]
         Anthropic,
         
-        [Description("custom_ai")]
+        [SerializedValue("custom_ai")]
         CustomAi
     }
 }

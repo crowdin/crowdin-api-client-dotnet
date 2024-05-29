@@ -7,19 +7,20 @@ namespace Crowdin.Api
     [PublicAPI]
     public enum OperationStatus
     {
-        [Description("created")]
+        [SerializedValue("created")]
         Created,
 
-        [Description("inProgress")]
+        [SerializedValue("inProgress")]
+        [SerializedValue("in_progress")]
         InProgress,
 
-        [Description("finished")]
+        [SerializedValue("finished")]
         Finished,
         
-        [Description("failed")]
+        [SerializedValue("failed")]
         Failed,
         
-        [Description("canceled")]
+        [SerializedValue("canceled")]
         Canceled
     }
 }

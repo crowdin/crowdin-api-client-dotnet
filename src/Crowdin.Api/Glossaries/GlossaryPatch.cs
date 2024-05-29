@@ -15,10 +15,10 @@ namespace Crowdin.Api.Glossaries
     [PublicAPI]
     public enum GlossaryPatchPath
     {
-        [Description("/name")]
+        [SerializedValue("/name")]
         Name,
         
-        [Description("/languageId")]
+        [SerializedValue("/languageId")]
         LanguageId
     }
 }

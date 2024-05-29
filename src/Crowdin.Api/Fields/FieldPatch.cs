@@ -14,16 +14,16 @@ namespace Crowdin.Api.Fields
     [PublicAPI]
     public enum FieldPatchPath
     {
-        [Description("/name")]
+        [SerializedValue("/name")]
         Name,
         
-        [Description("/description")]
+        [SerializedValue("/description")]
         Description,
         
-        [Description("/config")]
+        [SerializedValue("/config")]
         Config,
         
-        [Description("/entities")]
+        [SerializedValue("/entities")]
         Entities
     }
 }

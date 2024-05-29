@@ -7,13 +7,13 @@ namespace Crowdin.Api.SourceFiles
     [PublicAPI]
     public enum FileStatus
     {
-        [Description("active")]
+        [SerializedValue("active")]
         Active,
         
-        [Description("not_imported")]
+        [SerializedValue("not_imported")]
         NotImported,
         
-        [Description("not_configured")]
+        [SerializedValue("not_configured")]
         NotConfigured
     }
 }

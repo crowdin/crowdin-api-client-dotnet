@@ -15,16 +15,16 @@ namespace Crowdin.Api.Users
     [PublicAPI]
     public enum EnterpriseUserPatchPath
     {
-        [Description("/firstName")]
+        [SerializedValue("/firstName")]
         FirstName,
         
-        [Description("/lastName")]
+        [SerializedValue("/lastName")]
         LastName,
         
-        [Description("/timezone")]
+        [SerializedValue("/timezone")]
         TimeZone,
         
-        [Description("/status")]
+        [SerializedValue("/status")]
         Status
     }
 }

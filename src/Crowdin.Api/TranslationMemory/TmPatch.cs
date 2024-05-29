@@ -15,13 +15,13 @@ namespace Crowdin.Api.TranslationMemory
     [PublicAPI]
     public enum TmPatchPath
     {
-        [Description("/name")]
+        [SerializedValue("/name")]
         Name,
         
-        [Description("/groupId")]
+        [SerializedValue("/groupId")]
         GroupId,
         
-        [Description("/languageId")]
+        [SerializedValue("/languageId")]
         LanguageId
     }
 }

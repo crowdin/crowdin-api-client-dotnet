@@ -7,16 +7,16 @@ namespace Crowdin.Api.Webhooks.Organization
     [PublicAPI]
     public enum EnterpriseOrgEventType
     {
-        [Description("group.created")]
+        [SerializedValue("group.created")]
         GroupCreated,
         
-        [Description("group.deleted")]
+        [SerializedValue("group.deleted")]
         GroupDeleted,
         
-        [Description("project.created")]
+        [SerializedValue("project.created")]
         ProjectCreated,
         
-        [Description("project.deleted")]
+        [SerializedValue("project.deleted")]
         ProjectDeleted
     }
 }

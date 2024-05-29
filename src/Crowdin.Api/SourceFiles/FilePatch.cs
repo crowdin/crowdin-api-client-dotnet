@@ -17,82 +17,82 @@ namespace Crowdin.Api.SourceFiles
     [PublicAPI]
     public enum FilePatchPath
     {
-        [Description("/branchId")]
+        [SerializedValue("/branchId")]
         BranchId,
         
-        [Description("/directoryId")]
+        [SerializedValue("/directoryId")]
         DirectoryId,
         
-        [Description("/name")]
+        [SerializedValue("/name")]
         Name,
         
-        [Description("/title")]
+        [SerializedValue("/title")]
         Title,
         
-        [Description("/priority")]
+        [SerializedValue("/priority")]
         Priority,
         
-        [Description("/importOptions/cleanTagsAggressively")]
+        [SerializedValue("/importOptions/cleanTagsAggressively")]
         CleanTagsAggressively,
         
-        [Description("/importOptions/translateHiddenText")]
+        [SerializedValue("/importOptions/translateHiddenText")]
         TranslateHiddenText,
         
-        [Description("/importOptions/translateHyperlinkUrls")]
+        [SerializedValue("/importOptions/translateHyperlinkUrls")]
         TranslateHyperlinkUrls,
         
-        [Description("/importOptions/translateHiddenRowsAndColumns")]
+        [SerializedValue("/importOptions/translateHiddenRowsAndColumns")]
         TranslateHiddenRowsAndColumns,
         
-        [Description("/importOptions/importNotes")]
+        [SerializedValue("/importOptions/importNotes")]
         ImportNotes,
         
-        [Description("/importOptions/importHiddenSlides")]
+        [SerializedValue("/importOptions/importHiddenSlides")]
         ImportHiddenSlides,
         
-        [Description("/importOptions/firstLineContainsHeader")]
+        [SerializedValue("/importOptions/firstLineContainsHeader")]
         FirstLineContainsHeader,
         
-        [Description("/importOptions/importTranslations")]
+        [SerializedValue("/importOptions/importTranslations")]
         ImportTranslations,
         
-        [Description("/importOptions/scheme")]
+        [SerializedValue("/importOptions/scheme")]
         Scheme,
         
-        [Description("/importOptions/translateContent")]
+        [SerializedValue("/importOptions/translateContent")]
         TranslateContent,
         
-        [Description("/importOptions/translateAttributes")]
+        [SerializedValue("/importOptions/translateAttributes")]
         TranslateAttributes,
         
-        [Description("/importOptions/contentSegmentation")]
+        [SerializedValue("/importOptions/contentSegmentation")]
         ContentSegmentation,
         
-        [Description("/importOptions/translatableElements")]
+        [SerializedValue("/importOptions/translatableElements")]
         TranslatableElements,
 
-        [Description("/importOptions/srxStorageId")]
+        [SerializedValue("/importOptions/srxStorageId")]
         SrxStorageId,
         
-        [Description("/importOptions/customSegmentation")]
+        [SerializedValue("/importOptions/customSegmentation")]
         CustomSegmentation,
         
-        [Description("/exportOptions/exportPattern")]
+        [SerializedValue("/exportOptions/exportPattern")]
         ExportPattern,
         
-        [Description("/exportOptions/exportQuotes")]
+        [SerializedValue("/exportOptions/exportQuotes")]
         ExportQuotes,
         
-        [Description("/exportOptions/escapeQuotes")]
+        [SerializedValue("/exportOptions/escapeQuotes")]
         EscapeQuotes,
         
-        [Description("/excludedTargetLanguages")]
+        [SerializedValue("/excludedTargetLanguages")]
         ExcludedTargetLanguages,
         
-        [Description("/attachLabelIds")]
+        [SerializedValue("/attachLabelIds")]
         AttachLabelIds,
         
-        [Description("/detachLabelIds")]
+        [SerializedValue("/detachLabelIds")]
         DetachLabelIds
     }
 }

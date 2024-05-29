@@ -22,12 +22,18 @@ namespace Crowdin.Api.Core
 
         internal static string ToDescriptionString(this Enum? path)
         {
-            var attribute = path?
+            var attributes = path?
                 .GetType()
                 .GetField(path.ToString())
-                .GetCustomAttribute<DescriptionAttribute>(false);
+                .GetCustomAttributes<SerializedValueAttribute>(false)
+                .ToArray();
             
-            return attribute != null ? attribute.Description : string.Empty;
+            if (attributes is null)
+            {
+                throw new ArgumentNullException(nameof(attributes), "No SerializedValue attributes found");
+            }
+            
+            return attributes.Any() ? attributes[0].Name : string.Empty;
         }
 
         internal static string ToQueryString(this IDictionary<string, string> queryParams)

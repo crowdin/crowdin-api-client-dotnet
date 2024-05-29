@@ -7,10 +7,10 @@ namespace Crowdin.Api.ProjectsGroups
     [PublicAPI]
     public enum LanguageAccessPolicy
     {
-        [Description("open")]
+        [SerializedValue("open")]
         Open,
         
-        [Description("moderate")]
+        [SerializedValue("moderate")]
         Moderate
     }
 }

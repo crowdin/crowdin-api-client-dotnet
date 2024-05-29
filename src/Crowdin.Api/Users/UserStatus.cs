@@ -7,13 +7,13 @@ namespace Crowdin.Api.Users
     [PublicAPI]
     public enum UserStatus
     {
-        [Description("active")]
+        [SerializedValue("active")]
         Active,
         
-        [Description("pending")]
+        [SerializedValue("pending")]
         Pending,
         
-        [Description("blocked")]
+        [SerializedValue("blocked")]
         Blocked
     }
 }

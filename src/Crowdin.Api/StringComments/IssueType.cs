@@ -7,16 +7,16 @@ namespace Crowdin.Api.StringComments
     [PublicAPI]
     public enum IssueType
     {
-        [Description("general_question")]
+        [SerializedValue("general_question")]
         GeneralQuestion,
         
-        [Description("translation_mistake")]
+        [SerializedValue("translation_mistake")]
         TranslationMistake,
         
-        [Description("context_request")]
+        [SerializedValue("context_request")]
         ContextRequest,
         
-        [Description("source_mistake")]
+        [SerializedValue("source_mistake")]
         SourceMistake
     }
 }

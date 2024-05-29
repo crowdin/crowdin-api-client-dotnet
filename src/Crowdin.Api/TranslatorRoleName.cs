@@ -7,16 +7,16 @@ namespace Crowdin.Api
     [PublicAPI]
     public enum TranslatorRoleName
     {
-        [Description("translator")]
+        [SerializedValue("translator")]
         Translator,
         
-        [Description("proofreader")]
+        [SerializedValue("proofreader")]
         Proofreader,
         
-        [Description("owner")]
+        [SerializedValue("owner")]
         Owner,
         
-        [Description("manager")]
+        [SerializedValue("manager")]
         Manager
     }
 }

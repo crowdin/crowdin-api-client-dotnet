@@ -7,10 +7,10 @@ namespace Crowdin.Api.Translations
     [PublicAPI]
     public enum PreTranslationMethod
     {
-        [Description("tm")]
+        [SerializedValue("tm")]
         Tm,
         
-        [Description("mt")]
+        [SerializedValue("mt")]
         Mt
     }
 }

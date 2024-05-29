@@ -7,16 +7,16 @@ namespace Crowdin.Api.Translations
     [PublicAPI]
     public enum CharTransformationMode
     {
-        [Description("asian")]
+        [SerializedValue("asian")]
         Asian,
         
-        [Description("cyrillic")]
+        [SerializedValue("cyrillic")]
         Cyrillic,
         
-        [Description("european")]
+        [SerializedValue("european")]
         European,
         
-        [Description("arabic")]
+        [SerializedValue("arabic")]
         Arabic
     }
 }

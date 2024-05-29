@@ -15,16 +15,16 @@ namespace Crowdin.Api.Distributions
     [PublicAPI]
     public enum DistributionPatchPath
     {
-        [Description("/exportMode")]
+        [SerializedValue("/exportMode")]
         ExportMode,
         
-        [Description("/name")]
+        [SerializedValue("/name")]
         Name,
         
-        [Description("/fileIds")]
+        [SerializedValue("/fileIds")]
         FileIds,
         
-        [Description("/bundleIds")]
+        [SerializedValue("/bundleIds")]
         BundleIds,
     }
 }

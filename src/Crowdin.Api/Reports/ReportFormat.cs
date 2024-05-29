@@ -7,13 +7,13 @@ namespace Crowdin.Api.Reports
     [PublicAPI]
     public enum ReportFormat
     {
-        [Description("xlsx")]
+        [SerializedValue("xlsx")]
         Xlsx,
         
-        [Description("csv")]
+        [SerializedValue("csv")]
         Csv,
         
-        [Description("json")]
+        [SerializedValue("json")]
         Json
     }
 }

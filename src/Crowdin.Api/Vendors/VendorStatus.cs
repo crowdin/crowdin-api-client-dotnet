@@ -7,16 +7,16 @@ namespace Crowdin.Api.Vendors
     [PublicAPI]
     public enum VendorStatus
     {
-        [Description("pending")]
+        [SerializedValue("pending")]
         Pending,
         
-        [Description("confirmed")]
+        [SerializedValue("confirmed")]
         Confirmed,
         
-        [Description("rejected")]
+        [SerializedValue("rejected")]
         Rejected,
         
-        [Description("deleted")]
+        [SerializedValue("deleted")]
         Deleted
     }
 }

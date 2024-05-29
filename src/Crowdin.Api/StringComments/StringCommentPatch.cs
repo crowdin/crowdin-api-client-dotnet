@@ -15,10 +15,10 @@ namespace Crowdin.Api.StringComments
     [PublicAPI]
     public enum StringCommentPatchPath
     {
-        [Description("/text")]
+        [SerializedValue("/text")]
         Text,
         
-        [Description("/issueStatus")]
+        [SerializedValue("/issueStatus")]
         IssueStatus
     }
 }

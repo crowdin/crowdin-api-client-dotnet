@@ -15,22 +15,22 @@ namespace Crowdin.Api.SourceFiles
     [PublicAPI]
     public enum DirectoryPatchPath
     {
-        [Description("/branchId")]
+        [SerializedValue("/branchId")]
         BranchId,
         
-        [Description("/directoryId")]
+        [SerializedValue("/directoryId")]
         DirectoryId,
         
-        [Description("/name")]
+        [SerializedValue("/name")]
         Name,
         
-        [Description("/title")]
+        [SerializedValue("/title")]
         Title,
         
-        [Description("/exportPattern")]
+        [SerializedValue("/exportPattern")]
         ExportPattern,
         
-        [Description("/priority")]
+        [SerializedValue("/priority")]
         Priority
     }
 }

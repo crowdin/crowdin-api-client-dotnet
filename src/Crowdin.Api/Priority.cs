@@ -7,13 +7,13 @@ namespace Crowdin.Api
     [PublicAPI]
     public enum Priority
     {
-        [Description("low")]
+        [SerializedValue("low")]
         Low,
         
-        [Description("normal")]
+        [SerializedValue("normal")]
         Normal,
         
-        [Description("high")]
+        [SerializedValue("high")]
         High
     }
 }

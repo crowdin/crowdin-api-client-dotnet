@@ -51,49 +51,49 @@ namespace Crowdin.Api.Fields
     [PublicAPI]
     public enum Place
     {
-        [Description("projectCreateModal")]
+        [SerializedValue("projectCreateModal")]
         ProjectCreateModal,
 
-        [Description("projectHeader")]
+        [SerializedValue("projectHeader")]
         ProjectHeader,
         
-        [Description("projectDetails")]
+        [SerializedValue("projectDetails")]
         ProjectDetails,
         
-        [Description("projectCrowdsourceDetails")]
+        [SerializedValue("projectCrowdsourceDetails")]
         ProjectCrowdSourceDetails,
         
-        [Description("projectSettings")]
+        [SerializedValue("projectSettings")]
         ProjectSettings,
         
-        [Description("projectTaskEditCreate")]
+        [SerializedValue("projectTaskEditCreate")]
         ProjectTaskEditCreate,
         
-        [Description("projectTaskDetails")]
+        [SerializedValue("projectTaskDetails")]
         ProjectTaskDetails,
         
-        [Description("fileDetails")]
+        [SerializedValue("fileDetails")]
         FileDetails,
         
-        [Description("fileSettings")]
+        [SerializedValue("fileSettings")]
         FileSettings,
         
-        [Description("userEditModal")]
+        [SerializedValue("userEditModal")]
         UserEditModal,
         
-        [Description("userDetails")]
+        [SerializedValue("userDetails")]
         UserDetails,
         
-        [Description("userPopover")]
+        [SerializedValue("userPopover")]
         UserPopOver,
         
-        [Description("stringEditModal")]
+        [SerializedValue("stringEditModal")]
         StringEditModal,
         
-        [Description("stringDetails")]
+        [SerializedValue("stringDetails")]
         StringDetails,
         
-        [Description("translationUnderContent")]
+        [SerializedValue("translationUnderContent")]
         TranslationUnderContent
     }
 }

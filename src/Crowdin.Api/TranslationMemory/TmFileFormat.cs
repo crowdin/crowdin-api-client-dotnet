@@ -7,13 +7,13 @@ namespace Crowdin.Api.TranslationMemory
     [PublicAPI]
     public enum TmFileFormat
     {
-        [Description("tmx")]
+        [SerializedValue("tmx")]
         Tmx,
         
-        [Description("csv")]
+        [SerializedValue("csv")]
         Csv,
         
-        [Description("xlsx")]
+        [SerializedValue("xlsx")]
         Xlsx
     }
 }

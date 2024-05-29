@@ -7,28 +7,28 @@ namespace Crowdin.Api.Glossaries
     [PublicAPI]
     public enum GlossaryExportFieldId
     {
-        [Description("term")]
+        [SerializedValue("term")]
         Term,
         
-        [Description("description")]
+        [SerializedValue("description")]
         Description,
         
-        [Description("partOfSpeech")]
+        [SerializedValue("partOfSpeech")]
         PartOfSpeech,
         
-        [Description("type")]
+        [SerializedValue("type")]
         Type,
         
-        [Description("status")]
+        [SerializedValue("status")]
         Status,
         
-        [Description("gender")]
+        [SerializedValue("gender")]
         Gender,
         
-        [Description("note")]
+        [SerializedValue("note")]
         Note,
         
-        [Description("url")]
+        [SerializedValue("url")]
         Url
     }
 }

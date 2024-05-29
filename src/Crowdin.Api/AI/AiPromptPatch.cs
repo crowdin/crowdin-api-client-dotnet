@@ -15,25 +15,25 @@ namespace Crowdin.Api.AI
     [PublicAPI]
     public enum AiPromptPatchPath
     {
-        [Description("/name")]
+        [SerializedValue("/name")]
         Name,
         
-        [Description("/action")]
+        [SerializedValue("/action")]
         Action,
         
-        [Description("/aiProviderId")]
+        [SerializedValue("/aiProviderId")]
         AiProviderId,
         
-        [Description("/aiModelId")]
+        [SerializedValue("/aiModelId")]
         AiModelId,
         
-        [Description("/isEnabled")]
+        [SerializedValue("/isEnabled")]
         IsEnabled,
         
-        [Description("/enabledProjectIds")]
+        [SerializedValue("/enabledProjectIds")]
         EnabledProjectIds,
         
-        [Description("/config")]
+        [SerializedValue("/config")]
         Config
     }
 }

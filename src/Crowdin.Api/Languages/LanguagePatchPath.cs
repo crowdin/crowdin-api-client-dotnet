@@ -7,22 +7,22 @@ namespace Crowdin.Api.Languages
     [PublicAPI]
     public enum LanguagePatchPath
     {
-        [Description("/name")]
+        [SerializedValue("/name")]
         Name,
         
-        [Description("/textDirection")]
+        [SerializedValue("/textDirection")]
         TextDirection,
         
-        [Description("/pluralCategoryNames")]
+        [SerializedValue("/pluralCategoryNames")]
         PluralCategoryNames,
         
-        [Description("/threeLettersCode")]
+        [SerializedValue("/threeLettersCode")]
         ThreeLettersCode,
         
-        [Description("/localeCode")]
+        [SerializedValue("/localeCode")]
         LocaleCode,
         
-        [Description("/dialectOf")]
+        [SerializedValue("/dialectOf")]
         DialectOf
     }
 }

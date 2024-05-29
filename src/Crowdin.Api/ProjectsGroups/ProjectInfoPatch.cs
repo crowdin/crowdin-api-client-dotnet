@@ -57,97 +57,97 @@ namespace Crowdin.Api.ProjectsGroups
     [PublicAPI]
     public enum ProjectInfoPathCode
     {
-        [Description("/name")]
+        [SerializedValue("/name")]
         Name,
         
-        [Description("/targetLanguageIds")]
+        [SerializedValue("/targetLanguageIds")]
         TargetLanguageIds,
         
-        [Description("/cname")]
+        [SerializedValue("/cname")]
         Cname,
         
-        [Description("/visibility")]
+        [SerializedValue("/visibility")]
         Visibility,
         
-        [Description("/languageAccessPolicy")]
+        [SerializedValue("/languageAccessPolicy")]
         LanguageAccessPolicy,
         
-        [Description("/glossaryAccess")]
+        [SerializedValue("/glossaryAccess")]
         GlossaryAccess,
         
-        [Description("/description")]
+        [SerializedValue("/description")]
         Description,
         
-        [Description("/translateDuplicates")]
+        [SerializedValue("/translateDuplicates")]
         TranslateDuplicates,
         
-        [Description("/isMtAllowed")]
+        [SerializedValue("/isMtAllowed")]
         IsMachineTranslationAllowed,
         
-        [Description("/taskBasedAccessControl")]
+        [SerializedValue("/taskBasedAccessControl")]
         TaskBasedAccessControl,
         
-        [Description("/autoSubstitution")]
+        [SerializedValue("/autoSubstitution")]
         AutoSubstitution,
         
-        [Description("/skipUntranslatedStrings")]
+        [SerializedValue("/skipUntranslatedStrings")]
         SkipUntranslatedStrings,
         
-        [Description("/skipUntranslatedFiles")]
+        [SerializedValue("/skipUntranslatedFiles")]
         SkipUntranslatedFiles,
         
-        [Description("/exportApprovedOnly")]
+        [SerializedValue("/exportApprovedOnly")]
         ExportApprovedOnly,
         
-        [Description("/autoTranslateDialects")]
+        [SerializedValue("/autoTranslateDialects")]
         AutoTranslateDialects,
         
-        [Description("/publicDownloads")]
+        [SerializedValue("/publicDownloads")]
         PublicDownloads,
         
-        [Description("/hiddenStringsProofreadersAccess")]
+        [SerializedValue("/hiddenStringsProofreadersAccess")]
         HiddenStringsProofreadersAccess,
         
-        [Description("/useGlobalTm")]
+        [SerializedValue("/useGlobalTm")]
         UseGlobalMachineTranslator,
         
-        [Description("/normalizePlaceholder")]
+        [SerializedValue("/normalizePlaceholder")]
         NormalizePlaceholder,
         
-        [Description("/saveMetaInfoInSource")]
+        [SerializedValue("/saveMetaInfoInSource")]
         SaveMetaInfoInSource,
         
-        [Description("/inContext")]
+        [SerializedValue("/inContext")]
         InContext,
         
-        [Description("/inContextProcessHiddenStrings")]
+        [SerializedValue("/inContextProcessHiddenStrings")]
         InContextProcessHiddenStrings,
         
-        [Description("/inContextPseudoLanguageId")]
+        [SerializedValue("/inContextPseudoLanguageId")]
         InContextPseudoLanguageId,
         
-        [Description("/qaCheckIsActive")]
+        [SerializedValue("/qaCheckIsActive")]
         QaCheckIsActive,
         
-        [Description("/qaCheckCategories")]
+        [SerializedValue("/qaCheckCategories")]
         QaCheckCategories,
         
         // /qaCheckCategories/{category}
         
-        [Description("/languageMapping")]
+        [SerializedValue("/languageMapping")]
         LanguageMapping,
         
         // /languageMapping/{languageId}
         
         // /languageMapping/{languageId}/{mappingKey}
         
-        [Description("/notificationSettings/translatorNewStrings")]
+        [SerializedValue("/notificationSettings/translatorNewStrings")]
         NotificationsTranslatorNewStrings,
         
-        [Description("/notificationSettings/managerNewStrings")]
+        [SerializedValue("/notificationSettings/managerNewStrings")]
         NotificationsManagerNewStrings,
         
-        [Description("/notificationSettings/managerLanguageCompleted")]
+        [SerializedValue("/notificationSettings/managerLanguageCompleted")]
         NotificationsManagerLanguageCompleted
     }
 }

@@ -15,10 +15,10 @@ namespace Crowdin.Api.Screenshots
     [PublicAPI]
     public enum TagPatchPath
     {
-        [Description("/stringId")]
+        [SerializedValue("/stringId")]
         StringId,
         
-        [Description("/position")]
+        [SerializedValue("/position")]
         Position
     }
 }
