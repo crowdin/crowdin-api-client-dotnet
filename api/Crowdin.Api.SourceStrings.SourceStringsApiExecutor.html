@@ -609,6 +609,116 @@
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_SourceStrings_SourceStringsApiExecutor_UploadStrings_System_Int32_Crowdin_Api_SourceStrings_UploadStringsRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.SourceStrings.SourceStringsApiExecutor.UploadStrings(System.Int32%2CCrowdin.Api.SourceStrings.UploadStringsRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/SourceStrings/SourceStringsApiExecutor.cs/#L148">View Source</a>
+  </span>
+  <a id="Crowdin_Api_SourceStrings_SourceStringsApiExecutor_UploadStrings_" data-uid="Crowdin.Api.SourceStrings.SourceStringsApiExecutor.UploadStrings*"></a>
+  <h4 id="Crowdin_Api_SourceStrings_SourceStringsApiExecutor_UploadStrings_System_Int32_Crowdin_Api_SourceStrings_UploadStringsRequest_" data-uid="Crowdin.Api.SourceStrings.SourceStringsApiExecutor.UploadStrings(System.Int32,Crowdin.Api.SourceStrings.UploadStringsRequest)">UploadStrings(Int32, UploadStringsRequest)</h4>
+  <div class="markdown level1 summary"><p>Upload strings. Documentation:
+<a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.strings.uploads.post">Crowdin API</a>
+<a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.strings.uploads.post">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;StringUploadResponseModel&gt; UploadStrings(int projectId, UploadStringsRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.SourceStrings.UploadStringsRequest.html">UploadStringsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.SourceStrings.StringUploadResponseModel.html">StringUploadResponseModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_SourceStrings_SourceStringsApiExecutor_UploadStringsStatus_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.SourceStrings.SourceStringsApiExecutor.UploadStringsStatus(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/SourceStrings/SourceStringsApiExecutor.cs/#L135">View Source</a>
+  </span>
+  <a id="Crowdin_Api_SourceStrings_SourceStringsApiExecutor_UploadStringsStatus_" data-uid="Crowdin.Api.SourceStrings.SourceStringsApiExecutor.UploadStringsStatus*"></a>
+  <h4 id="Crowdin_Api_SourceStrings_SourceStringsApiExecutor_UploadStringsStatus_System_Int32_System_String_" data-uid="Crowdin.Api.SourceStrings.SourceStringsApiExecutor.UploadStringsStatus(System.Int32,System.String)">UploadStringsStatus(Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Upload strings status. Documentation:
+<a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.strings.uploads.get">Crowdin API</a>
+<a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.strings.uploads.get">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;StringUploadResponseModel&gt; UploadStringsStatus(int projectId, string uploadId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">uploadId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.SourceStrings.StringUploadResponseModel.html">StringUploadResponseModel</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
