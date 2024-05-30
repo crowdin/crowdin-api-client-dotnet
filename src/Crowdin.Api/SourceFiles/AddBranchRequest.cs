@@ -12,16 +12,8 @@ namespace Crowdin.Api.SourceFiles
 {
     [PublicAPI]
     [Obsolete(MessageTexts.UseBranchesNamespace)]
-    public class AddBranchRequest
+    public class AddBranchRequest : Crowdin.Api.Branches.AddBranchRequest
     {
-        [JsonProperty("name")]
-#pragma warning disable CS8618
-        public string Name { get; set; }
-#pragma warning restore CS8618
-        
-        [JsonProperty("title")]
-        public string? Title { get; set; }
-        
         [JsonProperty("exportPattern")]
         public string? ExportPattern { get; set; }
 

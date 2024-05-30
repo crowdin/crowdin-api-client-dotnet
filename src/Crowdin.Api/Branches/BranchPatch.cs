@@ -21,6 +21,9 @@ namespace Crowdin.Api.Branches
         [Description("/title")]
         Title,
         
+        [Description("/exportPattern")]
+        ExportPattern,
+        
         [Description("/priority")]
         Priority
     }
