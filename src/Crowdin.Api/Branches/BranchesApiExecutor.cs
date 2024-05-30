@@ -76,7 +76,6 @@ namespace Crowdin.Api.Branches
         public async Task<ResponseList<Branch>> ListBranches(
             int projectId,
             string? name = null,
-            BranchesSortingRule? orderBy = null,
             int limit = 25,
             int offset = 0)
         {
@@ -84,7 +83,6 @@ namespace Crowdin.Api.Branches
             
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
             queryParams.AddParamIfPresent("name", name);
-            queryParams.AddDescriptionEnumValueIfPresent("orderBy", orderBy);
             
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
             return _jsonParser.ParseResponseList<Branch>(result.JsonObject);

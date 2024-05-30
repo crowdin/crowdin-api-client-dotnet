@@ -32,7 +32,6 @@ namespace Crowdin.Api.Tests.Branches
             
             IDictionary<string, string> queryParams = TestUtils.CreateQueryParamsFromPaging();
             queryParams.Add("name", branchName);
-            queryParams.Add("orderBy", "updatedAt");
             
             mockClient
                 .Setup(client => client.SendGetRequest(url, queryParams))
@@ -43,10 +42,7 @@ namespace Crowdin.Api.Tests.Branches
                 });
             
             var executor = new BranchesApiExecutor(mockClient.Object);
-            ResponseList<Branch> response = await executor.ListBranches(
-                projectId,
-                branchName,
-                orderBy: BranchesSortingRule.UpdatedAt);
+            ResponseList<Branch> response = await executor.ListBranches(projectId, branchName);
             
             Branch? branch = response.Data.FirstOrDefault();
             Assert_Branch(branch);
