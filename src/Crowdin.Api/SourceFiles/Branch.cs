@@ -1,11 +1,15 @@
 ﻿
 using System;
+
 using JetBrains.Annotations;
 using Newtonsoft.Json;
+
+using Crowdin.Api.Core;
 
 namespace Crowdin.Api.SourceFiles
 {
     [PublicAPI]
+    [Obsolete(MessageTexts.UseBranchesNamespace)]
     public class Branch
     {
         [JsonProperty("id")]
