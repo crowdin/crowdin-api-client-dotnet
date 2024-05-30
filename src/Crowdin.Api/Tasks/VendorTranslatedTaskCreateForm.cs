@@ -22,10 +22,11 @@ namespace Crowdin.Api.Tasks
         public string LanguageId { get; set; }
 #pragma warning restore CS8618
         
+        [JsonProperty("branchIds")]
+        public ICollection<int>? BranchIds { get; set; }
+        
         [JsonProperty("fileIds")]
-#pragma warning disable CS8618
-        public ICollection<int> FileIds { get; set; }
-#pragma warning restore CS8618
+        public ICollection<int>? FileIds { get; set; }
         
         [JsonProperty("type")]
         public TaskType Type { get; set; }

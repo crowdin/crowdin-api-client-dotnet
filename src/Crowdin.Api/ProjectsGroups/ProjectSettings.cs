@@ -9,6 +9,9 @@ namespace Crowdin.Api.ProjectsGroups
     [PublicAPI]
     public class ProjectSettings : Project
     {
+        [JsonProperty("clientOrganizationId")]
+        public int ClientOrganizationId { get; set; }
+        
         [JsonProperty("translateDuplicates")]
         public DupTranslateAction TranslateDuplicates { get; set; }
 
@@ -20,6 +23,9 @@ namespace Crowdin.Api.ProjectsGroups
         
         [JsonProperty("isMtAllowed")]
         public bool IsMachineTranslationAllowed { get; set; }
+        
+        [JsonProperty("taskBasedAccessControl")]
+        public bool TaskBasedAccessControl { get; set; }
         
         [JsonProperty("hiddenStringsProofreadersAccess")]
         public bool HiddenStringsProofreadersAccess { get; set; }
@@ -48,6 +54,9 @@ namespace Crowdin.Api.ProjectsGroups
         [JsonProperty("useGlobalTm")]
         public bool UseGlobalTm { get; set; }
         
+        [JsonProperty("tmContextType")]
+        public TmContextType TmContextType { get; set; }
+        
         [JsonProperty("normalizePlaceholder")]
         public bool NormalizePlaceholder { get; set; }
         
@@ -72,6 +81,9 @@ namespace Crowdin.Api.ProjectsGroups
         
         [JsonProperty("qaCheckIsActive")]
         public bool QaCheckIsActive { get; set; }
+        
+        [JsonProperty("qaApprovalsCount")]
+        public int QaApprovalsCount { get; set; }
         
         [JsonProperty("qaCheckCategories")]
         public QaCheckCategories QaCheckCategories { get; set; }

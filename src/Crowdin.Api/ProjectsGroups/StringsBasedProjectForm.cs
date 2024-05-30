@@ -47,6 +47,9 @@ namespace Crowdin.Api.ProjectsGroups
         [JsonProperty("isMtAllowed")]
         public bool? IsMtAllowed { get; set; }
         
+        [JsonProperty("taskBasedAccessControl")]
+        public bool? TaskBasedAccessControl { get; set; }
+        
         [JsonProperty("autoSubstitution")]
         public bool? AutoSubstitution { get; set; }
         
@@ -92,7 +95,19 @@ namespace Crowdin.Api.ProjectsGroups
         [JsonProperty("languageMapping")]
         public IDictionary<string, LanguageMapping>? LanguageMapping { get; set; }
         
+        [JsonProperty("glossaryAccess")]
+        public bool? GlossaryAccess { get; set; }
+        
         [JsonProperty("notificationSettings")]
         public NotificationSettings? NotificationSettings { get; set; }
+        
+        [JsonProperty("tmPenalties")]
+        public bool? TmPenalties { get; set; }
+        
+        [JsonProperty("normalizePlaceholder")]
+        public bool? NormalizePlaceholder { get; set; }
+        
+        [JsonProperty("tmContextType")]
+        public TmContextType? TmContextType { get; set; }
     }
 }

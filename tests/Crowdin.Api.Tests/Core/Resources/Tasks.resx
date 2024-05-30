@@ -31,13 +31,14 @@
         <value>{
   "title": "My task",
   "languageId": "es",
-  "fileIds": [
-    1,2,3
-  ],
   "type": 2,
   "vendor": "lingo24",
   "status": "in_progress",
   "description": "My amazing task",
+
+  "fileIds": [
+    1,2,3
+  ],
   "skipAssignedStrings": true,
   "skipUntranslatedStrings": true,
   "labelIds": [

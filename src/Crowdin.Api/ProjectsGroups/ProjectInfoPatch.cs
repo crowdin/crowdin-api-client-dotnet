@@ -1,10 +1,12 @@
 ﻿
 using System.Collections.Generic;
 using System.ComponentModel;
-using Crowdin.Api.Core;
-using Crowdin.Api.Core.Converters;
+
 using JetBrains.Annotations;
 using Newtonsoft.Json;
+
+using Crowdin.Api.Core;
+using Crowdin.Api.Core.Converters;
 
 namespace Crowdin.Api.ProjectsGroups
 {
@@ -81,6 +83,9 @@ namespace Crowdin.Api.ProjectsGroups
         
         [Description("/isMtAllowed")]
         IsMachineTranslationAllowed,
+        
+        [Description("/taskBasedAccessControl")]
+        TaskBasedAccessControl,
         
         [Description("/autoSubstitution")]
         AutoSubstitution,

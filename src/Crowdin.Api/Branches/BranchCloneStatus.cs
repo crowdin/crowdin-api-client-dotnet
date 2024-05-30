@@ -1,14 +1,12 @@
-﻿
-using System;
-using System.Collections.Generic;
 
+using System;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
-namespace Crowdin.Api.Reports
+namespace Crowdin.Api.Branches
 {
     [PublicAPI]
-    public class ReportStatus
+    public class BranchCloneStatus
     {
         [JsonProperty("identifier")]
         public string Identifier { get; set; }
@@ -18,9 +16,9 @@ namespace Crowdin.Api.Reports
         
         [JsonProperty("progress")]
         public int Progress { get; set; }
-
+        
         [JsonProperty("attributes")]
-        public ReportAttributes Attributes { get; set; }
+        public object Attributes { get; set; }
         
         [JsonProperty("createdAt")]
         public DateTimeOffset CreatedAt { get; set; }
@@ -33,21 +31,5 @@ namespace Crowdin.Api.Reports
         
         [JsonProperty("finishedAt")]
         public DateTimeOffset? FinishedAt { get; set; }
-
-        [PublicAPI]
-        public class ReportAttributes
-        {
-            [JsonProperty("format")]
-            public ReportFormat Format { get; set; }
-            
-            [JsonProperty("reportName")]
-            public string ReportName { get; set; }
-            
-            [JsonProperty("schema")]
-            public object Schema { get; set; }
-            
-            [JsonProperty("projectIds")]
-            public List<long> ProjectIds { get; set; }
-        }
     }
 }

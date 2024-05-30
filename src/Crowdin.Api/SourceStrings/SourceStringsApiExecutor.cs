@@ -126,6 +126,32 @@ namespace Crowdin.Api.SourceStrings
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
             return _jsonParser.ParseResponseObject<SourceString>(result.JsonObject);
         }
+        
+        /// <summary>
+        /// Upload strings status. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.strings.uploads.get">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.strings.uploads.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<StringUploadResponseModel> UploadStringsStatus(int projectId, string uploadId)
+        {
+            string url = FormUrl_StringsUploadId(projectId, uploadId);
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<StringUploadResponseModel>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// Upload strings. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.strings.uploads.post">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.strings.uploads.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<StringUploadResponseModel> UploadStrings(int projectId, UploadStringsRequest request)
+        {
+            string url = FormUrl_StringsUpload(projectId);
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<StringUploadResponseModel>(result.JsonObject);
+        }
 
         #region Helper methods
 
@@ -137,6 +163,16 @@ namespace Crowdin.Api.SourceStrings
         private static string FormUrl_StringId(int projectId, int stringId)
         {
             return $"/projects/{projectId}/strings/{stringId}";
+        }
+        
+        private static string FormUrl_StringsUpload(int projectId)
+        {
+            return $"/projects/{projectId}/strings/upload";
+        }
+        
+        private static string FormUrl_StringsUploadId(int projectId, string uploadId)
+        {
+            return $"/projects/{projectId}/strings/uploads/{uploadId}";
         }
 
         #endregion

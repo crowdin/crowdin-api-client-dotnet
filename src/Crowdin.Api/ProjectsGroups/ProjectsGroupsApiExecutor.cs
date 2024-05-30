@@ -110,6 +110,7 @@ namespace Crowdin.Api.ProjectsGroups
         public async Task<ResponseList<TProject>> ListProjects<TProject>(
             int? userId = null, int? groupId = null,
             bool hasManagerAccess = false,
+            ProjectType? type = null,
             int limit = 25, int offset = 0)
                 where TProject : ProjectBase // Project, EnterpriseProject
         {
@@ -117,6 +118,11 @@ namespace Crowdin.Api.ProjectsGroups
             queryParams.AddParamIfPresent("userId", userId);
             queryParams.AddParamIfPresent("groupId", groupId);
             queryParams.Add("hasManagerAccess", hasManagerAccess ? "1" : "0");
+            
+            if (type.HasValue)
+            {
+                queryParams.Add("type", ((int) type).ToString());
+            }
 
             CrowdinApiResult result = await _apiClient.SendGetRequest(BaseProjectsSubUrl, queryParams);
             

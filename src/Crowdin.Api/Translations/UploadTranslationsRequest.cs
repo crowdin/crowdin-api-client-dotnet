@@ -1,4 +1,4 @@
-
+﻿
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
@@ -10,8 +10,11 @@ namespace Crowdin.Api.Translations
         [JsonProperty("storageId")]
         public int StorageId { get; set; }
         
+        [JsonProperty("branchId")]
+        public int? BranchId { get; set; }
+        
         [JsonProperty("fileId")]
-        public int FileId { get; set; }
+        public int? FileId { get; set; }
         
         [JsonProperty("importEqSuggestions")]
         public bool? ImportEqSuggestions { get; set; }

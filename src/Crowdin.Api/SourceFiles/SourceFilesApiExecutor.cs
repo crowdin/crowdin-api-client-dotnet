@@ -1,10 +1,13 @@
 ﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
-using Crowdin.Api.Core;
+
 using JetBrains.Annotations;
+
+using Crowdin.Api.Core;
 
 #nullable enable
 
@@ -35,6 +38,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.branches.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
+        [Obsolete(MessageTexts.UseBranchesNamespace)]
         public async Task<ResponseList<Branch>> ListBranches(
             int projectId, string? name = null, int limit = 25, int offset = 0)
         {
@@ -52,6 +56,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.branches.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
+        [Obsolete(MessageTexts.UseBranchesNamespace)]
         public async Task<Branch> AddBranch(int projectId, AddBranchRequest request)
         {
             string url = FormUrl_ProjectBranches(projectId);
@@ -65,6 +70,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.branches.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
+        [Obsolete(MessageTexts.UseBranchesNamespace)]
         public async Task<Branch> GetBranch(int projectId, int branchId)
         {
             string url = FormUrl_ProjectIdBranchId(projectId, branchId);
@@ -78,6 +84,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.branches.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
+        [Obsolete(MessageTexts.UseBranchesNamespace)]
         public async Task DeleteBranch(int projectId, int branchId)
         {
             string url = FormUrl_ProjectIdBranchId(projectId, branchId);
@@ -91,6 +98,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.branches.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
+        [Obsolete(MessageTexts.UseBranchesNamespace)]
         public async Task<Branch> EditBranch(int projectId, int branchId, IEnumerable<BranchPatch> patches)
         {
             string url = FormUrl_ProjectIdBranchId(projectId, branchId);

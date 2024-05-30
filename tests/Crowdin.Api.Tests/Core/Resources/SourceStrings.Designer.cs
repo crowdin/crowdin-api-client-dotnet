@@ -88,6 +88,36 @@ namespace Crowdin.Api.Tests.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;data&quot;: {
+        ///    &quot;identifier&quot;: &quot;50fb3506-4127-4ba8-8296-f97dc7e3e0c3&quot;,
+        ///    &quot;status&quot;: &quot;finished&quot;,
+        ///    &quot;progress&quot;: 100,
+        ///    &quot;attributes&quot;: {
+        ///      &quot;branchId&quot;: 38,
+        ///      &quot;storageId&quot;: 38,
+        ///      &quot;fileType&quot;: &quot;android&quot;,
+        ///      &quot;parserVersion&quot;: 8,
+        ///      &quot;labelIds&quot;: [
+        ///        1,
+        ///        2
+        ///      ],
+        ///      &quot;importOptions&quot;: {
+        ///        &quot;firstLineContainsHeader&quot;: false,
+        ///        &quot;importTranslations&quot;: true,
+        ///        &quot;scheme&quot;: {
+        ///          &quot;identifier&quot;: 0,
+        ///          &quot;sourcePhrase&quot;: 1,
+        ///          &quot;en&quot;: 2,
+        ///     [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CommonResponses_UploadStrings {
+            get {
+                return ResourceManager.GetString("CommonResponses_UploadStrings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to [
         ///  {
         ///
@@ -176,6 +206,35 @@ namespace Crowdin.Api.Tests.Core.Resources {
         internal static string StringBatchOperations_Response_NoPagination {
             get {
                 return ResourceManager.GetString("StringBatchOperations_Response_NoPagination", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;storageId&quot;: 61,
+        ///  &quot;branchId&quot;: 34,
+        ///  &quot;type&quot;: &quot;xliff&quot;,
+        ///  &quot;parserVersion&quot;: 1,
+        ///  &quot;labelIds&quot;: [
+        ///    1, 2, 3
+        ///  ],
+        ///  &quot;updateStrings&quot;: true,
+        ///  &quot;cleanupMode&quot;: true,
+        ///  &quot;importOptions&quot;: {
+        ///    &quot;firstLineContainsHeader&quot;: false,
+        ///    &quot;importTranslations&quot;: true,
+        ///    &quot;scheme&quot;: {
+        ///      &quot;identifier&quot;: 0,
+        ///      &quot;sourcePhrase&quot;: 1,
+        ///      &quot;en&quot;: 2,
+        ///      &quot;de&quot;: 3
+        ///    }
+        ///  }
+        ///}.
+        /// </summary>
+        internal static string UploadStrings_Request {
+            get {
+                return ResourceManager.GetString("UploadStrings_Request", resourceCulture);
             }
         }
     }
