@@ -218,6 +218,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>AI_Misc.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\Reports_Archives.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Reports_Archives.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -450,6 +454,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>Branches.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\Reports_Archives.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Reports_Archives.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 
