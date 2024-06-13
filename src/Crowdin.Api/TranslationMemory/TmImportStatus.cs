@@ -40,7 +40,7 @@ namespace Crowdin.Api.TranslationMemory
             public int TmId { get; set; }
             
             [JsonProperty("storageId")]
-            public int StorageId { get; set; }
+            public long StorageId { get; set; }
             
             [JsonProperty("firstLineContainsHeader")]
             public int FirstLineContainsHeader { get; set; }

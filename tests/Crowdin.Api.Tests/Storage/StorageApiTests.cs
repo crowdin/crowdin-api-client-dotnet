@@ -1,5 +1,6 @@
 
 using System.Collections.Generic;
+using System.IO;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -65,6 +66,32 @@ namespace Crowdin.Api.Tests.Storage
 
             var storageApi = new StorageApiExecutor(mockClient.Object);
             await Assert.ThrowsAsync<CrowdinApiException>(() => storageApi.DeleteStorage(storageId));
+        }
+
+        [Fact]
+        public async Task AddStorage_Success()
+        {
+            const long storageId = 2149231454;
+            string fileName = @"umbrella_app.xliff";
+            string responseJson = Core.Resources.Storage.AddStorageResponse;
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+            
+            mockClient
+                .Setup(client => client.UploadFile("/storages", fileName, It.IsAny<Stream>()))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(responseJson)
+                });
+            
+            var storageApi = new StorageApiExecutor(mockClient.Object);
+            using var stream = new MemoryStream();
+            StorageResource response = await storageApi.AddStorage(stream, fileName);
+
+            Assert.NotNull(response);
+            Assert.Equal(storageId, response.Id);
+            Assert.Equal(fileName, response.FileName);
         }
     }
 }

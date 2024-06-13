@@ -8,7 +8,7 @@ namespace Crowdin.Api.Storage
     public class StorageResource
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("fileName")]
         public string FileName { get; set; }

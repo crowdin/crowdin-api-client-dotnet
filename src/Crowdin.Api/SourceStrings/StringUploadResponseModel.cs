@@ -40,7 +40,7 @@ namespace Crowdin.Api.SourceStrings
             public int BranchId { get; set; }
             
             [JsonProperty("storageId")]
-            public int StorageId { get; set; }
+            public long StorageId { get; set; }
             
             [JsonProperty("fileType")]
             public string FileType { get; set; }

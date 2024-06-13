@@ -11,7 +11,7 @@ namespace Crowdin.Api.SourceFiles
     public class ReplaceFileRequest : UpdateOrRestoreFileRequest
     {
         [JsonProperty("storageId")]
-        public int StorageId { get; set; }
+        public long StorageId { get; set; }
         
         [JsonProperty("updateOption")]
         public FileUpdateOption? UpdateOption { get; set; }

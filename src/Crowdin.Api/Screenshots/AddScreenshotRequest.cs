@@ -8,7 +8,7 @@ namespace Crowdin.Api.Screenshots
     public class AddScreenshotRequest
     {
         [JsonProperty("storageId")]
-        public int StorageId { get; set; }
+        public long StorageId { get; set; }
         
         [JsonProperty("name")]
         public string Name { get; set; }

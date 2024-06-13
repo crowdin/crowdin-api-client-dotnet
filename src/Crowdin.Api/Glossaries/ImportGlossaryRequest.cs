@@ -11,7 +11,7 @@ namespace Crowdin.Api.Glossaries
     public class ImportGlossaryRequest
     {
         [JsonProperty("storageId")]
-        public int StorageId { get; set; }
+        public long StorageId { get; set; }
         
         [JsonProperty("scheme")]
         public IDictionary<string, int>? Scheme { get; set; }
