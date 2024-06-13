@@ -35,4 +35,10 @@
         }
         </value>
     </data>
+    <data name="AddStorageResponse" xml:space="preserve">
+        <value> {
+                        "id": 2149231454,
+                        "fileName": "umbrella_app.xliff"
+                    }</value>
+    </data>
 </root>
