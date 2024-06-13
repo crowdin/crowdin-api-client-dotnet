@@ -11,7 +11,7 @@ namespace Crowdin.Api.SourceFiles
     public class AddFileRequest
     {
         [JsonProperty("storageId")]
-        public int StorageId { get; set; }
+        public long StorageId { get; set; }
         
         [JsonProperty("name")]
 #pragma warning disable 8618

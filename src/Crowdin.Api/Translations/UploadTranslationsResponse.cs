@@ -11,7 +11,7 @@ namespace Crowdin.Api.Translations
         public int ProjectId { get; set; }
         
         [JsonProperty("storageId")]
-        public int StorageId { get; set; }
+        public long StorageId { get; set; }
         
         [JsonProperty("languageId")]
         public string LanguageId { get; set; }

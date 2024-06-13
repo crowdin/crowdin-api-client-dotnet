@@ -14,7 +14,7 @@ namespace Crowdin.Api.SourceStrings
     public class UploadStringsRequest
     {
         [JsonProperty("storageId")]
-        public int StorageId { get; set; }
+        public long StorageId { get; set; }
         
         [JsonProperty("branchId")]
         public int BranchId { get; set; }

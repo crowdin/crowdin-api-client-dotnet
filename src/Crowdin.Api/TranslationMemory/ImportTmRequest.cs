@@ -11,7 +11,7 @@ namespace Crowdin.Api.TranslationMemory
     public class ImportTmRequest
     {
         [JsonProperty("storageId")]
-        public int StorageId { get; set; }
+        public long StorageId { get; set; }
         
         [JsonProperty("firstLineContainsHeader")]
         public bool? FirstLineContainsHeader { get; set; }
