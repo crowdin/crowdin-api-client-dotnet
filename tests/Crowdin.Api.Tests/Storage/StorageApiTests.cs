@@ -43,7 +43,7 @@ namespace Crowdin.Api.Tests.Storage
         [Fact]
         public async Task DeleteStorage_Success()
         {
-            const int storageId = 1;
+            const long storageId = 1;
             var mockClient = new Mock<ICrowdinApiClient>();
 
             mockClient
@@ -57,7 +57,7 @@ namespace Crowdin.Api.Tests.Storage
         [Fact]
         public async Task DeleteStorage_Fail()
         {
-            const int storageId = 1;
+            const long storageId = 1;
             var mockClient = new Mock<ICrowdinApiClient>();
 
             mockClient

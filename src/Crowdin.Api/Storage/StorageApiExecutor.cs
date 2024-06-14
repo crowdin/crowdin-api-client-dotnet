@@ -1,4 +1,4 @@
-﻿
+
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
@@ -59,7 +59,7 @@ namespace Crowdin.Api.Storage
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.storages.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<StorageResource> GetStorage(int storageId)
+        public async Task<StorageResource> GetStorage(long storageId)
         {
             CrowdinApiResult result = await _apiClient.SendGetRequest(FormUrlWithId(storageId));
             return _jsonParser.ParseResponseObject<StorageResource>(result.JsonObject);
@@ -71,12 +71,12 @@ namespace Crowdin.Api.Storage
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.storages.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteStorage(int storageId)
+        public async Task DeleteStorage(long storageId)
         {
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(FormUrlWithId(storageId));
             Utils.ThrowIfStatusNot204(statusCode, $"Storage {storageId} removal failed");
         }
 
-        private static string FormUrlWithId(int storageId) => $"{BaseSubUrl}/{storageId}";
+        private static string FormUrlWithId(long storageId) => $"{BaseSubUrl}/{storageId}";
     }
 }
