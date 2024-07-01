@@ -57,4 +57,66 @@
   ]
 }</value>
     </data>
+    <data name="Request_PendingTaskCreateForm" xml:space="preserve">
+        <value>{
+  "precedingTaskId": 1,
+  "type": 1,
+  "title": "string",
+  "description": "string",
+  "assignees": [
+    {
+      "id": 2,
+      "wordsCount": 3
+    }
+  ],
+  "deadline": "2019-09-27T07:00:14+00:00"
+}</value>
+    </data>
+    <data name="Request_CrowdinLanguageServicePendingTaskCreateForm" xml:space="preserve">
+        <value>{
+  "precedingTaskId": 1,
+  "type": 1,
+  "vendor": "alconost",
+  "title": "string",
+  "description": "string",
+  "deadline": "2019-09-27T07:00:14+00:00"
+}</value>
+    </data>
+    <data name="Request_VendorManualPendingTaskCreateForm" xml:space="preserve">
+        <value>{
+  "precedingTaskId": 1,
+  "type": 1,
+  "vendor": "acclaro",
+  "title": "string",
+  "description": "string",
+  "assignees": [
+    {
+      "id": 1,
+      "wordsCount": 3
+    }
+  ],
+  "deadline": "2019-09-27T07:00:14+00:00"
+}</value>
+    </data>
+    <data name="Request_EnterprisePendingTaskCreateForm" xml:space="preserve">
+        <value>{
+  "precedingTaskId": 1,
+  "type": 1,
+  "title": "string",
+  "description": "string",
+  "assignees": [
+    {
+      "id": 1,
+      "wordsCount": 5
+    }
+  ],
+  "assignedTeams": [
+    {
+      "id": 1,
+      "wordsCount": 5
+    }
+  ],
+  "deadline": "2019-09-27T07:00:14+00:00"
+}</value>
+    </data>
 </root>
