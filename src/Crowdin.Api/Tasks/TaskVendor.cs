@@ -46,7 +46,10 @@ namespace Crowdin.Api.Tasks
         KettuSolutions,
         
         [Description("languageline_solutions")]
-        LanguageLineTranslationSolutions
+        LanguageLineTranslationSolutions,
+        
+        [Description("crowdin_language_service")]
+        CrowdinLanguageServices
         
         // ReSharper restore IdentifierTypo
     }

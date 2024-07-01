@@ -1,8 +1,11 @@
 ﻿
 using System;
 using System.Collections.Generic;
+
 using JetBrains.Annotations;
 using Newtonsoft.Json;
+
+using Crowdin.Api.Core;
 
 #nullable enable
 
@@ -27,6 +30,9 @@ namespace Crowdin.Api.Tasks
         [JsonProperty("fileIds")]
         public ICollection<int>? FileIds { get; set; }
         
+        [JsonProperty("stringIds")]
+        public ICollection<int>? StringIds { get; set; }
+        
         [JsonProperty("type")]
         public TaskType Type { get; set; }
         
@@ -37,12 +43,14 @@ namespace Crowdin.Api.Tasks
         public string? Description { get; set; }
         
         [JsonProperty("splitFiles")]
+        [Obsolete("Use splitContent instead")]
         public bool? SplitFiles { get; set; }
         
         [JsonProperty("skipAssignedStrings")]
         public bool? SkipAssignedStrings { get; set; }
         
         [JsonProperty("skipUntranslatedStrings")]
+        [Obsolete(MessageTexts.DeprecatedProperty)]
         public bool? SkipUntranslatedStrings { get; set; }
 
         [JsonProperty("includePreTranslatedStringsOnly")]
@@ -50,6 +58,9 @@ namespace Crowdin.Api.Tasks
         
         [JsonProperty("labelIds")]
         public ICollection<int>? LabelIds { get; set; }
+        
+        [JsonProperty("excludeLabelIds")]
+        public ICollection<int>? ExcludeLabelIds { get; set; }
         
         [JsonProperty("assignees")]
         public ICollection<TaskAssigneeForm>? Assignees { get; set; }
