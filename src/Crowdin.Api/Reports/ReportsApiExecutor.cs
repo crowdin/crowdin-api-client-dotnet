@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
+
 using Crowdin.Api.Core;
 using JetBrains.Annotations;
+
+#nullable enable
 
 namespace Crowdin.Api.Reports
 {
@@ -23,6 +26,113 @@ namespace Crowdin.Api.Reports
             _apiClient = apiClient;
             _jsonParser = jsonParser;
         }
+        
+        #region Report Archives
+        
+        /// <summary>
+        /// List Report Archives. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.reports.archives.getMany">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.reports.archives.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<ReportArchive>> ListReportArchives(
+            int? userId,
+            ScopeType? scopeType = null,
+            int? scopeId = null,
+            int limit = 25,
+            int offset = 0)
+        {
+            string url = AddUserIdIfAvailable(userId, "/reports/archives");
+            
+            IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
+            queryParams.AddDescriptionEnumValueIfPresent(nameof(scopeType), scopeType);
+            queryParams.AddParamIfPresent(nameof(scopeId), scopeId);
+            
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
+            return _jsonParser.ParseResponseList<ReportArchive>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// Get Report Archive. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.users.reports.archives.get">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.reports.archives.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ReportArchive> GetReportArchive(int? userId, int archiveId)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/reports/archives/{archiveId}");
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<ReportArchive>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// Delete Report Archive. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.users.reports.archives.delete">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.reports.archives.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task DeleteReportArchive(int? userId, int archiveId)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/reports/archives/{archiveId}");
+            HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
+            Utils.ThrowIfStatusNot204(statusCode, $"Report Archive {archiveId} removal failed");
+        }
+        
+        /// <summary>
+        /// Export Report Archive. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.reports.archives.exports.post">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.reports.archives.exports.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<GroupReportStatus> ExportReportArchive(
+            int? userId,
+            int archiveId,
+            ExportReportArchiveRequest request)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/reports/archives/{archiveId}/exports");
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<GroupReportStatus>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// Check Report Archive Export Status. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.users.reports.archives.exports.get">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.reports.archives.exports.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<GroupReportStatus> CheckReportArchiveExportStatus(
+            int? userId,
+            int archiveId,
+            string exportId)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/reports/archives/{archiveId}/exports/{exportId}");
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<GroupReportStatus>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// Download Report Archive. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.users.reports.archives.exports.download.get">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.reports.archives.exports.download.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<DownloadLink> DownloadReportArchive(int? userId, int archiveId, string exportId)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/reports/archives/{archiveId}/exports/{exportId}/download");
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<DownloadLink>(result.JsonObject);
+        }
+        
+        #region Helper methods
+        
+        private static string AddUserIdIfAvailable(int? userId, string baseUrl)
+        {
+            return userId.HasValue ? $"/users/{userId}" + baseUrl : baseUrl;
+        }
+        
+        #endregion
+        
+        #endregion
 
         #region Group Reports
 
