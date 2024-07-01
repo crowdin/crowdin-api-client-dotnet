@@ -12,7 +12,7 @@ namespace Crowdin.Api.Reports
         public int Id { get; set; }
         
         [JsonProperty("scopeType")]
-        public string ScopeType { get; set; }
+        public ScopeType ScopeType { get; set; }
         
         [JsonProperty("scopeId")]
         public int ScopeId { get; set; }

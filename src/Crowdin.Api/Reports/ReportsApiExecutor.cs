@@ -37,7 +37,7 @@ namespace Crowdin.Api.Reports
         [PublicAPI]
         public async Task<ResponseList<ReportArchive>> ListReportArchives(
             int? userId,
-            string? scopeType = null, // TODO: enum?
+            ScopeType? scopeType = null,
             int? scopeId = null,
             int limit = 25,
             int offset = 0)
@@ -45,7 +45,7 @@ namespace Crowdin.Api.Reports
             string url = AddUserIdIfAvailable(userId, "/reports/archives");
             
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
-            queryParams.AddParamIfPresent(nameof(scopeType), scopeType);
+            queryParams.AddDescriptionEnumValueIfPresent(nameof(scopeType), scopeType);
             queryParams.AddParamIfPresent(nameof(scopeId), scopeId);
             
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);

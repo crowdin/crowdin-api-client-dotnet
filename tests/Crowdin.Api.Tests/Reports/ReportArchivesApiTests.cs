@@ -48,7 +48,7 @@ namespace Crowdin.Api.Tests.Reports
             var executor = new ReportsApiExecutor(mockClient.Object);
             ResponseList<ReportArchive> response = await executor.ListReportArchives(
                 userId,
-                scopeType: "project",
+                scopeType: ScopeType.Project,
                 scopeId
             );
             
@@ -208,7 +208,7 @@ namespace Crowdin.Api.Tests.Reports
             var executor = new ReportsApiExecutor(mockClient.Object);
             ResponseList<ReportArchive> response = await executor.ListReportArchives(
                 userId: null,
-                scopeType: "project",
+                scopeType: ScopeType.Project,
                 scopeId
             );
             
@@ -342,7 +342,7 @@ namespace Crowdin.Api.Tests.Reports
             ArgumentNullException.ThrowIfNull(reportArchive);
             
             Assert.Equal(12, reportArchive.Id);
-            Assert.Equal("project", reportArchive.ScopeType);
+            Assert.Equal(ScopeType.Project, reportArchive.ScopeType);
             Assert.Equal(35, reportArchive.ScopeId);
             Assert.Equal(35, reportArchive.UserId);
             Assert.Equal("string", reportArchive.Name);
