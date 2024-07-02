@@ -66,4 +66,210 @@
   }
 }</value>
     </data>
+    <data name="Response_ProjectSettings_TmPenalties" xml:space="preserve">
+        <value>{
+  "data": {
+    "id": 8,
+    "type": 0,
+    "userId": 6,
+    "sourceLanguageId": "en",
+    "targetLanguageIds": [
+      "es"
+    ],
+    "languageAccessPolicy": "moderate",
+    "name": "Knowledge Base",
+    "cname": "my-custom-domain.crowdin.com",
+    "identifier": "1f198a4e907688bc65834a6d5a6000c3",
+    "description": "Vault of all terms and their explanation",
+    "visibility": "private",
+    "logo": "data:image/png;",
+    "publicDownloads": true,
+    "createdAt": "2019-09-20T11:34:40+00:00",
+    "updatedAt": "2019-09-20T11:34:40+00:00",
+    "lastActivity": "2019-09-20T11:34:40+00:00",
+    "sourceLanguage": {
+      "id": "es",
+      "name": "Spanish",
+      "editorCode": "es",
+      "twoLettersCode": "es",
+      "threeLettersCode": "spa",
+      "locale": "es-ES",
+      "androidCode": "es-rES",
+      "osxCode": "es.lproj",
+      "osxLocale": "es",
+      "pluralCategoryNames": [
+        "one"
+      ],
+      "pluralRules": "(n != 1)",
+      "pluralExamples": [
+        "0, 2-999; 1.2, 2.07..."
+      ],
+      "textDirection": "ltr",
+      "dialectOf": "es"
+    },
+    "targetLanguages": [
+      {
+        "id": "es",
+        "name": "Spanish",
+        "editorCode": "es",
+        "twoLettersCode": "es",
+        "threeLettersCode": "spa",
+        "locale": "es-ES",
+        "androidCode": "es-rES",
+        "osxCode": "es.lproj",
+        "osxLocale": "es",
+        "pluralCategoryNames": [
+          "one"
+        ],
+        "pluralRules": "(n != 1)",
+        "pluralExamples": [
+          "0, 2-999; 1.2, 2.07..."
+        ],
+        "textDirection": "ltr",
+        "dialectOf": "es"
+      }
+    ],
+    "webUrl": "https://crowdin.com/project/some-project",
+    "savingsReportSettingsTemplateId": 1,
+    "translateDuplicates": 2,
+    "tagsDetection": 0,
+    "glossaryAccess": false,
+    "isMtAllowed": false,
+    "taskBasedAccessControl": false,
+    "hiddenStringsProofreadersAccess": true,
+    "autoSubstitution": true,
+    "exportTranslatedOnly": false,
+    "skipUntranslatedStrings": false,
+    "exportApprovedOnly": false,
+    "autoTranslateDialects": true,
+    "useGlobalTm": false,
+    "showTmSuggestionsDialects": true,
+    "isSuspended": false,
+    "qaCheckIsActive": true,
+    "qaCheckCategories": {
+      "empty": true,
+      "size": true,
+      "tags": true,
+      "spaces": true,
+      "variables": true,
+      "punctuation": true,
+      "symbolRegister": true,
+      "specialSymbols": true,
+      "wrongTranslation": true,
+      "spellcheck": true,
+      "icu": true,
+      "terms": true,
+      "duplicate": true,
+      "ftl": true,
+      "android": true
+    },
+    "qaChecksIgnorableCategories": {
+      "empty": false,
+      "size": true,
+      "tags": true,
+      "spaces": true,
+      "variables": true,
+      "punctuation": true,
+      "symbolRegister": true,
+      "specialSymbols": true,
+      "wrongTranslation": true,
+      "spellcheck": true,
+      "icu": false,
+      "terms": true,
+      "duplicate": false,
+      "ftl": false,
+      "android": true
+    },
+    "languageMapping": {
+      "uk": {
+        "name": "Ukranian",
+        "two_letters_code": "ua",
+        "three_letters_code": "ukr",
+        "locale": "uk-UA",
+        "locale_with_underscore": "uk_UA",
+        "android_code": "uk-rUA",
+        "osx_code": "ua.lproj",
+        "osx_locale": "ua"
+      }
+    },
+    "notificationSettings": {
+      "translatorNewStrings": true,
+      "managerNewStrings": false,
+      "managerLanguageCompleted": false
+    },
+    "defaultTmId": 1,
+    "defaultGlossaryId": 1,
+    "assignedTms": {
+      "1": {
+        "priority": 1
+      }
+    },
+    "assignedGlossaries": [
+      2
+    ],
+    "tmPenalties": [],
+    "normalizePlaceholder": false,
+    "tmPreTranslate": {
+      "enabled": true,
+      "autoApproveOption": "all",
+      "minimumMatchRatio": "perfect"
+    },
+    "mtPreTranslate": {
+      "enabled": true,
+      "mts": [
+        {
+          "mtId": 1,
+          "languageIds": [
+            "uk"
+          ]
+        }
+      ]
+    },
+    "aiPreTranslate": {
+      "enabled": true,
+      "aiPrompts": [
+        {
+          "aiPromptId": 1,
+          "languageIds": [
+            "uk"
+          ]
+        }
+      ]
+    },
+    "assistActionAiPromptId": 1,
+    "saveMetaInfoInSource": true,
+    "skipUntranslatedFiles": false,
+    "inContext": true,
+    "inContextProcessHiddenStrings": true,
+    "inContextPseudoLanguageId": "uk",
+    "inContextPseudoLanguage": {
+      "id": "uk",
+      "name": "Ukrainian",
+      "editorCode": "uk",
+      "twoLettersCode": "uk",
+      "threeLettersCode": "ukr",
+      "locale": "uk-UA",
+      "androidCode": "uk-rUA",
+      "osxCode": "uk.lproj",
+      "osxLocale": "uk",
+      "pluralCategoryNames": [
+        "one",
+        "few",
+        "many",
+        "other"
+      ],
+      "pluralRules": "((n%10==1 &amp;&amp; n%100!=11) ? 0 : ((n%10 &gt;= 2 &amp;&amp; n%10 &lt;=4 &amp;&amp; (n%100 &lt; 12 || n%100 &gt; 14)) ? 1 : ((n%10 == 0 || (n%10 &gt;= 5 &amp;&amp; n%10 &lt;=9)) || (n%100 &gt;= 11 &amp;&amp; n%100 &lt;= 14)) ? 2 : 3))",
+      "pluralExamples": [
+        "1, 21, 31, 41, 51, 61, 71, 81...",
+        "2-4, 22-24, 32-34, 42-44, 52-54, 62...",
+        "0, 5-19, 100, 1000, 10000...",
+        "0.0-0.9, 1.1-1.6, 10.0, 100.0..."
+      ],
+      "textDirection": "ltr",
+      "dialectOf": null
+    },
+    "tmContextType": "segmentContext"
+  }
+}</value>
+    </data>
 </root>
