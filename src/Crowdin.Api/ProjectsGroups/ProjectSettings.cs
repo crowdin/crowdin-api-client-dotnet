@@ -1,8 +1,11 @@
 ﻿
 using System.Collections.Generic;
-using Crowdin.Api.Languages;
+
 using JetBrains.Annotations;
 using Newtonsoft.Json;
+
+using Crowdin.Api.Core.Converters;
+using Crowdin.Api.Languages;
 
 namespace Crowdin.Api.ProjectsGroups
 {
@@ -110,6 +113,7 @@ namespace Crowdin.Api.ProjectsGroups
         public int[] AssignedGlossaries { get; set; }
         
         [JsonProperty("tmPenalties")]
+        [JsonConverter(typeof(EmptyArrayAsObjectConverter))]
         public TmPenalties TmPenalties { get; set; }
     }
 }
