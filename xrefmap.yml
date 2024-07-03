@@ -19143,6 +19143,25 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Reports.CostEstimationPostEditingGenerateReportRequest.SchemaBase.Unit
   nameWithType: CostEstimationPostEditingGenerateReportRequest.SchemaBase.Unit
+- uid: Crowdin.Api.Reports.ExportReportArchiveRequest
+  name: ExportReportArchiveRequest
+  href: api/Crowdin.Api.Reports.ExportReportArchiveRequest.html
+  commentId: T:Crowdin.Api.Reports.ExportReportArchiveRequest
+  fullName: Crowdin.Api.Reports.ExportReportArchiveRequest
+  nameWithType: ExportReportArchiveRequest
+- uid: Crowdin.Api.Reports.ExportReportArchiveRequest.Format
+  name: Format
+  href: api/Crowdin.Api.Reports.ExportReportArchiveRequest.html#Crowdin_Api_Reports_ExportReportArchiveRequest_Format
+  commentId: P:Crowdin.Api.Reports.ExportReportArchiveRequest.Format
+  fullName: Crowdin.Api.Reports.ExportReportArchiveRequest.Format
+  nameWithType: ExportReportArchiveRequest.Format
+- uid: Crowdin.Api.Reports.ExportReportArchiveRequest.Format*
+  name: Format
+  href: api/Crowdin.Api.Reports.ExportReportArchiveRequest.html#Crowdin_Api_Reports_ExportReportArchiveRequest_Format_
+  commentId: Overload:Crowdin.Api.Reports.ExportReportArchiveRequest.Format
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ExportReportArchiveRequest.Format
+  nameWithType: ExportReportArchiveRequest.Format
 - uid: Crowdin.Api.Reports.GenerateGroupReportRequest
   name: GenerateGroupReportRequest
   href: api/Crowdin.Api.Reports.GenerateGroupReportRequest.html
@@ -20041,6 +20060,116 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Reports.ReportApprovalRate.Value
   nameWithType: ReportApprovalRate.Value
+- uid: Crowdin.Api.Reports.ReportArchive
+  name: ReportArchive
+  href: api/Crowdin.Api.Reports.ReportArchive.html
+  commentId: T:Crowdin.Api.Reports.ReportArchive
+  fullName: Crowdin.Api.Reports.ReportArchive
+  nameWithType: ReportArchive
+- uid: Crowdin.Api.Reports.ReportArchive.CreatedAt
+  name: CreatedAt
+  href: api/Crowdin.Api.Reports.ReportArchive.html#Crowdin_Api_Reports_ReportArchive_CreatedAt
+  commentId: P:Crowdin.Api.Reports.ReportArchive.CreatedAt
+  fullName: Crowdin.Api.Reports.ReportArchive.CreatedAt
+  nameWithType: ReportArchive.CreatedAt
+- uid: Crowdin.Api.Reports.ReportArchive.CreatedAt*
+  name: CreatedAt
+  href: api/Crowdin.Api.Reports.ReportArchive.html#Crowdin_Api_Reports_ReportArchive_CreatedAt_
+  commentId: Overload:Crowdin.Api.Reports.ReportArchive.CreatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ReportArchive.CreatedAt
+  nameWithType: ReportArchive.CreatedAt
+- uid: Crowdin.Api.Reports.ReportArchive.Id
+  name: Id
+  href: api/Crowdin.Api.Reports.ReportArchive.html#Crowdin_Api_Reports_ReportArchive_Id
+  commentId: P:Crowdin.Api.Reports.ReportArchive.Id
+  fullName: Crowdin.Api.Reports.ReportArchive.Id
+  nameWithType: ReportArchive.Id
+- uid: Crowdin.Api.Reports.ReportArchive.Id*
+  name: Id
+  href: api/Crowdin.Api.Reports.ReportArchive.html#Crowdin_Api_Reports_ReportArchive_Id_
+  commentId: Overload:Crowdin.Api.Reports.ReportArchive.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ReportArchive.Id
+  nameWithType: ReportArchive.Id
+- uid: Crowdin.Api.Reports.ReportArchive.Name
+  name: Name
+  href: api/Crowdin.Api.Reports.ReportArchive.html#Crowdin_Api_Reports_ReportArchive_Name
+  commentId: P:Crowdin.Api.Reports.ReportArchive.Name
+  fullName: Crowdin.Api.Reports.ReportArchive.Name
+  nameWithType: ReportArchive.Name
+- uid: Crowdin.Api.Reports.ReportArchive.Name*
+  name: Name
+  href: api/Crowdin.Api.Reports.ReportArchive.html#Crowdin_Api_Reports_ReportArchive_Name_
+  commentId: Overload:Crowdin.Api.Reports.ReportArchive.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ReportArchive.Name
+  nameWithType: ReportArchive.Name
+- uid: Crowdin.Api.Reports.ReportArchive.Scheme
+  name: Scheme
+  href: api/Crowdin.Api.Reports.ReportArchive.html#Crowdin_Api_Reports_ReportArchive_Scheme
+  commentId: P:Crowdin.Api.Reports.ReportArchive.Scheme
+  fullName: Crowdin.Api.Reports.ReportArchive.Scheme
+  nameWithType: ReportArchive.Scheme
+- uid: Crowdin.Api.Reports.ReportArchive.Scheme*
+  name: Scheme
+  href: api/Crowdin.Api.Reports.ReportArchive.html#Crowdin_Api_Reports_ReportArchive_Scheme_
+  commentId: Overload:Crowdin.Api.Reports.ReportArchive.Scheme
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ReportArchive.Scheme
+  nameWithType: ReportArchive.Scheme
+- uid: Crowdin.Api.Reports.ReportArchive.ScopeId
+  name: ScopeId
+  href: api/Crowdin.Api.Reports.ReportArchive.html#Crowdin_Api_Reports_ReportArchive_ScopeId
+  commentId: P:Crowdin.Api.Reports.ReportArchive.ScopeId
+  fullName: Crowdin.Api.Reports.ReportArchive.ScopeId
+  nameWithType: ReportArchive.ScopeId
+- uid: Crowdin.Api.Reports.ReportArchive.ScopeId*
+  name: ScopeId
+  href: api/Crowdin.Api.Reports.ReportArchive.html#Crowdin_Api_Reports_ReportArchive_ScopeId_
+  commentId: Overload:Crowdin.Api.Reports.ReportArchive.ScopeId
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ReportArchive.ScopeId
+  nameWithType: ReportArchive.ScopeId
+- uid: Crowdin.Api.Reports.ReportArchive.ScopeType
+  name: ScopeType
+  href: api/Crowdin.Api.Reports.ReportArchive.html#Crowdin_Api_Reports_ReportArchive_ScopeType
+  commentId: P:Crowdin.Api.Reports.ReportArchive.ScopeType
+  fullName: Crowdin.Api.Reports.ReportArchive.ScopeType
+  nameWithType: ReportArchive.ScopeType
+- uid: Crowdin.Api.Reports.ReportArchive.ScopeType*
+  name: ScopeType
+  href: api/Crowdin.Api.Reports.ReportArchive.html#Crowdin_Api_Reports_ReportArchive_ScopeType_
+  commentId: Overload:Crowdin.Api.Reports.ReportArchive.ScopeType
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ReportArchive.ScopeType
+  nameWithType: ReportArchive.ScopeType
+- uid: Crowdin.Api.Reports.ReportArchive.UserId
+  name: UserId
+  href: api/Crowdin.Api.Reports.ReportArchive.html#Crowdin_Api_Reports_ReportArchive_UserId
+  commentId: P:Crowdin.Api.Reports.ReportArchive.UserId
+  fullName: Crowdin.Api.Reports.ReportArchive.UserId
+  nameWithType: ReportArchive.UserId
+- uid: Crowdin.Api.Reports.ReportArchive.UserId*
+  name: UserId
+  href: api/Crowdin.Api.Reports.ReportArchive.html#Crowdin_Api_Reports_ReportArchive_UserId_
+  commentId: Overload:Crowdin.Api.Reports.ReportArchive.UserId
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ReportArchive.UserId
+  nameWithType: ReportArchive.UserId
+- uid: Crowdin.Api.Reports.ReportArchive.WebUrl
+  name: WebUrl
+  href: api/Crowdin.Api.Reports.ReportArchive.html#Crowdin_Api_Reports_ReportArchive_WebUrl
+  commentId: P:Crowdin.Api.Reports.ReportArchive.WebUrl
+  fullName: Crowdin.Api.Reports.ReportArchive.WebUrl
+  nameWithType: ReportArchive.WebUrl
+- uid: Crowdin.Api.Reports.ReportArchive.WebUrl*
+  name: WebUrl
+  href: api/Crowdin.Api.Reports.ReportArchive.html#Crowdin_Api_Reports_ReportArchive_WebUrl_
+  commentId: Overload:Crowdin.Api.Reports.ReportArchive.WebUrl
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ReportArchive.WebUrl
+  nameWithType: ReportArchive.WebUrl
 - uid: Crowdin.Api.Reports.ReportCreateForm
   name: ReportCreateForm
   href: api/Crowdin.Api.Reports.ReportCreateForm.html
@@ -20529,6 +20658,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Reports.ReportsApiExecutor.CheckOrganizationReportGenerationStatus
   nameWithType: ReportsApiExecutor.CheckOrganizationReportGenerationStatus
+- uid: Crowdin.Api.Reports.ReportsApiExecutor.CheckReportArchiveExportStatus(System.Nullable{System.Int32},System.Int32,System.String)
+  name: CheckReportArchiveExportStatus(Nullable<Int32>, Int32, String)
+  href: api/Crowdin.Api.Reports.ReportsApiExecutor.html#Crowdin_Api_Reports_ReportsApiExecutor_CheckReportArchiveExportStatus_System_Nullable_System_Int32__System_Int32_System_String_
+  commentId: M:Crowdin.Api.Reports.ReportsApiExecutor.CheckReportArchiveExportStatus(System.Nullable{System.Int32},System.Int32,System.String)
+  name.vb: CheckReportArchiveExportStatus(Nullable(Of Int32), Int32, String)
+  fullName: Crowdin.Api.Reports.ReportsApiExecutor.CheckReportArchiveExportStatus(System.Nullable<System.Int32>, System.Int32, System.String)
+  fullName.vb: Crowdin.Api.Reports.ReportsApiExecutor.CheckReportArchiveExportStatus(System.Nullable(Of System.Int32), System.Int32, System.String)
+  nameWithType: ReportsApiExecutor.CheckReportArchiveExportStatus(Nullable<Int32>, Int32, String)
+  nameWithType.vb: ReportsApiExecutor.CheckReportArchiveExportStatus(Nullable(Of Int32), Int32, String)
+- uid: Crowdin.Api.Reports.ReportsApiExecutor.CheckReportArchiveExportStatus*
+  name: CheckReportArchiveExportStatus
+  href: api/Crowdin.Api.Reports.ReportsApiExecutor.html#Crowdin_Api_Reports_ReportsApiExecutor_CheckReportArchiveExportStatus_
+  commentId: Overload:Crowdin.Api.Reports.ReportsApiExecutor.CheckReportArchiveExportStatus
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ReportsApiExecutor.CheckReportArchiveExportStatus
+  nameWithType: ReportsApiExecutor.CheckReportArchiveExportStatus
 - uid: Crowdin.Api.Reports.ReportsApiExecutor.CheckReportGenerationStatus(System.Int32,System.String)
   name: CheckReportGenerationStatus(Int32, String)
   href: api/Crowdin.Api.Reports.ReportsApiExecutor.html#Crowdin_Api_Reports_ReportsApiExecutor_CheckReportGenerationStatus_System_Int32_System_String_
@@ -20542,6 +20687,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Reports.ReportsApiExecutor.CheckReportGenerationStatus
   nameWithType: ReportsApiExecutor.CheckReportGenerationStatus
+- uid: Crowdin.Api.Reports.ReportsApiExecutor.DeleteReportArchive(System.Nullable{System.Int32},System.Int32)
+  name: DeleteReportArchive(Nullable<Int32>, Int32)
+  href: api/Crowdin.Api.Reports.ReportsApiExecutor.html#Crowdin_Api_Reports_ReportsApiExecutor_DeleteReportArchive_System_Nullable_System_Int32__System_Int32_
+  commentId: M:Crowdin.Api.Reports.ReportsApiExecutor.DeleteReportArchive(System.Nullable{System.Int32},System.Int32)
+  name.vb: DeleteReportArchive(Nullable(Of Int32), Int32)
+  fullName: Crowdin.Api.Reports.ReportsApiExecutor.DeleteReportArchive(System.Nullable<System.Int32>, System.Int32)
+  fullName.vb: Crowdin.Api.Reports.ReportsApiExecutor.DeleteReportArchive(System.Nullable(Of System.Int32), System.Int32)
+  nameWithType: ReportsApiExecutor.DeleteReportArchive(Nullable<Int32>, Int32)
+  nameWithType.vb: ReportsApiExecutor.DeleteReportArchive(Nullable(Of Int32), Int32)
+- uid: Crowdin.Api.Reports.ReportsApiExecutor.DeleteReportArchive*
+  name: DeleteReportArchive
+  href: api/Crowdin.Api.Reports.ReportsApiExecutor.html#Crowdin_Api_Reports_ReportsApiExecutor_DeleteReportArchive_
+  commentId: Overload:Crowdin.Api.Reports.ReportsApiExecutor.DeleteReportArchive
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ReportsApiExecutor.DeleteReportArchive
+  nameWithType: ReportsApiExecutor.DeleteReportArchive
 - uid: Crowdin.Api.Reports.ReportsApiExecutor.DeleteReportSettingsTemplate(System.Int32,System.Int32)
   name: DeleteReportSettingsTemplate(Int32, Int32)
   href: api/Crowdin.Api.Reports.ReportsApiExecutor.html#Crowdin_Api_Reports_ReportsApiExecutor_DeleteReportSettingsTemplate_System_Int32_System_Int32_
@@ -20594,6 +20755,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Reports.ReportsApiExecutor.DownloadReport
   nameWithType: ReportsApiExecutor.DownloadReport
+- uid: Crowdin.Api.Reports.ReportsApiExecutor.DownloadReportArchive(System.Nullable{System.Int32},System.Int32,System.String)
+  name: DownloadReportArchive(Nullable<Int32>, Int32, String)
+  href: api/Crowdin.Api.Reports.ReportsApiExecutor.html#Crowdin_Api_Reports_ReportsApiExecutor_DownloadReportArchive_System_Nullable_System_Int32__System_Int32_System_String_
+  commentId: M:Crowdin.Api.Reports.ReportsApiExecutor.DownloadReportArchive(System.Nullable{System.Int32},System.Int32,System.String)
+  name.vb: DownloadReportArchive(Nullable(Of Int32), Int32, String)
+  fullName: Crowdin.Api.Reports.ReportsApiExecutor.DownloadReportArchive(System.Nullable<System.Int32>, System.Int32, System.String)
+  fullName.vb: Crowdin.Api.Reports.ReportsApiExecutor.DownloadReportArchive(System.Nullable(Of System.Int32), System.Int32, System.String)
+  nameWithType: ReportsApiExecutor.DownloadReportArchive(Nullable<Int32>, Int32, String)
+  nameWithType.vb: ReportsApiExecutor.DownloadReportArchive(Nullable(Of Int32), Int32, String)
+- uid: Crowdin.Api.Reports.ReportsApiExecutor.DownloadReportArchive*
+  name: DownloadReportArchive
+  href: api/Crowdin.Api.Reports.ReportsApiExecutor.html#Crowdin_Api_Reports_ReportsApiExecutor_DownloadReportArchive_
+  commentId: Overload:Crowdin.Api.Reports.ReportsApiExecutor.DownloadReportArchive
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ReportsApiExecutor.DownloadReportArchive
+  nameWithType: ReportsApiExecutor.DownloadReportArchive
 - uid: Crowdin.Api.Reports.ReportsApiExecutor.EditReportSettingsTemplate(System.Int32,System.Int32,IEnumerable{Crowdin.Api.Reports.ReportSettingsTemplatePatch})
   name: EditReportSettingsTemplate(Int32, Int32, IEnumerable<ReportSettingsTemplatePatch>)
   href: api/Crowdin.Api.Reports.ReportsApiExecutor.html#Crowdin_Api_Reports_ReportsApiExecutor_EditReportSettingsTemplate_System_Int32_System_Int32_IEnumerable_Crowdin_Api_Reports_ReportSettingsTemplatePatch__
@@ -20610,6 +20787,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Reports.ReportsApiExecutor.EditReportSettingsTemplate
   nameWithType: ReportsApiExecutor.EditReportSettingsTemplate
+- uid: Crowdin.Api.Reports.ReportsApiExecutor.ExportReportArchive(System.Nullable{System.Int32},System.Int32,Crowdin.Api.Reports.ExportReportArchiveRequest)
+  name: ExportReportArchive(Nullable<Int32>, Int32, ExportReportArchiveRequest)
+  href: api/Crowdin.Api.Reports.ReportsApiExecutor.html#Crowdin_Api_Reports_ReportsApiExecutor_ExportReportArchive_System_Nullable_System_Int32__System_Int32_Crowdin_Api_Reports_ExportReportArchiveRequest_
+  commentId: M:Crowdin.Api.Reports.ReportsApiExecutor.ExportReportArchive(System.Nullable{System.Int32},System.Int32,Crowdin.Api.Reports.ExportReportArchiveRequest)
+  name.vb: ExportReportArchive(Nullable(Of Int32), Int32, ExportReportArchiveRequest)
+  fullName: Crowdin.Api.Reports.ReportsApiExecutor.ExportReportArchive(System.Nullable<System.Int32>, System.Int32, Crowdin.Api.Reports.ExportReportArchiveRequest)
+  fullName.vb: Crowdin.Api.Reports.ReportsApiExecutor.ExportReportArchive(System.Nullable(Of System.Int32), System.Int32, Crowdin.Api.Reports.ExportReportArchiveRequest)
+  nameWithType: ReportsApiExecutor.ExportReportArchive(Nullable<Int32>, Int32, ExportReportArchiveRequest)
+  nameWithType.vb: ReportsApiExecutor.ExportReportArchive(Nullable(Of Int32), Int32, ExportReportArchiveRequest)
+- uid: Crowdin.Api.Reports.ReportsApiExecutor.ExportReportArchive*
+  name: ExportReportArchive
+  href: api/Crowdin.Api.Reports.ReportsApiExecutor.html#Crowdin_Api_Reports_ReportsApiExecutor_ExportReportArchive_
+  commentId: Overload:Crowdin.Api.Reports.ReportsApiExecutor.ExportReportArchive
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ReportsApiExecutor.ExportReportArchive
+  nameWithType: ReportsApiExecutor.ExportReportArchive
 - uid: Crowdin.Api.Reports.ReportsApiExecutor.GenerateGroupReport(System.Int32,Crowdin.Api.Reports.GenerateGroupReportRequest)
   name: GenerateGroupReport(Int32, GenerateGroupReportRequest)
   href: api/Crowdin.Api.Reports.ReportsApiExecutor.html#Crowdin_Api_Reports_ReportsApiExecutor_GenerateGroupReport_System_Int32_Crowdin_Api_Reports_GenerateGroupReportRequest_
@@ -20649,6 +20842,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Reports.ReportsApiExecutor.GenerateReport
   nameWithType: ReportsApiExecutor.GenerateReport
+- uid: Crowdin.Api.Reports.ReportsApiExecutor.GetReportArchive(System.Nullable{System.Int32},System.Int32)
+  name: GetReportArchive(Nullable<Int32>, Int32)
+  href: api/Crowdin.Api.Reports.ReportsApiExecutor.html#Crowdin_Api_Reports_ReportsApiExecutor_GetReportArchive_System_Nullable_System_Int32__System_Int32_
+  commentId: M:Crowdin.Api.Reports.ReportsApiExecutor.GetReportArchive(System.Nullable{System.Int32},System.Int32)
+  name.vb: GetReportArchive(Nullable(Of Int32), Int32)
+  fullName: Crowdin.Api.Reports.ReportsApiExecutor.GetReportArchive(System.Nullable<System.Int32>, System.Int32)
+  fullName.vb: Crowdin.Api.Reports.ReportsApiExecutor.GetReportArchive(System.Nullable(Of System.Int32), System.Int32)
+  nameWithType: ReportsApiExecutor.GetReportArchive(Nullable<Int32>, Int32)
+  nameWithType.vb: ReportsApiExecutor.GetReportArchive(Nullable(Of Int32), Int32)
+- uid: Crowdin.Api.Reports.ReportsApiExecutor.GetReportArchive*
+  name: GetReportArchive
+  href: api/Crowdin.Api.Reports.ReportsApiExecutor.html#Crowdin_Api_Reports_ReportsApiExecutor_GetReportArchive_
+  commentId: Overload:Crowdin.Api.Reports.ReportsApiExecutor.GetReportArchive
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ReportsApiExecutor.GetReportArchive
+  nameWithType: ReportsApiExecutor.GetReportArchive
 - uid: Crowdin.Api.Reports.ReportsApiExecutor.GetReportSettingsTemplate(System.Int32,System.Int32)
   name: GetReportSettingsTemplate(Int32, Int32)
   href: api/Crowdin.Api.Reports.ReportsApiExecutor.html#Crowdin_Api_Reports_ReportsApiExecutor_GetReportSettingsTemplate_System_Int32_System_Int32_
@@ -20662,6 +20871,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Reports.ReportsApiExecutor.GetReportSettingsTemplate
   nameWithType: ReportsApiExecutor.GetReportSettingsTemplate
+- uid: Crowdin.Api.Reports.ReportsApiExecutor.ListReportArchives(System.Nullable{System.Int32},System.Nullable{Crowdin.Api.Reports.ScopeType},System.Nullable{System.Int32},System.Int32,System.Int32)
+  name: ListReportArchives(Nullable<Int32>, Nullable<ScopeType>, Nullable<Int32>, Int32, Int32)
+  href: api/Crowdin.Api.Reports.ReportsApiExecutor.html#Crowdin_Api_Reports_ReportsApiExecutor_ListReportArchives_System_Nullable_System_Int32__System_Nullable_Crowdin_Api_Reports_ScopeType__System_Nullable_System_Int32__System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.Reports.ReportsApiExecutor.ListReportArchives(System.Nullable{System.Int32},System.Nullable{Crowdin.Api.Reports.ScopeType},System.Nullable{System.Int32},System.Int32,System.Int32)
+  name.vb: ListReportArchives(Nullable(Of Int32), Nullable(Of ScopeType), Nullable(Of Int32), Int32, Int32)
+  fullName: Crowdin.Api.Reports.ReportsApiExecutor.ListReportArchives(System.Nullable<System.Int32>, System.Nullable<Crowdin.Api.Reports.ScopeType>, System.Nullable<System.Int32>, System.Int32, System.Int32)
+  fullName.vb: Crowdin.Api.Reports.ReportsApiExecutor.ListReportArchives(System.Nullable(Of System.Int32), System.Nullable(Of Crowdin.Api.Reports.ScopeType), System.Nullable(Of System.Int32), System.Int32, System.Int32)
+  nameWithType: ReportsApiExecutor.ListReportArchives(Nullable<Int32>, Nullable<ScopeType>, Nullable<Int32>, Int32, Int32)
+  nameWithType.vb: ReportsApiExecutor.ListReportArchives(Nullable(Of Int32), Nullable(Of ScopeType), Nullable(Of Int32), Int32, Int32)
+- uid: Crowdin.Api.Reports.ReportsApiExecutor.ListReportArchives*
+  name: ListReportArchives
+  href: api/Crowdin.Api.Reports.ReportsApiExecutor.html#Crowdin_Api_Reports_ReportsApiExecutor_ListReportArchives_
+  commentId: Overload:Crowdin.Api.Reports.ReportsApiExecutor.ListReportArchives
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ReportsApiExecutor.ListReportArchives
+  nameWithType: ReportsApiExecutor.ListReportArchives
 - uid: Crowdin.Api.Reports.ReportsApiExecutor.ListReportSettingsTemplates(System.Int32,System.Int32,System.Int32)
   name: ListReportSettingsTemplates(Int32, Int32, Int32)
   href: api/Crowdin.Api.Reports.ReportsApiExecutor.html#Crowdin_Api_Reports_ReportsApiExecutor_ListReportSettingsTemplates_System_Int32_System_Int32_System_Int32_
@@ -21384,6 +21609,18 @@ references:
   commentId: F:Crowdin.Api.Reports.ReportUnit.Words
   fullName: Crowdin.Api.Reports.ReportUnit.Words
   nameWithType: ReportUnit.Words
+- uid: Crowdin.Api.Reports.ScopeType
+  name: ScopeType
+  href: api/Crowdin.Api.Reports.ScopeType.html
+  commentId: T:Crowdin.Api.Reports.ScopeType
+  fullName: Crowdin.Api.Reports.ScopeType
+  nameWithType: ScopeType
+- uid: Crowdin.Api.Reports.ScopeType.Project
+  name: Project
+  href: api/Crowdin.Api.Reports.ScopeType.html#Crowdin_Api_Reports_ScopeType_Project
+  commentId: F:Crowdin.Api.Reports.ScopeType.Project
+  fullName: Crowdin.Api.Reports.ScopeType.Project
+  nameWithType: ScopeType.Project
 - uid: Crowdin.Api.Reports.TopMembersGenerateReportRequest
   name: TopMembersGenerateReportRequest
   href: api/Crowdin.Api.Reports.TopMembersGenerateReportRequest.html
@@ -28563,12 +28800,12 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Storage.StorageApiExecutor.AddStorage
   nameWithType: StorageApiExecutor.AddStorage
-- uid: Crowdin.Api.Storage.StorageApiExecutor.DeleteStorage(System.Int32)
-  name: DeleteStorage(Int32)
-  href: api/Crowdin.Api.Storage.StorageApiExecutor.html#Crowdin_Api_Storage_StorageApiExecutor_DeleteStorage_System_Int32_
-  commentId: M:Crowdin.Api.Storage.StorageApiExecutor.DeleteStorage(System.Int32)
-  fullName: Crowdin.Api.Storage.StorageApiExecutor.DeleteStorage(System.Int32)
-  nameWithType: StorageApiExecutor.DeleteStorage(Int32)
+- uid: Crowdin.Api.Storage.StorageApiExecutor.DeleteStorage(System.Int64)
+  name: DeleteStorage(Int64)
+  href: api/Crowdin.Api.Storage.StorageApiExecutor.html#Crowdin_Api_Storage_StorageApiExecutor_DeleteStorage_System_Int64_
+  commentId: M:Crowdin.Api.Storage.StorageApiExecutor.DeleteStorage(System.Int64)
+  fullName: Crowdin.Api.Storage.StorageApiExecutor.DeleteStorage(System.Int64)
+  nameWithType: StorageApiExecutor.DeleteStorage(Int64)
 - uid: Crowdin.Api.Storage.StorageApiExecutor.DeleteStorage*
   name: DeleteStorage
   href: api/Crowdin.Api.Storage.StorageApiExecutor.html#Crowdin_Api_Storage_StorageApiExecutor_DeleteStorage_
@@ -28576,12 +28813,12 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Storage.StorageApiExecutor.DeleteStorage
   nameWithType: StorageApiExecutor.DeleteStorage
-- uid: Crowdin.Api.Storage.StorageApiExecutor.GetStorage(System.Int32)
-  name: GetStorage(Int32)
-  href: api/Crowdin.Api.Storage.StorageApiExecutor.html#Crowdin_Api_Storage_StorageApiExecutor_GetStorage_System_Int32_
-  commentId: M:Crowdin.Api.Storage.StorageApiExecutor.GetStorage(System.Int32)
-  fullName: Crowdin.Api.Storage.StorageApiExecutor.GetStorage(System.Int32)
-  nameWithType: StorageApiExecutor.GetStorage(Int32)
+- uid: Crowdin.Api.Storage.StorageApiExecutor.GetStorage(System.Int64)
+  name: GetStorage(Int64)
+  href: api/Crowdin.Api.Storage.StorageApiExecutor.html#Crowdin_Api_Storage_StorageApiExecutor_GetStorage_System_Int64_
+  commentId: M:Crowdin.Api.Storage.StorageApiExecutor.GetStorage(System.Int64)
+  fullName: Crowdin.Api.Storage.StorageApiExecutor.GetStorage(System.Int64)
+  nameWithType: StorageApiExecutor.GetStorage(Int64)
 - uid: Crowdin.Api.Storage.StorageApiExecutor.GetStorage*
   name: GetStorage
   href: api/Crowdin.Api.Storage.StorageApiExecutor.html#Crowdin_Api_Storage_StorageApiExecutor_GetStorage_
@@ -31216,6 +31453,103 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.AddTaskSettingsTemplate.Name
   nameWithType: AddTaskSettingsTemplate.Name
+- uid: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm
+  name: EnterprisePendingTaskCreateForm
+  href: api/Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.html
+  commentId: T:Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm
+  fullName: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm
+  nameWithType: EnterprisePendingTaskCreateForm
+- uid: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.AssignedTeams
+  name: AssignedTeams
+  href: api/Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.html#Crowdin_Api_Tasks_EnterprisePendingTaskCreateForm_AssignedTeams
+  commentId: P:Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.AssignedTeams
+  fullName: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.AssignedTeams
+  nameWithType: EnterprisePendingTaskCreateForm.AssignedTeams
+- uid: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.AssignedTeams*
+  name: AssignedTeams
+  href: api/Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.html#Crowdin_Api_Tasks_EnterprisePendingTaskCreateForm_AssignedTeams_
+  commentId: Overload:Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.AssignedTeams
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.AssignedTeams
+  nameWithType: EnterprisePendingTaskCreateForm.AssignedTeams
+- uid: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Assignees
+  name: Assignees
+  href: api/Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.html#Crowdin_Api_Tasks_EnterprisePendingTaskCreateForm_Assignees
+  commentId: P:Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Assignees
+  fullName: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Assignees
+  nameWithType: EnterprisePendingTaskCreateForm.Assignees
+- uid: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Assignees*
+  name: Assignees
+  href: api/Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.html#Crowdin_Api_Tasks_EnterprisePendingTaskCreateForm_Assignees_
+  commentId: Overload:Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Assignees
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Assignees
+  nameWithType: EnterprisePendingTaskCreateForm.Assignees
+- uid: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.DeadLine
+  name: DeadLine
+  href: api/Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.html#Crowdin_Api_Tasks_EnterprisePendingTaskCreateForm_DeadLine
+  commentId: P:Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.DeadLine
+  fullName: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.DeadLine
+  nameWithType: EnterprisePendingTaskCreateForm.DeadLine
+- uid: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.DeadLine*
+  name: DeadLine
+  href: api/Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.html#Crowdin_Api_Tasks_EnterprisePendingTaskCreateForm_DeadLine_
+  commentId: Overload:Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.DeadLine
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.DeadLine
+  nameWithType: EnterprisePendingTaskCreateForm.DeadLine
+- uid: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Description
+  name: Description
+  href: api/Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.html#Crowdin_Api_Tasks_EnterprisePendingTaskCreateForm_Description
+  commentId: P:Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Description
+  fullName: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Description
+  nameWithType: EnterprisePendingTaskCreateForm.Description
+- uid: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Description*
+  name: Description
+  href: api/Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.html#Crowdin_Api_Tasks_EnterprisePendingTaskCreateForm_Description_
+  commentId: Overload:Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Description
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Description
+  nameWithType: EnterprisePendingTaskCreateForm.Description
+- uid: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.PrecedingTaskId
+  name: PrecedingTaskId
+  href: api/Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.html#Crowdin_Api_Tasks_EnterprisePendingTaskCreateForm_PrecedingTaskId
+  commentId: P:Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.PrecedingTaskId
+  fullName: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.PrecedingTaskId
+  nameWithType: EnterprisePendingTaskCreateForm.PrecedingTaskId
+- uid: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.PrecedingTaskId*
+  name: PrecedingTaskId
+  href: api/Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.html#Crowdin_Api_Tasks_EnterprisePendingTaskCreateForm_PrecedingTaskId_
+  commentId: Overload:Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.PrecedingTaskId
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.PrecedingTaskId
+  nameWithType: EnterprisePendingTaskCreateForm.PrecedingTaskId
+- uid: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Title
+  name: Title
+  href: api/Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.html#Crowdin_Api_Tasks_EnterprisePendingTaskCreateForm_Title
+  commentId: P:Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Title
+  fullName: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Title
+  nameWithType: EnterprisePendingTaskCreateForm.Title
+- uid: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Title*
+  name: Title
+  href: api/Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.html#Crowdin_Api_Tasks_EnterprisePendingTaskCreateForm_Title_
+  commentId: Overload:Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Title
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Title
+  nameWithType: EnterprisePendingTaskCreateForm.Title
+- uid: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Type
+  name: Type
+  href: api/Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.html#Crowdin_Api_Tasks_EnterprisePendingTaskCreateForm_Type
+  commentId: P:Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Type
+  fullName: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Type
+  nameWithType: EnterprisePendingTaskCreateForm.Type
+- uid: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Type*
+  name: Type
+  href: api/Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.html#Crowdin_Api_Tasks_EnterprisePendingTaskCreateForm_Type_
+  commentId: Overload:Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Type
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.EnterprisePendingTaskCreateForm.Type
+  nameWithType: EnterprisePendingTaskCreateForm.Type
 - uid: Crowdin.Api.Tasks.EnterpriseTaskCreateForm
   name: EnterpriseTaskCreateForm
   href: api/Crowdin.Api.Tasks.EnterpriseTaskCreateForm.html
@@ -31436,6 +31770,90 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.LanguageReference.UserIds
   nameWithType: LanguageReference.UserIds
+- uid: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm
+  name: LanguageServicePendingTaskCreateForm
+  href: api/Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.html
+  commentId: T:Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm
+  fullName: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm
+  nameWithType: LanguageServicePendingTaskCreateForm
+- uid: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.DeadLine
+  name: DeadLine
+  href: api/Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.html#Crowdin_Api_Tasks_LanguageServicePendingTaskCreateForm_DeadLine
+  commentId: P:Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.DeadLine
+  fullName: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.DeadLine
+  nameWithType: LanguageServicePendingTaskCreateForm.DeadLine
+- uid: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.DeadLine*
+  name: DeadLine
+  href: api/Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.html#Crowdin_Api_Tasks_LanguageServicePendingTaskCreateForm_DeadLine_
+  commentId: Overload:Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.DeadLine
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.DeadLine
+  nameWithType: LanguageServicePendingTaskCreateForm.DeadLine
+- uid: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Description
+  name: Description
+  href: api/Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.html#Crowdin_Api_Tasks_LanguageServicePendingTaskCreateForm_Description
+  commentId: P:Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Description
+  fullName: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Description
+  nameWithType: LanguageServicePendingTaskCreateForm.Description
+- uid: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Description*
+  name: Description
+  href: api/Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.html#Crowdin_Api_Tasks_LanguageServicePendingTaskCreateForm_Description_
+  commentId: Overload:Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Description
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Description
+  nameWithType: LanguageServicePendingTaskCreateForm.Description
+- uid: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.PrecedingTaskId
+  name: PrecedingTaskId
+  href: api/Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.html#Crowdin_Api_Tasks_LanguageServicePendingTaskCreateForm_PrecedingTaskId
+  commentId: P:Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.PrecedingTaskId
+  fullName: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.PrecedingTaskId
+  nameWithType: LanguageServicePendingTaskCreateForm.PrecedingTaskId
+- uid: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.PrecedingTaskId*
+  name: PrecedingTaskId
+  href: api/Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.html#Crowdin_Api_Tasks_LanguageServicePendingTaskCreateForm_PrecedingTaskId_
+  commentId: Overload:Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.PrecedingTaskId
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.PrecedingTaskId
+  nameWithType: LanguageServicePendingTaskCreateForm.PrecedingTaskId
+- uid: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Title
+  name: Title
+  href: api/Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.html#Crowdin_Api_Tasks_LanguageServicePendingTaskCreateForm_Title
+  commentId: P:Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Title
+  fullName: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Title
+  nameWithType: LanguageServicePendingTaskCreateForm.Title
+- uid: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Title*
+  name: Title
+  href: api/Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.html#Crowdin_Api_Tasks_LanguageServicePendingTaskCreateForm_Title_
+  commentId: Overload:Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Title
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Title
+  nameWithType: LanguageServicePendingTaskCreateForm.Title
+- uid: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Type
+  name: Type
+  href: api/Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.html#Crowdin_Api_Tasks_LanguageServicePendingTaskCreateForm_Type
+  commentId: P:Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Type
+  fullName: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Type
+  nameWithType: LanguageServicePendingTaskCreateForm.Type
+- uid: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Type*
+  name: Type
+  href: api/Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.html#Crowdin_Api_Tasks_LanguageServicePendingTaskCreateForm_Type_
+  commentId: Overload:Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Type
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Type
+  nameWithType: LanguageServicePendingTaskCreateForm.Type
+- uid: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Vendor
+  name: Vendor
+  href: api/Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.html#Crowdin_Api_Tasks_LanguageServicePendingTaskCreateForm_Vendor
+  commentId: P:Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Vendor
+  fullName: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Vendor
+  nameWithType: LanguageServicePendingTaskCreateForm.Vendor
+- uid: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Vendor*
+  name: Vendor
+  href: api/Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.html#Crowdin_Api_Tasks_LanguageServicePendingTaskCreateForm_Vendor_
+  commentId: Overload:Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Vendor
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.LanguageServicePendingTaskCreateForm.Vendor
+  nameWithType: LanguageServicePendingTaskCreateForm.Vendor
 - uid: Crowdin.Api.Tasks.LanguageServiceTaskCreateForm
   name: LanguageServiceTaskCreateForm
   href: api/Crowdin.Api.Tasks.LanguageServiceTaskCreateForm.html
@@ -31624,6 +32042,90 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.LanguageServiceTaskCreateForm.Vendor
   nameWithType: LanguageServiceTaskCreateForm.Vendor
+- uid: Crowdin.Api.Tasks.PendingTaskCreateForm
+  name: PendingTaskCreateForm
+  href: api/Crowdin.Api.Tasks.PendingTaskCreateForm.html
+  commentId: T:Crowdin.Api.Tasks.PendingTaskCreateForm
+  fullName: Crowdin.Api.Tasks.PendingTaskCreateForm
+  nameWithType: PendingTaskCreateForm
+- uid: Crowdin.Api.Tasks.PendingTaskCreateForm.Assignees
+  name: Assignees
+  href: api/Crowdin.Api.Tasks.PendingTaskCreateForm.html#Crowdin_Api_Tasks_PendingTaskCreateForm_Assignees
+  commentId: P:Crowdin.Api.Tasks.PendingTaskCreateForm.Assignees
+  fullName: Crowdin.Api.Tasks.PendingTaskCreateForm.Assignees
+  nameWithType: PendingTaskCreateForm.Assignees
+- uid: Crowdin.Api.Tasks.PendingTaskCreateForm.Assignees*
+  name: Assignees
+  href: api/Crowdin.Api.Tasks.PendingTaskCreateForm.html#Crowdin_Api_Tasks_PendingTaskCreateForm_Assignees_
+  commentId: Overload:Crowdin.Api.Tasks.PendingTaskCreateForm.Assignees
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.PendingTaskCreateForm.Assignees
+  nameWithType: PendingTaskCreateForm.Assignees
+- uid: Crowdin.Api.Tasks.PendingTaskCreateForm.DeadLine
+  name: DeadLine
+  href: api/Crowdin.Api.Tasks.PendingTaskCreateForm.html#Crowdin_Api_Tasks_PendingTaskCreateForm_DeadLine
+  commentId: P:Crowdin.Api.Tasks.PendingTaskCreateForm.DeadLine
+  fullName: Crowdin.Api.Tasks.PendingTaskCreateForm.DeadLine
+  nameWithType: PendingTaskCreateForm.DeadLine
+- uid: Crowdin.Api.Tasks.PendingTaskCreateForm.DeadLine*
+  name: DeadLine
+  href: api/Crowdin.Api.Tasks.PendingTaskCreateForm.html#Crowdin_Api_Tasks_PendingTaskCreateForm_DeadLine_
+  commentId: Overload:Crowdin.Api.Tasks.PendingTaskCreateForm.DeadLine
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.PendingTaskCreateForm.DeadLine
+  nameWithType: PendingTaskCreateForm.DeadLine
+- uid: Crowdin.Api.Tasks.PendingTaskCreateForm.Description
+  name: Description
+  href: api/Crowdin.Api.Tasks.PendingTaskCreateForm.html#Crowdin_Api_Tasks_PendingTaskCreateForm_Description
+  commentId: P:Crowdin.Api.Tasks.PendingTaskCreateForm.Description
+  fullName: Crowdin.Api.Tasks.PendingTaskCreateForm.Description
+  nameWithType: PendingTaskCreateForm.Description
+- uid: Crowdin.Api.Tasks.PendingTaskCreateForm.Description*
+  name: Description
+  href: api/Crowdin.Api.Tasks.PendingTaskCreateForm.html#Crowdin_Api_Tasks_PendingTaskCreateForm_Description_
+  commentId: Overload:Crowdin.Api.Tasks.PendingTaskCreateForm.Description
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.PendingTaskCreateForm.Description
+  nameWithType: PendingTaskCreateForm.Description
+- uid: Crowdin.Api.Tasks.PendingTaskCreateForm.PrecedingTaskId
+  name: PrecedingTaskId
+  href: api/Crowdin.Api.Tasks.PendingTaskCreateForm.html#Crowdin_Api_Tasks_PendingTaskCreateForm_PrecedingTaskId
+  commentId: P:Crowdin.Api.Tasks.PendingTaskCreateForm.PrecedingTaskId
+  fullName: Crowdin.Api.Tasks.PendingTaskCreateForm.PrecedingTaskId
+  nameWithType: PendingTaskCreateForm.PrecedingTaskId
+- uid: Crowdin.Api.Tasks.PendingTaskCreateForm.PrecedingTaskId*
+  name: PrecedingTaskId
+  href: api/Crowdin.Api.Tasks.PendingTaskCreateForm.html#Crowdin_Api_Tasks_PendingTaskCreateForm_PrecedingTaskId_
+  commentId: Overload:Crowdin.Api.Tasks.PendingTaskCreateForm.PrecedingTaskId
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.PendingTaskCreateForm.PrecedingTaskId
+  nameWithType: PendingTaskCreateForm.PrecedingTaskId
+- uid: Crowdin.Api.Tasks.PendingTaskCreateForm.Title
+  name: Title
+  href: api/Crowdin.Api.Tasks.PendingTaskCreateForm.html#Crowdin_Api_Tasks_PendingTaskCreateForm_Title
+  commentId: P:Crowdin.Api.Tasks.PendingTaskCreateForm.Title
+  fullName: Crowdin.Api.Tasks.PendingTaskCreateForm.Title
+  nameWithType: PendingTaskCreateForm.Title
+- uid: Crowdin.Api.Tasks.PendingTaskCreateForm.Title*
+  name: Title
+  href: api/Crowdin.Api.Tasks.PendingTaskCreateForm.html#Crowdin_Api_Tasks_PendingTaskCreateForm_Title_
+  commentId: Overload:Crowdin.Api.Tasks.PendingTaskCreateForm.Title
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.PendingTaskCreateForm.Title
+  nameWithType: PendingTaskCreateForm.Title
+- uid: Crowdin.Api.Tasks.PendingTaskCreateForm.Type
+  name: Type
+  href: api/Crowdin.Api.Tasks.PendingTaskCreateForm.html#Crowdin_Api_Tasks_PendingTaskCreateForm_Type
+  commentId: P:Crowdin.Api.Tasks.PendingTaskCreateForm.Type
+  fullName: Crowdin.Api.Tasks.PendingTaskCreateForm.Type
+  nameWithType: PendingTaskCreateForm.Type
+- uid: Crowdin.Api.Tasks.PendingTaskCreateForm.Type*
+  name: Type
+  href: api/Crowdin.Api.Tasks.PendingTaskCreateForm.html#Crowdin_Api_Tasks_PendingTaskCreateForm_Type_
+  commentId: Overload:Crowdin.Api.Tasks.PendingTaskCreateForm.Type
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.PendingTaskCreateForm.Type
+  nameWithType: PendingTaskCreateForm.Type
 - uid: Crowdin.Api.Tasks.TaskArchivedStatusPatch
   name: TaskArchivedStatusPatch
   href: api/Crowdin.Api.Tasks.TaskArchivedStatusPatch.html
@@ -31887,6 +32389,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TaskCreateForm.Description
   nameWithType: TaskCreateForm.Description
+- uid: Crowdin.Api.Tasks.TaskCreateForm.ExcludeLabelIds
+  name: ExcludeLabelIds
+  href: api/Crowdin.Api.Tasks.TaskCreateForm.html#Crowdin_Api_Tasks_TaskCreateForm_ExcludeLabelIds
+  commentId: P:Crowdin.Api.Tasks.TaskCreateForm.ExcludeLabelIds
+  fullName: Crowdin.Api.Tasks.TaskCreateForm.ExcludeLabelIds
+  nameWithType: TaskCreateForm.ExcludeLabelIds
+- uid: Crowdin.Api.Tasks.TaskCreateForm.ExcludeLabelIds*
+  name: ExcludeLabelIds
+  href: api/Crowdin.Api.Tasks.TaskCreateForm.html#Crowdin_Api_Tasks_TaskCreateForm_ExcludeLabelIds_
+  commentId: Overload:Crowdin.Api.Tasks.TaskCreateForm.ExcludeLabelIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskCreateForm.ExcludeLabelIds
+  nameWithType: TaskCreateForm.ExcludeLabelIds
 - uid: Crowdin.Api.Tasks.TaskCreateForm.FileIds
   name: FileIds
   href: api/Crowdin.Api.Tasks.TaskCreateForm.html#Crowdin_Api_Tasks_TaskCreateForm_FileIds
@@ -31991,6 +32506,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TaskCreateForm.Status
   nameWithType: TaskCreateForm.Status
+- uid: Crowdin.Api.Tasks.TaskCreateForm.StringIds
+  name: StringIds
+  href: api/Crowdin.Api.Tasks.TaskCreateForm.html#Crowdin_Api_Tasks_TaskCreateForm_StringIds
+  commentId: P:Crowdin.Api.Tasks.TaskCreateForm.StringIds
+  fullName: Crowdin.Api.Tasks.TaskCreateForm.StringIds
+  nameWithType: TaskCreateForm.StringIds
+- uid: Crowdin.Api.Tasks.TaskCreateForm.StringIds*
+  name: StringIds
+  href: api/Crowdin.Api.Tasks.TaskCreateForm.html#Crowdin_Api_Tasks_TaskCreateForm_StringIds_
+  commentId: Overload:Crowdin.Api.Tasks.TaskCreateForm.StringIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskCreateForm.StringIds
+  nameWithType: TaskCreateForm.StringIds
 - uid: Crowdin.Api.Tasks.TaskCreateForm.Title
   name: Title
   href: api/Crowdin.Api.Tasks.TaskCreateForm.html#Crowdin_Api_Tasks_TaskCreateForm_Title
@@ -33060,6 +33588,12 @@ references:
   commentId: F:Crowdin.Api.Tasks.TaskVendor.BabbleOn
   fullName: Crowdin.Api.Tasks.TaskVendor.BabbleOn
   nameWithType: TaskVendor.BabbleOn
+- uid: Crowdin.Api.Tasks.TaskVendor.CrowdinLanguageServices
+  name: CrowdinLanguageServices
+  href: api/Crowdin.Api.Tasks.TaskVendor.html#Crowdin_Api_Tasks_TaskVendor_CrowdinLanguageServices
+  commentId: F:Crowdin.Api.Tasks.TaskVendor.CrowdinLanguageServices
+  fullName: Crowdin.Api.Tasks.TaskVendor.CrowdinLanguageServices
+  nameWithType: TaskVendor.CrowdinLanguageServices
 - uid: Crowdin.Api.Tasks.TaskVendor.E2F
   name: E2F
   href: api/Crowdin.Api.Tasks.TaskVendor.html#Crowdin_Api_Tasks_TaskVendor_E2F
@@ -33548,6 +34082,103 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.VendorGengoTaskCreateForm.Vendor
   nameWithType: VendorGengoTaskCreateForm.Vendor
+- uid: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm
+  name: VendorManualPendingTaskCreateForm
+  href: api/Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.html
+  commentId: T:Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm
+  fullName: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm
+  nameWithType: VendorManualPendingTaskCreateForm
+- uid: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Assignees
+  name: Assignees
+  href: api/Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.html#Crowdin_Api_Tasks_VendorManualPendingTaskCreateForm_Assignees
+  commentId: P:Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Assignees
+  fullName: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Assignees
+  nameWithType: VendorManualPendingTaskCreateForm.Assignees
+- uid: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Assignees*
+  name: Assignees
+  href: api/Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.html#Crowdin_Api_Tasks_VendorManualPendingTaskCreateForm_Assignees_
+  commentId: Overload:Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Assignees
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Assignees
+  nameWithType: VendorManualPendingTaskCreateForm.Assignees
+- uid: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.DeadLine
+  name: DeadLine
+  href: api/Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.html#Crowdin_Api_Tasks_VendorManualPendingTaskCreateForm_DeadLine
+  commentId: P:Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.DeadLine
+  fullName: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.DeadLine
+  nameWithType: VendorManualPendingTaskCreateForm.DeadLine
+- uid: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.DeadLine*
+  name: DeadLine
+  href: api/Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.html#Crowdin_Api_Tasks_VendorManualPendingTaskCreateForm_DeadLine_
+  commentId: Overload:Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.DeadLine
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.DeadLine
+  nameWithType: VendorManualPendingTaskCreateForm.DeadLine
+- uid: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Description
+  name: Description
+  href: api/Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.html#Crowdin_Api_Tasks_VendorManualPendingTaskCreateForm_Description
+  commentId: P:Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Description
+  fullName: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Description
+  nameWithType: VendorManualPendingTaskCreateForm.Description
+- uid: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Description*
+  name: Description
+  href: api/Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.html#Crowdin_Api_Tasks_VendorManualPendingTaskCreateForm_Description_
+  commentId: Overload:Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Description
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Description
+  nameWithType: VendorManualPendingTaskCreateForm.Description
+- uid: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.PrecedingTaskId
+  name: PrecedingTaskId
+  href: api/Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.html#Crowdin_Api_Tasks_VendorManualPendingTaskCreateForm_PrecedingTaskId
+  commentId: P:Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.PrecedingTaskId
+  fullName: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.PrecedingTaskId
+  nameWithType: VendorManualPendingTaskCreateForm.PrecedingTaskId
+- uid: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.PrecedingTaskId*
+  name: PrecedingTaskId
+  href: api/Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.html#Crowdin_Api_Tasks_VendorManualPendingTaskCreateForm_PrecedingTaskId_
+  commentId: Overload:Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.PrecedingTaskId
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.PrecedingTaskId
+  nameWithType: VendorManualPendingTaskCreateForm.PrecedingTaskId
+- uid: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Title
+  name: Title
+  href: api/Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.html#Crowdin_Api_Tasks_VendorManualPendingTaskCreateForm_Title
+  commentId: P:Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Title
+  fullName: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Title
+  nameWithType: VendorManualPendingTaskCreateForm.Title
+- uid: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Title*
+  name: Title
+  href: api/Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.html#Crowdin_Api_Tasks_VendorManualPendingTaskCreateForm_Title_
+  commentId: Overload:Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Title
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Title
+  nameWithType: VendorManualPendingTaskCreateForm.Title
+- uid: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Type
+  name: Type
+  href: api/Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.html#Crowdin_Api_Tasks_VendorManualPendingTaskCreateForm_Type
+  commentId: P:Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Type
+  fullName: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Type
+  nameWithType: VendorManualPendingTaskCreateForm.Type
+- uid: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Type*
+  name: Type
+  href: api/Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.html#Crowdin_Api_Tasks_VendorManualPendingTaskCreateForm_Type_
+  commentId: Overload:Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Type
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Type
+  nameWithType: VendorManualPendingTaskCreateForm.Type
+- uid: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Vendor
+  name: Vendor
+  href: api/Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.html#Crowdin_Api_Tasks_VendorManualPendingTaskCreateForm_Vendor
+  commentId: P:Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Vendor
+  fullName: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Vendor
+  nameWithType: VendorManualPendingTaskCreateForm.Vendor
+- uid: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Vendor*
+  name: Vendor
+  href: api/Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.html#Crowdin_Api_Tasks_VendorManualPendingTaskCreateForm_Vendor_
+  commentId: Overload:Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Vendor
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.VendorManualPendingTaskCreateForm.Vendor
+  nameWithType: VendorManualPendingTaskCreateForm.Vendor
 - uid: Crowdin.Api.Tasks.VendorManualTaskCreateForm
   name: VendorManualTaskCreateForm
   href: api/Crowdin.Api.Tasks.VendorManualTaskCreateForm.html
