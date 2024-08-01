@@ -21,6 +21,8 @@ namespace Crowdin.Api.StringTranslations
         public string? LanguageId { get; set; }
         
         public int? TranslationId { get; set; }
+        
+        public IEnumerable<SortingRule>? OrderBy { get; set; }
 
         public int Limit { get; set; } = 25;
         
@@ -38,6 +40,7 @@ namespace Crowdin.Api.StringTranslations
             int? stringId,
             string? languageId,
             int? translationId,
+            IEnumerable<SortingRule>? orderBy,
             int limit,
             int offset)
         {
@@ -47,6 +50,7 @@ namespace Crowdin.Api.StringTranslations
             StringId = stringId;
             LanguageId = languageId;
             TranslationId = translationId;
+            OrderBy = orderBy;
             Limit = limit;
             Offset = offset;
         }
@@ -62,6 +66,7 @@ namespace Crowdin.Api.StringTranslations
             queryParams.AddParamIfPresent("stringId", StringId);
             queryParams.AddParamIfPresent("languageId", LanguageId);
             queryParams.AddParamIfPresent("translationId", TranslationId);
+            queryParams.AddSortingRulesIfPresent(OrderBy);
 
             return queryParams;
         }

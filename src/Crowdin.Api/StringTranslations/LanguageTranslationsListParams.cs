@@ -24,6 +24,8 @@ namespace Crowdin.Api.StringTranslations
         public string? CroQL { get; set; }
         
         public bool? DenormalizePlaceholders { get; set; }
+        
+        public IEnumerable<SortingRule>? OrderBy { get; set; }
 
         public int Limit { get; set; } = 25;
         
@@ -42,6 +44,7 @@ namespace Crowdin.Api.StringTranslations
             int? directoryId,
             string? croQl,
             bool? denormalizePlaceholders,
+            IEnumerable<SortingRule>? orderBy,
             int limit, int offset)
         {
             StringIds = stringIds;
@@ -51,6 +54,7 @@ namespace Crowdin.Api.StringTranslations
             DirectoryId = directoryId;
             CroQL = croQl;
             DenormalizePlaceholders = denormalizePlaceholders;
+            OrderBy = orderBy;
             Limit = limit;
             Offset = offset;
         }
@@ -66,6 +70,7 @@ namespace Crowdin.Api.StringTranslations
             queryParams.AddParamIfPresent("branchId", BranchId);
             queryParams.AddParamIfPresent("directoryId", DirectoryId);
             queryParams.AddParamIfPresent("croql", CroQL);
+            queryParams.AddSortingRulesIfPresent(OrderBy);
 
             if (DenormalizePlaceholders.HasValue && DenormalizePlaceholders.Value)
             {

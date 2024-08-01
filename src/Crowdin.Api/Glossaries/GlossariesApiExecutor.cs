@@ -37,9 +37,13 @@ namespace Crowdin.Api.Glossaries
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<Glossary>> ListGlossaries(
-            int limit = 25, int offset = 0, int? userId = null, int? groupId = null)
+            int limit = 25,
+            int offset = 0,
+            int? userId = null,
+            int? groupId = null,
+            IEnumerable<SortingRule>? orderBy = null)
         {
-            return ListGlossaries(new GlossariesListParams(limit, offset, userId, groupId));
+            return ListGlossaries(new GlossariesListParams(limit, offset, userId, groupId, orderBy));
         }
 
         /// <summary>
@@ -204,11 +208,17 @@ namespace Crowdin.Api.Glossaries
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<Term>> ListTerms(
-            int glossaryId, int? userId = null, string? languageId = null,
-            int? translationOfTermId = null, int? conceptId = null, int limit = 25, int offset = 0)
+            int glossaryId,
+            int? userId = null,
+            string? languageId = null,
+            int? translationOfTermId = null,
+            int? conceptId = null,
+            IEnumerable<SortingRule>? orderBy = null,
+            int limit = 25,
+            int offset = 0)
         {
             return ListTerms(glossaryId,
-                new TermsListParams(limit, offset, userId, languageId, translationOfTermId, conceptId));
+                new TermsListParams(limit, offset, userId, languageId, translationOfTermId, conceptId, orderBy));
         }
 
         /// <summary>
@@ -307,10 +317,15 @@ namespace Crowdin.Api.Glossaries
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.glossaries.concepts.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<Concept>> ListConcepts(int glossaryId, int limit = 25, int offset = 0)
+        public async Task<ResponseList<Concept>> ListConcepts(
+            int glossaryId,
+            int limit = 25,
+            int offset = 0,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             string url = FormUrl_Concepts(glossaryId);
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
+            queryParams.AddSortingRulesIfPresent(orderBy);
             
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
             return _jsonParser.ParseResponseList<Concept>(result.JsonObject);

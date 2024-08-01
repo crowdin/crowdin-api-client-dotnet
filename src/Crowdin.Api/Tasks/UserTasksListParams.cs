@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Crowdin.Api.Core;
 using JetBrains.Annotations;
 
+#nullable enable
+
 namespace Crowdin.Api.Tasks
 {
     [PublicAPI]
@@ -15,18 +17,26 @@ namespace Crowdin.Api.Tasks
         public TaskStatus? Status { get; set; }
         
         public bool? IsArchived { get; set; }
+        
+        public IEnumerable<SortingRule>? OrderBy { get; set; }
 
         public UserTasksListParams()
         {
             
         }
 
-        public UserTasksListParams(int limit, int offset, TaskStatus? status, bool? isArchived)
+        public UserTasksListParams(
+            int limit,
+            int offset,
+            TaskStatus? status,
+            bool? isArchived,
+            IEnumerable<SortingRule>? orderBy)
         {
             Limit = limit;
             Offset = offset;
             Status = status;
             IsArchived = isArchived;
+            OrderBy = orderBy;
         }
 
         public IDictionary<string, string> ToQueryParams()
@@ -43,6 +53,8 @@ namespace Crowdin.Api.Tasks
             {
                 queryParams.Add("isArchived", IsArchived.Value ? "1" : "0");
             }
+            
+            queryParams.AddSortingRulesIfPresent(OrderBy);
 
             return queryParams;
         }

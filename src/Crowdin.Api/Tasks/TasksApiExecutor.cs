@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
+
 using Crowdin.Api.Core;
 using JetBrains.Annotations;
 
@@ -33,10 +34,14 @@ namespace Crowdin.Api.Tasks
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<TaskResource>> ListTasks(
-            int projectId, int limit = 25, int offset = 0,
-            TaskStatus? status = null, int? assigneeId = null)
+            int projectId,
+            int limit = 25,
+            int offset = 0,
+            TaskStatus? status = null,
+            int? assigneeId = null,
+            IEnumerable<SortingRule>? orderBy = null)
         {
-            return ListTasks(projectId, new TasksListParams(limit, offset, status, assigneeId));
+            return ListTasks(projectId, new TasksListParams(limit, offset, status, assigneeId, orderBy));
         }
 
         /// <summary>
@@ -127,10 +132,13 @@ namespace Crowdin.Api.Tasks
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<TaskResource>> ListUserTasks(
-            int limit = 25, int offset = 0,
-            TaskStatus? status = null, bool? isArchived = null)
+            int limit = 25,
+            int offset = 0,
+            TaskStatus? status = null,
+            bool? isArchived = null,
+            IEnumerable<SortingRule>? orderBy = null)
         {
-            return ListUserTasks(new UserTasksListParams(limit, offset, status, isArchived));
+            return ListUserTasks(new UserTasksListParams(limit, offset, status, isArchived, orderBy));
         }
 
         /// <summary>

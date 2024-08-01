@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Crowdin.Api.Core;
 using JetBrains.Annotations;
 
+#nullable enable
+
 namespace Crowdin.Api.Teams
 {
     public class TeamsApiExecutor
@@ -43,9 +45,13 @@ namespace Crowdin.Api.Teams
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.teams.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<Team>> ListTeams(int limit = 25, int offset = 0)
+        public async Task<ResponseList<Team>> ListTeams(
+            IEnumerable<SortingRule>? orderBy,
+            int limit = 25,
+            int offset = 0)
         {
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
+            queryParams.AddSortingRulesIfPresent(orderBy);
 
             CrowdinApiResult result = await _apiClient.SendGetRequest(BaseUrl, queryParams);
             return _jsonParser.ParseResponseList<Team>(result.JsonObject);

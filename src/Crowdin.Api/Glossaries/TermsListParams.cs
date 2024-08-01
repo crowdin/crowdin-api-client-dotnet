@@ -21,6 +21,8 @@ namespace Crowdin.Api.Glossaries
         public int? TranslationOfTermId { get; set; }
         
         public int? ConceptId { get; set; }
+        
+        public IEnumerable<SortingRule>? OrderBy { get; set; }
 
         public TermsListParams()
         {
@@ -28,9 +30,13 @@ namespace Crowdin.Api.Glossaries
         }
 
         public TermsListParams(
-            int limit, int offset, int? userId,
-            string? languageId, int? translationOfTermId,
-            int? conceptId)
+            int limit,
+            int offset,
+            int? userId,
+            string? languageId,
+            int? translationOfTermId,
+            int? conceptId,
+            IEnumerable<SortingRule>? orderBy)
         {
             Limit = limit;
             Offset = offset;
@@ -38,6 +44,7 @@ namespace Crowdin.Api.Glossaries
             LanguageId = languageId;
             TranslationOfTermId = translationOfTermId;
             ConceptId = conceptId;
+            OrderBy = orderBy;
         }
 
         public IDictionary<string, string> ToQueryParams()
@@ -49,6 +56,7 @@ namespace Crowdin.Api.Glossaries
             queryParams.AddParamIfPresent("languageId", LanguageId);
             queryParams.AddParamIfPresent("translationOfTermId", TranslationOfTermId);
             queryParams.AddParamIfPresent("conceptId", ConceptId);
+            queryParams.AddSortingRulesIfPresent(OrderBy);
 
             return queryParams;
         }

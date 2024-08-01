@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Crowdin.Api.Core;
 using JetBrains.Annotations;
 
+#nullable enable
+
 namespace Crowdin.Api.TranslationMemory
 {
     [PublicAPI]
@@ -11,6 +13,8 @@ namespace Crowdin.Api.TranslationMemory
         public int? UserId { get; set; }
         
         public int? GroupId { get; set; }
+        
+        public IEnumerable<SortingRule>? OrderBy { get; set; }
 
         public int Limit { get; set; } = 25;
         
@@ -21,10 +25,16 @@ namespace Crowdin.Api.TranslationMemory
             
         }
 
-        public TmsListParams(int? userId, int? groupId, int limit, int offset)
+        public TmsListParams(
+            int? userId,
+            int? groupId,
+            IEnumerable<SortingRule>? orderBy,
+            int limit,
+            int offset)
         {
             UserId = userId;
             GroupId = groupId;
+            OrderBy = orderBy;
             Limit = limit;
             Offset = offset;
         }
@@ -36,6 +46,7 @@ namespace Crowdin.Api.TranslationMemory
             
             queryParams.AddParamIfPresent("userId", UserId);
             queryParams.AddParamIfPresent("groupId", GroupId);
+            queryParams.AddSortingRulesIfPresent(OrderBy);
 
             return queryParams;
         }

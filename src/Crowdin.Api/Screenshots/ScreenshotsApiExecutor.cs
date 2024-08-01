@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Crowdin.Api.Core;
 using JetBrains.Annotations;
 
+#nullable enable
+
 namespace Crowdin.Api.Screenshots
 {
     public class ScreenshotsApiExecutor
@@ -33,10 +35,15 @@ namespace Crowdin.Api.Screenshots
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<Screenshot>> ListScreenshots(int projectId, int limit = 25, int offset = 0)
+        public async Task<ResponseList<Screenshot>> ListScreenshots(
+            int projectId,
+            int limit = 25,
+            int offset = 0,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             string url = FormUrl_Screenshots(projectId);
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
+            queryParams.AddSortingRulesIfPresent(orderBy);
             
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
             return _jsonParser.ParseResponseList<Screenshot>(result.JsonObject);

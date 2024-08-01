@@ -26,6 +26,7 @@ namespace Crowdin.Api.Tests.Glossaries
             const int glossaryId = 6;
             
             IDictionary<string, string> queryParams = TestUtils.CreateQueryParamsFromPaging();
+            queryParams.Add("orderBy", "createdAt desc");
             
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
             
@@ -40,7 +41,16 @@ namespace Crowdin.Api.Tests.Glossaries
                 });
             
             var executor = new GlossariesApiExecutor(mockClient.Object);
-            ResponseList<Concept> response = await executor.ListConcepts(glossaryId);
+            ResponseList<Concept> response = await executor.ListConcepts(
+                glossaryId,
+                orderBy: new []
+                {
+                    new SortingRule
+                    {
+                        Field = "createdAt",
+                        Order = SortingOrder.Descending
+                    }
+                });
             
             Assert.NotNull(response);
             Assert.Single(response.Data);

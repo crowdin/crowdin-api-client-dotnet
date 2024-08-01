@@ -35,11 +35,14 @@ namespace Crowdin.Api.StringComments
         [PublicAPI]
         public Task ListStringComments(
             int projectId, int limit = 25, int offset = 0,
-            int? stringId = null, StringCommentType? type = null,
-            ISet<IssueType>? issueTypes = null, IssueStatus? issueStatus = null)
+            int? stringId = null,
+            StringCommentType? type = null,
+            ISet<IssueType>? issueTypes = null,
+            IssueStatus? issueStatus = null,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             return ListStringComments(projectId,
-                new StringCommentsListParams(limit, offset, stringId, type, issueTypes, issueStatus));
+                new StringCommentsListParams(limit, offset, stringId, type, issueTypes, issueStatus, orderBy));
         }
 
         /// <summary>
