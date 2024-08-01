@@ -3,6 +3,7 @@
 
 using System;
 using System.Collections.Generic;
+
 using Crowdin.Api;
 using Crowdin.Api.ProjectsGroups;
 
@@ -50,7 +51,7 @@ const int amountPerRequest = 10;
 Group[] allGroups = await CrowdinApiClient.WithFetchAll((limit, offset) =>
 {
     Console.WriteLine("{0} {1}", limit, offset);
-    return client.ProjectsGroups.ListGroups(parentId, limit, offset);
+    return client.ProjectsGroups.ListGroups(parentId, limit: limit, offset: offset);
 }, maxAmountOfItems, amountPerRequest);
 
 Console.WriteLine(allGroups);

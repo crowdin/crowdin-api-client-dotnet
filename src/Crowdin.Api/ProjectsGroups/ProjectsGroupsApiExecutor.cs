@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
+
 using Crowdin.Api.Core;
 using JetBrains.Annotations;
 
@@ -35,10 +36,15 @@ namespace Crowdin.Api.ProjectsGroups
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.groups.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<Group>> ListGroups(int? parentId, int limit = 25, int offset = 0)
+        public async Task<ResponseList<Group>> ListGroups(
+            int? parentId,
+            IEnumerable<SortingRule>? orderBy = null,
+            int limit = 25,
+            int offset = 0)
         {
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
             queryParams.AddParamIfPresent("parentId", parentId);
+            queryParams.AddSortingRulesIfPresent(orderBy);
 
             CrowdinApiResult result = await _apiClient.SendGetRequest(BaseGroupsSubUrl, queryParams);
             return _jsonParser.ParseResponseList<Group>(result.JsonObject);
@@ -111,6 +117,7 @@ namespace Crowdin.Api.ProjectsGroups
             int? userId = null, int? groupId = null,
             bool hasManagerAccess = false,
             ProjectType? type = null,
+            IEnumerable<SortingRule>? orderBy = null,
             int limit = 25, int offset = 0)
                 where TProject : ProjectBase // Project, EnterpriseProject
         {
@@ -118,6 +125,7 @@ namespace Crowdin.Api.ProjectsGroups
             queryParams.AddParamIfPresent("userId", userId);
             queryParams.AddParamIfPresent("groupId", groupId);
             queryParams.Add("hasManagerAccess", hasManagerAccess ? "1" : "0");
+            queryParams.AddSortingRulesIfPresent(orderBy);
             
             if (type.HasValue)
             {

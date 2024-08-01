@@ -133,10 +133,11 @@ namespace Crowdin.Api.SourceFiles
         public Task<ResponseList<Directory>> ListDirectories(
             int projectId, int limit = 25, int offset = 0,
             int? branchId = null, int? directoryId = null,
-            string? filter = null, object? recursion = null)
+            string? filter = null, object? recursion = null,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             return ListDirectories(projectId,
-                new DirectoriesListParams(branchId, directoryId, filter, recursion, limit, offset));
+                new DirectoriesListParams(branchId, directoryId, filter, recursion, orderBy, limit, offset));
         }
 
         /// <summary>
@@ -231,11 +232,12 @@ namespace Crowdin.Api.SourceFiles
         public Task<ResponseList<T>> ListFiles<T>(int projectId,
             int limit = 25, int offset = 0,
             int? branchId = null, int? directoryId = null,
-            string? filter = null, object? recursion = null)
+            string? filter = null, object? recursion = null,
+            IEnumerable<SortingRule>? orderBy = null)
                 where T : FileResourceBase // FileInfoCollectionResource, FileCollectionResource
         {
             return ListFiles<T>(projectId,
-                new FilesListParams(branchId, directoryId, filter, recursion, limit, offset));
+                new FilesListParams(branchId, directoryId, filter, recursion, orderBy, limit, offset));
         }
         
         /// <summary>

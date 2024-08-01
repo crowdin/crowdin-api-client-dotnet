@@ -33,11 +33,16 @@ namespace Crowdin.Api.Users
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<TeamMember>> ListProjectMembers(
-            int projectId, string? search = null, UserRole? role = null,
-            string? languageId = null, int limit = 25, int offset = 0)
+            int projectId,
+            string? search = null,
+            UserRole? role = null,
+            string? languageId = null,
+            IEnumerable<SortingRule>? orderBy = null,
+            int limit = 25,
+            int offset = 0)
         {
             return ListProjectMembers(projectId,
-                new ProjectMembersListParams(search, role, languageId, limit, offset));
+                new ProjectMembersListParams(search, role, languageId, orderBy, limit, offset));
         }
         
         /// <summary>
@@ -139,10 +144,14 @@ namespace Crowdin.Api.Users
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<UserEnterprise>> ListUsers(
-            UserStatus? status = null, string? search = null,
-            UserTwoFactorStatus? twoFactor = null, int limit = 25, int offset = 0)
+            UserStatus? status = null,
+            string? search = null,
+            UserTwoFactorStatus? twoFactor = null,
+            IEnumerable<SortingRule>? orderBy = null,
+            int limit = 25,
+            int offset = 0)
         {
-            return ListUsers(new EnterpriseUsersListParams(status, search, twoFactor, limit, offset));
+            return ListUsers(new EnterpriseUsersListParams(status, search, twoFactor, orderBy, limit, offset));
         }
 
         /// <summary>

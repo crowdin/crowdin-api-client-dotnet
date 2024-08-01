@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Crowdin.Api.Core;
 using JetBrains.Annotations;
 
+#nullable enable
+
 namespace Crowdin.Api.StringTranslations
 {
     [PublicAPI]
@@ -13,6 +15,8 @@ namespace Crowdin.Api.StringTranslations
         public string LanguageId { get; set; }
         
         public bool? DenormalizePlaceholders { get; set; }
+        
+        public IEnumerable<SortingRule>? OrderBy { get; set; }
 
         public int Limit { get; set; } = 25;
         
@@ -26,11 +30,13 @@ namespace Crowdin.Api.StringTranslations
         public StringTranslationsListParams(
             int stringId, string languageId,
             bool? denormalizePlaceholders,
+            IEnumerable<SortingRule>? orderBy,
             int limit, int offset)
         {
             StringId = stringId;
             LanguageId = languageId;
             DenormalizePlaceholders = denormalizePlaceholders;
+            OrderBy = orderBy;
             Limit = limit;
             Offset = offset;
         }
@@ -42,6 +48,7 @@ namespace Crowdin.Api.StringTranslations
             
             queryParams.AddParamIfPresent("stringId", StringId);
             queryParams.AddParamIfPresent("languageId", LanguageId);
+            queryParams.AddSortingRulesIfPresent(OrderBy);
 
             if (DenormalizePlaceholders.HasValue && DenormalizePlaceholders.Value)
             {
