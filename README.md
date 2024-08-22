@@ -157,6 +157,32 @@ Group[] allGroups = await CrowdinApiClient.WithFetchAll((limit, offset) =>
 
 Only for list async methods that return `Task<ResponseList<T>>`.
 
+#### Sorting
+
+An optional `orderBy` parameter is used to apply sorting.
+
+```C#
+var executor = new ProjectsGroupsApiExecutor(mockClient.Object);
+
+ResponseList<EnterpriseProject> projectsList = await executor.ListProjects<EnterpriseProject>(
+        userId, groupId, hasManagerAccess,
+        orderBy: new[]
+        {
+            new SortingRule
+            {
+                Field = "createdAt",
+                Order = SortingOrder.Descending
+            },
+            new SortingRule
+            {
+                Field = "name",
+                Order = SortingOrder.Ascending
+            }
+        });
+```
+
+Property `SortingRule.Order` is also optional (ascending order applied by default).
+
 #### Rate limiting
 
 API client has built-in support for rate limiting services. The library provides an implementation of Exponential Backoff Algorithm.
