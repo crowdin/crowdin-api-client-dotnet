@@ -40,13 +40,15 @@ namespace Crowdin.Api.StringTranslations
             string? labelIds = null,
             string? excludeLabelIds = null,
             int? stringId = null,
-            string? languageId = null, int? translationId = null,
-            IEnumerable<SortingRule>? orderBy = null,
-            int limit = 25, int offset = 0)
+            string? languageId = null,
+            int? translationId = null,
+            int limit = 25,
+            int offset = 0,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             return ListTranslationApprovals(projectId,
                 new TranslationApprovalsListParams(fileId, labelIds,
-                    excludeLabelIds, stringId, languageId, translationId, orderBy, limit, offset));
+                    excludeLabelIds, stringId, languageId, translationId, limit, offset, orderBy));
         }
 
         /// <summary>
@@ -134,12 +136,13 @@ namespace Crowdin.Api.StringTranslations
             int? directoryId = null,
             string? croql = null,
             bool? denormalizePlaceholders = null,
-            IEnumerable<SortingRule>? orderBy = null,
-            int limit = 25, int offset = 0)
+            int limit = 25,
+            int offset = 0,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             return ListLanguageTranslations(projectId, languageId,
                 new LanguageTranslationsListParams(stringIds, labelIds, 
-                    fileId, branchId, directoryId, croql, denormalizePlaceholders, orderBy, limit, offset));
+                    fileId, branchId, directoryId, croql, denormalizePlaceholders, limit, offset, orderBy));
         }
 
         /// <summary>
@@ -182,12 +185,13 @@ namespace Crowdin.Api.StringTranslations
             int stringId,
             string languageId,
             bool? denormalizePlaceholders = null,
-            IEnumerable<SortingRule>? orderBy = null,
-            int limit = 25, int offset = 0)
+            int limit = 25,
+            int offset = 0,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             return ListStringTranslations(projectId,
                 new StringTranslationsListParams(stringId, languageId,
-                    denormalizePlaceholders, orderBy, limit, offset));
+                    denormalizePlaceholders, limit, offset, orderBy));
         }
 
         /// <summary>

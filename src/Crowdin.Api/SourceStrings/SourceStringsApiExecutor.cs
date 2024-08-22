@@ -42,7 +42,7 @@ namespace Crowdin.Api.SourceStrings
         {
             return ListStrings(projectId, new StringsListParams(
                 denormalizePlaceholders, labelIds, fileId, branchId,
-                directoryId, croql, filter, scope, orderBy, limit, offset));
+                directoryId, croql, filter, scope, limit, offset, orderBy));
         }
 
         /// <summary>

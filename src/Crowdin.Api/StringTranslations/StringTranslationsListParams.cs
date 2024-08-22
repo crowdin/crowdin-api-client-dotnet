@@ -15,12 +15,12 @@ namespace Crowdin.Api.StringTranslations
         public string LanguageId { get; set; }
         
         public bool? DenormalizePlaceholders { get; set; }
-        
-        public IEnumerable<SortingRule>? OrderBy { get; set; }
 
         public int Limit { get; set; } = 25;
         
         public int Offset { get; set; }
+        
+        public IEnumerable<SortingRule>? OrderBy { get; set; }
 
         public StringTranslationsListParams()
         {
@@ -28,17 +28,19 @@ namespace Crowdin.Api.StringTranslations
         }
 
         public StringTranslationsListParams(
-            int stringId, string languageId,
+            int stringId,
+            string languageId,
             bool? denormalizePlaceholders,
-            IEnumerable<SortingRule>? orderBy,
-            int limit, int offset)
+            int limit,
+            int offset,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             StringId = stringId;
             LanguageId = languageId;
             DenormalizePlaceholders = denormalizePlaceholders;
-            OrderBy = orderBy;
             Limit = limit;
             Offset = offset;
+            OrderBy = orderBy;
         }
 
         public IDictionary<string, string> ToQueryParams()

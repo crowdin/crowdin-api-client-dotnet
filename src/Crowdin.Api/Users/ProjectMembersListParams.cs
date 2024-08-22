@@ -15,12 +15,12 @@ namespace Crowdin.Api.Users
         public UserRole? Role { get; set; }
         
         public string? LanguageId { get; set; }
-        
-        public IEnumerable<SortingRule>? OrderBy { get; set; }
 
         public int Limit { get; set; } = 25;
         
         public int Offset { get; set; }
+        
+        public IEnumerable<SortingRule>? OrderBy { get; set; }
 
         public ProjectMembersListParams()
         {
@@ -31,16 +31,16 @@ namespace Crowdin.Api.Users
             string? search,
             UserRole? role,
             string? languageId,
-            IEnumerable<SortingRule>? orderBy,
             int limit,
-            int offset)
+            int offset,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             Search = search;
             Role = role;
             LanguageId = languageId;
-            OrderBy = orderBy;
             Limit = limit;
             Offset = offset;
+            OrderBy = orderBy;
         }
 
         public IDictionary<string, string> ToQueryParams()

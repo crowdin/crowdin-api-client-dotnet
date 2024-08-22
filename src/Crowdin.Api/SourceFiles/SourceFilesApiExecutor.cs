@@ -137,7 +137,7 @@ namespace Crowdin.Api.SourceFiles
             IEnumerable<SortingRule>? orderBy = null)
         {
             return ListDirectories(projectId,
-                new DirectoriesListParams(branchId, directoryId, filter, recursion, orderBy, limit, offset));
+                new DirectoriesListParams(branchId, directoryId, filter, recursion, limit, offset, orderBy));
         }
 
         /// <summary>
@@ -237,7 +237,7 @@ namespace Crowdin.Api.SourceFiles
                 where T : FileResourceBase // FileInfoCollectionResource, FileCollectionResource
         {
             return ListFiles<T>(projectId,
-                new FilesListParams(branchId, directoryId, filter, recursion, orderBy, limit, offset));
+                new FilesListParams(branchId, directoryId, filter, recursion, limit, offset, orderBy));
         }
         
         /// <summary>

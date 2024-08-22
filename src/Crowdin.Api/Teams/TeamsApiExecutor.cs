@@ -46,9 +46,9 @@ namespace Crowdin.Api.Teams
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Team>> ListTeams(
-            IEnumerable<SortingRule>? orderBy,
             int limit = 25,
-            int offset = 0)
+            int offset = 0,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
             queryParams.AddSortingRulesIfPresent(orderBy);

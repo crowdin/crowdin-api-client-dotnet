@@ -37,11 +37,11 @@ namespace Crowdin.Api.TranslationMemory
         public Task<ResponseList<TranslationMemory>> ListTms(
             int? userId = null,
             int? groupId = null,
-            IEnumerable<SortingRule>? orderBy = null,
             int limit = 25,
-            int offset = 0)
+            int offset = 0,
+            IEnumerable<SortingRule>? orderBy = null)
         {
-            return ListTms(new TmsListParams(userId, groupId, orderBy, limit, offset));
+            return ListTms(new TmsListParams(userId, groupId, limit, offset, orderBy));
         }
 
         /// <summary>

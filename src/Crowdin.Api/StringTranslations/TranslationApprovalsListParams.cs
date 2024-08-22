@@ -21,12 +21,12 @@ namespace Crowdin.Api.StringTranslations
         public string? LanguageId { get; set; }
         
         public int? TranslationId { get; set; }
-        
-        public IEnumerable<SortingRule>? OrderBy { get; set; }
 
         public int Limit { get; set; } = 25;
         
         public int Offset { get; set; }
+        
+        public IEnumerable<SortingRule>? OrderBy { get; set; }
 
         public TranslationApprovalsListParams()
         {
@@ -40,9 +40,9 @@ namespace Crowdin.Api.StringTranslations
             int? stringId,
             string? languageId,
             int? translationId,
-            IEnumerable<SortingRule>? orderBy,
             int limit,
-            int offset)
+            int offset,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             FileId = fileId;
             LabelIds = labelIds;

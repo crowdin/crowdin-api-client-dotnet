@@ -76,9 +76,9 @@ namespace Crowdin.Api.Branches
         public async Task<ResponseList<Branch>> ListBranches(
             int projectId,
             string? name = null,
-            IEnumerable<SortingRule>? orderBy = null,
             int limit = 25,
-            int offset = 0)
+            int offset = 0,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             string url = FormUrl_Branches(projectId);
             

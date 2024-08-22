@@ -213,9 +213,9 @@ namespace Crowdin.Api.Glossaries
             string? languageId = null,
             int? translationOfTermId = null,
             int? conceptId = null,
-            IEnumerable<SortingRule>? orderBy = null,
             int limit = 25,
-            int offset = 0)
+            int offset = 0,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             return ListTerms(glossaryId,
                 new TermsListParams(limit, offset, userId, languageId, translationOfTermId, conceptId, orderBy));

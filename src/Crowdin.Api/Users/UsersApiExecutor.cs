@@ -37,12 +37,12 @@ namespace Crowdin.Api.Users
             string? search = null,
             UserRole? role = null,
             string? languageId = null,
-            IEnumerable<SortingRule>? orderBy = null,
             int limit = 25,
-            int offset = 0)
+            int offset = 0,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             return ListProjectMembers(projectId,
-                new ProjectMembersListParams(search, role, languageId, orderBy, limit, offset));
+                new ProjectMembersListParams(search, role, languageId, limit, offset, orderBy));
         }
         
         /// <summary>
@@ -147,11 +147,11 @@ namespace Crowdin.Api.Users
             UserStatus? status = null,
             string? search = null,
             UserTwoFactorStatus? twoFactor = null,
-            IEnumerable<SortingRule>? orderBy = null,
             int limit = 25,
-            int offset = 0)
+            int offset = 0,
+            IEnumerable<SortingRule>? orderBy = null)
         {
-            return ListUsers(new EnterpriseUsersListParams(status, search, twoFactor, orderBy, limit, offset));
+            return ListUsers(new EnterpriseUsersListParams(status, search, twoFactor, limit, offset, orderBy));
         }
 
         /// <summary>

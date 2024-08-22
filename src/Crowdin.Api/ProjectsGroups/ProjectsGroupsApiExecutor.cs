@@ -38,9 +38,9 @@ namespace Crowdin.Api.ProjectsGroups
         [PublicAPI]
         public async Task<ResponseList<Group>> ListGroups(
             int? parentId,
-            IEnumerable<SortingRule>? orderBy = null,
             int limit = 25,
-            int offset = 0)
+            int offset = 0,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
             queryParams.AddParamIfPresent("parentId", parentId);
@@ -114,11 +114,13 @@ namespace Crowdin.Api.ProjectsGroups
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TProject>> ListProjects<TProject>(
-            int? userId = null, int? groupId = null,
+            int? userId = null,
+            int? groupId = null,
             bool hasManagerAccess = false,
             ProjectType? type = null,
-            IEnumerable<SortingRule>? orderBy = null,
-            int limit = 25, int offset = 0)
+            int limit = 25,
+            int offset = 0,
+            IEnumerable<SortingRule>? orderBy = null)
                 where TProject : ProjectBase // Project, EnterpriseProject
         {
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
