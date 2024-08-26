@@ -34,11 +34,15 @@ namespace Crowdin.Api.Labels
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.labels.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<Label>> ListLabels(int projectId, int limit = 25, int offset = 0, bool isSystem = false)
+        public async Task<ResponseList<Label>> ListLabels(
+            int projectId,
+            int limit = 25,
+            int offset = 0,
+            bool? isSystem = null)
         {
             string url = FormUrl_Labels(projectId);
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
-            queryParams["isSystem"]= isSystem ? "true" : "false";
+            queryParams.AddParamIfPresent("isSystem", isSystem);
             
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
             return _jsonParser.ParseResponseList<Label>(result.JsonObject);

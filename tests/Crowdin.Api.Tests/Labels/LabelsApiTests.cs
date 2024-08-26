@@ -22,6 +22,43 @@ namespace Crowdin.Api.Tests.Labels
     {
         private static readonly JsonSerializerSettings DefaultSettings = TestUtils.CreateJsonSerializerOptions();
         
+        [Theory]
+        [InlineData(null)]
+        [InlineData(true)]
+        [InlineData(false)]
+        public async Task ListLabels(bool? isSystem)
+        {
+            const int projectId = 1;
+            
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/labels";
+
+            IDictionary<string, string> queryParams = TestUtils.CreateQueryParamsFromPaging();
+
+            if (isSystem.HasValue)
+            {
+                queryParams.Add("isSystem", isSystem.Value.ToString().ToLower());
+            }
+
+            mockClient
+                .Setup(client => client.SendGetRequest(url, queryParams))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Core.Resources.Labels.ListLabels_Response)
+                });
+            
+            var executor = new LabelsApiExecutor(mockClient.Object);
+            ResponseList<Label>? response = await executor.ListLabels(projectId, isSystem: isSystem);
+            
+            Assert.NotNull(response);
+            Assert.Single(response.Data);
+            
+            Assert.Equal(34, response.Data.First().Id);
+            Assert.Equal("main", response.Data.First().Title);
+        }
+        
         [Fact]
         public async Task AddLabel()
         {
