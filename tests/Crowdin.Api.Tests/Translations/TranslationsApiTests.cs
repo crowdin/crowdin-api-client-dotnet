@@ -26,8 +26,9 @@ namespace Crowdin.Api.Tests.Translations
             {
                 LanguageIds = new HashSet<string> { "uk" },
                 FileIds = new HashSet<int> { 0 },
-                Method = PreTranslationMethod.Mt,
+                Method = PreTranslationMethod.Ai,
                 EngineId = 3434,
+                AiPromptId = 123,
                 AutoApproveOption = AutoApproveOption.ExceptAutoSubstituted,
                 DuplicateTranslations = true,
                 TranslateUntranslatedOnly = false,
