@@ -41,12 +41,12 @@ namespace Crowdin.Api.Labels
             int projectId,
             int limit = 25,
             int offset = 0,
-            bool isSystem = false,
+            bool? isSystem = null,
             IEnumerable<SortingRule>? orderBy = null)
         {
             string url = FormUrl_Labels(projectId);
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
-            queryParams["isSystem"]= isSystem ? "true" : "false";
+            queryParams.AddParamIfPresent("isSystem", isSystem);
             queryParams.AddSortingRulesIfPresent(orderBy);
             
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
