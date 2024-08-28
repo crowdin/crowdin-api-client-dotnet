@@ -8,7 +8,7 @@ namespace Crowdin.Api.Reports
     public class Match
     {
         [JsonProperty("matchType")]
-        public MatchType MatchType { get; set; }
+        public MatchTypeObject MatchType { get; set; }
 
         [JsonProperty("price")]
         public float Price { get; set; }
