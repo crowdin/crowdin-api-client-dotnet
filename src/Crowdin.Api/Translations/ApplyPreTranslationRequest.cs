@@ -25,6 +25,9 @@ namespace Crowdin.Api.Translations
         [JsonProperty("engineId")]
         public int? EngineId { get; set; }
         
+        [JsonProperty("aiPromptId")]
+        public int? AiPromptId { get; set; }
+        
         [JsonProperty("autoApproveOption")]
         public AutoApproveOption? AutoApproveOption { get; set; }
         

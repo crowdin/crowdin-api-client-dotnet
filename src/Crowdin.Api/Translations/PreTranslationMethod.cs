@@ -11,6 +11,9 @@ namespace Crowdin.Api.Translations
         Tm,
         
         [Description("mt")]
-        Mt
+        Mt,
+        
+        [Description("ai")]
+        Ai
     }
 }
