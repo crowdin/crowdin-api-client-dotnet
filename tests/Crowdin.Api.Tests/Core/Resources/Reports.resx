@@ -160,6 +160,14 @@
         {
           "matchType": "81-60",
           "price": 0.1
+        },
+        {
+          "matchType": "99-82",
+          "price": 0.1
+        },
+        {
+          "matchType": "80-90",
+          "price": 0.1
         }
       ]
     }

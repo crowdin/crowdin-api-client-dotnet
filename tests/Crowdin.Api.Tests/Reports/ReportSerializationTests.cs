@@ -158,6 +158,16 @@ namespace Crowdin.Api.Tests.Reports
                             {
                                 MatchType = MatchType.Option_81_60,
                                 Price = 0.1f
+                            },
+                            new Match
+                            {
+                                MatchType = MatchTypeObject.FromStaticRange(MatchType.Option_99_82),
+                                Price = 0.1f
+                            },
+                            new Match
+                            {
+                                MatchType = MatchTypeObject.FromCustomRange(from: 80, to: 90),
+                                Price = 0.1f
                             }
                         }
                     },
