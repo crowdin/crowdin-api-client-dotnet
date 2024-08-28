@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
+
 using Crowdin.Api.Core;
 using JetBrains.Annotations;
 
@@ -35,10 +36,15 @@ namespace Crowdin.Api.ProjectsGroups
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.groups.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<Group>> ListGroups(int? parentId, int limit = 25, int offset = 0)
+        public async Task<ResponseList<Group>> ListGroups(
+            int? parentId,
+            int limit = 25,
+            int offset = 0,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
             queryParams.AddParamIfPresent("parentId", parentId);
+            queryParams.AddSortingRulesIfPresent(orderBy);
 
             CrowdinApiResult result = await _apiClient.SendGetRequest(BaseGroupsSubUrl, queryParams);
             return _jsonParser.ParseResponseList<Group>(result.JsonObject);
@@ -108,16 +114,20 @@ namespace Crowdin.Api.ProjectsGroups
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TProject>> ListProjects<TProject>(
-            int? userId = null, int? groupId = null,
+            int? userId = null,
+            int? groupId = null,
             bool hasManagerAccess = false,
             ProjectType? type = null,
-            int limit = 25, int offset = 0)
+            int limit = 25,
+            int offset = 0,
+            IEnumerable<SortingRule>? orderBy = null)
                 where TProject : ProjectBase // Project, EnterpriseProject
         {
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
             queryParams.AddParamIfPresent("userId", userId);
             queryParams.AddParamIfPresent("groupId", groupId);
             queryParams.Add("hasManagerAccess", hasManagerAccess ? "1" : "0");
+            queryParams.AddSortingRulesIfPresent(orderBy);
             
             if (type.HasValue)
             {

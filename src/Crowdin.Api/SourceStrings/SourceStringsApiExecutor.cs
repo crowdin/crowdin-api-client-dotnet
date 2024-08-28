@@ -37,10 +37,12 @@ namespace Crowdin.Api.SourceStrings
             int projectId, int limit = 25, int offset = 0,
             int? denormalizePlaceholders = null, string? labelIds = null,
             int? fileId = null, int? branchId = null, int? directoryId = null,
-            string? croql = null, string? filter = null, StringScope? scope = null)
+            string? croql = null, string? filter = null, StringScope? scope = null,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             return ListStrings(projectId, new StringsListParams(
-                denormalizePlaceholders, labelIds, fileId, branchId, directoryId, croql, filter, scope, limit, offset));
+                denormalizePlaceholders, labelIds, fileId, branchId,
+                directoryId, croql, filter, scope, limit, offset, orderBy));
         }
 
         /// <summary>

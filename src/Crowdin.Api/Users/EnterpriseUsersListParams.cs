@@ -19,6 +19,8 @@ namespace Crowdin.Api.Users
         public int Limit { get; set; } = 25;
         
         public int Offset { get; set; }
+        
+        public IEnumerable<SortingRule>? OrderBy { get; set; }
 
         public EnterpriseUsersListParams()
         {
@@ -26,14 +28,19 @@ namespace Crowdin.Api.Users
         }
 
         public EnterpriseUsersListParams(
-            UserStatus? status, string? search,
-            UserTwoFactorStatus? twoFactor, int limit, int offset)
+            UserStatus? status,
+            string? search,
+            UserTwoFactorStatus? twoFactor,
+            int limit,
+            int offset,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             Status = status;
             Search = search;
             TwoFactor = twoFactor;
             Limit = limit;
             Offset = offset;
+            OrderBy = orderBy;
         }
 
         public IDictionary<string, string> ToQueryParams()
@@ -44,6 +51,7 @@ namespace Crowdin.Api.Users
             queryParams.AddDescriptionEnumValueIfPresent("status", Status);
             queryParams.AddParamIfPresent("search", Search);
             queryParams.AddDescriptionEnumValueIfPresent("twoFactor", TwoFactor);
+            queryParams.AddSortingRulesIfPresent(OrderBy);
 
             return queryParams;
         }

@@ -31,6 +31,8 @@ namespace Crowdin.Api.SourceStrings
         public int Limit { get; set; } = 25;
         
         public int Offset { get; set; }
+        
+        public IEnumerable<SortingRule>? OrderBy { get; set; }
 
         public StringsListParams()
         {
@@ -47,7 +49,8 @@ namespace Crowdin.Api.SourceStrings
             string? filter,
             StringScope? scope,
             int limit,
-            int offset)
+            int offset,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             DenormalizePlaceholders = denormalizePlaceholders;
             LabelIds = labelIds;
@@ -59,6 +62,7 @@ namespace Crowdin.Api.SourceStrings
             Scope = scope;
             Limit = limit;
             Offset = offset;
+            OrderBy = orderBy;
         }
 
         public IDictionary<string, string> ToQueryParams()
@@ -74,6 +78,7 @@ namespace Crowdin.Api.SourceStrings
             queryParams.AddParamIfPresent("croql", CroQL);
             queryParams.AddParamIfPresent("filter", Filter);
             queryParams.AddDescriptionEnumValueIfPresent("scope", Scope);
+            queryParams.AddSortingRulesIfPresent(OrderBy);
 
             return queryParams;
         }

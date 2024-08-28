@@ -31,7 +31,8 @@ namespace Crowdin.Api.Tests.ProjectsGroups
                 { "offset", "0" },
                 { "userId", userId.ToString() },
                 { "groupId", groupId.ToString() },
-                { "hasManagerAccess", hasManagerAccess ? "1" : "0" }
+                { "hasManagerAccess", hasManagerAccess ? "1" : "0" },
+                { "orderBy", "createdAt desc,name asc" }
             };
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -46,7 +47,21 @@ namespace Crowdin.Api.Tests.ProjectsGroups
 
             var executor = new ProjectsGroupsApiExecutor(mockClient.Object);
             ResponseList<EnterpriseProject> projectsList =
-                await executor.ListProjects<EnterpriseProject>(userId, groupId, hasManagerAccess);
+                await executor.ListProjects<EnterpriseProject>(
+                    userId, groupId, hasManagerAccess,
+                    orderBy: new[]
+                    {
+                        new SortingRule
+                        {
+                            Field = "createdAt",
+                            Order = SortingOrder.Descending
+                        },
+                        new SortingRule
+                        {
+                            Field = "name",
+                            Order = SortingOrder.Ascending
+                        }
+                    });
             
             Assert.NotNull(projectsList);
             Assert.Equal(25, projectsList.Pagination?.Limit);

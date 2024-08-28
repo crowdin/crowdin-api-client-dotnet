@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
+using JetBrains.Annotations;
+
 using Crowdin.Api.Core;
 using Crowdin.Api.Screenshots;
 using Crowdin.Api.SourceStrings;
-using JetBrains.Annotations;
+
+#nullable enable
 
 namespace Crowdin.Api.Labels
 {
@@ -38,11 +41,13 @@ namespace Crowdin.Api.Labels
             int projectId,
             int limit = 25,
             int offset = 0,
-            bool? isSystem = null)
+            bool? isSystem = null,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             string url = FormUrl_Labels(projectId);
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
             queryParams.AddParamIfPresent("isSystem", isSystem);
+            queryParams.AddSortingRulesIfPresent(orderBy);
             
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
             return _jsonParser.ParseResponseList<Label>(result.JsonObject);

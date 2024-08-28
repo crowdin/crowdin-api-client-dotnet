@@ -21,6 +21,8 @@ namespace Crowdin.Api.SourceFiles
         public int Limit { get; set; } = 25;
 
         public int Offset { get; set; } = 0;
+        
+        public IEnumerable<SortingRule>? OrderBy { get; set; }
 
         public FilesListParams()
         {
@@ -33,7 +35,8 @@ namespace Crowdin.Api.SourceFiles
             string? filter,
             object? recursion,
             int limit,
-            int offset)
+            int offset,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             BranchId = branchId;
             DirectoryId = directoryId;
@@ -41,6 +44,7 @@ namespace Crowdin.Api.SourceFiles
             Recursion = recursion;
             Limit = limit;
             Offset = offset;
+            OrderBy = orderBy;
         }
 
         public IDictionary<string, string> ToQueryParams()
@@ -52,6 +56,7 @@ namespace Crowdin.Api.SourceFiles
             queryParams.AddParamIfPresent("directoryId", DirectoryId);
             queryParams.AddParamIfPresent("filter", Filter);
             queryParams.AddParamIfPresent("recursion", Recursion);
+            queryParams.AddSortingRulesIfPresent(OrderBy);
 
             return queryParams;
         }

@@ -22,6 +22,8 @@ namespace Crowdin.Api.StringComments
         public ISet<IssueType> IssueTypes { get; set; } = new HashSet<IssueType>();
         
         public IssueStatus? IssueStatus { get; set; }
+        
+        public IEnumerable<SortingRule>? OrderBy { get; set; }
 
         public StringCommentsListParams()
         {
@@ -29,8 +31,13 @@ namespace Crowdin.Api.StringComments
         }
 
         public StringCommentsListParams(
-            int limit, int offset, int? stringId,
-            StringCommentType? type, ISet<IssueType>? issueTypes, IssueStatus? issueStatus)
+            int limit,
+            int offset,
+            int? stringId,
+            StringCommentType? type,
+            ISet<IssueType>? issueTypes,
+            IssueStatus? issueStatus,
+            IEnumerable<SortingRule>? orderBy)
         {
             Limit = limit;
             Offset = offset;
@@ -38,8 +45,8 @@ namespace Crowdin.Api.StringComments
             Type = type;
             IssueTypes = issueTypes ?? new HashSet<IssueType>();
             IssueStatus = issueStatus;
+            OrderBy = orderBy;
         }
-
 
         public IDictionary<string, string> ToQueryParams()
         {
@@ -56,6 +63,7 @@ namespace Crowdin.Api.StringComments
             }
             
             queryParams.AddDescriptionEnumValueIfPresent("issueStatus", IssueStatus);
+            queryParams.AddSortingRulesIfPresent(OrderBy);
             
             return queryParams;
         }

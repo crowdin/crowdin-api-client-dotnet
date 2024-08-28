@@ -84,5 +84,15 @@ namespace Crowdin.Api.Core
                 queryParams.Add(key, enumMember.Value.ToDescriptionString());
             }
         }
+        
+        internal static void AddSortingRulesIfPresent(
+            this IDictionary<string, string> queryParams,
+            IEnumerable<SortingRule>? sortingRules)
+        {
+            if (sortingRules != null && sortingRules.Any())
+            {
+                queryParams.Add("orderBy", string.Join(",", sortingRules.Select(rule => rule.ToString())));
+            }
+        }
     }
 }

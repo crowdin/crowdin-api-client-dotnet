@@ -77,12 +77,14 @@ namespace Crowdin.Api.Branches
             int projectId,
             string? name = null,
             int limit = 25,
-            int offset = 0)
+            int offset = 0,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             string url = FormUrl_Branches(projectId);
             
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
             queryParams.AddParamIfPresent("name", name);
+            queryParams.AddSortingRulesIfPresent(orderBy);
             
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
             return _jsonParser.ParseResponseList<Branch>(result.JsonObject);

@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Crowdin.Api.Core;
 using JetBrains.Annotations;
 
+#nullable enable
+
 namespace Crowdin.Api.TranslationMemory
 {
     public class TranslationMemoryApiExecutor
@@ -33,9 +35,13 @@ namespace Crowdin.Api.TranslationMemory
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<TranslationMemory>> ListTms(
-            int? userId = null, int? groupId = null, int limit = 25, int offset = 0)
+            int? userId = null,
+            int? groupId = null,
+            int limit = 25,
+            int offset = 0,
+            IEnumerable<SortingRule>? orderBy = null)
         {
-            return ListTms(new TmsListParams(userId, groupId, limit, offset));
+            return ListTms(new TmsListParams(userId, groupId, limit, offset, orderBy));
         }
 
         /// <summary>
@@ -202,10 +208,15 @@ namespace Crowdin.Api.TranslationMemory
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.tms.segments.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<TmSegmentResource>> ListTmSegments(int tmId, int limit = 25, int offset = 0)
+        public async Task<ResponseList<TmSegmentResource>> ListTmSegments(
+            int tmId,
+            int limit = 25,
+            int offset = 0,
+            IEnumerable<SortingRule>? orderBy = null)
         {
             string url = FormUrl_TmSegments(tmId);
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
+            queryParams.AddSortingRulesIfPresent(orderBy);
             
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
             return _jsonParser.ParseResponseList<TmSegmentResource>(result.JsonObject);
