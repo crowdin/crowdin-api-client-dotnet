@@ -2369,15 +2369,15 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Branches.BranchesApiExecutor.GetClonedBranch
   nameWithType: BranchesApiExecutor.GetClonedBranch
-- uid: Crowdin.Api.Branches.BranchesApiExecutor.ListBranches(System.Int32,System.Nullable{System.String},System.Int32,System.Int32)
-  name: ListBranches(Int32, Nullable<String>, Int32, Int32)
-  href: api/Crowdin.Api.Branches.BranchesApiExecutor.html#Crowdin_Api_Branches_BranchesApiExecutor_ListBranches_System_Int32_System_Nullable_System_String__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.Branches.BranchesApiExecutor.ListBranches(System.Int32,System.Nullable{System.String},System.Int32,System.Int32)
-  name.vb: ListBranches(Int32, Nullable(Of String), Int32, Int32)
-  fullName: Crowdin.Api.Branches.BranchesApiExecutor.ListBranches(System.Int32, System.Nullable<System.String>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.Branches.BranchesApiExecutor.ListBranches(System.Int32, System.Nullable(Of System.String), System.Int32, System.Int32)
-  nameWithType: BranchesApiExecutor.ListBranches(Int32, Nullable<String>, Int32, Int32)
-  nameWithType.vb: BranchesApiExecutor.ListBranches(Int32, Nullable(Of String), Int32, Int32)
+- uid: Crowdin.Api.Branches.BranchesApiExecutor.ListBranches(System.Int32,System.Nullable{System.String},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListBranches(Int32, Nullable<String>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Branches.BranchesApiExecutor.html#Crowdin_Api_Branches_BranchesApiExecutor_ListBranches_System_Int32_System_Nullable_System_String__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Branches.BranchesApiExecutor.ListBranches(System.Int32,System.Nullable{System.String},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListBranches(Int32, Nullable(Of String), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Branches.BranchesApiExecutor.ListBranches(System.Int32, System.Nullable<System.String>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Branches.BranchesApiExecutor.ListBranches(System.Int32, System.Nullable(Of System.String), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: BranchesApiExecutor.ListBranches(Int32, Nullable<String>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: BranchesApiExecutor.ListBranches(Int32, Nullable(Of String), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.Branches.BranchesApiExecutor.ListBranches*
   name: ListBranches
   href: api/Crowdin.Api.Branches.BranchesApiExecutor.html#Crowdin_Api_Branches_BranchesApiExecutor_ListBranches_
@@ -7120,12 +7120,15 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ImportGlossary
   nameWithType: GlossariesApiExecutor.ImportGlossary
-- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListConcepts(System.Int32,System.Int32,System.Int32)
-  name: ListConcepts(Int32, Int32, Int32)
-  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ListConcepts_System_Int32_System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.ListConcepts(System.Int32,System.Int32,System.Int32)
-  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListConcepts(System.Int32, System.Int32, System.Int32)
-  nameWithType: GlossariesApiExecutor.ListConcepts(Int32, Int32, Int32)
+- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListConcepts(System.Int32,System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListConcepts(Int32, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ListConcepts_System_Int32_System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.ListConcepts(System.Int32,System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListConcepts(Int32, Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListConcepts(System.Int32, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListConcepts(System.Int32, System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: GlossariesApiExecutor.ListConcepts(Int32, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: GlossariesApiExecutor.ListConcepts(Int32, Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListConcepts*
   name: ListConcepts
   href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ListConcepts_
@@ -7139,15 +7142,15 @@ references:
   commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.ListGlossaries(Crowdin.Api.Glossaries.GlossariesListParams)
   fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListGlossaries(Crowdin.Api.Glossaries.GlossariesListParams)
   nameWithType: GlossariesApiExecutor.ListGlossaries(GlossariesListParams)
-- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListGlossaries(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32})
-  name: ListGlossaries(Int32, Int32, Nullable<Int32>, Nullable<Int32>)
-  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ListGlossaries_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32__
-  commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.ListGlossaries(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32})
-  name.vb: ListGlossaries(Int32, Int32, Nullable(Of Int32), Nullable(Of Int32))
-  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListGlossaries(System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<System.Int32>)
-  fullName.vb: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListGlossaries(System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.Int32))
-  nameWithType: GlossariesApiExecutor.ListGlossaries(Int32, Int32, Nullable<Int32>, Nullable<Int32>)
-  nameWithType.vb: GlossariesApiExecutor.ListGlossaries(Int32, Int32, Nullable(Of Int32), Nullable(Of Int32))
+- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListGlossaries(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListGlossaries(Int32, Int32, Nullable<Int32>, Nullable<Int32>, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ListGlossaries_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.ListGlossaries(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListGlossaries(Int32, Int32, Nullable(Of Int32), Nullable(Of Int32), Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListGlossaries(System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListGlossaries(System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: GlossariesApiExecutor.ListGlossaries(Int32, Int32, Nullable<Int32>, Nullable<Int32>, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: GlossariesApiExecutor.ListGlossaries(Int32, Int32, Nullable(Of Int32), Nullable(Of Int32), Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListGlossaries*
   name: ListGlossaries
   href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ListGlossaries_
@@ -7161,15 +7164,15 @@ references:
   commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32,Crowdin.Api.Glossaries.TermsListParams)
   fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32, Crowdin.Api.Glossaries.TermsListParams)
   nameWithType: GlossariesApiExecutor.ListTerms(Int32, TermsListParams)
-- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32)
-  name: ListTerms(Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Int32, Int32)
-  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ListTerms_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32)
-  name.vb: ListTerms(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Int32, Int32)
-  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Int32, System.Int32)
-  nameWithType: GlossariesApiExecutor.ListTerms(Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Int32, Int32)
-  nameWithType.vb: GlossariesApiExecutor.ListTerms(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Int32, Int32)
+- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListTerms(Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ListTerms_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListTerms(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: GlossariesApiExecutor.ListTerms(Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: GlossariesApiExecutor.ListTerms(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms*
   name: ListTerms
   href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ListTerms_
@@ -7202,15 +7205,15 @@ references:
   commentId: M:Crowdin.Api.Glossaries.GlossariesListParams.#ctor
   fullName: Crowdin.Api.Glossaries.GlossariesListParams.GlossariesListParams()
   nameWithType: GlossariesListParams.GlossariesListParams()
-- uid: Crowdin.Api.Glossaries.GlossariesListParams.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32})
-  name: GlossariesListParams(Int32, Int32, Nullable<Int32>, Nullable<Int32>)
-  href: api/Crowdin.Api.Glossaries.GlossariesListParams.html#Crowdin_Api_Glossaries_GlossariesListParams__ctor_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32__
-  commentId: M:Crowdin.Api.Glossaries.GlossariesListParams.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32})
-  name.vb: GlossariesListParams(Int32, Int32, Nullable(Of Int32), Nullable(Of Int32))
-  fullName: Crowdin.Api.Glossaries.GlossariesListParams.GlossariesListParams(System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<System.Int32>)
-  fullName.vb: Crowdin.Api.Glossaries.GlossariesListParams.GlossariesListParams(System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.Int32))
-  nameWithType: GlossariesListParams.GlossariesListParams(Int32, Int32, Nullable<Int32>, Nullable<Int32>)
-  nameWithType.vb: GlossariesListParams.GlossariesListParams(Int32, Int32, Nullable(Of Int32), Nullable(Of Int32))
+- uid: Crowdin.Api.Glossaries.GlossariesListParams.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: GlossariesListParams(Int32, Int32, Nullable<Int32>, Nullable<Int32>, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Glossaries.GlossariesListParams.html#Crowdin_Api_Glossaries_GlossariesListParams__ctor_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Glossaries.GlossariesListParams.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: GlossariesListParams(Int32, Int32, Nullable(Of Int32), Nullable(Of Int32), Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Glossaries.GlossariesListParams.GlossariesListParams(System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Glossaries.GlossariesListParams.GlossariesListParams(System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: GlossariesListParams.GlossariesListParams(Int32, Int32, Nullable<Int32>, Nullable<Int32>, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: GlossariesListParams.GlossariesListParams(Int32, Int32, Nullable(Of Int32), Nullable(Of Int32), Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.Glossaries.GlossariesListParams.#ctor*
   name: GlossariesListParams
   href: api/Crowdin.Api.Glossaries.GlossariesListParams.html#Crowdin_Api_Glossaries_GlossariesListParams__ctor_
@@ -7257,6 +7260,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.GlossariesListParams.Offset
   nameWithType: GlossariesListParams.Offset
+- uid: Crowdin.Api.Glossaries.GlossariesListParams.OrderBy
+  name: OrderBy
+  href: api/Crowdin.Api.Glossaries.GlossariesListParams.html#Crowdin_Api_Glossaries_GlossariesListParams_OrderBy
+  commentId: P:Crowdin.Api.Glossaries.GlossariesListParams.OrderBy
+  fullName: Crowdin.Api.Glossaries.GlossariesListParams.OrderBy
+  nameWithType: GlossariesListParams.OrderBy
+- uid: Crowdin.Api.Glossaries.GlossariesListParams.OrderBy*
+  name: OrderBy
+  href: api/Crowdin.Api.Glossaries.GlossariesListParams.html#Crowdin_Api_Glossaries_GlossariesListParams_OrderBy_
+  commentId: Overload:Crowdin.Api.Glossaries.GlossariesListParams.OrderBy
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.GlossariesListParams.OrderBy
+  nameWithType: GlossariesListParams.OrderBy
 - uid: Crowdin.Api.Glossaries.GlossariesListParams.ToQueryParams
   name: ToQueryParams()
   href: api/Crowdin.Api.Glossaries.GlossariesListParams.html#Crowdin_Api_Glossaries_GlossariesListParams_ToQueryParams
@@ -8352,15 +8368,15 @@ references:
   commentId: M:Crowdin.Api.Glossaries.TermsListParams.#ctor
   fullName: Crowdin.Api.Glossaries.TermsListParams.TermsListParams()
   nameWithType: TermsListParams.TermsListParams()
-- uid: Crowdin.Api.Glossaries.TermsListParams.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32})
-  name: TermsListParams(Int32, Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>)
-  href: api/Crowdin.Api.Glossaries.TermsListParams.html#Crowdin_Api_Glossaries_TermsListParams__ctor_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__
-  commentId: M:Crowdin.Api.Glossaries.TermsListParams.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32})
-  name.vb: TermsListParams(Int32, Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32))
-  fullName: Crowdin.Api.Glossaries.TermsListParams.TermsListParams(System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>)
-  fullName.vb: Crowdin.Api.Glossaries.TermsListParams.TermsListParams(System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32))
-  nameWithType: TermsListParams.TermsListParams(Int32, Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>)
-  nameWithType.vb: TermsListParams.TermsListParams(Int32, Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32))
+- uid: Crowdin.Api.Glossaries.TermsListParams.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: TermsListParams(Int32, Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Glossaries.TermsListParams.html#Crowdin_Api_Glossaries_TermsListParams__ctor_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Glossaries.TermsListParams.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: TermsListParams(Int32, Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Glossaries.TermsListParams.TermsListParams(System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Glossaries.TermsListParams.TermsListParams(System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: TermsListParams.TermsListParams(Int32, Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: TermsListParams.TermsListParams(Int32, Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.Glossaries.TermsListParams.#ctor*
   name: TermsListParams
   href: api/Crowdin.Api.Glossaries.TermsListParams.html#Crowdin_Api_Glossaries_TermsListParams__ctor_
@@ -8420,6 +8436,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.TermsListParams.Offset
   nameWithType: TermsListParams.Offset
+- uid: Crowdin.Api.Glossaries.TermsListParams.OrderBy
+  name: OrderBy
+  href: api/Crowdin.Api.Glossaries.TermsListParams.html#Crowdin_Api_Glossaries_TermsListParams_OrderBy
+  commentId: P:Crowdin.Api.Glossaries.TermsListParams.OrderBy
+  fullName: Crowdin.Api.Glossaries.TermsListParams.OrderBy
+  nameWithType: TermsListParams.OrderBy
+- uid: Crowdin.Api.Glossaries.TermsListParams.OrderBy*
+  name: OrderBy
+  href: api/Crowdin.Api.Glossaries.TermsListParams.html#Crowdin_Api_Glossaries_TermsListParams_OrderBy_
+  commentId: Overload:Crowdin.Api.Glossaries.TermsListParams.OrderBy
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.TermsListParams.OrderBy
+  nameWithType: TermsListParams.OrderBy
 - uid: Crowdin.Api.Glossaries.TermsListParams.ToQueryParams
   name: ToQueryParams()
   href: api/Crowdin.Api.Glossaries.TermsListParams.html#Crowdin_Api_Glossaries_TermsListParams_ToQueryParams
@@ -9768,12 +9797,15 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Labels.LabelsApiExecutor.GetLabel
   nameWithType: LabelsApiExecutor.GetLabel
-- uid: Crowdin.Api.Labels.LabelsApiExecutor.ListLabels(System.Int32,System.Int32,System.Int32,System.Boolean)
-  name: ListLabels(Int32, Int32, Int32, Boolean)
-  href: api/Crowdin.Api.Labels.LabelsApiExecutor.html#Crowdin_Api_Labels_LabelsApiExecutor_ListLabels_System_Int32_System_Int32_System_Int32_System_Boolean_
-  commentId: M:Crowdin.Api.Labels.LabelsApiExecutor.ListLabels(System.Int32,System.Int32,System.Int32,System.Boolean)
-  fullName: Crowdin.Api.Labels.LabelsApiExecutor.ListLabels(System.Int32, System.Int32, System.Int32, System.Boolean)
-  nameWithType: LabelsApiExecutor.ListLabels(Int32, Int32, Int32, Boolean)
+- uid: Crowdin.Api.Labels.LabelsApiExecutor.ListLabels(System.Int32,System.Int32,System.Int32,System.Nullable{System.Boolean},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListLabels(Int32, Int32, Int32, Nullable<Boolean>, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Labels.LabelsApiExecutor.html#Crowdin_Api_Labels_LabelsApiExecutor_ListLabels_System_Int32_System_Int32_System_Int32_System_Nullable_System_Boolean__System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Labels.LabelsApiExecutor.ListLabels(System.Int32,System.Int32,System.Int32,System.Nullable{System.Boolean},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListLabels(Int32, Int32, Int32, Nullable(Of Boolean), Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Labels.LabelsApiExecutor.ListLabels(System.Int32, System.Int32, System.Int32, System.Nullable<System.Boolean>, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Labels.LabelsApiExecutor.ListLabels(System.Int32, System.Int32, System.Int32, System.Nullable(Of System.Boolean), System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: LabelsApiExecutor.ListLabels(Int32, Int32, Int32, Nullable<Boolean>, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: LabelsApiExecutor.ListLabels(Int32, Int32, Int32, Nullable(Of Boolean), Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.Labels.LabelsApiExecutor.ListLabels*
   name: ListLabels
   href: api/Crowdin.Api.Labels.LabelsApiExecutor.html#Crowdin_Api_Labels_LabelsApiExecutor_ListLabels_
@@ -15810,15 +15842,15 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.GetProjectStringsExporterSettings
   nameWithType: ProjectsGroupsApiExecutor.GetProjectStringsExporterSettings
-- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListGroups(System.Nullable{System.Int32},System.Int32,System.Int32)
-  name: ListGroups(Nullable<Int32>, Int32, Int32)
-  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_ListGroups_System_Nullable_System_Int32__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListGroups(System.Nullable{System.Int32},System.Int32,System.Int32)
-  name.vb: ListGroups(Nullable(Of Int32), Int32, Int32)
-  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListGroups(System.Nullable<System.Int32>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListGroups(System.Nullable(Of System.Int32), System.Int32, System.Int32)
-  nameWithType: ProjectsGroupsApiExecutor.ListGroups(Nullable<Int32>, Int32, Int32)
-  nameWithType.vb: ProjectsGroupsApiExecutor.ListGroups(Nullable(Of Int32), Int32, Int32)
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListGroups(System.Nullable{System.Int32},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListGroups(Nullable<Int32>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_ListGroups_System_Nullable_System_Int32__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListGroups(System.Nullable{System.Int32},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListGroups(Nullable(Of Int32), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListGroups(System.Nullable<System.Int32>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListGroups(System.Nullable(Of System.Int32), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: ProjectsGroupsApiExecutor.ListGroups(Nullable<Int32>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: ProjectsGroupsApiExecutor.ListGroups(Nullable(Of Int32), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListGroups*
   name: ListGroups
   href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_ListGroups_
@@ -15846,15 +15878,15 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjects
   nameWithType: ProjectsGroupsApiExecutor.ListProjects
-- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjects``1(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Boolean,System.Nullable{Crowdin.Api.ProjectsGroups.ProjectType},System.Int32,System.Int32)
-  name: ListProjects<TProject>(Nullable<Int32>, Nullable<Int32>, Boolean, Nullable<ProjectType>, Int32, Int32)
-  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_ListProjects__1_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Boolean_System_Nullable_Crowdin_Api_ProjectsGroups_ProjectType__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjects``1(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Boolean,System.Nullable{Crowdin.Api.ProjectsGroups.ProjectType},System.Int32,System.Int32)
-  name.vb: ListProjects(Of TProject)(Nullable(Of Int32), Nullable(Of Int32), Boolean, Nullable(Of ProjectType), Int32, Int32)
-  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjects<TProject>(System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Boolean, System.Nullable<Crowdin.Api.ProjectsGroups.ProjectType>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjects(Of TProject)(System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Boolean, System.Nullable(Of Crowdin.Api.ProjectsGroups.ProjectType), System.Int32, System.Int32)
-  nameWithType: ProjectsGroupsApiExecutor.ListProjects<TProject>(Nullable<Int32>, Nullable<Int32>, Boolean, Nullable<ProjectType>, Int32, Int32)
-  nameWithType.vb: ProjectsGroupsApiExecutor.ListProjects(Of TProject)(Nullable(Of Int32), Nullable(Of Int32), Boolean, Nullable(Of ProjectType), Int32, Int32)
+- uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjects``1(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Boolean,System.Nullable{Crowdin.Api.ProjectsGroups.ProjectType},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListProjects<TProject>(Nullable<Int32>, Nullable<Int32>, Boolean, Nullable<ProjectType>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_ListProjects__1_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Boolean_System_Nullable_Crowdin_Api_ProjectsGroups_ProjectType__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjects``1(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Boolean,System.Nullable{Crowdin.Api.ProjectsGroups.ProjectType},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListProjects(Of TProject)(Nullable(Of Int32), Nullable(Of Int32), Boolean, Nullable(Of ProjectType), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjects<TProject>(System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Boolean, System.Nullable<Crowdin.Api.ProjectsGroups.ProjectType>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjects(Of TProject)(System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Boolean, System.Nullable(Of Crowdin.Api.ProjectsGroups.ProjectType), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: ProjectsGroupsApiExecutor.ListProjects<TProject>(Nullable<Int32>, Nullable<Int32>, Boolean, Nullable<ProjectType>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: ProjectsGroupsApiExecutor.ListProjects(Of TProject)(Nullable(Of Int32), Nullable(Of Int32), Boolean, Nullable(Of ProjectType), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.ListProjectStringsExporterSettings(System.Int32)
   name: ListProjectStringsExporterSettings(Int32)
   href: api/Crowdin.Api.ProjectsGroups.ProjectsGroupsApiExecutor.html#Crowdin_Api_ProjectsGroups_ProjectsGroupsApiExecutor_ListProjectStringsExporterSettings_System_Int32_
@@ -19983,6 +20015,83 @@ references:
   commentId: F:Crowdin.Api.Reports.MatchType.Perfect
   fullName: Crowdin.Api.Reports.MatchType.Perfect
   nameWithType: MatchType.Perfect
+- uid: Crowdin.Api.Reports.MatchTypeObject
+  name: MatchTypeObject
+  href: api/Crowdin.Api.Reports.MatchTypeObject.html
+  commentId: T:Crowdin.Api.Reports.MatchTypeObject
+  fullName: Crowdin.Api.Reports.MatchTypeObject
+  nameWithType: MatchTypeObject
+- uid: Crowdin.Api.Reports.MatchTypeObject.FromCustomRange(System.Int32,System.Int32)
+  name: FromCustomRange(Int32, Int32)
+  href: api/Crowdin.Api.Reports.MatchTypeObject.html#Crowdin_Api_Reports_MatchTypeObject_FromCustomRange_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.Reports.MatchTypeObject.FromCustomRange(System.Int32,System.Int32)
+  fullName: Crowdin.Api.Reports.MatchTypeObject.FromCustomRange(System.Int32, System.Int32)
+  nameWithType: MatchTypeObject.FromCustomRange(Int32, Int32)
+- uid: Crowdin.Api.Reports.MatchTypeObject.FromCustomRange*
+  name: FromCustomRange
+  href: api/Crowdin.Api.Reports.MatchTypeObject.html#Crowdin_Api_Reports_MatchTypeObject_FromCustomRange_
+  commentId: Overload:Crowdin.Api.Reports.MatchTypeObject.FromCustomRange
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.MatchTypeObject.FromCustomRange
+  nameWithType: MatchTypeObject.FromCustomRange
+- uid: Crowdin.Api.Reports.MatchTypeObject.FromStaticRange(Crowdin.Api.Reports.MatchType)
+  name: FromStaticRange(MatchType)
+  href: api/Crowdin.Api.Reports.MatchTypeObject.html#Crowdin_Api_Reports_MatchTypeObject_FromStaticRange_Crowdin_Api_Reports_MatchType_
+  commentId: M:Crowdin.Api.Reports.MatchTypeObject.FromStaticRange(Crowdin.Api.Reports.MatchType)
+  fullName: Crowdin.Api.Reports.MatchTypeObject.FromStaticRange(Crowdin.Api.Reports.MatchType)
+  nameWithType: MatchTypeObject.FromStaticRange(MatchType)
+- uid: Crowdin.Api.Reports.MatchTypeObject.FromStaticRange*
+  name: FromStaticRange
+  href: api/Crowdin.Api.Reports.MatchTypeObject.html#Crowdin_Api_Reports_MatchTypeObject_FromStaticRange_
+  commentId: Overload:Crowdin.Api.Reports.MatchTypeObject.FromStaticRange
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.MatchTypeObject.FromStaticRange
+  nameWithType: MatchTypeObject.FromStaticRange
+- uid: Crowdin.Api.Reports.MatchTypeObject.op_Implicit(Crowdin.Api.Reports.MatchType)~Crowdin.Api.Reports.MatchTypeObject
+  name: Implicit(MatchType to MatchTypeObject)
+  href: api/Crowdin.Api.Reports.MatchTypeObject.html#Crowdin_Api_Reports_MatchTypeObject_op_Implicit_Crowdin_Api_Reports_MatchType__Crowdin_Api_Reports_MatchTypeObject
+  commentId: M:Crowdin.Api.Reports.MatchTypeObject.op_Implicit(Crowdin.Api.Reports.MatchType)~Crowdin.Api.Reports.MatchTypeObject
+  name.vb: Widening(MatchType to MatchTypeObject)
+  fullName: Crowdin.Api.Reports.MatchTypeObject.Implicit(Crowdin.Api.Reports.MatchType to Crowdin.Api.Reports.MatchTypeObject)
+  fullName.vb: Crowdin.Api.Reports.MatchTypeObject.Widening(Crowdin.Api.Reports.MatchType to Crowdin.Api.Reports.MatchTypeObject)
+  nameWithType: MatchTypeObject.Implicit(MatchType to MatchTypeObject)
+  nameWithType.vb: MatchTypeObject.Widening(MatchType to MatchTypeObject)
+- uid: Crowdin.Api.Reports.MatchTypeObject.op_Implicit*
+  name: Implicit
+  href: api/Crowdin.Api.Reports.MatchTypeObject.html#Crowdin_Api_Reports_MatchTypeObject_op_Implicit_
+  commentId: Overload:Crowdin.Api.Reports.MatchTypeObject.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Crowdin.Api.Reports.MatchTypeObject.Implicit
+  fullName.vb: Crowdin.Api.Reports.MatchTypeObject.Widening
+  nameWithType: MatchTypeObject.Implicit
+  nameWithType.vb: MatchTypeObject.Widening
+- uid: Crowdin.Api.Reports.MatchTypeObject.ToString
+  name: ToString()
+  href: api/Crowdin.Api.Reports.MatchTypeObject.html#Crowdin_Api_Reports_MatchTypeObject_ToString
+  commentId: M:Crowdin.Api.Reports.MatchTypeObject.ToString
+  fullName: Crowdin.Api.Reports.MatchTypeObject.ToString()
+  nameWithType: MatchTypeObject.ToString()
+- uid: Crowdin.Api.Reports.MatchTypeObject.ToString*
+  name: ToString
+  href: api/Crowdin.Api.Reports.MatchTypeObject.html#Crowdin_Api_Reports_MatchTypeObject_ToString_
+  commentId: Overload:Crowdin.Api.Reports.MatchTypeObject.ToString
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.MatchTypeObject.ToString
+  nameWithType: MatchTypeObject.ToString
+- uid: Crowdin.Api.Reports.MatchTypeObject.Value
+  name: Value
+  href: api/Crowdin.Api.Reports.MatchTypeObject.html#Crowdin_Api_Reports_MatchTypeObject_Value
+  commentId: P:Crowdin.Api.Reports.MatchTypeObject.Value
+  fullName: Crowdin.Api.Reports.MatchTypeObject.Value
+  nameWithType: MatchTypeObject.Value
+- uid: Crowdin.Api.Reports.MatchTypeObject.Value*
+  name: Value
+  href: api/Crowdin.Api.Reports.MatchTypeObject.html#Crowdin_Api_Reports_MatchTypeObject_Value_
+  commentId: Overload:Crowdin.Api.Reports.MatchTypeObject.Value
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.MatchTypeObject.Value
+  nameWithType: MatchTypeObject.Value
 - uid: Crowdin.Api.Reports.ReportApprovalIndividualRates
   name: ReportApprovalIndividualRates
   href: api/Crowdin.Api.Reports.ReportApprovalIndividualRates.html
@@ -23491,12 +23600,15 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Screenshots.ScreenshotsApiExecutor.GetTag
   nameWithType: ScreenshotsApiExecutor.GetTag
-- uid: Crowdin.Api.Screenshots.ScreenshotsApiExecutor.ListScreenshots(System.Int32,System.Int32,System.Int32)
-  name: ListScreenshots(Int32, Int32, Int32)
-  href: api/Crowdin.Api.Screenshots.ScreenshotsApiExecutor.html#Crowdin_Api_Screenshots_ScreenshotsApiExecutor_ListScreenshots_System_Int32_System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.Screenshots.ScreenshotsApiExecutor.ListScreenshots(System.Int32,System.Int32,System.Int32)
-  fullName: Crowdin.Api.Screenshots.ScreenshotsApiExecutor.ListScreenshots(System.Int32, System.Int32, System.Int32)
-  nameWithType: ScreenshotsApiExecutor.ListScreenshots(Int32, Int32, Int32)
+- uid: Crowdin.Api.Screenshots.ScreenshotsApiExecutor.ListScreenshots(System.Int32,System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListScreenshots(Int32, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Screenshots.ScreenshotsApiExecutor.html#Crowdin_Api_Screenshots_ScreenshotsApiExecutor_ListScreenshots_System_Int32_System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Screenshots.ScreenshotsApiExecutor.ListScreenshots(System.Int32,System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListScreenshots(Int32, Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Screenshots.ScreenshotsApiExecutor.ListScreenshots(System.Int32, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Screenshots.ScreenshotsApiExecutor.ListScreenshots(System.Int32, System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: ScreenshotsApiExecutor.ListScreenshots(Int32, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: ScreenshotsApiExecutor.ListScreenshots(Int32, Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.Screenshots.ScreenshotsApiExecutor.ListScreenshots*
   name: ListScreenshots
   href: api/Crowdin.Api.Screenshots.ScreenshotsApiExecutor.html#Crowdin_Api_Screenshots_ScreenshotsApiExecutor_ListScreenshots_
@@ -24061,6 +24173,69 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.SecurityLogs.SecurityLogsApiExecutor.ListUserSecurityLogs
   nameWithType: SecurityLogsApiExecutor.ListUserSecurityLogs
+- uid: Crowdin.Api.SortingOrder
+  name: SortingOrder
+  href: api/Crowdin.Api.SortingOrder.html
+  commentId: T:Crowdin.Api.SortingOrder
+  fullName: Crowdin.Api.SortingOrder
+  nameWithType: SortingOrder
+- uid: Crowdin.Api.SortingOrder.Ascending
+  name: Ascending
+  href: api/Crowdin.Api.SortingOrder.html#Crowdin_Api_SortingOrder_Ascending
+  commentId: F:Crowdin.Api.SortingOrder.Ascending
+  fullName: Crowdin.Api.SortingOrder.Ascending
+  nameWithType: SortingOrder.Ascending
+- uid: Crowdin.Api.SortingOrder.Descending
+  name: Descending
+  href: api/Crowdin.Api.SortingOrder.html#Crowdin_Api_SortingOrder_Descending
+  commentId: F:Crowdin.Api.SortingOrder.Descending
+  fullName: Crowdin.Api.SortingOrder.Descending
+  nameWithType: SortingOrder.Descending
+- uid: Crowdin.Api.SortingRule
+  name: SortingRule
+  href: api/Crowdin.Api.SortingRule.html
+  commentId: T:Crowdin.Api.SortingRule
+  fullName: Crowdin.Api.SortingRule
+  nameWithType: SortingRule
+- uid: Crowdin.Api.SortingRule.Field
+  name: Field
+  href: api/Crowdin.Api.SortingRule.html#Crowdin_Api_SortingRule_Field
+  commentId: P:Crowdin.Api.SortingRule.Field
+  fullName: Crowdin.Api.SortingRule.Field
+  nameWithType: SortingRule.Field
+- uid: Crowdin.Api.SortingRule.Field*
+  name: Field
+  href: api/Crowdin.Api.SortingRule.html#Crowdin_Api_SortingRule_Field_
+  commentId: Overload:Crowdin.Api.SortingRule.Field
+  isSpec: "True"
+  fullName: Crowdin.Api.SortingRule.Field
+  nameWithType: SortingRule.Field
+- uid: Crowdin.Api.SortingRule.Order
+  name: Order
+  href: api/Crowdin.Api.SortingRule.html#Crowdin_Api_SortingRule_Order
+  commentId: P:Crowdin.Api.SortingRule.Order
+  fullName: Crowdin.Api.SortingRule.Order
+  nameWithType: SortingRule.Order
+- uid: Crowdin.Api.SortingRule.Order*
+  name: Order
+  href: api/Crowdin.Api.SortingRule.html#Crowdin_Api_SortingRule_Order_
+  commentId: Overload:Crowdin.Api.SortingRule.Order
+  isSpec: "True"
+  fullName: Crowdin.Api.SortingRule.Order
+  nameWithType: SortingRule.Order
+- uid: Crowdin.Api.SortingRule.ToString
+  name: ToString()
+  href: api/Crowdin.Api.SortingRule.html#Crowdin_Api_SortingRule_ToString
+  commentId: M:Crowdin.Api.SortingRule.ToString
+  fullName: Crowdin.Api.SortingRule.ToString()
+  nameWithType: SortingRule.ToString()
+- uid: Crowdin.Api.SortingRule.ToString*
+  name: ToString
+  href: api/Crowdin.Api.SortingRule.html#Crowdin_Api_SortingRule_ToString_
+  commentId: Overload:Crowdin.Api.SortingRule.ToString
+  isSpec: "True"
+  fullName: Crowdin.Api.SortingRule.ToString
+  nameWithType: SortingRule.ToString
 - uid: Crowdin.Api.SourceFiles
   name: Crowdin.Api.SourceFiles
   href: api/Crowdin.Api.SourceFiles.html
@@ -24444,15 +24619,15 @@ references:
   commentId: M:Crowdin.Api.SourceFiles.DirectoriesListParams.#ctor
   fullName: Crowdin.Api.SourceFiles.DirectoriesListParams.DirectoriesListParams()
   nameWithType: DirectoriesListParams.DirectoriesListParams()
-- uid: Crowdin.Api.SourceFiles.DirectoriesListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Object},System.Int32,System.Int32)
-  name: DirectoriesListParams(Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Object>, Int32, Int32)
-  href: api/Crowdin.Api.SourceFiles.DirectoriesListParams.html#Crowdin_Api_SourceFiles_DirectoriesListParams__ctor_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Object__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.SourceFiles.DirectoriesListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Object},System.Int32,System.Int32)
-  name.vb: DirectoriesListParams(Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Object), Int32, Int32)
-  fullName: Crowdin.Api.SourceFiles.DirectoriesListParams.DirectoriesListParams(System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Object>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.SourceFiles.DirectoriesListParams.DirectoriesListParams(System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Object), System.Int32, System.Int32)
-  nameWithType: DirectoriesListParams.DirectoriesListParams(Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Object>, Int32, Int32)
-  nameWithType.vb: DirectoriesListParams.DirectoriesListParams(Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Object), Int32, Int32)
+- uid: Crowdin.Api.SourceFiles.DirectoriesListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Object},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: DirectoriesListParams(Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Object>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.SourceFiles.DirectoriesListParams.html#Crowdin_Api_SourceFiles_DirectoriesListParams__ctor_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Object__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.SourceFiles.DirectoriesListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Object},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: DirectoriesListParams(Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Object), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.SourceFiles.DirectoriesListParams.DirectoriesListParams(System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Object>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.SourceFiles.DirectoriesListParams.DirectoriesListParams(System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Object), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: DirectoriesListParams.DirectoriesListParams(Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Object>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: DirectoriesListParams.DirectoriesListParams(Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Object), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.SourceFiles.DirectoriesListParams.#ctor*
   name: DirectoriesListParams
   href: api/Crowdin.Api.SourceFiles.DirectoriesListParams.html#Crowdin_Api_SourceFiles_DirectoriesListParams__ctor_
@@ -24525,6 +24700,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.SourceFiles.DirectoriesListParams.Offset
   nameWithType: DirectoriesListParams.Offset
+- uid: Crowdin.Api.SourceFiles.DirectoriesListParams.OrderBy
+  name: OrderBy
+  href: api/Crowdin.Api.SourceFiles.DirectoriesListParams.html#Crowdin_Api_SourceFiles_DirectoriesListParams_OrderBy
+  commentId: P:Crowdin.Api.SourceFiles.DirectoriesListParams.OrderBy
+  fullName: Crowdin.Api.SourceFiles.DirectoriesListParams.OrderBy
+  nameWithType: DirectoriesListParams.OrderBy
+- uid: Crowdin.Api.SourceFiles.DirectoriesListParams.OrderBy*
+  name: OrderBy
+  href: api/Crowdin.Api.SourceFiles.DirectoriesListParams.html#Crowdin_Api_SourceFiles_DirectoriesListParams_OrderBy_
+  commentId: Overload:Crowdin.Api.SourceFiles.DirectoriesListParams.OrderBy
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.DirectoriesListParams.OrderBy
+  nameWithType: DirectoriesListParams.OrderBy
 - uid: Crowdin.Api.SourceFiles.DirectoriesListParams.Recursion
   name: Recursion
   href: api/Crowdin.Api.SourceFiles.DirectoriesListParams.html#Crowdin_Api_SourceFiles_DirectoriesListParams_Recursion
@@ -25802,15 +25990,15 @@ references:
   commentId: M:Crowdin.Api.SourceFiles.FilesListParams.#ctor
   fullName: Crowdin.Api.SourceFiles.FilesListParams.FilesListParams()
   nameWithType: FilesListParams.FilesListParams()
-- uid: Crowdin.Api.SourceFiles.FilesListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Object},System.Int32,System.Int32)
-  name: FilesListParams(Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Object>, Int32, Int32)
-  href: api/Crowdin.Api.SourceFiles.FilesListParams.html#Crowdin_Api_SourceFiles_FilesListParams__ctor_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Object__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.SourceFiles.FilesListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Object},System.Int32,System.Int32)
-  name.vb: FilesListParams(Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Object), Int32, Int32)
-  fullName: Crowdin.Api.SourceFiles.FilesListParams.FilesListParams(System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Object>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.SourceFiles.FilesListParams.FilesListParams(System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Object), System.Int32, System.Int32)
-  nameWithType: FilesListParams.FilesListParams(Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Object>, Int32, Int32)
-  nameWithType.vb: FilesListParams.FilesListParams(Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Object), Int32, Int32)
+- uid: Crowdin.Api.SourceFiles.FilesListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Object},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: FilesListParams(Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Object>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.SourceFiles.FilesListParams.html#Crowdin_Api_SourceFiles_FilesListParams__ctor_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Object__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.SourceFiles.FilesListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Object},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: FilesListParams(Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Object), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.SourceFiles.FilesListParams.FilesListParams(System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Object>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.SourceFiles.FilesListParams.FilesListParams(System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Object), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: FilesListParams.FilesListParams(Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Object>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: FilesListParams.FilesListParams(Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Object), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.SourceFiles.FilesListParams.#ctor*
   name: FilesListParams
   href: api/Crowdin.Api.SourceFiles.FilesListParams.html#Crowdin_Api_SourceFiles_FilesListParams__ctor_
@@ -25883,6 +26071,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.SourceFiles.FilesListParams.Offset
   nameWithType: FilesListParams.Offset
+- uid: Crowdin.Api.SourceFiles.FilesListParams.OrderBy
+  name: OrderBy
+  href: api/Crowdin.Api.SourceFiles.FilesListParams.html#Crowdin_Api_SourceFiles_FilesListParams_OrderBy
+  commentId: P:Crowdin.Api.SourceFiles.FilesListParams.OrderBy
+  fullName: Crowdin.Api.SourceFiles.FilesListParams.OrderBy
+  nameWithType: FilesListParams.OrderBy
+- uid: Crowdin.Api.SourceFiles.FilesListParams.OrderBy*
+  name: OrderBy
+  href: api/Crowdin.Api.SourceFiles.FilesListParams.html#Crowdin_Api_SourceFiles_FilesListParams_OrderBy_
+  commentId: Overload:Crowdin.Api.SourceFiles.FilesListParams.OrderBy
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.FilesListParams.OrderBy
+  nameWithType: FilesListParams.OrderBy
 - uid: Crowdin.Api.SourceFiles.FilesListParams.Recursion
   name: Recursion
   href: api/Crowdin.Api.SourceFiles.FilesListParams.html#Crowdin_Api_SourceFiles_FilesListParams_Recursion
@@ -27283,15 +27484,15 @@ references:
   commentId: M:Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListDirectories(System.Int32,Crowdin.Api.SourceFiles.DirectoriesListParams)
   fullName: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListDirectories(System.Int32, Crowdin.Api.SourceFiles.DirectoriesListParams)
   nameWithType: SourceFilesApiExecutor.ListDirectories(Int32, DirectoriesListParams)
-- uid: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListDirectories(System.Int32,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Object})
-  name: ListDirectories(Int32, Int32, Int32, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Object>)
-  href: api/Crowdin.Api.SourceFiles.SourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_SourceFilesApiExecutor_ListDirectories_System_Int32_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Object__
-  commentId: M:Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListDirectories(System.Int32,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Object})
-  name.vb: ListDirectories(Int32, Int32, Int32, Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Object))
-  fullName: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListDirectories(System.Int32, System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Object>)
-  fullName.vb: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListDirectories(System.Int32, System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Object))
-  nameWithType: SourceFilesApiExecutor.ListDirectories(Int32, Int32, Int32, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Object>)
-  nameWithType.vb: SourceFilesApiExecutor.ListDirectories(Int32, Int32, Int32, Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Object))
+- uid: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListDirectories(System.Int32,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Object},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListDirectories(Int32, Int32, Int32, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Object>, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.SourceFiles.SourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_SourceFilesApiExecutor_ListDirectories_System_Int32_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Object__System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListDirectories(System.Int32,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Object},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListDirectories(Int32, Int32, Int32, Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Object), Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListDirectories(System.Int32, System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Object>, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListDirectories(System.Int32, System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Object), System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: SourceFilesApiExecutor.ListDirectories(Int32, Int32, Int32, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Object>, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: SourceFilesApiExecutor.ListDirectories(Int32, Int32, Int32, Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Object), Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListDirectories*
   name: ListDirectories
   href: api/Crowdin.Api.SourceFiles.SourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_SourceFilesApiExecutor_ListDirectories_
@@ -27328,15 +27529,15 @@ references:
   fullName.vb: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListFiles(Of T)(System.Int32, Crowdin.Api.SourceFiles.FilesListParams)
   nameWithType: SourceFilesApiExecutor.ListFiles<T>(Int32, FilesListParams)
   nameWithType.vb: SourceFilesApiExecutor.ListFiles(Of T)(Int32, FilesListParams)
-- uid: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListFiles``1(System.Int32,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Object})
-  name: ListFiles<T>(Int32, Int32, Int32, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Object>)
-  href: api/Crowdin.Api.SourceFiles.SourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_SourceFilesApiExecutor_ListFiles__1_System_Int32_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Object__
-  commentId: M:Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListFiles``1(System.Int32,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Object})
-  name.vb: ListFiles(Of T)(Int32, Int32, Int32, Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Object))
-  fullName: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListFiles<T>(System.Int32, System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Object>)
-  fullName.vb: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListFiles(Of T)(System.Int32, System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Object))
-  nameWithType: SourceFilesApiExecutor.ListFiles<T>(Int32, Int32, Int32, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Object>)
-  nameWithType.vb: SourceFilesApiExecutor.ListFiles(Of T)(Int32, Int32, Int32, Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Object))
+- uid: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListFiles``1(System.Int32,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Object},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListFiles<T>(Int32, Int32, Int32, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Object>, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.SourceFiles.SourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_SourceFilesApiExecutor_ListFiles__1_System_Int32_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Object__System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListFiles``1(System.Int32,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Object},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListFiles(Of T)(Int32, Int32, Int32, Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Object), Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListFiles<T>(System.Int32, System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Object>, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListFiles(Of T)(System.Int32, System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Object), System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: SourceFilesApiExecutor.ListFiles<T>(Int32, Int32, Int32, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Object>, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: SourceFilesApiExecutor.ListFiles(Of T)(Int32, Int32, Int32, Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Object), Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListReviewedSourceFilesBuilds(System.Int32,System.Nullable{System.Int32},System.Int32,System.Int32)
   name: ListReviewedSourceFilesBuilds(Int32, Nullable<Int32>, Int32, Int32)
   href: api/Crowdin.Api.SourceFiles.SourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_SourceFilesApiExecutor_ListReviewedSourceFilesBuilds_System_Int32_System_Nullable_System_Int32__System_Int32_System_Int32_
@@ -27949,15 +28150,15 @@ references:
   commentId: M:Crowdin.Api.SourceStrings.SourceStringsApiExecutor.ListStrings(System.Int32,Crowdin.Api.SourceStrings.StringsListParams)
   fullName: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.ListStrings(System.Int32, Crowdin.Api.SourceStrings.StringsListParams)
   nameWithType: SourceStringsApiExecutor.ListStrings(Int32, StringsListParams)
-- uid: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.ListStrings(System.Int32,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{Crowdin.Api.SourceStrings.StringScope})
-  name: ListStrings(Int32, Int32, Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<String>, Nullable<StringScope>)
-  href: api/Crowdin.Api.SourceStrings.SourceStringsApiExecutor.html#Crowdin_Api_SourceStrings_SourceStringsApiExecutor_ListStrings_System_Int32_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_String__System_Nullable_Crowdin_Api_SourceStrings_StringScope__
-  commentId: M:Crowdin.Api.SourceStrings.SourceStringsApiExecutor.ListStrings(System.Int32,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{Crowdin.Api.SourceStrings.StringScope})
-  name.vb: ListStrings(Int32, Int32, Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Nullable(Of StringScope))
-  fullName: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.ListStrings(System.Int32, System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.String>, System.Nullable<Crowdin.Api.SourceStrings.StringScope>)
-  fullName.vb: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.ListStrings(System.Int32, System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.String), System.Nullable(Of Crowdin.Api.SourceStrings.StringScope))
-  nameWithType: SourceStringsApiExecutor.ListStrings(Int32, Int32, Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<String>, Nullable<StringScope>)
-  nameWithType.vb: SourceStringsApiExecutor.ListStrings(Int32, Int32, Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Nullable(Of StringScope))
+- uid: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.ListStrings(System.Int32,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{Crowdin.Api.SourceStrings.StringScope},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListStrings(Int32, Int32, Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<String>, Nullable<StringScope>, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.SourceStrings.SourceStringsApiExecutor.html#Crowdin_Api_SourceStrings_SourceStringsApiExecutor_ListStrings_System_Int32_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_String__System_Nullable_Crowdin_Api_SourceStrings_StringScope__System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.SourceStrings.SourceStringsApiExecutor.ListStrings(System.Int32,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{Crowdin.Api.SourceStrings.StringScope},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListStrings(Int32, Int32, Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Nullable(Of StringScope), Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.ListStrings(System.Int32, System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.String>, System.Nullable<Crowdin.Api.SourceStrings.StringScope>, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.ListStrings(System.Int32, System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.String), System.Nullable(Of Crowdin.Api.SourceStrings.StringScope), System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: SourceStringsApiExecutor.ListStrings(Int32, Int32, Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<String>, Nullable<StringScope>, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: SourceStringsApiExecutor.ListStrings(Int32, Int32, Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Nullable(Of StringScope), Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.ListStrings*
   name: ListStrings
   href: api/Crowdin.Api.SourceStrings.SourceStringsApiExecutor.html#Crowdin_Api_SourceStrings_SourceStringsApiExecutor_ListStrings_
@@ -28267,15 +28468,15 @@ references:
   commentId: M:Crowdin.Api.SourceStrings.StringsListParams.#ctor
   fullName: Crowdin.Api.SourceStrings.StringsListParams.StringsListParams()
   nameWithType: StringsListParams.StringsListParams()
-- uid: Crowdin.Api.SourceStrings.StringsListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{Crowdin.Api.SourceStrings.StringScope},System.Int32,System.Int32)
-  name: StringsListParams(Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<String>, Nullable<StringScope>, Int32, Int32)
-  href: api/Crowdin.Api.SourceStrings.StringsListParams.html#Crowdin_Api_SourceStrings_StringsListParams__ctor_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_String__System_Nullable_Crowdin_Api_SourceStrings_StringScope__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.SourceStrings.StringsListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{Crowdin.Api.SourceStrings.StringScope},System.Int32,System.Int32)
-  name.vb: StringsListParams(Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Nullable(Of StringScope), Int32, Int32)
-  fullName: Crowdin.Api.SourceStrings.StringsListParams.StringsListParams(System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.String>, System.Nullable<Crowdin.Api.SourceStrings.StringScope>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.SourceStrings.StringsListParams.StringsListParams(System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.String), System.Nullable(Of Crowdin.Api.SourceStrings.StringScope), System.Int32, System.Int32)
-  nameWithType: StringsListParams.StringsListParams(Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<String>, Nullable<StringScope>, Int32, Int32)
-  nameWithType.vb: StringsListParams.StringsListParams(Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Nullable(Of StringScope), Int32, Int32)
+- uid: Crowdin.Api.SourceStrings.StringsListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{Crowdin.Api.SourceStrings.StringScope},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: StringsListParams(Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<String>, Nullable<StringScope>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.SourceStrings.StringsListParams.html#Crowdin_Api_SourceStrings_StringsListParams__ctor_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_String__System_Nullable_Crowdin_Api_SourceStrings_StringScope__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.SourceStrings.StringsListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{Crowdin.Api.SourceStrings.StringScope},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: StringsListParams(Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Nullable(Of StringScope), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.SourceStrings.StringsListParams.StringsListParams(System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.String>, System.Nullable<Crowdin.Api.SourceStrings.StringScope>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.SourceStrings.StringsListParams.StringsListParams(System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.String), System.Nullable(Of Crowdin.Api.SourceStrings.StringScope), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: StringsListParams.StringsListParams(Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<String>, Nullable<StringScope>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: StringsListParams.StringsListParams(Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Nullable(Of StringScope), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.SourceStrings.StringsListParams.#ctor*
   name: StringsListParams
   href: api/Crowdin.Api.SourceStrings.StringsListParams.html#Crowdin_Api_SourceStrings_StringsListParams__ctor_
@@ -28400,6 +28601,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.SourceStrings.StringsListParams.Offset
   nameWithType: StringsListParams.Offset
+- uid: Crowdin.Api.SourceStrings.StringsListParams.OrderBy
+  name: OrderBy
+  href: api/Crowdin.Api.SourceStrings.StringsListParams.html#Crowdin_Api_SourceStrings_StringsListParams_OrderBy
+  commentId: P:Crowdin.Api.SourceStrings.StringsListParams.OrderBy
+  fullName: Crowdin.Api.SourceStrings.StringsListParams.OrderBy
+  nameWithType: StringsListParams.OrderBy
+- uid: Crowdin.Api.SourceStrings.StringsListParams.OrderBy*
+  name: OrderBy
+  href: api/Crowdin.Api.SourceStrings.StringsListParams.html#Crowdin_Api_SourceStrings_StringsListParams_OrderBy_
+  commentId: Overload:Crowdin.Api.SourceStrings.StringsListParams.OrderBy
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceStrings.StringsListParams.OrderBy
+  nameWithType: StringsListParams.OrderBy
 - uid: Crowdin.Api.SourceStrings.StringsListParams.Scope
   name: Scope
   href: api/Crowdin.Api.SourceStrings.StringsListParams.html#Crowdin_Api_SourceStrings_StringsListParams_Scope
@@ -29462,15 +29676,15 @@ references:
   commentId: M:Crowdin.Api.StringComments.StringCommentsApiExecutor.ListStringComments(System.Int32,Crowdin.Api.StringComments.StringCommentsListParams)
   fullName: Crowdin.Api.StringComments.StringCommentsApiExecutor.ListStringComments(System.Int32, Crowdin.Api.StringComments.StringCommentsListParams)
   nameWithType: StringCommentsApiExecutor.ListStringComments(Int32, StringCommentsListParams)
-- uid: Crowdin.Api.StringComments.StringCommentsApiExecutor.ListStringComments(System.Int32,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{Crowdin.Api.StringComments.StringCommentType},System.Nullable{ISet{Crowdin.Api.StringComments.IssueType}},System.Nullable{Crowdin.Api.StringComments.IssueStatus})
-  name: ListStringComments(Int32, Int32, Int32, Nullable<Int32>, Nullable<StringCommentType>, Nullable<ISet<IssueType>>, Nullable<IssueStatus>)
-  href: api/Crowdin.Api.StringComments.StringCommentsApiExecutor.html#Crowdin_Api_StringComments_StringCommentsApiExecutor_ListStringComments_System_Int32_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_Crowdin_Api_StringComments_StringCommentType__System_Nullable_ISet_Crowdin_Api_StringComments_IssueType___System_Nullable_Crowdin_Api_StringComments_IssueStatus__
-  commentId: M:Crowdin.Api.StringComments.StringCommentsApiExecutor.ListStringComments(System.Int32,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{Crowdin.Api.StringComments.StringCommentType},System.Nullable{ISet{Crowdin.Api.StringComments.IssueType}},System.Nullable{Crowdin.Api.StringComments.IssueStatus})
-  name.vb: ListStringComments(Int32, Int32, Int32, Nullable(Of Int32), Nullable(Of StringCommentType), Nullable(Of ISet(Of IssueType)), Nullable(Of IssueStatus))
-  fullName: Crowdin.Api.StringComments.StringCommentsApiExecutor.ListStringComments(System.Int32, System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<Crowdin.Api.StringComments.StringCommentType>, System.Nullable<ISet<Crowdin.Api.StringComments.IssueType>>, System.Nullable<Crowdin.Api.StringComments.IssueStatus>)
-  fullName.vb: Crowdin.Api.StringComments.StringCommentsApiExecutor.ListStringComments(System.Int32, System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of Crowdin.Api.StringComments.StringCommentType), System.Nullable(Of ISet(Of Crowdin.Api.StringComments.IssueType)), System.Nullable(Of Crowdin.Api.StringComments.IssueStatus))
-  nameWithType: StringCommentsApiExecutor.ListStringComments(Int32, Int32, Int32, Nullable<Int32>, Nullable<StringCommentType>, Nullable<ISet<IssueType>>, Nullable<IssueStatus>)
-  nameWithType.vb: StringCommentsApiExecutor.ListStringComments(Int32, Int32, Int32, Nullable(Of Int32), Nullable(Of StringCommentType), Nullable(Of ISet(Of IssueType)), Nullable(Of IssueStatus))
+- uid: Crowdin.Api.StringComments.StringCommentsApiExecutor.ListStringComments(System.Int32,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{Crowdin.Api.StringComments.StringCommentType},System.Nullable{ISet{Crowdin.Api.StringComments.IssueType}},System.Nullable{Crowdin.Api.StringComments.IssueStatus},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListStringComments(Int32, Int32, Int32, Nullable<Int32>, Nullable<StringCommentType>, Nullable<ISet<IssueType>>, Nullable<IssueStatus>, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.StringComments.StringCommentsApiExecutor.html#Crowdin_Api_StringComments_StringCommentsApiExecutor_ListStringComments_System_Int32_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_Crowdin_Api_StringComments_StringCommentType__System_Nullable_ISet_Crowdin_Api_StringComments_IssueType___System_Nullable_Crowdin_Api_StringComments_IssueStatus__System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.StringComments.StringCommentsApiExecutor.ListStringComments(System.Int32,System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{Crowdin.Api.StringComments.StringCommentType},System.Nullable{ISet{Crowdin.Api.StringComments.IssueType}},System.Nullable{Crowdin.Api.StringComments.IssueStatus},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListStringComments(Int32, Int32, Int32, Nullable(Of Int32), Nullable(Of StringCommentType), Nullable(Of ISet(Of IssueType)), Nullable(Of IssueStatus), Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.StringComments.StringCommentsApiExecutor.ListStringComments(System.Int32, System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<Crowdin.Api.StringComments.StringCommentType>, System.Nullable<ISet<Crowdin.Api.StringComments.IssueType>>, System.Nullable<Crowdin.Api.StringComments.IssueStatus>, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.StringComments.StringCommentsApiExecutor.ListStringComments(System.Int32, System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of Crowdin.Api.StringComments.StringCommentType), System.Nullable(Of ISet(Of Crowdin.Api.StringComments.IssueType)), System.Nullable(Of Crowdin.Api.StringComments.IssueStatus), System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: StringCommentsApiExecutor.ListStringComments(Int32, Int32, Int32, Nullable<Int32>, Nullable<StringCommentType>, Nullable<ISet<IssueType>>, Nullable<IssueStatus>, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: StringCommentsApiExecutor.ListStringComments(Int32, Int32, Int32, Nullable(Of Int32), Nullable(Of StringCommentType), Nullable(Of ISet(Of IssueType)), Nullable(Of IssueStatus), Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.StringComments.StringCommentsApiExecutor.ListStringComments*
   name: ListStringComments
   href: api/Crowdin.Api.StringComments.StringCommentsApiExecutor.html#Crowdin_Api_StringComments_StringCommentsApiExecutor_ListStringComments_
@@ -29490,15 +29704,15 @@ references:
   commentId: M:Crowdin.Api.StringComments.StringCommentsListParams.#ctor
   fullName: Crowdin.Api.StringComments.StringCommentsListParams.StringCommentsListParams()
   nameWithType: StringCommentsListParams.StringCommentsListParams()
-- uid: Crowdin.Api.StringComments.StringCommentsListParams.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{Crowdin.Api.StringComments.StringCommentType},System.Nullable{ISet{Crowdin.Api.StringComments.IssueType}},System.Nullable{Crowdin.Api.StringComments.IssueStatus})
-  name: StringCommentsListParams(Int32, Int32, Nullable<Int32>, Nullable<StringCommentType>, Nullable<ISet<IssueType>>, Nullable<IssueStatus>)
-  href: api/Crowdin.Api.StringComments.StringCommentsListParams.html#Crowdin_Api_StringComments_StringCommentsListParams__ctor_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_Crowdin_Api_StringComments_StringCommentType__System_Nullable_ISet_Crowdin_Api_StringComments_IssueType___System_Nullable_Crowdin_Api_StringComments_IssueStatus__
-  commentId: M:Crowdin.Api.StringComments.StringCommentsListParams.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{Crowdin.Api.StringComments.StringCommentType},System.Nullable{ISet{Crowdin.Api.StringComments.IssueType}},System.Nullable{Crowdin.Api.StringComments.IssueStatus})
-  name.vb: StringCommentsListParams(Int32, Int32, Nullable(Of Int32), Nullable(Of StringCommentType), Nullable(Of ISet(Of IssueType)), Nullable(Of IssueStatus))
-  fullName: Crowdin.Api.StringComments.StringCommentsListParams.StringCommentsListParams(System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<Crowdin.Api.StringComments.StringCommentType>, System.Nullable<ISet<Crowdin.Api.StringComments.IssueType>>, System.Nullable<Crowdin.Api.StringComments.IssueStatus>)
-  fullName.vb: Crowdin.Api.StringComments.StringCommentsListParams.StringCommentsListParams(System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of Crowdin.Api.StringComments.StringCommentType), System.Nullable(Of ISet(Of Crowdin.Api.StringComments.IssueType)), System.Nullable(Of Crowdin.Api.StringComments.IssueStatus))
-  nameWithType: StringCommentsListParams.StringCommentsListParams(Int32, Int32, Nullable<Int32>, Nullable<StringCommentType>, Nullable<ISet<IssueType>>, Nullable<IssueStatus>)
-  nameWithType.vb: StringCommentsListParams.StringCommentsListParams(Int32, Int32, Nullable(Of Int32), Nullable(Of StringCommentType), Nullable(Of ISet(Of IssueType)), Nullable(Of IssueStatus))
+- uid: Crowdin.Api.StringComments.StringCommentsListParams.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{Crowdin.Api.StringComments.StringCommentType},System.Nullable{ISet{Crowdin.Api.StringComments.IssueType}},System.Nullable{Crowdin.Api.StringComments.IssueStatus},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: StringCommentsListParams(Int32, Int32, Nullable<Int32>, Nullable<StringCommentType>, Nullable<ISet<IssueType>>, Nullable<IssueStatus>, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.StringComments.StringCommentsListParams.html#Crowdin_Api_StringComments_StringCommentsListParams__ctor_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_Crowdin_Api_StringComments_StringCommentType__System_Nullable_ISet_Crowdin_Api_StringComments_IssueType___System_Nullable_Crowdin_Api_StringComments_IssueStatus__System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.StringComments.StringCommentsListParams.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{Crowdin.Api.StringComments.StringCommentType},System.Nullable{ISet{Crowdin.Api.StringComments.IssueType}},System.Nullable{Crowdin.Api.StringComments.IssueStatus},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: StringCommentsListParams(Int32, Int32, Nullable(Of Int32), Nullable(Of StringCommentType), Nullable(Of ISet(Of IssueType)), Nullable(Of IssueStatus), Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.StringComments.StringCommentsListParams.StringCommentsListParams(System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<Crowdin.Api.StringComments.StringCommentType>, System.Nullable<ISet<Crowdin.Api.StringComments.IssueType>>, System.Nullable<Crowdin.Api.StringComments.IssueStatus>, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.StringComments.StringCommentsListParams.StringCommentsListParams(System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of Crowdin.Api.StringComments.StringCommentType), System.Nullable(Of ISet(Of Crowdin.Api.StringComments.IssueType)), System.Nullable(Of Crowdin.Api.StringComments.IssueStatus), System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: StringCommentsListParams.StringCommentsListParams(Int32, Int32, Nullable<Int32>, Nullable<StringCommentType>, Nullable<ISet<IssueType>>, Nullable<IssueStatus>, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: StringCommentsListParams.StringCommentsListParams(Int32, Int32, Nullable(Of Int32), Nullable(Of StringCommentType), Nullable(Of ISet(Of IssueType)), Nullable(Of IssueStatus), Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.StringComments.StringCommentsListParams.#ctor*
   name: StringCommentsListParams
   href: api/Crowdin.Api.StringComments.StringCommentsListParams.html#Crowdin_Api_StringComments_StringCommentsListParams__ctor_
@@ -29558,6 +29772,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringComments.StringCommentsListParams.Offset
   nameWithType: StringCommentsListParams.Offset
+- uid: Crowdin.Api.StringComments.StringCommentsListParams.OrderBy
+  name: OrderBy
+  href: api/Crowdin.Api.StringComments.StringCommentsListParams.html#Crowdin_Api_StringComments_StringCommentsListParams_OrderBy
+  commentId: P:Crowdin.Api.StringComments.StringCommentsListParams.OrderBy
+  fullName: Crowdin.Api.StringComments.StringCommentsListParams.OrderBy
+  nameWithType: StringCommentsListParams.OrderBy
+- uid: Crowdin.Api.StringComments.StringCommentsListParams.OrderBy*
+  name: OrderBy
+  href: api/Crowdin.Api.StringComments.StringCommentsListParams.html#Crowdin_Api_StringComments_StringCommentsListParams_OrderBy_
+  commentId: Overload:Crowdin.Api.StringComments.StringCommentsListParams.OrderBy
+  isSpec: "True"
+  fullName: Crowdin.Api.StringComments.StringCommentsListParams.OrderBy
+  nameWithType: StringCommentsListParams.OrderBy
 - uid: Crowdin.Api.StringComments.StringCommentsListParams.StringId
   name: StringId
   href: api/Crowdin.Api.StringComments.StringCommentsListParams.html#Crowdin_Api_StringComments_StringCommentsListParams_StringId
@@ -29916,15 +30143,15 @@ references:
   commentId: M:Crowdin.Api.StringTranslations.LanguageTranslationsListParams.#ctor
   fullName: Crowdin.Api.StringTranslations.LanguageTranslationsListParams.LanguageTranslationsListParams()
   nameWithType: LanguageTranslationsListParams.LanguageTranslationsListParams()
-- uid: Crowdin.Api.StringTranslations.LanguageTranslationsListParams.#ctor(System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Boolean},System.Int32,System.Int32)
-  name: LanguageTranslationsListParams(Nullable<String>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Boolean>, Int32, Int32)
-  href: api/Crowdin.Api.StringTranslations.LanguageTranslationsListParams.html#Crowdin_Api_StringTranslations_LanguageTranslationsListParams__ctor_System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Boolean__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.StringTranslations.LanguageTranslationsListParams.#ctor(System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Boolean},System.Int32,System.Int32)
-  name.vb: LanguageTranslationsListParams(Nullable(Of String), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Boolean), Int32, Int32)
-  fullName: Crowdin.Api.StringTranslations.LanguageTranslationsListParams.LanguageTranslationsListParams(System.Nullable<System.String>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Boolean>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.StringTranslations.LanguageTranslationsListParams.LanguageTranslationsListParams(System.Nullable(Of System.String), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Boolean), System.Int32, System.Int32)
-  nameWithType: LanguageTranslationsListParams.LanguageTranslationsListParams(Nullable<String>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Boolean>, Int32, Int32)
-  nameWithType.vb: LanguageTranslationsListParams.LanguageTranslationsListParams(Nullable(Of String), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Boolean), Int32, Int32)
+- uid: Crowdin.Api.StringTranslations.LanguageTranslationsListParams.#ctor(System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Boolean},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: LanguageTranslationsListParams(Nullable<String>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Boolean>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.StringTranslations.LanguageTranslationsListParams.html#Crowdin_Api_StringTranslations_LanguageTranslationsListParams__ctor_System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Boolean__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.StringTranslations.LanguageTranslationsListParams.#ctor(System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Boolean},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: LanguageTranslationsListParams(Nullable(Of String), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Boolean), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.StringTranslations.LanguageTranslationsListParams.LanguageTranslationsListParams(System.Nullable<System.String>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Boolean>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.StringTranslations.LanguageTranslationsListParams.LanguageTranslationsListParams(System.Nullable(Of System.String), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Boolean), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: LanguageTranslationsListParams.LanguageTranslationsListParams(Nullable<String>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Boolean>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: LanguageTranslationsListParams.LanguageTranslationsListParams(Nullable(Of String), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Boolean), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.StringTranslations.LanguageTranslationsListParams.#ctor*
   name: LanguageTranslationsListParams
   href: api/Crowdin.Api.StringTranslations.LanguageTranslationsListParams.html#Crowdin_Api_StringTranslations_LanguageTranslationsListParams__ctor_
@@ -30036,6 +30263,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringTranslations.LanguageTranslationsListParams.Offset
   nameWithType: LanguageTranslationsListParams.Offset
+- uid: Crowdin.Api.StringTranslations.LanguageTranslationsListParams.OrderBy
+  name: OrderBy
+  href: api/Crowdin.Api.StringTranslations.LanguageTranslationsListParams.html#Crowdin_Api_StringTranslations_LanguageTranslationsListParams_OrderBy
+  commentId: P:Crowdin.Api.StringTranslations.LanguageTranslationsListParams.OrderBy
+  fullName: Crowdin.Api.StringTranslations.LanguageTranslationsListParams.OrderBy
+  nameWithType: LanguageTranslationsListParams.OrderBy
+- uid: Crowdin.Api.StringTranslations.LanguageTranslationsListParams.OrderBy*
+  name: OrderBy
+  href: api/Crowdin.Api.StringTranslations.LanguageTranslationsListParams.html#Crowdin_Api_StringTranslations_LanguageTranslationsListParams_OrderBy_
+  commentId: Overload:Crowdin.Api.StringTranslations.LanguageTranslationsListParams.OrderBy
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.LanguageTranslationsListParams.OrderBy
+  nameWithType: LanguageTranslationsListParams.OrderBy
 - uid: Crowdin.Api.StringTranslations.LanguageTranslationsListParams.StringIds
   name: StringIds
   href: api/Crowdin.Api.StringTranslations.LanguageTranslationsListParams.html#Crowdin_Api_StringTranslations_LanguageTranslationsListParams_StringIds
@@ -30565,15 +30805,15 @@ references:
   commentId: M:Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListLanguageTranslations(System.Int32,System.String,Crowdin.Api.StringTranslations.LanguageTranslationsListParams)
   fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListLanguageTranslations(System.Int32, System.String, Crowdin.Api.StringTranslations.LanguageTranslationsListParams)
   nameWithType: StringTranslationsApiExecutor.ListLanguageTranslations(Int32, String, LanguageTranslationsListParams)
-- uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListLanguageTranslations(System.Int32,System.String,System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Boolean},System.Int32,System.Int32)
-  name: ListLanguageTranslations(Int32, String, Nullable<String>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Boolean>, Int32, Int32)
-  href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListLanguageTranslations_System_Int32_System_String_System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Boolean__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListLanguageTranslations(System.Int32,System.String,System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Boolean},System.Int32,System.Int32)
-  name.vb: ListLanguageTranslations(Int32, String, Nullable(Of String), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Boolean), Int32, Int32)
-  fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListLanguageTranslations(System.Int32, System.String, System.Nullable<System.String>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Boolean>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListLanguageTranslations(System.Int32, System.String, System.Nullable(Of System.String), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Boolean), System.Int32, System.Int32)
-  nameWithType: StringTranslationsApiExecutor.ListLanguageTranslations(Int32, String, Nullable<String>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Boolean>, Int32, Int32)
-  nameWithType.vb: StringTranslationsApiExecutor.ListLanguageTranslations(Int32, String, Nullable(Of String), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Boolean), Int32, Int32)
+- uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListLanguageTranslations(System.Int32,System.String,System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Boolean},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListLanguageTranslations(Int32, String, Nullable<String>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Boolean>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListLanguageTranslations_System_Int32_System_String_System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Boolean__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListLanguageTranslations(System.Int32,System.String,System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Boolean},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListLanguageTranslations(Int32, String, Nullable(Of String), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Boolean), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListLanguageTranslations(System.Int32, System.String, System.Nullable<System.String>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Boolean>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListLanguageTranslations(System.Int32, System.String, System.Nullable(Of System.String), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Boolean), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: StringTranslationsApiExecutor.ListLanguageTranslations(Int32, String, Nullable<String>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<Boolean>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: StringTranslationsApiExecutor.ListLanguageTranslations(Int32, String, Nullable(Of String), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of Boolean), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListLanguageTranslations*
   name: ListLanguageTranslations
   href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListLanguageTranslations_
@@ -30587,15 +30827,15 @@ references:
   commentId: M:Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListStringTranslations(System.Int32,Crowdin.Api.StringTranslations.StringTranslationsListParams)
   fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListStringTranslations(System.Int32, Crowdin.Api.StringTranslations.StringTranslationsListParams)
   nameWithType: StringTranslationsApiExecutor.ListStringTranslations(Int32, StringTranslationsListParams)
-- uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListStringTranslations(System.Int32,System.Int32,System.String,System.Nullable{System.Boolean},System.Int32,System.Int32)
-  name: ListStringTranslations(Int32, Int32, String, Nullable<Boolean>, Int32, Int32)
-  href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListStringTranslations_System_Int32_System_Int32_System_String_System_Nullable_System_Boolean__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListStringTranslations(System.Int32,System.Int32,System.String,System.Nullable{System.Boolean},System.Int32,System.Int32)
-  name.vb: ListStringTranslations(Int32, Int32, String, Nullable(Of Boolean), Int32, Int32)
-  fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListStringTranslations(System.Int32, System.Int32, System.String, System.Nullable<System.Boolean>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListStringTranslations(System.Int32, System.Int32, System.String, System.Nullable(Of System.Boolean), System.Int32, System.Int32)
-  nameWithType: StringTranslationsApiExecutor.ListStringTranslations(Int32, Int32, String, Nullable<Boolean>, Int32, Int32)
-  nameWithType.vb: StringTranslationsApiExecutor.ListStringTranslations(Int32, Int32, String, Nullable(Of Boolean), Int32, Int32)
+- uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListStringTranslations(System.Int32,System.Int32,System.String,System.Nullable{System.Boolean},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListStringTranslations(Int32, Int32, String, Nullable<Boolean>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListStringTranslations_System_Int32_System_Int32_System_String_System_Nullable_System_Boolean__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListStringTranslations(System.Int32,System.Int32,System.String,System.Nullable{System.Boolean},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListStringTranslations(Int32, Int32, String, Nullable(Of Boolean), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListStringTranslations(System.Int32, System.Int32, System.String, System.Nullable<System.Boolean>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListStringTranslations(System.Int32, System.Int32, System.String, System.Nullable(Of System.Boolean), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: StringTranslationsApiExecutor.ListStringTranslations(Int32, Int32, String, Nullable<Boolean>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: StringTranslationsApiExecutor.ListStringTranslations(Int32, Int32, String, Nullable(Of Boolean), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListStringTranslations*
   name: ListStringTranslations
   href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListStringTranslations_
@@ -30609,15 +30849,15 @@ references:
   commentId: M:Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals(System.Int32,Crowdin.Api.StringTranslations.TranslationApprovalsListParams)
   fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals(System.Int32, Crowdin.Api.StringTranslations.TranslationApprovalsListParams)
   nameWithType: StringTranslationsApiExecutor.ListTranslationApprovals(Int32, TranslationApprovalsListParams)
-- uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32)
-  name: ListTranslationApprovals(Int32, Nullable<Int32>, Nullable<String>, Nullable<String>, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32)
-  href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListTranslationApprovals_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32)
-  name.vb: ListTranslationApprovals(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32)
-  fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals(System.Int32, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals(System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Int32, System.Int32)
-  nameWithType: StringTranslationsApiExecutor.ListTranslationApprovals(Int32, Nullable<Int32>, Nullable<String>, Nullable<String>, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32)
-  nameWithType.vb: StringTranslationsApiExecutor.ListTranslationApprovals(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32)
+- uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListTranslationApprovals(Int32, Nullable<Int32>, Nullable<String>, Nullable<String>, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListTranslationApprovals_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListTranslationApprovals(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals(System.Int32, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals(System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: StringTranslationsApiExecutor.ListTranslationApprovals(Int32, Nullable<Int32>, Nullable<String>, Nullable<String>, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: StringTranslationsApiExecutor.ListTranslationApprovals(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationApprovals*
   name: ListTranslationApprovals
   href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListTranslationApprovals_
@@ -30698,15 +30938,15 @@ references:
   commentId: M:Crowdin.Api.StringTranslations.StringTranslationsListParams.#ctor
   fullName: Crowdin.Api.StringTranslations.StringTranslationsListParams.StringTranslationsListParams()
   nameWithType: StringTranslationsListParams.StringTranslationsListParams()
-- uid: Crowdin.Api.StringTranslations.StringTranslationsListParams.#ctor(System.Int32,System.String,System.Nullable{System.Boolean},System.Int32,System.Int32)
-  name: StringTranslationsListParams(Int32, String, Nullable<Boolean>, Int32, Int32)
-  href: api/Crowdin.Api.StringTranslations.StringTranslationsListParams.html#Crowdin_Api_StringTranslations_StringTranslationsListParams__ctor_System_Int32_System_String_System_Nullable_System_Boolean__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.StringTranslations.StringTranslationsListParams.#ctor(System.Int32,System.String,System.Nullable{System.Boolean},System.Int32,System.Int32)
-  name.vb: StringTranslationsListParams(Int32, String, Nullable(Of Boolean), Int32, Int32)
-  fullName: Crowdin.Api.StringTranslations.StringTranslationsListParams.StringTranslationsListParams(System.Int32, System.String, System.Nullable<System.Boolean>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.StringTranslations.StringTranslationsListParams.StringTranslationsListParams(System.Int32, System.String, System.Nullable(Of System.Boolean), System.Int32, System.Int32)
-  nameWithType: StringTranslationsListParams.StringTranslationsListParams(Int32, String, Nullable<Boolean>, Int32, Int32)
-  nameWithType.vb: StringTranslationsListParams.StringTranslationsListParams(Int32, String, Nullable(Of Boolean), Int32, Int32)
+- uid: Crowdin.Api.StringTranslations.StringTranslationsListParams.#ctor(System.Int32,System.String,System.Nullable{System.Boolean},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: StringTranslationsListParams(Int32, String, Nullable<Boolean>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.StringTranslations.StringTranslationsListParams.html#Crowdin_Api_StringTranslations_StringTranslationsListParams__ctor_System_Int32_System_String_System_Nullable_System_Boolean__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.StringTranslations.StringTranslationsListParams.#ctor(System.Int32,System.String,System.Nullable{System.Boolean},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: StringTranslationsListParams(Int32, String, Nullable(Of Boolean), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.StringTranslations.StringTranslationsListParams.StringTranslationsListParams(System.Int32, System.String, System.Nullable<System.Boolean>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.StringTranslations.StringTranslationsListParams.StringTranslationsListParams(System.Int32, System.String, System.Nullable(Of System.Boolean), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: StringTranslationsListParams.StringTranslationsListParams(Int32, String, Nullable<Boolean>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: StringTranslationsListParams.StringTranslationsListParams(Int32, String, Nullable(Of Boolean), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.StringTranslations.StringTranslationsListParams.#ctor*
   name: StringTranslationsListParams
   href: api/Crowdin.Api.StringTranslations.StringTranslationsListParams.html#Crowdin_Api_StringTranslations_StringTranslationsListParams__ctor_
@@ -30766,6 +31006,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringTranslations.StringTranslationsListParams.Offset
   nameWithType: StringTranslationsListParams.Offset
+- uid: Crowdin.Api.StringTranslations.StringTranslationsListParams.OrderBy
+  name: OrderBy
+  href: api/Crowdin.Api.StringTranslations.StringTranslationsListParams.html#Crowdin_Api_StringTranslations_StringTranslationsListParams_OrderBy
+  commentId: P:Crowdin.Api.StringTranslations.StringTranslationsListParams.OrderBy
+  fullName: Crowdin.Api.StringTranslations.StringTranslationsListParams.OrderBy
+  nameWithType: StringTranslationsListParams.OrderBy
+- uid: Crowdin.Api.StringTranslations.StringTranslationsListParams.OrderBy*
+  name: OrderBy
+  href: api/Crowdin.Api.StringTranslations.StringTranslationsListParams.html#Crowdin_Api_StringTranslations_StringTranslationsListParams_OrderBy_
+  commentId: Overload:Crowdin.Api.StringTranslations.StringTranslationsListParams.OrderBy
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.StringTranslationsListParams.OrderBy
+  nameWithType: StringTranslationsListParams.OrderBy
 - uid: Crowdin.Api.StringTranslations.StringTranslationsListParams.StringId
   name: StringId
   href: api/Crowdin.Api.StringTranslations.StringTranslationsListParams.html#Crowdin_Api_StringTranslations_StringTranslationsListParams_StringId
@@ -30965,15 +31218,15 @@ references:
   commentId: M:Crowdin.Api.StringTranslations.TranslationApprovalsListParams.#ctor
   fullName: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.TranslationApprovalsListParams()
   nameWithType: TranslationApprovalsListParams.TranslationApprovalsListParams()
-- uid: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32)
-  name: TranslationApprovalsListParams(Nullable<Int32>, Nullable<String>, Nullable<String>, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32)
-  href: api/Crowdin.Api.StringTranslations.TranslationApprovalsListParams.html#Crowdin_Api_StringTranslations_TranslationApprovalsListParams__ctor_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.StringTranslations.TranslationApprovalsListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32)
-  name.vb: TranslationApprovalsListParams(Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32)
-  fullName: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.TranslationApprovalsListParams(System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.TranslationApprovalsListParams(System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Int32, System.Int32)
-  nameWithType: TranslationApprovalsListParams.TranslationApprovalsListParams(Nullable<Int32>, Nullable<String>, Nullable<String>, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32)
-  nameWithType.vb: TranslationApprovalsListParams.TranslationApprovalsListParams(Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32)
+- uid: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: TranslationApprovalsListParams(Nullable<Int32>, Nullable<String>, Nullable<String>, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.StringTranslations.TranslationApprovalsListParams.html#Crowdin_Api_StringTranslations_TranslationApprovalsListParams__ctor_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.StringTranslations.TranslationApprovalsListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: TranslationApprovalsListParams(Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.TranslationApprovalsListParams(System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.TranslationApprovalsListParams(System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: TranslationApprovalsListParams.TranslationApprovalsListParams(Nullable<Int32>, Nullable<String>, Nullable<String>, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: TranslationApprovalsListParams.TranslationApprovalsListParams(Nullable(Of Int32), Nullable(Of String), Nullable(Of String), Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.#ctor*
   name: TranslationApprovalsListParams
   href: api/Crowdin.Api.StringTranslations.TranslationApprovalsListParams.html#Crowdin_Api_StringTranslations_TranslationApprovalsListParams__ctor_
@@ -31059,6 +31312,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.Offset
   nameWithType: TranslationApprovalsListParams.Offset
+- uid: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.OrderBy
+  name: OrderBy
+  href: api/Crowdin.Api.StringTranslations.TranslationApprovalsListParams.html#Crowdin_Api_StringTranslations_TranslationApprovalsListParams_OrderBy
+  commentId: P:Crowdin.Api.StringTranslations.TranslationApprovalsListParams.OrderBy
+  fullName: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.OrderBy
+  nameWithType: TranslationApprovalsListParams.OrderBy
+- uid: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.OrderBy*
+  name: OrderBy
+  href: api/Crowdin.Api.StringTranslations.TranslationApprovalsListParams.html#Crowdin_Api_StringTranslations_TranslationApprovalsListParams_OrderBy_
+  commentId: Overload:Crowdin.Api.StringTranslations.TranslationApprovalsListParams.OrderBy
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.OrderBy
+  nameWithType: TranslationApprovalsListParams.OrderBy
 - uid: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.StringId
   name: StringId
   href: api/Crowdin.Api.StringTranslations.TranslationApprovalsListParams.html#Crowdin_Api_StringTranslations_TranslationApprovalsListParams_StringId
@@ -33208,15 +33474,15 @@ references:
   commentId: M:Crowdin.Api.Tasks.TasksApiExecutor.ListTasks(System.Int32,Crowdin.Api.Tasks.TasksListParams)
   fullName: Crowdin.Api.Tasks.TasksApiExecutor.ListTasks(System.Int32, Crowdin.Api.Tasks.TasksListParams)
   nameWithType: TasksApiExecutor.ListTasks(Int32, TasksListParams)
-- uid: Crowdin.Api.Tasks.TasksApiExecutor.ListTasks(System.Int32,System.Int32,System.Int32,System.Nullable{Crowdin.Api.Tasks.TaskStatus},System.Nullable{System.Int32})
-  name: ListTasks(Int32, Int32, Int32, Nullable<TaskStatus>, Nullable<Int32>)
-  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_ListTasks_System_Int32_System_Int32_System_Int32_System_Nullable_Crowdin_Api_Tasks_TaskStatus__System_Nullable_System_Int32__
-  commentId: M:Crowdin.Api.Tasks.TasksApiExecutor.ListTasks(System.Int32,System.Int32,System.Int32,System.Nullable{Crowdin.Api.Tasks.TaskStatus},System.Nullable{System.Int32})
-  name.vb: ListTasks(Int32, Int32, Int32, Nullable(Of TaskStatus), Nullable(Of Int32))
-  fullName: Crowdin.Api.Tasks.TasksApiExecutor.ListTasks(System.Int32, System.Int32, System.Int32, System.Nullable<Crowdin.Api.Tasks.TaskStatus>, System.Nullable<System.Int32>)
-  fullName.vb: Crowdin.Api.Tasks.TasksApiExecutor.ListTasks(System.Int32, System.Int32, System.Int32, System.Nullable(Of Crowdin.Api.Tasks.TaskStatus), System.Nullable(Of System.Int32))
-  nameWithType: TasksApiExecutor.ListTasks(Int32, Int32, Int32, Nullable<TaskStatus>, Nullable<Int32>)
-  nameWithType.vb: TasksApiExecutor.ListTasks(Int32, Int32, Int32, Nullable(Of TaskStatus), Nullable(Of Int32))
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.ListTasks(System.Int32,System.Int32,System.Int32,System.Nullable{Crowdin.Api.Tasks.TaskStatus},System.Nullable{System.Int32},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListTasks(Int32, Int32, Int32, Nullable<TaskStatus>, Nullable<Int32>, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_ListTasks_System_Int32_System_Int32_System_Int32_System_Nullable_Crowdin_Api_Tasks_TaskStatus__System_Nullable_System_Int32__System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Tasks.TasksApiExecutor.ListTasks(System.Int32,System.Int32,System.Int32,System.Nullable{Crowdin.Api.Tasks.TaskStatus},System.Nullable{System.Int32},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListTasks(Int32, Int32, Int32, Nullable(Of TaskStatus), Nullable(Of Int32), Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.ListTasks(System.Int32, System.Int32, System.Int32, System.Nullable<Crowdin.Api.Tasks.TaskStatus>, System.Nullable<System.Int32>, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Tasks.TasksApiExecutor.ListTasks(System.Int32, System.Int32, System.Int32, System.Nullable(Of Crowdin.Api.Tasks.TaskStatus), System.Nullable(Of System.Int32), System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: TasksApiExecutor.ListTasks(Int32, Int32, Int32, Nullable<TaskStatus>, Nullable<Int32>, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: TasksApiExecutor.ListTasks(Int32, Int32, Int32, Nullable(Of TaskStatus), Nullable(Of Int32), Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.Tasks.TasksApiExecutor.ListTasks*
   name: ListTasks
   href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_ListTasks_
@@ -33243,15 +33509,15 @@ references:
   commentId: M:Crowdin.Api.Tasks.TasksApiExecutor.ListUserTasks(Crowdin.Api.Tasks.UserTasksListParams)
   fullName: Crowdin.Api.Tasks.TasksApiExecutor.ListUserTasks(Crowdin.Api.Tasks.UserTasksListParams)
   nameWithType: TasksApiExecutor.ListUserTasks(UserTasksListParams)
-- uid: Crowdin.Api.Tasks.TasksApiExecutor.ListUserTasks(System.Int32,System.Int32,System.Nullable{Crowdin.Api.Tasks.TaskStatus},System.Nullable{System.Boolean})
-  name: ListUserTasks(Int32, Int32, Nullable<TaskStatus>, Nullable<Boolean>)
-  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_ListUserTasks_System_Int32_System_Int32_System_Nullable_Crowdin_Api_Tasks_TaskStatus__System_Nullable_System_Boolean__
-  commentId: M:Crowdin.Api.Tasks.TasksApiExecutor.ListUserTasks(System.Int32,System.Int32,System.Nullable{Crowdin.Api.Tasks.TaskStatus},System.Nullable{System.Boolean})
-  name.vb: ListUserTasks(Int32, Int32, Nullable(Of TaskStatus), Nullable(Of Boolean))
-  fullName: Crowdin.Api.Tasks.TasksApiExecutor.ListUserTasks(System.Int32, System.Int32, System.Nullable<Crowdin.Api.Tasks.TaskStatus>, System.Nullable<System.Boolean>)
-  fullName.vb: Crowdin.Api.Tasks.TasksApiExecutor.ListUserTasks(System.Int32, System.Int32, System.Nullable(Of Crowdin.Api.Tasks.TaskStatus), System.Nullable(Of System.Boolean))
-  nameWithType: TasksApiExecutor.ListUserTasks(Int32, Int32, Nullable<TaskStatus>, Nullable<Boolean>)
-  nameWithType.vb: TasksApiExecutor.ListUserTasks(Int32, Int32, Nullable(Of TaskStatus), Nullable(Of Boolean))
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.ListUserTasks(System.Int32,System.Int32,System.Nullable{Crowdin.Api.Tasks.TaskStatus},System.Nullable{System.Boolean},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListUserTasks(Int32, Int32, Nullable<TaskStatus>, Nullable<Boolean>, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_ListUserTasks_System_Int32_System_Int32_System_Nullable_Crowdin_Api_Tasks_TaskStatus__System_Nullable_System_Boolean__System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Tasks.TasksApiExecutor.ListUserTasks(System.Int32,System.Int32,System.Nullable{Crowdin.Api.Tasks.TaskStatus},System.Nullable{System.Boolean},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListUserTasks(Int32, Int32, Nullable(Of TaskStatus), Nullable(Of Boolean), Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.ListUserTasks(System.Int32, System.Int32, System.Nullable<Crowdin.Api.Tasks.TaskStatus>, System.Nullable<System.Boolean>, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Tasks.TasksApiExecutor.ListUserTasks(System.Int32, System.Int32, System.Nullable(Of Crowdin.Api.Tasks.TaskStatus), System.Nullable(Of System.Boolean), System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: TasksApiExecutor.ListUserTasks(Int32, Int32, Nullable<TaskStatus>, Nullable<Boolean>, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: TasksApiExecutor.ListUserTasks(Int32, Int32, Nullable(Of TaskStatus), Nullable(Of Boolean), Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.Tasks.TasksApiExecutor.ListUserTasks*
   name: ListUserTasks
   href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_ListUserTasks_
@@ -33417,15 +33683,15 @@ references:
   commentId: M:Crowdin.Api.Tasks.TasksListParams.#ctor
   fullName: Crowdin.Api.Tasks.TasksListParams.TasksListParams()
   nameWithType: TasksListParams.TasksListParams()
-- uid: Crowdin.Api.Tasks.TasksListParams.#ctor(System.Int32,System.Int32,System.Nullable{Crowdin.Api.Tasks.TaskStatus},System.Nullable{System.Int32})
-  name: TasksListParams(Int32, Int32, Nullable<TaskStatus>, Nullable<Int32>)
-  href: api/Crowdin.Api.Tasks.TasksListParams.html#Crowdin_Api_Tasks_TasksListParams__ctor_System_Int32_System_Int32_System_Nullable_Crowdin_Api_Tasks_TaskStatus__System_Nullable_System_Int32__
-  commentId: M:Crowdin.Api.Tasks.TasksListParams.#ctor(System.Int32,System.Int32,System.Nullable{Crowdin.Api.Tasks.TaskStatus},System.Nullable{System.Int32})
-  name.vb: TasksListParams(Int32, Int32, Nullable(Of TaskStatus), Nullable(Of Int32))
-  fullName: Crowdin.Api.Tasks.TasksListParams.TasksListParams(System.Int32, System.Int32, System.Nullable<Crowdin.Api.Tasks.TaskStatus>, System.Nullable<System.Int32>)
-  fullName.vb: Crowdin.Api.Tasks.TasksListParams.TasksListParams(System.Int32, System.Int32, System.Nullable(Of Crowdin.Api.Tasks.TaskStatus), System.Nullable(Of System.Int32))
-  nameWithType: TasksListParams.TasksListParams(Int32, Int32, Nullable<TaskStatus>, Nullable<Int32>)
-  nameWithType.vb: TasksListParams.TasksListParams(Int32, Int32, Nullable(Of TaskStatus), Nullable(Of Int32))
+- uid: Crowdin.Api.Tasks.TasksListParams.#ctor(System.Int32,System.Int32,System.Nullable{Crowdin.Api.Tasks.TaskStatus},System.Nullable{System.Int32},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: TasksListParams(Int32, Int32, Nullable<TaskStatus>, Nullable<Int32>, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Tasks.TasksListParams.html#Crowdin_Api_Tasks_TasksListParams__ctor_System_Int32_System_Int32_System_Nullable_Crowdin_Api_Tasks_TaskStatus__System_Nullable_System_Int32__System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Tasks.TasksListParams.#ctor(System.Int32,System.Int32,System.Nullable{Crowdin.Api.Tasks.TaskStatus},System.Nullable{System.Int32},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: TasksListParams(Int32, Int32, Nullable(Of TaskStatus), Nullable(Of Int32), Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Tasks.TasksListParams.TasksListParams(System.Int32, System.Int32, System.Nullable<Crowdin.Api.Tasks.TaskStatus>, System.Nullable<System.Int32>, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Tasks.TasksListParams.TasksListParams(System.Int32, System.Int32, System.Nullable(Of Crowdin.Api.Tasks.TaskStatus), System.Nullable(Of System.Int32), System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: TasksListParams.TasksListParams(Int32, Int32, Nullable<TaskStatus>, Nullable<Int32>, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: TasksListParams.TasksListParams(Int32, Int32, Nullable(Of TaskStatus), Nullable(Of Int32), Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.Tasks.TasksListParams.#ctor*
   name: TasksListParams
   href: api/Crowdin.Api.Tasks.TasksListParams.html#Crowdin_Api_Tasks_TasksListParams__ctor_
@@ -33472,6 +33738,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TasksListParams.Offset
   nameWithType: TasksListParams.Offset
+- uid: Crowdin.Api.Tasks.TasksListParams.OrderBy
+  name: OrderBy
+  href: api/Crowdin.Api.Tasks.TasksListParams.html#Crowdin_Api_Tasks_TasksListParams_OrderBy
+  commentId: P:Crowdin.Api.Tasks.TasksListParams.OrderBy
+  fullName: Crowdin.Api.Tasks.TasksListParams.OrderBy
+  nameWithType: TasksListParams.OrderBy
+- uid: Crowdin.Api.Tasks.TasksListParams.OrderBy*
+  name: OrderBy
+  href: api/Crowdin.Api.Tasks.TasksListParams.html#Crowdin_Api_Tasks_TasksListParams_OrderBy_
+  commentId: Overload:Crowdin.Api.Tasks.TasksListParams.OrderBy
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TasksListParams.OrderBy
+  nameWithType: TasksListParams.OrderBy
 - uid: Crowdin.Api.Tasks.TasksListParams.Status
   name: Status
   href: api/Crowdin.Api.Tasks.TasksListParams.html#Crowdin_Api_Tasks_TasksListParams_Status
@@ -33660,15 +33939,15 @@ references:
   commentId: M:Crowdin.Api.Tasks.UserTasksListParams.#ctor
   fullName: Crowdin.Api.Tasks.UserTasksListParams.UserTasksListParams()
   nameWithType: UserTasksListParams.UserTasksListParams()
-- uid: Crowdin.Api.Tasks.UserTasksListParams.#ctor(System.Int32,System.Int32,System.Nullable{Crowdin.Api.Tasks.TaskStatus},System.Nullable{System.Boolean})
-  name: UserTasksListParams(Int32, Int32, Nullable<TaskStatus>, Nullable<Boolean>)
-  href: api/Crowdin.Api.Tasks.UserTasksListParams.html#Crowdin_Api_Tasks_UserTasksListParams__ctor_System_Int32_System_Int32_System_Nullable_Crowdin_Api_Tasks_TaskStatus__System_Nullable_System_Boolean__
-  commentId: M:Crowdin.Api.Tasks.UserTasksListParams.#ctor(System.Int32,System.Int32,System.Nullable{Crowdin.Api.Tasks.TaskStatus},System.Nullable{System.Boolean})
-  name.vb: UserTasksListParams(Int32, Int32, Nullable(Of TaskStatus), Nullable(Of Boolean))
-  fullName: Crowdin.Api.Tasks.UserTasksListParams.UserTasksListParams(System.Int32, System.Int32, System.Nullable<Crowdin.Api.Tasks.TaskStatus>, System.Nullable<System.Boolean>)
-  fullName.vb: Crowdin.Api.Tasks.UserTasksListParams.UserTasksListParams(System.Int32, System.Int32, System.Nullable(Of Crowdin.Api.Tasks.TaskStatus), System.Nullable(Of System.Boolean))
-  nameWithType: UserTasksListParams.UserTasksListParams(Int32, Int32, Nullable<TaskStatus>, Nullable<Boolean>)
-  nameWithType.vb: UserTasksListParams.UserTasksListParams(Int32, Int32, Nullable(Of TaskStatus), Nullable(Of Boolean))
+- uid: Crowdin.Api.Tasks.UserTasksListParams.#ctor(System.Int32,System.Int32,System.Nullable{Crowdin.Api.Tasks.TaskStatus},System.Nullable{System.Boolean},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: UserTasksListParams(Int32, Int32, Nullable<TaskStatus>, Nullable<Boolean>, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Tasks.UserTasksListParams.html#Crowdin_Api_Tasks_UserTasksListParams__ctor_System_Int32_System_Int32_System_Nullable_Crowdin_Api_Tasks_TaskStatus__System_Nullable_System_Boolean__System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Tasks.UserTasksListParams.#ctor(System.Int32,System.Int32,System.Nullable{Crowdin.Api.Tasks.TaskStatus},System.Nullable{System.Boolean},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: UserTasksListParams(Int32, Int32, Nullable(Of TaskStatus), Nullable(Of Boolean), Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Tasks.UserTasksListParams.UserTasksListParams(System.Int32, System.Int32, System.Nullable<Crowdin.Api.Tasks.TaskStatus>, System.Nullable<System.Boolean>, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Tasks.UserTasksListParams.UserTasksListParams(System.Int32, System.Int32, System.Nullable(Of Crowdin.Api.Tasks.TaskStatus), System.Nullable(Of System.Boolean), System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: UserTasksListParams.UserTasksListParams(Int32, Int32, Nullable<TaskStatus>, Nullable<Boolean>, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: UserTasksListParams.UserTasksListParams(Int32, Int32, Nullable(Of TaskStatus), Nullable(Of Boolean), Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.Tasks.UserTasksListParams.#ctor*
   name: UserTasksListParams
   href: api/Crowdin.Api.Tasks.UserTasksListParams.html#Crowdin_Api_Tasks_UserTasksListParams__ctor_
@@ -33715,6 +33994,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.UserTasksListParams.Offset
   nameWithType: UserTasksListParams.Offset
+- uid: Crowdin.Api.Tasks.UserTasksListParams.OrderBy
+  name: OrderBy
+  href: api/Crowdin.Api.Tasks.UserTasksListParams.html#Crowdin_Api_Tasks_UserTasksListParams_OrderBy
+  commentId: P:Crowdin.Api.Tasks.UserTasksListParams.OrderBy
+  fullName: Crowdin.Api.Tasks.UserTasksListParams.OrderBy
+  nameWithType: UserTasksListParams.OrderBy
+- uid: Crowdin.Api.Tasks.UserTasksListParams.OrderBy*
+  name: OrderBy
+  href: api/Crowdin.Api.Tasks.UserTasksListParams.html#Crowdin_Api_Tasks_UserTasksListParams_OrderBy_
+  commentId: Overload:Crowdin.Api.Tasks.UserTasksListParams.OrderBy
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.UserTasksListParams.OrderBy
+  nameWithType: UserTasksListParams.OrderBy
 - uid: Crowdin.Api.Tasks.UserTasksListParams.Status
   name: Status
   href: api/Crowdin.Api.Tasks.UserTasksListParams.html#Crowdin_Api_Tasks_UserTasksListParams_Status
@@ -35760,12 +36052,15 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Teams.TeamsApiExecutor.ListTeamMembers
   nameWithType: TeamsApiExecutor.ListTeamMembers
-- uid: Crowdin.Api.Teams.TeamsApiExecutor.ListTeams(System.Int32,System.Int32)
-  name: ListTeams(Int32, Int32)
-  href: api/Crowdin.Api.Teams.TeamsApiExecutor.html#Crowdin_Api_Teams_TeamsApiExecutor_ListTeams_System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.Teams.TeamsApiExecutor.ListTeams(System.Int32,System.Int32)
-  fullName: Crowdin.Api.Teams.TeamsApiExecutor.ListTeams(System.Int32, System.Int32)
-  nameWithType: TeamsApiExecutor.ListTeams(Int32, Int32)
+- uid: Crowdin.Api.Teams.TeamsApiExecutor.ListTeams(System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListTeams(Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Teams.TeamsApiExecutor.html#Crowdin_Api_Teams_TeamsApiExecutor_ListTeams_System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Teams.TeamsApiExecutor.ListTeams(System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListTeams(Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Teams.TeamsApiExecutor.ListTeams(System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Teams.TeamsApiExecutor.ListTeams(System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: TeamsApiExecutor.ListTeams(Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: TeamsApiExecutor.ListTeams(Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.Teams.TeamsApiExecutor.ListTeams*
   name: ListTeams
   href: api/Crowdin.Api.Teams.TeamsApiExecutor.html#Crowdin_Api_Teams_TeamsApiExecutor_ListTeams_
@@ -36745,15 +37040,15 @@ references:
   commentId: M:Crowdin.Api.TranslationMemory.TmsListParams.#ctor
   fullName: Crowdin.Api.TranslationMemory.TmsListParams.TmsListParams()
   nameWithType: TmsListParams.TmsListParams()
-- uid: Crowdin.Api.TranslationMemory.TmsListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32)
-  name: TmsListParams(Nullable<Int32>, Nullable<Int32>, Int32, Int32)
-  href: api/Crowdin.Api.TranslationMemory.TmsListParams.html#Crowdin_Api_TranslationMemory_TmsListParams__ctor_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.TranslationMemory.TmsListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32)
-  name.vb: TmsListParams(Nullable(Of Int32), Nullable(Of Int32), Int32, Int32)
-  fullName: Crowdin.Api.TranslationMemory.TmsListParams.TmsListParams(System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.TranslationMemory.TmsListParams.TmsListParams(System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Int32, System.Int32)
-  nameWithType: TmsListParams.TmsListParams(Nullable<Int32>, Nullable<Int32>, Int32, Int32)
-  nameWithType.vb: TmsListParams.TmsListParams(Nullable(Of Int32), Nullable(Of Int32), Int32, Int32)
+- uid: Crowdin.Api.TranslationMemory.TmsListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: TmsListParams(Nullable<Int32>, Nullable<Int32>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.TranslationMemory.TmsListParams.html#Crowdin_Api_TranslationMemory_TmsListParams__ctor_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.TranslationMemory.TmsListParams.#ctor(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: TmsListParams(Nullable(Of Int32), Nullable(Of Int32), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.TranslationMemory.TmsListParams.TmsListParams(System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.TranslationMemory.TmsListParams.TmsListParams(System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: TmsListParams.TmsListParams(Nullable<Int32>, Nullable<Int32>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: TmsListParams.TmsListParams(Nullable(Of Int32), Nullable(Of Int32), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.TranslationMemory.TmsListParams.#ctor*
   name: TmsListParams
   href: api/Crowdin.Api.TranslationMemory.TmsListParams.html#Crowdin_Api_TranslationMemory_TmsListParams__ctor_
@@ -36800,6 +37095,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.TranslationMemory.TmsListParams.Offset
   nameWithType: TmsListParams.Offset
+- uid: Crowdin.Api.TranslationMemory.TmsListParams.OrderBy
+  name: OrderBy
+  href: api/Crowdin.Api.TranslationMemory.TmsListParams.html#Crowdin_Api_TranslationMemory_TmsListParams_OrderBy
+  commentId: P:Crowdin.Api.TranslationMemory.TmsListParams.OrderBy
+  fullName: Crowdin.Api.TranslationMemory.TmsListParams.OrderBy
+  nameWithType: TmsListParams.OrderBy
+- uid: Crowdin.Api.TranslationMemory.TmsListParams.OrderBy*
+  name: OrderBy
+  href: api/Crowdin.Api.TranslationMemory.TmsListParams.html#Crowdin_Api_TranslationMemory_TmsListParams_OrderBy_
+  commentId: Overload:Crowdin.Api.TranslationMemory.TmsListParams.OrderBy
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.TmsListParams.OrderBy
+  nameWithType: TmsListParams.OrderBy
 - uid: Crowdin.Api.TranslationMemory.TmsListParams.ToQueryParams
   name: ToQueryParams()
   href: api/Crowdin.Api.TranslationMemory.TmsListParams.html#Crowdin_Api_TranslationMemory_TmsListParams_ToQueryParams
@@ -37207,15 +37515,15 @@ references:
   commentId: M:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTms(Crowdin.Api.TranslationMemory.TmsListParams)
   fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTms(Crowdin.Api.TranslationMemory.TmsListParams)
   nameWithType: TranslationMemoryApiExecutor.ListTms(TmsListParams)
-- uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTms(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32)
-  name: ListTms(Nullable<Int32>, Nullable<Int32>, Int32, Int32)
-  href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ListTms_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTms(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32)
-  name.vb: ListTms(Nullable(Of Int32), Nullable(Of Int32), Int32, Int32)
-  fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTms(System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTms(System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Int32, System.Int32)
-  nameWithType: TranslationMemoryApiExecutor.ListTms(Nullable<Int32>, Nullable<Int32>, Int32, Int32)
-  nameWithType.vb: TranslationMemoryApiExecutor.ListTms(Nullable(Of Int32), Nullable(Of Int32), Int32, Int32)
+- uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTms(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListTms(Nullable<Int32>, Nullable<Int32>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ListTms_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTms(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListTms(Nullable(Of Int32), Nullable(Of Int32), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTms(System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTms(System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: TranslationMemoryApiExecutor.ListTms(Nullable<Int32>, Nullable<Int32>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: TranslationMemoryApiExecutor.ListTms(Nullable(Of Int32), Nullable(Of Int32), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTms*
   name: ListTms
   href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ListTms_
@@ -37223,12 +37531,15 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTms
   nameWithType: TranslationMemoryApiExecutor.ListTms
-- uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTmSegments(System.Int32,System.Int32,System.Int32)
-  name: ListTmSegments(Int32, Int32, Int32)
-  href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ListTmSegments_System_Int32_System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTmSegments(System.Int32,System.Int32,System.Int32)
-  fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTmSegments(System.Int32, System.Int32, System.Int32)
-  nameWithType: TranslationMemoryApiExecutor.ListTmSegments(Int32, Int32, Int32)
+- uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTmSegments(System.Int32,System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListTmSegments(Int32, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ListTmSegments_System_Int32_System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTmSegments(System.Int32,System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListTmSegments(Int32, Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTmSegments(System.Int32, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTmSegments(System.Int32, System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: TranslationMemoryApiExecutor.ListTmSegments(Int32, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: TranslationMemoryApiExecutor.ListTmSegments(Int32, Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTmSegments*
   name: ListTmSegments
   href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ListTmSegments_
@@ -37248,6 +37559,19 @@ references:
   commentId: T:Crowdin.Api.Translations.ApplyPreTranslationRequest
   fullName: Crowdin.Api.Translations.ApplyPreTranslationRequest
   nameWithType: ApplyPreTranslationRequest
+- uid: Crowdin.Api.Translations.ApplyPreTranslationRequest.AiPromptId
+  name: AiPromptId
+  href: api/Crowdin.Api.Translations.ApplyPreTranslationRequest.html#Crowdin_Api_Translations_ApplyPreTranslationRequest_AiPromptId
+  commentId: P:Crowdin.Api.Translations.ApplyPreTranslationRequest.AiPromptId
+  fullName: Crowdin.Api.Translations.ApplyPreTranslationRequest.AiPromptId
+  nameWithType: ApplyPreTranslationRequest.AiPromptId
+- uid: Crowdin.Api.Translations.ApplyPreTranslationRequest.AiPromptId*
+  name: AiPromptId
+  href: api/Crowdin.Api.Translations.ApplyPreTranslationRequest.html#Crowdin_Api_Translations_ApplyPreTranslationRequest_AiPromptId_
+  commentId: Overload:Crowdin.Api.Translations.ApplyPreTranslationRequest.AiPromptId
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.ApplyPreTranslationRequest.AiPromptId
+  nameWithType: ApplyPreTranslationRequest.AiPromptId
 - uid: Crowdin.Api.Translations.ApplyPreTranslationRequest.AutoApproveOption
   name: AutoApproveOption
   href: api/Crowdin.Api.Translations.ApplyPreTranslationRequest.html#Crowdin_Api_Translations_ApplyPreTranslationRequest_AutoApproveOption
@@ -38383,6 +38707,12 @@ references:
   commentId: T:Crowdin.Api.Translations.PreTranslationMethod
   fullName: Crowdin.Api.Translations.PreTranslationMethod
   nameWithType: PreTranslationMethod
+- uid: Crowdin.Api.Translations.PreTranslationMethod.Ai
+  name: Ai
+  href: api/Crowdin.Api.Translations.PreTranslationMethod.html#Crowdin_Api_Translations_PreTranslationMethod_Ai
+  commentId: F:Crowdin.Api.Translations.PreTranslationMethod.Ai
+  fullName: Crowdin.Api.Translations.PreTranslationMethod.Ai
+  nameWithType: PreTranslationMethod.Ai
 - uid: Crowdin.Api.Translations.PreTranslationMethod.Mt
   name: Mt
   href: api/Crowdin.Api.Translations.PreTranslationMethod.html#Crowdin_Api_Translations_PreTranslationMethod_Mt
@@ -40669,15 +40999,15 @@ references:
   commentId: M:Crowdin.Api.Users.EnterpriseUsersListParams.#ctor
   fullName: Crowdin.Api.Users.EnterpriseUsersListParams.EnterpriseUsersListParams()
   nameWithType: EnterpriseUsersListParams.EnterpriseUsersListParams()
-- uid: Crowdin.Api.Users.EnterpriseUsersListParams.#ctor(System.Nullable{Crowdin.Api.Users.UserStatus},System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserTwoFactorStatus},System.Int32,System.Int32)
-  name: EnterpriseUsersListParams(Nullable<UserStatus>, Nullable<String>, Nullable<UserTwoFactorStatus>, Int32, Int32)
-  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams__ctor_System_Nullable_Crowdin_Api_Users_UserStatus__System_Nullable_System_String__System_Nullable_Crowdin_Api_Users_UserTwoFactorStatus__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.Users.EnterpriseUsersListParams.#ctor(System.Nullable{Crowdin.Api.Users.UserStatus},System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserTwoFactorStatus},System.Int32,System.Int32)
-  name.vb: EnterpriseUsersListParams(Nullable(Of UserStatus), Nullable(Of String), Nullable(Of UserTwoFactorStatus), Int32, Int32)
-  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.EnterpriseUsersListParams(System.Nullable<Crowdin.Api.Users.UserStatus>, System.Nullable<System.String>, System.Nullable<Crowdin.Api.Users.UserTwoFactorStatus>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.Users.EnterpriseUsersListParams.EnterpriseUsersListParams(System.Nullable(Of Crowdin.Api.Users.UserStatus), System.Nullable(Of System.String), System.Nullable(Of Crowdin.Api.Users.UserTwoFactorStatus), System.Int32, System.Int32)
-  nameWithType: EnterpriseUsersListParams.EnterpriseUsersListParams(Nullable<UserStatus>, Nullable<String>, Nullable<UserTwoFactorStatus>, Int32, Int32)
-  nameWithType.vb: EnterpriseUsersListParams.EnterpriseUsersListParams(Nullable(Of UserStatus), Nullable(Of String), Nullable(Of UserTwoFactorStatus), Int32, Int32)
+- uid: Crowdin.Api.Users.EnterpriseUsersListParams.#ctor(System.Nullable{Crowdin.Api.Users.UserStatus},System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserTwoFactorStatus},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: EnterpriseUsersListParams(Nullable<UserStatus>, Nullable<String>, Nullable<UserTwoFactorStatus>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams__ctor_System_Nullable_Crowdin_Api_Users_UserStatus__System_Nullable_System_String__System_Nullable_Crowdin_Api_Users_UserTwoFactorStatus__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Users.EnterpriseUsersListParams.#ctor(System.Nullable{Crowdin.Api.Users.UserStatus},System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserTwoFactorStatus},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: EnterpriseUsersListParams(Nullable(Of UserStatus), Nullable(Of String), Nullable(Of UserTwoFactorStatus), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.EnterpriseUsersListParams(System.Nullable<Crowdin.Api.Users.UserStatus>, System.Nullable<System.String>, System.Nullable<Crowdin.Api.Users.UserTwoFactorStatus>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Users.EnterpriseUsersListParams.EnterpriseUsersListParams(System.Nullable(Of Crowdin.Api.Users.UserStatus), System.Nullable(Of System.String), System.Nullable(Of Crowdin.Api.Users.UserTwoFactorStatus), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: EnterpriseUsersListParams.EnterpriseUsersListParams(Nullable<UserStatus>, Nullable<String>, Nullable<UserTwoFactorStatus>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: EnterpriseUsersListParams.EnterpriseUsersListParams(Nullable(Of UserStatus), Nullable(Of String), Nullable(Of UserTwoFactorStatus), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.Users.EnterpriseUsersListParams.#ctor*
   name: EnterpriseUsersListParams
   href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams__ctor_
@@ -40711,6 +41041,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Users.EnterpriseUsersListParams.Offset
   nameWithType: EnterpriseUsersListParams.Offset
+- uid: Crowdin.Api.Users.EnterpriseUsersListParams.OrderBy
+  name: OrderBy
+  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_OrderBy
+  commentId: P:Crowdin.Api.Users.EnterpriseUsersListParams.OrderBy
+  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.OrderBy
+  nameWithType: EnterpriseUsersListParams.OrderBy
+- uid: Crowdin.Api.Users.EnterpriseUsersListParams.OrderBy*
+  name: OrderBy
+  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_OrderBy_
+  commentId: Overload:Crowdin.Api.Users.EnterpriseUsersListParams.OrderBy
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.OrderBy
+  nameWithType: EnterpriseUsersListParams.OrderBy
 - uid: Crowdin.Api.Users.EnterpriseUsersListParams.Search
   name: Search
   href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_Search
@@ -40962,15 +41305,15 @@ references:
   commentId: M:Crowdin.Api.Users.ProjectMembersListParams.#ctor
   fullName: Crowdin.Api.Users.ProjectMembersListParams.ProjectMembersListParams()
   nameWithType: ProjectMembersListParams.ProjectMembersListParams()
-- uid: Crowdin.Api.Users.ProjectMembersListParams.#ctor(System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserRole},System.Nullable{System.String},System.Int32,System.Int32)
-  name: ProjectMembersListParams(Nullable<String>, Nullable<UserRole>, Nullable<String>, Int32, Int32)
-  href: api/Crowdin.Api.Users.ProjectMembersListParams.html#Crowdin_Api_Users_ProjectMembersListParams__ctor_System_Nullable_System_String__System_Nullable_Crowdin_Api_Users_UserRole__System_Nullable_System_String__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.Users.ProjectMembersListParams.#ctor(System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserRole},System.Nullable{System.String},System.Int32,System.Int32)
-  name.vb: ProjectMembersListParams(Nullable(Of String), Nullable(Of UserRole), Nullable(Of String), Int32, Int32)
-  fullName: Crowdin.Api.Users.ProjectMembersListParams.ProjectMembersListParams(System.Nullable<System.String>, System.Nullable<Crowdin.Api.Users.UserRole>, System.Nullable<System.String>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.Users.ProjectMembersListParams.ProjectMembersListParams(System.Nullable(Of System.String), System.Nullable(Of Crowdin.Api.Users.UserRole), System.Nullable(Of System.String), System.Int32, System.Int32)
-  nameWithType: ProjectMembersListParams.ProjectMembersListParams(Nullable<String>, Nullable<UserRole>, Nullable<String>, Int32, Int32)
-  nameWithType.vb: ProjectMembersListParams.ProjectMembersListParams(Nullable(Of String), Nullable(Of UserRole), Nullable(Of String), Int32, Int32)
+- uid: Crowdin.Api.Users.ProjectMembersListParams.#ctor(System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserRole},System.Nullable{System.String},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ProjectMembersListParams(Nullable<String>, Nullable<UserRole>, Nullable<String>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Users.ProjectMembersListParams.html#Crowdin_Api_Users_ProjectMembersListParams__ctor_System_Nullable_System_String__System_Nullable_Crowdin_Api_Users_UserRole__System_Nullable_System_String__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Users.ProjectMembersListParams.#ctor(System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserRole},System.Nullable{System.String},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ProjectMembersListParams(Nullable(Of String), Nullable(Of UserRole), Nullable(Of String), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Users.ProjectMembersListParams.ProjectMembersListParams(System.Nullable<System.String>, System.Nullable<Crowdin.Api.Users.UserRole>, System.Nullable<System.String>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Users.ProjectMembersListParams.ProjectMembersListParams(System.Nullable(Of System.String), System.Nullable(Of Crowdin.Api.Users.UserRole), System.Nullable(Of System.String), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: ProjectMembersListParams.ProjectMembersListParams(Nullable<String>, Nullable<UserRole>, Nullable<String>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: ProjectMembersListParams.ProjectMembersListParams(Nullable(Of String), Nullable(Of UserRole), Nullable(Of String), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.Users.ProjectMembersListParams.#ctor*
   name: ProjectMembersListParams
   href: api/Crowdin.Api.Users.ProjectMembersListParams.html#Crowdin_Api_Users_ProjectMembersListParams__ctor_
@@ -41017,6 +41360,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Users.ProjectMembersListParams.Offset
   nameWithType: ProjectMembersListParams.Offset
+- uid: Crowdin.Api.Users.ProjectMembersListParams.OrderBy
+  name: OrderBy
+  href: api/Crowdin.Api.Users.ProjectMembersListParams.html#Crowdin_Api_Users_ProjectMembersListParams_OrderBy
+  commentId: P:Crowdin.Api.Users.ProjectMembersListParams.OrderBy
+  fullName: Crowdin.Api.Users.ProjectMembersListParams.OrderBy
+  nameWithType: ProjectMembersListParams.OrderBy
+- uid: Crowdin.Api.Users.ProjectMembersListParams.OrderBy*
+  name: OrderBy
+  href: api/Crowdin.Api.Users.ProjectMembersListParams.html#Crowdin_Api_Users_ProjectMembersListParams_OrderBy_
+  commentId: Overload:Crowdin.Api.Users.ProjectMembersListParams.OrderBy
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.ProjectMembersListParams.OrderBy
+  nameWithType: ProjectMembersListParams.OrderBy
 - uid: Crowdin.Api.Users.ProjectMembersListParams.Role
   name: Role
   href: api/Crowdin.Api.Users.ProjectMembersListParams.html#Crowdin_Api_Users_ProjectMembersListParams_Role
@@ -41756,15 +42112,15 @@ references:
   commentId: M:Crowdin.Api.Users.UsersApiExecutor.ListProjectMembers(System.Int32,Crowdin.Api.Users.ProjectMembersListParams)
   fullName: Crowdin.Api.Users.UsersApiExecutor.ListProjectMembers(System.Int32, Crowdin.Api.Users.ProjectMembersListParams)
   nameWithType: UsersApiExecutor.ListProjectMembers(Int32, ProjectMembersListParams)
-- uid: Crowdin.Api.Users.UsersApiExecutor.ListProjectMembers(System.Int32,System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserRole},System.Nullable{System.String},System.Int32,System.Int32)
-  name: ListProjectMembers(Int32, Nullable<String>, Nullable<UserRole>, Nullable<String>, Int32, Int32)
-  href: api/Crowdin.Api.Users.UsersApiExecutor.html#Crowdin_Api_Users_UsersApiExecutor_ListProjectMembers_System_Int32_System_Nullable_System_String__System_Nullable_Crowdin_Api_Users_UserRole__System_Nullable_System_String__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.Users.UsersApiExecutor.ListProjectMembers(System.Int32,System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserRole},System.Nullable{System.String},System.Int32,System.Int32)
-  name.vb: ListProjectMembers(Int32, Nullable(Of String), Nullable(Of UserRole), Nullable(Of String), Int32, Int32)
-  fullName: Crowdin.Api.Users.UsersApiExecutor.ListProjectMembers(System.Int32, System.Nullable<System.String>, System.Nullable<Crowdin.Api.Users.UserRole>, System.Nullable<System.String>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.Users.UsersApiExecutor.ListProjectMembers(System.Int32, System.Nullable(Of System.String), System.Nullable(Of Crowdin.Api.Users.UserRole), System.Nullable(Of System.String), System.Int32, System.Int32)
-  nameWithType: UsersApiExecutor.ListProjectMembers(Int32, Nullable<String>, Nullable<UserRole>, Nullable<String>, Int32, Int32)
-  nameWithType.vb: UsersApiExecutor.ListProjectMembers(Int32, Nullable(Of String), Nullable(Of UserRole), Nullable(Of String), Int32, Int32)
+- uid: Crowdin.Api.Users.UsersApiExecutor.ListProjectMembers(System.Int32,System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserRole},System.Nullable{System.String},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListProjectMembers(Int32, Nullable<String>, Nullable<UserRole>, Nullable<String>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Users.UsersApiExecutor.html#Crowdin_Api_Users_UsersApiExecutor_ListProjectMembers_System_Int32_System_Nullable_System_String__System_Nullable_Crowdin_Api_Users_UserRole__System_Nullable_System_String__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Users.UsersApiExecutor.ListProjectMembers(System.Int32,System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserRole},System.Nullable{System.String},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListProjectMembers(Int32, Nullable(Of String), Nullable(Of UserRole), Nullable(Of String), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Users.UsersApiExecutor.ListProjectMembers(System.Int32, System.Nullable<System.String>, System.Nullable<Crowdin.Api.Users.UserRole>, System.Nullable<System.String>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Users.UsersApiExecutor.ListProjectMembers(System.Int32, System.Nullable(Of System.String), System.Nullable(Of Crowdin.Api.Users.UserRole), System.Nullable(Of System.String), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: UsersApiExecutor.ListProjectMembers(Int32, Nullable<String>, Nullable<UserRole>, Nullable<String>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: UsersApiExecutor.ListProjectMembers(Int32, Nullable(Of String), Nullable(Of UserRole), Nullable(Of String), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.Users.UsersApiExecutor.ListProjectMembers*
   name: ListProjectMembers
   href: api/Crowdin.Api.Users.UsersApiExecutor.html#Crowdin_Api_Users_UsersApiExecutor_ListProjectMembers_
@@ -41800,15 +42156,15 @@ references:
   commentId: M:Crowdin.Api.Users.UsersApiExecutor.ListUsers(Crowdin.Api.Users.EnterpriseUsersListParams)
   fullName: Crowdin.Api.Users.UsersApiExecutor.ListUsers(Crowdin.Api.Users.EnterpriseUsersListParams)
   nameWithType: UsersApiExecutor.ListUsers(EnterpriseUsersListParams)
-- uid: Crowdin.Api.Users.UsersApiExecutor.ListUsers(System.Nullable{Crowdin.Api.Users.UserStatus},System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserTwoFactorStatus},System.Int32,System.Int32)
-  name: ListUsers(Nullable<UserStatus>, Nullable<String>, Nullable<UserTwoFactorStatus>, Int32, Int32)
-  href: api/Crowdin.Api.Users.UsersApiExecutor.html#Crowdin_Api_Users_UsersApiExecutor_ListUsers_System_Nullable_Crowdin_Api_Users_UserStatus__System_Nullable_System_String__System_Nullable_Crowdin_Api_Users_UserTwoFactorStatus__System_Int32_System_Int32_
-  commentId: M:Crowdin.Api.Users.UsersApiExecutor.ListUsers(System.Nullable{Crowdin.Api.Users.UserStatus},System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserTwoFactorStatus},System.Int32,System.Int32)
-  name.vb: ListUsers(Nullable(Of UserStatus), Nullable(Of String), Nullable(Of UserTwoFactorStatus), Int32, Int32)
-  fullName: Crowdin.Api.Users.UsersApiExecutor.ListUsers(System.Nullable<Crowdin.Api.Users.UserStatus>, System.Nullable<System.String>, System.Nullable<Crowdin.Api.Users.UserTwoFactorStatus>, System.Int32, System.Int32)
-  fullName.vb: Crowdin.Api.Users.UsersApiExecutor.ListUsers(System.Nullable(Of Crowdin.Api.Users.UserStatus), System.Nullable(Of System.String), System.Nullable(Of Crowdin.Api.Users.UserTwoFactorStatus), System.Int32, System.Int32)
-  nameWithType: UsersApiExecutor.ListUsers(Nullable<UserStatus>, Nullable<String>, Nullable<UserTwoFactorStatus>, Int32, Int32)
-  nameWithType.vb: UsersApiExecutor.ListUsers(Nullable(Of UserStatus), Nullable(Of String), Nullable(Of UserTwoFactorStatus), Int32, Int32)
+- uid: Crowdin.Api.Users.UsersApiExecutor.ListUsers(System.Nullable{Crowdin.Api.Users.UserStatus},System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserTwoFactorStatus},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListUsers(Nullable<UserStatus>, Nullable<String>, Nullable<UserTwoFactorStatus>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Users.UsersApiExecutor.html#Crowdin_Api_Users_UsersApiExecutor_ListUsers_System_Nullable_Crowdin_Api_Users_UserStatus__System_Nullable_System_String__System_Nullable_Crowdin_Api_Users_UserTwoFactorStatus__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Users.UsersApiExecutor.ListUsers(System.Nullable{Crowdin.Api.Users.UserStatus},System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserTwoFactorStatus},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListUsers(Nullable(Of UserStatus), Nullable(Of String), Nullable(Of UserTwoFactorStatus), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Users.UsersApiExecutor.ListUsers(System.Nullable<Crowdin.Api.Users.UserStatus>, System.Nullable<System.String>, System.Nullable<Crowdin.Api.Users.UserTwoFactorStatus>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Users.UsersApiExecutor.ListUsers(System.Nullable(Of Crowdin.Api.Users.UserStatus), System.Nullable(Of System.String), System.Nullable(Of Crowdin.Api.Users.UserTwoFactorStatus), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: UsersApiExecutor.ListUsers(Nullable<UserStatus>, Nullable<String>, Nullable<UserTwoFactorStatus>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: UsersApiExecutor.ListUsers(Nullable(Of UserStatus), Nullable(Of String), Nullable(Of UserTwoFactorStatus), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.Users.UsersApiExecutor.ListUsers*
   name: ListUsers
   href: api/Crowdin.Api.Users.UsersApiExecutor.html#Crowdin_Api_Users_UsersApiExecutor_ListUsers_
