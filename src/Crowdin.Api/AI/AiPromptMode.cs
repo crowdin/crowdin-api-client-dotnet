@@ -11,6 +11,9 @@ namespace Crowdin.Api.AI
         Basic,
         
         [Description("advanced")]
-        Advanced
+        Advanced,
+        
+        [Description("external")]
+        External
     }
 }

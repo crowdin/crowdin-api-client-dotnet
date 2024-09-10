@@ -14,21 +14,21 @@ namespace Crowdin.Api.Tests.Core.Resources {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class AI_Prompts {
+    internal class AI_Reports {
         
         private static System.Resources.ResourceManager resourceMan;
         
         private static System.Globalization.CultureInfo resourceCulture;
         
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal AI_Prompts() {
+        internal AI_Reports() {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         internal static System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.Equals(null, resourceMan)) {
-                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("Crowdin.Api.Tests.Core.Resources.AI_Prompts", typeof(AI_Prompts).Assembly);
+                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("Crowdin.Api.Tests.Core.Resources.AI_Reports", typeof(AI_Reports).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -45,45 +45,21 @@ namespace Crowdin.Api.Tests.Core.Resources {
             }
         }
         
-        internal static string CommonResponses_Multi {
+        internal static string GenerateAiReport_Request {
             get {
-                return ResourceManager.GetString("CommonResponses_Multi", resourceCulture);
+                return ResourceManager.GetString("GenerateAiReport_Request", resourceCulture);
             }
         }
         
-        internal static string CommonResponses_Single {
+        internal static string CommonResponses_AiReportGenerationStatus {
             get {
-                return ResourceManager.GetString("CommonResponses_Single", resourceCulture);
+                return ResourceManager.GetString("CommonResponses_AiReportGenerationStatus", resourceCulture);
             }
         }
         
-        internal static string AddAiPrompt_Request {
+        internal static string DownloadAiReport_Response {
             get {
-                return ResourceManager.GetString("AddAiPrompt_Request", resourceCulture);
-            }
-        }
-        
-        internal static string EditAiPrompt_Request {
-            get {
-                return ResourceManager.GetString("EditAiPrompt_Request", resourceCulture);
-            }
-        }
-        
-        internal static string CommonResponses_AiPromptCompletion {
-            get {
-                return ResourceManager.GetString("CommonResponses_AiPromptCompletion", resourceCulture);
-            }
-        }
-        
-        internal static string GenerateAiPromptCompletion_Request {
-            get {
-                return ResourceManager.GetString("GenerateAiPromptCompletion_Request", resourceCulture);
-            }
-        }
-        
-        internal static string DownloadAiPromptCompletion_Response {
-            get {
-                return ResourceManager.GetString("DownloadAiPromptCompletion_Response", resourceCulture);
+                return ResourceManager.GetString("DownloadAiReport_Response", resourceCulture);
             }
         }
     }

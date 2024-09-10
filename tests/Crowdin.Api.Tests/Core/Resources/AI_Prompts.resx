@@ -141,4 +141,52 @@
   }
 ]</value>
     </data>
+    <data name="CommonResponses_AiPromptCompletion" xml:space="preserve">
+        <value>{
+  "data": {
+    "identifier": "50fb3506-4127-4ba8-8296-f97dc7e3e0c3",
+    "status": "finished",
+    "progress": 100,
+    "attributes": {
+      "aiPromptId": 38
+    },
+    "createdAt": "2019-09-23T11:26:54+00:00",
+    "updatedAt": "2019-09-23T11:26:54+00:00",
+    "startedAt": "2019-09-23T11:26:54+00:00",
+    "finishedAt": "2019-09-23T11:26:54+00:00",
+    "eta": "1 second"
+  }
+}</value>
+    </data>
+    <data name="GenerateAiPromptCompletion_Request" xml:space="preserve">
+        <value>{
+  "resources": {
+    "projectId": 1,
+    "targetLanguageId": "uk",
+    "stringIds": [
+      1, 2, 3
+    ]
+  },
+  "tools": [
+    {
+      "tool": {
+        "type": "function",
+        "function": {
+          "name": "func",
+          "description": "func desc"
+        }
+      }
+    }
+  ],
+  "tool_choice": "string"
+}</value>
+    </data>
+    <data name="DownloadAiPromptCompletion_Response" xml:space="preserve">
+        <value>{
+  "data": {
+    "url": "https://test.com",
+    "expireIn": "2019-09-20T10:31:21+00:00"
+  }
+}</value>
+    </data>
 </root>
