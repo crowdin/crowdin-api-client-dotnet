@@ -12,7 +12,8 @@ namespace Crowdin.Api.AI
         [JsonProperty("dryRun")]
         public bool? DryRun { get; set; }
         
-        [JsonProperty("hyperparameters")] // TODO: camelCase?
+        // ReSharper disable once StringLiteralTypo -> reviewed
+        [JsonProperty("hyperparameters")]
         public AiHyperParameters? HyperParameters { get; set; }
 
         [JsonProperty("trainingOptions")]

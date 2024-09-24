@@ -199,8 +199,8 @@ namespace Crowdin.Api.Tests.AI
 
             AiReportGenerationStatus.AttributesObject? attributes = status.Attributes;
             ArgumentNullException.ThrowIfNull(attributes);
-            Assert.Equal("json", attributes.Format);
-            Assert.Equal("tokens-usage-raw-data", attributes.ReportType);
+            Assert.Equal(AiReportFormat.Json, attributes.Format);
+            Assert.Equal(AiReportType.TokensUsageRawData, attributes.ReportType);
             
             DateTimeOffset date = DateTimeOffset.Parse("2024-01-23T11:26:54+00:00");
             Assert.Equal(date, status.CreatedAt.ToUniversalTime());

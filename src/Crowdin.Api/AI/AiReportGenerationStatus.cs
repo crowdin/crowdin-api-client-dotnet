@@ -36,13 +36,13 @@ namespace Crowdin.Api.AI
         public class AttributesObject
         {
             [JsonProperty("format")]
-            public string Format { get; set; } // TODO: maybe enum?
+            public AiReportFormat Format { get; set; }
             
             [JsonProperty("reportType")]
-            public string ReportType { get; set; } // TODO: maybe enum?
+            public AiReportType ReportType { get; set; }
             
             [JsonProperty("schema")]
-            public object Schema { get; set; } // TODO: model?
+            public AiReportSchemaBase Schema { get; set; }
         }
     }
 }
