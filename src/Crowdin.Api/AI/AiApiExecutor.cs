@@ -24,6 +24,95 @@ namespace Crowdin.Api.AI
             _apiClient = apiClient;
             _jsonParser = jsonParser;
         }
+
+        #region Prompt Fine-Tuning Datasets
+
+        /// <summary>
+        /// Generate AI Prompt Fine-Tuning Dataset. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.datasets.post">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.ai.prompts.fine-tuning.datasets.post">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.datasets.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiFineTuningDataset> GenerateAiPromptFineTuningDataset(
+            int? userId,
+            int aiPromptId,
+            GenerateAiPromptFineTuningDatasetRequest request)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/fine-tuning/datasets");
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<AiFineTuningDataset>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Get AI Prompt Fine-Tuning Dataset Generation Status. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.prompts.fine-tuning.datasets.get">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.prompts.fine-tuning.datasets.get">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.datasets.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiFineTuningDataset> GetAiPromptFineTuningDatasetGenerationStatus(
+            int? userId,
+            int aiPromptId,
+            string jobIdentifier)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/fine-tuning/datasets/{jobIdentifier}");
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<AiFineTuningDataset>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Create AI Prompt Fine-Tuning Job. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.jobs.post">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.ai.prompts.fine-tuning.jobs.post">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.jobs.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiFineTuningJob> CreateAiPromptFineTuningJob(
+            int? userId,
+            int aiPromptId,
+            CreateAiPromptFineTuningJobRequest request)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/fine-tuning/jobs");
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<AiFineTuningJob>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Get AI Prompt Fine-Tuning Job Status. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.prompts.fine-tuning.jobs.get">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.prompts.fine-tuning.jobs.get">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.jobs.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiFineTuningJob> GetAiPromptFineTuningJobStatus(
+            int? userId,
+            int aiPromptId,
+            string jobIdentifier)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/fine-tuning/jobs/{jobIdentifier}");
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<AiFineTuningJob>(result.JsonObject);
+        }
+
+        #endregion
+
+        /// <summary>
+        /// Download AI Prompt Fine-Tuning Dataset. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.prompts.fine-tuning.datasets.download.get">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.prompts.fine-tuning.datasets.download.get">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.datasets.download.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<DownloadLink> DownloadAiPromptFineTuningDataset(
+            int? userId,
+            int aiPromptId,
+            string jobIdentifier)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/fine-tuning/datasets/{jobIdentifier}/download");
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<DownloadLink>(result.JsonObject);
+        }
         
         #region Prompts
 

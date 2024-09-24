@@ -230,6 +230,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>AI_Settings.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\AI_FineTuningDatasets.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>AI_FineTuningDatasets.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -477,6 +481,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>AI_Settings.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\AI_FineTuningDatasets.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>AI_FineTuningDatasets.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 
