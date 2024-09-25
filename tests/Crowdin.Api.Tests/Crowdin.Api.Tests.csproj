@@ -188,7 +188,7 @@
       </EmbeddedResource>
       <EmbeddedResource Update="Core\Resources\AI_Prompts.resx">
         <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>AI.Designer.cs</LastGenOutput>
+        <LastGenOutput>AI_Prompts.Designer.cs</LastGenOutput>
       </EmbeddedResource>
       <EmbeddedResource Update="Core\Resources\AI_Providers.resx">
         <Generator>ResXFileCodeGenerator</Generator>
@@ -208,7 +208,7 @@
       </EmbeddedResource>
       <EmbeddedResource Update="Core\Resources\AI_Prompts.resx">
         <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>AI.Designer.cs</LastGenOutput>
+        <LastGenOutput>AI_Prompts.Designer.cs</LastGenOutput>
       </EmbeddedResource>
       <EmbeddedResource Update="Core\Resources\AI_Providers.resx">
         <Generator>ResXFileCodeGenerator</Generator>
@@ -221,6 +221,18 @@
       <EmbeddedResource Update="Core\Resources\Reports_Archives.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Reports_Archives.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\AI_Reports.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>AI_Reports.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\AI_Settings.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>AI_Settings.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Core\Resources\AI_FineTuningDatasets.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>AI_FineTuningDatasets.Designer.cs</LastGenOutput>
       </EmbeddedResource>
     </ItemGroup>
 
@@ -459,6 +471,21 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>Reports_Archives.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\AI_Reports.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>AI_Reports.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\AI_Settings.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>AI_Settings.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Core\Resources\AI_FineTuningDatasets.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>AI_FineTuningDatasets.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 

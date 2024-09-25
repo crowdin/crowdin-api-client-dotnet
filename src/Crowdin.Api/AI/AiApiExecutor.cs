@@ -24,8 +24,111 @@ namespace Crowdin.Api.AI
             _apiClient = apiClient;
             _jsonParser = jsonParser;
         }
+
+        #region Prompt Fine-Tuning Datasets
+
+        /// <summary>
+        /// Generate AI Prompt Fine-Tuning Dataset. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.datasets.post">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.ai.prompts.fine-tuning.datasets.post">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.datasets.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiFineTuningDataset> GenerateAiPromptFineTuningDataset(
+            int? userId,
+            int aiPromptId,
+            GenerateAiPromptFineTuningDatasetRequest request)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/fine-tuning/datasets");
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<AiFineTuningDataset>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Get AI Prompt Fine-Tuning Dataset Generation Status. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.prompts.fine-tuning.datasets.get">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.prompts.fine-tuning.datasets.get">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.datasets.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiFineTuningDataset> GetAiPromptFineTuningDatasetGenerationStatus(
+            int? userId,
+            int aiPromptId,
+            string jobIdentifier)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/fine-tuning/datasets/{jobIdentifier}");
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<AiFineTuningDataset>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Create AI Prompt Fine-Tuning Job. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.jobs.post">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.ai.prompts.fine-tuning.jobs.post">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.jobs.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiFineTuningJob> CreateAiPromptFineTuningJob(
+            int? userId,
+            int aiPromptId,
+            CreateAiPromptFineTuningJobRequest request)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/fine-tuning/jobs");
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<AiFineTuningJob>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Get AI Prompt Fine-Tuning Job Status. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.prompts.fine-tuning.jobs.get">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.prompts.fine-tuning.jobs.get">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.jobs.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiFineTuningJob> GetAiPromptFineTuningJobStatus(
+            int? userId,
+            int aiPromptId,
+            string jobIdentifier)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/fine-tuning/jobs/{jobIdentifier}");
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<AiFineTuningJob>(result.JsonObject);
+        }
+
+        #endregion
+
+        /// <summary>
+        /// Download AI Prompt Fine-Tuning Dataset. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.prompts.fine-tuning.datasets.download.get">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.prompts.fine-tuning.datasets.download.get">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.datasets.download.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<DownloadLink> DownloadAiPromptFineTuningDataset(
+            int? userId,
+            int aiPromptId,
+            string jobIdentifier)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/fine-tuning/datasets/{jobIdentifier}/download");
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<DownloadLink>(result.JsonObject);
+        }
         
         #region Prompts
+
+        /// <summary>
+        /// Clone AI Prompt. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#tag/AI/operation/api.users.ai.prompts.clones.post">Crowdin File Based API</a>
+        /// <a href="https://developer.crowdin.com/api/v2/string-based/#tag/AI/operation/api.users.ai.prompts.clones.post">Crowdin String Based API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.clones.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiPromptResource> CloneAiPrompt(int? userId, int aiPromptId, CloneAiPromptRequest request)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/clones");
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<AiPromptResource>(result.JsonObject);
+        }
         
         /// <summary>
         /// List AI Prompts. Documentation:
@@ -62,6 +165,68 @@ namespace Crowdin.Api.AI
             string url = FormUrl_AiPrompts(userId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
             return _jsonParser.ParseResponseObject<AiPromptResource>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Generate AI Prompt Completion. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#tag/AI/operation/api.ai.prompts.completions.post">Crowdin File Based API</a>
+        /// <a href="https://developer.crowdin.com/api/v2/string-based/#tag/AI/operation/api.ai.prompts.completions.post">Crowdin String Based API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.completions.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiPromptCompletion> GenerateAiPromptCompletion(
+            int? userId,
+            int aiPromptId,
+            GenerateAiPromptCompletionRequest request)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/completions");
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<AiPromptCompletion>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Get AI Prompt Completion Status. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#tag/AI/operation/api.users.ai.prompts.completions.get">Crowdin File Based API</a>
+        /// <a href="https://developer.crowdin.com/api/v2/string-based/#tag/AI/operation/api.users.ai.prompts.completions.get">Crowdin String Based API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.completions.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiPromptCompletion> GetAiPromptCompletionStatus(
+            int? userId,
+            int aiPromptId,
+            string completionId)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/completions/{completionId}");
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<AiPromptCompletion>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Cancel AI Prompt Completion. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#tag/AI/operation/api.users.ai.prompts.completions.delete">Crowdin File Based API</a>
+        /// <a href="https://developer.crowdin.com/api/v2/string-based/#tag/AI/operation/api.users.ai.prompts.completions.delete">Crowdin String Based API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.completions.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task CancelAiPromptCompletion(int? userId, int aiPromptId, string completionId)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/completions/{completionId}");
+            HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
+            Utils.ThrowIfStatusNot204(statusCode, $"AI prompt completion {completionId} cancellation failed");
+        }
+
+        /// <summary>
+        /// Download AI Prompt Completion. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#tag/AI/operation/api.users.ai.prompts.completions.download.download">Crowdin File Based API</a>
+        /// <a href="https://developer.crowdin.com/api/v2/string-based/#tag/AI/operation/api.users.ai.prompts.completions.download.download">Crowdin String Based API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.completions.download.download">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<DownloadLink> DownloadAiPromptCompletion(int? userId, int aiPromptId, string completionId)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/completions/{completionId}/download");
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<DownloadLink>(result.JsonObject);
         }
         
         /// <summary>
@@ -226,6 +391,84 @@ namespace Crowdin.Api.AI
         
         #endregion
         
+        #endregion
+
+        #region Reports
+
+        /// <summary>
+        /// Generate AI Report. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#tag/AI/operation/api.users.ai.reports.post">Crowdin File Based API</a>
+        /// <a href="https://developer.crowdin.com/api/v2/string-based/#tag/AI/operation/api.users.ai.reports.post">Crowdin String Based API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.reports.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiReportGenerationStatus> GenerateAiReport(int? userId, GenerateAiReport request)
+        {
+            string url = AddUserIdIfAvailable(userId, "/ai/reports");
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<AiReportGenerationStatus>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Check AI Report Generation Status. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#tag/AI/operation/api.users.ai.reports.get">Crowdin File Based API</a>
+        /// <a href="https://developer.crowdin.com/api/v2/string-based/#tag/AI/operation/api.users.ai.reports.get">Crowdin String Based API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.reports.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiReportGenerationStatus> CheckAiReportGenerationStatus(int? userId, string aiReportId)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/reports/{aiReportId}");
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<AiReportGenerationStatus>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Download AI Report. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#tag/AI/operation/api.users.ai.reports.download.download">Crowdin File Based API</a>
+        /// <a href="https://developer.crowdin.com/api/v2/string-based/#tag/AI/operation/api.users.ai.reports.download.download">Crowdin String Based API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.reports.download.download">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<DownloadLink> DownloadAiReport(int? userId, string aiReportId)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/reports/{aiReportId}/download");
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<DownloadLink>(result.JsonObject);
+        }
+
+        #endregion
+
+        #region Settings
+
+        /// <summary>
+        /// Get AI Settings. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#tag/AI/operation/api.users.ai.settings.get">Crowdin File Based API</a>
+        /// <a href="https://developer.crowdin.com/api/v2/string-based/#tag/AI/operation/api.users.ai.settings.get">Crowdin String Based API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.settings.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiSettings> GetAiSettings(int? userId)
+        {
+            string url = AddUserIdIfAvailable(userId, "/ai/settings");
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<AiSettings>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Edit AI Settings. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#tag/AI/operation/api.users.ai.settings.patch">Crowdin File Based API</a>
+        /// <a href="https://developer.crowdin.com/api/v2/string-based/#tag/AI/operation/api.users.ai.settings.patch">Crowdin String Based API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.settings.patch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiSettings> EditAiSettings(int? userId, IEnumerable<AiSettingsPatch> patches)
+        {
+            string url = AddUserIdIfAvailable(userId, "/ai/settings");
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            return _jsonParser.ParseResponseObject<AiSettings>(result.JsonObject);
+        }
+
         #endregion
         
         /// <summary>

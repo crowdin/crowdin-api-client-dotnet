@@ -14,21 +14,21 @@ namespace Crowdin.Api.Tests.Core.Resources {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class AI_Prompts {
+    internal class AI_FineTuningDatasets {
         
         private static System.Resources.ResourceManager resourceMan;
         
         private static System.Globalization.CultureInfo resourceCulture;
         
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal AI_Prompts() {
+        internal AI_FineTuningDatasets() {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         internal static System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.Equals(null, resourceMan)) {
-                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("Crowdin.Api.Tests.Core.Resources.AI_Prompts", typeof(AI_Prompts).Assembly);
+                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("Crowdin.Api.Tests.Core.Resources.AI_FineTuningDatasets", typeof(AI_FineTuningDatasets).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -45,45 +45,33 @@ namespace Crowdin.Api.Tests.Core.Resources {
             }
         }
         
-        internal static string CommonResponses_Multi {
+        internal static string GenerateAiPromptFineTuningDataset_Request {
             get {
-                return ResourceManager.GetString("CommonResponses_Multi", resourceCulture);
+                return ResourceManager.GetString("GenerateAiPromptFineTuningDataset_Request", resourceCulture);
             }
         }
         
-        internal static string CommonResponses_Single {
+        internal static string CommonResponses_AiFineTuningDataset {
             get {
-                return ResourceManager.GetString("CommonResponses_Single", resourceCulture);
+                return ResourceManager.GetString("CommonResponses_AiFineTuningDataset", resourceCulture);
             }
         }
         
-        internal static string AddAiPrompt_Request {
+        internal static string CreateAiPromptFineTuningJob_Request {
             get {
-                return ResourceManager.GetString("AddAiPrompt_Request", resourceCulture);
+                return ResourceManager.GetString("CreateAiPromptFineTuningJob_Request", resourceCulture);
             }
         }
         
-        internal static string EditAiPrompt_Request {
+        internal static string CommonResponses_AiFineTuningJob {
             get {
-                return ResourceManager.GetString("EditAiPrompt_Request", resourceCulture);
+                return ResourceManager.GetString("CommonResponses_AiFineTuningJob", resourceCulture);
             }
         }
         
-        internal static string CommonResponses_AiPromptCompletion {
+        internal static string CommonResponses_DownloadLink {
             get {
-                return ResourceManager.GetString("CommonResponses_AiPromptCompletion", resourceCulture);
-            }
-        }
-        
-        internal static string GenerateAiPromptCompletion_Request {
-            get {
-                return ResourceManager.GetString("GenerateAiPromptCompletion_Request", resourceCulture);
-            }
-        }
-        
-        internal static string DownloadAiPromptCompletion_Response {
-            get {
-                return ResourceManager.GetString("DownloadAiPromptCompletion_Response", resourceCulture);
+                return ResourceManager.GetString("CommonResponses_DownloadLink", resourceCulture);
             }
         }
     }

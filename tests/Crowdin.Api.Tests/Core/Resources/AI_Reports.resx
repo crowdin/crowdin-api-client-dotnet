@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="GenerateAiReport_Request" xml:space="preserve">
+        <value>{
+  "type": "tokens-usage-raw-data",
+  "schema": {
+    "dateFrom": "2024-01-23T07:00:14+00:00",
+    "dateTo": "2024-09-27T07:00:14+00:00",
+    "format": "json",
+    "projectIds": [
+      22
+    ],
+    "promptIds": [
+      18
+    ],
+    "userIds": [
+      1
+    ]
+  }
+}</value>
+    </data>
+    <data name="CommonResponses_AiReportGenerationStatus" xml:space="preserve">
+        <value>{
+  "data": {
+    "identifier": "50fb3506-4127-4ba8-8296-f97dc7e3e0c3",
+    "status": "finished",
+    "progress": 100,
+    "attributes": {
+      "format": "json",
+      "reportType": "tokens-usage-raw-data",
+      "schema": {}
+    },
+    "createdAt": "2024-01-23T11:26:54+00:00",
+    "updatedAt": "2024-01-23T11:26:54+00:00",
+    "startedAt": "2024-01-23T11:26:54+00:00",
+    "finishedAt": "2024-01-23T11:26:54+00:00",
+    "eta": "1 second"
+  }
+}</value>
+    </data>
+    <data name="DownloadAiReport_Response" xml:space="preserve">
+        <value>{
+  "data": {
+    "url": "https://test.com",
+    "expireIn": "2019-09-20T10:31:21+00:00"
+  }
+}</value>
+    </data>
+</root>
