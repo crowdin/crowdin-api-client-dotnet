@@ -108,7 +108,6 @@ namespace Crowdin.Api.Tests.Reports
                     StatusCode = HttpStatusCode.OK,
                     JsonObject = JObject.Parse(Core.Resources.Reports.CommonResponses_ReportStatus)
                 });
-            
             var executor = new ReportsApiExecutor(mockClient.Object);
             ReportStatus response = await executor.GenerateReport(projectId, request);
             
