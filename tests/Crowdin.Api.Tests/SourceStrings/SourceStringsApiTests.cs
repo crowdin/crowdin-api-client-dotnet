@@ -82,7 +82,8 @@ namespace Crowdin.Api.Tests.SourceStrings
                         ["en"] = 2,
                         ["de"] = 3
                     }
-                }
+                },
+                UpdateOption = UpdateOption.KeepTranslationsAndApprovals
             };
             
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
@@ -132,6 +133,7 @@ namespace Crowdin.Api.Tests.SourceStrings
             Assert.Equal(new[] { 1, 2 }, attributes.LabelIds);
             Assert.False(attributes.UpdateStrings);
             Assert.False(attributes.CleanupMode);
+            Assert.Equal(UpdateOption.KeepTranslationsAndApprovals, attributes.UpdateOption);
             
             SpreadsheetFileImportOptions? importOptions = attributes.ImportOptions;
             Assert.NotNull(importOptions);

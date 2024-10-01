@@ -36,5 +36,8 @@ namespace Crowdin.Api.SourceStrings
         
         [JsonProperty("importOptions")]
         public SpreadsheetFileImportOptions? ImportOptions { get; set; }
+        
+        [JsonProperty("updateOption")]
+        public UpdateOption? UpdateOption { get; set; }
     }
 }
