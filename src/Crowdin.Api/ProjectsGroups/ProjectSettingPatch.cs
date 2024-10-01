@@ -136,5 +136,11 @@ namespace Crowdin.Api.ProjectsGroups
         
         [Description("/mtPreTranslate")]
         MtPreTranslate,
+        
+        [Description("/defaultTmId")]
+        DefaultTmId,
+        
+        [Description("/defaultGlossaryId")]
+        DefaultGlossaryId
     }
 }
