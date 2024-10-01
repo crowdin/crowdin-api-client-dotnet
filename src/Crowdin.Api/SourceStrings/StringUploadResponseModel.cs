@@ -59,6 +59,9 @@ namespace Crowdin.Api.SourceStrings
             
             [JsonProperty("cleanupMode")]
             public bool CleanupMode { get; set; }
+            
+            [JsonProperty("updateOption")]
+            public UpdateOption UpdateOption { get; set; }
         }
     }
 }
