@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -15,6 +16,7 @@ namespace Crowdin.Api.Tests.Reports
 {
     public class ReportsApiTests
     {
+        private static readonly JsonSerializerSettings JsonSettings = TestUtils.CreateJsonSerializerOptions();
         
         private const int projectId = 1;
         private const string reportId = "50fb3506-4127-4ba8-8296-f97dc7e3e0c3";
@@ -38,38 +40,28 @@ namespace Crowdin.Api.Tests.Reports
             ");
 
         [Fact]
-        public void GenerateReport_RequestSerialization()
+        public async Task GenerateReport_PreTranslateEfficiency_General()
         {
-            var request = new CostEstimateGenerateReportRequest
+            var request = new PreTranslateEfficiencyGenerateReportRequest
             {
-                Schema = new CostEstimateGenerateReportRequest.GeneralSchema
+                Schema = new PreTranslateEfficiencyGenerateReportRequest.GeneralSchema
                 {
-                    Currency = ReportCurrency.UAH
-                }
-            };
-
-            JsonSerializerSettings settings = TestUtils.CreateJsonSerializerOptions();
-            string requestJson = JsonConvert.SerializeObject(request, settings);
-            
-            Assert.NotNull(requestJson);
-            Assert.Equal(Core.Resources.Reports.GenerateReport_Request, requestJson);
-        }
-
-        [Fact]
-        public async Task GenerateReport_Simple_CostsEstimation()
-        {
-            var request = new CostEstimateGenerateReportRequest
-            {
-                Schema = new CostEstimateGenerateReportRequest.GeneralSchema
-                {
-                    Unit = ReportUnit.Words,
-                    Currency = ReportCurrency.USD,
+                    Unit = ReportUnit.Strings,
                     Format = ReportFormat.Xlsx,
+                    PostEditingCategories = new[] { "0-10" },
+                    LanguageId = "ach",
+                    DateFrom = DateTimeOffset.Parse("2019-09-23T07:00:14+00:00").ToLocalTime(),
+                    DateTo = DateTimeOffset.Parse("2019-09-27T07:00:14+00:00").ToLocalTime()
                 }
             };
-
+            
+            string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
+            string expectedRequestJson =
+                TestUtils.CompactJson(Core.Resources.Reports.PreTranslateEfficiency_General_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+            
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
-
+            
             var url = $"/projects/{projectId}/reports";
 
             mockClient
@@ -77,32 +69,36 @@ namespace Crowdin.Api.Tests.Reports
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = mockResponseObject
+                    JsonObject = JObject.Parse(Core.Resources.Reports.CommonResponses_ReportStatus)
                 });
-
+            
             var executor = new ReportsApiExecutor(mockClient.Object);
-            var response = (ReportStatus)await executor.GenerateReport(projectId, request);
-
-            Assert.NotNull(response);
-            Assert.IsType<ReportStatus>(response);
-            Assert.Equal(reportId, response.Identifier);
+            ReportStatus response = await executor.GenerateReport(projectId, request);
+            
+            Assert_ReportStatus(response);
         }
 
         [Fact]
-        public async Task GenerateReport_Fuzzy_CostsEstimation()
+        public async Task GenerateReport_PreTranslateEfficiency_ByTask()
         {
-            var request = new CostEstimateFuzzyModeGenerateReportRequest
+            var request = new PreTranslateEfficiencyGenerateReportRequest
             {
-                Schema = new CostEstimateFuzzyModeGenerateReportRequest.GeneralSchema
+                Schema = new PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema
                 {
-                    Unit = ReportUnit.Words,
-                    Currency = ReportCurrency.USD,
-                    Format = ReportFormat.Xlsx
+                    Unit = ReportUnit.Strings,
+                    Format = ReportFormat.Xlsx,
+                    PostEditingCategories = new[] { "0-10" },
+                    TaskId = 1
                 }
             };
-
+            
+            string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
+            string expectedRequestJson =
+                TestUtils.CompactJson(Core.Resources.Reports.PreTranslateEfficiency_ByTask_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+            
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
-
+            
             var url = $"/projects/{projectId}/reports";
 
             mockClient
@@ -110,15 +106,12 @@ namespace Crowdin.Api.Tests.Reports
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = mockResponseObject
+                    JsonObject = JObject.Parse(Core.Resources.Reports.CommonResponses_ReportStatus)
                 });
-
             var executor = new ReportsApiExecutor(mockClient.Object);
-            var response = (ReportStatus)await executor.GenerateReport(projectId, request);
-
-            Assert.NotNull(response);
-            Assert.IsType<ReportStatus>(response);
-            Assert.Equal(reportId, response.Identifier);
+            ReportStatus response = await executor.GenerateReport(projectId, request);
+            
+            Assert_ReportStatus(response);
         }
 
         [Fact]
@@ -175,6 +168,26 @@ namespace Crowdin.Api.Tests.Reports
 
             Assert.NotNull(response);
             Assert.IsType<DownloadLink>(response);
+        }
+
+        private static void Assert_ReportStatus(ReportStatus? response)
+        {
+            ArgumentNullException.ThrowIfNull(response);
+            
+            Assert.Equal(reportId, response.Identifier);
+            Assert.Equal(OperationStatus.Finished, response.Status);
+            Assert.Equal(100, response.Progress);
+            
+            ReportStatus.ReportAttributes? attributes = response.Attributes;
+            ArgumentNullException.ThrowIfNull(attributes);
+            Assert.Equal(ReportFormat.Xlsx, attributes.Format);
+            Assert.Equal("costs-estimation", attributes.ReportName);
+
+            DateTimeOffset date = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00");
+            Assert.Equal(date, response.CreatedAt);
+            Assert.Equal(date, response.UpdatedAt);
+            Assert.Equal(date, response.StartedAt);
+            Assert.Equal(date, response.FinishedAt);
         }
     }
 }

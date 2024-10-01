@@ -80,5 +80,23 @@ namespace Crowdin.Api.Tests.Core.Resources {
                 return ResourceManager.GetString("Group_TranslationCostsPostEditing_GeneralSchema_Request", resourceCulture);
             }
         }
+        
+        internal static string PreTranslateEfficiency_General_Request {
+            get {
+                return ResourceManager.GetString("PreTranslateEfficiency_General_Request", resourceCulture);
+            }
+        }
+        
+        internal static string CommonResponses_ReportStatus {
+            get {
+                return ResourceManager.GetString("CommonResponses_ReportStatus", resourceCulture);
+            }
+        }
+        
+        internal static string PreTranslateEfficiency_ByTask_Request {
+            get {
+                return ResourceManager.GetString("PreTranslateEfficiency_ByTask_Request", resourceCulture);
+            }
+        }
     }
 }
