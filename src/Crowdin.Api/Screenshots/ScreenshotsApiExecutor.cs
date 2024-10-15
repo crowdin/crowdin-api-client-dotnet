@@ -1,4 +1,4 @@
-﻿
+
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
@@ -39,11 +39,13 @@ namespace Crowdin.Api.Screenshots
             int projectId,
             int limit = 25,
             int offset = 0,
-            IEnumerable<SortingRule>? orderBy = null)
+            IEnumerable<SortingRule>? orderBy = null,
+            IEnumerable<int>? stringIds = null)
         {
             string url = FormUrl_Screenshots(projectId);
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
             queryParams.AddSortingRulesIfPresent(orderBy);
+            queryParams.AddParamIfPresent("stringIds", stringIds);
             
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
             return _jsonParser.ParseResponseList<Screenshot>(result.JsonObject);

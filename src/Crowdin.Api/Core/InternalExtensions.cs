@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -42,7 +42,7 @@ namespace Crowdin.Api.Core
                 queryParams.AddParamIfPresent(key, value.ToString());
             }
         }
-        
+
         internal static void AddParamIfPresent(this IDictionary<string, string> queryParams, string key, long? value)
         {
             if (value.HasValue)
@@ -50,7 +50,7 @@ namespace Crowdin.Api.Core
                 queryParams.AddParamIfPresent(key, value.ToString());
             }
         }
-        
+
         internal static void AddParamIfPresent(this IDictionary<string, string> queryParams, string key, bool? value)
         {
             if (value.HasValue)
@@ -75,6 +75,46 @@ namespace Crowdin.Api.Core
             }
         }
 
+        internal static void AddParamIfPresent(this IDictionary<string, string> queryParams, string key, IEnumerable<int>? values)
+        {
+            if (values != null && values.Any())
+            {
+                queryParams.Add(key, string.Join(",", values.Select(value => value.ToString())));
+            }
+        }
+
+        internal static void AddParamIfPresent(this IDictionary<string, string> queryParams, string key, IEnumerable<long>? values)
+        {
+            if (values != null && values.Any())
+            {
+                queryParams.Add(key, string.Join(",", values.Select(value => value.ToString())));
+            }
+        }
+
+        internal static void AddParamIfPresent(this IDictionary<string, string> queryParams, string key, IEnumerable<bool>? values)
+        {
+            if (values != null && values.Any())
+            {
+                queryParams.Add(key, string.Join(",", values.Select(value => value.ToString().ToLower())));
+            }
+        }
+
+        internal static void AddParamIfPresent(this IDictionary<string, string> queryParams, string key, IEnumerable<object>? values)
+        {
+            if (values != null && values.Any())
+            {
+                queryParams.Add(key, string.Join(",", values.Select(value => value.ToString())));
+            }
+        }
+
+        internal static void AddParamIfPresent(this IDictionary<string, string> queryParams, string key, IEnumerable<string>? values)
+        {
+            if (values != null && values.Any())
+            {
+                queryParams.Add(key, string.Join(",", values));
+            }
+        }
+
         internal static void AddDescriptionEnumValueIfPresent<TEnum>(
             this IDictionary<string, string> queryParams, string key, TEnum? enumMember)
             where TEnum : struct, Enum
@@ -89,10 +129,7 @@ namespace Crowdin.Api.Core
             this IDictionary<string, string> queryParams,
             IEnumerable<SortingRule>? sortingRules)
         {
-            if (sortingRules != null && sortingRules.Any())
-            {
-                queryParams.Add("orderBy", string.Join(",", sortingRules.Select(rule => rule.ToString())));
-            }
+            AddParamIfPresent(queryParams, "orderBy", sortingRules);
         }
     }
 }
