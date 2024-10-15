@@ -1,4 +1,5 @@
-﻿
+
+using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -111,7 +112,7 @@ namespace Crowdin.Api.Tests.Screenshots
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Screenshots.AddScreenshot_Response)
+                    JsonObject = JObject.Parse(Core.Resources.Screenshots.GetScreenshot_Response)
                 });
 
             var executor = new ScreenshotsApiExecutor(mockClient.Object);
@@ -120,6 +121,49 @@ namespace Crowdin.Api.Tests.Screenshots
             Assert.Equal(2, response.LabelIds.Length);
             Assert.Contains(0, response.LabelIds);
             Assert.Contains(1, response.LabelIds);
-        }        
+        }
+
+        [Fact]
+        public async Task ListScreenshots()
+        {
+            const int projectId = 1;
+
+            var url = $"/projects/{projectId}/screenshots";
+            var queryParams = new Dictionary<string, string>
+            {
+                { "limit", "25" },
+                { "offset", "0" },
+                { "orderBy", "createdAt desc,name asc" },
+                { "stringIds", "1,2,3,2822" }
+            };
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            mockClient
+                .Setup(client => client.SendGetRequest(url, queryParams))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Core.Resources.Screenshots.ListScreenshots_Response)
+                });
+
+            var executor = new ScreenshotsApiExecutor(mockClient.Object);
+            var sortingRules = new SortingRule[] {
+                new SortingRule() { Field = "createdAt", Order = SortingOrder.Descending },
+                new SortingRule() { Field = "name", Order = SortingOrder.Ascending }
+            };
+            var stringIds = new int[] { 1, 2, 3, 2822 };
+            var response = await executor.ListScreenshots(projectId, 25, 0, sortingRules, stringIds);
+
+            Assert.NotNull(response);
+
+            Assert.Equal(25, response.Pagination?.Limit);
+            Assert.Equal(0, response.Pagination?.Offset);
+
+            Assert.Single(response.Data);
+
+            Assert.Single(response.Data[0].Tags);
+            Assert.Equal(2822, response.Data[0].Tags[0].StringId);
+        }
     }
 }
