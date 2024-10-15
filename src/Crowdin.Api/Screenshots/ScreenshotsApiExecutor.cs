@@ -1,4 +1,3 @@
-
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
@@ -28,7 +27,7 @@ namespace Crowdin.Api.Screenshots
         }
 
         #region Screenshots
-        
+
         /// <summary>
         /// List screenshots. Documentation:
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.screenshots.getMany">Crowdin API</a>
@@ -46,7 +45,7 @@ namespace Crowdin.Api.Screenshots
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
             queryParams.AddSortingRulesIfPresent(orderBy);
             queryParams.AddParamIfPresent("stringIds", stringIds);
-            
+
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
             return _jsonParser.ParseResponseList<Screenshot>(result.JsonObject);
         }
@@ -115,7 +114,7 @@ namespace Crowdin.Api.Screenshots
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
             return _jsonParser.ParseResponseObject<Screenshot>(result.JsonObject);
         }
-        
+
         #region Helper methods
 
         private static string FormUrl_Screenshots(int projectId)
@@ -144,11 +143,11 @@ namespace Crowdin.Api.Screenshots
         {
             string url = FormUrl_ScreenshotId(projectId, screenshotId);
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
-            
+
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
             return _jsonParser.ParseResponseList<Tag>(result.JsonObject);
         }
-        
+
         /// <summary>
         /// Replace tags. Documentation:
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.screenshots.tags.putMany">Crowdin API</a>
@@ -165,7 +164,7 @@ namespace Crowdin.Api.Screenshots
                 throw new CrowdinApiException($"Failed to replace tags of screenshot {screenshotId}");
             }
         }
-        
+
         /// <summary>
         /// Replace tags. Documentation:
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.screenshots.tags.putMany">Crowdin API</a>

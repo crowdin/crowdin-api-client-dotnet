@@ -1,4 +1,3 @@
-
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,7 +25,7 @@ namespace Crowdin.Api.Core
                 .GetType()
                 .GetField(path.ToString())
                 .GetCustomAttribute<DescriptionAttribute>(false);
-            
+
             return attribute != null ? attribute.Description : string.Empty;
         }
 
@@ -124,7 +123,7 @@ namespace Crowdin.Api.Core
                 queryParams.Add(key, enumMember.Value.ToDescriptionString());
             }
         }
-        
+
         internal static void AddSortingRulesIfPresent(
             this IDictionary<string, string> queryParams,
             IEnumerable<SortingRule>? sortingRules)
