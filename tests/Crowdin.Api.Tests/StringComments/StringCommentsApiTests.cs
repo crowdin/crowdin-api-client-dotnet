@@ -1,6 +1,6 @@
 ﻿
 using Crowdin.Api.StringComments;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 using Xunit;
 
 namespace Crowdin.Api.Tests.StringComments

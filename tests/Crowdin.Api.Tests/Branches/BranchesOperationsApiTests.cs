@@ -10,7 +10,7 @@ using Xunit;
 
 using Crowdin.Api.Branches;
 using Crowdin.Api.Core;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 namespace Crowdin.Api.Tests.Branches
 {
@@ -34,7 +34,7 @@ namespace Crowdin.Api.Tests.Branches
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Branches.Response_Common_Single)
+                    JsonObject = JObject.Parse(Testing.Resources.Branches.Response_Common_Single)
                 });
             
             var executor = new BranchesApiExecutor(mockClient.Object);
@@ -56,7 +56,7 @@ namespace Crowdin.Api.Tests.Branches
             };
             
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Branches.Request_CloneBranch);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Branches.Request_CloneBranch);
             Assert.Equal(expectedRequestJson, actualRequestJson);
             
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -68,7 +68,7 @@ namespace Crowdin.Api.Tests.Branches
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.Accepted,
-                    JsonObject = JObject.Parse(Core.Resources.Branches.Response_BranchCloneStatus)
+                    JsonObject = JObject.Parse(Testing.Resources.Branches.Response_BranchCloneStatus)
                 });
             
             var executor = new BranchesApiExecutor(mockClient.Object);
@@ -93,7 +93,7 @@ namespace Crowdin.Api.Tests.Branches
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Branches.Response_BranchCloneStatus)
+                    JsonObject = JObject.Parse(Testing.Resources.Branches.Response_BranchCloneStatus)
                 });
             
             var executor = new BranchesApiExecutor(mockClient.Object);
@@ -116,7 +116,7 @@ namespace Crowdin.Api.Tests.Branches
             };
             
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Branches.Request_MergeBranch);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Branches.Request_MergeBranch);
             Assert.Equal(expectedRequestJson, actualRequestJson);
             
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -128,7 +128,7 @@ namespace Crowdin.Api.Tests.Branches
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.Accepted,
-                    JsonObject = JObject.Parse(Core.Resources.Branches.Response_BranchMergeStatus)
+                    JsonObject = JObject.Parse(Testing.Resources.Branches.Response_BranchMergeStatus)
                 });
             
             var executor = new BranchesApiExecutor(mockClient.Object);
@@ -153,7 +153,7 @@ namespace Crowdin.Api.Tests.Branches
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Branches.Response_BranchMergeStatus)
+                    JsonObject = JObject.Parse(Testing.Resources.Branches.Response_BranchMergeStatus)
                 });
             
             var executor = new BranchesApiExecutor(mockClient.Object);
@@ -178,7 +178,7 @@ namespace Crowdin.Api.Tests.Branches
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Branches.Response_BranchMergeSummary)
+                    JsonObject = JObject.Parse(Testing.Resources.Branches.Response_BranchMergeSummary)
                 });
             
             var executor = new BranchesApiExecutor(mockClient.Object);

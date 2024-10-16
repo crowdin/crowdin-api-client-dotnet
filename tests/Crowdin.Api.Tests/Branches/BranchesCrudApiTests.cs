@@ -12,7 +12,7 @@ using Xunit;
 
 using Crowdin.Api.Branches;
 using Crowdin.Api.Core;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 namespace Crowdin.Api.Tests.Branches
 {
@@ -38,7 +38,7 @@ namespace Crowdin.Api.Tests.Branches
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Branches.Response_Common_Multi)
+                    JsonObject = JObject.Parse(Testing.Resources.Branches.Response_Common_Multi)
                 });
             
             var executor = new BranchesApiExecutor(mockClient.Object);
@@ -60,7 +60,7 @@ namespace Crowdin.Api.Tests.Branches
             };
             
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Branches.Request_AddBranch);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Branches.Request_AddBranch);
             Assert.Equal(expectedRequestJson, actualRequestJson);
             
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -72,7 +72,7 @@ namespace Crowdin.Api.Tests.Branches
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.Created,
-                    JsonObject = JObject.Parse(Core.Resources.Branches.Response_Common_Single)
+                    JsonObject = JObject.Parse(Testing.Resources.Branches.Response_Common_Single)
                 });
             
             var executor = new BranchesApiExecutor(mockClient.Object);
@@ -96,7 +96,7 @@ namespace Crowdin.Api.Tests.Branches
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Branches.Response_Common_Single)
+                    JsonObject = JObject.Parse(Testing.Resources.Branches.Response_Common_Single)
                 });
             
             var executor = new BranchesApiExecutor(mockClient.Object);
@@ -146,7 +146,7 @@ namespace Crowdin.Api.Tests.Branches
             };
             
             string actualRequestJson = JsonConvert.SerializeObject(patches, JsonSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Branches.Request_EditBranch);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Branches.Request_EditBranch);
             Assert.Equal(expectedRequestJson, actualRequestJson);
             
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -158,7 +158,7 @@ namespace Crowdin.Api.Tests.Branches
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Branches.Response_Common_Single)
+                    JsonObject = JObject.Parse(Testing.Resources.Branches.Response_Common_Single)
                 });
             
             var executor = new BranchesApiExecutor(mockClient.Object);

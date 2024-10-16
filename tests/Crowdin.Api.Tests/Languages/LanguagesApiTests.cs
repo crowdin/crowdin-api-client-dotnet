@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.Languages;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 using Moq;
 using Newtonsoft.Json;
@@ -30,7 +30,7 @@ namespace Crowdin.Api.Tests.Languages
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Languages.ListSupportedLanguages_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Languages.ListSupportedLanguages_Response)
                 });
 
             var executor = new LanguagesApiExecutor(mockClient.Object);
@@ -63,7 +63,7 @@ namespace Crowdin.Api.Tests.Languages
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Languages.AddCustomLanguage_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Languages.AddCustomLanguage_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -73,7 +73,7 @@ namespace Crowdin.Api.Tests.Languages
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.Created,
-                    JsonObject = JObject.Parse(Core.Resources.Languages.AddCustomLanguage_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Languages.AddCustomLanguage_Response)
                 });
 
             var executor = new LanguagesApiExecutor(mockClient.Object);

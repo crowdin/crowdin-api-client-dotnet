@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.StringTranslations;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 using Moq;
 using Newtonsoft.Json;
@@ -36,7 +36,7 @@ namespace Crowdin.Api.Tests.StringTranslations
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.StringTranslations.ListLanguageTranslations_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.StringTranslations.ListLanguageTranslations_Response)
                 });
 
             var executor = new StringTranslationsApiExecutor(mockClient.Object);
@@ -62,7 +62,7 @@ namespace Crowdin.Api.Tests.StringTranslations
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.StringTranslations.AddTranslation_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.StringTranslations.AddTranslation_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -74,7 +74,7 @@ namespace Crowdin.Api.Tests.StringTranslations
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.Created,
-                    JsonObject = JObject.Parse(Core.Resources.StringTranslations.AddTranslation_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.StringTranslations.AddTranslation_Response)
                 });
 
             var executor = new StringTranslationsApiExecutor(mockClient.Object);
@@ -100,7 +100,7 @@ namespace Crowdin.Api.Tests.StringTranslations
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.Created,
-                    JsonObject = JObject.Parse(Core.Resources.StringTranslations.RestoreTranslation_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.StringTranslations.RestoreTranslation_Response)
                 });
 
             var executor = new StringTranslationsApiExecutor(mockClient.Object);
@@ -124,7 +124,7 @@ namespace Crowdin.Api.Tests.StringTranslations
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.StringTranslations.TranslationAlignment_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.StringTranslations.TranslationAlignment_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -136,7 +136,7 @@ namespace Crowdin.Api.Tests.StringTranslations
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.StringTranslations.TranslationAlignment_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.StringTranslations.TranslationAlignment_Response)
                 });
 
             var executor = new StringTranslationsApiExecutor(mockClient.Object);
@@ -173,7 +173,7 @@ namespace Crowdin.Api.Tests.StringTranslations
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.StringTranslations.ListTranslationsApproval_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.StringTranslations.ListTranslationsApproval_Response)
                 });
 
             var executor = new StringTranslationsApiExecutor(mockClient.Object);
@@ -200,7 +200,7 @@ namespace Crowdin.Api.Tests.StringTranslations
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.StringTranslations.ListTranslationVotes_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.StringTranslations.ListTranslationVotes_Response)
                 });
 
             var executor = new StringTranslationsApiExecutor(mockClient.Object);

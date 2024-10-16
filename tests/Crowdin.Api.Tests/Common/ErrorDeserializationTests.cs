@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xunit;
-using Crowdin.Api.Tests.Core.Resources;
+using Crowdin.Api.Tests.Testing.Resources;
 
 namespace Crowdin.Api.Tests.Common
 {

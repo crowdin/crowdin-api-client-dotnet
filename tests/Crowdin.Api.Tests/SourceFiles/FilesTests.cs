@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Crowdin.Api.SourceFiles;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 using Crowdin.Api.Core;
@@ -114,7 +114,7 @@ namespace Crowdin.Api.Tests.SourceFiles {
 
         [Fact]
         public async Task AddFile() {
-            var mockResponseObject = JObject.Parse(Core.Resources.SourceFiles.AddFile_Response);
+            var mockResponseObject = JObject.Parse(Testing.Resources.SourceFiles.AddFile_Response);
 
             var request = new AddFileRequest() {
                 StorageId = 61,
@@ -168,7 +168,7 @@ namespace Crowdin.Api.Tests.SourceFiles {
 
             var options = TestUtils.CreateJsonSerializerOptions();
             string requestJson = JsonConvert.SerializeObject(patches, options);
-            string rightRequestJson = Core.Resources.SourceFiles.EditFile_Request;
+            string rightRequestJson = Testing.Resources.SourceFiles.EditFile_Request;
             Assert.Equal(rightRequestJson, requestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -178,7 +178,7 @@ namespace Crowdin.Api.Tests.SourceFiles {
                     .SendPatchRequest($"/projects/{projectId}/files/{fileId}", patches, null))
                 .ReturnsAsync(new CrowdinApiResult {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.SourceFiles.EditFile_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.SourceFiles.EditFile_Response)
                 });
 
             var executor = new SourceFilesApiExecutor(mockClient.Object);
@@ -215,7 +215,7 @@ namespace Crowdin.Api.Tests.SourceFiles {
                 .ReturnsAsync(new CrowdinApiResult()
                 {
                     StatusCode = HttpStatusCode.Created,
-                    JsonObject = JObject.Parse(Core.Resources.SourceFiles.AddFile_JavaScript_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.SourceFiles.AddFile_JavaScript_Response)
                 });
 
             //Edit the file export options of the newly created JS file 
@@ -230,7 +230,7 @@ namespace Crowdin.Api.Tests.SourceFiles {
             };
             var options = TestUtils.CreateJsonSerializerOptions();
             string actualRequestJson = JsonConvert.SerializeObject(patches, options);
-            string expectedRequestJson = Core.Resources.SourceFiles.EditFile_JavaScriptRequest;
+            string expectedRequestJson = Testing.Resources.SourceFiles.EditFile_JavaScriptRequest;
             Assert.Equal(actualRequestJson, expectedRequestJson);
 
             mockClient
@@ -239,7 +239,7 @@ namespace Crowdin.Api.Tests.SourceFiles {
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.SourceFiles.EditFile_JavaScript_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.SourceFiles.EditFile_JavaScript_Response)
                 });
 
             var executor = new SourceFilesApiExecutor(mockClient.Object);
@@ -397,7 +397,7 @@ namespace Crowdin.Api.Tests.SourceFiles {
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.SourceFiles.DownloadFilePreview_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.SourceFiles.DownloadFilePreview_Response)
                 });
             
             var executor = new SourceFilesApiExecutor(mockClient.Object);

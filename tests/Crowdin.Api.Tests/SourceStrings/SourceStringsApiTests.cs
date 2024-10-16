@@ -12,7 +12,7 @@ using Xunit;
 using Crowdin.Api.Core;
 using Crowdin.Api.SourceFiles;
 using Crowdin.Api.SourceStrings;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 namespace Crowdin.Api.Tests.SourceStrings
 {
@@ -48,7 +48,7 @@ namespace Crowdin.Api.Tests.SourceStrings
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.SourceStrings.CommonResponses_UploadStrings)
+                    JsonObject = JObject.Parse(Testing.Resources.SourceStrings.CommonResponses_UploadStrings)
                 });
 
             var executor = new SourceStringsApiExecutor(mockClient.Object);
@@ -87,7 +87,7 @@ namespace Crowdin.Api.Tests.SourceStrings
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.SourceStrings.UploadStrings_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.SourceStrings.UploadStrings_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -99,7 +99,7 @@ namespace Crowdin.Api.Tests.SourceStrings
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.SourceStrings.CommonResponses_UploadStrings)
+                    JsonObject = JObject.Parse(Testing.Resources.SourceStrings.CommonResponses_UploadStrings)
                 });
 
             var executor = new SourceStringsApiExecutor(mockClient.Object);

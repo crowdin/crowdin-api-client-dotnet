@@ -8,7 +8,7 @@ using Xunit;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.Notifications;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 using Crowdin.Api.Users;
 
 namespace Crowdin.Api.Tests.Notifications
@@ -26,7 +26,7 @@ namespace Crowdin.Api.Tests.Notifications
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Notifications.SendNotificationToAuthenticatedUser_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Notifications.SendNotificationToAuthenticatedUser_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
             
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -54,7 +54,7 @@ namespace Crowdin.Api.Tests.Notifications
             };
             
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Notifications.SendNotificationToProjectMembers_Request_ByUserIds);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Notifications.SendNotificationToProjectMembers_Request_ByUserIds);
             Assert.Equal(expectedRequestJson, actualRequestJson);
             
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -84,7 +84,7 @@ namespace Crowdin.Api.Tests.Notifications
             };
             
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Notifications.SendNotificationToProjectMembers_Request_ByRole);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Notifications.SendNotificationToProjectMembers_Request_ByRole);
             Assert.Equal(expectedRequestJson, actualRequestJson);
             
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -112,7 +112,7 @@ namespace Crowdin.Api.Tests.Notifications
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Notifications.SendNotificationToOrganizationMembers_Request_ByRole);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Notifications.SendNotificationToOrganizationMembers_Request_ByRole);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -138,7 +138,7 @@ namespace Crowdin.Api.Tests.Notifications
             };
             
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Notifications.SendNotificationToOrganizationMembers_Request_ByUserIds);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Notifications.SendNotificationToOrganizationMembers_Request_ByUserIds);
             Assert.Equal(expectedRequestJson, actualRequestJson);
             
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();

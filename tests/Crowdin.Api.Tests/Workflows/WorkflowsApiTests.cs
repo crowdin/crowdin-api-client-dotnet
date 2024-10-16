@@ -8,7 +8,7 @@ using Newtonsoft.Json.Linq;
 using Xunit;
 
 using Crowdin.Api.Core;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 using Crowdin.Api.Workflows;
 
 namespace Crowdin.Api.Tests.Workflows
@@ -29,7 +29,7 @@ namespace Crowdin.Api.Tests.Workflows
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Workflows.ListWorkflowSteps_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Workflows.ListWorkflowSteps_Response)
                 });
 
             var executor = new WorkflowsApiExecutor(mockClient.Object);
@@ -55,7 +55,7 @@ namespace Crowdin.Api.Tests.Workflows
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Workflows.GetWorkflowStep_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Workflows.GetWorkflowStep_Response)
                 });
 
             var executor = new WorkflowsApiExecutor(mockClient.Object);
@@ -83,7 +83,7 @@ namespace Crowdin.Api.Tests.Workflows
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Workflows.ListWorkflowTemplates_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Workflows.ListWorkflowTemplates_Response)
                 });
 
             var executor = new WorkflowsApiExecutor(mockClient.Object);
@@ -108,7 +108,7 @@ namespace Crowdin.Api.Tests.Workflows
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Workflows.GetWorkflowTemplate_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Workflows.GetWorkflowTemplate_Response)
                 });
 
             var executor = new WorkflowsApiExecutor(mockClient.Object);

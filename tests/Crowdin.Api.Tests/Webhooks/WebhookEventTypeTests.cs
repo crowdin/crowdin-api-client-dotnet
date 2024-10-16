@@ -2,7 +2,7 @@
 using System;
 using System.Linq;
 
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 using Crowdin.Api.Webhooks;
 
 using Newtonsoft.Json;

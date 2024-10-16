@@ -5,7 +5,7 @@ using System.Net;
 using System.Threading.Tasks;
 
 using Crowdin.Api.Core;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 using Crowdin.Api.Webhooks;
 
 using Moq;
@@ -55,7 +55,7 @@ namespace Crowdin.Api.Tests.Webhooks
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Webhooks.AddWebhook_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Webhooks.AddWebhook_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -67,7 +67,7 @@ namespace Crowdin.Api.Tests.Webhooks
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.Created,
-                    JsonObject = JObject.Parse(Core.Resources.Webhooks.AddWebhook_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Webhooks.AddWebhook_Response)
                 });
 
             var executor = new WebhooksApiExecutor(mockClient.Object);
@@ -105,7 +105,7 @@ namespace Crowdin.Api.Tests.Webhooks
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(patches, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Webhooks.EditWebhook_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Webhooks.EditWebhook_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -117,7 +117,7 @@ namespace Crowdin.Api.Tests.Webhooks
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Webhooks.EditWebhook_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Webhooks.EditWebhook_Response)
                 });
 
             var executor = new WebhooksApiExecutor(mockClient.Object);
@@ -143,7 +143,7 @@ namespace Crowdin.Api.Tests.Webhooks
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Webhooks.GetWebhook_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Webhooks.GetWebhook_Response)
                 });
 
             var executor = new WebhooksApiExecutor(mockClient.Object);

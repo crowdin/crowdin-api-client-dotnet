@@ -3,7 +3,7 @@ using System;
 using Newtonsoft.Json;
 using Xunit;
 
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 using Crowdin.Api.Webhooks.Organization;
 
 namespace Crowdin.Api.Tests.Webhooks.Organization

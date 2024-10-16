@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 using Xunit;
 
 using Crowdin.Api.Tasks;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 namespace Crowdin.Api.Tests.Tasks
 {
@@ -40,7 +40,7 @@ namespace Crowdin.Api.Tests.Tasks
                 DeadLine = DateTimeOffset.Parse("2019-09-27T07:00:14+00:00").ToLocalTime()
             };
             
-            SerializeAndCompare(actualRequest, Core.Resources.Tasks.Request_PendingTaskCreateForm);
+            SerializeAndCompare(actualRequest, Testing.Resources.Tasks.Request_PendingTaskCreateForm);
         }
         
         [Fact]
@@ -56,7 +56,7 @@ namespace Crowdin.Api.Tests.Tasks
                 DeadLine = DateTimeOffset.Parse("2019-09-27T07:00:14+00:00").ToLocalTime()
             };
             
-            SerializeAndCompare(actualRequest, Core.Resources.Tasks.Request_CrowdinLanguageServicePendingTaskCreateForm);
+            SerializeAndCompare(actualRequest, Testing.Resources.Tasks.Request_CrowdinLanguageServicePendingTaskCreateForm);
         }
         
         [Fact]
@@ -80,7 +80,7 @@ namespace Crowdin.Api.Tests.Tasks
                 DeadLine = DateTimeOffset.Parse("2019-09-27T07:00:14+00:00").ToLocalTime()
             };
             
-            SerializeAndCompare(actualRequest, Core.Resources.Tasks.Request_VendorManualPendingTaskCreateForm);
+            SerializeAndCompare(actualRequest, Testing.Resources.Tasks.Request_VendorManualPendingTaskCreateForm);
         }
         
         [Fact]
@@ -111,7 +111,7 @@ namespace Crowdin.Api.Tests.Tasks
                 DeadLine = DateTimeOffset.Parse("2019-09-27T07:00:14+00:00").ToLocalTime()
             };
             
-            SerializeAndCompare(actualRequest, Core.Resources.Tasks.Request_EnterprisePendingTaskCreateForm);
+            SerializeAndCompare(actualRequest, Testing.Resources.Tasks.Request_EnterprisePendingTaskCreateForm);
         }
     }
 }

@@ -1,6 +1,6 @@
 using Crowdin.Api.Applications;
 using Crowdin.Api.Core;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 using Moq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -25,7 +25,7 @@ namespace Crowdin.Api.Tests.Applications
                       .ReturnsAsync(new CrowdinApiResult
                       {
                           StatusCode = HttpStatusCode.OK,
-                          JsonObject = JObject.Parse(Core.Resources.Applications.GetApplicationInstallation_Response)
+                          JsonObject = JObject.Parse(Testing.Resources.Applications.GetApplicationInstallation_Response)
                       });
             var executor = new ApplicationsApiExecutor(mockClient.Object);
             Application? response = await executor.GetApplicationInstallation(applicationIdentifier);
@@ -42,7 +42,7 @@ namespace Crowdin.Api.Tests.Applications
                       .ReturnsAsync(new CrowdinApiResult
                       {
                           StatusCode = HttpStatusCode.OK,
-                          JsonObject = JObject.Parse(Core.Resources.Applications.ListApplicationInstallation_Response)
+                          JsonObject = JObject.Parse(Testing.Resources.Applications.ListApplicationInstallation_Response)
                       });
             var executor = new ApplicationsApiExecutor(mockClient.Object);
             var response = await executor.ListApplicationInstallations();
@@ -74,7 +74,7 @@ namespace Crowdin.Api.Tests.Applications
                       .ReturnsAsync(new CrowdinApiResult
                       {
                           StatusCode = HttpStatusCode.OK,
-                          JsonObject = JObject.Parse(Core.Resources.Applications.GetApplicationInstallation_Response)
+                          JsonObject = JObject.Parse(Testing.Resources.Applications.GetApplicationInstallation_Response)
                       });
             var executor = new ApplicationsApiExecutor(mockClient.Object);
             var response = await executor.InstallApplication(request);
@@ -112,7 +112,7 @@ namespace Crowdin.Api.Tests.Applications
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(patches, TestUtils.CreateJsonSerializerOptions());
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Applications.EditInstallation_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Applications.EditInstallation_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             var url = $"/applications/installations/{applicationIdentifier}";
@@ -122,7 +122,7 @@ namespace Crowdin.Api.Tests.Applications
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Applications.GetApplicationInstallation_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Applications.GetApplicationInstallation_Response)
                 });
 
             var executor = new ApplicationsApiExecutor(mockClient.Object);

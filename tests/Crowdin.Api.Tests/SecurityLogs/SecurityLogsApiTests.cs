@@ -10,7 +10,7 @@ using Xunit;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.SecurityLogs;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 namespace Crowdin.Api.Tests.SecurityLogs
 {
@@ -36,7 +36,7 @@ namespace Crowdin.Api.Tests.SecurityLogs
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.SecurityLogs.ListUserSecurityLogs_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.SecurityLogs.ListUserSecurityLogs_Response)
                 });
 
             var executor = new SecurityLogsApiExecutor(mockClient.Object);
@@ -65,7 +65,7 @@ namespace Crowdin.Api.Tests.SecurityLogs
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.SecurityLogs.GetUserSecurityLog_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.SecurityLogs.GetUserSecurityLog_Response)
                 });
 
             var executor = new SecurityLogsApiExecutor(mockClient.Object);
@@ -93,7 +93,7 @@ namespace Crowdin.Api.Tests.SecurityLogs
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.SecurityLogs.ListUserSecurityLogs_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.SecurityLogs.ListUserSecurityLogs_Response)
                 });
 
             var executor = new SecurityLogsApiExecutor(mockClient.Object);
@@ -121,7 +121,7 @@ namespace Crowdin.Api.Tests.SecurityLogs
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.SecurityLogs.GetUserSecurityLog_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.SecurityLogs.GetUserSecurityLog_Response)
                 });
 
             var executor = new SecurityLogsApiExecutor(mockClient.Object);

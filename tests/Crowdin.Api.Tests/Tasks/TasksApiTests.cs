@@ -1,6 +1,6 @@
 ﻿
 using Crowdin.Api.Tasks;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 using Newtonsoft.Json;
 using Xunit;
 
@@ -21,7 +21,7 @@ namespace Crowdin.Api.Tests.Tasks
 
             string requestJson = JsonConvert.SerializeObject(request, Settings);
             Assert.NotNull(requestJson);
-            Assert.Equal(Core.Resources.Tasks.AddTask_RightRequestJson_VendorGengo_ToneNotSet, requestJson);
+            Assert.Equal(Testing.Resources.Tasks.AddTask_RightRequestJson_VendorGengo_ToneNotSet, requestJson);
         }
 
         [Fact]
@@ -35,7 +35,7 @@ namespace Crowdin.Api.Tests.Tasks
 
             string requestJson = JsonConvert.SerializeObject(request, Settings);
             Assert.NotNull(requestJson);
-            Assert.Equal(Core.Resources.Tasks.AddTask_RightRequestJson_VendorGengo_ToneInformal, requestJson);
+            Assert.Equal(Testing.Resources.Tasks.AddTask_RightRequestJson_VendorGengo_ToneInformal, requestJson);
         }
 
         [Fact]
@@ -49,7 +49,7 @@ namespace Crowdin.Api.Tests.Tasks
 
             string requestJson = JsonConvert.SerializeObject(request, Settings);
             Assert.NotNull(requestJson);
-            Assert.Equal(Core.Resources.Tasks.AddTask_RightRequestJson_VendorGengo_ToneOther, requestJson);
+            Assert.Equal(Testing.Resources.Tasks.AddTask_RightRequestJson_VendorGengo_ToneOther, requestJson);
         }
 
         [Fact]
@@ -75,7 +75,7 @@ namespace Crowdin.Api.Tests.Tasks
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, Settings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Tasks.AddTask_RightRequestJson_VendorManual);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Tasks.AddTask_RightRequestJson_VendorManual);
             Assert.Equal(expectedRequestJson, actualRequestJson);
         }
     }

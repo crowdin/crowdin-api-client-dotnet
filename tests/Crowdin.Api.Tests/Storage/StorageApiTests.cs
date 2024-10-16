@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.Storage;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 using Moq;
 using Newtonsoft.Json.Linq;
@@ -19,7 +19,7 @@ namespace Crowdin.Api.Tests.Storage
         [Fact]
         public async Task ListStorages()
         {
-            string responseJson = Core.Resources.Storage.ListStorages;
+            string responseJson = Testing.Resources.Storage.ListStorages;
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
             
@@ -73,7 +73,7 @@ namespace Crowdin.Api.Tests.Storage
         {
             const long storageId = 2149231454;
             string fileName = @"umbrella_app.xliff";
-            string responseJson = Core.Resources.Storage.AddStorageResponse;
+            string responseJson = Testing.Resources.Storage.AddStorageResponse;
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
             

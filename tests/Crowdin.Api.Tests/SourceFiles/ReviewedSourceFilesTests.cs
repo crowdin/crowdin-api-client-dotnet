@@ -1,6 +1,6 @@
 ﻿using Crowdin.Api.Core;
 using Crowdin.Api.SourceFiles;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;

@@ -9,7 +9,7 @@ using Crowdin.Api.Core;
 using Crowdin.Api.Labels;
 using Crowdin.Api.Screenshots;
 using Crowdin.Api.SourceStrings;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 using Moq;
 using Newtonsoft.Json;
@@ -46,7 +46,7 @@ namespace Crowdin.Api.Tests.Labels
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Labels.ListLabels_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Labels.ListLabels_Response)
                 });
             
             var executor = new LabelsApiExecutor(mockClient.Object);
@@ -71,7 +71,7 @@ namespace Crowdin.Api.Tests.Labels
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Labels.AddLabel_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Labels.AddLabel_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             var url = $"/projects/{projectId}/labels";
@@ -83,7 +83,7 @@ namespace Crowdin.Api.Tests.Labels
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.Created,
-                    JsonObject = JObject.Parse(Core.Resources.Labels.AddLabel_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Labels.AddLabel_Response)
                 });
 
             var executor = new LabelsApiExecutor(mockClient.Object);
@@ -106,7 +106,7 @@ namespace Crowdin.Api.Tests.Labels
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Labels.AssignLabelToStrings_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Labels.AssignLabelToStrings_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             var url = $"/projects/{projectId}/labels/{labelId}/strings";
@@ -118,7 +118,7 @@ namespace Crowdin.Api.Tests.Labels
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Labels.AssignLabelToStrings_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Labels.AssignLabelToStrings_Response)
                 });
 
             var executor = new LabelsApiExecutor(mockClient.Object);
@@ -141,7 +141,7 @@ namespace Crowdin.Api.Tests.Labels
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Labels.AssignLabelToScreenshots_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Labels.AssignLabelToScreenshots_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -153,7 +153,7 @@ namespace Crowdin.Api.Tests.Labels
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Labels.CommonResponses_LabelToScreenshots)
+                    JsonObject = JObject.Parse(Testing.Resources.Labels.CommonResponses_LabelToScreenshots)
                 });
 
             var executor = new LabelsApiExecutor(mockClient.Object);
@@ -184,7 +184,7 @@ namespace Crowdin.Api.Tests.Labels
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Labels.CommonResponses_LabelToScreenshots)
+                    JsonObject = JObject.Parse(Testing.Resources.Labels.CommonResponses_LabelToScreenshots)
                 });
 
             var executor = new LabelsApiExecutor(mockClient.Object);

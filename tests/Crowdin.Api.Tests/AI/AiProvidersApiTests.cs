@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +12,8 @@ using Xunit;
 
 using Crowdin.Api.AI;
 using Crowdin.Api.Core;
-using Crowdin.Api.Tests.Core;
-using Crowdin.Api.Tests.Core.Resources;
+using Crowdin.Api.Tests.Testing;
+using Crowdin.Api.Tests.Testing.Resources;
 
 namespace Crowdin.Api.Tests.AI
 {

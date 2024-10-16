@@ -4,7 +4,7 @@ using System;
 using Crowdin.Api.Distributions;
 using Crowdin.Api.Reports;
 using Crowdin.Api.Tasks;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 using Newtonsoft.Json;
 using Xunit;

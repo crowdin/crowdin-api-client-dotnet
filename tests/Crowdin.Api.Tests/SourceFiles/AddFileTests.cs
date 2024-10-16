@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.SourceFiles;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 using Moq;
 using Newtonsoft.Json;
@@ -46,7 +46,7 @@ namespace Crowdin.Api.Tests.SourceFiles
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.Created,
-                    JsonObject = JObject.Parse(Core.Resources.SourceFiles.AddFile_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.SourceFiles.AddFile_Response)
                 });
 
             var executor = new SourceFilesApiExecutor(mockClient.Object);
@@ -82,14 +82,14 @@ namespace Crowdin.Api.Tests.SourceFiles
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.SourceFiles.AddFile_Docx_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.SourceFiles.AddFile_Docx_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
         }
 
         [Fact]
         public void AddFile_DocxFileImportOptions_RequestDeserialization()
         {
-            string requestJson = Core.Resources.SourceFiles.AddFile_Docx_Request;
+            string requestJson = Testing.Resources.SourceFiles.AddFile_Docx_Request;
             var request = JsonConvert.DeserializeObject<AddFileRequest>(requestJson, JsonSettings);
             
             Assert.NotNull(request);
@@ -119,14 +119,14 @@ namespace Crowdin.Api.Tests.SourceFiles
             };
             
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.SourceFiles.AddFile_Html_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.SourceFiles.AddFile_Html_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
         }
 
         [Fact]
         public void AddFile_HtmlFileImportOptions_RequestDeserialization()
         {
-            string requestJson = Core.Resources.SourceFiles.AddFile_Html_Request;
+            string requestJson = Testing.Resources.SourceFiles.AddFile_Html_Request;
             var request = JsonConvert.DeserializeObject<AddFileRequest>(requestJson, JsonSettings);
             
             Assert.NotNull(request);
@@ -158,14 +158,14 @@ namespace Crowdin.Api.Tests.SourceFiles
             };
             
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.SourceFiles.AddFile_HtmlWithFrontMatter_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.SourceFiles.AddFile_HtmlWithFrontMatter_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
         }
 
         [Fact]
         public void AddFile_HtmlWithFrontMatterFileImportOptions_RequestDeserialization()
         {
-            string requestJson = Core.Resources.SourceFiles.AddFile_HtmlWithFrontMatter_Request;
+            string requestJson = Testing.Resources.SourceFiles.AddFile_HtmlWithFrontMatter_Request;
             var request = JsonConvert.DeserializeObject<AddFileRequest>(requestJson, JsonSettings);
             
             Assert.NotNull(request);
@@ -198,14 +198,14 @@ namespace Crowdin.Api.Tests.SourceFiles
             };
             
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.SourceFiles.AddFile_MdxV1_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.SourceFiles.AddFile_MdxV1_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
         }
         
         [Fact]
         public void AddFile_MdxV1FileImportOptions_RequestDeserialization()
         {
-            string requestJson = Core.Resources.SourceFiles.AddFile_MdxV1_Request;
+            string requestJson = Testing.Resources.SourceFiles.AddFile_MdxV1_Request;
             var request = JsonConvert.DeserializeObject<AddFileRequest>(requestJson, JsonSettings);
             
             Assert.NotNull(request);
@@ -242,14 +242,14 @@ namespace Crowdin.Api.Tests.SourceFiles
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.SourceFiles.AddFile_JavaScript_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.SourceFiles.AddFile_JavaScript_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
         }
 
         [Fact]
         public void AddFile_JavaScriptExportOptions_RequestDeserialization()
         {
-            string requestJson = Core.Resources.SourceFiles.AddFile_JavaScript_Request;
+            string requestJson = Testing.Resources.SourceFiles.AddFile_JavaScript_Request;
             var request = JsonConvert.DeserializeObject<AddFileRequest>(requestJson, JsonSettings);
 
             Assert.NotNull(request);
@@ -287,7 +287,7 @@ namespace Crowdin.Api.Tests.SourceFiles
                 .ReturnsAsync(new CrowdinApiResult()
                 {
                     StatusCode = HttpStatusCode.Created,
-                    JsonObject = JObject.Parse(Core.Resources.SourceFiles.AddFile_JavaScript_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.SourceFiles.AddFile_JavaScript_Response)
                 });
 
             var executor = new SourceFilesApiExecutor(mockClient.Object);
@@ -305,7 +305,7 @@ namespace Crowdin.Api.Tests.SourceFiles
         [Fact]
         public void AddFile_RequestSerialization()
         {
-            string rightRequestJson = Core.Resources.SourceFiles.AddFile_Request;
+            string rightRequestJson = Testing.Resources.SourceFiles.AddFile_Request;
 
             var body = new AddFileRequest
             {
@@ -332,7 +332,7 @@ namespace Crowdin.Api.Tests.SourceFiles
         [Fact]
         public void AddFile_RequestDeserialization()
         {
-            string rightRequestJson = Core.Resources.SourceFiles.AddFile_Request;
+            string rightRequestJson = Testing.Resources.SourceFiles.AddFile_Request;
 
             JsonSerializerSettings options = TestUtils.CreateJsonSerializerOptions();
 

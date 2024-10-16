@@ -4,7 +4,7 @@ using System.Net;
 using System.Threading.Tasks;
 
 using Crowdin.Api.Core;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 using Crowdin.Api.TranslationStatus;
 using Moq;
 using Newtonsoft.Json.Linq;
@@ -29,7 +29,7 @@ namespace Crowdin.Api.Tests.Translations
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Translations.GetLanguageStatusResponse)
+                    JsonObject = JObject.Parse(Testing.Resources.Translations.GetLanguageStatusResponse)
                 });
 
             var executor = new TranslationStatusApiExecutor(mockClient.Object, TestUtils.CreateJsonParser());

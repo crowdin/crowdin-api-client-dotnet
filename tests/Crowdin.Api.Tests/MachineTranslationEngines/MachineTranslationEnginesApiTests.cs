@@ -12,7 +12,7 @@ using Xunit;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.MachineTranslationEngines;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 namespace Crowdin.Api.Tests.MachineTranslationEngines
 {
@@ -32,7 +32,7 @@ namespace Crowdin.Api.Tests.MachineTranslationEngines
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.MachineTranslationEngines.ListMts_Request_IntCredentialsKey)
+                    JsonObject = JObject.Parse(Testing.Resources.MachineTranslationEngines.ListMts_Request_IntCredentialsKey)
                 });
             
             var executor = new MachineTranslationEnginesApiExecutor(mockClient.Object);
@@ -59,7 +59,7 @@ namespace Crowdin.Api.Tests.MachineTranslationEngines
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.MachineTranslationEngines.ListMts_Request_StringCredentialsKey)
+                    JsonObject = JObject.Parse(Testing.Resources.MachineTranslationEngines.ListMts_Request_StringCredentialsKey)
                 });
             
             var executor = new MachineTranslationEnginesApiExecutor(mockClient.Object);
@@ -91,7 +91,7 @@ namespace Crowdin.Api.Tests.MachineTranslationEngines
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.MachineTranslationEngines.AddMt_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.MachineTranslationEngines.AddMt_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -101,7 +101,7 @@ namespace Crowdin.Api.Tests.MachineTranslationEngines
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.Created,
-                    JsonObject = JObject.Parse(Core.Resources.MachineTranslationEngines.AddMt_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.MachineTranslationEngines.AddMt_Response)
                 });
 
             var executor = new MachineTranslationEnginesApiExecutor(mockClient.Object);
@@ -131,7 +131,7 @@ namespace Crowdin.Api.Tests.MachineTranslationEngines
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(patches, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.MachineTranslationEngines.EditMt_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.MachineTranslationEngines.EditMt_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
         }
     }

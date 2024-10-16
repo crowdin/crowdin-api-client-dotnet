@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.Dictionaries;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 using Moq;
 using Newtonsoft.Json;
@@ -37,7 +37,7 @@ namespace Crowdin.Api.Tests.Dictionaries
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Dictionaries.ListDictionaries)
+                    JsonObject = JObject.Parse(Testing.Resources.Dictionaries.ListDictionaries)
                 });
 
             var executor = new DictionariesApiExecutor(mockClient.Object);
@@ -67,7 +67,7 @@ namespace Crowdin.Api.Tests.Dictionaries
             };
 
             string actualPatchesListJson = JsonConvert.SerializeObject(patches, DefaultSettings);
-            string rightPatchesListJson = Core.Resources.Dictionaries.EditDictionary_OpAdd_RightPatchesListJson;
+            string rightPatchesListJson = Testing.Resources.Dictionaries.EditDictionary_OpAdd_RightPatchesListJson;
             
             Assert.NotEmpty(actualPatchesListJson);
             Assert.Equal(rightPatchesListJson, actualPatchesListJson);
@@ -86,7 +86,7 @@ namespace Crowdin.Api.Tests.Dictionaries
             };
 
             string actualPatchesListJson = JsonConvert.SerializeObject(patches, DefaultSettings);
-            string rightPatchesListJson = Core.Resources.Dictionaries.EditDictionary_OpRemove_RightPatchesListJson_SingleIndex;
+            string rightPatchesListJson = Testing.Resources.Dictionaries.EditDictionary_OpRemove_RightPatchesListJson_SingleIndex;
             
             Assert.NotEmpty(actualPatchesListJson);
             Assert.Equal(rightPatchesListJson, actualPatchesListJson);
@@ -105,7 +105,7 @@ namespace Crowdin.Api.Tests.Dictionaries
             };
             
             string actualPatchesListJson = JsonConvert.SerializeObject(patches, DefaultSettings);
-            string rightPatchesListJson = Core.Resources.Dictionaries.EditDictionary_OpRemove_RightPatchesListJson_MultiIndexesWithDuplicates;
+            string rightPatchesListJson = Testing.Resources.Dictionaries.EditDictionary_OpRemove_RightPatchesListJson_MultiIndexesWithDuplicates;
             
             Assert.NotEmpty(actualPatchesListJson);
             Assert.Equal(rightPatchesListJson, actualPatchesListJson);

@@ -3,7 +3,7 @@ using System.Net;
 using System.Threading.Tasks;
 using Crowdin.Api.Core;
 using Crowdin.Api.Fields;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 using Moq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -30,7 +30,7 @@ public class FieldsApiTest
             .ReturnsAsync(new CrowdinApiResult
             {
                 StatusCode = HttpStatusCode.OK,
-                JsonObject = JObject.Parse(Core.Resources.Fields.ListFields_Response)
+                JsonObject = JObject.Parse(Testing.Resources.Fields.ListFields_Response)
             });
 
         var executor = new FieldsApiExecutor(mockClient.Object);
@@ -91,7 +91,7 @@ public class FieldsApiTest
         };
 
         string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-        string expectedResultJson = TestUtils.CompactJson(Core.Resources.Fields.AddField_Request);
+        string expectedResultJson = TestUtils.CompactJson(Testing.Resources.Fields.AddField_Request);
         Assert.Equal(expectedResultJson, actualRequestJson);
 
         Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -101,7 +101,7 @@ public class FieldsApiTest
             .ReturnsAsync(new CrowdinApiResult
             {
                 StatusCode = HttpStatusCode.Created,
-                JsonObject = JObject.Parse(Core.Resources.Fields.AddAndGetField_Response)
+                JsonObject = JObject.Parse(Testing.Resources.Fields.AddAndGetField_Response)
             });
 
         var executor = new FieldsApiExecutor(mockClient.Object);
@@ -123,7 +123,7 @@ public class FieldsApiTest
             .ReturnsAsync(new CrowdinApiResult
             {
                 StatusCode = HttpStatusCode.OK,
-                JsonObject = JObject.Parse(Core.Resources.Fields.AddAndGetField_Response)
+                JsonObject = JObject.Parse(Testing.Resources.Fields.AddAndGetField_Response)
             });
 
         var executor = new FieldsApiExecutor(mockClient.Object);
@@ -197,7 +197,7 @@ public class FieldsApiTest
         };
 
         string actualRequestJSon = JsonConvert.SerializeObject(patches, DefaultSettings);
-        string expectedRequestJSon = TestUtils.CompactJson(Core.Resources.Fields.EditField_Request, DefaultSettings);
+        string expectedRequestJSon = TestUtils.CompactJson(Testing.Resources.Fields.EditField_Request, DefaultSettings);
         Assert.Equal(expectedRequestJSon, actualRequestJSon);
 
         Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -207,7 +207,7 @@ public class FieldsApiTest
             .ReturnsAsync(new CrowdinApiResult
             {
                 StatusCode = HttpStatusCode.OK,
-                JsonObject = JObject.Parse(Core.Resources.Fields.EditField_Response)
+                JsonObject = JObject.Parse(Testing.Resources.Fields.EditField_Response)
             });
 
         var executor = new FieldsApiExecutor(mockClient.Object);

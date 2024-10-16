@@ -10,7 +10,7 @@ using Xunit;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.Reports;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 namespace Crowdin.Api.Tests.Reports
 {
@@ -57,7 +57,7 @@ namespace Crowdin.Api.Tests.Reports
             
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
             string expectedRequestJson =
-                TestUtils.CompactJson(Core.Resources.Reports.PreTranslateEfficiency_General_Request);
+                TestUtils.CompactJson(Testing.Resources.Reports.PreTranslateEfficiency_General_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
             
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -69,7 +69,7 @@ namespace Crowdin.Api.Tests.Reports
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Reports.CommonResponses_ReportStatus)
+                    JsonObject = JObject.Parse(Testing.Resources.Reports.CommonResponses_ReportStatus)
                 });
             
             var executor = new ReportsApiExecutor(mockClient.Object);
@@ -94,7 +94,7 @@ namespace Crowdin.Api.Tests.Reports
             
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
             string expectedRequestJson =
-                TestUtils.CompactJson(Core.Resources.Reports.PreTranslateEfficiency_ByTask_Request);
+                TestUtils.CompactJson(Testing.Resources.Reports.PreTranslateEfficiency_ByTask_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
             
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -106,7 +106,7 @@ namespace Crowdin.Api.Tests.Reports
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Reports.CommonResponses_ReportStatus)
+                    JsonObject = JObject.Parse(Testing.Resources.Reports.CommonResponses_ReportStatus)
                 });
             var executor = new ReportsApiExecutor(mockClient.Object);
             ReportStatus response = await executor.GenerateReport(projectId, request);

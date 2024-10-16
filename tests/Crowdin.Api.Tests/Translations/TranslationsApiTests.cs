@@ -6,7 +6,7 @@ using System.Net;
 using System.Threading.Tasks;
 
 using Crowdin.Api.Core;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 using Crowdin.Api.Translations;
 
 using Moq;
@@ -48,7 +48,7 @@ namespace Crowdin.Api.Tests.Translations
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.Accepted,
-                    JsonObject = JObject.Parse(Core.Resources.Translations.ApplyPreTranslationResponse)
+                    JsonObject = JObject.Parse(Testing.Resources.Translations.ApplyPreTranslationResponse)
                 });
 
             var executor = new TranslationsApiExecutor(mockClient.Object, TestUtils.CreateJsonParser());
@@ -78,7 +78,7 @@ namespace Crowdin.Api.Tests.Translations
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Translations.UploadTranslationsResponse)
+                    JsonObject = JObject.Parse(Testing.Resources.Translations.UploadTranslationsResponse)
                 });
 
             var executor = new TranslationsApiExecutor(mockClient.Object, TestUtils.CreateJsonParser());
@@ -102,7 +102,7 @@ namespace Crowdin.Api.Tests.Translations
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Translations.ListProjectBuildsResponse)
+                    JsonObject = JObject.Parse(Testing.Resources.Translations.ListProjectBuildsResponse)
                 });
 
             var executor = new TranslationsApiExecutor(mockClient.Object);
@@ -132,7 +132,7 @@ namespace Crowdin.Api.Tests.Translations
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Translations.GetPreTranslationStatus_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Translations.GetPreTranslationStatus_Response)
                 });
 
             var executor = new TranslationsApiExecutor(mockClient.Object);

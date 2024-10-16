@@ -11,7 +11,7 @@ using Newtonsoft.Json.Linq;
 using Xunit;
 
 using Crowdin.Api.Core;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 using Crowdin.Api.TranslationMemory;
 
 using TranslationMemoryResource = Crowdin.Api.TranslationMemory.TranslationMemory;
@@ -40,7 +40,7 @@ namespace Crowdin.Api.Tests.TranslationMemory
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.TranslationMemory.CommonResponse_Multi)
+                    JsonObject = JObject.Parse(Testing.Resources.TranslationMemory.CommonResponse_Multi)
                 });
 
             var executor = new TranslationMemoryApiExecutor(mockClient.Object);
@@ -62,7 +62,7 @@ namespace Crowdin.Api.Tests.TranslationMemory
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.TranslationMemory.AddTm_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.TranslationMemory.AddTm_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -72,7 +72,7 @@ namespace Crowdin.Api.Tests.TranslationMemory
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.Created,
-                    JsonObject = JObject.Parse(Core.Resources.TranslationMemory.CommonResponse_Single)
+                    JsonObject = JObject.Parse(Testing.Resources.TranslationMemory.CommonResponse_Single)
                 });
 
             var executor = new TranslationMemoryApiExecutor(mockClient.Object);
@@ -95,7 +95,7 @@ namespace Crowdin.Api.Tests.TranslationMemory
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.TranslationMemory.CommonResponse_Single)
+                    JsonObject = JObject.Parse(Testing.Resources.TranslationMemory.CommonResponse_Single)
                 });
             
             var executor = new TranslationMemoryApiExecutor(mockClient.Object);
@@ -137,7 +137,7 @@ namespace Crowdin.Api.Tests.TranslationMemory
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(patches, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.TranslationMemory.EditTm_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.TranslationMemory.EditTm_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -149,7 +149,7 @@ namespace Crowdin.Api.Tests.TranslationMemory
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.TranslationMemory.CommonResponse_Single)
+                    JsonObject = JObject.Parse(Testing.Resources.TranslationMemory.CommonResponse_Single)
                 });
 
             var executor = new TranslationMemoryApiExecutor(mockClient.Object);
@@ -188,7 +188,7 @@ namespace Crowdin.Api.Tests.TranslationMemory
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.TranslationMemory.ExportTm_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.TranslationMemory.ExportTm_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -200,7 +200,7 @@ namespace Crowdin.Api.Tests.TranslationMemory
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.Accepted,
-                    JsonObject = JObject.Parse(Core.Resources.TranslationMemory.ExportTm_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.TranslationMemory.ExportTm_Response)
                 });
 
             var executor = new TranslationMemoryApiExecutor(mockClient.Object);
@@ -224,7 +224,7 @@ namespace Crowdin.Api.Tests.TranslationMemory
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.TranslationMemory.CheckTmExportStatus_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.TranslationMemory.CheckTmExportStatus_Response)
                 });
 
             var executor = new TranslationMemoryApiExecutor(mockClient.Object);
@@ -248,7 +248,7 @@ namespace Crowdin.Api.Tests.TranslationMemory
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.TranslationMemory.DownloadTm_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.TranslationMemory.DownloadTm_Response)
                 });
 
             var executor = new TranslationMemoryApiExecutor(mockClient.Object);
@@ -278,7 +278,7 @@ namespace Crowdin.Api.Tests.TranslationMemory
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.TranslationMemory.ImportTm_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.TranslationMemory.ImportTm_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -290,7 +290,7 @@ namespace Crowdin.Api.Tests.TranslationMemory
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.Accepted,
-                    JsonObject = JObject.Parse(Core.Resources.TranslationMemory.ImportTm_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.TranslationMemory.ImportTm_Response)
                 });
             
             var executor = new TranslationMemoryApiExecutor(mockClient.Object);
@@ -314,7 +314,7 @@ namespace Crowdin.Api.Tests.TranslationMemory
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.TranslationMemory.CheckTmImportStatus_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.TranslationMemory.CheckTmImportStatus_Response)
                 });
 
             var executor = new TranslationMemoryApiExecutor(mockClient.Object);
@@ -338,7 +338,7 @@ namespace Crowdin.Api.Tests.TranslationMemory
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.TranslationMemory.ConcordanceSearch_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.TranslationMemory.ConcordanceSearch_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -350,7 +350,7 @@ namespace Crowdin.Api.Tests.TranslationMemory
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.TranslationMemory.ConcordanceSearch_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.TranslationMemory.ConcordanceSearch_Response)
                 });
 
             var executor = new TranslationMemoryApiExecutor(mockClient.Object);

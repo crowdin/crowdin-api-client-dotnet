@@ -1,8 +1,6 @@
 
 using System.Collections.Generic;
-
 using Crowdin.Api.Core;
-
 using Moq;
 using Xunit;
 
@@ -30,7 +28,7 @@ namespace Crowdin.Api.Tests.Core
             var queryParams = new Dictionary<string, string>();
 
             queryParams.AddParamIfPresent("param", 1);
-            queryParams.AddParamIfPresent("other", (int?) null);
+            queryParams.AddParamIfPresent("other", (int?)null);
 
             Assert.Single(queryParams.Keys);
             Assert.True(queryParams.TryGetValue("param", out string? value));
@@ -43,7 +41,7 @@ namespace Crowdin.Api.Tests.Core
             var queryParams = new Dictionary<string, string>();
 
             queryParams.AddParamIfPresent("param", 1L);
-            queryParams.AddParamIfPresent("other", (long?) null);
+            queryParams.AddParamIfPresent("other", (long?)null);
 
             Assert.Single(queryParams.Keys);
             Assert.True(queryParams.TryGetValue("param", out string? value));
@@ -56,7 +54,7 @@ namespace Crowdin.Api.Tests.Core
             var queryParams = new Dictionary<string, string>();
 
             queryParams.AddParamIfPresent("param", true);
-            queryParams.AddParamIfPresent("other", (bool?) null);
+            queryParams.AddParamIfPresent("other", (bool?)null);
 
             Assert.Single(queryParams.Keys);
             Assert.True(queryParams.TryGetValue("param", out string? value));
@@ -154,7 +152,7 @@ namespace Crowdin.Api.Tests.Core
                 mockObject2.Object,
                 mockObject3.Object
             });
-            queryParams.AddParamIfPresent("other1", new object[] {});
+            queryParams.AddParamIfPresent("other1", new object[] { });
             queryParams.AddParamIfPresent("other2", null as object[]);
 
             Assert.Single(queryParams.Keys);
@@ -167,8 +165,8 @@ namespace Crowdin.Api.Tests.Core
         {
             var queryParams = new Dictionary<string, string>();
 
-            queryParams.AddParamIfPresent("param", new string[] {"test1", "test2", "test3"});
-            queryParams.AddParamIfPresent("other1", new string[] {});
+            queryParams.AddParamIfPresent("param", new string[] { "test1", "test2", "test3" });
+            queryParams.AddParamIfPresent("other1", new string[] { });
             queryParams.AddParamIfPresent("other2", null as string[]);
 
             Assert.Single(queryParams.Keys);

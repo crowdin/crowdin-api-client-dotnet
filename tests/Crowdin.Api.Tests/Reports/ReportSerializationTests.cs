@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 using Xunit;
 
 using Crowdin.Api.Reports;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 namespace Crowdin.Api.Tests.Reports
 {
@@ -60,7 +60,7 @@ namespace Crowdin.Api.Tests.Reports
 
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
             string expectedRequestJson = TestUtils.CompactJson(
-                Core.Resources.Reports.CostEstimationPostEditing_GeneralSchema_Request);
+                Testing.Resources.Reports.CostEstimationPostEditing_GeneralSchema_Request);
             
             Assert.Equal(expectedRequestJson, actualRequestJson);
         }
@@ -104,7 +104,7 @@ namespace Crowdin.Api.Tests.Reports
             
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
             string expectedRequestJson = TestUtils.CompactJson(
-                Core.Resources.Reports.CostEstimationPostEditing_ByTaskSchema_Request);
+                Testing.Resources.Reports.CostEstimationPostEditing_ByTaskSchema_Request);
             
             Assert.Equal(expectedRequestJson, actualRequestJson);
         }
@@ -182,7 +182,7 @@ namespace Crowdin.Api.Tests.Reports
             
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
             string expectedRequestJson = TestUtils.CompactJson(
-                Core.Resources.Reports.TranslationCostsPostEditing_GeneralSchema_Request);
+                Testing.Resources.Reports.TranslationCostsPostEditing_GeneralSchema_Request);
             
             Assert.Equal(expectedRequestJson, actualRequestJson);
         }
@@ -245,7 +245,7 @@ namespace Crowdin.Api.Tests.Reports
             
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
             string expectedRequestJson = TestUtils.CompactJson(
-                Core.Resources.Reports.TranslationCostsPostEditing_ByTaskSchema_Request);
+                Testing.Resources.Reports.TranslationCostsPostEditing_ByTaskSchema_Request);
             
             Assert.Equal(expectedRequestJson, actualRequestJson);
         }
@@ -310,7 +310,7 @@ namespace Crowdin.Api.Tests.Reports
             
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
             string expectedRequestJson = TestUtils.CompactJson(
-                Core.Resources.Reports.Group_TranslationCostsPostEditing_GeneralSchema_Request);
+                Testing.Resources.Reports.Group_TranslationCostsPostEditing_GeneralSchema_Request);
             
             Assert.Equal(expectedRequestJson, actualRequestJson);
         }

@@ -5,8 +5,8 @@ using Xunit;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.ProjectsGroups;
-using Crowdin.Api.Tests.Core;
-using Crowdin.Api.Tests.Core.Resources;
+using Crowdin.Api.Tests.Testing;
+using Crowdin.Api.Tests.Testing.Resources;
 using Crowdin.Api.Webhooks.Organization;
 
 namespace Crowdin.Api.Tests.Common

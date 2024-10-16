@@ -10,7 +10,7 @@ using Newtonsoft.Json.Linq;
 using Xunit;
 
 using Crowdin.Api.Core;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 using Crowdin.Api.Users;
 
 namespace Crowdin.Api.Tests.Users
@@ -32,7 +32,7 @@ namespace Crowdin.Api.Tests.Users
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Users.InviteUser_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Users.InviteUser_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -42,7 +42,7 @@ namespace Crowdin.Api.Tests.Users
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Users.InviteUser_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Users.InviteUser_Response)
                 });
 
             var executor = new UsersApiExecutor(mockClient.Object);
@@ -90,7 +90,7 @@ namespace Crowdin.Api.Tests.Users
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(patches, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Users.EditUser_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Users.EditUser_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -102,7 +102,7 @@ namespace Crowdin.Api.Tests.Users
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Users.EditUser_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Users.EditUser_Response)
                 });
 
             var executor = new UsersApiExecutor(mockClient.Object);
@@ -176,7 +176,7 @@ namespace Crowdin.Api.Tests.Users
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Users.AddProjectMember_Request, DefaultSettings);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Users.AddProjectMember_Request, DefaultSettings);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -188,7 +188,7 @@ namespace Crowdin.Api.Tests.Users
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.Created,
-                    JsonObject = JObject.Parse(Core.Resources.Users.AddProjectMember_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Users.AddProjectMember_Response)
                 });
 
             var executor = new UsersApiExecutor(mockClient.Object);
@@ -265,7 +265,7 @@ namespace Crowdin.Api.Tests.Users
             };
             
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Users.ReplaceProjectMemberPermissions_Request, DefaultSettings);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Users.ReplaceProjectMemberPermissions_Request, DefaultSettings);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -277,7 +277,7 @@ namespace Crowdin.Api.Tests.Users
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Users.ReplaceProjectMemberPermissions_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Users.ReplaceProjectMemberPermissions_Response)
                 });
 
             var executor = new UsersApiExecutor(mockClient.Object);
@@ -302,7 +302,7 @@ namespace Crowdin.Api.Tests.Users
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Users.ListProjectMembers_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Users.ListProjectMembers_Response)
                 });
 
             var executor = new UsersApiExecutor(mockClient.Object);
@@ -325,7 +325,7 @@ namespace Crowdin.Api.Tests.Users
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Users.GetProjectMemberPermissions_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Users.GetProjectMemberPermissions_Response)
                 });
 
             var executor = new UsersApiExecutor(mockClient.Object);

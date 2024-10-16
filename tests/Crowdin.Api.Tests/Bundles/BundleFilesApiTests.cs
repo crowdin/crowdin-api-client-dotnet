@@ -11,7 +11,7 @@ using Xunit;
 using Crowdin.Api.Bundles;
 using Crowdin.Api.Core;
 using Crowdin.Api.SourceFiles;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 namespace Crowdin.Api.Tests.Bundles
 {
@@ -24,7 +24,7 @@ namespace Crowdin.Api.Tests.Bundles
         public async Task ListFiles_AsTranslatorOrProofreader()
         {
             var file = await ExecuteForType<FileInfoCollectionResource>(
-                Core.Resources.Bundles.ListBundleFiles_Response_AsTranslator);
+                Testing.Resources.Bundles.ListBundleFiles_Response_AsTranslator);
             
             Assert.Equal(ProjectId, file.ProjectId);
             Assert.Equal(FileStatus.Active, file.Status);
@@ -34,7 +34,7 @@ namespace Crowdin.Api.Tests.Bundles
         public async Task ListFiles_AsProjectOwnerOrManager()
         {
             var file = await ExecuteForType<FileCollectionResource>(
-                Core.Resources.Bundles.ListBundleFiles_Response_AsProjectOwner);
+                Testing.Resources.Bundles.ListBundleFiles_Response_AsProjectOwner);
             
             Assert.Equal(Priority.Normal, file.Priority);
             Assert.NotNull(file.ImportOptions);

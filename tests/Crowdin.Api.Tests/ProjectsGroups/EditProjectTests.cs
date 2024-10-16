@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 using Xunit;
 
 using Crowdin.Api.ProjectsGroups;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 namespace Crowdin.Api.Tests.ProjectsGroups
 {
@@ -36,7 +36,7 @@ namespace Crowdin.Api.Tests.ProjectsGroups
 
             JsonSerializerSettings options = TestUtils.CreateJsonSerializerOptions();
             string requestJson = JsonConvert.SerializeObject(patches, options);
-            string rightRequestJson = Core.Resources.Projects.EditProject_RightRequestJson_ProjectInfoPatches;
+            string rightRequestJson = Testing.Resources.Projects.EditProject_RightRequestJson_ProjectInfoPatches;
             Assert.Equal(rightRequestJson, requestJson);
         }
 
@@ -75,7 +75,7 @@ namespace Crowdin.Api.Tests.ProjectsGroups
             
             JsonSerializerSettings options = TestUtils.CreateJsonSerializerOptions();
             string requestJson = JsonConvert.SerializeObject(patches, options);
-            string rightRequestJson = TestUtils.CompactJson(Core.Resources.Projects.EditProject_RightRequestJson_ProjectSettingPatches);
+            string rightRequestJson = TestUtils.CompactJson(Testing.Resources.Projects.EditProject_RightRequestJson_ProjectSettingPatches);
             Assert.Equal(rightRequestJson, requestJson);
         }
 
@@ -138,7 +138,7 @@ namespace Crowdin.Api.Tests.ProjectsGroups
             
             JsonSerializerSettings options = TestUtils.CreateJsonSerializerOptions();
             string requestJson = JsonConvert.SerializeObject(patches, options);
-            string rightRequestJson = Core.Resources.Projects.EditProject_RightRequestJson_PolymorphicPatches;
+            string rightRequestJson = Testing.Resources.Projects.EditProject_RightRequestJson_PolymorphicPatches;
             Assert.Equal(rightRequestJson, requestJson);
         }
     }

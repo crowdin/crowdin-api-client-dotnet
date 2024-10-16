@@ -8,7 +8,7 @@ using Xunit;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.Reports;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 namespace Crowdin.Api.Tests.Reports
 {

@@ -11,8 +11,8 @@ using Xunit;
 using Crowdin.Api.Core;
 using Crowdin.Api.ProjectsGroups;
 using Crowdin.Api.SourceFiles;
-using Crowdin.Api.Tests.Core;
-using Crowdin.Api.Tests.Core.Resources;
+using Crowdin.Api.Tests.Testing;
+using Crowdin.Api.Tests.Testing.Resources;
 
 namespace Crowdin.Api.Tests.ProjectsGroups
 {

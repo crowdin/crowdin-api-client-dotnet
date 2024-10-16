@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.Screenshots;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 using Moq;
 using Newtonsoft.Json;
@@ -35,7 +35,7 @@ namespace Crowdin.Api.Tests.Screenshots
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Screenshots.AddScreenshot_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Screenshots.AddScreenshot_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             var url = $"/projects/{projectId}/screenshots";
@@ -47,7 +47,7 @@ namespace Crowdin.Api.Tests.Screenshots
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.Created,
-                    JsonObject = JObject.Parse(Core.Resources.Screenshots.AddScreenshot_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Screenshots.AddScreenshot_Response)
                 });
 
             var executor = new ScreenshotsApiExecutor(mockClient.Object);
@@ -85,7 +85,7 @@ namespace Crowdin.Api.Tests.Screenshots
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Screenshots.EditScreenshot_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Screenshots.EditScreenshot_Response)
                 });
 
             var executor = new ScreenshotsApiExecutor(mockClient.Object);
@@ -112,7 +112,7 @@ namespace Crowdin.Api.Tests.Screenshots
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Screenshots.GetScreenshot_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Screenshots.GetScreenshot_Response)
                 });
 
             var executor = new ScreenshotsApiExecutor(mockClient.Object);
@@ -144,7 +144,7 @@ namespace Crowdin.Api.Tests.Screenshots
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Screenshots.ListScreenshots_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Screenshots.ListScreenshots_Response)
                 });
 
             var executor = new ScreenshotsApiExecutor(mockClient.Object);

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.Glossaries;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 using Moq;
 using Newtonsoft.Json;
@@ -36,7 +36,7 @@ namespace Crowdin.Api.Tests.Glossaries
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Glossaries.ListGlossaries_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Glossaries.ListGlossaries_Response)
                 });
 
             var executor = new GlossariesApiExecutor(mockClient.Object);
@@ -80,7 +80,7 @@ namespace Crowdin.Api.Tests.Glossaries
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(patches, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Glossaries.EditGlossary_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Glossaries.EditGlossary_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             var url = $"/glossaries/{glossaryId}";
@@ -92,7 +92,7 @@ namespace Crowdin.Api.Tests.Glossaries
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Glossaries.EditGlossary_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Glossaries.EditGlossary_Response)
                 });
 
             var executor = new GlossariesApiExecutor(mockClient.Object);
@@ -116,7 +116,7 @@ namespace Crowdin.Api.Tests.Glossaries
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Glossaries.ConcordanceSearch_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Glossaries.ConcordanceSearch_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -128,7 +128,7 @@ namespace Crowdin.Api.Tests.Glossaries
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Glossaries.ConcordanceSearch_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Glossaries.ConcordanceSearch_Response)
                 });
 
             var executor = new GlossariesApiExecutor(mockClient.Object);

@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.Distributions;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 using Moq;
 using Newtonsoft.Json;
@@ -31,7 +31,7 @@ namespace Crowdin.Api.Tests.Distributions
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Distributions.AddDistribution_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Distributions.AddDistribution_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             var url = $"/projects/{projectId}/distributions";
@@ -42,7 +42,7 @@ namespace Crowdin.Api.Tests.Distributions
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.Created,
-                    JsonObject = JObject.Parse(Core.Resources.Distributions.AddDistribution_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Distributions.AddDistribution_Response)
                 });
 
             var executor = new DistributionsApiExecutor(mockClient.Object);
@@ -66,7 +66,7 @@ namespace Crowdin.Api.Tests.Distributions
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Distributions.AddDistributionStringBased_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Distributions.AddDistributionStringBased_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             var url = $"/projects/{projectId}/distributions";
@@ -77,7 +77,7 @@ namespace Crowdin.Api.Tests.Distributions
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.Created,
-                    JsonObject = JObject.Parse(Core.Resources.Distributions.AddDistributionStringBased_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Distributions.AddDistributionStringBased_Response)
                 });
 
             var executor = new DistributionsApiExecutor(mockClient.Object);
@@ -120,7 +120,7 @@ namespace Crowdin.Api.Tests.Distributions
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Distributions.EditDistribution_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Distributions.EditDistribution_Response)
                 });
 
             var executor = new DistributionsApiExecutor(mockClient.Object);
@@ -164,7 +164,7 @@ namespace Crowdin.Api.Tests.Distributions
             };
             
             string actualRequestJson = JsonConvert.SerializeObject(patches, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Distributions.EditDistribution_Request_AllPaths);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Distributions.EditDistribution_Request_AllPaths);
             
             Assert.Equal(expectedRequestJson, actualRequestJson);
         }

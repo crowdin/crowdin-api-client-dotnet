@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.Teams;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 using Crowdin.Api.Users;
 
 using Moq;
@@ -82,7 +82,7 @@ namespace Crowdin.Api.Tests.Teams
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Teams.AddTeamToProject_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Teams.AddTeamToProject_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -94,7 +94,7 @@ namespace Crowdin.Api.Tests.Teams
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.Created,
-                    JsonObject = JObject.Parse(Core.Resources.Teams.AddTeamToProject_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Teams.AddTeamToProject_Response)
                 });
 
             var executor = new TeamsApiExecutor(mockClient.Object);

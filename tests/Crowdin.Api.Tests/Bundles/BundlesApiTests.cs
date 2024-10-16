@@ -2,7 +2,7 @@
 using Crowdin.Api.Bundles;
 using Crowdin.Api.Core;
 using Crowdin.Api.SourceFiles;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 using Moq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -35,7 +35,7 @@ namespace Crowdin.Api.Tests.Bundles
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Bundles.ListBundleBranches_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Bundles.ListBundleBranches_Response)
                 });
 
             var executor = new BundlesApiExecutor(mockClient.Object);
@@ -63,7 +63,7 @@ namespace Crowdin.Api.Tests.Bundles
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Bundles.ListBundles_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Bundles.ListBundles_Response)
                 });
 
             var executor = new BundlesApiExecutor(mockClient.Object);
@@ -102,7 +102,7 @@ namespace Crowdin.Api.Tests.Bundles
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Bundles.AddBundle_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Bundles.AddBundle_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -114,7 +114,7 @@ namespace Crowdin.Api.Tests.Bundles
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Bundles.CommonResponses_Bundle)
+                    JsonObject = JObject.Parse(Testing.Resources.Bundles.CommonResponses_Bundle)
                 });
 
             var executor = new BundlesApiExecutor(mockClient.Object);
@@ -137,7 +137,7 @@ namespace Crowdin.Api.Tests.Bundles
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Bundles.CommonResponses_Bundle)
+                    JsonObject = JObject.Parse(Testing.Resources.Bundles.CommonResponses_Bundle)
                 });
 
             var executor = new BundlesApiExecutor(mockClient.Object);
@@ -186,7 +186,7 @@ namespace Crowdin.Api.Tests.Bundles
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(patches, DefaultSettings);
-            string expectedRequestJson = TestUtils.CompactJson(Core.Resources.Bundles.EditBundle_Request);
+            string expectedRequestJson = TestUtils.CompactJson(Testing.Resources.Bundles.EditBundle_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -198,7 +198,7 @@ namespace Crowdin.Api.Tests.Bundles
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Bundles.CommonResponses_Bundle)
+                    JsonObject = JObject.Parse(Testing.Resources.Bundles.CommonResponses_Bundle)
                 });
 
             var executor = new BundlesApiExecutor(mockClient.Object);
@@ -222,7 +222,7 @@ namespace Crowdin.Api.Tests.Bundles
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Bundles.DownloadBundle_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Bundles.DownloadBundle_Response)
                 });
 
             var executor = new BundlesApiExecutor(mockClient.Object);
@@ -248,7 +248,7 @@ namespace Crowdin.Api.Tests.Bundles
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.Accepted,
-                    JsonObject = JObject.Parse(Core.Resources.Bundles.CommonResponses_BundleExport)
+                    JsonObject = JObject.Parse(Testing.Resources.Bundles.CommonResponses_BundleExport)
                 });
 
             var executor = new BundlesApiExecutor(mockClient.Object);
@@ -272,7 +272,7 @@ namespace Crowdin.Api.Tests.Bundles
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Bundles.CommonResponses_BundleExport)
+                    JsonObject = JObject.Parse(Testing.Resources.Bundles.CommonResponses_BundleExport)
                 });
 
             var executor = new BundlesApiExecutor(mockClient.Object);

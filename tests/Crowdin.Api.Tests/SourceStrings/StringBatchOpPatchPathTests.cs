@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 using Xunit;
 
 using Crowdin.Api.SourceStrings;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 namespace Crowdin.Api.Tests.SourceStrings
 {

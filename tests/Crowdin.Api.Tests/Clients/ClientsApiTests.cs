@@ -1,6 +1,6 @@
 using Crowdin.Api.Clients;
 using Crowdin.Api.Core;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 using Moq;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
@@ -29,7 +29,7 @@ namespace Crowdin.Api.Tests.Clients
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Clients.ListClientsResponse)
+                    JsonObject = JObject.Parse(Testing.Resources.Clients.ListClientsResponse)
                 });
 
             var executor = new ClientsApiExecutor(mockClient.Object);

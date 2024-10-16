@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 using Xunit;
 
 using Crowdin.Api.AI;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 
 namespace Crowdin.Api.Tests.AI
 {

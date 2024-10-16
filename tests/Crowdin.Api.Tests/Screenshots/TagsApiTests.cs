@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.Screenshots;
-using Crowdin.Api.Tests.Core;
-using Crowdin.Api.Tests.Core.Resources;
+using Crowdin.Api.Tests.Testing;
+using Crowdin.Api.Tests.Testing.Resources;
 
 using Moq;
 using Newtonsoft.Json;

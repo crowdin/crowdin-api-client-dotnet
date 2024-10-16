@@ -1,8 +1,8 @@
-﻿using System.Net;
+using System.Net;
 using System.Threading.Tasks;
 using Crowdin.Api.Applications;
 using Crowdin.Api.Core;
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 using Moq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -26,7 +26,7 @@ namespace Crowdin.Api.Tests.Applications
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Core.Resources.Applications.GetApplicationData_Response)
+                    JsonObject = JObject.Parse(Testing.Resources.Applications.GetApplicationData_Response)
                 });
             var executor = new ApplicationsApiExecutor(mockClient.Object);
             var response = await executor.GetApplicationData(applicationIdentifier, path);

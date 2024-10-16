@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using Xunit;
 
-using Crowdin.Api.Tests.Core;
+using Crowdin.Api.Tests.Testing;
 using Crowdin.Api.TranslationMemory;
 
 namespace Crowdin.Api.Tests.TranslationMemory
