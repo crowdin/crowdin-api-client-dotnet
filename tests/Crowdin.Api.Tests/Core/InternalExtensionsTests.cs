@@ -19,7 +19,7 @@ namespace Crowdin.Api.Tests.Core
                 { "offset", "0" }
             };
 
-            var queryString = queryParams.ToQueryString();
+            var queryString = InternalExtensions.ToQueryString(queryParams);
 
             Assert.Equal("limit=25&offset=0", queryString);
         }
