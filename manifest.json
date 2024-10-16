@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "ik1Qn8mvHPA9xPmjBqsjIvZw6HI//3SItz+z/Mkuakw="
+          "hash": "sPf5XrkLbmYIJhQujQ56JIQdgdeD9uR33Gep1mWhOjk="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.AI.AdvancedModeAiPromptConfiguration.html",
-          "hash": "Nskqc8B5LrzpXi/S0RutLIU/zdI83qnRN6gUDROx6JA="
+          "hash": "5cA5XTXPXA/oBAN55HAFLAsm1hZ6INBZYDNf/7tR5Tk="
         }
       },
       "is_incremental": false,
@@ -102,7 +102,91 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.AI.AiApiExecutor.html",
-          "hash": "xOIdRrWNdckbXTP0Vdg7kkMGZImFoeVvqBvG1Bernu4="
+          "hash": "on/IuMOcELSsXY/KI05UZX1bLt7wtwpgJKW6RzuXPuM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiDatasetPurpose.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiDatasetPurpose.html",
+          "hash": "w6pG706O3oQJTrhMOmJSq3LfwvbBXccJmeJdR4SWTuM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiFineTuningDataset.AttributesObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiFineTuningDataset.AttributesObject.html",
+          "hash": "DGy45vGbTJ7QmQjU5sQIOyObjP3QItNuzayXH1e/j3U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiFineTuningDataset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiFineTuningDataset.html",
+          "hash": "1DaSKBRT2lvkNumoKOUzuOHWsbs6TKxO4kBDuXSBazA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiFineTuningJob.AttributesObject.MetadataObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiFineTuningJob.AttributesObject.MetadataObject.html",
+          "hash": "VF+EfFSV8oEQOE8JCxpveL7oGQWltUdwupZEe5fR7XQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiFineTuningJob.AttributesObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiFineTuningJob.AttributesObject.html",
+          "hash": "YCSi95PDQYyobswR6LewWIXzDKpuF7Dao5Z+cdiir0k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiFineTuningJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiFineTuningJob.html",
+          "hash": "g3794ZBccTLdSVo+6VQHcqGBGPGECiM3I8NRah3ueEk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiHyperParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiHyperParameters.html",
+          "hash": "m7vPlGK+Ejp7M3f2/WZ5Y9rhp704VJ5g/QOMPnygwD4="
         }
       },
       "is_incremental": false,
@@ -122,11 +206,47 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiPromptCompletion.AttributesObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiPromptCompletion.AttributesObject.html",
+          "hash": "2wcmwvoq3KW59TwLkdci7jb2SUrNbH/7ETURFEh+Cvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiPromptCompletion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiPromptCompletion.html",
+          "hash": "k3HvyXZMHrOKAL8v980pcYpWzBEVUv0oizN4kBiF5oE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.AI.AiPromptConfiguration.yml",
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.AI.AiPromptConfiguration.html",
-          "hash": "xqRjTmapV6hfJscBrWK3ww/pQjIg57Uy+6DGIpGPcrg="
+          "hash": "j1eT1vorQ+pUyvL05I1Ri+hYgCXG+63lvVnyfxJczh4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiPromptContextResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiPromptContextResources.html",
+          "hash": "uDPCAZU4OyB9eHVIhzRcvEuWcPgfGFmQNzDZeIJtsDI="
         }
       },
       "is_incremental": false,
@@ -138,7 +258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.AI.AiPromptMode.html",
-          "hash": "FEBOXqixx3UZtLz52rPPzZe7rEc7Qc08BXQ7F7omj6k="
+          "hash": "59FAmZb+6X7gK79LwXxKQYuQd7yC+8RQIp4XlZ1saqE="
         }
       },
       "is_incremental": false,
@@ -278,11 +398,203 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiReportFormat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiReportFormat.html",
+          "hash": "ZlS5oKfeW/gV95izzpaciI0ojx1Bc837Zsxaj93Kp3A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiReportGenerationStatus.AttributesObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiReportGenerationStatus.AttributesObject.html",
+          "hash": "AX+gqjj9KUF5NbfWzfB70+lgWgSvkejjThXnYw15WBs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiReportGenerationStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiReportGenerationStatus.html",
+          "hash": "95Pd5AvHw16EHZoQOyhRW8w1/TG0FYVYKxBDhhs23M4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiReportSchemaBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiReportSchemaBase.html",
+          "hash": "viidVptxBEV2kHOnom1Kk5LlixiilE+tnuDdpm0azsw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiReportType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiReportType.html",
+          "hash": "Qq6nN5TvD8LhRJvHWNeIw8P1/aDrqkYMTsBGbfBonaY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiSettings.html",
+          "hash": "EGeN2wwKoBQOfQn5XvIYvruiavdZVlWzKbzl5ujiyC4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiSettingsPatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiSettingsPatch.html",
+          "hash": "ghjURk+JV7OXTcQqudMuwk34OZXf3eu88uQbpxGWrPM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiSettingsPatchPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiSettingsPatchPath.html",
+          "hash": "EaRaJGd2xn6sq2m6jMouydN5GrBpt+LiebRirqzGMd4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiSettingsShortcuts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiSettingsShortcuts.html",
+          "hash": "MFjznaHShIOyCQB3saBJF5t8+ftlEdnXJk9ArhdtVBc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiTool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiTool.html",
+          "hash": "/oud9BQbYF4vhwe7LB/mHeorCjmpjqSDZvm3kWagRK4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiToolFunction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiToolFunction.html",
+          "hash": "InwnVo/HgSGP1kVAFjVNpFf4pEn9Z28GtfzDCARHwzg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiToolObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiToolObject.html",
+          "hash": "hQjzWUpPdbNMwc9ORDoxM2X9Kh1X/ZzcJ26SnmYiJBs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiToolType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiToolType.html",
+          "hash": "Xp8XnAOt27eGCGQ/v+VyfMW0cbMajIDAglb0n8VkM6g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiTrainingOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiTrainingOptions.html",
+          "hash": "hybADh1M5oqb/GraXa8SVlrxy2JpXrRwxXUaKyZ7rhA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiValidationOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiValidationOptions.html",
+          "hash": "vTto3BRhfni0kRjhXvoQR95wyUN4VdTIqvRXOM8Qoec="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.AI.AnthropicAiProviderCredentials.yml",
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.AI.AnthropicAiProviderCredentials.html",
           "hash": "CSK58WDy1PYXRljCiitNU8TgXMynQePwI9yQs/7WpJA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AssistActionAiPromptContextResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AssistActionAiPromptContextResources.html",
+          "hash": "zxQBa+BBzAZevWrmD+1VStNjb/EO+oUXTaCAIpmVGqA="
         }
       },
       "is_incremental": false,
@@ -302,11 +614,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.AI.BasicModeAiPromptConfiguration.OtherLanguageTranslationsConfig.yml",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.BasicModeAiPromptConfiguration.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Crowdin.Api.AI.BasicModeAiPromptConfiguration.OtherLanguageTranslationsConfig.html",
-          "hash": "Huqu84OPnCdvi6ofJB7Kghe/Fpsi6q7OB3M0+HIemk4="
+          "relative_path": "api/Crowdin.Api.AI.BasicModeAiPromptConfiguration.html",
+          "hash": "UAuPUgjdGPeL00L0iBemWSkpX4Pa4JuVpoD2W+WT96k="
         }
       },
       "is_incremental": false,
@@ -314,11 +626,47 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.AI.BasicModeAiPromptConfiguration.yml",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.BasicModeAssistActionAiPromptConfiguration.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Crowdin.Api.AI.BasicModeAiPromptConfiguration.html",
-          "hash": "Wwxik+bVR9lop0aIT4x6dZnPeFUCCMw3THFH/F7AdBw="
+          "relative_path": "api/Crowdin.Api.AI.BasicModeAssistActionAiPromptConfiguration.html",
+          "hash": "zcACAqGQYvZ5AucsrBOfQFMctUMVbjQXR3CwCWbkJbc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.CloneAiPromptRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.CloneAiPromptRequest.html",
+          "hash": "Q5GmfVlFH3n0OpQ42s5z0sKqUqpywcepSPrQ+tJ7t/s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.CreateAiPromptFineTuningJobRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.CreateAiPromptFineTuningJobRequest.html",
+          "hash": "xv00Zp9pYkq138OEHy8DAGYSottqIC3xkLCyhWu/xKQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.CustomActionAiPromptContextResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.CustomActionAiPromptContextResources.html",
+          "hash": "jupKM/GMYfXdM4qXBdUKlCsMqjyxIHLGPqE3tK1ow/4="
         }
       },
       "is_incremental": false,
@@ -331,6 +679,54 @@
         ".html": {
           "relative_path": "api/Crowdin.Api.AI.CustomAiProviderCredentials.html",
           "hash": "RX1RaToGsluyDh/ewruOkQapVXTLcwGbETL2H1RPOFQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.ExternalModeAiPromptConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.ExternalModeAiPromptConfiguration.html",
+          "hash": "cSA6/qIBR2y9FVcBBUlx4LfTo9UNwk2ruhByJIryYek="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.GenerateAiPromptCompletionRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.GenerateAiPromptCompletionRequest.html",
+          "hash": "F2479EQNOtOAqkWAXZJJON+8jTQRLpKt5S0HDZJvWhU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.GenerateAiPromptFineTuningDatasetRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.GenerateAiPromptFineTuningDatasetRequest.html",
+          "hash": "h0L2sazVRmgRGFGYtfyVhmiKjXl1U9yBzXWokNIzHmQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.GenerateAiReport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.GenerateAiReport.html",
+          "hash": "GsFciyc9ffd6UD1m1+SZJoshEZOVv3teaH7BbD6Oy20="
         }
       },
       "is_incremental": false,
@@ -374,11 +770,59 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.OtherLanguageTranslationsConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.OtherLanguageTranslationsConfig.html",
+          "hash": "lqtFGgWVpFRHyN0U3ORLPriCMLsyjgCKaQIQopOQ5Wk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.PreTranslateActionAiPromptContextResources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.PreTranslateActionAiPromptContextResources.html",
+          "hash": "XJghVuFwEv6luFe4XPLilmKW+gRrgP8gQSJgJB/jqIs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.TokensUsageRawDataGenerateAiReport.GeneralSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.TokensUsageRawDataGenerateAiReport.GeneralSchema.html",
+          "hash": "MKm+NrO6CvQvRa322KoURTO8jx0bnYEM8LjKaBY5IC0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.TokensUsageRawDataGenerateAiReport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.TokensUsageRawDataGenerateAiReport.html",
+          "hash": "eF8Jj2XNsBEhJhxNlCjssU0ZJRP/w2BEtlv/h+58qTI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.AI.yml",
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.AI.html",
-          "hash": "gHJte+DYuTxKDN4zlV6YUbycdqTXcApRdd5N6qIfJIk="
+          "hash": "UsjwOlhF8ap5OjonvPE32E+BsiVWmOxeag3CXtwUuV0="
         }
       },
       "is_incremental": false,
@@ -2502,7 +2946,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.PatchEntry.html",
-          "hash": "r2god0OL3zOqPJpmw1nPqJv1BGbSnP/G7GY3YUlSljs="
+          "hash": "byYbkpoIplQJIxpaqzUgw3ACCk4m18iEgZNsy8nGsVo="
         }
       },
       "is_incremental": false,
@@ -2706,7 +3150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.html",
-          "hash": "NDr9antZZWNxa25yH0w07JeGq6gyWgfOJygg3pS4NtM="
+          "hash": "zzwQPAdl4dGXebgSfXT1dZR7MwHxXhGr61T9q/nLULU="
         }
       },
       "is_incremental": false,
@@ -2766,7 +3210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.FileBasedProjectForm.html",
-          "hash": "kKlYlPR2olx8fIyjDBtjAlODDvLHvfA1NcAizdOM8dw="
+          "hash": "38rTqraIv2CB3bcxFH+aojvSlQ3pkloDd1RNyJZa6rA="
         }
       },
       "is_incremental": false,
@@ -3198,7 +3642,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.ProjectSettingPathCode.html",
-          "hash": "Zzs+PcOM8nPA+xsXr4J8d9kq8YIrNJn/pe/s3fxeuhU="
+          "hash": "VgIimWq4QepWYtvUoiizw+CNIQuqBoe+PYxpz27IQkY="
         }
       },
       "is_incremental": false,
@@ -3318,7 +3762,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.html",
-          "hash": "yyUBZ3/+pqO0WJF4xvoNm7i9jricZUd5xL33bS2pvTg="
+          "hash": "mxqi0v7qlEX7Roi3QO0GClLDlld2Q+xk0CD080NRaV8="
         }
       },
       "is_incremental": false,
@@ -3614,390 +4058,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.ByTaskSchema.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.ByTaskSchema.html",
-          "hash": "JLVoXyBwNEWsidHw5GPq7NZOw7duYV497cOlEJedFkU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.ByTaskSchemaBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.ByTaskSchemaBase.html",
-          "hash": "y0SPu5SFpM1uvEbBcRV+xJtEvH/ssD+lCDTOVIfHvH8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.EnterpriseByTaskSchema.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.EnterpriseByTaskSchema.html",
-          "hash": "q9wz6I/SHWT/+lmplWXwyw/KybC4zT9q1PtIgjFR1ps="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.EnterpriseGeneralSchema.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.EnterpriseGeneralSchema.html",
-          "hash": "tXyO92csweSFAs/4D+/zu/CZZVD2VLPCe7GOsWvOsFw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.GeneralSchema.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.GeneralSchema.html",
-          "hash": "e7nx4NpmtOPGNSobVgzSqz1nB+BXZq4wfQOuhDuxSWU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.GeneralSchemaBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.GeneralSchemaBase.html",
-          "hash": "tAuQGKrvtigligOkjEbukK8s2DZmKbc4boPtcHczp8s="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.ProofreadStepType.IndividualRate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.ProofreadStepType.IndividualRate.html",
-          "hash": "IAvnRS5S33yMSDSWF8RTYgADLqBuoxuDMFSVpyfAiVI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.ProofreadStepType.ProofreadRate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.ProofreadStepType.ProofreadRate.html",
-          "hash": "3y1R+ilcw6K2Nvb/U/g6sLQTvoHMl5+jyF3Ll1c7SVY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.ProofreadStepType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.ProofreadStepType.html",
-          "hash": "9LJjDBV7AiM2mEbowNf4EKynpX0HVgn1Tt7phVSrY0U="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.SchemaBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.SchemaBase.html",
-          "hash": "FZbd3lgqRSpA/iJTrcjpebyL4NYT4Zpf//e41vPftCs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.StepType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.StepType.html",
-          "hash": "LxB8RgNCLf2UNvNk9kYYMbenVu37ILEAS/hIdLqBxhA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.TranslateStepType.IndividualRate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.TranslateStepType.IndividualRate.html",
-          "hash": "EHq4JeFeOUXAK3jnHSRzSolKSV6OJcOYhnCH/DVSEs8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.TranslateStepType.RateMode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.TranslateStepType.RateMode.html",
-          "hash": "sP+b7RT5SoqBRNZ66d7Nz880bjybjAlw791m6Z+5LzI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.TranslateStepType.RegularRate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.TranslateStepType.RegularRate.html",
-          "hash": "wrA2Wt50TR95H2E/LxXPmkN83Rh9Je5d3gLrq66nFXM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.TranslateStepType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.TranslateStepType.html",
-          "hash": "Mwli3rEqZ4cYCWv9YpyZr6/dRfJHGcRPNgM5LeqcOTE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateFuzzyModeGenerateReportRequest.html",
-          "hash": "mUngSmwj8CbqAibxStJkDdXPLRj3eS5XIMF8WALbkbA="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.ByTaskSchema.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.ByTaskSchema.html",
-          "hash": "LXAtxLalvaqNwNOUbRX5Ei+T5RnkTPJZmL/ezhdAC48="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.ByTaskSchemaBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.ByTaskSchemaBase.html",
-          "hash": "+QedgOUE6l2McljtxpGo6qtBWV/sPZxA1lJ7Z+n68V4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.EnterpriseByTaskSchema.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.EnterpriseByTaskSchema.html",
-          "hash": "khjyQGS0TEUyAHJAG8X/REqqJJ1Q/6eaAgs2azxsZi0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.EnterpriseGeneralSchema.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.EnterpriseGeneralSchema.html",
-          "hash": "PrR+1pE1Tp3VAQ5d9opeSadVMXHmZR4b8OLxswd85vo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.GeneralSchema.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.GeneralSchema.html",
-          "hash": "+Ljkw4mNjtr1Q+si6fTKzL96vXDfP4th4Dl6OM8HdtU="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.GeneralSchemaBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.GeneralSchemaBase.html",
-          "hash": "GFwryMnDmXAKKKaMkpiXjR36G+C39xyHrfxMig46N+I="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.ProofreadStepType.IndividualRate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.ProofreadStepType.IndividualRate.html",
-          "hash": "ICZKhrApW85CVbmvCyW0ibTRwfSZkbGOzt543j5XfnY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.ProofreadStepType.ProofreadRate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.ProofreadStepType.ProofreadRate.html",
-          "hash": "iX3T2d39xH2VhstQQ2CLisWY3zu+bxCrKC3EM2sVtf8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.ProofreadStepType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.ProofreadStepType.html",
-          "hash": "R1Dw5l/9gq3gXXoYv+RRiMu2mJxyxTqfgGcdbnEnGwM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.SchemaBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.SchemaBase.html",
-          "hash": "OestFbCqJb9pqbEqBPemRhyS7UEso/U/hhjyrykzK6U="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.StepType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.StepType.html",
-          "hash": "SnGe4+BL2e3bxsLgOWUuE+s9ZbHoo2IxjethN0oyWAQ="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.TranslateStepType.IndividualRate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.TranslateStepType.IndividualRate.html",
-          "hash": "/MQGhE4mNhnQ66TJZVxiX/VggiD6VIeWa9tcE4/IpDg="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.TranslateStepType.RateMode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.TranslateStepType.RateMode.html",
-          "hash": "3X/ookp3KWafkNYnnSPj0S6bUB6wheoSzs+eHRkg7Ng="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.TranslateStepType.RegularRate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.TranslateStepType.RegularRate.html",
-          "hash": "GUslox+oFdfACiKKLNicDm4sm5JpFPARiAh0RJO4WJs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.TranslateStepType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.TranslateStepType.html",
-          "hash": "KQmp1oiFBeQPek7vfSakU4OZ2LlKsRueUVsjzFTtF9I="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.CostEstimateGenerateReportRequest.html",
-          "hash": "hozDlyWXEC+bIZv2cWxpSvTQxfdL5kEIFM1BVpGluL4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Reports.CostEstimationPostEditingGenerateReportRequest.ByTaskSchema.yml",
       "output": {
         ".html": {
@@ -4098,7 +4158,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Reports.GenerateReportRequest.html",
-          "hash": "R9Rlayi5oxDxDsDTk7vc4mMGHeqKM/8HDJ8I4jR13IE="
+          "hash": "tOxGBh+XbSwRpKAMJkqC/FKG9aK+ZCWakRKvATaXwIY="
         }
       },
       "is_incremental": false,
@@ -4279,6 +4339,54 @@
         ".html": {
           "relative_path": "api/Crowdin.Api.Reports.MatchTypeObject.html",
           "hash": "K1QMoQ2min6wn3OhodcF+FbXXARXtJEMMtfjGVrpvUo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema.html",
+          "hash": "e6mdWhhvCLw9AmHHeefYHxJJqS+60fB7ltPLIHwb3mE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.html",
+          "hash": "6iC77ob52lxM0hAjqL7sUy3iWfeVpFYcQpJ1ajhQ7c0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.html",
+          "hash": "uoZMZClNnEpzmNWZr2vqom7DdbwTk8f/IflKQnT4QqI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.html",
+          "hash": "IH9MK3ZwhTYlrqMJgoFYvSqiCBl/fdmGQd0LhzMEckU="
         }
       },
       "is_incremental": false,
@@ -4694,246 +4802,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.TranslationCostFuzzyModeGenerateReportRequest.EnterpriseSchema.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.TranslationCostFuzzyModeGenerateReportRequest.EnterpriseSchema.html",
-          "hash": "LDO7ui0bMBGJSidKlGRj74YckwlZ6SG6WpupPhzUQm8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.TranslationCostFuzzyModeGenerateReportRequest.ProofreadStepType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.TranslationCostFuzzyModeGenerateReportRequest.ProofreadStepType.html",
-          "hash": "0xArC5dXlaHvUwOJa9siTs+K9eneUwkspSnAjXs/kks="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.TranslationCostFuzzyModeGenerateReportRequest.RegularSchema.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.TranslationCostFuzzyModeGenerateReportRequest.RegularSchema.html",
-          "hash": "gac/A85MSZrTJfRXB0GYymgDvh2rD24/f+6W+1PJ1jE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.TranslationCostFuzzyModeGenerateReportRequest.SchemaBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.TranslationCostFuzzyModeGenerateReportRequest.SchemaBase.html",
-          "hash": "VkQEzKQMkYIirwFNOVURLeRUd1jkdXhwkQNzfByaRnI="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.TranslationCostFuzzyModeGenerateReportRequest.StepType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.TranslationCostFuzzyModeGenerateReportRequest.StepType.html",
-          "hash": "E74eNLXMFpn5vkc2fT1AR3Fx6sy01LmVfHwhBZSKvrE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.TranslationCostFuzzyModeGenerateReportRequest.TranslateStepType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.TranslationCostFuzzyModeGenerateReportRequest.TranslateStepType.html",
-          "hash": "gFTOsARMkL1xxnq6z0kg0zNUt4QXx1pZpdbR2EN+gzY="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.TranslationCostFuzzyModeGenerateReportRequest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.TranslationCostFuzzyModeGenerateReportRequest.html",
-          "hash": "FuPLwZXLEwxoD94Ynns6TChX/6p2lAScmVDE2Aprefc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.EnterpriseSchema.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.EnterpriseSchema.html",
-          "hash": "mVwvTXipkgUSB92x7Rn0pDf42P/NJH+ZAuNXEU8wT2g="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.ProofreadStepType.IndividualRate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.ProofreadStepType.IndividualRate.html",
-          "hash": "0btp/4gQldGaRxU7gfMM28zS77Xme/tdJNSq1gqsFAo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.ProofreadStepType.ProofreadRate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.ProofreadStepType.ProofreadRate.html",
-          "hash": "YfNgjUnRVHlElYGV3CSJLDFjK5V+9M9TgNar6VnO844="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.ProofreadStepType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.ProofreadStepType.html",
-          "hash": "xeJijrK5GWKMiUMyFnqlDPZ7t08asP105ouRAkQ1eXo="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.RegularSchema.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.RegularSchema.html",
-          "hash": "2VYtYY8z3xshHz85UxxYZFpzlFjGtEg0RBRnd+QyZiE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.ReportIndividualRatesForm.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.ReportIndividualRatesForm.html",
-          "hash": "skeoj150275CT7vQfzIo5fbEzOTYMPgxDXdBbsWbl+E="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.SchemaBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.SchemaBase.html",
-          "hash": "dtfZqkDotPqGTsW5GLd+OYAc6onP0asE/qwlWjsa9Ag="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.StepType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.StepType.html",
-          "hash": "njD1xezsAMY7oC/p26L0uOtgFJke+b7EJxoTqAHRDBE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.TranslateStepType.IndividualRate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.TranslateStepType.IndividualRate.html",
-          "hash": "vwlUXiP3dkHaNHkXH1nng/Wh+6Gol2pVcsUnttMouU0="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.TranslateStepType.RateMode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.TranslateStepType.RateMode.html",
-          "hash": "Pzm/8qGuV1Bi+vSCtvBclBNuqTyX9pVbZvwTfDdKV20="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.TranslateStepType.RegularRate.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.TranslateStepType.RegularRate.html",
-          "hash": "pcCamZ3yPTu934bzjb8YWgR/ENY6Zj0Hek27qqibloE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.TranslateStepType.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.TranslateStepType.html",
-          "hash": "v8ivySu7tJ5ZMwyT8VaYiRdnFgPcY+sCM/ijkIAml6c="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.TranslationCostGenerateReportRequest.html",
-          "hash": "lk+SANAcd8VsEy3IZGSXMxMRjOcp9L8p33qm4wSpNTc="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Reports.TranslationCostsPostEditingGenerateReportRequest.ByTaskSchema.yml",
       "output": {
         ".html": {
@@ -5010,7 +4878,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Reports.html",
-          "hash": "j4bWGBApmCQhwm8eMkZxGN0Rdd7EQOy1tjLuEFKaRic="
+          "hash": "3Y4HB/MD8EZSCfWpSMZdvnCXWWWgNi9EmzhflzLh2O8="
         }
       },
       "is_incremental": false,
@@ -5130,7 +4998,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Screenshots.ScreenshotsApiExecutor.html",
-          "hash": "2gGGAJ++7P/9cN+1GWN4C8VhweyBcP0GGfRSNAOE3ac="
+          "hash": "cxrk+ZC5j1lalQSpwIKULCUgWg9btXecU2HEkm1za3A="
         }
       },
       "is_incremental": false,
@@ -5982,7 +5850,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.SourceStrings.StringUploadResponseModel.AttributesData.html",
-          "hash": "iBB9IEa6KOZbAxYJ7Tt9AXsblZY9zQEQd3dhoUAbkxc="
+          "hash": "JR9PvGxHSG4TTKGdFyAoavrv7dyoP1LnIEQqIJ+dRa4="
         }
       },
       "is_incremental": false,
@@ -6014,11 +5882,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.SourceStrings.UpdateOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.SourceStrings.UpdateOption.html",
+          "hash": "D1rFdxzxeHGVXvQdwvbB7HlqrlhYFQl0nYY1rpqKPuw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.SourceStrings.UploadStringsRequest.yml",
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.SourceStrings.UploadStringsRequest.html",
-          "hash": "fnKScoC1gfZoZgM4SMWl4hxl+0SddnP2tnte44TtfQM="
+          "hash": "YFYy+ExhNQfEr4B2wuINKZw/5zjdCyTRfrqugzE9GSo="
         }
       },
       "is_incremental": false,
@@ -6030,7 +5910,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.SourceStrings.html",
-          "hash": "slV+YU92czou3jRJ44kwouRbW4nkEWvceYrTQQb/nuA="
+          "hash": "qCXzwnB98I9mC6ZhPZoZ8wCRwoFYoYMkNHDZ94WBteY="
         }
       },
       "is_incremental": false,
@@ -8682,7 +8562,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "8x8uRKOLzLlOFnEoNANBPeL5UAQO2VFoSRXWt/8/q4M="
+          "hash": "NCQ75KvnsGdaeo3PN7F5bndp+dxz97R5FUQ9A8BzSGM="
         }
       },
       "is_incremental": false,
@@ -8721,7 +8601,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 719,
+          "total_file_count": 709,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

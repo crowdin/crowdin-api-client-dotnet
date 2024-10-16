@@ -174,7 +174,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_AddAiPrompt_System_Nullable_System_Int32__Crowdin_Api_AI_AddAiPromptRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.AddAiPrompt(System.Nullable%7BSystem.Int32%7D%2CCrowdin.Api.AI.AddAiPromptRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L59">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L162">View Source</a>
   </span>
   <a id="Crowdin_Api_AI_AiApiExecutor_AddAiPrompt_" data-uid="Crowdin.Api.AI.AiApiExecutor.AddAiPrompt*"></a>
   <h4 id="Crowdin_Api_AI_AiApiExecutor_AddAiPrompt_System_Nullable_System_Int32__Crowdin_Api_AI_AddAiPromptRequest_" data-uid="Crowdin.Api.AI.AiApiExecutor.AddAiPrompt(System.Nullable{System.Int32},Crowdin.Api.AI.AddAiPromptRequest)">AddAiPrompt(Nullable&lt;Int32&gt;, AddAiPromptRequest)</h4>
@@ -230,7 +230,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_AddAiProvider_System_Nullable_System_Int32__Crowdin_Api_AI_AddAiProviderRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.AddAiProvider(System.Nullable%7BSystem.Int32%7D%2CCrowdin.Api.AI.AddAiProviderRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L151">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L316">View Source</a>
   </span>
   <a id="Crowdin_Api_AI_AiApiExecutor_AddAiProvider_" data-uid="Crowdin.Api.AI.AiApiExecutor.AddAiProvider*"></a>
   <h4 id="Crowdin_Api_AI_AiApiExecutor_AddAiProvider_System_Nullable_System_Int32__Crowdin_Api_AI_AddAiProviderRequest_" data-uid="Crowdin.Api.AI.AiApiExecutor.AddAiProvider(System.Nullable{System.Int32},Crowdin.Api.AI.AddAiProviderRequest)">AddAiProvider(Nullable&lt;Int32&gt;, AddAiProviderRequest)</h4>
@@ -283,10 +283,249 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_CancelAiPromptCompletion_System_Nullable_System_Int32__System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.CancelAiPromptCompletion(System.Nullable%7BSystem.Int32%7D%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L210">View Source</a>
+  </span>
+  <a id="Crowdin_Api_AI_AiApiExecutor_CancelAiPromptCompletion_" data-uid="Crowdin.Api.AI.AiApiExecutor.CancelAiPromptCompletion*"></a>
+  <h4 id="Crowdin_Api_AI_AiApiExecutor_CancelAiPromptCompletion_System_Nullable_System_Int32__System_Int32_System_String_" data-uid="Crowdin.Api.AI.AiApiExecutor.CancelAiPromptCompletion(System.Nullable{System.Int32},System.Int32,System.String)">CancelAiPromptCompletion(Nullable&lt;Int32&gt;, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Cancel AI Prompt Completion. Documentation:
+<a href="https://developer.crowdin.com/api/v2/#tag/AI/operation/api.users.ai.prompts.completions.delete">Crowdin File Based API</a>
+<a href="https://developer.crowdin.com/api/v2/string-based/#tag/AI/operation/api.users.ai.prompts.completions.delete">Crowdin String Based API</a>
+<a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.completions.delete">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task CancelAiPromptCompletion(int? userId, int aiPromptId, string completionId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">aiPromptId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">completionId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_CheckAiReportGenerationStatus_System_Nullable_System_Int32__System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.CheckAiReportGenerationStatus(System.Nullable%7BSystem.Int32%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L418">View Source</a>
+  </span>
+  <a id="Crowdin_Api_AI_AiApiExecutor_CheckAiReportGenerationStatus_" data-uid="Crowdin.Api.AI.AiApiExecutor.CheckAiReportGenerationStatus*"></a>
+  <h4 id="Crowdin_Api_AI_AiApiExecutor_CheckAiReportGenerationStatus_System_Nullable_System_Int32__System_String_" data-uid="Crowdin.Api.AI.AiApiExecutor.CheckAiReportGenerationStatus(System.Nullable{System.Int32},System.String)">CheckAiReportGenerationStatus(Nullable&lt;Int32&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Check AI Report Generation Status. Documentation:
+<a href="https://developer.crowdin.com/api/v2/#tag/AI/operation/api.users.ai.reports.get">Crowdin File Based API</a>
+<a href="https://developer.crowdin.com/api/v2/string-based/#tag/AI/operation/api.users.ai.reports.get">Crowdin String Based API</a>
+<a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.reports.get">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;AiReportGenerationStatus&gt; CheckAiReportGenerationStatus(int? userId, string aiReportId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">aiReportId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.AI.AiReportGenerationStatus.html">AiReportGenerationStatus</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_CloneAiPrompt_System_Nullable_System_Int32__System_Int32_Crowdin_Api_AI_CloneAiPromptRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.CloneAiPrompt(System.Nullable%7BSystem.Int32%7D%2CSystem.Int32%2CCrowdin.Api.AI.CloneAiPromptRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L125">View Source</a>
+  </span>
+  <a id="Crowdin_Api_AI_AiApiExecutor_CloneAiPrompt_" data-uid="Crowdin.Api.AI.AiApiExecutor.CloneAiPrompt*"></a>
+  <h4 id="Crowdin_Api_AI_AiApiExecutor_CloneAiPrompt_System_Nullable_System_Int32__System_Int32_Crowdin_Api_AI_CloneAiPromptRequest_" data-uid="Crowdin.Api.AI.AiApiExecutor.CloneAiPrompt(System.Nullable{System.Int32},System.Int32,Crowdin.Api.AI.CloneAiPromptRequest)">CloneAiPrompt(Nullable&lt;Int32&gt;, Int32, CloneAiPromptRequest)</h4>
+  <div class="markdown level1 summary"><p>Clone AI Prompt. Documentation:
+<a href="https://developer.crowdin.com/api/v2/#tag/AI/operation/api.users.ai.prompts.clones.post">Crowdin File Based API</a>
+<a href="https://developer.crowdin.com/api/v2/string-based/#tag/AI/operation/api.users.ai.prompts.clones.post">Crowdin String Based API</a>
+<a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.clones.post">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;AiPromptResource&gt; CloneAiPrompt(int? userId, int aiPromptId, CloneAiPromptRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">aiPromptId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.AI.CloneAiPromptRequest.html">CloneAiPromptRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.AI.AiPromptResource.html">AiPromptResource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_CreateAiPromptFineTuningJob_System_Nullable_System_Int32__System_Int32_Crowdin_Api_AI_CreateAiPromptFineTuningJobRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.CreateAiPromptFineTuningJob(System.Nullable%7BSystem.Int32%7D%2CSystem.Int32%2CCrowdin.Api.AI.CreateAiPromptFineTuningJobRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L70">View Source</a>
+  </span>
+  <a id="Crowdin_Api_AI_AiApiExecutor_CreateAiPromptFineTuningJob_" data-uid="Crowdin.Api.AI.AiApiExecutor.CreateAiPromptFineTuningJob*"></a>
+  <h4 id="Crowdin_Api_AI_AiApiExecutor_CreateAiPromptFineTuningJob_System_Nullable_System_Int32__System_Int32_Crowdin_Api_AI_CreateAiPromptFineTuningJobRequest_" data-uid="Crowdin.Api.AI.AiApiExecutor.CreateAiPromptFineTuningJob(System.Nullable{System.Int32},System.Int32,Crowdin.Api.AI.CreateAiPromptFineTuningJobRequest)">CreateAiPromptFineTuningJob(Nullable&lt;Int32&gt;, Int32, CreateAiPromptFineTuningJobRequest)</h4>
+  <div class="markdown level1 summary"><p>Create AI Prompt Fine-Tuning Job. Documentation:
+<a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.jobs.post">Crowdin File Based API</a>
+<a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.ai.prompts.fine-tuning.jobs.post">Crowdin String Based API</a>
+<a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.jobs.post">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;AiFineTuningJob&gt; CreateAiPromptFineTuningJob(int? userId, int aiPromptId, CreateAiPromptFineTuningJobRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">aiPromptId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.AI.CreateAiPromptFineTuningJobRequest.html">CreateAiPromptFineTuningJobRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.AI.AiFineTuningJob.html">AiFineTuningJob</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_CreateAiProxyChatCompletion_System_Nullable_System_Int32__System_Int32_IDictionary_System_String_System_Object__.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.CreateAiProxyChatCompletion(System.Nullable%7BSystem.Int32%7D%2CSystem.Int32%2CIDictionary%7BSystem.String%2CSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L237">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L480">View Source</a>
   </span>
   <a id="Crowdin_Api_AI_AiApiExecutor_CreateAiProxyChatCompletion_" data-uid="Crowdin.Api.AI.AiApiExecutor.CreateAiProxyChatCompletion*"></a>
   <h4 id="Crowdin_Api_AI_AiApiExecutor_CreateAiProxyChatCompletion_System_Nullable_System_Int32__System_Int32_IDictionary_System_String_System_Object__" data-uid="Crowdin.Api.AI.AiApiExecutor.CreateAiProxyChatCompletion(System.Nullable{System.Int32},System.Int32,IDictionary{System.String,System.Object})">CreateAiProxyChatCompletion(Nullable&lt;Int32&gt;, Int32, IDictionary&lt;String, Object&gt;)</h4>
@@ -347,7 +586,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_DeleteAiPrompt_System_Nullable_System_Int32__System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.DeleteAiPrompt(System.Nullable%7BSystem.Int32%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L87">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L252">View Source</a>
   </span>
   <a id="Crowdin_Api_AI_AiApiExecutor_DeleteAiPrompt_" data-uid="Crowdin.Api.AI.AiApiExecutor.DeleteAiPrompt*"></a>
   <h4 id="Crowdin_Api_AI_AiApiExecutor_DeleteAiPrompt_System_Nullable_System_Int32__System_Int32_" data-uid="Crowdin.Api.AI.AiApiExecutor.DeleteAiPrompt(System.Nullable{System.Int32},System.Int32)">DeleteAiPrompt(Nullable&lt;Int32&gt;, Int32)</h4>
@@ -403,7 +642,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_DeleteAiProvider_System_Nullable_System_Int32__System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.DeleteAiProvider(System.Nullable%7BSystem.Int32%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L179">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L344">View Source</a>
   </span>
   <a id="Crowdin_Api_AI_AiApiExecutor_DeleteAiProvider_" data-uid="Crowdin.Api.AI.AiApiExecutor.DeleteAiProvider*"></a>
   <h4 id="Crowdin_Api_AI_AiApiExecutor_DeleteAiProvider_System_Nullable_System_Int32__System_Int32_" data-uid="Crowdin.Api.AI.AiApiExecutor.DeleteAiProvider(System.Nullable{System.Int32},System.Int32)">DeleteAiProvider(Nullable&lt;Int32&gt;, Int32)</h4>
@@ -456,10 +695,188 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_DownloadAiPromptCompletion_System_Nullable_System_Int32__System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.DownloadAiPromptCompletion(System.Nullable%7BSystem.Int32%7D%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L224">View Source</a>
+  </span>
+  <a id="Crowdin_Api_AI_AiApiExecutor_DownloadAiPromptCompletion_" data-uid="Crowdin.Api.AI.AiApiExecutor.DownloadAiPromptCompletion*"></a>
+  <h4 id="Crowdin_Api_AI_AiApiExecutor_DownloadAiPromptCompletion_System_Nullable_System_Int32__System_Int32_System_String_" data-uid="Crowdin.Api.AI.AiApiExecutor.DownloadAiPromptCompletion(System.Nullable{System.Int32},System.Int32,System.String)">DownloadAiPromptCompletion(Nullable&lt;Int32&gt;, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Download AI Prompt Completion. Documentation:
+<a href="https://developer.crowdin.com/api/v2/#tag/AI/operation/api.users.ai.prompts.completions.download.download">Crowdin File Based API</a>
+<a href="https://developer.crowdin.com/api/v2/string-based/#tag/AI/operation/api.users.ai.prompts.completions.download.download">Crowdin String Based API</a>
+<a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.completions.download.download">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;DownloadLink&gt; DownloadAiPromptCompletion(int? userId, int aiPromptId, string completionId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">aiPromptId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">completionId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.DownloadLink.html">DownloadLink</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_DownloadAiPromptFineTuningDataset_System_Nullable_System_Int32__System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.DownloadAiPromptFineTuningDataset(System.Nullable%7BSystem.Int32%7D%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L106">View Source</a>
+  </span>
+  <a id="Crowdin_Api_AI_AiApiExecutor_DownloadAiPromptFineTuningDataset_" data-uid="Crowdin.Api.AI.AiApiExecutor.DownloadAiPromptFineTuningDataset*"></a>
+  <h4 id="Crowdin_Api_AI_AiApiExecutor_DownloadAiPromptFineTuningDataset_System_Nullable_System_Int32__System_Int32_System_String_" data-uid="Crowdin.Api.AI.AiApiExecutor.DownloadAiPromptFineTuningDataset(System.Nullable{System.Int32},System.Int32,System.String)">DownloadAiPromptFineTuningDataset(Nullable&lt;Int32&gt;, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Download AI Prompt Fine-Tuning Dataset. Documentation:
+<a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.prompts.fine-tuning.datasets.download.get">Crowdin File Based API</a>
+<a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.prompts.fine-tuning.datasets.download.get">Crowdin String Based API</a>
+<a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.datasets.download.get">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;DownloadLink&gt; DownloadAiPromptFineTuningDataset(int? userId, int aiPromptId, string jobIdentifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">aiPromptId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">jobIdentifier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.DownloadLink.html">DownloadLink</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_DownloadAiReport_System_Nullable_System_Int32__System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.DownloadAiReport(System.Nullable%7BSystem.Int32%7D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L432">View Source</a>
+  </span>
+  <a id="Crowdin_Api_AI_AiApiExecutor_DownloadAiReport_" data-uid="Crowdin.Api.AI.AiApiExecutor.DownloadAiReport*"></a>
+  <h4 id="Crowdin_Api_AI_AiApiExecutor_DownloadAiReport_System_Nullable_System_Int32__System_String_" data-uid="Crowdin.Api.AI.AiApiExecutor.DownloadAiReport(System.Nullable{System.Int32},System.String)">DownloadAiReport(Nullable&lt;Int32&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Download AI Report. Documentation:
+<a href="https://developer.crowdin.com/api/v2/#tag/AI/operation/api.users.ai.reports.download.download">Crowdin File Based API</a>
+<a href="https://developer.crowdin.com/api/v2/string-based/#tag/AI/operation/api.users.ai.reports.download.download">Crowdin String Based API</a>
+<a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.reports.download.download">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;DownloadLink&gt; DownloadAiReport(int? userId, string aiReportId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">aiReportId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.DownloadLink.html">DownloadLink</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_EditAiPrompt_System_Nullable_System_Int32__System_Int32_IEnumerable_Crowdin_Api_AI_AiPromptPatch__.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.EditAiPrompt(System.Nullable%7BSystem.Int32%7D%2CSystem.Int32%2CIEnumerable%7BCrowdin.Api.AI.AiPromptPatch%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L101">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L266">View Source</a>
   </span>
   <a id="Crowdin_Api_AI_AiApiExecutor_EditAiPrompt_" data-uid="Crowdin.Api.AI.AiApiExecutor.EditAiPrompt*"></a>
   <h4 id="Crowdin_Api_AI_AiApiExecutor_EditAiPrompt_System_Nullable_System_Int32__System_Int32_IEnumerable_Crowdin_Api_AI_AiPromptPatch__" data-uid="Crowdin.Api.AI.AiApiExecutor.EditAiPrompt(System.Nullable{System.Int32},System.Int32,IEnumerable{Crowdin.Api.AI.AiPromptPatch})">EditAiPrompt(Nullable&lt;Int32&gt;, Int32, IEnumerable&lt;AiPromptPatch&gt;)</h4>
@@ -520,7 +937,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_EditAiProvider_System_Nullable_System_Int32__System_Int32_IEnumerable_Crowdin_Api_AI_AiProviderPatch__.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.EditAiProvider(System.Nullable%7BSystem.Int32%7D%2CSystem.Int32%2CIEnumerable%7BCrowdin.Api.AI.AiProviderPatch%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L193">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L358">View Source</a>
   </span>
   <a id="Crowdin_Api_AI_AiApiExecutor_EditAiProvider_" data-uid="Crowdin.Api.AI.AiApiExecutor.EditAiProvider*"></a>
   <h4 id="Crowdin_Api_AI_AiApiExecutor_EditAiProvider_System_Nullable_System_Int32__System_Int32_IEnumerable_Crowdin_Api_AI_AiProviderPatch__" data-uid="Crowdin.Api.AI.AiApiExecutor.EditAiProvider(System.Nullable{System.Int32},System.Int32,IEnumerable{Crowdin.Api.AI.AiProviderPatch})">EditAiProvider(Nullable&lt;Int32&gt;, Int32, IEnumerable&lt;AiProviderPatch&gt;)</h4>
@@ -578,10 +995,244 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_EditAiSettings_System_Nullable_System_Int32__IEnumerable_Crowdin_Api_AI_AiSettingsPatch__.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.EditAiSettings(System.Nullable%7BSystem.Int32%7D%2CIEnumerable%7BCrowdin.Api.AI.AiSettingsPatch%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L464">View Source</a>
+  </span>
+  <a id="Crowdin_Api_AI_AiApiExecutor_EditAiSettings_" data-uid="Crowdin.Api.AI.AiApiExecutor.EditAiSettings*"></a>
+  <h4 id="Crowdin_Api_AI_AiApiExecutor_EditAiSettings_System_Nullable_System_Int32__IEnumerable_Crowdin_Api_AI_AiSettingsPatch__" data-uid="Crowdin.Api.AI.AiApiExecutor.EditAiSettings(System.Nullable{System.Int32},IEnumerable{Crowdin.Api.AI.AiSettingsPatch})">EditAiSettings(Nullable&lt;Int32&gt;, IEnumerable&lt;AiSettingsPatch&gt;)</h4>
+  <div class="markdown level1 summary"><p>Edit AI Settings. Documentation:
+<a href="https://developer.crowdin.com/api/v2/#tag/AI/operation/api.users.ai.settings.patch">Crowdin File Based API</a>
+<a href="https://developer.crowdin.com/api/v2/string-based/#tag/AI/operation/api.users.ai.settings.patch">Crowdin String Based API</a>
+<a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.settings.patch">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;AiSettings&gt; EditAiSettings(int? userId, IEnumerable&lt;AiSettingsPatch&gt; patches)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Crowdin.Api.AI.AiSettingsPatch.html">AiSettingsPatch</a>&gt;</td>
+        <td><span class="parametername">patches</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.AI.AiSettings.html">AiSettings</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_GenerateAiPromptCompletion_System_Nullable_System_Int32__System_Int32_Crowdin_Api_AI_GenerateAiPromptCompletionRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.GenerateAiPromptCompletion(System.Nullable%7BSystem.Int32%7D%2CSystem.Int32%2CCrowdin.Api.AI.GenerateAiPromptCompletionRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L176">View Source</a>
+  </span>
+  <a id="Crowdin_Api_AI_AiApiExecutor_GenerateAiPromptCompletion_" data-uid="Crowdin.Api.AI.AiApiExecutor.GenerateAiPromptCompletion*"></a>
+  <h4 id="Crowdin_Api_AI_AiApiExecutor_GenerateAiPromptCompletion_System_Nullable_System_Int32__System_Int32_Crowdin_Api_AI_GenerateAiPromptCompletionRequest_" data-uid="Crowdin.Api.AI.AiApiExecutor.GenerateAiPromptCompletion(System.Nullable{System.Int32},System.Int32,Crowdin.Api.AI.GenerateAiPromptCompletionRequest)">GenerateAiPromptCompletion(Nullable&lt;Int32&gt;, Int32, GenerateAiPromptCompletionRequest)</h4>
+  <div class="markdown level1 summary"><p>Generate AI Prompt Completion. Documentation:
+<a href="https://developer.crowdin.com/api/v2/#tag/AI/operation/api.ai.prompts.completions.post">Crowdin File Based API</a>
+<a href="https://developer.crowdin.com/api/v2/string-based/#tag/AI/operation/api.ai.prompts.completions.post">Crowdin String Based API</a>
+<a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.completions.post">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;AiPromptCompletion&gt; GenerateAiPromptCompletion(int? userId, int aiPromptId, GenerateAiPromptCompletionRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">aiPromptId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.AI.GenerateAiPromptCompletionRequest.html">GenerateAiPromptCompletionRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.AI.AiPromptCompletion.html">AiPromptCompletion</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_GenerateAiPromptFineTuningDataset_System_Nullable_System_Int32__System_Int32_Crowdin_Api_AI_GenerateAiPromptFineTuningDatasetRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.GenerateAiPromptFineTuningDataset(System.Nullable%7BSystem.Int32%7D%2CSystem.Int32%2CCrowdin.Api.AI.GenerateAiPromptFineTuningDatasetRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L36">View Source</a>
+  </span>
+  <a id="Crowdin_Api_AI_AiApiExecutor_GenerateAiPromptFineTuningDataset_" data-uid="Crowdin.Api.AI.AiApiExecutor.GenerateAiPromptFineTuningDataset*"></a>
+  <h4 id="Crowdin_Api_AI_AiApiExecutor_GenerateAiPromptFineTuningDataset_System_Nullable_System_Int32__System_Int32_Crowdin_Api_AI_GenerateAiPromptFineTuningDatasetRequest_" data-uid="Crowdin.Api.AI.AiApiExecutor.GenerateAiPromptFineTuningDataset(System.Nullable{System.Int32},System.Int32,Crowdin.Api.AI.GenerateAiPromptFineTuningDatasetRequest)">GenerateAiPromptFineTuningDataset(Nullable&lt;Int32&gt;, Int32, GenerateAiPromptFineTuningDatasetRequest)</h4>
+  <div class="markdown level1 summary"><p>Generate AI Prompt Fine-Tuning Dataset. Documentation:
+<a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.datasets.post">Crowdin File Based API</a>
+<a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.ai.prompts.fine-tuning.datasets.post">Crowdin String Based API</a>
+<a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.datasets.post">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;AiFineTuningDataset&gt; GenerateAiPromptFineTuningDataset(int? userId, int aiPromptId, GenerateAiPromptFineTuningDatasetRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">aiPromptId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.AI.GenerateAiPromptFineTuningDatasetRequest.html">GenerateAiPromptFineTuningDatasetRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.AI.AiFineTuningDataset.html">AiFineTuningDataset</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_GenerateAiReport_System_Nullable_System_Int32__Crowdin_Api_AI_GenerateAiReport_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.GenerateAiReport(System.Nullable%7BSystem.Int32%7D%2CCrowdin.Api.AI.GenerateAiReport)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L404">View Source</a>
+  </span>
+  <a id="Crowdin_Api_AI_AiApiExecutor_GenerateAiReport_" data-uid="Crowdin.Api.AI.AiApiExecutor.GenerateAiReport*"></a>
+  <h4 id="Crowdin_Api_AI_AiApiExecutor_GenerateAiReport_System_Nullable_System_Int32__Crowdin_Api_AI_GenerateAiReport_" data-uid="Crowdin.Api.AI.AiApiExecutor.GenerateAiReport(System.Nullable{System.Int32},Crowdin.Api.AI.GenerateAiReport)">GenerateAiReport(Nullable&lt;Int32&gt;, GenerateAiReport)</h4>
+  <div class="markdown level1 summary"><p>Generate AI Report. Documentation:
+<a href="https://developer.crowdin.com/api/v2/#tag/AI/operation/api.users.ai.reports.post">Crowdin File Based API</a>
+<a href="https://developer.crowdin.com/api/v2/string-based/#tag/AI/operation/api.users.ai.reports.post">Crowdin String Based API</a>
+<a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.reports.post">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;AiReportGenerationStatus&gt; GenerateAiReport(int? userId, GenerateAiReport request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.AI.GenerateAiReport.html">GenerateAiReport</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.AI.AiReportGenerationStatus.html">AiReportGenerationStatus</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_GetAiPrompt_System_Nullable_System_Int32__System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.GetAiPrompt(System.Nullable%7BSystem.Int32%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L73">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L238">View Source</a>
   </span>
   <a id="Crowdin_Api_AI_AiApiExecutor_GetAiPrompt_" data-uid="Crowdin.Api.AI.AiApiExecutor.GetAiPrompt*"></a>
   <h4 id="Crowdin_Api_AI_AiApiExecutor_GetAiPrompt_System_Nullable_System_Int32__System_Int32_" data-uid="Crowdin.Api.AI.AiApiExecutor.GetAiPrompt(System.Nullable{System.Int32},System.Int32)">GetAiPrompt(Nullable&lt;Int32&gt;, Int32)</h4>
@@ -634,10 +1285,193 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_GetAiPromptCompletionStatus_System_Nullable_System_Int32__System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.GetAiPromptCompletionStatus(System.Nullable%7BSystem.Int32%7D%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L193">View Source</a>
+  </span>
+  <a id="Crowdin_Api_AI_AiApiExecutor_GetAiPromptCompletionStatus_" data-uid="Crowdin.Api.AI.AiApiExecutor.GetAiPromptCompletionStatus*"></a>
+  <h4 id="Crowdin_Api_AI_AiApiExecutor_GetAiPromptCompletionStatus_System_Nullable_System_Int32__System_Int32_System_String_" data-uid="Crowdin.Api.AI.AiApiExecutor.GetAiPromptCompletionStatus(System.Nullable{System.Int32},System.Int32,System.String)">GetAiPromptCompletionStatus(Nullable&lt;Int32&gt;, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Get AI Prompt Completion Status. Documentation:
+<a href="https://developer.crowdin.com/api/v2/#tag/AI/operation/api.users.ai.prompts.completions.get">Crowdin File Based API</a>
+<a href="https://developer.crowdin.com/api/v2/string-based/#tag/AI/operation/api.users.ai.prompts.completions.get">Crowdin String Based API</a>
+<a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.completions.get">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;AiPromptCompletion&gt; GetAiPromptCompletionStatus(int? userId, int aiPromptId, string completionId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">aiPromptId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">completionId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.AI.AiPromptCompletion.html">AiPromptCompletion</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_GetAiPromptFineTuningDatasetGenerationStatus_System_Nullable_System_Int32__System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.GetAiPromptFineTuningDatasetGenerationStatus(System.Nullable%7BSystem.Int32%7D%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L53">View Source</a>
+  </span>
+  <a id="Crowdin_Api_AI_AiApiExecutor_GetAiPromptFineTuningDatasetGenerationStatus_" data-uid="Crowdin.Api.AI.AiApiExecutor.GetAiPromptFineTuningDatasetGenerationStatus*"></a>
+  <h4 id="Crowdin_Api_AI_AiApiExecutor_GetAiPromptFineTuningDatasetGenerationStatus_System_Nullable_System_Int32__System_Int32_System_String_" data-uid="Crowdin.Api.AI.AiApiExecutor.GetAiPromptFineTuningDatasetGenerationStatus(System.Nullable{System.Int32},System.Int32,System.String)">GetAiPromptFineTuningDatasetGenerationStatus(Nullable&lt;Int32&gt;, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Get AI Prompt Fine-Tuning Dataset Generation Status. Documentation:
+<a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.prompts.fine-tuning.datasets.get">Crowdin File Based API</a>
+<a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.prompts.fine-tuning.datasets.get">Crowdin String Based API</a>
+<a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.datasets.get">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;AiFineTuningDataset&gt; GetAiPromptFineTuningDatasetGenerationStatus(int? userId, int aiPromptId, string jobIdentifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">aiPromptId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">jobIdentifier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.AI.AiFineTuningDataset.html">AiFineTuningDataset</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_GetAiPromptFineTuningJobStatus_System_Nullable_System_Int32__System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.GetAiPromptFineTuningJobStatus(System.Nullable%7BSystem.Int32%7D%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L87">View Source</a>
+  </span>
+  <a id="Crowdin_Api_AI_AiApiExecutor_GetAiPromptFineTuningJobStatus_" data-uid="Crowdin.Api.AI.AiApiExecutor.GetAiPromptFineTuningJobStatus*"></a>
+  <h4 id="Crowdin_Api_AI_AiApiExecutor_GetAiPromptFineTuningJobStatus_System_Nullable_System_Int32__System_Int32_System_String_" data-uid="Crowdin.Api.AI.AiApiExecutor.GetAiPromptFineTuningJobStatus(System.Nullable{System.Int32},System.Int32,System.String)">GetAiPromptFineTuningJobStatus(Nullable&lt;Int32&gt;, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Get AI Prompt Fine-Tuning Job Status. Documentation:
+<a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.prompts.fine-tuning.jobs.get">Crowdin File Based API</a>
+<a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.prompts.fine-tuning.jobs.get">Crowdin String Based API</a>
+<a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.jobs.get">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;AiFineTuningJob&gt; GetAiPromptFineTuningJobStatus(int? userId, int aiPromptId, string jobIdentifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">aiPromptId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">jobIdentifier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.AI.AiFineTuningJob.html">AiFineTuningJob</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_GetAiProvider_System_Nullable_System_Int32__System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.GetAiProvider(System.Nullable%7BSystem.Int32%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L165">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L330">View Source</a>
   </span>
   <a id="Crowdin_Api_AI_AiApiExecutor_GetAiProvider_" data-uid="Crowdin.Api.AI.AiApiExecutor.GetAiProvider*"></a>
   <h4 id="Crowdin_Api_AI_AiApiExecutor_GetAiProvider_System_Nullable_System_Int32__System_Int32_" data-uid="Crowdin.Api.AI.AiApiExecutor.GetAiProvider(System.Nullable{System.Int32},System.Int32)">GetAiProvider(Nullable&lt;Int32&gt;, Int32)</h4>
@@ -690,10 +1524,61 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_GetAiSettings_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.GetAiSettings(System.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L450">View Source</a>
+  </span>
+  <a id="Crowdin_Api_AI_AiApiExecutor_GetAiSettings_" data-uid="Crowdin.Api.AI.AiApiExecutor.GetAiSettings*"></a>
+  <h4 id="Crowdin_Api_AI_AiApiExecutor_GetAiSettings_System_Nullable_System_Int32__" data-uid="Crowdin.Api.AI.AiApiExecutor.GetAiSettings(System.Nullable{System.Int32})">GetAiSettings(Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Get AI Settings. Documentation:
+<a href="https://developer.crowdin.com/api/v2/#tag/AI/operation/api.users.ai.settings.get">Crowdin File Based API</a>
+<a href="https://developer.crowdin.com/api/v2/string-based/#tag/AI/operation/api.users.ai.settings.get">Crowdin String Based API</a>
+<a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.settings.get">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;AiSettings&gt; GetAiSettings(int? userId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.AI.AiSettings.html">AiSettings</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_ListAiPrompts_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_Crowdin_Api_AI_AiPromptAction__System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.ListAiPrompts(System.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BCrowdin.Api.AI.AiPromptAction%7D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L36">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L139">View Source</a>
   </span>
   <a id="Crowdin_Api_AI_AiApiExecutor_ListAiPrompts_" data-uid="Crowdin.Api.AI.AiApiExecutor.ListAiPrompts*"></a>
   <h4 id="Crowdin_Api_AI_AiApiExecutor_ListAiPrompts_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_Crowdin_Api_AI_AiPromptAction__System_Int32_System_Int32_" data-uid="Crowdin.Api.AI.AiApiExecutor.ListAiPrompts(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{Crowdin.Api.AI.AiPromptAction},System.Int32,System.Int32)">ListAiPrompts(Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;AiPromptAction&gt;, Int32, Int32)</h4>
@@ -764,7 +1649,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_ListAiProviderModels_System_Nullable_System_Int32__System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.ListAiProviderModels(System.Nullable%7BSystem.Int32%7D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L207">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L372">View Source</a>
   </span>
   <a id="Crowdin_Api_AI_AiApiExecutor_ListAiProviderModels_" data-uid="Crowdin.Api.AI.AiApiExecutor.ListAiProviderModels*"></a>
   <h4 id="Crowdin_Api_AI_AiApiExecutor_ListAiProviderModels_System_Nullable_System_Int32__System_Int32_" data-uid="Crowdin.Api.AI.AiApiExecutor.ListAiProviderModels(System.Nullable{System.Int32},System.Int32)">ListAiProviderModels(Nullable&lt;Int32&gt;, Int32)</h4>
@@ -820,7 +1705,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_AiApiExecutor_ListAiProviders_System_Nullable_System_Int32__System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.AiApiExecutor.ListAiProviders(System.Nullable%7BSystem.Int32%7D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L135">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/AiApiExecutor.cs/#L300">View Source</a>
   </span>
   <a id="Crowdin_Api_AI_AiApiExecutor_ListAiProviders_" data-uid="Crowdin.Api.AI.AiApiExecutor.ListAiProviders*"></a>
   <h4 id="Crowdin_Api_AI_AiApiExecutor_ListAiProviders_System_Nullable_System_Int32__System_Int32_System_Int32_" data-uid="Crowdin.Api.AI.AiApiExecutor.ListAiProviders(System.Nullable{System.Int32},System.Int32,System.Int32)">ListAiProviders(Nullable&lt;Int32&gt;, Int32, Int32)</h4>
