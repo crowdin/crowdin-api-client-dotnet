@@ -19,22 +19,22 @@ namespace Crowdin.Api.Core
             string responseJson = await content.ReadAsStringAsync();
             return JObject.Parse(responseJson);
         }
-        
+
         internal static string ToDescriptionString(this Enum? path)
         {
             var attribute = path?
                 .GetType()
                 .GetField(path.ToString())
                 .GetCustomAttribute<DescriptionAttribute>(false);
-            
+
             return attribute != null ? attribute.Description : string.Empty;
         }
-        
+
         internal static string ToQueryString(this IDictionary<string, string> queryParams)
         {
             return string.Join("&", queryParams.Select(kvPair => $"{kvPair.Key}={kvPair.Value}"));
         }
-        
+
         internal static void AddParamIfPresent(this IDictionary<string, string> queryParams, string key, int? value)
         {
             if (value.HasValue)
@@ -42,7 +42,7 @@ namespace Crowdin.Api.Core
                 queryParams.AddParamIfPresent(key, value.ToString());
             }
         }
-        
+
         internal static void AddParamIfPresent(this IDictionary<string, string> queryParams, string key, long? value)
         {
             if (value.HasValue)
@@ -50,7 +50,7 @@ namespace Crowdin.Api.Core
                 queryParams.AddParamIfPresent(key, value.ToString());
             }
         }
-        
+
         internal static void AddParamIfPresent(this IDictionary<string, string> queryParams, string key, bool? value)
         {
             if (value.HasValue)
@@ -58,7 +58,7 @@ namespace Crowdin.Api.Core
                 queryParams.AddParamIfPresent(key, value.ToString().ToLower());
             }
         }
-        
+
         internal static void AddParamIfPresent(this IDictionary<string, string> queryParams, string key, object? value)
         {
             if (value != null)
@@ -66,7 +66,7 @@ namespace Crowdin.Api.Core
                 queryParams.AddParamIfPresent(key, value.ToString());
             }
         }
-        
+
         internal static void AddParamIfPresent(this IDictionary<string, string> queryParams, string key, string? value)
         {
             if (!string.IsNullOrWhiteSpace(value))
@@ -74,7 +74,7 @@ namespace Crowdin.Api.Core
                 queryParams.Add(key, value!);
             }
         }
-        
+
         internal static void AddParamIfPresent(this IDictionary<string, string> queryParams, string key, IEnumerable<int>? values)
         {
             if (values != null && values.Any())
@@ -82,7 +82,7 @@ namespace Crowdin.Api.Core
                 queryParams.Add(key, string.Join(",", values.Select(value => value.ToString())));
             }
         }
-        
+
         internal static void AddParamIfPresent(this IDictionary<string, string> queryParams, string key, IEnumerable<long>? values)
         {
             if (values != null && values.Any())
@@ -90,7 +90,7 @@ namespace Crowdin.Api.Core
                 queryParams.Add(key, string.Join(",", values.Select(value => value.ToString())));
             }
         }
-        
+
         internal static void AddParamIfPresent(this IDictionary<string, string> queryParams, string key, IEnumerable<bool>? values)
         {
             if (values != null && values.Any())
@@ -98,7 +98,7 @@ namespace Crowdin.Api.Core
                 queryParams.Add(key, string.Join(",", values.Select(value => value.ToString().ToLower())));
             }
         }
-        
+
         internal static void AddParamIfPresent(this IDictionary<string, string> queryParams, string key, IEnumerable<object>? values)
         {
             if (values != null && values.Any())
@@ -106,7 +106,7 @@ namespace Crowdin.Api.Core
                 queryParams.Add(key, string.Join(",", values.Select(value => value.ToString())));
             }
         }
-        
+
         internal static void AddParamIfPresent(this IDictionary<string, string> queryParams, string key, IEnumerable<string>? values)
         {
             if (values != null && values.Any())
@@ -114,7 +114,7 @@ namespace Crowdin.Api.Core
                 queryParams.Add(key, string.Join(",", values));
             }
         }
-        
+
         internal static void AddDescriptionEnumValueIfPresent<TEnum>(
             this IDictionary<string, string> queryParams, string key, TEnum? enumMember)
             where TEnum : struct, Enum
@@ -124,7 +124,7 @@ namespace Crowdin.Api.Core
                 queryParams.Add(key, enumMember.Value.ToDescriptionString());
             }
         }
-        
+
         internal static void AddSortingRulesIfPresent(
             this IDictionary<string, string> queryParams,
             IEnumerable<SortingRule>? sortingRules)
