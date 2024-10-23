@@ -1,18 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{582FDBF8-1C4D-45E8-B9FC-0E3B10510287}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{303E8173-0F2B-4F6C-A9D7-170EAB8461DE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{A73C101F-4383-42BE-B624-DB88836FE6B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crowdin.Api", "src\Crowdin.Api\Crowdin.Api.csproj", "{D71FBEB4-C2D5-4B8D-A48A-303815807DF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Crowdin.Api", "src\Crowdin.Api\Crowdin.Api.csproj", "{D71FBEB4-C2D5-4B8D-A48A-303815807DF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crowdin.Api.Tests", "tests\Crowdin.Api.Tests\Crowdin.Api.Tests.csproj", "{304B7B61-1620-4FFF-967B-BB40F4B60F2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Crowdin.Api.UnitTesting", "tests\Crowdin.Api.Tests\Crowdin.Api.UnitTesting.csproj", "{304B7B61-1620-4FFF-967B-BB40F4B60F2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crowdin.Api.Samples", "samples\Crowdin.Api.Samples\Crowdin.Api.Samples.csproj", "{A4B9BA6F-97B1-441C-81E6-4EED514C9521}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Crowdin.Api.Samples", "samples\Crowdin.Api.Samples\Crowdin.Api.Samples.csproj", "{A4B9BA6F-97B1-441C-81E6-4EED514C9521}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crowdin.Api.Samples.Actions", "samples\Crowdin.Api.Samples.Actions\Crowdin.Api.Samples.Actions.csproj", "{92F23B17-3B1C-4098-ACAD-781F1E3BBAA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Crowdin.Api.Samples.Actions", "samples\Crowdin.Api.Samples.Actions\Crowdin.Api.Samples.Actions.csproj", "{92F23B17-3B1C-4098-ACAD-781F1E3BBAA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,18 +27,21 @@ Global
 		{D71FBEB4-C2D5-4B8D-A48A-303815807DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D71FBEB4-C2D5-4B8D-A48A-303815807DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D71FBEB4-C2D5-4B8D-A48A-303815807DF5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A4B9BA6F-97B1-441C-81E6-4EED514C9521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A4B9BA6F-97B1-441C-81E6-4EED514C9521}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A4B9BA6F-97B1-441C-81E6-4EED514C9521}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A4B9BA6F-97B1-441C-81E6-4EED514C9521}.Release|Any CPU.Build.0 = Release|Any CPU
 		{304B7B61-1620-4FFF-967B-BB40F4B60F2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{304B7B61-1620-4FFF-967B-BB40F4B60F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{304B7B61-1620-4FFF-967B-BB40F4B60F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{304B7B61-1620-4FFF-967B-BB40F4B60F2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4B9BA6F-97B1-441C-81E6-4EED514C9521}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4B9BA6F-97B1-441C-81E6-4EED514C9521}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4B9BA6F-97B1-441C-81E6-4EED514C9521}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4B9BA6F-97B1-441C-81E6-4EED514C9521}.Release|Any CPU.Build.0 = Release|Any CPU
 		{92F23B17-3B1C-4098-ACAD-781F1E3BBAA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{92F23B17-3B1C-4098-ACAD-781F1E3BBAA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92F23B17-3B1C-4098-ACAD-781F1E3BBAA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92F23B17-3B1C-4098-ACAD-781F1E3BBAA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D71FBEB4-C2D5-4B8D-A48A-303815807DF5} = {582FDBF8-1C4D-45E8-B9FC-0E3B10510287}
