@@ -27,6 +27,42 @@ namespace Crowdin.Api.Translations
         }
 
         /// <summary>
+        /// List Pre-Translations. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/Translations/operation/api.projects.pre-translations.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/Translations/operation/api.projects.pre-translations.getMany">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Translations/operation/api.projects.pre-translations.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<PreTranslation>> ListPreTranslations(
+            int projectId,
+            int limit = 25,
+            int offset = 0)
+        {
+            var url = $"/projects/{projectId}/pre-translations";
+            
+            IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
+            return _jsonParser.ParseResponseList<PreTranslation>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Edit Pre-Translation. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/Translations/operation/api.projects.pre-translations.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/Translations/operation/api.projects.pre-translations.patch">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Translations/operation/api.projects.pre-translations.patch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<PreTranslation> EditPreTranslation(
+            int projectId,
+            string preTranslationId,
+            IEnumerable<PreTranslationPatch> patches)
+        {
+            var url = $"/projects/{projectId}/pre-translations/{preTranslationId}";
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            return _jsonParser.ParseResponseObject<PreTranslation>(result.JsonObject);
+        }
+
+        /// <summary>
         /// Get pre-translation status. Documentation:
         /// <a href="https://support.crowdin.com/api/v2/#tag/Translations/paths/~1projects~1{projectId}~1pre-translations~1{preTranslationId}/get">Crowdin API</a>
         /// <a href="https://support.crowdin.com/enterprise/api/#tag/Translations/paths/~1projects~1{projectId}~1pre-translations~1{preTranslationId}/get">Crowdin Enterprise API</a>
