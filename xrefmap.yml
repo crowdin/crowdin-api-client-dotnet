@@ -39182,6 +39182,37 @@ references:
   commentId: F:Crowdin.Api.Translations.PreTranslationMethod.Tm
   fullName: Crowdin.Api.Translations.PreTranslationMethod.Tm
   nameWithType: PreTranslationMethod.Tm
+- uid: Crowdin.Api.Translations.PreTranslationPatch
+  name: PreTranslationPatch
+  href: api/Crowdin.Api.Translations.PreTranslationPatch.html
+  commentId: T:Crowdin.Api.Translations.PreTranslationPatch
+  fullName: Crowdin.Api.Translations.PreTranslationPatch
+  nameWithType: PreTranslationPatch
+- uid: Crowdin.Api.Translations.PreTranslationPatch.Path
+  name: Path
+  href: api/Crowdin.Api.Translations.PreTranslationPatch.html#Crowdin_Api_Translations_PreTranslationPatch_Path
+  commentId: P:Crowdin.Api.Translations.PreTranslationPatch.Path
+  fullName: Crowdin.Api.Translations.PreTranslationPatch.Path
+  nameWithType: PreTranslationPatch.Path
+- uid: Crowdin.Api.Translations.PreTranslationPatch.Path*
+  name: Path
+  href: api/Crowdin.Api.Translations.PreTranslationPatch.html#Crowdin_Api_Translations_PreTranslationPatch_Path_
+  commentId: Overload:Crowdin.Api.Translations.PreTranslationPatch.Path
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.PreTranslationPatch.Path
+  nameWithType: PreTranslationPatch.Path
+- uid: Crowdin.Api.Translations.PreTranslationPatchPath
+  name: PreTranslationPatchPath
+  href: api/Crowdin.Api.Translations.PreTranslationPatchPath.html
+  commentId: T:Crowdin.Api.Translations.PreTranslationPatchPath
+  fullName: Crowdin.Api.Translations.PreTranslationPatchPath
+  nameWithType: PreTranslationPatchPath
+- uid: Crowdin.Api.Translations.PreTranslationPatchPath.Status
+  name: Status
+  href: api/Crowdin.Api.Translations.PreTranslationPatchPath.html#Crowdin_Api_Translations_PreTranslationPatchPath_Status
+  commentId: F:Crowdin.Api.Translations.PreTranslationPatchPath.Status
+  fullName: Crowdin.Api.Translations.PreTranslationPatchPath.Status
+  nameWithType: PreTranslationPatchPath.Status
 - uid: Crowdin.Api.Translations.ProjectBuild
   name: ProjectBuild
   href: api/Crowdin.Api.Translations.ProjectBuild.html
@@ -39971,6 +40002,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Translations.TranslationsApiExecutor.DownloadProjectTranslations
   nameWithType: TranslationsApiExecutor.DownloadProjectTranslations
+- uid: Crowdin.Api.Translations.TranslationsApiExecutor.EditPreTranslation(System.Int32,System.String,IEnumerable{Crowdin.Api.Translations.PreTranslationPatch})
+  name: EditPreTranslation(Int32, String, IEnumerable<PreTranslationPatch>)
+  href: api/Crowdin.Api.Translations.TranslationsApiExecutor.html#Crowdin_Api_Translations_TranslationsApiExecutor_EditPreTranslation_System_Int32_System_String_IEnumerable_Crowdin_Api_Translations_PreTranslationPatch__
+  commentId: M:Crowdin.Api.Translations.TranslationsApiExecutor.EditPreTranslation(System.Int32,System.String,IEnumerable{Crowdin.Api.Translations.PreTranslationPatch})
+  name.vb: EditPreTranslation(Int32, String, IEnumerable(Of PreTranslationPatch))
+  fullName: Crowdin.Api.Translations.TranslationsApiExecutor.EditPreTranslation(System.Int32, System.String, IEnumerable<Crowdin.Api.Translations.PreTranslationPatch>)
+  fullName.vb: Crowdin.Api.Translations.TranslationsApiExecutor.EditPreTranslation(System.Int32, System.String, IEnumerable(Of Crowdin.Api.Translations.PreTranslationPatch))
+  nameWithType: TranslationsApiExecutor.EditPreTranslation(Int32, String, IEnumerable<PreTranslationPatch>)
+  nameWithType.vb: TranslationsApiExecutor.EditPreTranslation(Int32, String, IEnumerable(Of PreTranslationPatch))
+- uid: Crowdin.Api.Translations.TranslationsApiExecutor.EditPreTranslation*
+  name: EditPreTranslation
+  href: api/Crowdin.Api.Translations.TranslationsApiExecutor.html#Crowdin_Api_Translations_TranslationsApiExecutor_EditPreTranslation_
+  commentId: Overload:Crowdin.Api.Translations.TranslationsApiExecutor.EditPreTranslation
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationsApiExecutor.EditPreTranslation
+  nameWithType: TranslationsApiExecutor.EditPreTranslation
 - uid: Crowdin.Api.Translations.TranslationsApiExecutor.ExportProjectTranslation(System.Int32,Crowdin.Api.Translations.ExportProjectTranslationRequest)
   name: ExportProjectTranslation(Int32, ExportProjectTranslationRequest)
   href: api/Crowdin.Api.Translations.TranslationsApiExecutor.html#Crowdin_Api_Translations_TranslationsApiExecutor_ExportProjectTranslation_System_Int32_Crowdin_Api_Translations_ExportProjectTranslationRequest_
@@ -39997,6 +40044,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Translations.TranslationsApiExecutor.GetPreTranslationStatus
   nameWithType: TranslationsApiExecutor.GetPreTranslationStatus
+- uid: Crowdin.Api.Translations.TranslationsApiExecutor.ListPreTranslations(System.Int32,System.Int32,System.Int32)
+  name: ListPreTranslations(Int32, Int32, Int32)
+  href: api/Crowdin.Api.Translations.TranslationsApiExecutor.html#Crowdin_Api_Translations_TranslationsApiExecutor_ListPreTranslations_System_Int32_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.Translations.TranslationsApiExecutor.ListPreTranslations(System.Int32,System.Int32,System.Int32)
+  fullName: Crowdin.Api.Translations.TranslationsApiExecutor.ListPreTranslations(System.Int32, System.Int32, System.Int32)
+  nameWithType: TranslationsApiExecutor.ListPreTranslations(Int32, Int32, Int32)
+- uid: Crowdin.Api.Translations.TranslationsApiExecutor.ListPreTranslations*
+  name: ListPreTranslations
+  href: api/Crowdin.Api.Translations.TranslationsApiExecutor.html#Crowdin_Api_Translations_TranslationsApiExecutor_ListPreTranslations_
+  commentId: Overload:Crowdin.Api.Translations.TranslationsApiExecutor.ListPreTranslations
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationsApiExecutor.ListPreTranslations
+  nameWithType: TranslationsApiExecutor.ListPreTranslations
 - uid: Crowdin.Api.Translations.TranslationsApiExecutor.ListProjectBuilds(System.Int32,System.Nullable{System.Int32},System.Int32,System.Int32)
   name: ListProjectBuilds(Int32, Nullable<Int32>, Int32, Int32)
   href: api/Crowdin.Api.Translations.TranslationsApiExecutor.html#Crowdin_Api_Translations_TranslationsApiExecutor_ListProjectBuilds_System_Int32_System_Nullable_System_Int32__System_Int32_System_Int32_

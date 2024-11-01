@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "sPf5XrkLbmYIJhQujQ56JIQdgdeD9uR33Gep1mWhOjk="
+          "hash": "2Gcim8BXVnb9rGyuHdGc2jt6O6UCDvhya28fsnBhiuE="
         }
       },
       "is_incremental": false,
@@ -2946,7 +2946,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.PatchEntry.html",
-          "hash": "byYbkpoIplQJIxpaqzUgw3ACCk4m18iEgZNsy8nGsVo="
+          "hash": "k9izjMzv0tQlClZCDpiQNfXS0fkBdXMXAOCoq6j7Svc="
         }
       },
       "is_incremental": false,
@@ -7670,6 +7670,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Translations.PreTranslationPatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Translations.PreTranslationPatch.html",
+          "hash": "U0sVZhSNTr2MtJYkpB3RbqLRnfx1EFQk3EN+pjxAp4M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Translations.PreTranslationPatchPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Translations.PreTranslationPatchPath.html",
+          "hash": "hInDta7xMnIz6RFYM4MnN9JDKMXNgZIXcb52ZWUiiFY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Translations.ProjectBuild.AttributesBase.yml",
       "output": {
         ".html": {
@@ -7782,7 +7806,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Translations.TranslationsApiExecutor.html",
-          "hash": "shx3g3l/TNv+BfehGZGDvzuxuocE4FKudx5Z4CH5N3Y="
+          "hash": "/uL2z12y56Hf+ut0OmY/KcHqZlbyOXZAEO4uRBa2Ffk="
         }
       },
       "is_incremental": false,
@@ -7818,7 +7842,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Translations.html",
-          "hash": "bg+krIDF4py1qi89OWjX3rcuDCyzFeEfMIakofmBAyU="
+          "hash": "MA9IfxbiCvyDH8Fes0a5SgvUktPaTGxJ0WNFTU0t1y4="
         }
       },
       "is_incremental": false,
@@ -8562,7 +8586,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "NCQ75KvnsGdaeo3PN7F5bndp+dxz97R5FUQ9A8BzSGM="
+          "hash": "9vj6KRMtj4CkdSvK9yOTTtcX9lDhiBE9t0gO8BO01M8="
         }
       },
       "is_incremental": false,
@@ -8601,7 +8625,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 709,
+          "total_file_count": 711,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
