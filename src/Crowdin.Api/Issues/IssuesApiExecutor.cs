@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-using Crowdin.Api.Core;
 using JetBrains.Annotations;
+
+using Crowdin.Api.Abstractions;
+using Crowdin.Api.Core;
 
 namespace Crowdin.Api.Issues
 {
-    public class IssuesApiExecutor
+    public class IssuesApiExecutor : IIssuesApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;
@@ -31,8 +33,11 @@ namespace Crowdin.Api.Issues
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<Issue>> ListReportedIssues(
-            int projectId, int limit = 25, int offset = 0,
-            IssueType? type = null, IssueStatus? status = null)
+            int projectId,
+            int limit = 25,
+            int offset = 0,
+            IssueType? type = null,
+            IssueStatus? status = null)
         {
             return ListReportedIssues(projectId, new IssuesListParams(limit, offset, type, status));
         }

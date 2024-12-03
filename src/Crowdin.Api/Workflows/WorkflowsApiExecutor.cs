@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-using Crowdin.Api.Core;
 using JetBrains.Annotations;
+
+using Crowdin.Api.Abstractions;
+using Crowdin.Api.Core;
 
 namespace Crowdin.Api.Workflows
 {
-    public class WorkflowsApiExecutor
+    public class WorkflowsApiExecutor : IWorkflowsApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;

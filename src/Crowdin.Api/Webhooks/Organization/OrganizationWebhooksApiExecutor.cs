@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
-using Crowdin.Api.Core;
 using JetBrains.Annotations;
+
+using Crowdin.Api.Abstractions;
+using Crowdin.Api.Core;
 
 namespace Crowdin.Api.Webhooks.Organization
 {
-    public class OrganizationWebhooksApiExecutor
+    public class OrganizationWebhooksApiExecutor : IOrganizationWebhooksApiExecutor
     {
         private const string BaseUrl = "/webhooks";
         

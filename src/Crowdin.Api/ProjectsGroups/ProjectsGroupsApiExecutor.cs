@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
-using Crowdin.Api.Core;
 using JetBrains.Annotations;
+
+using Crowdin.Api.Abstractions;
+using Crowdin.Api.Core;
 
 #nullable enable
 
 namespace Crowdin.Api.ProjectsGroups
 {
-    public class ProjectsGroupsApiExecutor
+    public class ProjectsGroupsApiExecutor : IProjectsGroupsApiExecutor
     {
         private const string BaseGroupsSubUrl = "/groups";
         private const string BaseProjectsSubUrl = "/projects";

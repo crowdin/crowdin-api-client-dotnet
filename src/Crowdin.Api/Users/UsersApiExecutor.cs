@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
-using Crowdin.Api.Core;
 using JetBrains.Annotations;
+
+using Crowdin.Api.Abstractions;
+using Crowdin.Api.Core;
 
 #nullable enable
 
 namespace Crowdin.Api.Users
 {
-    public class UsersApiExecutor
+    public class UsersApiExecutor : IUsersApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;
@@ -63,8 +65,12 @@ namespace Crowdin.Api.Users
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<ProjectMember>> ListProjectMembersEnterprise(
-            int projectId, string? search = null, string? languageId = null,
-            int? workflowStepId = null, int limit = 25, int offset = 0)
+            int projectId,
+            string? search = null,
+            string? languageId = null,
+            int? workflowStepId = null,
+            int limit = 25,
+            int offset = 0)
         {
             return ListProjectMembersEnterprise(projectId,
                 new EnterpriseProjectMembersListParams(search, languageId, workflowStepId, limit, offset));
@@ -76,7 +82,8 @@ namespace Crowdin.Api.Users
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<ProjectMember>> ListProjectMembersEnterprise(
-            int projectId, EnterpriseProjectMembersListParams @params)
+            int projectId,
+            EnterpriseProjectMembersListParams @params)
         {
             string url = FormUrl_Members(projectId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, @params.ToQueryParams());
@@ -119,7 +126,9 @@ namespace Crowdin.Api.Users
         /// </summary>
         [PublicAPI]
         public async Task<ProjectMember> ReplaceProjectMemberPermissions(
-            int projectId, int memberId, ReplaceProjectMemberPermissionsRequest request)
+            int projectId,
+            int memberId,
+            ReplaceProjectMemberPermissionsRequest request)
         {
             string url = FormUrl_MemberId(projectId, memberId);
             CrowdinApiResult result = await _apiClient.SendPutRequest(url, request);

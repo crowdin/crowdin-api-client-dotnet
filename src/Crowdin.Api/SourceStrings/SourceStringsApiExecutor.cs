@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
-using Crowdin.Api.Core;
 using JetBrains.Annotations;
+
+using Crowdin.Api.Abstractions;
+using Crowdin.Api.Core;
 
 #nullable enable
 
 namespace Crowdin.Api.SourceStrings
 {
-    public class SourceStringsApiExecutor
+    public class SourceStringsApiExecutor : ISourceStringsApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;
@@ -34,10 +36,17 @@ namespace Crowdin.Api.SourceStrings
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<SourceString>> ListStrings(
-            int projectId, int limit = 25, int offset = 0,
-            int? denormalizePlaceholders = null, string? labelIds = null,
-            int? fileId = null, int? branchId = null, int? directoryId = null,
-            string? croql = null, string? filter = null, StringScope? scope = null,
+            int projectId,
+            int limit = 25,
+            int offset = 0,
+            int? denormalizePlaceholders = null,
+            string? labelIds = null,
+            int? fileId = null,
+            int? branchId = null,
+            int? directoryId = null,
+            string? croql = null,
+            string? filter = null,
+            StringScope? scope = null,
             IEnumerable<SortingRule>? orderBy = null)
         {
             return ListStrings(projectId, new StringsListParams(

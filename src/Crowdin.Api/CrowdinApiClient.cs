@@ -9,6 +9,11 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
+using JetBrains.Annotations;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+
+using Crowdin.Api.Abstractions;
 using Crowdin.Api.Applications;
 using Crowdin.Api.Bundles;
 using Crowdin.Api.Core;
@@ -42,9 +47,6 @@ using Crowdin.Api.Vendors;
 using Crowdin.Api.Webhooks;
 using Crowdin.Api.Webhooks.Organization;
 using Crowdin.Api.Workflows;
-using JetBrains.Annotations;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
 #nullable enable
 
@@ -53,63 +55,63 @@ namespace Crowdin.Api
     [PublicAPI]
     public class CrowdinApiClient : ICrowdinApiClient
     {
-        public BundlesApiExecutor Bundles { get; }
+        public IBundlesApiExecutor Bundles { get; }
         
-        public DictionariesApiExecutor Dictionaries { get; }
+        public IDictionariesApiExecutor Dictionaries { get; }
         
-        public DistributionsApiExecutor Distributions { get; }
+        public IDistributionsApiExecutor Distributions { get; }
         
-        public GlossariesApiExecutor Glossaries { get; }
+        public IGlossariesApiExecutor Glossaries { get; }
         
-        public IssuesApiExecutor Issues { get; }
+        public IIssuesApiExecutor Issues { get; }
         
-        public LabelsApiExecutor Labels { get; }
+        public ILabelsApiExecutor Labels { get; }
         
-        public LanguagesApiExecutor Languages { get; }
+        public ILanguagesApiExecutor Languages { get; }
         
-        public MachineTranslationEnginesApiExecutor MachineTranslationEngines { get; }
+        public IMachineTranslationEnginesApiExecutor MachineTranslationEngines { get; }
         
-        public ProjectsGroupsApiExecutor ProjectsGroups { get; }
+        public IProjectsGroupsApiExecutor ProjectsGroups { get; }
         
-        public ReportsApiExecutor Reports { get; }
+        public IReportsApiExecutor Reports { get; }
         
-        public ScreenshotsApiExecutor Screenshots { get; }
+        public IScreenshotsApiExecutor Screenshots { get; }
         
-        public SecurityLogsApiExecutor SecurityLogs { get; }
+        public ISecurityLogsApiExecutor SecurityLogs { get; }
         
-        public SourceFilesApiExecutor SourceFiles { get; }
+        public ISourceFilesApiExecutor SourceFiles { get; }
         
-        public SourceStringsApiExecutor SourceStrings { get; }
+        public ISourceStringsApiExecutor SourceStrings { get; }
         
-        public StorageApiExecutor Storage { get; }
+        public IStorageApiExecutor Storage { get; }
         
-        public StringCommentsApiExecutor StringComments { get; }
+        public IStringCommentsApiExecutor StringComments { get; }
         
-        public StringTranslationsApiExecutor StringTranslations { get; }
+        public IStringTranslationsApiExecutor StringTranslations { get; }
         
-        public TasksApiExecutor Tasks { get; }
+        public ITasksApiExecutor Tasks { get; }
         
-        public TeamsApiExecutor Teams { get; }
+        public ITeamsApiExecutor Teams { get; }
         
-        public TranslationMemoryApiExecutor TranslationMemory { get; }
+        public ITranslationMemoryApiExecutor TranslationMemory { get; }
         
-        public TranslationsApiExecutor Translations { get; }
+        public ITranslationsApiExecutor Translations { get; }
         
-        public TranslationStatusApiExecutor TranslationStatus { get; }
+        public ITranslationStatusApiExecutor TranslationStatus { get; }
         
-        public UsersApiExecutor Users { get; }
+        public IUsersApiExecutor Users { get; }
         
-        public VendorsApiExecutor Vendors { get; }
+        public IVendorsApiExecutor Vendors { get; }
         
-        public WebhooksApiExecutor Webhooks { get; }
+        public IWebhooksApiExecutor Webhooks { get; }
 
-        public WorkflowsApiExecutor Workflows { get; }
+        public IWorkflowsApiExecutor Workflows { get; }
 
-        public OrganizationWebhooksApiExecutor OrganizationWebhooks { get; }
+        public IOrganizationWebhooksApiExecutor OrganizationWebhooks { get; }
 
-        public ApplicationsApiExecutor Applications { get; }
+        public IApplicationsApiExecutor Applications { get; }
 
-        public FieldsApiExecutor Fields { get; }
+        public IFieldsApiExecutor Fields { get; }
 
         private readonly string _baseUrl;
         private readonly HttpClient _httpClient;

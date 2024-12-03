@@ -5,13 +5,14 @@ using System.Threading.Tasks;
 
 using JetBrains.Annotations;
 
+using Crowdin.Api.Abstractions;
 using Crowdin.Api.Core;
 
 #nullable enable
 
 namespace Crowdin.Api.Branches
 {
-    public class BranchesApiExecutor
+    public class BranchesApiExecutor : IBranchesApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;

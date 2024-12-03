@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-using Crowdin.Api.Core;
 using JetBrains.Annotations;
+
+using Crowdin.Api.Abstractions;
+using Crowdin.Api.Core;
 
 #nullable enable
 
 namespace Crowdin.Api.SecurityLogs
 {
-    public class SecurityLogsApiExecutor
+    public class SecurityLogsApiExecutor : ISecurityLogsApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;

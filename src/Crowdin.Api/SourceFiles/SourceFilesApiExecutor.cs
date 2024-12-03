@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 using JetBrains.Annotations;
 
+using Crowdin.Api.Abstractions;
 using Crowdin.Api.Core;
 
 #nullable enable
 
 namespace Crowdin.Api.SourceFiles
 {
-    public class SourceFilesApiExecutor
+    public class SourceFilesApiExecutor : ISourceFilesApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;
@@ -417,7 +418,10 @@ namespace Crowdin.Api.SourceFiles
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<ReviewedStringBuild>> ListReviewedSourceFilesBuilds(
-            int projectId, int? branchId, int limit = 25, int offset = 0)
+            int projectId,
+            int? branchId,
+            int limit = 25,
+            int offset = 0)
         {
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
             queryParams.AddParamIfPresent("branchId", branchId);

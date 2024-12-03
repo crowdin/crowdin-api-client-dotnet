@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
-using Crowdin.Api.Core;
 using JetBrains.Annotations;
+
+using Crowdin.Api.Abstractions;
+using Crowdin.Api.Core;
 
 #nullable enable
 
 namespace Crowdin.Api.StringComments
 {
-    public class StringCommentsApiExecutor
+    public class StringCommentsApiExecutor : IStringCommentsApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;
@@ -34,7 +36,9 @@ namespace Crowdin.Api.StringComments
         /// </summary>
         [PublicAPI]
         public Task ListStringComments(
-            int projectId, int limit = 25, int offset = 0,
+            int projectId,
+            int limit = 25,
+            int offset = 0,
             int? stringId = null,
             StringCommentType? type = null,
             ISet<IssueType>? issueTypes = null,
@@ -52,7 +56,8 @@ namespace Crowdin.Api.StringComments
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<StringComment>> ListStringComments(
-            int projectId, StringCommentsListParams @params)
+            int projectId,
+            StringCommentsListParams @params)
         {
             string url = FormUrl_Comments(projectId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, @params.ToQueryParams());
@@ -105,7 +110,9 @@ namespace Crowdin.Api.StringComments
         /// </summary>
         [PublicAPI]
         public async Task<StringComment> EditStringComment(
-            int projectId, int stringCommentId, IEnumerable<StringCommentPatch> patches)
+            int projectId,
+            int stringCommentId,
+            IEnumerable<StringCommentPatch> patches)
         {
             string url = FormUrl_CommentId(projectId, stringCommentId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);

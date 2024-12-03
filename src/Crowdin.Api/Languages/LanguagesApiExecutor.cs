@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
-using Crowdin.Api.Core;
+
 using JetBrains.Annotations;
+
+using Crowdin.Api.Abstractions;
+using Crowdin.Api.Core;
 
 namespace Crowdin.Api.Languages
 {
-    public class LanguagesApiExecutor
+    public class LanguagesApiExecutor : ILanguagesApiExecutor
     {
         private const string BaseSubUrl = "/languages";
         private readonly ICrowdinApiClient _apiClient;

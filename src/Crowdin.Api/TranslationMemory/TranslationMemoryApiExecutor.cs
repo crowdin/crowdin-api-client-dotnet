@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
-using Crowdin.Api.Core;
 using JetBrains.Annotations;
+
+using Crowdin.Api.Abstractions;
+using Crowdin.Api.Core;
 
 #nullable enable
 
 namespace Crowdin.Api.TranslationMemory
 {
-    public class TranslationMemoryApiExecutor
+    public class TranslationMemoryApiExecutor : ITranslationMemoryApiExecutor
     {
         private const string BaseUrl = "/tms";
         private readonly ICrowdinApiClient _apiClient;
