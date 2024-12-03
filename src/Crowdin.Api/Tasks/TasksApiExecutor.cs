@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
-using Crowdin.Api.Core;
 using JetBrains.Annotations;
+
+using Crowdin.Api.Abstractions;
+using Crowdin.Api.Core;
 
 #nullable enable
 
 namespace Crowdin.Api.Tasks
 {
-    public class TasksApiExecutor
+    public class TasksApiExecutor : ITasksApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;
@@ -160,7 +162,9 @@ namespace Crowdin.Api.Tasks
         /// </summary>
         [PublicAPI]
         public async Task<TaskResource> EditTaskArchivedStatus(
-            int projectId, int taskId, IEnumerable<TaskArchivedStatusPatch> patches)
+            int projectId,
+            int taskId,
+            IEnumerable<TaskArchivedStatusPatch> patches)
         {
             var url = $"/user/tasks/{taskId}";
             var queryParams = new Dictionary<string, string>
@@ -195,7 +199,9 @@ namespace Crowdin.Api.Tasks
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TaskSettingsTemplate>> ListTaskSettingsTemplates(
-            int projectId, int limit = 25, int offset = 0)
+            int projectId,
+            int limit = 25,
+            int offset = 0)
         {
             string url = FormUrl_TaskSettingsTemplates(projectId);
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
@@ -250,7 +256,9 @@ namespace Crowdin.Api.Tasks
         /// </summary>
         [PublicAPI]
         public async Task<TaskSettingsTemplate> EditTaskSettingsTemplate(
-            int projectId, int taskSettingsTemplateId, IEnumerable<TaskSettingsTemplatePatch> patches)
+            int projectId,
+            int taskSettingsTemplateId,
+            IEnumerable<TaskSettingsTemplatePatch> patches)
         {
             string url = FormUrl_TaskSettingsTemplateId(projectId, taskSettingsTemplateId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);

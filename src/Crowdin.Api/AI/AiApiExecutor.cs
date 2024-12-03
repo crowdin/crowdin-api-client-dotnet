@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
-using Crowdin.Api.Core;
 using JetBrains.Annotations;
+
+using Crowdin.Api.Abstractions;
+using Crowdin.Api.Core;
 
 namespace Crowdin.Api.AI
 {
-    public class AiApiExecutor
+    public class AiApiExecutor : IAiApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;
@@ -94,9 +96,7 @@ namespace Crowdin.Api.AI
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
             return _jsonParser.ParseResponseObject<AiFineTuningJob>(result.JsonObject);
         }
-
-        #endregion
-
+        
         /// <summary>
         /// Download AI Prompt Fine-Tuning Dataset. Documentation:
         /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.prompts.fine-tuning.datasets.download.get">Crowdin File Based API</a>
@@ -113,6 +113,8 @@ namespace Crowdin.Api.AI
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
             return _jsonParser.ParseResponseObject<DownloadLink>(result.JsonObject);
         }
+
+        #endregion
         
         #region Prompts
 

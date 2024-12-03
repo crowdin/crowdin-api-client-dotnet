@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
-using Crowdin.Api.Core;
 using JetBrains.Annotations;
+
+using Crowdin.Api.Abstractions;
+using Crowdin.Api.Core;
 
 #nullable enable
 
 namespace Crowdin.Api.Glossaries
 {
-    public class GlossariesApiExecutor
+    public class GlossariesApiExecutor : IGlossariesApiExecutor
     {
         private const string BaseUrl = "/glossaries";
         private readonly ICrowdinApiClient _apiClient;
@@ -254,8 +256,10 @@ namespace Crowdin.Api.Glossaries
         /// </summary>
         [PublicAPI]
         public async Task ClearGlossary(
-            int glossaryId, string? languageId = null,
-            int? conceptId = null, int? translationOfTermId = null)
+            int glossaryId,
+            string? languageId = null,
+            int? conceptId = null,
+            int? translationOfTermId = null)
         {
             string url = FormUrl_Terms(glossaryId);
 

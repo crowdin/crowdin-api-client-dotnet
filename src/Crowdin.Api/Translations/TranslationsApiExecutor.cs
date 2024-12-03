@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
-using Crowdin.Api.Core;
+
 using JetBrains.Annotations;
+
+using Crowdin.Api.Abstractions;
+using Crowdin.Api.Core;
 
 #nullable enable
 
 namespace Crowdin.Api.Translations
 {
-    public class TranslationsApiExecutor
+    public class TranslationsApiExecutor : ITranslationsApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;
@@ -95,7 +98,8 @@ namespace Crowdin.Api.Translations
         /// </summary>
         [PublicAPI]
         public async Task<DirectoryBuild> BuildProjectDirectoryTranslation(
-            int projectId, int directoryId,
+            int projectId,
+            int directoryId,
             BuildProjectDirectoryTranslationRequest request)
         {
             var url = $"/projects/{projectId}/translations/builds/directories/{directoryId}";
@@ -152,7 +156,10 @@ namespace Crowdin.Api.Translations
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TranslationProjectBuild>> ListProjectBuilds(
-            int projectId, int? branchId = null, int limit = 25, int offset = 0)
+            int projectId,
+            int? branchId = null,
+            int limit = 25,
+            int offset = 0)
         {
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
             queryParams.AddParamIfPresent("branchId", branchId);
@@ -184,7 +191,9 @@ namespace Crowdin.Api.Translations
         /// </summary>
         [PublicAPI]
         public async Task<UploadTranslationsResponse> UploadTranslations(
-            int projectId, string languageId, UploadTranslationsRequest request)
+            int projectId,
+            string languageId,
+            UploadTranslationsRequest request)
         {
             var url = $"/projects/{projectId}/translations/{languageId}";
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);

@@ -1,13 +1,17 @@
-using Crowdin.Api.Core;
-using JetBrains.Annotations;
-using Newtonsoft.Json.Linq;
+
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
+using JetBrains.Annotations;
+using Newtonsoft.Json.Linq;
+
+using Crowdin.Api.Abstractions;
+using Crowdin.Api.Core;
+
 namespace Crowdin.Api.Applications
 {
-    public class ApplicationsApiExecutor
+    public class ApplicationsApiExecutor : IApplicationsApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;
