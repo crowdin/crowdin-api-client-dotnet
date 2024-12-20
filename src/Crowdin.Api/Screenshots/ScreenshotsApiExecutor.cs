@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
-using Crowdin.Api.Core;
 using JetBrains.Annotations;
+
+using Crowdin.Api.Core;
 
 #nullable enable
 
 namespace Crowdin.Api.Screenshots
 {
-    public class ScreenshotsApiExecutor
+    public class ScreenshotsApiExecutor : IScreenshotsApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;

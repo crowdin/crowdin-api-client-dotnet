@@ -1,14 +1,16 @@
 ﻿
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Crowdin.Api.Core;
+
 using JetBrains.Annotations;
+
+using Crowdin.Api.Core;
 
 #nullable enable
 
 namespace Crowdin.Api.TranslationStatus
 {
-    public class TranslationStatusApiExecutor
+    public class TranslationStatusApiExecutor : ITranslationStatusApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;
@@ -32,7 +34,10 @@ namespace Crowdin.Api.TranslationStatus
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<ProgressResource>> GetBranchProgress(
-            int projectId, int branchId, int limit = 25, int offset = 0)
+            int projectId,
+            int branchId,
+            int limit = 25,
+            int offset = 0)
         {
             var url = $"/projects/{projectId}/branches/{branchId}/languages/progress";
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
@@ -48,7 +53,10 @@ namespace Crowdin.Api.TranslationStatus
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<ProgressResource>> GetDirectoryProgress(
-            int projectId, int directoryId, int limit = 25, int offset = 0)
+            int projectId,
+            int directoryId,
+            int limit = 25,
+            int offset = 0)
         {
             var url = $"/projects/{projectId}/directories/{directoryId}/languages/progress";
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
@@ -64,7 +72,10 @@ namespace Crowdin.Api.TranslationStatus
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<FileProgressResource>> GetFileProgress(
-            int projectId, int fileId, int limit = 25, int offset = 0)
+            int projectId,
+            int fileId,
+            int limit = 25,
+            int offset = 0)
         {
             var url = $"/projects/{projectId}/files/{fileId}/languages/progress";
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
@@ -80,7 +91,10 @@ namespace Crowdin.Api.TranslationStatus
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<LanguageProgressResource>> GetLanguageProgress(
-            int projectId, string languageId, int limit = 25, int offset = 0)
+            int projectId,
+            string languageId,
+            int limit = 25,
+            int offset = 0)
         {
             var url = $"/projects/{projectId}/languages/{languageId}/progress";
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
@@ -96,7 +110,9 @@ namespace Crowdin.Api.TranslationStatus
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<ProgressResource>> GetProjectProgress(
-            int projectId, int limit = 25, int offset = 0)
+            int projectId,
+            int limit = 25,
+            int offset = 0)
         {
             var url = $"/projects/{projectId}/languages/progress";
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
@@ -112,7 +128,9 @@ namespace Crowdin.Api.TranslationStatus
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<QaCheckResource>> ListQaCheckIssues(
-            int projectId, int limit = 25, int offset = 0,
+            int projectId,
+            int limit = 25,
+            int offset = 0,
             ICollection<QaCheckIssueCategory>? categories = null,
             ICollection<QaCheckIssueValidationType>? validation = null,
             ICollection<string>? languageIds = null)

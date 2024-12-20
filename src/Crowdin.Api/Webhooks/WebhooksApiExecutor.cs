@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
-using Crowdin.Api.Core;
 using JetBrains.Annotations;
+
+using Crowdin.Api.Core;
 
 namespace Crowdin.Api.Webhooks
 {
-    public class WebhooksApiExecutor
+    public class WebhooksApiExecutor : IWebhooksApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;
@@ -92,7 +93,7 @@ namespace Crowdin.Api.Webhooks
             return _jsonParser.ParseResponseObject<Webhook>(result.JsonObject);
         }
 
-        #region MyRegion
+        #region Helper methods
 
         private static string FormUrl_Webhooks(int projectId)
         {

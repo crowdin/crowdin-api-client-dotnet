@@ -1,15 +1,18 @@
+
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
-using Crowdin.Api.Core;
+
 using JetBrains.Annotations;
+
+using Crowdin.Api.Core;
 
 #nullable enable
 
 namespace Crowdin.Api.Storage
 {
-    public class StorageApiExecutor
+    public class StorageApiExecutor : IStorageApiExecutor
     {
         private const string BaseSubUrl = "/storages";
         private readonly ICrowdinApiClient _apiClient;

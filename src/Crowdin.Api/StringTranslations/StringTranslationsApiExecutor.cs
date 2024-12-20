@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
-using Crowdin.Api.Core;
+
 using JetBrains.Annotations;
+
+using Crowdin.Api.Core;
 
 #nullable enable
 
 namespace Crowdin.Api.StringTranslations
 {
-    public class StringTranslationsApiExecutor
+    public class StringTranslationsApiExecutor : IStringTranslationsApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;
@@ -58,7 +60,8 @@ namespace Crowdin.Api.StringTranslations
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TranslationApproval>> ListTranslationApprovals(
-            int projectId, TranslationApprovalsListParams @params)
+            int projectId,
+            TranslationApprovalsListParams @params)
         {
             string url = FormUrl_Approvals(projectId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, @params.ToQueryParams());
@@ -201,7 +204,8 @@ namespace Crowdin.Api.StringTranslations
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<StringTranslation>> ListStringTranslations(
-            int projectId, StringTranslationsListParams @params)
+            int projectId,
+            StringTranslationsListParams @params)
         {
             string url = FormUrl_Translations(projectId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, @params.ToQueryParams());
@@ -314,11 +318,14 @@ namespace Crowdin.Api.StringTranslations
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<TranslationVote>> ListTranslationVotes(
-            int projectId, int? stringId = null, string? languageId = null,
+            int projectId,
+            int? stringId = null,
+            string? languageId = null,
             int? translationId = null, 
             string? labelIds = null,
             string? excludeLabelIds = null,
-            int limit = 25, int offset = 0)
+            int limit = 25,
+            int offset = 0)
         {
             return ListTranslationVotes(projectId,
                 new TranslationVotesListParams(stringId, languageId, translationId, labelIds, excludeLabelIds , limit, offset));
@@ -331,7 +338,8 @@ namespace Crowdin.Api.StringTranslations
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TranslationVote>> ListTranslationVotes(
-            int projectId, TranslationVotesListParams @params)
+            int projectId,
+            TranslationVotesListParams @params)
         {
             string url = FormUrl_Votes(projectId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, @params.ToQueryParams());

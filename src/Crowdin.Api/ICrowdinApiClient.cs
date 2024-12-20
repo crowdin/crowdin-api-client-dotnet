@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
+
 using JetBrains.Annotations;
 
 using Crowdin.Api.Applications;
@@ -32,6 +33,7 @@ using Crowdin.Api.TranslationStatus;
 using Crowdin.Api.Users;
 using Crowdin.Api.Vendors;
 using Crowdin.Api.Webhooks;
+using Crowdin.Api.Webhooks.Organization;
 using Crowdin.Api.Workflows;
 
 #nullable enable
@@ -45,59 +47,61 @@ namespace Crowdin.Api
 
         #region Public API
         
-        BundlesApiExecutor Bundles { get; }
+        IBundlesApiExecutor Bundles { get; }
         
-        DictionariesApiExecutor Dictionaries { get; }
+        IDictionariesApiExecutor Dictionaries { get; }
         
-        DistributionsApiExecutor Distributions { get; }
+        IDistributionsApiExecutor Distributions { get; }
         
-        GlossariesApiExecutor Glossaries { get; }
+        IGlossariesApiExecutor Glossaries { get; }
         
-        IssuesApiExecutor Issues { get; }
+        IIssuesApiExecutor Issues { get; }
         
-        LabelsApiExecutor Labels { get; }
+        ILabelsApiExecutor Labels { get; }
         
-        LanguagesApiExecutor Languages { get; }
+        ILanguagesApiExecutor Languages { get; }
         
-        MachineTranslationEnginesApiExecutor MachineTranslationEngines { get; }
+        IMachineTranslationEnginesApiExecutor MachineTranslationEngines { get; }
         
-        ProjectsGroupsApiExecutor ProjectsGroups { get; }
+        IProjectsGroupsApiExecutor ProjectsGroups { get; }
         
-        ReportsApiExecutor Reports { get; }
+        IReportsApiExecutor Reports { get; }
         
-        ScreenshotsApiExecutor Screenshots { get; }
+        IScreenshotsApiExecutor Screenshots { get; }
         
-        SecurityLogsApiExecutor SecurityLogs { get; }
+        ISecurityLogsApiExecutor SecurityLogs { get; }
         
-        SourceFilesApiExecutor SourceFiles { get; }
+        ISourceFilesApiExecutor SourceFiles { get; }
         
-        SourceStringsApiExecutor SourceStrings { get; }
+        ISourceStringsApiExecutor SourceStrings { get; }
         
-        StorageApiExecutor Storage { get; }
+        IStorageApiExecutor Storage { get; }
         
-        StringCommentsApiExecutor StringComments { get; }
+        IStringCommentsApiExecutor StringComments { get; }
         
-        StringTranslationsApiExecutor StringTranslations { get; }
+        IStringTranslationsApiExecutor StringTranslations { get; }
         
-        TasksApiExecutor Tasks { get; }
+        ITasksApiExecutor Tasks { get; }
         
-        TeamsApiExecutor Teams { get; }
+        ITeamsApiExecutor Teams { get; }
         
-        TranslationMemoryApiExecutor TranslationMemory { get; }
+        ITranslationMemoryApiExecutor TranslationMemory { get; }
         
-        TranslationsApiExecutor Translations { get; }
+        ITranslationsApiExecutor Translations { get; }
         
-        TranslationStatusApiExecutor TranslationStatus { get; }
+        ITranslationStatusApiExecutor TranslationStatus { get; }
         
-        UsersApiExecutor Users { get; }
+        IUsersApiExecutor Users { get; }
         
-        VendorsApiExecutor Vendors { get; }
+        IVendorsApiExecutor Vendors { get; }
         
-        WebhooksApiExecutor Webhooks { get; }
+        IWebhooksApiExecutor Webhooks { get; }
+        
+        IOrganizationWebhooksApiExecutor OrganizationWebhooks { get; }
 
-        WorkflowsApiExecutor Workflows { get; }
+        IWorkflowsApiExecutor Workflows { get; }
 
-        ApplicationsApiExecutor Applications { get; }
+        IApplicationsApiExecutor Applications { get; }
 
         #endregion
 

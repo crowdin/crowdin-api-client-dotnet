@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-using Crowdin.Api.Core;
 using JetBrains.Annotations;
+
+using Crowdin.Api.Core;
 
 #nullable enable
 
 namespace Crowdin.Api.Dictionaries
 {
-    public class DictionariesApiExecutor
+    public class DictionariesApiExecutor : IDictionariesApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;

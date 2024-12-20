@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
-using Crowdin.Api.Core;
 using JetBrains.Annotations;
+
+using Crowdin.Api.Core;
 
 #nullable enable
 
 namespace Crowdin.Api.Reports
 {
-    public class ReportsApiExecutor
+    public class ReportsApiExecutor : IReportsApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;
@@ -263,7 +264,9 @@ namespace Crowdin.Api.Reports
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<ReportSettingsTemplateBase>> ListReportSettingsTemplates(
-            int projectId, int limit = 25, int offset = 0)
+            int projectId,
+            int limit = 25,
+            int offset = 0)
         {
             var url = $"/projects/{projectId}/reports/settings-templates";
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
@@ -279,7 +282,8 @@ namespace Crowdin.Api.Reports
         /// </summary>
         [PublicAPI]
         public async Task<ReportSettingsTemplateBase> AddReportSettingsTemplate(
-            int projectId, AddReportSettingsTemplateRequest request)
+            int projectId,
+            AddReportSettingsTemplateRequest request)
         {
             string url = FormUrl_SettingsTemplates(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -293,7 +297,8 @@ namespace Crowdin.Api.Reports
         /// </summary>
         [PublicAPI]
         public async Task<ReportSettingsTemplateBase> GetReportSettingsTemplate(
-            int projectId, int reportSettingsTemplateId)
+            int projectId,
+            int reportSettingsTemplateId)
         {
             string url = FormUrl_SettingsTemplates(projectId, reportSettingsTemplateId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -307,7 +312,9 @@ namespace Crowdin.Api.Reports
         /// </summary>
         [PublicAPI]
         public async Task<ReportSettingsTemplateBase> EditReportSettingsTemplate(
-            int projectId, int reportSettingsTemplateId, IEnumerable<ReportSettingsTemplatePatch> patches)
+            int projectId,
+            int reportSettingsTemplateId,
+            IEnumerable<ReportSettingsTemplatePatch> patches)
         {
             string url = FormUrl_SettingsTemplates(projectId, reportSettingsTemplateId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);

@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
-using Crowdin.Api.Core;
 using JetBrains.Annotations;
+
+using Crowdin.Api.Core;
 
 #nullable enable
 
 namespace Crowdin.Api.Teams
 {
-    public class TeamsApiExecutor
+    public class TeamsApiExecutor : ITeamsApiExecutor
     {
         private const string BaseUrl = "/teams";
         private readonly ICrowdinApiClient _apiClient;
