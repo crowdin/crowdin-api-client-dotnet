@@ -19,6 +19,8 @@ jobs:
     strategy:
       matrix:
         dotnet-version: [ '3.1.x', '7.0.x' ]
+    env:
+      DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
 
     steps:
       - name: Checkout
@@ -39,8 +41,6 @@ jobs:
 
       - name: Restore dependencies
         run: dotnet restore
-        env:
-          DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
 
       - name: Build
         run: dotnet build -c Release --no-restore
