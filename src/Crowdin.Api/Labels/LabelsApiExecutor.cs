@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 
 using JetBrains.Annotations;
 
-using Crowdin.Api.Abstractions;
 using Crowdin.Api.Core;
 using Crowdin.Api.Screenshots;
 using Crowdin.Api.SourceStrings;

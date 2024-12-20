@@ -13,7 +13,6 @@ using JetBrains.Annotations;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-using Crowdin.Api.Abstractions;
 using Crowdin.Api.Applications;
 using Crowdin.Api.Bundles;
 using Crowdin.Api.Core;

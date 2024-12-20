@@ -6,8 +6,35 @@ using System.Threading.Tasks;
 
 using JetBrains.Annotations;
 
-using Crowdin.Api.Abstractions;
+using Crowdin.Api.Applications;
+using Crowdin.Api.Bundles;
 using Crowdin.Api.Core;
+using Crowdin.Api.Dictionaries;
+using Crowdin.Api.Distributions;
+using Crowdin.Api.Glossaries;
+using Crowdin.Api.Issues;
+using Crowdin.Api.Labels;
+using Crowdin.Api.Languages;
+using Crowdin.Api.MachineTranslationEngines;
+using Crowdin.Api.ProjectsGroups;
+using Crowdin.Api.Reports;
+using Crowdin.Api.Screenshots;
+using Crowdin.Api.SecurityLogs;
+using Crowdin.Api.SourceFiles;
+using Crowdin.Api.SourceStrings;
+using Crowdin.Api.Storage;
+using Crowdin.Api.StringComments;
+using Crowdin.Api.StringTranslations;
+using Crowdin.Api.Tasks;
+using Crowdin.Api.Teams;
+using Crowdin.Api.TranslationMemory;
+using Crowdin.Api.Translations;
+using Crowdin.Api.TranslationStatus;
+using Crowdin.Api.Users;
+using Crowdin.Api.Vendors;
+using Crowdin.Api.Webhooks;
+using Crowdin.Api.Webhooks.Organization;
+using Crowdin.Api.Workflows;
 
 #nullable enable
 

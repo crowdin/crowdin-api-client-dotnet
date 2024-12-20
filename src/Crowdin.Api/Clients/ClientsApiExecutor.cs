@@ -4,7 +4,6 @@ using System.Threading.Tasks;
 
 using JetBrains.Annotations;
 
-using Crowdin.Api.Abstractions;
 using Crowdin.Api.Core;
 
 namespace Crowdin.Api.Clients
