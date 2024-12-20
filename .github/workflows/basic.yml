@@ -33,9 +33,8 @@ jobs:
         if: ${{ matrix.dotnet-version == '3.1.x' }}
         run: |
           sudo apt-get update
-          sudo apt-get install -y wget
-          wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl1.1/libssl1.1_1.1.1f-1ubuntu2.16_amd64.deb
-          sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.16_amd64.deb
+          wget https://security.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_amd64.deb
+          sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2_amd64.deb
           sudo apt-get -f install
 
       - name: Restore dependencies
