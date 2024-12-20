@@ -31,11 +31,11 @@ jobs:
 
       - name: Restore dependencies
         run: dotnet restore
+        env:
+          DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
 
       - name: Build
         run: dotnet build -c Release --no-restore
-        env:
-          DOTNET_SYSTEM_GLOBALIZATION_INVARIANT: 1
 
       - name: Test
         run: dotnet test --no-restore --verbosity normal
