@@ -28,6 +28,12 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
+          
+      - name: Install dependencies for .NET Core 3.1
+        if: ${{ matrix.dotnet-version == '3.1.x' }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libssl1.1
 
       - name: Restore dependencies
         run: dotnet restore
