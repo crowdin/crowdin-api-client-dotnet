@@ -13,7 +13,7 @@ using Crowdin.Api.SourceStrings;
 
 namespace Crowdin.Api.Labels
 {
-    public class LabelsApiExecutor
+    public class LabelsApiExecutor : ILabelsApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;
@@ -123,7 +123,9 @@ namespace Crowdin.Api.Labels
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<SourceString>> AssignLabelToStrings(
-            int projectId, int labelId, ICollection<int> stringIds)
+            int projectId,
+            int labelId,
+            ICollection<int> stringIds)
         {
             var request = new AssignLabelToStringsRequest
             {
@@ -140,7 +142,9 @@ namespace Crowdin.Api.Labels
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<SourceString>> AssignLabelToStrings(
-            int projectId, int labelId, AssignLabelToStringsRequest request)
+            int projectId,
+            int labelId,
+            AssignLabelToStringsRequest request)
         {
             string url = FormUrl_LabelStrings(projectId, labelId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -154,7 +158,9 @@ namespace Crowdin.Api.Labels
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<SourceString>> UnassignLabelFromStrings(
-            int projectId, int labelId, ICollection<int> stringIds)
+            int projectId,
+            int labelId,
+            ICollection<int> stringIds)
         {
             string url = FormUrl_LabelStrings(projectId, labelId);
 

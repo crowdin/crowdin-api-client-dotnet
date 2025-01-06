@@ -11,7 +11,7 @@ using Crowdin.Api.Core;
 
 namespace Crowdin.Api.Branches
 {
-    public class BranchesApiExecutor
+    public class BranchesApiExecutor : IBranchesApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;

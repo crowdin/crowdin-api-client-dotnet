@@ -1,14 +1,16 @@
 
-using Crowdin.Api.Core;
-using Crowdin.Api.SourceFiles;
-using JetBrains.Annotations;
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
+using JetBrains.Annotations;
+
+using Crowdin.Api.Core;
+using Crowdin.Api.SourceFiles;
+
 namespace Crowdin.Api.Bundles
 {
-    public class BundlesApiExecutor
+    public class BundlesApiExecutor : IBundlesApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;

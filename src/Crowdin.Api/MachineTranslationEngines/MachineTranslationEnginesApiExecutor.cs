@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
-using Crowdin.Api.Core;
 using JetBrains.Annotations;
+
+using Crowdin.Api.Core;
 
 namespace Crowdin.Api.MachineTranslationEngines
 {
-    public class MachineTranslationEnginesApiExecutor
+    public class MachineTranslationEnginesApiExecutor : IMachineTranslationEnginesApiExecutor
     {
         private const string BaseUrl = "/mts";
         private readonly ICrowdinApiClient _apiClient;
