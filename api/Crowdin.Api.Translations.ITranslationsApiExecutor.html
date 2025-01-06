@@ -1,0 +1,854 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ITranslationsApiExecutor
+   | Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ITranslationsApiExecutor
+   | Docs ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor">
+  
+  
+  <h1 id="Crowdin_Api_Translations_ITranslationsApiExecutor" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor" class="text-break">Interface ITranslationsApiExecutor
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Crowdin.Api.Translations.html">Crowdin.Api.Translations</a></h6>
+  <h6><strong>Assembly</strong>: Crowdin.Api.dll</h6>
+  <h5 id="Crowdin_Api_Translations_ITranslationsApiExecutor_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ITranslationsApiExecutor</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Translations_ITranslationsApiExecutor_ApplyPreTranslation_System_Int32_Crowdin_Api_Translations_ApplyPreTranslationRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Translations.ITranslationsApiExecutor.ApplyPreTranslation(System.Int32%2CCrowdin.Api.Translations.ApplyPreTranslationRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Translations/ITranslationsApiExecutor.cs/#L26">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Translations_ITranslationsApiExecutor_ApplyPreTranslation_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.ApplyPreTranslation*"></a>
+  <h4 id="Crowdin_Api_Translations_ITranslationsApiExecutor_ApplyPreTranslation_System_Int32_Crowdin_Api_Translations_ApplyPreTranslationRequest_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.ApplyPreTranslation(System.Int32,Crowdin.Api.Translations.ApplyPreTranslationRequest)">ApplyPreTranslation(Int32, ApplyPreTranslationRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;PreTranslation&gt; ApplyPreTranslation(int projectId, ApplyPreTranslationRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Translations.ApplyPreTranslationRequest.html">ApplyPreTranslationRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.Translations.PreTranslation.html">PreTranslation</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Translations_ITranslationsApiExecutor_BuildProjectDirectoryTranslation_System_Int32_System_Int32_Crowdin_Api_Translations_BuildProjectDirectoryTranslationRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Translations.ITranslationsApiExecutor.BuildProjectDirectoryTranslation(System.Int32%2CSystem.Int32%2CCrowdin.Api.Translations.BuildProjectDirectoryTranslationRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Translations/ITranslationsApiExecutor.cs/#L28">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Translations_ITranslationsApiExecutor_BuildProjectDirectoryTranslation_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.BuildProjectDirectoryTranslation*"></a>
+  <h4 id="Crowdin_Api_Translations_ITranslationsApiExecutor_BuildProjectDirectoryTranslation_System_Int32_System_Int32_Crowdin_Api_Translations_BuildProjectDirectoryTranslationRequest_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.BuildProjectDirectoryTranslation(System.Int32,System.Int32,Crowdin.Api.Translations.BuildProjectDirectoryTranslationRequest)">BuildProjectDirectoryTranslation(Int32, Int32, BuildProjectDirectoryTranslationRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DirectoryBuild&gt; BuildProjectDirectoryTranslation(int projectId, int directoryId, BuildProjectDirectoryTranslationRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">directoryId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Translations.BuildProjectDirectoryTranslationRequest.html">BuildProjectDirectoryTranslationRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.Translations.DirectoryBuild.html">DirectoryBuild</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Translations_ITranslationsApiExecutor_BuildProjectFileTranslation_System_Int32_System_Int32_Crowdin_Api_Translations_BuildProjectFileTranslationRequest_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Crowdin.Api.Translations.ITranslationsApiExecutor.BuildProjectFileTranslation(System.Int32%2CSystem.Int32%2CCrowdin.Api.Translations.BuildProjectFileTranslationRequest%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Translations/ITranslationsApiExecutor.cs/#L33">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Translations_ITranslationsApiExecutor_BuildProjectFileTranslation_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.BuildProjectFileTranslation*"></a>
+  <h4 id="Crowdin_Api_Translations_ITranslationsApiExecutor_BuildProjectFileTranslation_System_Int32_System_Int32_Crowdin_Api_Translations_BuildProjectFileTranslationRequest_System_Nullable_System_String__" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.BuildProjectFileTranslation(System.Int32,System.Int32,Crowdin.Api.Translations.BuildProjectFileTranslationRequest,System.Nullable{System.String})">BuildProjectFileTranslation(Int32, Int32, BuildProjectFileTranslationRequest, Nullable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;BuildProjectFileTranslationResponse&gt; BuildProjectFileTranslation(int projectId, int fileId, BuildProjectFileTranslationRequest request, string? etag = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">fileId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Translations.BuildProjectFileTranslationRequest.html">BuildProjectFileTranslationRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">etag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.Translations.BuildProjectFileTranslationResponse.html">BuildProjectFileTranslationResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Translations_ITranslationsApiExecutor_BuildProjectTranslation_System_Int32_Crowdin_Api_Translations_BuildProjectTranslationRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Translations.ITranslationsApiExecutor.BuildProjectTranslation(System.Int32%2CCrowdin.Api.Translations.BuildProjectTranslationRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Translations/ITranslationsApiExecutor.cs/#L44">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Translations_ITranslationsApiExecutor_BuildProjectTranslation_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.BuildProjectTranslation*"></a>
+  <h4 id="Crowdin_Api_Translations_ITranslationsApiExecutor_BuildProjectTranslation_System_Int32_Crowdin_Api_Translations_BuildProjectTranslationRequest_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.BuildProjectTranslation(System.Int32,Crowdin.Api.Translations.BuildProjectTranslationRequest)">BuildProjectTranslation(Int32, BuildProjectTranslationRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ProjectBuild&gt; BuildProjectTranslation(int projectId, BuildProjectTranslationRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Translations.BuildProjectTranslationRequest.html">BuildProjectTranslationRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.Translations.ProjectBuild.html">ProjectBuild</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Translations_ITranslationsApiExecutor_CancelBuild_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Translations.ITranslationsApiExecutor.CancelBuild(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Translations/ITranslationsApiExecutor.cs/#L55">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Translations_ITranslationsApiExecutor_CancelBuild_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.CancelBuild*"></a>
+  <h4 id="Crowdin_Api_Translations_ITranslationsApiExecutor_CancelBuild_System_Int32_System_Int32_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.CancelBuild(System.Int32,System.Int32)">CancelBuild(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task CancelBuild(int projectId, int buildId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">buildId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Translations_ITranslationsApiExecutor_CheckProjectBuildStatus_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Translations.ITranslationsApiExecutor.CheckProjectBuildStatus(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Translations/ITranslationsApiExecutor.cs/#L53">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Translations_ITranslationsApiExecutor_CheckProjectBuildStatus_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.CheckProjectBuildStatus*"></a>
+  <h4 id="Crowdin_Api_Translations_ITranslationsApiExecutor_CheckProjectBuildStatus_System_Int32_System_Int32_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.CheckProjectBuildStatus(System.Int32,System.Int32)">CheckProjectBuildStatus(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ProjectBuild&gt; CheckProjectBuildStatus(int projectId, int buildId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">buildId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.Translations.ProjectBuild.html">ProjectBuild</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Translations_ITranslationsApiExecutor_DownloadProjectTranslations_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Translations.ITranslationsApiExecutor.DownloadProjectTranslations(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Translations/ITranslationsApiExecutor.cs/#L51">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Translations_ITranslationsApiExecutor_DownloadProjectTranslations_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.DownloadProjectTranslations*"></a>
+  <h4 id="Crowdin_Api_Translations_ITranslationsApiExecutor_DownloadProjectTranslations_System_Int32_System_Int32_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.DownloadProjectTranslations(System.Int32,System.Int32)">DownloadProjectTranslations(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DownloadProjectTranslationsResponse&gt; DownloadProjectTranslations(int projectId, int buildId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">buildId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.Translations.DownloadProjectTranslationsResponse.html">DownloadProjectTranslationsResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Translations_ITranslationsApiExecutor_EditPreTranslation_System_Int32_System_String_IEnumerable_Crowdin_Api_Translations_PreTranslationPatch__.md&amp;value=---%0Auid%3A%20Crowdin.Api.Translations.ITranslationsApiExecutor.EditPreTranslation(System.Int32%2CSystem.String%2CIEnumerable%7BCrowdin.Api.Translations.PreTranslationPatch%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Translations/ITranslationsApiExecutor.cs/#L19">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Translations_ITranslationsApiExecutor_EditPreTranslation_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.EditPreTranslation*"></a>
+  <h4 id="Crowdin_Api_Translations_ITranslationsApiExecutor_EditPreTranslation_System_Int32_System_String_IEnumerable_Crowdin_Api_Translations_PreTranslationPatch__" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.EditPreTranslation(System.Int32,System.String,IEnumerable{Crowdin.Api.Translations.PreTranslationPatch})">EditPreTranslation(Int32, String, IEnumerable&lt;PreTranslationPatch&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;PreTranslation&gt; EditPreTranslation(int projectId, string preTranslationId, IEnumerable&lt;PreTranslationPatch&gt; patches)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">preTranslationId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Crowdin.Api.Translations.PreTranslationPatch.html">PreTranslationPatch</a>&gt;</td>
+        <td><span class="parametername">patches</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.Translations.PreTranslation.html">PreTranslation</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Translations_ITranslationsApiExecutor_ExportProjectTranslation_System_Int32_Crowdin_Api_Translations_ExportProjectTranslationRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Translations.ITranslationsApiExecutor.ExportProjectTranslation(System.Int32%2CCrowdin.Api.Translations.ExportProjectTranslationRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Translations/ITranslationsApiExecutor.cs/#L57">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Translations_ITranslationsApiExecutor_ExportProjectTranslation_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.ExportProjectTranslation*"></a>
+  <h4 id="Crowdin_Api_Translations_ITranslationsApiExecutor_ExportProjectTranslation_System_Int32_Crowdin_Api_Translations_ExportProjectTranslationRequest_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.ExportProjectTranslation(System.Int32,Crowdin.Api.Translations.ExportProjectTranslationRequest)">ExportProjectTranslation(Int32, ExportProjectTranslationRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DownloadLink&gt; ExportProjectTranslation(int projectId, ExportProjectTranslationRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Translations.ExportProjectTranslationRequest.html">ExportProjectTranslationRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.DownloadLink.html">DownloadLink</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Translations_ITranslationsApiExecutor_GetPreTranslationStatus_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Translations.ITranslationsApiExecutor.GetPreTranslationStatus(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Translations/ITranslationsApiExecutor.cs/#L24">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Translations_ITranslationsApiExecutor_GetPreTranslationStatus_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.GetPreTranslationStatus*"></a>
+  <h4 id="Crowdin_Api_Translations_ITranslationsApiExecutor_GetPreTranslationStatus_System_Int32_System_String_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.GetPreTranslationStatus(System.Int32,System.String)">GetPreTranslationStatus(Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;PreTranslation&gt; GetPreTranslationStatus(int projectId, string preTranslationId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">preTranslationId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.Translations.PreTranslation.html">PreTranslation</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Translations_ITranslationsApiExecutor_ListPreTranslations_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Translations.ITranslationsApiExecutor.ListPreTranslations(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Translations/ITranslationsApiExecutor.cs/#L14">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Translations_ITranslationsApiExecutor_ListPreTranslations_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.ListPreTranslations*"></a>
+  <h4 id="Crowdin_Api_Translations_ITranslationsApiExecutor_ListPreTranslations_System_Int32_System_Int32_System_Int32_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.ListPreTranslations(System.Int32,System.Int32,System.Int32)">ListPreTranslations(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseList&lt;PreTranslation&gt;&gt; ListPreTranslations(int projectId, int limit = 25, int offset = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">limit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.ResponseList-1.html">ResponseList</a>&lt;<a class="xref" href="Crowdin.Api.Translations.PreTranslation.html">PreTranslation</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Translations_ITranslationsApiExecutor_ListProjectBuilds_System_Int32_System_Nullable_System_Int32__System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Translations.ITranslationsApiExecutor.ListProjectBuilds(System.Int32%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Translations/ITranslationsApiExecutor.cs/#L38">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Translations_ITranslationsApiExecutor_ListProjectBuilds_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.ListProjectBuilds*"></a>
+  <h4 id="Crowdin_Api_Translations_ITranslationsApiExecutor_ListProjectBuilds_System_Int32_System_Nullable_System_Int32__System_Int32_System_Int32_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.ListProjectBuilds(System.Int32,System.Nullable{System.Int32},System.Int32,System.Int32)">ListProjectBuilds(Int32, Nullable&lt;Int32&gt;, Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseList&lt;TranslationProjectBuild&gt;&gt; ListProjectBuilds(int projectId, int? branchId = null, int limit = 25, int offset = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">branchId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">limit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.ResponseList-1.html">ResponseList</a>&lt;<a class="xref" href="Crowdin.Api.Translations.TranslationProjectBuild.html">TranslationProjectBuild</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Translations_ITranslationsApiExecutor_UploadTranslations_System_Int32_System_String_Crowdin_Api_Translations_UploadTranslationsRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Translations.ITranslationsApiExecutor.UploadTranslations(System.Int32%2CSystem.String%2CCrowdin.Api.Translations.UploadTranslationsRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Translations/ITranslationsApiExecutor.cs/#L46">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Translations_ITranslationsApiExecutor_UploadTranslations_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.UploadTranslations*"></a>
+  <h4 id="Crowdin_Api_Translations_ITranslationsApiExecutor_UploadTranslations_System_Int32_System_String_Crowdin_Api_Translations_UploadTranslationsRequest_" data-uid="Crowdin.Api.Translations.ITranslationsApiExecutor.UploadTranslations(System.Int32,System.String,Crowdin.Api.Translations.UploadTranslationsRequest)">UploadTranslations(Int32, String, UploadTranslationsRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;UploadTranslationsResponse&gt; UploadTranslations(int projectId, string languageId, UploadTranslationsRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">languageId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Translations.UploadTranslationsRequest.html">UploadTranslationsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.Translations.UploadTranslationsResponse.html">UploadTranslationsResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Translations_ITranslationsApiExecutor.md&amp;value=---%0Auid%3A%20Crowdin.Api.Translations.ITranslationsApiExecutor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Translations/ITranslationsApiExecutor.cs/#L11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
