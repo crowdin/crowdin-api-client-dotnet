@@ -15,3 +15,4 @@ var actions = new CrowdinActions(accessToken);
 // await actions.PreTranslateProject(filePath);
 // await actions.DownloadTranslations(projectId);
 // await actions.GenerateReport(projectId, directoryId, fileId);
+// await actions.ExecuteGraphQLRawQuery();

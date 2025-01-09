@@ -139,6 +139,54 @@ var projectSettingsResponse = await client.ProjectsGroups.EditProject<ProjectSet
 Console.WriteLine(projectSettingsResponse);
 ```
 
+#### GraphQL API
+
+This SDK also has support of [GraphQL API](https://support.crowdin.com/developer/graphql-api/) (only for Crowdin Enterprise).
+
+```csharp
+const string Query =
+    """
+    query {
+      viewer {
+        projects(first: 50) {
+          edges {
+            node {
+              name
+                  
+              files(first: 10) {
+                totalCount
+                edges {
+                  node {
+                    name
+                    type
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    """;
+
+var request = new GraphQLRequest
+{
+    Query = Query
+};
+
+JObject? response = await _crowdinApiClient.GraphQL.ExecuteQuery(request);
+            
+string[] projectNames =
+    response["data"]["viewer"]["projects"]["edges"]
+        .Select(edge => edge["node"]["name"].Value<string>())
+        .Where(projectNames => !string.IsNullOrWhiteSpace(projectNames))
+        .ToArray();
+
+Console.WriteLine(
+    "Project names:\n - {0}",
+    string.Join("\n - ", projectNames.Select((name, i) => $"{i + 1}) {name}")));
+```
+
 #### Fetch all records
 
 Get a list of all the data available from the API via automatic pagination control:

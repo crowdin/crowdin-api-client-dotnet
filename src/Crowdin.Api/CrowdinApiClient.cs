@@ -23,6 +23,7 @@ using Crowdin.Api.Dictionaries;
 using Crowdin.Api.Distributions;
 using Crowdin.Api.Fields;
 using Crowdin.Api.Glossaries;
+using Crowdin.Api.GraphQL;
 using Crowdin.Api.Issues;
 using Crowdin.Api.Labels;
 using Crowdin.Api.Languages;
@@ -111,8 +112,11 @@ namespace Crowdin.Api
         public IApplicationsApiExecutor Applications { get; }
 
         public IFieldsApiExecutor Fields { get; }
+        
+        public IGraphQLApiExecutor GraphQL { get; }
 
         private readonly string _baseUrl;
+        private readonly string _graphBaseUrl;
         private readonly HttpClient _httpClient;
         private readonly IRateLimiter? _rateLimiter;
         private readonly IRetryService? _retryService;
@@ -161,16 +165,19 @@ namespace Crowdin.Api
             if (!string.IsNullOrWhiteSpace(credentials.BaseUrl))
             {
                 _baseUrl = credentials.BaseUrl!;
+                _graphBaseUrl = $"{_baseUrl}/graphql";
             }
             // pass org name -> from base url
             else if (!string.IsNullOrWhiteSpace(credentials.Organization))
             {
                 _baseUrl = $"https://{credentials.Organization!}.api.crowdin.com/api/v2";
+                _graphBaseUrl = $"https://{credentials.Organization!}.api.crowdin.com/api/graphql";
             }
             // || -> use regular url (no org, no baseurl passed)
             else
             {
                 _baseUrl = "https://api.crowdin.com/api/v2";
+                _graphBaseUrl = "https://api.crowdin.com/api/graphql";
             }
 
             Bundles = new BundlesApiExecutor(this);
@@ -202,6 +209,7 @@ namespace Crowdin.Api
             OrganizationWebhooks = new OrganizationWebhooksApiExecutor(this);
             Applications = new ApplicationsApiExecutor(this);
             Fields = new FieldsApiExecutor(this);
+            GraphQL = new GraphQLApiExecutor(this);
         }
 
         Task<CrowdinApiResult> ICrowdinApiClient.SendGetRequest(string subUrl, IDictionary<string, string>? queryParams)
@@ -307,6 +315,21 @@ namespace Crowdin.Api
             };
 
             return SendRequest(requestFn);
+        }
+        
+        Task<CrowdinApiResult> ICrowdinApiClient.SendGraphQLRequest(GraphQLRequest body)
+        {
+            return SendRequest(() =>
+            {
+                var request = new HttpRequestMessage
+                {
+                    Method = HttpMethod.Post,
+                    Content = CreateJsonContent(body),
+                    RequestUri = new Uri(_graphBaseUrl)
+                };
+
+                return request;
+            });
         }
 
         Task<CrowdinApiResult> ICrowdinApiClient.UploadFile(string subUrl, string filename, Stream fileStream)

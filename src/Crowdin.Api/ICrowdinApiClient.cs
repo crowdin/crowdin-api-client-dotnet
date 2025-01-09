@@ -12,6 +12,7 @@ using Crowdin.Api.Core;
 using Crowdin.Api.Dictionaries;
 using Crowdin.Api.Distributions;
 using Crowdin.Api.Glossaries;
+using Crowdin.Api.GraphQL;
 using Crowdin.Api.Issues;
 using Crowdin.Api.Labels;
 using Crowdin.Api.Languages;
@@ -102,6 +103,8 @@ namespace Crowdin.Api
         IWorkflowsApiExecutor Workflows { get; }
 
         IApplicationsApiExecutor Applications { get; }
+        
+        IGraphQLApiExecutor GraphQL { get; }
 
         #endregion
 
@@ -121,6 +124,8 @@ namespace Crowdin.Api
         
         internal Task<CrowdinApiResult> SendDeleteRequest_FullResult(string subUrl, IDictionary<string, string>? queryParams = null);
 
+        internal Task<CrowdinApiResult> SendGraphQLRequest(GraphQLRequest body);
+        
         internal Task<CrowdinApiResult> UploadFile(string subUrl, string filename, Stream fileStream);
 
         #endregion
