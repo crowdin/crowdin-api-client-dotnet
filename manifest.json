@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "nb4MEaPb/DDM/fuW7n/BxBrdi03Pa9xxhitvh4WMmPA="
+          "hash": "DHabLJXvLhJbcdppLMnD6ybQYdtWkyvIt6CPHhSOk+I="
         }
       },
       "is_incremental": false,
@@ -1566,7 +1566,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.CrowdinApiClient.html",
-          "hash": "KfZipBtuGSFtHLbwYohbzgH1Sia76cBDxttPb6dfOvI="
+          "hash": "f/Ux6kWRLQQ/u3suqCy4ghHgC2ykxGeWQXyLAuH7iYE="
         }
       },
       "is_incremental": false,
@@ -2402,11 +2402,59 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.GraphQL.GraphQLApiExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.GraphQL.GraphQLApiExecutor.html",
+          "hash": "4BOFsZXoAm4/nls7gUxhHS7BR5aUqqTDqCv4BzI7DJk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.GraphQL.GraphQLRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.GraphQL.GraphQLRequest.html",
+          "hash": "06z+y949Luj/hCKGLfg7ZWUVAvwI22DLQaUWP77Iu9Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.GraphQL.IGraphQLApiExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.GraphQL.IGraphQLApiExecutor.html",
+          "hash": "iQSj8Mc6kq/pWHJu7kmR+uPl1FE5lARIumFD7LmZ1SM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.GraphQL.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.GraphQL.html",
+          "hash": "fex248ryCdbw9QMD2AvdFrCclcvQzVWYSImzEW2+IRc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.ICrowdinApiClient.yml",
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.ICrowdinApiClient.html",
-          "hash": "GneEnd99cjoRS30/G8RUg4aPNsPkDruGHWsbnBm70os="
+          "hash": "XjRq6gGmz4eGIpWjs8PXduEAZ0W3kuTJS9wUjShYtc8="
         }
       },
       "is_incremental": false,
@@ -8982,7 +9030,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "fLj956WFzeDDZv5qOMC6+dN0HAmB8FpeBoeGOftDmCA="
+          "hash": "DLELq7jGpgNkHK4qvyZZGxH8ykYdeiB7iQbGd7Lkvy4="
         }
       },
       "is_incremental": false,
@@ -9021,7 +9069,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 744,
+          "total_file_count": 748,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

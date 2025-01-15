@@ -101,16 +101,16 @@
 <h3 id="installation">Installation</h3>
 <p>Install via NuGet:</p>
 <pre><code>// Package Manager
-Install-Package Crowdin.Api -Version 2.27.1
+Install-Package Crowdin.Api -Version 2.28.0
 
 // .Net CLI
-dotnet add package Crowdin.Api --version 2.27.1
+dotnet add package Crowdin.Api --version 2.28.0
 
 // Package Reference
-&lt;PackageReference Include=&quot;Crowdin.Api&quot; Version=&quot;2.27.1&quot; /&gt;
+&lt;PackageReference Include=&quot;Crowdin.Api&quot; Version=&quot;2.28.0&quot; /&gt;
 
 // Paket CLI
-paket add Crowdin.Api --version 2.27.1
+paket add Crowdin.Api --version 2.28.0
 </code></pre>
 <h3 id="usage-examples">Usage examples</h3>
 <h4 id="initialization">Initialization</h4>
@@ -185,6 +185,50 @@ var patches = new List&lt;ProjectPatch&gt;
 // PATCH request
 var projectSettingsResponse = await client.ProjectsGroups.EditProject&lt;ProjectSettings&gt;(projectId, patches);
 Console.WriteLine(projectSettingsResponse);
+</code></pre>
+<h4 id="graphql-api">GraphQL API</h4>
+<p>This SDK also has the support of <a href="https://support.crowdin.com/developer/graphql-api/">GraphQL API</a>.</p>
+<pre><code class="lang-csharp">const string Query =
+    &quot;&quot;&quot;
+    query {
+      viewer {
+        projects(first: 50) {
+          edges {
+            node {
+              name
+                  
+              files(first: 10) {
+                totalCount
+                edges {
+                  node {
+                    name
+                    type
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &quot;&quot;&quot;;
+
+var request = new GraphQLRequest
+{
+    Query = Query
+};
+
+JObject? response = await _crowdinApiClient.GraphQL.ExecuteQuery(request);
+            
+string[] projectNames =
+    response[&quot;data&quot;][&quot;viewer&quot;][&quot;projects&quot;][&quot;edges&quot;]
+        .Select(edge =&gt; edge[&quot;node&quot;][&quot;name&quot;].Value&lt;string&gt;())
+        .Where(projectNames =&gt; !string.IsNullOrWhiteSpace(projectNames))
+        .ToArray();
+
+Console.WriteLine(
+    &quot;Project names:\n - {0}&quot;,
+    string.Join(&quot;\n - &quot;, projectNames.Select((name, i) =&gt; $&quot;{i + 1}) {name}&quot;)));
 </code></pre>
 <h4 id="fetch-all-records">Fetch all records</h4>
 <p>Get a list of all the data available from the API via automatic pagination control:</p>

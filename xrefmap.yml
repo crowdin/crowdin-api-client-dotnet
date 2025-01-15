@@ -7388,6 +7388,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.CrowdinApiClient.Glossaries
   nameWithType: CrowdinApiClient.Glossaries
+- uid: Crowdin.Api.CrowdinApiClient.GraphQL
+  name: GraphQL
+  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_GraphQL
+  commentId: P:Crowdin.Api.CrowdinApiClient.GraphQL
+  fullName: Crowdin.Api.CrowdinApiClient.GraphQL
+  nameWithType: CrowdinApiClient.GraphQL
+- uid: Crowdin.Api.CrowdinApiClient.GraphQL*
+  name: GraphQL
+  href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_GraphQL_
+  commentId: Overload:Crowdin.Api.CrowdinApiClient.GraphQL
+  isSpec: "True"
+  fullName: Crowdin.Api.CrowdinApiClient.GraphQL
+  nameWithType: CrowdinApiClient.GraphQL
 - uid: Crowdin.Api.CrowdinApiClient.Issues
   name: Issues
   href: api/Crowdin.Api.CrowdinApiClient.html#Crowdin_Api_CrowdinApiClient_Issues
@@ -12357,6 +12370,132 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.UpdateConceptRequest.Url
   nameWithType: UpdateConceptRequest.Url
+- uid: Crowdin.Api.GraphQL
+  name: Crowdin.Api.GraphQL
+  href: api/Crowdin.Api.GraphQL.html
+  commentId: N:Crowdin.Api.GraphQL
+  fullName: Crowdin.Api.GraphQL
+  nameWithType: Crowdin.Api.GraphQL
+- uid: Crowdin.Api.GraphQL.GraphQLApiExecutor
+  name: GraphQLApiExecutor
+  href: api/Crowdin.Api.GraphQL.GraphQLApiExecutor.html
+  commentId: T:Crowdin.Api.GraphQL.GraphQLApiExecutor
+  fullName: Crowdin.Api.GraphQL.GraphQLApiExecutor
+  nameWithType: GraphQLApiExecutor
+- uid: Crowdin.Api.GraphQL.GraphQLApiExecutor.#ctor(Crowdin.Api.ICrowdinApiClient)
+  name: GraphQLApiExecutor(ICrowdinApiClient)
+  href: api/Crowdin.Api.GraphQL.GraphQLApiExecutor.html#Crowdin_Api_GraphQL_GraphQLApiExecutor__ctor_Crowdin_Api_ICrowdinApiClient_
+  commentId: M:Crowdin.Api.GraphQL.GraphQLApiExecutor.#ctor(Crowdin.Api.ICrowdinApiClient)
+  fullName: Crowdin.Api.GraphQL.GraphQLApiExecutor.GraphQLApiExecutor(Crowdin.Api.ICrowdinApiClient)
+  nameWithType: GraphQLApiExecutor.GraphQLApiExecutor(ICrowdinApiClient)
+- uid: Crowdin.Api.GraphQL.GraphQLApiExecutor.#ctor(Crowdin.Api.ICrowdinApiClient,Crowdin.Api.Core.IJsonParser)
+  name: GraphQLApiExecutor(ICrowdinApiClient, IJsonParser)
+  href: api/Crowdin.Api.GraphQL.GraphQLApiExecutor.html#Crowdin_Api_GraphQL_GraphQLApiExecutor__ctor_Crowdin_Api_ICrowdinApiClient_Crowdin_Api_Core_IJsonParser_
+  commentId: M:Crowdin.Api.GraphQL.GraphQLApiExecutor.#ctor(Crowdin.Api.ICrowdinApiClient,Crowdin.Api.Core.IJsonParser)
+  fullName: Crowdin.Api.GraphQL.GraphQLApiExecutor.GraphQLApiExecutor(Crowdin.Api.ICrowdinApiClient, Crowdin.Api.Core.IJsonParser)
+  nameWithType: GraphQLApiExecutor.GraphQLApiExecutor(ICrowdinApiClient, IJsonParser)
+- uid: Crowdin.Api.GraphQL.GraphQLApiExecutor.#ctor*
+  name: GraphQLApiExecutor
+  href: api/Crowdin.Api.GraphQL.GraphQLApiExecutor.html#Crowdin_Api_GraphQL_GraphQLApiExecutor__ctor_
+  commentId: Overload:Crowdin.Api.GraphQL.GraphQLApiExecutor.#ctor
+  isSpec: "True"
+  fullName: Crowdin.Api.GraphQL.GraphQLApiExecutor.GraphQLApiExecutor
+  nameWithType: GraphQLApiExecutor.GraphQLApiExecutor
+- uid: Crowdin.Api.GraphQL.GraphQLApiExecutor.ExecuteQuery(Crowdin.Api.GraphQL.GraphQLRequest)
+  name: ExecuteQuery(GraphQLRequest)
+  href: api/Crowdin.Api.GraphQL.GraphQLApiExecutor.html#Crowdin_Api_GraphQL_GraphQLApiExecutor_ExecuteQuery_Crowdin_Api_GraphQL_GraphQLRequest_
+  commentId: M:Crowdin.Api.GraphQL.GraphQLApiExecutor.ExecuteQuery(Crowdin.Api.GraphQL.GraphQLRequest)
+  fullName: Crowdin.Api.GraphQL.GraphQLApiExecutor.ExecuteQuery(Crowdin.Api.GraphQL.GraphQLRequest)
+  nameWithType: GraphQLApiExecutor.ExecuteQuery(GraphQLRequest)
+- uid: Crowdin.Api.GraphQL.GraphQLApiExecutor.ExecuteQuery*
+  name: ExecuteQuery
+  href: api/Crowdin.Api.GraphQL.GraphQLApiExecutor.html#Crowdin_Api_GraphQL_GraphQLApiExecutor_ExecuteQuery_
+  commentId: Overload:Crowdin.Api.GraphQL.GraphQLApiExecutor.ExecuteQuery
+  isSpec: "True"
+  fullName: Crowdin.Api.GraphQL.GraphQLApiExecutor.ExecuteQuery
+  nameWithType: GraphQLApiExecutor.ExecuteQuery
+- uid: Crowdin.Api.GraphQL.GraphQLApiExecutor.ExecuteQuery``1(Crowdin.Api.GraphQL.GraphQLRequest)
+  name: ExecuteQuery<TResponse>(GraphQLRequest)
+  href: api/Crowdin.Api.GraphQL.GraphQLApiExecutor.html#Crowdin_Api_GraphQL_GraphQLApiExecutor_ExecuteQuery__1_Crowdin_Api_GraphQL_GraphQLRequest_
+  commentId: M:Crowdin.Api.GraphQL.GraphQLApiExecutor.ExecuteQuery``1(Crowdin.Api.GraphQL.GraphQLRequest)
+  name.vb: ExecuteQuery(Of TResponse)(GraphQLRequest)
+  fullName: Crowdin.Api.GraphQL.GraphQLApiExecutor.ExecuteQuery<TResponse>(Crowdin.Api.GraphQL.GraphQLRequest)
+  fullName.vb: Crowdin.Api.GraphQL.GraphQLApiExecutor.ExecuteQuery(Of TResponse)(Crowdin.Api.GraphQL.GraphQLRequest)
+  nameWithType: GraphQLApiExecutor.ExecuteQuery<TResponse>(GraphQLRequest)
+  nameWithType.vb: GraphQLApiExecutor.ExecuteQuery(Of TResponse)(GraphQLRequest)
+- uid: Crowdin.Api.GraphQL.GraphQLRequest
+  name: GraphQLRequest
+  href: api/Crowdin.Api.GraphQL.GraphQLRequest.html
+  commentId: T:Crowdin.Api.GraphQL.GraphQLRequest
+  fullName: Crowdin.Api.GraphQL.GraphQLRequest
+  nameWithType: GraphQLRequest
+- uid: Crowdin.Api.GraphQL.GraphQLRequest.OperationName
+  name: OperationName
+  href: api/Crowdin.Api.GraphQL.GraphQLRequest.html#Crowdin_Api_GraphQL_GraphQLRequest_OperationName
+  commentId: P:Crowdin.Api.GraphQL.GraphQLRequest.OperationName
+  fullName: Crowdin.Api.GraphQL.GraphQLRequest.OperationName
+  nameWithType: GraphQLRequest.OperationName
+- uid: Crowdin.Api.GraphQL.GraphQLRequest.OperationName*
+  name: OperationName
+  href: api/Crowdin.Api.GraphQL.GraphQLRequest.html#Crowdin_Api_GraphQL_GraphQLRequest_OperationName_
+  commentId: Overload:Crowdin.Api.GraphQL.GraphQLRequest.OperationName
+  isSpec: "True"
+  fullName: Crowdin.Api.GraphQL.GraphQLRequest.OperationName
+  nameWithType: GraphQLRequest.OperationName
+- uid: Crowdin.Api.GraphQL.GraphQLRequest.Query
+  name: Query
+  href: api/Crowdin.Api.GraphQL.GraphQLRequest.html#Crowdin_Api_GraphQL_GraphQLRequest_Query
+  commentId: P:Crowdin.Api.GraphQL.GraphQLRequest.Query
+  fullName: Crowdin.Api.GraphQL.GraphQLRequest.Query
+  nameWithType: GraphQLRequest.Query
+- uid: Crowdin.Api.GraphQL.GraphQLRequest.Query*
+  name: Query
+  href: api/Crowdin.Api.GraphQL.GraphQLRequest.html#Crowdin_Api_GraphQL_GraphQLRequest_Query_
+  commentId: Overload:Crowdin.Api.GraphQL.GraphQLRequest.Query
+  isSpec: "True"
+  fullName: Crowdin.Api.GraphQL.GraphQLRequest.Query
+  nameWithType: GraphQLRequest.Query
+- uid: Crowdin.Api.GraphQL.GraphQLRequest.Variables
+  name: Variables
+  href: api/Crowdin.Api.GraphQL.GraphQLRequest.html#Crowdin_Api_GraphQL_GraphQLRequest_Variables
+  commentId: P:Crowdin.Api.GraphQL.GraphQLRequest.Variables
+  fullName: Crowdin.Api.GraphQL.GraphQLRequest.Variables
+  nameWithType: GraphQLRequest.Variables
+- uid: Crowdin.Api.GraphQL.GraphQLRequest.Variables*
+  name: Variables
+  href: api/Crowdin.Api.GraphQL.GraphQLRequest.html#Crowdin_Api_GraphQL_GraphQLRequest_Variables_
+  commentId: Overload:Crowdin.Api.GraphQL.GraphQLRequest.Variables
+  isSpec: "True"
+  fullName: Crowdin.Api.GraphQL.GraphQLRequest.Variables
+  nameWithType: GraphQLRequest.Variables
+- uid: Crowdin.Api.GraphQL.IGraphQLApiExecutor
+  name: IGraphQLApiExecutor
+  href: api/Crowdin.Api.GraphQL.IGraphQLApiExecutor.html
+  commentId: T:Crowdin.Api.GraphQL.IGraphQLApiExecutor
+  fullName: Crowdin.Api.GraphQL.IGraphQLApiExecutor
+  nameWithType: IGraphQLApiExecutor
+- uid: Crowdin.Api.GraphQL.IGraphQLApiExecutor.ExecuteQuery(Crowdin.Api.GraphQL.GraphQLRequest)
+  name: ExecuteQuery(GraphQLRequest)
+  href: api/Crowdin.Api.GraphQL.IGraphQLApiExecutor.html#Crowdin_Api_GraphQL_IGraphQLApiExecutor_ExecuteQuery_Crowdin_Api_GraphQL_GraphQLRequest_
+  commentId: M:Crowdin.Api.GraphQL.IGraphQLApiExecutor.ExecuteQuery(Crowdin.Api.GraphQL.GraphQLRequest)
+  fullName: Crowdin.Api.GraphQL.IGraphQLApiExecutor.ExecuteQuery(Crowdin.Api.GraphQL.GraphQLRequest)
+  nameWithType: IGraphQLApiExecutor.ExecuteQuery(GraphQLRequest)
+- uid: Crowdin.Api.GraphQL.IGraphQLApiExecutor.ExecuteQuery*
+  name: ExecuteQuery
+  href: api/Crowdin.Api.GraphQL.IGraphQLApiExecutor.html#Crowdin_Api_GraphQL_IGraphQLApiExecutor_ExecuteQuery_
+  commentId: Overload:Crowdin.Api.GraphQL.IGraphQLApiExecutor.ExecuteQuery
+  isSpec: "True"
+  fullName: Crowdin.Api.GraphQL.IGraphQLApiExecutor.ExecuteQuery
+  nameWithType: IGraphQLApiExecutor.ExecuteQuery
+- uid: Crowdin.Api.GraphQL.IGraphQLApiExecutor.ExecuteQuery``1(Crowdin.Api.GraphQL.GraphQLRequest)
+  name: ExecuteQuery<TResponse>(GraphQLRequest)
+  href: api/Crowdin.Api.GraphQL.IGraphQLApiExecutor.html#Crowdin_Api_GraphQL_IGraphQLApiExecutor_ExecuteQuery__1_Crowdin_Api_GraphQL_GraphQLRequest_
+  commentId: M:Crowdin.Api.GraphQL.IGraphQLApiExecutor.ExecuteQuery``1(Crowdin.Api.GraphQL.GraphQLRequest)
+  name.vb: ExecuteQuery(Of TResponse)(GraphQLRequest)
+  fullName: Crowdin.Api.GraphQL.IGraphQLApiExecutor.ExecuteQuery<TResponse>(Crowdin.Api.GraphQL.GraphQLRequest)
+  fullName.vb: Crowdin.Api.GraphQL.IGraphQLApiExecutor.ExecuteQuery(Of TResponse)(Crowdin.Api.GraphQL.GraphQLRequest)
+  nameWithType: IGraphQLApiExecutor.ExecuteQuery<TResponse>(GraphQLRequest)
+  nameWithType.vb: IGraphQLApiExecutor.ExecuteQuery(Of TResponse)(GraphQLRequest)
 - uid: Crowdin.Api.ICrowdinApiClient
   name: ICrowdinApiClient
   href: api/Crowdin.Api.ICrowdinApiClient.html
@@ -12441,6 +12580,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ICrowdinApiClient.Glossaries
   nameWithType: ICrowdinApiClient.Glossaries
+- uid: Crowdin.Api.ICrowdinApiClient.GraphQL
+  name: GraphQL
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_GraphQL
+  commentId: P:Crowdin.Api.ICrowdinApiClient.GraphQL
+  fullName: Crowdin.Api.ICrowdinApiClient.GraphQL
+  nameWithType: ICrowdinApiClient.GraphQL
+- uid: Crowdin.Api.ICrowdinApiClient.GraphQL*
+  name: GraphQL
+  href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_GraphQL_
+  commentId: Overload:Crowdin.Api.ICrowdinApiClient.GraphQL
+  isSpec: "True"
+  fullName: Crowdin.Api.ICrowdinApiClient.GraphQL
+  nameWithType: ICrowdinApiClient.GraphQL
 - uid: Crowdin.Api.ICrowdinApiClient.Issues
   name: Issues
   href: api/Crowdin.Api.ICrowdinApiClient.html#Crowdin_Api_ICrowdinApiClient_Issues
