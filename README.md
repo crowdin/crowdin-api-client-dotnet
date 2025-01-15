@@ -141,7 +141,7 @@ Console.WriteLine(projectSettingsResponse);
 
 #### GraphQL API
 
-This SDK also has support of [GraphQL API](https://support.crowdin.com/developer/graphql-api/) (only for Crowdin Enterprise).
+This SDK also has the support of [GraphQL API](https://support.crowdin.com/developer/graphql-api/).
 
 ```csharp
 const string Query =
