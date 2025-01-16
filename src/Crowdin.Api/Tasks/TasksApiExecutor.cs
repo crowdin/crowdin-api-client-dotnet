@@ -1,4 +1,4 @@
-﻿
+
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
@@ -43,6 +43,23 @@ namespace Crowdin.Api.Tasks
             IEnumerable<SortingRule>? orderBy = null)
         {
             return ListTasks(projectId, new TasksListParams(limit, offset, status, assigneeId, orderBy));
+        }
+
+        /// <summary>
+        /// List tasks. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.tasks.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.tasks.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public Task<ResponseList<TaskResource>> ListTasks(
+            int projectId,
+            int limit = 25,
+            int offset = 0,
+            IEnumerable<TaskStatus>? statuses = null,
+            int? assigneeId = null,
+            IEnumerable<SortingRule>? orderBy = null)
+        {
+            return ListTasks(projectId, new TasksListParams(limit, offset, statuses, assigneeId, orderBy));
         }
 
         /// <summary>

@@ -19,6 +19,14 @@ namespace Crowdin.Api.Tasks
             int? assigneeId = null,
             IEnumerable<SortingRule>? orderBy = null);
 
+        Task<ResponseList<TaskResource>> ListTasks(
+            int projectId,
+            int limit = 25,
+            int offset = 0,
+            IEnumerable<TaskStatus>? statuses = null,
+            int? assigneeId = null,
+            IEnumerable<SortingRule>? orderBy = null);
+
         Task<ResponseList<TaskResource>> ListTasks(int projectId, TasksListParams @params);
 
         Task<TaskResource> AddTask(int projectId, AddTaskRequest request);

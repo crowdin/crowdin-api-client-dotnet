@@ -1,5 +1,6 @@
-﻿
+
 using System.Collections.Generic;
+using System.Linq;
 using Crowdin.Api.Core;
 using JetBrains.Annotations;
 
@@ -13,9 +14,9 @@ namespace Crowdin.Api.Tasks
         public int Limit { get; set; } = 25;
         
         public int Offset { get; set; }
-        
-        public TaskStatus? Status { get; set; }
-        
+
+        public IEnumerable<TaskStatus>? Statuses { get; set; }
+
         public int? AssigneeId { get; set; }
         
         public IEnumerable<SortingRule>? OrderBy { get; set; }
@@ -34,7 +35,21 @@ namespace Crowdin.Api.Tasks
         {
             Limit = limit;
             Offset = offset;
-            Status = status;
+            Statuses = status.HasValue ? new[] { status.Value } : null;
+            AssigneeId = assigneeId;
+            OrderBy = orderBy;
+        }
+
+        public TasksListParams(
+            int limit,
+            int offset,
+            IEnumerable<TaskStatus>? statuses,
+            int? assigneeId,
+            IEnumerable<SortingRule>? orderBy)
+        {
+            Limit = limit;
+            Offset = offset;
+            Statuses = statuses;
             AssigneeId = assigneeId;
             OrderBy = orderBy;
         }
@@ -44,9 +59,9 @@ namespace Crowdin.Api.Tasks
             IDictionary<string, string> queryParams =
                 Utils.CreateQueryParamsFromPaging(Limit, Offset);
 
-            if (Status.HasValue)
+            if (Statuses != null && Statuses.Any())
             {
-                queryParams.Add("status", Status.Value.ToDescriptionString());
+                queryParams.Add("status", string.Join(",", Statuses.Select(status => status.ToDescriptionString())));
             }
             
             queryParams.AddParamIfPresent("assigneeId", AssigneeId);
