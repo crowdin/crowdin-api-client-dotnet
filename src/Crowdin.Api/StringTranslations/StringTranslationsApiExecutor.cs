@@ -107,6 +107,25 @@ namespace Crowdin.Api.StringTranslations
             Utils.ThrowIfStatusNot204(statusCode, $"Approval {approvalId} removal failed");
         }
 
+        /// <summary>
+        /// Remove string approvals. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/String-Translations/operation/api.projects.approvals.deleteMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Translations/operation/api.projects.approvals.deleteMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task RemoveStringApprovals(int projectId, int stringId)
+        {
+            string url = FormUrl_Approvals(projectId);
+
+            var queryParams = new Dictionary<string, string>(1)
+            {
+                ["stringId"] = stringId.ToString()
+            };
+            
+            HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url, queryParams);
+            Utils.ThrowIfStatusNot204(statusCode, $"Approvals for string {stringId} removal failed");
+        }
+
         #region Helper methods
 
         private static string FormUrl_Approvals(int projectId)
@@ -231,15 +250,19 @@ namespace Crowdin.Api.StringTranslations
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.deleteMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteStringTranslations(int projectId, int stringId, string languageId)
+        public async Task DeleteStringTranslations(int projectId, int stringId, string? languageId = null)
         {
             string url = FormUrl_Translations(projectId);
 
             var queryParams = new Dictionary<string, string>
             {
-                { "stringId", stringId.ToString() },
-                { "languageId", languageId }
+                ["stringId"] = stringId.ToString(),
             };
+
+            if (!string.IsNullOrWhiteSpace(languageId))
+            {
+                queryParams.Add("languageId", languageId!);
+            }
 
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url, queryParams);
             Utils.ThrowIfStatusNot204(statusCode, "String translation removal failed");

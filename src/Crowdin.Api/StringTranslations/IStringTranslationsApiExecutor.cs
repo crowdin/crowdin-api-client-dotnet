@@ -54,6 +54,8 @@ namespace Crowdin.Api.StringTranslations
 
         Task RemoveApproval(int projectId, int approvalId);
 
+        Task RemoveStringApprovals(int projectId, int stringId);
+
         #endregion
 
         #region Translations
@@ -75,7 +77,7 @@ namespace Crowdin.Api.StringTranslations
 
         Task<StringTranslation> AddTranslation(int projectId, AddTranslationRequest request);
 
-        Task DeleteStringTranslations(int projectId, int stringId, string languageId);
+        Task DeleteStringTranslations(int projectId, int stringId, string? languageId = null);
 
         Task<StringTranslation> GetTranslation(int projectId, int translationId, bool? denormalizePlaceholders = null);
 

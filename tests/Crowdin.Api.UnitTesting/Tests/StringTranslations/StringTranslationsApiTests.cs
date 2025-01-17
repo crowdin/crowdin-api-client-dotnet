@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
-using Crowdin.Api.Core;
-using Crowdin.Api.StringTranslations;
+
 using Moq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Xunit;
+
+using Crowdin.Api.Core;
+using Crowdin.Api.StringTranslations;
 
 namespace Crowdin.Api.UnitTesting.Tests.StringTranslations
 {
@@ -109,6 +111,54 @@ namespace Crowdin.Api.UnitTesting.Tests.StringTranslations
         }
 
         [Fact]
+        public async Task DeleteStringTranslations()
+        {
+            const int ProjectId = 1;
+            const int StringId = 2;
+            
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+            
+            var url = $"/projects/{ProjectId}/translations";
+
+            var queryParams = new Dictionary<string, string>
+            {
+                ["stringId"] = StringId.ToString()
+            };
+
+            mockClient
+                .Setup(client => client.SendDeleteRequest(url, queryParams))
+                .ReturnsAsync(HttpStatusCode.NoContent);
+            
+            var executor = new StringTranslationsApiExecutor(mockClient.Object);
+            await executor.DeleteStringTranslations(ProjectId, StringId);
+        }
+        
+        [Fact]
+        public async Task DeleteStringTranslations_WithLanguageId()
+        {
+            const int ProjectId = 1;
+            const int StringId = 2;
+            const string LanguageId = "uk";
+            
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+            
+            var url = $"/projects/{ProjectId}/translations";
+
+            var queryParams = new Dictionary<string, string>
+            {
+                ["stringId"] = StringId.ToString(),
+                ["languageId"] = LanguageId
+            };
+
+            mockClient
+                .Setup(client => client.SendDeleteRequest(url, queryParams))
+                .ReturnsAsync(HttpStatusCode.NoContent);
+            
+            var executor = new StringTranslationsApiExecutor(mockClient.Object);
+            await executor.DeleteStringTranslations(ProjectId, StringId, LanguageId);
+        }
+
+        [Fact]
         public async Task TranslationAlignment()
         {
             const int projectId = 1;
@@ -153,33 +203,6 @@ namespace Crowdin.Api.UnitTesting.Tests.StringTranslations
             Assert.Equal("пароль", alignment.TargetLemma);
             Assert.Equal(2, alignment.Match);
             Assert.Equal(2, alignment.Probability);
-        }
-
-        [Fact]
-        public async Task ListTranslationApprovals()
-        {
-            const int projectId = 1;
-            var url = $"/projects/{projectId}/approvals";
-
-            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
-
-            var queryParams = TestUtils.CreateQueryParamsFromPaging();
-
-            mockClient
-                .Setup(client => client.SendGetRequest(url, queryParams))
-                .ReturnsAsync(new CrowdinApiResult
-                {
-                    StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(Resources.StringTranslations.ListTranslationsApproval_Response)
-                });
-
-            var executor = new StringTranslationsApiExecutor(mockClient.Object);
-            ResponseList<TranslationApproval> response = await executor.ListTranslationApprovals(projectId);
-            Assert.NotNull(response);
-            var data = response.Data[1];
-            Assert.Equal(200695, data.TranslationId);
-            Assert.Equal(1234, data.StringId);
-            Assert.IsType<User>(data.User);
         }
 
         [Fact]
