@@ -20,6 +20,7 @@ namespace Crowdin.Api.SourceStrings
             int? fileId = null,
             int? branchId = null,
             int? directoryId = null,
+            int? taskId = null,
             string? croql = null,
             string? filter = null,
             StringScope? scope = null,
