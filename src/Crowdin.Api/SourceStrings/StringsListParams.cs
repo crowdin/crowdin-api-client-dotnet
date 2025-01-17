@@ -21,6 +21,8 @@ namespace Crowdin.Api.SourceStrings
         
         public int? DirectoryId { get; set; }
         
+        public int? TaskId { get; set; }
+        
         // ReSharper disable once InconsistentNaming
         public string? CroQL { get; set; }
         
@@ -45,6 +47,7 @@ namespace Crowdin.Api.SourceStrings
             int? fileId,
             int? branchId,
             int? directoryId,
+            int? taskId,
             string? croql,
             string? filter,
             StringScope? scope,
@@ -57,6 +60,7 @@ namespace Crowdin.Api.SourceStrings
             FileId = fileId;
             BranchId = branchId;
             DirectoryId = directoryId;
+            TaskId = taskId;
             CroQL = croql;
             Filter = filter;
             Scope = scope;
@@ -75,6 +79,7 @@ namespace Crowdin.Api.SourceStrings
             queryParams.AddParamIfPresent("fileId", FileId);
             queryParams.AddParamIfPresent("branchId", BranchId);
             queryParams.AddParamIfPresent("directoryId", DirectoryId);
+            queryParams.AddParamIfPresent("taskId", TaskId);
             queryParams.AddParamIfPresent("croql", CroQL);
             queryParams.AddParamIfPresent("filter", Filter);
             queryParams.AddDescriptionEnumValueIfPresent("scope", Scope);
