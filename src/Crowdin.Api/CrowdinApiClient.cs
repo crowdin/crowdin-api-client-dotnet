@@ -128,6 +128,7 @@ namespace Crowdin.Api
                 NullValueHandling = NullValueHandling.Ignore,
                 Converters =
                 {
+                    new ReportMatchTypeObjectConverter(),
                     new DescriptionEnumConverter(),
                     new FileExportOptionsConverter(),
                     new FileImportOptionsConverter(),

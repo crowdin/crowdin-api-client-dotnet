@@ -1,14 +1,17 @@
 
+using System;
 using JetBrains.Annotations;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.Core.Converters;
 
+#nullable enable
+
 namespace Crowdin.Api.Reports
 {
     [PublicAPI]
     [CallToStringForSerialization]
-    public class MatchTypeObject
+    public class MatchTypeObject : IEquatable<MatchTypeObject>
     {
         public string Value { get; }
         
@@ -35,6 +38,11 @@ namespace Crowdin.Api.Reports
         public override string ToString()
         {
             return Value;
+        }
+
+        public bool Equals(MatchTypeObject? other)
+        {
+            return other is { } && Value.Equals(other.Value);
         }
     }
 }
