@@ -349,5 +349,105 @@ namespace Crowdin.Api.Reports
         #endregion
 
         #endregion
+
+        #region User Report Settings Templates
+
+        /// <summary>
+        /// List User Report Settings Templates. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/Reports/operation/api.users.reports.settings-templates.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/Reports/operation/api.users.reports.settings-templates.getMany">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Reports/operation/api.users.reports.settings-templates.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<UserReportSettingsTemplate>> ListUserReportSettingsTemplates(
+            int userId,
+            int limit = 25,
+            int offset = 0)
+        {
+            string url = FormUrl_UserReportSettingsTemplates(userId);
+            IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
+            
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
+            return _jsonParser.ParseResponseList<UserReportSettingsTemplate>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Add User Report Settings Template. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/Reports/operation/api.users.reports.settings-templates.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/Reports/operation/api.users.reports.settings-templates.post">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Reports/operation/api.users.reports.settings-templates.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<UserReportSettingsTemplate> AddUserReportSettingsTemplate(
+            int userId,
+            AddUserReportSettingsTemplateRequest request)
+        {
+            string url = FormUrl_UserReportSettingsTemplates(userId);
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<UserReportSettingsTemplate>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Get User Report Settings Template. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/Reports/operation/api.users.reports.settings-templates.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/Reports/operation/api.users.reports.settings-templates.get">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Reports/operation/api.users.reports.settings-templates.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<UserReportSettingsTemplate> GetUserReportSettingsTemplate(
+            int userId,
+            int reportSettingsTemplateId)
+        {
+            string url = FormUrl_UserReportSettingsTemplateId(userId, reportSettingsTemplateId);
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<UserReportSettingsTemplate>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Delete User Report Settings Template. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/Reports/operation/api.users.reports.settings-templates.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/Reports/operation/api.users.reports.settings-templates.delete">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Reports/operation/api.users.reports.settings-templates.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task DeleteUserReportSettingsTemplate(int userId, int reportSettingsTemplateId)
+        {
+            string url = FormUrl_UserReportSettingsTemplateId(userId, reportSettingsTemplateId);
+            HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
+            Utils.ThrowIfStatusNot204(statusCode, $"Report Settings Template {reportSettingsTemplateId} removal failed");
+        }
+
+        /// <summary>
+        /// Edit User Report Settings Template. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/Reports/operation/api.users.reports.settings-templates.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/Reports/operation/api.users.reports.settings-templates.patch">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Reports/operation/api.users.reports.settings-templates.patch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<UserReportSettingsTemplate> EditUserReportSettingsTemplate(
+            int userId,
+            int reportSettingsTemplateId,
+            IEnumerable<UserReportSettingsTemplatePatch> patches)
+        {
+            string url = FormUrl_UserReportSettingsTemplateId(userId, reportSettingsTemplateId);
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            return _jsonParser.ParseResponseObject<UserReportSettingsTemplate>(result.JsonObject);
+        }
+        
+        #region Helper methods
+
+        private static string FormUrl_UserReportSettingsTemplates(int userId)
+        {
+            return $"/users/{userId}/reports/settings-templates";
+        }
+        
+        private static string FormUrl_UserReportSettingsTemplateId(int userId, int reportSettingsTemplateId)
+        {
+            return $"/users/{userId}/reports/settings-templates/{reportSettingsTemplateId}";
+        }
+        
+        #endregion
+
+        #endregion
     }
 }
