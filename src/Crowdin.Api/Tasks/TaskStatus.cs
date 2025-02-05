@@ -10,8 +10,14 @@ namespace Crowdin.Api.Tasks
         [Description("todo")]
         Todo,
         
+        [Description("pending")]
+        Pending,
+        
         [Description("in_progress")]
         InProgress,
+        
+        [Description("review")]
+        Review,
         
         [Description("done")]
         Done,
