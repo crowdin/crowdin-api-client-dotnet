@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "U9tFORoDJTXjjgEtlm8MMKW0kvUY0zFSQ0LSYIl9hns="
+          "hash": "AJfOO7mfeVcgQoaymWr/AXSbbUN/cxMuHEeOs/sePX8="
         }
       },
       "is_incremental": false,
@@ -1566,7 +1566,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.CrowdinApiClient.html",
-          "hash": "f/Ux6kWRLQQ/u3suqCy4ghHgC2ykxGeWQXyLAuH7iYE="
+          "hash": "iH3ZEAJm9Negl28djJ98Pmp5o0SeO1wEnB0JAa6H1DQ="
         }
       },
       "is_incremental": false,
@@ -3162,7 +3162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.PatchEntry.html",
-          "hash": "k9izjMzv0tQlClZCDpiQNfXS0fkBdXMXAOCoq6j7Svc="
+          "hash": "Vk+wLtTjS5RCL/MYXCrFWL6kc59YQLq9MpX8DZ/+9oU="
         }
       },
       "is_incremental": false,
@@ -4238,6 +4238,66 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.AddUserReportSettingsTemplateRequest.ConfigurationForm.IndividualRateForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.AddUserReportSettingsTemplateRequest.ConfigurationForm.IndividualRateForm.html",
+          "hash": "zY7/63fi4hxSRIrpEYaU/rJNL2U8fq8i2fScXMv0aWI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.AddUserReportSettingsTemplateRequest.ConfigurationForm.NetRateSchemesForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.AddUserReportSettingsTemplateRequest.ConfigurationForm.NetRateSchemesForm.html",
+          "hash": "aiZ4hJdo90n1I5DxsIjNvbU3oV1Fh7A0tnIENVqWyZQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.AddUserReportSettingsTemplateRequest.ConfigurationForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.AddUserReportSettingsTemplateRequest.ConfigurationForm.html",
+          "hash": "mvg/331cg3Oq0u9Rv5MTWX71T6elMdNHIYB/I5xIFxk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.AddUserReportSettingsTemplateRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.AddUserReportSettingsTemplateRequest.html",
+          "hash": "/lK7f602WgEBj7YSvJq7LCHrsoVKznyTc+YSvYA8iD4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.BaseRates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.BaseRates.html",
+          "hash": "QV2z96VmSirKQccQdpOFoB8bjWKgrFZiKG2Ut/MLKbw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Reports.BaseRatesForm.yml",
       "output": {
         ".html": {
@@ -4578,7 +4638,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Reports.MatchTypeObject.html",
-          "hash": "K1QMoQ2min6wn3OhodcF+FbXXARXtJEMMtfjGVrpvUo="
+          "hash": "vAgZ3caP7Zvhw3vdTEi0jxcz355APA8i8ie1bMVc5+E="
         }
       },
       "is_incremental": false,
@@ -4998,7 +5058,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Reports.ReportsApiExecutor.html",
-          "hash": "W4bPgrQn7yjFrjC343Q4t9vLZaTws/5SjL7mRxEV5Qw="
+          "hash": "YJqufDzPdvMxmy35kTJj/qzH3L2Jm6ebx+CKAlmjd8w="
         }
       },
       "is_incremental": false,
@@ -5114,11 +5174,83 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.UserReportSettingsTemplate.Configuration.IndividualRate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.UserReportSettingsTemplate.Configuration.IndividualRate.html",
+          "hash": "52gULgdJsVyEiTdcxoZkZitacYpWcoMIMiN8QDQr3/Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.UserReportSettingsTemplate.Configuration.NetRateSchemesData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.UserReportSettingsTemplate.Configuration.NetRateSchemesData.html",
+          "hash": "qUq2vs6Aos7MvY01u76WTDuwI76Q3lZEib/vueIv63A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.UserReportSettingsTemplate.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.UserReportSettingsTemplate.Configuration.html",
+          "hash": "Y2yxqvfy1O4wSU67nQM55gxX6jV4AFWlo+EqrKV06R0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.UserReportSettingsTemplate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.UserReportSettingsTemplate.html",
+          "hash": "0PvLtqpoSQn6Is6eqBB7RIFzaj42hMJGQUynMuaxvIs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.UserReportSettingsTemplatePatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.UserReportSettingsTemplatePatch.html",
+          "hash": "wL1fGRpR5d4asAorQO8tFdNmrZnYFP4J3KjGiDOqT+E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.UserReportSettingsTemplatePatchPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.UserReportSettingsTemplatePatchPath.html",
+          "hash": "cZQ33eD3OjBSIS6Sy5IcC/BHOS6otJQ9ALJDM8NcYX4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Reports.yml",
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Reports.html",
-          "hash": "iqqMxXbVpZ6WPsZm40qUbSrUoZNCXTzKVycA2SmeMHY="
+          "hash": "KAS7/holiKRIMqHKkYQtrXhAl9OVijLaQivwgs3XqcM="
         }
       },
       "is_incremental": false,
@@ -7014,7 +7146,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Tasks.TaskStatus.html",
-          "hash": "4NgI9t2Lqbj8GYTCYHAjjj6gep3dLPQqBhpJviZz2FQ="
+          "hash": "v8dLn+VbaA2jxnPC64WiqnVCICSp4tDqLVyJ4B4KTzw="
         }
       },
       "is_incremental": false,
@@ -9030,7 +9162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "DLELq7jGpgNkHK4qvyZZGxH8ykYdeiB7iQbGd7Lkvy4="
+          "hash": "6yncsQrSfb38wtEMYJfpUBshr9h4NRrtoSDlnTsNwwY="
         }
       },
       "is_incremental": false,
@@ -9069,7 +9201,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 748,
+          "total_file_count": 759,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
