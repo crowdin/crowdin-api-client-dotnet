@@ -59,6 +59,9 @@ namespace Crowdin.Api.SourceStrings
         [JsonProperty("labelIds")]
         public int[] LabelIds { get; set; }
         
+        [JsonProperty("webUrl")]
+        public string WebUrl { get; set; }
+        
         [JsonProperty("createdAt")]
         public DateTimeOffset CreatedAt { get; set; }
         
