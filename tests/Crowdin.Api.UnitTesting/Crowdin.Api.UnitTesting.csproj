@@ -29,27 +29,477 @@
     </ItemGroup>
 
     <ItemGroup>
-      <EmbeddedResource Update="Resources\GraphQL.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>GraphQL.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Resources\Reports_UserSettingsTemplates.resx">
-        <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>Reports_UserSettingsTemplates.Designer.cs</LastGenOutput>
-      </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Clients.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Clients.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Translations.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Translations.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Storage.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Storage.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\SourceFiles.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>SourceFiles.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Projects.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Projects.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Reports.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Reports.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Tasks.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Tasks.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Dictionaries.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Dictionaries.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Distributions.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Distributions.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Glossaries.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Glossaries.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Glossaries_Terms.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Glossaries_Terms.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Labels.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Labels.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Languages.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Languages.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\MachineTranslationEngines.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>MachineTranslationEngines.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Screenshots.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Screenshots.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Screenshots_Tags.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Screenshots_Tags.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\StringTranslations.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>StringTranslations.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\StringTranslations_Votes.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>StringTranslations_Votes.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Teams.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Teams.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Webhooks.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Webhooks.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Users.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Users.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Bundles.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Bundles.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Reports_SettingsTemplates.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Reports_SettingsTemplates.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Glossaries_Concepts.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Glossaries_Concepts.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Workflows.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Workflows.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Projects_FileFormatSettings.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Projects_FileFormatSettings.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Tasks_SettingsTemplates.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Tasks_SettingsTemplates.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\TranslationMemory.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>TranslationMemory.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\TranslationMemory_Segments.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>TranslationMemory_Segments.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Webhooks_Organization.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Webhooks_Organization.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\SourceStrings.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>SourceStrings.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Core_ErrorResponses.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Core_ErrorResponses.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Core_BugCases.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Core_BugCases.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Notifications.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Notifications.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Projects_StringsExporterSettings.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Projects_StringsExporterSettings.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Applications.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Applications.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\SecurityLogs.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>SecurityLogs.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Fields.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Fields.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\AI_Prompts.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>AI_Prompts.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\AI_Providers.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>AI_Providers.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\AI_Misc.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>AI_Misc.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Branches.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Branches.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Branches.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Branches.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\AI_Prompts.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>AI_Prompts.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\AI_Providers.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>AI_Providers.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\AI_Misc.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>AI_Misc.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Reports_Archives.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Reports_Archives.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\AI_Reports.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>AI_Reports.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\AI_Settings.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>AI_Settings.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\AI_FineTuningDatasets.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>AI_FineTuningDatasets.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\GraphQL.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>GraphQL.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Reports_UserSettingsTemplates.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Reports_UserSettingsTemplates.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Update="Resources\GraphQL.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>GraphQL.resx</DependentUpon>
-      </Compile>
-      <Compile Update="Resources\Reports_UserSettingsTemplates.Designer.cs">
-        <DesignTime>True</DesignTime>
-        <AutoGen>True</AutoGen>
-        <DependentUpon>Reports_UserSettingsTemplates.resx</DependentUpon>
-      </Compile>
+        <Compile Update="Resources\Clients.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Clients.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Translations.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Translations.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Storage.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Storage.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\SourceFiles.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>SourceFiles.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Projects.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Projects.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Reports.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Reports.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Tasks.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Tasks.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Dictionaries.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Dictionaries.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Distributions.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Distributions.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Glossaries.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Glossaries.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Glossaries_Terms.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Glossaries_Terms.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Labels.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Labels.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Languages.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Languages.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\MachineTranslationEngines.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>MachineTranslationEngines.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Screenshots.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Screenshots.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Screenshots_Tags.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Screenshots_Tags.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\StringTranslations.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>StringTranslations.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\StringTranslations_Votes.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>StringTranslations_Votes.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Teams.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Teams.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Webhooks.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Webhooks.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Users.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Users.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Bundles.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Bundles.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Reports_SettingsTemplates.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Reports_SettingsTemplates.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Glossaries_Concepts.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Glossaries_Concepts.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Workflows.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Workflows.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Projects_FileFormatSettings.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Projects_FileFormatSettings.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Tasks_SettingsTemplates.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Tasks_SettingsTemplates.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\TranslationMemory.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>TranslationMemory.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\TranslationMemory_Segments.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>TranslationMemory_Segments.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Webhooks_Organization.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Webhooks_Organization.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\SourceStrings.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>SourceStrings.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Core_ErrorResponses.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Core_ErrorResponses.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Core_BugCases.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Core_BugCases.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Notifications.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Notifications.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Projects_StringsExporterSettings.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Projects_StringsExporterSettings.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Applications.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Applications.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\SecurityLogs.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>SecurityLogs.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Fields.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Fields.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Branches.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Branches.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\AI_Prompts.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>AI_Prompts.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\AI_Providers.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>AI_Providers.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\AI_Misc.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>AI_Misc.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\AI_Prompts.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>AI_Prompts.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\AI_Providers.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>AI_Providers.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\AI_Misc.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>AI_Misc.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Branches.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Branches.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Reports_Archives.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Reports_Archives.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\AI_Reports.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>AI_Reports.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\AI_Settings.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>AI_Settings.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\AI_FineTuningDatasets.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>AI_FineTuningDatasets.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\GraphQL.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>GraphQL.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Reports_UserSettingsTemplates.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Reports_UserSettingsTemplates.resx</DependentUpon>
+        </Compile>
     </ItemGroup>
     
     <PropertyGroup>
