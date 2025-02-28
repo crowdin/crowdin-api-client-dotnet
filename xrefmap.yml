@@ -20623,12 +20623,24 @@ references:
   commentId: F:Crowdin.Api.ProjectsGroups.ProjectType.FileBased
   fullName: Crowdin.Api.ProjectsGroups.ProjectType.FileBased
   nameWithType: ProjectType.FileBased
+- uid: Crowdin.Api.ProjectsGroups.ProjectType.FileBasedExternal
+  name: FileBasedExternal
+  href: api/Crowdin.Api.ProjectsGroups.ProjectType.html#Crowdin_Api_ProjectsGroups_ProjectType_FileBasedExternal
+  commentId: F:Crowdin.Api.ProjectsGroups.ProjectType.FileBasedExternal
+  fullName: Crowdin.Api.ProjectsGroups.ProjectType.FileBasedExternal
+  nameWithType: ProjectType.FileBasedExternal
 - uid: Crowdin.Api.ProjectsGroups.ProjectType.StringBased
   name: StringBased
   href: api/Crowdin.Api.ProjectsGroups.ProjectType.html#Crowdin_Api_ProjectsGroups_ProjectType_StringBased
   commentId: F:Crowdin.Api.ProjectsGroups.ProjectType.StringBased
   fullName: Crowdin.Api.ProjectsGroups.ProjectType.StringBased
   nameWithType: ProjectType.StringBased
+- uid: Crowdin.Api.ProjectsGroups.ProjectType.StringBasedExternal
+  name: StringBasedExternal
+  href: api/Crowdin.Api.ProjectsGroups.ProjectType.html#Crowdin_Api_ProjectsGroups_ProjectType_StringBasedExternal
+  commentId: F:Crowdin.Api.ProjectsGroups.ProjectType.StringBasedExternal
+  fullName: Crowdin.Api.ProjectsGroups.ProjectType.StringBasedExternal
+  nameWithType: ProjectType.StringBasedExternal
 - uid: Crowdin.Api.ProjectsGroups.ProjectVisibility
   name: ProjectVisibility
   href: api/Crowdin.Api.ProjectsGroups.ProjectVisibility.html
@@ -32453,6 +32465,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.SourceStrings.SourceString.UpdatedAt
   nameWithType: SourceString.UpdatedAt
+- uid: Crowdin.Api.SourceStrings.SourceString.WebUrl
+  name: WebUrl
+  href: api/Crowdin.Api.SourceStrings.SourceString.html#Crowdin_Api_SourceStrings_SourceString_WebUrl
+  commentId: P:Crowdin.Api.SourceStrings.SourceString.WebUrl
+  fullName: Crowdin.Api.SourceStrings.SourceString.WebUrl
+  nameWithType: SourceString.WebUrl
+- uid: Crowdin.Api.SourceStrings.SourceString.WebUrl*
+  name: WebUrl
+  href: api/Crowdin.Api.SourceStrings.SourceString.html#Crowdin_Api_SourceStrings_SourceString_WebUrl_
+  commentId: Overload:Crowdin.Api.SourceStrings.SourceString.WebUrl
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceStrings.SourceString.WebUrl
+  nameWithType: SourceString.WebUrl
 - uid: Crowdin.Api.SourceStrings.SourceStringPatch
   name: SourceStringPatch
   href: api/Crowdin.Api.SourceStrings.SourceStringPatch.html
