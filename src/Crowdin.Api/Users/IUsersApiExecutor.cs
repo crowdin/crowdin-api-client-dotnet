@@ -66,5 +66,20 @@ namespace Crowdin.Api.Users
         Task<T> GetAuthenticatedUser<T>() where T : UserBase;
 
         Task<TeamMember> GetMemberInfo(int projectId, int memberId);
+
+        #region Group Managers
+
+        Task<ResponseList<GroupManager>> ListGroupManagers(
+            int groupId,
+            IEnumerable<int>? teamIds = null,
+            IEnumerable<SortingRule>? orderBy = null);
+
+        Task<ResponseList<GroupManager>> UpdateGroupManagers(
+            int groupId,
+            IEnumerable<GroupManagerPatch> patches);
+
+        Task<GroupManager> GetGroupManager(int groupId, int userId);
+
+        #endregion
     }
 }

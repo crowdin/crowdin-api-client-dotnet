@@ -33,5 +33,15 @@ namespace Crowdin.Api.Teams
         Task DeleteAllTeamMembers(int teamId);
 
         Task DeleteTeamMember(int teamId, int memberId);
+
+        #region Group Teams
+
+        Task<ResponseList<GroupTeam>> ListGroupTeams(int groupId, IEnumerable<SortingRule>? orderBy = null);
+
+        Task<ResponseList<GroupTeam>> UpdateGroupTeams(int groupId, IEnumerable<GroupTeamPatch> patches);
+
+        Task<GroupTeam> GetGroupTeam(int groupId, int teamId);
+
+        #endregion
     }
 }
