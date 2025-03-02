@@ -37,6 +37,9 @@ namespace Crowdin.Api.Bundles
 
         [JsonProperty("excludeLabelIds")]
         public int[] ExcludeLabelIds { get; set; }
+        
+        [JsonProperty("webUrl")]
+        public string WebUrl { get; set; }
 
         [JsonProperty("createdAt")]
         public DateTimeOffset CreatedAt { get; set; }

@@ -11,33 +11,28 @@ namespace Crowdin.Api.Bundles
     public class AddBundleRequest
     {
         [JsonProperty("name")]
-#pragma warning disable CS8618
-        public string Name { get; set; }
-#pragma warning restore CS8618
-        
+        public string Name { get; set; } = null!;
+
         [JsonProperty("format")]
-#pragma warning disable CS8618
-        public string Format { get; set; }
-#pragma warning restore CS8618
-        
+        public string Format { get; set; } = null!;
+
         [JsonProperty("sourcePatterns")]
-#pragma warning disable CS8618
-        public ICollection<string> SourcePatterns { get; set; }
-#pragma warning restore CS8618
+        public ICollection<string> SourcePatterns { get; set; } = null!;
         
         [JsonProperty("ignorePatterns")]
         public ICollection<string>? IgnorePatterns { get; set; }
-        
+
         [JsonProperty("exportPattern")]
-#pragma warning disable CS8618
-        public string ExportPattern { get; set; }
-#pragma warning restore CS8618
+        public string ExportPattern { get; set; } = null!;
         
         [JsonProperty("isMultilingual")]
         public bool? IsMultilingual { get; set; }
         
         [JsonProperty("includeProjectSourceLanguage")]
         public bool? IncludeProjectSourceLanguage { get; set; }
+        
+        [JsonProperty("includeInContextPseudoLanguage")]
+        public bool? IncludeInContextPseudoLanguage { get; set; }
         
         [JsonProperty("labelIds")]
         public ICollection<int>? LabelIds { get; set; }

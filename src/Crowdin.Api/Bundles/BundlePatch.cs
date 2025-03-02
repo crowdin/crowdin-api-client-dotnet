@@ -35,12 +35,14 @@ namespace Crowdin.Api.Bundles
         
         [Description("/includeProjectSourceLanguage")]
         IncludeProjectSourceLanguage,
+        
+        [Description("/includeInContextPseudoLanguage")]
+        IncludeInContextPseudoLanguage,
 
         [Description("/labelIds")]
         LabelIds,
 
         [Description("/excludeLabelIds")]
         ExcludeLabelIds
-            
     }
 }
