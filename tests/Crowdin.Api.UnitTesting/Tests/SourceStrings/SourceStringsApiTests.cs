@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -18,6 +19,68 @@ namespace Crowdin.Api.UnitTesting.Tests.SourceStrings
     public class SourceStringsApiTests
     {
         private static readonly JsonSerializerSettings DefaultSettings = TestUtils.CreateJsonSerializerOptions();
+        
+        [Fact]
+        public async Task ListStrings_StringText()
+        {
+            const int projectId = 1;
+            
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+            
+            var url = $"/projects/{projectId}/strings";
+
+            IDictionary<string, string> queryParams = TestUtils.CreateQueryParamsFromPaging();
+            
+            mockClient
+                .Setup(client => client.SendGetRequest(url, queryParams))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Resources.SourceStrings.ListStrings_StringText)
+                });
+            
+            var executor = new SourceStringsApiExecutor(mockClient.Object);
+            
+            ResponseList<SourceString> response = await executor.ListStrings(projectId);
+            
+            var text = response.Data.First().Text as string;
+            ArgumentException.ThrowIfNullOrWhiteSpace(text);
+            
+            Assert.Equal("Not all videos are shown to users. See more", text);
+        }
+
+        [Fact]
+        public async Task ListStrings_i18Next_PluralStrings()
+        {
+            const int projectId = 1;
+            
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+            
+            var url = $"/projects/{projectId}/strings";
+
+            IDictionary<string, string> queryParams = TestUtils.CreateQueryParamsFromPaging();
+
+            mockClient
+                .Setup(client => client.SendGetRequest(url, queryParams))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Resources.SourceStrings.ListStrings_i18Next_bug)
+                });
+            
+            var executor = new SourceStringsApiExecutor(mockClient.Object);
+
+            ResponseList<SourceString> response = await executor.ListStrings(projectId);
+
+            var textForms = response.Data.First().Text as SourceTextForms;
+            ArgumentNullException.ThrowIfNull(textForms);
+            
+            Assert.Equal("{{count}} day", textForms.One);
+            Assert.Equal("{{count}} days", textForms.Other);
+            Assert.Null(textForms.Two);
+            Assert.Null(textForms.Few);
+            Assert.Null(textForms.Many);
+        }
 
         [Fact]
         public void ListStrings_QueryStringConstruction()
