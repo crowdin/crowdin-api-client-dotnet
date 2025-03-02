@@ -263,5 +263,69 @@ namespace Crowdin.Api.Users
         }
 
         #endregion
+        
+        #region Group Managers
+
+        /// <summary>
+        /// List Group Managers. Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Users/operation/api.groups.managers.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<GroupManager>> ListGroupManagers(
+            int groupId,
+            IEnumerable<int>? teamIds = null,
+            IEnumerable<SortingRule>? orderBy = null)
+        {
+            string url = FormUrl_GroupManagers(groupId);
+
+            var queryParams = new Dictionary<string, string>(0);
+            queryParams.AddParamIfPresent("teamIds", teamIds);
+            queryParams.AddSortingRulesIfPresent(orderBy);
+            
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
+            return _jsonParser.ParseResponseList<GroupManager>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Update Group Managers. Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Users/operation/api.groups.managers.patch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<GroupManager>> UpdateGroupManagers(
+            int groupId,
+            IEnumerable<GroupManagerPatch> patches)
+        {
+            string url = FormUrl_GroupManagers(groupId);
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            return _jsonParser.ParseResponseList<GroupManager>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Get Group Manager. Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Users/operation/api.groups.managers.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<GroupManager> GetGroupManager(int groupId, int userId)
+        {
+            string url = FormUrl_GroupManagerId(groupId, userId);
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<GroupManager>(result.JsonObject);
+        }
+
+        #region Helper methods
+
+        private static string FormUrl_GroupManagers(int groupId)
+        {
+            return $"/groups/{groupId}/managers";
+        }
+        
+        private static string FormUrl_GroupManagerId(int groupId, int userId)
+        {
+            return $"/groups/{groupId}/managers/{userId}";
+        }
+
+        #endregion
+
+        #endregion
     }
 }

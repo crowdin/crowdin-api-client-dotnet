@@ -237,6 +237,14 @@
             <Generator>ResXFileCodeGenerator</Generator>
             <LastGenOutput>Reports_UserSettingsTemplates.Designer.cs</LastGenOutput>
         </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Users_GroupManagers.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+          <LastGenOutput>Users_GroupManagers.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Teams_GroupTeams.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+          <LastGenOutput>Teams_GroupTeams.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -499,6 +507,16 @@
             <DesignTime>True</DesignTime>
             <AutoGen>True</AutoGen>
             <DependentUpon>Reports_UserSettingsTemplates.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Users_GroupManagers.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>Users_GroupManagers.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Teams_GroupTeams.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>Teams_GroupTeams.resx</DependentUpon>
         </Compile>
     </ItemGroup>
     
