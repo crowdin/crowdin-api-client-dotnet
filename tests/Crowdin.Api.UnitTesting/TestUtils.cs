@@ -52,7 +52,8 @@ namespace Crowdin.Api.UnitTesting
                     new WorkflowStepConverter(),
                     new FieldConfigConverter(),
                     new AiPromptConfigurationConverter(),
-                    new AiProviderCredentialsConverter()
+                    new AiProviderCredentialsConverter(),
+                    new SourceStringConverter()
                 }
             };
         }

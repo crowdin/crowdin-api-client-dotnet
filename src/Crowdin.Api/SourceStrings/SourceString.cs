@@ -27,7 +27,7 @@ namespace Crowdin.Api.SourceStrings
         public string Identifier { get; set; }
         
         [JsonProperty("text")]
-        public string Text { get; set; }
+        public object Text { get; set; }
         
         [JsonProperty("type")]
         public string Type { get; set; }

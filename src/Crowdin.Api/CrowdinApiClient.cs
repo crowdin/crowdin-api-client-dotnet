@@ -141,7 +141,8 @@ namespace Crowdin.Api
                     new WorkflowStepConverter(),
                     new FieldConfigConverter(),
                     new AiPromptConfigurationConverter(),
-                    new AiProviderCredentialsConverter()
+                    new AiProviderCredentialsConverter(),
+                    new SourceStringConverter()
                 }
             };
 
