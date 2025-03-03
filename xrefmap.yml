@@ -5908,6 +5908,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Bundles.AddBundleRequest.IgnorePatterns
   nameWithType: AddBundleRequest.IgnorePatterns
+- uid: Crowdin.Api.Bundles.AddBundleRequest.IncludeInContextPseudoLanguage
+  name: IncludeInContextPseudoLanguage
+  href: api/Crowdin.Api.Bundles.AddBundleRequest.html#Crowdin_Api_Bundles_AddBundleRequest_IncludeInContextPseudoLanguage
+  commentId: P:Crowdin.Api.Bundles.AddBundleRequest.IncludeInContextPseudoLanguage
+  fullName: Crowdin.Api.Bundles.AddBundleRequest.IncludeInContextPseudoLanguage
+  nameWithType: AddBundleRequest.IncludeInContextPseudoLanguage
+- uid: Crowdin.Api.Bundles.AddBundleRequest.IncludeInContextPseudoLanguage*
+  name: IncludeInContextPseudoLanguage
+  href: api/Crowdin.Api.Bundles.AddBundleRequest.html#Crowdin_Api_Bundles_AddBundleRequest_IncludeInContextPseudoLanguage_
+  commentId: Overload:Crowdin.Api.Bundles.AddBundleRequest.IncludeInContextPseudoLanguage
+  isSpec: "True"
+  fullName: Crowdin.Api.Bundles.AddBundleRequest.IncludeInContextPseudoLanguage
+  nameWithType: AddBundleRequest.IncludeInContextPseudoLanguage
 - uid: Crowdin.Api.Bundles.AddBundleRequest.IncludeProjectSourceLanguage
   name: IncludeProjectSourceLanguage
   href: api/Crowdin.Api.Bundles.AddBundleRequest.html#Crowdin_Api_Bundles_AddBundleRequest_IncludeProjectSourceLanguage
@@ -6135,6 +6148,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Bundles.Bundle.UpdatedAt
   nameWithType: Bundle.UpdatedAt
+- uid: Crowdin.Api.Bundles.Bundle.WebUrl
+  name: WebUrl
+  href: api/Crowdin.Api.Bundles.Bundle.html#Crowdin_Api_Bundles_Bundle_WebUrl
+  commentId: P:Crowdin.Api.Bundles.Bundle.WebUrl
+  fullName: Crowdin.Api.Bundles.Bundle.WebUrl
+  nameWithType: Bundle.WebUrl
+- uid: Crowdin.Api.Bundles.Bundle.WebUrl*
+  name: WebUrl
+  href: api/Crowdin.Api.Bundles.Bundle.html#Crowdin_Api_Bundles_Bundle_WebUrl_
+  commentId: Overload:Crowdin.Api.Bundles.Bundle.WebUrl
+  isSpec: "True"
+  fullName: Crowdin.Api.Bundles.Bundle.WebUrl
+  nameWithType: Bundle.WebUrl
 - uid: Crowdin.Api.Bundles.BundleExport
   name: BundleExport
   href: api/Crowdin.Api.Bundles.BundleExport.html
@@ -6313,6 +6339,12 @@ references:
   commentId: F:Crowdin.Api.Bundles.BundlePatchPath.IgnorePatterns
   fullName: Crowdin.Api.Bundles.BundlePatchPath.IgnorePatterns
   nameWithType: BundlePatchPath.IgnorePatterns
+- uid: Crowdin.Api.Bundles.BundlePatchPath.IncludeInContextPseudoLanguage
+  name: IncludeInContextPseudoLanguage
+  href: api/Crowdin.Api.Bundles.BundlePatchPath.html#Crowdin_Api_Bundles_BundlePatchPath_IncludeInContextPseudoLanguage
+  commentId: F:Crowdin.Api.Bundles.BundlePatchPath.IncludeInContextPseudoLanguage
+  fullName: Crowdin.Api.Bundles.BundlePatchPath.IncludeInContextPseudoLanguage
+  nameWithType: BundlePatchPath.IncludeInContextPseudoLanguage
 - uid: Crowdin.Api.Bundles.BundlePatchPath.IncludeProjectSourceLanguage
   name: IncludeProjectSourceLanguage
   href: api/Crowdin.Api.Bundles.BundlePatchPath.html#Crowdin_Api_Bundles_BundlePatchPath_IncludeProjectSourceLanguage
@@ -8216,6 +8248,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Distributions.Distribution.Hash
   nameWithType: Distribution.Hash
+- uid: Crowdin.Api.Distributions.Distribution.ManifestUrl
+  name: ManifestUrl
+  href: api/Crowdin.Api.Distributions.Distribution.html#Crowdin_Api_Distributions_Distribution_ManifestUrl
+  commentId: P:Crowdin.Api.Distributions.Distribution.ManifestUrl
+  fullName: Crowdin.Api.Distributions.Distribution.ManifestUrl
+  nameWithType: Distribution.ManifestUrl
+- uid: Crowdin.Api.Distributions.Distribution.ManifestUrl*
+  name: ManifestUrl
+  href: api/Crowdin.Api.Distributions.Distribution.html#Crowdin_Api_Distributions_Distribution_ManifestUrl_
+  commentId: Overload:Crowdin.Api.Distributions.Distribution.ManifestUrl
+  isSpec: "True"
+  fullName: Crowdin.Api.Distributions.Distribution.ManifestUrl
+  nameWithType: Distribution.ManifestUrl
 - uid: Crowdin.Api.Distributions.Distribution.Name
   name: Name
   href: api/Crowdin.Api.Distributions.Distribution.html#Crowdin_Api_Distributions_Distribution_Name
@@ -10581,15 +10626,15 @@ references:
   commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32,Crowdin.Api.Glossaries.TermsListParams)
   fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32, Crowdin.Api.Glossaries.TermsListParams)
   nameWithType: GlossariesApiExecutor.ListTerms(Int32, TermsListParams)
-- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
-  name: ListTerms(Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
-  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ListTerms_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
-  commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
-  name.vb: ListTerms(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
-  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
-  fullName.vb: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
-  nameWithType: GlossariesApiExecutor.ListTerms(Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
-  nameWithType.vb: GlossariesApiExecutor.ListTerms(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListTerms(Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ListTerms_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListTerms(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms(System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: GlossariesApiExecutor.ListTerms(Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: GlossariesApiExecutor.ListTerms(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ListTerms*
   name: ListTerms
   href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ListTerms_
@@ -11595,15 +11640,15 @@ references:
   commentId: M:Crowdin.Api.Glossaries.IGlossariesApiExecutor.ListTerms(System.Int32,Crowdin.Api.Glossaries.TermsListParams)
   fullName: Crowdin.Api.Glossaries.IGlossariesApiExecutor.ListTerms(System.Int32, Crowdin.Api.Glossaries.TermsListParams)
   nameWithType: IGlossariesApiExecutor.ListTerms(Int32, TermsListParams)
-- uid: Crowdin.Api.Glossaries.IGlossariesApiExecutor.ListTerms(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
-  name: ListTerms(Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
-  href: api/Crowdin.Api.Glossaries.IGlossariesApiExecutor.html#Crowdin_Api_Glossaries_IGlossariesApiExecutor_ListTerms_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
-  commentId: M:Crowdin.Api.Glossaries.IGlossariesApiExecutor.ListTerms(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
-  name.vb: ListTerms(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
-  fullName: Crowdin.Api.Glossaries.IGlossariesApiExecutor.ListTerms(System.Int32, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
-  fullName.vb: Crowdin.Api.Glossaries.IGlossariesApiExecutor.ListTerms(System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
-  nameWithType: IGlossariesApiExecutor.ListTerms(Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
-  nameWithType.vb: IGlossariesApiExecutor.ListTerms(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+- uid: Crowdin.Api.Glossaries.IGlossariesApiExecutor.ListTerms(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListTerms(Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Glossaries.IGlossariesApiExecutor.html#Crowdin_Api_Glossaries_IGlossariesApiExecutor_ListTerms_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Glossaries.IGlossariesApiExecutor.ListTerms(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListTerms(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Glossaries.IGlossariesApiExecutor.ListTerms(System.Int32, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Glossaries.IGlossariesApiExecutor.ListTerms(System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: IGlossariesApiExecutor.ListTerms(Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: IGlossariesApiExecutor.ListTerms(Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.Glossaries.IGlossariesApiExecutor.ListTerms*
   name: ListTerms
   href: api/Crowdin.Api.Glossaries.IGlossariesApiExecutor.html#Crowdin_Api_Glossaries_IGlossariesApiExecutor_ListTerms_
@@ -12094,15 +12139,15 @@ references:
   commentId: M:Crowdin.Api.Glossaries.TermsListParams.#ctor
   fullName: Crowdin.Api.Glossaries.TermsListParams.TermsListParams()
   nameWithType: TermsListParams.TermsListParams()
-- uid: Crowdin.Api.Glossaries.TermsListParams.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
-  name: TermsListParams(Int32, Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<IEnumerable<SortingRule>>)
-  href: api/Crowdin.Api.Glossaries.TermsListParams.html#Crowdin_Api_Glossaries_TermsListParams__ctor_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
-  commentId: M:Crowdin.Api.Glossaries.TermsListParams.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
-  name.vb: TermsListParams(Int32, Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of IEnumerable(Of SortingRule)))
-  fullName: Crowdin.Api.Glossaries.TermsListParams.TermsListParams(System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
-  fullName.vb: Crowdin.Api.Glossaries.TermsListParams.TermsListParams(System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
-  nameWithType: TermsListParams.TermsListParams(Int32, Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<IEnumerable<SortingRule>>)
-  nameWithType.vb: TermsListParams.TermsListParams(Int32, Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of IEnumerable(Of SortingRule)))
+- uid: Crowdin.Api.Glossaries.TermsListParams.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: TermsListParams(Int32, Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Glossaries.TermsListParams.html#Crowdin_Api_Glossaries_TermsListParams__ctor_System_Int32_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Glossaries.TermsListParams.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: TermsListParams(Int32, Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Glossaries.TermsListParams.TermsListParams(System.Int32, System.Int32, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.String>, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Glossaries.TermsListParams.TermsListParams(System.Int32, System.Int32, System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.String), System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: TermsListParams.TermsListParams(Int32, Int32, Nullable<Int32>, Nullable<String>, Nullable<Int32>, Nullable<Int32>, Nullable<String>, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: TermsListParams.TermsListParams(Int32, Int32, Nullable(Of Int32), Nullable(Of String), Nullable(Of Int32), Nullable(Of Int32), Nullable(Of String), Nullable(Of IEnumerable(Of SortingRule)))
 - uid: Crowdin.Api.Glossaries.TermsListParams.#ctor*
   name: TermsListParams
   href: api/Crowdin.Api.Glossaries.TermsListParams.html#Crowdin_Api_Glossaries_TermsListParams__ctor_
@@ -12123,6 +12168,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.TermsListParams.ConceptId
   nameWithType: TermsListParams.ConceptId
+- uid: Crowdin.Api.Glossaries.TermsListParams.CroQL
+  name: CroQL
+  href: api/Crowdin.Api.Glossaries.TermsListParams.html#Crowdin_Api_Glossaries_TermsListParams_CroQL
+  commentId: P:Crowdin.Api.Glossaries.TermsListParams.CroQL
+  fullName: Crowdin.Api.Glossaries.TermsListParams.CroQL
+  nameWithType: TermsListParams.CroQL
+- uid: Crowdin.Api.Glossaries.TermsListParams.CroQL*
+  name: CroQL
+  href: api/Crowdin.Api.Glossaries.TermsListParams.html#Crowdin_Api_Glossaries_TermsListParams_CroQL_
+  commentId: Overload:Crowdin.Api.Glossaries.TermsListParams.CroQL
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.TermsListParams.CroQL
+  nameWithType: TermsListParams.CroQL
 - uid: Crowdin.Api.Glossaries.TermsListParams.LanguageId
   name: LanguageId
   href: api/Crowdin.Api.Glossaries.TermsListParams.html#Crowdin_Api_Glossaries_TermsListParams_LanguageId
@@ -15206,12 +15264,6 @@ references:
   commentId: F:Crowdin.Api.MachineTranslationEngines.MtEngineType.ModernMT
   fullName: Crowdin.Api.MachineTranslationEngines.MtEngineType.ModernMT
   nameWithType: MtEngineType.ModernMT
-- uid: Crowdin.Api.MachineTranslationEngines.MtEngineType.Watson
-  name: Watson
-  href: api/Crowdin.Api.MachineTranslationEngines.MtEngineType.html#Crowdin_Api_MachineTranslationEngines_MtEngineType_Watson
-  commentId: F:Crowdin.Api.MachineTranslationEngines.MtEngineType.Watson
-  fullName: Crowdin.Api.MachineTranslationEngines.MtEngineType.Watson
-  nameWithType: MtEngineType.Watson
 - uid: Crowdin.Api.MachineTranslationEngines.MtEngineType.Yandex
   name: Yandex
   href: api/Crowdin.Api.MachineTranslationEngines.MtEngineType.html#Crowdin_Api_MachineTranslationEngines_MtEngineType_Yandex
@@ -15334,38 +15386,6 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.MachineTranslationEngines.TranslateViaMtRequest.TargetLanguageId
   nameWithType: TranslateViaMtRequest.TargetLanguageId
-- uid: Crowdin.Api.MachineTranslationEngines.WatsonTranslateCredentials
-  name: WatsonTranslateCredentials
-  href: api/Crowdin.Api.MachineTranslationEngines.WatsonTranslateCredentials.html
-  commentId: T:Crowdin.Api.MachineTranslationEngines.WatsonTranslateCredentials
-  fullName: Crowdin.Api.MachineTranslationEngines.WatsonTranslateCredentials
-  nameWithType: WatsonTranslateCredentials
-- uid: Crowdin.Api.MachineTranslationEngines.WatsonTranslateCredentials.ApiKey
-  name: ApiKey
-  href: api/Crowdin.Api.MachineTranslationEngines.WatsonTranslateCredentials.html#Crowdin_Api_MachineTranslationEngines_WatsonTranslateCredentials_ApiKey
-  commentId: P:Crowdin.Api.MachineTranslationEngines.WatsonTranslateCredentials.ApiKey
-  fullName: Crowdin.Api.MachineTranslationEngines.WatsonTranslateCredentials.ApiKey
-  nameWithType: WatsonTranslateCredentials.ApiKey
-- uid: Crowdin.Api.MachineTranslationEngines.WatsonTranslateCredentials.ApiKey*
-  name: ApiKey
-  href: api/Crowdin.Api.MachineTranslationEngines.WatsonTranslateCredentials.html#Crowdin_Api_MachineTranslationEngines_WatsonTranslateCredentials_ApiKey_
-  commentId: Overload:Crowdin.Api.MachineTranslationEngines.WatsonTranslateCredentials.ApiKey
-  isSpec: "True"
-  fullName: Crowdin.Api.MachineTranslationEngines.WatsonTranslateCredentials.ApiKey
-  nameWithType: WatsonTranslateCredentials.ApiKey
-- uid: Crowdin.Api.MachineTranslationEngines.WatsonTranslateCredentials.EndpointUrl
-  name: EndpointUrl
-  href: api/Crowdin.Api.MachineTranslationEngines.WatsonTranslateCredentials.html#Crowdin_Api_MachineTranslationEngines_WatsonTranslateCredentials_EndpointUrl
-  commentId: P:Crowdin.Api.MachineTranslationEngines.WatsonTranslateCredentials.EndpointUrl
-  fullName: Crowdin.Api.MachineTranslationEngines.WatsonTranslateCredentials.EndpointUrl
-  nameWithType: WatsonTranslateCredentials.EndpointUrl
-- uid: Crowdin.Api.MachineTranslationEngines.WatsonTranslateCredentials.EndpointUrl*
-  name: EndpointUrl
-  href: api/Crowdin.Api.MachineTranslationEngines.WatsonTranslateCredentials.html#Crowdin_Api_MachineTranslationEngines_WatsonTranslateCredentials_EndpointUrl_
-  commentId: Overload:Crowdin.Api.MachineTranslationEngines.WatsonTranslateCredentials.EndpointUrl
-  isSpec: "True"
-  fullName: Crowdin.Api.MachineTranslationEngines.WatsonTranslateCredentials.EndpointUrl
-  nameWithType: WatsonTranslateCredentials.EndpointUrl
 - uid: Crowdin.Api.MachineTranslationEngines.YandexTranslateCredentials
   name: YandexTranslateCredentials
   href: api/Crowdin.Api.MachineTranslationEngines.YandexTranslateCredentials.html
@@ -32641,6 +32661,77 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.UploadStringsStatus
   nameWithType: SourceStringsApiExecutor.UploadStringsStatus
+- uid: Crowdin.Api.SourceStrings.SourceTextForms
+  name: SourceTextForms
+  href: api/Crowdin.Api.SourceStrings.SourceTextForms.html
+  commentId: T:Crowdin.Api.SourceStrings.SourceTextForms
+  fullName: Crowdin.Api.SourceStrings.SourceTextForms
+  nameWithType: SourceTextForms
+- uid: Crowdin.Api.SourceStrings.SourceTextForms.Few
+  name: Few
+  href: api/Crowdin.Api.SourceStrings.SourceTextForms.html#Crowdin_Api_SourceStrings_SourceTextForms_Few
+  commentId: P:Crowdin.Api.SourceStrings.SourceTextForms.Few
+  fullName: Crowdin.Api.SourceStrings.SourceTextForms.Few
+  nameWithType: SourceTextForms.Few
+- uid: Crowdin.Api.SourceStrings.SourceTextForms.Few*
+  name: Few
+  href: api/Crowdin.Api.SourceStrings.SourceTextForms.html#Crowdin_Api_SourceStrings_SourceTextForms_Few_
+  commentId: Overload:Crowdin.Api.SourceStrings.SourceTextForms.Few
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceStrings.SourceTextForms.Few
+  nameWithType: SourceTextForms.Few
+- uid: Crowdin.Api.SourceStrings.SourceTextForms.Many
+  name: Many
+  href: api/Crowdin.Api.SourceStrings.SourceTextForms.html#Crowdin_Api_SourceStrings_SourceTextForms_Many
+  commentId: P:Crowdin.Api.SourceStrings.SourceTextForms.Many
+  fullName: Crowdin.Api.SourceStrings.SourceTextForms.Many
+  nameWithType: SourceTextForms.Many
+- uid: Crowdin.Api.SourceStrings.SourceTextForms.Many*
+  name: Many
+  href: api/Crowdin.Api.SourceStrings.SourceTextForms.html#Crowdin_Api_SourceStrings_SourceTextForms_Many_
+  commentId: Overload:Crowdin.Api.SourceStrings.SourceTextForms.Many
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceStrings.SourceTextForms.Many
+  nameWithType: SourceTextForms.Many
+- uid: Crowdin.Api.SourceStrings.SourceTextForms.One
+  name: One
+  href: api/Crowdin.Api.SourceStrings.SourceTextForms.html#Crowdin_Api_SourceStrings_SourceTextForms_One
+  commentId: P:Crowdin.Api.SourceStrings.SourceTextForms.One
+  fullName: Crowdin.Api.SourceStrings.SourceTextForms.One
+  nameWithType: SourceTextForms.One
+- uid: Crowdin.Api.SourceStrings.SourceTextForms.One*
+  name: One
+  href: api/Crowdin.Api.SourceStrings.SourceTextForms.html#Crowdin_Api_SourceStrings_SourceTextForms_One_
+  commentId: Overload:Crowdin.Api.SourceStrings.SourceTextForms.One
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceStrings.SourceTextForms.One
+  nameWithType: SourceTextForms.One
+- uid: Crowdin.Api.SourceStrings.SourceTextForms.Other
+  name: Other
+  href: api/Crowdin.Api.SourceStrings.SourceTextForms.html#Crowdin_Api_SourceStrings_SourceTextForms_Other
+  commentId: P:Crowdin.Api.SourceStrings.SourceTextForms.Other
+  fullName: Crowdin.Api.SourceStrings.SourceTextForms.Other
+  nameWithType: SourceTextForms.Other
+- uid: Crowdin.Api.SourceStrings.SourceTextForms.Other*
+  name: Other
+  href: api/Crowdin.Api.SourceStrings.SourceTextForms.html#Crowdin_Api_SourceStrings_SourceTextForms_Other_
+  commentId: Overload:Crowdin.Api.SourceStrings.SourceTextForms.Other
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceStrings.SourceTextForms.Other
+  nameWithType: SourceTextForms.Other
+- uid: Crowdin.Api.SourceStrings.SourceTextForms.Two
+  name: Two
+  href: api/Crowdin.Api.SourceStrings.SourceTextForms.html#Crowdin_Api_SourceStrings_SourceTextForms_Two
+  commentId: P:Crowdin.Api.SourceStrings.SourceTextForms.Two
+  fullName: Crowdin.Api.SourceStrings.SourceTextForms.Two
+  nameWithType: SourceTextForms.Two
+- uid: Crowdin.Api.SourceStrings.SourceTextForms.Two*
+  name: Two
+  href: api/Crowdin.Api.SourceStrings.SourceTextForms.html#Crowdin_Api_SourceStrings_SourceTextForms_Two_
+  commentId: Overload:Crowdin.Api.SourceStrings.SourceTextForms.Two
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceStrings.SourceTextForms.Two
+  nameWithType: SourceTextForms.Two
 - uid: Crowdin.Api.SourceStrings.StringBasedProjectFileType
   name: StringBasedProjectFileType
   href: api/Crowdin.Api.SourceStrings.StringBasedProjectFileType.html
@@ -45395,6 +45486,19 @@ references:
   commentId: T:Crowdin.Api.Translations.UploadTranslationsRequest
   fullName: Crowdin.Api.Translations.UploadTranslationsRequest
   nameWithType: UploadTranslationsRequest
+- uid: Crowdin.Api.Translations.UploadTranslationsRequest.AddToTm
+  name: AddToTm
+  href: api/Crowdin.Api.Translations.UploadTranslationsRequest.html#Crowdin_Api_Translations_UploadTranslationsRequest_AddToTm
+  commentId: P:Crowdin.Api.Translations.UploadTranslationsRequest.AddToTm
+  fullName: Crowdin.Api.Translations.UploadTranslationsRequest.AddToTm
+  nameWithType: UploadTranslationsRequest.AddToTm
+- uid: Crowdin.Api.Translations.UploadTranslationsRequest.AddToTm*
+  name: AddToTm
+  href: api/Crowdin.Api.Translations.UploadTranslationsRequest.html#Crowdin_Api_Translations_UploadTranslationsRequest_AddToTm_
+  commentId: Overload:Crowdin.Api.Translations.UploadTranslationsRequest.AddToTm
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.UploadTranslationsRequest.AddToTm
+  nameWithType: UploadTranslationsRequest.AddToTm
 - uid: Crowdin.Api.Translations.UploadTranslationsRequest.AutoApproveImported
   name: AutoApproveImported
   href: api/Crowdin.Api.Translations.UploadTranslationsRequest.html#Crowdin_Api_Translations_UploadTranslationsRequest_AutoApproveImported
