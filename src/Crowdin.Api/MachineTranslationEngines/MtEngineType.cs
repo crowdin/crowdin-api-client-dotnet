@@ -26,9 +26,6 @@ namespace Crowdin.Api.MachineTranslationEngines
         [Description("amazon")]
         Amazon,
         
-        [Description("watson")]
-        Watson,
-        
         [Description("modernmt")]
         // ReSharper disable once InconsistentNaming
         ModernMT,
