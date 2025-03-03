@@ -132,7 +132,8 @@ namespace Crowdin.Api.UnitTesting.Tests.Translations
                 AutoApproveImported = false,
                 ImportEqSuggestions = false,
                 StorageId = 34,
-                TranslateHidden = false
+                TranslateHidden = false,
+                AddToTm = true
             };
 
             var mockClient = new Mock<ICrowdinApiClient>();

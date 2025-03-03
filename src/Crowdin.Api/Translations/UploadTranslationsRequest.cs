@@ -24,5 +24,8 @@ namespace Crowdin.Api.Translations
         
         [JsonProperty("translateHidden")]
         public bool? TranslateHidden { get; set; }
+        
+        [JsonProperty("addToTm")]
+        public bool? AddToTm { get; set; }
     }
 }
