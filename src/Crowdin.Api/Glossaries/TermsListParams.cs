@@ -22,6 +22,9 @@ namespace Crowdin.Api.Glossaries
         
         public int? ConceptId { get; set; }
         
+        // ReSharper disable once InconsistentNaming
+        public string? CroQL { get; set; }
+        
         public IEnumerable<SortingRule>? OrderBy { get; set; }
 
         public TermsListParams()
@@ -36,6 +39,7 @@ namespace Crowdin.Api.Glossaries
             string? languageId,
             int? translationOfTermId,
             int? conceptId,
+            string? croql,
             IEnumerable<SortingRule>? orderBy)
         {
             Limit = limit;
@@ -44,6 +48,7 @@ namespace Crowdin.Api.Glossaries
             LanguageId = languageId;
             TranslationOfTermId = translationOfTermId;
             ConceptId = conceptId;
+            CroQL = croql;
             OrderBy = orderBy;
         }
 
@@ -56,6 +61,7 @@ namespace Crowdin.Api.Glossaries
             queryParams.AddParamIfPresent("languageId", LanguageId);
             queryParams.AddParamIfPresent("translationOfTermId", TranslationOfTermId);
             queryParams.AddParamIfPresent("conceptId", ConceptId);
+            queryParams.AddParamIfPresent("croql", CroQL);
             queryParams.AddSortingRulesIfPresent(OrderBy);
 
             return queryParams;

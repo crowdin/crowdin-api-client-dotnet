@@ -214,12 +214,13 @@ namespace Crowdin.Api.Glossaries
             string? languageId = null,
             int? translationOfTermId = null,
             int? conceptId = null,
+            string? croql = null,
             int limit = 25,
             int offset = 0,
             IEnumerable<SortingRule>? orderBy = null)
         {
             return ListTerms(glossaryId,
-                new TermsListParams(limit, offset, userId, languageId, translationOfTermId, conceptId, orderBy));
+                new TermsListParams(limit, offset, userId, languageId, translationOfTermId, conceptId, croql, orderBy));
         }
 
         /// <summary>
