@@ -65,7 +65,7 @@ namespace Crowdin.Api.UnitTesting.Resources {
         ///    {
         ///      &quot;data&quot;: {
         ///        &quot;id&quot;: 27,
-        ///        &quot;user&quot;: {
+        ///        &quot;team&quot;: {
         ///          &quot;id&quot;: 2,
         ///          &quot;name&quot;: &quot;Translators Team&quot;,
         ///          &quot;totalMembers&quot;: 8,
@@ -92,7 +92,7 @@ namespace Crowdin.Api.UnitTesting.Resources {
         ///   Looks up a localized string similar to {
         ///  &quot;data&quot;: {
         ///    &quot;id&quot;: 27,
-        ///    &quot;user&quot;: {
+        ///    &quot;team&quot;: {
         ///      &quot;id&quot;: 2,
         ///      &quot;name&quot;: &quot;Translators Team&quot;,
         ///      &quot;totalMembers&quot;: 8,

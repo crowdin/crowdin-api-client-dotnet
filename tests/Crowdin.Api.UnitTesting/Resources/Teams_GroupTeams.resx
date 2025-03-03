@@ -24,7 +24,7 @@
     {
       "data": {
         "id": 27,
-        "user": {
+        "team": {
           "id": 2,
           "name": "Translators Team",
           "totalMembers": 8,
@@ -62,7 +62,7 @@
         <value>{
   "data": {
     "id": 27,
-    "user": {
+    "team": {
       "id": 2,
       "name": "Translators Team",
       "totalMembers": 8,
