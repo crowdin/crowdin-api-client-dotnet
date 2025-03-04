@@ -1,6 +1,12 @@
 
+using System.Collections.Generic;
 using System.Threading.Tasks;
+
 using JetBrains.Annotations;
+
+using Crowdin.Api.SourceStrings;
+
+#nullable enable
 
 namespace Crowdin.Api.Workflows
 {
@@ -10,6 +16,20 @@ namespace Crowdin.Api.Workflows
         Task<ResponseList<WorkflowStep>> ListWorkflowSteps(int projectId);
 
         Task<WorkflowStep> GetWorkflowStep(int projectId, int stepId);
+
+        Task<ResponseList<SourceString>> ListStringsOnTheWorkflowStep(
+            int projectId,
+            int stepId,
+            IEnumerable<string>? languageIds = null,
+            IEnumerable<SortingRule>? orderBy = null,
+            WorkflowStatus? status = null,
+            int? limit = null,
+            int? offset = null);
+
+        Task<ResponseList<SourceString>> ListStringsOnTheWorkflowStep(
+            int projectId,
+            int stepId,
+            StringsOnTheWorkflowStepListParams? @params = null);
 
         #region Templates
 

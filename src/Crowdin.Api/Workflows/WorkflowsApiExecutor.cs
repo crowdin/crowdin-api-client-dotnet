@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 using JetBrains.Annotations;
 
 using Crowdin.Api.Core;
+using Crowdin.Api.SourceStrings;
+
+#nullable enable
 
 namespace Crowdin.Api.Workflows
 {
@@ -49,6 +52,47 @@ namespace Crowdin.Api.Workflows
             var url = $"/projects/{projectId}/workflow-steps/{stepId}";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
             return _jsonParser.ParseResponseObject<WorkflowStep>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// List Strings on the Workflow Step. Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Workflows/operation/api.projects.workflow-steps.strings.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public Task<ResponseList<SourceString>> ListStringsOnTheWorkflowStep(
+            int projectId,
+            int stepId,
+            IEnumerable<string>? languageIds = null,
+            IEnumerable<SortingRule>? orderBy = null,
+            WorkflowStatus? status = null,
+            int? limit = null,
+            int? offset = null)
+        {
+            return ListStringsOnTheWorkflowStep(
+                projectId, stepId,
+                new StringsOnTheWorkflowStepListParams
+                {
+                    LanguageIds = languageIds,
+                    OrderBy = orderBy,
+                    Status = status,
+                    Limit = limit.GetValueOrDefault(25),
+                    Offset = offset.GetValueOrDefault(0)
+                });
+        }
+
+        /// <summary>
+        /// List Strings on the Workflow Step. Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Workflows/operation/api.projects.workflow-steps.strings.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<SourceString>> ListStringsOnTheWorkflowStep(
+            int projectId,
+            int stepId,
+            StringsOnTheWorkflowStepListParams? @params = null)
+        {
+            var url = $"/projects/{projectId}/workflow-steps/{stepId}/strings";
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url, @params?.ToQueryParams());
+            return _jsonParser.ParseResponseList<SourceString>(result.JsonObject);
         }
 
         #endregion
