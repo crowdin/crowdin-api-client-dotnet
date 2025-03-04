@@ -174,5 +174,67 @@ namespace Crowdin.Api.Teams
         }
 
         #endregion
+        
+        #region Group Teams
+
+        /// <summary>
+        /// List Group Teams. Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Teams/operation/api.groups.teams.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<GroupTeam>> ListGroupTeams(
+            int groupId,
+            IEnumerable<SortingRule>? orderBy = null)
+        {
+            string url = FormUrl_GroupTeams(groupId);
+
+            var queryParams = new Dictionary<string, string>(0);
+            queryParams.AddSortingRulesIfPresent(orderBy);
+            
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
+            return _jsonParser.ParseResponseList<GroupTeam>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Update Group Teams. Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Teams/operation/api.groups.teams.patch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<GroupTeam>> UpdateGroupTeams(
+            int groupId,
+            IEnumerable<GroupTeamPatch> patches)
+        {
+            string url = FormUrl_GroupTeams(groupId);
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            return _jsonParser.ParseResponseList<GroupTeam>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Get Group Team. Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Teams/operation/api.groups.teams.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<GroupTeam> GetGroupTeam(int groupId, int teamId)
+        {
+            string url = FormUrl_GroupTeamId(groupId, teamId);
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<GroupTeam>(result.JsonObject);
+        }
+
+        #region Helper methods
+
+        private static string FormUrl_GroupTeams(int groupId)
+        {
+            return $"/groups/{groupId}/teams";
+        }
+
+        private static string FormUrl_GroupTeamId(int groupId, int teamId)
+        {
+            return $"/groups/{groupId}/teams/{teamId}";
+        }
+
+        #endregion
+
+        #endregion
     }
 }
