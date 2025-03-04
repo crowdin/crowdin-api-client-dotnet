@@ -39,11 +39,11 @@ namespace Crowdin.Api.UnitTesting.Tests.Reports
             ");
 
         [Fact]
-        public async Task GenerateReport_PreTranslateEfficiency_General()
+        public async Task GenerateReport_PreTranslateAccuracy_General()
         {
-            var request = new PreTranslateEfficiencyGenerateReportRequest
+            var request = new PreTranslateAccuracyGenerateReportRequest
             {
-                Schema = new PreTranslateEfficiencyGenerateReportRequest.GeneralSchema
+                Schema = new PreTranslateAccuracyGenerateReportRequest.GeneralSchema
                 {
                     Unit = ReportUnit.Strings,
                     Format = ReportFormat.Xlsx,
@@ -56,7 +56,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Reports
 
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
             string expectedRequestJson =
-                TestUtils.CompactJson(Resources.Reports.PreTranslateEfficiency_General_Request);
+                TestUtils.CompactJson(Resources.Reports.PreTranslateAccuracy_General_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -78,11 +78,11 @@ namespace Crowdin.Api.UnitTesting.Tests.Reports
         }
 
         [Fact]
-        public async Task GenerateReport_PreTranslateEfficiency_ByTask()
+        public async Task GenerateReport_PreTranslateAccuracy_ByTask()
         {
-            var request = new PreTranslateEfficiencyGenerateReportRequest
+            var request = new PreTranslateAccuracyGenerateReportRequest
             {
-                Schema = new PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema
+                Schema = new PreTranslateAccuracyGenerateReportRequest.ByTaskSchema
                 {
                     Unit = ReportUnit.Strings,
                     Format = ReportFormat.Xlsx,
@@ -93,7 +93,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Reports
 
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
             string expectedRequestJson =
-                TestUtils.CompactJson(Resources.Reports.PreTranslateEfficiency_ByTask_Request);
+                TestUtils.CompactJson(Resources.Reports.PreTranslateAccuracy_ByTask_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
