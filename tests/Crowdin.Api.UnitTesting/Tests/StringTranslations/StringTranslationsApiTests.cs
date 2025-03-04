@@ -57,7 +57,8 @@ namespace Crowdin.Api.UnitTesting.Tests.StringTranslations
                 StringId = 35434,
                 LanguageId = "uk",
                 Text = "Цю стрічку перекладено",
-                PluralCategoryName = PluralCategoryName.Few
+                PluralCategoryName = PluralCategoryName.Few,
+                AddToTm = false
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);

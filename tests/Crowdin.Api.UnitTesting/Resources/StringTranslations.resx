@@ -23,7 +23,8 @@
   "stringId": 35434,
   "languageId": "uk",
   "text": "Цю стрічку перекладено",
-  "pluralCategoryName": "few"
+  "pluralCategoryName": "few",
+  "addToTm": false
 }</value>
     </data>
     <data name="AddTranslation_Response" xml:space="preserve">

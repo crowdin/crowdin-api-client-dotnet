@@ -18,5 +18,8 @@ namespace Crowdin.Api.StringTranslations
         
         [JsonProperty("pluralCategoryName")]
         public PluralCategoryName? PluralCategoryName { get; set; }
+        
+        [JsonProperty("addToTm")]
+        public bool? AddToTm { get; set; }
     }
 }
