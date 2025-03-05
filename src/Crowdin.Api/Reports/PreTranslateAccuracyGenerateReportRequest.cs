@@ -10,10 +10,10 @@ using Newtonsoft.Json;
 namespace Crowdin.Api.Reports
 {
     [PublicAPI]
-    public class PreTranslateEfficiencyGenerateReportRequest : GenerateReportRequest
+    public class PreTranslateAccuracyGenerateReportRequest : GenerateReportRequest
     {
         [JsonProperty("name")]
-        public string Name => "pre-translate-efficiency";
+        public string Name => "pre-translate-accuracy";
 
         [JsonProperty("schema")]
         public SchemaBase Schema { get; set; } = null!;

@@ -275,9 +275,9 @@
   }
 }</value>
     </data>
-    <data name="PreTranslateEfficiency_General_Request" xml:space="preserve">
+    <data name="PreTranslateAccuracy_General_Request" xml:space="preserve">
         <value>{
-  "name": "pre-translate-efficiency",
+  "name": "pre-translate-accuracy",
   "schema": {
     "languageId": "ach",
     "dateFrom": "2019-09-23T07:00:14+00:00",
@@ -308,9 +308,9 @@
   }
 }</value>
     </data>
-    <data name="PreTranslateEfficiency_ByTask_Request" xml:space="preserve">
+    <data name="PreTranslateAccuracy_ByTask_Request" xml:space="preserve">
         <value>{
-  "name": "pre-translate-efficiency",
+  "name": "pre-translate-accuracy",
   "schema": {
     "taskId": 1,
     "unit": "strings",
