@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "cA9VccZZHZjx0pMhxTF2DVqjyfc1gBnh67YE2COu6xc="
+          "hash": "tmLmew4KJo/+hcBIwIUcOBN6eFs0wk9fQda9NaRjgYs="
         }
       },
       "is_incremental": false,
@@ -3150,7 +3150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.PatchEntry.html",
-          "hash": "Vk+wLtTjS5RCL/MYXCrFWL6kc59YQLq9MpX8DZ/+9oU="
+          "hash": "Q4y5i82eODtaOm58+Dq/whIeAGRbs6iERGhRx19y7WA="
         }
       },
       "is_incremental": false,
@@ -4434,7 +4434,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Reports.GenerateReportRequest.html",
-          "hash": "tOxGBh+XbSwRpKAMJkqC/FKG9aK+ZCWakRKvATaXwIY="
+          "hash": "VVlkJYOPkd8Ts1pm3uX3aAI+3lAXIvaVDHci7VSu9/U="
         }
       },
       "is_incremental": false,
@@ -4634,11 +4634,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema.yml",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.ByTaskSchema.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema.html",
-          "hash": "e6mdWhhvCLw9AmHHeefYHxJJqS+60fB7ltPLIHwb3mE="
+          "relative_path": "api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.ByTaskSchema.html",
+          "hash": "7u/BTiYxQvcw8hZY0HNws1f6Yal/rR+g6wQfL0Ax+PY="
         }
       },
       "is_incremental": false,
@@ -4646,11 +4646,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.yml",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.html",
-          "hash": "6iC77ob52lxM0hAjqL7sUy3iWfeVpFYcQpJ1ajhQ7c0="
+          "relative_path": "api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.html",
+          "hash": "PBHqOAowQaVYSvHBRK/0nO+jbqwpFauxDHZBM+qF0pU="
         }
       },
       "is_incremental": false,
@@ -4658,11 +4658,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.yml",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.html",
-          "hash": "uoZMZClNnEpzmNWZr2vqom7DdbwTk8f/IflKQnT4QqI="
+          "relative_path": "api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.html",
+          "hash": "dQ12qEbZhsfafT2Ck1UwdhkearSKfPZsKZgTxFeUXpE="
         }
       },
       "is_incremental": false,
@@ -4670,11 +4670,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "obj/api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.yml",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.html",
-          "hash": "IH9MK3ZwhTYlrqMJgoFYvSqiCBl/fdmGQd0LhzMEckU="
+          "relative_path": "api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.html",
+          "hash": "KXBnRxD6IsLYcwsvJSPTQOqx4ATqcWzH7MWvzHVTozY="
         }
       },
       "is_incremental": false,
@@ -5238,7 +5238,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Reports.html",
-          "hash": "KAS7/holiKRIMqHKkYQtrXhAl9OVijLaQivwgs3XqcM="
+          "hash": "Z7bkH0vez+TcKyQDQfCKNN7PVa2Ola+9alyNCaOvHaI="
         }
       },
       "is_incremental": false,
@@ -6558,7 +6558,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.StringTranslations.AddTranslationRequest.html",
-          "hash": "dG+i8s/QOgVDGJEJqokvN6hi0n33qxYrUrBtwa+c43I="
+          "hash": "bqHp+e7VYhPXeYCqtp2bd/ZfKHcr8He3ZmcgMVTRUE4="
         }
       },
       "is_incremental": false,
@@ -7430,11 +7430,47 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Teams.GroupTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Teams.GroupTeam.html",
+          "hash": "qR/ZAXrj7HRY38Cy4OgIRPAU6sYEvxCS63KrYGG1y1Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Teams.GroupTeamPatch.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Teams.GroupTeamPatch.Builder.html",
+          "hash": "98IjM+pXRXiGaT+gby9158I4dbc9TC68QWXf+UCsswk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Teams.GroupTeamPatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Teams.GroupTeamPatch.html",
+          "hash": "k2khQEvic/PQcxijtOMr+XvGJwxE+Hw2OudEZ5Llu4U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Teams.ITeamsApiExecutor.yml",
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Teams.ITeamsApiExecutor.html",
-          "hash": "CXuHqjMcCwV2QVC/LW2Vzfv1HfmKBbv30jaVpq3ZzfI="
+          "hash": "IqQpXtPcM0x//JtRwtv/njrxU07zZspizXZnF/h1gw4="
         }
       },
       "is_incremental": false,
@@ -7518,7 +7554,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Teams.TeamsApiExecutor.html",
-          "hash": "WTP5eAIVc9sXrYyoXNqYPpuGKaJDuGnjFtlOeaOjzhw="
+          "hash": "bJIQccFgXmGR+JrIne8ePTiIhyx/vPB37MhxuhG5m7g="
         }
       },
       "is_incremental": false,
@@ -7530,7 +7566,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Teams.html",
-          "hash": "FJSfvpVSEoHXGFCWKl6U3NkCWmfVsgxd+1pEGq0+IxA="
+          "hash": "8TwV8NJrcllrqnhZdaXLhB+kOufscfIHQByHNmfLv9w="
         }
       },
       "is_incremental": false,
@@ -8474,11 +8510,47 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Users.GroupManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Users.GroupManager.html",
+          "hash": "RdqFDWwGG+jUYfPBu8Z1duUo00BJFjKQ94/ut334T70="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Users.GroupManagerPatch.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Users.GroupManagerPatch.Builder.html",
+          "hash": "8uL9RDAcMSObBM35y//M93Y3+qkvkUvmqUeaXNgJwjE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Users.GroupManagerPatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Users.GroupManagerPatch.html",
+          "hash": "wB6wgsq22h80BbqigpFKCIJH798nc7G5Wr365QqjSiI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Users.IUsersApiExecutor.yml",
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Users.IUsersApiExecutor.html",
-          "hash": "no02P9fJbttfj7gMU8ZkFO0AynZYKQTpBhlXiX//9hM="
+          "hash": "xb1rzYEinblsXe6frQqL401uv/fgoIXbmwIFSBvF6aQ="
         }
       },
       "is_incremental": false,
@@ -8646,7 +8718,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Users.UsersApiExecutor.html",
-          "hash": "lKK5H5IUEJuz+7aLMFc1xD5IEB8QNyVhVmyYQ2AejoU="
+          "hash": "bAIFNfU5BCgwANjMSk8hd5POnBzDx0vCekRwlRAenLI="
         }
       },
       "is_incremental": false,
@@ -8658,7 +8730,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Users.html",
-          "hash": "yRp/zy0N9YUTLCto/I+qLPFlAbMdwxrabGQQ9J5yisc="
+          "hash": "lolOMXthqBjO05nl8Pqd0mtjcHtYG7rDmTWFe2xPbTo="
         }
       },
       "is_incremental": false,
@@ -8982,7 +9054,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Workflows.IWorkflowsApiExecutor.html",
-          "hash": "u58I1OuSUjAISyDUt4k6Gf7dLE5GtFih3EpO9QIbojI="
+          "hash": "c6r02t3CBwnx2Ye3YckofffLBM9BE67/ATALlVmKzOA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.html",
+          "hash": "kQP6npm78TQz2wM6Gui7hlzwuyJIXqYjpfdEigMchaA="
         }
       },
       "is_incremental": false,
@@ -9043,6 +9127,18 @@
         ".html": {
           "relative_path": "api/Crowdin.Api.Workflows.WorkflowProofreadingConfig.html",
           "hash": "3DWanU8nSCOjwK/yssmWL2GvhWuCtJAaT83JXTqP6Jk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Workflows.WorkflowStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Workflows.WorkflowStatus.html",
+          "hash": "mv3i1X1w7LXnsD98B/pUTTm/rvolLXqDc6bTGI4ruXY="
         }
       },
       "is_incremental": false,
@@ -9126,7 +9222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Workflows.WorkflowsApiExecutor.html",
-          "hash": "8PncIC5ToVsXiT6L7gRB8R5gc1bBMrEuwyWjpa2xZT8="
+          "hash": "0Zze8ObTdon75cH2F+opFxZqLy66vOYrm3OudsVOeE0="
         }
       },
       "is_incremental": false,
@@ -9138,7 +9234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Workflows.html",
-          "hash": "JNGZpImp5msfV01qDOL0ECjpxTeHAE432Oyri+Dg4zI="
+          "hash": "tw6aoW2LYhKmsYn2J+2puiPEKxM7dinIWHjzi2YJjdI="
         }
       },
       "is_incremental": false,
@@ -9162,7 +9258,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "yiMNeSo7tVPOqEzWcQAKzKbdjVmv19L2Vd+wP94TWqk="
+          "hash": "34dBnOFypzOR18cH3Lt6QmTqbtCl9dwDv0navE/wZg8="
         }
       },
       "is_incremental": false,
@@ -9201,7 +9297,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 759,
+          "total_file_count": 767,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

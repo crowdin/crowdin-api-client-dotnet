@@ -98,7 +98,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Workflows_IWorkflowsApiExecutor_GetWorkflowStep_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Workflows.IWorkflowsApiExecutor.GetWorkflowStep(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Workflows/IWorkflowsApiExecutor.cs/#L12">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Workflows/IWorkflowsApiExecutor.cs/#L18">View Source</a>
   </span>
   <a id="Crowdin_Api_Workflows_IWorkflowsApiExecutor_GetWorkflowStep_" data-uid="Crowdin.Api.Workflows.IWorkflowsApiExecutor.GetWorkflowStep*"></a>
   <h4 id="Crowdin_Api_Workflows_IWorkflowsApiExecutor_GetWorkflowStep_System_Int32_System_Int32_" data-uid="Crowdin.Api.Workflows.IWorkflowsApiExecutor.GetWorkflowStep(System.Int32,System.Int32)">GetWorkflowStep(Int32, Int32)</h4>
@@ -150,7 +150,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Workflows_IWorkflowsApiExecutor_GetWorkflowTemplate_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Workflows.IWorkflowsApiExecutor.GetWorkflowTemplate(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Workflows/IWorkflowsApiExecutor.cs/#L18">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Workflows/IWorkflowsApiExecutor.cs/#L38">View Source</a>
   </span>
   <a id="Crowdin_Api_Workflows_IWorkflowsApiExecutor_GetWorkflowTemplate_" data-uid="Crowdin.Api.Workflows.IWorkflowsApiExecutor.GetWorkflowTemplate*"></a>
   <h4 id="Crowdin_Api_Workflows_IWorkflowsApiExecutor_GetWorkflowTemplate_System_Int32_" data-uid="Crowdin.Api.Workflows.IWorkflowsApiExecutor.GetWorkflowTemplate(System.Int32)">GetWorkflowTemplate(Int32)</h4>
@@ -194,10 +194,144 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Workflows_IWorkflowsApiExecutor_ListStringsOnTheWorkflowStep_System_Int32_System_Int32_Crowdin_Api_Workflows_StringsOnTheWorkflowStepListParams_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListStringsOnTheWorkflowStep(System.Int32%2CSystem.Int32%2CCrowdin.Api.Workflows.StringsOnTheWorkflowStepListParams)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Workflows/IWorkflowsApiExecutor.cs/#L29">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Workflows_IWorkflowsApiExecutor_ListStringsOnTheWorkflowStep_" data-uid="Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListStringsOnTheWorkflowStep*"></a>
+  <h4 id="Crowdin_Api_Workflows_IWorkflowsApiExecutor_ListStringsOnTheWorkflowStep_System_Int32_System_Int32_Crowdin_Api_Workflows_StringsOnTheWorkflowStepListParams_" data-uid="Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListStringsOnTheWorkflowStep(System.Int32,System.Int32,Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams)">ListStringsOnTheWorkflowStep(Int32, Int32, StringsOnTheWorkflowStepListParams)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseList&lt;SourceString&gt;&gt; ListStringsOnTheWorkflowStep(int projectId, int stepId, StringsOnTheWorkflowStepListParams params = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">stepId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.html">StringsOnTheWorkflowStepListParams</a></td>
+        <td><span class="parametername">params</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.ResponseList-1.html">ResponseList</a>&lt;<a class="xref" href="Crowdin.Api.SourceStrings.SourceString.html">SourceString</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Workflows_IWorkflowsApiExecutor_ListStringsOnTheWorkflowStep_System_Int32_System_Int32_System_Nullable_IEnumerable_System_String___System_Nullable_IEnumerable_Crowdin_Api_SortingRule___System_Nullable_Crowdin_Api_Workflows_WorkflowStatus__System_Nullable_System_Int32__System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListStringsOnTheWorkflowStep(System.Int32%2CSystem.Int32%2CSystem.Nullable%7BIEnumerable%7BSystem.String%7D%7D%2CSystem.Nullable%7BIEnumerable%7BCrowdin.Api.SortingRule%7D%7D%2CSystem.Nullable%7BCrowdin.Api.Workflows.WorkflowStatus%7D%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Workflows/IWorkflowsApiExecutor.cs/#L20">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Workflows_IWorkflowsApiExecutor_ListStringsOnTheWorkflowStep_" data-uid="Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListStringsOnTheWorkflowStep*"></a>
+  <h4 id="Crowdin_Api_Workflows_IWorkflowsApiExecutor_ListStringsOnTheWorkflowStep_System_Int32_System_Int32_System_Nullable_IEnumerable_System_String___System_Nullable_IEnumerable_Crowdin_Api_SortingRule___System_Nullable_Crowdin_Api_Workflows_WorkflowStatus__System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListStringsOnTheWorkflowStep(System.Int32,System.Int32,System.Nullable{IEnumerable{System.String}},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}},System.Nullable{Crowdin.Api.Workflows.WorkflowStatus},System.Nullable{System.Int32},System.Nullable{System.Int32})">ListStringsOnTheWorkflowStep(Int32, Int32, Nullable&lt;IEnumerable&lt;String&gt;&gt;, Nullable&lt;IEnumerable&lt;SortingRule&gt;&gt;, Nullable&lt;WorkflowStatus&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseList&lt;SourceString&gt;&gt; ListStringsOnTheWorkflowStep(int projectId, int stepId, IEnumerable&lt;string&gt;? languageIds = null, IEnumerable&lt;SortingRule&gt;? orderBy = null, WorkflowStatus? status = null, int? limit = null, int? offset = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">stepId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">languageIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Crowdin.Api.SortingRule.html">SortingRule</a>&gt;&gt;</td>
+        <td><span class="parametername">orderBy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Crowdin.Api.Workflows.WorkflowStatus.html">WorkflowStatus</a>&gt;</td>
+        <td><span class="parametername">status</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">limit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.ResponseList-1.html">ResponseList</a>&lt;<a class="xref" href="Crowdin.Api.SourceStrings.SourceString.html">SourceString</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Workflows_IWorkflowsApiExecutor_ListWorkflowSteps_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListWorkflowSteps(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Workflows/IWorkflowsApiExecutor.cs/#L10">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Workflows/IWorkflowsApiExecutor.cs/#L16">View Source</a>
   </span>
   <a id="Crowdin_Api_Workflows_IWorkflowsApiExecutor_ListWorkflowSteps_" data-uid="Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListWorkflowSteps*"></a>
   <h4 id="Crowdin_Api_Workflows_IWorkflowsApiExecutor_ListWorkflowSteps_System_Int32_" data-uid="Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListWorkflowSteps(System.Int32)">ListWorkflowSteps(Int32)</h4>
@@ -244,7 +378,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Workflows_IWorkflowsApiExecutor_ListWorkflowTemplates_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListWorkflowTemplates(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Workflows/IWorkflowsApiExecutor.cs/#L16">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Workflows/IWorkflowsApiExecutor.cs/#L36">View Source</a>
   </span>
   <a id="Crowdin_Api_Workflows_IWorkflowsApiExecutor_ListWorkflowTemplates_" data-uid="Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListWorkflowTemplates*"></a>
   <h4 id="Crowdin_Api_Workflows_IWorkflowsApiExecutor_ListWorkflowTemplates_System_Int32_System_Int32_System_Int32_" data-uid="Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListWorkflowTemplates(System.Int32,System.Int32,System.Int32)">ListWorkflowTemplates(Int32, Int32, Int32)</h4>
@@ -307,7 +441,7 @@
                     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Workflows_IWorkflowsApiExecutor.md&amp;value=---%0Auid%3A%20Crowdin.Api.Workflows.IWorkflowsApiExecutor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Workflows/IWorkflowsApiExecutor.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Workflows/IWorkflowsApiExecutor.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

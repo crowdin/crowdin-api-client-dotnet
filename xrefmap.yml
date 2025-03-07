@@ -24147,147 +24147,147 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Reports.MatchTypeObject.Value
   nameWithType: MatchTypeObject.Value
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest
-  name: PreTranslateEfficiencyGenerateReportRequest
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.html
-  commentId: T:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema
-  name: PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema.html
-  commentId: T:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema.TaskId
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest
+  name: PreTranslateAccuracyGenerateReportRequest
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.html
+  commentId: T:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest
+  nameWithType: PreTranslateAccuracyGenerateReportRequest
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.ByTaskSchema
+  name: PreTranslateAccuracyGenerateReportRequest.ByTaskSchema
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.ByTaskSchema.html
+  commentId: T:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.ByTaskSchema
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.ByTaskSchema
+  nameWithType: PreTranslateAccuracyGenerateReportRequest.ByTaskSchema
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.ByTaskSchema.TaskId
   name: TaskId
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema.html#Crowdin_Api_Reports_PreTranslateEfficiencyGenerateReportRequest_ByTaskSchema_TaskId
-  commentId: P:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema.TaskId
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema.TaskId
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema.TaskId
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema.TaskId*
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.ByTaskSchema.html#Crowdin_Api_Reports_PreTranslateAccuracyGenerateReportRequest_ByTaskSchema_TaskId
+  commentId: P:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.ByTaskSchema.TaskId
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.ByTaskSchema.TaskId
+  nameWithType: PreTranslateAccuracyGenerateReportRequest.ByTaskSchema.TaskId
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.ByTaskSchema.TaskId*
   name: TaskId
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema.html#Crowdin_Api_Reports_PreTranslateEfficiencyGenerateReportRequest_ByTaskSchema_TaskId_
-  commentId: Overload:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema.TaskId
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.ByTaskSchema.html#Crowdin_Api_Reports_PreTranslateAccuracyGenerateReportRequest_ByTaskSchema_TaskId_
+  commentId: Overload:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.ByTaskSchema.TaskId
   isSpec: "True"
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema.TaskId
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest.ByTaskSchema.TaskId
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema
-  name: PreTranslateEfficiencyGenerateReportRequest.GeneralSchema
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.html
-  commentId: T:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest.GeneralSchema
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.DateFrom
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.ByTaskSchema.TaskId
+  nameWithType: PreTranslateAccuracyGenerateReportRequest.ByTaskSchema.TaskId
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema
+  name: PreTranslateAccuracyGenerateReportRequest.GeneralSchema
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.html
+  commentId: T:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema
+  nameWithType: PreTranslateAccuracyGenerateReportRequest.GeneralSchema
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.DateFrom
   name: DateFrom
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.html#Crowdin_Api_Reports_PreTranslateEfficiencyGenerateReportRequest_GeneralSchema_DateFrom
-  commentId: P:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.DateFrom
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.DateFrom
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.DateFrom
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.DateFrom*
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.html#Crowdin_Api_Reports_PreTranslateAccuracyGenerateReportRequest_GeneralSchema_DateFrom
+  commentId: P:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.DateFrom
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.DateFrom
+  nameWithType: PreTranslateAccuracyGenerateReportRequest.GeneralSchema.DateFrom
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.DateFrom*
   name: DateFrom
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.html#Crowdin_Api_Reports_PreTranslateEfficiencyGenerateReportRequest_GeneralSchema_DateFrom_
-  commentId: Overload:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.DateFrom
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.html#Crowdin_Api_Reports_PreTranslateAccuracyGenerateReportRequest_GeneralSchema_DateFrom_
+  commentId: Overload:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.DateFrom
   isSpec: "True"
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.DateFrom
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.DateFrom
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.DateTo
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.DateFrom
+  nameWithType: PreTranslateAccuracyGenerateReportRequest.GeneralSchema.DateFrom
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.DateTo
   name: DateTo
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.html#Crowdin_Api_Reports_PreTranslateEfficiencyGenerateReportRequest_GeneralSchema_DateTo
-  commentId: P:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.DateTo
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.DateTo
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.DateTo
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.DateTo*
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.html#Crowdin_Api_Reports_PreTranslateAccuracyGenerateReportRequest_GeneralSchema_DateTo
+  commentId: P:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.DateTo
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.DateTo
+  nameWithType: PreTranslateAccuracyGenerateReportRequest.GeneralSchema.DateTo
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.DateTo*
   name: DateTo
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.html#Crowdin_Api_Reports_PreTranslateEfficiencyGenerateReportRequest_GeneralSchema_DateTo_
-  commentId: Overload:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.DateTo
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.html#Crowdin_Api_Reports_PreTranslateAccuracyGenerateReportRequest_GeneralSchema_DateTo_
+  commentId: Overload:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.DateTo
   isSpec: "True"
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.DateTo
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.DateTo
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.LanguageId
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.DateTo
+  nameWithType: PreTranslateAccuracyGenerateReportRequest.GeneralSchema.DateTo
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.LanguageId
   name: LanguageId
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.html#Crowdin_Api_Reports_PreTranslateEfficiencyGenerateReportRequest_GeneralSchema_LanguageId
-  commentId: P:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.LanguageId
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.LanguageId
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.LanguageId
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.LanguageId*
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.html#Crowdin_Api_Reports_PreTranslateAccuracyGenerateReportRequest_GeneralSchema_LanguageId
+  commentId: P:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.LanguageId
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.LanguageId
+  nameWithType: PreTranslateAccuracyGenerateReportRequest.GeneralSchema.LanguageId
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.LanguageId*
   name: LanguageId
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.html#Crowdin_Api_Reports_PreTranslateEfficiencyGenerateReportRequest_GeneralSchema_LanguageId_
-  commentId: Overload:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.LanguageId
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.html#Crowdin_Api_Reports_PreTranslateAccuracyGenerateReportRequest_GeneralSchema_LanguageId_
+  commentId: Overload:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.LanguageId
   isSpec: "True"
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.LanguageId
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest.GeneralSchema.LanguageId
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.Name
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.GeneralSchema.LanguageId
+  nameWithType: PreTranslateAccuracyGenerateReportRequest.GeneralSchema.LanguageId
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.Name
   name: Name
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.html#Crowdin_Api_Reports_PreTranslateEfficiencyGenerateReportRequest_Name
-  commentId: P:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.Name
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.Name
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest.Name
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.Name*
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.html#Crowdin_Api_Reports_PreTranslateAccuracyGenerateReportRequest_Name
+  commentId: P:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.Name
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.Name
+  nameWithType: PreTranslateAccuracyGenerateReportRequest.Name
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.Name*
   name: Name
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.html#Crowdin_Api_Reports_PreTranslateEfficiencyGenerateReportRequest_Name_
-  commentId: Overload:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.Name
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.html#Crowdin_Api_Reports_PreTranslateAccuracyGenerateReportRequest_Name_
+  commentId: Overload:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.Name
   isSpec: "True"
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.Name
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest.Name
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.Schema
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.Name
+  nameWithType: PreTranslateAccuracyGenerateReportRequest.Name
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.Schema
   name: Schema
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.html#Crowdin_Api_Reports_PreTranslateEfficiencyGenerateReportRequest_Schema
-  commentId: P:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.Schema
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.Schema
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest.Schema
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.Schema*
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.html#Crowdin_Api_Reports_PreTranslateAccuracyGenerateReportRequest_Schema
+  commentId: P:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.Schema
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.Schema
+  nameWithType: PreTranslateAccuracyGenerateReportRequest.Schema
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.Schema*
   name: Schema
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.html#Crowdin_Api_Reports_PreTranslateEfficiencyGenerateReportRequest_Schema_
-  commentId: Overload:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.Schema
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.html#Crowdin_Api_Reports_PreTranslateAccuracyGenerateReportRequest_Schema_
+  commentId: Overload:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.Schema
   isSpec: "True"
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.Schema
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest.Schema
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase
-  name: PreTranslateEfficiencyGenerateReportRequest.SchemaBase
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.html
-  commentId: T:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest.SchemaBase
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.Format
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.Schema
+  nameWithType: PreTranslateAccuracyGenerateReportRequest.Schema
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase
+  name: PreTranslateAccuracyGenerateReportRequest.SchemaBase
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.html
+  commentId: T:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase
+  nameWithType: PreTranslateAccuracyGenerateReportRequest.SchemaBase
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.Format
   name: Format
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.html#Crowdin_Api_Reports_PreTranslateEfficiencyGenerateReportRequest_SchemaBase_Format
-  commentId: P:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.Format
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.Format
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest.SchemaBase.Format
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.Format*
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.html#Crowdin_Api_Reports_PreTranslateAccuracyGenerateReportRequest_SchemaBase_Format
+  commentId: P:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.Format
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.Format
+  nameWithType: PreTranslateAccuracyGenerateReportRequest.SchemaBase.Format
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.Format*
   name: Format
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.html#Crowdin_Api_Reports_PreTranslateEfficiencyGenerateReportRequest_SchemaBase_Format_
-  commentId: Overload:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.Format
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.html#Crowdin_Api_Reports_PreTranslateAccuracyGenerateReportRequest_SchemaBase_Format_
+  commentId: Overload:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.Format
   isSpec: "True"
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.Format
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest.SchemaBase.Format
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.PostEditingCategories
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.Format
+  nameWithType: PreTranslateAccuracyGenerateReportRequest.SchemaBase.Format
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.PostEditingCategories
   name: PostEditingCategories
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.html#Crowdin_Api_Reports_PreTranslateEfficiencyGenerateReportRequest_SchemaBase_PostEditingCategories
-  commentId: P:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.PostEditingCategories
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.PostEditingCategories
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest.SchemaBase.PostEditingCategories
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.PostEditingCategories*
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.html#Crowdin_Api_Reports_PreTranslateAccuracyGenerateReportRequest_SchemaBase_PostEditingCategories
+  commentId: P:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.PostEditingCategories
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.PostEditingCategories
+  nameWithType: PreTranslateAccuracyGenerateReportRequest.SchemaBase.PostEditingCategories
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.PostEditingCategories*
   name: PostEditingCategories
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.html#Crowdin_Api_Reports_PreTranslateEfficiencyGenerateReportRequest_SchemaBase_PostEditingCategories_
-  commentId: Overload:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.PostEditingCategories
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.html#Crowdin_Api_Reports_PreTranslateAccuracyGenerateReportRequest_SchemaBase_PostEditingCategories_
+  commentId: Overload:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.PostEditingCategories
   isSpec: "True"
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.PostEditingCategories
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest.SchemaBase.PostEditingCategories
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.Unit
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.PostEditingCategories
+  nameWithType: PreTranslateAccuracyGenerateReportRequest.SchemaBase.PostEditingCategories
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.Unit
   name: Unit
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.html#Crowdin_Api_Reports_PreTranslateEfficiencyGenerateReportRequest_SchemaBase_Unit
-  commentId: P:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.Unit
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.Unit
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest.SchemaBase.Unit
-- uid: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.Unit*
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.html#Crowdin_Api_Reports_PreTranslateAccuracyGenerateReportRequest_SchemaBase_Unit
+  commentId: P:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.Unit
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.Unit
+  nameWithType: PreTranslateAccuracyGenerateReportRequest.SchemaBase.Unit
+- uid: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.Unit*
   name: Unit
-  href: api/Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.html#Crowdin_Api_Reports_PreTranslateEfficiencyGenerateReportRequest_SchemaBase_Unit_
-  commentId: Overload:Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.Unit
+  href: api/Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.html#Crowdin_Api_Reports_PreTranslateAccuracyGenerateReportRequest_SchemaBase_Unit_
+  commentId: Overload:Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.Unit
   isSpec: "True"
-  fullName: Crowdin.Api.Reports.PreTranslateEfficiencyGenerateReportRequest.SchemaBase.Unit
-  nameWithType: PreTranslateEfficiencyGenerateReportRequest.SchemaBase.Unit
+  fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.Unit
+  nameWithType: PreTranslateAccuracyGenerateReportRequest.SchemaBase.Unit
 - uid: Crowdin.Api.Reports.ReportApprovalIndividualRates
   name: ReportApprovalIndividualRates
   href: api/Crowdin.Api.Reports.ReportApprovalIndividualRates.html
@@ -34601,6 +34601,19 @@ references:
   commentId: T:Crowdin.Api.StringTranslations.AddTranslationRequest
   fullName: Crowdin.Api.StringTranslations.AddTranslationRequest
   nameWithType: AddTranslationRequest
+- uid: Crowdin.Api.StringTranslations.AddTranslationRequest.AddToTm
+  name: AddToTm
+  href: api/Crowdin.Api.StringTranslations.AddTranslationRequest.html#Crowdin_Api_StringTranslations_AddTranslationRequest_AddToTm
+  commentId: P:Crowdin.Api.StringTranslations.AddTranslationRequest.AddToTm
+  fullName: Crowdin.Api.StringTranslations.AddTranslationRequest.AddToTm
+  nameWithType: AddTranslationRequest.AddToTm
+- uid: Crowdin.Api.StringTranslations.AddTranslationRequest.AddToTm*
+  name: AddToTm
+  href: api/Crowdin.Api.StringTranslations.AddTranslationRequest.html#Crowdin_Api_StringTranslations_AddTranslationRequest_AddToTm_
+  commentId: Overload:Crowdin.Api.StringTranslations.AddTranslationRequest.AddToTm
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.AddTranslationRequest.AddToTm
+  nameWithType: AddTranslationRequest.AddToTm
 - uid: Crowdin.Api.StringTranslations.AddTranslationRequest.LanguageId
   name: LanguageId
   href: api/Crowdin.Api.StringTranslations.AddTranslationRequest.html#Crowdin_Api_StringTranslations_AddTranslationRequest_LanguageId
@@ -40872,6 +40885,89 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Teams.AddTeamToProjectRequest.TeamId
   nameWithType: AddTeamToProjectRequest.TeamId
+- uid: Crowdin.Api.Teams.GroupTeam
+  name: GroupTeam
+  href: api/Crowdin.Api.Teams.GroupTeam.html
+  commentId: T:Crowdin.Api.Teams.GroupTeam
+  fullName: Crowdin.Api.Teams.GroupTeam
+  nameWithType: GroupTeam
+- uid: Crowdin.Api.Teams.GroupTeam.Id
+  name: Id
+  href: api/Crowdin.Api.Teams.GroupTeam.html#Crowdin_Api_Teams_GroupTeam_Id
+  commentId: P:Crowdin.Api.Teams.GroupTeam.Id
+  fullName: Crowdin.Api.Teams.GroupTeam.Id
+  nameWithType: GroupTeam.Id
+- uid: Crowdin.Api.Teams.GroupTeam.Id*
+  name: Id
+  href: api/Crowdin.Api.Teams.GroupTeam.html#Crowdin_Api_Teams_GroupTeam_Id_
+  commentId: Overload:Crowdin.Api.Teams.GroupTeam.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.GroupTeam.Id
+  nameWithType: GroupTeam.Id
+- uid: Crowdin.Api.Teams.GroupTeam.Team
+  name: Team
+  href: api/Crowdin.Api.Teams.GroupTeam.html#Crowdin_Api_Teams_GroupTeam_Team
+  commentId: P:Crowdin.Api.Teams.GroupTeam.Team
+  fullName: Crowdin.Api.Teams.GroupTeam.Team
+  nameWithType: GroupTeam.Team
+- uid: Crowdin.Api.Teams.GroupTeam.Team*
+  name: Team
+  href: api/Crowdin.Api.Teams.GroupTeam.html#Crowdin_Api_Teams_GroupTeam_Team_
+  commentId: Overload:Crowdin.Api.Teams.GroupTeam.Team
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.GroupTeam.Team
+  nameWithType: GroupTeam.Team
+- uid: Crowdin.Api.Teams.GroupTeamPatch
+  name: GroupTeamPatch
+  href: api/Crowdin.Api.Teams.GroupTeamPatch.html
+  commentId: T:Crowdin.Api.Teams.GroupTeamPatch
+  fullName: Crowdin.Api.Teams.GroupTeamPatch
+  nameWithType: GroupTeamPatch
+- uid: Crowdin.Api.Teams.GroupTeamPatch.Builder
+  name: GroupTeamPatch.Builder
+  href: api/Crowdin.Api.Teams.GroupTeamPatch.Builder.html
+  commentId: T:Crowdin.Api.Teams.GroupTeamPatch.Builder
+  fullName: Crowdin.Api.Teams.GroupTeamPatch.Builder
+  nameWithType: GroupTeamPatch.Builder
+- uid: Crowdin.Api.Teams.GroupTeamPatch.Builder.CreateAddOperation(System.Object)
+  name: CreateAddOperation(Object)
+  href: api/Crowdin.Api.Teams.GroupTeamPatch.Builder.html#Crowdin_Api_Teams_GroupTeamPatch_Builder_CreateAddOperation_System_Object_
+  commentId: M:Crowdin.Api.Teams.GroupTeamPatch.Builder.CreateAddOperation(System.Object)
+  fullName: Crowdin.Api.Teams.GroupTeamPatch.Builder.CreateAddOperation(System.Object)
+  nameWithType: GroupTeamPatch.Builder.CreateAddOperation(Object)
+- uid: Crowdin.Api.Teams.GroupTeamPatch.Builder.CreateAddOperation*
+  name: CreateAddOperation
+  href: api/Crowdin.Api.Teams.GroupTeamPatch.Builder.html#Crowdin_Api_Teams_GroupTeamPatch_Builder_CreateAddOperation_
+  commentId: Overload:Crowdin.Api.Teams.GroupTeamPatch.Builder.CreateAddOperation
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.GroupTeamPatch.Builder.CreateAddOperation
+  nameWithType: GroupTeamPatch.Builder.CreateAddOperation
+- uid: Crowdin.Api.Teams.GroupTeamPatch.Builder.CreateRemoveOperation(System.Int32)
+  name: CreateRemoveOperation(Int32)
+  href: api/Crowdin.Api.Teams.GroupTeamPatch.Builder.html#Crowdin_Api_Teams_GroupTeamPatch_Builder_CreateRemoveOperation_System_Int32_
+  commentId: M:Crowdin.Api.Teams.GroupTeamPatch.Builder.CreateRemoveOperation(System.Int32)
+  fullName: Crowdin.Api.Teams.GroupTeamPatch.Builder.CreateRemoveOperation(System.Int32)
+  nameWithType: GroupTeamPatch.Builder.CreateRemoveOperation(Int32)
+- uid: Crowdin.Api.Teams.GroupTeamPatch.Builder.CreateRemoveOperation*
+  name: CreateRemoveOperation
+  href: api/Crowdin.Api.Teams.GroupTeamPatch.Builder.html#Crowdin_Api_Teams_GroupTeamPatch_Builder_CreateRemoveOperation_
+  commentId: Overload:Crowdin.Api.Teams.GroupTeamPatch.Builder.CreateRemoveOperation
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.GroupTeamPatch.Builder.CreateRemoveOperation
+  nameWithType: GroupTeamPatch.Builder.CreateRemoveOperation
+- uid: Crowdin.Api.Teams.GroupTeamPatch.Path
+  name: Path
+  href: api/Crowdin.Api.Teams.GroupTeamPatch.html#Crowdin_Api_Teams_GroupTeamPatch_Path
+  commentId: P:Crowdin.Api.Teams.GroupTeamPatch.Path
+  fullName: Crowdin.Api.Teams.GroupTeamPatch.Path
+  nameWithType: GroupTeamPatch.Path
+- uid: Crowdin.Api.Teams.GroupTeamPatch.Path*
+  name: Path
+  href: api/Crowdin.Api.Teams.GroupTeamPatch.html#Crowdin_Api_Teams_GroupTeamPatch_Path_
+  commentId: Overload:Crowdin.Api.Teams.GroupTeamPatch.Path
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.GroupTeamPatch.Path
+  nameWithType: GroupTeamPatch.Path
 - uid: Crowdin.Api.Teams.ITeamsApiExecutor
   name: ITeamsApiExecutor
   href: api/Crowdin.Api.Teams.ITeamsApiExecutor.html
@@ -40972,6 +41068,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Teams.ITeamsApiExecutor.EditTeam
   nameWithType: ITeamsApiExecutor.EditTeam
+- uid: Crowdin.Api.Teams.ITeamsApiExecutor.GetGroupTeam(System.Int32,System.Int32)
+  name: GetGroupTeam(Int32, Int32)
+  href: api/Crowdin.Api.Teams.ITeamsApiExecutor.html#Crowdin_Api_Teams_ITeamsApiExecutor_GetGroupTeam_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.Teams.ITeamsApiExecutor.GetGroupTeam(System.Int32,System.Int32)
+  fullName: Crowdin.Api.Teams.ITeamsApiExecutor.GetGroupTeam(System.Int32, System.Int32)
+  nameWithType: ITeamsApiExecutor.GetGroupTeam(Int32, Int32)
+- uid: Crowdin.Api.Teams.ITeamsApiExecutor.GetGroupTeam*
+  name: GetGroupTeam
+  href: api/Crowdin.Api.Teams.ITeamsApiExecutor.html#Crowdin_Api_Teams_ITeamsApiExecutor_GetGroupTeam_
+  commentId: Overload:Crowdin.Api.Teams.ITeamsApiExecutor.GetGroupTeam
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.ITeamsApiExecutor.GetGroupTeam
+  nameWithType: ITeamsApiExecutor.GetGroupTeam
 - uid: Crowdin.Api.Teams.ITeamsApiExecutor.GetTeam(System.Int32)
   name: GetTeam(Int32)
   href: api/Crowdin.Api.Teams.ITeamsApiExecutor.html#Crowdin_Api_Teams_ITeamsApiExecutor_GetTeam_System_Int32_
@@ -40985,6 +41094,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Teams.ITeamsApiExecutor.GetTeam
   nameWithType: ITeamsApiExecutor.GetTeam
+- uid: Crowdin.Api.Teams.ITeamsApiExecutor.ListGroupTeams(System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListGroupTeams(Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Teams.ITeamsApiExecutor.html#Crowdin_Api_Teams_ITeamsApiExecutor_ListGroupTeams_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Teams.ITeamsApiExecutor.ListGroupTeams(System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListGroupTeams(Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Teams.ITeamsApiExecutor.ListGroupTeams(System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Teams.ITeamsApiExecutor.ListGroupTeams(System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: ITeamsApiExecutor.ListGroupTeams(Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: ITeamsApiExecutor.ListGroupTeams(Int32, Nullable(Of IEnumerable(Of SortingRule)))
+- uid: Crowdin.Api.Teams.ITeamsApiExecutor.ListGroupTeams*
+  name: ListGroupTeams
+  href: api/Crowdin.Api.Teams.ITeamsApiExecutor.html#Crowdin_Api_Teams_ITeamsApiExecutor_ListGroupTeams_
+  commentId: Overload:Crowdin.Api.Teams.ITeamsApiExecutor.ListGroupTeams
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.ITeamsApiExecutor.ListGroupTeams
+  nameWithType: ITeamsApiExecutor.ListGroupTeams
 - uid: Crowdin.Api.Teams.ITeamsApiExecutor.ListTeamMembers(System.Int32,System.Int32,System.Int32)
   name: ListTeamMembers(Int32, Int32, Int32)
   href: api/Crowdin.Api.Teams.ITeamsApiExecutor.html#Crowdin_Api_Teams_ITeamsApiExecutor_ListTeamMembers_System_Int32_System_Int32_System_Int32_
@@ -41014,6 +41139,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Teams.ITeamsApiExecutor.ListTeams
   nameWithType: ITeamsApiExecutor.ListTeams
+- uid: Crowdin.Api.Teams.ITeamsApiExecutor.UpdateGroupTeams(System.Int32,IEnumerable{Crowdin.Api.Teams.GroupTeamPatch})
+  name: UpdateGroupTeams(Int32, IEnumerable<GroupTeamPatch>)
+  href: api/Crowdin.Api.Teams.ITeamsApiExecutor.html#Crowdin_Api_Teams_ITeamsApiExecutor_UpdateGroupTeams_System_Int32_IEnumerable_Crowdin_Api_Teams_GroupTeamPatch__
+  commentId: M:Crowdin.Api.Teams.ITeamsApiExecutor.UpdateGroupTeams(System.Int32,IEnumerable{Crowdin.Api.Teams.GroupTeamPatch})
+  name.vb: UpdateGroupTeams(Int32, IEnumerable(Of GroupTeamPatch))
+  fullName: Crowdin.Api.Teams.ITeamsApiExecutor.UpdateGroupTeams(System.Int32, IEnumerable<Crowdin.Api.Teams.GroupTeamPatch>)
+  fullName.vb: Crowdin.Api.Teams.ITeamsApiExecutor.UpdateGroupTeams(System.Int32, IEnumerable(Of Crowdin.Api.Teams.GroupTeamPatch))
+  nameWithType: ITeamsApiExecutor.UpdateGroupTeams(Int32, IEnumerable<GroupTeamPatch>)
+  nameWithType.vb: ITeamsApiExecutor.UpdateGroupTeams(Int32, IEnumerable(Of GroupTeamPatch))
+- uid: Crowdin.Api.Teams.ITeamsApiExecutor.UpdateGroupTeams*
+  name: UpdateGroupTeams
+  href: api/Crowdin.Api.Teams.ITeamsApiExecutor.html#Crowdin_Api_Teams_ITeamsApiExecutor_UpdateGroupTeams_
+  commentId: Overload:Crowdin.Api.Teams.ITeamsApiExecutor.UpdateGroupTeams
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.ITeamsApiExecutor.UpdateGroupTeams
+  nameWithType: ITeamsApiExecutor.UpdateGroupTeams
 - uid: Crowdin.Api.Teams.ProjectTeamResource
   name: ProjectTeamResource
   href: api/Crowdin.Api.Teams.ProjectTeamResource.html
@@ -41422,6 +41563,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Teams.TeamsApiExecutor.EditTeam
   nameWithType: TeamsApiExecutor.EditTeam
+- uid: Crowdin.Api.Teams.TeamsApiExecutor.GetGroupTeam(System.Int32,System.Int32)
+  name: GetGroupTeam(Int32, Int32)
+  href: api/Crowdin.Api.Teams.TeamsApiExecutor.html#Crowdin_Api_Teams_TeamsApiExecutor_GetGroupTeam_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.Teams.TeamsApiExecutor.GetGroupTeam(System.Int32,System.Int32)
+  fullName: Crowdin.Api.Teams.TeamsApiExecutor.GetGroupTeam(System.Int32, System.Int32)
+  nameWithType: TeamsApiExecutor.GetGroupTeam(Int32, Int32)
+- uid: Crowdin.Api.Teams.TeamsApiExecutor.GetGroupTeam*
+  name: GetGroupTeam
+  href: api/Crowdin.Api.Teams.TeamsApiExecutor.html#Crowdin_Api_Teams_TeamsApiExecutor_GetGroupTeam_
+  commentId: Overload:Crowdin.Api.Teams.TeamsApiExecutor.GetGroupTeam
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.TeamsApiExecutor.GetGroupTeam
+  nameWithType: TeamsApiExecutor.GetGroupTeam
 - uid: Crowdin.Api.Teams.TeamsApiExecutor.GetTeam(System.Int32)
   name: GetTeam(Int32)
   href: api/Crowdin.Api.Teams.TeamsApiExecutor.html#Crowdin_Api_Teams_TeamsApiExecutor_GetTeam_System_Int32_
@@ -41435,6 +41589,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Teams.TeamsApiExecutor.GetTeam
   nameWithType: TeamsApiExecutor.GetTeam
+- uid: Crowdin.Api.Teams.TeamsApiExecutor.ListGroupTeams(System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListGroupTeams(Int32, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Teams.TeamsApiExecutor.html#Crowdin_Api_Teams_TeamsApiExecutor_ListGroupTeams_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Teams.TeamsApiExecutor.ListGroupTeams(System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListGroupTeams(Int32, Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Teams.TeamsApiExecutor.ListGroupTeams(System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Teams.TeamsApiExecutor.ListGroupTeams(System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: TeamsApiExecutor.ListGroupTeams(Int32, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: TeamsApiExecutor.ListGroupTeams(Int32, Nullable(Of IEnumerable(Of SortingRule)))
+- uid: Crowdin.Api.Teams.TeamsApiExecutor.ListGroupTeams*
+  name: ListGroupTeams
+  href: api/Crowdin.Api.Teams.TeamsApiExecutor.html#Crowdin_Api_Teams_TeamsApiExecutor_ListGroupTeams_
+  commentId: Overload:Crowdin.Api.Teams.TeamsApiExecutor.ListGroupTeams
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.TeamsApiExecutor.ListGroupTeams
+  nameWithType: TeamsApiExecutor.ListGroupTeams
 - uid: Crowdin.Api.Teams.TeamsApiExecutor.ListTeamMembers(System.Int32,System.Int32,System.Int32)
   name: ListTeamMembers(Int32, Int32, Int32)
   href: api/Crowdin.Api.Teams.TeamsApiExecutor.html#Crowdin_Api_Teams_TeamsApiExecutor_ListTeamMembers_System_Int32_System_Int32_System_Int32_
@@ -41464,6 +41634,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Teams.TeamsApiExecutor.ListTeams
   nameWithType: TeamsApiExecutor.ListTeams
+- uid: Crowdin.Api.Teams.TeamsApiExecutor.UpdateGroupTeams(System.Int32,IEnumerable{Crowdin.Api.Teams.GroupTeamPatch})
+  name: UpdateGroupTeams(Int32, IEnumerable<GroupTeamPatch>)
+  href: api/Crowdin.Api.Teams.TeamsApiExecutor.html#Crowdin_Api_Teams_TeamsApiExecutor_UpdateGroupTeams_System_Int32_IEnumerable_Crowdin_Api_Teams_GroupTeamPatch__
+  commentId: M:Crowdin.Api.Teams.TeamsApiExecutor.UpdateGroupTeams(System.Int32,IEnumerable{Crowdin.Api.Teams.GroupTeamPatch})
+  name.vb: UpdateGroupTeams(Int32, IEnumerable(Of GroupTeamPatch))
+  fullName: Crowdin.Api.Teams.TeamsApiExecutor.UpdateGroupTeams(System.Int32, IEnumerable<Crowdin.Api.Teams.GroupTeamPatch>)
+  fullName.vb: Crowdin.Api.Teams.TeamsApiExecutor.UpdateGroupTeams(System.Int32, IEnumerable(Of Crowdin.Api.Teams.GroupTeamPatch))
+  nameWithType: TeamsApiExecutor.UpdateGroupTeams(Int32, IEnumerable<GroupTeamPatch>)
+  nameWithType.vb: TeamsApiExecutor.UpdateGroupTeams(Int32, IEnumerable(Of GroupTeamPatch))
+- uid: Crowdin.Api.Teams.TeamsApiExecutor.UpdateGroupTeams*
+  name: UpdateGroupTeams
+  href: api/Crowdin.Api.Teams.TeamsApiExecutor.html#Crowdin_Api_Teams_TeamsApiExecutor_UpdateGroupTeams_
+  commentId: Overload:Crowdin.Api.Teams.TeamsApiExecutor.UpdateGroupTeams
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.TeamsApiExecutor.UpdateGroupTeams
+  nameWithType: TeamsApiExecutor.UpdateGroupTeams
 - uid: Crowdin.Api.TextDirection
   name: TextDirection
   href: api/Crowdin.Api.TextDirection.html
@@ -47123,6 +47309,102 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Users.EnterpriseUsersListParams.TwoFactor
   nameWithType: EnterpriseUsersListParams.TwoFactor
+- uid: Crowdin.Api.Users.GroupManager
+  name: GroupManager
+  href: api/Crowdin.Api.Users.GroupManager.html
+  commentId: T:Crowdin.Api.Users.GroupManager
+  fullName: Crowdin.Api.Users.GroupManager
+  nameWithType: GroupManager
+- uid: Crowdin.Api.Users.GroupManager.Id
+  name: Id
+  href: api/Crowdin.Api.Users.GroupManager.html#Crowdin_Api_Users_GroupManager_Id
+  commentId: P:Crowdin.Api.Users.GroupManager.Id
+  fullName: Crowdin.Api.Users.GroupManager.Id
+  nameWithType: GroupManager.Id
+- uid: Crowdin.Api.Users.GroupManager.Id*
+  name: Id
+  href: api/Crowdin.Api.Users.GroupManager.html#Crowdin_Api_Users_GroupManager_Id_
+  commentId: Overload:Crowdin.Api.Users.GroupManager.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.GroupManager.Id
+  nameWithType: GroupManager.Id
+- uid: Crowdin.Api.Users.GroupManager.Teams
+  name: Teams
+  href: api/Crowdin.Api.Users.GroupManager.html#Crowdin_Api_Users_GroupManager_Teams
+  commentId: P:Crowdin.Api.Users.GroupManager.Teams
+  fullName: Crowdin.Api.Users.GroupManager.Teams
+  nameWithType: GroupManager.Teams
+- uid: Crowdin.Api.Users.GroupManager.Teams*
+  name: Teams
+  href: api/Crowdin.Api.Users.GroupManager.html#Crowdin_Api_Users_GroupManager_Teams_
+  commentId: Overload:Crowdin.Api.Users.GroupManager.Teams
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.GroupManager.Teams
+  nameWithType: GroupManager.Teams
+- uid: Crowdin.Api.Users.GroupManager.User
+  name: User
+  href: api/Crowdin.Api.Users.GroupManager.html#Crowdin_Api_Users_GroupManager_User
+  commentId: P:Crowdin.Api.Users.GroupManager.User
+  fullName: Crowdin.Api.Users.GroupManager.User
+  nameWithType: GroupManager.User
+- uid: Crowdin.Api.Users.GroupManager.User*
+  name: User
+  href: api/Crowdin.Api.Users.GroupManager.html#Crowdin_Api_Users_GroupManager_User_
+  commentId: Overload:Crowdin.Api.Users.GroupManager.User
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.GroupManager.User
+  nameWithType: GroupManager.User
+- uid: Crowdin.Api.Users.GroupManagerPatch
+  name: GroupManagerPatch
+  href: api/Crowdin.Api.Users.GroupManagerPatch.html
+  commentId: T:Crowdin.Api.Users.GroupManagerPatch
+  fullName: Crowdin.Api.Users.GroupManagerPatch
+  nameWithType: GroupManagerPatch
+- uid: Crowdin.Api.Users.GroupManagerPatch.Builder
+  name: GroupManagerPatch.Builder
+  href: api/Crowdin.Api.Users.GroupManagerPatch.Builder.html
+  commentId: T:Crowdin.Api.Users.GroupManagerPatch.Builder
+  fullName: Crowdin.Api.Users.GroupManagerPatch.Builder
+  nameWithType: GroupManagerPatch.Builder
+- uid: Crowdin.Api.Users.GroupManagerPatch.Builder.CreateAddOperation(System.Object)
+  name: CreateAddOperation(Object)
+  href: api/Crowdin.Api.Users.GroupManagerPatch.Builder.html#Crowdin_Api_Users_GroupManagerPatch_Builder_CreateAddOperation_System_Object_
+  commentId: M:Crowdin.Api.Users.GroupManagerPatch.Builder.CreateAddOperation(System.Object)
+  fullName: Crowdin.Api.Users.GroupManagerPatch.Builder.CreateAddOperation(System.Object)
+  nameWithType: GroupManagerPatch.Builder.CreateAddOperation(Object)
+- uid: Crowdin.Api.Users.GroupManagerPatch.Builder.CreateAddOperation*
+  name: CreateAddOperation
+  href: api/Crowdin.Api.Users.GroupManagerPatch.Builder.html#Crowdin_Api_Users_GroupManagerPatch_Builder_CreateAddOperation_
+  commentId: Overload:Crowdin.Api.Users.GroupManagerPatch.Builder.CreateAddOperation
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.GroupManagerPatch.Builder.CreateAddOperation
+  nameWithType: GroupManagerPatch.Builder.CreateAddOperation
+- uid: Crowdin.Api.Users.GroupManagerPatch.Builder.CreateRemoveOperation(System.Int32)
+  name: CreateRemoveOperation(Int32)
+  href: api/Crowdin.Api.Users.GroupManagerPatch.Builder.html#Crowdin_Api_Users_GroupManagerPatch_Builder_CreateRemoveOperation_System_Int32_
+  commentId: M:Crowdin.Api.Users.GroupManagerPatch.Builder.CreateRemoveOperation(System.Int32)
+  fullName: Crowdin.Api.Users.GroupManagerPatch.Builder.CreateRemoveOperation(System.Int32)
+  nameWithType: GroupManagerPatch.Builder.CreateRemoveOperation(Int32)
+- uid: Crowdin.Api.Users.GroupManagerPatch.Builder.CreateRemoveOperation*
+  name: CreateRemoveOperation
+  href: api/Crowdin.Api.Users.GroupManagerPatch.Builder.html#Crowdin_Api_Users_GroupManagerPatch_Builder_CreateRemoveOperation_
+  commentId: Overload:Crowdin.Api.Users.GroupManagerPatch.Builder.CreateRemoveOperation
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.GroupManagerPatch.Builder.CreateRemoveOperation
+  nameWithType: GroupManagerPatch.Builder.CreateRemoveOperation
+- uid: Crowdin.Api.Users.GroupManagerPatch.Path
+  name: Path
+  href: api/Crowdin.Api.Users.GroupManagerPatch.html#Crowdin_Api_Users_GroupManagerPatch_Path
+  commentId: P:Crowdin.Api.Users.GroupManagerPatch.Path
+  fullName: Crowdin.Api.Users.GroupManagerPatch.Path
+  nameWithType: GroupManagerPatch.Path
+- uid: Crowdin.Api.Users.GroupManagerPatch.Path*
+  name: Path
+  href: api/Crowdin.Api.Users.GroupManagerPatch.html#Crowdin_Api_Users_GroupManagerPatch_Path_
+  commentId: Overload:Crowdin.Api.Users.GroupManagerPatch.Path
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.GroupManagerPatch.Path
+  nameWithType: GroupManagerPatch.Path
 - uid: Crowdin.Api.Users.IUsersApiExecutor
   name: IUsersApiExecutor
   href: api/Crowdin.Api.Users.IUsersApiExecutor.html
@@ -47200,6 +47482,19 @@ references:
   fullName.vb: Crowdin.Api.Users.IUsersApiExecutor.GetAuthenticatedUser(Of T)()
   nameWithType: IUsersApiExecutor.GetAuthenticatedUser<T>()
   nameWithType.vb: IUsersApiExecutor.GetAuthenticatedUser(Of T)()
+- uid: Crowdin.Api.Users.IUsersApiExecutor.GetGroupManager(System.Int32,System.Int32)
+  name: GetGroupManager(Int32, Int32)
+  href: api/Crowdin.Api.Users.IUsersApiExecutor.html#Crowdin_Api_Users_IUsersApiExecutor_GetGroupManager_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.Users.IUsersApiExecutor.GetGroupManager(System.Int32,System.Int32)
+  fullName: Crowdin.Api.Users.IUsersApiExecutor.GetGroupManager(System.Int32, System.Int32)
+  nameWithType: IUsersApiExecutor.GetGroupManager(Int32, Int32)
+- uid: Crowdin.Api.Users.IUsersApiExecutor.GetGroupManager*
+  name: GetGroupManager
+  href: api/Crowdin.Api.Users.IUsersApiExecutor.html#Crowdin_Api_Users_IUsersApiExecutor_GetGroupManager_
+  commentId: Overload:Crowdin.Api.Users.IUsersApiExecutor.GetGroupManager
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.IUsersApiExecutor.GetGroupManager
+  nameWithType: IUsersApiExecutor.GetGroupManager
 - uid: Crowdin.Api.Users.IUsersApiExecutor.GetMemberInfo(System.Int32,System.Int32)
   name: GetMemberInfo(Int32, Int32)
   href: api/Crowdin.Api.Users.IUsersApiExecutor.html#Crowdin_Api_Users_IUsersApiExecutor_GetMemberInfo_System_Int32_System_Int32_
@@ -47252,6 +47547,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Users.IUsersApiExecutor.InviteUser
   nameWithType: IUsersApiExecutor.InviteUser
+- uid: Crowdin.Api.Users.IUsersApiExecutor.ListGroupManagers(System.Int32,System.Nullable{IEnumerable{System.Int32}},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListGroupManagers(Int32, Nullable<IEnumerable<Int32>>, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Users.IUsersApiExecutor.html#Crowdin_Api_Users_IUsersApiExecutor_ListGroupManagers_System_Int32_System_Nullable_IEnumerable_System_Int32___System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Users.IUsersApiExecutor.ListGroupManagers(System.Int32,System.Nullable{IEnumerable{System.Int32}},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListGroupManagers(Int32, Nullable(Of IEnumerable(Of Int32)), Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Users.IUsersApiExecutor.ListGroupManagers(System.Int32, System.Nullable<IEnumerable<System.Int32>>, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Users.IUsersApiExecutor.ListGroupManagers(System.Int32, System.Nullable(Of IEnumerable(Of System.Int32)), System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: IUsersApiExecutor.ListGroupManagers(Int32, Nullable<IEnumerable<Int32>>, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: IUsersApiExecutor.ListGroupManagers(Int32, Nullable(Of IEnumerable(Of Int32)), Nullable(Of IEnumerable(Of SortingRule)))
+- uid: Crowdin.Api.Users.IUsersApiExecutor.ListGroupManagers*
+  name: ListGroupManagers
+  href: api/Crowdin.Api.Users.IUsersApiExecutor.html#Crowdin_Api_Users_IUsersApiExecutor_ListGroupManagers_
+  commentId: Overload:Crowdin.Api.Users.IUsersApiExecutor.ListGroupManagers
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.IUsersApiExecutor.ListGroupManagers
+  nameWithType: IUsersApiExecutor.ListGroupManagers
 - uid: Crowdin.Api.Users.IUsersApiExecutor.ListProjectMembers(System.Int32,Crowdin.Api.Users.ProjectMembersListParams)
   name: ListProjectMembers(Int32, ProjectMembersListParams)
   href: api/Crowdin.Api.Users.IUsersApiExecutor.html#Crowdin_Api_Users_IUsersApiExecutor_ListProjectMembers_System_Int32_Crowdin_Api_Users_ProjectMembersListParams_
@@ -47331,6 +47642,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Users.IUsersApiExecutor.ReplaceProjectMemberPermissions
   nameWithType: IUsersApiExecutor.ReplaceProjectMemberPermissions
+- uid: Crowdin.Api.Users.IUsersApiExecutor.UpdateGroupManagers(System.Int32,IEnumerable{Crowdin.Api.Users.GroupManagerPatch})
+  name: UpdateGroupManagers(Int32, IEnumerable<GroupManagerPatch>)
+  href: api/Crowdin.Api.Users.IUsersApiExecutor.html#Crowdin_Api_Users_IUsersApiExecutor_UpdateGroupManagers_System_Int32_IEnumerable_Crowdin_Api_Users_GroupManagerPatch__
+  commentId: M:Crowdin.Api.Users.IUsersApiExecutor.UpdateGroupManagers(System.Int32,IEnumerable{Crowdin.Api.Users.GroupManagerPatch})
+  name.vb: UpdateGroupManagers(Int32, IEnumerable(Of GroupManagerPatch))
+  fullName: Crowdin.Api.Users.IUsersApiExecutor.UpdateGroupManagers(System.Int32, IEnumerable<Crowdin.Api.Users.GroupManagerPatch>)
+  fullName.vb: Crowdin.Api.Users.IUsersApiExecutor.UpdateGroupManagers(System.Int32, IEnumerable(Of Crowdin.Api.Users.GroupManagerPatch))
+  nameWithType: IUsersApiExecutor.UpdateGroupManagers(Int32, IEnumerable<GroupManagerPatch>)
+  nameWithType.vb: IUsersApiExecutor.UpdateGroupManagers(Int32, IEnumerable(Of GroupManagerPatch))
+- uid: Crowdin.Api.Users.IUsersApiExecutor.UpdateGroupManagers*
+  name: UpdateGroupManagers
+  href: api/Crowdin.Api.Users.IUsersApiExecutor.html#Crowdin_Api_Users_IUsersApiExecutor_UpdateGroupManagers_
+  commentId: Overload:Crowdin.Api.Users.IUsersApiExecutor.UpdateGroupManagers
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.IUsersApiExecutor.UpdateGroupManagers
+  nameWithType: IUsersApiExecutor.UpdateGroupManagers
 - uid: Crowdin.Api.Users.LanguagePermission
   name: LanguagePermission
   href: api/Crowdin.Api.Users.LanguagePermission.html
@@ -48279,6 +48606,19 @@ references:
   fullName.vb: Crowdin.Api.Users.UsersApiExecutor.GetAuthenticatedUser(Of T)()
   nameWithType: UsersApiExecutor.GetAuthenticatedUser<T>()
   nameWithType.vb: UsersApiExecutor.GetAuthenticatedUser(Of T)()
+- uid: Crowdin.Api.Users.UsersApiExecutor.GetGroupManager(System.Int32,System.Int32)
+  name: GetGroupManager(Int32, Int32)
+  href: api/Crowdin.Api.Users.UsersApiExecutor.html#Crowdin_Api_Users_UsersApiExecutor_GetGroupManager_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.Users.UsersApiExecutor.GetGroupManager(System.Int32,System.Int32)
+  fullName: Crowdin.Api.Users.UsersApiExecutor.GetGroupManager(System.Int32, System.Int32)
+  nameWithType: UsersApiExecutor.GetGroupManager(Int32, Int32)
+- uid: Crowdin.Api.Users.UsersApiExecutor.GetGroupManager*
+  name: GetGroupManager
+  href: api/Crowdin.Api.Users.UsersApiExecutor.html#Crowdin_Api_Users_UsersApiExecutor_GetGroupManager_
+  commentId: Overload:Crowdin.Api.Users.UsersApiExecutor.GetGroupManager
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.UsersApiExecutor.GetGroupManager
+  nameWithType: UsersApiExecutor.GetGroupManager
 - uid: Crowdin.Api.Users.UsersApiExecutor.GetMemberInfo(System.Int32,System.Int32)
   name: GetMemberInfo(Int32, Int32)
   href: api/Crowdin.Api.Users.UsersApiExecutor.html#Crowdin_Api_Users_UsersApiExecutor_GetMemberInfo_System_Int32_System_Int32_
@@ -48331,6 +48671,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Users.UsersApiExecutor.InviteUser
   nameWithType: UsersApiExecutor.InviteUser
+- uid: Crowdin.Api.Users.UsersApiExecutor.ListGroupManagers(System.Int32,System.Nullable{IEnumerable{System.Int32}},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name: ListGroupManagers(Int32, Nullable<IEnumerable<Int32>>, Nullable<IEnumerable<SortingRule>>)
+  href: api/Crowdin.Api.Users.UsersApiExecutor.html#Crowdin_Api_Users_UsersApiExecutor_ListGroupManagers_System_Int32_System_Nullable_IEnumerable_System_Int32___System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
+  commentId: M:Crowdin.Api.Users.UsersApiExecutor.ListGroupManagers(System.Int32,System.Nullable{IEnumerable{System.Int32}},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
+  name.vb: ListGroupManagers(Int32, Nullable(Of IEnumerable(Of Int32)), Nullable(Of IEnumerable(Of SortingRule)))
+  fullName: Crowdin.Api.Users.UsersApiExecutor.ListGroupManagers(System.Int32, System.Nullable<IEnumerable<System.Int32>>, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
+  fullName.vb: Crowdin.Api.Users.UsersApiExecutor.ListGroupManagers(System.Int32, System.Nullable(Of IEnumerable(Of System.Int32)), System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
+  nameWithType: UsersApiExecutor.ListGroupManagers(Int32, Nullable<IEnumerable<Int32>>, Nullable<IEnumerable<SortingRule>>)
+  nameWithType.vb: UsersApiExecutor.ListGroupManagers(Int32, Nullable(Of IEnumerable(Of Int32)), Nullable(Of IEnumerable(Of SortingRule)))
+- uid: Crowdin.Api.Users.UsersApiExecutor.ListGroupManagers*
+  name: ListGroupManagers
+  href: api/Crowdin.Api.Users.UsersApiExecutor.html#Crowdin_Api_Users_UsersApiExecutor_ListGroupManagers_
+  commentId: Overload:Crowdin.Api.Users.UsersApiExecutor.ListGroupManagers
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.UsersApiExecutor.ListGroupManagers
+  nameWithType: UsersApiExecutor.ListGroupManagers
 - uid: Crowdin.Api.Users.UsersApiExecutor.ListProjectMembers(System.Int32,Crowdin.Api.Users.ProjectMembersListParams)
   name: ListProjectMembers(Int32, ProjectMembersListParams)
   href: api/Crowdin.Api.Users.UsersApiExecutor.html#Crowdin_Api_Users_UsersApiExecutor_ListProjectMembers_System_Int32_Crowdin_Api_Users_ProjectMembersListParams_
@@ -48410,6 +48766,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Users.UsersApiExecutor.ReplaceProjectMemberPermissions
   nameWithType: UsersApiExecutor.ReplaceProjectMemberPermissions
+- uid: Crowdin.Api.Users.UsersApiExecutor.UpdateGroupManagers(System.Int32,IEnumerable{Crowdin.Api.Users.GroupManagerPatch})
+  name: UpdateGroupManagers(Int32, IEnumerable<GroupManagerPatch>)
+  href: api/Crowdin.Api.Users.UsersApiExecutor.html#Crowdin_Api_Users_UsersApiExecutor_UpdateGroupManagers_System_Int32_IEnumerable_Crowdin_Api_Users_GroupManagerPatch__
+  commentId: M:Crowdin.Api.Users.UsersApiExecutor.UpdateGroupManagers(System.Int32,IEnumerable{Crowdin.Api.Users.GroupManagerPatch})
+  name.vb: UpdateGroupManagers(Int32, IEnumerable(Of GroupManagerPatch))
+  fullName: Crowdin.Api.Users.UsersApiExecutor.UpdateGroupManagers(System.Int32, IEnumerable<Crowdin.Api.Users.GroupManagerPatch>)
+  fullName.vb: Crowdin.Api.Users.UsersApiExecutor.UpdateGroupManagers(System.Int32, IEnumerable(Of Crowdin.Api.Users.GroupManagerPatch))
+  nameWithType: UsersApiExecutor.UpdateGroupManagers(Int32, IEnumerable<GroupManagerPatch>)
+  nameWithType.vb: UsersApiExecutor.UpdateGroupManagers(Int32, IEnumerable(Of GroupManagerPatch))
+- uid: Crowdin.Api.Users.UsersApiExecutor.UpdateGroupManagers*
+  name: UpdateGroupManagers
+  href: api/Crowdin.Api.Users.UsersApiExecutor.html#Crowdin_Api_Users_UsersApiExecutor_UpdateGroupManagers_
+  commentId: Overload:Crowdin.Api.Users.UsersApiExecutor.UpdateGroupManagers
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.UsersApiExecutor.UpdateGroupManagers
+  nameWithType: UsersApiExecutor.UpdateGroupManagers
 - uid: Crowdin.Api.Users.UserStatus
   name: UserStatus
   href: api/Crowdin.Api.Users.UserStatus.html
@@ -49999,6 +50371,28 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Workflows.IWorkflowsApiExecutor.GetWorkflowTemplate
   nameWithType: IWorkflowsApiExecutor.GetWorkflowTemplate
+- uid: Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListStringsOnTheWorkflowStep(System.Int32,System.Int32,Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams)
+  name: ListStringsOnTheWorkflowStep(Int32, Int32, StringsOnTheWorkflowStepListParams)
+  href: api/Crowdin.Api.Workflows.IWorkflowsApiExecutor.html#Crowdin_Api_Workflows_IWorkflowsApiExecutor_ListStringsOnTheWorkflowStep_System_Int32_System_Int32_Crowdin_Api_Workflows_StringsOnTheWorkflowStepListParams_
+  commentId: M:Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListStringsOnTheWorkflowStep(System.Int32,System.Int32,Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams)
+  fullName: Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListStringsOnTheWorkflowStep(System.Int32, System.Int32, Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams)
+  nameWithType: IWorkflowsApiExecutor.ListStringsOnTheWorkflowStep(Int32, Int32, StringsOnTheWorkflowStepListParams)
+- uid: Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListStringsOnTheWorkflowStep(System.Int32,System.Int32,System.Nullable{IEnumerable{System.String}},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}},System.Nullable{Crowdin.Api.Workflows.WorkflowStatus},System.Nullable{System.Int32},System.Nullable{System.Int32})
+  name: ListStringsOnTheWorkflowStep(Int32, Int32, Nullable<IEnumerable<String>>, Nullable<IEnumerable<SortingRule>>, Nullable<WorkflowStatus>, Nullable<Int32>, Nullable<Int32>)
+  href: api/Crowdin.Api.Workflows.IWorkflowsApiExecutor.html#Crowdin_Api_Workflows_IWorkflowsApiExecutor_ListStringsOnTheWorkflowStep_System_Int32_System_Int32_System_Nullable_IEnumerable_System_String___System_Nullable_IEnumerable_Crowdin_Api_SortingRule___System_Nullable_Crowdin_Api_Workflows_WorkflowStatus__System_Nullable_System_Int32__System_Nullable_System_Int32__
+  commentId: M:Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListStringsOnTheWorkflowStep(System.Int32,System.Int32,System.Nullable{IEnumerable{System.String}},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}},System.Nullable{Crowdin.Api.Workflows.WorkflowStatus},System.Nullable{System.Int32},System.Nullable{System.Int32})
+  name.vb: ListStringsOnTheWorkflowStep(Int32, Int32, Nullable(Of IEnumerable(Of String)), Nullable(Of IEnumerable(Of SortingRule)), Nullable(Of WorkflowStatus), Nullable(Of Int32), Nullable(Of Int32))
+  fullName: Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListStringsOnTheWorkflowStep(System.Int32, System.Int32, System.Nullable<IEnumerable<System.String>>, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>, System.Nullable<Crowdin.Api.Workflows.WorkflowStatus>, System.Nullable<System.Int32>, System.Nullable<System.Int32>)
+  fullName.vb: Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListStringsOnTheWorkflowStep(System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of System.String)), System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)), System.Nullable(Of Crowdin.Api.Workflows.WorkflowStatus), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32))
+  nameWithType: IWorkflowsApiExecutor.ListStringsOnTheWorkflowStep(Int32, Int32, Nullable<IEnumerable<String>>, Nullable<IEnumerable<SortingRule>>, Nullable<WorkflowStatus>, Nullable<Int32>, Nullable<Int32>)
+  nameWithType.vb: IWorkflowsApiExecutor.ListStringsOnTheWorkflowStep(Int32, Int32, Nullable(Of IEnumerable(Of String)), Nullable(Of IEnumerable(Of SortingRule)), Nullable(Of WorkflowStatus), Nullable(Of Int32), Nullable(Of Int32))
+- uid: Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListStringsOnTheWorkflowStep*
+  name: ListStringsOnTheWorkflowStep
+  href: api/Crowdin.Api.Workflows.IWorkflowsApiExecutor.html#Crowdin_Api_Workflows_IWorkflowsApiExecutor_ListStringsOnTheWorkflowStep_
+  commentId: Overload:Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListStringsOnTheWorkflowStep
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListStringsOnTheWorkflowStep
+  nameWithType: IWorkflowsApiExecutor.ListStringsOnTheWorkflowStep
 - uid: Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListWorkflowSteps(System.Int32)
   name: ListWorkflowSteps(Int32)
   href: api/Crowdin.Api.Workflows.IWorkflowsApiExecutor.html#Crowdin_Api_Workflows_IWorkflowsApiExecutor_ListWorkflowSteps_System_Int32_
@@ -50025,6 +50419,90 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Workflows.IWorkflowsApiExecutor.ListWorkflowTemplates
   nameWithType: IWorkflowsApiExecutor.ListWorkflowTemplates
+- uid: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams
+  name: StringsOnTheWorkflowStepListParams
+  href: api/Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.html
+  commentId: T:Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams
+  fullName: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams
+  nameWithType: StringsOnTheWorkflowStepListParams
+- uid: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.LanguageIds
+  name: LanguageIds
+  href: api/Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.html#Crowdin_Api_Workflows_StringsOnTheWorkflowStepListParams_LanguageIds
+  commentId: P:Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.LanguageIds
+  fullName: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.LanguageIds
+  nameWithType: StringsOnTheWorkflowStepListParams.LanguageIds
+- uid: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.LanguageIds*
+  name: LanguageIds
+  href: api/Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.html#Crowdin_Api_Workflows_StringsOnTheWorkflowStepListParams_LanguageIds_
+  commentId: Overload:Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.LanguageIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.LanguageIds
+  nameWithType: StringsOnTheWorkflowStepListParams.LanguageIds
+- uid: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.Limit
+  name: Limit
+  href: api/Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.html#Crowdin_Api_Workflows_StringsOnTheWorkflowStepListParams_Limit
+  commentId: P:Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.Limit
+  fullName: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.Limit
+  nameWithType: StringsOnTheWorkflowStepListParams.Limit
+- uid: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.Limit*
+  name: Limit
+  href: api/Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.html#Crowdin_Api_Workflows_StringsOnTheWorkflowStepListParams_Limit_
+  commentId: Overload:Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.Limit
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.Limit
+  nameWithType: StringsOnTheWorkflowStepListParams.Limit
+- uid: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.Offset
+  name: Offset
+  href: api/Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.html#Crowdin_Api_Workflows_StringsOnTheWorkflowStepListParams_Offset
+  commentId: P:Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.Offset
+  fullName: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.Offset
+  nameWithType: StringsOnTheWorkflowStepListParams.Offset
+- uid: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.Offset*
+  name: Offset
+  href: api/Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.html#Crowdin_Api_Workflows_StringsOnTheWorkflowStepListParams_Offset_
+  commentId: Overload:Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.Offset
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.Offset
+  nameWithType: StringsOnTheWorkflowStepListParams.Offset
+- uid: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.OrderBy
+  name: OrderBy
+  href: api/Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.html#Crowdin_Api_Workflows_StringsOnTheWorkflowStepListParams_OrderBy
+  commentId: P:Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.OrderBy
+  fullName: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.OrderBy
+  nameWithType: StringsOnTheWorkflowStepListParams.OrderBy
+- uid: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.OrderBy*
+  name: OrderBy
+  href: api/Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.html#Crowdin_Api_Workflows_StringsOnTheWorkflowStepListParams_OrderBy_
+  commentId: Overload:Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.OrderBy
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.OrderBy
+  nameWithType: StringsOnTheWorkflowStepListParams.OrderBy
+- uid: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.Status
+  name: Status
+  href: api/Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.html#Crowdin_Api_Workflows_StringsOnTheWorkflowStepListParams_Status
+  commentId: P:Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.Status
+  fullName: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.Status
+  nameWithType: StringsOnTheWorkflowStepListParams.Status
+- uid: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.Status*
+  name: Status
+  href: api/Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.html#Crowdin_Api_Workflows_StringsOnTheWorkflowStepListParams_Status_
+  commentId: Overload:Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.Status
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.Status
+  nameWithType: StringsOnTheWorkflowStepListParams.Status
+- uid: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.ToQueryParams
+  name: ToQueryParams()
+  href: api/Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.html#Crowdin_Api_Workflows_StringsOnTheWorkflowStepListParams_ToQueryParams
+  commentId: M:Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.ToQueryParams
+  fullName: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.ToQueryParams()
+  nameWithType: StringsOnTheWorkflowStepListParams.ToQueryParams()
+- uid: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.ToQueryParams*
+  name: ToQueryParams
+  href: api/Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.html#Crowdin_Api_Workflows_StringsOnTheWorkflowStepListParams_ToQueryParams_
+  commentId: Overload:Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.ToQueryParams
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams.ToQueryParams
+  nameWithType: StringsOnTheWorkflowStepListParams.ToQueryParams
 - uid: Crowdin.Api.Workflows.WorkflowConfig
   name: WorkflowConfig
   href: api/Crowdin.Api.Workflows.WorkflowConfig.html
@@ -50145,6 +50623,28 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Workflows.WorkflowsApiExecutor.GetWorkflowTemplate
   nameWithType: WorkflowsApiExecutor.GetWorkflowTemplate
+- uid: Crowdin.Api.Workflows.WorkflowsApiExecutor.ListStringsOnTheWorkflowStep(System.Int32,System.Int32,Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams)
+  name: ListStringsOnTheWorkflowStep(Int32, Int32, StringsOnTheWorkflowStepListParams)
+  href: api/Crowdin.Api.Workflows.WorkflowsApiExecutor.html#Crowdin_Api_Workflows_WorkflowsApiExecutor_ListStringsOnTheWorkflowStep_System_Int32_System_Int32_Crowdin_Api_Workflows_StringsOnTheWorkflowStepListParams_
+  commentId: M:Crowdin.Api.Workflows.WorkflowsApiExecutor.ListStringsOnTheWorkflowStep(System.Int32,System.Int32,Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams)
+  fullName: Crowdin.Api.Workflows.WorkflowsApiExecutor.ListStringsOnTheWorkflowStep(System.Int32, System.Int32, Crowdin.Api.Workflows.StringsOnTheWorkflowStepListParams)
+  nameWithType: WorkflowsApiExecutor.ListStringsOnTheWorkflowStep(Int32, Int32, StringsOnTheWorkflowStepListParams)
+- uid: Crowdin.Api.Workflows.WorkflowsApiExecutor.ListStringsOnTheWorkflowStep(System.Int32,System.Int32,System.Nullable{IEnumerable{System.String}},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}},System.Nullable{Crowdin.Api.Workflows.WorkflowStatus},System.Nullable{System.Int32},System.Nullable{System.Int32})
+  name: ListStringsOnTheWorkflowStep(Int32, Int32, Nullable<IEnumerable<String>>, Nullable<IEnumerable<SortingRule>>, Nullable<WorkflowStatus>, Nullable<Int32>, Nullable<Int32>)
+  href: api/Crowdin.Api.Workflows.WorkflowsApiExecutor.html#Crowdin_Api_Workflows_WorkflowsApiExecutor_ListStringsOnTheWorkflowStep_System_Int32_System_Int32_System_Nullable_IEnumerable_System_String___System_Nullable_IEnumerable_Crowdin_Api_SortingRule___System_Nullable_Crowdin_Api_Workflows_WorkflowStatus__System_Nullable_System_Int32__System_Nullable_System_Int32__
+  commentId: M:Crowdin.Api.Workflows.WorkflowsApiExecutor.ListStringsOnTheWorkflowStep(System.Int32,System.Int32,System.Nullable{IEnumerable{System.String}},System.Nullable{IEnumerable{Crowdin.Api.SortingRule}},System.Nullable{Crowdin.Api.Workflows.WorkflowStatus},System.Nullable{System.Int32},System.Nullable{System.Int32})
+  name.vb: ListStringsOnTheWorkflowStep(Int32, Int32, Nullable(Of IEnumerable(Of String)), Nullable(Of IEnumerable(Of SortingRule)), Nullable(Of WorkflowStatus), Nullable(Of Int32), Nullable(Of Int32))
+  fullName: Crowdin.Api.Workflows.WorkflowsApiExecutor.ListStringsOnTheWorkflowStep(System.Int32, System.Int32, System.Nullable<IEnumerable<System.String>>, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>, System.Nullable<Crowdin.Api.Workflows.WorkflowStatus>, System.Nullable<System.Int32>, System.Nullable<System.Int32>)
+  fullName.vb: Crowdin.Api.Workflows.WorkflowsApiExecutor.ListStringsOnTheWorkflowStep(System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of System.String)), System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)), System.Nullable(Of Crowdin.Api.Workflows.WorkflowStatus), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32))
+  nameWithType: WorkflowsApiExecutor.ListStringsOnTheWorkflowStep(Int32, Int32, Nullable<IEnumerable<String>>, Nullable<IEnumerable<SortingRule>>, Nullable<WorkflowStatus>, Nullable<Int32>, Nullable<Int32>)
+  nameWithType.vb: WorkflowsApiExecutor.ListStringsOnTheWorkflowStep(Int32, Int32, Nullable(Of IEnumerable(Of String)), Nullable(Of IEnumerable(Of SortingRule)), Nullable(Of WorkflowStatus), Nullable(Of Int32), Nullable(Of Int32))
+- uid: Crowdin.Api.Workflows.WorkflowsApiExecutor.ListStringsOnTheWorkflowStep*
+  name: ListStringsOnTheWorkflowStep
+  href: api/Crowdin.Api.Workflows.WorkflowsApiExecutor.html#Crowdin_Api_Workflows_WorkflowsApiExecutor_ListStringsOnTheWorkflowStep_
+  commentId: Overload:Crowdin.Api.Workflows.WorkflowsApiExecutor.ListStringsOnTheWorkflowStep
+  isSpec: "True"
+  fullName: Crowdin.Api.Workflows.WorkflowsApiExecutor.ListStringsOnTheWorkflowStep
+  nameWithType: WorkflowsApiExecutor.ListStringsOnTheWorkflowStep
 - uid: Crowdin.Api.Workflows.WorkflowsApiExecutor.ListWorkflowSteps(System.Int32)
   name: ListWorkflowSteps(Int32)
   href: api/Crowdin.Api.Workflows.WorkflowsApiExecutor.html#Crowdin_Api_Workflows_WorkflowsApiExecutor_ListWorkflowSteps_System_Int32_
@@ -50171,6 +50671,42 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Workflows.WorkflowsApiExecutor.ListWorkflowTemplates
   nameWithType: WorkflowsApiExecutor.ListWorkflowTemplates
+- uid: Crowdin.Api.Workflows.WorkflowStatus
+  name: WorkflowStatus
+  href: api/Crowdin.Api.Workflows.WorkflowStatus.html
+  commentId: T:Crowdin.Api.Workflows.WorkflowStatus
+  fullName: Crowdin.Api.Workflows.WorkflowStatus
+  nameWithType: WorkflowStatus
+- uid: Crowdin.Api.Workflows.WorkflowStatus.Done
+  name: Done
+  href: api/Crowdin.Api.Workflows.WorkflowStatus.html#Crowdin_Api_Workflows_WorkflowStatus_Done
+  commentId: F:Crowdin.Api.Workflows.WorkflowStatus.Done
+  fullName: Crowdin.Api.Workflows.WorkflowStatus.Done
+  nameWithType: WorkflowStatus.Done
+- uid: Crowdin.Api.Workflows.WorkflowStatus.Incomplete
+  name: Incomplete
+  href: api/Crowdin.Api.Workflows.WorkflowStatus.html#Crowdin_Api_Workflows_WorkflowStatus_Incomplete
+  commentId: F:Crowdin.Api.Workflows.WorkflowStatus.Incomplete
+  fullName: Crowdin.Api.Workflows.WorkflowStatus.Incomplete
+  nameWithType: WorkflowStatus.Incomplete
+- uid: Crowdin.Api.Workflows.WorkflowStatus.NeedReview
+  name: NeedReview
+  href: api/Crowdin.Api.Workflows.WorkflowStatus.html#Crowdin_Api_Workflows_WorkflowStatus_NeedReview
+  commentId: F:Crowdin.Api.Workflows.WorkflowStatus.NeedReview
+  fullName: Crowdin.Api.Workflows.WorkflowStatus.NeedReview
+  nameWithType: WorkflowStatus.NeedReview
+- uid: Crowdin.Api.Workflows.WorkflowStatus.Pending
+  name: Pending
+  href: api/Crowdin.Api.Workflows.WorkflowStatus.html#Crowdin_Api_Workflows_WorkflowStatus_Pending
+  commentId: F:Crowdin.Api.Workflows.WorkflowStatus.Pending
+  fullName: Crowdin.Api.Workflows.WorkflowStatus.Pending
+  nameWithType: WorkflowStatus.Pending
+- uid: Crowdin.Api.Workflows.WorkflowStatus.ToDo
+  name: ToDo
+  href: api/Crowdin.Api.Workflows.WorkflowStatus.html#Crowdin_Api_Workflows_WorkflowStatus_ToDo
+  commentId: F:Crowdin.Api.Workflows.WorkflowStatus.ToDo
+  fullName: Crowdin.Api.Workflows.WorkflowStatus.ToDo
+  nameWithType: WorkflowStatus.ToDo
 - uid: Crowdin.Api.Workflows.WorkflowStep
   name: WorkflowStep
   href: api/Crowdin.Api.Workflows.WorkflowStep.html
