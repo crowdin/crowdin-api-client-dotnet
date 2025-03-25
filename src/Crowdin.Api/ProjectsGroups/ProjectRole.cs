@@ -4,7 +4,6 @@ using JetBrains.Annotations;
 
 namespace Crowdin.Api.ProjectsGroups
 {
-    // TODO: leave here in ProjectsGroups or move to Teams (closer to the only usage)
     [PublicAPI]
     public enum ProjectRole
     {

@@ -4,7 +4,6 @@ using JetBrains.Annotations;
 
 namespace Crowdin.Api.Users
 {
-    // TODO: leave here in Users or move?
     [PublicAPI]
     public enum OrganizationRole
     {
