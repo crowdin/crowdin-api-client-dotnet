@@ -10,6 +10,7 @@ using Newtonsoft.Json.Linq;
 using Xunit;
 
 using Crowdin.Api.Core;
+using Crowdin.Api.ProjectsGroups;
 using Crowdin.Api.Users;
 
 namespace Crowdin.Api.UnitTesting.Tests.Users
@@ -17,6 +18,79 @@ namespace Crowdin.Api.UnitTesting.Tests.Users
     public class UsersApiTests
     {
         private static readonly JsonSerializerSettings DefaultSettings = TestUtils.CreateJsonSerializerOptions();
+
+        [Fact]
+        public async Task ListUsers()
+        {
+            var @params = new EnterpriseUsersListParams
+            {
+                OrderBy =
+                [
+                    new SortingRule
+                    {
+                        Field = "createdAt",
+                        Order = SortingOrder.Descending
+                    },
+                    new SortingRule
+                    {
+                        Field = "username"
+                    }
+                ],
+                Status = UserStatus.Active,
+                Search = "Alex",
+                TwoFactor = UserTwoFactorStatus.Enabled,
+                OrganizationRoles =
+                [
+                    OrganizationRole.Manager,
+                    OrganizationRole.Vendor,
+                    OrganizationRole.Client
+                ],
+                TeamId = 1,
+                ProjectIds = [ 1, 2, 3 ],
+                ProjectRoles =
+                [
+                    ProjectRole.Manager,
+                    ProjectRole.Developer,
+                    ProjectRole.LanguageCoordinator
+                ],
+                LanguageIds = [ "uk", "es", "it" ],
+                GroupIds = [ 1, 2 ],
+                LastSeenFrom = DateTimeOffset.Parse("2024-01-10T10:41:33+00:00"),
+                LastSeenTo = DateTimeOffset.Parse("2024-01-10T10:41:33+00:00"),
+                Limit = 10,
+                Offset = 2
+            };
+
+            IDictionary<string, string> paramsDict = @params.ToQueryParams();
+            
+            Assert.Equal("createdAt desc,username", paramsDict["orderBy"]);
+            Assert.Equal("active", paramsDict["status"]);
+            Assert.Equal("Alex", paramsDict["search"]);
+            Assert.Equal("enabled", paramsDict["twoFactor"]);
+            Assert.Equal("manager,vendor,client", paramsDict["organizationRoles"]);
+            Assert.Equal("1", paramsDict["teamId"]);
+            Assert.Equal("1,2,3", paramsDict["projectIds"]);
+            Assert.Equal("manager,developer,language_coordinator", paramsDict["projectRoles"]);
+            Assert.Equal("uk,es,it", paramsDict["languageIds"]);
+            Assert.Equal("1,2", paramsDict["groupIds"]);
+            Assert.Equal("2024-01-10T10:41:33+00:00", paramsDict["lastSeenFrom"]);
+            Assert.Equal("2024-01-10T10:41:33+00:00", paramsDict["lastSeenTo"]);
+            
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            mockClient
+                .Setup(client => client.SendGetRequest("/users", paramsDict))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Resources.Users.ListUsers_Response)
+                });
+            
+            var executor = new UsersApiExecutor(mockClient.Object);
+            ResponseList<UserEnterprise> response = await executor.ListUsers(@params);
+            
+            Assert.NotNull(response);
+        }
 
         [Fact]
         public async Task InviteUser()

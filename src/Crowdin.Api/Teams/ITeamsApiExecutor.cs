@@ -4,6 +4,8 @@ using System.Threading.Tasks;
 
 using JetBrains.Annotations;
 
+using Crowdin.Api.ProjectsGroups;
+
 #nullable enable
 
 namespace Crowdin.Api.Teams
@@ -16,7 +18,12 @@ namespace Crowdin.Api.Teams
         Task<ResponseList<Team>> ListTeams(
             int limit = 25,
             int offset = 0,
-            IEnumerable<SortingRule>? orderBy = null);
+            IEnumerable<SortingRule>? orderBy = null,
+            IEnumerable<ProjectRole>? projectRoles = null,
+            IEnumerable<string>? languageIds = null,
+            IEnumerable<int>? groupIds = null);
+
+        Task<ResponseList<Team>> ListTeams(TeamsListParams @params);
 
         Task<Team> AddTeam(AddTeamRequest request);
 

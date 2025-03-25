@@ -1,4 +1,6 @@
 ﻿
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
@@ -6,6 +8,7 @@ using System.Threading.Tasks;
 using JetBrains.Annotations;
 
 using Crowdin.Api.Core;
+using Crowdin.Api.ProjectsGroups;
 
 #nullable enable
 
@@ -157,9 +160,33 @@ namespace Crowdin.Api.Users
             UserTwoFactorStatus? twoFactor = null,
             int limit = 25,
             int offset = 0,
-            IEnumerable<SortingRule>? orderBy = null)
+            IEnumerable<SortingRule>? orderBy = null,
+            IEnumerable<OrganizationRole>? organizationRoles = null,
+            int? teamId = null,
+            IEnumerable<int>? projectIds = null,
+            IEnumerable<ProjectRole>? projectRoles = null,
+            IEnumerable<string>? languageIds = null,
+            IEnumerable<int>? groupIds = null,
+            DateTimeOffset? lastSeenFrom = null,
+            DateTimeOffset? lastSeenTo = null)
         {
-            return ListUsers(new EnterpriseUsersListParams(status, search, twoFactor, limit, offset, orderBy));
+            return ListUsers(new EnterpriseUsersListParams
+            {
+                Limit = limit,
+                Offset = offset,
+                Status = status,
+                Search = search,
+                TwoFactor = twoFactor,
+                OrderBy = orderBy,
+                OrganizationRoles = organizationRoles,
+                TeamId = teamId,
+                ProjectIds = projectIds,
+                ProjectRoles = projectRoles,
+                LanguageIds = languageIds,
+                GroupIds = groupIds,
+                LastSeenFrom = lastSeenFrom,
+                LastSeenTo = lastSeenTo
+            });
         }
 
         /// <summary>

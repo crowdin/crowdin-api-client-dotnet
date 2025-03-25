@@ -1,8 +1,11 @@
 
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 using JetBrains.Annotations;
+
+using Crowdin.Api.ProjectsGroups;
 
 #nullable enable
 
@@ -51,7 +54,15 @@ namespace Crowdin.Api.Users
             UserTwoFactorStatus? twoFactor = null,
             int limit = 25,
             int offset = 0,
-            IEnumerable<SortingRule>? orderBy = null);
+            IEnumerable<SortingRule>? orderBy = null,
+            IEnumerable<OrganizationRole>? organizationRoles = null,
+            int? teamId = null,
+            IEnumerable<int>? projectIds = null,
+            IEnumerable<ProjectRole>? projectRoles = null,
+            IEnumerable<string>? languageIds = null,
+            IEnumerable<int>? groupIds = null,
+            DateTimeOffset? lastSeenFrom = null,
+            DateTimeOffset? lastSeenTo = null);
 
         Task<ResponseList<UserEnterprise>> ListUsers(EnterpriseUsersListParams @params);
 

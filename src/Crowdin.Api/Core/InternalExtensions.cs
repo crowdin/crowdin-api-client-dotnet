@@ -58,6 +58,14 @@ namespace Crowdin.Api.Core
                 queryParams.AddParamIfPresent(key, value.ToString().ToLower());
             }
         }
+        
+        internal static void AddParamIfPresent(this IDictionary<string, string> queryParams, string key, DateTimeOffset? value)
+        {
+            if (value.HasValue)
+            {
+                queryParams.Add(key, value.Value.ToString("yyyy-MM-ddTHH:mm:sszzz"));
+            }
+        }
 
         internal static void AddParamIfPresent(this IDictionary<string, string> queryParams, string key, object? value)
         {
@@ -123,6 +131,17 @@ namespace Crowdin.Api.Core
             {
                 queryParams.Add(key, enumMember.Value.ToDescriptionString());
             }
+        }
+        
+        internal static void AddDescriptionEnumValueCollectionIfPresent<TEnum>(
+            this IDictionary<string, string> queryParams,
+            string key,
+            IEnumerable<TEnum>? enumCollection)
+            where TEnum : struct, Enum
+        {
+            if (enumCollection is null || !enumCollection.Any()) return;
+            
+            queryParams.Add(key, string.Join(",", enumCollection.Select(enumValue => enumValue.ToDescriptionString())));
         }
 
         internal static void AddSortingRulesIfPresent(
