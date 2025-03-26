@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using JetBrains.Annotations;
 
 using Crowdin.Api.Core;
+using Crowdin.Api.ProjectsGroups;
 
 #nullable enable
 
@@ -46,15 +47,32 @@ namespace Crowdin.Api.Teams
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.teams.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<Team>> ListTeams(
+        public Task<ResponseList<Team>> ListTeams(
             int limit = 25,
             int offset = 0,
-            IEnumerable<SortingRule>? orderBy = null)
+            IEnumerable<SortingRule>? orderBy = null,
+            IEnumerable<ProjectRole>? projectRoles = null,
+            IEnumerable<string>? languageIds = null,
+            IEnumerable<int>? groupIds = null)
         {
-            IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
-            queryParams.AddSortingRulesIfPresent(orderBy);
+            return ListTeams(new TeamsListParams
+            {
+                Limit = limit,
+                Offset = offset,
+                OrderBy = orderBy,
+                ProjectRoles = projectRoles,
+                LanguageIds = languageIds,
+                GroupIds = groupIds
+            });
+        }
 
-            CrowdinApiResult result = await _apiClient.SendGetRequest(BaseUrl, queryParams);
+        /// <summary>
+        /// List teams. Documentation:
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.teams.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        public async Task<ResponseList<Team>> ListTeams(TeamsListParams @params)
+        {
+            CrowdinApiResult result = await _apiClient.SendGetRequest(BaseUrl, @params.ToQueryParams());
             return _jsonParser.ParseResponseList<Team>(result.JsonObject);
         }
 
