@@ -19538,6 +19538,48 @@ references:
   commentId: T:Crowdin.Api.ProjectsGroups.ProjectPatch
   fullName: Crowdin.Api.ProjectsGroups.ProjectPatch
   nameWithType: ProjectPatch
+- uid: Crowdin.Api.ProjectsGroups.ProjectRole
+  name: ProjectRole
+  href: api/Crowdin.Api.ProjectsGroups.ProjectRole.html
+  commentId: T:Crowdin.Api.ProjectsGroups.ProjectRole
+  fullName: Crowdin.Api.ProjectsGroups.ProjectRole
+  nameWithType: ProjectRole
+- uid: Crowdin.Api.ProjectsGroups.ProjectRole.Developer
+  name: Developer
+  href: api/Crowdin.Api.ProjectsGroups.ProjectRole.html#Crowdin_Api_ProjectsGroups_ProjectRole_Developer
+  commentId: F:Crowdin.Api.ProjectsGroups.ProjectRole.Developer
+  fullName: Crowdin.Api.ProjectsGroups.ProjectRole.Developer
+  nameWithType: ProjectRole.Developer
+- uid: Crowdin.Api.ProjectsGroups.ProjectRole.LanguageCoordinator
+  name: LanguageCoordinator
+  href: api/Crowdin.Api.ProjectsGroups.ProjectRole.html#Crowdin_Api_ProjectsGroups_ProjectRole_LanguageCoordinator
+  commentId: F:Crowdin.Api.ProjectsGroups.ProjectRole.LanguageCoordinator
+  fullName: Crowdin.Api.ProjectsGroups.ProjectRole.LanguageCoordinator
+  nameWithType: ProjectRole.LanguageCoordinator
+- uid: Crowdin.Api.ProjectsGroups.ProjectRole.Manager
+  name: Manager
+  href: api/Crowdin.Api.ProjectsGroups.ProjectRole.html#Crowdin_Api_ProjectsGroups_ProjectRole_Manager
+  commentId: F:Crowdin.Api.ProjectsGroups.ProjectRole.Manager
+  fullName: Crowdin.Api.ProjectsGroups.ProjectRole.Manager
+  nameWithType: ProjectRole.Manager
+- uid: Crowdin.Api.ProjectsGroups.ProjectRole.Member
+  name: Member
+  href: api/Crowdin.Api.ProjectsGroups.ProjectRole.html#Crowdin_Api_ProjectsGroups_ProjectRole_Member
+  commentId: F:Crowdin.Api.ProjectsGroups.ProjectRole.Member
+  fullName: Crowdin.Api.ProjectsGroups.ProjectRole.Member
+  nameWithType: ProjectRole.Member
+- uid: Crowdin.Api.ProjectsGroups.ProjectRole.Proofreader
+  name: Proofreader
+  href: api/Crowdin.Api.ProjectsGroups.ProjectRole.html#Crowdin_Api_ProjectsGroups_ProjectRole_Proofreader
+  commentId: F:Crowdin.Api.ProjectsGroups.ProjectRole.Proofreader
+  fullName: Crowdin.Api.ProjectsGroups.ProjectRole.Proofreader
+  nameWithType: ProjectRole.Proofreader
+- uid: Crowdin.Api.ProjectsGroups.ProjectRole.Translator
+  name: Translator
+  href: api/Crowdin.Api.ProjectsGroups.ProjectRole.html#Crowdin_Api_ProjectsGroups_ProjectRole_Translator
+  commentId: F:Crowdin.Api.ProjectsGroups.ProjectRole.Translator
+  fullName: Crowdin.Api.ProjectsGroups.ProjectRole.Translator
+  nameWithType: ProjectRole.Translator
 - uid: Crowdin.Api.ProjectsGroups.ProjectSettingPatch
   name: ProjectSettingPatch
   href: api/Crowdin.Api.ProjectsGroups.ProjectSettingPatch.html
@@ -41123,15 +41165,21 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Teams.ITeamsApiExecutor.ListTeamMembers
   nameWithType: ITeamsApiExecutor.ListTeamMembers
-- uid: Crowdin.Api.Teams.ITeamsApiExecutor.ListTeams(System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
-  name: ListTeams(Int32, Int32, Nullable<IEnumerable<SortingRule>>)
-  href: api/Crowdin.Api.Teams.ITeamsApiExecutor.html#Crowdin_Api_Teams_ITeamsApiExecutor_ListTeams_System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
-  commentId: M:Crowdin.Api.Teams.ITeamsApiExecutor.ListTeams(System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
-  name.vb: ListTeams(Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
-  fullName: Crowdin.Api.Teams.ITeamsApiExecutor.ListTeams(System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
-  fullName.vb: Crowdin.Api.Teams.ITeamsApiExecutor.ListTeams(System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
-  nameWithType: ITeamsApiExecutor.ListTeams(Int32, Int32, Nullable<IEnumerable<SortingRule>>)
-  nameWithType.vb: ITeamsApiExecutor.ListTeams(Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+- uid: Crowdin.Api.Teams.ITeamsApiExecutor.ListTeams(Crowdin.Api.Teams.TeamsListParams)
+  name: ListTeams(TeamsListParams)
+  href: api/Crowdin.Api.Teams.ITeamsApiExecutor.html#Crowdin_Api_Teams_ITeamsApiExecutor_ListTeams_Crowdin_Api_Teams_TeamsListParams_
+  commentId: M:Crowdin.Api.Teams.ITeamsApiExecutor.ListTeams(Crowdin.Api.Teams.TeamsListParams)
+  fullName: Crowdin.Api.Teams.ITeamsApiExecutor.ListTeams(Crowdin.Api.Teams.TeamsListParams)
+  nameWithType: ITeamsApiExecutor.ListTeams(TeamsListParams)
+- uid: Crowdin.Api.Teams.ITeamsApiExecutor.ListTeams(System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}},System.Nullable{IEnumerable{Crowdin.Api.ProjectsGroups.ProjectRole}},System.Nullable{IEnumerable{System.String}},System.Nullable{IEnumerable{System.Int32}})
+  name: ListTeams(Int32, Int32, Nullable<IEnumerable<SortingRule>>, Nullable<IEnumerable<ProjectRole>>, Nullable<IEnumerable<String>>, Nullable<IEnumerable<Int32>>)
+  href: api/Crowdin.Api.Teams.ITeamsApiExecutor.html#Crowdin_Api_Teams_ITeamsApiExecutor_ListTeams_System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___System_Nullable_IEnumerable_Crowdin_Api_ProjectsGroups_ProjectRole___System_Nullable_IEnumerable_System_String___System_Nullable_IEnumerable_System_Int32___
+  commentId: M:Crowdin.Api.Teams.ITeamsApiExecutor.ListTeams(System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}},System.Nullable{IEnumerable{Crowdin.Api.ProjectsGroups.ProjectRole}},System.Nullable{IEnumerable{System.String}},System.Nullable{IEnumerable{System.Int32}})
+  name.vb: ListTeams(Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)), Nullable(Of IEnumerable(Of ProjectRole)), Nullable(Of IEnumerable(Of String)), Nullable(Of IEnumerable(Of Int32)))
+  fullName: Crowdin.Api.Teams.ITeamsApiExecutor.ListTeams(System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>, System.Nullable<IEnumerable<Crowdin.Api.ProjectsGroups.ProjectRole>>, System.Nullable<IEnumerable<System.String>>, System.Nullable<IEnumerable<System.Int32>>)
+  fullName.vb: Crowdin.Api.Teams.ITeamsApiExecutor.ListTeams(System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)), System.Nullable(Of IEnumerable(Of Crowdin.Api.ProjectsGroups.ProjectRole)), System.Nullable(Of IEnumerable(Of System.String)), System.Nullable(Of IEnumerable(Of System.Int32)))
+  nameWithType: ITeamsApiExecutor.ListTeams(Int32, Int32, Nullable<IEnumerable<SortingRule>>, Nullable<IEnumerable<ProjectRole>>, Nullable<IEnumerable<String>>, Nullable<IEnumerable<Int32>>)
+  nameWithType.vb: ITeamsApiExecutor.ListTeams(Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)), Nullable(Of IEnumerable(Of ProjectRole)), Nullable(Of IEnumerable(Of String)), Nullable(Of IEnumerable(Of Int32)))
 - uid: Crowdin.Api.Teams.ITeamsApiExecutor.ListTeams*
   name: ListTeams
   href: api/Crowdin.Api.Teams.ITeamsApiExecutor.html#Crowdin_Api_Teams_ITeamsApiExecutor_ListTeams_
@@ -41618,15 +41666,21 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Teams.TeamsApiExecutor.ListTeamMembers
   nameWithType: TeamsApiExecutor.ListTeamMembers
-- uid: Crowdin.Api.Teams.TeamsApiExecutor.ListTeams(System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
-  name: ListTeams(Int32, Int32, Nullable<IEnumerable<SortingRule>>)
-  href: api/Crowdin.Api.Teams.TeamsApiExecutor.html#Crowdin_Api_Teams_TeamsApiExecutor_ListTeams_System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
-  commentId: M:Crowdin.Api.Teams.TeamsApiExecutor.ListTeams(System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
-  name.vb: ListTeams(Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
-  fullName: Crowdin.Api.Teams.TeamsApiExecutor.ListTeams(System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
-  fullName.vb: Crowdin.Api.Teams.TeamsApiExecutor.ListTeams(System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
-  nameWithType: TeamsApiExecutor.ListTeams(Int32, Int32, Nullable<IEnumerable<SortingRule>>)
-  nameWithType.vb: TeamsApiExecutor.ListTeams(Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+- uid: Crowdin.Api.Teams.TeamsApiExecutor.ListTeams(Crowdin.Api.Teams.TeamsListParams)
+  name: ListTeams(TeamsListParams)
+  href: api/Crowdin.Api.Teams.TeamsApiExecutor.html#Crowdin_Api_Teams_TeamsApiExecutor_ListTeams_Crowdin_Api_Teams_TeamsListParams_
+  commentId: M:Crowdin.Api.Teams.TeamsApiExecutor.ListTeams(Crowdin.Api.Teams.TeamsListParams)
+  fullName: Crowdin.Api.Teams.TeamsApiExecutor.ListTeams(Crowdin.Api.Teams.TeamsListParams)
+  nameWithType: TeamsApiExecutor.ListTeams(TeamsListParams)
+- uid: Crowdin.Api.Teams.TeamsApiExecutor.ListTeams(System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}},System.Nullable{IEnumerable{Crowdin.Api.ProjectsGroups.ProjectRole}},System.Nullable{IEnumerable{System.String}},System.Nullable{IEnumerable{System.Int32}})
+  name: ListTeams(Int32, Int32, Nullable<IEnumerable<SortingRule>>, Nullable<IEnumerable<ProjectRole>>, Nullable<IEnumerable<String>>, Nullable<IEnumerable<Int32>>)
+  href: api/Crowdin.Api.Teams.TeamsApiExecutor.html#Crowdin_Api_Teams_TeamsApiExecutor_ListTeams_System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___System_Nullable_IEnumerable_Crowdin_Api_ProjectsGroups_ProjectRole___System_Nullable_IEnumerable_System_String___System_Nullable_IEnumerable_System_Int32___
+  commentId: M:Crowdin.Api.Teams.TeamsApiExecutor.ListTeams(System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}},System.Nullable{IEnumerable{Crowdin.Api.ProjectsGroups.ProjectRole}},System.Nullable{IEnumerable{System.String}},System.Nullable{IEnumerable{System.Int32}})
+  name.vb: ListTeams(Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)), Nullable(Of IEnumerable(Of ProjectRole)), Nullable(Of IEnumerable(Of String)), Nullable(Of IEnumerable(Of Int32)))
+  fullName: Crowdin.Api.Teams.TeamsApiExecutor.ListTeams(System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>, System.Nullable<IEnumerable<Crowdin.Api.ProjectsGroups.ProjectRole>>, System.Nullable<IEnumerable<System.String>>, System.Nullable<IEnumerable<System.Int32>>)
+  fullName.vb: Crowdin.Api.Teams.TeamsApiExecutor.ListTeams(System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)), System.Nullable(Of IEnumerable(Of Crowdin.Api.ProjectsGroups.ProjectRole)), System.Nullable(Of IEnumerable(Of System.String)), System.Nullable(Of IEnumerable(Of System.Int32)))
+  nameWithType: TeamsApiExecutor.ListTeams(Int32, Int32, Nullable<IEnumerable<SortingRule>>, Nullable<IEnumerable<ProjectRole>>, Nullable<IEnumerable<String>>, Nullable<IEnumerable<Int32>>)
+  nameWithType.vb: TeamsApiExecutor.ListTeams(Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)), Nullable(Of IEnumerable(Of ProjectRole)), Nullable(Of IEnumerable(Of String)), Nullable(Of IEnumerable(Of Int32)))
 - uid: Crowdin.Api.Teams.TeamsApiExecutor.ListTeams*
   name: ListTeams
   href: api/Crowdin.Api.Teams.TeamsApiExecutor.html#Crowdin_Api_Teams_TeamsApiExecutor_ListTeams_
@@ -41650,6 +41704,129 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Teams.TeamsApiExecutor.UpdateGroupTeams
   nameWithType: TeamsApiExecutor.UpdateGroupTeams
+- uid: Crowdin.Api.Teams.TeamsListParams
+  name: TeamsListParams
+  href: api/Crowdin.Api.Teams.TeamsListParams.html
+  commentId: T:Crowdin.Api.Teams.TeamsListParams
+  fullName: Crowdin.Api.Teams.TeamsListParams
+  nameWithType: TeamsListParams
+- uid: Crowdin.Api.Teams.TeamsListParams.GroupIds
+  name: GroupIds
+  href: api/Crowdin.Api.Teams.TeamsListParams.html#Crowdin_Api_Teams_TeamsListParams_GroupIds
+  commentId: P:Crowdin.Api.Teams.TeamsListParams.GroupIds
+  fullName: Crowdin.Api.Teams.TeamsListParams.GroupIds
+  nameWithType: TeamsListParams.GroupIds
+- uid: Crowdin.Api.Teams.TeamsListParams.GroupIds*
+  name: GroupIds
+  href: api/Crowdin.Api.Teams.TeamsListParams.html#Crowdin_Api_Teams_TeamsListParams_GroupIds_
+  commentId: Overload:Crowdin.Api.Teams.TeamsListParams.GroupIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.TeamsListParams.GroupIds
+  nameWithType: TeamsListParams.GroupIds
+- uid: Crowdin.Api.Teams.TeamsListParams.LanguageIds
+  name: LanguageIds
+  href: api/Crowdin.Api.Teams.TeamsListParams.html#Crowdin_Api_Teams_TeamsListParams_LanguageIds
+  commentId: P:Crowdin.Api.Teams.TeamsListParams.LanguageIds
+  fullName: Crowdin.Api.Teams.TeamsListParams.LanguageIds
+  nameWithType: TeamsListParams.LanguageIds
+- uid: Crowdin.Api.Teams.TeamsListParams.LanguageIds*
+  name: LanguageIds
+  href: api/Crowdin.Api.Teams.TeamsListParams.html#Crowdin_Api_Teams_TeamsListParams_LanguageIds_
+  commentId: Overload:Crowdin.Api.Teams.TeamsListParams.LanguageIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.TeamsListParams.LanguageIds
+  nameWithType: TeamsListParams.LanguageIds
+- uid: Crowdin.Api.Teams.TeamsListParams.Limit
+  name: Limit
+  href: api/Crowdin.Api.Teams.TeamsListParams.html#Crowdin_Api_Teams_TeamsListParams_Limit
+  commentId: P:Crowdin.Api.Teams.TeamsListParams.Limit
+  fullName: Crowdin.Api.Teams.TeamsListParams.Limit
+  nameWithType: TeamsListParams.Limit
+- uid: Crowdin.Api.Teams.TeamsListParams.Limit*
+  name: Limit
+  href: api/Crowdin.Api.Teams.TeamsListParams.html#Crowdin_Api_Teams_TeamsListParams_Limit_
+  commentId: Overload:Crowdin.Api.Teams.TeamsListParams.Limit
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.TeamsListParams.Limit
+  nameWithType: TeamsListParams.Limit
+- uid: Crowdin.Api.Teams.TeamsListParams.Offset
+  name: Offset
+  href: api/Crowdin.Api.Teams.TeamsListParams.html#Crowdin_Api_Teams_TeamsListParams_Offset
+  commentId: P:Crowdin.Api.Teams.TeamsListParams.Offset
+  fullName: Crowdin.Api.Teams.TeamsListParams.Offset
+  nameWithType: TeamsListParams.Offset
+- uid: Crowdin.Api.Teams.TeamsListParams.Offset*
+  name: Offset
+  href: api/Crowdin.Api.Teams.TeamsListParams.html#Crowdin_Api_Teams_TeamsListParams_Offset_
+  commentId: Overload:Crowdin.Api.Teams.TeamsListParams.Offset
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.TeamsListParams.Offset
+  nameWithType: TeamsListParams.Offset
+- uid: Crowdin.Api.Teams.TeamsListParams.OrderBy
+  name: OrderBy
+  href: api/Crowdin.Api.Teams.TeamsListParams.html#Crowdin_Api_Teams_TeamsListParams_OrderBy
+  commentId: P:Crowdin.Api.Teams.TeamsListParams.OrderBy
+  fullName: Crowdin.Api.Teams.TeamsListParams.OrderBy
+  nameWithType: TeamsListParams.OrderBy
+- uid: Crowdin.Api.Teams.TeamsListParams.OrderBy*
+  name: OrderBy
+  href: api/Crowdin.Api.Teams.TeamsListParams.html#Crowdin_Api_Teams_TeamsListParams_OrderBy_
+  commentId: Overload:Crowdin.Api.Teams.TeamsListParams.OrderBy
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.TeamsListParams.OrderBy
+  nameWithType: TeamsListParams.OrderBy
+- uid: Crowdin.Api.Teams.TeamsListParams.ProjectIds
+  name: ProjectIds
+  href: api/Crowdin.Api.Teams.TeamsListParams.html#Crowdin_Api_Teams_TeamsListParams_ProjectIds
+  commentId: P:Crowdin.Api.Teams.TeamsListParams.ProjectIds
+  fullName: Crowdin.Api.Teams.TeamsListParams.ProjectIds
+  nameWithType: TeamsListParams.ProjectIds
+- uid: Crowdin.Api.Teams.TeamsListParams.ProjectIds*
+  name: ProjectIds
+  href: api/Crowdin.Api.Teams.TeamsListParams.html#Crowdin_Api_Teams_TeamsListParams_ProjectIds_
+  commentId: Overload:Crowdin.Api.Teams.TeamsListParams.ProjectIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.TeamsListParams.ProjectIds
+  nameWithType: TeamsListParams.ProjectIds
+- uid: Crowdin.Api.Teams.TeamsListParams.ProjectRoles
+  name: ProjectRoles
+  href: api/Crowdin.Api.Teams.TeamsListParams.html#Crowdin_Api_Teams_TeamsListParams_ProjectRoles
+  commentId: P:Crowdin.Api.Teams.TeamsListParams.ProjectRoles
+  fullName: Crowdin.Api.Teams.TeamsListParams.ProjectRoles
+  nameWithType: TeamsListParams.ProjectRoles
+- uid: Crowdin.Api.Teams.TeamsListParams.ProjectRoles*
+  name: ProjectRoles
+  href: api/Crowdin.Api.Teams.TeamsListParams.html#Crowdin_Api_Teams_TeamsListParams_ProjectRoles_
+  commentId: Overload:Crowdin.Api.Teams.TeamsListParams.ProjectRoles
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.TeamsListParams.ProjectRoles
+  nameWithType: TeamsListParams.ProjectRoles
+- uid: Crowdin.Api.Teams.TeamsListParams.Search
+  name: Search
+  href: api/Crowdin.Api.Teams.TeamsListParams.html#Crowdin_Api_Teams_TeamsListParams_Search
+  commentId: P:Crowdin.Api.Teams.TeamsListParams.Search
+  fullName: Crowdin.Api.Teams.TeamsListParams.Search
+  nameWithType: TeamsListParams.Search
+- uid: Crowdin.Api.Teams.TeamsListParams.Search*
+  name: Search
+  href: api/Crowdin.Api.Teams.TeamsListParams.html#Crowdin_Api_Teams_TeamsListParams_Search_
+  commentId: Overload:Crowdin.Api.Teams.TeamsListParams.Search
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.TeamsListParams.Search
+  nameWithType: TeamsListParams.Search
+- uid: Crowdin.Api.Teams.TeamsListParams.ToQueryParams
+  name: ToQueryParams()
+  href: api/Crowdin.Api.Teams.TeamsListParams.html#Crowdin_Api_Teams_TeamsListParams_ToQueryParams
+  commentId: M:Crowdin.Api.Teams.TeamsListParams.ToQueryParams
+  fullName: Crowdin.Api.Teams.TeamsListParams.ToQueryParams()
+  nameWithType: TeamsListParams.ToQueryParams()
+- uid: Crowdin.Api.Teams.TeamsListParams.ToQueryParams*
+  name: ToQueryParams
+  href: api/Crowdin.Api.Teams.TeamsListParams.html#Crowdin_Api_Teams_TeamsListParams_ToQueryParams_
+  commentId: Overload:Crowdin.Api.Teams.TeamsListParams.ToQueryParams
+  isSpec: "True"
+  fullName: Crowdin.Api.Teams.TeamsListParams.ToQueryParams
+  nameWithType: TeamsListParams.ToQueryParams
 - uid: Crowdin.Api.TextDirection
   name: TextDirection
   href: api/Crowdin.Api.TextDirection.html
@@ -47196,28 +47373,58 @@ references:
   commentId: T:Crowdin.Api.Users.EnterpriseUsersListParams
   fullName: Crowdin.Api.Users.EnterpriseUsersListParams
   nameWithType: EnterpriseUsersListParams
-- uid: Crowdin.Api.Users.EnterpriseUsersListParams.#ctor
-  name: EnterpriseUsersListParams()
-  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams__ctor
-  commentId: M:Crowdin.Api.Users.EnterpriseUsersListParams.#ctor
-  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.EnterpriseUsersListParams()
-  nameWithType: EnterpriseUsersListParams.EnterpriseUsersListParams()
-- uid: Crowdin.Api.Users.EnterpriseUsersListParams.#ctor(System.Nullable{Crowdin.Api.Users.UserStatus},System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserTwoFactorStatus},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
-  name: EnterpriseUsersListParams(Nullable<UserStatus>, Nullable<String>, Nullable<UserTwoFactorStatus>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
-  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams__ctor_System_Nullable_Crowdin_Api_Users_UserStatus__System_Nullable_System_String__System_Nullable_Crowdin_Api_Users_UserTwoFactorStatus__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
-  commentId: M:Crowdin.Api.Users.EnterpriseUsersListParams.#ctor(System.Nullable{Crowdin.Api.Users.UserStatus},System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserTwoFactorStatus},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
-  name.vb: EnterpriseUsersListParams(Nullable(Of UserStatus), Nullable(Of String), Nullable(Of UserTwoFactorStatus), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
-  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.EnterpriseUsersListParams(System.Nullable<Crowdin.Api.Users.UserStatus>, System.Nullable<System.String>, System.Nullable<Crowdin.Api.Users.UserTwoFactorStatus>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
-  fullName.vb: Crowdin.Api.Users.EnterpriseUsersListParams.EnterpriseUsersListParams(System.Nullable(Of Crowdin.Api.Users.UserStatus), System.Nullable(Of System.String), System.Nullable(Of Crowdin.Api.Users.UserTwoFactorStatus), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
-  nameWithType: EnterpriseUsersListParams.EnterpriseUsersListParams(Nullable<UserStatus>, Nullable<String>, Nullable<UserTwoFactorStatus>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
-  nameWithType.vb: EnterpriseUsersListParams.EnterpriseUsersListParams(Nullable(Of UserStatus), Nullable(Of String), Nullable(Of UserTwoFactorStatus), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
-- uid: Crowdin.Api.Users.EnterpriseUsersListParams.#ctor*
-  name: EnterpriseUsersListParams
-  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams__ctor_
-  commentId: Overload:Crowdin.Api.Users.EnterpriseUsersListParams.#ctor
+- uid: Crowdin.Api.Users.EnterpriseUsersListParams.GroupIds
+  name: GroupIds
+  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_GroupIds
+  commentId: P:Crowdin.Api.Users.EnterpriseUsersListParams.GroupIds
+  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.GroupIds
+  nameWithType: EnterpriseUsersListParams.GroupIds
+- uid: Crowdin.Api.Users.EnterpriseUsersListParams.GroupIds*
+  name: GroupIds
+  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_GroupIds_
+  commentId: Overload:Crowdin.Api.Users.EnterpriseUsersListParams.GroupIds
   isSpec: "True"
-  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.EnterpriseUsersListParams
-  nameWithType: EnterpriseUsersListParams.EnterpriseUsersListParams
+  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.GroupIds
+  nameWithType: EnterpriseUsersListParams.GroupIds
+- uid: Crowdin.Api.Users.EnterpriseUsersListParams.LanguageIds
+  name: LanguageIds
+  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_LanguageIds
+  commentId: P:Crowdin.Api.Users.EnterpriseUsersListParams.LanguageIds
+  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.LanguageIds
+  nameWithType: EnterpriseUsersListParams.LanguageIds
+- uid: Crowdin.Api.Users.EnterpriseUsersListParams.LanguageIds*
+  name: LanguageIds
+  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_LanguageIds_
+  commentId: Overload:Crowdin.Api.Users.EnterpriseUsersListParams.LanguageIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.LanguageIds
+  nameWithType: EnterpriseUsersListParams.LanguageIds
+- uid: Crowdin.Api.Users.EnterpriseUsersListParams.LastSeenFrom
+  name: LastSeenFrom
+  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_LastSeenFrom
+  commentId: P:Crowdin.Api.Users.EnterpriseUsersListParams.LastSeenFrom
+  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.LastSeenFrom
+  nameWithType: EnterpriseUsersListParams.LastSeenFrom
+- uid: Crowdin.Api.Users.EnterpriseUsersListParams.LastSeenFrom*
+  name: LastSeenFrom
+  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_LastSeenFrom_
+  commentId: Overload:Crowdin.Api.Users.EnterpriseUsersListParams.LastSeenFrom
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.LastSeenFrom
+  nameWithType: EnterpriseUsersListParams.LastSeenFrom
+- uid: Crowdin.Api.Users.EnterpriseUsersListParams.LastSeenTo
+  name: LastSeenTo
+  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_LastSeenTo
+  commentId: P:Crowdin.Api.Users.EnterpriseUsersListParams.LastSeenTo
+  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.LastSeenTo
+  nameWithType: EnterpriseUsersListParams.LastSeenTo
+- uid: Crowdin.Api.Users.EnterpriseUsersListParams.LastSeenTo*
+  name: LastSeenTo
+  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_LastSeenTo_
+  commentId: Overload:Crowdin.Api.Users.EnterpriseUsersListParams.LastSeenTo
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.LastSeenTo
+  nameWithType: EnterpriseUsersListParams.LastSeenTo
 - uid: Crowdin.Api.Users.EnterpriseUsersListParams.Limit
   name: Limit
   href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_Limit
@@ -47257,6 +47464,45 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Users.EnterpriseUsersListParams.OrderBy
   nameWithType: EnterpriseUsersListParams.OrderBy
+- uid: Crowdin.Api.Users.EnterpriseUsersListParams.OrganizationRoles
+  name: OrganizationRoles
+  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_OrganizationRoles
+  commentId: P:Crowdin.Api.Users.EnterpriseUsersListParams.OrganizationRoles
+  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.OrganizationRoles
+  nameWithType: EnterpriseUsersListParams.OrganizationRoles
+- uid: Crowdin.Api.Users.EnterpriseUsersListParams.OrganizationRoles*
+  name: OrganizationRoles
+  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_OrganizationRoles_
+  commentId: Overload:Crowdin.Api.Users.EnterpriseUsersListParams.OrganizationRoles
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.OrganizationRoles
+  nameWithType: EnterpriseUsersListParams.OrganizationRoles
+- uid: Crowdin.Api.Users.EnterpriseUsersListParams.ProjectIds
+  name: ProjectIds
+  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_ProjectIds
+  commentId: P:Crowdin.Api.Users.EnterpriseUsersListParams.ProjectIds
+  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.ProjectIds
+  nameWithType: EnterpriseUsersListParams.ProjectIds
+- uid: Crowdin.Api.Users.EnterpriseUsersListParams.ProjectIds*
+  name: ProjectIds
+  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_ProjectIds_
+  commentId: Overload:Crowdin.Api.Users.EnterpriseUsersListParams.ProjectIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.ProjectIds
+  nameWithType: EnterpriseUsersListParams.ProjectIds
+- uid: Crowdin.Api.Users.EnterpriseUsersListParams.ProjectRoles
+  name: ProjectRoles
+  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_ProjectRoles
+  commentId: P:Crowdin.Api.Users.EnterpriseUsersListParams.ProjectRoles
+  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.ProjectRoles
+  nameWithType: EnterpriseUsersListParams.ProjectRoles
+- uid: Crowdin.Api.Users.EnterpriseUsersListParams.ProjectRoles*
+  name: ProjectRoles
+  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_ProjectRoles_
+  commentId: Overload:Crowdin.Api.Users.EnterpriseUsersListParams.ProjectRoles
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.ProjectRoles
+  nameWithType: EnterpriseUsersListParams.ProjectRoles
 - uid: Crowdin.Api.Users.EnterpriseUsersListParams.Search
   name: Search
   href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_Search
@@ -47283,6 +47529,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Users.EnterpriseUsersListParams.Status
   nameWithType: EnterpriseUsersListParams.Status
+- uid: Crowdin.Api.Users.EnterpriseUsersListParams.TeamId
+  name: TeamId
+  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_TeamId
+  commentId: P:Crowdin.Api.Users.EnterpriseUsersListParams.TeamId
+  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.TeamId
+  nameWithType: EnterpriseUsersListParams.TeamId
+- uid: Crowdin.Api.Users.EnterpriseUsersListParams.TeamId*
+  name: TeamId
+  href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_TeamId_
+  commentId: Overload:Crowdin.Api.Users.EnterpriseUsersListParams.TeamId
+  isSpec: "True"
+  fullName: Crowdin.Api.Users.EnterpriseUsersListParams.TeamId
+  nameWithType: EnterpriseUsersListParams.TeamId
 - uid: Crowdin.Api.Users.EnterpriseUsersListParams.ToQueryParams
   name: ToQueryParams()
   href: api/Crowdin.Api.Users.EnterpriseUsersListParams.html#Crowdin_Api_Users_EnterpriseUsersListParams_ToQueryParams
@@ -47613,15 +47872,15 @@ references:
   commentId: M:Crowdin.Api.Users.IUsersApiExecutor.ListUsers(Crowdin.Api.Users.EnterpriseUsersListParams)
   fullName: Crowdin.Api.Users.IUsersApiExecutor.ListUsers(Crowdin.Api.Users.EnterpriseUsersListParams)
   nameWithType: IUsersApiExecutor.ListUsers(EnterpriseUsersListParams)
-- uid: Crowdin.Api.Users.IUsersApiExecutor.ListUsers(System.Nullable{Crowdin.Api.Users.UserStatus},System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserTwoFactorStatus},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
-  name: ListUsers(Nullable<UserStatus>, Nullable<String>, Nullable<UserTwoFactorStatus>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
-  href: api/Crowdin.Api.Users.IUsersApiExecutor.html#Crowdin_Api_Users_IUsersApiExecutor_ListUsers_System_Nullable_Crowdin_Api_Users_UserStatus__System_Nullable_System_String__System_Nullable_Crowdin_Api_Users_UserTwoFactorStatus__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
-  commentId: M:Crowdin.Api.Users.IUsersApiExecutor.ListUsers(System.Nullable{Crowdin.Api.Users.UserStatus},System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserTwoFactorStatus},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
-  name.vb: ListUsers(Nullable(Of UserStatus), Nullable(Of String), Nullable(Of UserTwoFactorStatus), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
-  fullName: Crowdin.Api.Users.IUsersApiExecutor.ListUsers(System.Nullable<Crowdin.Api.Users.UserStatus>, System.Nullable<System.String>, System.Nullable<Crowdin.Api.Users.UserTwoFactorStatus>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
-  fullName.vb: Crowdin.Api.Users.IUsersApiExecutor.ListUsers(System.Nullable(Of Crowdin.Api.Users.UserStatus), System.Nullable(Of System.String), System.Nullable(Of Crowdin.Api.Users.UserTwoFactorStatus), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
-  nameWithType: IUsersApiExecutor.ListUsers(Nullable<UserStatus>, Nullable<String>, Nullable<UserTwoFactorStatus>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
-  nameWithType.vb: IUsersApiExecutor.ListUsers(Nullable(Of UserStatus), Nullable(Of String), Nullable(Of UserTwoFactorStatus), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+- uid: Crowdin.Api.Users.IUsersApiExecutor.ListUsers(System.Nullable{Crowdin.Api.Users.UserStatus},System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserTwoFactorStatus},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}},System.Nullable{IEnumerable{Crowdin.Api.Users.OrganizationRole}},System.Nullable{System.Int32},System.Nullable{IEnumerable{System.Int32}},System.Nullable{IEnumerable{Crowdin.Api.ProjectsGroups.ProjectRole}},System.Nullable{IEnumerable{System.String}},System.Nullable{IEnumerable{System.Int32}},System.Nullable{DateTimeOffset},System.Nullable{DateTimeOffset})
+  name: ListUsers(Nullable<UserStatus>, Nullable<String>, Nullable<UserTwoFactorStatus>, Int32, Int32, Nullable<IEnumerable<SortingRule>>, Nullable<IEnumerable<OrganizationRole>>, Nullable<Int32>, Nullable<IEnumerable<Int32>>, Nullable<IEnumerable<ProjectRole>>, Nullable<IEnumerable<String>>, Nullable<IEnumerable<Int32>>, Nullable<DateTimeOffset>, Nullable<DateTimeOffset>)
+  href: api/Crowdin.Api.Users.IUsersApiExecutor.html#Crowdin_Api_Users_IUsersApiExecutor_ListUsers_System_Nullable_Crowdin_Api_Users_UserStatus__System_Nullable_System_String__System_Nullable_Crowdin_Api_Users_UserTwoFactorStatus__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___System_Nullable_IEnumerable_Crowdin_Api_Users_OrganizationRole___System_Nullable_System_Int32__System_Nullable_IEnumerable_System_Int32___System_Nullable_IEnumerable_Crowdin_Api_ProjectsGroups_ProjectRole___System_Nullable_IEnumerable_System_String___System_Nullable_IEnumerable_System_Int32___System_Nullable_DateTimeOffset__System_Nullable_DateTimeOffset__
+  commentId: M:Crowdin.Api.Users.IUsersApiExecutor.ListUsers(System.Nullable{Crowdin.Api.Users.UserStatus},System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserTwoFactorStatus},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}},System.Nullable{IEnumerable{Crowdin.Api.Users.OrganizationRole}},System.Nullable{System.Int32},System.Nullable{IEnumerable{System.Int32}},System.Nullable{IEnumerable{Crowdin.Api.ProjectsGroups.ProjectRole}},System.Nullable{IEnumerable{System.String}},System.Nullable{IEnumerable{System.Int32}},System.Nullable{DateTimeOffset},System.Nullable{DateTimeOffset})
+  name.vb: ListUsers(Nullable(Of UserStatus), Nullable(Of String), Nullable(Of UserTwoFactorStatus), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)), Nullable(Of IEnumerable(Of OrganizationRole)), Nullable(Of Int32), Nullable(Of IEnumerable(Of Int32)), Nullable(Of IEnumerable(Of ProjectRole)), Nullable(Of IEnumerable(Of String)), Nullable(Of IEnumerable(Of Int32)), Nullable(Of DateTimeOffset), Nullable(Of DateTimeOffset))
+  fullName: Crowdin.Api.Users.IUsersApiExecutor.ListUsers(System.Nullable<Crowdin.Api.Users.UserStatus>, System.Nullable<System.String>, System.Nullable<Crowdin.Api.Users.UserTwoFactorStatus>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>, System.Nullable<IEnumerable<Crowdin.Api.Users.OrganizationRole>>, System.Nullable<System.Int32>, System.Nullable<IEnumerable<System.Int32>>, System.Nullable<IEnumerable<Crowdin.Api.ProjectsGroups.ProjectRole>>, System.Nullable<IEnumerable<System.String>>, System.Nullable<IEnumerable<System.Int32>>, System.Nullable<DateTimeOffset>, System.Nullable<DateTimeOffset>)
+  fullName.vb: Crowdin.Api.Users.IUsersApiExecutor.ListUsers(System.Nullable(Of Crowdin.Api.Users.UserStatus), System.Nullable(Of System.String), System.Nullable(Of Crowdin.Api.Users.UserTwoFactorStatus), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)), System.Nullable(Of IEnumerable(Of Crowdin.Api.Users.OrganizationRole)), System.Nullable(Of System.Int32), System.Nullable(Of IEnumerable(Of System.Int32)), System.Nullable(Of IEnumerable(Of Crowdin.Api.ProjectsGroups.ProjectRole)), System.Nullable(Of IEnumerable(Of System.String)), System.Nullable(Of IEnumerable(Of System.Int32)), System.Nullable(Of DateTimeOffset), System.Nullable(Of DateTimeOffset))
+  nameWithType: IUsersApiExecutor.ListUsers(Nullable<UserStatus>, Nullable<String>, Nullable<UserTwoFactorStatus>, Int32, Int32, Nullable<IEnumerable<SortingRule>>, Nullable<IEnumerable<OrganizationRole>>, Nullable<Int32>, Nullable<IEnumerable<Int32>>, Nullable<IEnumerable<ProjectRole>>, Nullable<IEnumerable<String>>, Nullable<IEnumerable<Int32>>, Nullable<DateTimeOffset>, Nullable<DateTimeOffset>)
+  nameWithType.vb: IUsersApiExecutor.ListUsers(Nullable(Of UserStatus), Nullable(Of String), Nullable(Of UserTwoFactorStatus), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)), Nullable(Of IEnumerable(Of OrganizationRole)), Nullable(Of Int32), Nullable(Of IEnumerable(Of Int32)), Nullable(Of IEnumerable(Of ProjectRole)), Nullable(Of IEnumerable(Of String)), Nullable(Of IEnumerable(Of Int32)), Nullable(Of DateTimeOffset), Nullable(Of DateTimeOffset))
 - uid: Crowdin.Api.Users.IUsersApiExecutor.ListUsers*
   name: ListUsers
   href: api/Crowdin.Api.Users.IUsersApiExecutor.html#Crowdin_Api_Users_IUsersApiExecutor_ListUsers_
@@ -47677,6 +47936,36 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Users.LanguagePermission.WorkflowStepIds
   nameWithType: LanguagePermission.WorkflowStepIds
+- uid: Crowdin.Api.Users.OrganizationRole
+  name: OrganizationRole
+  href: api/Crowdin.Api.Users.OrganizationRole.html
+  commentId: T:Crowdin.Api.Users.OrganizationRole
+  fullName: Crowdin.Api.Users.OrganizationRole
+  nameWithType: OrganizationRole
+- uid: Crowdin.Api.Users.OrganizationRole.Admin
+  name: Admin
+  href: api/Crowdin.Api.Users.OrganizationRole.html#Crowdin_Api_Users_OrganizationRole_Admin
+  commentId: F:Crowdin.Api.Users.OrganizationRole.Admin
+  fullName: Crowdin.Api.Users.OrganizationRole.Admin
+  nameWithType: OrganizationRole.Admin
+- uid: Crowdin.Api.Users.OrganizationRole.Client
+  name: Client
+  href: api/Crowdin.Api.Users.OrganizationRole.html#Crowdin_Api_Users_OrganizationRole_Client
+  commentId: F:Crowdin.Api.Users.OrganizationRole.Client
+  fullName: Crowdin.Api.Users.OrganizationRole.Client
+  nameWithType: OrganizationRole.Client
+- uid: Crowdin.Api.Users.OrganizationRole.Manager
+  name: Manager
+  href: api/Crowdin.Api.Users.OrganizationRole.html#Crowdin_Api_Users_OrganizationRole_Manager
+  commentId: F:Crowdin.Api.Users.OrganizationRole.Manager
+  fullName: Crowdin.Api.Users.OrganizationRole.Manager
+  nameWithType: OrganizationRole.Manager
+- uid: Crowdin.Api.Users.OrganizationRole.Vendor
+  name: Vendor
+  href: api/Crowdin.Api.Users.OrganizationRole.html#Crowdin_Api_Users_OrganizationRole_Vendor
+  commentId: F:Crowdin.Api.Users.OrganizationRole.Vendor
+  fullName: Crowdin.Api.Users.OrganizationRole.Vendor
+  nameWithType: OrganizationRole.Vendor
 - uid: Crowdin.Api.Users.ProjectGroup
   name: ProjectGroup
   href: api/Crowdin.Api.Users.ProjectGroup.html
@@ -48737,15 +49026,15 @@ references:
   commentId: M:Crowdin.Api.Users.UsersApiExecutor.ListUsers(Crowdin.Api.Users.EnterpriseUsersListParams)
   fullName: Crowdin.Api.Users.UsersApiExecutor.ListUsers(Crowdin.Api.Users.EnterpriseUsersListParams)
   nameWithType: UsersApiExecutor.ListUsers(EnterpriseUsersListParams)
-- uid: Crowdin.Api.Users.UsersApiExecutor.ListUsers(System.Nullable{Crowdin.Api.Users.UserStatus},System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserTwoFactorStatus},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
-  name: ListUsers(Nullable<UserStatus>, Nullable<String>, Nullable<UserTwoFactorStatus>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
-  href: api/Crowdin.Api.Users.UsersApiExecutor.html#Crowdin_Api_Users_UsersApiExecutor_ListUsers_System_Nullable_Crowdin_Api_Users_UserStatus__System_Nullable_System_String__System_Nullable_Crowdin_Api_Users_UserTwoFactorStatus__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___
-  commentId: M:Crowdin.Api.Users.UsersApiExecutor.ListUsers(System.Nullable{Crowdin.Api.Users.UserStatus},System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserTwoFactorStatus},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})
-  name.vb: ListUsers(Nullable(Of UserStatus), Nullable(Of String), Nullable(Of UserTwoFactorStatus), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
-  fullName: Crowdin.Api.Users.UsersApiExecutor.ListUsers(System.Nullable<Crowdin.Api.Users.UserStatus>, System.Nullable<System.String>, System.Nullable<Crowdin.Api.Users.UserTwoFactorStatus>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>)
-  fullName.vb: Crowdin.Api.Users.UsersApiExecutor.ListUsers(System.Nullable(Of Crowdin.Api.Users.UserStatus), System.Nullable(Of System.String), System.Nullable(Of Crowdin.Api.Users.UserTwoFactorStatus), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)))
-  nameWithType: UsersApiExecutor.ListUsers(Nullable<UserStatus>, Nullable<String>, Nullable<UserTwoFactorStatus>, Int32, Int32, Nullable<IEnumerable<SortingRule>>)
-  nameWithType.vb: UsersApiExecutor.ListUsers(Nullable(Of UserStatus), Nullable(Of String), Nullable(Of UserTwoFactorStatus), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)))
+- uid: Crowdin.Api.Users.UsersApiExecutor.ListUsers(System.Nullable{Crowdin.Api.Users.UserStatus},System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserTwoFactorStatus},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}},System.Nullable{IEnumerable{Crowdin.Api.Users.OrganizationRole}},System.Nullable{System.Int32},System.Nullable{IEnumerable{System.Int32}},System.Nullable{IEnumerable{Crowdin.Api.ProjectsGroups.ProjectRole}},System.Nullable{IEnumerable{System.String}},System.Nullable{IEnumerable{System.Int32}},System.Nullable{DateTimeOffset},System.Nullable{DateTimeOffset})
+  name: ListUsers(Nullable<UserStatus>, Nullable<String>, Nullable<UserTwoFactorStatus>, Int32, Int32, Nullable<IEnumerable<SortingRule>>, Nullable<IEnumerable<OrganizationRole>>, Nullable<Int32>, Nullable<IEnumerable<Int32>>, Nullable<IEnumerable<ProjectRole>>, Nullable<IEnumerable<String>>, Nullable<IEnumerable<Int32>>, Nullable<DateTimeOffset>, Nullable<DateTimeOffset>)
+  href: api/Crowdin.Api.Users.UsersApiExecutor.html#Crowdin_Api_Users_UsersApiExecutor_ListUsers_System_Nullable_Crowdin_Api_Users_UserStatus__System_Nullable_System_String__System_Nullable_Crowdin_Api_Users_UserTwoFactorStatus__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___System_Nullable_IEnumerable_Crowdin_Api_Users_OrganizationRole___System_Nullable_System_Int32__System_Nullable_IEnumerable_System_Int32___System_Nullable_IEnumerable_Crowdin_Api_ProjectsGroups_ProjectRole___System_Nullable_IEnumerable_System_String___System_Nullable_IEnumerable_System_Int32___System_Nullable_DateTimeOffset__System_Nullable_DateTimeOffset__
+  commentId: M:Crowdin.Api.Users.UsersApiExecutor.ListUsers(System.Nullable{Crowdin.Api.Users.UserStatus},System.Nullable{System.String},System.Nullable{Crowdin.Api.Users.UserTwoFactorStatus},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}},System.Nullable{IEnumerable{Crowdin.Api.Users.OrganizationRole}},System.Nullable{System.Int32},System.Nullable{IEnumerable{System.Int32}},System.Nullable{IEnumerable{Crowdin.Api.ProjectsGroups.ProjectRole}},System.Nullable{IEnumerable{System.String}},System.Nullable{IEnumerable{System.Int32}},System.Nullable{DateTimeOffset},System.Nullable{DateTimeOffset})
+  name.vb: ListUsers(Nullable(Of UserStatus), Nullable(Of String), Nullable(Of UserTwoFactorStatus), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)), Nullable(Of IEnumerable(Of OrganizationRole)), Nullable(Of Int32), Nullable(Of IEnumerable(Of Int32)), Nullable(Of IEnumerable(Of ProjectRole)), Nullable(Of IEnumerable(Of String)), Nullable(Of IEnumerable(Of Int32)), Nullable(Of DateTimeOffset), Nullable(Of DateTimeOffset))
+  fullName: Crowdin.Api.Users.UsersApiExecutor.ListUsers(System.Nullable<Crowdin.Api.Users.UserStatus>, System.Nullable<System.String>, System.Nullable<Crowdin.Api.Users.UserTwoFactorStatus>, System.Int32, System.Int32, System.Nullable<IEnumerable<Crowdin.Api.SortingRule>>, System.Nullable<IEnumerable<Crowdin.Api.Users.OrganizationRole>>, System.Nullable<System.Int32>, System.Nullable<IEnumerable<System.Int32>>, System.Nullable<IEnumerable<Crowdin.Api.ProjectsGroups.ProjectRole>>, System.Nullable<IEnumerable<System.String>>, System.Nullable<IEnumerable<System.Int32>>, System.Nullable<DateTimeOffset>, System.Nullable<DateTimeOffset>)
+  fullName.vb: Crowdin.Api.Users.UsersApiExecutor.ListUsers(System.Nullable(Of Crowdin.Api.Users.UserStatus), System.Nullable(Of System.String), System.Nullable(Of Crowdin.Api.Users.UserTwoFactorStatus), System.Int32, System.Int32, System.Nullable(Of IEnumerable(Of Crowdin.Api.SortingRule)), System.Nullable(Of IEnumerable(Of Crowdin.Api.Users.OrganizationRole)), System.Nullable(Of System.Int32), System.Nullable(Of IEnumerable(Of System.Int32)), System.Nullable(Of IEnumerable(Of Crowdin.Api.ProjectsGroups.ProjectRole)), System.Nullable(Of IEnumerable(Of System.String)), System.Nullable(Of IEnumerable(Of System.Int32)), System.Nullable(Of DateTimeOffset), System.Nullable(Of DateTimeOffset))
+  nameWithType: UsersApiExecutor.ListUsers(Nullable<UserStatus>, Nullable<String>, Nullable<UserTwoFactorStatus>, Int32, Int32, Nullable<IEnumerable<SortingRule>>, Nullable<IEnumerable<OrganizationRole>>, Nullable<Int32>, Nullable<IEnumerable<Int32>>, Nullable<IEnumerable<ProjectRole>>, Nullable<IEnumerable<String>>, Nullable<IEnumerable<Int32>>, Nullable<DateTimeOffset>, Nullable<DateTimeOffset>)
+  nameWithType.vb: UsersApiExecutor.ListUsers(Nullable(Of UserStatus), Nullable(Of String), Nullable(Of UserTwoFactorStatus), Int32, Int32, Nullable(Of IEnumerable(Of SortingRule)), Nullable(Of IEnumerable(Of OrganizationRole)), Nullable(Of Int32), Nullable(Of IEnumerable(Of Int32)), Nullable(Of IEnumerable(Of ProjectRole)), Nullable(Of IEnumerable(Of String)), Nullable(Of IEnumerable(Of Int32)), Nullable(Of DateTimeOffset), Nullable(Of DateTimeOffset))
 - uid: Crowdin.Api.Users.UsersApiExecutor.ListUsers*
   name: ListUsers
   href: api/Crowdin.Api.Users.UsersApiExecutor.html#Crowdin_Api_Users_UsersApiExecutor_ListUsers_
