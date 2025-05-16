@@ -126,6 +126,21 @@ namespace Crowdin.Api.StringTranslations
             Utils.ThrowIfStatusNot204(statusCode, $"Approvals for string {stringId} removal failed");
         }
 
+        /// <summary>
+        /// Approval Batch Operations. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/String-Translations/operation/api.projects.approvals.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Translations/operation/api.projects.approvals.patch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<TranslationApproval>> ApprovalBatchOperations(
+            int projectId,
+            IEnumerable<ApprovalBatchOpPatch> patches)
+        {
+            string url = FormUrl_Approvals(projectId);
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            return _jsonParser.ParseResponseList<TranslationApproval>(result.JsonObject);
+        }
+
         #region Helper methods
 
         private static string FormUrl_Approvals(int projectId)
@@ -266,6 +281,21 @@ namespace Crowdin.Api.StringTranslations
 
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url, queryParams);
             Utils.ThrowIfStatusNot204(statusCode, "String translation removal failed");
+        }
+
+        /// <summary>
+        /// Translation Batch Operations. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/String-Translations/operation/api.projects.translations.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Translations/operation/api.projects.translations.patch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<StringTranslation>> TranslationBatchOperations(
+            int projectId,
+            IEnumerable<TranslationBatchOpPatch> patches)
+        {
+            string url = FormUrl_Translations(projectId);
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            return _jsonParser.ParseResponseList<StringTranslation>(result.JsonObject);
         }
 
         /// <summary>

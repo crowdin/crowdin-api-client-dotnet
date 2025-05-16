@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="BatchOperations_Request" xml:space="preserve">
+        <value>[
+  {
+    "path": "/2814/text",
+    "op": "replace",
+    "value": "some issue edited"
+  },
+  {
+    "path": "/2814/issueStatus",
+    "op": "replace",
+    "value": "resolved"
+  },
+  {
+    "path": "/-",
+    "op": "add",
+    "value": {
+      "text": "some issue",
+      "stringId": 1,
+      "type": "issue",
+      "targetLanguageId": "en",
+      "isShared": true,
+      "issueType": "translation_mistake"
+    }
+  },
+  {
+    "path": "/2815",
+    "op": "remove"
+  }
+]</value>
+    </data>
+    <data name="BatchOperations_Response" xml:space="preserve">
+        <value>{
+  "data": [
+    {
+      "data": {
+        "id": 2,
+        "isShared": false,
+        "text": "@BeMyEyes  Please provide more details on where the text will be used",
+        "userId": 6,
+        "stringId": 742,
+        "user": {
+          "id": 12,
+          "username": "john_smith",
+          "fullName": "John Smith",
+          "avatarUrl": ""
+        },
+        "string": {
+          "id": 742,
+          "text": "HTML page example",
+          "type": "text",
+          "hasPlurals": false,
+          "isIcu": false,
+          "context": "Document Title\\r\\nXPath: /html/head/title",
+          "fileId": 22
+        },
+        "projectId": 1,
+        "languageId": "bg",
+        "type": "issue",
+        "issueType": "source_mistake",
+        "issueStatus": "unresolved",
+        "resolverId": 12,
+        "senderOrganization": {
+          "id": 200000101,
+          "domain": "umbrella"
+        },
+        "resolverOrganization": {
+          "id": 200000112,
+          "domain": "acme"
+        },
+        "resolver": {
+          "id": 12,
+          "username": "john_smith",
+          "fullName": "John Smith",
+          "avatarUrl": ""
+        },
+        "resolvedAt": "2019-09-20T11:05:24+00:00",
+        "createdAt": "2019-09-20T11:05:24+00:00"
+      }
+    }
+  ]
+}</value>
+    </data>
+</root>

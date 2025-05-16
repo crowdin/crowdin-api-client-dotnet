@@ -245,6 +245,14 @@
           <Generator>ResXFileCodeGenerator</Generator>
           <LastGenOutput>Teams_GroupTeams.Designer.cs</LastGenOutput>
         </EmbeddedResource>
+        <EmbeddedResource Update="Resources\StringTranslations_Approvals.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+          <LastGenOutput>StringTranslations_Approvals.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\StringComments.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+          <LastGenOutput>StringComments.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -517,6 +525,16 @@
           <DesignTime>True</DesignTime>
           <AutoGen>True</AutoGen>
           <DependentUpon>Teams_GroupTeams.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\StringTranslations_Approvals.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>StringTranslations_Approvals.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\StringComments.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>StringComments.resx</DependentUpon>
         </Compile>
     </ItemGroup>
     

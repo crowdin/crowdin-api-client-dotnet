@@ -77,6 +77,21 @@ namespace Crowdin.Api.StringComments
         }
 
         /// <summary>
+        /// String Comment Batch Operations. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/String-Comments/operation/api.projects.comments.batchPatch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Comments/operation/api.projects.comments.batchPatch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<StringComment>> StringCommentBatchOperations(
+            int projectId,
+            IEnumerable<StringCommentBatchOpPatch> patches)
+        {
+            string url = FormUrl_Comments(projectId);
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            return _jsonParser.ParseResponseList<StringComment>(result.JsonObject);
+        }
+
+        /// <summary>
         /// Get string comment. Documentation:
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.comments.get">Crowdin API</a>
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.comments.get">Crowdin Enterprise API</a>

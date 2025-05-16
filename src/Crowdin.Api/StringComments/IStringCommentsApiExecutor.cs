@@ -27,6 +27,10 @@ namespace Crowdin.Api.StringComments
 
         Task<StringComment> AddStringComment(int projectId, AddStringCommentRequest request);
 
+        Task<ResponseList<StringComment>> StringCommentBatchOperations(
+            int projectId,
+            IEnumerable<StringCommentBatchOpPatch> patches);
+
         Task<StringComment> GetStringComment(int projectId, int stringCommentId);
 
         Task DeleteStringComment(int projectId, int stringCommentId);
