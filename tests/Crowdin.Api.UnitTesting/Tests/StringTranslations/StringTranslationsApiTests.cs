@@ -232,5 +232,54 @@ namespace Crowdin.Api.UnitTesting.Tests.StringTranslations
             Assert.Equal(TranslationVoteMark.Up, data.Mark);
             Assert.IsType<User>(data.User);
         }
+
+        [Fact]
+        public async Task TranslationBatchOperations()
+        {
+            const int projectId = 1;
+
+            var patches = new[]
+            {
+                new TranslationBatchOpPatch
+                {
+                    Operation = PatchOperation.Add,
+                    Path = TranslationBatchOpPatchPath.Empty,
+                    Value = new
+                    {
+                        stringId = 35434,
+                        languageId = "fr",
+                        text = "Цю стрічку перекладено",
+                        pluralCategoryName = "few",
+                        addToTm = false
+                    }
+                },
+                new TranslationBatchOpPatch
+                {
+                    Operation = PatchOperation.Remove,
+                    Path = new TranslationBatchOpPatchPath(translationId: 2815)
+                }
+            };
+            
+            string actualRequestJson = JsonConvert.SerializeObject(patches, DefaultSettings);
+            string expectedRequestJson = TestUtils.CompactJson(Resources.StringTranslations.TranslationBatchOperations_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+            
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+            
+            var url = $"/projects/{projectId}/translations";
+
+            mockClient
+                .Setup(client => client.SendPatchRequest(url, patches, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Resources.StringTranslations.TranslationBatchOperations_Response)
+                });
+            
+            var executor = new StringTranslationsApiExecutor(mockClient.Object);
+            ResponseList<StringTranslation> response = await executor.TranslationBatchOperations(projectId, patches);
+            
+            Assert.NotNull(response.Data.FirstOrDefault());
+        }
     }
 }
