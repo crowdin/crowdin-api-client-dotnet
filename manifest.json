@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "tft15gug67WPY7+OokKENMtbrnmJutp6gB5S79YIHQU="
+          "hash": "oPL6qYoQ1uElD0mykP4OvCj9OOUOX3mOLwE9jv1LyBg="
         }
       },
       "is_incremental": false,
@@ -3150,7 +3150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.PatchEntry.html",
-          "hash": "Q4y5i82eODtaOm58+Dq/whIeAGRbs6iERGhRx19y7WA="
+          "hash": "Q45+t7Upo6LDRR0EHgp6O+/C1hoE4rUvUpAyLqu9nCs="
         }
       },
       "is_incremental": false,
@@ -6414,7 +6414,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.StringComments.IStringCommentsApiExecutor.html",
-          "hash": "nsJijo+RdWxaWO/iHrxl2M49TjsFHITC8YpgoC7P/xw="
+          "hash": "SUsrsw/7cQwEPjm+5xpdelxfXA8/IZ+nTgoEM/mUR/c="
         }
       },
       "is_incremental": false,
@@ -6482,6 +6482,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.StringComments.StringCommentBatchOpPatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.StringComments.StringCommentBatchOpPatch.html",
+          "hash": "caYqweZgDf6JcQQ/k2Ld6atjPp0en26iBQnZHZEUsZQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Code.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Code.html",
+          "hash": "4gGCGRgM+pvlRImrbyZTYrpuLrDfQNH+29Ld0+iO1fY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.html",
+          "hash": "iu86KYPZhJdhCHNs0M9L6VkAdExZ+F+IcBQWcW3t+Eo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.StringComments.StringCommentPatch.yml",
       "output": {
         ".html": {
@@ -6522,7 +6558,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.StringComments.StringCommentsApiExecutor.html",
-          "hash": "4fpKaOfn4C4Yu4VGtoU1HjgKTtd1YnG3uekQ614XugU="
+          "hash": "fXSFbJommz2URVQDersP2KElsRDq/k26IWg3a+KZaFY="
         }
       },
       "is_incremental": false,
@@ -6546,7 +6582,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.StringComments.html",
-          "hash": "Srg2vGsXTuUIMtp6gS0ybDamDezbWXd5f0tCoTCdgqs="
+          "hash": "1sGZ9il8RdlTXmhEKBARFhKMkSLBYX2ZcX7DBK7Y4Eg="
         }
       },
       "is_incremental": false,
@@ -6602,11 +6638,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.StringTranslations.ApprovalBatchOpPatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.StringTranslations.ApprovalBatchOpPatch.html",
+          "hash": "p0n4cc9cClSOlZAPy3/yNEiIpyGws7dl56NLnInPirY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.html",
+          "hash": "gt7tSWJ9gBDZJCITQPchSbiJFs4H3lTDHNvXBzktyBE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.yml",
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.html",
-          "hash": "egdXDpEbD5V4658TjybzA4ClWB7yH0Rxag6HZ+9/dBc="
+          "hash": "49+vqDvwe3vNypponSoDsvGjSOIN6mPBwdIEWRekgmc="
         }
       },
       "is_incremental": false,
@@ -6714,7 +6774,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html",
-          "hash": "huUrPH6play3LUGghEVErBRBEuFmSfjvFGlqsjKiJew="
+          "hash": "dov8a5n61KZl40eSLRsPtksmnwYHgXvsVDq+QZK/jJI="
         }
       },
       "is_incremental": false,
@@ -6775,6 +6835,30 @@
         ".html": {
           "relative_path": "api/Crowdin.Api.StringTranslations.TranslationApprovalsListParams.html",
           "hash": "iJudLSNWxgt6f/cQrp4RC/RcDRulOOWMsiXraJq8m4Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.StringTranslations.TranslationBatchOpPatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.StringTranslations.TranslationBatchOpPatch.html",
+          "hash": "MAy9zSsN/hhYbzHCLY7fFEGY68zSZMAJzPSSnO6k7eI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.html",
+          "hash": "BB0mTvEr7HGMZj0a3eZYk+3p/4vtFwvWZdVWZ8nAcMk="
         }
       },
       "is_incremental": false,
@@ -6846,7 +6930,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.StringTranslations.html",
-          "hash": "4qTc0HFPydqvtcYka/VQHUeUuVP1QBQEV3UaRIHM/r4="
+          "hash": "mx88Q5cX7CP1peQg28kjc01Sm5ozRvf5T4Z/2j5vmxs="
         }
       },
       "is_incremental": false,
@@ -9294,7 +9378,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "IPwPHMMgNMzf1+EQtfMVmF0ivGucr5m85KpF9tjdkqQ="
+          "hash": "HCjk2/rHQAT6X/PfiQgbzUFS3f/Xpt/SGX8GNV8dWwU="
         }
       },
       "is_incremental": false,
@@ -9333,7 +9417,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 770,
+          "total_file_count": 777,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

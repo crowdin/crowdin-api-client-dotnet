@@ -233,7 +233,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_AddTranslation_System_Int32_Crowdin_Api_StringTranslations_AddTranslationRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.AddTranslation(System.Int32%2CCrowdin.Api.StringTranslations.AddTranslationRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L239">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L254">View Source</a>
   </span>
   <a id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_AddTranslation_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.AddTranslation*"></a>
   <h4 id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_AddTranslation_System_Int32_Crowdin_Api_StringTranslations_AddTranslationRequest_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.AddTranslation(System.Int32,Crowdin.Api.StringTranslations.AddTranslationRequest)">AddTranslation(Int32, AddTranslationRequest)</h4>
@@ -288,7 +288,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_AddVote_System_Int32_Crowdin_Api_StringTranslations_AddVoteRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.AddVote(System.Int32%2CCrowdin.Api.StringTranslations.AddVoteRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L377">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L407">View Source</a>
   </span>
   <a id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_AddVote_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.AddVote*"></a>
   <h4 id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_AddVote_System_Int32_Crowdin_Api_StringTranslations_AddVoteRequest_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.AddVote(System.Int32,Crowdin.Api.StringTranslations.AddVoteRequest)">AddVote(Int32, AddVoteRequest)</h4>
@@ -340,10 +340,65 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ApprovalBatchOperations_System_Int32_IEnumerable_Crowdin_Api_StringTranslations_ApprovalBatchOpPatch__.md&amp;value=---%0Auid%3A%20Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ApprovalBatchOperations(System.Int32%2CIEnumerable%7BCrowdin.Api.StringTranslations.ApprovalBatchOpPatch%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L134">View Source</a>
+  </span>
+  <a id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ApprovalBatchOperations_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ApprovalBatchOperations*"></a>
+  <h4 id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ApprovalBatchOperations_System_Int32_IEnumerable_Crowdin_Api_StringTranslations_ApprovalBatchOpPatch__" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ApprovalBatchOperations(System.Int32,IEnumerable{Crowdin.Api.StringTranslations.ApprovalBatchOpPatch})">ApprovalBatchOperations(Int32, IEnumerable&lt;ApprovalBatchOpPatch&gt;)</h4>
+  <div class="markdown level1 summary"><p>Approval Batch Operations. Documentation:
+<a href="https://support.crowdin.com/developer/api/v2/#tag/String-Translations/operation/api.projects.approvals.patch">Crowdin API</a>
+<a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Translations/operation/api.projects.approvals.patch">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;ResponseList&lt;TranslationApproval&gt;&gt; ApprovalBatchOperations(int projectId, IEnumerable&lt;ApprovalBatchOpPatch&gt; patches)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Crowdin.Api.StringTranslations.ApprovalBatchOpPatch.html">ApprovalBatchOpPatch</a>&gt;</td>
+        <td><span class="parametername">patches</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.ResponseList-1.html">ResponseList</a>&lt;<a class="xref" href="Crowdin.Api.StringTranslations.TranslationApproval.html">TranslationApproval</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_CancelVote_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.CancelVote(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L403">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L433">View Source</a>
   </span>
   <a id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_CancelVote_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.CancelVote*"></a>
   <h4 id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_CancelVote_System_Int32_System_Int32_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.CancelVote(System.Int32,System.Int32)">CancelVote(Int32, Int32)</h4>
@@ -398,7 +453,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_DeleteStringTranslations_System_Int32_System_Int32_System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.DeleteStringTranslations(System.Int32%2CSystem.Int32%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L252">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L267">View Source</a>
   </span>
   <a id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_DeleteStringTranslations_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.DeleteStringTranslations*"></a>
   <h4 id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_DeleteStringTranslations_System_Int32_System_Int32_System_Nullable_System_String__" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.DeleteStringTranslations(System.Int32,System.Int32,System.Nullable{System.String})">DeleteStringTranslations(Int32, Int32, Nullable&lt;String&gt;)</h4>
@@ -458,7 +513,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_DeleteTranslation_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.DeleteTranslation(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L311">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L341">View Source</a>
   </span>
   <a id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_DeleteTranslation_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.DeleteTranslation*"></a>
   <h4 id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_DeleteTranslation_System_Int32_System_Int32_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.DeleteTranslation(System.Int32,System.Int32)">DeleteTranslation(Int32, Int32)</h4>
@@ -568,7 +623,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_GetTranslation_System_Int32_System_Int32_System_Nullable_System_Boolean__.md&amp;value=---%0Auid%3A%20Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.GetTranslation(System.Int32%2CSystem.Int32%2CSystem.Nullable%7BSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L276">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L306">View Source</a>
   </span>
   <a id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_GetTranslation_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.GetTranslation*"></a>
   <h4 id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_GetTranslation_System_Int32_System_Int32_System_Nullable_System_Boolean__" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.GetTranslation(System.Int32,System.Int32,System.Nullable{System.Boolean})">GetTranslation(Int32, Int32, Nullable&lt;Boolean&gt;)</h4>
@@ -628,7 +683,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_GetVote_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.GetVote(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L390">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L420">View Source</a>
   </span>
   <a id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_GetVote_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.GetVote*"></a>
   <h4 id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_GetVote_System_Int32_System_Int32_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.GetVote(System.Int32,System.Int32)">GetVote(Int32, Int32)</h4>
@@ -683,7 +738,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListLanguageTranslations_System_Int32_System_String_Crowdin_Api_StringTranslations_LanguageTranslationsListParams_.md&amp;value=---%0Auid%3A%20Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListLanguageTranslations(System.Int32%2CSystem.String%2CCrowdin.Api.StringTranslations.LanguageTranslationsListParams)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L175">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L190">View Source</a>
   </span>
   <a id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListLanguageTranslations_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListLanguageTranslations*"></a>
   <h4 id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListLanguageTranslations_System_Int32_System_String_Crowdin_Api_StringTranslations_LanguageTranslationsListParams_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListLanguageTranslations(System.Int32,System.String,Crowdin.Api.StringTranslations.LanguageTranslationsListParams)">ListLanguageTranslations(Int32, String, LanguageTranslationsListParams)</h4>
@@ -743,7 +798,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListLanguageTranslations_System_Int32_System_String_System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Boolean__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___.md&amp;value=---%0Auid%3A%20Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListLanguageTranslations(System.Int32%2CSystem.String%2CSystem.Nullable%7BSystem.String%7D%2CSystem.Nullable%7BSystem.String%7D%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.String%7D%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Int32%2CSystem.Int32%2CSystem.Nullable%7BIEnumerable%7BCrowdin.Api.SortingRule%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L150">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L165">View Source</a>
   </span>
   <a id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListLanguageTranslations_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListLanguageTranslations*"></a>
   <h4 id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListLanguageTranslations_System_Int32_System_String_System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Boolean__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListLanguageTranslations(System.Int32,System.String,System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Boolean},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})">ListLanguageTranslations(Int32, String, Nullable&lt;String&gt;, Nullable&lt;String&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;String&gt;, Nullable&lt;Boolean&gt;, Int32, Int32, Nullable&lt;IEnumerable&lt;SortingRule&gt;&gt;)</h4>
@@ -848,7 +903,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListStringTranslations_System_Int32_Crowdin_Api_StringTranslations_StringTranslationsListParams_.md&amp;value=---%0Auid%3A%20Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListStringTranslations(System.Int32%2CCrowdin.Api.StringTranslations.StringTranslationsListParams)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L224">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L239">View Source</a>
   </span>
   <a id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListStringTranslations_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListStringTranslations*"></a>
   <h4 id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListStringTranslations_System_Int32_Crowdin_Api_StringTranslations_StringTranslationsListParams_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListStringTranslations(System.Int32,Crowdin.Api.StringTranslations.StringTranslationsListParams)">ListStringTranslations(Int32, StringTranslationsListParams)</h4>
@@ -903,7 +958,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListStringTranslations_System_Int32_System_Int32_System_String_System_Nullable_System_Boolean__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___.md&amp;value=---%0Auid%3A%20Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListStringTranslations(System.Int32%2CSystem.Int32%2CSystem.String%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.Int32%2CSystem.Int32%2CSystem.Nullable%7BIEnumerable%7BCrowdin.Api.SortingRule%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L204">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L219">View Source</a>
   </span>
   <a id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListStringTranslations_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListStringTranslations*"></a>
   <h4 id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListStringTranslations_System_Int32_System_Int32_System_String_System_Nullable_System_Boolean__System_Int32_System_Int32_System_Nullable_IEnumerable_Crowdin_Api_SortingRule___" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListStringTranslations(System.Int32,System.Int32,System.String,System.Nullable{System.Boolean},System.Int32,System.Int32,System.Nullable{IEnumerable{Crowdin.Api.SortingRule}})">ListStringTranslations(Int32, Int32, String, Nullable&lt;Boolean&gt;, Int32, Int32, Nullable&lt;IEnumerable&lt;SortingRule&gt;&gt;)</h4>
@@ -1133,7 +1188,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListTranslationVotes_System_Int32_Crowdin_Api_StringTranslations_TranslationVotesListParams_.md&amp;value=---%0Auid%3A%20Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationVotes(System.Int32%2CCrowdin.Api.StringTranslations.TranslationVotesListParams)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L362">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L392">View Source</a>
   </span>
   <a id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListTranslationVotes_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationVotes*"></a>
   <h4 id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListTranslationVotes_System_Int32_Crowdin_Api_StringTranslations_TranslationVotesListParams_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationVotes(System.Int32,Crowdin.Api.StringTranslations.TranslationVotesListParams)">ListTranslationVotes(Int32, TranslationVotesListParams)</h4>
@@ -1188,7 +1243,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListTranslationVotes_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_String__System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationVotes(System.Int32%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.String%7D%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Nullable%7BSystem.String%7D%2CSystem.Nullable%7BSystem.String%7D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L342">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L372">View Source</a>
   </span>
   <a id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListTranslationVotes_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationVotes*"></a>
   <h4 id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ListTranslationVotes_System_Int32_System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_Int32__System_Nullable_System_String__System_Nullable_System_String__System_Int32_System_Int32_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ListTranslationVotes(System.Int32,System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.Int32},System.Nullable{System.String},System.Nullable{System.String},System.Int32,System.Int32)">ListTranslationVotes(Int32, Nullable&lt;Int32&gt;, Nullable&lt;String&gt;, Nullable&lt;Int32&gt;, Nullable&lt;String&gt;, Nullable&lt;String&gt;, Int32, Int32)</h4>
@@ -1383,7 +1438,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_RestoreTranslation_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.RestoreTranslation(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L298">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L328">View Source</a>
   </span>
   <a id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_RestoreTranslation_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.RestoreTranslation*"></a>
   <h4 id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_RestoreTranslation_System_Int32_System_Int32_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.RestoreTranslation(System.Int32,System.Int32)">RestoreTranslation(Int32, Int32)</h4>
@@ -1438,7 +1493,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_TranslationAlignment_System_Int32_Crowdin_Api_StringTranslations_TranslationAlignmentRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.TranslationAlignment(System.Int32%2CCrowdin.Api.StringTranslations.TranslationAlignmentRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L191">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L206">View Source</a>
   </span>
   <a id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_TranslationAlignment_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.TranslationAlignment*"></a>
   <h4 id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_TranslationAlignment_System_Int32_Crowdin_Api_StringTranslations_TranslationAlignmentRequest_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.TranslationAlignment(System.Int32,Crowdin.Api.StringTranslations.TranslationAlignmentRequest)">TranslationAlignment(Int32, TranslationAlignmentRequest)</h4>
@@ -1484,6 +1539,61 @@
     <tbody>
       <tr>
         <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.StringTranslations.TranslationAlignment.html">TranslationAlignment</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_TranslationBatchOperations_System_Int32_IEnumerable_Crowdin_Api_StringTranslations_TranslationBatchOpPatch__.md&amp;value=---%0Auid%3A%20Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.TranslationBatchOperations(System.Int32%2CIEnumerable%7BCrowdin.Api.StringTranslations.TranslationBatchOpPatch%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/StringTranslations/StringTranslationsApiExecutor.cs/#L291">View Source</a>
+  </span>
+  <a id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_TranslationBatchOperations_" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.TranslationBatchOperations*"></a>
+  <h4 id="Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_TranslationBatchOperations_System_Int32_IEnumerable_Crowdin_Api_StringTranslations_TranslationBatchOpPatch__" data-uid="Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.TranslationBatchOperations(System.Int32,IEnumerable{Crowdin.Api.StringTranslations.TranslationBatchOpPatch})">TranslationBatchOperations(Int32, IEnumerable&lt;TranslationBatchOpPatch&gt;)</h4>
+  <div class="markdown level1 summary"><p>Translation Batch Operations. Documentation:
+<a href="https://support.crowdin.com/developer/api/v2/#tag/String-Translations/operation/api.projects.translations.patch">Crowdin API</a>
+<a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Translations/operation/api.projects.translations.patch">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;ResponseList&lt;StringTranslation&gt;&gt; TranslationBatchOperations(int projectId, IEnumerable&lt;TranslationBatchOpPatch&gt; patches)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Crowdin.Api.StringTranslations.TranslationBatchOpPatch.html">TranslationBatchOpPatch</a>&gt;</td>
+        <td><span class="parametername">patches</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Crowdin.Api.ResponseList-1.html">ResponseList</a>&lt;<a class="xref" href="Crowdin.Api.StringTranslations.StringTranslation.html">StringTranslation</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>

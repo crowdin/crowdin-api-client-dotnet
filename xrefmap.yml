@@ -33980,6 +33980,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringComments.IStringCommentsApiExecutor.ListStringComments
   nameWithType: IStringCommentsApiExecutor.ListStringComments
+- uid: Crowdin.Api.StringComments.IStringCommentsApiExecutor.StringCommentBatchOperations(System.Int32,IEnumerable{Crowdin.Api.StringComments.StringCommentBatchOpPatch})
+  name: StringCommentBatchOperations(Int32, IEnumerable<StringCommentBatchOpPatch>)
+  href: api/Crowdin.Api.StringComments.IStringCommentsApiExecutor.html#Crowdin_Api_StringComments_IStringCommentsApiExecutor_StringCommentBatchOperations_System_Int32_IEnumerable_Crowdin_Api_StringComments_StringCommentBatchOpPatch__
+  commentId: M:Crowdin.Api.StringComments.IStringCommentsApiExecutor.StringCommentBatchOperations(System.Int32,IEnumerable{Crowdin.Api.StringComments.StringCommentBatchOpPatch})
+  name.vb: StringCommentBatchOperations(Int32, IEnumerable(Of StringCommentBatchOpPatch))
+  fullName: Crowdin.Api.StringComments.IStringCommentsApiExecutor.StringCommentBatchOperations(System.Int32, IEnumerable<Crowdin.Api.StringComments.StringCommentBatchOpPatch>)
+  fullName.vb: Crowdin.Api.StringComments.IStringCommentsApiExecutor.StringCommentBatchOperations(System.Int32, IEnumerable(Of Crowdin.Api.StringComments.StringCommentBatchOpPatch))
+  nameWithType: IStringCommentsApiExecutor.StringCommentBatchOperations(Int32, IEnumerable<StringCommentBatchOpPatch>)
+  nameWithType.vb: IStringCommentsApiExecutor.StringCommentBatchOperations(Int32, IEnumerable(Of StringCommentBatchOpPatch))
+- uid: Crowdin.Api.StringComments.IStringCommentsApiExecutor.StringCommentBatchOperations*
+  name: StringCommentBatchOperations
+  href: api/Crowdin.Api.StringComments.IStringCommentsApiExecutor.html#Crowdin_Api_StringComments_IStringCommentsApiExecutor_StringCommentBatchOperations_
+  commentId: Overload:Crowdin.Api.StringComments.IStringCommentsApiExecutor.StringCommentBatchOperations
+  isSpec: "True"
+  fullName: Crowdin.Api.StringComments.IStringCommentsApiExecutor.StringCommentBatchOperations
+  nameWithType: IStringCommentsApiExecutor.StringCommentBatchOperations
 - uid: Crowdin.Api.StringComments.StringComment
   name: StringComment
   href: api/Crowdin.Api.StringComments.StringComment.html
@@ -34323,6 +34339,91 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringComments.StringComment.UserObject.Username
   nameWithType: StringComment.UserObject.Username
+- uid: Crowdin.Api.StringComments.StringCommentBatchOpPatch
+  name: StringCommentBatchOpPatch
+  href: api/Crowdin.Api.StringComments.StringCommentBatchOpPatch.html
+  commentId: T:Crowdin.Api.StringComments.StringCommentBatchOpPatch
+  fullName: Crowdin.Api.StringComments.StringCommentBatchOpPatch
+  nameWithType: StringCommentBatchOpPatch
+- uid: Crowdin.Api.StringComments.StringCommentBatchOpPatch.Path
+  name: Path
+  href: api/Crowdin.Api.StringComments.StringCommentBatchOpPatch.html#Crowdin_Api_StringComments_StringCommentBatchOpPatch_Path
+  commentId: P:Crowdin.Api.StringComments.StringCommentBatchOpPatch.Path
+  fullName: Crowdin.Api.StringComments.StringCommentBatchOpPatch.Path
+  nameWithType: StringCommentBatchOpPatch.Path
+- uid: Crowdin.Api.StringComments.StringCommentBatchOpPatch.Path*
+  name: Path
+  href: api/Crowdin.Api.StringComments.StringCommentBatchOpPatch.html#Crowdin_Api_StringComments_StringCommentBatchOpPatch_Path_
+  commentId: Overload:Crowdin.Api.StringComments.StringCommentBatchOpPatch.Path
+  isSpec: "True"
+  fullName: Crowdin.Api.StringComments.StringCommentBatchOpPatch.Path
+  nameWithType: StringCommentBatchOpPatch.Path
+- uid: Crowdin.Api.StringComments.StringCommentBatchOpPatchPath
+  name: StringCommentBatchOpPatchPath
+  href: api/Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.html
+  commentId: T:Crowdin.Api.StringComments.StringCommentBatchOpPatchPath
+  fullName: Crowdin.Api.StringComments.StringCommentBatchOpPatchPath
+  nameWithType: StringCommentBatchOpPatchPath
+- uid: Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.#ctor(System.Nullable{System.Int32},System.Nullable{Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Code})
+  name: StringCommentBatchOpPatchPath(Nullable<Int32>, Nullable<StringCommentBatchOpPatchPath.Code>)
+  href: api/Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.html#Crowdin_Api_StringComments_StringCommentBatchOpPatchPath__ctor_System_Nullable_System_Int32__System_Nullable_Crowdin_Api_StringComments_StringCommentBatchOpPatchPath_Code__
+  commentId: M:Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.#ctor(System.Nullable{System.Int32},System.Nullable{Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Code})
+  name.vb: StringCommentBatchOpPatchPath(Nullable(Of Int32), Nullable(Of StringCommentBatchOpPatchPath.Code))
+  fullName: Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.StringCommentBatchOpPatchPath(System.Nullable<System.Int32>, System.Nullable<Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Code>)
+  fullName.vb: Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.StringCommentBatchOpPatchPath(System.Nullable(Of System.Int32), System.Nullable(Of Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Code))
+  nameWithType: StringCommentBatchOpPatchPath.StringCommentBatchOpPatchPath(Nullable<Int32>, Nullable<StringCommentBatchOpPatchPath.Code>)
+  nameWithType.vb: StringCommentBatchOpPatchPath.StringCommentBatchOpPatchPath(Nullable(Of Int32), Nullable(Of StringCommentBatchOpPatchPath.Code))
+- uid: Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.#ctor*
+  name: StringCommentBatchOpPatchPath
+  href: api/Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.html#Crowdin_Api_StringComments_StringCommentBatchOpPatchPath__ctor_
+  commentId: Overload:Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.#ctor
+  isSpec: "True"
+  fullName: Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.StringCommentBatchOpPatchPath
+  nameWithType: StringCommentBatchOpPatchPath.StringCommentBatchOpPatchPath
+- uid: Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Code
+  name: StringCommentBatchOpPatchPath.Code
+  href: api/Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Code.html
+  commentId: T:Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Code
+  fullName: Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Code
+  nameWithType: StringCommentBatchOpPatchPath.Code
+- uid: Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Code.IssueStatus
+  name: IssueStatus
+  href: api/Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Code.html#Crowdin_Api_StringComments_StringCommentBatchOpPatchPath_Code_IssueStatus
+  commentId: F:Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Code.IssueStatus
+  fullName: Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Code.IssueStatus
+  nameWithType: StringCommentBatchOpPatchPath.Code.IssueStatus
+- uid: Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Code.Text
+  name: Text
+  href: api/Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Code.html#Crowdin_Api_StringComments_StringCommentBatchOpPatchPath_Code_Text
+  commentId: F:Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Code.Text
+  fullName: Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Code.Text
+  nameWithType: StringCommentBatchOpPatchPath.Code.Text
+- uid: Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Empty
+  name: Empty
+  href: api/Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.html#Crowdin_Api_StringComments_StringCommentBatchOpPatchPath_Empty
+  commentId: P:Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Empty
+  fullName: Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Empty
+  nameWithType: StringCommentBatchOpPatchPath.Empty
+- uid: Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Empty*
+  name: Empty
+  href: api/Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.html#Crowdin_Api_StringComments_StringCommentBatchOpPatchPath_Empty_
+  commentId: Overload:Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Empty
+  isSpec: "True"
+  fullName: Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.Empty
+  nameWithType: StringCommentBatchOpPatchPath.Empty
+- uid: Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.ToString
+  name: ToString()
+  href: api/Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.html#Crowdin_Api_StringComments_StringCommentBatchOpPatchPath_ToString
+  commentId: M:Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.ToString
+  fullName: Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.ToString()
+  nameWithType: StringCommentBatchOpPatchPath.ToString()
+- uid: Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.ToString*
+  name: ToString
+  href: api/Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.html#Crowdin_Api_StringComments_StringCommentBatchOpPatchPath_ToString_
+  commentId: Overload:Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.ToString
+  isSpec: "True"
+  fullName: Crowdin.Api.StringComments.StringCommentBatchOpPatchPath.ToString
+  nameWithType: StringCommentBatchOpPatchPath.ToString
 - uid: Crowdin.Api.StringComments.StringCommentPatch
   name: StringCommentPatch
   href: api/Crowdin.Api.StringComments.StringCommentPatch.html
@@ -34462,6 +34563,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringComments.StringCommentsApiExecutor.ListStringComments
   nameWithType: StringCommentsApiExecutor.ListStringComments
+- uid: Crowdin.Api.StringComments.StringCommentsApiExecutor.StringCommentBatchOperations(System.Int32,IEnumerable{Crowdin.Api.StringComments.StringCommentBatchOpPatch})
+  name: StringCommentBatchOperations(Int32, IEnumerable<StringCommentBatchOpPatch>)
+  href: api/Crowdin.Api.StringComments.StringCommentsApiExecutor.html#Crowdin_Api_StringComments_StringCommentsApiExecutor_StringCommentBatchOperations_System_Int32_IEnumerable_Crowdin_Api_StringComments_StringCommentBatchOpPatch__
+  commentId: M:Crowdin.Api.StringComments.StringCommentsApiExecutor.StringCommentBatchOperations(System.Int32,IEnumerable{Crowdin.Api.StringComments.StringCommentBatchOpPatch})
+  name.vb: StringCommentBatchOperations(Int32, IEnumerable(Of StringCommentBatchOpPatch))
+  fullName: Crowdin.Api.StringComments.StringCommentsApiExecutor.StringCommentBatchOperations(System.Int32, IEnumerable<Crowdin.Api.StringComments.StringCommentBatchOpPatch>)
+  fullName.vb: Crowdin.Api.StringComments.StringCommentsApiExecutor.StringCommentBatchOperations(System.Int32, IEnumerable(Of Crowdin.Api.StringComments.StringCommentBatchOpPatch))
+  nameWithType: StringCommentsApiExecutor.StringCommentBatchOperations(Int32, IEnumerable<StringCommentBatchOpPatch>)
+  nameWithType.vb: StringCommentsApiExecutor.StringCommentBatchOperations(Int32, IEnumerable(Of StringCommentBatchOpPatch))
+- uid: Crowdin.Api.StringComments.StringCommentsApiExecutor.StringCommentBatchOperations*
+  name: StringCommentBatchOperations
+  href: api/Crowdin.Api.StringComments.StringCommentsApiExecutor.html#Crowdin_Api_StringComments_StringCommentsApiExecutor_StringCommentBatchOperations_
+  commentId: Overload:Crowdin.Api.StringComments.StringCommentsApiExecutor.StringCommentBatchOperations
+  isSpec: "True"
+  fullName: Crowdin.Api.StringComments.StringCommentsApiExecutor.StringCommentBatchOperations
+  nameWithType: StringCommentsApiExecutor.StringCommentBatchOperations
 - uid: Crowdin.Api.StringComments.StringCommentsListParams
   name: StringCommentsListParams
   href: api/Crowdin.Api.StringComments.StringCommentsListParams.html
@@ -34824,6 +34941,73 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringTranslations.Alignment.TargetWord
   nameWithType: Alignment.TargetWord
+- uid: Crowdin.Api.StringTranslations.ApprovalBatchOpPatch
+  name: ApprovalBatchOpPatch
+  href: api/Crowdin.Api.StringTranslations.ApprovalBatchOpPatch.html
+  commentId: T:Crowdin.Api.StringTranslations.ApprovalBatchOpPatch
+  fullName: Crowdin.Api.StringTranslations.ApprovalBatchOpPatch
+  nameWithType: ApprovalBatchOpPatch
+- uid: Crowdin.Api.StringTranslations.ApprovalBatchOpPatch.Path
+  name: Path
+  href: api/Crowdin.Api.StringTranslations.ApprovalBatchOpPatch.html#Crowdin_Api_StringTranslations_ApprovalBatchOpPatch_Path
+  commentId: P:Crowdin.Api.StringTranslations.ApprovalBatchOpPatch.Path
+  fullName: Crowdin.Api.StringTranslations.ApprovalBatchOpPatch.Path
+  nameWithType: ApprovalBatchOpPatch.Path
+- uid: Crowdin.Api.StringTranslations.ApprovalBatchOpPatch.Path*
+  name: Path
+  href: api/Crowdin.Api.StringTranslations.ApprovalBatchOpPatch.html#Crowdin_Api_StringTranslations_ApprovalBatchOpPatch_Path_
+  commentId: Overload:Crowdin.Api.StringTranslations.ApprovalBatchOpPatch.Path
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.ApprovalBatchOpPatch.Path
+  nameWithType: ApprovalBatchOpPatch.Path
+- uid: Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath
+  name: ApprovalBatchOpPatchPath
+  href: api/Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.html
+  commentId: T:Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath
+  fullName: Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath
+  nameWithType: ApprovalBatchOpPatchPath
+- uid: Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.#ctor(System.Nullable{System.Int32})
+  name: ApprovalBatchOpPatchPath(Nullable<Int32>)
+  href: api/Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.html#Crowdin_Api_StringTranslations_ApprovalBatchOpPatchPath__ctor_System_Nullable_System_Int32__
+  commentId: M:Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.#ctor(System.Nullable{System.Int32})
+  name.vb: ApprovalBatchOpPatchPath(Nullable(Of Int32))
+  fullName: Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.ApprovalBatchOpPatchPath(System.Nullable<System.Int32>)
+  fullName.vb: Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.ApprovalBatchOpPatchPath(System.Nullable(Of System.Int32))
+  nameWithType: ApprovalBatchOpPatchPath.ApprovalBatchOpPatchPath(Nullable<Int32>)
+  nameWithType.vb: ApprovalBatchOpPatchPath.ApprovalBatchOpPatchPath(Nullable(Of Int32))
+- uid: Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.#ctor*
+  name: ApprovalBatchOpPatchPath
+  href: api/Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.html#Crowdin_Api_StringTranslations_ApprovalBatchOpPatchPath__ctor_
+  commentId: Overload:Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.#ctor
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.ApprovalBatchOpPatchPath
+  nameWithType: ApprovalBatchOpPatchPath.ApprovalBatchOpPatchPath
+- uid: Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.Empty
+  name: Empty
+  href: api/Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.html#Crowdin_Api_StringTranslations_ApprovalBatchOpPatchPath_Empty
+  commentId: P:Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.Empty
+  fullName: Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.Empty
+  nameWithType: ApprovalBatchOpPatchPath.Empty
+- uid: Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.Empty*
+  name: Empty
+  href: api/Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.html#Crowdin_Api_StringTranslations_ApprovalBatchOpPatchPath_Empty_
+  commentId: Overload:Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.Empty
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.Empty
+  nameWithType: ApprovalBatchOpPatchPath.Empty
+- uid: Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.ToString
+  name: ToString()
+  href: api/Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.html#Crowdin_Api_StringTranslations_ApprovalBatchOpPatchPath_ToString
+  commentId: M:Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.ToString
+  fullName: Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.ToString()
+  nameWithType: ApprovalBatchOpPatchPath.ToString()
+- uid: Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.ToString*
+  name: ToString
+  href: api/Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.html#Crowdin_Api_StringTranslations_ApprovalBatchOpPatchPath_ToString_
+  commentId: Overload:Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.ToString
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.ApprovalBatchOpPatchPath.ToString
+  nameWithType: ApprovalBatchOpPatchPath.ToString
 - uid: Crowdin.Api.StringTranslations.IcuLanguageTranslations
   name: IcuLanguageTranslations
   href: api/Crowdin.Api.StringTranslations.IcuLanguageTranslations.html
@@ -34953,6 +35137,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.AddVote
   nameWithType: IStringTranslationsApiExecutor.AddVote
+- uid: Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.ApprovalBatchOperations(System.Int32,IEnumerable{Crowdin.Api.StringTranslations.ApprovalBatchOpPatch})
+  name: ApprovalBatchOperations(Int32, IEnumerable<ApprovalBatchOpPatch>)
+  href: api/Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_IStringTranslationsApiExecutor_ApprovalBatchOperations_System_Int32_IEnumerable_Crowdin_Api_StringTranslations_ApprovalBatchOpPatch__
+  commentId: M:Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.ApprovalBatchOperations(System.Int32,IEnumerable{Crowdin.Api.StringTranslations.ApprovalBatchOpPatch})
+  name.vb: ApprovalBatchOperations(Int32, IEnumerable(Of ApprovalBatchOpPatch))
+  fullName: Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.ApprovalBatchOperations(System.Int32, IEnumerable<Crowdin.Api.StringTranslations.ApprovalBatchOpPatch>)
+  fullName.vb: Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.ApprovalBatchOperations(System.Int32, IEnumerable(Of Crowdin.Api.StringTranslations.ApprovalBatchOpPatch))
+  nameWithType: IStringTranslationsApiExecutor.ApprovalBatchOperations(Int32, IEnumerable<ApprovalBatchOpPatch>)
+  nameWithType.vb: IStringTranslationsApiExecutor.ApprovalBatchOperations(Int32, IEnumerable(Of ApprovalBatchOpPatch))
+- uid: Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.ApprovalBatchOperations*
+  name: ApprovalBatchOperations
+  href: api/Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_IStringTranslationsApiExecutor_ApprovalBatchOperations_
+  commentId: Overload:Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.ApprovalBatchOperations
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.ApprovalBatchOperations
+  nameWithType: IStringTranslationsApiExecutor.ApprovalBatchOperations
 - uid: Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.CancelVote(System.Int32,System.Int32)
   name: CancelVote(Int32, Int32)
   href: api/Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_IStringTranslationsApiExecutor_CancelVote_System_Int32_System_Int32_
@@ -35177,6 +35377,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.TranslationAlignment
   nameWithType: IStringTranslationsApiExecutor.TranslationAlignment
+- uid: Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.TranslationBatchOperations(System.Int32,IEnumerable{Crowdin.Api.StringTranslations.TranslationBatchOpPatch})
+  name: TranslationBatchOperations(Int32, IEnumerable<TranslationBatchOpPatch>)
+  href: api/Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_IStringTranslationsApiExecutor_TranslationBatchOperations_System_Int32_IEnumerable_Crowdin_Api_StringTranslations_TranslationBatchOpPatch__
+  commentId: M:Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.TranslationBatchOperations(System.Int32,IEnumerable{Crowdin.Api.StringTranslations.TranslationBatchOpPatch})
+  name.vb: TranslationBatchOperations(Int32, IEnumerable(Of TranslationBatchOpPatch))
+  fullName: Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.TranslationBatchOperations(System.Int32, IEnumerable<Crowdin.Api.StringTranslations.TranslationBatchOpPatch>)
+  fullName.vb: Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.TranslationBatchOperations(System.Int32, IEnumerable(Of Crowdin.Api.StringTranslations.TranslationBatchOpPatch))
+  nameWithType: IStringTranslationsApiExecutor.TranslationBatchOperations(Int32, IEnumerable<TranslationBatchOpPatch>)
+  nameWithType.vb: IStringTranslationsApiExecutor.TranslationBatchOperations(Int32, IEnumerable(Of TranslationBatchOpPatch))
+- uid: Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.TranslationBatchOperations*
+  name: TranslationBatchOperations
+  href: api/Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_IStringTranslationsApiExecutor_TranslationBatchOperations_
+  commentId: Overload:Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.TranslationBatchOperations
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.TranslationBatchOperations
+  nameWithType: IStringTranslationsApiExecutor.TranslationBatchOperations
 - uid: Crowdin.Api.StringTranslations.LanguageTranslations
   name: LanguageTranslations
   href: api/Crowdin.Api.StringTranslations.LanguageTranslations.html
@@ -35770,6 +35986,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.AddVote
   nameWithType: StringTranslationsApiExecutor.AddVote
+- uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ApprovalBatchOperations(System.Int32,IEnumerable{Crowdin.Api.StringTranslations.ApprovalBatchOpPatch})
+  name: ApprovalBatchOperations(Int32, IEnumerable<ApprovalBatchOpPatch>)
+  href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ApprovalBatchOperations_System_Int32_IEnumerable_Crowdin_Api_StringTranslations_ApprovalBatchOpPatch__
+  commentId: M:Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ApprovalBatchOperations(System.Int32,IEnumerable{Crowdin.Api.StringTranslations.ApprovalBatchOpPatch})
+  name.vb: ApprovalBatchOperations(Int32, IEnumerable(Of ApprovalBatchOpPatch))
+  fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ApprovalBatchOperations(System.Int32, IEnumerable<Crowdin.Api.StringTranslations.ApprovalBatchOpPatch>)
+  fullName.vb: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ApprovalBatchOperations(System.Int32, IEnumerable(Of Crowdin.Api.StringTranslations.ApprovalBatchOpPatch))
+  nameWithType: StringTranslationsApiExecutor.ApprovalBatchOperations(Int32, IEnumerable<ApprovalBatchOpPatch>)
+  nameWithType.vb: StringTranslationsApiExecutor.ApprovalBatchOperations(Int32, IEnumerable(Of ApprovalBatchOpPatch))
+- uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ApprovalBatchOperations*
+  name: ApprovalBatchOperations
+  href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_ApprovalBatchOperations_
+  commentId: Overload:Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ApprovalBatchOperations
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.ApprovalBatchOperations
+  nameWithType: StringTranslationsApiExecutor.ApprovalBatchOperations
 - uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.CancelVote(System.Int32,System.Int32)
   name: CancelVote(Int32, Int32)
   href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_CancelVote_System_Int32_System_Int32_
@@ -35994,6 +36226,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.TranslationAlignment
   nameWithType: StringTranslationsApiExecutor.TranslationAlignment
+- uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.TranslationBatchOperations(System.Int32,IEnumerable{Crowdin.Api.StringTranslations.TranslationBatchOpPatch})
+  name: TranslationBatchOperations(Int32, IEnumerable<TranslationBatchOpPatch>)
+  href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_TranslationBatchOperations_System_Int32_IEnumerable_Crowdin_Api_StringTranslations_TranslationBatchOpPatch__
+  commentId: M:Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.TranslationBatchOperations(System.Int32,IEnumerable{Crowdin.Api.StringTranslations.TranslationBatchOpPatch})
+  name.vb: TranslationBatchOperations(Int32, IEnumerable(Of TranslationBatchOpPatch))
+  fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.TranslationBatchOperations(System.Int32, IEnumerable<Crowdin.Api.StringTranslations.TranslationBatchOpPatch>)
+  fullName.vb: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.TranslationBatchOperations(System.Int32, IEnumerable(Of Crowdin.Api.StringTranslations.TranslationBatchOpPatch))
+  nameWithType: StringTranslationsApiExecutor.TranslationBatchOperations(Int32, IEnumerable<TranslationBatchOpPatch>)
+  nameWithType.vb: StringTranslationsApiExecutor.TranslationBatchOperations(Int32, IEnumerable(Of TranslationBatchOpPatch))
+- uid: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.TranslationBatchOperations*
+  name: TranslationBatchOperations
+  href: api/Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.html#Crowdin_Api_StringTranslations_StringTranslationsApiExecutor_TranslationBatchOperations_
+  commentId: Overload:Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.TranslationBatchOperations
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.StringTranslationsApiExecutor.TranslationBatchOperations
+  nameWithType: StringTranslationsApiExecutor.TranslationBatchOperations
 - uid: Crowdin.Api.StringTranslations.StringTranslationsListParams
   name: StringTranslationsListParams
   href: api/Crowdin.Api.StringTranslations.StringTranslationsListParams.html
@@ -36432,6 +36680,73 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringTranslations.TranslationApprovalsListParams.TranslationId
   nameWithType: TranslationApprovalsListParams.TranslationId
+- uid: Crowdin.Api.StringTranslations.TranslationBatchOpPatch
+  name: TranslationBatchOpPatch
+  href: api/Crowdin.Api.StringTranslations.TranslationBatchOpPatch.html
+  commentId: T:Crowdin.Api.StringTranslations.TranslationBatchOpPatch
+  fullName: Crowdin.Api.StringTranslations.TranslationBatchOpPatch
+  nameWithType: TranslationBatchOpPatch
+- uid: Crowdin.Api.StringTranslations.TranslationBatchOpPatch.Path
+  name: Path
+  href: api/Crowdin.Api.StringTranslations.TranslationBatchOpPatch.html#Crowdin_Api_StringTranslations_TranslationBatchOpPatch_Path
+  commentId: P:Crowdin.Api.StringTranslations.TranslationBatchOpPatch.Path
+  fullName: Crowdin.Api.StringTranslations.TranslationBatchOpPatch.Path
+  nameWithType: TranslationBatchOpPatch.Path
+- uid: Crowdin.Api.StringTranslations.TranslationBatchOpPatch.Path*
+  name: Path
+  href: api/Crowdin.Api.StringTranslations.TranslationBatchOpPatch.html#Crowdin_Api_StringTranslations_TranslationBatchOpPatch_Path_
+  commentId: Overload:Crowdin.Api.StringTranslations.TranslationBatchOpPatch.Path
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.TranslationBatchOpPatch.Path
+  nameWithType: TranslationBatchOpPatch.Path
+- uid: Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath
+  name: TranslationBatchOpPatchPath
+  href: api/Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.html
+  commentId: T:Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath
+  fullName: Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath
+  nameWithType: TranslationBatchOpPatchPath
+- uid: Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.#ctor(System.Nullable{System.Int32})
+  name: TranslationBatchOpPatchPath(Nullable<Int32>)
+  href: api/Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.html#Crowdin_Api_StringTranslations_TranslationBatchOpPatchPath__ctor_System_Nullable_System_Int32__
+  commentId: M:Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.#ctor(System.Nullable{System.Int32})
+  name.vb: TranslationBatchOpPatchPath(Nullable(Of Int32))
+  fullName: Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.TranslationBatchOpPatchPath(System.Nullable<System.Int32>)
+  fullName.vb: Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.TranslationBatchOpPatchPath(System.Nullable(Of System.Int32))
+  nameWithType: TranslationBatchOpPatchPath.TranslationBatchOpPatchPath(Nullable<Int32>)
+  nameWithType.vb: TranslationBatchOpPatchPath.TranslationBatchOpPatchPath(Nullable(Of Int32))
+- uid: Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.#ctor*
+  name: TranslationBatchOpPatchPath
+  href: api/Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.html#Crowdin_Api_StringTranslations_TranslationBatchOpPatchPath__ctor_
+  commentId: Overload:Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.#ctor
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.TranslationBatchOpPatchPath
+  nameWithType: TranslationBatchOpPatchPath.TranslationBatchOpPatchPath
+- uid: Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.Empty
+  name: Empty
+  href: api/Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.html#Crowdin_Api_StringTranslations_TranslationBatchOpPatchPath_Empty
+  commentId: P:Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.Empty
+  fullName: Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.Empty
+  nameWithType: TranslationBatchOpPatchPath.Empty
+- uid: Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.Empty*
+  name: Empty
+  href: api/Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.html#Crowdin_Api_StringTranslations_TranslationBatchOpPatchPath_Empty_
+  commentId: Overload:Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.Empty
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.Empty
+  nameWithType: TranslationBatchOpPatchPath.Empty
+- uid: Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.ToString
+  name: ToString()
+  href: api/Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.html#Crowdin_Api_StringTranslations_TranslationBatchOpPatchPath_ToString
+  commentId: M:Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.ToString
+  fullName: Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.ToString()
+  nameWithType: TranslationBatchOpPatchPath.ToString()
+- uid: Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.ToString*
+  name: ToString
+  href: api/Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.html#Crowdin_Api_StringTranslations_TranslationBatchOpPatchPath_ToString_
+  commentId: Overload:Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.ToString
+  isSpec: "True"
+  fullName: Crowdin.Api.StringTranslations.TranslationBatchOpPatchPath.ToString
+  nameWithType: TranslationBatchOpPatchPath.ToString
 - uid: Crowdin.Api.StringTranslations.TranslationVote
   name: TranslationVote
   href: api/Crowdin.Api.StringTranslations.TranslationVote.html
