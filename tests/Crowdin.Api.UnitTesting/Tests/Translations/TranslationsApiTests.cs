@@ -231,6 +231,30 @@ namespace Crowdin.Api.UnitTesting.Tests.Translations
             Assert.Equal(4, attributes.ExcludeLabelIds.Single());
         }
 
+        [Fact]
+        public async Task PreTranslationReport()
+        {
+            const int projectId = 1;
+            const string preTranslationId = "123";
+            
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+            
+            var url = $"/projects/{projectId}/pre-translations/{preTranslationId}/report";
+
+            mockClient
+                .Setup(client => client.SendGetRequest(url, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Resources.Translations.PreTranslationReport_Response)
+                });
+            
+            var executor = new TranslationsApiExecutor(mockClient.Object);
+            PreTranslationReport response = await executor.PreTranslationReport(projectId, preTranslationId);
+            
+            Assert_PreTranslationReport(response);
+        }
+
         private static void Assert_PreTranslation(PreTranslation? preTranslation)
         {
             ArgumentNullException.ThrowIfNull(preTranslation);
@@ -255,6 +279,28 @@ namespace Crowdin.Api.UnitTesting.Tests.Translations
             Assert.Equal(date, preTranslation.UpdatedAt);
             Assert.Equal(date, preTranslation.StartedAt);
             Assert.Equal(date, preTranslation.FinishedAt);
+        }
+
+        private static void Assert_PreTranslationReport(PreTranslationReport? preTranslationReport)
+        {
+            ArgumentNullException.ThrowIfNull(preTranslationReport);
+            
+            Assert.Equal("ai", preTranslationReport.PreTranslateType);
+            
+            TargetLanguage? language = preTranslationReport.Languages.Single();
+            ArgumentNullException.ThrowIfNull(language);
+            Assert.Equal("es", language.Id);
+            Assert.Equal(6, language.Skipped.AiError);
+            Assert.Equal("spellcheck", language.SkippedQaCheckCategories.Single());
+            
+            TargetLanguage.File? file = language.Files.Single();
+            ArgumentNullException.ThrowIfNull(file);
+            Assert.Equal("10191", file.Id);
+            
+            TargetLanguage.File.FileStatistics? statistics = file.Statistics;
+            ArgumentNullException.ThrowIfNull(statistics);
+            Assert.Equal(6, statistics.Phrases);
+            Assert.Equal(13, statistics.Words);
         }
     }
 }
