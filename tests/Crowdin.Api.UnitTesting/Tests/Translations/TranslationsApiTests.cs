@@ -5,13 +5,14 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
-using Crowdin.Api.Core;
-using Crowdin.Api.Translations;
-
 using Moq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Xunit;
+
+using Crowdin.Api.Core;
+using Crowdin.Api.Translations;
+using Crowdin.Api.TranslationStatus;
 
 namespace Crowdin.Api.UnitTesting.Tests.Translations
 {
@@ -40,7 +41,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Translations
             var executor = new TranslationsApiExecutor(mockClient.Object);
             ResponseList<PreTranslation> response = await executor.ListPreTranslations(projectId);
 
-            Assert_PreTranslation(response?.Data.FirstOrDefault());
+            Assert_PreTranslation(response.Data.FirstOrDefault());
         }
 
         [Fact]
@@ -216,7 +217,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Translations
             PreTranslateAttributes? attributes = response.Attributes;
             Assert.NotNull(response.Attributes);
             Assert.Equal("uk", attributes.LanguageIds.Single());
-            Assert.Equal(0, attributes.FileIds.Single());
+            Assert.Equal(0, attributes.FileIds?.Single());
             Assert.Equal(PreTranslationMethod.Tm, attributes.Method);
             Assert.Equal(AutoApproveOption.All, attributes.AutoApproveOption);
 
@@ -285,13 +286,13 @@ namespace Crowdin.Api.UnitTesting.Tests.Translations
         {
             ArgumentNullException.ThrowIfNull(preTranslationReport);
             
-            Assert.Equal("ai", preTranslationReport.PreTranslateType);
+            Assert.Equal(PreTranslationMethod.Ai, preTranslationReport.PreTranslateType);
             
             TargetLanguage? language = preTranslationReport.Languages.Single();
             ArgumentNullException.ThrowIfNull(language);
             Assert.Equal("es", language.Id);
             Assert.Equal(6, language.Skipped.AiError);
-            Assert.Equal("spellcheck", language.SkippedQaCheckCategories.Single());
+            Assert.Equal(QaCheckIssueCategory.SpellCheck, language.SkippedQaCheckCategories.Single());
             
             TargetLanguage.File? file = language.Files.Single();
             ArgumentNullException.ThrowIfNull(file);

@@ -2,6 +2,8 @@
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
+using Crowdin.Api.TranslationStatus;
+
 namespace Crowdin.Api.Translations
 {
     [PublicAPI]
@@ -11,7 +13,7 @@ namespace Crowdin.Api.Translations
         public TargetLanguage[] Languages { get; set; }
         
         [JsonProperty("preTranslateType")]
-        public string PreTranslateType { get; set; } // TODO: enum? PreTranslationMethod
+        public PreTranslationMethod PreTranslateType { get; set; }
     }
 
     [PublicAPI]
@@ -27,7 +29,7 @@ namespace Crowdin.Api.Translations
         public SkippedObject Skipped { get; set; }
         
         [JsonProperty("skippedQaCheckCategories")]
-        public string[] SkippedQaCheckCategories { get; set; } // TODO: enum values?
+        public QaCheckIssueCategory[] SkippedQaCheckCategories { get; set; }
         
         [PublicAPI]
         public class File
