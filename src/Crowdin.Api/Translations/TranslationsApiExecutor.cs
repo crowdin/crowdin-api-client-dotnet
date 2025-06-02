@@ -65,6 +65,20 @@ namespace Crowdin.Api.Translations
         }
 
         /// <summary>
+        /// Pre-Translation Report. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/Translations/operation/api.projects.pre-translations.report.getReport">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/Translations/operation/api.projects.pre-translations.report.getReport">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Translations/operation/api.projects.pre-translations.report.getReport">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<PreTranslationReport> PreTranslationReport(int projectId, string preTranslationId)
+        {
+            var url = $"/projects/{projectId}/pre-translations/{preTranslationId}/report";
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<PreTranslationReport>(result.JsonObject);
+        }
+
+        /// <summary>
         /// Get pre-translation status. Documentation:
         /// <a href="https://support.crowdin.com/api/v2/#tag/Translations/paths/~1projects~1{projectId}~1pre-translations~1{preTranslationId}/get">Crowdin API</a>
         /// <a href="https://support.crowdin.com/enterprise/api/#tag/Translations/paths/~1projects~1{projectId}~1pre-translations~1{preTranslationId}/get">Crowdin Enterprise API</a>

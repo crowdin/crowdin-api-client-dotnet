@@ -5,13 +5,14 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
-using Crowdin.Api.Core;
-using Crowdin.Api.Translations;
-
 using Moq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Xunit;
+
+using Crowdin.Api.Core;
+using Crowdin.Api.Translations;
+using Crowdin.Api.TranslationStatus;
 
 namespace Crowdin.Api.UnitTesting.Tests.Translations
 {
@@ -40,7 +41,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Translations
             var executor = new TranslationsApiExecutor(mockClient.Object);
             ResponseList<PreTranslation> response = await executor.ListPreTranslations(projectId);
 
-            Assert_PreTranslation(response?.Data.FirstOrDefault());
+            Assert_PreTranslation(response.Data.FirstOrDefault());
         }
 
         [Fact]
@@ -216,7 +217,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Translations
             PreTranslateAttributes? attributes = response.Attributes;
             Assert.NotNull(response.Attributes);
             Assert.Equal("uk", attributes.LanguageIds.Single());
-            Assert.Equal(0, attributes.FileIds.Single());
+            Assert.Equal(0, attributes.FileIds?.Single());
             Assert.Equal(PreTranslationMethod.Tm, attributes.Method);
             Assert.Equal(AutoApproveOption.All, attributes.AutoApproveOption);
 
@@ -229,6 +230,30 @@ namespace Crowdin.Api.UnitTesting.Tests.Translations
             Assert.Contains(2, attributes.LabelIds);
             Assert.Contains(3, attributes.LabelIds);
             Assert.Equal(4, attributes.ExcludeLabelIds.Single());
+        }
+
+        [Fact]
+        public async Task PreTranslationReport()
+        {
+            const int projectId = 1;
+            const string preTranslationId = "123";
+            
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+            
+            var url = $"/projects/{projectId}/pre-translations/{preTranslationId}/report";
+
+            mockClient
+                .Setup(client => client.SendGetRequest(url, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Resources.Translations.PreTranslationReport_Response)
+                });
+            
+            var executor = new TranslationsApiExecutor(mockClient.Object);
+            PreTranslationReport response = await executor.PreTranslationReport(projectId, preTranslationId);
+            
+            Assert_PreTranslationReport(response);
         }
 
         private static void Assert_PreTranslation(PreTranslation? preTranslation)
@@ -255,6 +280,28 @@ namespace Crowdin.Api.UnitTesting.Tests.Translations
             Assert.Equal(date, preTranslation.UpdatedAt);
             Assert.Equal(date, preTranslation.StartedAt);
             Assert.Equal(date, preTranslation.FinishedAt);
+        }
+
+        private static void Assert_PreTranslationReport(PreTranslationReport? preTranslationReport)
+        {
+            ArgumentNullException.ThrowIfNull(preTranslationReport);
+            
+            Assert.Equal(PreTranslationMethod.Ai, preTranslationReport.PreTranslateType);
+            
+            TargetLanguage? language = preTranslationReport.Languages.Single();
+            ArgumentNullException.ThrowIfNull(language);
+            Assert.Equal("es", language.Id);
+            Assert.Equal(6, language.Skipped.AiError);
+            Assert.Equal(QaCheckIssueCategory.SpellCheck, language.SkippedQaCheckCategories.Single());
+            
+            TargetLanguage.File? file = language.Files.Single();
+            ArgumentNullException.ThrowIfNull(file);
+            Assert.Equal("10191", file.Id);
+            
+            TargetLanguage.File.FileStatistics? statistics = file.Statistics;
+            ArgumentNullException.ThrowIfNull(statistics);
+            Assert.Equal(6, statistics.Phrases);
+            Assert.Equal(13, statistics.Words);
         }
     }
 }
