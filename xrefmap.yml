@@ -45285,6 +45285,38 @@ references:
   commentId: F:Crowdin.Api.Translations.PreTranslationPatchPath.Status
   fullName: Crowdin.Api.Translations.PreTranslationPatchPath.Status
   nameWithType: PreTranslationPatchPath.Status
+- uid: Crowdin.Api.Translations.PreTranslationReport
+  name: PreTranslationReport
+  href: api/Crowdin.Api.Translations.PreTranslationReport.html
+  commentId: T:Crowdin.Api.Translations.PreTranslationReport
+  fullName: Crowdin.Api.Translations.PreTranslationReport
+  nameWithType: PreTranslationReport
+- uid: Crowdin.Api.Translations.PreTranslationReport.Languages
+  name: Languages
+  href: api/Crowdin.Api.Translations.PreTranslationReport.html#Crowdin_Api_Translations_PreTranslationReport_Languages
+  commentId: P:Crowdin.Api.Translations.PreTranslationReport.Languages
+  fullName: Crowdin.Api.Translations.PreTranslationReport.Languages
+  nameWithType: PreTranslationReport.Languages
+- uid: Crowdin.Api.Translations.PreTranslationReport.Languages*
+  name: Languages
+  href: api/Crowdin.Api.Translations.PreTranslationReport.html#Crowdin_Api_Translations_PreTranslationReport_Languages_
+  commentId: Overload:Crowdin.Api.Translations.PreTranslationReport.Languages
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.PreTranslationReport.Languages
+  nameWithType: PreTranslationReport.Languages
+- uid: Crowdin.Api.Translations.PreTranslationReport.PreTranslateType
+  name: PreTranslateType
+  href: api/Crowdin.Api.Translations.PreTranslationReport.html#Crowdin_Api_Translations_PreTranslationReport_PreTranslateType
+  commentId: P:Crowdin.Api.Translations.PreTranslationReport.PreTranslateType
+  fullName: Crowdin.Api.Translations.PreTranslationReport.PreTranslateType
+  nameWithType: PreTranslationReport.PreTranslateType
+- uid: Crowdin.Api.Translations.PreTranslationReport.PreTranslateType*
+  name: PreTranslateType
+  href: api/Crowdin.Api.Translations.PreTranslationReport.html#Crowdin_Api_Translations_PreTranslationReport_PreTranslateType_
+  commentId: Overload:Crowdin.Api.Translations.PreTranslationReport.PreTranslateType
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.PreTranslationReport.PreTranslateType
+  nameWithType: PreTranslationReport.PreTranslateType
 - uid: Crowdin.Api.Translations.ProjectBuild
   name: ProjectBuild
   href: api/Crowdin.Api.Translations.ProjectBuild.html
@@ -45569,6 +45601,147 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Translations.ProjectBuild.UpdatedAt
   nameWithType: ProjectBuild.UpdatedAt
+- uid: Crowdin.Api.Translations.TargetLanguage
+  name: TargetLanguage
+  href: api/Crowdin.Api.Translations.TargetLanguage.html
+  commentId: T:Crowdin.Api.Translations.TargetLanguage
+  fullName: Crowdin.Api.Translations.TargetLanguage
+  nameWithType: TargetLanguage
+- uid: Crowdin.Api.Translations.TargetLanguage.File
+  name: TargetLanguage.File
+  href: api/Crowdin.Api.Translations.TargetLanguage.File.html
+  commentId: T:Crowdin.Api.Translations.TargetLanguage.File
+  fullName: Crowdin.Api.Translations.TargetLanguage.File
+  nameWithType: TargetLanguage.File
+- uid: Crowdin.Api.Translations.TargetLanguage.File.FileStatistics
+  name: TargetLanguage.File.FileStatistics
+  href: api/Crowdin.Api.Translations.TargetLanguage.File.FileStatistics.html
+  commentId: T:Crowdin.Api.Translations.TargetLanguage.File.FileStatistics
+  fullName: Crowdin.Api.Translations.TargetLanguage.File.FileStatistics
+  nameWithType: TargetLanguage.File.FileStatistics
+- uid: Crowdin.Api.Translations.TargetLanguage.File.FileStatistics.Phrases
+  name: Phrases
+  href: api/Crowdin.Api.Translations.TargetLanguage.File.FileStatistics.html#Crowdin_Api_Translations_TargetLanguage_File_FileStatistics_Phrases
+  commentId: P:Crowdin.Api.Translations.TargetLanguage.File.FileStatistics.Phrases
+  fullName: Crowdin.Api.Translations.TargetLanguage.File.FileStatistics.Phrases
+  nameWithType: TargetLanguage.File.FileStatistics.Phrases
+- uid: Crowdin.Api.Translations.TargetLanguage.File.FileStatistics.Phrases*
+  name: Phrases
+  href: api/Crowdin.Api.Translations.TargetLanguage.File.FileStatistics.html#Crowdin_Api_Translations_TargetLanguage_File_FileStatistics_Phrases_
+  commentId: Overload:Crowdin.Api.Translations.TargetLanguage.File.FileStatistics.Phrases
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TargetLanguage.File.FileStatistics.Phrases
+  nameWithType: TargetLanguage.File.FileStatistics.Phrases
+- uid: Crowdin.Api.Translations.TargetLanguage.File.FileStatistics.Words
+  name: Words
+  href: api/Crowdin.Api.Translations.TargetLanguage.File.FileStatistics.html#Crowdin_Api_Translations_TargetLanguage_File_FileStatistics_Words
+  commentId: P:Crowdin.Api.Translations.TargetLanguage.File.FileStatistics.Words
+  fullName: Crowdin.Api.Translations.TargetLanguage.File.FileStatistics.Words
+  nameWithType: TargetLanguage.File.FileStatistics.Words
+- uid: Crowdin.Api.Translations.TargetLanguage.File.FileStatistics.Words*
+  name: Words
+  href: api/Crowdin.Api.Translations.TargetLanguage.File.FileStatistics.html#Crowdin_Api_Translations_TargetLanguage_File_FileStatistics_Words_
+  commentId: Overload:Crowdin.Api.Translations.TargetLanguage.File.FileStatistics.Words
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TargetLanguage.File.FileStatistics.Words
+  nameWithType: TargetLanguage.File.FileStatistics.Words
+- uid: Crowdin.Api.Translations.TargetLanguage.File.Id
+  name: Id
+  href: api/Crowdin.Api.Translations.TargetLanguage.File.html#Crowdin_Api_Translations_TargetLanguage_File_Id
+  commentId: P:Crowdin.Api.Translations.TargetLanguage.File.Id
+  fullName: Crowdin.Api.Translations.TargetLanguage.File.Id
+  nameWithType: TargetLanguage.File.Id
+- uid: Crowdin.Api.Translations.TargetLanguage.File.Id*
+  name: Id
+  href: api/Crowdin.Api.Translations.TargetLanguage.File.html#Crowdin_Api_Translations_TargetLanguage_File_Id_
+  commentId: Overload:Crowdin.Api.Translations.TargetLanguage.File.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TargetLanguage.File.Id
+  nameWithType: TargetLanguage.File.Id
+- uid: Crowdin.Api.Translations.TargetLanguage.File.Statistics
+  name: Statistics
+  href: api/Crowdin.Api.Translations.TargetLanguage.File.html#Crowdin_Api_Translations_TargetLanguage_File_Statistics
+  commentId: P:Crowdin.Api.Translations.TargetLanguage.File.Statistics
+  fullName: Crowdin.Api.Translations.TargetLanguage.File.Statistics
+  nameWithType: TargetLanguage.File.Statistics
+- uid: Crowdin.Api.Translations.TargetLanguage.File.Statistics*
+  name: Statistics
+  href: api/Crowdin.Api.Translations.TargetLanguage.File.html#Crowdin_Api_Translations_TargetLanguage_File_Statistics_
+  commentId: Overload:Crowdin.Api.Translations.TargetLanguage.File.Statistics
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TargetLanguage.File.Statistics
+  nameWithType: TargetLanguage.File.Statistics
+- uid: Crowdin.Api.Translations.TargetLanguage.Files
+  name: Files
+  href: api/Crowdin.Api.Translations.TargetLanguage.html#Crowdin_Api_Translations_TargetLanguage_Files
+  commentId: P:Crowdin.Api.Translations.TargetLanguage.Files
+  fullName: Crowdin.Api.Translations.TargetLanguage.Files
+  nameWithType: TargetLanguage.Files
+- uid: Crowdin.Api.Translations.TargetLanguage.Files*
+  name: Files
+  href: api/Crowdin.Api.Translations.TargetLanguage.html#Crowdin_Api_Translations_TargetLanguage_Files_
+  commentId: Overload:Crowdin.Api.Translations.TargetLanguage.Files
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TargetLanguage.Files
+  nameWithType: TargetLanguage.Files
+- uid: Crowdin.Api.Translations.TargetLanguage.Id
+  name: Id
+  href: api/Crowdin.Api.Translations.TargetLanguage.html#Crowdin_Api_Translations_TargetLanguage_Id
+  commentId: P:Crowdin.Api.Translations.TargetLanguage.Id
+  fullName: Crowdin.Api.Translations.TargetLanguage.Id
+  nameWithType: TargetLanguage.Id
+- uid: Crowdin.Api.Translations.TargetLanguage.Id*
+  name: Id
+  href: api/Crowdin.Api.Translations.TargetLanguage.html#Crowdin_Api_Translations_TargetLanguage_Id_
+  commentId: Overload:Crowdin.Api.Translations.TargetLanguage.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TargetLanguage.Id
+  nameWithType: TargetLanguage.Id
+- uid: Crowdin.Api.Translations.TargetLanguage.Skipped
+  name: Skipped
+  href: api/Crowdin.Api.Translations.TargetLanguage.html#Crowdin_Api_Translations_TargetLanguage_Skipped
+  commentId: P:Crowdin.Api.Translations.TargetLanguage.Skipped
+  fullName: Crowdin.Api.Translations.TargetLanguage.Skipped
+  nameWithType: TargetLanguage.Skipped
+- uid: Crowdin.Api.Translations.TargetLanguage.Skipped*
+  name: Skipped
+  href: api/Crowdin.Api.Translations.TargetLanguage.html#Crowdin_Api_Translations_TargetLanguage_Skipped_
+  commentId: Overload:Crowdin.Api.Translations.TargetLanguage.Skipped
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TargetLanguage.Skipped
+  nameWithType: TargetLanguage.Skipped
+- uid: Crowdin.Api.Translations.TargetLanguage.SkippedObject
+  name: TargetLanguage.SkippedObject
+  href: api/Crowdin.Api.Translations.TargetLanguage.SkippedObject.html
+  commentId: T:Crowdin.Api.Translations.TargetLanguage.SkippedObject
+  fullName: Crowdin.Api.Translations.TargetLanguage.SkippedObject
+  nameWithType: TargetLanguage.SkippedObject
+- uid: Crowdin.Api.Translations.TargetLanguage.SkippedObject.AiError
+  name: AiError
+  href: api/Crowdin.Api.Translations.TargetLanguage.SkippedObject.html#Crowdin_Api_Translations_TargetLanguage_SkippedObject_AiError
+  commentId: P:Crowdin.Api.Translations.TargetLanguage.SkippedObject.AiError
+  fullName: Crowdin.Api.Translations.TargetLanguage.SkippedObject.AiError
+  nameWithType: TargetLanguage.SkippedObject.AiError
+- uid: Crowdin.Api.Translations.TargetLanguage.SkippedObject.AiError*
+  name: AiError
+  href: api/Crowdin.Api.Translations.TargetLanguage.SkippedObject.html#Crowdin_Api_Translations_TargetLanguage_SkippedObject_AiError_
+  commentId: Overload:Crowdin.Api.Translations.TargetLanguage.SkippedObject.AiError
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TargetLanguage.SkippedObject.AiError
+  nameWithType: TargetLanguage.SkippedObject.AiError
+- uid: Crowdin.Api.Translations.TargetLanguage.SkippedQaCheckCategories
+  name: SkippedQaCheckCategories
+  href: api/Crowdin.Api.Translations.TargetLanguage.html#Crowdin_Api_Translations_TargetLanguage_SkippedQaCheckCategories
+  commentId: P:Crowdin.Api.Translations.TargetLanguage.SkippedQaCheckCategories
+  fullName: Crowdin.Api.Translations.TargetLanguage.SkippedQaCheckCategories
+  nameWithType: TargetLanguage.SkippedQaCheckCategories
+- uid: Crowdin.Api.Translations.TargetLanguage.SkippedQaCheckCategories*
+  name: SkippedQaCheckCategories
+  href: api/Crowdin.Api.Translations.TargetLanguage.html#Crowdin_Api_Translations_TargetLanguage_SkippedQaCheckCategories_
+  commentId: Overload:Crowdin.Api.Translations.TargetLanguage.SkippedQaCheckCategories
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TargetLanguage.SkippedQaCheckCategories
+  nameWithType: TargetLanguage.SkippedQaCheckCategories
 - uid: Crowdin.Api.Translations.TranslationCreateProjectBuildForm
   name: TranslationCreateProjectBuildForm
   href: api/Crowdin.Api.Translations.TranslationCreateProjectBuildForm.html
@@ -46145,6 +46318,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Translations.TranslationsApiExecutor.ListProjectBuilds
   nameWithType: TranslationsApiExecutor.ListProjectBuilds
+- uid: Crowdin.Api.Translations.TranslationsApiExecutor.PreTranslationReport(System.Int32,System.String)
+  name: PreTranslationReport(Int32, String)
+  href: api/Crowdin.Api.Translations.TranslationsApiExecutor.html#Crowdin_Api_Translations_TranslationsApiExecutor_PreTranslationReport_System_Int32_System_String_
+  commentId: M:Crowdin.Api.Translations.TranslationsApiExecutor.PreTranslationReport(System.Int32,System.String)
+  fullName: Crowdin.Api.Translations.TranslationsApiExecutor.PreTranslationReport(System.Int32, System.String)
+  nameWithType: TranslationsApiExecutor.PreTranslationReport(Int32, String)
+- uid: Crowdin.Api.Translations.TranslationsApiExecutor.PreTranslationReport*
+  name: PreTranslationReport
+  href: api/Crowdin.Api.Translations.TranslationsApiExecutor.html#Crowdin_Api_Translations_TranslationsApiExecutor_PreTranslationReport_
+  commentId: Overload:Crowdin.Api.Translations.TranslationsApiExecutor.PreTranslationReport
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationsApiExecutor.PreTranslationReport
+  nameWithType: TranslationsApiExecutor.PreTranslationReport
 - uid: Crowdin.Api.Translations.TranslationsApiExecutor.UploadTranslations(System.Int32,System.String,Crowdin.Api.Translations.UploadTranslationsRequest)
   name: UploadTranslations(Int32, String, UploadTranslationsRequest)
   href: api/Crowdin.Api.Translations.TranslationsApiExecutor.html#Crowdin_Api_Translations_TranslationsApiExecutor_UploadTranslations_System_Int32_System_String_Crowdin_Api_Translations_UploadTranslationsRequest_

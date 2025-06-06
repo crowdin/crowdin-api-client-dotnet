@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "oPL6qYoQ1uElD0mykP4OvCj9OOUOX3mOLwE9jv1LyBg="
+          "hash": "s3ZnZTrzm48pfjR84IkXW22XMV6Ng7r9uid4/kQBr4k="
         }
       },
       "is_incremental": false,
@@ -8354,6 +8354,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Translations.PreTranslationReport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Translations.PreTranslationReport.html",
+          "hash": "yKSzjI63vtWzhOtmNVPU6Ea8Ev/lshng7AVuxiD4sVs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Translations.ProjectBuild.AttributesBase.yml",
       "output": {
         ".html": {
@@ -8395,6 +8407,54 @@
         ".html": {
           "relative_path": "api/Crowdin.Api.Translations.ProjectBuild.html",
           "hash": "Ipg6AqQRuVTdX3NIKOC1gQfAi/dunO3+WZE9DQ/NQGo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Translations.TargetLanguage.File.FileStatistics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Translations.TargetLanguage.File.FileStatistics.html",
+          "hash": "duNS9Wwx3uqPVXsFa6pdL4xYMvZ7tn6maM43FXwRAuM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Translations.TargetLanguage.File.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Translations.TargetLanguage.File.html",
+          "hash": "8GznctCGIZ4VGg3htzjwtAjJe3cJ2mH4PsRFeQjLyhY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Translations.TargetLanguage.SkippedObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Translations.TargetLanguage.SkippedObject.html",
+          "hash": "lTNKY/e/nUK5t9IahBnttBMz5mLSsK/h2mOEnN8cs80="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Translations.TargetLanguage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Translations.TargetLanguage.html",
+          "hash": "V9F0KsLiGNZ+a3jASSR4moJrA1768wV3dUalHkoMGhg="
         }
       },
       "is_incremental": false,
@@ -8466,7 +8526,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Translations.TranslationsApiExecutor.html",
-          "hash": "r9zaDeN5aklwz3xm3oc37BVgrPYg0FKc2xvMACWrE0w="
+          "hash": "AIeHEohfTu6vAxQ7K7Yw8SeJVt4uOjqdO3g7iBhFWMo="
         }
       },
       "is_incremental": false,
@@ -8502,7 +8562,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Translations.html",
-          "hash": "HFAxsUV/Ow88d0NWEKjNLnwslvfm8ryXvN2zaaIW6UA="
+          "hash": "cz4dyWDsENG4UG4S+Wsu2muV403DSfwu9qrmi9+yyps="
         }
       },
       "is_incremental": false,
@@ -9378,7 +9438,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "HCjk2/rHQAT6X/PfiQgbzUFS3f/Xpt/SGX8GNV8dWwU="
+          "hash": "FipmVNzVFkZHKabJ+JSH5NYnqxQVIcv7Bs3Qdl/TGxM="
         }
       },
       "is_incremental": false,
@@ -9417,7 +9477,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 777,
+          "total_file_count": 782,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
