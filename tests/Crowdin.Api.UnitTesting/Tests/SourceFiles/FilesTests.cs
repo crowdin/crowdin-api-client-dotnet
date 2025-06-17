@@ -675,5 +675,33 @@ namespace Crowdin.Api.UnitTesting.Tests.SourceFiles
         public async Task UpdateOrRestoreFile_TrueCondition_NotModified() => await UpdateOrRestoreFile_TrueCondition_Helper("not-modified");
         [Fact]
         public async Task UpdateOrRestoreFile_TrueCondition_Empty() => await UpdateOrRestoreFile_TrueCondition_Helper("");
+
+        [Fact]
+        public async Task GetFileResource_ExportImportDeserTests()
+        {
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/files/{fileId}";
+
+            mockClient
+                .Setup(client => client.SendGetRequest(url, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Resources.SourceFiles.GetFileResource_Response)
+                });
+            
+            var executor = new SourceFilesApiExecutor(mockClient.Object);
+            var response = await executor.GetFile<FileResource>(projectId, fileId);
+            
+            var exportOptions = response.ExportOptions as GeneralFileExportOptions;
+            ArgumentNullException.ThrowIfNull(exportOptions);
+            Assert.NotEmpty(exportOptions.ExportPattern);
+            
+            var importOptions = response.ImportOptions as SpreadsheetFileImportOptions;
+            ArgumentNullException.ThrowIfNull(importOptions);
+            Assert.True(importOptions.ImportTranslations);
+            Assert.True(importOptions.FirstLineContainsHeader);
+        }
     }
 }

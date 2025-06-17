@@ -35,7 +35,12 @@ namespace Crowdin.Api.Core.Converters
                     ? typeof(FileResource)
                     : typeof(FileInfoResource);
 
-            return (FileInfoResource?) JsonConvert.DeserializeObject(jObject.ToString(), returnType);
+            JsonSerializerSettings jsonSettings = Utils.CreateJsonSerializerSettings();
+            jsonSettings.Converters = jsonSettings.Converters
+                .Where(converter => converter.GetType() != typeof(FileInfoConverter))
+                .ToArray();
+
+            return (FileInfoResource?) JsonConvert.DeserializeObject(jObject.ToString(), returnType, jsonSettings);
         }
 
         private static bool ContainsAny(IEnumerable<string> fields, params string[] values)
