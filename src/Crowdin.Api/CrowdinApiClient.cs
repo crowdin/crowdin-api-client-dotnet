@@ -122,29 +122,7 @@ namespace Crowdin.Api
         private readonly IRetryService? _retryService;
         
         private static readonly MediaTypeHeaderValue DefaultContentType = MediaTypeHeaderValue.Parse("application/json");
-        private static readonly JsonSerializerSettings DefaultJsonSerializerOptions =
-            new JsonSerializerSettings
-            {
-                NullValueHandling = NullValueHandling.Ignore,
-                Converters =
-                {
-                    new ReportMatchTypeObjectConverter(),
-                    new DescriptionEnumConverter(),
-                    new FileExportOptionsConverter(),
-                    new FileImportOptionsConverter(),
-                    new FileInfoConverter(),
-                    new LanguageTranslationsConverter(),
-                    new ToStringConverter(),
-                    new ProjectFileFormatSettingsConverter(),
-                    new ProjectStringsExporterSettingsConverter(),
-                    new ReportSettingsTemplateConverter(),
-                    new WorkflowStepConverter(),
-                    new FieldConfigConverter(),
-                    new AiPromptConfigurationConverter(),
-                    new AiProviderCredentialsConverter(),
-                    new SourceStringConverter()
-                }
-            };
+        private static readonly JsonSerializerSettings DefaultJsonSerializerOptions = Utils.CreateJsonSerializerSettings();
 
         public IJsonParser DefaultJsonParser { get; }
 

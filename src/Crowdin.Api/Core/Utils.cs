@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Net;
 
+using Newtonsoft.Json;
+
+using Crowdin.Api.Core.Converters;
+
 #nullable enable
 
 namespace Crowdin.Api.Core
@@ -23,6 +27,32 @@ namespace Crowdin.Api.Core
             {
                 throw new CrowdinApiException(message);
             }
+        }
+
+        internal static JsonSerializerSettings CreateJsonSerializerSettings()
+        {
+            return new JsonSerializerSettings
+            {
+                NullValueHandling = NullValueHandling.Ignore,
+                Converters =
+                {
+                    new ReportMatchTypeObjectConverter(),
+                    new DescriptionEnumConverter(),
+                    new FileExportOptionsConverter(),
+                    new FileImportOptionsConverter(),
+                    new FileInfoConverter(),
+                    new LanguageTranslationsConverter(),
+                    new ToStringConverter(),
+                    new ProjectFileFormatSettingsConverter(),
+                    new ProjectStringsExporterSettingsConverter(),
+                    new ReportSettingsTemplateConverter(),
+                    new WorkflowStepConverter(),
+                    new FieldConfigConverter(),
+                    new AiPromptConfigurationConverter(),
+                    new AiProviderCredentialsConverter(),
+                    new SourceStringConverter()
+                }
+            };
         }
     }
 }
