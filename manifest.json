@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "D:/a/crowdin-api-client-dotnet/crowdin-api-client-dotnet/docs",
+  "source_base_path": "C:/a/crowdin-api-client-dotnet/crowdin-api-client-dotnet/docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "s3ZnZTrzm48pfjR84IkXW22XMV6Ng7r9uid4/kQBr4k="
+          "hash": "hdL1J07m7G9dbbTi3zbrQBO2B2yZrIbLKKZAe4rXSHw="
         }
       },
       "is_incremental": false,
@@ -1566,7 +1566,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.CrowdinApiClient.html",
-          "hash": "9SAh+i/vOL6tT/wmjGOsJ7EaoAN/6ciaZLe0yu9rxpE="
+          "hash": "kyz2gjmulxf7k7Hns44hTvmgh0HTbznKL5Lfdqhfa1E="
         }
       },
       "is_incremental": false,
@@ -7170,7 +7170,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Tasks.TaskResource.html",
-          "hash": "SZFuwKfuhVPEBaka4oUPCYhmmhml6gJEQwJ7Hzk7pLo="
+          "hash": "8xjVk2YqBm29mt5jP+8KR/jyOUvLLlnWsHnszh07T68="
         }
       },
       "is_incremental": false,

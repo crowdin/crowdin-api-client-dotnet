@@ -38573,6 +38573,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TaskResource.Assignees
   nameWithType: TaskResource.Assignees
+- uid: Crowdin.Api.Tasks.TaskResource.BatchId
+  name: BatchId
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_BatchId
+  commentId: P:Crowdin.Api.Tasks.TaskResource.BatchId
+  fullName: Crowdin.Api.Tasks.TaskResource.BatchId
+  nameWithType: TaskResource.BatchId
+- uid: Crowdin.Api.Tasks.TaskResource.BatchId*
+  name: BatchId
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_BatchId_
+  commentId: Overload:Crowdin.Api.Tasks.TaskResource.BatchId
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskResource.BatchId
+  nameWithType: TaskResource.BatchId
 - uid: Crowdin.Api.Tasks.TaskResource.BuyUrl
   name: BuyUrl
   href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_BuyUrl
@@ -38651,6 +38664,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TaskResource.Description
   nameWithType: TaskResource.Description
+- uid: Crowdin.Api.Tasks.TaskResource.ExcludeLabelIds
+  name: ExcludeLabelIds
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_ExcludeLabelIds
+  commentId: P:Crowdin.Api.Tasks.TaskResource.ExcludeLabelIds
+  fullName: Crowdin.Api.Tasks.TaskResource.ExcludeLabelIds
+  nameWithType: TaskResource.ExcludeLabelIds
+- uid: Crowdin.Api.Tasks.TaskResource.ExcludeLabelIds*
+  name: ExcludeLabelIds
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_ExcludeLabelIds_
+  commentId: Overload:Crowdin.Api.Tasks.TaskResource.ExcludeLabelIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskResource.ExcludeLabelIds
+  nameWithType: TaskResource.ExcludeLabelIds
 - uid: Crowdin.Api.Tasks.TaskResource.FileIds
   name: FileIds
   href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_FileIds
@@ -38716,6 +38742,45 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TaskResource.IsArchived
   nameWithType: TaskResource.IsArchived
+- uid: Crowdin.Api.Tasks.TaskResource.LabelIds
+  name: LabelIds
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_LabelIds
+  commentId: P:Crowdin.Api.Tasks.TaskResource.LabelIds
+  fullName: Crowdin.Api.Tasks.TaskResource.LabelIds
+  nameWithType: TaskResource.LabelIds
+- uid: Crowdin.Api.Tasks.TaskResource.LabelIds*
+  name: LabelIds
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_LabelIds_
+  commentId: Overload:Crowdin.Api.Tasks.TaskResource.LabelIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskResource.LabelIds
+  nameWithType: TaskResource.LabelIds
+- uid: Crowdin.Api.Tasks.TaskResource.LabelMatchRule
+  name: LabelMatchRule
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_LabelMatchRule
+  commentId: P:Crowdin.Api.Tasks.TaskResource.LabelMatchRule
+  fullName: Crowdin.Api.Tasks.TaskResource.LabelMatchRule
+  nameWithType: TaskResource.LabelMatchRule
+- uid: Crowdin.Api.Tasks.TaskResource.LabelMatchRule*
+  name: LabelMatchRule
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_LabelMatchRule_
+  commentId: Overload:Crowdin.Api.Tasks.TaskResource.LabelMatchRule
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskResource.LabelMatchRule
+  nameWithType: TaskResource.LabelMatchRule
+- uid: Crowdin.Api.Tasks.TaskResource.PrecedingTaskId
+  name: PrecedingTaskId
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_PrecedingTaskId
+  commentId: P:Crowdin.Api.Tasks.TaskResource.PrecedingTaskId
+  fullName: Crowdin.Api.Tasks.TaskResource.PrecedingTaskId
+  nameWithType: TaskResource.PrecedingTaskId
+- uid: Crowdin.Api.Tasks.TaskResource.PrecedingTaskId*
+  name: PrecedingTaskId
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_PrecedingTaskId_
+  commentId: Overload:Crowdin.Api.Tasks.TaskResource.PrecedingTaskId
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskResource.PrecedingTaskId
+  nameWithType: TaskResource.PrecedingTaskId
 - uid: Crowdin.Api.Tasks.TaskResource.Progress
   name: Progress
   href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_Progress
@@ -38742,6 +38807,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TaskResource.ProjectId
   nameWithType: TaskResource.ProjectId
+- uid: Crowdin.Api.Tasks.TaskResource.SourceLanguage
+  name: SourceLanguage
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_SourceLanguage
+  commentId: P:Crowdin.Api.Tasks.TaskResource.SourceLanguage
+  fullName: Crowdin.Api.Tasks.TaskResource.SourceLanguage
+  nameWithType: TaskResource.SourceLanguage
+- uid: Crowdin.Api.Tasks.TaskResource.SourceLanguage*
+  name: SourceLanguage
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_SourceLanguage_
+  commentId: Overload:Crowdin.Api.Tasks.TaskResource.SourceLanguage
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskResource.SourceLanguage
+  nameWithType: TaskResource.SourceLanguage
 - uid: Crowdin.Api.Tasks.TaskResource.SourceLanguageId
   name: SourceLanguageId
   href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_SourceLanguageId
@@ -38781,6 +38859,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TaskResource.TargetLanguageId
   nameWithType: TaskResource.TargetLanguageId
+- uid: Crowdin.Api.Tasks.TaskResource.TargetLanguages
+  name: TargetLanguages
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_TargetLanguages
+  commentId: P:Crowdin.Api.Tasks.TaskResource.TargetLanguages
+  fullName: Crowdin.Api.Tasks.TaskResource.TargetLanguages
+  nameWithType: TaskResource.TargetLanguages
+- uid: Crowdin.Api.Tasks.TaskResource.TargetLanguages*
+  name: TargetLanguages
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_TargetLanguages_
+  commentId: Overload:Crowdin.Api.Tasks.TaskResource.TargetLanguages
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskResource.TargetLanguages
+  nameWithType: TaskResource.TargetLanguages
 - uid: Crowdin.Api.Tasks.TaskResource.TimeRange
   name: TimeRange
   href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_TimeRange
