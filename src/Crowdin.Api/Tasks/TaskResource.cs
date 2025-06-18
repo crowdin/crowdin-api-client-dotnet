@@ -3,6 +3,8 @@ using System;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
+using Crowdin.Api.Languages;
+
 namespace Crowdin.Api.Tasks
 {
     [PublicAPI]
@@ -28,6 +30,9 @@ namespace Crowdin.Api.Tasks
         
         [JsonProperty("title")]
         public string Title { get; set; }
+        
+        [JsonProperty("batchId")]
+        public int BatchId { get; set; }
         
         [JsonProperty("assignees")]
         public TaskAssignee[] Assignees { get; set; }
@@ -88,5 +93,23 @@ namespace Crowdin.Api.Tasks
         
         [JsonProperty("isArchived")]
         public bool? IsArchived { get; set; }
+        
+        [JsonProperty("sourceLanguage")]
+        public Language SourceLanguage { get; set; }
+        
+        [JsonProperty("targetLanguages")]
+        public Language[] TargetLanguages { get; set; }
+        
+        [JsonProperty("labelIds")]
+        public int[] LabelIds { get; set; }
+        
+        [JsonProperty("excludeLabelIds")]
+        public int[] ExcludeLabelIds { get; set; }
+        
+        [JsonProperty("labelMatchRule")]
+        public string LabelMatchRule { get; set; }
+        
+        [JsonProperty("precedingTaskId")]
+        public int PrecedingTaskId { get; set; }
     }
 }
