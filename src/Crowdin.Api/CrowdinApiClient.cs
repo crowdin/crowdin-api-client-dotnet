@@ -279,11 +279,10 @@ namespace Crowdin.Api
             return SendRequest(requestFn);
         }
 
-        Task<HttpStatusCode> ICrowdinApiClient.SendDeleteRequest(string subUrl, IDictionary<string, string>? queryParams)
+        async Task<HttpStatusCode> ICrowdinApiClient.SendDeleteRequest(string subUrl, IDictionary<string, string>? queryParams)
         {
-            return ((ICrowdinApiClient) this)
-                .SendDeleteRequest_FullResult(subUrl, queryParams)
-                .ContinueWith(task => task.Result.StatusCode);
+            var result = await ((ICrowdinApiClient) this).SendDeleteRequest_FullResult(subUrl, queryParams);
+            return result.StatusCode;
         }
         
         Task<CrowdinApiResult> ICrowdinApiClient.SendDeleteRequest_FullResult(string subUrl, IDictionary<string, string>? queryParams)
