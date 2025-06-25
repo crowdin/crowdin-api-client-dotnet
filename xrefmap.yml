@@ -7853,6 +7853,144 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.CrowdinCredentials.Organization
   nameWithType: CrowdinCredentials.Organization
+- uid: Crowdin.Api.Currency
+  name: Currency
+  href: api/Crowdin.Api.Currency.html
+  commentId: T:Crowdin.Api.Currency
+  fullName: Crowdin.Api.Currency
+  nameWithType: Currency
+- uid: Crowdin.Api.Currency.AUD
+  name: AUD
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_AUD
+  commentId: F:Crowdin.Api.Currency.AUD
+  fullName: Crowdin.Api.Currency.AUD
+  nameWithType: Currency.AUD
+- uid: Crowdin.Api.Currency.BRL
+  name: BRL
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_BRL
+  commentId: F:Crowdin.Api.Currency.BRL
+  fullName: Crowdin.Api.Currency.BRL
+  nameWithType: Currency.BRL
+- uid: Crowdin.Api.Currency.CAD
+  name: CAD
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_CAD
+  commentId: F:Crowdin.Api.Currency.CAD
+  fullName: Crowdin.Api.Currency.CAD
+  nameWithType: Currency.CAD
+- uid: Crowdin.Api.Currency.CHF
+  name: CHF
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_CHF
+  commentId: F:Crowdin.Api.Currency.CHF
+  fullName: Crowdin.Api.Currency.CHF
+  nameWithType: Currency.CHF
+- uid: Crowdin.Api.Currency.CNY
+  name: CNY
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_CNY
+  commentId: F:Crowdin.Api.Currency.CNY
+  fullName: Crowdin.Api.Currency.CNY
+  nameWithType: Currency.CNY
+- uid: Crowdin.Api.Currency.EUR
+  name: EUR
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_EUR
+  commentId: F:Crowdin.Api.Currency.EUR
+  fullName: Crowdin.Api.Currency.EUR
+  nameWithType: Currency.EUR
+- uid: Crowdin.Api.Currency.GBP
+  name: GBP
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_GBP
+  commentId: F:Crowdin.Api.Currency.GBP
+  fullName: Crowdin.Api.Currency.GBP
+  nameWithType: Currency.GBP
+- uid: Crowdin.Api.Currency.GEL
+  name: GEL
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_GEL
+  commentId: F:Crowdin.Api.Currency.GEL
+  fullName: Crowdin.Api.Currency.GEL
+  nameWithType: Currency.GEL
+- uid: Crowdin.Api.Currency.HKD
+  name: HKD
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_HKD
+  commentId: F:Crowdin.Api.Currency.HKD
+  fullName: Crowdin.Api.Currency.HKD
+  nameWithType: Currency.HKD
+- uid: Crowdin.Api.Currency.INR
+  name: INR
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_INR
+  commentId: F:Crowdin.Api.Currency.INR
+  fullName: Crowdin.Api.Currency.INR
+  nameWithType: Currency.INR
+- uid: Crowdin.Api.Currency.JPY
+  name: JPY
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_JPY
+  commentId: F:Crowdin.Api.Currency.JPY
+  fullName: Crowdin.Api.Currency.JPY
+  nameWithType: Currency.JPY
+- uid: Crowdin.Api.Currency.KRW
+  name: KRW
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_KRW
+  commentId: F:Crowdin.Api.Currency.KRW
+  fullName: Crowdin.Api.Currency.KRW
+  nameWithType: Currency.KRW
+- uid: Crowdin.Api.Currency.MXN
+  name: MXN
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_MXN
+  commentId: F:Crowdin.Api.Currency.MXN
+  fullName: Crowdin.Api.Currency.MXN
+  nameWithType: Currency.MXN
+- uid: Crowdin.Api.Currency.NOK
+  name: NOK
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_NOK
+  commentId: F:Crowdin.Api.Currency.NOK
+  fullName: Crowdin.Api.Currency.NOK
+  nameWithType: Currency.NOK
+- uid: Crowdin.Api.Currency.NZD
+  name: NZD
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_NZD
+  commentId: F:Crowdin.Api.Currency.NZD
+  fullName: Crowdin.Api.Currency.NZD
+  nameWithType: Currency.NZD
+- uid: Crowdin.Api.Currency.RUB
+  name: RUB
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_RUB
+  commentId: F:Crowdin.Api.Currency.RUB
+  fullName: Crowdin.Api.Currency.RUB
+  nameWithType: Currency.RUB
+- uid: Crowdin.Api.Currency.SEK
+  name: SEK
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_SEK
+  commentId: F:Crowdin.Api.Currency.SEK
+  fullName: Crowdin.Api.Currency.SEK
+  nameWithType: Currency.SEK
+- uid: Crowdin.Api.Currency.SGD
+  name: SGD
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_SGD
+  commentId: F:Crowdin.Api.Currency.SGD
+  fullName: Crowdin.Api.Currency.SGD
+  nameWithType: Currency.SGD
+- uid: Crowdin.Api.Currency.TRY
+  name: TRY
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_TRY
+  commentId: F:Crowdin.Api.Currency.TRY
+  fullName: Crowdin.Api.Currency.TRY
+  nameWithType: Currency.TRY
+- uid: Crowdin.Api.Currency.UAH
+  name: UAH
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_UAH
+  commentId: F:Crowdin.Api.Currency.UAH
+  fullName: Crowdin.Api.Currency.UAH
+  nameWithType: Currency.UAH
+- uid: Crowdin.Api.Currency.USD
+  name: USD
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_USD
+  commentId: F:Crowdin.Api.Currency.USD
+  fullName: Crowdin.Api.Currency.USD
+  nameWithType: Currency.USD
+- uid: Crowdin.Api.Currency.ZAR
+  name: ZAR
+  href: api/Crowdin.Api.Currency.html#Crowdin_Api_Currency_ZAR
+  commentId: F:Crowdin.Api.Currency.ZAR
+  fullName: Crowdin.Api.Currency.ZAR
+  nameWithType: Currency.ZAR
 - uid: Crowdin.Api.Dictionaries
   name: Crowdin.Api.Dictionaries
   href: api/Crowdin.Api.Dictionaries.html
@@ -13775,6 +13913,24 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Labels.Label.Title
   nameWithType: Label.Title
+- uid: Crowdin.Api.Labels.LabelMatchRule
+  name: LabelMatchRule
+  href: api/Crowdin.Api.Labels.LabelMatchRule.html
+  commentId: T:Crowdin.Api.Labels.LabelMatchRule
+  fullName: Crowdin.Api.Labels.LabelMatchRule
+  nameWithType: LabelMatchRule
+- uid: Crowdin.Api.Labels.LabelMatchRule.All
+  name: All
+  href: api/Crowdin.Api.Labels.LabelMatchRule.html#Crowdin_Api_Labels_LabelMatchRule_All
+  commentId: F:Crowdin.Api.Labels.LabelMatchRule.All
+  fullName: Crowdin.Api.Labels.LabelMatchRule.All
+  nameWithType: LabelMatchRule.All
+- uid: Crowdin.Api.Labels.LabelMatchRule.Any
+  name: Any
+  href: api/Crowdin.Api.Labels.LabelMatchRule.html#Crowdin_Api_Labels_LabelMatchRule_Any
+  commentId: F:Crowdin.Api.Labels.LabelMatchRule.Any
+  fullName: Crowdin.Api.Labels.LabelMatchRule.Any
+  nameWithType: LabelMatchRule.Any
 - uid: Crowdin.Api.Labels.LabelPatch
   name: LabelPatch
   href: api/Crowdin.Api.Labels.LabelPatch.html
@@ -38165,6 +38321,51 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TaskAssigneeForm.WordsCount
   nameWithType: TaskAssigneeForm.WordsCount
+- uid: Crowdin.Api.Tasks.TaskCost
+  name: TaskCost
+  href: api/Crowdin.Api.Tasks.TaskCost.html
+  commentId: T:Crowdin.Api.Tasks.TaskCost
+  fullName: Crowdin.Api.Tasks.TaskCost
+  nameWithType: TaskCost
+- uid: Crowdin.Api.Tasks.TaskCost.Cost
+  name: Cost
+  href: api/Crowdin.Api.Tasks.TaskCost.html#Crowdin_Api_Tasks_TaskCost_Cost
+  commentId: P:Crowdin.Api.Tasks.TaskCost.Cost
+  fullName: Crowdin.Api.Tasks.TaskCost.Cost
+  nameWithType: TaskCost.Cost
+- uid: Crowdin.Api.Tasks.TaskCost.Cost*
+  name: Cost
+  href: api/Crowdin.Api.Tasks.TaskCost.html#Crowdin_Api_Tasks_TaskCost_Cost_
+  commentId: Overload:Crowdin.Api.Tasks.TaskCost.Cost
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskCost.Cost
+  nameWithType: TaskCost.Cost
+- uid: Crowdin.Api.Tasks.TaskCost.Currency
+  name: Currency
+  href: api/Crowdin.Api.Tasks.TaskCost.html#Crowdin_Api_Tasks_TaskCost_Currency
+  commentId: P:Crowdin.Api.Tasks.TaskCost.Currency
+  fullName: Crowdin.Api.Tasks.TaskCost.Currency
+  nameWithType: TaskCost.Currency
+- uid: Crowdin.Api.Tasks.TaskCost.Currency*
+  name: Currency
+  href: api/Crowdin.Api.Tasks.TaskCost.html#Crowdin_Api_Tasks_TaskCost_Currency_
+  commentId: Overload:Crowdin.Api.Tasks.TaskCost.Currency
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskCost.Currency
+  nameWithType: TaskCost.Currency
+- uid: Crowdin.Api.Tasks.TaskCost.Date
+  name: Date
+  href: api/Crowdin.Api.Tasks.TaskCost.html#Crowdin_Api_Tasks_TaskCost_Date
+  commentId: P:Crowdin.Api.Tasks.TaskCost.Date
+  fullName: Crowdin.Api.Tasks.TaskCost.Date
+  nameWithType: TaskCost.Date
+- uid: Crowdin.Api.Tasks.TaskCost.Date*
+  name: Date
+  href: api/Crowdin.Api.Tasks.TaskCost.html#Crowdin_Api_Tasks_TaskCost_Date_
+  commentId: Overload:Crowdin.Api.Tasks.TaskCost.Date
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskCost.Date
+  nameWithType: TaskCost.Date
 - uid: Crowdin.Api.Tasks.TaskCreateForm
   name: TaskCreateForm
   href: api/Crowdin.Api.Tasks.TaskCreateForm.html
@@ -38547,6 +38748,19 @@ references:
   commentId: T:Crowdin.Api.Tasks.TaskResource
   fullName: Crowdin.Api.Tasks.TaskResource
   nameWithType: TaskResource
+- uid: Crowdin.Api.Tasks.TaskResource.ActualCost
+  name: ActualCost
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_ActualCost
+  commentId: P:Crowdin.Api.Tasks.TaskResource.ActualCost
+  fullName: Crowdin.Api.Tasks.TaskResource.ActualCost
+  nameWithType: TaskResource.ActualCost
+- uid: Crowdin.Api.Tasks.TaskResource.ActualCost*
+  name: ActualCost
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_ActualCost_
+  commentId: Overload:Crowdin.Api.Tasks.TaskResource.ActualCost
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskResource.ActualCost
+  nameWithType: TaskResource.ActualCost
 - uid: Crowdin.Api.Tasks.TaskResource.AssignedTeams
   name: AssignedTeams
   href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_AssignedTeams
@@ -38664,6 +38878,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TaskResource.Description
   nameWithType: TaskResource.Description
+- uid: Crowdin.Api.Tasks.TaskResource.EstimatedCost
+  name: EstimatedCost
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_EstimatedCost
+  commentId: P:Crowdin.Api.Tasks.TaskResource.EstimatedCost
+  fullName: Crowdin.Api.Tasks.TaskResource.EstimatedCost
+  nameWithType: TaskResource.EstimatedCost
+- uid: Crowdin.Api.Tasks.TaskResource.EstimatedCost*
+  name: EstimatedCost
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_EstimatedCost_
+  commentId: Overload:Crowdin.Api.Tasks.TaskResource.EstimatedCost
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskResource.EstimatedCost
+  nameWithType: TaskResource.EstimatedCost
 - uid: Crowdin.Api.Tasks.TaskResource.ExcludeLabelIds
   name: ExcludeLabelIds
   href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_ExcludeLabelIds
@@ -38677,6 +38904,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TaskResource.ExcludeLabelIds
   nameWithType: TaskResource.ExcludeLabelIds
+- uid: Crowdin.Api.Tasks.TaskResource.ExcludeLabelMatchRule
+  name: ExcludeLabelMatchRule
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_ExcludeLabelMatchRule
+  commentId: P:Crowdin.Api.Tasks.TaskResource.ExcludeLabelMatchRule
+  fullName: Crowdin.Api.Tasks.TaskResource.ExcludeLabelMatchRule
+  nameWithType: TaskResource.ExcludeLabelMatchRule
+- uid: Crowdin.Api.Tasks.TaskResource.ExcludeLabelMatchRule*
+  name: ExcludeLabelMatchRule
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_ExcludeLabelMatchRule_
+  commentId: Overload:Crowdin.Api.Tasks.TaskResource.ExcludeLabelMatchRule
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskResource.ExcludeLabelMatchRule
+  nameWithType: TaskResource.ExcludeLabelMatchRule
 - uid: Crowdin.Api.Tasks.TaskResource.FileIds
   name: FileIds
   href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_FileIds
@@ -38807,6 +39047,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TaskResource.ProjectId
   nameWithType: TaskResource.ProjectId
+- uid: Crowdin.Api.Tasks.TaskResource.ResolvedAt
+  name: ResolvedAt
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_ResolvedAt
+  commentId: P:Crowdin.Api.Tasks.TaskResource.ResolvedAt
+  fullName: Crowdin.Api.Tasks.TaskResource.ResolvedAt
+  nameWithType: TaskResource.ResolvedAt
+- uid: Crowdin.Api.Tasks.TaskResource.ResolvedAt*
+  name: ResolvedAt
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_ResolvedAt_
+  commentId: Overload:Crowdin.Api.Tasks.TaskResource.ResolvedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskResource.ResolvedAt
+  nameWithType: TaskResource.ResolvedAt
 - uid: Crowdin.Api.Tasks.TaskResource.SourceLanguage
   name: SourceLanguage
   href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_SourceLanguage
@@ -38833,6 +39086,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TaskResource.SourceLanguageId
   nameWithType: TaskResource.SourceLanguageId
+- uid: Crowdin.Api.Tasks.TaskResource.StartedAt
+  name: StartedAt
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_StartedAt
+  commentId: P:Crowdin.Api.Tasks.TaskResource.StartedAt
+  fullName: Crowdin.Api.Tasks.TaskResource.StartedAt
+  nameWithType: TaskResource.StartedAt
+- uid: Crowdin.Api.Tasks.TaskResource.StartedAt*
+  name: StartedAt
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_StartedAt_
+  commentId: Overload:Crowdin.Api.Tasks.TaskResource.StartedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskResource.StartedAt
+  nameWithType: TaskResource.StartedAt
 - uid: Crowdin.Api.Tasks.TaskResource.Status
   name: Status
   href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_Status
@@ -38963,6 +39229,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TaskResource.Vendor
   nameWithType: TaskResource.Vendor
+- uid: Crowdin.Api.Tasks.TaskResource.WebUrl
+  name: WebUrl
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_WebUrl
+  commentId: P:Crowdin.Api.Tasks.TaskResource.WebUrl
+  fullName: Crowdin.Api.Tasks.TaskResource.WebUrl
+  nameWithType: TaskResource.WebUrl
+- uid: Crowdin.Api.Tasks.TaskResource.WebUrl*
+  name: WebUrl
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_WebUrl_
+  commentId: Overload:Crowdin.Api.Tasks.TaskResource.WebUrl
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskResource.WebUrl
+  nameWithType: TaskResource.WebUrl
 - uid: Crowdin.Api.Tasks.TaskResource.WordsCount
   name: WordsCount
   href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_WordsCount

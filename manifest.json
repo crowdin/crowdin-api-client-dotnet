@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/a/crowdin-api-client-dotnet/crowdin-api-client-dotnet/docs",
+  "source_base_path": "D:/a/crowdin-api-client-dotnet/crowdin-api-client-dotnet/docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "hdL1J07m7G9dbbTi3zbrQBO2B2yZrIbLKKZAe4rXSHw="
+          "hash": "pGjJuiyd4hJd7ltAGtvmBwcd5zLGLhxXCwAz5h34XLs="
         }
       },
       "is_incremental": false,
@@ -1566,7 +1566,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.CrowdinApiClient.html",
-          "hash": "kyz2gjmulxf7k7Hns44hTvmgh0HTbznKL5Lfdqhfa1E="
+          "hash": "BzBB8pWMxxYkmjTNWhpP4jesQ5sFkOGu3/blTReqWDc="
         }
       },
       "is_incremental": false,
@@ -1591,6 +1591,18 @@
         ".html": {
           "relative_path": "api/Crowdin.Api.CrowdinCredentials.html",
           "hash": "HcX+7fEdtguUl/48BrNJQQ6ko4fAdxxv5oBL08iNBHk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Currency.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Currency.html",
+          "hash": "IAP3DXQWvW7oqv5se0PmZA4BXoRJ+Y+6D6U7wqgEB/4="
         }
       },
       "is_incremental": false,
@@ -2666,6 +2678,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Labels.LabelMatchRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Labels.LabelMatchRule.html",
+          "hash": "oXGqo4zao2us5sIUyl1U7b+BMtNLQ02cd9BYXyiPs18="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Labels.LabelPatch.yml",
       "output": {
         ".html": {
@@ -2706,7 +2730,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Labels.html",
-          "hash": "WU/PdVgeYQDY9EEFwKrRv/bCo3L9Enz0sYIO7ziA4lw="
+          "hash": "MP/VFokXuOSU8xTkaNCryGTGeWjzC86/5nKdW1/mt+E="
         }
       },
       "is_incremental": false,
@@ -6474,7 +6498,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.StringComments.StringComment.html",
-          "hash": "6xHhcMbjwHnAFLpJO8AQBdQqNvtUhC2ib/eHsqkDAoA="
+          "hash": "qWRDQ1Gbg5WED+iN0D9RSNV3y8iSYpvr5Lcv4EKKoiY="
         }
       },
       "is_incremental": false,
@@ -7106,6 +7130,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Tasks.TaskCost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Tasks.TaskCost.html",
+          "hash": "5XvnOIRNkGLbZEeeBivBkeL/iiM4D96Fm74LeSfGplE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Tasks.TaskCreateForm.yml",
       "output": {
         ".html": {
@@ -7170,7 +7206,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Tasks.TaskResource.html",
-          "hash": "8xjVk2YqBm29mt5jP+8KR/jyOUvLLlnWsHnszh07T68="
+          "hash": "C2pO17Xo90ZOCZoReRwiXPMrscPKcHPzMlj2Wqb/CGg="
         }
       },
       "is_incremental": false,
@@ -7470,7 +7506,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.Tasks.html",
-          "hash": "6Ze11ltyEFMEsz4zuZ8nCHReJfpo3NM48z50U8vk1hM="
+          "hash": "fAtLyQAQdsujGwO1N3BmLXdN6ZttdTUN6iiwItIyTUE="
         }
       },
       "is_incremental": false,
@@ -9426,7 +9462,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Crowdin.Api.html",
-          "hash": "+DUpVB5bzCqPdKaKZwqnBo9+RXnS12nu6aUeOS/BthU="
+          "hash": "uRua3q0khA8RKs+h7bEvdZskaOLXgg3KL0w4H12Vzzk="
         }
       },
       "is_incremental": false,
@@ -9438,7 +9474,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "FipmVNzVFkZHKabJ+JSH5NYnqxQVIcv7Bs3Qdl/TGxM="
+          "hash": "j2WKnR2PKH5ZELRY7SWIKyXaXRykgDNYwHY5LKrvQrw="
         }
       },
       "is_incremental": false,
@@ -9477,7 +9513,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 782,
+          "total_file_count": 785,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
