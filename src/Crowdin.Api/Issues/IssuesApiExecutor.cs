@@ -32,7 +32,7 @@ namespace Crowdin.Api.Issues
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<Issue>> ListReportedIssues(
-            int projectId,
+            long projectId,
             int limit = 25,
             int offset = 0,
             IssueType? type = null,
@@ -47,7 +47,7 @@ namespace Crowdin.Api.Issues
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.issues.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<Issue>> ListReportedIssues(int projectId, IssuesListParams @params)
+        public async Task<ResponseList<Issue>> ListReportedIssues(long projectId, IssuesListParams @params)
         {
             var url = $"/projects/{projectId}/issues";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, @params.ToQueryParams());
@@ -60,7 +60,7 @@ namespace Crowdin.Api.Issues
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.issues.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Issue> EditIssue(int projectId, int issueId, IEnumerable<IssuePatch> patches)
+        public async Task<Issue> EditIssue(long projectId, long issueId, IEnumerable<IssuePatch> patches)
         {
             var url = $"/projects/{projectId}/issues/{issueId}";
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);

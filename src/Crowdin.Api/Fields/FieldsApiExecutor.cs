@@ -67,7 +67,7 @@ namespace Crowdin.Api.Fields
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.fields.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Field> GetField(int fieldId)
+        public async Task<Field> GetField(long fieldId)
         {
             string url = FormUrl_FieldId(fieldId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -79,7 +79,7 @@ namespace Crowdin.Api.Fields
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.fields.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteField(int fieldId)
+        public async Task DeleteField(long fieldId)
         {
             string url = FormUrl_FieldId(fieldId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -91,7 +91,7 @@ namespace Crowdin.Api.Fields
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.fields.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Field> EditField(int fieldId, IEnumerable<FieldPatch> patches)
+        public async Task<Field> EditField(long fieldId, IEnumerable<FieldPatch> patches)
         {
             string url = FormUrl_FieldId(fieldId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -102,7 +102,7 @@ namespace Crowdin.Api.Fields
 
         private static string FormUrl_Fields() => "/fields";
 
-        private static string FormUrl_FieldId(int fieldId) => $"/fields/{fieldId}";
+        private static string FormUrl_FieldId(long fieldId) => $"/fields/{fieldId}";
 
         #endregion
     }

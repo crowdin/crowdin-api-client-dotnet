@@ -38,7 +38,7 @@ namespace Crowdin.Api.Labels
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Label>> ListLabels(
-            int projectId,
+            long projectId,
             int limit = 25,
             int offset = 0,
             bool? isSystem = null,
@@ -59,7 +59,7 @@ namespace Crowdin.Api.Labels
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.labels.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public Task<Label> AddLabel(int projectId, string title)
+        public Task<Label> AddLabel(long projectId, string title)
         {
             return AddLabel(projectId, new AddLabelRequest { Title = title });
         }
@@ -70,7 +70,7 @@ namespace Crowdin.Api.Labels
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.labels.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Label> AddLabel(int projectId, AddLabelRequest request)
+        public async Task<Label> AddLabel(long projectId, AddLabelRequest request)
         {
             string url = FormUrl_Labels(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -83,7 +83,7 @@ namespace Crowdin.Api.Labels
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.labels.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Label> GetLabel(int projectId, int labelId)
+        public async Task<Label> GetLabel(long projectId, long labelId)
         {
             string url = FormUrl_LabelId(projectId, labelId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -96,7 +96,7 @@ namespace Crowdin.Api.Labels
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.labels.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteLabel(int projectId, int labelId)
+        public async Task DeleteLabel(long projectId, long labelId)
         {
             string url = FormUrl_LabelId(projectId, labelId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -109,7 +109,7 @@ namespace Crowdin.Api.Labels
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.labels.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Label> EditLabel(int projectId, int labelId, IEnumerable<LabelPatch> patches)
+        public async Task<Label> EditLabel(long projectId, long labelId, IEnumerable<LabelPatch> patches)
         {
             string url = FormUrl_LabelId(projectId, labelId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -123,9 +123,9 @@ namespace Crowdin.Api.Labels
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<SourceString>> AssignLabelToStrings(
-            int projectId,
-            int labelId,
-            ICollection<int> stringIds)
+            long projectId,
+            long labelId,
+            ICollection<long> stringIds)
         {
             var request = new AssignLabelToStringsRequest
             {
@@ -142,8 +142,8 @@ namespace Crowdin.Api.Labels
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<SourceString>> AssignLabelToStrings(
-            int projectId,
-            int labelId,
+            long projectId,
+            long labelId,
             AssignLabelToStringsRequest request)
         {
             string url = FormUrl_LabelStrings(projectId, labelId);
@@ -158,9 +158,9 @@ namespace Crowdin.Api.Labels
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<SourceString>> UnassignLabelFromStrings(
-            int projectId,
-            int labelId,
-            ICollection<int> stringIds)
+            long projectId,
+            long labelId,
+            ICollection<long> stringIds)
         {
             string url = FormUrl_LabelStrings(projectId, labelId);
 
@@ -180,8 +180,8 @@ namespace Crowdin.Api.Labels
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Screenshot>> AssignLabelToScreenshots(
-            int projectId,
-            int labelId,
+            long projectId,
+            long labelId,
             AssignLabelToScreenshotsRequest request)
         {
             string url = FormUrl_LabelScreenshots(projectId, labelId);
@@ -196,9 +196,9 @@ namespace Crowdin.Api.Labels
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Screenshot>> UnassignLabelFromScreenshots(
-            int projectId,
-            int labelId,
-            IEnumerable<int> screenshotIds)
+            long projectId,
+            long labelId,
+            IEnumerable<long> screenshotIds)
         {
             string url = FormUrl_LabelScreenshots(projectId, labelId);
             
@@ -213,22 +213,22 @@ namespace Crowdin.Api.Labels
 
         #region Helper methods
 
-        private static string FormUrl_Labels(int projectId)
+        private static string FormUrl_Labels(long projectId)
         {
             return $"/projects/{projectId}/labels";
         }
 
-        private static string FormUrl_LabelId(int projectId, int labelId)
+        private static string FormUrl_LabelId(long projectId, long labelId)
         {
             return $"/projects/{projectId}/labels/{labelId}";
         }
 
-        private static string FormUrl_LabelStrings(int projectId, int labelId)
+        private static string FormUrl_LabelStrings(long projectId, long labelId)
         {
             return $"/projects/{projectId}/labels/{labelId}/strings";
         }
 
-        private static string FormUrl_LabelScreenshots(int projectId, int labelId)
+        private static string FormUrl_LabelScreenshots(long projectId, long labelId)
         {
             return $"/projects/{projectId}/labels/{labelId}/screenshots";
         }

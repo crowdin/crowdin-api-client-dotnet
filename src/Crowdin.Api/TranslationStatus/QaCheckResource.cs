@@ -8,7 +8,7 @@ namespace Crowdin.Api.TranslationStatus
     public class QaCheckResource
     {
         [JsonProperty("stringId")]
-        public int StringId { get; set; }
+        public long StringId { get; set; }
         
         [JsonProperty("languageId")]
         public string LanguageId { get; set; }
@@ -26,7 +26,7 @@ namespace Crowdin.Api.TranslationStatus
         public string ValidationDescription { get; set; }
         
         [JsonProperty("pluralId")]
-        public int PluralId { get; set; }
+        public long PluralId { get; set; }
         
         [JsonProperty("text")]
         public string Text { get; set; }

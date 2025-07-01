@@ -8,7 +8,7 @@ namespace Crowdin.Api.Translations
     public class UploadTranslationsResponse
     {
         [JsonProperty("projectId")]
-        public int ProjectId { get; set; }
+        public long ProjectId { get; set; }
         
         [JsonProperty("storageId")]
         public long StorageId { get; set; }

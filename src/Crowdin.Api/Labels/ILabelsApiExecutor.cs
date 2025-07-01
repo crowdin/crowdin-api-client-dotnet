@@ -15,45 +15,45 @@ namespace Crowdin.Api.Labels
     public interface ILabelsApiExecutor
     {
         Task<ResponseList<Label>> ListLabels(
-            int projectId,
+            long projectId,
             int limit = 25,
             int offset = 0,
             bool? isSystem = null,
             IEnumerable<SortingRule>? orderBy = null);
 
-        Task<Label> AddLabel(int projectId, string title);
+        Task<Label> AddLabel(long projectId, string title);
 
-        Task<Label> AddLabel(int projectId, AddLabelRequest request);
+        Task<Label> AddLabel(long projectId, AddLabelRequest request);
 
-        Task<Label> GetLabel(int projectId, int labelId);
+        Task<Label> GetLabel(long projectId, long labelId);
 
-        Task DeleteLabel(int projectId, int labelId);
+        Task DeleteLabel(long projectId, long labelId);
 
-        Task<Label> EditLabel(int projectId, int labelId, IEnumerable<LabelPatch> patches);
-
-        Task<ResponseList<SourceString>> AssignLabelToStrings(
-            int projectId,
-            int labelId,
-            ICollection<int> stringIds);
+        Task<Label> EditLabel(long projectId, long labelId, IEnumerable<LabelPatch> patches);
 
         Task<ResponseList<SourceString>> AssignLabelToStrings(
-            int projectId,
-            int labelId,
+            long projectId,
+            long labelId,
+            ICollection<long> stringIds);
+
+        Task<ResponseList<SourceString>> AssignLabelToStrings(
+            long projectId,
+            long labelId,
             AssignLabelToStringsRequest request);
 
         Task<ResponseList<SourceString>> UnassignLabelFromStrings(
-            int projectId,
-            int labelId,
-            ICollection<int> stringIds);
+            long projectId,
+            long labelId,
+            ICollection<long> stringIds);
 
         Task<ResponseList<Screenshot>> AssignLabelToScreenshots(
-            int projectId,
-            int labelId,
+            long projectId,
+            long labelId,
             AssignLabelToScreenshotsRequest request);
 
         Task<ResponseList<Screenshot>> UnassignLabelFromScreenshots(
-            int projectId,
-            int labelId,
-            IEnumerable<int> screenshotIds);
+            long projectId,
+            long labelId,
+            IEnumerable<long> screenshotIds);
     }
 }

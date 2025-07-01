@@ -21,7 +21,7 @@ namespace Crowdin.Api.TranslationMemory
         public int UsageCount { get; set; }
         
         [JsonProperty("createdBy")]
-        public int CreatedBy { get; set; }
+        public long CreatedBy { get; set; }
         
         [JsonProperty("updatedBy")]
         public int? UpdatedBy { get; set; }

@@ -9,6 +9,6 @@ namespace Crowdin.Api.Labels
     public class AssignLabelToStringsRequest
     {
         [JsonProperty("stringIds")]
-        public ICollection<int> StringIds { get; set; }
+        public ICollection<long> StringIds { get; set; }
     }
 }
