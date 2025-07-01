@@ -36,8 +36,8 @@ namespace Crowdin.Api.AI
         /// </summary>
         [PublicAPI]
         public async Task<AiFineTuningDataset> GenerateAiPromptFineTuningDataset(
-            int? userId,
-            int aiPromptId,
+            long? userId,
+            long aiPromptId,
             GenerateAiPromptFineTuningDatasetRequest request)
         {
             string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/fine-tuning/datasets");
@@ -53,8 +53,8 @@ namespace Crowdin.Api.AI
         /// </summary>
         [PublicAPI]
         public async Task<AiFineTuningDataset> GetAiPromptFineTuningDatasetGenerationStatus(
-            int? userId,
-            int aiPromptId,
+            long? userId,
+            long aiPromptId,
             string jobIdentifier)
         {
             string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/fine-tuning/datasets/{jobIdentifier}");
@@ -70,8 +70,8 @@ namespace Crowdin.Api.AI
         /// </summary>
         [PublicAPI]
         public async Task<AiFineTuningJob> CreateAiPromptFineTuningJob(
-            int? userId,
-            int aiPromptId,
+            long? userId,
+            long aiPromptId,
             CreateAiPromptFineTuningJobRequest request)
         {
             string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/fine-tuning/jobs");
@@ -87,8 +87,8 @@ namespace Crowdin.Api.AI
         /// </summary>
         [PublicAPI]
         public async Task<AiFineTuningJob> GetAiPromptFineTuningJobStatus(
-            int? userId,
-            int aiPromptId,
+            long? userId,
+            long aiPromptId,
             string jobIdentifier)
         {
             string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/fine-tuning/jobs/{jobIdentifier}");
@@ -104,8 +104,8 @@ namespace Crowdin.Api.AI
         /// </summary>
         [PublicAPI]
         public async Task<DownloadLink> DownloadAiPromptFineTuningDataset(
-            int? userId,
-            int aiPromptId,
+            long? userId,
+            long aiPromptId,
             string jobIdentifier)
         {
             string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/fine-tuning/datasets/{jobIdentifier}/download");
@@ -124,7 +124,7 @@ namespace Crowdin.Api.AI
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.clones.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<AiPromptResource> CloneAiPrompt(int? userId, int aiPromptId, CloneAiPromptRequest request)
+        public async Task<AiPromptResource> CloneAiPrompt(long? userId, long aiPromptId, CloneAiPromptRequest request)
         {
             string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/clones");
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -139,8 +139,8 @@ namespace Crowdin.Api.AI
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<AiPromptResource>> ListAiPrompts(
-            int? userId,
-            int? projectId = null,
+            long? userId,
+            long? projectId = null,
             AiPromptAction? action = null,
             int limit = 25, int offset = 0)
         {
@@ -161,7 +161,7 @@ namespace Crowdin.Api.AI
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.ai.prompts.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<AiPromptResource> AddAiPrompt(int? userId, AddAiPromptRequest request)
+        public async Task<AiPromptResource> AddAiPrompt(long? userId, AddAiPromptRequest request)
         {
             string url = FormUrl_AiPrompts(userId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -176,8 +176,8 @@ namespace Crowdin.Api.AI
         /// </summary>
         [PublicAPI]
         public async Task<AiPromptCompletion> GenerateAiPromptCompletion(
-            int? userId,
-            int aiPromptId,
+            long? userId,
+            long aiPromptId,
             GenerateAiPromptCompletionRequest request)
         {
             string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/completions");
@@ -193,8 +193,8 @@ namespace Crowdin.Api.AI
         /// </summary>
         [PublicAPI]
         public async Task<AiPromptCompletion> GetAiPromptCompletionStatus(
-            int? userId,
-            int aiPromptId,
+            long? userId,
+            long aiPromptId,
             string completionId)
         {
             string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/completions/{completionId}");
@@ -209,7 +209,7 @@ namespace Crowdin.Api.AI
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.completions.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task CancelAiPromptCompletion(int? userId, int aiPromptId, string completionId)
+        public async Task CancelAiPromptCompletion(long? userId, long aiPromptId, string completionId)
         {
             string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/completions/{completionId}");
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -223,7 +223,7 @@ namespace Crowdin.Api.AI
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.completions.download.download">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<DownloadLink> DownloadAiPromptCompletion(int? userId, int aiPromptId, string completionId)
+        public async Task<DownloadLink> DownloadAiPromptCompletion(long? userId, long aiPromptId, string completionId)
         {
             string url = AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}/completions/{completionId}/download");
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -237,7 +237,7 @@ namespace Crowdin.Api.AI
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.ai.prompts.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<AiPromptResource> GetAiPrompt(int? userId, int aiPromptId)
+        public async Task<AiPromptResource> GetAiPrompt(long? userId, long aiPromptId)
         {
             string url = FormUrl_AiPromptId(userId, aiPromptId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -251,7 +251,7 @@ namespace Crowdin.Api.AI
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.ai.prompts.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteAiPrompt(int? userId, int aiPromptId)
+        public async Task DeleteAiPrompt(long? userId, long aiPromptId)
         {
             string url = FormUrl_AiPromptId(userId, aiPromptId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -266,7 +266,7 @@ namespace Crowdin.Api.AI
         /// </summary>
         [PublicAPI]
         public async Task<AiPromptResource> EditAiPrompt(
-            int? userId, int aiPromptId,
+            long? userId, long aiPromptId,
             IEnumerable<AiPromptPatch> patches)
         {
             string url = FormUrl_AiPromptId(userId, aiPromptId);
@@ -276,12 +276,12 @@ namespace Crowdin.Api.AI
         
         #region Helper methods
         
-        private static string FormUrl_AiPrompts(int? userId)
+        private static string FormUrl_AiPrompts(long? userId)
         {
             return AddUserIdIfAvailable(userId, "/ai/prompts");
         }
         
-        private static string FormUrl_AiPromptId(int? userId, int aiPromptId)
+        private static string FormUrl_AiPromptId(long? userId, long aiPromptId)
         {
             return AddUserIdIfAvailable(userId, $"/ai/prompts/{aiPromptId}");
         }
@@ -299,7 +299,7 @@ namespace Crowdin.Api.AI
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.ai.providers.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<AiProviderResource>> ListAiProviders(int? userId, int limit = 25, int offset = 0)
+        public async Task<ResponseList<AiProviderResource>> ListAiProviders(long? userId, int limit = 25, int offset = 0)
         {
             string url = FormUrl_AiProviders(userId);
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
@@ -315,7 +315,7 @@ namespace Crowdin.Api.AI
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.ai.providers.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<AiProviderResource> AddAiProvider(int? userId, AddAiProviderRequest request)
+        public async Task<AiProviderResource> AddAiProvider(long? userId, AddAiProviderRequest request)
         {
             string url = FormUrl_AiProviders(userId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -329,7 +329,7 @@ namespace Crowdin.Api.AI
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.ai.providers.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<AiProviderResource> GetAiProvider(int? userId, int aiProviderId)
+        public async Task<AiProviderResource> GetAiProvider(long? userId, long aiProviderId)
         {
             string url = FormUrl_AiProviderId(userId, aiProviderId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -343,7 +343,7 @@ namespace Crowdin.Api.AI
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.ai.providers.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteAiProvider(int? userId, int aiProviderId)
+        public async Task DeleteAiProvider(long? userId, long aiProviderId)
         {
             string url = FormUrl_AiProviderId(userId, aiProviderId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -357,7 +357,7 @@ namespace Crowdin.Api.AI
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.ai.providers.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<AiProviderResource> EditAiProvider(int? userId, int aiProviderId, IEnumerable<AiProviderPatch> patches)
+        public async Task<AiProviderResource> EditAiProvider(long? userId, long aiProviderId, IEnumerable<AiProviderPatch> patches)
         {
             string url = FormUrl_AiProviderId(userId, aiProviderId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -371,7 +371,7 @@ namespace Crowdin.Api.AI
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.ai.providers.models.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<AiProviderModelResource>> ListAiProviderModels(int? userId, int aiProviderId)
+        public async Task<ResponseList<AiProviderModelResource>> ListAiProviderModels(long? userId, long aiProviderId)
         {
             string url = AddUserIdIfAvailable(userId, $"/ai/providers/{aiProviderId}/models");
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -380,12 +380,12 @@ namespace Crowdin.Api.AI
         
         #region Helper methods
         
-        private static string FormUrl_AiProviders(int? userId)
+        private static string FormUrl_AiProviders(long? userId)
         {
             return AddUserIdIfAvailable(userId, "/ai/providers");
         }
         
-        private static string FormUrl_AiProviderId(int? userId, int aiProviderId)
+        private static string FormUrl_AiProviderId(long? userId, long aiProviderId)
         {
             return AddUserIdIfAvailable(userId, $"/ai/providers/{aiProviderId}");
         }
@@ -403,7 +403,7 @@ namespace Crowdin.Api.AI
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.reports.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<AiReportGenerationStatus> GenerateAiReport(int? userId, GenerateAiReport request)
+        public async Task<AiReportGenerationStatus> GenerateAiReport(long? userId, GenerateAiReport request)
         {
             string url = AddUserIdIfAvailable(userId, "/ai/reports");
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -417,7 +417,7 @@ namespace Crowdin.Api.AI
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.reports.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<AiReportGenerationStatus> CheckAiReportGenerationStatus(int? userId, string aiReportId)
+        public async Task<AiReportGenerationStatus> CheckAiReportGenerationStatus(long? userId, string aiReportId)
         {
             string url = AddUserIdIfAvailable(userId, $"/ai/reports/{aiReportId}");
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -431,7 +431,7 @@ namespace Crowdin.Api.AI
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.reports.download.download">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<DownloadLink> DownloadAiReport(int? userId, string aiReportId)
+        public async Task<DownloadLink> DownloadAiReport(long? userId, string aiReportId)
         {
             string url = AddUserIdIfAvailable(userId, $"/ai/reports/{aiReportId}/download");
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -449,7 +449,7 @@ namespace Crowdin.Api.AI
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.settings.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<AiSettings> GetAiSettings(int? userId)
+        public async Task<AiSettings> GetAiSettings(long? userId)
         {
             string url = AddUserIdIfAvailable(userId, "/ai/settings");
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -463,7 +463,7 @@ namespace Crowdin.Api.AI
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#tag/AI/operation/api.ai.settings.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<AiSettings> EditAiSettings(int? userId, IEnumerable<AiSettingsPatch> patches)
+        public async Task<AiSettings> EditAiSettings(long? userId, IEnumerable<AiSettingsPatch> patches)
         {
             string url = AddUserIdIfAvailable(userId, "/ai/settings");
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -480,8 +480,8 @@ namespace Crowdin.Api.AI
         /// </summary>
         [PublicAPI]
         public async Task<AiProxyChatCompletion> CreateAiProxyChatCompletion(
-            int? userId,
-            int aiProviderId,
+            long? userId,
+            long aiProviderId,
             IDictionary<string, object> request)
         {
             string url = AddUserIdIfAvailable(userId, $"/ai/providers/{aiProviderId}/chat/completions");
@@ -491,7 +491,7 @@ namespace Crowdin.Api.AI
         
         #region Helper methods
         
-        private static string AddUserIdIfAvailable(int? userId, string baseUrl)
+        private static string AddUserIdIfAvailable(long? userId, string baseUrl)
         {
             return userId.HasValue ? $"/users/{userId}" + baseUrl : baseUrl;
         }

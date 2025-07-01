@@ -10,12 +10,12 @@ namespace Crowdin.Api.AI
     public class AiHyperParameters
     {
         [JsonProperty("batchSize")]
-        public int? BatchSize { get; set; }
+        public long? BatchSize { get; set; }
         
         [JsonProperty("learningRateMultiplier")]
         public float? LearningRateMultiplier { get; set; }
         
         [JsonProperty("nEpochs")]
-        public int? NEpochs { get; set; }
+        public long? NEpochs { get; set; }
     }
 }

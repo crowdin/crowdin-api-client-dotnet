@@ -11,7 +11,7 @@ namespace Crowdin.Api.Branches
         public bool? DeleteAfterMerge { get; set; }
         
         [JsonProperty("sourceBranchId")]
-        public int SourceBranchId { get; set; }
+        public long SourceBranchId { get; set; }
         
         [JsonProperty("dryRun")]
         public bool? DryRun { get; set; }

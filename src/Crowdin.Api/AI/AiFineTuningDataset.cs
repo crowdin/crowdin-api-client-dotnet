@@ -15,7 +15,7 @@ namespace Crowdin.Api.AI
         public OperationStatus Status { get; set; }
         
         [JsonProperty("progress")]
-        public int Progress { get; set; }
+        public long Progress { get; set; }
         
         [JsonProperty("attributes")]
         public AttributesObject Attributes { get; set; }
@@ -36,7 +36,7 @@ namespace Crowdin.Api.AI
         public class AttributesObject
         {
             [JsonProperty("projectIds")]
-            public int[] ProjectIds { get; set; }
+            public long[] ProjectIds { get; set; }
             
             [JsonProperty("purpose")]
             public AiDatasetPurpose Purpose { get; set; }
@@ -48,13 +48,13 @@ namespace Crowdin.Api.AI
             public DateTimeOffset? DateTo { get; set; }
             
             [JsonProperty("maxFileSize")]
-            public int? MaxFileSize { get; set; }
+            public long? MaxFileSize { get; set; }
         
             [JsonProperty("minExamplesCount")]
-            public int? MinExamplesCount { get; set; }
+            public long? MinExamplesCount { get; set; }
         
             [JsonProperty("maxExamplesCount")]
-            public int? MaxExamplesCount { get; set; }
+            public long? MaxExamplesCount { get; set; }
         }
     }
 }

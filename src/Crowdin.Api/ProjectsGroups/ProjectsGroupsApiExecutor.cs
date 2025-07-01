@@ -38,7 +38,7 @@ namespace Crowdin.Api.ProjectsGroups
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Group>> ListGroups(
-            int? parentId,
+            long? parentId,
             int limit = 25,
             int offset = 0,
             IEnumerable<SortingRule>? orderBy = null)
@@ -67,7 +67,7 @@ namespace Crowdin.Api.ProjectsGroups
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.groups.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Group> GetGroup(int groupId)
+        public async Task<Group> GetGroup(long groupId)
         {
             string url = FormUrl_GroupId(groupId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -79,7 +79,7 @@ namespace Crowdin.Api.ProjectsGroups
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.groups.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteGroup(int groupId)
+        public async Task DeleteGroup(long groupId)
         {
             string url = FormUrl_GroupId(groupId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -91,7 +91,7 @@ namespace Crowdin.Api.ProjectsGroups
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.groups.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Group> EditGroup(int groupId, IEnumerable<GroupPatch> patches)
+        public async Task<Group> EditGroup(long groupId, IEnumerable<GroupPatch> patches)
         {
             string url = FormUrl_GroupId(groupId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -100,7 +100,7 @@ namespace Crowdin.Api.ProjectsGroups
 
         #region Helper methods
 
-        private static string FormUrl_GroupId(int groupId) => $"{BaseGroupsSubUrl}/{groupId}";
+        private static string FormUrl_GroupId(long groupId) => $"{BaseGroupsSubUrl}/{groupId}";
 
         #endregion
 
@@ -115,8 +115,8 @@ namespace Crowdin.Api.ProjectsGroups
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TProject>> ListProjects<TProject>(
-            int? userId = null,
-            int? groupId = null,
+            long? userId = null,
+            long? groupId = null,
             bool hasManagerAccess = false,
             ProjectType? type = null,
             int limit = 25,
@@ -159,7 +159,7 @@ namespace Crowdin.Api.ProjectsGroups
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<T> GetProject<T>(int projectId)
+        public async Task<T> GetProject<T>(long projectId)
             where T : ProjectBase
         {
             CrowdinApiResult result = await _apiClient.SendGetRequest(FormUrl_ProjectId(projectId));
@@ -172,7 +172,7 @@ namespace Crowdin.Api.ProjectsGroups
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteProject(int projectId)
+        public async Task DeleteProject(long projectId)
         {
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(FormUrl_ProjectId(projectId));
             Utils.ThrowIfStatusNot204(statusCode, $"Project {projectId} removal failed");
@@ -184,7 +184,7 @@ namespace Crowdin.Api.ProjectsGroups
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<T> EditProject<T>(int projectId, IEnumerable<ProjectPatch> patches)
+        public async Task<T> EditProject<T>(long projectId, IEnumerable<ProjectPatch> patches)
             where T : ProjectBase
         {
             CrowdinApiResult result = await _apiClient.SendPatchRequest(FormUrl_ProjectId(projectId), patches);
@@ -193,7 +193,7 @@ namespace Crowdin.Api.ProjectsGroups
 
         #region Helper methods
 
-        private static string FormUrl_ProjectId(int projectId) => $"{BaseProjectsSubUrl}/{projectId.ToString()}";
+        private static string FormUrl_ProjectId(long projectId) => $"{BaseProjectsSubUrl}/{projectId.ToString()}";
 
         #endregion
 
@@ -208,8 +208,8 @@ namespace Crowdin.Api.ProjectsGroups
         /// </summary>
         [PublicAPI]
         public async Task<DownloadLink> DownloadProjectFileFormatSettingsCustomSegmentation(
-            int projectId,
-            int fileFormatSettingsId)
+            long projectId,
+            long fileFormatSettingsId)
         {
             string url = FormUrl_ProjectFileFormatSettingsId(projectId, fileFormatSettingsId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -223,8 +223,8 @@ namespace Crowdin.Api.ProjectsGroups
         /// </summary>
         [PublicAPI]
         public async Task ResetProjectFileFormatSettingsCustomSegmentation(
-            int projectId,
-            int fileFormatSettingsId)
+            long projectId,
+            long fileFormatSettingsId)
         {
             string url = FormUrl_ProjectFileFormatSettingsId(projectId, fileFormatSettingsId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -238,7 +238,7 @@ namespace Crowdin.Api.ProjectsGroups
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.file-format-settings.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<FileFormatSettingsResource>> ListProjectFileFormatSettings(int projectId)
+        public async Task<ResponseList<FileFormatSettingsResource>> ListProjectFileFormatSettings(long projectId)
         {
             string url = FormUrl_ProjectFileFormatSettings(projectId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -252,7 +252,7 @@ namespace Crowdin.Api.ProjectsGroups
         /// </summary>
         [PublicAPI]
         public async Task<FileFormatSettingsResource> AddProjectFileFormatSettings(
-            int projectId,
+            long projectId,
             AddProjectFileFormatSettingsRequest request)
         {
             string url = FormUrl_ProjectFileFormatSettings(projectId);
@@ -267,8 +267,8 @@ namespace Crowdin.Api.ProjectsGroups
         /// </summary>
         [PublicAPI]
         public async Task<FileFormatSettingsResource> GetProjectFileFormatSettings(
-            int projectId,
-            int fileFormatSettingsId)
+            long projectId,
+            long fileFormatSettingsId)
         {
             string url = FormUrl_ProjectFileFormatSettingsId(projectId, fileFormatSettingsId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -282,8 +282,8 @@ namespace Crowdin.Api.ProjectsGroups
         /// </summary>
         [PublicAPI]
         public async Task DeleteProjectFileFormatSettings(
-            int projectId,
-            int fileFormatSettingsId)
+            long projectId,
+            long fileFormatSettingsId)
         {
             string url = FormUrl_ProjectFileFormatSettingsId(projectId, fileFormatSettingsId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -297,8 +297,8 @@ namespace Crowdin.Api.ProjectsGroups
         /// </summary>
         [PublicAPI]
         public async Task<FileFormatSettingsResource> EditProjectFileFormatSettings(
-            int projectId,
-            int fileFormatSettingsId,
+            long projectId,
+            long fileFormatSettingsId,
             IEnumerable<ProjectFileFormatSettingsPatch> patches)
         {
             string url = FormUrl_ProjectFileFormatSettingsId(projectId, fileFormatSettingsId);
@@ -308,14 +308,14 @@ namespace Crowdin.Api.ProjectsGroups
         
         #region Helper methods
         
-        private static string FormUrl_ProjectFileFormatSettings(int projectId)
+        private static string FormUrl_ProjectFileFormatSettings(long projectId)
         {
             return $"/projects/{projectId}/file-format-settings";
         }
         
         private static string FormUrl_ProjectFileFormatSettingsId(
-            int projectId,
-            int fileFormatSettingsId)
+            long projectId,
+            long fileFormatSettingsId)
         {
             return $"/projects/{projectId}/file-format-settings/{fileFormatSettingsId}";
         }
@@ -332,7 +332,7 @@ namespace Crowdin.Api.ProjectsGroups
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.strings-exporter-settings.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<StringsExporterSettingsResource>> ListProjectStringsExporterSettings(int projectId)
+        public async Task<ResponseList<StringsExporterSettingsResource>> ListProjectStringsExporterSettings(long projectId)
         {
             string url = FormUrl_ProjectStringsExporterSettings(projectId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -346,7 +346,7 @@ namespace Crowdin.Api.ProjectsGroups
         /// </summary>
         [PublicAPI]
         public async Task<StringsExporterSettingsResource> AddProjectStringsExporterSettings(
-            int projectId,
+            long projectId,
             AddProjectStringsExporterSettingsRequest request)
         {
             string url = FormUrl_ProjectStringsExporterSettings(projectId);
@@ -361,8 +361,8 @@ namespace Crowdin.Api.ProjectsGroups
         /// </summary>
         [PublicAPI]
         public async Task<StringsExporterSettingsResource> GetProjectStringsExporterSettings(
-            int projectId,
-            int stringsExporterSettingsId)
+            long projectId,
+            long stringsExporterSettingsId)
         {
             string url = FormUrl_ProjectStringsExporterSettingsId(projectId, stringsExporterSettingsId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -377,8 +377,8 @@ namespace Crowdin.Api.ProjectsGroups
         /// </summary>
         [PublicAPI]
         public async Task DeleteProjectStringsExporterSettings(
-            int projectId,
-            int stringsExporterSettingsId)
+            long projectId,
+            long stringsExporterSettingsId)
         {
             string url = FormUrl_ProjectStringsExporterSettingsId(projectId, stringsExporterSettingsId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -392,8 +392,8 @@ namespace Crowdin.Api.ProjectsGroups
         /// </summary>
         [PublicAPI]
         public async Task<StringsExporterSettingsResource> EditProjectStringsExporterSettings(
-            int projectId,
-            int stringsExporterSettingsId,
+            long projectId,
+            long stringsExporterSettingsId,
             IEnumerable<ProjectStringsExporterSettingsPatch> patches)
         {
             string url = FormUrl_ProjectStringsExporterSettingsId(projectId, stringsExporterSettingsId);
@@ -403,14 +403,14 @@ namespace Crowdin.Api.ProjectsGroups
         
         #region Helper methods
 
-        private static string FormUrl_ProjectStringsExporterSettings(int projectId)
+        private static string FormUrl_ProjectStringsExporterSettings(long projectId)
         {
             return $"/projects/{projectId}/strings-exporter-settings";
         }
 
         private static string FormUrl_ProjectStringsExporterSettingsId(
-            int projectId,
-            int stringsExporterSettingsId)
+            long projectId,
+            long stringsExporterSettingsId)
         {
             return $"/projects/{projectId}/strings-exporter-settings/{stringsExporterSettingsId}";
         }

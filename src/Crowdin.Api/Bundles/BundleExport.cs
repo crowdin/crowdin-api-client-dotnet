@@ -15,7 +15,7 @@ namespace Crowdin.Api.Bundles
         public BuildStatus Status { get; set; }
         
         [JsonProperty("progress")]
-        public int Progress { get; set; }
+        public long Progress { get; set; }
         
         [JsonProperty("attributes")]
         public BundleExportAttributes Attributes { get; set; }

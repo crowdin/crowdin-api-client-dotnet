@@ -11,7 +11,7 @@ namespace Crowdin.Api.AI
     public class AiProviderResource
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
 #pragma warning disable CS8618
         [JsonProperty("name")]

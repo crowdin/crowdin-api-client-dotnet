@@ -18,7 +18,7 @@ namespace Crowdin.Api.AI
         public AiPromptAction Action { get; set; }
         
         [JsonProperty("aiProviderId")]
-        public int AiProviderId { get; set; }
+        public long AiProviderId { get; set; }
         
         [JsonProperty("aiModelId")]
         public string AiModelId { get; set; }
@@ -31,6 +31,6 @@ namespace Crowdin.Api.AI
         public bool? IsEnabled { get; set; }
         
         [JsonProperty("enabledProjectIds")]
-        public ICollection<int>? EnabledProjectIds { get; set; }
+        public ICollection<long>? EnabledProjectIds { get; set; }
     }
 }

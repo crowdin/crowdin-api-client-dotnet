@@ -11,31 +11,31 @@ namespace Crowdin.Api.Branches
     [PublicAPI]
     public interface IBranchesApiExecutor
     {
-        Task<Branch> GetClonedBranch(int projectId, int branchId, string cloneId);
+        Task<Branch> GetClonedBranch(long projectId, long branchId, string cloneId);
 
-        Task<BranchCloneStatus> CloneBranch(int projectId, int branchId, CloneBranchRequest request);
+        Task<BranchCloneStatus> CloneBranch(long projectId, long branchId, CloneBranchRequest request);
 
-        Task<BranchCloneStatus> CheckBranchCloneStatus(int projectId, int branchId, string cloneId);
+        Task<BranchCloneStatus> CheckBranchCloneStatus(long projectId, long branchId, string cloneId);
 
         Task<ResponseList<Branch>> ListBranches(
-            int projectId,
+            long projectId,
             string? name = null,
             int limit = 25,
             int offset = 0,
             IEnumerable<SortingRule>? orderBy = null);
 
-        Task<Branch> AddBranch(int projectId, AddBranchRequest request);
+        Task<Branch> AddBranch(long projectId, AddBranchRequest request);
 
-        Task<Branch> GetBranch(int projectId, int branchId);
+        Task<Branch> GetBranch(long projectId, long branchId);
 
-        Task DeleteBranch(int projectId, int branchId);
+        Task DeleteBranch(long projectId, long branchId);
 
-        Task<Branch> EditBranch(int projectId, int branchId, IEnumerable<BranchPatch> patches);
+        Task<Branch> EditBranch(long projectId, long branchId, IEnumerable<BranchPatch> patches);
 
-        Task<BranchMergeStatus> MergeBranch(int projectId, int branchId, MergeBranchRequest request);
+        Task<BranchMergeStatus> MergeBranch(long projectId, long branchId, MergeBranchRequest request);
 
-        Task<BranchMergeStatus> CheckBranchMergeStatus(int projectId, int branchId, string mergeId);
+        Task<BranchMergeStatus> CheckBranchMergeStatus(long projectId, long branchId, string mergeId);
 
-        Task<BranchMergeSummary> GetBranchMergeSummary(int projectId, int branchId, string mergeId);
+        Task<BranchMergeSummary> GetBranchMergeSummary(long projectId, long branchId, string mergeId);
     }
 }

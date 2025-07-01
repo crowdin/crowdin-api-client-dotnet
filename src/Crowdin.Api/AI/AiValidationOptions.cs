@@ -13,7 +13,7 @@ namespace Crowdin.Api.AI
     public class AiValidationOptions
     {
         [JsonProperty("projectIds")]
-        public List<int>? ProjectIds { get; set; }
+        public List<long>? ProjectIds { get; set; }
         
         [JsonProperty("dateFrom")]
         public DateTimeOffset? DateFrom { get; set; }
@@ -22,12 +22,12 @@ namespace Crowdin.Api.AI
         public DateTimeOffset? DateTo { get; set; }
         
         [JsonProperty("maxFileSize")]
-        public int? MaxFileSize { get; set; }
+        public long? MaxFileSize { get; set; }
         
         [JsonProperty("minExamplesCount")]
-        public int? MinExamplesCount { get; set; }
+        public long? MinExamplesCount { get; set; }
         
         [JsonProperty("maxExamplesCount")]
-        public int? MaxExamplesCount { get; set; }
+        public long? MaxExamplesCount { get; set; }
     }
 }

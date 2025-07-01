@@ -88,7 +88,7 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
                 {
                     ProjectId = 1,
                     TargetLanguageId = "uk",
-                    StringIds = new[] { 1, 2, 3 }
+                    StringIds = [1, 2, 3]
                 },
                 Tools = new[]
                 {
@@ -141,7 +141,7 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
                 {
                     ProjectId = 1,
                     TargetLanguageId = "uk",
-                    StringIds = new[] { 1, 2, 3 }
+                    StringIds = [1, 2, 3]
                 },
                 Tools = new[]
                 {
@@ -383,7 +383,7 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
                 AiProviderId = 1,
                 AiModelId = "gpt-3.5-turbo-instruct",
                 IsEnabled = true,
-                EnabledProjectIds = new[] { 23 },
+                EnabledProjectIds = [23],
                 Configuration = new BasicModeAiPromptConfiguration
                 {
                     CompanyDescription = "string",
@@ -607,7 +607,7 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
             Assert.Equal(2, prompt.AiProviderId);
             Assert.Equal("gpt-3.5-turbo-instruct", prompt.AiModelId);
             Assert.True(prompt.IsEnabled);
-            Assert.Equal(new[] { 1 }, prompt.EnabledProjectIds);
+            Assert.Equal([ 1 ], prompt.EnabledProjectIds);
 
             var config = prompt.Configuration as BasicModeAiPromptConfiguration;
             Assert.NotNull(config);

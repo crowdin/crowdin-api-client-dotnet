@@ -30,13 +30,13 @@ namespace Crowdin.Api.AI
             public AiReportFormat? Format { get; set; }
             
             [JsonProperty("projectIds")]
-            public ICollection<int>? ProjectIds { get; set; }
+            public ICollection<long>? ProjectIds { get; set; }
             
             [JsonProperty("promptIds")]
-            public ICollection<int>? PromptIds { get; set; }
+            public ICollection<long>? PromptIds { get; set; }
             
             [JsonProperty("userIds")]
-            public ICollection<int>? UserIds { get; set; }
+            public ICollection<long>? UserIds { get; set; }
         }
     }
 }

@@ -30,9 +30,9 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
                     DateFrom = DateTimeOffset.Parse("2024-01-23T07:00:14+00:00").ToLocalTime(),
                     DateTo = DateTimeOffset.Parse("2024-09-27T07:00:14+00:00").ToLocalTime(),
                     Format = AiReportFormat.Json,
-                    ProjectIds = new[] { 22 },
-                    PromptIds = new[] { 18 },
-                    UserIds = new[] { 1 }
+                    ProjectIds = [22],
+                    PromptIds = [18],
+                    UserIds = [1]
                 }
             };
 
@@ -68,9 +68,9 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
                     DateFrom = DateTimeOffset.Parse("2024-01-23T07:00:14+00:00").ToLocalTime(),
                     DateTo = DateTimeOffset.Parse("2024-09-27T07:00:14+00:00").ToLocalTime(),
                     Format = AiReportFormat.Json,
-                    ProjectIds = new[] { 22 },
-                    PromptIds = new[] { 18 },
-                    UserIds = new[] { 1 }
+                    ProjectIds = [22],
+                    PromptIds = [18],
+                    UserIds = [1]
                 }
             };
 

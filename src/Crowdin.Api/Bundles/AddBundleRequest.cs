@@ -35,9 +35,9 @@ namespace Crowdin.Api.Bundles
         public bool? IncludeInContextPseudoLanguage { get; set; }
         
         [JsonProperty("labelIds")]
-        public ICollection<int>? LabelIds { get; set; }
+        public ICollection<long>? LabelIds { get; set; }
         
         [JsonProperty("excludeLabelIds")]
-        public ICollection<int>? ExcludeLabelIds { get; set; }
+        public ICollection<long>? ExcludeLabelIds { get; set; }
     }
 }

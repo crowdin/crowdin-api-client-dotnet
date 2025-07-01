@@ -9,7 +9,7 @@ namespace Crowdin.Api.AI
     public class AiPromptResource
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("name")]
         public string Name { get; set; }
@@ -18,7 +18,7 @@ namespace Crowdin.Api.AI
         public AiPromptAction Action { get; set; }
         
         [JsonProperty("aiProviderId")]
-        public int AiProviderId { get; set; }
+        public long AiProviderId { get; set; }
         
         [JsonProperty("aiModelId")]
         public string AiModelId { get; set; }
@@ -27,7 +27,7 @@ namespace Crowdin.Api.AI
         public bool IsEnabled { get; set; }
         
         [JsonProperty("enabledProjectIds")]
-        public int[] EnabledProjectIds { get; set; }
+        public long[] EnabledProjectIds { get; set; }
         
         [JsonProperty("config")]
         public AiPromptConfiguration Configuration { get; set; }
