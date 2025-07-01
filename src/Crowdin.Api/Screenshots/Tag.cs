@@ -9,13 +9,13 @@ namespace Crowdin.Api.Screenshots
     public class Tag
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("screenshotId")]
-        public int ScreenshotId { get; set; }
+        public long ScreenshotId { get; set; }
         
         [JsonProperty("stringId")]
-        public int StringId { get; set; }
+        public long StringId { get; set; }
         
         [JsonProperty("position")]
         public Position Position { get; set; }

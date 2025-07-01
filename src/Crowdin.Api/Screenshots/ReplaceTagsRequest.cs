@@ -13,7 +13,7 @@ namespace Crowdin.Api.Screenshots
     public class AddTagRequest : ReplaceTagsRequest
     {
         [JsonProperty("stringId")]
-        public int StringId { get; set; }
+        public long StringId { get; set; }
         
         [JsonProperty("position")]
         public Position? Position { get; set; }

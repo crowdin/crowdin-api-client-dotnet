@@ -90,7 +90,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Translations
             var body = new ApplyPreTranslationRequest
             {
                 LanguageIds = new HashSet<string> { "uk" },
-                FileIds = new HashSet<int> { 0 },
+                FileIds = new HashSet<long> { 0 },
                 Method = PreTranslationMethod.Ai,
                 EngineId = 3434,
                 AiPromptId = 123,
@@ -101,8 +101,8 @@ namespace Crowdin.Api.UnitTesting.Tests.Translations
                 {
                     { "uk", new[] { "ru", "en" } }
                 },
-                LabelIds = new HashSet<int> { 2, 3 },
-                ExcludeLabelIds = new HashSet<int> { 4 }
+                LabelIds = new HashSet<long> { 2, 3 },
+                ExcludeLabelIds = new HashSet<long> { 4 }
             };
 
             var mockClient = new Mock<ICrowdinApiClient>();

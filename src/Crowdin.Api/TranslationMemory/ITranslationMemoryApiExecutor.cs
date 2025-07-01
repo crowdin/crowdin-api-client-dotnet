@@ -12,8 +12,8 @@ namespace Crowdin.Api.TranslationMemory
     public interface ITranslationMemoryApiExecutor
     {
         Task<ResponseList<TranslationMemory>> ListTms(
-            int? userId = null,
-            int? groupId = null,
+            long? userId = null,
+            long? groupId = null,
             int limit = 25,
             int offset = 0,
             IEnumerable<SortingRule>? orderBy = null);
@@ -22,53 +22,53 @@ namespace Crowdin.Api.TranslationMemory
 
         Task<TranslationMemory> AddTm(AddTmRequest request);
 
-        Task<TranslationMemory> GetTm(int tmId);
+        Task<TranslationMemory> GetTm(long tmId);
 
-        Task DeleteTm(int tmId);
+        Task DeleteTm(long tmId);
 
-        Task<TranslationMemory> EditTm(int tmId, IEnumerable<TmPatch> patches);
+        Task<TranslationMemory> EditTm(long tmId, IEnumerable<TmPatch> patches);
 
-        Task ClearTm(int tmId);
+        Task ClearTm(long tmId);
 
-        Task<TmExportStatus> ExportTm(int tmId, ExportTmRequest request);
+        Task<TmExportStatus> ExportTm(long tmId, ExportTmRequest request);
 
-        Task<TmExportStatus> CheckTmExportStatus(int tmId, string exportId);
+        Task<TmExportStatus> CheckTmExportStatus(long tmId, string exportId);
 
-        Task<DownloadLink> DownloadTm(int tmId, string exportId);
+        Task<DownloadLink> DownloadTm(long tmId, string exportId);
 
         Task<ResponseList<TmConcordanceResultResource>> ConcordanceSearch(
-            int projectId,
+            long projectId,
             ConcordanceSearchRequest request);
 
-        Task<TmImportStatus> ImportTm(int tmId, ImportTmRequest request);
+        Task<TmImportStatus> ImportTm(long tmId, ImportTmRequest request);
 
-        Task<TmImportStatus> CheckTmImportStatus(int tmId, string importId);
+        Task<TmImportStatus> CheckTmImportStatus(long tmId, string importId);
 
         #region Segments
 
         Task<ResponseList<TmSegmentResource>> ListTmSegments(
-            int tmId,
+            long tmId,
             int limit = 25,
             int offset = 0,
             IEnumerable<SortingRule>? orderBy = null);
 
-        Task<TmSegmentResource> CreateTmSegment(int tmId, CreateTmSegmentRequest request);
+        Task<TmSegmentResource> CreateTmSegment(long tmId, CreateTmSegmentRequest request);
 
-        Task<TmSegmentResource> GetTmSegment(int tmId, int segmentId);
+        Task<TmSegmentResource> GetTmSegment(long tmId, long segmentId);
 
-        Task DeleteTmSegment(int tmId, int segmentId);
+        Task DeleteTmSegment(long tmId, long segmentId);
 
-        Task DeleteTmSegmentRecord(int tmId, int segmentId, int recordId);
+        Task DeleteTmSegmentRecord(long tmId, long segmentId, long recordId);
 
         Task<TmSegmentResource> EditTmSegmentRecord(
-            int tmId,
-            int segmentId,
-            int recordId,
+            long tmId,
+            long segmentId,
+            long recordId,
             IEnumerable<TmSegmentRecordPatch> patches);
 
         Task<TmSegmentResource> CreateTmSegmentRecords(
-            int tmId,
-            int segmentId,
+            long tmId,
+            long segmentId,
             CreateTmSegmentRecordsRequest request);
 
         #endregion

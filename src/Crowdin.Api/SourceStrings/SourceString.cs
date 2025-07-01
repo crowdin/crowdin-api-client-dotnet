@@ -9,10 +9,10 @@ namespace Crowdin.Api.SourceStrings
     public class SourceString
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("projectId")]
-        public int ProjectId { get; set; }
+        public long ProjectId { get; set; }
         
         [JsonProperty("fileId")]
         public int? FileId { get; set; }

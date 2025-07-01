@@ -21,7 +21,7 @@ namespace Crowdin.Api.Distributions
         public string Name { get; set; }
 
         [JsonProperty("fileIds")]
-        public int[] FileIds { get; set; }
+        public long[] FileIds { get; set; }
 
         [JsonProperty("bundleIds")]
         public int[] BundleIds { get; set; }

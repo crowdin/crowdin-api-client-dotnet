@@ -18,7 +18,7 @@ namespace Crowdin.Api.Distributions
 
         [JsonProperty("bundleIds")]
 #pragma warning disable CS8618
-        public ICollection<int>? BundleIds { get; set; }
+        public ICollection<long>? BundleIds { get; set; }
 #pragma warning restore CS8618
     }
 }

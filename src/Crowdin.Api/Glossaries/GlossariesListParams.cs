@@ -14,9 +14,9 @@ namespace Crowdin.Api.Glossaries
         
         public int Offset { get; set; }
         
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
         
-        public int? GroupId { get; set; }
+        public long? GroupId { get; set; }
         
         public IEnumerable<SortingRule>? OrderBy { get; set; }
 
@@ -28,8 +28,8 @@ namespace Crowdin.Api.Glossaries
         public GlossariesListParams(
             int limit,
             int offset,
-            int? userId,
-            int? groupId,
+            long? userId,
+            long? groupId,
             IEnumerable<SortingRule>? orderBy)
         {
             Limit = limit;

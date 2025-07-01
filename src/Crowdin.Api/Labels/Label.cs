@@ -8,7 +8,7 @@ namespace Crowdin.Api.Labels
     public class Label
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("title")]
         public string Title { get; set; }

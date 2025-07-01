@@ -10,16 +10,16 @@ namespace Crowdin.Api.Issues
     public class Issue
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("text")]
         public string Text { get; set; }
         
         [JsonProperty("userId")]
-        public int UserId { get; set; }
+        public long UserId { get; set; }
         
         [JsonProperty("stringId")]
-        public int StringId { get; set; }
+        public long StringId { get; set; }
         
         [JsonProperty("user")]
         public User User { get; set; }
@@ -43,7 +43,7 @@ namespace Crowdin.Api.Issues
         public class StringObject
         {
             [JsonProperty("id")]
-            public int Id { get; set; }
+            public long Id { get; set; }
             
             [JsonProperty("text")]
             public string Text { get; set; }
@@ -61,7 +61,7 @@ namespace Crowdin.Api.Issues
             public string Context { get; set; }
             
             [JsonProperty("fileId")]
-            public int FileId { get; set; }
+            public long FileId { get; set; }
         }
     }
 }

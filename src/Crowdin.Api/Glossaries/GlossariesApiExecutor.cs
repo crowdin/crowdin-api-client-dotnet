@@ -40,8 +40,8 @@ namespace Crowdin.Api.Glossaries
         public Task<ResponseList<Glossary>> ListGlossaries(
             int limit = 25,
             int offset = 0,
-            int? userId = null,
-            int? groupId = null,
+            long? userId = null,
+            long? groupId = null,
             IEnumerable<SortingRule>? orderBy = null)
         {
             return ListGlossaries(new GlossariesListParams(limit, offset, userId, groupId, orderBy));
@@ -77,7 +77,7 @@ namespace Crowdin.Api.Glossaries
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Glossary> GetGlossary(int glossaryId)
+        public async Task<Glossary> GetGlossary(long glossaryId)
         {
             string url = FormUrl_GlossaryId(glossaryId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -90,7 +90,7 @@ namespace Crowdin.Api.Glossaries
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteGlossary(int glossaryId)
+        public async Task DeleteGlossary(long glossaryId)
         {
             string url = FormUrl_GlossaryId(glossaryId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -103,7 +103,7 @@ namespace Crowdin.Api.Glossaries
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Glossary> EditGlossary(int glossaryId, IEnumerable<GlossaryPatch> patches)
+        public async Task<Glossary> EditGlossary(long glossaryId, IEnumerable<GlossaryPatch> patches)
         {
             string url = FormUrl_GlossaryId(glossaryId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -117,7 +117,7 @@ namespace Crowdin.Api.Glossaries
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<GlossaryConcordanceResultResource>> ConcordanceSearch(
-            int projectId,
+            long projectId,
             ConcordanceSearchRequest request)
         {
             var url = $"/projects/{projectId}/glossaries/concordance";
@@ -135,7 +135,7 @@ namespace Crowdin.Api.Glossaries
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.exports.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<GlossaryExportStatus> ExportGlossary(int glossaryId, ExportGlossaryRequest request)
+        public async Task<GlossaryExportStatus> ExportGlossary(long glossaryId, ExportGlossaryRequest request)
         {
             var url = $"/glossaries/{glossaryId}/exports";
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -148,7 +148,7 @@ namespace Crowdin.Api.Glossaries
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.exports.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<GlossaryExportStatus> CheckGlossaryExportStatus(int glossaryId, string exportId)
+        public async Task<GlossaryExportStatus> CheckGlossaryExportStatus(long glossaryId, string exportId)
         {
             var url = $"/glossaries/{glossaryId}/exports/{exportId}";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -161,7 +161,7 @@ namespace Crowdin.Api.Glossaries
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.exports.download.download">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<DownloadLink> DownloadGlossary(int glossaryId, string exportId)
+        public async Task<DownloadLink> DownloadGlossary(long glossaryId, string exportId)
         {
             var url = $"/glossaries/{glossaryId}/exports/{exportId}/download";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -178,7 +178,7 @@ namespace Crowdin.Api.Glossaries
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.imports.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<GlossaryImportStatus> ImportGlossary(int glossaryId, ImportGlossaryRequest request)
+        public async Task<GlossaryImportStatus> ImportGlossary(long glossaryId, ImportGlossaryRequest request)
         {
             var url = $"/glossaries/{glossaryId}/imports";
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -191,7 +191,7 @@ namespace Crowdin.Api.Glossaries
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.imports.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<GlossaryImportStatus> CheckGlossaryImportStatus(int glossaryId, string importId)
+        public async Task<GlossaryImportStatus> CheckGlossaryImportStatus(long glossaryId, string importId)
         {
             var url = $"/glossaries/{glossaryId}/imports/{importId}";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -209,11 +209,11 @@ namespace Crowdin.Api.Glossaries
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<Term>> ListTerms(
-            int glossaryId,
-            int? userId = null,
+            long glossaryId,
+            long? userId = null,
             string? languageId = null,
-            int? translationOfTermId = null,
-            int? conceptId = null,
+            long? translationOfTermId = null,
+            long? conceptId = null,
             string? croql = null,
             int limit = 25,
             int offset = 0,
@@ -229,7 +229,7 @@ namespace Crowdin.Api.Glossaries
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.terms.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<Term>> ListTerms(int glossaryId, TermsListParams @params)
+        public async Task<ResponseList<Term>> ListTerms(long glossaryId, TermsListParams @params)
         {
             string url = FormUrl_Terms(glossaryId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, @params.ToQueryParams());
@@ -242,7 +242,7 @@ namespace Crowdin.Api.Glossaries
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.terms.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Term> AddTerm(int glossaryId, AddTermRequest request)
+        public async Task<Term> AddTerm(long glossaryId, AddTermRequest request)
         {
             string url = FormUrl_Terms(glossaryId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -256,10 +256,10 @@ namespace Crowdin.Api.Glossaries
         /// </summary>
         [PublicAPI]
         public async Task ClearGlossary(
-            int glossaryId,
+            long glossaryId,
             string? languageId = null,
-            int? conceptId = null,
-            int? translationOfTermId = null)
+            long? conceptId = null,
+            long? translationOfTermId = null)
         {
             string url = FormUrl_Terms(glossaryId);
 
@@ -278,7 +278,7 @@ namespace Crowdin.Api.Glossaries
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.terms.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Term> GetTerm(int glossaryId, int termId)
+        public async Task<Term> GetTerm(long glossaryId, long termId)
         {
             string url = FormUrl_TermId(glossaryId, termId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -291,7 +291,7 @@ namespace Crowdin.Api.Glossaries
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.terms.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteTerm(int glossaryId, int termId)
+        public async Task DeleteTerm(long glossaryId, long termId)
         {
             string url = FormUrl_TermId(glossaryId, termId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -304,7 +304,7 @@ namespace Crowdin.Api.Glossaries
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.glossaries.terms.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Term> EditTerm(int glossaryId, int termId, IEnumerable<TermPatch> patches)
+        public async Task<Term> EditTerm(long glossaryId, long termId, IEnumerable<TermPatch> patches)
         {
             string url = FormUrl_TermId(glossaryId, termId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -322,7 +322,7 @@ namespace Crowdin.Api.Glossaries
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Concept>> ListConcepts(
-            int glossaryId,
+            long glossaryId,
             int limit = 25,
             int offset = 0,
             IEnumerable<SortingRule>? orderBy = null)
@@ -341,7 +341,7 @@ namespace Crowdin.Api.Glossaries
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.glossaries.concepts.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Concept> GetConcept(int glossaryId, int conceptId)
+        public async Task<Concept> GetConcept(long glossaryId, long conceptId)
         {
             string url = FormUrl_ConceptId(glossaryId, conceptId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -354,7 +354,7 @@ namespace Crowdin.Api.Glossaries
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.glossaries.concepts.put">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Concept> UpdateConcept(int glossaryId, int conceptId, UpdateConceptRequest request)
+        public async Task<Concept> UpdateConcept(long glossaryId, long conceptId, UpdateConceptRequest request)
         {
             string url = FormUrl_ConceptId(glossaryId, conceptId);
             CrowdinApiResult result = await _apiClient.SendPutRequest(url, request);
@@ -367,7 +367,7 @@ namespace Crowdin.Api.Glossaries
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.glossaries.concepts.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteConcept(int glossaryId, int conceptId)
+        public async Task DeleteConcept(long glossaryId, long conceptId)
         {
             string url = FormUrl_ConceptId(glossaryId, conceptId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -378,27 +378,27 @@ namespace Crowdin.Api.Glossaries
 
         #region Helper methods
 
-        private static string FormUrl_GlossaryId(int glossaryId)
+        private static string FormUrl_GlossaryId(long glossaryId)
         {
             return $"{BaseUrl}/{glossaryId}";
         }
 
-        private static string FormUrl_Terms(int glossaryId)
+        private static string FormUrl_Terms(long glossaryId)
         {
             return $"{BaseUrl}/{glossaryId}/terms";
         }
 
-        private static string FormUrl_TermId(int glossaryId, int termId)
+        private static string FormUrl_TermId(long glossaryId, long termId)
         {
             return $"{BaseUrl}/{glossaryId}/terms/{termId}";
         }
 
-        private static string FormUrl_Concepts(int glossaryId)
+        private static string FormUrl_Concepts(long glossaryId)
         {
             return $"{BaseUrl}/{glossaryId}/concepts";
         }
 
-        private static string FormUrl_ConceptId(int glossaryId, int conceptId)
+        private static string FormUrl_ConceptId(long glossaryId, long conceptId)
         {
             return $"{BaseUrl}/{glossaryId}/concepts/{conceptId}";
         }

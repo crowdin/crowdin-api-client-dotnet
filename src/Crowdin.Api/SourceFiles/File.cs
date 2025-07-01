@@ -11,10 +11,10 @@ namespace Crowdin.Api.SourceFiles
     public class File
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("projectId")]
-        public int ProjectId { get; set; }
+        public long ProjectId { get; set; }
         
         [JsonProperty("branchId")]
         public int? BranchId { get; set; }
@@ -47,7 +47,7 @@ namespace Crowdin.Api.SourceFiles
         public FileStatus Status { get; set; }
         
         [JsonProperty("revisionId")]
-        public int RevisionId { get; set; }
+        public long RevisionId { get; set; }
         
         [JsonProperty("priority")]
         public Priority Priority { get; set; }

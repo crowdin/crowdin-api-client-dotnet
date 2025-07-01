@@ -10,13 +10,13 @@ namespace Crowdin.Api.ProjectsGroups
     public class ProjectBase
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("type")]
         public ProjectType Type { get; set; }
         
         [JsonProperty("userId")]
-        public int UserId { get; set; }
+        public long UserId { get; set; }
         
         [JsonProperty("sourceLanguageId")]
         public string SourceLanguageId { get; set; }

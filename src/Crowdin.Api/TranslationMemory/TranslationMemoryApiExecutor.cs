@@ -36,8 +36,8 @@ namespace Crowdin.Api.TranslationMemory
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<TranslationMemory>> ListTms(
-            int? userId = null,
-            int? groupId = null,
+            long? userId = null,
+            long? groupId = null,
             int limit = 25,
             int offset = 0,
             IEnumerable<SortingRule>? orderBy = null)
@@ -75,7 +75,7 @@ namespace Crowdin.Api.TranslationMemory
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<TranslationMemory> GetTm(int tmId)
+        public async Task<TranslationMemory> GetTm(long tmId)
         {
             string url = FormUrl_TmId(tmId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -88,7 +88,7 @@ namespace Crowdin.Api.TranslationMemory
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteTm(int tmId)
+        public async Task DeleteTm(long tmId)
         {
             string url = FormUrl_TmId(tmId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -101,7 +101,7 @@ namespace Crowdin.Api.TranslationMemory
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<TranslationMemory> EditTm(int tmId, IEnumerable<TmPatch> patches)
+        public async Task<TranslationMemory> EditTm(long tmId, IEnumerable<TmPatch> patches)
         {
             string url = FormUrl_TmId(tmId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -114,7 +114,7 @@ namespace Crowdin.Api.TranslationMemory
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.segments.clear">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task ClearTm(int tmId)
+        public async Task ClearTm(long tmId)
         {
             var url = $"{BaseUrl}/{tmId}/segments";
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -127,7 +127,7 @@ namespace Crowdin.Api.TranslationMemory
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.exports.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<TmExportStatus> ExportTm(int tmId, ExportTmRequest request)
+        public async Task<TmExportStatus> ExportTm(long tmId, ExportTmRequest request)
         {
             var url = $"{BaseUrl}/{tmId}/exports";
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -140,7 +140,7 @@ namespace Crowdin.Api.TranslationMemory
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.exports.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<TmExportStatus> CheckTmExportStatus(int tmId, string exportId)
+        public async Task<TmExportStatus> CheckTmExportStatus(long tmId, string exportId)
         {
             var url = $"{BaseUrl}/{tmId}/exports/{exportId}";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -153,7 +153,7 @@ namespace Crowdin.Api.TranslationMemory
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.exports.download.download">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<DownloadLink> DownloadTm(int tmId, string exportId)
+        public async Task<DownloadLink> DownloadTm(long tmId, string exportId)
         {
             var url = $"{BaseUrl}/{tmId}/exports/{exportId}/download";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -167,7 +167,7 @@ namespace Crowdin.Api.TranslationMemory
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TmConcordanceResultResource>> ConcordanceSearch(
-            int projectId,
+            long projectId,
             ConcordanceSearchRequest request)
         {
             var url = $"/projects/{projectId}/tms/concordance";
@@ -181,7 +181,7 @@ namespace Crowdin.Api.TranslationMemory
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.imports.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<TmImportStatus> ImportTm(int tmId, ImportTmRequest request)
+        public async Task<TmImportStatus> ImportTm(long tmId, ImportTmRequest request)
         {
             var url = $"{BaseUrl}/{tmId}/imports";
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -194,7 +194,7 @@ namespace Crowdin.Api.TranslationMemory
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.tms.imports.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<TmImportStatus> CheckTmImportStatus(int tmId, string importId)
+        public async Task<TmImportStatus> CheckTmImportStatus(long tmId, string importId)
         {
             var url = $"{BaseUrl}/{tmId}/imports/{importId}";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -210,7 +210,7 @@ namespace Crowdin.Api.TranslationMemory
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TmSegmentResource>> ListTmSegments(
-            int tmId,
+            long tmId,
             int limit = 25,
             int offset = 0,
             IEnumerable<SortingRule>? orderBy = null)
@@ -229,7 +229,7 @@ namespace Crowdin.Api.TranslationMemory
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.tms.segments.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<TmSegmentResource> CreateTmSegment(int tmId, CreateTmSegmentRequest request)
+        public async Task<TmSegmentResource> CreateTmSegment(long tmId, CreateTmSegmentRequest request)
         {
             string url = FormUrl_TmSegments(tmId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -242,7 +242,7 @@ namespace Crowdin.Api.TranslationMemory
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.tms.segments.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<TmSegmentResource> GetTmSegment(int tmId, int segmentId)
+        public async Task<TmSegmentResource> GetTmSegment(long tmId, long segmentId)
         {
             string url = FormUrl_TmSegmentId(tmId, segmentId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -255,7 +255,7 @@ namespace Crowdin.Api.TranslationMemory
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.tms.segments.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteTmSegment(int tmId, int segmentId)
+        public async Task DeleteTmSegment(long tmId, long segmentId)
         {
             string url = FormUrl_TmSegmentId(tmId, segmentId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -268,7 +268,7 @@ namespace Crowdin.Api.TranslationMemory
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.tms.segments.records.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteTmSegmentRecord(int tmId, int segmentId, int recordId)
+        public async Task DeleteTmSegmentRecord(long tmId, long segmentId, long recordId)
         {
             string url = FormUrl_TmSegmentRecordId(tmId, segmentId, recordId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -282,9 +282,9 @@ namespace Crowdin.Api.TranslationMemory
         /// </summary>
         [PublicAPI]
         public async Task<TmSegmentResource> EditTmSegmentRecord(
-            int tmId,
-            int segmentId,
-            int recordId,
+            long tmId,
+            long segmentId,
+            long recordId,
             IEnumerable<TmSegmentRecordPatch> patches)
         {
             string url = FormUrl_TmSegmentRecordId(tmId, segmentId, recordId);
@@ -299,8 +299,8 @@ namespace Crowdin.Api.TranslationMemory
         /// </summary>
         [PublicAPI]
         public async Task<TmSegmentResource> CreateTmSegmentRecords(
-            int tmId,
-            int segmentId,
+            long tmId,
+            long segmentId,
             CreateTmSegmentRecordsRequest request)
         {
             string url = FormUrl_TmSegmentRecords(tmId, segmentId);
@@ -312,29 +312,29 @@ namespace Crowdin.Api.TranslationMemory
 
         #region Helper methods
 
-        private static string FormUrl_TmId(int tmId)
+        private static string FormUrl_TmId(long tmId)
         {
             return $"{BaseUrl}/{tmId}";
         }
 
         #region Segments
 
-        private static string FormUrl_TmSegments(int tmId)
+        private static string FormUrl_TmSegments(long tmId)
         {
             return $"/tms/{tmId}/segments";
         }
 
-        private static string FormUrl_TmSegmentId(int tmId, int segmentId)
+        private static string FormUrl_TmSegmentId(long tmId, long segmentId)
         {
             return $"/tms/{tmId}/segments/{segmentId}";
         }
 
-        private static string FormUrl_TmSegmentRecords(int tmId, int segmentId)
+        private static string FormUrl_TmSegmentRecords(long tmId, long segmentId)
         {
             return $"/tms/{tmId}/segments/{segmentId}/records";
         }
 
-        private static string FormUrl_TmSegmentRecordId(int tmId, int segmentId, int recordId)
+        private static string FormUrl_TmSegmentRecordId(long tmId, long segmentId, long recordId)
         {
             return $"/tms/{tmId}/segments/{segmentId}/records/{recordId}";
         }

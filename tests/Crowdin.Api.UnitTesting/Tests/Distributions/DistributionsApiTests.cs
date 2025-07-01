@@ -23,8 +23,8 @@ namespace Crowdin.Api.UnitTesting.Tests.Distributions
             {
                 ExportMode = DistributionExportMode.Bundle,
                 Name = "distribution 1",
-                FileIds = new[] { 0 },
-                BundleIds = new[] { 1, 2 }
+                FileIds = [0],
+                BundleIds = [1, 2]
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
@@ -59,7 +59,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Distributions
             var request = new AddDistributionStringBasedRequest
             {
                 Name = "distribution 1",
-                BundleIds = new[] { 1, 2 }
+                BundleIds = [1, 2]
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);

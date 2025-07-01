@@ -9,13 +9,13 @@ namespace Crowdin.Api.SourceFiles
     public class RevisionResource
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("projectId")]
-        public int ProjectId { get; set; }
+        public long ProjectId { get; set; }
         
         [JsonProperty("fileId")]
-        public int FileId { get; set; }
+        public long FileId { get; set; }
         
         [JsonProperty("restoreToRevision")]
         public int? RestoreToRevision { get; set; }

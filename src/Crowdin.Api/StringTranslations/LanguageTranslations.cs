@@ -15,13 +15,13 @@ namespace Crowdin.Api.StringTranslations
     public class PlainLanguageTranslations : LanguageTranslations
     {
         [JsonProperty("stringId")]
-        public int StringId { get; set; }
+        public long StringId { get; set; }
         
         [JsonProperty("contentType")]
         public string ContentType { get; set; }
         
         [JsonProperty("translationId")]
-        public int TranslationId { get; set; }
+        public long TranslationId { get; set; }
         
         [JsonProperty("text")]
         public string Text { get; set; }
@@ -37,7 +37,7 @@ namespace Crowdin.Api.StringTranslations
     public class PluralLanguageTranslations : LanguageTranslations
     {
         [JsonProperty("stringId")]
-        public int StringId { get; set; }
+        public long StringId { get; set; }
         
         [JsonProperty("contentType")]
         public string ContentType { get; set; }
@@ -48,7 +48,7 @@ namespace Crowdin.Api.StringTranslations
         public class PluralsEntry
         {
             [JsonProperty("translationId")]
-            public int TranslationId { get; set; }
+            public long TranslationId { get; set; }
             
             [JsonProperty("text")]
             public string Text { get; set; }
@@ -68,13 +68,13 @@ namespace Crowdin.Api.StringTranslations
     public class IcuLanguageTranslations : LanguageTranslations
     {
         [JsonProperty("stringId")]
-        public int StringId { get; set; }
+        public long StringId { get; set; }
         
         [JsonProperty("contentType")]
         public string ContentType { get; set; }
         
         [JsonProperty("translationId")]
-        public int TranslationId { get; set; }
+        public long TranslationId { get; set; }
             
         [JsonProperty("text")]
         public string Text { get; set; }

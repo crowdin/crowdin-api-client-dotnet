@@ -10,13 +10,13 @@ namespace Crowdin.Api.StringTranslations
     public class TranslationVote
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("user")]
         public User User { get; set; }
         
         [JsonProperty("translationId")]
-        public int TranslationId { get; set; }
+        public long TranslationId { get; set; }
         
         [JsonProperty("votedAt")]
         public DateTimeOffset VotedAt { get; set; }

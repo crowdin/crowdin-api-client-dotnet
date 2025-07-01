@@ -9,10 +9,10 @@ namespace Crowdin.Api.MachineTranslationEngines
     public class MtEngine
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("groupId")]
-        public int GroupId { get; set; }
+        public long GroupId { get; set; }
         
         [JsonProperty("name")]
         public string Name { get; set; }

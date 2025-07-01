@@ -8,6 +8,6 @@ namespace Crowdin.Api.SourceFiles
     public class RestoreFileRequest : UpdateOrRestoreFileRequest
     {
         [JsonProperty("revisionId")]
-        public int RevisionId { get; set; }
+        public long RevisionId { get; set; }
     }
 }

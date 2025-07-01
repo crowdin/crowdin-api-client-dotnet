@@ -10,9 +10,9 @@ namespace Crowdin.Api.SourceFiles
     [PublicAPI]
     public class DirectoriesListParams : IQueryParamsProvider
     {
-        public int? BranchId { get; set; }
+        public long? BranchId { get; set; }
         
-        public int? DirectoryId { get; set; }
+        public long? DirectoryId { get; set; }
         
         public string? Filter { get; set; }
         
@@ -30,8 +30,8 @@ namespace Crowdin.Api.SourceFiles
         }
 
         public DirectoriesListParams(
-            int? branchId,
-            int? directoryId,
+            long? branchId,
+            long? directoryId,
             string? filter,
             object? recursion,
             int limit,

@@ -9,16 +9,16 @@ namespace Crowdin.Api.Reports
     public class ReportArchive
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("scopeType")]
         public ScopeType ScopeType { get; set; }
         
         [JsonProperty("scopeId")]
-        public int ScopeId { get; set; }
+        public long ScopeId { get; set; }
         
         [JsonProperty("userId")]
-        public int UserId { get; set; }
+        public long UserId { get; set; }
         
         [JsonProperty("name")]
         public string Name { get; set; }

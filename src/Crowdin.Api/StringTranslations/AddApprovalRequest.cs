@@ -8,6 +8,6 @@ namespace Crowdin.Api.StringTranslations
     public class AddApprovalRequest
     {
         [JsonProperty("translationId")]
-        public int TranslationId { get; set; }
+        public long TranslationId { get; set; }
     }
 }

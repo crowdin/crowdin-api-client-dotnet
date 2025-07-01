@@ -13,7 +13,7 @@ namespace Crowdin.Api.ProjectsGroups
     public class ProjectSettings : Project
     {
         [JsonProperty("clientOrganizationId")]
-        public int ClientOrganizationId { get; set; }
+        public long ClientOrganizationId { get; set; }
         
         [JsonProperty("translateDuplicates")]
         public DupTranslateAction TranslateDuplicates { get; set; }
@@ -101,10 +101,10 @@ namespace Crowdin.Api.ProjectsGroups
         public NotificationSettings NotificationSettings { get; set; }
         
         [JsonProperty("defaultTmId")]
-        public int DefaultTmId { get; set; }
+        public long DefaultTmId { get; set; }
         
         [JsonProperty("defaultGlossaryId")]
-        public int DefaultGlossaryId { get; set; }
+        public long DefaultGlossaryId { get; set; }
         
         [JsonProperty("assignedTms")]
         public IDictionary<int, AssignedTm> AssignedTms { get; set; }

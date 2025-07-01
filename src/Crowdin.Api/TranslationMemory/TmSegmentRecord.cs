@@ -9,7 +9,7 @@ namespace Crowdin.Api.TranslationMemory
     public class TmSegmentRecord
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("languageId")]
         public string LanguageId { get; set; }

@@ -9,22 +9,22 @@ namespace Crowdin.Api.StringTranslations
     public class TranslationApproval
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
 
         [JsonProperty("user")]
         public User User { get; set; }
         
         [JsonProperty("translationId")]
-        public int TranslationId { get; set; }
+        public long TranslationId { get; set; }
         
         [JsonProperty("stringId")]
-        public int StringId { get; set; }
+        public long StringId { get; set; }
         
         [JsonProperty("languageId")]
         public string LanguageId { get; set; }
         
         [JsonProperty("workflowStepId")]
-        public int WorkflowStepId { get; set; }
+        public long WorkflowStepId { get; set; }
         
         [JsonProperty("createdAt")]
         public DateTimeOffset CreatedAt { get; set; }

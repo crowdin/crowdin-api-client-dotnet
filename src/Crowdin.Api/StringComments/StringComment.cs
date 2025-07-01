@@ -15,10 +15,10 @@ namespace Crowdin.Api.StringComments
         public string Text { get; set; }
         
         [JsonProperty("userId")]
-        public int UserId { get; set; }
+        public long UserId { get; set; }
         
         [JsonProperty("stringId")]
-        public int StringId { get; set; }
+        public long StringId { get; set; }
         
         [JsonProperty("user")]
         public UserObject User { get; set; }
@@ -39,7 +39,7 @@ namespace Crowdin.Api.StringComments
         public IssueStatus IssueStatus { get; set; }
         
         [JsonProperty("resolverId")]
-        public int ResolverId { get; set; }
+        public long ResolverId { get; set; }
         
         [JsonProperty("resolver")]
         public UserObject Resolver { get; set; }
@@ -54,7 +54,7 @@ namespace Crowdin.Api.StringComments
         public class UserObject
         {
             [JsonProperty("id")]
-            public int Id { get; set; }
+            public long Id { get; set; }
         
             [JsonProperty("username")]
             public string Username { get; set; }
@@ -70,7 +70,7 @@ namespace Crowdin.Api.StringComments
         public class StringObject
         {
             [JsonProperty("id")]
-            public int Id { get; set; }
+            public long Id { get; set; }
             
             [JsonProperty("text")]
             public string Text { get; set; }
@@ -88,7 +88,7 @@ namespace Crowdin.Api.StringComments
             public string Context { get; set; }
             
             [JsonProperty("fileId")]
-            public int FileId { get; set; }
+            public long FileId { get; set; }
         }
     }
 }

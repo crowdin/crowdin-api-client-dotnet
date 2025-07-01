@@ -12,7 +12,7 @@ namespace Crowdin.Api.Tasks
     public class EnterpriseTaskCreateForm : AddTaskRequest
     {
         [JsonProperty("workflowStepId")]
-        public int WorkflowStepId { get; set; }
+        public long WorkflowStepId { get; set; }
         
         [JsonProperty("title")]
 #pragma warning disable CS8618

@@ -11,7 +11,7 @@ namespace Crowdin.Api.Tasks
     public class LanguageServicePendingTaskCreateForm : AddTaskRequest
     {
         [JsonProperty("precedingTaskId")]
-        public int PrecedingTaskId { get; set; }
+        public long PrecedingTaskId { get; set; }
         
         [JsonProperty("type")]
         public TaskType Type { get; set; }

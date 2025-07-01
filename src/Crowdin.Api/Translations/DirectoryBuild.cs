@@ -9,7 +9,7 @@ namespace Crowdin.Api.Translations
     public class DirectoryBuild
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("projectId")]
         public int ProjectId { get; set; }
