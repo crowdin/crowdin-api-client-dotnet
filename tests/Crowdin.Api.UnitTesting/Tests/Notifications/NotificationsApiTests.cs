@@ -48,7 +48,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Notifications
 
             var request = new SendNotificationToProjectMembersRequest
             {
-                UserIds = new[] { 1, 2, 3 },
+                UserIds = [1, 2, 3],
                 Message = "New notification message"
             };
 
@@ -132,7 +132,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Notifications
         {
             var request = new SendNotificationToOrganizationMembersRequest
             {
-                UserIds = new[] { 2 },
+                UserIds = [2],
                 Message = "New notification message"
             };
 

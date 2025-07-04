@@ -10,7 +10,7 @@ namespace Crowdin.Api.Users
     public class GroupManager
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("user")]
         public UserEnterprise User { get; set; }

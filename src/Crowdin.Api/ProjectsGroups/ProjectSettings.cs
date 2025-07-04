@@ -107,10 +107,10 @@ namespace Crowdin.Api.ProjectsGroups
         public long DefaultGlossaryId { get; set; }
         
         [JsonProperty("assignedTms")]
-        public IDictionary<int, AssignedTm> AssignedTms { get; set; }
+        public IDictionary<long, AssignedTm> AssignedTms { get; set; }
         
         [JsonProperty("assignedGlossaries")]
-        public int[] AssignedGlossaries { get; set; }
+        public long[] AssignedGlossaries { get; set; }
         
         [JsonProperty("tmPenalties")]
         [JsonConverter(typeof(EmptyArrayAsObjectConverter))]

@@ -20,7 +20,7 @@ namespace Crowdin.Api.SourceStrings
     [CallToStringForSerialization]
     public class StringBatchOpPatchPath
     {
-        public int? StringId { get; set; }
+        public long? StringId { get; set; }
         
         public StringBatchOpPatchPathEntry? Property { get; set; }
 

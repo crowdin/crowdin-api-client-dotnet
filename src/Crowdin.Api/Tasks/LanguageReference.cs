@@ -15,9 +15,9 @@ namespace Crowdin.Api.Tasks
 #pragma warning restore CS8618
         
         [JsonProperty("userIds")]
-        public int[]? UserIds { get; set; }
+        public long[]? UserIds { get; set; }
         
         [JsonProperty("teamIds")]
-        public int[]? TeamIds { get; set; }
+        public long[]? TeamIds { get; set; }
     }
 }

@@ -35,15 +35,15 @@ namespace Crowdin.Api.SourceStrings
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<SourceString>> ListStrings(
-            int projectId,
+            long projectId,
             int limit = 25,
             int offset = 0,
             int? denormalizePlaceholders = null,
             string? labelIds = null,
-            int? fileId = null,
-            int? branchId = null,
-            int? directoryId = null,
-            int? taskId = null,
+            long? fileId = null,
+            long? branchId = null,
+            long? directoryId = null,
+            long? taskId = null,
             string? croql = null,
             string? filter = null,
             StringScope? scope = null,
@@ -62,7 +62,7 @@ namespace Crowdin.Api.SourceStrings
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<SourceString>> ListStrings(int projectId, StringsListParams @params)
+        public async Task<ResponseList<SourceString>> ListStrings(long projectId, StringsListParams @params)
         {
             string url = FormUrl_Strings(projectId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, @params.ToQueryParams());
@@ -75,7 +75,7 @@ namespace Crowdin.Api.SourceStrings
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<SourceString> AddString(int projectId, AddStringRequest request)
+        public async Task<SourceString> AddString(long projectId, AddStringRequest request)
         {
             string url = FormUrl_Strings(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -89,7 +89,7 @@ namespace Crowdin.Api.SourceStrings
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<SourceString>> StringBatchOperations(
-            int projectId,
+            long projectId,
             IEnumerable<StringBatchOpPatch> patches)
         {
             string url = FormUrl_Strings(projectId);
@@ -103,7 +103,7 @@ namespace Crowdin.Api.SourceStrings
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<SourceString> GetString(int projectId, int stringId, bool denormalizePlaceholders = false)
+        public async Task<SourceString> GetString(long projectId, long stringId, bool denormalizePlaceholders = false)
         {
             IDictionary<string, string>? queryParams = denormalizePlaceholders
                 ? new Dictionary<string, string> { { "denormalizePlaceholders", "1" } }
@@ -120,7 +120,7 @@ namespace Crowdin.Api.SourceStrings
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteString(int projectId, int stringId)
+        public async Task DeleteString(long projectId, long stringId)
         {
             string url = FormUrl_StringId(projectId, stringId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -133,7 +133,7 @@ namespace Crowdin.Api.SourceStrings
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<SourceString> EditString(int projectId, int stringId, IEnumerable<SourceStringPatch> patches)
+        public async Task<SourceString> EditString(long projectId, long stringId, IEnumerable<SourceStringPatch> patches)
         {
             string url = FormUrl_StringId(projectId, stringId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -146,7 +146,7 @@ namespace Crowdin.Api.SourceStrings
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.strings.uploads.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<StringUploadResponseModel> UploadStringsStatus(int projectId, string uploadId)
+        public async Task<StringUploadResponseModel> UploadStringsStatus(long projectId, string uploadId)
         {
             string url = FormUrl_StringsUploadId(projectId, uploadId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -159,7 +159,7 @@ namespace Crowdin.Api.SourceStrings
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.strings.uploads.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<StringUploadResponseModel> UploadStrings(int projectId, UploadStringsRequest request)
+        public async Task<StringUploadResponseModel> UploadStrings(long projectId, UploadStringsRequest request)
         {
             string url = FormUrl_StringsUpload(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -168,22 +168,22 @@ namespace Crowdin.Api.SourceStrings
 
         #region Helper methods
 
-        private static string FormUrl_Strings(int projectId)
+        private static string FormUrl_Strings(long projectId)
         {
             return $"/projects/{projectId}/strings";
         }
 
-        private static string FormUrl_StringId(int projectId, int stringId)
+        private static string FormUrl_StringId(long projectId, long stringId)
         {
             return $"/projects/{projectId}/strings/{stringId}";
         }
         
-        private static string FormUrl_StringsUpload(int projectId)
+        private static string FormUrl_StringsUpload(long projectId)
         {
             return $"/projects/{projectId}/strings/upload";
         }
         
-        private static string FormUrl_StringsUploadId(int projectId, string uploadId)
+        private static string FormUrl_StringsUploadId(long projectId, string uploadId)
         {
             return $"/projects/{projectId}/strings/uploads/{uploadId}";
         }

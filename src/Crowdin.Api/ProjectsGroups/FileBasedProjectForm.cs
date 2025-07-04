@@ -111,9 +111,9 @@ namespace Crowdin.Api.ProjectsGroups
         public TmContextType? TmContextType { get; set; }
         
         [JsonProperty("defaultTmId")]
-        public int? DefaultTmId { get; set; }
+        public long? DefaultTmId { get; set; }
         
         [JsonProperty("defaultGlossaryId")]
-        public int? DefaultGlossaryId { get; set; }
+        public long? DefaultGlossaryId { get; set; }
     }
 }

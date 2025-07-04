@@ -37,9 +37,9 @@ namespace Crowdin.Api.Reports
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<ReportArchive>> ListReportArchives(
-            int? userId,
+            long? userId,
             ScopeType? scopeType = null,
-            int? scopeId = null,
+            long? scopeId = null,
             int limit = 25,
             int offset = 0)
         {
@@ -59,7 +59,7 @@ namespace Crowdin.Api.Reports
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.reports.archives.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ReportArchive> GetReportArchive(int? userId, int archiveId)
+        public async Task<ReportArchive> GetReportArchive(long? userId, long archiveId)
         {
             string url = AddUserIdIfAvailable(userId, $"/reports/archives/{archiveId}");
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -72,7 +72,7 @@ namespace Crowdin.Api.Reports
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.reports.archives.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteReportArchive(int? userId, int archiveId)
+        public async Task DeleteReportArchive(long? userId, long archiveId)
         {
             string url = AddUserIdIfAvailable(userId, $"/reports/archives/{archiveId}");
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -86,8 +86,8 @@ namespace Crowdin.Api.Reports
         /// </summary>
         [PublicAPI]
         public async Task<GroupReportStatus> ExportReportArchive(
-            int? userId,
-            int archiveId,
+            long? userId,
+            long archiveId,
             ExportReportArchiveRequest request)
         {
             string url = AddUserIdIfAvailable(userId, $"/reports/archives/{archiveId}/exports");
@@ -102,8 +102,8 @@ namespace Crowdin.Api.Reports
         /// </summary>
         [PublicAPI]
         public async Task<GroupReportStatus> CheckReportArchiveExportStatus(
-            int? userId,
-            int archiveId,
+            long? userId,
+            long archiveId,
             string exportId)
         {
             string url = AddUserIdIfAvailable(userId, $"/reports/archives/{archiveId}/exports/{exportId}");
@@ -117,7 +117,7 @@ namespace Crowdin.Api.Reports
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.reports.archives.exports.download.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<DownloadLink> DownloadReportArchive(int? userId, int archiveId, string exportId)
+        public async Task<DownloadLink> DownloadReportArchive(long? userId, long archiveId, string exportId)
         {
             string url = AddUserIdIfAvailable(userId, $"/reports/archives/{archiveId}/exports/{exportId}/download");
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -126,7 +126,7 @@ namespace Crowdin.Api.Reports
         
         #region Helper methods
         
-        private static string AddUserIdIfAvailable(int? userId, string baseUrl)
+        private static string AddUserIdIfAvailable(long? userId, string baseUrl)
         {
             return userId.HasValue ? $"/users/{userId}" + baseUrl : baseUrl;
         }
@@ -142,7 +142,7 @@ namespace Crowdin.Api.Reports
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.groups.reports.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<GroupReportStatus> GenerateGroupReport(int groupId, GenerateGroupReportRequest request)
+        public async Task<GroupReportStatus> GenerateGroupReport(long groupId, GenerateGroupReportRequest request)
         {
             var url = $"/groups/{groupId}/reports";
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -154,7 +154,7 @@ namespace Crowdin.Api.Reports
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.groups.reports.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<GroupReportStatus> CheckGroupReportGenerationStatus(int groupId, int reportId)
+        public async Task<GroupReportStatus> CheckGroupReportGenerationStatus(long groupId, long reportId)
         {
             var url = $"/groups/{groupId}/reports/{reportId}";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -166,7 +166,7 @@ namespace Crowdin.Api.Reports
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.groups.reports.download.download">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<DownloadLink> DownloadGroupReport(int groupId, int reportId)
+        public async Task<DownloadLink> DownloadGroupReport(long groupId, long reportId)
         {
             var url = $"/groups/{groupId}/reports/{reportId}/download";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -193,7 +193,7 @@ namespace Crowdin.Api.Reports
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.reports.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<GroupReportStatus> CheckOrganizationReportGenerationStatus(int reportId)
+        public async Task<GroupReportStatus> CheckOrganizationReportGenerationStatus(long reportId)
         {
             CrowdinApiResult result = await _apiClient.SendGetRequest($"/reports/{reportId}");
             return _jsonParser.ParseResponseObject<GroupReportStatus>(result.JsonObject);
@@ -204,7 +204,7 @@ namespace Crowdin.Api.Reports
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.reports.download.download">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<DownloadLink> DownloadOrganizationReport(int reportId)
+        public async Task<DownloadLink> DownloadOrganizationReport(long reportId)
         {
             CrowdinApiResult result = await _apiClient.SendGetRequest($"/reports/{reportId}/download");
             return _jsonParser.ParseResponseObject<DownloadLink>(result.JsonObject);
@@ -220,7 +220,7 @@ namespace Crowdin.Api.Reports
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.reports.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ReportStatus> GenerateReport(int projectId, GenerateReportRequest request)
+        public async Task<ReportStatus> GenerateReport(long projectId, GenerateReportRequest request)
         {
             var url = $"/projects/{projectId}/reports";
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -233,7 +233,7 @@ namespace Crowdin.Api.Reports
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.reports.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ReportStatus> CheckReportGenerationStatus(int projectId, string reportId)
+        public async Task<ReportStatus> CheckReportGenerationStatus(long projectId, string reportId)
         {
             var url = $"/projects/{projectId}/reports/{reportId}";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -246,7 +246,7 @@ namespace Crowdin.Api.Reports
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.reports.download.download">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<DownloadLink> DownloadReport(int projectId, string reportId)
+        public async Task<DownloadLink> DownloadReport(long projectId, string reportId)
         {
             var url = $"/projects/{projectId}/reports/{reportId}/download";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -264,7 +264,7 @@ namespace Crowdin.Api.Reports
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<ReportSettingsTemplateBase>> ListReportSettingsTemplates(
-            int projectId,
+            long projectId,
             int limit = 25,
             int offset = 0)
         {
@@ -282,7 +282,7 @@ namespace Crowdin.Api.Reports
         /// </summary>
         [PublicAPI]
         public async Task<ReportSettingsTemplateBase> AddReportSettingsTemplate(
-            int projectId,
+            long projectId,
             AddReportSettingsTemplateRequest request)
         {
             string url = FormUrl_SettingsTemplates(projectId);
@@ -297,8 +297,8 @@ namespace Crowdin.Api.Reports
         /// </summary>
         [PublicAPI]
         public async Task<ReportSettingsTemplateBase> GetReportSettingsTemplate(
-            int projectId,
-            int reportSettingsTemplateId)
+            long projectId,
+            long reportSettingsTemplateId)
         {
             string url = FormUrl_SettingsTemplates(projectId, reportSettingsTemplateId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -312,8 +312,8 @@ namespace Crowdin.Api.Reports
         /// </summary>
         [PublicAPI]
         public async Task<ReportSettingsTemplateBase> EditReportSettingsTemplate(
-            int projectId,
-            int reportSettingsTemplateId,
+            long projectId,
+            long reportSettingsTemplateId,
             IEnumerable<ReportSettingsTemplatePatch> patches)
         {
             string url = FormUrl_SettingsTemplates(projectId, reportSettingsTemplateId);
@@ -327,7 +327,7 @@ namespace Crowdin.Api.Reports
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.settings-templates.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteReportSettingsTemplate(int projectId, int reportSettingsTemplateId)
+        public async Task DeleteReportSettingsTemplate(long projectId, long reportSettingsTemplateId)
         {
             string url = FormUrl_SettingsTemplates(projectId, reportSettingsTemplateId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -336,12 +336,12 @@ namespace Crowdin.Api.Reports
 
         #region Helper methods
 
-        private static string FormUrl_SettingsTemplates(int projectId)
+        private static string FormUrl_SettingsTemplates(long projectId)
         {
             return $"/projects/{projectId}/reports/settings-templates";
         }
 
-        private static string FormUrl_SettingsTemplates(int projectId, int reportSettingsTemplateId)
+        private static string FormUrl_SettingsTemplates(long projectId, long reportSettingsTemplateId)
         {
             return $"/projects/{projectId}/reports/settings-templates/{reportSettingsTemplateId}";
         }
@@ -360,7 +360,7 @@ namespace Crowdin.Api.Reports
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<UserReportSettingsTemplate>> ListUserReportSettingsTemplates(
-            int userId,
+            long userId,
             int limit = 25,
             int offset = 0)
         {
@@ -379,7 +379,7 @@ namespace Crowdin.Api.Reports
         /// </summary>
         [PublicAPI]
         public async Task<UserReportSettingsTemplate> AddUserReportSettingsTemplate(
-            int userId,
+            long userId,
             AddUserReportSettingsTemplateRequest request)
         {
             string url = FormUrl_UserReportSettingsTemplates(userId);
@@ -395,8 +395,8 @@ namespace Crowdin.Api.Reports
         /// </summary>
         [PublicAPI]
         public async Task<UserReportSettingsTemplate> GetUserReportSettingsTemplate(
-            int userId,
-            int reportSettingsTemplateId)
+            long userId,
+            long reportSettingsTemplateId)
         {
             string url = FormUrl_UserReportSettingsTemplateId(userId, reportSettingsTemplateId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -410,7 +410,7 @@ namespace Crowdin.Api.Reports
         /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Reports/operation/api.users.reports.settings-templates.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteUserReportSettingsTemplate(int userId, int reportSettingsTemplateId)
+        public async Task DeleteUserReportSettingsTemplate(long userId, long reportSettingsTemplateId)
         {
             string url = FormUrl_UserReportSettingsTemplateId(userId, reportSettingsTemplateId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -425,8 +425,8 @@ namespace Crowdin.Api.Reports
         /// </summary>
         [PublicAPI]
         public async Task<UserReportSettingsTemplate> EditUserReportSettingsTemplate(
-            int userId,
-            int reportSettingsTemplateId,
+            long userId,
+            long reportSettingsTemplateId,
             IEnumerable<UserReportSettingsTemplatePatch> patches)
         {
             string url = FormUrl_UserReportSettingsTemplateId(userId, reportSettingsTemplateId);
@@ -436,12 +436,12 @@ namespace Crowdin.Api.Reports
         
         #region Helper methods
 
-        private static string FormUrl_UserReportSettingsTemplates(int userId)
+        private static string FormUrl_UserReportSettingsTemplates(long userId)
         {
             return $"/users/{userId}/reports/settings-templates";
         }
         
-        private static string FormUrl_UserReportSettingsTemplateId(int userId, int reportSettingsTemplateId)
+        private static string FormUrl_UserReportSettingsTemplateId(long userId, long reportSettingsTemplateId)
         {
             return $"/users/{userId}/reports/settings-templates/{reportSettingsTemplateId}";
         }

@@ -9,7 +9,7 @@ namespace Crowdin.Api.Users
     public class UserEnterprise : UserBase
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("username")]
         public string Username { get; set; }

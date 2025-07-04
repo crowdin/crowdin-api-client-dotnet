@@ -53,7 +53,7 @@ namespace Crowdin.Api.Reports
             public ICollection<string>? LanguageIds { get; set; }
 
             [JsonProperty("userIds")]
-            public int[]? UserIds { get; set; }
+            public long[]? UserIds { get; set; }
 
             [JsonProperty("rates")]
             public ICollection<RegularRate>? Rates { get; set; }

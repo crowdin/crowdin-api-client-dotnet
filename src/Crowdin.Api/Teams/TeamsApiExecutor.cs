@@ -35,7 +35,7 @@ namespace Crowdin.Api.Teams
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.teams.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ProjectTeamResources> AddTeamToProject(int projectId, AddTeamToProjectRequest request)
+        public async Task<ProjectTeamResources> AddTeamToProject(long projectId, AddTeamToProjectRequest request)
         {
             var url = $"/projects/{projectId}/teams";
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -53,7 +53,7 @@ namespace Crowdin.Api.Teams
             IEnumerable<SortingRule>? orderBy = null,
             IEnumerable<ProjectRole>? projectRoles = null,
             IEnumerable<string>? languageIds = null,
-            IEnumerable<int>? groupIds = null)
+            IEnumerable<long>? groupIds = null)
         {
             return ListTeams(new TeamsListParams
             {
@@ -92,7 +92,7 @@ namespace Crowdin.Api.Teams
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.teams.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Team> GetTeam(int teamId)
+        public async Task<Team> GetTeam(long teamId)
         {
             string url = FormUrl_TeamId(teamId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -104,7 +104,7 @@ namespace Crowdin.Api.Teams
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.teams.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteTeam(int teamId)
+        public async Task DeleteTeam(long teamId)
         {
             string url = FormUrl_TeamId(teamId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -116,7 +116,7 @@ namespace Crowdin.Api.Teams
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.teams.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Team> EditTeam(int teamId, IEnumerable<TeamPatch> patches)
+        public async Task<Team> EditTeam(long teamId, IEnumerable<TeamPatch> patches)
         {
             string url = FormUrl_TeamId(teamId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -128,7 +128,7 @@ namespace Crowdin.Api.Teams
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.teams.members.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<TeamMember>> ListTeamMembers(int teamId, int limit = 25, int offset = 0)
+        public async Task<ResponseList<TeamMember>> ListTeamMembers(long teamId, int limit = 25, int offset = 0)
         {
             string url = FormUrl_TeamMembers(teamId);
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
@@ -142,7 +142,7 @@ namespace Crowdin.Api.Teams
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.teams.members.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<AddTeamMembersResponse> AddTeamMembers(int teamId, AddTeamMembersRequest request)
+        public async Task<AddTeamMembersResponse> AddTeamMembers(long teamId, AddTeamMembersRequest request)
         {
             string url = FormUrl_TeamMembers(teamId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -160,7 +160,7 @@ namespace Crowdin.Api.Teams
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.teams.members.deleteMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteAllTeamMembers(int teamId)
+        public async Task DeleteAllTeamMembers(long teamId)
         {
             string url = FormUrl_TeamMembers(teamId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -172,7 +172,7 @@ namespace Crowdin.Api.Teams
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.teams.members.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteTeamMember(int teamId, int memberId)
+        public async Task DeleteTeamMember(long teamId, long memberId)
         {
             var url = $"{BaseUrl}/{teamId}/members/{memberId}";
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -181,12 +181,12 @@ namespace Crowdin.Api.Teams
 
         #region Helper methods
 
-        private static string FormUrl_TeamId(int teamId)
+        private static string FormUrl_TeamId(long teamId)
         {
             return $"{BaseUrl}/{teamId}";
         }
 
-        private static string FormUrl_TeamMembers(int teamId)
+        private static string FormUrl_TeamMembers(long teamId)
         {
             return $"{BaseUrl}/{teamId}/members";
         }
@@ -201,7 +201,7 @@ namespace Crowdin.Api.Teams
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<GroupTeam>> ListGroupTeams(
-            int groupId,
+            long groupId,
             IEnumerable<SortingRule>? orderBy = null)
         {
             string url = FormUrl_GroupTeams(groupId);
@@ -219,7 +219,7 @@ namespace Crowdin.Api.Teams
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<GroupTeam>> UpdateGroupTeams(
-            int groupId,
+            long groupId,
             IEnumerable<GroupTeamPatch> patches)
         {
             string url = FormUrl_GroupTeams(groupId);
@@ -232,7 +232,7 @@ namespace Crowdin.Api.Teams
         /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Teams/operation/api.groups.teams.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<GroupTeam> GetGroupTeam(int groupId, int teamId)
+        public async Task<GroupTeam> GetGroupTeam(long groupId, long teamId)
         {
             string url = FormUrl_GroupTeamId(groupId, teamId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -241,12 +241,12 @@ namespace Crowdin.Api.Teams
 
         #region Helper methods
 
-        private static string FormUrl_GroupTeams(int groupId)
+        private static string FormUrl_GroupTeams(long groupId)
         {
             return $"/groups/{groupId}/teams";
         }
 
-        private static string FormUrl_GroupTeamId(int groupId, int teamId)
+        private static string FormUrl_GroupTeamId(long groupId, long teamId)
         {
             return $"/groups/{groupId}/teams/{teamId}";
         }

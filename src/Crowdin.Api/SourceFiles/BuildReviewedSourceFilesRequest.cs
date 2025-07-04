@@ -8,6 +8,6 @@ namespace Crowdin.Api.SourceFiles
     public class BuildReviewedSourceFilesRequest
     {
         [JsonProperty("branchId")]
-        public int? BranchId { get; set; }
+        public long? BranchId { get; set; }
     }
 }

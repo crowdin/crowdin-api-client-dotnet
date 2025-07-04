@@ -14,6 +14,6 @@ namespace Crowdin.Api.TranslationMemory
         public string LanguageId { get; set; }
         
         [JsonProperty("groupId")]
-        public int? GroupId { get; set; }
+        public long? GroupId { get; set; }
     }
 }

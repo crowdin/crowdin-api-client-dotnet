@@ -19,7 +19,7 @@ namespace Crowdin.Api.Distributions
         public string? CurrentLanguageId { get; set; }
 
         [JsonProperty("currentBranchId")]
-        public int? CurrentBranchId { get; set; }
+        public long? CurrentBranchId { get; set; }
 
         [JsonProperty("date")]
         public DateTimeOffset? Date { get; set; }

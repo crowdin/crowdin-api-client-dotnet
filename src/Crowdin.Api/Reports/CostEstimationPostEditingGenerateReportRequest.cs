@@ -91,7 +91,7 @@ namespace Crowdin.Api.Reports
             public NetRateSchemes? NetRateSchemes { get; set; }
             
             [JsonProperty("taskId")]
-            public int? TaskId { get; set; }
+            public long? TaskId { get; set; }
         }
 
         [PublicAPI]

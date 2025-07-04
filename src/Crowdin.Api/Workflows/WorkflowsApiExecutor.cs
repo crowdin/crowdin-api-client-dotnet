@@ -35,7 +35,7 @@ namespace Crowdin.Api.Workflows
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.workflow-steps.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<WorkflowStep>> ListWorkflowSteps(int projectId)
+        public async Task<ResponseList<WorkflowStep>> ListWorkflowSteps(long projectId)
         {
             var url = $"/projects/{projectId}/workflow-steps";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -47,7 +47,7 @@ namespace Crowdin.Api.Workflows
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.workflow-steps.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<WorkflowStep> GetWorkflowStep(int projectId, int stepId)
+        public async Task<WorkflowStep> GetWorkflowStep(long projectId, long stepId)
         {
             var url = $"/projects/{projectId}/workflow-steps/{stepId}";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -60,8 +60,8 @@ namespace Crowdin.Api.Workflows
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<SourceString>> ListStringsOnTheWorkflowStep(
-            int projectId,
-            int stepId,
+            long projectId,
+            long stepId,
             IEnumerable<string>? languageIds = null,
             IEnumerable<SortingRule>? orderBy = null,
             WorkflowStatus? status = null,
@@ -86,8 +86,8 @@ namespace Crowdin.Api.Workflows
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<SourceString>> ListStringsOnTheWorkflowStep(
-            int projectId,
-            int stepId,
+            long projectId,
+            long stepId,
             StringsOnTheWorkflowStepListParams? @params = null)
         {
             var url = $"/projects/{projectId}/workflow-steps/{stepId}/strings";
@@ -104,7 +104,7 @@ namespace Crowdin.Api.Workflows
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.workflow-templates.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<WorkflowTemplate>> ListWorkflowTemplates(int groupId, int limit = 25, int offset = 0)
+        public async Task<ResponseList<WorkflowTemplate>> ListWorkflowTemplates(long groupId, int limit = 25, int offset = 0)
         {
             const string url = "/workflow-templates";
             
@@ -120,7 +120,7 @@ namespace Crowdin.Api.Workflows
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.workflow-templates.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<WorkflowTemplate> GetWorkflowTemplate(int templateId)
+        public async Task<WorkflowTemplate> GetWorkflowTemplate(long templateId)
         {
             var url = $"/workflow-templates/{templateId}";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);

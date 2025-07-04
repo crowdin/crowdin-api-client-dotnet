@@ -13,13 +13,13 @@ namespace Crowdin.Api.Workflows
     [PublicAPI]
     public interface IWorkflowsApiExecutor
     {
-        Task<ResponseList<WorkflowStep>> ListWorkflowSteps(int projectId);
+        Task<ResponseList<WorkflowStep>> ListWorkflowSteps(long projectId);
 
-        Task<WorkflowStep> GetWorkflowStep(int projectId, int stepId);
+        Task<WorkflowStep> GetWorkflowStep(long projectId, long stepId);
 
         Task<ResponseList<SourceString>> ListStringsOnTheWorkflowStep(
-            int projectId,
-            int stepId,
+            long projectId,
+            long stepId,
             IEnumerable<string>? languageIds = null,
             IEnumerable<SortingRule>? orderBy = null,
             WorkflowStatus? status = null,
@@ -27,15 +27,15 @@ namespace Crowdin.Api.Workflows
             int? offset = null);
 
         Task<ResponseList<SourceString>> ListStringsOnTheWorkflowStep(
-            int projectId,
-            int stepId,
+            long projectId,
+            long stepId,
             StringsOnTheWorkflowStepListParams? @params = null);
 
         #region Templates
 
-        Task<ResponseList<WorkflowTemplate>> ListWorkflowTemplates(int groupId, int limit = 25, int offset = 0);
+        Task<ResponseList<WorkflowTemplate>> ListWorkflowTemplates(long groupId, int limit = 25, int offset = 0);
 
-        Task<WorkflowTemplate> GetWorkflowTemplate(int templateId);
+        Task<WorkflowTemplate> GetWorkflowTemplate(long templateId);
 
         #endregion
     }

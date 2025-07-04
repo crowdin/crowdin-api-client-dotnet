@@ -45,7 +45,7 @@ namespace Crowdin.Api.Glossaries
         public string Url { get; set; }
         
         [JsonProperty("conceptId")]
-        public int? ConceptId { get; set; }
+        public long? ConceptId { get; set; }
         
         [JsonProperty("lemma")]
         public string Lemma { get; set; }

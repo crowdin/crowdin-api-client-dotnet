@@ -37,13 +37,13 @@ namespace Crowdin.Api.StringTranslations
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<TranslationApproval>> ListTranslationApprovals(
-            int projectId,
-            int? fileId = null, 
+            long projectId,
+            long? fileId = null, 
             string? labelIds = null,
             string? excludeLabelIds = null,
-            int? stringId = null,
+            long? stringId = null,
             string? languageId = null,
-            int? translationId = null,
+            long? translationId = null,
             int limit = 25,
             int offset = 0,
             IEnumerable<SortingRule>? orderBy = null)
@@ -60,7 +60,7 @@ namespace Crowdin.Api.StringTranslations
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TranslationApproval>> ListTranslationApprovals(
-            int projectId,
+            long projectId,
             TranslationApprovalsListParams @params)
         {
             string url = FormUrl_Approvals(projectId);
@@ -74,7 +74,7 @@ namespace Crowdin.Api.StringTranslations
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.approvals.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<TranslationApproval> AddApproval(int projectId, AddApprovalRequest request)
+        public async Task<TranslationApproval> AddApproval(long projectId, AddApprovalRequest request)
         {
             string url = FormUrl_Approvals(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -87,7 +87,7 @@ namespace Crowdin.Api.StringTranslations
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.approvals.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<TranslationApproval> GetApproval(int projectId, int approvalId)
+        public async Task<TranslationApproval> GetApproval(long projectId, long approvalId)
         {
             string url = FormUrl_ApprovalId(projectId, approvalId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -100,7 +100,7 @@ namespace Crowdin.Api.StringTranslations
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.approvals.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task RemoveApproval(int projectId, int approvalId)
+        public async Task RemoveApproval(long projectId, long approvalId)
         {
             string url = FormUrl_ApprovalId(projectId, approvalId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -113,7 +113,7 @@ namespace Crowdin.Api.StringTranslations
         /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Translations/operation/api.projects.approvals.deleteMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task RemoveStringApprovals(int projectId, int stringId)
+        public async Task RemoveStringApprovals(long projectId, long stringId)
         {
             string url = FormUrl_Approvals(projectId);
 
@@ -133,7 +133,7 @@ namespace Crowdin.Api.StringTranslations
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TranslationApproval>> ApprovalBatchOperations(
-            int projectId,
+            long projectId,
             IEnumerable<ApprovalBatchOpPatch> patches)
         {
             string url = FormUrl_Approvals(projectId);
@@ -143,12 +143,12 @@ namespace Crowdin.Api.StringTranslations
 
         #region Helper methods
 
-        private static string FormUrl_Approvals(int projectId)
+        private static string FormUrl_Approvals(long projectId)
         {
             return $"/projects/{projectId}/approvals";
         }
 
-        private static string FormUrl_ApprovalId(int projectId, int approvalId)
+        private static string FormUrl_ApprovalId(long projectId, long approvalId)
         {
             return $"/projects/{projectId}/approvals/{approvalId}";
         }
@@ -164,13 +164,13 @@ namespace Crowdin.Api.StringTranslations
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<LanguageTranslations>> ListLanguageTranslations(
-            int projectId,
+            long projectId,
             string languageId,
             string? stringIds = null,
             string? labelIds = null,
-            int? fileId = null,
-            int? branchId = null,
-            int? directoryId = null,
+            long? fileId = null,
+            long? branchId = null,
+            long? directoryId = null,
             string? croql = null,
             bool? denormalizePlaceholders = null,
             int limit = 25,
@@ -189,7 +189,7 @@ namespace Crowdin.Api.StringTranslations
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<LanguageTranslations>> ListLanguageTranslations(
-            int projectId, string languageId, LanguageTranslationsListParams @params)
+            long projectId, string languageId, LanguageTranslationsListParams @params)
         {
             var url = $"/projects/{projectId}/languages/{languageId}/translations";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, @params.ToQueryParams());
@@ -204,7 +204,7 @@ namespace Crowdin.Api.StringTranslations
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.translations.alignment.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<TranslationAlignment> TranslationAlignment(int projectId, TranslationAlignmentRequest request)
+        public async Task<TranslationAlignment> TranslationAlignment(long projectId, TranslationAlignmentRequest request)
         {
             var url = $"/projects/{projectId}/translations/alignment";
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -218,8 +218,8 @@ namespace Crowdin.Api.StringTranslations
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<StringTranslation>> ListStringTranslations(
-            int projectId,
-            int stringId,
+            long projectId,
+            long stringId,
             string languageId,
             bool? denormalizePlaceholders = null,
             int limit = 25,
@@ -238,7 +238,7 @@ namespace Crowdin.Api.StringTranslations
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<StringTranslation>> ListStringTranslations(
-            int projectId,
+            long projectId,
             StringTranslationsListParams @params)
         {
             string url = FormUrl_Translations(projectId);
@@ -252,7 +252,7 @@ namespace Crowdin.Api.StringTranslations
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<StringTranslation> AddTranslation(int projectId, AddTranslationRequest request)
+        public async Task<StringTranslation> AddTranslation(long projectId, AddTranslationRequest request)
         {
             string url = FormUrl_Translations(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -265,7 +265,7 @@ namespace Crowdin.Api.StringTranslations
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.deleteMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteStringTranslations(int projectId, int stringId, string? languageId = null)
+        public async Task DeleteStringTranslations(long projectId, long stringId, string? languageId = null)
         {
             string url = FormUrl_Translations(projectId);
 
@@ -290,7 +290,7 @@ namespace Crowdin.Api.StringTranslations
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<StringTranslation>> TranslationBatchOperations(
-            int projectId,
+            long projectId,
             IEnumerable<TranslationBatchOpPatch> patches)
         {
             string url = FormUrl_Translations(projectId);
@@ -304,7 +304,7 @@ namespace Crowdin.Api.StringTranslations
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<StringTranslation> GetTranslation(int projectId, int translationId, bool? denormalizePlaceholders = null)
+        public async Task<StringTranslation> GetTranslation(long projectId, long translationId, bool? denormalizePlaceholders = null)
         {
             string url = FormUrl_TranslationId(projectId, translationId);
             
@@ -326,7 +326,7 @@ namespace Crowdin.Api.StringTranslations
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.put">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<StringTranslation> RestoreTranslation(int projectId, int translationId)
+        public async Task<StringTranslation> RestoreTranslation(long projectId, long translationId)
         {
             string url = FormUrl_TranslationId(projectId, translationId);
             CrowdinApiResult result = await _apiClient.SendPutRequest(url);
@@ -339,7 +339,7 @@ namespace Crowdin.Api.StringTranslations
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteTranslation(int projectId, int translationId)
+        public async Task DeleteTranslation(long projectId, long translationId)
         {
             string url = FormUrl_TranslationId(projectId, translationId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -348,12 +348,12 @@ namespace Crowdin.Api.StringTranslations
 
         #region Helper methods
 
-        private static string FormUrl_Translations(int projectId)
+        private static string FormUrl_Translations(long projectId)
         {
             return $"/projects/{projectId}/translations";
         }
 
-        private static string FormUrl_TranslationId(int projectId, int translationId)
+        private static string FormUrl_TranslationId(long projectId, long translationId)
         {
             return $"/projects/{projectId}/translations/{translationId}";
         }
@@ -371,10 +371,10 @@ namespace Crowdin.Api.StringTranslations
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<TranslationVote>> ListTranslationVotes(
-            int projectId,
-            int? stringId = null,
+            long projectId,
+            long? stringId = null,
             string? languageId = null,
-            int? translationId = null, 
+            long? translationId = null, 
             string? labelIds = null,
             string? excludeLabelIds = null,
             int limit = 25,
@@ -391,7 +391,7 @@ namespace Crowdin.Api.StringTranslations
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TranslationVote>> ListTranslationVotes(
-            int projectId,
+            long projectId,
             TranslationVotesListParams @params)
         {
             string url = FormUrl_Votes(projectId);
@@ -405,7 +405,7 @@ namespace Crowdin.Api.StringTranslations
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.votes.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<TranslationVote> AddVote(int projectId, AddVoteRequest request)
+        public async Task<TranslationVote> AddVote(long projectId, AddVoteRequest request)
         {
             string url = FormUrl_Votes(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -418,7 +418,7 @@ namespace Crowdin.Api.StringTranslations
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.votes.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<TranslationVote> GetVote(int projectId, int voteId)
+        public async Task<TranslationVote> GetVote(long projectId, long voteId)
         {
             string url = FormUrl_VoteId(projectId, voteId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -431,7 +431,7 @@ namespace Crowdin.Api.StringTranslations
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.votes.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task CancelVote(int projectId, int voteId)
+        public async Task CancelVote(long projectId, long voteId)
         {
             string url = FormUrl_VoteId(projectId, voteId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -440,12 +440,12 @@ namespace Crowdin.Api.StringTranslations
 
         #region Helper methods
 
-        private static string FormUrl_Votes(int projectId)
+        private static string FormUrl_Votes(long projectId)
         {
             return $"/projects/{projectId}/votes";
         }
 
-        private static string FormUrl_VoteId(int projectId, int voteId)
+        private static string FormUrl_VoteId(long projectId, long voteId)
         {
             return $"/projects/{projectId}/votes/{voteId}";
         }

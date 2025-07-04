@@ -17,6 +17,6 @@ namespace Crowdin.Api.Screenshots
         public bool? AutoTag { get; set; }
                 
         [JsonProperty("labelIds")]
-        public int[] LabelIds { get; set; }
+        public long[] LabelIds { get; set; }
     }
 }

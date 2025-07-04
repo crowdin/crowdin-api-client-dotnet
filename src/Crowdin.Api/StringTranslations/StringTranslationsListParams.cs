@@ -28,7 +28,7 @@ namespace Crowdin.Api.StringTranslations
         }
 
         public StringTranslationsListParams(
-            int stringId,
+            long stringId,
             string languageId,
             bool? denormalizePlaceholders,
             int limit,

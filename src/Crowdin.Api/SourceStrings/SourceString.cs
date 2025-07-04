@@ -15,13 +15,13 @@ namespace Crowdin.Api.SourceStrings
         public long ProjectId { get; set; }
         
         [JsonProperty("fileId")]
-        public int? FileId { get; set; }
+        public long? FileId { get; set; }
         
         [JsonProperty("branchId")]
-        public int? BranchId { get; set; }
+        public long? BranchId { get; set; }
         
         [JsonProperty("directoryId")]
-        public int? DirectoryId { get; set; }
+        public long? DirectoryId { get; set; }
         
         [JsonProperty("identifier")]
         public string Identifier { get; set; }
@@ -45,7 +45,7 @@ namespace Crowdin.Api.SourceStrings
         public bool IsDuplicate { get; set; }
         
         [JsonProperty("masterStringId")]
-        public int? MasterStringId { get; set; }
+        public long? MasterStringId { get; set; }
         
         [JsonProperty("revision")]
         public int? Revision { get; set; }
@@ -57,7 +57,7 @@ namespace Crowdin.Api.SourceStrings
         public bool IsIcu { get; set; }
         
         [JsonProperty("labelIds")]
-        public int[] LabelIds { get; set; }
+        public long[] LabelIds { get; set; }
         
         [JsonProperty("webUrl")]
         public string WebUrl { get; set; }

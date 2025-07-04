@@ -77,7 +77,7 @@ namespace Crowdin.Api.Tasks
         public TaskAssignedTeam[] AssignedTeams { get; set; }
 
         [JsonProperty("fileIds")]
-        public int[] FileIds { get; set; }
+        public long[] FileIds { get; set; }
 
         [JsonProperty("progress")]
         public TaskProgress Progress { get; set; }
@@ -105,10 +105,10 @@ namespace Crowdin.Api.Tasks
         public Language[] TargetLanguages { get; set; }
         
         [JsonProperty("labelIds")]
-        public int[] LabelIds { get; set; }
+        public long[] LabelIds { get; set; }
         
         [JsonProperty("excludeLabelIds")]
-        public int[] ExcludeLabelIds { get; set; }
+        public long[] ExcludeLabelIds { get; set; }
         
         [JsonProperty("timeRange")]
         public string TimeRange { get; set; }

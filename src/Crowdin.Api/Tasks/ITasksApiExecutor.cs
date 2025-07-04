@@ -12,32 +12,32 @@ namespace Crowdin.Api.Tasks
     public interface ITasksApiExecutor
     {
         Task<ResponseList<TaskResource>> ListTasks(
-            int projectId,
+            long projectId,
             int limit = 25,
             int offset = 0,
             TaskStatus? status = null,
-            int? assigneeId = null,
+            long? assigneeId = null,
             IEnumerable<SortingRule>? orderBy = null);
 
         Task<ResponseList<TaskResource>> ListTasks(
-            int projectId,
+            long projectId,
             int limit = 25,
             int offset = 0,
             IEnumerable<TaskStatus>? statuses = null,
-            int? assigneeId = null,
+            long? assigneeId = null,
             IEnumerable<SortingRule>? orderBy = null);
 
-        Task<ResponseList<TaskResource>> ListTasks(int projectId, TasksListParams @params);
+        Task<ResponseList<TaskResource>> ListTasks(long projectId, TasksListParams @params);
 
-        Task<TaskResource> AddTask(int projectId, AddTaskRequest request);
+        Task<TaskResource> AddTask(long projectId, AddTaskRequest request);
 
-        Task<DownloadLink?> ExportTaskStrings(int projectId, int taskId);
+        Task<DownloadLink?> ExportTaskStrings(long projectId, long taskId);
 
-        Task<TaskResource> GetTask(int projectId, int taskId);
+        Task<TaskResource> GetTask(long projectId, long taskId);
 
-        Task DeleteTask(int projectId, int taskId);
+        Task DeleteTask(long projectId, long taskId);
 
-        Task<TaskResource> EditTask(int projectId, int taskId, IEnumerable<TaskPatchBase> patches);
+        Task<TaskResource> EditTask(long projectId, long taskId, IEnumerable<TaskPatchBase> patches);
 
         Task<ResponseList<TaskResource>> ListUserTasks(
             int limit = 25,
@@ -49,26 +49,26 @@ namespace Crowdin.Api.Tasks
         Task<ResponseList<TaskResource>> ListUserTasks(UserTasksListParams @params);
 
         Task<TaskResource> EditTaskArchivedStatus(
-            int projectId,
-            int taskId,
+            long projectId,
+            long taskId,
             IEnumerable<TaskArchivedStatusPatch> patches);
 
         #region Task Settings Templates
 
         Task<ResponseList<TaskSettingsTemplate>> ListTaskSettingsTemplates(
-            int projectId,
+            long projectId,
             int limit = 25,
             int offset = 0);
 
-        Task<TaskSettingsTemplate> AddTaskSettingsTemplate(int projectId, AddTaskSettingsTemplate request);
+        Task<TaskSettingsTemplate> AddTaskSettingsTemplate(long projectId, AddTaskSettingsTemplate request);
 
-        Task<TaskSettingsTemplate> GetTaskSettingsTemplate(int projectId, int taskSettingsTemplateId);
+        Task<TaskSettingsTemplate> GetTaskSettingsTemplate(long projectId, long taskSettingsTemplateId);
 
-        Task DeleteTaskSettingsTemplate(int projectId, int taskSettingsTemplateId);
+        Task DeleteTaskSettingsTemplate(long projectId, long taskSettingsTemplateId);
 
         Task<TaskSettingsTemplate> EditTaskSettingsTemplate(
-            int projectId,
-            int taskSettingsTemplateId,
+            long projectId,
+            long taskSettingsTemplateId,
             IEnumerable<TaskSettingsTemplatePatch> patches);
 
         #endregion

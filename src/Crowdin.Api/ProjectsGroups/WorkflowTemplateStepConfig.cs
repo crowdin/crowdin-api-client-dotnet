@@ -14,7 +14,7 @@ namespace Crowdin.Api.ProjectsGroups
         public class TranslateProofread : WorkflowTemplateStepConfig
         {
             [JsonProperty("id")]
-            public int? Id { get; set; }
+            public long? Id { get; set; }
             
             [JsonProperty("languages")]
             public List<string>? Languages { get; set; }
@@ -27,20 +27,20 @@ namespace Crowdin.Api.ProjectsGroups
         public class ConfigVendor : WorkflowTemplateStepConfig
         {
             [JsonProperty("id")]
-            public int? Id { get; set; }
+            public long? Id { get; set; }
             
             [JsonProperty("languages")]
             public List<string>? Languages { get; set; }
             
             [JsonProperty("vendorId")]
-            public int? VendorId { get; set; }
+            public long? VendorId { get; set; }
         }
         
         [PublicAPI]
         public class TmPreTranslate : WorkflowTemplateStepConfig
         {
             [JsonProperty("id")]
-            public int? Id { get; set; }
+            public long? Id { get; set; }
             
             [JsonProperty("languages")]
             public List<string>? Languages { get; set; }
@@ -53,13 +53,13 @@ namespace Crowdin.Api.ProjectsGroups
         public class MtPreTranslate : WorkflowTemplateStepConfig
         {
             [JsonProperty("id")]
-            public int? Id { get; set; }
+            public long? Id { get; set; }
             
             [JsonProperty("languages")]
             public List<string>? Languages { get; set; }
             
             [JsonProperty("mtId")]
-            public int? MtId { get; set; }
+            public long? MtId { get; set; }
         }
         
         [PublicAPI]

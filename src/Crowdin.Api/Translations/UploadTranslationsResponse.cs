@@ -17,9 +17,9 @@ namespace Crowdin.Api.Translations
         public string LanguageId { get; set; }
         
         [JsonProperty("fileId")]
-        public int? FileId { get; set; }
+        public long? FileId { get; set; }
         
         [JsonProperty("branchId")]
-        public int? BranchId { get; set; }
+        public long? BranchId { get; set; }
     }
 }

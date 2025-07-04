@@ -37,11 +37,11 @@ namespace Crowdin.Api.Screenshots
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Screenshot>> ListScreenshots(
-            int projectId,
+            long projectId,
             int limit = 25,
             int offset = 0,
             IEnumerable<SortingRule>? orderBy = null,
-            IEnumerable<int>? stringIds = null)
+            IEnumerable<long>? stringIds = null)
         {
             string url = FormUrl_Screenshots(projectId);
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
@@ -58,7 +58,7 @@ namespace Crowdin.Api.Screenshots
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Screenshot> AddScreenshot(int projectId, AddScreenshotRequest request)
+        public async Task<Screenshot> AddScreenshot(long projectId, AddScreenshotRequest request)
         {
             string url = FormUrl_Screenshots(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -71,7 +71,7 @@ namespace Crowdin.Api.Screenshots
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Screenshot> GetScreenshot(int projectId, int screenshotId)
+        public async Task<Screenshot> GetScreenshot(long projectId, long screenshotId)
         {
             string url = FormUrl_ScreenshotId(projectId, screenshotId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -84,7 +84,7 @@ namespace Crowdin.Api.Screenshots
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.put">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Screenshot> UpdateScreenshot(int projectId, int screenshotId, UpdateScreenshotRequest request)
+        public async Task<Screenshot> UpdateScreenshot(long projectId, long screenshotId, UpdateScreenshotRequest request)
         {
             string url = FormUrl_ScreenshotId(projectId, screenshotId);
             CrowdinApiResult result = await _apiClient.SendPutRequest(url, request);
@@ -97,7 +97,7 @@ namespace Crowdin.Api.Screenshots
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteScreenshot(int projectId, int screenshotId)
+        public async Task DeleteScreenshot(long projectId, long screenshotId)
         {
             string url = FormUrl_ScreenshotId(projectId, screenshotId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -110,7 +110,7 @@ namespace Crowdin.Api.Screenshots
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Screenshot> EditScreenshot(int projectId, int screenshotId, IEnumerable<ScreenshotPatch> patches)
+        public async Task<Screenshot> EditScreenshot(long projectId, long screenshotId, IEnumerable<ScreenshotPatch> patches)
         {
             string url = FormUrl_ScreenshotId(projectId, screenshotId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -119,12 +119,12 @@ namespace Crowdin.Api.Screenshots
 
         #region Helper methods
 
-        private static string FormUrl_Screenshots(int projectId)
+        private static string FormUrl_Screenshots(long projectId)
         {
             return $"/projects/{projectId}/screenshots";
         }
 
-        private static string FormUrl_ScreenshotId(int projectId, int screenshotId)
+        private static string FormUrl_ScreenshotId(long projectId, long screenshotId)
         {
             return $"/projects/{projectId}/screenshots/{screenshotId}";
         }
@@ -141,7 +141,7 @@ namespace Crowdin.Api.Screenshots
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.tags.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<Tag>> ListTags(int projectId, int screenshotId, int limit = 25, int offset = 0)
+        public async Task<ResponseList<Tag>> ListTags(long projectId, long screenshotId, int limit = 25, int offset = 0)
         {
             string url = FormUrl_ScreenshotId(projectId, screenshotId);
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
@@ -156,7 +156,7 @@ namespace Crowdin.Api.Screenshots
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.tags.putMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task ReplaceTags(int projectId, int screenshotId, IEnumerable<AddTagRequest> request)
+        public async Task ReplaceTags(long projectId, long screenshotId, IEnumerable<AddTagRequest> request)
         {
             string url = FormUrl_ScreenshotTags(projectId, screenshotId);
             CrowdinApiResult result = await _apiClient.SendPutRequest(url, request);
@@ -173,7 +173,7 @@ namespace Crowdin.Api.Screenshots
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.tags.putMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task ReplaceTags(int projectId, int screenshotId, AutoTagReplaceTagsRequest request)
+        public async Task ReplaceTags(long projectId, long screenshotId, AutoTagReplaceTagsRequest request)
         {
             string url = FormUrl_ScreenshotTags(projectId, screenshotId);
             CrowdinApiResult result = await _apiClient.SendPutRequest(url, request);
@@ -190,7 +190,7 @@ namespace Crowdin.Api.Screenshots
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.tags.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<Tag>> AddTag(int projectId, int screenshotId, IEnumerable<AddTagRequest> request)
+        public async Task<ResponseList<Tag>> AddTag(long projectId, long screenshotId, IEnumerable<AddTagRequest> request)
         {
             string url = FormUrl_ScreenshotTags(projectId, screenshotId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -203,7 +203,7 @@ namespace Crowdin.Api.Screenshots
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.tags.deleteMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task ClearTags(int projectId, int screenshotId)
+        public async Task ClearTags(long projectId, long screenshotId)
         {
             string url = FormUrl_ScreenshotTags(projectId, screenshotId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -216,7 +216,7 @@ namespace Crowdin.Api.Screenshots
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.tags.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Tag> GetTag(int projectId, int screenshotId, int tagId)
+        public async Task<Tag> GetTag(long projectId, long screenshotId, long tagId)
         {
             string url = FormUrl_ScreenshotTagId(projectId, screenshotId, tagId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -229,7 +229,7 @@ namespace Crowdin.Api.Screenshots
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.tags.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteTag(int projectId, int screenshotId, int tagId)
+        public async Task DeleteTag(long projectId, long screenshotId, long tagId)
         {
             string url = FormUrl_ScreenshotTagId(projectId, screenshotId, tagId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -242,7 +242,7 @@ namespace Crowdin.Api.Screenshots
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.screenshots.tags.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Screenshot> EditTag(int projectId, int screenshotId, int tagId, IEnumerable<TagPatch> patches)
+        public async Task<Screenshot> EditTag(long projectId, long screenshotId, long tagId, IEnumerable<TagPatch> patches)
         {
             string url = FormUrl_ScreenshotTagId(projectId, screenshotId, tagId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -251,12 +251,12 @@ namespace Crowdin.Api.Screenshots
 
         #region Helper methods
 
-        private static string FormUrl_ScreenshotTags(int projectId, int screenshotId)
+        private static string FormUrl_ScreenshotTags(long projectId, long screenshotId)
         {
             return FormUrl_ScreenshotId(projectId, screenshotId) + "/tags";
         }
 
-        private static string FormUrl_ScreenshotTagId(int projectId, int screenshotId, int tagId)
+        private static string FormUrl_ScreenshotTagId(long projectId, long screenshotId, long tagId)
         {
             return FormUrl_ScreenshotId(projectId, screenshotId) + $"/tags/{tagId}";
         }

@@ -49,7 +49,7 @@ namespace Crowdin.Api.SourceStrings
             public int ParserVersion { get; set; }
             
             [JsonProperty("labelIds")]
-            public int[] LabelIds { get; set; }
+            public long[] LabelIds { get; set; }
             
             [JsonProperty("importOptions")]
             public SpreadsheetFileImportOptions ImportOptions { get; set; }

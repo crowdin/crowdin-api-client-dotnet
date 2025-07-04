@@ -24,7 +24,7 @@ namespace Crowdin.Api.Distributions
         public long[] FileIds { get; set; }
 
         [JsonProperty("bundleIds")]
-        public int[] BundleIds { get; set; }
+        public long[] BundleIds { get; set; }
         
         [JsonProperty("createdAt")]
         public DateTimeOffset CreatedAt { get; set; }

@@ -48,7 +48,7 @@ namespace Crowdin.Api.Reports
                 public string[] LanguageIds { get; set; }
             
                 [JsonProperty("userIds")]
-                public int[] UserIds { get; set; }
+                public long[] UserIds { get; set; }
             
                 [JsonProperty("fullTranslation")]
                 public float FullTranslation { get; set; }

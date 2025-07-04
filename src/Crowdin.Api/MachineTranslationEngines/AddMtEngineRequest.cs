@@ -17,10 +17,10 @@ namespace Crowdin.Api.MachineTranslationEngines
         public IMtCredentialsForm Credentials { get; set; }
         
         [JsonProperty("groupId")]
-        public int? GroupId { get; set; }
+        public long? GroupId { get; set; }
 
         [JsonProperty("enabledProjectIds")]
-        public int[] EnabledProjectIds { get; set; }
+        public long[] EnabledProjectIds { get; set; }
 
         [JsonProperty("enableLanguageIds")]
         public string[] EnableLanguageIds { get; set; }

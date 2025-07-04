@@ -17,7 +17,7 @@ namespace Crowdin.Api.Translations
     public class TranslationCreateProjectBuildForm : BuildProjectTranslationRequest
     {
         [JsonProperty("branchId")]
-        public int? BranchId { get; set; }
+        public long? BranchId { get; set; }
         
         [JsonProperty("targetLanguageIds")]
         public ICollection<string>? TargetLanguageIds { get; set; }
@@ -39,7 +39,7 @@ namespace Crowdin.Api.Translations
         public bool Pseudo { get; set; }
         
         [JsonProperty("branchId")]
-        public int? BranchId { get; set; }
+        public long? BranchId { get; set; }
         
         [JsonProperty("prefix")]
         public string? Prefix { get; set; }
@@ -58,7 +58,7 @@ namespace Crowdin.Api.Translations
     public class EnterpriseTranslationCreateProjectBuildForm : BuildProjectTranslationRequest
     {
         [JsonProperty("branchId")]
-        public int? BranchId { get; set; }
+        public long? BranchId { get; set; }
         
         [JsonProperty("targetLanguageIds")]
         public ICollection<string>? TargetLanguageIds { get; set; }

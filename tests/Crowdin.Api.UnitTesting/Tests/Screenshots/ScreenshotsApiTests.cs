@@ -25,10 +25,10 @@ namespace Crowdin.Api.UnitTesting.Tests.Screenshots
                 StorageId = 71,
                 Name = "translate_with_siri.jpg",
                 AutoTag = true,
-                LabelIds = new[]
-                {
+                LabelIds =
+                [
                     0, 1
-                }
+                ]
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
@@ -149,7 +149,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Screenshots
                 new SortingRule() { Field = "createdAt", Order = SortingOrder.Descending },
                 new SortingRule() { Field = "name", Order = SortingOrder.Ascending }
             };
-            var stringIds = new int[] { 1, 2, 3, 2822 };
+            var stringIds = new long[] { 1, 2, 3, 2822 };
             var response = await executor.ListScreenshots(projectId, 25, 0, sortingRules, stringIds);
 
             Assert.NotNull(response);

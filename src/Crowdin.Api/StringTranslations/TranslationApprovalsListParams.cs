@@ -10,17 +10,17 @@ namespace Crowdin.Api.StringTranslations
     [PublicAPI]
     public class TranslationApprovalsListParams : IQueryParamsProvider
     {
-        public int? FileId { get; set; }
+        public long? FileId { get; set; }
 
         public string? LabelIds { get; set; }
         
         public string? ExcludeLabelIds { get; set; }
         
-        public int? StringId { get; set; }
+        public long? StringId { get; set; }
         
         public string? LanguageId { get; set; }
         
-        public int? TranslationId { get; set; }
+        public long? TranslationId { get; set; }
 
         public int Limit { get; set; } = 25;
         
@@ -34,12 +34,12 @@ namespace Crowdin.Api.StringTranslations
         }
 
         public TranslationApprovalsListParams(
-            int? fileId,
+            long? fileId,
             string? labelIds,
             string? excludeLabelIds,
-            int? stringId,
+            long? stringId,
             string? languageId,
-            int? translationId,
+            long? translationId,
             int limit,
             int offset,
             IEnumerable<SortingRule>? orderBy = null)

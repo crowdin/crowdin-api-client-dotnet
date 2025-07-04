@@ -20,7 +20,7 @@ namespace Crowdin.Api.Distributions
         public string? CurrentLanguageId { get; set; }
         
         [JsonProperty("currentFileId")]
-        public int? CurrentFileId { get; set; }
+        public long? CurrentFileId { get; set; }
         
         [JsonProperty("date")]
         public DateTimeOffset? Date { get; set; }

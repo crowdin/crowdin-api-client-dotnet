@@ -65,8 +65,8 @@ namespace Crowdin.Api.UnitTesting.Tests.Tasks
                         new LanguageReference
                         {
                             LanguageId = "uk",
-                            UserIds = new[] { 1 },
-                            TeamIds = new[] { 1 }
+                            UserIds = [1],
+                            TeamIds = [1]
                         }
                     }
                 }

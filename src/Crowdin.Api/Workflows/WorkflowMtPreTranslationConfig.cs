@@ -8,6 +8,6 @@ namespace Crowdin.Api.Workflows
     public class WorkflowMtPreTranslationConfig : WorkflowConfig
     {
         [JsonProperty("mtId")]
-        public int MtId { get; set; }
+        public long MtId { get; set; }
     }
 }

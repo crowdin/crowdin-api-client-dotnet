@@ -266,8 +266,8 @@ namespace Crowdin.Api.UnitTesting.Tests.Translations
 
             PreTranslateAttributes? attributes = preTranslation.Attributes;
             ArgumentNullException.ThrowIfNull(attributes);
-            Assert.Equal(new[] { "uk" }, attributes.LanguageIds);
-            Assert.Equal(new[] { 742 }, attributes.FileIds);
+            Assert.Equal(["uk"], attributes.LanguageIds);
+            Assert.Equal([742], attributes.FileIds);
             Assert.Equal(PreTranslationMethod.Tm, attributes.Method);
             Assert.Equal(AutoApproveOption.All, attributes.AutoApproveOption);
             Assert.True(attributes.DuplicateTranslations);

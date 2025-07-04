@@ -9,16 +9,16 @@ namespace Crowdin.Api.MachineTranslationEngines
     [PublicAPI]
     public interface IMachineTranslationEnginesApiExecutor
     {
-        Task<ResponseList<MtEngine>> ListMts(int? groupId = null, int limit = 25, int offset = 0);
+        Task<ResponseList<MtEngine>> ListMts(long? groupId = null, int limit = 25, int offset = 0);
 
         Task<MtEngine> AddMt(AddMtEngineRequest request);
 
-        Task<MtEngine> GetMt(int mtId);
+        Task<MtEngine> GetMt(long mtId);
 
-        Task DeleteMt(int mtId);
+        Task DeleteMt(long mtId);
 
-        Task<MtEngine> EditMt(int mtId, IEnumerable<MtEnginePatch> patches);
+        Task<MtEngine> EditMt(long mtId, IEnumerable<MtEnginePatch> patches);
 
-        Task<MtTranslation> TranslateViaMt(int mtId, TranslateViaMtRequest request);
+        Task<MtTranslation> TranslateViaMt(long mtId, TranslateViaMtRequest request);
     }
 }

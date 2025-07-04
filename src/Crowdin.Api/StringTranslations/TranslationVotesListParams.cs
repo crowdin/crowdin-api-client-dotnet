@@ -10,11 +10,11 @@ namespace Crowdin.Api.StringTranslations
     [PublicAPI]
     public class TranslationVotesListParams : IQueryParamsProvider
     {
-        public int? StringId { get; set; }
+        public long? StringId { get; set; }
 
         public string? LanguageId { get; set; }
         
-        public int? TranslationId { get; set; }
+        public long? TranslationId { get; set; }
 
         public string? LabelIds { get; set; }
         
@@ -30,9 +30,9 @@ namespace Crowdin.Api.StringTranslations
         }
 
         public TranslationVotesListParams(
-            int? stringId,
+            long? stringId,
             string? languageId,
-            int? translationId,
+            long? translationId,
             string? labelIds,
             string? excludeLabelIds,
             int limit, int offset)

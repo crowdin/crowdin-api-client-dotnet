@@ -36,10 +36,10 @@ namespace Crowdin.Api.Translations
         public class AttributesHolder
         {
             [JsonProperty("branchId")]
-            public int? BranchId { get; set; }
+            public long? BranchId { get; set; }
         
             [JsonProperty("directoryId")]
-            public int? DirectoryId { get; set; }
+            public long? DirectoryId { get; set; }
             
             [JsonProperty("targetLanguageIds")]
             public string[] TargetLanguageIds { get; set; }

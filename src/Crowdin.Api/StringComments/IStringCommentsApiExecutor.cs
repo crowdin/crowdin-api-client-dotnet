@@ -12,32 +12,32 @@ namespace Crowdin.Api.StringComments
     public interface IStringCommentsApiExecutor
     {
         Task ListStringComments(
-            int projectId,
+            long projectId,
             int limit = 25,
             int offset = 0,
-            int? stringId = null,
+            long? stringId = null,
             StringCommentType? type = null,
             ISet<IssueType>? issueTypes = null,
             IssueStatus? issueStatus = null,
             IEnumerable<SortingRule>? orderBy = null);
 
         Task<ResponseList<StringComment>> ListStringComments(
-            int projectId,
+            long projectId,
             StringCommentsListParams @params);
 
-        Task<StringComment> AddStringComment(int projectId, AddStringCommentRequest request);
+        Task<StringComment> AddStringComment(long projectId, AddStringCommentRequest request);
 
         Task<ResponseList<StringComment>> StringCommentBatchOperations(
-            int projectId,
+            long projectId,
             IEnumerable<StringCommentBatchOpPatch> patches);
 
-        Task<StringComment> GetStringComment(int projectId, int stringCommentId);
+        Task<StringComment> GetStringComment(long projectId, long stringCommentId);
 
-        Task DeleteStringComment(int projectId, int stringCommentId);
+        Task DeleteStringComment(long projectId, long stringCommentId);
 
         Task<StringComment> EditStringComment(
-            int projectId,
-            int stringCommentId,
+            long projectId,
+            long stringCommentId,
             IEnumerable<StringCommentPatch> patches);
     }
 }

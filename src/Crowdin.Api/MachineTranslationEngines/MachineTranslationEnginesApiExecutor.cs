@@ -32,7 +32,7 @@ namespace Crowdin.Api.MachineTranslationEngines
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.mts.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<MtEngine>> ListMts(int? groupId = null, int limit = 25, int offset = 0)
+        public async Task<ResponseList<MtEngine>> ListMts(long? groupId = null, int limit = 25, int offset = 0)
         {
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
             queryParams.AddParamIfPresent("groupId", groupId);
@@ -57,7 +57,7 @@ namespace Crowdin.Api.MachineTranslationEngines
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.mts.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<MtEngine> GetMt(int mtId)
+        public async Task<MtEngine> GetMt(long mtId)
         {
             string url = FormUrl_MtId(mtId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -69,7 +69,7 @@ namespace Crowdin.Api.MachineTranslationEngines
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.mts.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteMt(int mtId)
+        public async Task DeleteMt(long mtId)
         {
             string url = FormUrl_MtId(mtId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -81,7 +81,7 @@ namespace Crowdin.Api.MachineTranslationEngines
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.mts.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<MtEngine> EditMt(int mtId, IEnumerable<MtEnginePatch> patches)
+        public async Task<MtEngine> EditMt(long mtId, IEnumerable<MtEnginePatch> patches)
         {
             string url = FormUrl_MtId(mtId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -94,7 +94,7 @@ namespace Crowdin.Api.MachineTranslationEngines
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.mts.translations.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<MtTranslation> TranslateViaMt(int mtId, TranslateViaMtRequest request)
+        public async Task<MtTranslation> TranslateViaMt(long mtId, TranslateViaMtRequest request)
         {
             var url = $"/mts/{mtId}/translations";
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -103,7 +103,7 @@ namespace Crowdin.Api.MachineTranslationEngines
 
         #region Helper methods
 
-        private static string FormUrl_MtId(int mtId) => $"{BaseUrl}/{mtId}";
+        private static string FormUrl_MtId(long mtId) => $"{BaseUrl}/{mtId}";
 
         #endregion
     }

@@ -12,37 +12,37 @@ namespace Crowdin.Api.Reports
         #region Report Archives
 
         Task<ResponseList<ReportArchive>> ListReportArchives(
-            int? userId,
+            long? userId,
             ScopeType? scopeType = null,
-            int? scopeId = null,
+            long? scopeId = null,
             int limit = 25,
             int offset = 0);
 
-        Task<ReportArchive> GetReportArchive(int? userId, int archiveId);
+        Task<ReportArchive> GetReportArchive(long? userId, long archiveId);
 
-        Task DeleteReportArchive(int? userId, int archiveId);
+        Task DeleteReportArchive(long? userId, long archiveId);
 
         Task<GroupReportStatus> ExportReportArchive(
-            int? userId,
-            int archiveId,
+            long? userId,
+            long archiveId,
             ExportReportArchiveRequest request);
 
         Task<GroupReportStatus> CheckReportArchiveExportStatus(
-            int? userId,
-            int archiveId,
+            long? userId,
+            long archiveId,
             string exportId);
 
-        Task<DownloadLink> DownloadReportArchive(int? userId, int archiveId, string exportId);
+        Task<DownloadLink> DownloadReportArchive(long? userId, long archiveId, string exportId);
 
         #endregion
 
         #region Group Reports
 
-        Task<GroupReportStatus> GenerateGroupReport(int groupId, GenerateGroupReportRequest request);
+        Task<GroupReportStatus> GenerateGroupReport(long groupId, GenerateGroupReportRequest request);
 
-        Task<GroupReportStatus> CheckGroupReportGenerationStatus(int groupId, int reportId);
+        Task<GroupReportStatus> CheckGroupReportGenerationStatus(long groupId, long reportId);
 
-        Task<DownloadLink> DownloadGroupReport(int groupId, int reportId);
+        Task<DownloadLink> DownloadGroupReport(long groupId, long reportId);
 
         #endregion
 
@@ -50,43 +50,43 @@ namespace Crowdin.Api.Reports
 
         Task<GroupReportStatus> GenerateOrganizationReport(GenerateGroupReportRequest request);
 
-        Task<GroupReportStatus> CheckOrganizationReportGenerationStatus(int reportId);
+        Task<GroupReportStatus> CheckOrganizationReportGenerationStatus(long reportId);
 
-        Task<DownloadLink> DownloadOrganizationReport(int reportId);
+        Task<DownloadLink> DownloadOrganizationReport(long reportId);
 
         #endregion
 
         #region Reports
 
-        Task<ReportStatus> GenerateReport(int projectId, GenerateReportRequest request);
+        Task<ReportStatus> GenerateReport(long projectId, GenerateReportRequest request);
 
-        Task<ReportStatus> CheckReportGenerationStatus(int projectId, string reportId);
+        Task<ReportStatus> CheckReportGenerationStatus(long projectId, string reportId);
 
-        Task<DownloadLink> DownloadReport(int projectId, string reportId);
+        Task<DownloadLink> DownloadReport(long projectId, string reportId);
 
         #endregion
 
         #region Report Settings Templates
 
         Task<ResponseList<ReportSettingsTemplateBase>> ListReportSettingsTemplates(
-            int projectId,
+            long projectId,
             int limit = 25,
             int offset = 0);
 
         Task<ReportSettingsTemplateBase> AddReportSettingsTemplate(
-            int projectId,
+            long projectId,
             AddReportSettingsTemplateRequest request);
 
         Task<ReportSettingsTemplateBase> GetReportSettingsTemplate(
-            int projectId,
-            int reportSettingsTemplateId);
+            long projectId,
+            long reportSettingsTemplateId);
 
         Task<ReportSettingsTemplateBase> EditReportSettingsTemplate(
-            int projectId,
-            int reportSettingsTemplateId,
+            long projectId,
+            long reportSettingsTemplateId,
             IEnumerable<ReportSettingsTemplatePatch> patches);
 
-        Task DeleteReportSettingsTemplate(int projectId, int reportSettingsTemplateId);
+        Task DeleteReportSettingsTemplate(long projectId, long reportSettingsTemplateId);
 
         #endregion
     }

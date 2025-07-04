@@ -42,11 +42,11 @@ namespace Crowdin.Api.Translations
         public class BuildAttributes : AttributesBase
         {
             [JsonProperty("branchId")]
-            public int? BranchId { get; set; }
+            public long? BranchId { get; set; }
             
             // only regular API
             [JsonProperty("directoryId")]
-            public int? DirectoryId { get; set; }
+            public long? DirectoryId { get; set; }
             
             [JsonProperty("targetLanguageIds")]
             public string[] TargetLanguageIds { get; set; }

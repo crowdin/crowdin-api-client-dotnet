@@ -9,14 +9,14 @@ namespace Crowdin.Api.Webhooks
     [PublicAPI]
     public interface IWebhooksApiExecutor
     {
-        Task<ResponseList<Webhook>> ListWebhooks(int projectId, int limit = 25, int offset = 0);
+        Task<ResponseList<Webhook>> ListWebhooks(long projectId, int limit = 25, int offset = 0);
 
-        Task<Webhook> AddWebhook(int projectId, AddWebhookRequest request);
+        Task<Webhook> AddWebhook(long projectId, AddWebhookRequest request);
 
-        Task<Webhook> GetWebhook(int projectId, int webhookId);
+        Task<Webhook> GetWebhook(long projectId, long webhookId);
 
-        Task DeleteWebhook(int projectId, int webhookId);
+        Task DeleteWebhook(long projectId, long webhookId);
 
-        Task<Webhook> EditWebhook(int projectId, int webhookId, IEnumerable<WebhookPatch> patches);
+        Task<Webhook> EditWebhook(long projectId, long webhookId, IEnumerable<WebhookPatch> patches);
     }
 }

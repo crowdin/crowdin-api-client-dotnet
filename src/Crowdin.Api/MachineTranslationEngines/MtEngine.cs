@@ -24,7 +24,7 @@ namespace Crowdin.Api.MachineTranslationEngines
         public IDictionary<string, object> Credentials { get; set; }
         
         [JsonProperty("projectIds")]
-        public int[] ProjectIds { get; set; }
+        public long[] ProjectIds { get; set; }
 
         [JsonProperty("supportedLanguageIds")]
         public string[] SupportedLanguageIds { get; set; }
@@ -33,7 +33,7 @@ namespace Crowdin.Api.MachineTranslationEngines
         public IDictionary<string, string[]> SupportedLanguagePairs { get; set; }
 
         [JsonProperty("enabledProjectIds")]
-        public int[] EnabledProjectIds { get; set; }
+        public long[] EnabledProjectIds { get; set; }
 
         [JsonProperty("enabledLanguageIds")]
         public string[] EnabledLanguageIds { get; set; }

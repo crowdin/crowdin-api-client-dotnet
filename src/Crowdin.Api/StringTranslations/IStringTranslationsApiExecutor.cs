@@ -12,13 +12,13 @@ namespace Crowdin.Api.StringTranslations
     public interface IStringTranslationsApiExecutor
     {
         Task<ResponseList<LanguageTranslations>> ListLanguageTranslations(
-            int projectId,
+            long projectId,
             string languageId,
             string? stringIds = null,
             string? labelIds = null,
-            int? fileId = null,
-            int? branchId = null,
-            int? directoryId = null,
+            long? fileId = null,
+            long? branchId = null,
+            long? directoryId = null,
             string? croql = null,
             bool? denormalizePlaceholders = null,
             int limit = 25,
@@ -26,49 +26,49 @@ namespace Crowdin.Api.StringTranslations
             IEnumerable<SortingRule>? orderBy = null);
 
         Task<ResponseList<LanguageTranslations>> ListLanguageTranslations(
-            int projectId,
+            long projectId,
             string languageId,
             LanguageTranslationsListParams @params);
         
         #region Approvals
 
         Task<ResponseList<TranslationApproval>> ListTranslationApprovals(
-            int projectId,
-            int? fileId = null,
+            long projectId,
+            long? fileId = null,
             string? labelIds = null,
             string? excludeLabelIds = null,
-            int? stringId = null,
+            long? stringId = null,
             string? languageId = null,
-            int? translationId = null,
+            long? translationId = null,
             int limit = 25,
             int offset = 0,
             IEnumerable<SortingRule>? orderBy = null);
 
         Task<ResponseList<TranslationApproval>> ListTranslationApprovals(
-            int projectId,
+            long projectId,
             TranslationApprovalsListParams @params);
 
-        Task<TranslationApproval> AddApproval(int projectId, AddApprovalRequest request);
+        Task<TranslationApproval> AddApproval(long projectId, AddApprovalRequest request);
 
-        Task<TranslationApproval> GetApproval(int projectId, int approvalId);
+        Task<TranslationApproval> GetApproval(long projectId, long approvalId);
 
-        Task RemoveApproval(int projectId, int approvalId);
+        Task RemoveApproval(long projectId, long approvalId);
 
-        Task RemoveStringApprovals(int projectId, int stringId);
+        Task RemoveStringApprovals(long projectId, long stringId);
 
         Task<ResponseList<TranslationApproval>> ApprovalBatchOperations(
-            int projectId,
+            long projectId,
             IEnumerable<ApprovalBatchOpPatch> patches);
 
         #endregion
 
         #region Translations
 
-        Task<TranslationAlignment> TranslationAlignment(int projectId, TranslationAlignmentRequest request);
+        Task<TranslationAlignment> TranslationAlignment(long projectId, TranslationAlignmentRequest request);
 
         Task<ResponseList<StringTranslation>> ListStringTranslations(
-            int projectId,
-            int stringId,
+            long projectId,
+            long stringId,
             string languageId,
             bool? denormalizePlaceholders = null,
             int limit = 25,
@@ -76,46 +76,46 @@ namespace Crowdin.Api.StringTranslations
             IEnumerable<SortingRule>? orderBy = null);
 
         Task<ResponseList<StringTranslation>> ListStringTranslations(
-            int projectId,
+            long projectId,
             StringTranslationsListParams @params);
 
-        Task<StringTranslation> AddTranslation(int projectId, AddTranslationRequest request);
+        Task<StringTranslation> AddTranslation(long projectId, AddTranslationRequest request);
 
-        Task DeleteStringTranslations(int projectId, int stringId, string? languageId = null);
+        Task DeleteStringTranslations(long projectId, long stringId, string? languageId = null);
 
         Task<ResponseList<StringTranslation>> TranslationBatchOperations(
-            int projectId,
+            long projectId,
             IEnumerable<TranslationBatchOpPatch> patches);
 
-        Task<StringTranslation> GetTranslation(int projectId, int translationId, bool? denormalizePlaceholders = null);
+        Task<StringTranslation> GetTranslation(long projectId, long translationId, bool? denormalizePlaceholders = null);
 
-        Task<StringTranslation> RestoreTranslation(int projectId, int translationId);
+        Task<StringTranslation> RestoreTranslation(long projectId, long translationId);
 
-        Task DeleteTranslation(int projectId, int translationId);
+        Task DeleteTranslation(long projectId, long translationId);
 
         #endregion
 
         #region Votes
 
         Task<ResponseList<TranslationVote>> ListTranslationVotes(
-            int projectId,
-            int? stringId = null,
+            long projectId,
+            long? stringId = null,
             string? languageId = null,
-            int? translationId = null,
+            long? translationId = null,
             string? labelIds = null,
             string? excludeLabelIds = null,
             int limit = 25,
             int offset = 0);
 
         Task<ResponseList<TranslationVote>> ListTranslationVotes(
-            int projectId,
+            long projectId,
             TranslationVotesListParams @params);
 
-        Task<TranslationVote> AddVote(int projectId, AddVoteRequest request);
+        Task<TranslationVote> AddVote(long projectId, AddVoteRequest request);
 
-        Task<TranslationVote> GetVote(int projectId, int voteId);
+        Task<TranslationVote> GetVote(long projectId, long voteId);
 
-        Task CancelVote(int projectId, int voteId);
+        Task CancelVote(long projectId, long voteId);
 
         #endregion
     }

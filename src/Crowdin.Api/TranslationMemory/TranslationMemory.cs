@@ -12,7 +12,7 @@ namespace Crowdin.Api.TranslationMemory
         public long Id { get; set; }
         
         [JsonProperty("groupId")]
-        public int? GroupId { get; set; }
+        public long? GroupId { get; set; }
         
         [JsonProperty("userId")]
         public long UserId { get; set; }
@@ -27,10 +27,10 @@ namespace Crowdin.Api.TranslationMemory
         public int SegmentsCount { get; set; }
         
         [JsonProperty("defaultProjectIds")]
-        public int[] DefaultProjectIds { get; set; }
+        public long[] DefaultProjectIds { get; set; }
         
         [JsonProperty("projectIds")]
-        public int[] ProjectIds { get; set; }
+        public long[] ProjectIds { get; set; }
         
         [JsonProperty("createdAt")]
         public DateTimeOffset CreatedAt { get; set; }

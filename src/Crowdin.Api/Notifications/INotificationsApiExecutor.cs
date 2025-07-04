@@ -11,6 +11,6 @@ namespace Crowdin.Api.Notifications
 
         Task SendNotificationToOrganizationMembers(SendNotificationToOrganizationMembersRequest request);
 
-        Task SendNotificationToProjectMembers(int projectId, SendNotificationToProjectMembersRequest request);
+        Task SendNotificationToProjectMembers(long projectId, SendNotificationToProjectMembersRequest request);
     }
 }

@@ -34,8 +34,8 @@ namespace Crowdin.Api.TranslationStatus
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<ProgressResource>> GetBranchProgress(
-            int projectId,
-            int branchId,
+            long projectId,
+            long branchId,
             int limit = 25,
             int offset = 0)
         {
@@ -53,8 +53,8 @@ namespace Crowdin.Api.TranslationStatus
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<ProgressResource>> GetDirectoryProgress(
-            int projectId,
-            int directoryId,
+            long projectId,
+            long directoryId,
             int limit = 25,
             int offset = 0)
         {
@@ -72,8 +72,8 @@ namespace Crowdin.Api.TranslationStatus
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<FileProgressResource>> GetFileProgress(
-            int projectId,
-            int fileId,
+            long projectId,
+            long fileId,
             int limit = 25,
             int offset = 0)
         {
@@ -91,7 +91,7 @@ namespace Crowdin.Api.TranslationStatus
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<LanguageProgressResource>> GetLanguageProgress(
-            int projectId,
+            long projectId,
             string languageId,
             int limit = 25,
             int offset = 0)
@@ -110,7 +110,7 @@ namespace Crowdin.Api.TranslationStatus
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<ProgressResource>> GetProjectProgress(
-            int projectId,
+            long projectId,
             int limit = 25,
             int offset = 0)
         {
@@ -128,7 +128,7 @@ namespace Crowdin.Api.TranslationStatus
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<QaCheckResource>> ListQaCheckIssues(
-            int projectId,
+            long projectId,
             int limit = 25,
             int offset = 0,
             ICollection<QaCheckIssueCategory>? categories = null,
@@ -145,7 +145,7 @@ namespace Crowdin.Api.TranslationStatus
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.qa-checks.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<QaCheckResource>> ListQaCheckIssues(int projectId, QaCheckIssuesListParams @params)
+        public async Task<ResponseList<QaCheckResource>> ListQaCheckIssues(long projectId, QaCheckIssuesListParams @params)
         {
             var url = $"/projects/{projectId}/qa-checks";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, @params.ToQueryParams());

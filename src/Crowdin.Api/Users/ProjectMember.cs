@@ -12,7 +12,7 @@ namespace Crowdin.Api.Users
     public class ProjectMember
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("username")]
 #pragma warning disable CS8618

@@ -15,7 +15,7 @@ namespace Crowdin.Api.Users
     public interface IUsersApiExecutor
     {
         Task<ResponseList<TeamMember>> ListProjectMembers(
-            int projectId,
+            long projectId,
             string? search = null,
             UserRole? role = null,
             string? languageId = null,
@@ -23,30 +23,30 @@ namespace Crowdin.Api.Users
             int offset = 0,
             IEnumerable<SortingRule>? orderBy = null);
 
-        Task<ResponseList<TeamMember>> ListProjectMembers(int projectId, ProjectMembersListParams @params);
+        Task<ResponseList<TeamMember>> ListProjectMembers(long projectId, ProjectMembersListParams @params);
 
         Task<ResponseList<ProjectMember>> ListProjectMembersEnterprise(
-            int projectId,
+            long projectId,
             string? search = null,
             string? languageId = null,
-            int? workflowStepId = null,
+            long? workflowStepId = null,
             int limit = 25,
             int offset = 0);
 
         Task<ResponseList<ProjectMember>> ListProjectMembersEnterprise(
-            int projectId,
+            long projectId,
             EnterpriseProjectMembersListParams @params);
 
-        Task<ProjectMembersResponse> AddProjectMember(int projectId, AddProjectMemberRequest request);
+        Task<ProjectMembersResponse> AddProjectMember(long projectId, AddProjectMemberRequest request);
 
-        Task<ProjectMember> GetProjectMemberPermissions(int projectId, int memberId);
+        Task<ProjectMember> GetProjectMemberPermissions(long projectId, long memberId);
 
         Task<ProjectMember> ReplaceProjectMemberPermissions(
-            int projectId,
-            int memberId,
+            long projectId,
+            long memberId,
             ReplaceProjectMemberPermissionsRequest request);
 
-        Task DeleteMemberFromProject(int projectId, int memberId);
+        Task DeleteMemberFromProject(long projectId, long memberId);
 
         Task<ResponseList<UserEnterprise>> ListUsers(
             UserStatus? status = null,
@@ -56,11 +56,11 @@ namespace Crowdin.Api.Users
             int offset = 0,
             IEnumerable<SortingRule>? orderBy = null,
             IEnumerable<OrganizationRole>? organizationRoles = null,
-            int? teamId = null,
-            IEnumerable<int>? projectIds = null,
+            long? teamId = null,
+            IEnumerable<long>? projectIds = null,
             IEnumerable<ProjectRole>? projectRoles = null,
             IEnumerable<string>? languageIds = null,
-            IEnumerable<int>? groupIds = null,
+            IEnumerable<long>? groupIds = null,
             DateTimeOffset? lastSeenFrom = null,
             DateTimeOffset? lastSeenTo = null);
 
@@ -68,28 +68,28 @@ namespace Crowdin.Api.Users
 
         Task<UserEnterprise> InviteUser(EnterpriseInviteUserRequest request);
 
-        Task<UserEnterprise> GetUser(int userId);
+        Task<UserEnterprise> GetUser(long userId);
 
-        Task DeleteUser(int userId);
+        Task DeleteUser(long userId);
 
-        Task<UserEnterprise> EditUser(int userId, IEnumerable<EnterpriseUserPatch> patches);
+        Task<UserEnterprise> EditUser(long userId, IEnumerable<EnterpriseUserPatch> patches);
 
         Task<T> GetAuthenticatedUser<T>() where T : UserBase;
 
-        Task<TeamMember> GetMemberInfo(int projectId, int memberId);
+        Task<TeamMember> GetMemberInfo(long projectId, long memberId);
 
         #region Group Managers
 
         Task<ResponseList<GroupManager>> ListGroupManagers(
-            int groupId,
-            IEnumerable<int>? teamIds = null,
+            long groupId,
+            IEnumerable<long>? teamIds = null,
             IEnumerable<SortingRule>? orderBy = null);
 
         Task<ResponseList<GroupManager>> UpdateGroupManagers(
-            int groupId,
+            long groupId,
             IEnumerable<GroupManagerPatch> patches);
 
-        Task<GroupManager> GetGroupManager(int groupId, int userId);
+        Task<GroupManager> GetGroupManager(long groupId, long userId);
 
         #endregion
     }
