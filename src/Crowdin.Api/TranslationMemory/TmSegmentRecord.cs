@@ -24,7 +24,7 @@ namespace Crowdin.Api.TranslationMemory
         public long CreatedBy { get; set; }
         
         [JsonProperty("updatedBy")]
-        public int? UpdatedBy { get; set; }
+        public long? UpdatedBy { get; set; }
         
         [JsonProperty("createdAt")]
         public DateTimeOffset CreatedAt { get; set; }

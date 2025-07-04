@@ -43,7 +43,7 @@ namespace Crowdin.Api.Reports
             public string ReportName { get; set; }
             
             [JsonProperty("projectIds")]
-            public ICollection<int> ProjectIds { get; set; }
+            public ICollection<long> ProjectIds { get; set; }
             
             [JsonProperty("schema")]
             public object Schema { get; set; }

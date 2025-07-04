@@ -60,16 +60,16 @@ namespace Crowdin.Api.Reports
             public string? LanguageId { get; set; }
             
             [JsonProperty("userIds")]
-            public ICollection<int>? UserIds { get; set; }
+            public ICollection<long>? UserIds { get; set; }
             
             [JsonProperty("fileIds")]
-            public ICollection<int>? FileIds { get; set; }
+            public ICollection<long>? FileIds { get; set; }
             
             [JsonProperty("directoryIds")]
-            public ICollection<int>? DirectoryIds { get; set; }
+            public ICollection<long>? DirectoryIds { get; set; }
             
             [JsonProperty("branchIds")]
-            public ICollection<int>? BranchIds { get; set; }
+            public ICollection<long>? BranchIds { get; set; }
         }
 
         [PublicAPI]
@@ -87,7 +87,7 @@ namespace Crowdin.Api.Reports
             public ICollection<string> LanguageIds { get; set; }
 
             [JsonProperty("userIds")]
-            public ICollection<int> UserIds { get; set; }
+            public ICollection<long> UserIds { get; set; }
 #pragma warning restore CS8618
 
             [JsonProperty("fullTranslation")]

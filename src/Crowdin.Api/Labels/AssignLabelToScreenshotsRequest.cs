@@ -9,6 +9,6 @@ namespace Crowdin.Api.Labels
     public class AssignLabelToScreenshotsRequest
     {
         [JsonProperty("screenshotIds")]
-        public ICollection<int> ScreenshotIds { get; set; }
+        public ICollection<long> ScreenshotIds { get; set; }
     }
 }

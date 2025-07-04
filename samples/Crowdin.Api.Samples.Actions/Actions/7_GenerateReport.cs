@@ -25,7 +25,7 @@ namespace Crowdin.Api.Samples.Actions
                             new CostEstimationPostEditingGenerateReportRequest.IndividualRate
                             {
                                 LanguageIds = new[] { "uk", "es" },
-                                UserIds = new[] { 1, 2, 3 },
+                                UserIds = new long[] { 1, 2, 3 },
                                 FullTranslation = 0.1f,
                                 Proofread = 0.12f
                             }

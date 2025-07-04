@@ -130,7 +130,7 @@ namespace Crowdin.Api.UnitTesting.Tests.SourceStrings
                 BranchId = 34,
                 Type = StringBasedProjectFileType.Xliff,
                 ParserVersion = 1,
-                LabelIds = new[] { 1, 2, 3 },
+                LabelIds = [1, 2, 3],
                 UpdateStrings = true,
                 CleanupMode = true,
                 ImportOptions = new SpreadsheetFileImportOptions

@@ -23,9 +23,9 @@ namespace Crowdin.Api.SourceFiles
         public FileExportOptions? ExportOptions { get; set; }
         
         [JsonProperty("attachLabelIds")]
-        public List<int>? AttachLabelIds { get; set; }
+        public List<long>? AttachLabelIds { get; set; }
         
         [JsonProperty("detachLabelIds")]
-        public List<int>? DetachLabelIds { get; set; }
+        public List<long>? DetachLabelIds { get; set; }
     }
 }

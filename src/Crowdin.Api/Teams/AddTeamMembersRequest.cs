@@ -9,6 +9,6 @@ namespace Crowdin.Api.Teams
     public class AddTeamMembersRequest
     {
         [JsonProperty("userIds")]
-        public ICollection<int> UserIds { get; set; }
+        public ICollection<long> UserIds { get; set; }
     }
 }

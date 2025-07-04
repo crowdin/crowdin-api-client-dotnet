@@ -19,16 +19,16 @@ namespace Crowdin.Api.Translations
         public TranslationFormat? Format { get; set; }
         
         [JsonProperty("labelIds")]
-        public ICollection<int>? LabelIds { get; set; }
+        public ICollection<long>? LabelIds { get; set; }
         
         [JsonProperty("branchIds")]
-        public ICollection<int>? BranchIds { get; set; }
+        public ICollection<long>? BranchIds { get; set; }
         
         [JsonProperty("directoryIds")]
-        public ICollection<int>? DirectoryIds { get; set; }
+        public ICollection<long>? DirectoryIds { get; set; }
         
         [JsonProperty("fileIds")]
-        public ICollection<int>? FileIds { get; set; }
+        public ICollection<long>? FileIds { get; set; }
         
         [JsonProperty("skipUntranslatedStrings")]
         public bool? SkipUntranslatedStrings { get; set; }

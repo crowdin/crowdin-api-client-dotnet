@@ -105,7 +105,7 @@ namespace Crowdin.Api.ProjectsGroups
         public QaCheckCategories? QaChecksIgnorableCategories { get; set; }
         
         [JsonProperty("customQaCheckIds")]
-        public ICollection<int>? CustomQaCheckIds { get; set; }
+        public ICollection<long>? CustomQaCheckIds { get; set; }
         
         [JsonProperty("tmContextType")]
         public TmContextType? TmContextType { get; set; }

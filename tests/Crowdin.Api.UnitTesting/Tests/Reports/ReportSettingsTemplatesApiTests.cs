@@ -193,10 +193,10 @@ namespace Crowdin.Api.UnitTesting.Tests.Reports
                             {
                                 "uk"
                             },
-                            UserIds = new[]
-                            {
+                            UserIds =
+                            [
                                 1
-                            },
+                            ],
                             Rates = new[]
                             {
                                 new ReportSettingsFuzzyConfig.RegularRate

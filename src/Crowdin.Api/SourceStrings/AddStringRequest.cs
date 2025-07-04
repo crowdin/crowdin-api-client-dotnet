@@ -34,6 +34,6 @@ namespace Crowdin.Api.SourceStrings
         public int? MaxLength { get; set; }
         
         [JsonProperty("labelIds")]
-        public ICollection<int>? LabelIds { get; set; }
+        public ICollection<long>? LabelIds { get; set; }
     }
 }

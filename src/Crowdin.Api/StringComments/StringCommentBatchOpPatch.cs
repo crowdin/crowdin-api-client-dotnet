@@ -23,7 +23,7 @@ namespace Crowdin.Api.StringComments
         private readonly string _commentId;
         private readonly string _pathCode;
 
-        public StringCommentBatchOpPatchPath(int? commentId = null, Code? pathCode = null)
+        public StringCommentBatchOpPatchPath(long? commentId = null, Code? pathCode = null)
         {
             _commentId = commentId?.ToString() ?? "-";
             _pathCode = pathCode.HasValue ? pathCode.ToDescriptionString() : "";

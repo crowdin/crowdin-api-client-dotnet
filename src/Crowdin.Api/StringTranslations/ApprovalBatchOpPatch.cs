@@ -19,7 +19,7 @@ namespace Crowdin.Api.StringTranslations
     {
         private readonly string _approvalId;
 
-        public ApprovalBatchOpPatchPath(int? approvalId = null)
+        public ApprovalBatchOpPatchPath(long? approvalId = null)
         {
             _approvalId = approvalId?.ToString() ?? "-";
         }

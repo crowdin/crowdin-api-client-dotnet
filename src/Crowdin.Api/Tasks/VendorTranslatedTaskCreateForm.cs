@@ -23,10 +23,10 @@ namespace Crowdin.Api.Tasks
 #pragma warning restore CS8618
         
         [JsonProperty("branchIds")]
-        public ICollection<int>? BranchIds { get; set; }
+        public ICollection<long>? BranchIds { get; set; }
         
         [JsonProperty("fileIds")]
-        public ICollection<int>? FileIds { get; set; }
+        public ICollection<long>? FileIds { get; set; }
         
         [JsonProperty("type")]
         public TaskType Type { get; set; }
@@ -47,7 +47,7 @@ namespace Crowdin.Api.Tasks
         public TaskSubject? Subject { get; set; }
         
         [JsonProperty("labelIds")]
-        public ICollection<int>? LabelIds { get; set; }
+        public ICollection<long>? LabelIds { get; set; }
         
         [JsonProperty("dateFrom")]
         public DateTimeOffset? DateFrom { get; set; }

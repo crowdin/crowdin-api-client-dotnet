@@ -18,7 +18,7 @@ namespace Crowdin.Api.SourceFiles
         public long FileId { get; set; }
         
         [JsonProperty("restoreToRevision")]
-        public int? RestoreToRevision { get; set; }
+        public long? RestoreToRevision { get; set; }
         
         [JsonProperty("info")]
         public InfoContainer Info { get; set; }

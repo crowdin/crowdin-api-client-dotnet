@@ -28,7 +28,7 @@ namespace Crowdin.Api.SourceStrings
         {
         }
 
-        public StringBatchOpPatchPath(int? stringId = null, StringBatchOpPatchPathEntry? property = null)
+        public StringBatchOpPatchPath(long? stringId = null, StringBatchOpPatchPathEntry? property = null)
         {
             StringId = stringId;
             Property = property;

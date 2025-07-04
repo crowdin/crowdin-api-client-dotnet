@@ -43,6 +43,6 @@ namespace Crowdin.Api.SourceFiles
         public List<string>? ExcludedTargetLanguages { get; set; }
         
         [JsonProperty("attachLabelIds")]
-        public ICollection<int>? AttachLabelIds { get; set; }
+        public ICollection<long>? AttachLabelIds { get; set; }
     }
 }
