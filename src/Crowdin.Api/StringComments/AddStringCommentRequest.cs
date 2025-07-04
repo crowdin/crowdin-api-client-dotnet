@@ -11,7 +11,7 @@ namespace Crowdin.Api.StringComments
         public string Text { get; set; }
         
         [JsonProperty("stringId")]
-        public int StringId { get; set; }
+        public long StringId { get; set; }
         
         [JsonProperty("targetLanguageId")]
         public string TargetLanguageId { get; set; }

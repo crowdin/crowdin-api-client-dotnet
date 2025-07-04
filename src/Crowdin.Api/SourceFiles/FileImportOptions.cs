@@ -66,7 +66,7 @@ namespace Crowdin.Api.SourceFiles
         public bool? ContentSegmentation { get; set; }
         
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
@@ -79,7 +79,7 @@ namespace Crowdin.Api.SourceFiles
         public bool? ContentSegmentation { get; set; }
         
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
@@ -95,7 +95,7 @@ namespace Crowdin.Api.SourceFiles
         public bool? ContentSegmentation { get; set; }
         
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
@@ -111,7 +111,7 @@ namespace Crowdin.Api.SourceFiles
         public bool? ContentSegmentation { get; set; }
         
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
@@ -121,6 +121,6 @@ namespace Crowdin.Api.SourceFiles
         public bool? ContentSegmentation { get; set; }
         
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 }

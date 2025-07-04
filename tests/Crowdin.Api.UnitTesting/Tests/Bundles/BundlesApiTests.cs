@@ -93,10 +93,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Bundles
                 ExportPattern = "strings-%two_letter_code%.resx",
                 IsMultilingual = false,
                 IncludeProjectSourceLanguage = false,
-                LabelIds = new[]
-                {
-                    0
-                }
+                LabelIds = [0]
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);

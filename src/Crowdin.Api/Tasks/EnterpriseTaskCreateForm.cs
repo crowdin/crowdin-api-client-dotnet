@@ -12,7 +12,7 @@ namespace Crowdin.Api.Tasks
     public class EnterpriseTaskCreateForm : AddTaskRequest
     {
         [JsonProperty("workflowStepId")]
-        public int WorkflowStepId { get; set; }
+        public long WorkflowStepId { get; set; }
         
         [JsonProperty("title")]
 #pragma warning disable CS8618
@@ -26,7 +26,7 @@ namespace Crowdin.Api.Tasks
         
         [JsonProperty("fileIds")]
 #pragma warning disable CS8618
-        public ICollection<int> FileIds { get; set; }
+        public ICollection<long> FileIds { get; set; }
 #pragma warning restore CS8618
 
         [JsonProperty("status")]
@@ -48,7 +48,7 @@ namespace Crowdin.Api.Tasks
         public DateTimeOffset? DeadLine { get; set; }
         
         [JsonProperty("labelIds")]
-        public ICollection<int>? LabelIds { get; set; }
+        public ICollection<long>? LabelIds { get; set; }
         
         [JsonProperty("dateFrom")]
         public DateTimeOffset? DateFrom { get; set; }

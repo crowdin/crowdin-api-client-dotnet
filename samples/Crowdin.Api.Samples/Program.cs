@@ -15,7 +15,7 @@ var client = new CrowdinApiClient(new CrowdinCredentials
 
 ResponseList<EnterpriseProject> response = await client.ProjectsGroups.ListProjects<EnterpriseProject>();
 
-const int projectId = 1;
+const long projectId = 1;
 
 var operations = new List<ProjectPatch>
 {
@@ -44,7 +44,7 @@ Console.WriteLine(projectSettingsResponse);
 
 // Get all elements by automatic pagination control
 
-const int parentId = 1;
+const long parentId = 1;
 const int maxAmountOfItems = 50;
 const int amountPerRequest = 10;
 

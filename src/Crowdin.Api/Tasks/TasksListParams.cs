@@ -17,7 +17,7 @@ namespace Crowdin.Api.Tasks
 
         public IEnumerable<TaskStatus>? Statuses { get; set; }
 
-        public int? AssigneeId { get; set; }
+        public long? AssigneeId { get; set; }
         
         public IEnumerable<SortingRule>? OrderBy { get; set; }
 
@@ -30,7 +30,7 @@ namespace Crowdin.Api.Tasks
             int limit,
             int offset,
             TaskStatus? status,
-            int? assigneeId,
+            long? assigneeId,
             IEnumerable<SortingRule>? orderBy)
         {
             Limit = limit;
@@ -44,7 +44,7 @@ namespace Crowdin.Api.Tasks
             int limit,
             int offset,
             IEnumerable<TaskStatus>? statuses,
-            int? assigneeId,
+            long? assigneeId,
             IEnumerable<SortingRule>? orderBy)
         {
             Limit = limit;

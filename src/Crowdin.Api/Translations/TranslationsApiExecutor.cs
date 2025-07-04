@@ -36,7 +36,7 @@ namespace Crowdin.Api.Translations
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<PreTranslation>> ListPreTranslations(
-            int projectId,
+            long projectId,
             int limit = 25,
             int offset = 0)
         {
@@ -55,7 +55,7 @@ namespace Crowdin.Api.Translations
         /// </summary>
         [PublicAPI]
         public async Task<PreTranslation> EditPreTranslation(
-            int projectId,
+            long projectId,
             string preTranslationId,
             IEnumerable<PreTranslationPatch> patches)
         {
@@ -71,7 +71,7 @@ namespace Crowdin.Api.Translations
         /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Translations/operation/api.projects.pre-translations.report.getReport">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<PreTranslationReport> PreTranslationReport(int projectId, string preTranslationId)
+        public async Task<PreTranslationReport> PreTranslationReport(long projectId, string preTranslationId)
         {
             var url = $"/projects/{projectId}/pre-translations/{preTranslationId}/report";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -84,7 +84,7 @@ namespace Crowdin.Api.Translations
         /// <a href="https://support.crowdin.com/enterprise/api/#tag/Translations/paths/~1projects~1{projectId}~1pre-translations~1{preTranslationId}/get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<PreTranslation> GetPreTranslationStatus(int projectId, string preTranslationId)
+        public async Task<PreTranslation> GetPreTranslationStatus(long projectId, string preTranslationId)
         {
             var url = $"/projects/{projectId}/pre-translations/{preTranslationId}";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -97,7 +97,7 @@ namespace Crowdin.Api.Translations
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.pre-translations.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<PreTranslation> ApplyPreTranslation(int projectId, ApplyPreTranslationRequest request)
+        public async Task<PreTranslation> ApplyPreTranslation(long projectId, ApplyPreTranslationRequest request)
         {
             var url = $"/projects/{projectId}/pre-translations";
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -111,8 +111,8 @@ namespace Crowdin.Api.Translations
         /// </summary>
         [PublicAPI]
         public async Task<DirectoryBuild> BuildProjectDirectoryTranslation(
-            int projectId,
-            int directoryId,
+            long projectId,
+            long directoryId,
             BuildProjectDirectoryTranslationRequest request)
         {
             var url = $"/projects/{projectId}/translations/builds/directories/{directoryId}";
@@ -127,7 +127,7 @@ namespace Crowdin.Api.Translations
         /// </summary>
         [PublicAPI]
         public async Task<BuildProjectFileTranslationResponse> BuildProjectFileTranslation(
-            int projectId, int fileId,
+            long projectId, long fileId,
             BuildProjectFileTranslationRequest request,
             string? etag = null)
         {
@@ -169,8 +169,8 @@ namespace Crowdin.Api.Translations
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TranslationProjectBuild>> ListProjectBuilds(
-            int projectId,
-            int? branchId = null,
+            long projectId,
+            long? branchId = null,
             int limit = 25,
             int offset = 0)
         {
@@ -189,7 +189,7 @@ namespace Crowdin.Api.Translations
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.builds.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ProjectBuild> BuildProjectTranslation(int projectId, BuildProjectTranslationRequest request)
+        public async Task<ProjectBuild> BuildProjectTranslation(long projectId, BuildProjectTranslationRequest request)
         {
             var url = $"/projects/{projectId}/translations/builds";
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -204,7 +204,7 @@ namespace Crowdin.Api.Translations
         /// </summary>
         [PublicAPI]
         public async Task<UploadTranslationsResponse> UploadTranslations(
-            int projectId,
+            long projectId,
             string languageId,
             UploadTranslationsRequest request)
         {
@@ -220,7 +220,7 @@ namespace Crowdin.Api.Translations
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.builds.download.download">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<DownloadProjectTranslationsResponse> DownloadProjectTranslations(int projectId, int buildId)
+        public async Task<DownloadProjectTranslationsResponse> DownloadProjectTranslations(long projectId, long buildId)
         {
             var url = $"/projects/{projectId}/translations/builds/{buildId}/download";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -240,7 +240,7 @@ namespace Crowdin.Api.Translations
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.builds.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ProjectBuild> CheckProjectBuildStatus(int projectId, int buildId)
+        public async Task<ProjectBuild> CheckProjectBuildStatus(long projectId, long buildId)
         {
             var url = $"/projects/{projectId}/translations/builds/{buildId}";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -253,7 +253,7 @@ namespace Crowdin.Api.Translations
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.builds.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task CancelBuild(int projectId, int buildId)
+        public async Task CancelBuild(long projectId, long buildId)
         {
             var url = $"/projects/{projectId}/translations/builds/{buildId}";
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -266,7 +266,7 @@ namespace Crowdin.Api.Translations
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.exports.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<DownloadLink?> ExportProjectTranslation(int projectId, ExportProjectTranslationRequest request)
+        public async Task<DownloadLink?> ExportProjectTranslation(long projectId, ExportProjectTranslationRequest request)
         {
             var url = $"/projects/{projectId}/translations/exports";
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);

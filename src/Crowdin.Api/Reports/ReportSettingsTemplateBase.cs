@@ -11,7 +11,7 @@ namespace Crowdin.Api.Reports
     public abstract class ReportSettingsTemplateBase
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
 
         [JsonProperty("name")]
 #pragma warning disable CS8618

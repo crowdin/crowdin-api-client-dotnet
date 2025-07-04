@@ -17,7 +17,7 @@ namespace Crowdin.Api.Translations
         public string[] BranchIds { get; set; } = Array.Empty<string>();
         
         [JsonProperty("fileIds")]
-        public int[]? FileIds { get; set; }
+        public long[]? FileIds { get; set; }
         
         [JsonProperty("method")]
         public PreTranslationMethod Method { get; set; }
@@ -38,9 +38,9 @@ namespace Crowdin.Api.Translations
         public bool TranslateWithPerfectMatchOnly { get; set; }
         
         [JsonProperty("labelIds")]
-        public int[] LabelIds { get; set; }
+        public long[] LabelIds { get; set; }
 
         [JsonProperty("excludeLabelIds")]
-        public int[] ExcludeLabelIds { get; set; }
+        public long[] ExcludeLabelIds { get; set; }
     }
 }

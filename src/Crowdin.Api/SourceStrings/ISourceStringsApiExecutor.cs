@@ -12,36 +12,36 @@ namespace Crowdin.Api.SourceStrings
     public interface ISourceStringsApiExecutor
     {
         Task<ResponseList<SourceString>> ListStrings(
-            int projectId,
+            long projectId,
             int limit = 25,
             int offset = 0,
             int? denormalizePlaceholders = null,
             string? labelIds = null,
-            int? fileId = null,
-            int? branchId = null,
-            int? directoryId = null,
-            int? taskId = null,
+            long? fileId = null,
+            long? branchId = null,
+            long? directoryId = null,
+            long? taskId = null,
             string? croql = null,
             string? filter = null,
             StringScope? scope = null,
             IEnumerable<SortingRule>? orderBy = null);
 
-        Task<ResponseList<SourceString>> ListStrings(int projectId, StringsListParams @params);
+        Task<ResponseList<SourceString>> ListStrings(long projectId, StringsListParams @params);
 
-        Task<SourceString> AddString(int projectId, AddStringRequest request);
+        Task<SourceString> AddString(long projectId, AddStringRequest request);
 
         Task<ResponseList<SourceString>> StringBatchOperations(
-            int projectId,
+            long projectId,
             IEnumerable<StringBatchOpPatch> patches);
 
-        Task<SourceString> GetString(int projectId, int stringId, bool denormalizePlaceholders = false);
+        Task<SourceString> GetString(long projectId, long stringId, bool denormalizePlaceholders = false);
 
-        Task DeleteString(int projectId, int stringId);
+        Task DeleteString(long projectId, long stringId);
 
-        Task<SourceString> EditString(int projectId, int stringId, IEnumerable<SourceStringPatch> patches);
+        Task<SourceString> EditString(long projectId, long stringId, IEnumerable<SourceStringPatch> patches);
 
-        Task<StringUploadResponseModel> UploadStringsStatus(int projectId, string uploadId);
+        Task<StringUploadResponseModel> UploadStringsStatus(long projectId, string uploadId);
 
-        Task<StringUploadResponseModel> UploadStrings(int projectId, UploadStringsRequest request);
+        Task<StringUploadResponseModel> UploadStrings(long projectId, UploadStringsRequest request);
     }
 }

@@ -27,7 +27,7 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
 
             var request = new GenerateAiPromptFineTuningDatasetRequest
             {
-                ProjectIds = new[] { 1, 2, 3 },
+                ProjectIds = [1, 2, 3],
                 Purpose = AiDatasetPurpose.Training,
                 DateFrom = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
                 DateTo = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
@@ -65,7 +65,7 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
 
             var request = new GenerateAiPromptFineTuningDatasetRequest
             {
-                ProjectIds = new[] { 1, 2, 3 },
+                ProjectIds = [1, 2, 3],
                 Purpose = AiDatasetPurpose.Training,
                 DateFrom = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
                 DateTo = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
@@ -162,7 +162,7 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
                 },
                 TrainingOptions = new AiTrainingOptions
                 {
-                    ProjectIds = new List<int> { 1, 2, 3 },
+                    ProjectIds = [1, 2, 3],
                     DateFrom = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
                     DateTo = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
                     MaxFileSize = 100,
@@ -171,7 +171,7 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
                 },
                 ValidationOptions = new AiValidationOptions
                 {
-                    ProjectIds = new List<int> { 1, 2, 3 },
+                    ProjectIds = [1, 2, 3],
                     DateFrom = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
                     DateTo = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
                     MaxFileSize = 100,
@@ -218,7 +218,7 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
                 },
                 TrainingOptions = new AiTrainingOptions
                 {
-                    ProjectIds = new List<int> { 1, 2, 3 },
+                    ProjectIds = [1, 2, 3],
                     DateFrom = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
                     DateTo = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
                     MaxFileSize = 100,
@@ -227,7 +227,7 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
                 },
                 ValidationOptions = new AiValidationOptions
                 {
-                    ProjectIds = new List<int> { 1, 2, 3 },
+                    ProjectIds = [1, 2, 3],
                     DateFrom = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
                     DateTo = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
                     MaxFileSize = 100,
@@ -368,7 +368,7 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
 
             AiFineTuningDataset.AttributesObject? attributes = dataset.Attributes;
             ArgumentNullException.ThrowIfNull(attributes);
-            Assert.Equal(new[] { 1, 2, 3 }, attributes.ProjectIds);
+            Assert.Equal([1, 2, 3], attributes.ProjectIds);
             Assert.Equal(AiDatasetPurpose.Validation, attributes.Purpose);
             Assert.Equal(date, attributes.DateFrom);
             Assert.Equal(date, attributes.DateTo);
@@ -404,7 +404,7 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
 
             AiTrainingOptions trainingOptions = attributes.TrainingOptions;
             ArgumentNullException.ThrowIfNull(trainingOptions);
-            Assert.Equal(new[] { 1, 2, 3 }, trainingOptions.ProjectIds);
+            Assert.Equal([1, 2, 3], trainingOptions.ProjectIds);
             Assert.Equal(date, trainingOptions.DateFrom);
             Assert.Equal(date, trainingOptions.DateTo);
             Assert.Equal(100, trainingOptions.MaxFileSize);
@@ -413,7 +413,7 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
 
             AiValidationOptions? validationOptions = attributes.ValidationOptions;
             ArgumentNullException.ThrowIfNull(validationOptions);
-            Assert.Equal(new[] { 1, 2, 3 }, validationOptions.ProjectIds);
+            Assert.Equal([1, 2, 3], validationOptions.ProjectIds);
             Assert.Equal(date, validationOptions.DateFrom);
             Assert.Equal(date, validationOptions.DateTo);
             Assert.Equal(100, validationOptions.MaxFileSize);

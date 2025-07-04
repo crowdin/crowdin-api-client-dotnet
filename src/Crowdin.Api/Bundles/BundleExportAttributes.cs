@@ -8,6 +8,6 @@ namespace Crowdin.Api.Bundles
     public class BundleExportAttributes
     {
         [JsonProperty("bundleId")]
-        public int BundleId { get; set; }
+        public long BundleId { get; set; }
     }
 }

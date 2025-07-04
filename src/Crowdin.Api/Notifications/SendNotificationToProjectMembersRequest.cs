@@ -10,7 +10,7 @@ namespace Crowdin.Api.Notifications
     public class SendNotificationToProjectMembersRequest
     {
         [JsonProperty("userIds")]
-        public ICollection<int> UserIds { get; set; }
+        public ICollection<long> UserIds { get; set; }
         
         [JsonProperty("role")]
         public UserRole? Role { get; set; }

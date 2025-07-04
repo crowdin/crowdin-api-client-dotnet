@@ -9,10 +9,10 @@ namespace Crowdin.Api.Branches
     public class Branch
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("projectId")]
-        public int ProjectId { get; set; }
+        public long ProjectId { get; set; }
         
         [JsonProperty("name")]
         public string Name { get; set; }

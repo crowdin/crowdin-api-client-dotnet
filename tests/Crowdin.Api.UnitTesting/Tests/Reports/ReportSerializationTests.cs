@@ -30,7 +30,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Reports
                         new CostEstimationPostEditingGenerateReportRequest.IndividualRate
                         {
                             LanguageIds = new[] { "uk", "es" },
-                            UserIds = new[] { 1, 2, 3 },
+                            UserIds = [1, 2, 3],
                             FullTranslation = 0.1f,
                             Proofread = 0.12f
                         }
@@ -49,10 +49,10 @@ namespace Crowdin.Api.UnitTesting.Tests.Reports
                     CalculateInternalMatches = false,
                     IncludePreTranslatedStrings = true,
                     LanguageId = "ach",
-                    FileIds = new[] { 138 },
-                    DirectoryIds = new[] { 11 },
-                    BranchIds = new[] { 18 },
-                    LabelIds = new[] { 13 },
+                    FileIds = [138],
+                    DirectoryIds = [11],
+                    BranchIds = [18],
+                    LabelIds = [13],
                     LabelIncludeType = ReportLabelIncludeType.StringsWithLabel
                 }
             };
@@ -81,7 +81,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Reports
                         new CostEstimationPostEditingGenerateReportRequest.IndividualRate
                         {
                             LanguageIds = new[] { "uk", "es" },
-                            UserIds = new[] { 1, 2, 3 },
+                            UserIds = [1, 2, 3],
                             FullTranslation = 0.1f,
                             Proofread = 0.12f
                         }
@@ -128,7 +128,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Reports
                         new TranslationCostsPostEditingGenerateReportRequest.IndividualRate
                         {
                             LanguageIds = new[] { "uk" },
-                            UserIds = new[] { 1 },
+                            UserIds = [1],
                             FullTranslation = 0.1f,
                             Proofread = 0.12f
                         }
@@ -172,10 +172,10 @@ namespace Crowdin.Api.UnitTesting.Tests.Reports
                     },
                     GroupBy = GroupingParameter.User,
                     LanguageId = "ach",
-                    UserIds = new[] { 13 },
-                    FileIds = new[] { 138 },
-                    DirectoryIds = new[] { 11 },
-                    BranchIds = new[] { 18 }
+                    UserIds = [13],
+                    FileIds = [138],
+                    DirectoryIds = [11],
+                    BranchIds = [18]
                 }
             };
 
@@ -206,7 +206,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Reports
                         new TranslationCostsPostEditingGenerateReportRequest.IndividualRate
                         {
                             LanguageIds = new[] { "uk" },
-                            UserIds = new[] { 1 },
+                            UserIds = [1],
                             FullTranslation = 0.1f,
                             Proofread = 0.12f
                         }
@@ -256,7 +256,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Reports
             {
                 Schema = new GroupTranslationCostsPostEditingGenerateGroupReportRequest.GeneralSchema
                 {
-                    ProjectIds = new[] { 13 },
+                    ProjectIds = [13],
                     Unit = ReportUnit.Words,
                     Currency = ReportCurrency.USD,
                     Format = ReportFormat.Xlsx,
@@ -270,7 +270,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Reports
                         new GroupTranslationCostsPostEditingGenerateGroupReportRequest.IndividualRate
                         {
                             LanguageIds = new[] { "uk" },
-                            UserIds = new[] { 1 },
+                            UserIds = [1],
                             FullTranslation = 0.1f,
                             Proofread = 0.12f
                         }
@@ -303,7 +303,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Reports
                         }
                     },
                     GroupBy = GroupingParameter.Language,
-                    UserIds = new[] { 13 }
+                    UserIds = [13]
                 }
             };
 

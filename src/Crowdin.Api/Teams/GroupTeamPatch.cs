@@ -27,7 +27,7 @@ namespace Crowdin.Api.Teams
                 };
             }
 
-            public static GroupTeamPatch CreateRemoveOperation(int teamId)
+            public static GroupTeamPatch CreateRemoveOperation(long teamId)
             {
                 return new GroupTeamPatch
                 {

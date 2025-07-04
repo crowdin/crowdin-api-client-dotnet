@@ -10,9 +10,9 @@ namespace Crowdin.Api.TranslationMemory
     [PublicAPI]
     public class TmsListParams : IQueryParamsProvider
     {
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
         
-        public int? GroupId { get; set; }
+        public long? GroupId { get; set; }
 
         public int Limit { get; set; } = 25;
         
@@ -26,8 +26,8 @@ namespace Crowdin.Api.TranslationMemory
         }
 
         public TmsListParams(
-            int? userId,
-            int? groupId,
+            long? userId,
+            long? groupId,
             int limit,
             int offset,
             IEnumerable<SortingRule>? orderBy = null)

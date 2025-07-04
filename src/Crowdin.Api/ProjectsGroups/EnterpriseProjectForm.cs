@@ -21,22 +21,22 @@ namespace Crowdin.Api.ProjectsGroups
 #pragma warning restore CS8618
         
         [JsonProperty("templateId")]
-        public int? TemplateId { get; set; }
+        public long? TemplateId { get; set; }
         
         [JsonProperty("steps")]
         public ICollection<WorkflowTemplateStepConfig>? Steps { get; set; }
         
         [JsonProperty("groupId")]
-        public int? GroupId { get; set; }
+        public long? GroupId { get; set; }
         
         [JsonProperty("targetLanguageIds")]
         public ICollection<string>? TargetLanguageIds { get; set; }
         
         [JsonProperty("vendorId")]
-        public int? VendorId { get; set; }
+        public long? VendorId { get; set; }
         
         [JsonProperty("mtEngineId")]
-        public int? MtEngineId { get; set; }
+        public long? MtEngineId { get; set; }
         
         [JsonProperty("description")]
         public string? Description { get; set; }
@@ -105,7 +105,7 @@ namespace Crowdin.Api.ProjectsGroups
         public QaCheckCategories? QaChecksIgnorableCategories { get; set; }
         
         [JsonProperty("customQaCheckIds")]
-        public ICollection<int>? CustomQaCheckIds { get; set; }
+        public ICollection<long>? CustomQaCheckIds { get; set; }
         
         [JsonProperty("tmContextType")]
         public TmContextType? TmContextType { get; set; }
@@ -120,9 +120,9 @@ namespace Crowdin.Api.ProjectsGroups
         public NotificationSettings? NotificationSettings { get; set; }
         
         [JsonProperty("defaultTmId")]
-        public int? DefaultTmId { get; set; }
+        public long? DefaultTmId { get; set; }
         
         [JsonProperty("defaultGlossaryId")]
-        public int? DefaultGlossaryId { get; set; }
+        public long? DefaultGlossaryId { get; set; }
     }
 }

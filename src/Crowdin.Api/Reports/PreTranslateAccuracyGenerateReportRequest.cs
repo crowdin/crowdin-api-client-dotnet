@@ -48,7 +48,7 @@ namespace Crowdin.Api.Reports
         public class ByTaskSchema : SchemaBase
         {
             [JsonProperty("taskId")]
-            public int? TaskId { get; set; }
+            public long? TaskId { get; set; }
         }
     }
 }

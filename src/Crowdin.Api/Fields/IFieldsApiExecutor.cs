@@ -22,10 +22,10 @@ namespace Crowdin.Api.Fields
 
         Task<Field> AddField(AddFieldRequest request);
 
-        Task<Field> GetField(int fieldId);
+        Task<Field> GetField(long fieldId);
 
-        Task DeleteField(int fieldId);
+        Task DeleteField(long fieldId);
 
-        Task<Field> EditField(int fieldId, IEnumerable<FieldPatch> patches);
+        Task<Field> EditField(long fieldId, IEnumerable<FieldPatch> patches);
     }
 }

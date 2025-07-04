@@ -15,7 +15,7 @@ namespace Crowdin.Api.ProjectsGroups
 #pragma warning restore CS8618
         
         [JsonProperty("parentId")]
-        public int? ParentId { get; set; }
+        public long? ParentId { get; set; }
         
         [JsonProperty("description")]
         public string? Description { get; set; }

@@ -37,7 +37,7 @@ namespace Crowdin.Api.Users
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<TeamMember>> ListProjectMembers(
-            int projectId,
+            long projectId,
             string? search = null,
             UserRole? role = null,
             string? languageId = null,
@@ -54,7 +54,7 @@ namespace Crowdin.Api.Users
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.members.getMany">Crowdin API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<TeamMember>> ListProjectMembers(int projectId, ProjectMembersListParams @params)
+        public async Task<ResponseList<TeamMember>> ListProjectMembers(long projectId, ProjectMembersListParams @params)
         {
             string url = FormUrl_Members(projectId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, @params.ToQueryParams());
@@ -67,10 +67,10 @@ namespace Crowdin.Api.Users
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<ProjectMember>> ListProjectMembersEnterprise(
-            int projectId,
+            long projectId,
             string? search = null,
             string? languageId = null,
-            int? workflowStepId = null,
+            long? workflowStepId = null,
             int limit = 25,
             int offset = 0)
         {
@@ -84,7 +84,7 @@ namespace Crowdin.Api.Users
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<ProjectMember>> ListProjectMembersEnterprise(
-            int projectId,
+            long projectId,
             EnterpriseProjectMembersListParams @params)
         {
             string url = FormUrl_Members(projectId);
@@ -97,7 +97,7 @@ namespace Crowdin.Api.Users
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.members.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ProjectMembersResponse> AddProjectMember(int projectId, AddProjectMemberRequest request)
+        public async Task<ProjectMembersResponse> AddProjectMember(long projectId, AddProjectMemberRequest request)
         {
             string url = FormUrl_Members(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -115,7 +115,7 @@ namespace Crowdin.Api.Users
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.members.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ProjectMember> GetProjectMemberPermissions(int projectId, int memberId)
+        public async Task<ProjectMember> GetProjectMemberPermissions(long projectId, long memberId)
         {
             string url = FormUrl_MemberId(projectId, memberId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -128,8 +128,8 @@ namespace Crowdin.Api.Users
         /// </summary>
         [PublicAPI]
         public async Task<ProjectMember> ReplaceProjectMemberPermissions(
-            int projectId,
-            int memberId,
+            long projectId,
+            long memberId,
             ReplaceProjectMemberPermissionsRequest request)
         {
             string url = FormUrl_MemberId(projectId, memberId);
@@ -142,7 +142,7 @@ namespace Crowdin.Api.Users
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.members.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteMemberFromProject(int projectId, int memberId)
+        public async Task DeleteMemberFromProject(long projectId, long memberId)
         {
             string url = FormUrl_MemberId(projectId, memberId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -162,11 +162,11 @@ namespace Crowdin.Api.Users
             int offset = 0,
             IEnumerable<SortingRule>? orderBy = null,
             IEnumerable<OrganizationRole>? organizationRoles = null,
-            int? teamId = null,
-            IEnumerable<int>? projectIds = null,
+            long? teamId = null,
+            IEnumerable<long>? projectIds = null,
             IEnumerable<ProjectRole>? projectRoles = null,
             IEnumerable<string>? languageIds = null,
-            IEnumerable<int>? groupIds = null,
+            IEnumerable<long>? groupIds = null,
             DateTimeOffset? lastSeenFrom = null,
             DateTimeOffset? lastSeenTo = null)
         {
@@ -216,7 +216,7 @@ namespace Crowdin.Api.Users
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.users.getById">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<UserEnterprise> GetUser(int userId)
+        public async Task<UserEnterprise> GetUser(long userId)
         {
             var url = $"/users/{userId}";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -228,7 +228,7 @@ namespace Crowdin.Api.Users
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.users.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteUser(int userId)
+        public async Task DeleteUser(long userId)
         {
             string url = FormUrl_UserId(userId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -240,7 +240,7 @@ namespace Crowdin.Api.Users
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.users.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<UserEnterprise> EditUser(int userId, IEnumerable<EnterpriseUserPatch> patches)
+        public async Task<UserEnterprise> EditUser(long userId, IEnumerable<EnterpriseUserPatch> patches)
         {
             string url = FormUrl_UserId(userId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -265,7 +265,7 @@ namespace Crowdin.Api.Users
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.members.get">Crowdin API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<TeamMember> GetMemberInfo(int projectId, int memberId)
+        public async Task<TeamMember> GetMemberInfo(long projectId, long memberId)
         {
             string url = FormUrl_MemberId(projectId, memberId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -274,17 +274,17 @@ namespace Crowdin.Api.Users
 
         #region Helper methods
 
-        private static string FormUrl_Members(int projectId)
+        private static string FormUrl_Members(long projectId)
         {
             return $"/projects/{projectId}/members";
         }
         
-        private static string FormUrl_MemberId(int projectId, int memberId)
+        private static string FormUrl_MemberId(long projectId, long memberId)
         {
             return $"/projects/{projectId}/members/{memberId}";
         }
 
-        private static string FormUrl_UserId(int userId)
+        private static string FormUrl_UserId(long userId)
         {
             return $"/users/{userId}";
         }
@@ -299,8 +299,8 @@ namespace Crowdin.Api.Users
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<GroupManager>> ListGroupManagers(
-            int groupId,
-            IEnumerable<int>? teamIds = null,
+            long groupId,
+            IEnumerable<long>? teamIds = null,
             IEnumerable<SortingRule>? orderBy = null)
         {
             string url = FormUrl_GroupManagers(groupId);
@@ -319,7 +319,7 @@ namespace Crowdin.Api.Users
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<GroupManager>> UpdateGroupManagers(
-            int groupId,
+            long groupId,
             IEnumerable<GroupManagerPatch> patches)
         {
             string url = FormUrl_GroupManagers(groupId);
@@ -332,7 +332,7 @@ namespace Crowdin.Api.Users
         /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Users/operation/api.groups.managers.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<GroupManager> GetGroupManager(int groupId, int userId)
+        public async Task<GroupManager> GetGroupManager(long groupId, long userId)
         {
             string url = FormUrl_GroupManagerId(groupId, userId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -341,12 +341,12 @@ namespace Crowdin.Api.Users
 
         #region Helper methods
 
-        private static string FormUrl_GroupManagers(int groupId)
+        private static string FormUrl_GroupManagers(long groupId)
         {
             return $"/groups/{groupId}/managers";
         }
         
-        private static string FormUrl_GroupManagerId(int groupId, int userId)
+        private static string FormUrl_GroupManagerId(long groupId, long userId)
         {
             return $"/groups/{groupId}/managers/{userId}";
         }

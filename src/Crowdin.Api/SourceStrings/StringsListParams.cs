@@ -15,13 +15,13 @@ namespace Crowdin.Api.SourceStrings
         
         public string? LabelIds { get; set; }
         
-        public int? FileId { get; set; }
+        public long? FileId { get; set; }
         
-        public int? BranchId { get; set; }
+        public long? BranchId { get; set; }
         
-        public int? DirectoryId { get; set; }
+        public long? DirectoryId { get; set; }
         
-        public int? TaskId { get; set; }
+        public long? TaskId { get; set; }
         
         // ReSharper disable once InconsistentNaming
         public string? CroQL { get; set; }
@@ -44,10 +44,10 @@ namespace Crowdin.Api.SourceStrings
         public StringsListParams(
             int? denormalizePlaceholders,
             string? labelIds,
-            int? fileId,
-            int? branchId,
-            int? directoryId,
-            int? taskId,
+            long? fileId,
+            long? branchId,
+            long? directoryId,
+            long? taskId,
             string? croql,
             string? filter,
             StringScope? scope,

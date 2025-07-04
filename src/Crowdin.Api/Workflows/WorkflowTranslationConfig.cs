@@ -9,6 +9,6 @@ namespace Crowdin.Api.Workflows
     public class WorkflowTranslationConfig : WorkflowConfig
     {
         [JsonProperty("assignees")]
-        public IDictionary<string, int[]> Assignees { get; set; }
+        public IDictionary<string, long[]> Assignees { get; set; }
     }
 }

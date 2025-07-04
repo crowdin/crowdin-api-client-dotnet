@@ -16,13 +16,13 @@ namespace Crowdin.Api.Tasks
     public class TaskResource
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("projectId")]
-        public int ProjectId { get; set; }
+        public long ProjectId { get; set; }
         
         [JsonProperty("creatorId")]
-        public int CreatorId { get; set; }
+        public long CreatorId { get; set; }
         
         [JsonProperty("type")]
         public int Type { get; set; }
@@ -31,7 +31,7 @@ namespace Crowdin.Api.Tasks
         public TaskStatus Status { get; set; }
         
         [JsonProperty("batchId")]
-        public int BatchId { get; set; }
+        public long BatchId { get; set; }
         
         [JsonProperty("wordsCount")]
         public int WordsCount { get; set; }
@@ -58,10 +58,10 @@ namespace Crowdin.Api.Tasks
         public DateTimeOffset ResolvedAt { get; set; }
         
         [JsonProperty("workflowStepId")]
-        public int WorkFlowStepId { get; set; }
+        public long WorkFlowStepId { get; set; }
         
         [JsonProperty("precedingTaskId")]
-        public int PrecedingTaskId { get; set; }
+        public long PrecedingTaskId { get; set; }
 
 #pragma warning disable CS8618
         [JsonProperty("vendor")]
@@ -77,7 +77,7 @@ namespace Crowdin.Api.Tasks
         public TaskAssignedTeam[] AssignedTeams { get; set; }
 
         [JsonProperty("fileIds")]
-        public int[] FileIds { get; set; }
+        public long[] FileIds { get; set; }
 
         [JsonProperty("progress")]
         public TaskProgress Progress { get; set; }
@@ -105,10 +105,10 @@ namespace Crowdin.Api.Tasks
         public Language[] TargetLanguages { get; set; }
         
         [JsonProperty("labelIds")]
-        public int[] LabelIds { get; set; }
+        public long[] LabelIds { get; set; }
         
         [JsonProperty("excludeLabelIds")]
-        public int[] ExcludeLabelIds { get; set; }
+        public long[] ExcludeLabelIds { get; set; }
         
         [JsonProperty("timeRange")]
         public string TimeRange { get; set; }

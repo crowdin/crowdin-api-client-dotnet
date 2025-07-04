@@ -14,11 +14,11 @@ namespace Crowdin.Api.StringTranslations
         
         public string? LabelIds { get; set; }
         
-        public int? FileId { get; set; }
+        public long? FileId { get; set; }
         
-        public int? BranchId { get; set; }
+        public long? BranchId { get; set; }
         
-        public int? DirectoryId { get; set; }
+        public long? DirectoryId { get; set; }
         
         // ReSharper disable once InconsistentNaming
         public string? CroQL { get; set; }
@@ -39,9 +39,9 @@ namespace Crowdin.Api.StringTranslations
         public LanguageTranslationsListParams(
             string? stringIds,
             string? labelIds,
-            int? fileId,
-            int? branchId,
-            int? directoryId,
+            long? fileId,
+            long? branchId,
+            long? directoryId,
             string? croQl,
             bool? denormalizePlaceholders,
             int limit,

@@ -15,7 +15,7 @@ namespace Crowdin.Api.StringComments
         
         public int Offset { get; set; }
         
-        public int? StringId { get; set; }
+        public long? StringId { get; set; }
         
         public StringCommentType? Type { get; set; }
 
@@ -33,7 +33,7 @@ namespace Crowdin.Api.StringComments
         public StringCommentsListParams(
             int limit,
             int offset,
-            int? stringId,
+            long? stringId,
             StringCommentType? type,
             ISet<IssueType>? issueTypes,
             IssueStatus? issueStatus,

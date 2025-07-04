@@ -32,7 +32,7 @@ namespace Crowdin.Api.Distributions
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.distributions.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<Distribution>> ListDistributions(int projectId, int limit = 25, int offset = 0)
+        public async Task<ResponseList<Distribution>> ListDistributions(long projectId, int limit = 25, int offset = 0)
         {
             string url = FormUrl_Distributions(projectId);
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
@@ -47,7 +47,7 @@ namespace Crowdin.Api.Distributions
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.distributions.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Distribution> AddDistribution(int projectId, AddDistributionRequest request)
+        public async Task<Distribution> AddDistribution(long projectId, AddDistributionRequest request)
         {
             string url = FormUrl_Distributions(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -59,7 +59,7 @@ namespace Crowdin.Api.Distributions
         /// <a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.distributions.post">Crowdin String Based API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Distribution> AddDistributionStringBased(int projectId, AddDistributionStringBasedRequest request)
+        public async Task<Distribution> AddDistributionStringBased(long projectId, AddDistributionStringBasedRequest request)
         {
             string url = FormUrl_Distributions(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -72,7 +72,7 @@ namespace Crowdin.Api.Distributions
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.distributions.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Distribution> GetDistribution(int projectId, string hash)
+        public async Task<Distribution> GetDistribution(long projectId, string hash)
         {
             string url = FormUrl_Distribution(projectId, hash);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -85,7 +85,7 @@ namespace Crowdin.Api.Distributions
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.distributions.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteDistribution(int projectId, string hash)
+        public async Task DeleteDistribution(long projectId, string hash)
         {
             string url = FormUrl_Distribution(projectId, hash);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -98,7 +98,7 @@ namespace Crowdin.Api.Distributions
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.distributions.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Distribution> EditDistribution(int projectId, string hash, IEnumerable<DistributionPatch> patches)
+        public async Task<Distribution> EditDistribution(long projectId, string hash, IEnumerable<DistributionPatch> patches)
         {
             string url = FormUrl_Distribution(projectId, hash);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -111,7 +111,7 @@ namespace Crowdin.Api.Distributions
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.distributions.release.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<DistributionRelease> GetDistributionRelease(int projectId, string hash)
+        public async Task<DistributionRelease> GetDistributionRelease(long projectId, string hash)
         {
             string url = FormUrl_DistributionRelease(projectId, hash);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -123,7 +123,7 @@ namespace Crowdin.Api.Distributions
         /// <a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.distributions.release.get">Crowdin String Based API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<DistributionStringBasedRelease> GetDistributionReleaseStringBased(int projectId, string hash)
+        public async Task<DistributionStringBasedRelease> GetDistributionReleaseStringBased(long projectId, string hash)
         {
             string url = FormUrl_DistributionRelease(projectId, hash);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -136,7 +136,7 @@ namespace Crowdin.Api.Distributions
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.distributions.release.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<DistributionRelease> ReleaseDistribution(int projectId, string hash)
+        public async Task<DistributionRelease> ReleaseDistribution(long projectId, string hash)
         {
             string url = FormUrl_DistributionRelease(projectId, hash);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url);
@@ -147,7 +147,7 @@ namespace Crowdin.Api.Distributions
         /// <a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.distributions.release.post">Crowdin String Based API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<DistributionStringBasedRelease> StringBasedReleaseDistribution(int projectId, string hash)
+        public async Task<DistributionStringBasedRelease> StringBasedReleaseDistribution(long projectId, string hash)
         {
             string url = FormUrl_DistributionRelease(projectId, hash);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url);
@@ -156,17 +156,17 @@ namespace Crowdin.Api.Distributions
 
         #region Helper methods
 
-        private static string FormUrl_Distributions(int projectId)
+        private static string FormUrl_Distributions(long projectId)
         {
             return $"/projects/{projectId}/distributions";
         }
 
-        private static string FormUrl_Distribution(int projectId, string hash)
+        private static string FormUrl_Distribution(long projectId, string hash)
         {
             return $"/projects/{projectId}/distributions/{hash}";
         }
 
-        private static string FormUrl_DistributionRelease(int projectId, string hash)
+        private static string FormUrl_DistributionRelease(long projectId, string hash)
         {
             return $"/projects/{projectId}/distributions/{hash}/release";
         }

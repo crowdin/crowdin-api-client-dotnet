@@ -11,24 +11,24 @@ namespace Crowdin.Api.Bundles
     [PublicAPI]
     public interface IBundlesApiExecutor
     {
-        Task<ResponseList<Bundle>> ListBundles(int projectId, int limit = 25, int offset = 0);
+        Task<ResponseList<Bundle>> ListBundles(long projectId, int limit = 25, int offset = 0);
 
-        Task<ResponseList<Branch>> ListBundleBranches(int projectId, int bundleId, int limit = 25, int offset = 0);
+        Task<ResponseList<Branch>> ListBundleBranches(long projectId, long bundleId, int limit = 25, int offset = 0);
 
-        Task<Bundle> AddBundle(int projectId, AddBundleRequest request);
+        Task<Bundle> AddBundle(long projectId, AddBundleRequest request);
 
-        Task<Bundle> GetBundle(int projectId, int bundleId);
+        Task<Bundle> GetBundle(long projectId, long bundleId);
 
-        Task DeleteBundle(int projectId, int bundleId);
+        Task DeleteBundle(long projectId, long bundleId);
 
-        Task<Bundle> EditBundle(int projectId, int bundleId, IEnumerable<BundlePatch> patches);
+        Task<Bundle> EditBundle(long projectId, long bundleId, IEnumerable<BundlePatch> patches);
 
-        Task<DownloadLink> DownloadBundle(int projectId, int bundleId, string exportId);
+        Task<DownloadLink> DownloadBundle(long projectId, long bundleId, string exportId);
 
-        Task<BundleExport> ExportBundle(int projectId, int bundleId);
+        Task<BundleExport> ExportBundle(long projectId, long bundleId);
 
-        Task<BundleExport> CheckBundleExportStatus(int projectId, int bundleId, string exportId);
+        Task<BundleExport> CheckBundleExportStatus(long projectId, long bundleId, string exportId);
 
-        Task<ResponseList<T>> BundleListFiles<T>(int projectId, int bundleId, int limit = 25, int offset = 0) where T : FileResourceBase;
+        Task<ResponseList<T>> BundleListFiles<T>(long projectId, long bundleId, int limit = 25, int offset = 0) where T : FileResourceBase;
     }
 }

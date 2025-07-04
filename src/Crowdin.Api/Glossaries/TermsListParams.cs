@@ -14,13 +14,13 @@ namespace Crowdin.Api.Glossaries
         
         public int Offset { get; set; }
         
-        public int? UserId { get; set; }
+        public long? UserId { get; set; }
         
         public string? LanguageId { get; set; }
         
-        public int? TranslationOfTermId { get; set; }
+        public long? TranslationOfTermId { get; set; }
         
-        public int? ConceptId { get; set; }
+        public long? ConceptId { get; set; }
         
         // ReSharper disable once InconsistentNaming
         public string? CroQL { get; set; }
@@ -35,10 +35,10 @@ namespace Crowdin.Api.Glossaries
         public TermsListParams(
             int limit,
             int offset,
-            int? userId,
+            long? userId,
             string? languageId,
-            int? translationOfTermId,
-            int? conceptId,
+            long? translationOfTermId,
+            long? conceptId,
             string? croql,
             IEnumerable<SortingRule>? orderBy)
         {

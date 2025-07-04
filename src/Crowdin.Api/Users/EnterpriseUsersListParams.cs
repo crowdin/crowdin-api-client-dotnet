@@ -19,15 +19,15 @@ namespace Crowdin.Api.Users
         
         public string? Search { get; set; }
         
-        public int? TeamId { get; set; }
+        public long? TeamId { get; set; }
         
         public UserStatus? Status { get; set; }
         
         public UserTwoFactorStatus? TwoFactor { get; set; }
         
-        public IEnumerable<int>? GroupIds { get; set; }
+        public IEnumerable<long>? GroupIds { get; set; }
         
-        public IEnumerable<int>? ProjectIds { get; set; }
+        public IEnumerable<long>? ProjectIds { get; set; }
         
         public IEnumerable<string>? LanguageIds { get; set; }
         

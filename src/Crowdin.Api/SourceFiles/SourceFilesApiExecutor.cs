@@ -40,7 +40,7 @@ namespace Crowdin.Api.SourceFiles
         [PublicAPI]
         [Obsolete(MessageTexts.UseBranchesNamespace)]
         public async Task<ResponseList<Branch>> ListBranches(
-            int projectId, string? name = null, int limit = 25, int offset = 0)
+            long projectId, string? name = null, int limit = 25, int offset = 0)
         {
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
             queryParams.AddParamIfPresent("name", name);
@@ -57,7 +57,7 @@ namespace Crowdin.Api.SourceFiles
         /// </summary>
         [PublicAPI]
         [Obsolete(MessageTexts.UseBranchesNamespace)]
-        public async Task<Branch> AddBranch(int projectId, AddBranchRequest request)
+        public async Task<Branch> AddBranch(long projectId, AddBranchRequest request)
         {
             string url = FormUrl_ProjectBranches(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -71,7 +71,7 @@ namespace Crowdin.Api.SourceFiles
         /// </summary>
         [PublicAPI]
         [Obsolete(MessageTexts.UseBranchesNamespace)]
-        public async Task<Branch> GetBranch(int projectId, int branchId)
+        public async Task<Branch> GetBranch(long projectId, long branchId)
         {
             string url = FormUrl_ProjectIdBranchId(projectId, branchId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -85,7 +85,7 @@ namespace Crowdin.Api.SourceFiles
         /// </summary>
         [PublicAPI]
         [Obsolete(MessageTexts.UseBranchesNamespace)]
-        public async Task DeleteBranch(int projectId, int branchId)
+        public async Task DeleteBranch(long projectId, long branchId)
         {
             string url = FormUrl_ProjectIdBranchId(projectId, branchId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -99,7 +99,7 @@ namespace Crowdin.Api.SourceFiles
         /// </summary>
         [PublicAPI]
         [Obsolete(MessageTexts.UseBranchesNamespace)]
-        public async Task<Branch> EditBranch(int projectId, int branchId, IEnumerable<BranchPatch> patches)
+        public async Task<Branch> EditBranch(long projectId, long branchId, IEnumerable<BranchPatch> patches)
         {
             string url = FormUrl_ProjectIdBranchId(projectId, branchId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -108,12 +108,12 @@ namespace Crowdin.Api.SourceFiles
         
         #region Helper methods
 
-        private static string FormUrl_ProjectBranches(int projectId)
+        private static string FormUrl_ProjectBranches(long projectId)
         {
             return $"/projects/{projectId}/branches";
         }
 
-        private static string FormUrl_ProjectIdBranchId(int projectId, int branchId)
+        private static string FormUrl_ProjectIdBranchId(long projectId, long branchId)
         {
             return $"/projects/{projectId}/branches/{branchId}";
         }
@@ -131,8 +131,8 @@ namespace Crowdin.Api.SourceFiles
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<Directory>> ListDirectories(
-            int projectId, int limit = 25, int offset = 0,
-            int? branchId = null, int? directoryId = null,
+            long projectId, int limit = 25, int offset = 0,
+            long? branchId = null, long? directoryId = null,
             string? filter = null, object? recursion = null,
             IEnumerable<SortingRule>? orderBy = null)
         {
@@ -146,7 +146,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.directories.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<Directory>> ListDirectories(int projectId, DirectoriesListParams @params)
+        public async Task<ResponseList<Directory>> ListDirectories(long projectId, DirectoriesListParams @params)
         {
             string url = FormUrl_ProjectDirectories(projectId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, @params.ToQueryParams());
@@ -159,7 +159,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.directories.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Directory> AddDirectory(int projectId, AddDirectoryRequest request)
+        public async Task<Directory> AddDirectory(long projectId, AddDirectoryRequest request)
         {
             string url = FormUrl_ProjectDirectories(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -172,7 +172,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.directories.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Directory> GetDirectory(int projectId, int directoryId)
+        public async Task<Directory> GetDirectory(long projectId, long directoryId)
         {
             string url = FormUrl_ProjectIdDirectoryId(projectId, directoryId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -185,7 +185,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.directories.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteDirectory(int projectId, int directoryId)
+        public async Task DeleteDirectory(long projectId, long directoryId)
         {
             string url = FormUrl_ProjectIdDirectoryId(projectId, directoryId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -198,7 +198,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.directories.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Directory> EditDirectory(int projectId, int directoryId, IEnumerable<DirectoryPatch> patches)
+        public async Task<Directory> EditDirectory(long projectId, long directoryId, IEnumerable<DirectoryPatch> patches)
         {
             string url = FormUrl_ProjectIdDirectoryId(projectId, directoryId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -207,12 +207,12 @@ namespace Crowdin.Api.SourceFiles
 
         #region Helper methods
 
-        private static string FormUrl_ProjectDirectories(int projectId)
+        private static string FormUrl_ProjectDirectories(long projectId)
         {
             return $"/projects/{projectId}/directories";
         }
 
-        private static string FormUrl_ProjectIdDirectoryId(int projectId, int directoryId)
+        private static string FormUrl_ProjectIdDirectoryId(long projectId, long directoryId)
         {
             return $"/projects/{projectId}/directories/{directoryId}";
         }
@@ -229,9 +229,9 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public Task<ResponseList<T>> ListFiles<T>(int projectId,
+        public Task<ResponseList<T>> ListFiles<T>(long projectId,
             int limit = 25, int offset = 0,
-            int? branchId = null, int? directoryId = null,
+            long? branchId = null, long? directoryId = null,
             string? filter = null, object? recursion = null,
             IEnumerable<SortingRule>? orderBy = null)
                 where T : FileResourceBase // FileInfoCollectionResource, FileCollectionResource
@@ -246,7 +246,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<T>> ListFiles<T>(int projectId, FilesListParams @params)
+        public async Task<ResponseList<T>> ListFiles<T>(long projectId, FilesListParams @params)
             where T : FileResourceBase // FileInfoCollectionResource, FileCollectionResource
         {
             string url = FormUrl_ProjectFiles(projectId);
@@ -260,7 +260,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<File> AddFile(int projectId, AddFileRequest request)
+        public async Task<File> AddFile(long projectId, AddFileRequest request)
         {
             string url = FormUrl_ProjectFiles(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -273,7 +273,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<TResponse> GetFile<TResponse>(int projectId, int fileId)
+        public async Task<TResponse> GetFile<TResponse>(long projectId, long fileId)
             where TResponse : FileInfoResource // FileInfoResource, FileResource
         {
             string url = FormUrl_ProjectIdFileId(projectId, fileId);
@@ -288,7 +288,7 @@ namespace Crowdin.Api.SourceFiles
         /// </summary>
         [PublicAPI]
         public async Task<(File File, bool? IsModified)>
-            UpdateOrRestoreFile(int projectId, int fileId, UpdateOrRestoreFileRequest request)
+            UpdateOrRestoreFile(long projectId, long fileId, UpdateOrRestoreFileRequest request)
         {
             string url = FormUrl_ProjectIdFileId(projectId, fileId);
             CrowdinApiResult result = await _apiClient.SendPutRequest(url, request);
@@ -318,7 +318,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteFile(int projectId, int fileId)
+        public async Task DeleteFile(long projectId, long fileId)
         {
             string url = FormUrl_ProjectIdFileId(projectId, fileId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -331,7 +331,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<File> EditFile(int projectId, int fileId, IEnumerable<FilePatch> patches)
+        public async Task<File> EditFile(long projectId, long fileId, IEnumerable<FilePatch> patches)
         {
             string url = FormUrl_ProjectIdFileId(projectId, fileId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -344,7 +344,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.download.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<DownloadLink> DownloadFile(int projectId, int fileId)
+        public async Task<DownloadLink> DownloadFile(long projectId, long fileId)
         {
             var url = $"/projects/{projectId}/files/{fileId}/download";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -357,7 +357,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.files.preview.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<DownloadLink> DownloadFilePreview(int projectId, int fileId)
+        public async Task<DownloadLink> DownloadFilePreview(long projectId, long fileId)
         {
             var url = $"/projects/{projectId}/files/{fileId}/preview";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -371,7 +371,7 @@ namespace Crowdin.Api.SourceFiles
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<RevisionResource>> ListFileRevisions(
-            int projectId, int fileId, int limit = 25, int offset = 0)
+            long projectId, long fileId, int limit = 25, int offset = 0)
         {
             var url = $"/projects/{projectId}/files/{fileId}/revisions";
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
@@ -386,7 +386,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.revisions.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<RevisionResource> GetFileRevision(int projectId, int fileId, int revisionId)
+        public async Task<RevisionResource> GetFileRevision(long projectId, long fileId, long revisionId)
         {
             var url = $"/projects/{projectId}/files/{fileId}/revisions/{revisionId}";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -395,12 +395,12 @@ namespace Crowdin.Api.SourceFiles
 
         #region Helper methods
 
-        private static string FormUrl_ProjectFiles(int projectId)
+        private static string FormUrl_ProjectFiles(long projectId)
         {
             return $"/projects/{projectId}/files";
         }
 
-        private static string FormUrl_ProjectIdFileId(int projectId, int fileId)
+        private static string FormUrl_ProjectIdFileId(long projectId, long fileId)
         {
             return $"/projects/{projectId}/files/{fileId}";
         }
@@ -417,8 +417,8 @@ namespace Crowdin.Api.SourceFiles
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<ReviewedStringBuild>> ListReviewedSourceFilesBuilds(
-            int projectId,
-            int? branchId,
+            long projectId,
+            long? branchId,
             int limit = 25,
             int offset = 0)
         {
@@ -435,7 +435,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.reviewed-builds.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ReviewedStringBuild> BuildReviewedSourceFiles(int projectId, BuildReviewedSourceFilesRequest request)
+        public async Task<ReviewedStringBuild> BuildReviewedSourceFiles(long projectId, BuildReviewedSourceFilesRequest request)
         {
             var url = $"/projects/{projectId}/strings/reviewed-builds";
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -447,7 +447,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.reviewed-builds.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ReviewedStringBuild> CheckReviewedSourceFilesBuildStatus(int projectId, int buildId)
+        public async Task<ReviewedStringBuild> CheckReviewedSourceFilesBuildStatus(long projectId, long buildId)
         {
             var url = $"/projects/{projectId}/strings/reviewed-builds/{buildId}";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -459,7 +459,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.reviewed-builds.download.download">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<DownloadLink> DownloadReviewedSourceFiles(int projectId, int buildId)
+        public async Task<DownloadLink> DownloadReviewedSourceFiles(long projectId, long buildId)
         {
             var url = $"/projects/{projectId}/strings/reviewed-builds/{buildId}/download";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);

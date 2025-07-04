@@ -8,7 +8,7 @@ namespace Crowdin.Api.Workflows
     public class WorkflowTemplate
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("title")]
         public string Title { get; set; }
@@ -17,7 +17,7 @@ namespace Crowdin.Api.Workflows
         public string Description { get; set; }
         
         [JsonProperty("groupId")]
-        public int GroupId { get; set; }
+        public long GroupId { get; set; }
         
         [JsonProperty("isDefault")]
         public bool IsDefault { get; set; }

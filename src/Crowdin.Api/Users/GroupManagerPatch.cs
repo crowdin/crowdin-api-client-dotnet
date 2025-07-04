@@ -27,7 +27,7 @@ namespace Crowdin.Api.Users
                 };
             }
 
-            public static GroupManagerPatch CreateRemoveOperation(int userId)
+            public static GroupManagerPatch CreateRemoveOperation(long userId)
             {
                 return new GroupManagerPatch
                 {

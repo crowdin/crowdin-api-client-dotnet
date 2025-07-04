@@ -34,7 +34,7 @@ namespace Crowdin.Api.Bundles
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.bundles.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<Bundle>> ListBundles(int projectId, int limit = 25, int offset = 0)
+        public async Task<ResponseList<Bundle>> ListBundles(long projectId, int limit = 25, int offset = 0)
         {
             string url = FormUrl_Bundles(projectId);
 
@@ -49,7 +49,7 @@ namespace Crowdin.Api.Bundles
         /// <a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.bundles.branches.getMany">Crowdin String Based API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<Branch>> ListBundleBranches(int projectId, int bundleId, int limit = 25, int offset = 0)
+        public async Task<ResponseList<Branch>> ListBundleBranches(long projectId, long bundleId, int limit = 25, int offset = 0)
         {
             string url = FormUrl_BundleId(projectId, bundleId) + "/branches";
 
@@ -65,7 +65,7 @@ namespace Crowdin.Api.Bundles
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.bundles.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Bundle> AddBundle(int projectId, AddBundleRequest request)
+        public async Task<Bundle> AddBundle(long projectId, AddBundleRequest request)
         {
             string url = FormUrl_Bundles(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -78,7 +78,7 @@ namespace Crowdin.Api.Bundles
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.bundles.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Bundle> GetBundle(int projectId, int bundleId)
+        public async Task<Bundle> GetBundle(long projectId, long bundleId)
         {
             string url = FormUrl_BundleId(projectId, bundleId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -91,7 +91,7 @@ namespace Crowdin.Api.Bundles
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.bundles.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteBundle(int projectId, int bundleId)
+        public async Task DeleteBundle(long projectId, long bundleId)
         {
             string url = FormUrl_BundleId(projectId, bundleId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -104,7 +104,7 @@ namespace Crowdin.Api.Bundles
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.bundles.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Bundle> EditBundle(int projectId, int bundleId, IEnumerable<BundlePatch> patches)
+        public async Task<Bundle> EditBundle(long projectId, long bundleId, IEnumerable<BundlePatch> patches)
         {
             string url = FormUrl_BundleId(projectId, bundleId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -117,7 +117,7 @@ namespace Crowdin.Api.Bundles
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.bundles.exports.download.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<DownloadLink> DownloadBundle(int projectId, int bundleId, string exportId)
+        public async Task<DownloadLink> DownloadBundle(long projectId, long bundleId, string exportId)
         {
             string url = FormUrl_BundleExportId(projectId, bundleId, exportId) + "/download";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -130,7 +130,7 @@ namespace Crowdin.Api.Bundles
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.bundles.exports.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<BundleExport> ExportBundle(int projectId, int bundleId)
+        public async Task<BundleExport> ExportBundle(long projectId, long bundleId)
         {
             string url = FormUrl_BundleExports(projectId, bundleId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url);
@@ -143,7 +143,7 @@ namespace Crowdin.Api.Bundles
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.bundles.exports.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<BundleExport> CheckBundleExportStatus(int projectId, int bundleId, string exportId)
+        public async Task<BundleExport> CheckBundleExportStatus(long projectId, long bundleId, string exportId)
         {
             string url = FormUrl_BundleExportId(projectId, bundleId, exportId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -157,7 +157,7 @@ namespace Crowdin.Api.Bundles
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<T>> BundleListFiles<T>(
-            int projectId, int bundleId, int limit = 25, int offset = 0)
+            long projectId, long bundleId, int limit = 25, int offset = 0)
             where T : FileResourceBase
         {
             string url = FormUrl_BundleFiles(projectId, bundleId);
@@ -169,27 +169,27 @@ namespace Crowdin.Api.Bundles
 
         #region Helper methods
 
-        private static string FormUrl_Bundles(int projectId)
+        private static string FormUrl_Bundles(long projectId)
         {
             return $"/projects/{projectId}/bundles";
         }
 
-        private static string FormUrl_BundleId(int projectId, int bundleId)
+        private static string FormUrl_BundleId(long projectId, long bundleId)
         {
             return $"/projects/{projectId}/bundles/{bundleId}";
         }
 
-        private static string FormUrl_BundleFiles(int projectId, int bundleId)
+        private static string FormUrl_BundleFiles(long projectId, long bundleId)
         {
             return $"/projects/{projectId}/bundles/{bundleId}/files";
         }
 
-        private static string FormUrl_BundleExports(int projectId, int bundleId)
+        private static string FormUrl_BundleExports(long projectId, long bundleId)
         {
             return $"/projects/{projectId}/bundles/{bundleId}/exports";
         }
 
-        private static string FormUrl_BundleExportId(int projectId, int bundleId, string exportId)
+        private static string FormUrl_BundleExportId(long projectId, long bundleId, string exportId)
         {
             return $"/projects/{projectId}/bundles/{bundleId}/exports/{exportId}";
         }

@@ -35,10 +35,10 @@ namespace Crowdin.Api.StringComments
         /// </summary>
         [PublicAPI]
         public Task ListStringComments(
-            int projectId,
+            long projectId,
             int limit = 25,
             int offset = 0,
-            int? stringId = null,
+            long? stringId = null,
             StringCommentType? type = null,
             ISet<IssueType>? issueTypes = null,
             IssueStatus? issueStatus = null,
@@ -55,7 +55,7 @@ namespace Crowdin.Api.StringComments
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<StringComment>> ListStringComments(
-            int projectId,
+            long projectId,
             StringCommentsListParams @params)
         {
             string url = FormUrl_Comments(projectId);
@@ -69,7 +69,7 @@ namespace Crowdin.Api.StringComments
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.comments.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<StringComment> AddStringComment(int projectId, AddStringCommentRequest request)
+        public async Task<StringComment> AddStringComment(long projectId, AddStringCommentRequest request)
         {
             string url = FormUrl_Comments(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -83,7 +83,7 @@ namespace Crowdin.Api.StringComments
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<StringComment>> StringCommentBatchOperations(
-            int projectId,
+            long projectId,
             IEnumerable<StringCommentBatchOpPatch> patches)
         {
             string url = FormUrl_Comments(projectId);
@@ -97,7 +97,7 @@ namespace Crowdin.Api.StringComments
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.comments.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<StringComment> GetStringComment(int projectId, int stringCommentId)
+        public async Task<StringComment> GetStringComment(long projectId, long stringCommentId)
         {
             string url = FormUrl_CommentId(projectId, stringCommentId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -110,7 +110,7 @@ namespace Crowdin.Api.StringComments
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.comments.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteStringComment(int projectId, int stringCommentId)
+        public async Task DeleteStringComment(long projectId, long stringCommentId)
         {
             string url = FormUrl_CommentId(projectId, stringCommentId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -124,8 +124,8 @@ namespace Crowdin.Api.StringComments
         /// </summary>
         [PublicAPI]
         public async Task<StringComment> EditStringComment(
-            int projectId,
-            int stringCommentId,
+            long projectId,
+            long stringCommentId,
             IEnumerable<StringCommentPatch> patches)
         {
             string url = FormUrl_CommentId(projectId, stringCommentId);
@@ -135,12 +135,12 @@ namespace Crowdin.Api.StringComments
 
         #region Helper methods
 
-        private static string FormUrl_Comments(int projectId)
+        private static string FormUrl_Comments(long projectId)
         {
             return $"/projects/{projectId}/comments";
         }
 
-        private static string FormUrl_CommentId(int projectId, int stringCommentId)
+        private static string FormUrl_CommentId(long projectId, long stringCommentId)
         {
             return $"/projects/{projectId}/comments/{stringCommentId}";
         }

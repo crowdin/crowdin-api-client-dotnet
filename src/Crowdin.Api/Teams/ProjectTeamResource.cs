@@ -10,7 +10,7 @@ namespace Crowdin.Api.Teams
     public class ProjectTeamResource
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("hasManagerAccess")]
         public bool HasManagerAccess { get; set; }

@@ -9,7 +9,7 @@ namespace Crowdin.Api.Reports
     public class UserReportSettingsTemplate
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("name")]
         public string Name { get; set; }
@@ -48,7 +48,7 @@ namespace Crowdin.Api.Reports
                 public string[] LanguageIds { get; set; }
             
                 [JsonProperty("userIds")]
-                public int[] UserIds { get; set; }
+                public long[] UserIds { get; set; }
             
                 [JsonProperty("fullTranslation")]
                 public float FullTranslation { get; set; }

@@ -14,19 +14,19 @@ namespace Crowdin.Api.Translations
         public ICollection<string> LanguageIds { get; set; } = new List<string>();
 
         [JsonProperty("branchIds")]
-        public ICollection<int>? BranchIds { get; set; }
+        public ICollection<long>? BranchIds { get; set; }
         
         [JsonProperty("fileIds")]
-        public ICollection<int>? FileIds { get; set; }
+        public ICollection<long>? FileIds { get; set; }
         
         [JsonProperty("method")]
         public PreTranslationMethod? Method { get; set; }
         
         [JsonProperty("engineId")]
-        public int? EngineId { get; set; }
+        public long? EngineId { get; set; }
         
         [JsonProperty("aiPromptId")]
-        public int? AiPromptId { get; set; }
+        public long? AiPromptId { get; set; }
         
         [JsonProperty("autoApproveOption")]
         public AutoApproveOption? AutoApproveOption { get; set; }
@@ -44,10 +44,10 @@ namespace Crowdin.Api.Translations
         public IDictionary<string, string[]>? FallbackLanguages { get; set; }
         
         [JsonProperty("labelIds")]
-        public ICollection<int> LabelIds { get; set; } = new List<int>();
+        public ICollection<long> LabelIds { get; set; } = new List<long>();
 
         [JsonProperty("excludeLabelIds")]
-        public ICollection<int> ExcludeLabelIds { get; set; } = new List<int>();
+        public ICollection<long> ExcludeLabelIds { get; set; } = new List<long>();
 
     }
 }

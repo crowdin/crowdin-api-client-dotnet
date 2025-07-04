@@ -72,14 +72,14 @@ namespace Crowdin.Api.UnitTesting.Tests.Tasks
             {
                 Title = "My task",
                 LanguageId = "es",
-                FileIds = new[] { 1, 2, 3 },
+                FileIds = [1, 2, 3],
                 Type = TaskType.TranslateByVendor,
                 Vendor = TaskVendor.Lingo24,
                 Status = TaskStatus.InProgress,
                 Description = "My amazing task",
                 SkipAssignedStrings = true,
                 SkipUntranslatedStrings = true,
-                LabelIds = new[] { 1 },
+                LabelIds = [1],
                 Assignees = new[]
                 {
                     new TaskAssigneeForm { Id = 1, WordsCount = 20 },

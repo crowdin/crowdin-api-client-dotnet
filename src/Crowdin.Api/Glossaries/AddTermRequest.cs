@@ -42,10 +42,10 @@ namespace Crowdin.Api.Glossaries
         public string? Url { get; set; }
         
         [JsonProperty("conceptId")]
-        public int? ConceptId { get; set; }
+        public long? ConceptId { get; set; }
         
         [Obsolete]
         [JsonProperty("translationOfTermId")]
-        public int? TranslationOfTermId { get; set; }
+        public long? TranslationOfTermId { get; set; }
     }
 }

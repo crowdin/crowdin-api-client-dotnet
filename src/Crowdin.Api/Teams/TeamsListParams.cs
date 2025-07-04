@@ -18,9 +18,9 @@ namespace Crowdin.Api.Teams
         
         public string? Search { get; set; }
         
-        public IEnumerable<int>? GroupIds { get; set; }
+        public IEnumerable<long>? GroupIds { get; set; }
         
-        public IEnumerable<int>? ProjectIds { get; set; }
+        public IEnumerable<long>? ProjectIds { get; set; }
         
         public IEnumerable<string>? LanguageIds { get; set; }
         

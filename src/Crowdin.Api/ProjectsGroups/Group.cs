@@ -9,7 +9,7 @@ namespace Crowdin.Api.ProjectsGroups
     public class Group
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("name")]
         public string Name { get; set; }
@@ -18,13 +18,13 @@ namespace Crowdin.Api.ProjectsGroups
         public string Description { get; set; }
         
         [JsonProperty("parentId")]
-        public int ParentId { get; set; }
+        public long ParentId { get; set; }
         
         [JsonProperty("organizationId")]
-        public int OrganizationId { get; set; }
+        public long OrganizationId { get; set; }
         
         [JsonProperty("userId")]
-        public int UserId { get; set; }
+        public long UserId { get; set; }
         
         [JsonProperty("subgroupsCount")]
         public int SubgroupsCount { get; set; }

@@ -78,7 +78,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Dictionaries
                 new DictionaryPatch
                 {
                     Operation = PatchOperation.Remove,
-                    Path = new DictionaryPatchPath(new[] { 3 })
+                    Path = new DictionaryPatchPath([3])
                 }
             };
 
@@ -97,7 +97,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Dictionaries
                 new DictionaryPatch
                 {
                     Operation = PatchOperation.Remove,
-                    Path = new DictionaryPatchPath(new []{ 0, 1, 2, 0, 3, 3 })
+                    Path = new DictionaryPatchPath([0, 1, 2, 0, 3, 3])
                 },
             };
 

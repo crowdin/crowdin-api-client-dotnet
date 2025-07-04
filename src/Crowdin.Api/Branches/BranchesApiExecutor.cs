@@ -34,7 +34,7 @@ namespace Crowdin.Api.Branches
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.branches.clones.branch.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Branch> GetClonedBranch(int projectId, int branchId, string cloneId)
+        public async Task<Branch> GetClonedBranch(long projectId, long branchId, string cloneId)
         {
             var url = $"/projects/{projectId}/branches/{branchId}/clones/{cloneId}/branch";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -47,7 +47,7 @@ namespace Crowdin.Api.Branches
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.branches.clones.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<BranchCloneStatus> CloneBranch(int projectId, int branchId, CloneBranchRequest request)
+        public async Task<BranchCloneStatus> CloneBranch(long projectId, long branchId, CloneBranchRequest request)
         {
             var url = $"/projects/{projectId}/branches/{branchId}/clones";
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -60,7 +60,7 @@ namespace Crowdin.Api.Branches
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.branches.clones.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<BranchCloneStatus> CheckBranchCloneStatus(int projectId, int branchId, string cloneId)
+        public async Task<BranchCloneStatus> CheckBranchCloneStatus(long projectId, long branchId, string cloneId)
         {
             var url = $"/projects/{projectId}/branches/{branchId}/clones/{cloneId}";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -74,7 +74,7 @@ namespace Crowdin.Api.Branches
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<Branch>> ListBranches(
-            int projectId,
+            long projectId,
             string? name = null,
             int limit = 25,
             int offset = 0,
@@ -96,7 +96,7 @@ namespace Crowdin.Api.Branches
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.branches.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Branch> AddBranch(int projectId, AddBranchRequest request)
+        public async Task<Branch> AddBranch(long projectId, AddBranchRequest request)
         {
             string url = FormUrl_Branches(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -109,7 +109,7 @@ namespace Crowdin.Api.Branches
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.branches.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Branch> GetBranch(int projectId, int branchId)
+        public async Task<Branch> GetBranch(long projectId, long branchId)
         {
             string url = FormUrl_BranchId(projectId, branchId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -122,7 +122,7 @@ namespace Crowdin.Api.Branches
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.branches.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteBranch(int projectId, int branchId)
+        public async Task DeleteBranch(long projectId, long branchId)
         {
             string url = FormUrl_BranchId(projectId, branchId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -135,7 +135,7 @@ namespace Crowdin.Api.Branches
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.branches.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Branch> EditBranch(int projectId, int branchId, IEnumerable<BranchPatch> patches)
+        public async Task<Branch> EditBranch(long projectId, long branchId, IEnumerable<BranchPatch> patches)
         {
             string url = FormUrl_BranchId(projectId, branchId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -148,7 +148,7 @@ namespace Crowdin.Api.Branches
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.branches.merges.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<BranchMergeStatus> MergeBranch(int projectId, int branchId, MergeBranchRequest request)
+        public async Task<BranchMergeStatus> MergeBranch(long projectId, long branchId, MergeBranchRequest request)
         {
             var url = $"/projects/{projectId}/branches/{branchId}/merges";
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -161,7 +161,7 @@ namespace Crowdin.Api.Branches
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.branches.merges.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<BranchMergeStatus> CheckBranchMergeStatus(int projectId, int branchId, string mergeId)
+        public async Task<BranchMergeStatus> CheckBranchMergeStatus(long projectId, long branchId, string mergeId)
         {
             var url = $"/projects/{projectId}/branches/{branchId}/merges/{mergeId}";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -174,7 +174,7 @@ namespace Crowdin.Api.Branches
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.branches.merges.summary.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<BranchMergeSummary> GetBranchMergeSummary(int projectId, int branchId, string mergeId)
+        public async Task<BranchMergeSummary> GetBranchMergeSummary(long projectId, long branchId, string mergeId)
         {
             var url = $"/projects/{projectId}/branches/{branchId}/merges/{mergeId}/summary";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -183,12 +183,12 @@ namespace Crowdin.Api.Branches
         
         #region Helper methods
         
-        private static string FormUrl_Branches(int projectId)
+        private static string FormUrl_Branches(long projectId)
         {
             return $"/projects/{projectId}/branches";
         }
         
-        private static string FormUrl_BranchId(int projectId, int branchId)
+        private static string FormUrl_BranchId(long projectId, long branchId)
         {
             return $"/projects/{projectId}/branches/{branchId}";
         }

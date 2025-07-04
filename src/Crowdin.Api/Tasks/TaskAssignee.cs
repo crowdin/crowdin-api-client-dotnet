@@ -8,7 +8,7 @@ namespace Crowdin.Api.Tasks
     public class TaskAssignee
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("username")]
         public string UserName { get; set; }

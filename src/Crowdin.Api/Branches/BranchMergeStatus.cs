@@ -15,7 +15,7 @@ namespace Crowdin.Api.Branches
         public OperationStatus Status { get; set; }
         
         [JsonProperty("progress")]
-        public int Progress { get; set; }
+        public long Progress { get; set; }
         
         [JsonProperty("attributes")]
         public AttributesData Attributes { get; set; }
@@ -36,7 +36,7 @@ namespace Crowdin.Api.Branches
         public class AttributesData
         {
             [JsonProperty("sourceBranchId")]
-            public int SourceBranchId { get; set; }
+            public long SourceBranchId { get; set; }
             
             [JsonProperty("deleteAfterMerge")]
             public bool DeleteAfterMerge { get; set; }

@@ -59,12 +59,12 @@ namespace Crowdin.Api.UnitTesting.Tests.Applications
                 User = new()
                 {
                     Value = ApplicationUserValue.Restricted,
-                    Ids = new int[] { 1 }
+                    Ids = [1]
                 },
                 Project = new()
                 {
                     Value = ApplicationProjectValue.Restricted,
-                    Ids = new int[] { 1 }
+                    Ids = [1]
 
                 }
             };
@@ -90,12 +90,12 @@ namespace Crowdin.Api.UnitTesting.Tests.Applications
                 User = new()
                 {
                     Value = ApplicationUserValue.Restricted,
-                    Ids = new int[] { 1 }
+                    Ids = [1]
                 },
                 Project = new()
                 {
                     Value = ApplicationProjectValue.Restricted,
-                    Ids = new int[] { 1 }
+                    Ids = [1]
 
                 }
             };

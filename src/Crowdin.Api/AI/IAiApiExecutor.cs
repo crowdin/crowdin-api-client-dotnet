@@ -12,105 +12,105 @@ namespace Crowdin.Api.AI
         #region Prompt Fine-Tuning Datasets
 
         Task<AiFineTuningDataset> GenerateAiPromptFineTuningDataset(
-            int? userId,
-            int aiPromptId,
+            long? userId,
+            long aiPromptId,
             GenerateAiPromptFineTuningDatasetRequest request);
 
         Task<AiFineTuningDataset> GetAiPromptFineTuningDatasetGenerationStatus(
-            int? userId,
-            int aiPromptId,
+            long? userId,
+            long aiPromptId,
             string jobIdentifier);
 
         Task<AiFineTuningJob> CreateAiPromptFineTuningJob(
-            int? userId,
-            int aiPromptId,
+            long? userId,
+            long aiPromptId,
             CreateAiPromptFineTuningJobRequest request);
 
         Task<AiFineTuningJob> GetAiPromptFineTuningJobStatus(
-            int? userId,
-            int aiPromptId,
+            long? userId,
+            long aiPromptId,
             string jobIdentifier);
 
         Task<DownloadLink> DownloadAiPromptFineTuningDataset(
-            int? userId,
-            int aiPromptId,
+            long? userId,
+            long aiPromptId,
             string jobIdentifier);
 
         #endregion
 
         #region Prompts
 
-        Task<AiPromptResource> CloneAiPrompt(int? userId, int aiPromptId, CloneAiPromptRequest request);
+        Task<AiPromptResource> CloneAiPrompt(long? userId, long aiPromptId, CloneAiPromptRequest request);
 
         Task<ResponseList<AiPromptResource>> ListAiPrompts(
-            int? userId,
-            int? projectId = null,
+            long? userId,
+            long? projectId = null,
             AiPromptAction? action = null,
             int limit = 25, int offset = 0);
 
-        Task<AiPromptResource> AddAiPrompt(int? userId, AddAiPromptRequest request);
+        Task<AiPromptResource> AddAiPrompt(long? userId, AddAiPromptRequest request);
 
         Task<AiPromptCompletion> GenerateAiPromptCompletion(
-            int? userId,
-            int aiPromptId,
+            long? userId,
+            long aiPromptId,
             GenerateAiPromptCompletionRequest request);
 
         Task<AiPromptCompletion> GetAiPromptCompletionStatus(
-            int? userId,
-            int aiPromptId,
+            long? userId,
+            long aiPromptId,
             string completionId);
 
-        Task CancelAiPromptCompletion(int? userId, int aiPromptId, string completionId);
+        Task CancelAiPromptCompletion(long? userId, long aiPromptId, string completionId);
 
-        Task<DownloadLink> DownloadAiPromptCompletion(int? userId, int aiPromptId, string completionId);
+        Task<DownloadLink> DownloadAiPromptCompletion(long? userId, long aiPromptId, string completionId);
 
-        Task<AiPromptResource> GetAiPrompt(int? userId, int aiPromptId);
+        Task<AiPromptResource> GetAiPrompt(long? userId, long aiPromptId);
 
-        Task DeleteAiPrompt(int? userId, int aiPromptId);
+        Task DeleteAiPrompt(long? userId, long aiPromptId);
 
         Task<AiPromptResource> EditAiPrompt(
-            int? userId, int aiPromptId,
+            long? userId, long aiPromptId,
             IEnumerable<AiPromptPatch> patches);
 
         #endregion
 
         #region Providers
 
-        Task<ResponseList<AiProviderResource>> ListAiProviders(int? userId, int limit = 25, int offset = 0);
+        Task<ResponseList<AiProviderResource>> ListAiProviders(long? userId, int limit = 25, int offset = 0);
 
-        Task<AiProviderResource> AddAiProvider(int? userId, AddAiProviderRequest request);
+        Task<AiProviderResource> AddAiProvider(long? userId, AddAiProviderRequest request);
 
-        Task<AiProviderResource> GetAiProvider(int? userId, int aiProviderId);
+        Task<AiProviderResource> GetAiProvider(long? userId, long aiProviderId);
 
-        Task DeleteAiProvider(int? userId, int aiProviderId);
+        Task DeleteAiProvider(long? userId, long aiProviderId);
 
-        Task<AiProviderResource> EditAiProvider(int? userId, int aiProviderId, IEnumerable<AiProviderPatch> patches);
+        Task<AiProviderResource> EditAiProvider(long? userId, long aiProviderId, IEnumerable<AiProviderPatch> patches);
 
-        Task<ResponseList<AiProviderModelResource>> ListAiProviderModels(int? userId, int aiProviderId);
+        Task<ResponseList<AiProviderModelResource>> ListAiProviderModels(long? userId, long aiProviderId);
         
         #endregion
 
         #region Reports
 
-        Task<AiReportGenerationStatus> GenerateAiReport(int? userId, GenerateAiReport request);
+        Task<AiReportGenerationStatus> GenerateAiReport(long? userId, GenerateAiReport request);
 
-        Task<AiReportGenerationStatus> CheckAiReportGenerationStatus(int? userId, string aiReportId);
+        Task<AiReportGenerationStatus> CheckAiReportGenerationStatus(long? userId, string aiReportId);
 
-        Task<DownloadLink> DownloadAiReport(int? userId, string aiReportId);
+        Task<DownloadLink> DownloadAiReport(long? userId, string aiReportId);
         
         #endregion
 
         #region Settings
 
-        Task<AiSettings> GetAiSettings(int? userId);
+        Task<AiSettings> GetAiSettings(long? userId);
 
-        Task<AiSettings> EditAiSettings(int? userId, IEnumerable<AiSettingsPatch> patches);
+        Task<AiSettings> EditAiSettings(long? userId, IEnumerable<AiSettingsPatch> patches);
         
         #endregion
         
         Task<AiProxyChatCompletion> CreateAiProxyChatCompletion(
-            int? userId,
-            int aiProviderId,
+            long? userId,
+            long aiProviderId,
             IDictionary<string, object> request);
     }
 }

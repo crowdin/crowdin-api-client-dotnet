@@ -37,7 +37,7 @@ namespace Crowdin.Api.SourceStrings
         public class AttributesData
         {
             [JsonProperty("branchId")]
-            public int BranchId { get; set; }
+            public long BranchId { get; set; }
             
             [JsonProperty("storageId")]
             public long StorageId { get; set; }
@@ -49,7 +49,7 @@ namespace Crowdin.Api.SourceStrings
             public int ParserVersion { get; set; }
             
             [JsonProperty("labelIds")]
-            public int[] LabelIds { get; set; }
+            public long[] LabelIds { get; set; }
             
             [JsonProperty("importOptions")]
             public SpreadsheetFileImportOptions ImportOptions { get; set; }

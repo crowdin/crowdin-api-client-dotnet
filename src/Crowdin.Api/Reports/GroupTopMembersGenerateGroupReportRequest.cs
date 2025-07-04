@@ -23,7 +23,7 @@ namespace Crowdin.Api.Reports
         public class RequestSchema
         {
             [JsonProperty("projectIds")]
-            public ICollection<int>? ProjectIds { get; set; }
+            public ICollection<long>? ProjectIds { get; set; }
             
             [JsonProperty("unit")]
             public ReportUnit? Unit { get; set; }

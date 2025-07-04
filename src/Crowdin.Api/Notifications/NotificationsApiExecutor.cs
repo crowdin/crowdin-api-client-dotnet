@@ -44,7 +44,7 @@ namespace Crowdin.Api.Notifications
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.notify.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task SendNotificationToProjectMembers(int projectId, SendNotificationToProjectMembersRequest request)
+        public async Task SendNotificationToProjectMembers(long projectId, SendNotificationToProjectMembersRequest request)
         {
             var url = $"/projects/{projectId}/notify";
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);

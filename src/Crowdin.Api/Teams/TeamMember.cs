@@ -9,7 +9,7 @@ namespace Crowdin.Api.Teams
     public class TeamMember
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("username")]
         public string Username { get; set; }

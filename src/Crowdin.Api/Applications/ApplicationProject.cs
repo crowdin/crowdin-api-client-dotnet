@@ -12,7 +12,7 @@ namespace Crowdin.Api.Applications
         public ApplicationProjectValue Value { get; set; }
 
         [JsonProperty("ids")]
-        public ICollection<int> Ids { get; set; }
+        public ICollection<long> Ids { get; set; }
     }
 
     [PublicAPI]

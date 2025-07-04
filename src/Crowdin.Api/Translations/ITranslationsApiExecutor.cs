@@ -12,48 +12,48 @@ namespace Crowdin.Api.Translations
     public interface ITranslationsApiExecutor
     {
         Task<ResponseList<PreTranslation>> ListPreTranslations(
-            int projectId,
+            long projectId,
             int limit = 25,
             int offset = 0);
 
         Task<PreTranslation> EditPreTranslation(
-            int projectId,
+            long projectId,
             string preTranslationId,
             IEnumerable<PreTranslationPatch> patches);
 
-        Task<PreTranslation> GetPreTranslationStatus(int projectId, string preTranslationId);
+        Task<PreTranslation> GetPreTranslationStatus(long projectId, string preTranslationId);
 
-        Task<PreTranslation> ApplyPreTranslation(int projectId, ApplyPreTranslationRequest request);
+        Task<PreTranslation> ApplyPreTranslation(long projectId, ApplyPreTranslationRequest request);
 
         Task<DirectoryBuild> BuildProjectDirectoryTranslation(
-            int projectId,
-            int directoryId,
+            long projectId,
+            long directoryId,
             BuildProjectDirectoryTranslationRequest request);
 
         Task<BuildProjectFileTranslationResponse> BuildProjectFileTranslation(
-            int projectId, int fileId,
+            long projectId, long fileId,
             BuildProjectFileTranslationRequest request,
             string? etag = null);
 
         Task<ResponseList<TranslationProjectBuild>> ListProjectBuilds(
-            int projectId,
-            int? branchId = null,
+            long projectId,
+            long? branchId = null,
             int limit = 25,
             int offset = 0);
 
-        Task<ProjectBuild> BuildProjectTranslation(int projectId, BuildProjectTranslationRequest request);
+        Task<ProjectBuild> BuildProjectTranslation(long projectId, BuildProjectTranslationRequest request);
 
         Task<UploadTranslationsResponse> UploadTranslations(
-            int projectId,
+            long projectId,
             string languageId,
             UploadTranslationsRequest request);
 
-        Task<DownloadProjectTranslationsResponse> DownloadProjectTranslations(int projectId, int buildId);
+        Task<DownloadProjectTranslationsResponse> DownloadProjectTranslations(long projectId, long buildId);
 
-        Task<ProjectBuild> CheckProjectBuildStatus(int projectId, int buildId);
+        Task<ProjectBuild> CheckProjectBuildStatus(long projectId, long buildId);
 
-        Task CancelBuild(int projectId, int buildId);
+        Task CancelBuild(long projectId, long buildId);
 
-        Task<DownloadLink?> ExportProjectTranslation(int projectId, ExportProjectTranslationRequest request);
+        Task<DownloadLink?> ExportProjectTranslation(long projectId, ExportProjectTranslationRequest request);
     }
 }

@@ -10,7 +10,7 @@ namespace Crowdin.Api.StringTranslations
     [PublicAPI]
     public class StringTranslationsListParams : IQueryParamsProvider
     {
-        public int StringId { get; set; }
+        public long StringId { get; set; }
         
         public string LanguageId { get; set; }
         
@@ -28,7 +28,7 @@ namespace Crowdin.Api.StringTranslations
         }
 
         public StringTranslationsListParams(
-            int stringId,
+            long stringId,
             string languageId,
             bool? denormalizePlaceholders,
             int limit,

@@ -14,26 +14,26 @@ namespace Crowdin.Api.ProjectsGroups
         #region Groups
 
         Task<ResponseList<Group>> ListGroups(
-            int? parentId,
+            long? parentId,
             int limit = 25,
             int offset = 0,
             IEnumerable<SortingRule>? orderBy = null);
 
         Task<Group> AddGroup(AddGroupRequest request);
 
-        Task<Group> GetGroup(int groupId);
+        Task<Group> GetGroup(long groupId);
 
-        Task DeleteGroup(int groupId);
+        Task DeleteGroup(long groupId);
 
-        Task<Group> EditGroup(int groupId, IEnumerable<GroupPatch> patches);
+        Task<Group> EditGroup(long groupId, IEnumerable<GroupPatch> patches);
 
         #endregion
 
         #region Projects
 
         Task<ResponseList<TProject>> ListProjects<TProject>(
-            int? userId = null,
-            int? groupId = null,
+            long? userId = null,
+            long? groupId = null,
             bool hasManagerAccess = false,
             ProjectType? type = null,
             int limit = 25,
@@ -42,64 +42,64 @@ namespace Crowdin.Api.ProjectsGroups
 
         Task<T> AddProject<T>(AddProjectRequest request) where T : ProjectBase;
 
-        Task<T> GetProject<T>(int projectId) where T : ProjectBase;
+        Task<T> GetProject<T>(long projectId) where T : ProjectBase;
 
-        Task DeleteProject(int projectId);
+        Task DeleteProject(long projectId);
 
-        Task<T> EditProject<T>(int projectId, IEnumerable<ProjectPatch> patches) where T : ProjectBase;
+        Task<T> EditProject<T>(long projectId, IEnumerable<ProjectPatch> patches) where T : ProjectBase;
 
         #endregion
 
         #region Project File Formats Settings
 
         Task<DownloadLink> DownloadProjectFileFormatSettingsCustomSegmentation(
-            int projectId,
-            int fileFormatSettingsId);
+            long projectId,
+            long fileFormatSettingsId);
 
         Task ResetProjectFileFormatSettingsCustomSegmentation(
-            int projectId,
-            int fileFormatSettingsId);
+            long projectId,
+            long fileFormatSettingsId);
 
-        Task<ResponseList<FileFormatSettingsResource>> ListProjectFileFormatSettings(int projectId);
+        Task<ResponseList<FileFormatSettingsResource>> ListProjectFileFormatSettings(long projectId);
 
         Task<FileFormatSettingsResource> AddProjectFileFormatSettings(
-            int projectId,
+            long projectId,
             AddProjectFileFormatSettingsRequest request);
 
         Task<FileFormatSettingsResource> GetProjectFileFormatSettings(
-            int projectId,
-            int fileFormatSettingsId);
+            long projectId,
+            long fileFormatSettingsId);
 
         Task DeleteProjectFileFormatSettings(
-            int projectId,
-            int fileFormatSettingsId);
+            long projectId,
+            long fileFormatSettingsId);
 
         Task<FileFormatSettingsResource> EditProjectFileFormatSettings(
-            int projectId,
-            int fileFormatSettingsId,
+            long projectId,
+            long fileFormatSettingsId,
             IEnumerable<ProjectFileFormatSettingsPatch> patches);
 
         #endregion
 
         #region Project Strings Exporter Settings
 
-        Task<ResponseList<StringsExporterSettingsResource>> ListProjectStringsExporterSettings(int projectId);
+        Task<ResponseList<StringsExporterSettingsResource>> ListProjectStringsExporterSettings(long projectId);
 
         Task<StringsExporterSettingsResource> AddProjectStringsExporterSettings(
-            int projectId,
+            long projectId,
             AddProjectStringsExporterSettingsRequest request);
 
         Task<StringsExporterSettingsResource> GetProjectStringsExporterSettings(
-            int projectId,
-            int stringsExporterSettingsId);
+            long projectId,
+            long stringsExporterSettingsId);
 
         Task DeleteProjectStringsExporterSettings(
-            int projectId,
-            int stringsExporterSettingsId);
+            long projectId,
+            long stringsExporterSettingsId);
 
         Task<StringsExporterSettingsResource> EditProjectStringsExporterSettings(
-            int projectId,
-            int stringsExporterSettingsId,
+            long projectId,
+            long stringsExporterSettingsId,
             IEnumerable<ProjectStringsExporterSettingsPatch> patches);
 
         #endregion

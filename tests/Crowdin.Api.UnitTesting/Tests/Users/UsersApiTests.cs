@@ -200,7 +200,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Users
 
             var request = new AddProjectMemberRequest
             {
-                UserIds = new[] { 1 },
+                UserIds = [1],
                 AccessToAllWorkflowSteps = false,
                 ManagerAccess = false,
                 Permissions = new Dictionary<string, LanguagePermission>

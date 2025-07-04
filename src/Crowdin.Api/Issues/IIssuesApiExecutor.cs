@@ -10,14 +10,14 @@ namespace Crowdin.Api.Issues
     public interface IIssuesApiExecutor
     {
         Task<ResponseList<Issue>> ListReportedIssues(
-            int projectId,
+            long projectId,
             int limit = 25,
             int offset = 0,
             IssueType? type = null,
             IssueStatus? status = null);
 
-        Task<ResponseList<Issue>> ListReportedIssues(int projectId, IssuesListParams @params);
+        Task<ResponseList<Issue>> ListReportedIssues(long projectId, IssuesListParams @params);
 
-        Task<Issue> EditIssue(int projectId, int issueId, IEnumerable<IssuePatch> patches);
+        Task<Issue> EditIssue(long projectId, long issueId, IEnumerable<IssuePatch> patches);
     }
 }

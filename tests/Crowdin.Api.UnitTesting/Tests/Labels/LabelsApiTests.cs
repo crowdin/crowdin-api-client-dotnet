@@ -96,7 +96,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Labels
             const int projectId = 2;
             const int labelId = 3;
 
-            var stringIds = new[] { 1, 2, 3, 4, 5 };
+            var stringIds = new long[] { 1, 2, 3, 4, 5 };
             var request = new AssignLabelToStringsRequest
             {
                 StringIds = stringIds
@@ -134,7 +134,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Labels
 
             var request = new AssignLabelToScreenshotsRequest
             {
-                ScreenshotIds = new[] { 1, 2, 3 }
+                ScreenshotIds = [1, 2, 3]
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
@@ -165,7 +165,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Labels
             const int projectId = 1;
             const int labelId = 2;
 
-            var screenshotIds = new[] { 1, 2, 3 };
+            long[] screenshotIds = [ 1, 2, 3 ];
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
 

@@ -20,7 +20,7 @@ namespace Crowdin.Api.TranslationStatus
         public int ApprovalProgress { get; set; }
         
         [JsonProperty("fileId")]
-        public int FileId { get; set; }
+        public long FileId { get; set; }
         
         [JsonProperty("eTag")]
         public string Etag { get; set; }

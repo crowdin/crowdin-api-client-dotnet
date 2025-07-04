@@ -11,10 +11,10 @@ namespace Crowdin.Api.Branches
         public BranchMergeStatusId Status { get; set; }
         
         [JsonProperty("sourceBranchId")]
-        public int SourceBranchId { get; set; }
+        public long SourceBranchId { get; set; }
         
         [JsonProperty("targetBranchId")]
-        public int TargetBranchId { get; set; }
+        public long TargetBranchId { get; set; }
         
         [JsonProperty("dryRun")]
         public bool DryRun { get; set; }
@@ -26,16 +26,16 @@ namespace Crowdin.Api.Branches
         public class DetailsData
         {
             [JsonProperty("added")]
-            public int Added { get; set; }
+            public long Added { get; set; }
             
             [JsonProperty("deleted")]
-            public int Deleted { get; set; }
+            public long Deleted { get; set; }
             
             [JsonProperty("updated")]
-            public int Updated { get; set; }
+            public long Updated { get; set; }
             
             [JsonProperty("conflicted")]
-            public int Conflicted { get; set; }
+            public long Conflicted { get; set; }
         }
     }
 }

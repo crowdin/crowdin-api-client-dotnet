@@ -19,10 +19,10 @@ namespace Crowdin.Api.SourceFiles
 #pragma warning restore 8618
 
         [JsonProperty("branchId")]
-        public int? BranchId { get; set; }
+        public long? BranchId { get; set; }
         
         [JsonProperty("directoryId")]
-        public int? DirectoryId { get; set; }
+        public long? DirectoryId { get; set; }
 
         [JsonProperty("title")]
         public string? Title { get; set; }
@@ -43,6 +43,6 @@ namespace Crowdin.Api.SourceFiles
         public List<string>? ExcludedTargetLanguages { get; set; }
         
         [JsonProperty("attachLabelIds")]
-        public ICollection<int>? AttachLabelIds { get; set; }
+        public ICollection<long>? AttachLabelIds { get; set; }
     }
 }

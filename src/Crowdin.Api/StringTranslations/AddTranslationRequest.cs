@@ -8,7 +8,7 @@ namespace Crowdin.Api.StringTranslations
     public class AddTranslationRequest
     {
         [JsonProperty("stringId")]
-        public int StringId { get; set; }
+        public long StringId { get; set; }
         
         [JsonProperty("languageId")]
         public string LanguageId { get; set; }

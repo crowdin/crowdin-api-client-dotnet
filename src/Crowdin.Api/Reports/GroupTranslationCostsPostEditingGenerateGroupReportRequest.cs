@@ -30,7 +30,7 @@ namespace Crowdin.Api.Reports
         public class GeneralSchema : SchemaBase
         {
             [JsonProperty("projectIds")]
-            public ICollection<int>? ProjectIds { get; set; }
+            public ICollection<long>? ProjectIds { get; set; }
             
             [JsonProperty("unit")]
             public ReportUnit? Unit { get; set; }
@@ -62,7 +62,7 @@ namespace Crowdin.Api.Reports
             public DateTimeOffset? DateTo { get; set; }
             
             [JsonProperty("userIds")]
-            public ICollection<int>? UserIds { get; set; }
+            public ICollection<long>? UserIds { get; set; }
         }
         
         [PublicAPI]
@@ -73,7 +73,7 @@ namespace Crowdin.Api.Reports
             public ICollection<string> LanguageIds { get; set; }
 
             [JsonProperty("userIds")]
-            public ICollection<int> UserIds { get; set; }
+            public ICollection<long> UserIds { get; set; }
 #pragma warning restore CS8618
             
             [JsonProperty("fullTranslation")]

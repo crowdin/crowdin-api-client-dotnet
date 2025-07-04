@@ -41,7 +41,7 @@ namespace Crowdin.Api.ProjectsGroups
         public bool? ContentSegmentation { get; set; }
 
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
@@ -51,7 +51,7 @@ namespace Crowdin.Api.ProjectsGroups
         public bool? ContentSegmentation { get; set; }
 
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
@@ -64,7 +64,7 @@ namespace Crowdin.Api.ProjectsGroups
         public bool? ExcludedElements { get; set; }
 
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
@@ -74,7 +74,7 @@ namespace Crowdin.Api.ProjectsGroups
         public bool? ContentSegmentation { get; set; }
 
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
@@ -84,7 +84,7 @@ namespace Crowdin.Api.ProjectsGroups
         public bool? ContentSegmentation { get; set; }
 
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
@@ -94,7 +94,7 @@ namespace Crowdin.Api.ProjectsGroups
         public bool? ContentSegmentation { get; set; }
 
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
@@ -104,7 +104,7 @@ namespace Crowdin.Api.ProjectsGroups
         public bool? ContentSegmentation { get; set; }
 
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
 
         [JsonProperty("excludedFrontMatterElements")]
         public List<string>? ExcludedFrontMatterElements { get; set; }
@@ -120,7 +120,7 @@ namespace Crowdin.Api.ProjectsGroups
         public bool? ContentSegmentation { get; set; }
 
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
 
         [JsonProperty("excludedFrontMatterElements")]
         public List<string>? ExcludedFrontMatterElements { get; set; }
@@ -136,7 +136,7 @@ namespace Crowdin.Api.ProjectsGroups
         public bool? ContentSegmentation { get; set; }
 
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
@@ -152,7 +152,7 @@ namespace Crowdin.Api.ProjectsGroups
         public List<string>? ExcludedFrontMatterElements { get; set; }
 
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
@@ -162,7 +162,7 @@ namespace Crowdin.Api.ProjectsGroups
         public bool? ContentSegmentation { get; set; }
 
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
@@ -190,7 +190,7 @@ namespace Crowdin.Api.ProjectsGroups
         public bool? ContentSegmentation { get; set; }
 
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
@@ -200,7 +200,7 @@ namespace Crowdin.Api.ProjectsGroups
         public bool? ContentSegmentation { get; set; }
 
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
@@ -210,7 +210,7 @@ namespace Crowdin.Api.ProjectsGroups
         public bool? ContentSegmentation { get; set; }
 
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
@@ -220,14 +220,14 @@ namespace Crowdin.Api.ProjectsGroups
         public bool? ContentSegmentation { get; set; }
 
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
     public class MediaWikiFileFormatSettings : FileFormatSettings
     {
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
@@ -237,7 +237,7 @@ namespace Crowdin.Api.ProjectsGroups
         public bool? ContentSegmentation { get; set; }
 
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
@@ -247,7 +247,7 @@ namespace Crowdin.Api.ProjectsGroups
         public bool? ContentSegmentation { get; set; }
 
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
 
         [JsonProperty("type")]
         public JsonFileType? Type { get; set; }
@@ -260,7 +260,7 @@ namespace Crowdin.Api.ProjectsGroups
         public bool? ContentSegmentation { get; set; }
 
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
@@ -270,7 +270,7 @@ namespace Crowdin.Api.ProjectsGroups
         public bool? ContentSegmentation { get; set; }
 
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
@@ -280,7 +280,7 @@ namespace Crowdin.Api.ProjectsGroups
         public bool? ContentSegmentation { get; set; }
 
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
@@ -290,14 +290,14 @@ namespace Crowdin.Api.ProjectsGroups
         public bool? ContentSegmentation { get; set; }
 
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]
     public class TxtFileFormatSettings : FileFormatSettings
     {
         [JsonProperty("srxStorageId")]
-        public int? SrxStorageId { get; set; }
+        public long? SrxStorageId { get; set; }
     }
 
     [PublicAPI]

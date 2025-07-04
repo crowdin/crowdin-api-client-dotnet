@@ -15,7 +15,7 @@ namespace Crowdin.Api.AI
         public OperationStatus Status { get; set; }
         
         [JsonProperty("progress")]
-        public int Progress { get; set; }
+        public long Progress { get; set; }
         
         [JsonProperty("attributes")]
         public AttributesObject Attributes { get; set; }

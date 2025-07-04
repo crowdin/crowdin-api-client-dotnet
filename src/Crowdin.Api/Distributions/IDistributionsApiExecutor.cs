@@ -9,24 +9,24 @@ namespace Crowdin.Api.Distributions
     [PublicAPI]
     public interface IDistributionsApiExecutor
     {
-        Task<ResponseList<Distribution>> ListDistributions(int projectId, int limit = 25, int offset = 0);
+        Task<ResponseList<Distribution>> ListDistributions(long projectId, int limit = 25, int offset = 0);
 
-        Task<Distribution> AddDistribution(int projectId, AddDistributionRequest request);
+        Task<Distribution> AddDistribution(long projectId, AddDistributionRequest request);
 
-        Task<Distribution> AddDistributionStringBased(int projectId, AddDistributionStringBasedRequest request);
+        Task<Distribution> AddDistributionStringBased(long projectId, AddDistributionStringBasedRequest request);
 
-        Task<Distribution> GetDistribution(int projectId, string hash);
+        Task<Distribution> GetDistribution(long projectId, string hash);
 
-        Task DeleteDistribution(int projectId, string hash);
+        Task DeleteDistribution(long projectId, string hash);
 
-        Task<Distribution> EditDistribution(int projectId, string hash, IEnumerable<DistributionPatch> patches);
+        Task<Distribution> EditDistribution(long projectId, string hash, IEnumerable<DistributionPatch> patches);
 
-        Task<DistributionRelease> GetDistributionRelease(int projectId, string hash);
+        Task<DistributionRelease> GetDistributionRelease(long projectId, string hash);
 
-        Task<DistributionStringBasedRelease> GetDistributionReleaseStringBased(int projectId, string hash);
+        Task<DistributionStringBasedRelease> GetDistributionReleaseStringBased(long projectId, string hash);
 
-        Task<DistributionRelease> ReleaseDistribution(int projectId, string hash);
+        Task<DistributionRelease> ReleaseDistribution(long projectId, string hash);
 
-        Task<DistributionStringBasedRelease> StringBasedReleaseDistribution(int projectId, string hash);
+        Task<DistributionStringBasedRelease> StringBasedReleaseDistribution(long projectId, string hash);
     }
 }

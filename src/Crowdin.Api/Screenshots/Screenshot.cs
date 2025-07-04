@@ -9,10 +9,10 @@ namespace Crowdin.Api.Screenshots
     public class Screenshot
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("userId")]
-        public int UserId { get; set; }
+        public long UserId { get; set; }
         
         [JsonProperty("url")]
         public string Url { get; set; }
@@ -30,7 +30,7 @@ namespace Crowdin.Api.Screenshots
         public Tag[] Tags { get; set; }
         
         [JsonProperty("labelIds")]
-        public int[] LabelIds { get; set; }
+        public long[] LabelIds { get; set; }
         
         [JsonProperty("createdAt")]
         public DateTimeOffset CreatedAt { get; set; }

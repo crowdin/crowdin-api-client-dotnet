@@ -16,7 +16,7 @@ namespace Crowdin.Api.Teams
     public class AddTeamToProjectRequest
     {
         [JsonProperty("teamId")]
-        public int TeamId { get; set; }
+        public long TeamId { get; set; }
         
         [JsonProperty("accessToAllWorkflowSteps")]
         [Obsolete(MessageTexts.DeprecatedProperty)]

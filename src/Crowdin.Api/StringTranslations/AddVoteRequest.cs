@@ -11,6 +11,6 @@ namespace Crowdin.Api.StringTranslations
         public TranslationVoteMark Mark { get; set; }
         
         [JsonProperty("translationId")]
-        public int? TranslationId { get; set; }
+        public long? TranslationId { get; set; }
     }
 }

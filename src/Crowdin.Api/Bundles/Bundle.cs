@@ -9,7 +9,7 @@ namespace Crowdin.Api.Bundles
     public class Bundle
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
 
         [JsonProperty("name")]
         public string Name { get; set; }
@@ -33,10 +33,10 @@ namespace Crowdin.Api.Bundles
         public bool IncludeProjectSourceLanguage { get; set; }
 
         [JsonProperty("labelIds")]
-        public int[] LabelIds { get; set; }
+        public long[] LabelIds { get; set; }
 
         [JsonProperty("excludeLabelIds")]
-        public int[] ExcludeLabelIds { get; set; }
+        public long[] ExcludeLabelIds { get; set; }
         
         [JsonProperty("webUrl")]
         public string WebUrl { get; set; }

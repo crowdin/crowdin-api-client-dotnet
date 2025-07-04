@@ -12,7 +12,7 @@ namespace Crowdin.Api.TranslationMemory
         public TranslationMemory Tm { get; set; }
         
         [JsonProperty("recordId")]
-        public int RecordId { get; set; }
+        public long RecordId { get; set; }
         
         [JsonProperty("source")]
         public string Source { get; set; }

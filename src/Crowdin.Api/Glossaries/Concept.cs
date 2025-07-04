@@ -9,13 +9,13 @@ namespace Crowdin.Api.Glossaries
     public class Concept
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("userId")]
-        public int UserId { get; set; }
+        public long UserId { get; set; }
         
         [JsonProperty("glossaryId")]
-        public int GlossaryId { get; set; }
+        public long GlossaryId { get; set; }
         
         [JsonProperty("subject")]
         public string Subject { get; set; }

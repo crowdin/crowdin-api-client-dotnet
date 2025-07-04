@@ -21,21 +21,21 @@ namespace Crowdin.Api.Dictionaries
     {
         public static DictionaryPatchPath Words => new DictionaryPatchPath();
         
-        public ISet<int> WordIndexes { get; set; } = new HashSet<int>();
+        public ISet<long> WordIndexes { get; set; } = new HashSet<long>();
 
         public DictionaryPatchPath()
         {
             
         }
 
-        public DictionaryPatchPath(ISet<int> wordIndexes)
+        public DictionaryPatchPath(ISet<long> wordIndexes)
         {
             WordIndexes = wordIndexes;
         }
 
-        public DictionaryPatchPath(IEnumerable<int> wordIndexes)
+        public DictionaryPatchPath(IEnumerable<long> wordIndexes)
         {
-            WordIndexes = new HashSet<int>(wordIndexes);
+            WordIndexes = new HashSet<long>(wordIndexes);
         }
 
         public override string ToString()

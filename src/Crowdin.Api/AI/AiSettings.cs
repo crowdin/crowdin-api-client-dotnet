@@ -8,7 +8,7 @@ namespace Crowdin.Api.AI
     public class AiSettings
     {
         [JsonProperty("assistActionAiPromptId")]
-        public int AssistActionAiPromptId { get; set; }
+        public long AssistActionAiPromptId { get; set; }
         
         [JsonProperty("showSuggestion")]
         public bool ShowSuggestion { get; set; }

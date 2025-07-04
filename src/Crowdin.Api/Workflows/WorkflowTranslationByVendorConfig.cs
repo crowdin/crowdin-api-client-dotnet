@@ -8,6 +8,6 @@ namespace Crowdin.Api.Workflows
     public class WorkflowTranslationByVendorConfig : WorkflowConfig
     {
         [JsonProperty("vendorId")]
-        public int VendorId { get; set; }
+        public long VendorId { get; set; }
     }
 }

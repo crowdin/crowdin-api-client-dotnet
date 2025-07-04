@@ -9,10 +9,10 @@ namespace Crowdin.Api.Translations
     public class ProjectBuild
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("projectId")]
-        public int ProjectId { get; set; }
+        public long ProjectId { get; set; }
         
         [JsonProperty("status")]
         public BuildStatus Status { get; set; }
@@ -42,11 +42,11 @@ namespace Crowdin.Api.Translations
         public class BuildAttributes : AttributesBase
         {
             [JsonProperty("branchId")]
-            public int? BranchId { get; set; }
+            public long? BranchId { get; set; }
             
             // only regular API
             [JsonProperty("directoryId")]
-            public int? DirectoryId { get; set; }
+            public long? DirectoryId { get; set; }
             
             [JsonProperty("targetLanguageIds")]
             public string[] TargetLanguageIds { get; set; }

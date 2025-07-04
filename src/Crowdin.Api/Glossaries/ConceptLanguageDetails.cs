@@ -12,7 +12,7 @@ namespace Crowdin.Api.Glossaries
         public string LanguageId { get; set; }
         
         [JsonProperty("userId")]
-        public int UserId { get; set; }
+        public long UserId { get; set; }
         
         [JsonProperty("definition")]
         public string Definition { get; set; }

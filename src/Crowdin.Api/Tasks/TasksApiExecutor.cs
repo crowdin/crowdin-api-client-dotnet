@@ -35,11 +35,11 @@ namespace Crowdin.Api.Tasks
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<TaskResource>> ListTasks(
-            int projectId,
+            long projectId,
             int limit = 25,
             int offset = 0,
             TaskStatus? status = null,
-            int? assigneeId = null,
+            long? assigneeId = null,
             IEnumerable<SortingRule>? orderBy = null)
         {
             return ListTasks(projectId, new TasksListParams(limit, offset, status, assigneeId, orderBy));
@@ -52,11 +52,11 @@ namespace Crowdin.Api.Tasks
         /// </summary>
         [PublicAPI]
         public Task<ResponseList<TaskResource>> ListTasks(
-            int projectId,
+            long projectId,
             int limit = 25,
             int offset = 0,
             IEnumerable<TaskStatus>? statuses = null,
-            int? assigneeId = null,
+            long? assigneeId = null,
             IEnumerable<SortingRule>? orderBy = null)
         {
             return ListTasks(projectId, new TasksListParams(limit, offset, statuses, assigneeId, orderBy));
@@ -68,7 +68,7 @@ namespace Crowdin.Api.Tasks
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.tasks.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<TaskResource>> ListTasks(int projectId, TasksListParams @params)
+        public async Task<ResponseList<TaskResource>> ListTasks(long projectId, TasksListParams @params)
         {
             string url = FormUrl_Tasks(projectId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, @params.ToQueryParams());
@@ -81,7 +81,7 @@ namespace Crowdin.Api.Tasks
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.tasks.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<TaskResource> AddTask(int projectId, AddTaskRequest request)
+        public async Task<TaskResource> AddTask(long projectId, AddTaskRequest request)
         {
             string url = FormUrl_Tasks(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -94,7 +94,7 @@ namespace Crowdin.Api.Tasks
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.tasks.exports.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<DownloadLink?> ExportTaskStrings(int projectId, int taskId)
+        public async Task<DownloadLink?> ExportTaskStrings(long projectId, long taskId)
         {
             var url = $"/projects/{projectId}/tasks/{taskId}/exports";
             CrowdinApiResult result = await _apiClient.SendPostRequest(url);
@@ -110,7 +110,7 @@ namespace Crowdin.Api.Tasks
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.tasks.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<TaskResource> GetTask(int projectId, int taskId)
+        public async Task<TaskResource> GetTask(long projectId, long taskId)
         {
             string url = FormUrl_TaskId(projectId, taskId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -123,7 +123,7 @@ namespace Crowdin.Api.Tasks
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.tasks.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteTask(int projectId, int taskId)
+        public async Task DeleteTask(long projectId, long taskId)
         {
             string url = FormUrl_TaskId(projectId, taskId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -136,7 +136,7 @@ namespace Crowdin.Api.Tasks
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.tasks.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<TaskResource> EditTask(int projectId, int taskId, IEnumerable<TaskPatchBase> patches)
+        public async Task<TaskResource> EditTask(long projectId, long taskId, IEnumerable<TaskPatchBase> patches)
         {
             string url = FormUrl_TaskId(projectId, taskId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -178,8 +178,8 @@ namespace Crowdin.Api.Tasks
         /// </summary>
         [PublicAPI]
         public async Task<TaskResource> EditTaskArchivedStatus(
-            int projectId,
-            int taskId,
+            long projectId,
+            long taskId,
             IEnumerable<TaskArchivedStatusPatch> patches)
         {
             var url = $"/user/tasks/{taskId}";
@@ -194,12 +194,12 @@ namespace Crowdin.Api.Tasks
 
         #region Helper methods
 
-        private static string FormUrl_Tasks(int projectId)
+        private static string FormUrl_Tasks(long projectId)
         {
             return $"/projects/{projectId}/tasks";
         }
 
-        private static string FormUrl_TaskId(int projectId, int taskId)
+        private static string FormUrl_TaskId(long projectId, long taskId)
         {
             return $"/projects/{projectId}/tasks/{taskId}";
         }
@@ -215,7 +215,7 @@ namespace Crowdin.Api.Tasks
         /// </summary>
         [PublicAPI]
         public async Task<ResponseList<TaskSettingsTemplate>> ListTaskSettingsTemplates(
-            int projectId,
+            long projectId,
             int limit = 25,
             int offset = 0)
         {
@@ -232,7 +232,7 @@ namespace Crowdin.Api.Tasks
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.tasks.settings-templates.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<TaskSettingsTemplate> AddTaskSettingsTemplate(int projectId, AddTaskSettingsTemplate request)
+        public async Task<TaskSettingsTemplate> AddTaskSettingsTemplate(long projectId, AddTaskSettingsTemplate request)
         {
             string url = FormUrl_TaskSettingsTemplates(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -245,7 +245,7 @@ namespace Crowdin.Api.Tasks
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.tasks.settings-templates.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<TaskSettingsTemplate> GetTaskSettingsTemplate(int projectId, int taskSettingsTemplateId)
+        public async Task<TaskSettingsTemplate> GetTaskSettingsTemplate(long projectId, long taskSettingsTemplateId)
         {
             string url = FormUrl_TaskSettingsTemplateId(projectId, taskSettingsTemplateId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -258,7 +258,7 @@ namespace Crowdin.Api.Tasks
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.tasks.settings-templates.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteTaskSettingsTemplate(int projectId, int taskSettingsTemplateId)
+        public async Task DeleteTaskSettingsTemplate(long projectId, long taskSettingsTemplateId)
         {
             string url = FormUrl_TaskSettingsTemplateId(projectId, taskSettingsTemplateId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -272,8 +272,8 @@ namespace Crowdin.Api.Tasks
         /// </summary>
         [PublicAPI]
         public async Task<TaskSettingsTemplate> EditTaskSettingsTemplate(
-            int projectId,
-            int taskSettingsTemplateId,
+            long projectId,
+            long taskSettingsTemplateId,
             IEnumerable<TaskSettingsTemplatePatch> patches)
         {
             string url = FormUrl_TaskSettingsTemplateId(projectId, taskSettingsTemplateId);
@@ -283,12 +283,12 @@ namespace Crowdin.Api.Tasks
 
         #region Helper methods
 
-        private static string FormUrl_TaskSettingsTemplates(int projectId)
+        private static string FormUrl_TaskSettingsTemplates(long projectId)
         {
             return $"/projects/{projectId}/tasks/settings-templates";
         }
 
-        private static string FormUrl_TaskSettingsTemplateId(int projectId, int taskSettingsTemplateId)
+        private static string FormUrl_TaskSettingsTemplateId(long projectId, long taskSettingsTemplateId)
         {
             return $"/projects/{projectId}/tasks/settings-templates/{taskSettingsTemplateId}";
         }

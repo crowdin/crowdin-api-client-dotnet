@@ -88,7 +88,7 @@ namespace Crowdin.Api.UnitTesting.Tests.ProjectsGroups
             Assert.Equal(DupTranslateAction.Hide, projectSettings.TranslateDuplicates);
             Assert.Equal(TagsDetectionAction.Auto, projectSettings.TagsDetection);
 
-            IDictionary<int, AssignedTm>? assignedTms = projectSettings.AssignedTms;
+            IDictionary<long, AssignedTm>? assignedTms = projectSettings.AssignedTms;
             Assert.NotNull(assignedTms);
             Assert.Equal(1, assignedTms.Keys.Single());
             Assert.NotNull(assignedTms[1]);

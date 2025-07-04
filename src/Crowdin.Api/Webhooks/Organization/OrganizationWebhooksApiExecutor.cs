@@ -59,7 +59,7 @@ namespace Crowdin.Api.Webhooks.Organization
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.webhooks.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<OrganizationWebhookResource> GetWebhook(int organizationWebhookId)
+        public async Task<OrganizationWebhookResource> GetWebhook(long organizationWebhookId)
         {
             string url = FormUrl_WebhookId(organizationWebhookId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -72,7 +72,7 @@ namespace Crowdin.Api.Webhooks.Organization
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.webhooks.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteWebhook(int organizationWebhookId)
+        public async Task DeleteWebhook(long organizationWebhookId)
         {
             string url = FormUrl_WebhookId(organizationWebhookId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -86,7 +86,7 @@ namespace Crowdin.Api.Webhooks.Organization
         /// </summary>
         [PublicAPI]
         public async Task<OrganizationWebhookResource> EditWebhook(
-            int organizationWebhookId,
+            long organizationWebhookId,
             IEnumerable<OrganizationWebhookPatch> patches)
         {
             string url = FormUrl_WebhookId(organizationWebhookId);
@@ -96,7 +96,7 @@ namespace Crowdin.Api.Webhooks.Organization
 
         #region Helper methods
 
-        private static string FormUrl_WebhookId(int organizationWebhookId)
+        private static string FormUrl_WebhookId(long organizationWebhookId)
         {
             return $"/webhooks/{organizationWebhookId}";
         }

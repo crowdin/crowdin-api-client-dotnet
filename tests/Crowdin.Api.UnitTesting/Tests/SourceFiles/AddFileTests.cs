@@ -75,7 +75,7 @@ namespace Crowdin.Api.UnitTesting.Tests.SourceFiles
                     SrxStorageId = 1
                 },
                 ExcludedTargetLanguages = new List<string>() { "en", "es", "pl" },
-                AttachLabelIds = new[] { 1 }
+                AttachLabelIds = [1]
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);

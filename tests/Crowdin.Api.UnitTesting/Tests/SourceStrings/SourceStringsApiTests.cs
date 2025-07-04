@@ -130,7 +130,7 @@ namespace Crowdin.Api.UnitTesting.Tests.SourceStrings
                 BranchId = 34,
                 Type = StringBasedProjectFileType.Xliff,
                 ParserVersion = 1,
-                LabelIds = new[] { 1, 2, 3 },
+                LabelIds = [1, 2, 3],
                 UpdateStrings = true,
                 CleanupMode = true,
                 ImportOptions = new SpreadsheetFileImportOptions
@@ -192,7 +192,7 @@ namespace Crowdin.Api.UnitTesting.Tests.SourceStrings
             Assert.Equal(38, attributes.StorageId);
             Assert.Equal("android", attributes.FileType);
             Assert.Equal(8, attributes.ParserVersion);
-            Assert.Equal(new[] { 1, 2 }, attributes.LabelIds);
+            Assert.Equal([1, 2], attributes.LabelIds);
             Assert.False(attributes.UpdateStrings);
             Assert.False(attributes.CleanupMode);
             Assert.Equal(UpdateOption.KeepTranslationsAndApprovals, attributes.UpdateOption);

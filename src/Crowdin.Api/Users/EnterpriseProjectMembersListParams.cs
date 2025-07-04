@@ -14,7 +14,7 @@ namespace Crowdin.Api.Users
         
         public string? LanguageId { get; set; }
         
-        public int? WorkflowStepId { get; set; }
+        public long? WorkflowStepId { get; set; }
 
         public int Limit { get; set; } = 25;
         
@@ -26,8 +26,11 @@ namespace Crowdin.Api.Users
         }
 
         public EnterpriseProjectMembersListParams(
-            string? search, string? languageId,
-            int? workflowStepId, int limit, int offset)
+            string? search,
+            string? languageId,
+            long? workflowStepId,
+            int limit,
+            int offset)
         {
             Search = search;
             LanguageId = languageId;

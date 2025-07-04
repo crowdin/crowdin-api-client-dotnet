@@ -13,12 +13,12 @@ namespace Crowdin.Api.Webhooks.Organization
 
         Task<OrganizationWebhookResource> AddWebhook(AddWebhookRequestBase request);
 
-        Task<OrganizationWebhookResource> GetWebhook(int organizationWebhookId);
+        Task<OrganizationWebhookResource> GetWebhook(long organizationWebhookId);
 
-        Task DeleteWebhook(int organizationWebhookId);
+        Task DeleteWebhook(long organizationWebhookId);
 
         Task<OrganizationWebhookResource> EditWebhook(
-            int organizationWebhookId,
+            long organizationWebhookId,
             IEnumerable<OrganizationWebhookPatch> patches);
     }
 }

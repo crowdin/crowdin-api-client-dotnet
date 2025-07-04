@@ -17,7 +17,7 @@ namespace Crowdin.Api.AI
         public OperationStatus Status { get; set; }
         
         [JsonProperty("progress")]
-        public int Progress { get; set; }
+        public long Progress { get; set; }
 
         [JsonProperty("attributes")]
         public AttributesObject Attributes { get; set; } = null!;
@@ -53,7 +53,7 @@ namespace Crowdin.Api.AI
             public string? FineTunedModel { get; set; }
             
             [JsonProperty("trainedTokensCount")]
-            public int? TrainingTokensCount { get; set; }
+            public long? TrainingTokensCount { get; set; }
             
             [JsonProperty("metadata")]
             public MetadataObject? Metadata { get; set; }

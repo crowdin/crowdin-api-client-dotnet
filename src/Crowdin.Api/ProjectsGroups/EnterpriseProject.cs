@@ -8,7 +8,7 @@ namespace Crowdin.Api.ProjectsGroups
     public class EnterpriseProject : ProjectBase
     {
         [JsonProperty("groupId")]
-        public int GroupId { get; set; }
+        public long GroupId { get; set; }
         
         [JsonProperty("background")]
         public string Background { get; set; }
@@ -20,7 +20,7 @@ namespace Crowdin.Api.ProjectsGroups
         public ProjectExternalType? ExternalType { get; set; }
         
         [JsonProperty("workflowId")]
-        public int WorkflowId { get; set; }
+        public long WorkflowId { get; set; }
         
         [JsonProperty("hasCrowdsourcing")]
         public bool HasCrowdSourcing { get; set; }

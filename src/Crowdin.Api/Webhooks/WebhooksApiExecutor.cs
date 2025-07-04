@@ -32,7 +32,7 @@ namespace Crowdin.Api.Webhooks
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.webhooks.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<Webhook>> ListWebhooks(int projectId, int limit = 25, int offset = 0)
+        public async Task<ResponseList<Webhook>> ListWebhooks(long projectId, int limit = 25, int offset = 0)
         {
             string url = FormUrl_Webhooks(projectId);
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
@@ -47,7 +47,7 @@ namespace Crowdin.Api.Webhooks
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.webhooks.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Webhook> AddWebhook(int projectId, AddWebhookRequest request)
+        public async Task<Webhook> AddWebhook(long projectId, AddWebhookRequest request)
         {
             string url = FormUrl_Webhooks(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -60,7 +60,7 @@ namespace Crowdin.Api.Webhooks
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.webhooks.get">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Webhook> GetWebhook(int projectId, int webhookId)
+        public async Task<Webhook> GetWebhook(long projectId, long webhookId)
         {
             string url = FormUrl_WebhookId(projectId, webhookId);
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
@@ -73,7 +73,7 @@ namespace Crowdin.Api.Webhooks
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.webhooks.delete">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task DeleteWebhook(int projectId, int webhookId)
+        public async Task DeleteWebhook(long projectId, long webhookId)
         {
             string url = FormUrl_WebhookId(projectId, webhookId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -86,7 +86,7 @@ namespace Crowdin.Api.Webhooks
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.webhooks.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<Webhook> EditWebhook(int projectId, int webhookId, IEnumerable<WebhookPatch> patches)
+        public async Task<Webhook> EditWebhook(long projectId, long webhookId, IEnumerable<WebhookPatch> patches)
         {
             string url = FormUrl_WebhookId(projectId, webhookId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
@@ -95,12 +95,12 @@ namespace Crowdin.Api.Webhooks
 
         #region Helper methods
 
-        private static string FormUrl_Webhooks(int projectId)
+        private static string FormUrl_Webhooks(long projectId)
         {
             return $"/projects/{projectId}/webhooks";
         }
 
-        private static string FormUrl_WebhookId(int projectId, int webhookId)
+        private static string FormUrl_WebhookId(long projectId, long webhookId)
         {
             return $"/projects/{projectId}/webhooks/{webhookId}";
         }

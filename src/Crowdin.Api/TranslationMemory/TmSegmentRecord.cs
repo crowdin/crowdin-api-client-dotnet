@@ -9,7 +9,7 @@ namespace Crowdin.Api.TranslationMemory
     public class TmSegmentRecord
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
         
         [JsonProperty("languageId")]
         public string LanguageId { get; set; }
@@ -21,10 +21,10 @@ namespace Crowdin.Api.TranslationMemory
         public int UsageCount { get; set; }
         
         [JsonProperty("createdBy")]
-        public int CreatedBy { get; set; }
+        public long CreatedBy { get; set; }
         
         [JsonProperty("updatedBy")]
-        public int? UpdatedBy { get; set; }
+        public long? UpdatedBy { get; set; }
         
         [JsonProperty("createdAt")]
         public DateTimeOffset CreatedAt { get; set; }

@@ -9,7 +9,7 @@ namespace Crowdin.Api.ProjectsGroups
     public class StringsExporterSettingsResource
     {
         [JsonProperty("id")]
-        public int Id { get; set; }
+        public long Id { get; set; }
 
         [JsonProperty("format")]
         public ProjectFileType Format { get; set; }

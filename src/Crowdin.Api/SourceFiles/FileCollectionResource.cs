@@ -7,7 +7,7 @@ namespace Crowdin.Api.SourceFiles
     public class FileCollectionResource : FileInfoCollectionResource
     {
         [JsonProperty("revisionId")]
-        public int RevisionId { get; set; }
+        public long RevisionId { get; set; }
         
         [JsonProperty("priority")]
         public Priority Priority { get; set; }

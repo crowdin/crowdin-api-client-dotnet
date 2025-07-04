@@ -37,7 +37,7 @@ namespace Crowdin.Api.TranslationMemory
         public class ImportAttributes
         {
             [JsonProperty("tmId")]
-            public int TmId { get; set; }
+            public long TmId { get; set; }
             
             [JsonProperty("storageId")]
             public long StorageId { get; set; }

@@ -16,88 +16,88 @@ namespace Crowdin.Api.Glossaries
         Task<ResponseList<Glossary>> ListGlossaries(
             int limit = 25,
             int offset = 0,
-            int? userId = null,
-            int? groupId = null,
+            long? userId = null,
+            long? groupId = null,
             IEnumerable<SortingRule>? orderBy = null);
 
         Task<ResponseList<Glossary>> ListGlossaries(GlossariesListParams @params);
 
         Task<Glossary> AddGlossary(AddGlossaryRequest request);
 
-        Task<Glossary> GetGlossary(int glossaryId);
+        Task<Glossary> GetGlossary(long glossaryId);
 
-        Task DeleteGlossary(int glossaryId);
+        Task DeleteGlossary(long glossaryId);
 
-        Task<Glossary> EditGlossary(int glossaryId, IEnumerable<GlossaryPatch> patches);
+        Task<Glossary> EditGlossary(long glossaryId, IEnumerable<GlossaryPatch> patches);
 
         Task<ResponseList<GlossaryConcordanceResultResource>> ConcordanceSearch(
-            int projectId,
+            long projectId,
             ConcordanceSearchRequest request);
 
         #endregion
 
         #region Glossaries : Export
 
-        Task<GlossaryExportStatus> ExportGlossary(int glossaryId, ExportGlossaryRequest request);
+        Task<GlossaryExportStatus> ExportGlossary(long glossaryId, ExportGlossaryRequest request);
 
-        Task<GlossaryExportStatus> CheckGlossaryExportStatus(int glossaryId, string exportId);
+        Task<GlossaryExportStatus> CheckGlossaryExportStatus(long glossaryId, string exportId);
 
-        Task<DownloadLink> DownloadGlossary(int glossaryId, string exportId);
+        Task<DownloadLink> DownloadGlossary(long glossaryId, string exportId);
 
         #endregion
 
         #region Glossaries : Import
 
-        Task<GlossaryImportStatus> ImportGlossary(int glossaryId, ImportGlossaryRequest request);
+        Task<GlossaryImportStatus> ImportGlossary(long glossaryId, ImportGlossaryRequest request);
 
-        Task<GlossaryImportStatus> CheckGlossaryImportStatus(int glossaryId, string importId);
+        Task<GlossaryImportStatus> CheckGlossaryImportStatus(long glossaryId, string importId);
 
         #endregion
 
         #region Terms
 
         Task<ResponseList<Term>> ListTerms(
-            int glossaryId,
-            int? userId = null,
+            long glossaryId,
+            long? userId = null,
             string? languageId = null,
-            int? translationOfTermId = null,
-            int? conceptId = null,
+            long? translationOfTermId = null,
+            long? conceptId = null,
             string? croql = null,
             int limit = 25,
             int offset = 0,
             IEnumerable<SortingRule>? orderBy = null);
 
-        Task<ResponseList<Term>> ListTerms(int glossaryId, TermsListParams @params);
+        Task<ResponseList<Term>> ListTerms(long glossaryId, TermsListParams @params);
 
-        Task<Term> AddTerm(int glossaryId, AddTermRequest request);
+        Task<Term> AddTerm(long glossaryId, AddTermRequest request);
 
         Task ClearGlossary(
-            int glossaryId,
+            long glossaryId,
             string? languageId = null,
-            int? conceptId = null,
-            int? translationOfTermId = null);
+            long? conceptId = null,
+            long? translationOfTermId = null);
 
-        Task<Term> GetTerm(int glossaryId, int termId);
+        Task<Term> GetTerm(long glossaryId, long termId);
 
-        Task DeleteTerm(int glossaryId, int termId);
+        Task DeleteTerm(long glossaryId, long termId);
 
-        Task<Term> EditTerm(int glossaryId, int termId, IEnumerable<TermPatch> patches);
+        Task<Term> EditTerm(long glossaryId, long termId, IEnumerable<TermPatch> patches);
 
         #endregion
 
         #region Concepts
 
         Task<ResponseList<Concept>> ListConcepts(
-            int glossaryId,
+            long glossaryId,
             int limit = 25,
             int offset = 0,
             IEnumerable<SortingRule>? orderBy = null);
 
-        Task<Concept> GetConcept(int glossaryId, int conceptId);
+        Task<Concept> GetConcept(long glossaryId, long conceptId);
 
-        Task<Concept> UpdateConcept(int glossaryId, int conceptId, UpdateConceptRequest request);
+        Task<Concept> UpdateConcept(long glossaryId, long conceptId, UpdateConceptRequest request);
 
-        Task DeleteConcept(int glossaryId, int conceptId);
+        Task DeleteConcept(long glossaryId, long conceptId);
 
         #endregion
     }

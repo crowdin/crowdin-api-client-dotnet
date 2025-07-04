@@ -16,7 +16,7 @@ namespace Crowdin.Api.Users
     {
         [JsonProperty("userIds")]
 #pragma warning disable CS8618
-        public ICollection<int> UserIds { get; set; }
+        public ICollection<long> UserIds { get; set; }
 #pragma warning restore CS8618
         
         [JsonProperty("accessToAllWorkflowSteps")]
