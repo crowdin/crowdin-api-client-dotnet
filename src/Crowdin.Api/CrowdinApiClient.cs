@@ -14,9 +14,9 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 using Crowdin.Api.Applications;
+using Crowdin.Api.Branches;
 using Crowdin.Api.Bundles;
 using Crowdin.Api.Core;
-using Crowdin.Api.Core.Converters;
 using Crowdin.Api.Core.RateLimiting;
 using Crowdin.Api.Core.Resilience;
 using Crowdin.Api.Dictionaries;
@@ -55,6 +55,8 @@ namespace Crowdin.Api
     [PublicAPI]
     public class CrowdinApiClient : ICrowdinApiClient
     {
+        public IBranchesApiExecutor Branches { get; }
+        
         public IBundlesApiExecutor Bundles { get; }
         
         public IDictionariesApiExecutor Dictionaries { get; }
@@ -160,6 +162,7 @@ namespace Crowdin.Api
                 _graphBaseUrl = "https://api.crowdin.com/api/graphql";
             }
 
+            Branches = new BranchesApiExecutor(this);
             Bundles = new BundlesApiExecutor(this);
             Dictionaries = new DictionariesApiExecutor(this);
             Distributions = new DistributionsApiExecutor(this);
