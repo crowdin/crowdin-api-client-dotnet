@@ -144,7 +144,7 @@ namespace Crowdin.Api
             // pass base url full
             if (!string.IsNullOrWhiteSpace(credentials.BaseUrl))
             {
-                _baseUrl = credentials.BaseUrl!;
+                _baseUrl = credentials.BaseUrl!.TrimEnd('/');
                 _graphBaseUrl = $"{_baseUrl}/graphql";
             }
             // pass org name -> from base url
