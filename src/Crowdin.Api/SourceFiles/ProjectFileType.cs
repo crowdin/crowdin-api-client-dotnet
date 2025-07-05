@@ -120,6 +120,9 @@ namespace Crowdin.Api.SourceFiles
 
         [Description("docx")]
         DocX,
+        
+        [Description("xlsx")]
+        XlsX,
 
         [Description("sbv")]
         Sbv,
