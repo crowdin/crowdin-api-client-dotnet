@@ -1,8 +1,11 @@
 using System;
 using System.ComponentModel;
+using Crowdin.Api.StringTranslations;
+using JetBrains.Annotations;
 
 namespace Crowdin.Api.StringCorrections
 {
+    [PublicAPI]
     public class Correction
     {
         [Description("id")]
@@ -15,7 +18,7 @@ namespace Crowdin.Api.StringCorrections
         public string PluralCategoryName { get; set; }
 
         [Description("user")]
-        public CorrectionUser User { get; set; }
+        public User User { get; set; }
 
         [Description("createdAt")]
         public DateTimeOffset CreatedAt { get; set; }

@@ -1,7 +1,9 @@
 using System.ComponentModel;
+using JetBrains.Annotations;
 
 namespace Crowdin.Api.StringCorrections
 {
+    [PublicAPI]
     public class AddCorrectionRequest
     {
         [Description("stringId")]

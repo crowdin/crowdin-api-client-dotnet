@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Crowdin.Api.Core;
 using Crowdin.Api.StringCorrections;
+using Crowdin.Api.StringTranslations;
 using Moq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -31,7 +32,7 @@ public class StringCorrectionsApiTests
                 Id = 1,
                 Text = "This string has been corrected",
                 PluralCategoryName = "few",
-                User = new CorrectionUser
+                User = new User
                 {
                     Id = 5,
                     Username = "john_doe",
@@ -83,7 +84,7 @@ public class StringCorrectionsApiTests
             Id = 10,
             Text = "This string has been corrected",
             PluralCategoryName = "few",
-            User = new CorrectionUser()
+            User = new User()
             {
                 AvatarUrl = "",
                 FullName = "John Doe",
@@ -189,7 +190,7 @@ public class StringCorrectionsApiTests
             Id = 1,
             Text = "This string has been corrected",
             PluralCategoryName = "few",
-            User = new CorrectionUser
+            User = new User
             {
                 Id = 5,
                 Username = "john_doe",
@@ -229,7 +230,7 @@ public class StringCorrectionsApiTests
             Id = correctionId,
             Text = "Restored correction text",
             PluralCategoryName = "few",
-            User = new CorrectionUser
+            User = new User
             {
                 Id = 5,
                 Username = "john_doe",
