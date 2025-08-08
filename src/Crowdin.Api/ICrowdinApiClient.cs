@@ -25,6 +25,7 @@ using Crowdin.Api.SourceFiles;
 using Crowdin.Api.SourceStrings;
 using Crowdin.Api.Storage;
 using Crowdin.Api.StringComments;
+using Crowdin.Api.StringCorrections;
 using Crowdin.Api.StringTranslations;
 using Crowdin.Api.Tasks;
 using Crowdin.Api.Teams;
@@ -79,6 +80,8 @@ namespace Crowdin.Api
         IStorageApiExecutor Storage { get; }
         
         IStringCommentsApiExecutor StringComments { get; }
+        
+        IStringCorrectionsApiExecutor  StringCorrections { get; }
         
         IStringTranslationsApiExecutor StringTranslations { get; }
         
