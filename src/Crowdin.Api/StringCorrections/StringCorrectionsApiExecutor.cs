@@ -92,7 +92,9 @@ namespace Crowdin.Api.StringCorrections
         public async Task DeleteCorrections(int projectId, int stringId)
         {
             var url = FormUrl_Corrections(projectId);
-            HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
+            IDictionary<string, string> queryParams = new Dictionary<string, string> { { "stringId", stringId.ToString() } };
+
+            HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url, queryParams);
             Utils.ThrowIfStatusNot204(statusCode, $"Failed to delete correction with string ID {stringId}");
         }
         

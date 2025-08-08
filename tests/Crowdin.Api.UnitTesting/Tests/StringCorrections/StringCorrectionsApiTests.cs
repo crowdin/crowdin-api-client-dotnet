@@ -165,15 +165,17 @@ public class StringCorrectionsApiTests
             
         var mockResponse = HttpStatusCode.NoContent;
             
+        IDictionary<string, string> queryParams = new Dictionary<string, string> { { "stringId", stringId.ToString() } };
+
         mockClient
-            .Setup(client => client.SendDeleteRequest($"/projects/{projectId}/corrections", null))
+            .Setup(client => client.SendDeleteRequest($"/projects/{projectId}/corrections", queryParams))
             .ReturnsAsync(mockResponse);
 
         var executor = new StringCorrectionsApiExecutor(mockClient.Object);
 
         await executor.DeleteCorrections(projectId, stringId);
 
-        mockClient.Verify(client => client.SendDeleteRequest($"/projects/{projectId}/corrections", null), Times.Once);
+        mockClient.Verify(client => client.SendDeleteRequest($"/projects/{projectId}/corrections", queryParams), Times.Once);
     }
     
     [Fact]
