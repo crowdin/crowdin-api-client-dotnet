@@ -23,10 +23,10 @@ namespace Crowdin.Api.StringCorrections
             _jsonParser = jsonParser;
         }
         
-        /// <summary>
-        /// List project corrections Documentation:
-        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Corrections/operation/api.projects.corrections.getMany">Crowdin Enterprise API</a>
-        /// </summary>
+        /// <summary>  
+        /// List string corrections. Documentation:  
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Corrections/operation/api.projects.corrections.getMany">Crowdin Enterprise API</a>  
+        /// </summary>  
         [PublicAPI]
         public async Task<ResponseList<Correction>> ListCorrections(
             int projectId,
@@ -47,10 +47,10 @@ namespace Crowdin.Api.StringCorrections
             return _jsonParser.ParseResponseList<Correction>(result.JsonObject);
         }
         
-        /// <summary>
-        /// Adds a Correction; Documentation:
-        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Corrections/operation/api.projects.corrections.post">Crowdin Enterprise API</a>
-        /// </summary>
+        /// <summary>  
+        /// Add string correction. Documentation:  
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Corrections/operation/api.projects.corrections.post">Crowdin Enterprise API</a>  
+        /// </summary>  
         [PublicAPI]
         public async Task<Correction> AddCorrection(int projectId, AddCorrectionRequest request)
         {
@@ -59,10 +59,10 @@ namespace Crowdin.Api.StringCorrections
             return _jsonParser.ParseResponseObject<Correction>(result.JsonObject);
         }
         
-        /// <summary>
-        /// Gets a corrections by correction Id; Documentation:
-        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Corrections/operation/api.projects.corrections.get">Crowdin Enterprise API</a>
-        /// </summary>
+        /// <summary>  
+        /// Get string correction. Documentation:  
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Corrections/operation/api.projects.corrections.get">Crowdin Enterprise API</a>  
+        /// </summary> 
         [PublicAPI]
         public async Task<Correction> GetCorrection(int projectId, int correctionId)
         {
@@ -72,10 +72,10 @@ namespace Crowdin.Api.StringCorrections
             return _jsonParser.ParseResponseObject<Correction>(result.JsonObject);
         }
         
-        /// <summary>
-        /// Deletes a correction by correction ID, Documentation:
-        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Corrections/operation/api.projects.corrections.delete">Crowdin Enterprise API</a>
-        /// </summary>
+        /// <summary>  
+        /// Delete string correction. Documentation:  
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Corrections/operation/api.projects.corrections.delete">Crowdin Enterprise API</a>  
+        /// </summary>  
         [PublicAPI]
         public async Task DeleteCorrection(int projectId, int correctionId)
         {
@@ -84,10 +84,10 @@ namespace Crowdin.Api.StringCorrections
             Utils.ThrowIfStatusNot204(statusCode, $"Correction {correctionId} removal failed");
         }
         
-        /// <summary>
-        /// Deletes many corrections by string Id, Documentation:
-        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Corrections/operation/api.projects.corrections.deleteMany">Crowdin Enterprise API</a>
-        /// </summary>
+        /// <summary>  
+        /// Delete string corrections. Documentation:  
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Corrections/operation/api.projects.corrections.deleteMany">Crowdin Enterprise API</a>  
+        /// </summary> 
         [PublicAPI]
         public async Task DeleteCorrections(int projectId, int stringId)
         {
@@ -98,9 +98,9 @@ namespace Crowdin.Api.StringCorrections
             Utils.ThrowIfStatusNot204(statusCode, $"Failed to delete correction with string ID {stringId}");
         }
         
-        /// <summary>
-        /// Restore correction data, Documentation:
-        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Corrections/operation/api.projects.corrections.put">Crowdin Enterprise API</a>
+        /// <summary>  
+        /// Restore string correction. Documentation:  
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Corrections/operation/api.projects.corrections.put">Crowdin Enterprise API</a>  
         /// </summary>
         [PublicAPI]
         public async Task<Correction> RestoreCorrection(int projectId, int correctionId)

@@ -1,18 +1,19 @@
 using System.ComponentModel;
 using JetBrains.Annotations;
+using Newtonsoft.Json;
 
 namespace Crowdin.Api.StringCorrections
 {
     [PublicAPI]
     public class AddCorrectionRequest
     {
-        [Description("stringId")]
+        [JsonProperty("stringId")]
         public string StringId { get; set; }
 
-        [Description("text")]
+        [JsonProperty("text")]
         public string Text { get; set; }
 
-        [Description("pluralCategoryName")]
+        [JsonProperty("pluralCategoryName")]
         public string PluralCategoryName { get; set; }
     }
 }
