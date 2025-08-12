@@ -2,25 +2,26 @@ using System;
 using System.ComponentModel;
 using Crowdin.Api.StringTranslations;
 using JetBrains.Annotations;
+using Newtonsoft.Json;
 
 namespace Crowdin.Api.StringCorrections
 {
     [PublicAPI]
     public class Correction
     {
-        [Description("id")]
+        [JsonProperty("id")]
         public int Id { get; set; }
        
-        [Description("text")]
+        [JsonProperty("text")]
         public string Text { get; set; }
 
-        [Description("pluralCategoryName")]
+        [JsonProperty("pluralCategoryName")]
         public string PluralCategoryName { get; set; }
 
-        [Description("user")]
+        [JsonProperty("user")]
         public User User { get; set; }
 
-        [Description("createdAt")]
+        [JsonProperty("createdAt")]
         public DateTimeOffset CreatedAt { get; set; }
     }
 }
