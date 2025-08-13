@@ -253,6 +253,14 @@
           <Generator>ResXFileCodeGenerator</Generator>
           <LastGenOutput>StringComments.Designer.cs</LastGenOutput>
         </EmbeddedResource>
+        <EmbeddedResource Update="StringCorrections.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+          <LastGenOutput>StringCorrections.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\StringCorrections.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+          <LastGenOutput>StringCorrections.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -535,6 +543,16 @@
           <DesignTime>True</DesignTime>
           <AutoGen>True</AutoGen>
           <DependentUpon>StringComments.resx</DependentUpon>
+        </Compile>
+        <Compile Update="StringCorrections.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>StringCorrections.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\StringCorrections.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>StringCorrections.resx</DependentUpon>
         </Compile>
     </ItemGroup>
     
