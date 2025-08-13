@@ -29,8 +29,8 @@ namespace Crowdin.Api.StringCorrections
         /// </summary>  
         [PublicAPI]
         public async Task<ResponseList<Correction>> ListCorrections(
-            int projectId,
-            int stringId,
+            long projectId,
+            long stringId,
             IEnumerable<SortingRule>? orderBy = null,
             int denormalizePlaceholders = 0,
             int limit = 25,
@@ -52,7 +52,7 @@ namespace Crowdin.Api.StringCorrections
         /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Corrections/operation/api.projects.corrections.post">Crowdin Enterprise API</a>  
         /// </summary>  
         [PublicAPI]
-        public async Task<Correction> AddCorrection(int projectId, AddCorrectionRequest request)
+        public async Task<Correction> AddCorrection(long projectId, AddCorrectionRequest request)
         {
             var url = FormUrl_Corrections(projectId);
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
@@ -64,7 +64,7 @@ namespace Crowdin.Api.StringCorrections
         /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Corrections/operation/api.projects.corrections.get">Crowdin Enterprise API</a>  
         /// </summary> 
         [PublicAPI]
-        public async Task<Correction> GetCorrection(int projectId, int correctionId)
+        public async Task<Correction> GetCorrection(long projectId, long correctionId)
         {
             var url = FormUrl_CorrectionId(projectId, correctionId);
             
@@ -77,7 +77,7 @@ namespace Crowdin.Api.StringCorrections
         /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Corrections/operation/api.projects.corrections.delete">Crowdin Enterprise API</a>  
         /// </summary>  
         [PublicAPI]
-        public async Task DeleteCorrection(int projectId, int correctionId)
+        public async Task DeleteCorrection(long projectId, long correctionId)
         {
             var url = FormUrl_CorrectionId(projectId, correctionId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
@@ -89,7 +89,7 @@ namespace Crowdin.Api.StringCorrections
         /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Corrections/operation/api.projects.corrections.deleteMany">Crowdin Enterprise API</a>  
         /// </summary> 
         [PublicAPI]
-        public async Task DeleteCorrections(int projectId, int stringId)
+        public async Task DeleteCorrections(long projectId, long stringId)
         {
             var url = FormUrl_Corrections(projectId);
             IDictionary<string, string> queryParams = new Dictionary<string, string> { { "stringId", stringId.ToString() } };
@@ -103,15 +103,15 @@ namespace Crowdin.Api.StringCorrections
         /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/String-Corrections/operation/api.projects.corrections.put">Crowdin Enterprise API</a>  
         /// </summary>
         [PublicAPI]
-        public async Task<Correction> RestoreCorrection(int projectId, int correctionId)
+        public async Task<Correction> RestoreCorrection(long projectId, long correctionId)
         {
             var url = FormUrl_CorrectionId(projectId, correctionId);
             CrowdinApiResult result = await _apiClient.SendPutRequest(url);
             return _jsonParser.ParseResponseObject<Correction>(result.JsonObject);
         }
         
-        private static string FormUrl_Corrections(int projectId) => $"/projects/{projectId}/corrections";
+        private static string FormUrl_Corrections(long projectId) => $"/projects/{projectId}/corrections";
         
-        private static string FormUrl_CorrectionId(int projectId, int correctionId) => $"/projects/{projectId}/corrections/{correctionId}";
+        private static string FormUrl_CorrectionId(long projectId, long correctionId) => $"/projects/{projectId}/corrections/{correctionId}";
     }
 }

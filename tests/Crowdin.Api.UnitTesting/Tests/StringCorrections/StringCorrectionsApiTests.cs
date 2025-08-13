@@ -20,8 +20,8 @@ public class StringCorrectionsApiTests
     [Fact]
     public async Task ListCorrections()
     {
-        const int projectId = 1;
-        const int stringId = 10;
+        const long projectId = 1;
+        const long stringId = 10;
         const int limit = 25;
         const int offset = 0;
 
@@ -56,11 +56,11 @@ public class StringCorrectionsApiTests
     [Fact]
     public async Task AddCorrection()
     {
-        const int projectId = 1;  
+        const long projectId = 1;  
   
         var request = new AddCorrectionRequest  
         {  
-           StringId  = "10",
+           StringId  = 10,
            PluralCategoryName = "few",  
            Text = "This string has been corrected"  
         }; 
@@ -87,8 +87,8 @@ public class StringCorrectionsApiTests
     [Fact]
     public async Task DeleteCorrection()
     {
-        const int projectId = 1;  
-        const int correctionId = 10;  
+        const long projectId = 1;  
+        const long correctionId = 10;  
   
         Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();  
   
@@ -106,8 +106,8 @@ public class StringCorrectionsApiTests
     [Fact]  
     public async Task DeleteCorrection_Throw()  
     {  
-        const int projectId = 1;  
-        const int correctionId = 10;  
+        const long projectId = 1;  
+        const long correctionId = 10;  
   
         Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();  
   
@@ -125,8 +125,8 @@ public class StringCorrectionsApiTests
     [Fact]
     public async Task DeleteCorrections()
     {
-        const int projectId = 1;
-        const int stringId = 10;
+        const long projectId = 1;
+        const long stringId = 10;
 
         var queryParams = new Dictionary<string, string>  
         {  
@@ -149,8 +149,8 @@ public class StringCorrectionsApiTests
     [Fact]
     public async Task GetCorrection()
     {
-        const int projectId = 1;  
-        const int correctionId = 10;  
+        const long projectId = 1;  
+        const long correctionId = 10;  
   
         Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();  
   
@@ -176,8 +176,8 @@ public class StringCorrectionsApiTests
     [Fact]
     public async Task RestoreCorrection()
     {
-        const int projectId = 1;
-        const int correctionId = 10;
+        const long projectId = 1;
+        const long correctionId = 10;
 
         Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
 

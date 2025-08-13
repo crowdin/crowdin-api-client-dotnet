@@ -8,7 +8,7 @@ namespace Crowdin.Api.StringCorrections
     public class AddCorrectionRequest
     {
         [JsonProperty("stringId")]
-        public string StringId { get; set; }
+        public long StringId { get; set; }
 
         [JsonProperty("text")]
         public string Text { get; set; }
