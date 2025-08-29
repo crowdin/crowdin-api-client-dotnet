@@ -1,0 +1,59 @@
+name: Documentation
+
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+  repository_dispatch:
+    types: [publish]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET Core SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 7.0.x
+
+      - name: Install DocFX
+        uses: crazy-max/ghaction-chocolatey@v3
+        with:
+          args: install docfx --version=2.77.0
+
+      - name: Generate documentation
+        working-directory: docs
+        run: docfx docfx.json
+        continue-on-error: false
+
+      - name: Copy README.html -> index.html
+        run: cp docs/_site/README.html docs/_site/index.html
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: docs
+          path: docs/
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: docs
+
+      - name: Deploy to GitHub Pages 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: _site
