@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class CrowdinApiClient | Docs </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class CrowdinApiClient | Docs ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Crowdin.Api.CrowdinApiClient">
+
+
+
+  <h1 id="Crowdin_Api_CrowdinApiClient" data-uid="Crowdin.Api.CrowdinApiClient" class="text-break">Class CrowdinApiClient</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">CrowdinApiClient</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Crowdin.Api.ICrowdinApiClient.html">ICrowdinApiClient</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Crowdin.html">Crowdin</a>.<a class="xref" href="Crowdin.Api.html">Api</a></h6>
+  <h6><strong>Assembly</strong>: Crowdin.Api.dll</h6>
+  <h5 id="Crowdin_Api_CrowdinApiClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+public class CrowdinApiClient : ICrowdinApiClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient__ctor_Crowdin_Api_CrowdinCredentials_System_Net_Http_HttpClient_Crowdin_Api_Core_IJsonParser_Crowdin_Api_Core_RateLimiting_IRateLimiter_Crowdin_Api_Core_Resilience_IRetryService_.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.%23ctor(Crowdin.Api.CrowdinCredentials%2CSystem.Net.Http.HttpClient%2CCrowdin.Api.Core.IJsonParser%2CCrowdin.Api.Core.RateLimiting.IRateLimiter%2CCrowdin.Api.Core.Resilience.IRetryService)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L134">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient__ctor_" data-uid="Crowdin.Api.CrowdinApiClient.#ctor*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient__ctor_Crowdin_Api_CrowdinCredentials_System_Net_Http_HttpClient_Crowdin_Api_Core_IJsonParser_Crowdin_Api_Core_RateLimiting_IRateLimiter_Crowdin_Api_Core_Resilience_IRetryService_" data-uid="Crowdin.Api.CrowdinApiClient.#ctor(Crowdin.Api.CrowdinCredentials,System.Net.Http.HttpClient,Crowdin.Api.Core.IJsonParser,Crowdin.Api.Core.RateLimiting.IRateLimiter,Crowdin.Api.Core.Resilience.IRetryService)">CrowdinApiClient(CrowdinCredentials, HttpClient?, IJsonParser?, IRateLimiter?, IRetryService?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CrowdinApiClient(CrowdinCredentials credentials, HttpClient? httpClient = null, IJsonParser? jsonParser = null, IRateLimiter? rateLimiter = null, IRetryService? retryService = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.CrowdinCredentials.html">CrowdinCredentials</a></td>
+        <td><span class="parametername">credentials</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Core.IJsonParser.html">IJsonParser</a></td>
+        <td><span class="parametername">jsonParser</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Core.RateLimiting.IRateLimiter.html">IRateLimiter</a></td>
+        <td><span class="parametername">rateLimiter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Core.Resilience.IRetryService.html">IRetryService</a></td>
+        <td><span class="parametername">retryService</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_Applications.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.Applications%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L117">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_Applications_" data-uid="Crowdin.Api.CrowdinApiClient.Applications*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_Applications" data-uid="Crowdin.Api.CrowdinApiClient.Applications">Applications</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IApplicationsApiExecutor Applications { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Applications.IApplicationsApiExecutor.html">IApplicationsApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_Branches.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.Branches%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L59">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_Branches_" data-uid="Crowdin.Api.CrowdinApiClient.Branches*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_Branches" data-uid="Crowdin.Api.CrowdinApiClient.Branches">Branches</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IBranchesApiExecutor Branches { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Branches.IBranchesApiExecutor.html">IBranchesApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_Bundles.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.Bundles%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L61">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_Bundles_" data-uid="Crowdin.Api.CrowdinApiClient.Bundles*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_Bundles" data-uid="Crowdin.Api.CrowdinApiClient.Bundles">Bundles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IBundlesApiExecutor Bundles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Bundles.IBundlesApiExecutor.html">IBundlesApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_DefaultJsonParser.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.DefaultJsonParser%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L132">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_DefaultJsonParser_" data-uid="Crowdin.Api.CrowdinApiClient.DefaultJsonParser*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_DefaultJsonParser" data-uid="Crowdin.Api.CrowdinApiClient.DefaultJsonParser">DefaultJsonParser</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IJsonParser DefaultJsonParser { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Core.IJsonParser.html">IJsonParser</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_Dictionaries.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.Dictionaries%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L63">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_Dictionaries_" data-uid="Crowdin.Api.CrowdinApiClient.Dictionaries*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_Dictionaries" data-uid="Crowdin.Api.CrowdinApiClient.Dictionaries">Dictionaries</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDictionariesApiExecutor Dictionaries { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Dictionaries.IDictionariesApiExecutor.html">IDictionariesApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_Distributions.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.Distributions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L65">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_Distributions_" data-uid="Crowdin.Api.CrowdinApiClient.Distributions*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_Distributions" data-uid="Crowdin.Api.CrowdinApiClient.Distributions">Distributions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDistributionsApiExecutor Distributions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Distributions.IDistributionsApiExecutor.html">IDistributionsApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_Fields.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.Fields%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L119">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_Fields_" data-uid="Crowdin.Api.CrowdinApiClient.Fields*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_Fields" data-uid="Crowdin.Api.CrowdinApiClient.Fields">Fields</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IFieldsApiExecutor Fields { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Fields.IFieldsApiExecutor.html">IFieldsApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_Glossaries.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.Glossaries%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L67">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_Glossaries_" data-uid="Crowdin.Api.CrowdinApiClient.Glossaries*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_Glossaries" data-uid="Crowdin.Api.CrowdinApiClient.Glossaries">Glossaries</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IGlossariesApiExecutor Glossaries { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Glossaries.IGlossariesApiExecutor.html">IGlossariesApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_GraphQL.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.GraphQL%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L121">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_GraphQL_" data-uid="Crowdin.Api.CrowdinApiClient.GraphQL*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_GraphQL" data-uid="Crowdin.Api.CrowdinApiClient.GraphQL">GraphQL</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IGraphQLApiExecutor GraphQL { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.GraphQL.IGraphQLApiExecutor.html">IGraphQLApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_Issues.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.Issues%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L69">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_Issues_" data-uid="Crowdin.Api.CrowdinApiClient.Issues*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_Issues" data-uid="Crowdin.Api.CrowdinApiClient.Issues">Issues</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IIssuesApiExecutor Issues { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Issues.IIssuesApiExecutor.html">IIssuesApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_Labels.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.Labels%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L71">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_Labels_" data-uid="Crowdin.Api.CrowdinApiClient.Labels*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_Labels" data-uid="Crowdin.Api.CrowdinApiClient.Labels">Labels</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILabelsApiExecutor Labels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Labels.ILabelsApiExecutor.html">ILabelsApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_Languages.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.Languages%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L73">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_Languages_" data-uid="Crowdin.Api.CrowdinApiClient.Languages*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_Languages" data-uid="Crowdin.Api.CrowdinApiClient.Languages">Languages</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ILanguagesApiExecutor Languages { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Languages.ILanguagesApiExecutor.html">ILanguagesApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_MachineTranslationEngines.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.MachineTranslationEngines%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L75">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_MachineTranslationEngines_" data-uid="Crowdin.Api.CrowdinApiClient.MachineTranslationEngines*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_MachineTranslationEngines" data-uid="Crowdin.Api.CrowdinApiClient.MachineTranslationEngines">MachineTranslationEngines</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IMachineTranslationEnginesApiExecutor MachineTranslationEngines { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.MachineTranslationEngines.IMachineTranslationEnginesApiExecutor.html">IMachineTranslationEnginesApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_OrganizationWebhooks.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.OrganizationWebhooks%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L115">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_OrganizationWebhooks_" data-uid="Crowdin.Api.CrowdinApiClient.OrganizationWebhooks*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_OrganizationWebhooks" data-uid="Crowdin.Api.CrowdinApiClient.OrganizationWebhooks">OrganizationWebhooks</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IOrganizationWebhooksApiExecutor OrganizationWebhooks { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Webhooks.Organization.IOrganizationWebhooksApiExecutor.html">IOrganizationWebhooksApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_ProjectsGroups.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.ProjectsGroups%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L77">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_ProjectsGroups_" data-uid="Crowdin.Api.CrowdinApiClient.ProjectsGroups*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_ProjectsGroups" data-uid="Crowdin.Api.CrowdinApiClient.ProjectsGroups">ProjectsGroups</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IProjectsGroupsApiExecutor ProjectsGroups { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.ProjectsGroups.IProjectsGroupsApiExecutor.html">IProjectsGroupsApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_Reports.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.Reports%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L79">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_Reports_" data-uid="Crowdin.Api.CrowdinApiClient.Reports*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_Reports" data-uid="Crowdin.Api.CrowdinApiClient.Reports">Reports</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReportsApiExecutor Reports { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Reports.IReportsApiExecutor.html">IReportsApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_Screenshots.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.Screenshots%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L81">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_Screenshots_" data-uid="Crowdin.Api.CrowdinApiClient.Screenshots*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_Screenshots" data-uid="Crowdin.Api.CrowdinApiClient.Screenshots">Screenshots</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IScreenshotsApiExecutor Screenshots { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Screenshots.IScreenshotsApiExecutor.html">IScreenshotsApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_SecurityLogs.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.SecurityLogs%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L83">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_SecurityLogs_" data-uid="Crowdin.Api.CrowdinApiClient.SecurityLogs*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_SecurityLogs" data-uid="Crowdin.Api.CrowdinApiClient.SecurityLogs">SecurityLogs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISecurityLogsApiExecutor SecurityLogs { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.SecurityLogs.ISecurityLogsApiExecutor.html">ISecurityLogsApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_SourceFiles.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.SourceFiles%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L85">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_SourceFiles_" data-uid="Crowdin.Api.CrowdinApiClient.SourceFiles*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_SourceFiles" data-uid="Crowdin.Api.CrowdinApiClient.SourceFiles">SourceFiles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISourceFilesApiExecutor SourceFiles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.html">ISourceFilesApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_SourceStrings.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.SourceStrings%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L87">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_SourceStrings_" data-uid="Crowdin.Api.CrowdinApiClient.SourceStrings*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_SourceStrings" data-uid="Crowdin.Api.CrowdinApiClient.SourceStrings">SourceStrings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISourceStringsApiExecutor SourceStrings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.SourceStrings.ISourceStringsApiExecutor.html">ISourceStringsApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_Storage.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.Storage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L89">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_Storage_" data-uid="Crowdin.Api.CrowdinApiClient.Storage*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_Storage" data-uid="Crowdin.Api.CrowdinApiClient.Storage">Storage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStorageApiExecutor Storage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Storage.IStorageApiExecutor.html">IStorageApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_StringComments.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.StringComments%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L91">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_StringComments_" data-uid="Crowdin.Api.CrowdinApiClient.StringComments*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_StringComments" data-uid="Crowdin.Api.CrowdinApiClient.StringComments">StringComments</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStringCommentsApiExecutor StringComments { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.StringComments.IStringCommentsApiExecutor.html">IStringCommentsApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_StringCorrections.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.StringCorrections%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L93">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_StringCorrections_" data-uid="Crowdin.Api.CrowdinApiClient.StringCorrections*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_StringCorrections" data-uid="Crowdin.Api.CrowdinApiClient.StringCorrections">StringCorrections</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStringCorrectionsApiExecutor StringCorrections { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.StringCorrections.IStringCorrectionsApiExecutor.html">IStringCorrectionsApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_StringTranslations.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.StringTranslations%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L95">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_StringTranslations_" data-uid="Crowdin.Api.CrowdinApiClient.StringTranslations*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_StringTranslations" data-uid="Crowdin.Api.CrowdinApiClient.StringTranslations">StringTranslations</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IStringTranslationsApiExecutor StringTranslations { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.StringTranslations.IStringTranslationsApiExecutor.html">IStringTranslationsApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_Tasks.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.Tasks%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L97">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_Tasks_" data-uid="Crowdin.Api.CrowdinApiClient.Tasks*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_Tasks" data-uid="Crowdin.Api.CrowdinApiClient.Tasks">Tasks</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITasksApiExecutor Tasks { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Tasks.ITasksApiExecutor.html">ITasksApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_Teams.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.Teams%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L99">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_Teams_" data-uid="Crowdin.Api.CrowdinApiClient.Teams*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_Teams" data-uid="Crowdin.Api.CrowdinApiClient.Teams">Teams</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITeamsApiExecutor Teams { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Teams.ITeamsApiExecutor.html">ITeamsApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_TranslationMemory.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.TranslationMemory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L101">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_TranslationMemory_" data-uid="Crowdin.Api.CrowdinApiClient.TranslationMemory*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_TranslationMemory" data-uid="Crowdin.Api.CrowdinApiClient.TranslationMemory">TranslationMemory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITranslationMemoryApiExecutor TranslationMemory { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.TranslationMemory.ITranslationMemoryApiExecutor.html">ITranslationMemoryApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_TranslationStatus.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.TranslationStatus%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L105">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_TranslationStatus_" data-uid="Crowdin.Api.CrowdinApiClient.TranslationStatus*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_TranslationStatus" data-uid="Crowdin.Api.CrowdinApiClient.TranslationStatus">TranslationStatus</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITranslationStatusApiExecutor TranslationStatus { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.TranslationStatus.ITranslationStatusApiExecutor.html">ITranslationStatusApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_Translations.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.Translations%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L103">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_Translations_" data-uid="Crowdin.Api.CrowdinApiClient.Translations*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_Translations" data-uid="Crowdin.Api.CrowdinApiClient.Translations">Translations</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ITranslationsApiExecutor Translations { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Translations.ITranslationsApiExecutor.html">ITranslationsApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_Users.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.Users%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L107">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_Users_" data-uid="Crowdin.Api.CrowdinApiClient.Users*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_Users" data-uid="Crowdin.Api.CrowdinApiClient.Users">Users</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IUsersApiExecutor Users { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Users.IUsersApiExecutor.html">IUsersApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_Vendors.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.Vendors%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L109">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_Vendors_" data-uid="Crowdin.Api.CrowdinApiClient.Vendors*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_Vendors" data-uid="Crowdin.Api.CrowdinApiClient.Vendors">Vendors</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IVendorsApiExecutor Vendors { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Vendors.IVendorsApiExecutor.html">IVendorsApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_Webhooks.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.Webhooks%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L111">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_Webhooks_" data-uid="Crowdin.Api.CrowdinApiClient.Webhooks*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_Webhooks" data-uid="Crowdin.Api.CrowdinApiClient.Webhooks">Webhooks</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IWebhooksApiExecutor Webhooks { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Webhooks.IWebhooksApiExecutor.html">IWebhooksApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_Workflows.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.Workflows%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L113">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_Workflows_" data-uid="Crowdin.Api.CrowdinApiClient.Workflows*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_Workflows" data-uid="Crowdin.Api.CrowdinApiClient.Workflows">Workflows</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IWorkflowsApiExecutor Workflows { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Workflows.IWorkflowsApiExecutor.html">IWorkflowsApiExecutor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient_WithFetchAll__1_System_Func_System_Int32_System_Int32_System_Threading_Tasks_Task_Crowdin_Api_ResponseList___0____System_Nullable_System_Int32__System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient.WithFetchAll%60%601(System.Func%7BSystem.Int32%2CSystem.Int32%2CSystem.Threading.Tasks.Task%7BCrowdin.Api.ResponseList%7B%60%600%7D%7D%7D%2CSystem.Nullable%7BSystem.Int32%7D%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L342">View Source</a>
+  </span>
+  <a id="Crowdin_Api_CrowdinApiClient_WithFetchAll_" data-uid="Crowdin.Api.CrowdinApiClient.WithFetchAll*"></a>
+  <h4 id="Crowdin_Api_CrowdinApiClient_WithFetchAll__1_System_Func_System_Int32_System_Int32_System_Threading_Tasks_Task_Crowdin_Api_ResponseList___0____System_Nullable_System_Int32__System_Int32_" data-uid="Crowdin.Api.CrowdinApiClient.WithFetchAll``1(System.Func{System.Int32,System.Int32,System.Threading.Tasks.Task{Crowdin.Api.ResponseList{``0}}},System.Nullable{System.Int32},System.Int32)">WithFetchAll&lt;T&gt;(Func&lt;int, int, Task&lt;ResponseList&lt;T&gt;&gt;&gt;, int?, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task&lt;T[]&gt; WithFetchAll&lt;T&gt;(Func&lt;int, int, Task&lt;ResponseList&lt;T&gt;&gt;&gt; runRequest, int? maxAmountOfItems = null, int amountPerRequest = 25)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Crowdin.Api.ResponseList-1.html">ResponseList</a>&lt;T&gt;&gt;&gt;</td>
+        <td><span class="parametername">runRequest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">maxAmountOfItems</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">amountPerRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Crowdin.Api.ICrowdinApiClient.html">ICrowdinApiClient</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_CrowdinApiClient.md&amp;value=---%0Auid%3A%20Crowdin.Api.CrowdinApiClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/CrowdinApiClient.cs/#L56" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
