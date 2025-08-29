@@ -1,6 +1,7 @@
 name: Documentation
 
 on:
+  workflow_dispatch:
   release:
     types: [published]
   repository_dispatch:
@@ -22,7 +23,7 @@ jobs:
       - name: Install DocFX
         uses: crazy-max/ghaction-chocolatey@v3
         with:
-          args: install docfx
+          args: install docfx --version=2.77.0
 
       - name: Generate documentation
         working-directory: docs
