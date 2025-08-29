@@ -21,9 +21,7 @@ jobs:
           dotnet-version: 7.0.x
 
       - name: Install DocFX
-        uses: crazy-max/ghaction-chocolatey@v3
-        with:
-          args: install docfx --version=2.77.0
+        run: dotnet tool install -g docfx
 
       - name: Generate documentation
         working-directory: docs
