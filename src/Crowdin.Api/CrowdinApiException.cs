@@ -12,6 +12,8 @@ namespace Crowdin.Api
         public int? Code { get; }
         
         public object? Related { get; }
+        
+        public string ResponseJson { get; set; }
 
         public CrowdinApiException(string message) : base(message)
         {

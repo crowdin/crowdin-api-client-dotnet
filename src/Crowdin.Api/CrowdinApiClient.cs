@@ -453,7 +453,10 @@ namespace Crowdin.Api
                     messageBuilder.Append(". More errors see in Related property");
                 }
 
-                throw new CrowdinApiException(messageBuilder.ToString(), errorResources);
+                throw new CrowdinApiException(messageBuilder.ToString(), errorResources)
+                {
+                    ResponseJson = doc.ToString()
+                };
             }
             
             JToken error = doc["error"]!;
@@ -461,7 +464,10 @@ namespace Crowdin.Api
             var code = error["code"]!.Value<int>();
             var message = error["message"]!.Value<string>();
 
-            throw new CrowdinApiException(code, message ?? "Unknown error occurred");
+            throw new CrowdinApiException(code, message ?? "Unknown error occurred")
+            {
+                ResponseJson = doc.ToString()
+            };
         }
     }
 }

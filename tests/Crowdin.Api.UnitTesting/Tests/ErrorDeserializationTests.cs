@@ -16,9 +16,9 @@ namespace Crowdin.Api.UnitTesting.Tests
         [Fact]
         public async Task Code_400_InvalidRequestParameters()
         {
-            HttpResponseMessage response = CreateResponseMessage(
-                HttpStatusCode.BadRequest,
-                Core_ErrorResponses.Code_400_InvalidRequestParameters);
+            string responseJson = Core_ErrorResponses.Code_400_InvalidRequestParameters;
+            
+            HttpResponseMessage response = CreateResponseMessage(HttpStatusCode.BadRequest, responseJson);
 
             var exception =
                 await Assert.ThrowsAsync<CrowdinApiException>(() =>
@@ -37,14 +37,16 @@ namespace Crowdin.Api.UnitTesting.Tests
             Assert.NotNull(error);
             Assert.Equal("StringTypeInvalid", error!.Code);
             Assert.Equal("Invalid type given. String expected", error.Message);
+            
+            Assert.Equal(responseJson, exception.ResponseJson);
         }
 
         [Fact]
         public async Task Code_405_MethodNotAllowed()
         {
-            HttpResponseMessage response = CreateResponseMessage(
-                HttpStatusCode.MethodNotAllowed,
-                Core_ErrorResponses.Code_405_MethodNotAllowed);
+            string responseJson = Core_ErrorResponses.Code_405_MethodNotAllowed;
+            
+            HttpResponseMessage response = CreateResponseMessage(HttpStatusCode.MethodNotAllowed, responseJson);
 
             var exception =
                 await Assert.ThrowsAsync<CrowdinApiException>(() =>
@@ -52,6 +54,8 @@ namespace Crowdin.Api.UnitTesting.Tests
 
             Assert.Equal("Method Not Allowed", exception.Message);
             Assert.Equal((int)HttpStatusCode.MethodNotAllowed, exception.Code);
+            
+            Assert.Equal(responseJson, exception.ResponseJson);
         }
 
         private static HttpResponseMessage CreateResponseMessage(HttpStatusCode statusCode, string jsonString)
