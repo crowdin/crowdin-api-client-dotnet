@@ -11,6 +11,12 @@ namespace Crowdin.Api.Reports
         User,
                 
         [Description("language")]
-        Language
+        Language,
+        
+        [Description("type")]
+        Type,
+        
+        [Description("project")]
+        Project
     }
 }
