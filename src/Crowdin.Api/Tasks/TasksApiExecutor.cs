@@ -296,5 +296,98 @@ namespace Crowdin.Api.Tasks
         #endregion
 
         #endregion
+
+        #region Task Comments
+
+        /// <summary>
+        /// List Tasks Comments. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/Tasks/operation/api.projects.tasks.comments.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Tasks/operation/api.projects.tasks.comments.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<TaskComment>> ListTaskComments(
+            long projectId,
+            long taskId,
+            int limit = 25,
+            int offset = 0)
+        {
+            string url = FormUrl_TaskComments(projectId, taskId);
+            IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
+            
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
+            return _jsonParser.ParseResponseList<TaskComment>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Add Task Comment. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/Tasks/operation/api.projects.tasks.comments.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Tasks/operation/api.projects.tasks.comments.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<TaskComment> AddTaskComment(long projectId, long taskId, AddTaskCommentRequest request)
+        {
+            string url = FormUrl_TaskComments(projectId, taskId);
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<TaskComment>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Get Task Comment. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/Tasks/operation/api.projects.tasks.comments.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Tasks/operation/api.projects.tasks.comments.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<TaskComment> GetTaskComment(long projectId, long taskId, long commentId)
+        {
+            string url = FormUrl_TaskCommentId(projectId, taskId, commentId);
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<TaskComment>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Delete Task Comment. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/Tasks/operation/api.projects.tasks.comments.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Tasks/operation/api.projects.tasks.comments.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task DeleteTaskComment(long projectId, long taskId, long commentId)
+        {
+            string url = FormUrl_TaskCommentId(projectId, taskId, commentId);
+            HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
+            Utils.ThrowIfStatusNot204(statusCode, $"Task Comment {commentId} removal failed");
+        }
+
+        /// <summary>
+        /// Edit Task Comment. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/Tasks/operation/api.projects.tasks.comments.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Tasks/operation/api.projects.tasks.comments.patch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<TaskComment> EditTaskComment(
+            long projectId,
+            long taskId,
+            long commentId,
+            IEnumerable<TaskCommentPatch> patches)
+        {
+            string url = FormUrl_TaskCommentId(projectId, taskId, commentId);
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            return _jsonParser.ParseResponseObject<TaskComment>(result.JsonObject);
+        }
+
+        #region Helper methods
+
+        private static string FormUrl_TaskComments(long projectId, long taskId)
+        {
+            return $"/projects/{projectId}/tasks/{taskId}/comments";
+        }
+
+        private static string FormUrl_TaskCommentId(long projectId, long taskId, long commentId)
+        {
+            return $"/projects/{projectId}/tasks/{taskId}/comments/{commentId}";
+        }
+
+        #endregion
+            
+        #endregion
     }
 }
