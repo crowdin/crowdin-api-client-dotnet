@@ -72,5 +72,27 @@ namespace Crowdin.Api.Tasks
             IEnumerable<TaskSettingsTemplatePatch> patches);
 
         #endregion
+
+        #region Task Comments
+
+        Task<ResponseList<TaskComment>> ListTaskComments(
+            long projectId,
+            long taskId,
+            int limit = 25,
+            int offset = 0);
+
+        Task<TaskComment> AddTaskComment(long projectId, long taskId, AddTaskCommentRequest request);
+
+        Task<TaskComment> GetTaskComment(long projectId, long taskId, long commentId);
+        
+        Task DeleteTaskComment(long projectId, long taskId, long commentId);
+
+        Task<TaskComment> EditTaskComment(
+            long projectId,
+            long taskId,
+            long commentId,
+            IEnumerable<TaskCommentPatch> patches);
+
+        #endregion
     }
 }
