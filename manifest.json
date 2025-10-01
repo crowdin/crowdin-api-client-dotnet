@@ -5166,6 +5166,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.EditorIssuesGenerateReportRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Reports.ExportReportArchiveRequest.yml",
       "output": {
         ".html": {
@@ -5208,6 +5236,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Reports.GroupReportStatus.ReportAttributes.yml",
       "output": {
         ".html": {
@@ -5236,6 +5292,132 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CreatedVsResolvedSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CreatedVsResolvedSchema.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CreatedVsResolvedSchema",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Reports.GroupTopMembersGenerateGroupReportRequest.RequestSchema.yml",
       "output": {
         ".html": {
@@ -5260,6 +5442,34 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Crowdin.Api.Reports.GroupTopMembersGenerateGroupReportRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest",
       "Summary": null
     },
     {
@@ -5484,6 +5694,118 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.ProjectMembersGenerateReportRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest",
       "Summary": null
     },
     {
@@ -5932,6 +6254,34 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Crowdin.Api.Reports.ScopeType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest",
       "Summary": null
     },
     {
@@ -8176,6 +8526,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Tasks.AddTaskCommentRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Tasks.AddTaskCommentRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Tasks.AddTaskCommentRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Tasks.AddTaskRequest.yml",
       "output": {
         ".html": {
@@ -8368,6 +8732,48 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Crowdin.Api.Tasks.TaskAssigneeForm",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Tasks.TaskComment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Tasks.TaskComment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Tasks.TaskComment",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Tasks.TaskCommentPatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Tasks.TaskCommentPatch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Tasks.TaskCommentPatch",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Tasks.TaskCommentPatchPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Tasks.TaskCommentPatchPath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Tasks.TaskCommentPatchPath",
       "Summary": null
     },
     {

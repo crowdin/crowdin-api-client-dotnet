@@ -8059,6 +8059,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.CrowdinApiException.Related
   nameWithType: CrowdinApiException.Related
+- uid: Crowdin.Api.CrowdinApiException.ResponseJson
+  name: ResponseJson
+  href: api/Crowdin.Api.CrowdinApiException.html#Crowdin_Api_CrowdinApiException_ResponseJson
+  commentId: P:Crowdin.Api.CrowdinApiException.ResponseJson
+  fullName: Crowdin.Api.CrowdinApiException.ResponseJson
+  nameWithType: CrowdinApiException.ResponseJson
+- uid: Crowdin.Api.CrowdinApiException.ResponseJson*
+  name: ResponseJson
+  href: api/Crowdin.Api.CrowdinApiException.html#Crowdin_Api_CrowdinApiException_ResponseJson_
+  commentId: Overload:Crowdin.Api.CrowdinApiException.ResponseJson
+  isSpec: "True"
+  fullName: Crowdin.Api.CrowdinApiException.ResponseJson
+  nameWithType: CrowdinApiException.ResponseJson
 - uid: Crowdin.Api.CrowdinCredentials
   name: CrowdinCredentials
   href: api/Crowdin.Api.CrowdinCredentials.html
@@ -23860,6 +23873,96 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Reports.CostEstimationPostEditingGenerateReportRequest.SchemaBase.Unit
   nameWithType: CostEstimationPostEditingGenerateReportRequest.SchemaBase.Unit
+- uid: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest
+  name: EditorIssuesGenerateReportRequest
+  href: api/Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.html
+  commentId: T:Crowdin.Api.Reports.EditorIssuesGenerateReportRequest
+  fullName: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest
+  nameWithType: EditorIssuesGenerateReportRequest
+- uid: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.Name
+  name: Name
+  href: api/Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.html#Crowdin_Api_Reports_EditorIssuesGenerateReportRequest_Name
+  commentId: P:Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.Name
+  fullName: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.Name
+  nameWithType: EditorIssuesGenerateReportRequest.Name
+- uid: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.Name*
+  name: Name
+  href: api/Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.html#Crowdin_Api_Reports_EditorIssuesGenerateReportRequest_Name_
+  commentId: Overload:Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.Name
+  nameWithType: EditorIssuesGenerateReportRequest.Name
+- uid: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.Schema
+  name: Schema
+  href: api/Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.html#Crowdin_Api_Reports_EditorIssuesGenerateReportRequest_Schema
+  commentId: P:Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.Schema
+  fullName: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.Schema
+  nameWithType: EditorIssuesGenerateReportRequest.Schema
+- uid: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.Schema*
+  name: Schema
+  href: api/Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.html#Crowdin_Api_Reports_EditorIssuesGenerateReportRequest_Schema_
+  commentId: Overload:Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.Schema
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.Schema
+  nameWithType: EditorIssuesGenerateReportRequest.Schema
+- uid: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject
+  name: EditorIssuesGenerateReportRequest.SchemaObject
+  href: api/Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.html
+  commentId: T:Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject
+  fullName: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject
+  nameWithType: EditorIssuesGenerateReportRequest.SchemaObject
+- uid: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.DateFrom
+  name: DateFrom
+  href: api/Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_EditorIssuesGenerateReportRequest_SchemaObject_DateFrom
+  commentId: P:Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.DateFrom
+  fullName: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.DateFrom
+  nameWithType: EditorIssuesGenerateReportRequest.SchemaObject.DateFrom
+- uid: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.DateFrom*
+  name: DateFrom
+  href: api/Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_EditorIssuesGenerateReportRequest_SchemaObject_DateFrom_
+  commentId: Overload:Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.DateFrom
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.DateFrom
+  nameWithType: EditorIssuesGenerateReportRequest.SchemaObject.DateFrom
+- uid: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.DateTo
+  name: DateTo
+  href: api/Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_EditorIssuesGenerateReportRequest_SchemaObject_DateTo
+  commentId: P:Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.DateTo
+  fullName: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.DateTo
+  nameWithType: EditorIssuesGenerateReportRequest.SchemaObject.DateTo
+- uid: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.DateTo*
+  name: DateTo
+  href: api/Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_EditorIssuesGenerateReportRequest_SchemaObject_DateTo_
+  commentId: Overload:Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.DateTo
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.DateTo
+  nameWithType: EditorIssuesGenerateReportRequest.SchemaObject.DateTo
+- uid: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.Format
+  name: Format
+  href: api/Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_EditorIssuesGenerateReportRequest_SchemaObject_Format
+  commentId: P:Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.Format
+  fullName: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.Format
+  nameWithType: EditorIssuesGenerateReportRequest.SchemaObject.Format
+- uid: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.Format*
+  name: Format
+  href: api/Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_EditorIssuesGenerateReportRequest_SchemaObject_Format_
+  commentId: Overload:Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.Format
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.Format
+  nameWithType: EditorIssuesGenerateReportRequest.SchemaObject.Format
+- uid: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.IssueType
+  name: IssueType
+  href: api/Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_EditorIssuesGenerateReportRequest_SchemaObject_IssueType
+  commentId: P:Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.IssueType
+  fullName: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.IssueType
+  nameWithType: EditorIssuesGenerateReportRequest.SchemaObject.IssueType
+- uid: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.IssueType*
+  name: IssueType
+  href: api/Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_EditorIssuesGenerateReportRequest_SchemaObject_IssueType_
+  commentId: Overload:Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.IssueType
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.EditorIssuesGenerateReportRequest.SchemaObject.IssueType
+  nameWithType: EditorIssuesGenerateReportRequest.SchemaObject.IssueType
 - uid: Crowdin.Api.Reports.ExportReportArchiveRequest
   name: ExportReportArchiveRequest
   href: api/Crowdin.Api.Reports.ExportReportArchiveRequest.html
@@ -23891,6 +23994,96 @@ references:
   commentId: T:Crowdin.Api.Reports.GenerateReportRequest
   fullName: Crowdin.Api.Reports.GenerateReportRequest
   nameWithType: GenerateReportRequest
+- uid: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest
+  name: GroupQaCheckIssuesGenerateGroupReportRequest
+  href: api/Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.html
+  commentId: T:Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest
+  fullName: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest
+  nameWithType: GroupQaCheckIssuesGenerateGroupReportRequest
+- uid: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.Name
+  name: Name
+  href: api/Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.html#Crowdin_Api_Reports_GroupQaCheckIssuesGenerateGroupReportRequest_Name
+  commentId: P:Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.Name
+  fullName: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.Name
+  nameWithType: GroupQaCheckIssuesGenerateGroupReportRequest.Name
+- uid: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.Name*
+  name: Name
+  href: api/Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.html#Crowdin_Api_Reports_GroupQaCheckIssuesGenerateGroupReportRequest_Name_
+  commentId: Overload:Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.Name
+  nameWithType: GroupQaCheckIssuesGenerateGroupReportRequest.Name
+- uid: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.Schema
+  name: Schema
+  href: api/Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.html#Crowdin_Api_Reports_GroupQaCheckIssuesGenerateGroupReportRequest_Schema
+  commentId: P:Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.Schema
+  fullName: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.Schema
+  nameWithType: GroupQaCheckIssuesGenerateGroupReportRequest.Schema
+- uid: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.Schema*
+  name: Schema
+  href: api/Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.html#Crowdin_Api_Reports_GroupQaCheckIssuesGenerateGroupReportRequest_Schema_
+  commentId: Overload:Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.Schema
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.Schema
+  nameWithType: GroupQaCheckIssuesGenerateGroupReportRequest.Schema
+- uid: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject
+  name: GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject
+  href: api/Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.html
+  commentId: T:Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject
+  fullName: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject
+  nameWithType: GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject
+- uid: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.DateFrom
+  name: DateFrom
+  href: api/Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupQaCheckIssuesGenerateGroupReportRequest_SchemaObject_DateFrom
+  commentId: P:Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.DateFrom
+  fullName: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.DateFrom
+  nameWithType: GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.DateFrom
+- uid: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.DateFrom*
+  name: DateFrom
+  href: api/Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupQaCheckIssuesGenerateGroupReportRequest_SchemaObject_DateFrom_
+  commentId: Overload:Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.DateFrom
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.DateFrom
+  nameWithType: GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.DateFrom
+- uid: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.DateTo
+  name: DateTo
+  href: api/Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupQaCheckIssuesGenerateGroupReportRequest_SchemaObject_DateTo
+  commentId: P:Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.DateTo
+  fullName: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.DateTo
+  nameWithType: GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.DateTo
+- uid: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.DateTo*
+  name: DateTo
+  href: api/Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupQaCheckIssuesGenerateGroupReportRequest_SchemaObject_DateTo_
+  commentId: Overload:Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.DateTo
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.DateTo
+  nameWithType: GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.DateTo
+- uid: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.Format
+  name: Format
+  href: api/Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupQaCheckIssuesGenerateGroupReportRequest_SchemaObject_Format
+  commentId: P:Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.Format
+  fullName: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.Format
+  nameWithType: GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.Format
+- uid: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.Format*
+  name: Format
+  href: api/Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupQaCheckIssuesGenerateGroupReportRequest_SchemaObject_Format_
+  commentId: Overload:Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.Format
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.Format
+  nameWithType: GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.Format
+- uid: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.ProjectIds
+  name: ProjectIds
+  href: api/Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupQaCheckIssuesGenerateGroupReportRequest_SchemaObject_ProjectIds
+  commentId: P:Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.ProjectIds
+  fullName: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.ProjectIds
+  nameWithType: GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.ProjectIds
+- uid: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.ProjectIds*
+  name: ProjectIds
+  href: api/Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupQaCheckIssuesGenerateGroupReportRequest_SchemaObject_ProjectIds_
+  commentId: Overload:Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.ProjectIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.ProjectIds
+  nameWithType: GroupQaCheckIssuesGenerateGroupReportRequest.SchemaObject.ProjectIds
 - uid: Crowdin.Api.Reports.GroupReportStatus
   name: GroupReportStatus
   href: api/Crowdin.Api.Reports.GroupReportStatus.html
@@ -24059,6 +24252,424 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Reports.GroupReportStatus.UpdatedAt
   nameWithType: GroupReportStatus.UpdatedAt
+- uid: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest
+  name: GroupSourceContentUpdatesGenerateGroupReportRequest
+  href: api/Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.html
+  commentId: T:Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest
+  fullName: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest
+  nameWithType: GroupSourceContentUpdatesGenerateGroupReportRequest
+- uid: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.Name
+  name: Name
+  href: api/Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.html#Crowdin_Api_Reports_GroupSourceContentUpdatesGenerateGroupReportRequest_Name
+  commentId: P:Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.Name
+  fullName: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.Name
+  nameWithType: GroupSourceContentUpdatesGenerateGroupReportRequest.Name
+- uid: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.Name*
+  name: Name
+  href: api/Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.html#Crowdin_Api_Reports_GroupSourceContentUpdatesGenerateGroupReportRequest_Name_
+  commentId: Overload:Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.Name
+  nameWithType: GroupSourceContentUpdatesGenerateGroupReportRequest.Name
+- uid: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.Schema
+  name: Schema
+  href: api/Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.html#Crowdin_Api_Reports_GroupSourceContentUpdatesGenerateGroupReportRequest_Schema
+  commentId: P:Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.Schema
+  fullName: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.Schema
+  nameWithType: GroupSourceContentUpdatesGenerateGroupReportRequest.Schema
+- uid: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.Schema*
+  name: Schema
+  href: api/Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.html#Crowdin_Api_Reports_GroupSourceContentUpdatesGenerateGroupReportRequest_Schema_
+  commentId: Overload:Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.Schema
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.Schema
+  nameWithType: GroupSourceContentUpdatesGenerateGroupReportRequest.Schema
+- uid: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject
+  name: GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject
+  href: api/Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.html
+  commentId: T:Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject
+  fullName: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject
+  nameWithType: GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject
+- uid: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.DateFrom
+  name: DateFrom
+  href: api/Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupSourceContentUpdatesGenerateGroupReportRequest_SchemaObject_DateFrom
+  commentId: P:Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.DateFrom
+  fullName: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.DateFrom
+  nameWithType: GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.DateFrom
+- uid: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.DateFrom*
+  name: DateFrom
+  href: api/Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupSourceContentUpdatesGenerateGroupReportRequest_SchemaObject_DateFrom_
+  commentId: Overload:Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.DateFrom
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.DateFrom
+  nameWithType: GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.DateFrom
+- uid: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.DateTo
+  name: DateTo
+  href: api/Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupSourceContentUpdatesGenerateGroupReportRequest_SchemaObject_DateTo
+  commentId: P:Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.DateTo
+  fullName: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.DateTo
+  nameWithType: GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.DateTo
+- uid: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.DateTo*
+  name: DateTo
+  href: api/Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupSourceContentUpdatesGenerateGroupReportRequest_SchemaObject_DateTo_
+  commentId: Overload:Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.DateTo
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.DateTo
+  nameWithType: GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.DateTo
+- uid: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.Format
+  name: Format
+  href: api/Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupSourceContentUpdatesGenerateGroupReportRequest_SchemaObject_Format
+  commentId: P:Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.Format
+  fullName: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.Format
+  nameWithType: GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.Format
+- uid: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.Format*
+  name: Format
+  href: api/Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupSourceContentUpdatesGenerateGroupReportRequest_SchemaObject_Format_
+  commentId: Overload:Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.Format
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.Format
+  nameWithType: GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.Format
+- uid: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.ProjectIds
+  name: ProjectIds
+  href: api/Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupSourceContentUpdatesGenerateGroupReportRequest_SchemaObject_ProjectIds
+  commentId: P:Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.ProjectIds
+  fullName: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.ProjectIds
+  nameWithType: GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.ProjectIds
+- uid: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.ProjectIds*
+  name: ProjectIds
+  href: api/Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupSourceContentUpdatesGenerateGroupReportRequest_SchemaObject_ProjectIds_
+  commentId: Overload:Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.ProjectIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.ProjectIds
+  nameWithType: GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.ProjectIds
+- uid: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.Unit
+  name: Unit
+  href: api/Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupSourceContentUpdatesGenerateGroupReportRequest_SchemaObject_Unit
+  commentId: P:Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.Unit
+  fullName: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.Unit
+  nameWithType: GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.Unit
+- uid: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.Unit*
+  name: Unit
+  href: api/Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupSourceContentUpdatesGenerateGroupReportRequest_SchemaObject_Unit_
+  commentId: Overload:Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.Unit
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.Unit
+  nameWithType: GroupSourceContentUpdatesGenerateGroupReportRequest.SchemaObject.Unit
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest
+  name: GroupTaskUsageGenerateGroupReportRequest
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.html
+  commentId: T:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema
+  name: GroupTaskUsageGenerateGroupReportRequest.CostSchema
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema.html
+  commentId: T:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.CostSchema
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema.Statuses
+  name: Statuses
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_CostSchema_Statuses
+  commentId: P:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema.Statuses
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema.Statuses
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.CostSchema.Statuses
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema.Statuses*
+  name: Statuses
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_CostSchema_Statuses_
+  commentId: Overload:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema.Statuses
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema.Statuses
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.CostSchema.Statuses
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema.Type
+  name: Type
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_CostSchema_Type
+  commentId: P:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema.Type
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema.Type
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.CostSchema.Type
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema.Type*
+  name: Type
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_CostSchema_Type_
+  commentId: Overload:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema.Type
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CostSchema.Type
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.CostSchema.Type
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CreatedVsResolvedSchema
+  name: GroupTaskUsageGenerateGroupReportRequest.CreatedVsResolvedSchema
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CreatedVsResolvedSchema.html
+  commentId: T:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CreatedVsResolvedSchema
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CreatedVsResolvedSchema
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.CreatedVsResolvedSchema
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CreatedVsResolvedSchema.Type
+  name: Type
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CreatedVsResolvedSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_CreatedVsResolvedSchema_Type
+  commentId: P:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CreatedVsResolvedSchema.Type
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CreatedVsResolvedSchema.Type
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.CreatedVsResolvedSchema.Type
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CreatedVsResolvedSchema.Type*
+  name: Type
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CreatedVsResolvedSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_CreatedVsResolvedSchema_Type_
+  commentId: Overload:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CreatedVsResolvedSchema.Type
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.CreatedVsResolvedSchema.Type
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.CreatedVsResolvedSchema.Type
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.Name
+  name: Name
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_Name
+  commentId: P:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.Name
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.Name
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.Name
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.Name*
+  name: Name
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_Name_
+  commentId: Overload:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.Name
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.Name
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema
+  name: GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.html
+  commentId: T:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.AssigneeId
+  name: AssigneeId
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_PerformanceSchema_AssigneeId
+  commentId: P:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.AssigneeId
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.AssigneeId
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.AssigneeId
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.AssigneeId*
+  name: AssigneeId
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_PerformanceSchema_AssigneeId_
+  commentId: Overload:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.AssigneeId
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.AssigneeId
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.AssigneeId
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.Type
+  name: Type
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_PerformanceSchema_Type
+  commentId: P:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.Type
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.Type
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.Type
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.Type*
+  name: Type
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_PerformanceSchema_Type_
+  commentId: Overload:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.Type
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.Type
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.PerformanceSchema.Type
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.Schema
+  name: Schema
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_Schema
+  commentId: P:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.Schema
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.Schema
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.Schema
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.Schema*
+  name: Schema
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_Schema_
+  commentId: Overload:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.Schema
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.Schema
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.Schema
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase
+  name: GroupTaskUsageGenerateGroupReportRequest.SchemaBase
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.html
+  commentId: T:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.SchemaBase
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.CreatorId
+  name: CreatorId
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_SchemaBase_CreatorId
+  commentId: P:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.CreatorId
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.CreatorId
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.SchemaBase.CreatorId
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.CreatorId*
+  name: CreatorId
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_SchemaBase_CreatorId_
+  commentId: Overload:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.CreatorId
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.CreatorId
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.SchemaBase.CreatorId
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.DateFrom
+  name: DateFrom
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_SchemaBase_DateFrom
+  commentId: P:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.DateFrom
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.DateFrom
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.SchemaBase.DateFrom
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.DateFrom*
+  name: DateFrom
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_SchemaBase_DateFrom_
+  commentId: Overload:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.DateFrom
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.DateFrom
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.SchemaBase.DateFrom
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.DateTo
+  name: DateTo
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_SchemaBase_DateTo
+  commentId: P:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.DateTo
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.DateTo
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.SchemaBase.DateTo
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.DateTo*
+  name: DateTo
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_SchemaBase_DateTo_
+  commentId: Overload:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.DateTo
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.DateTo
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.SchemaBase.DateTo
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.Format
+  name: Format
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_SchemaBase_Format
+  commentId: P:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.Format
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.Format
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.SchemaBase.Format
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.Format*
+  name: Format
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_SchemaBase_Format_
+  commentId: Overload:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.Format
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.Format
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.SchemaBase.Format
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.GroupBy
+  name: GroupBy
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_SchemaBase_GroupBy
+  commentId: P:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.GroupBy
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.GroupBy
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.SchemaBase.GroupBy
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.GroupBy*
+  name: GroupBy
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_SchemaBase_GroupBy_
+  commentId: Overload:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.GroupBy
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.GroupBy
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.SchemaBase.GroupBy
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.LanguageId
+  name: LanguageId
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_SchemaBase_LanguageId
+  commentId: P:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.LanguageId
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.LanguageId
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.SchemaBase.LanguageId
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.LanguageId*
+  name: LanguageId
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_SchemaBase_LanguageId_
+  commentId: Overload:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.LanguageId
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.LanguageId
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.SchemaBase.LanguageId
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.ProjectIds
+  name: ProjectIds
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_SchemaBase_ProjectIds
+  commentId: P:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.ProjectIds
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.ProjectIds
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.SchemaBase.ProjectIds
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.ProjectIds*
+  name: ProjectIds
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_SchemaBase_ProjectIds_
+  commentId: Overload:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.ProjectIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.ProjectIds
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.SchemaBase.ProjectIds
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.TypeTasks
+  name: TypeTasks
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_SchemaBase_TypeTasks
+  commentId: P:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.TypeTasks
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.TypeTasks
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.SchemaBase.TypeTasks
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.TypeTasks*
+  name: TypeTasks
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_SchemaBase_TypeTasks_
+  commentId: Overload:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.TypeTasks
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.SchemaBase.TypeTasks
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.SchemaBase.TypeTasks
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema
+  name: GroupTaskUsageGenerateGroupReportRequest.TimeSchema
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.html
+  commentId: T:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.TimeSchema
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.AssigneeId
+  name: AssigneeId
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_TimeSchema_AssigneeId
+  commentId: P:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.AssigneeId
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.AssigneeId
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.TimeSchema.AssigneeId
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.AssigneeId*
+  name: AssigneeId
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_TimeSchema_AssigneeId_
+  commentId: Overload:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.AssigneeId
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.AssigneeId
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.TimeSchema.AssigneeId
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.Type
+  name: Type
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_TimeSchema_Type
+  commentId: P:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.Type
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.Type
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.TimeSchema.Type
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.Type*
+  name: Type
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_TimeSchema_Type_
+  commentId: Overload:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.Type
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.Type
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.TimeSchema.Type
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.WordsCountFrom
+  name: WordsCountFrom
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_TimeSchema_WordsCountFrom
+  commentId: P:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.WordsCountFrom
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.WordsCountFrom
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.TimeSchema.WordsCountFrom
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.WordsCountFrom*
+  name: WordsCountFrom
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_TimeSchema_WordsCountFrom_
+  commentId: Overload:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.WordsCountFrom
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.WordsCountFrom
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.TimeSchema.WordsCountFrom
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.WordsCountTo
+  name: WordsCountTo
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_TimeSchema_WordsCountTo
+  commentId: P:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.WordsCountTo
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.WordsCountTo
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.TimeSchema.WordsCountTo
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.WordsCountTo*
+  name: WordsCountTo
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_TimeSchema_WordsCountTo_
+  commentId: Overload:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.WordsCountTo
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.TimeSchema.WordsCountTo
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.TimeSchema.WordsCountTo
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema
+  name: GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.html
+  commentId: T:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.AssigneeId
+  name: AssigneeId
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_WorkloadSchema_AssigneeId
+  commentId: P:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.AssigneeId
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.AssigneeId
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.AssigneeId
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.AssigneeId*
+  name: AssigneeId
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_WorkloadSchema_AssigneeId_
+  commentId: Overload:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.AssigneeId
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.AssigneeId
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.AssigneeId
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.Type
+  name: Type
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_WorkloadSchema_Type
+  commentId: P:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.Type
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.Type
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.Type
+- uid: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.Type*
+  name: Type
+  href: api/Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.html#Crowdin_Api_Reports_GroupTaskUsageGenerateGroupReportRequest_WorkloadSchema_Type_
+  commentId: Overload:Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.Type
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.Type
+  nameWithType: GroupTaskUsageGenerateGroupReportRequest.WorkloadSchema.Type
 - uid: Crowdin.Api.Reports.GroupTopMembersGenerateGroupReportRequest
   name: GroupTopMembersGenerateGroupReportRequest
   href: api/Crowdin.Api.Reports.GroupTopMembersGenerateGroupReportRequest.html
@@ -24175,6 +24786,109 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Reports.GroupTopMembersGenerateGroupReportRequest.Schema
   nameWithType: GroupTopMembersGenerateGroupReportRequest.Schema
+- uid: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest
+  name: GroupTranslationConsumptionGenerateGroupReportRequest
+  href: api/Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.html
+  commentId: T:Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest
+  fullName: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest
+  nameWithType: GroupTranslationConsumptionGenerateGroupReportRequest
+- uid: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.Name
+  name: Name
+  href: api/Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.html#Crowdin_Api_Reports_GroupTranslationConsumptionGenerateGroupReportRequest_Name
+  commentId: P:Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.Name
+  fullName: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.Name
+  nameWithType: GroupTranslationConsumptionGenerateGroupReportRequest.Name
+- uid: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.Name*
+  name: Name
+  href: api/Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.html#Crowdin_Api_Reports_GroupTranslationConsumptionGenerateGroupReportRequest_Name_
+  commentId: Overload:Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.Name
+  nameWithType: GroupTranslationConsumptionGenerateGroupReportRequest.Name
+- uid: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.Schema
+  name: Schema
+  href: api/Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.html#Crowdin_Api_Reports_GroupTranslationConsumptionGenerateGroupReportRequest_Schema
+  commentId: P:Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.Schema
+  fullName: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.Schema
+  nameWithType: GroupTranslationConsumptionGenerateGroupReportRequest.Schema
+- uid: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.Schema*
+  name: Schema
+  href: api/Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.html#Crowdin_Api_Reports_GroupTranslationConsumptionGenerateGroupReportRequest_Schema_
+  commentId: Overload:Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.Schema
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.Schema
+  nameWithType: GroupTranslationConsumptionGenerateGroupReportRequest.Schema
+- uid: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject
+  name: GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject
+  href: api/Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.html
+  commentId: T:Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject
+  fullName: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject
+  nameWithType: GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject
+- uid: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.DateFrom
+  name: DateFrom
+  href: api/Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupTranslationConsumptionGenerateGroupReportRequest_SchemaObject_DateFrom
+  commentId: P:Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.DateFrom
+  fullName: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.DateFrom
+  nameWithType: GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.DateFrom
+- uid: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.DateFrom*
+  name: DateFrom
+  href: api/Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupTranslationConsumptionGenerateGroupReportRequest_SchemaObject_DateFrom_
+  commentId: Overload:Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.DateFrom
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.DateFrom
+  nameWithType: GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.DateFrom
+- uid: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.DateTo
+  name: DateTo
+  href: api/Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupTranslationConsumptionGenerateGroupReportRequest_SchemaObject_DateTo
+  commentId: P:Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.DateTo
+  fullName: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.DateTo
+  nameWithType: GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.DateTo
+- uid: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.DateTo*
+  name: DateTo
+  href: api/Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupTranslationConsumptionGenerateGroupReportRequest_SchemaObject_DateTo_
+  commentId: Overload:Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.DateTo
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.DateTo
+  nameWithType: GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.DateTo
+- uid: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.Format
+  name: Format
+  href: api/Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupTranslationConsumptionGenerateGroupReportRequest_SchemaObject_Format
+  commentId: P:Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.Format
+  fullName: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.Format
+  nameWithType: GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.Format
+- uid: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.Format*
+  name: Format
+  href: api/Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupTranslationConsumptionGenerateGroupReportRequest_SchemaObject_Format_
+  commentId: Overload:Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.Format
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.Format
+  nameWithType: GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.Format
+- uid: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.ProjectIds
+  name: ProjectIds
+  href: api/Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupTranslationConsumptionGenerateGroupReportRequest_SchemaObject_ProjectIds
+  commentId: P:Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.ProjectIds
+  fullName: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.ProjectIds
+  nameWithType: GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.ProjectIds
+- uid: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.ProjectIds*
+  name: ProjectIds
+  href: api/Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupTranslationConsumptionGenerateGroupReportRequest_SchemaObject_ProjectIds_
+  commentId: Overload:Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.ProjectIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.ProjectIds
+  nameWithType: GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.ProjectIds
+- uid: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.Unit
+  name: Unit
+  href: api/Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupTranslationConsumptionGenerateGroupReportRequest_SchemaObject_Unit
+  commentId: P:Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.Unit
+  fullName: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.Unit
+  nameWithType: GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.Unit
+- uid: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.Unit*
+  name: Unit
+  href: api/Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.html#Crowdin_Api_Reports_GroupTranslationConsumptionGenerateGroupReportRequest_SchemaObject_Unit_
+  commentId: Overload:Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.Unit
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.Unit
+  nameWithType: GroupTranslationConsumptionGenerateGroupReportRequest.SchemaObject.Unit
 - uid: Crowdin.Api.Reports.GroupTranslationCostGenerateGroupReportRequest
   name: GroupTranslationCostGenerateGroupReportRequest
   href: api/Crowdin.Api.Reports.GroupTranslationCostGenerateGroupReportRequest.html
@@ -24632,6 +25346,18 @@ references:
   commentId: F:Crowdin.Api.Reports.GroupingParameter.Language
   fullName: Crowdin.Api.Reports.GroupingParameter.Language
   nameWithType: GroupingParameter.Language
+- uid: Crowdin.Api.Reports.GroupingParameter.Project
+  name: Project
+  href: api/Crowdin.Api.Reports.GroupingParameter.html#Crowdin_Api_Reports_GroupingParameter_Project
+  commentId: F:Crowdin.Api.Reports.GroupingParameter.Project
+  fullName: Crowdin.Api.Reports.GroupingParameter.Project
+  nameWithType: GroupingParameter.Project
+- uid: Crowdin.Api.Reports.GroupingParameter.Type
+  name: Type
+  href: api/Crowdin.Api.Reports.GroupingParameter.html#Crowdin_Api_Reports_GroupingParameter_Type
+  commentId: F:Crowdin.Api.Reports.GroupingParameter.Type
+  fullName: Crowdin.Api.Reports.GroupingParameter.Type
+  nameWithType: GroupingParameter.Type
 - uid: Crowdin.Api.Reports.GroupingParameter.User
   name: User
   href: api/Crowdin.Api.Reports.GroupingParameter.html#Crowdin_Api_Reports_GroupingParameter_User
@@ -25260,6 +25986,379 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Reports.PreTranslateAccuracyGenerateReportRequest.SchemaBase.Unit
   nameWithType: PreTranslateAccuracyGenerateReportRequest.SchemaBase.Unit
+- uid: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest
+  name: ProjectConsumptionGenerateReportRequest
+  href: api/Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.html
+  commentId: T:Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest
+  fullName: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest
+  nameWithType: ProjectConsumptionGenerateReportRequest
+- uid: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.Name
+  name: Name
+  href: api/Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.html#Crowdin_Api_Reports_ProjectConsumptionGenerateReportRequest_Name
+  commentId: P:Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.Name
+  fullName: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.Name
+  nameWithType: ProjectConsumptionGenerateReportRequest.Name
+- uid: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.Name*
+  name: Name
+  href: api/Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.html#Crowdin_Api_Reports_ProjectConsumptionGenerateReportRequest_Name_
+  commentId: Overload:Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.Name
+  nameWithType: ProjectConsumptionGenerateReportRequest.Name
+- uid: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.Schema
+  name: Schema
+  href: api/Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.html#Crowdin_Api_Reports_ProjectConsumptionGenerateReportRequest_Schema
+  commentId: P:Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.Schema
+  fullName: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.Schema
+  nameWithType: ProjectConsumptionGenerateReportRequest.Schema
+- uid: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.Schema*
+  name: Schema
+  href: api/Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.html#Crowdin_Api_Reports_ProjectConsumptionGenerateReportRequest_Schema_
+  commentId: Overload:Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.Schema
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.Schema
+  nameWithType: ProjectConsumptionGenerateReportRequest.Schema
+- uid: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject
+  name: ProjectConsumptionGenerateReportRequest.SchemaObject
+  href: api/Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.html
+  commentId: T:Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject
+  fullName: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject
+  nameWithType: ProjectConsumptionGenerateReportRequest.SchemaObject
+- uid: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.DateFrom
+  name: DateFrom
+  href: api/Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectConsumptionGenerateReportRequest_SchemaObject_DateFrom
+  commentId: P:Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.DateFrom
+  fullName: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.DateFrom
+  nameWithType: ProjectConsumptionGenerateReportRequest.SchemaObject.DateFrom
+- uid: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.DateFrom*
+  name: DateFrom
+  href: api/Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectConsumptionGenerateReportRequest_SchemaObject_DateFrom_
+  commentId: Overload:Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.DateFrom
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.DateFrom
+  nameWithType: ProjectConsumptionGenerateReportRequest.SchemaObject.DateFrom
+- uid: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.DateTo
+  name: DateTo
+  href: api/Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectConsumptionGenerateReportRequest_SchemaObject_DateTo
+  commentId: P:Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.DateTo
+  fullName: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.DateTo
+  nameWithType: ProjectConsumptionGenerateReportRequest.SchemaObject.DateTo
+- uid: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.DateTo*
+  name: DateTo
+  href: api/Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectConsumptionGenerateReportRequest_SchemaObject_DateTo_
+  commentId: Overload:Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.DateTo
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.DateTo
+  nameWithType: ProjectConsumptionGenerateReportRequest.SchemaObject.DateTo
+- uid: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.Format
+  name: Format
+  href: api/Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectConsumptionGenerateReportRequest_SchemaObject_Format
+  commentId: P:Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.Format
+  fullName: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.Format
+  nameWithType: ProjectConsumptionGenerateReportRequest.SchemaObject.Format
+- uid: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.Format*
+  name: Format
+  href: api/Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectConsumptionGenerateReportRequest_SchemaObject_Format_
+  commentId: Overload:Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.Format
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.Format
+  nameWithType: ProjectConsumptionGenerateReportRequest.SchemaObject.Format
+- uid: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.LanguageId
+  name: LanguageId
+  href: api/Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectConsumptionGenerateReportRequest_SchemaObject_LanguageId
+  commentId: P:Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.LanguageId
+  fullName: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.LanguageId
+  nameWithType: ProjectConsumptionGenerateReportRequest.SchemaObject.LanguageId
+- uid: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.LanguageId*
+  name: LanguageId
+  href: api/Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectConsumptionGenerateReportRequest_SchemaObject_LanguageId_
+  commentId: Overload:Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.LanguageId
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.LanguageId
+  nameWithType: ProjectConsumptionGenerateReportRequest.SchemaObject.LanguageId
+- uid: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.Unit
+  name: Unit
+  href: api/Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectConsumptionGenerateReportRequest_SchemaObject_Unit
+  commentId: P:Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.Unit
+  fullName: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.Unit
+  nameWithType: ProjectConsumptionGenerateReportRequest.SchemaObject.Unit
+- uid: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.Unit*
+  name: Unit
+  href: api/Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectConsumptionGenerateReportRequest_SchemaObject_Unit_
+  commentId: Overload:Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.Unit
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ProjectConsumptionGenerateReportRequest.SchemaObject.Unit
+  nameWithType: ProjectConsumptionGenerateReportRequest.SchemaObject.Unit
+- uid: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest
+  name: ProjectMembersGenerateReportRequest
+  href: api/Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.html
+  commentId: T:Crowdin.Api.Reports.ProjectMembersGenerateReportRequest
+  fullName: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest
+  nameWithType: ProjectMembersGenerateReportRequest
+- uid: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.Name
+  name: Name
+  href: api/Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.html#Crowdin_Api_Reports_ProjectMembersGenerateReportRequest_Name
+  commentId: P:Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.Name
+  fullName: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.Name
+  nameWithType: ProjectMembersGenerateReportRequest.Name
+- uid: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.Name*
+  name: Name
+  href: api/Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.html#Crowdin_Api_Reports_ProjectMembersGenerateReportRequest_Name_
+  commentId: Overload:Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.Name
+  nameWithType: ProjectMembersGenerateReportRequest.Name
+- uid: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.Schema
+  name: Schema
+  href: api/Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.html#Crowdin_Api_Reports_ProjectMembersGenerateReportRequest_Schema
+  commentId: P:Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.Schema
+  fullName: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.Schema
+  nameWithType: ProjectMembersGenerateReportRequest.Schema
+- uid: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.Schema*
+  name: Schema
+  href: api/Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.html#Crowdin_Api_Reports_ProjectMembersGenerateReportRequest_Schema_
+  commentId: Overload:Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.Schema
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.Schema
+  nameWithType: ProjectMembersGenerateReportRequest.Schema
+- uid: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject
+  name: ProjectMembersGenerateReportRequest.SchemaObject
+  href: api/Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.html
+  commentId: T:Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject
+  fullName: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject
+  nameWithType: ProjectMembersGenerateReportRequest.SchemaObject
+- uid: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.DateFrom
+  name: DateFrom
+  href: api/Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectMembersGenerateReportRequest_SchemaObject_DateFrom
+  commentId: P:Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.DateFrom
+  fullName: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.DateFrom
+  nameWithType: ProjectMembersGenerateReportRequest.SchemaObject.DateFrom
+- uid: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.DateFrom*
+  name: DateFrom
+  href: api/Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectMembersGenerateReportRequest_SchemaObject_DateFrom_
+  commentId: Overload:Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.DateFrom
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.DateFrom
+  nameWithType: ProjectMembersGenerateReportRequest.SchemaObject.DateFrom
+- uid: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.DateTo
+  name: DateTo
+  href: api/Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectMembersGenerateReportRequest_SchemaObject_DateTo
+  commentId: P:Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.DateTo
+  fullName: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.DateTo
+  nameWithType: ProjectMembersGenerateReportRequest.SchemaObject.DateTo
+- uid: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.DateTo*
+  name: DateTo
+  href: api/Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectMembersGenerateReportRequest_SchemaObject_DateTo_
+  commentId: Overload:Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.DateTo
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.DateTo
+  nameWithType: ProjectMembersGenerateReportRequest.SchemaObject.DateTo
+- uid: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.Format
+  name: Format
+  href: api/Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectMembersGenerateReportRequest_SchemaObject_Format
+  commentId: P:Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.Format
+  fullName: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.Format
+  nameWithType: ProjectMembersGenerateReportRequest.SchemaObject.Format
+- uid: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.Format*
+  name: Format
+  href: api/Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectMembersGenerateReportRequest_SchemaObject_Format_
+  commentId: Overload:Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.Format
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ProjectMembersGenerateReportRequest.SchemaObject.Format
+  nameWithType: ProjectMembersGenerateReportRequest.SchemaObject.Format
+- uid: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest
+  name: ProjectSavingActivityGenerateReportRequest
+  href: api/Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.html
+  commentId: T:Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest
+  fullName: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest
+  nameWithType: ProjectSavingActivityGenerateReportRequest
+- uid: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.Name
+  name: Name
+  href: api/Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.html#Crowdin_Api_Reports_ProjectSavingActivityGenerateReportRequest_Name
+  commentId: P:Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.Name
+  fullName: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.Name
+  nameWithType: ProjectSavingActivityGenerateReportRequest.Name
+- uid: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.Name*
+  name: Name
+  href: api/Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.html#Crowdin_Api_Reports_ProjectSavingActivityGenerateReportRequest_Name_
+  commentId: Overload:Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.Name
+  nameWithType: ProjectSavingActivityGenerateReportRequest.Name
+- uid: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.Schema
+  name: Schema
+  href: api/Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.html#Crowdin_Api_Reports_ProjectSavingActivityGenerateReportRequest_Schema
+  commentId: P:Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.Schema
+  fullName: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.Schema
+  nameWithType: ProjectSavingActivityGenerateReportRequest.Schema
+- uid: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.Schema*
+  name: Schema
+  href: api/Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.html#Crowdin_Api_Reports_ProjectSavingActivityGenerateReportRequest_Schema_
+  commentId: Overload:Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.Schema
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.Schema
+  nameWithType: ProjectSavingActivityGenerateReportRequest.Schema
+- uid: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject
+  name: ProjectSavingActivityGenerateReportRequest.SchemaObject
+  href: api/Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.html
+  commentId: T:Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject
+  fullName: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject
+  nameWithType: ProjectSavingActivityGenerateReportRequest.SchemaObject
+- uid: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.DateFrom
+  name: DateFrom
+  href: api/Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectSavingActivityGenerateReportRequest_SchemaObject_DateFrom
+  commentId: P:Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.DateFrom
+  fullName: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.DateFrom
+  nameWithType: ProjectSavingActivityGenerateReportRequest.SchemaObject.DateFrom
+- uid: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.DateFrom*
+  name: DateFrom
+  href: api/Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectSavingActivityGenerateReportRequest_SchemaObject_DateFrom_
+  commentId: Overload:Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.DateFrom
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.DateFrom
+  nameWithType: ProjectSavingActivityGenerateReportRequest.SchemaObject.DateFrom
+- uid: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.DateTo
+  name: DateTo
+  href: api/Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectSavingActivityGenerateReportRequest_SchemaObject_DateTo
+  commentId: P:Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.DateTo
+  fullName: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.DateTo
+  nameWithType: ProjectSavingActivityGenerateReportRequest.SchemaObject.DateTo
+- uid: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.DateTo*
+  name: DateTo
+  href: api/Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectSavingActivityGenerateReportRequest_SchemaObject_DateTo_
+  commentId: Overload:Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.DateTo
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.DateTo
+  nameWithType: ProjectSavingActivityGenerateReportRequest.SchemaObject.DateTo
+- uid: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.Format
+  name: Format
+  href: api/Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectSavingActivityGenerateReportRequest_SchemaObject_Format
+  commentId: P:Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.Format
+  fullName: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.Format
+  nameWithType: ProjectSavingActivityGenerateReportRequest.SchemaObject.Format
+- uid: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.Format*
+  name: Format
+  href: api/Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectSavingActivityGenerateReportRequest_SchemaObject_Format_
+  commentId: Overload:Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.Format
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.Format
+  nameWithType: ProjectSavingActivityGenerateReportRequest.SchemaObject.Format
+- uid: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.LanguageId
+  name: LanguageId
+  href: api/Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectSavingActivityGenerateReportRequest_SchemaObject_LanguageId
+  commentId: P:Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.LanguageId
+  fullName: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.LanguageId
+  nameWithType: ProjectSavingActivityGenerateReportRequest.SchemaObject.LanguageId
+- uid: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.LanguageId*
+  name: LanguageId
+  href: api/Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectSavingActivityGenerateReportRequest_SchemaObject_LanguageId_
+  commentId: Overload:Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.LanguageId
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.LanguageId
+  nameWithType: ProjectSavingActivityGenerateReportRequest.SchemaObject.LanguageId
+- uid: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.Unit
+  name: Unit
+  href: api/Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectSavingActivityGenerateReportRequest_SchemaObject_Unit
+  commentId: P:Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.Unit
+  fullName: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.Unit
+  nameWithType: ProjectSavingActivityGenerateReportRequest.SchemaObject.Unit
+- uid: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.Unit*
+  name: Unit
+  href: api/Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_ProjectSavingActivityGenerateReportRequest_SchemaObject_Unit_
+  commentId: Overload:Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.Unit
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.ProjectSavingActivityGenerateReportRequest.SchemaObject.Unit
+  nameWithType: ProjectSavingActivityGenerateReportRequest.SchemaObject.Unit
+- uid: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest
+  name: QaCheckIssuesGenerateReportRequest
+  href: api/Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.html
+  commentId: T:Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest
+  fullName: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest
+  nameWithType: QaCheckIssuesGenerateReportRequest
+- uid: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.Name
+  name: Name
+  href: api/Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.html#Crowdin_Api_Reports_QaCheckIssuesGenerateReportRequest_Name
+  commentId: P:Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.Name
+  fullName: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.Name
+  nameWithType: QaCheckIssuesGenerateReportRequest.Name
+- uid: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.Name*
+  name: Name
+  href: api/Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.html#Crowdin_Api_Reports_QaCheckIssuesGenerateReportRequest_Name_
+  commentId: Overload:Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.Name
+  nameWithType: QaCheckIssuesGenerateReportRequest.Name
+- uid: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.Schema
+  name: Schema
+  href: api/Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.html#Crowdin_Api_Reports_QaCheckIssuesGenerateReportRequest_Schema
+  commentId: P:Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.Schema
+  fullName: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.Schema
+  nameWithType: QaCheckIssuesGenerateReportRequest.Schema
+- uid: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.Schema*
+  name: Schema
+  href: api/Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.html#Crowdin_Api_Reports_QaCheckIssuesGenerateReportRequest_Schema_
+  commentId: Overload:Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.Schema
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.Schema
+  nameWithType: QaCheckIssuesGenerateReportRequest.Schema
+- uid: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject
+  name: QaCheckIssuesGenerateReportRequest.SchemaObject
+  href: api/Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.html
+  commentId: T:Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject
+  fullName: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject
+  nameWithType: QaCheckIssuesGenerateReportRequest.SchemaObject
+- uid: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.DateFrom
+  name: DateFrom
+  href: api/Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_QaCheckIssuesGenerateReportRequest_SchemaObject_DateFrom
+  commentId: P:Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.DateFrom
+  fullName: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.DateFrom
+  nameWithType: QaCheckIssuesGenerateReportRequest.SchemaObject.DateFrom
+- uid: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.DateFrom*
+  name: DateFrom
+  href: api/Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_QaCheckIssuesGenerateReportRequest_SchemaObject_DateFrom_
+  commentId: Overload:Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.DateFrom
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.DateFrom
+  nameWithType: QaCheckIssuesGenerateReportRequest.SchemaObject.DateFrom
+- uid: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.DateTo
+  name: DateTo
+  href: api/Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_QaCheckIssuesGenerateReportRequest_SchemaObject_DateTo
+  commentId: P:Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.DateTo
+  fullName: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.DateTo
+  nameWithType: QaCheckIssuesGenerateReportRequest.SchemaObject.DateTo
+- uid: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.DateTo*
+  name: DateTo
+  href: api/Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_QaCheckIssuesGenerateReportRequest_SchemaObject_DateTo_
+  commentId: Overload:Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.DateTo
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.DateTo
+  nameWithType: QaCheckIssuesGenerateReportRequest.SchemaObject.DateTo
+- uid: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.Format
+  name: Format
+  href: api/Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_QaCheckIssuesGenerateReportRequest_SchemaObject_Format
+  commentId: P:Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.Format
+  fullName: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.Format
+  nameWithType: QaCheckIssuesGenerateReportRequest.SchemaObject.Format
+- uid: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.Format*
+  name: Format
+  href: api/Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_QaCheckIssuesGenerateReportRequest_SchemaObject_Format_
+  commentId: Overload:Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.Format
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.Format
+  nameWithType: QaCheckIssuesGenerateReportRequest.SchemaObject.Format
+- uid: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.LanguageId
+  name: LanguageId
+  href: api/Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_QaCheckIssuesGenerateReportRequest_SchemaObject_LanguageId
+  commentId: P:Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.LanguageId
+  fullName: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.LanguageId
+  nameWithType: QaCheckIssuesGenerateReportRequest.SchemaObject.LanguageId
+- uid: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.LanguageId*
+  name: LanguageId
+  href: api/Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_QaCheckIssuesGenerateReportRequest_SchemaObject_LanguageId_
+  commentId: Overload:Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.LanguageId
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.QaCheckIssuesGenerateReportRequest.SchemaObject.LanguageId
+  nameWithType: QaCheckIssuesGenerateReportRequest.SchemaObject.LanguageId
 - uid: Crowdin.Api.Reports.ReportApprovalIndividualRates
   name: ReportApprovalIndividualRates
   href: api/Crowdin.Api.Reports.ReportApprovalIndividualRates.html
@@ -27023,6 +28122,96 @@ references:
   commentId: F:Crowdin.Api.Reports.ScopeType.Project
   fullName: Crowdin.Api.Reports.ScopeType.Project
   nameWithType: ScopeType.Project
+- uid: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest
+  name: SourceContentUpdatesGenerateReportRequest
+  href: api/Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.html
+  commentId: T:Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest
+  fullName: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest
+  nameWithType: SourceContentUpdatesGenerateReportRequest
+- uid: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.Name
+  name: Name
+  href: api/Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.html#Crowdin_Api_Reports_SourceContentUpdatesGenerateReportRequest_Name
+  commentId: P:Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.Name
+  fullName: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.Name
+  nameWithType: SourceContentUpdatesGenerateReportRequest.Name
+- uid: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.Name*
+  name: Name
+  href: api/Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.html#Crowdin_Api_Reports_SourceContentUpdatesGenerateReportRequest_Name_
+  commentId: Overload:Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.Name
+  nameWithType: SourceContentUpdatesGenerateReportRequest.Name
+- uid: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.Schema
+  name: Schema
+  href: api/Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.html#Crowdin_Api_Reports_SourceContentUpdatesGenerateReportRequest_Schema
+  commentId: P:Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.Schema
+  fullName: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.Schema
+  nameWithType: SourceContentUpdatesGenerateReportRequest.Schema
+- uid: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.Schema*
+  name: Schema
+  href: api/Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.html#Crowdin_Api_Reports_SourceContentUpdatesGenerateReportRequest_Schema_
+  commentId: Overload:Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.Schema
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.Schema
+  nameWithType: SourceContentUpdatesGenerateReportRequest.Schema
+- uid: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject
+  name: SourceContentUpdatesGenerateReportRequest.SchemaObject
+  href: api/Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.html
+  commentId: T:Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject
+  fullName: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject
+  nameWithType: SourceContentUpdatesGenerateReportRequest.SchemaObject
+- uid: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.DateFrom
+  name: DateFrom
+  href: api/Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_SourceContentUpdatesGenerateReportRequest_SchemaObject_DateFrom
+  commentId: P:Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.DateFrom
+  fullName: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.DateFrom
+  nameWithType: SourceContentUpdatesGenerateReportRequest.SchemaObject.DateFrom
+- uid: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.DateFrom*
+  name: DateFrom
+  href: api/Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_SourceContentUpdatesGenerateReportRequest_SchemaObject_DateFrom_
+  commentId: Overload:Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.DateFrom
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.DateFrom
+  nameWithType: SourceContentUpdatesGenerateReportRequest.SchemaObject.DateFrom
+- uid: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.DateTo
+  name: DateTo
+  href: api/Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_SourceContentUpdatesGenerateReportRequest_SchemaObject_DateTo
+  commentId: P:Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.DateTo
+  fullName: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.DateTo
+  nameWithType: SourceContentUpdatesGenerateReportRequest.SchemaObject.DateTo
+- uid: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.DateTo*
+  name: DateTo
+  href: api/Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_SourceContentUpdatesGenerateReportRequest_SchemaObject_DateTo_
+  commentId: Overload:Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.DateTo
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.DateTo
+  nameWithType: SourceContentUpdatesGenerateReportRequest.SchemaObject.DateTo
+- uid: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.Format
+  name: Format
+  href: api/Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_SourceContentUpdatesGenerateReportRequest_SchemaObject_Format
+  commentId: P:Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.Format
+  fullName: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.Format
+  nameWithType: SourceContentUpdatesGenerateReportRequest.SchemaObject.Format
+- uid: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.Format*
+  name: Format
+  href: api/Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_SourceContentUpdatesGenerateReportRequest_SchemaObject_Format_
+  commentId: Overload:Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.Format
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.Format
+  nameWithType: SourceContentUpdatesGenerateReportRequest.SchemaObject.Format
+- uid: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.Unit
+  name: Unit
+  href: api/Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_SourceContentUpdatesGenerateReportRequest_SchemaObject_Unit
+  commentId: P:Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.Unit
+  fullName: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.Unit
+  nameWithType: SourceContentUpdatesGenerateReportRequest.SchemaObject.Unit
+- uid: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.Unit*
+  name: Unit
+  href: api/Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.html#Crowdin_Api_Reports_SourceContentUpdatesGenerateReportRequest_SchemaObject_Unit_
+  commentId: Overload:Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.Unit
+  isSpec: "True"
+  fullName: Crowdin.Api.Reports.SourceContentUpdatesGenerateReportRequest.SchemaObject.Unit
+  nameWithType: SourceContentUpdatesGenerateReportRequest.SchemaObject.Unit
 - uid: Crowdin.Api.Reports.TopMembersGenerateReportRequest
   name: TopMembersGenerateReportRequest
   href: api/Crowdin.Api.Reports.TopMembersGenerateReportRequest.html
@@ -38879,6 +40068,38 @@ references:
   commentId: N:Crowdin.Api.Tasks
   fullName: Crowdin.Api.Tasks
   nameWithType: Crowdin.Api.Tasks
+- uid: Crowdin.Api.Tasks.AddTaskCommentRequest
+  name: AddTaskCommentRequest
+  href: api/Crowdin.Api.Tasks.AddTaskCommentRequest.html
+  commentId: T:Crowdin.Api.Tasks.AddTaskCommentRequest
+  fullName: Crowdin.Api.Tasks.AddTaskCommentRequest
+  nameWithType: AddTaskCommentRequest
+- uid: Crowdin.Api.Tasks.AddTaskCommentRequest.Text
+  name: Text
+  href: api/Crowdin.Api.Tasks.AddTaskCommentRequest.html#Crowdin_Api_Tasks_AddTaskCommentRequest_Text
+  commentId: P:Crowdin.Api.Tasks.AddTaskCommentRequest.Text
+  fullName: Crowdin.Api.Tasks.AddTaskCommentRequest.Text
+  nameWithType: AddTaskCommentRequest.Text
+- uid: Crowdin.Api.Tasks.AddTaskCommentRequest.Text*
+  name: Text
+  href: api/Crowdin.Api.Tasks.AddTaskCommentRequest.html#Crowdin_Api_Tasks_AddTaskCommentRequest_Text_
+  commentId: Overload:Crowdin.Api.Tasks.AddTaskCommentRequest.Text
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.AddTaskCommentRequest.Text
+  nameWithType: AddTaskCommentRequest.Text
+- uid: Crowdin.Api.Tasks.AddTaskCommentRequest.TimeSpent
+  name: TimeSpent
+  href: api/Crowdin.Api.Tasks.AddTaskCommentRequest.html#Crowdin_Api_Tasks_AddTaskCommentRequest_TimeSpent
+  commentId: P:Crowdin.Api.Tasks.AddTaskCommentRequest.TimeSpent
+  fullName: Crowdin.Api.Tasks.AddTaskCommentRequest.TimeSpent
+  nameWithType: AddTaskCommentRequest.TimeSpent
+- uid: Crowdin.Api.Tasks.AddTaskCommentRequest.TimeSpent*
+  name: TimeSpent
+  href: api/Crowdin.Api.Tasks.AddTaskCommentRequest.html#Crowdin_Api_Tasks_AddTaskCommentRequest_TimeSpent_
+  commentId: Overload:Crowdin.Api.Tasks.AddTaskCommentRequest.TimeSpent
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.AddTaskCommentRequest.TimeSpent
+  nameWithType: AddTaskCommentRequest.TimeSpent
 - uid: Crowdin.Api.Tasks.AddTaskRequest
   name: AddTaskRequest
   href: api/Crowdin.Api.Tasks.AddTaskRequest.html
@@ -39211,6 +40432,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.ITasksApiExecutor.AddTask
   nameWithType: ITasksApiExecutor.AddTask
+- uid: Crowdin.Api.Tasks.ITasksApiExecutor.AddTaskComment(System.Int64,System.Int64,Crowdin.Api.Tasks.AddTaskCommentRequest)
+  name: AddTaskComment(long, long, AddTaskCommentRequest)
+  href: api/Crowdin.Api.Tasks.ITasksApiExecutor.html#Crowdin_Api_Tasks_ITasksApiExecutor_AddTaskComment_System_Int64_System_Int64_Crowdin_Api_Tasks_AddTaskCommentRequest_
+  commentId: M:Crowdin.Api.Tasks.ITasksApiExecutor.AddTaskComment(System.Int64,System.Int64,Crowdin.Api.Tasks.AddTaskCommentRequest)
+  name.vb: AddTaskComment(Long, Long, AddTaskCommentRequest)
+  fullName: Crowdin.Api.Tasks.ITasksApiExecutor.AddTaskComment(long, long, Crowdin.Api.Tasks.AddTaskCommentRequest)
+  fullName.vb: Crowdin.Api.Tasks.ITasksApiExecutor.AddTaskComment(Long, Long, Crowdin.Api.Tasks.AddTaskCommentRequest)
+  nameWithType: ITasksApiExecutor.AddTaskComment(long, long, AddTaskCommentRequest)
+  nameWithType.vb: ITasksApiExecutor.AddTaskComment(Long, Long, AddTaskCommentRequest)
+- uid: Crowdin.Api.Tasks.ITasksApiExecutor.AddTaskComment*
+  name: AddTaskComment
+  href: api/Crowdin.Api.Tasks.ITasksApiExecutor.html#Crowdin_Api_Tasks_ITasksApiExecutor_AddTaskComment_
+  commentId: Overload:Crowdin.Api.Tasks.ITasksApiExecutor.AddTaskComment
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.ITasksApiExecutor.AddTaskComment
+  nameWithType: ITasksApiExecutor.AddTaskComment
 - uid: Crowdin.Api.Tasks.ITasksApiExecutor.AddTaskSettingsTemplate(System.Int64,Crowdin.Api.Tasks.AddTaskSettingsTemplate)
   name: AddTaskSettingsTemplate(long, AddTaskSettingsTemplate)
   href: api/Crowdin.Api.Tasks.ITasksApiExecutor.html#Crowdin_Api_Tasks_ITasksApiExecutor_AddTaskSettingsTemplate_System_Int64_Crowdin_Api_Tasks_AddTaskSettingsTemplate_
@@ -39243,6 +40480,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.ITasksApiExecutor.DeleteTask
   nameWithType: ITasksApiExecutor.DeleteTask
+- uid: Crowdin.Api.Tasks.ITasksApiExecutor.DeleteTaskComment(System.Int64,System.Int64,System.Int64)
+  name: DeleteTaskComment(long, long, long)
+  href: api/Crowdin.Api.Tasks.ITasksApiExecutor.html#Crowdin_Api_Tasks_ITasksApiExecutor_DeleteTaskComment_System_Int64_System_Int64_System_Int64_
+  commentId: M:Crowdin.Api.Tasks.ITasksApiExecutor.DeleteTaskComment(System.Int64,System.Int64,System.Int64)
+  name.vb: DeleteTaskComment(Long, Long, Long)
+  fullName: Crowdin.Api.Tasks.ITasksApiExecutor.DeleteTaskComment(long, long, long)
+  fullName.vb: Crowdin.Api.Tasks.ITasksApiExecutor.DeleteTaskComment(Long, Long, Long)
+  nameWithType: ITasksApiExecutor.DeleteTaskComment(long, long, long)
+  nameWithType.vb: ITasksApiExecutor.DeleteTaskComment(Long, Long, Long)
+- uid: Crowdin.Api.Tasks.ITasksApiExecutor.DeleteTaskComment*
+  name: DeleteTaskComment
+  href: api/Crowdin.Api.Tasks.ITasksApiExecutor.html#Crowdin_Api_Tasks_ITasksApiExecutor_DeleteTaskComment_
+  commentId: Overload:Crowdin.Api.Tasks.ITasksApiExecutor.DeleteTaskComment
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.ITasksApiExecutor.DeleteTaskComment
+  nameWithType: ITasksApiExecutor.DeleteTaskComment
 - uid: Crowdin.Api.Tasks.ITasksApiExecutor.DeleteTaskSettingsTemplate(System.Int64,System.Int64)
   name: DeleteTaskSettingsTemplate(long, long)
   href: api/Crowdin.Api.Tasks.ITasksApiExecutor.html#Crowdin_Api_Tasks_ITasksApiExecutor_DeleteTaskSettingsTemplate_System_Int64_System_Int64_
@@ -39291,6 +40544,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.ITasksApiExecutor.EditTaskArchivedStatus
   nameWithType: ITasksApiExecutor.EditTaskArchivedStatus
+- uid: Crowdin.Api.Tasks.ITasksApiExecutor.EditTaskComment(System.Int64,System.Int64,System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.Tasks.TaskCommentPatch})
+  name: EditTaskComment(long, long, long, IEnumerable<TaskCommentPatch>)
+  href: api/Crowdin.Api.Tasks.ITasksApiExecutor.html#Crowdin_Api_Tasks_ITasksApiExecutor_EditTaskComment_System_Int64_System_Int64_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_Tasks_TaskCommentPatch__
+  commentId: M:Crowdin.Api.Tasks.ITasksApiExecutor.EditTaskComment(System.Int64,System.Int64,System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.Tasks.TaskCommentPatch})
+  name.vb: EditTaskComment(Long, Long, Long, IEnumerable(Of TaskCommentPatch))
+  fullName: Crowdin.Api.Tasks.ITasksApiExecutor.EditTaskComment(long, long, long, System.Collections.Generic.IEnumerable<Crowdin.Api.Tasks.TaskCommentPatch>)
+  fullName.vb: Crowdin.Api.Tasks.ITasksApiExecutor.EditTaskComment(Long, Long, Long, System.Collections.Generic.IEnumerable(Of Crowdin.Api.Tasks.TaskCommentPatch))
+  nameWithType: ITasksApiExecutor.EditTaskComment(long, long, long, IEnumerable<TaskCommentPatch>)
+  nameWithType.vb: ITasksApiExecutor.EditTaskComment(Long, Long, Long, IEnumerable(Of TaskCommentPatch))
+- uid: Crowdin.Api.Tasks.ITasksApiExecutor.EditTaskComment*
+  name: EditTaskComment
+  href: api/Crowdin.Api.Tasks.ITasksApiExecutor.html#Crowdin_Api_Tasks_ITasksApiExecutor_EditTaskComment_
+  commentId: Overload:Crowdin.Api.Tasks.ITasksApiExecutor.EditTaskComment
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.ITasksApiExecutor.EditTaskComment
+  nameWithType: ITasksApiExecutor.EditTaskComment
 - uid: Crowdin.Api.Tasks.ITasksApiExecutor.EditTaskSettingsTemplate(System.Int64,System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.Tasks.TaskSettingsTemplatePatch})
   name: EditTaskSettingsTemplate(long, long, IEnumerable<TaskSettingsTemplatePatch>)
   href: api/Crowdin.Api.Tasks.ITasksApiExecutor.html#Crowdin_Api_Tasks_ITasksApiExecutor_EditTaskSettingsTemplate_System_Int64_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_Tasks_TaskSettingsTemplatePatch__
@@ -39339,6 +40608,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.ITasksApiExecutor.GetTask
   nameWithType: ITasksApiExecutor.GetTask
+- uid: Crowdin.Api.Tasks.ITasksApiExecutor.GetTaskComment(System.Int64,System.Int64,System.Int64)
+  name: GetTaskComment(long, long, long)
+  href: api/Crowdin.Api.Tasks.ITasksApiExecutor.html#Crowdin_Api_Tasks_ITasksApiExecutor_GetTaskComment_System_Int64_System_Int64_System_Int64_
+  commentId: M:Crowdin.Api.Tasks.ITasksApiExecutor.GetTaskComment(System.Int64,System.Int64,System.Int64)
+  name.vb: GetTaskComment(Long, Long, Long)
+  fullName: Crowdin.Api.Tasks.ITasksApiExecutor.GetTaskComment(long, long, long)
+  fullName.vb: Crowdin.Api.Tasks.ITasksApiExecutor.GetTaskComment(Long, Long, Long)
+  nameWithType: ITasksApiExecutor.GetTaskComment(long, long, long)
+  nameWithType.vb: ITasksApiExecutor.GetTaskComment(Long, Long, Long)
+- uid: Crowdin.Api.Tasks.ITasksApiExecutor.GetTaskComment*
+  name: GetTaskComment
+  href: api/Crowdin.Api.Tasks.ITasksApiExecutor.html#Crowdin_Api_Tasks_ITasksApiExecutor_GetTaskComment_
+  commentId: Overload:Crowdin.Api.Tasks.ITasksApiExecutor.GetTaskComment
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.ITasksApiExecutor.GetTaskComment
+  nameWithType: ITasksApiExecutor.GetTaskComment
 - uid: Crowdin.Api.Tasks.ITasksApiExecutor.GetTaskSettingsTemplate(System.Int64,System.Int64)
   name: GetTaskSettingsTemplate(long, long)
   href: api/Crowdin.Api.Tasks.ITasksApiExecutor.html#Crowdin_Api_Tasks_ITasksApiExecutor_GetTaskSettingsTemplate_System_Int64_System_Int64_
@@ -39355,6 +40640,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.ITasksApiExecutor.GetTaskSettingsTemplate
   nameWithType: ITasksApiExecutor.GetTaskSettingsTemplate
+- uid: Crowdin.Api.Tasks.ITasksApiExecutor.ListTaskComments(System.Int64,System.Int64,System.Int32,System.Int32)
+  name: ListTaskComments(long, long, int, int)
+  href: api/Crowdin.Api.Tasks.ITasksApiExecutor.html#Crowdin_Api_Tasks_ITasksApiExecutor_ListTaskComments_System_Int64_System_Int64_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.Tasks.ITasksApiExecutor.ListTaskComments(System.Int64,System.Int64,System.Int32,System.Int32)
+  name.vb: ListTaskComments(Long, Long, Integer, Integer)
+  fullName: Crowdin.Api.Tasks.ITasksApiExecutor.ListTaskComments(long, long, int, int)
+  fullName.vb: Crowdin.Api.Tasks.ITasksApiExecutor.ListTaskComments(Long, Long, Integer, Integer)
+  nameWithType: ITasksApiExecutor.ListTaskComments(long, long, int, int)
+  nameWithType.vb: ITasksApiExecutor.ListTaskComments(Long, Long, Integer, Integer)
+- uid: Crowdin.Api.Tasks.ITasksApiExecutor.ListTaskComments*
+  name: ListTaskComments
+  href: api/Crowdin.Api.Tasks.ITasksApiExecutor.html#Crowdin_Api_Tasks_ITasksApiExecutor_ListTaskComments_
+  commentId: Overload:Crowdin.Api.Tasks.ITasksApiExecutor.ListTaskComments
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.ITasksApiExecutor.ListTaskComments
+  nameWithType: ITasksApiExecutor.ListTaskComments
 - uid: Crowdin.Api.Tasks.ITasksApiExecutor.ListTaskSettingsTemplates(System.Int64,System.Int32,System.Int32)
   name: ListTaskSettingsTemplates(long, int, int)
   href: api/Crowdin.Api.Tasks.ITasksApiExecutor.html#Crowdin_Api_Tasks_ITasksApiExecutor_ListTaskSettingsTemplates_System_Int64_System_Int32_System_Int32_
@@ -40007,6 +41308,140 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TaskAssigneeForm.WordsCount
   nameWithType: TaskAssigneeForm.WordsCount
+- uid: Crowdin.Api.Tasks.TaskComment
+  name: TaskComment
+  href: api/Crowdin.Api.Tasks.TaskComment.html
+  commentId: T:Crowdin.Api.Tasks.TaskComment
+  fullName: Crowdin.Api.Tasks.TaskComment
+  nameWithType: TaskComment
+- uid: Crowdin.Api.Tasks.TaskComment.CreatedAt
+  name: CreatedAt
+  href: api/Crowdin.Api.Tasks.TaskComment.html#Crowdin_Api_Tasks_TaskComment_CreatedAt
+  commentId: P:Crowdin.Api.Tasks.TaskComment.CreatedAt
+  fullName: Crowdin.Api.Tasks.TaskComment.CreatedAt
+  nameWithType: TaskComment.CreatedAt
+- uid: Crowdin.Api.Tasks.TaskComment.CreatedAt*
+  name: CreatedAt
+  href: api/Crowdin.Api.Tasks.TaskComment.html#Crowdin_Api_Tasks_TaskComment_CreatedAt_
+  commentId: Overload:Crowdin.Api.Tasks.TaskComment.CreatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskComment.CreatedAt
+  nameWithType: TaskComment.CreatedAt
+- uid: Crowdin.Api.Tasks.TaskComment.Id
+  name: Id
+  href: api/Crowdin.Api.Tasks.TaskComment.html#Crowdin_Api_Tasks_TaskComment_Id
+  commentId: P:Crowdin.Api.Tasks.TaskComment.Id
+  fullName: Crowdin.Api.Tasks.TaskComment.Id
+  nameWithType: TaskComment.Id
+- uid: Crowdin.Api.Tasks.TaskComment.Id*
+  name: Id
+  href: api/Crowdin.Api.Tasks.TaskComment.html#Crowdin_Api_Tasks_TaskComment_Id_
+  commentId: Overload:Crowdin.Api.Tasks.TaskComment.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskComment.Id
+  nameWithType: TaskComment.Id
+- uid: Crowdin.Api.Tasks.TaskComment.TaskId
+  name: TaskId
+  href: api/Crowdin.Api.Tasks.TaskComment.html#Crowdin_Api_Tasks_TaskComment_TaskId
+  commentId: P:Crowdin.Api.Tasks.TaskComment.TaskId
+  fullName: Crowdin.Api.Tasks.TaskComment.TaskId
+  nameWithType: TaskComment.TaskId
+- uid: Crowdin.Api.Tasks.TaskComment.TaskId*
+  name: TaskId
+  href: api/Crowdin.Api.Tasks.TaskComment.html#Crowdin_Api_Tasks_TaskComment_TaskId_
+  commentId: Overload:Crowdin.Api.Tasks.TaskComment.TaskId
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskComment.TaskId
+  nameWithType: TaskComment.TaskId
+- uid: Crowdin.Api.Tasks.TaskComment.Text
+  name: Text
+  href: api/Crowdin.Api.Tasks.TaskComment.html#Crowdin_Api_Tasks_TaskComment_Text
+  commentId: P:Crowdin.Api.Tasks.TaskComment.Text
+  fullName: Crowdin.Api.Tasks.TaskComment.Text
+  nameWithType: TaskComment.Text
+- uid: Crowdin.Api.Tasks.TaskComment.Text*
+  name: Text
+  href: api/Crowdin.Api.Tasks.TaskComment.html#Crowdin_Api_Tasks_TaskComment_Text_
+  commentId: Overload:Crowdin.Api.Tasks.TaskComment.Text
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskComment.Text
+  nameWithType: TaskComment.Text
+- uid: Crowdin.Api.Tasks.TaskComment.TimeSpent
+  name: TimeSpent
+  href: api/Crowdin.Api.Tasks.TaskComment.html#Crowdin_Api_Tasks_TaskComment_TimeSpent
+  commentId: P:Crowdin.Api.Tasks.TaskComment.TimeSpent
+  fullName: Crowdin.Api.Tasks.TaskComment.TimeSpent
+  nameWithType: TaskComment.TimeSpent
+- uid: Crowdin.Api.Tasks.TaskComment.TimeSpent*
+  name: TimeSpent
+  href: api/Crowdin.Api.Tasks.TaskComment.html#Crowdin_Api_Tasks_TaskComment_TimeSpent_
+  commentId: Overload:Crowdin.Api.Tasks.TaskComment.TimeSpent
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskComment.TimeSpent
+  nameWithType: TaskComment.TimeSpent
+- uid: Crowdin.Api.Tasks.TaskComment.UpdatedAt
+  name: UpdatedAt
+  href: api/Crowdin.Api.Tasks.TaskComment.html#Crowdin_Api_Tasks_TaskComment_UpdatedAt
+  commentId: P:Crowdin.Api.Tasks.TaskComment.UpdatedAt
+  fullName: Crowdin.Api.Tasks.TaskComment.UpdatedAt
+  nameWithType: TaskComment.UpdatedAt
+- uid: Crowdin.Api.Tasks.TaskComment.UpdatedAt*
+  name: UpdatedAt
+  href: api/Crowdin.Api.Tasks.TaskComment.html#Crowdin_Api_Tasks_TaskComment_UpdatedAt_
+  commentId: Overload:Crowdin.Api.Tasks.TaskComment.UpdatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskComment.UpdatedAt
+  nameWithType: TaskComment.UpdatedAt
+- uid: Crowdin.Api.Tasks.TaskComment.UserId
+  name: UserId
+  href: api/Crowdin.Api.Tasks.TaskComment.html#Crowdin_Api_Tasks_TaskComment_UserId
+  commentId: P:Crowdin.Api.Tasks.TaskComment.UserId
+  fullName: Crowdin.Api.Tasks.TaskComment.UserId
+  nameWithType: TaskComment.UserId
+- uid: Crowdin.Api.Tasks.TaskComment.UserId*
+  name: UserId
+  href: api/Crowdin.Api.Tasks.TaskComment.html#Crowdin_Api_Tasks_TaskComment_UserId_
+  commentId: Overload:Crowdin.Api.Tasks.TaskComment.UserId
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskComment.UserId
+  nameWithType: TaskComment.UserId
+- uid: Crowdin.Api.Tasks.TaskCommentPatch
+  name: TaskCommentPatch
+  href: api/Crowdin.Api.Tasks.TaskCommentPatch.html
+  commentId: T:Crowdin.Api.Tasks.TaskCommentPatch
+  fullName: Crowdin.Api.Tasks.TaskCommentPatch
+  nameWithType: TaskCommentPatch
+- uid: Crowdin.Api.Tasks.TaskCommentPatch.Path
+  name: Path
+  href: api/Crowdin.Api.Tasks.TaskCommentPatch.html#Crowdin_Api_Tasks_TaskCommentPatch_Path
+  commentId: P:Crowdin.Api.Tasks.TaskCommentPatch.Path
+  fullName: Crowdin.Api.Tasks.TaskCommentPatch.Path
+  nameWithType: TaskCommentPatch.Path
+- uid: Crowdin.Api.Tasks.TaskCommentPatch.Path*
+  name: Path
+  href: api/Crowdin.Api.Tasks.TaskCommentPatch.html#Crowdin_Api_Tasks_TaskCommentPatch_Path_
+  commentId: Overload:Crowdin.Api.Tasks.TaskCommentPatch.Path
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskCommentPatch.Path
+  nameWithType: TaskCommentPatch.Path
+- uid: Crowdin.Api.Tasks.TaskCommentPatchPath
+  name: TaskCommentPatchPath
+  href: api/Crowdin.Api.Tasks.TaskCommentPatchPath.html
+  commentId: T:Crowdin.Api.Tasks.TaskCommentPatchPath
+  fullName: Crowdin.Api.Tasks.TaskCommentPatchPath
+  nameWithType: TaskCommentPatchPath
+- uid: Crowdin.Api.Tasks.TaskCommentPatchPath.Text
+  name: Text
+  href: api/Crowdin.Api.Tasks.TaskCommentPatchPath.html#Crowdin_Api_Tasks_TaskCommentPatchPath_Text
+  commentId: F:Crowdin.Api.Tasks.TaskCommentPatchPath.Text
+  fullName: Crowdin.Api.Tasks.TaskCommentPatchPath.Text
+  nameWithType: TaskCommentPatchPath.Text
+- uid: Crowdin.Api.Tasks.TaskCommentPatchPath.TimeSpent
+  name: TimeSpent
+  href: api/Crowdin.Api.Tasks.TaskCommentPatchPath.html#Crowdin_Api_Tasks_TaskCommentPatchPath_TimeSpent
+  commentId: F:Crowdin.Api.Tasks.TaskCommentPatchPath.TimeSpent
+  fullName: Crowdin.Api.Tasks.TaskCommentPatchPath.TimeSpent
+  nameWithType: TaskCommentPatchPath.TimeSpent
 - uid: Crowdin.Api.Tasks.TaskCost
   name: TaskCost
   href: api/Crowdin.Api.Tasks.TaskCost.html
@@ -41312,6 +42747,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TasksApiExecutor.AddTask
   nameWithType: TasksApiExecutor.AddTask
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.AddTaskComment(System.Int64,System.Int64,Crowdin.Api.Tasks.AddTaskCommentRequest)
+  name: AddTaskComment(long, long, AddTaskCommentRequest)
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_AddTaskComment_System_Int64_System_Int64_Crowdin_Api_Tasks_AddTaskCommentRequest_
+  commentId: M:Crowdin.Api.Tasks.TasksApiExecutor.AddTaskComment(System.Int64,System.Int64,Crowdin.Api.Tasks.AddTaskCommentRequest)
+  name.vb: AddTaskComment(Long, Long, AddTaskCommentRequest)
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.AddTaskComment(long, long, Crowdin.Api.Tasks.AddTaskCommentRequest)
+  fullName.vb: Crowdin.Api.Tasks.TasksApiExecutor.AddTaskComment(Long, Long, Crowdin.Api.Tasks.AddTaskCommentRequest)
+  nameWithType: TasksApiExecutor.AddTaskComment(long, long, AddTaskCommentRequest)
+  nameWithType.vb: TasksApiExecutor.AddTaskComment(Long, Long, AddTaskCommentRequest)
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.AddTaskComment*
+  name: AddTaskComment
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_AddTaskComment_
+  commentId: Overload:Crowdin.Api.Tasks.TasksApiExecutor.AddTaskComment
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.AddTaskComment
+  nameWithType: TasksApiExecutor.AddTaskComment
 - uid: Crowdin.Api.Tasks.TasksApiExecutor.AddTaskSettingsTemplate(System.Int64,Crowdin.Api.Tasks.AddTaskSettingsTemplate)
   name: AddTaskSettingsTemplate(long, AddTaskSettingsTemplate)
   href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_AddTaskSettingsTemplate_System_Int64_Crowdin_Api_Tasks_AddTaskSettingsTemplate_
@@ -41344,6 +42795,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TasksApiExecutor.DeleteTask
   nameWithType: TasksApiExecutor.DeleteTask
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.DeleteTaskComment(System.Int64,System.Int64,System.Int64)
+  name: DeleteTaskComment(long, long, long)
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_DeleteTaskComment_System_Int64_System_Int64_System_Int64_
+  commentId: M:Crowdin.Api.Tasks.TasksApiExecutor.DeleteTaskComment(System.Int64,System.Int64,System.Int64)
+  name.vb: DeleteTaskComment(Long, Long, Long)
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.DeleteTaskComment(long, long, long)
+  fullName.vb: Crowdin.Api.Tasks.TasksApiExecutor.DeleteTaskComment(Long, Long, Long)
+  nameWithType: TasksApiExecutor.DeleteTaskComment(long, long, long)
+  nameWithType.vb: TasksApiExecutor.DeleteTaskComment(Long, Long, Long)
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.DeleteTaskComment*
+  name: DeleteTaskComment
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_DeleteTaskComment_
+  commentId: Overload:Crowdin.Api.Tasks.TasksApiExecutor.DeleteTaskComment
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.DeleteTaskComment
+  nameWithType: TasksApiExecutor.DeleteTaskComment
 - uid: Crowdin.Api.Tasks.TasksApiExecutor.DeleteTaskSettingsTemplate(System.Int64,System.Int64)
   name: DeleteTaskSettingsTemplate(long, long)
   href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_DeleteTaskSettingsTemplate_System_Int64_System_Int64_
@@ -41392,6 +42859,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TasksApiExecutor.EditTaskArchivedStatus
   nameWithType: TasksApiExecutor.EditTaskArchivedStatus
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.EditTaskComment(System.Int64,System.Int64,System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.Tasks.TaskCommentPatch})
+  name: EditTaskComment(long, long, long, IEnumerable<TaskCommentPatch>)
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_EditTaskComment_System_Int64_System_Int64_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_Tasks_TaskCommentPatch__
+  commentId: M:Crowdin.Api.Tasks.TasksApiExecutor.EditTaskComment(System.Int64,System.Int64,System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.Tasks.TaskCommentPatch})
+  name.vb: EditTaskComment(Long, Long, Long, IEnumerable(Of TaskCommentPatch))
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.EditTaskComment(long, long, long, System.Collections.Generic.IEnumerable<Crowdin.Api.Tasks.TaskCommentPatch>)
+  fullName.vb: Crowdin.Api.Tasks.TasksApiExecutor.EditTaskComment(Long, Long, Long, System.Collections.Generic.IEnumerable(Of Crowdin.Api.Tasks.TaskCommentPatch))
+  nameWithType: TasksApiExecutor.EditTaskComment(long, long, long, IEnumerable<TaskCommentPatch>)
+  nameWithType.vb: TasksApiExecutor.EditTaskComment(Long, Long, Long, IEnumerable(Of TaskCommentPatch))
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.EditTaskComment*
+  name: EditTaskComment
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_EditTaskComment_
+  commentId: Overload:Crowdin.Api.Tasks.TasksApiExecutor.EditTaskComment
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.EditTaskComment
+  nameWithType: TasksApiExecutor.EditTaskComment
 - uid: Crowdin.Api.Tasks.TasksApiExecutor.EditTaskSettingsTemplate(System.Int64,System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.Tasks.TaskSettingsTemplatePatch})
   name: EditTaskSettingsTemplate(long, long, IEnumerable<TaskSettingsTemplatePatch>)
   href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_EditTaskSettingsTemplate_System_Int64_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_Tasks_TaskSettingsTemplatePatch__
@@ -41440,6 +42923,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TasksApiExecutor.GetTask
   nameWithType: TasksApiExecutor.GetTask
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.GetTaskComment(System.Int64,System.Int64,System.Int64)
+  name: GetTaskComment(long, long, long)
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_GetTaskComment_System_Int64_System_Int64_System_Int64_
+  commentId: M:Crowdin.Api.Tasks.TasksApiExecutor.GetTaskComment(System.Int64,System.Int64,System.Int64)
+  name.vb: GetTaskComment(Long, Long, Long)
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.GetTaskComment(long, long, long)
+  fullName.vb: Crowdin.Api.Tasks.TasksApiExecutor.GetTaskComment(Long, Long, Long)
+  nameWithType: TasksApiExecutor.GetTaskComment(long, long, long)
+  nameWithType.vb: TasksApiExecutor.GetTaskComment(Long, Long, Long)
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.GetTaskComment*
+  name: GetTaskComment
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_GetTaskComment_
+  commentId: Overload:Crowdin.Api.Tasks.TasksApiExecutor.GetTaskComment
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.GetTaskComment
+  nameWithType: TasksApiExecutor.GetTaskComment
 - uid: Crowdin.Api.Tasks.TasksApiExecutor.GetTaskSettingsTemplate(System.Int64,System.Int64)
   name: GetTaskSettingsTemplate(long, long)
   href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_GetTaskSettingsTemplate_System_Int64_System_Int64_
@@ -41456,6 +42955,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TasksApiExecutor.GetTaskSettingsTemplate
   nameWithType: TasksApiExecutor.GetTaskSettingsTemplate
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.ListTaskComments(System.Int64,System.Int64,System.Int32,System.Int32)
+  name: ListTaskComments(long, long, int, int)
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_ListTaskComments_System_Int64_System_Int64_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.Tasks.TasksApiExecutor.ListTaskComments(System.Int64,System.Int64,System.Int32,System.Int32)
+  name.vb: ListTaskComments(Long, Long, Integer, Integer)
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.ListTaskComments(long, long, int, int)
+  fullName.vb: Crowdin.Api.Tasks.TasksApiExecutor.ListTaskComments(Long, Long, Integer, Integer)
+  nameWithType: TasksApiExecutor.ListTaskComments(long, long, int, int)
+  nameWithType.vb: TasksApiExecutor.ListTaskComments(Long, Long, Integer, Integer)
+- uid: Crowdin.Api.Tasks.TasksApiExecutor.ListTaskComments*
+  name: ListTaskComments
+  href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_ListTaskComments_
+  commentId: Overload:Crowdin.Api.Tasks.TasksApiExecutor.ListTaskComments
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TasksApiExecutor.ListTaskComments
+  nameWithType: TasksApiExecutor.ListTaskComments
 - uid: Crowdin.Api.Tasks.TasksApiExecutor.ListTaskSettingsTemplates(System.Int64,System.Int32,System.Int32)
   name: ListTaskSettingsTemplates(long, int, int)
   href: api/Crowdin.Api.Tasks.TasksApiExecutor.html#Crowdin_Api_Tasks_TasksApiExecutor_ListTaskSettingsTemplates_System_Int64_System_Int32_System_Int32_
