@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -154,7 +154,7 @@ namespace Crowdin.Api.UnitTesting.Tests.SourceStrings
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
 
-            var url = $"/projects/{projectId}/strings/upload";
+            var url = $"/projects/{projectId}/strings/uploads";
 
             mockClient
                 .Setup(client => client.SendPostRequest(url, request, null))
