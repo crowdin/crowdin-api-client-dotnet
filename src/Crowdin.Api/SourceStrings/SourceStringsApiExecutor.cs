@@ -1,4 +1,4 @@
-﻿
+
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
@@ -180,7 +180,7 @@ namespace Crowdin.Api.SourceStrings
         
         private static string FormUrl_StringsUpload(long projectId)
         {
-            return $"/projects/{projectId}/strings/upload";
+            return $"/projects/{projectId}/strings/uploads";
         }
         
         private static string FormUrl_StringsUploadId(long projectId, string uploadId)
