@@ -108,7 +108,8 @@ namespace Crowdin.Api.UnitTesting.Resources {
         ///   Looks up a localized string similar to {
         ///  &quot;deleteAfterMerge&quot;: true,
         ///  &quot;sourceBranchId&quot;: 8,
-        ///  &quot;dryRun&quot;: true
+        ///  &quot;dryRun&quot;: true,
+        ///  &quot;acceptSourceChanges&quot;: true
         ///}.
         /// </summary>
         internal static string Request_MergeBranch {
