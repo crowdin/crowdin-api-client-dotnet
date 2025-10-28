@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 using JetBrains.Annotations;
 
 using Crowdin.Api.Core;
-using System.IO;
 
 #nullable enable
 
@@ -490,6 +489,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.files.references.post">Crowdin API</a>
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.references.post">Crowdin Enterprise API</a>
         /// </summary>
+        [PublicAPI]
         public async Task<AssetReference> AddAssetReference(long projectId, long fileId, AddAssetReferenceRequest request)
         {
             string url = FormUrl_FileReferences(projectId, fileId);
@@ -502,6 +502,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.files.references.get">Crowdin API</a>
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.references.get">Crowdin Enterprise API</a>
         /// </summary>
+        [PublicAPI]
         public async Task<AssetReference> GetAssetReference(long projectId, long fileId, long referenceId)
         {
             string url = FormUrl_FileReferences_ReferenceId(projectId, fileId, referenceId);
@@ -514,6 +515,7 @@ namespace Crowdin.Api.SourceFiles
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.files.references.delete">Crowdin API</a>
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.references.delete">Crowdin Enterprise API</a>
         /// </summary>
+        [PublicAPI]
         public async Task DeleteAssetReference(long projectId, long fileId, long referenceId)
         {
             string url = FormUrl_FileReferences_ReferenceId(projectId, fileId, referenceId);

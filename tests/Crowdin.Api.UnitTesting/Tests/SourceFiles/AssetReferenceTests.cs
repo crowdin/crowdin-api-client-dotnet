@@ -110,8 +110,6 @@ namespace Crowdin.Api.UnitTesting.Tests.SourceFiles
             {
                 Assert.True(false, e.Message);
             }
-
-            Assert.True(true);
         }
 
         [Fact]
