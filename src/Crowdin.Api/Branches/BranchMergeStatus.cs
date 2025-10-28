@@ -40,6 +40,8 @@ namespace Crowdin.Api.Branches
             
             [JsonProperty("deleteAfterMerge")]
             public bool DeleteAfterMerge { get; set; }
+            [JsonProperty("acceptSourceChanges")]
+            public bool AcceptSourceChanges { get; set; }
         }
     }
 }

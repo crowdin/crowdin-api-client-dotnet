@@ -15,5 +15,7 @@ namespace Crowdin.Api.Branches
         
         [JsonProperty("dryRun")]
         public bool? DryRun { get; set; }
+        [JsonProperty("acceptSourceChanges")]
+        public bool? AcceptSourceChanges { get; set; }
     }
 }

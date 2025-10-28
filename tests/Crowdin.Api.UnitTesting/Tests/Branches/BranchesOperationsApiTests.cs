@@ -111,7 +111,8 @@ namespace Crowdin.Api.UnitTesting.Tests.Branches
             {
                 DeleteAfterMerge = true,
                 SourceBranchId = 8,
-                DryRun = true
+                DryRun = true,
+                AcceptSourceChanges = true
             };
 
             string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
@@ -226,6 +227,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Branches
             ArgumentNullException.ThrowIfNull(status.Attributes);
             Assert.Equal(38, attributes.SourceBranchId);
             Assert.False(attributes.DeleteAfterMerge);
+            Assert.False(attributes.AcceptSourceChanges);
 
             DateTimeOffset date = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00");
             Assert.Equal(date, status.CreatedAt);
