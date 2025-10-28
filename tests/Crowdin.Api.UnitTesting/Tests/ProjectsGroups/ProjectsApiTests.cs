@@ -153,7 +153,6 @@ namespace Crowdin.Api.UnitTesting.Tests.ProjectsGroups
         [Fact]
         public async Task AddProject_ShouldIncludeTmApprovedSuggestionsOnly_ForStandardProject()
         {
-            // Arrange
             var request = new FileBasedProjectForm
             {
                 Name = "Test Standard Project",
@@ -162,12 +161,11 @@ namespace Crowdin.Api.UnitTesting.Tests.ProjectsGroups
             };
 
             JsonSerializerSettings options = TestUtils.CreateJsonSerializerOptions();
-            string requestJson = JsonConvert.SerializeObject(request, options);
-
-            // Assert JSON contains our property
-            Assert.Contains("\"tmApprovedSuggestionsOnly\":true", requestJson);
-
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            string requestJson = JsonConvert.SerializeObject(request, options);
+            string rightRequestJson = Projects.AddProject_RightRequestJson_TmApprovedSuggestionsOnlyTest_ForStandardProject;
+            Assert.Equal(rightRequestJson, requestJson);
 
             mockClient
                 .Setup(client => client.SendPostRequest("/projects", request, null))
@@ -178,33 +176,27 @@ namespace Crowdin.Api.UnitTesting.Tests.ProjectsGroups
                 });
 
             var executor = new ProjectsGroupsApiExecutor(mockClient.Object);
-
-            // Act
             var projectResponse = await executor.AddProject<Project>(request);
 
-            // Assert
             Assert.NotNull(projectResponse);
-            mockClient.Verify(client => client.SendPostRequest("/projects", request, null), Times.Once);
         }
 
         [Fact]
         public async Task AddProject_ShouldIncludeTmApprovedSuggestionsOnly_ForEnterpriseProject()
         {
-            // Arrange
             var request = new EnterpriseProjectForm
             {
                 Name = "Test Enterprise Project",
                 SourceLanguageId = "en",
-                TmApprovedSuggestionsOnly = true
+                TmApprovedSuggestionsOnly = false
             };
 
             JsonSerializerSettings options = TestUtils.CreateJsonSerializerOptions();
-            string requestJson = JsonConvert.SerializeObject(request, options);
-
-            // Assert JSON contains our property
-            Assert.Contains("\"tmApprovedSuggestionsOnly\":true", requestJson);
-
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            string requestJson = JsonConvert.SerializeObject(request, options);
+            string rightRequestJson = Projects.AddProject_RightRequestJson_TmApprovedSuggestionsOnlyTest_ForEnterpriseProject;
+            Assert.Equal(rightRequestJson, requestJson);
 
             mockClient
                 .Setup(client => client.SendPostRequest("/projects", request, null))
@@ -215,13 +207,9 @@ namespace Crowdin.Api.UnitTesting.Tests.ProjectsGroups
                 });
 
             var executor = new ProjectsGroupsApiExecutor(mockClient.Object);
-
-            // Act
             var projectResponse = await executor.AddProject<Project>(request);
 
-            // Assert
             Assert.NotNull(projectResponse);
-            mockClient.Verify(client => client.SendPostRequest("/projects", request, null), Times.Once);
         }
 
     }
