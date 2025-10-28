@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using JetBrains.Annotations;
 
 using Crowdin.Api.Core;
+using System.IO;
 
 #nullable enable
 
@@ -465,6 +466,74 @@ namespace Crowdin.Api.SourceFiles
             CrowdinApiResult result = await _apiClient.SendGetRequest(url);
             return _jsonParser.ParseResponseObject<DownloadLink>(result.JsonObject);
         }
+
+        #endregion
+
+        #region File References
+
+        /// <summary>
+        /// List asset references. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.files.references.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.references.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<AssetReference>> ListAssetReferences(long projectId, long fileId, int limit = 25, int offset = 0)
+        {
+            string url = FormUrl_FileReferences(projectId, fileId);
+            IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
+            return _jsonParser.ParseResponseList<AssetReference>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Add asset reference. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.files.references.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.references.post">Crowdin Enterprise API</a>
+        /// </summary>
+        public async Task<AssetReference> AddAssetReference(long projectId, long fileId, AddAssetReferenceRequest request)
+        {
+            string url = FormUrl_FileReferences(projectId, fileId);
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<AssetReference>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Get asset reference. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.files.references.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.references.get">Crowdin Enterprise API</a>
+        /// </summary>
+        public async Task<AssetReference> GetAssetReference(long projectId, long fileId, long referenceId)
+        {
+            string url = FormUrl_FileReferences_ReferenceId(projectId, fileId, referenceId);
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<AssetReference>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Delete asset reference. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.files.references.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.references.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        public async Task DeleteAssetReference(long projectId, long fileId, long referenceId)
+        {
+            string url = FormUrl_FileReferences_ReferenceId(projectId, fileId, referenceId);
+            HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
+            Utils.ThrowIfStatusNot204(statusCode, $"File reference {referenceId} removal failed");
+        }
+
+        #region Helper methods
+
+        private static string FormUrl_FileReferences(long projectId, long fileId)
+        {
+            return $"/projects/{projectId}/files/{fileId}/references";
+        }
+
+        private static string FormUrl_FileReferences_ReferenceId(long projectId, long fileId, long referenceId)
+        {
+            return $"/projects/{projectId}/files/{fileId}/references/{referenceId}";
+        }
+
+        #endregion
 
         #endregion
     }

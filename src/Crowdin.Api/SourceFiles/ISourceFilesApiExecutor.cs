@@ -110,5 +110,21 @@ namespace Crowdin.Api.SourceFiles
         Task<DownloadLink> DownloadReviewedSourceFiles(long projectId, long buildId);
 
         #endregion
+
+        #region Asset References
+
+        Task<ResponseList<AssetReference>> ListAssetReferences(
+            long projectId,
+            long fileId,
+            int limit = 25,
+            int offset = 0);
+
+        Task<AssetReference> AddAssetReference(long projectId, long fileId, AddAssetReferenceRequest request);
+
+        Task<AssetReference> GetAssetReference(long projectId, long fileId, long referenceId);
+
+        Task DeleteAssetReference(long projectId, long fileId, long referenceId);
+
+        #endregion
     }
 }
