@@ -70,6 +70,24 @@ namespace Crowdin.Api.UnitTesting.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {&quot;name&quot;:&quot;Test Enterprise Project&quot;,&quot;sourceLanguageId&quot;:&quot;en&quot;,&quot;tmApprovedSuggestionsOnly&quot;:false}.
+        /// </summary>
+        internal static string AddProject_RightRequestJson_TmApprovedSuggestionsOnlyTest_ForEnterpriseProject {
+            get {
+                return ResourceManager.GetString("AddProject_RightRequestJson_TmApprovedSuggestionsOnlyTest_ForEnterpriseProject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {&quot;name&quot;:&quot;Test Standard Project&quot;,&quot;sourceLanguageId&quot;:&quot;en&quot;,&quot;tmApprovedSuggestionsOnly&quot;:true}.
+        /// </summary>
+        internal static string AddProject_RightRequestJson_TmApprovedSuggestionsOnlyTest_ForStandardProject {
+            get {
+                return ResourceManager.GetString("AddProject_RightRequestJson_TmApprovedSuggestionsOnlyTest_ForStandardProject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {
         ///  &quot;id&quot;: 8,
         ///  &quot;groupId&quot;: 4,

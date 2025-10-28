@@ -1,4 +1,4 @@
-﻿
+
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
@@ -124,5 +124,8 @@ namespace Crowdin.Api.ProjectsGroups
         
         [JsonProperty("defaultGlossaryId")]
         public long? DefaultGlossaryId { get; set; }
+
+        [JsonProperty("tmApprovedSuggestionsOnly")]
+        public bool? TmApprovedSuggestionsOnly { get; set; }
     }
 }

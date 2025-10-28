@@ -1,4 +1,4 @@
-﻿
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -149,5 +149,68 @@ namespace Crowdin.Api.UnitTesting.Tests.ProjectsGroups
 
             Assert.NotNull(projectResponse);
         }
+
+        [Fact]
+        public async Task AddProject_ShouldIncludeTmApprovedSuggestionsOnly_ForStandardProject()
+        {
+            var request = new FileBasedProjectForm
+            {
+                Name = "Test Standard Project",
+                SourceLanguageId = "en",
+                TmApprovedSuggestionsOnly = true
+            };
+
+            JsonSerializerSettings options = TestUtils.CreateJsonSerializerOptions();
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            string requestJson = JsonConvert.SerializeObject(request, options);
+            string rightRequestJson = Projects.AddProject_RightRequestJson_TmApprovedSuggestionsOnlyTest_ForStandardProject;
+            Assert.Equal(rightRequestJson, requestJson);
+
+            mockClient
+                .Setup(client => client.SendPostRequest("/projects", request, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.Created,
+                    JsonObject = JObject.Parse(Projects.AddProject_RightResponseJson_ProjectInfo)
+                });
+
+            var executor = new ProjectsGroupsApiExecutor(mockClient.Object);
+            var projectResponse = await executor.AddProject<Project>(request);
+
+            Assert.NotNull(projectResponse);
+        }
+
+        [Fact]
+        public async Task AddProject_ShouldIncludeTmApprovedSuggestionsOnly_ForEnterpriseProject()
+        {
+            var request = new EnterpriseProjectForm
+            {
+                Name = "Test Enterprise Project",
+                SourceLanguageId = "en",
+                TmApprovedSuggestionsOnly = false
+            };
+
+            JsonSerializerSettings options = TestUtils.CreateJsonSerializerOptions();
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            string requestJson = JsonConvert.SerializeObject(request, options);
+            string rightRequestJson = Projects.AddProject_RightRequestJson_TmApprovedSuggestionsOnlyTest_ForEnterpriseProject;
+            Assert.Equal(rightRequestJson, requestJson);
+
+            mockClient
+                .Setup(client => client.SendPostRequest("/projects", request, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.Created,
+                    JsonObject = JObject.Parse(Projects.AddProject_RightResponseJson_ProjectInfo)
+                });
+
+            var executor = new ProjectsGroupsApiExecutor(mockClient.Object);
+            var projectResponse = await executor.AddProject<Project>(request);
+
+            Assert.NotNull(projectResponse);
+        }
+
     }
 }

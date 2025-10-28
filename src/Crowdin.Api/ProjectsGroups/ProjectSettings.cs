@@ -1,4 +1,4 @@
-﻿
+
 using System.Collections.Generic;
 
 using JetBrains.Annotations;
@@ -115,5 +115,8 @@ namespace Crowdin.Api.ProjectsGroups
         [JsonProperty("tmPenalties")]
         [JsonConverter(typeof(EmptyArrayAsObjectConverter))]
         public TmPenalties TmPenalties { get; set; }
+
+        [JsonProperty("tmApprovedSuggestionsOnly")]
+        public bool? TmApprovedSuggestionsOnly { get; set; }
     }
 }
