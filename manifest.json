@@ -6832,6 +6832,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.SourceFiles.AddAssetReferenceRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.SourceFiles.AddAssetReferenceRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.SourceFiles.AddAssetReferenceRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.SourceFiles.AddBranchRequest.yml",
       "output": {
         ".html": {
@@ -6870,6 +6884,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Crowdin.Api.SourceFiles.AddFileRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.SourceFiles.AssetReference.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.SourceFiles.AssetReference.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.SourceFiles.AssetReference",
       "Summary": null
     },
     {

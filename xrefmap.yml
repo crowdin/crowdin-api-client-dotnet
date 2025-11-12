@@ -5143,6 +5143,19 @@ references:
   commentId: T:Crowdin.Api.Branches.BranchMergeStatus.AttributesData
   fullName: Crowdin.Api.Branches.BranchMergeStatus.AttributesData
   nameWithType: BranchMergeStatus.AttributesData
+- uid: Crowdin.Api.Branches.BranchMergeStatus.AttributesData.AcceptSourceChanges
+  name: AcceptSourceChanges
+  href: api/Crowdin.Api.Branches.BranchMergeStatus.AttributesData.html#Crowdin_Api_Branches_BranchMergeStatus_AttributesData_AcceptSourceChanges
+  commentId: P:Crowdin.Api.Branches.BranchMergeStatus.AttributesData.AcceptSourceChanges
+  fullName: Crowdin.Api.Branches.BranchMergeStatus.AttributesData.AcceptSourceChanges
+  nameWithType: BranchMergeStatus.AttributesData.AcceptSourceChanges
+- uid: Crowdin.Api.Branches.BranchMergeStatus.AttributesData.AcceptSourceChanges*
+  name: AcceptSourceChanges
+  href: api/Crowdin.Api.Branches.BranchMergeStatus.AttributesData.html#Crowdin_Api_Branches_BranchMergeStatus_AttributesData_AcceptSourceChanges_
+  commentId: Overload:Crowdin.Api.Branches.BranchMergeStatus.AttributesData.AcceptSourceChanges
+  isSpec: "True"
+  fullName: Crowdin.Api.Branches.BranchMergeStatus.AttributesData.AcceptSourceChanges
+  nameWithType: BranchMergeStatus.AttributesData.AcceptSourceChanges
 - uid: Crowdin.Api.Branches.BranchMergeStatus.AttributesData.DeleteAfterMerge
   name: DeleteAfterMerge
   href: api/Crowdin.Api.Branches.BranchMergeStatus.AttributesData.html#Crowdin_Api_Branches_BranchMergeStatus_AttributesData_DeleteAfterMerge
@@ -5898,6 +5911,19 @@ references:
   commentId: T:Crowdin.Api.Branches.MergeBranchRequest
   fullName: Crowdin.Api.Branches.MergeBranchRequest
   nameWithType: MergeBranchRequest
+- uid: Crowdin.Api.Branches.MergeBranchRequest.AcceptSourceChanges
+  name: AcceptSourceChanges
+  href: api/Crowdin.Api.Branches.MergeBranchRequest.html#Crowdin_Api_Branches_MergeBranchRequest_AcceptSourceChanges
+  commentId: P:Crowdin.Api.Branches.MergeBranchRequest.AcceptSourceChanges
+  fullName: Crowdin.Api.Branches.MergeBranchRequest.AcceptSourceChanges
+  nameWithType: MergeBranchRequest.AcceptSourceChanges
+- uid: Crowdin.Api.Branches.MergeBranchRequest.AcceptSourceChanges*
+  name: AcceptSourceChanges
+  href: api/Crowdin.Api.Branches.MergeBranchRequest.html#Crowdin_Api_Branches_MergeBranchRequest_AcceptSourceChanges_
+  commentId: Overload:Crowdin.Api.Branches.MergeBranchRequest.AcceptSourceChanges
+  isSpec: "True"
+  fullName: Crowdin.Api.Branches.MergeBranchRequest.AcceptSourceChanges
+  nameWithType: MergeBranchRequest.AcceptSourceChanges
 - uid: Crowdin.Api.Branches.MergeBranchRequest.DeleteAfterMerge
   name: DeleteAfterMerge
   href: api/Crowdin.Api.Branches.MergeBranchRequest.html#Crowdin_Api_Branches_MergeBranchRequest_DeleteAfterMerge
@@ -17566,6 +17592,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.TemplateId
   nameWithType: EnterpriseProjectForm.TemplateId
+- uid: Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.TmApprovedSuggestionsOnly
+  name: TmApprovedSuggestionsOnly
+  href: api/Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.html#Crowdin_Api_ProjectsGroups_EnterpriseProjectForm_TmApprovedSuggestionsOnly
+  commentId: P:Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.TmApprovedSuggestionsOnly
+  fullName: Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.TmApprovedSuggestionsOnly
+  nameWithType: EnterpriseProjectForm.TmApprovedSuggestionsOnly
+- uid: Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.TmApprovedSuggestionsOnly*
+  name: TmApprovedSuggestionsOnly
+  href: api/Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.html#Crowdin_Api_ProjectsGroups_EnterpriseProjectForm_TmApprovedSuggestionsOnly_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.TmApprovedSuggestionsOnly
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.TmApprovedSuggestionsOnly
+  nameWithType: EnterpriseProjectForm.TmApprovedSuggestionsOnly
 - uid: Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.TmContextType
   name: TmContextType
   href: api/Crowdin.Api.ProjectsGroups.EnterpriseProjectForm.html#Crowdin_Api_ProjectsGroups_EnterpriseProjectForm_TmContextType
@@ -18375,6 +18414,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.FileBasedProjectForm.TaskBasedAccessControl
   nameWithType: FileBasedProjectForm.TaskBasedAccessControl
+- uid: Crowdin.Api.ProjectsGroups.FileBasedProjectForm.TmApprovedSuggestionsOnly
+  name: TmApprovedSuggestionsOnly
+  href: api/Crowdin.Api.ProjectsGroups.FileBasedProjectForm.html#Crowdin_Api_ProjectsGroups_FileBasedProjectForm_TmApprovedSuggestionsOnly
+  commentId: P:Crowdin.Api.ProjectsGroups.FileBasedProjectForm.TmApprovedSuggestionsOnly
+  fullName: Crowdin.Api.ProjectsGroups.FileBasedProjectForm.TmApprovedSuggestionsOnly
+  nameWithType: FileBasedProjectForm.TmApprovedSuggestionsOnly
+- uid: Crowdin.Api.ProjectsGroups.FileBasedProjectForm.TmApprovedSuggestionsOnly*
+  name: TmApprovedSuggestionsOnly
+  href: api/Crowdin.Api.ProjectsGroups.FileBasedProjectForm.html#Crowdin_Api_ProjectsGroups_FileBasedProjectForm_TmApprovedSuggestionsOnly_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.FileBasedProjectForm.TmApprovedSuggestionsOnly
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.FileBasedProjectForm.TmApprovedSuggestionsOnly
+  nameWithType: FileBasedProjectForm.TmApprovedSuggestionsOnly
 - uid: Crowdin.Api.ProjectsGroups.FileBasedProjectForm.TmContextType
   name: TmContextType
   href: api/Crowdin.Api.ProjectsGroups.FileBasedProjectForm.html#Crowdin_Api_ProjectsGroups_FileBasedProjectForm_TmContextType
@@ -21102,6 +21154,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.TaskBasedAccessControl
   nameWithType: ProjectSettings.TaskBasedAccessControl
+- uid: Crowdin.Api.ProjectsGroups.ProjectSettings.TmApprovedSuggestionsOnly
+  name: TmApprovedSuggestionsOnly
+  href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_TmApprovedSuggestionsOnly
+  commentId: P:Crowdin.Api.ProjectsGroups.ProjectSettings.TmApprovedSuggestionsOnly
+  fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.TmApprovedSuggestionsOnly
+  nameWithType: ProjectSettings.TmApprovedSuggestionsOnly
+- uid: Crowdin.Api.ProjectsGroups.ProjectSettings.TmApprovedSuggestionsOnly*
+  name: TmApprovedSuggestionsOnly
+  href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_TmApprovedSuggestionsOnly_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.ProjectSettings.TmApprovedSuggestionsOnly
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.ProjectSettings.TmApprovedSuggestionsOnly
+  nameWithType: ProjectSettings.TmApprovedSuggestionsOnly
 - uid: Crowdin.Api.ProjectsGroups.ProjectSettings.TmContextType
   name: TmContextType
   href: api/Crowdin.Api.ProjectsGroups.ProjectSettings.html#Crowdin_Api_ProjectsGroups_ProjectSettings_TmContextType
@@ -22270,6 +22335,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.TaskBasedAccessControl
   nameWithType: StringsBasedProjectForm.TaskBasedAccessControl
+- uid: Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.TmApprovedSuggestionsOnly
+  name: TmApprovedSuggestionsOnly
+  href: api/Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.html#Crowdin_Api_ProjectsGroups_StringsBasedProjectForm_TmApprovedSuggestionsOnly
+  commentId: P:Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.TmApprovedSuggestionsOnly
+  fullName: Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.TmApprovedSuggestionsOnly
+  nameWithType: StringsBasedProjectForm.TmApprovedSuggestionsOnly
+- uid: Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.TmApprovedSuggestionsOnly*
+  name: TmApprovedSuggestionsOnly
+  href: api/Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.html#Crowdin_Api_ProjectsGroups_StringsBasedProjectForm_TmApprovedSuggestionsOnly_
+  commentId: Overload:Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.TmApprovedSuggestionsOnly
+  isSpec: "True"
+  fullName: Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.TmApprovedSuggestionsOnly
+  nameWithType: StringsBasedProjectForm.TmApprovedSuggestionsOnly
 - uid: Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.TmContextType
   name: TmContextType
   href: api/Crowdin.Api.ProjectsGroups.StringsBasedProjectForm.html#Crowdin_Api_ProjectsGroups_StringsBasedProjectForm_TmContextType
@@ -30502,6 +30580,38 @@ references:
   commentId: N:Crowdin.Api.SourceFiles
   fullName: Crowdin.Api.SourceFiles
   nameWithType: Crowdin.Api.SourceFiles
+- uid: Crowdin.Api.SourceFiles.AddAssetReferenceRequest
+  name: AddAssetReferenceRequest
+  href: api/Crowdin.Api.SourceFiles.AddAssetReferenceRequest.html
+  commentId: T:Crowdin.Api.SourceFiles.AddAssetReferenceRequest
+  fullName: Crowdin.Api.SourceFiles.AddAssetReferenceRequest
+  nameWithType: AddAssetReferenceRequest
+- uid: Crowdin.Api.SourceFiles.AddAssetReferenceRequest.Name
+  name: Name
+  href: api/Crowdin.Api.SourceFiles.AddAssetReferenceRequest.html#Crowdin_Api_SourceFiles_AddAssetReferenceRequest_Name
+  commentId: P:Crowdin.Api.SourceFiles.AddAssetReferenceRequest.Name
+  fullName: Crowdin.Api.SourceFiles.AddAssetReferenceRequest.Name
+  nameWithType: AddAssetReferenceRequest.Name
+- uid: Crowdin.Api.SourceFiles.AddAssetReferenceRequest.Name*
+  name: Name
+  href: api/Crowdin.Api.SourceFiles.AddAssetReferenceRequest.html#Crowdin_Api_SourceFiles_AddAssetReferenceRequest_Name_
+  commentId: Overload:Crowdin.Api.SourceFiles.AddAssetReferenceRequest.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.AddAssetReferenceRequest.Name
+  nameWithType: AddAssetReferenceRequest.Name
+- uid: Crowdin.Api.SourceFiles.AddAssetReferenceRequest.StorageId
+  name: StorageId
+  href: api/Crowdin.Api.SourceFiles.AddAssetReferenceRequest.html#Crowdin_Api_SourceFiles_AddAssetReferenceRequest_StorageId
+  commentId: P:Crowdin.Api.SourceFiles.AddAssetReferenceRequest.StorageId
+  fullName: Crowdin.Api.SourceFiles.AddAssetReferenceRequest.StorageId
+  nameWithType: AddAssetReferenceRequest.StorageId
+- uid: Crowdin.Api.SourceFiles.AddAssetReferenceRequest.StorageId*
+  name: StorageId
+  href: api/Crowdin.Api.SourceFiles.AddAssetReferenceRequest.html#Crowdin_Api_SourceFiles_AddAssetReferenceRequest_StorageId_
+  commentId: Overload:Crowdin.Api.SourceFiles.AddAssetReferenceRequest.StorageId
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.AddAssetReferenceRequest.StorageId
+  nameWithType: AddAssetReferenceRequest.StorageId
 - uid: Crowdin.Api.SourceFiles.AddBranchRequest
   name: AddBranchRequest
   href: api/Crowdin.Api.SourceFiles.AddBranchRequest.html
@@ -30767,6 +30877,90 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.SourceFiles.AddFileRequest.Type
   nameWithType: AddFileRequest.Type
+- uid: Crowdin.Api.SourceFiles.AssetReference
+  name: AssetReference
+  href: api/Crowdin.Api.SourceFiles.AssetReference.html
+  commentId: T:Crowdin.Api.SourceFiles.AssetReference
+  fullName: Crowdin.Api.SourceFiles.AssetReference
+  nameWithType: AssetReference
+- uid: Crowdin.Api.SourceFiles.AssetReference.CreatedAt
+  name: CreatedAt
+  href: api/Crowdin.Api.SourceFiles.AssetReference.html#Crowdin_Api_SourceFiles_AssetReference_CreatedAt
+  commentId: P:Crowdin.Api.SourceFiles.AssetReference.CreatedAt
+  fullName: Crowdin.Api.SourceFiles.AssetReference.CreatedAt
+  nameWithType: AssetReference.CreatedAt
+- uid: Crowdin.Api.SourceFiles.AssetReference.CreatedAt*
+  name: CreatedAt
+  href: api/Crowdin.Api.SourceFiles.AssetReference.html#Crowdin_Api_SourceFiles_AssetReference_CreatedAt_
+  commentId: Overload:Crowdin.Api.SourceFiles.AssetReference.CreatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.AssetReference.CreatedAt
+  nameWithType: AssetReference.CreatedAt
+- uid: Crowdin.Api.SourceFiles.AssetReference.Id
+  name: Id
+  href: api/Crowdin.Api.SourceFiles.AssetReference.html#Crowdin_Api_SourceFiles_AssetReference_Id
+  commentId: P:Crowdin.Api.SourceFiles.AssetReference.Id
+  fullName: Crowdin.Api.SourceFiles.AssetReference.Id
+  nameWithType: AssetReference.Id
+- uid: Crowdin.Api.SourceFiles.AssetReference.Id*
+  name: Id
+  href: api/Crowdin.Api.SourceFiles.AssetReference.html#Crowdin_Api_SourceFiles_AssetReference_Id_
+  commentId: Overload:Crowdin.Api.SourceFiles.AssetReference.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.AssetReference.Id
+  nameWithType: AssetReference.Id
+- uid: Crowdin.Api.SourceFiles.AssetReference.MimeType
+  name: MimeType
+  href: api/Crowdin.Api.SourceFiles.AssetReference.html#Crowdin_Api_SourceFiles_AssetReference_MimeType
+  commentId: P:Crowdin.Api.SourceFiles.AssetReference.MimeType
+  fullName: Crowdin.Api.SourceFiles.AssetReference.MimeType
+  nameWithType: AssetReference.MimeType
+- uid: Crowdin.Api.SourceFiles.AssetReference.MimeType*
+  name: MimeType
+  href: api/Crowdin.Api.SourceFiles.AssetReference.html#Crowdin_Api_SourceFiles_AssetReference_MimeType_
+  commentId: Overload:Crowdin.Api.SourceFiles.AssetReference.MimeType
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.AssetReference.MimeType
+  nameWithType: AssetReference.MimeType
+- uid: Crowdin.Api.SourceFiles.AssetReference.Name
+  name: Name
+  href: api/Crowdin.Api.SourceFiles.AssetReference.html#Crowdin_Api_SourceFiles_AssetReference_Name
+  commentId: P:Crowdin.Api.SourceFiles.AssetReference.Name
+  fullName: Crowdin.Api.SourceFiles.AssetReference.Name
+  nameWithType: AssetReference.Name
+- uid: Crowdin.Api.SourceFiles.AssetReference.Name*
+  name: Name
+  href: api/Crowdin.Api.SourceFiles.AssetReference.html#Crowdin_Api_SourceFiles_AssetReference_Name_
+  commentId: Overload:Crowdin.Api.SourceFiles.AssetReference.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.AssetReference.Name
+  nameWithType: AssetReference.Name
+- uid: Crowdin.Api.SourceFiles.AssetReference.Url
+  name: Url
+  href: api/Crowdin.Api.SourceFiles.AssetReference.html#Crowdin_Api_SourceFiles_AssetReference_Url
+  commentId: P:Crowdin.Api.SourceFiles.AssetReference.Url
+  fullName: Crowdin.Api.SourceFiles.AssetReference.Url
+  nameWithType: AssetReference.Url
+- uid: Crowdin.Api.SourceFiles.AssetReference.Url*
+  name: Url
+  href: api/Crowdin.Api.SourceFiles.AssetReference.html#Crowdin_Api_SourceFiles_AssetReference_Url_
+  commentId: Overload:Crowdin.Api.SourceFiles.AssetReference.Url
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.AssetReference.Url
+  nameWithType: AssetReference.Url
+- uid: Crowdin.Api.SourceFiles.AssetReference.User
+  name: User
+  href: api/Crowdin.Api.SourceFiles.AssetReference.html#Crowdin_Api_SourceFiles_AssetReference_User
+  commentId: P:Crowdin.Api.SourceFiles.AssetReference.User
+  fullName: Crowdin.Api.SourceFiles.AssetReference.User
+  nameWithType: AssetReference.User
+- uid: Crowdin.Api.SourceFiles.AssetReference.User*
+  name: User
+  href: api/Crowdin.Api.SourceFiles.AssetReference.html#Crowdin_Api_SourceFiles_AssetReference_User_
+  commentId: Overload:Crowdin.Api.SourceFiles.AssetReference.User
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.AssetReference.User
+  nameWithType: AssetReference.User
 - uid: Crowdin.Api.SourceFiles.Branch
   name: Branch
   href: api/Crowdin.Api.SourceFiles.Branch.html
@@ -32558,6 +32752,22 @@ references:
   commentId: T:Crowdin.Api.SourceFiles.ISourceFilesApiExecutor
   fullName: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor
   nameWithType: ISourceFilesApiExecutor
+- uid: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.AddAssetReference(System.Int64,System.Int64,Crowdin.Api.SourceFiles.AddAssetReferenceRequest)
+  name: AddAssetReference(long, long, AddAssetReferenceRequest)
+  href: api/Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_ISourceFilesApiExecutor_AddAssetReference_System_Int64_System_Int64_Crowdin_Api_SourceFiles_AddAssetReferenceRequest_
+  commentId: M:Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.AddAssetReference(System.Int64,System.Int64,Crowdin.Api.SourceFiles.AddAssetReferenceRequest)
+  name.vb: AddAssetReference(Long, Long, AddAssetReferenceRequest)
+  fullName: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.AddAssetReference(long, long, Crowdin.Api.SourceFiles.AddAssetReferenceRequest)
+  fullName.vb: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.AddAssetReference(Long, Long, Crowdin.Api.SourceFiles.AddAssetReferenceRequest)
+  nameWithType: ISourceFilesApiExecutor.AddAssetReference(long, long, AddAssetReferenceRequest)
+  nameWithType.vb: ISourceFilesApiExecutor.AddAssetReference(Long, Long, AddAssetReferenceRequest)
+- uid: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.AddAssetReference*
+  name: AddAssetReference
+  href: api/Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_ISourceFilesApiExecutor_AddAssetReference_
+  commentId: Overload:Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.AddAssetReference
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.AddAssetReference
+  nameWithType: ISourceFilesApiExecutor.AddAssetReference
 - uid: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.AddBranch(System.Int64,Crowdin.Api.SourceFiles.AddBranchRequest)
   name: AddBranch(long, AddBranchRequest)
   href: api/Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_ISourceFilesApiExecutor_AddBranch_System_Int64_Crowdin_Api_SourceFiles_AddBranchRequest_
@@ -32638,6 +32848,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.CheckReviewedSourceFilesBuildStatus
   nameWithType: ISourceFilesApiExecutor.CheckReviewedSourceFilesBuildStatus
+- uid: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.DeleteAssetReference(System.Int64,System.Int64,System.Int64)
+  name: DeleteAssetReference(long, long, long)
+  href: api/Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_ISourceFilesApiExecutor_DeleteAssetReference_System_Int64_System_Int64_System_Int64_
+  commentId: M:Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.DeleteAssetReference(System.Int64,System.Int64,System.Int64)
+  name.vb: DeleteAssetReference(Long, Long, Long)
+  fullName: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.DeleteAssetReference(long, long, long)
+  fullName.vb: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.DeleteAssetReference(Long, Long, Long)
+  nameWithType: ISourceFilesApiExecutor.DeleteAssetReference(long, long, long)
+  nameWithType.vb: ISourceFilesApiExecutor.DeleteAssetReference(Long, Long, Long)
+- uid: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.DeleteAssetReference*
+  name: DeleteAssetReference
+  href: api/Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_ISourceFilesApiExecutor_DeleteAssetReference_
+  commentId: Overload:Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.DeleteAssetReference
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.DeleteAssetReference
+  nameWithType: ISourceFilesApiExecutor.DeleteAssetReference
 - uid: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.DeleteBranch(System.Int64,System.Int64)
   name: DeleteBranch(long, long)
   href: api/Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_ISourceFilesApiExecutor_DeleteBranch_System_Int64_System_Int64_
@@ -32782,6 +33008,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.EditFile
   nameWithType: ISourceFilesApiExecutor.EditFile
+- uid: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.GetAssetReference(System.Int64,System.Int64,System.Int64)
+  name: GetAssetReference(long, long, long)
+  href: api/Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_ISourceFilesApiExecutor_GetAssetReference_System_Int64_System_Int64_System_Int64_
+  commentId: M:Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.GetAssetReference(System.Int64,System.Int64,System.Int64)
+  name.vb: GetAssetReference(Long, Long, Long)
+  fullName: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.GetAssetReference(long, long, long)
+  fullName.vb: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.GetAssetReference(Long, Long, Long)
+  nameWithType: ISourceFilesApiExecutor.GetAssetReference(long, long, long)
+  nameWithType.vb: ISourceFilesApiExecutor.GetAssetReference(Long, Long, Long)
+- uid: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.GetAssetReference*
+  name: GetAssetReference
+  href: api/Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_ISourceFilesApiExecutor_GetAssetReference_
+  commentId: Overload:Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.GetAssetReference
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.GetAssetReference
+  nameWithType: ISourceFilesApiExecutor.GetAssetReference
 - uid: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.GetBranch(System.Int64,System.Int64)
   name: GetBranch(long, long)
   href: api/Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_ISourceFilesApiExecutor_GetBranch_System_Int64_System_Int64_
@@ -32846,6 +33088,22 @@ references:
   fullName.vb: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.GetFile(Of TResponse)(Long, Long)
   nameWithType: ISourceFilesApiExecutor.GetFile<TResponse>(long, long)
   nameWithType.vb: ISourceFilesApiExecutor.GetFile(Of TResponse)(Long, Long)
+- uid: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.ListAssetReferences(System.Int64,System.Int64,System.Int32,System.Int32)
+  name: ListAssetReferences(long, long, int, int)
+  href: api/Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_ISourceFilesApiExecutor_ListAssetReferences_System_Int64_System_Int64_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.ListAssetReferences(System.Int64,System.Int64,System.Int32,System.Int32)
+  name.vb: ListAssetReferences(Long, Long, Integer, Integer)
+  fullName: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.ListAssetReferences(long, long, int, int)
+  fullName.vb: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.ListAssetReferences(Long, Long, Integer, Integer)
+  nameWithType: ISourceFilesApiExecutor.ListAssetReferences(long, long, int, int)
+  nameWithType.vb: ISourceFilesApiExecutor.ListAssetReferences(Long, Long, Integer, Integer)
+- uid: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.ListAssetReferences*
+  name: ListAssetReferences
+  href: api/Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_ISourceFilesApiExecutor_ListAssetReferences_
+  commentId: Overload:Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.ListAssetReferences
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.ListAssetReferences
+  nameWithType: ISourceFilesApiExecutor.ListAssetReferences
 - uid: Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.ListBranches(System.Int64,System.String,System.Int32,System.Int32)
   name: ListBranches(long, string?, int, int)
   href: api/Crowdin.Api.SourceFiles.ISourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_ISourceFilesApiExecutor_ListBranches_System_Int64_System_String_System_Int32_System_Int32_
@@ -33911,6 +34169,22 @@ references:
   fullName.vb: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.New
   nameWithType: SourceFilesApiExecutor.SourceFilesApiExecutor
   nameWithType.vb: SourceFilesApiExecutor.New
+- uid: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.AddAssetReference(System.Int64,System.Int64,Crowdin.Api.SourceFiles.AddAssetReferenceRequest)
+  name: AddAssetReference(long, long, AddAssetReferenceRequest)
+  href: api/Crowdin.Api.SourceFiles.SourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_SourceFilesApiExecutor_AddAssetReference_System_Int64_System_Int64_Crowdin_Api_SourceFiles_AddAssetReferenceRequest_
+  commentId: M:Crowdin.Api.SourceFiles.SourceFilesApiExecutor.AddAssetReference(System.Int64,System.Int64,Crowdin.Api.SourceFiles.AddAssetReferenceRequest)
+  name.vb: AddAssetReference(Long, Long, AddAssetReferenceRequest)
+  fullName: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.AddAssetReference(long, long, Crowdin.Api.SourceFiles.AddAssetReferenceRequest)
+  fullName.vb: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.AddAssetReference(Long, Long, Crowdin.Api.SourceFiles.AddAssetReferenceRequest)
+  nameWithType: SourceFilesApiExecutor.AddAssetReference(long, long, AddAssetReferenceRequest)
+  nameWithType.vb: SourceFilesApiExecutor.AddAssetReference(Long, Long, AddAssetReferenceRequest)
+- uid: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.AddAssetReference*
+  name: AddAssetReference
+  href: api/Crowdin.Api.SourceFiles.SourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_SourceFilesApiExecutor_AddAssetReference_
+  commentId: Overload:Crowdin.Api.SourceFiles.SourceFilesApiExecutor.AddAssetReference
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.AddAssetReference
+  nameWithType: SourceFilesApiExecutor.AddAssetReference
 - uid: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.AddBranch(System.Int64,Crowdin.Api.SourceFiles.AddBranchRequest)
   name: AddBranch(long, AddBranchRequest)
   href: api/Crowdin.Api.SourceFiles.SourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_SourceFilesApiExecutor_AddBranch_System_Int64_Crowdin_Api_SourceFiles_AddBranchRequest_
@@ -33991,6 +34265,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.CheckReviewedSourceFilesBuildStatus
   nameWithType: SourceFilesApiExecutor.CheckReviewedSourceFilesBuildStatus
+- uid: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.DeleteAssetReference(System.Int64,System.Int64,System.Int64)
+  name: DeleteAssetReference(long, long, long)
+  href: api/Crowdin.Api.SourceFiles.SourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_SourceFilesApiExecutor_DeleteAssetReference_System_Int64_System_Int64_System_Int64_
+  commentId: M:Crowdin.Api.SourceFiles.SourceFilesApiExecutor.DeleteAssetReference(System.Int64,System.Int64,System.Int64)
+  name.vb: DeleteAssetReference(Long, Long, Long)
+  fullName: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.DeleteAssetReference(long, long, long)
+  fullName.vb: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.DeleteAssetReference(Long, Long, Long)
+  nameWithType: SourceFilesApiExecutor.DeleteAssetReference(long, long, long)
+  nameWithType.vb: SourceFilesApiExecutor.DeleteAssetReference(Long, Long, Long)
+- uid: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.DeleteAssetReference*
+  name: DeleteAssetReference
+  href: api/Crowdin.Api.SourceFiles.SourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_SourceFilesApiExecutor_DeleteAssetReference_
+  commentId: Overload:Crowdin.Api.SourceFiles.SourceFilesApiExecutor.DeleteAssetReference
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.DeleteAssetReference
+  nameWithType: SourceFilesApiExecutor.DeleteAssetReference
 - uid: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.DeleteBranch(System.Int64,System.Int64)
   name: DeleteBranch(long, long)
   href: api/Crowdin.Api.SourceFiles.SourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_SourceFilesApiExecutor_DeleteBranch_System_Int64_System_Int64_
@@ -34135,6 +34425,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.EditFile
   nameWithType: SourceFilesApiExecutor.EditFile
+- uid: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.GetAssetReference(System.Int64,System.Int64,System.Int64)
+  name: GetAssetReference(long, long, long)
+  href: api/Crowdin.Api.SourceFiles.SourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_SourceFilesApiExecutor_GetAssetReference_System_Int64_System_Int64_System_Int64_
+  commentId: M:Crowdin.Api.SourceFiles.SourceFilesApiExecutor.GetAssetReference(System.Int64,System.Int64,System.Int64)
+  name.vb: GetAssetReference(Long, Long, Long)
+  fullName: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.GetAssetReference(long, long, long)
+  fullName.vb: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.GetAssetReference(Long, Long, Long)
+  nameWithType: SourceFilesApiExecutor.GetAssetReference(long, long, long)
+  nameWithType.vb: SourceFilesApiExecutor.GetAssetReference(Long, Long, Long)
+- uid: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.GetAssetReference*
+  name: GetAssetReference
+  href: api/Crowdin.Api.SourceFiles.SourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_SourceFilesApiExecutor_GetAssetReference_
+  commentId: Overload:Crowdin.Api.SourceFiles.SourceFilesApiExecutor.GetAssetReference
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.GetAssetReference
+  nameWithType: SourceFilesApiExecutor.GetAssetReference
 - uid: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.GetBranch(System.Int64,System.Int64)
   name: GetBranch(long, long)
   href: api/Crowdin.Api.SourceFiles.SourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_SourceFilesApiExecutor_GetBranch_System_Int64_System_Int64_
@@ -34199,6 +34505,22 @@ references:
   fullName.vb: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.GetFile(Of TResponse)(Long, Long)
   nameWithType: SourceFilesApiExecutor.GetFile<TResponse>(long, long)
   nameWithType.vb: SourceFilesApiExecutor.GetFile(Of TResponse)(Long, Long)
+- uid: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListAssetReferences(System.Int64,System.Int64,System.Int32,System.Int32)
+  name: ListAssetReferences(long, long, int, int)
+  href: api/Crowdin.Api.SourceFiles.SourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_SourceFilesApiExecutor_ListAssetReferences_System_Int64_System_Int64_System_Int32_System_Int32_
+  commentId: M:Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListAssetReferences(System.Int64,System.Int64,System.Int32,System.Int32)
+  name.vb: ListAssetReferences(Long, Long, Integer, Integer)
+  fullName: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListAssetReferences(long, long, int, int)
+  fullName.vb: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListAssetReferences(Long, Long, Integer, Integer)
+  nameWithType: SourceFilesApiExecutor.ListAssetReferences(long, long, int, int)
+  nameWithType.vb: SourceFilesApiExecutor.ListAssetReferences(Long, Long, Integer, Integer)
+- uid: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListAssetReferences*
+  name: ListAssetReferences
+  href: api/Crowdin.Api.SourceFiles.SourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_SourceFilesApiExecutor_ListAssetReferences_
+  commentId: Overload:Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListAssetReferences
+  isSpec: "True"
+  fullName: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListAssetReferences
+  nameWithType: SourceFilesApiExecutor.ListAssetReferences
 - uid: Crowdin.Api.SourceFiles.SourceFilesApiExecutor.ListBranches(System.Int64,System.String,System.Int32,System.Int32)
   name: ListBranches(long, string?, int, int)
   href: api/Crowdin.Api.SourceFiles.SourceFilesApiExecutor.html#Crowdin_Api_SourceFiles_SourceFilesApiExecutor_ListBranches_System_Int64_System_String_System_Int32_System_Int32_
