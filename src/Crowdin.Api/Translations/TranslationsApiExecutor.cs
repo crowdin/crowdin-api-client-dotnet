@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
@@ -202,6 +203,7 @@ namespace Crowdin.Api.Translations
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.translations.postOnLanguage">Crowdin API</a>
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.postOnLanguage">Crowdin Enterprise API</a>
         /// </summary>
+        [Obsolete]
         [PublicAPI]
         public async Task<UploadTranslationsResponse> UploadTranslations(
             long projectId,
@@ -273,6 +275,45 @@ namespace Crowdin.Api.Translations
 
             if (result.StatusCode is HttpStatusCode.NoContent) return null;
             return _jsonParser.ParseResponseObject<DownloadLink>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// Import translations. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/Translations/operation/api.projects.translations.imports">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Translations/operation/api.projects.translations.imports">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<TranslationImportResponse> ImportTranslations(long projectId, ImportTranslationsRequest request)
+        {
+            var url = $"/projects/{projectId}/translations/imports";
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<TranslationImportResponse>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// Get translation import status. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/Translations/operation/api.projects.translations.imports.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Translations/operation/api.projects.translations.imports.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<TranslationImportResponse> GetImportStatus(long projectId, string importTranslationId)
+        {
+            var url = $"/projects/{projectId}/translations/imports/{importTranslationId}";
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<TranslationImportResponse>(result.JsonObject);
+        }
+        
+        /// <summary>
+        /// Import Translations Report. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/Translations/operation/api.projects.translations.imports.report.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Translations/operation/api.projects.translations.imports.reports.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<TranslationImportReport> DownloadTranslationImportReport(long projectId, string importId)
+        {
+            var url = $"/projects/{projectId}/translations/imports/{importId}/report";
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<TranslationImportReport>(result.JsonObject);
         }
     }
 }

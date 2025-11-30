@@ -98,5 +98,23 @@ namespace Crowdin.Api.UnitTesting.Resources {
                 return ResourceManager.GetString("PreTranslationReport_Response", resourceCulture);
             }
         }
+        
+        internal static string GetTranslationImportReport_Response {
+            get {
+                return ResourceManager.GetString("GetTranslationImportReport_Response", resourceCulture);
+            }
+        }
+        
+        internal static string ImportTranslations_Response {
+            get {
+                return ResourceManager.GetString("ImportTranslations_Response", resourceCulture);
+            }
+        }
+        
+        internal static string GetImportStatus_Response {
+            get {
+                return ResourceManager.GetString("GetImportStatus_Response", resourceCulture);
+            }
+        }
     }
 }
