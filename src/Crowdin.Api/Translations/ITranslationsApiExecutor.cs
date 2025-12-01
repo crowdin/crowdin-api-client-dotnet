@@ -55,5 +55,8 @@ namespace Crowdin.Api.Translations
         Task CancelBuild(long projectId, long buildId);
 
         Task<DownloadLink?> ExportProjectTranslation(long projectId, ExportProjectTranslationRequest request);
+        Task<TranslationImportResponse> ImportTranslations(long projectId, ImportTranslationsRequest request);
+        Task<TranslationImportResponse> GetImportStatus(long projectId, string importTranslationId);
+        Task<TranslationImportReport> DownloadTranslationImportReport(long projectId, string importId);
     }
 }

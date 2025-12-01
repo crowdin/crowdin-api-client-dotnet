@@ -303,5 +303,135 @@ namespace Crowdin.Api.UnitTesting.Tests.Translations
             Assert.Equal(6, statistics.Phrases);
             Assert.Equal(13, statistics.Words);
         }
+        
+        [Fact]
+        public async Task GetTranslationImportReport()
+        {
+            const int projectId = 1;
+            const string importId = "b5215a34-1305-4b21-8054-fc2eb252842f";
+
+            var mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/translations/imports/{importId}/report";
+
+            mockClient
+                .Setup(client => client.SendGetRequest(url, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Resources.Translations.GetTranslationImportReport_Response)
+                });
+
+            var executor = new TranslationsApiExecutor(mockClient.Object);
+            TranslationImportReport response = await executor.DownloadTranslationImportReport(projectId, importId);
+
+            Assert_TranslationImportReport(response);
+        }
+
+        private static void Assert_TranslationImportReport(TranslationImportReport? report)
+        {
+            ArgumentNullException.ThrowIfNull(report);
+            ArgumentNullException.ThrowIfNull(report.Languages);
+
+            var language = report.Languages.FirstOrDefault();
+            ArgumentNullException.ThrowIfNull(language);
+
+            Assert.Equal("fr", language.Id);
+
+            var file = language.Files?.FirstOrDefault();
+            ArgumentNullException.ThrowIfNull(file);
+            Assert.Equal(6, file.Statistics?.Phrases);
+            Assert.Equal(45, file.Statistics?.Words);
+
+            Assert.Equal(0, language.Skipped?.TranslationEqSource);
+            Assert.Equal(647, language.Skipped?.QaCheck);
+            Assert.Equal(1, language.SkippedQaCheckCategories?.Size);
+            Assert.Equal(648, language.SkippedQaCheckCategories?.Duplicate);
+        }
+        
+        [Fact]
+        public async Task ImportTranslations()
+        {
+            const int projectId = 1;
+
+            var request = new ImportTranslationsRequest
+            {
+                StorageId = 13,
+                LanguageIds = new[] { "en", "uk" },
+                FileId = 2,
+                ImportEqSuggestions = true,
+                AutoApproveImported = false,
+                TranslateHidden = false,
+                AddToTm = false
+            };
+
+            var mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/translations/imports";
+
+            mockClient
+                .Setup(client => client.SendPostRequest(url, request, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.Created,
+                    JsonObject = JObject.Parse(Resources.Translations.ImportTranslations_Response)
+                });
+
+            var executor = new TranslationsApiExecutor(mockClient.Object);
+            TranslationImportResponse response = await executor.ImportTranslations(projectId, request);
+
+            Assert_ImportTranslationResponse(response);
+        }
+
+        [Fact]
+        public async Task GetImportStatus()
+        {
+            const int projectId = 1;
+            const string importTranslationId = "b5215a34-1305-4b21-8054-fc2eb252842f";
+
+            var mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/translations/imports/{importTranslationId}";
+
+            mockClient
+                .Setup(client => client.SendGetRequest(url, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Resources.Translations.GetImportStatus_Response)
+                });
+
+            var executor = new TranslationsApiExecutor(mockClient.Object);
+            TranslationImportResponse response = await executor.GetImportStatus(projectId, importTranslationId);
+
+            Assert_ImportTranslationResponse(response);
+        }
+
+        private static void Assert_ImportTranslationResponse(TranslationImportResponse? response)
+        {
+            ArgumentNullException.ThrowIfNull(response);
+
+            Assert.Equal("b5215a34-1305-4b21-8054-fc2eb252842f", response.Identifier);
+            Assert.Equal("created", response.Status);
+            Assert.Equal(0, response.Progress);
+
+            Assert.Equal(DateTimeOffset.Parse("2025-09-23T11:51:08+00:00"), response.CreatedAt);
+            Assert.Equal(DateTimeOffset.Parse("2025-09-23T11:51:08+00:00"), response.UpdatedAt);
+            Assert.Equal(DateTimeOffset.Parse("2025-09-23T11:51:08+00:00"), response.StartedAt);
+
+            TranslationImportAttributes? attributes = response.Attributes;
+            ArgumentNullException.ThrowIfNull(attributes);
+
+            Assert.Equal(13, attributes.StorageId);
+            Assert.Equal(2, attributes.FileId);
+            Assert.True(attributes.ImportEqSuggestions);
+            Assert.False(attributes.AutoApproveImported);
+            Assert.False(attributes.TranslateHidden);
+            Assert.False(attributes.AddToTm);
+
+            ArgumentNullException.ThrowIfNull(attributes.LanguageIds);
+            Assert.Contains("en", attributes.LanguageIds);
+        }
+
     }
 }
