@@ -100,5 +100,27 @@ namespace Crowdin.Api.UnitTesting.Tests.StringComments
             
             Assert.NotNull(response.Data.FirstOrDefault());
         }
+        
+        [Fact]
+        public async Task DeleteCommentAttachment()
+        {
+            const int projectId = 1;
+            const long stringCommentId = 2814;
+            const long attachmentId = 5678;
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/comments/{stringCommentId}/attachments/{attachmentId}";
+
+            mockClient
+                .Setup(client => client.SendDeleteRequest(url, null))
+                .ReturnsAsync(HttpStatusCode.NoContent);
+
+            var executor = new StringCommentsApiExecutor(mockClient.Object);
+    
+            await executor.DeleteCommentAttachment(projectId, stringCommentId, attachmentId);
+
+            mockClient.Verify(client => client.SendDeleteRequest(url, null), Times.Once);
+        }
     }
 }

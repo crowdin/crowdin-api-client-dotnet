@@ -132,6 +132,19 @@ namespace Crowdin.Api.StringComments
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
             return _jsonParser.ParseResponseObject<StringComment>(result.JsonObject);
         }
+        
+        /// <summary>
+        /// Delete comment attachment. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/StringAsset-Comments/operation/api.projects.comments.attachments.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/StringAsset-Comments/operation/api.projects.comments.attachments.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task DeleteCommentAttachment(long projectId, long stringCommentId, long attachmentId)  
+        {  
+            string url = FormUrl_CommentAttachment(projectId, stringCommentId, attachmentId);  
+            HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);  
+            Utils.ThrowIfStatusNot204(statusCode, $"Comment Attachment {attachmentId} removal failed");  
+        }
 
         #region Helper methods
 
@@ -144,6 +157,11 @@ namespace Crowdin.Api.StringComments
         {
             return $"/projects/{projectId}/comments/{stringCommentId}";
         }
+        
+        private static string FormUrl_CommentAttachment(long projectId, long stringCommentId, long attachmentId)  
+        {  
+            return $"/projects/{projectId}/comments/{stringCommentId}/attachments/{attachmentId}";  
+        }  
 
         #endregion
     }

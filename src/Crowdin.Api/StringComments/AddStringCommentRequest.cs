@@ -1,4 +1,5 @@
 ﻿
+using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
@@ -21,5 +22,8 @@ namespace Crowdin.Api.StringComments
         
         [JsonProperty("issueType")]
         public IssueType? IssueType { get; set; }
+        
+        [JsonProperty("attachments")]  
+        public List<CommentAttachmentRequest> Attachments { get; set; }  
     }
 }
