@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
@@ -90,5 +91,8 @@ namespace Crowdin.Api.StringComments
             [JsonProperty("fileId")]
             public long FileId { get; set; }
         }
+        
+        [JsonProperty("attachments")]  
+        public List<CommentAttachment> Attachments { get; set; }  
     }
 }

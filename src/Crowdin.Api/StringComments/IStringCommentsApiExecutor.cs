@@ -39,5 +39,7 @@ namespace Crowdin.Api.StringComments
             long projectId,
             long stringCommentId,
             IEnumerable<StringCommentPatch> patches);
+
+        Task DeleteCommentAttachment(long projectId, long stringCommentId, long attachmentId);
     }
 }
