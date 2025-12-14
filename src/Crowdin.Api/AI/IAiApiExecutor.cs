@@ -112,5 +112,21 @@ namespace Crowdin.Api.AI
             long? userId,
             long aiProviderId,
             IDictionary<string, object> request);
+
+        Task<ResponseList<AiSupportedProviderModel>> ListSupportedAiProviderModels(
+            long? userId,
+            int limit = 25,
+            int offset = 0,
+            string? providerType = null,
+            bool? enabled = null,
+            string? orderBy = null);
+
+        Task<ResponseList<AiSupportedProviderModel>> ListSupportedAiProviderModelsEnterprise(
+            long? userId,
+            int limit = 25,
+            int offset = 0,
+            string? providerType = null,
+            bool? enabled = null,
+            string? orderBy = null);
     }
 }
