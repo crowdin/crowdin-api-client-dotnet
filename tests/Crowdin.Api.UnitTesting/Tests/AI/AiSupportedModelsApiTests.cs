@@ -23,7 +23,7 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
 
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
 
-            var url = $"/users/{userId}/ai/providers/supported-models/crowdin";
+            var url = $"/users/{userId}/ai/providers/supported-models";
             IDictionary<string, string> queryParams = TestUtils.CreateQueryParamsFromPaging();
 
             mockClient
@@ -50,7 +50,7 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
         {
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
 
-            const string url = "/ai/providers/supported-models/enterprise";
+            const string url = "/ai/providers/supported-models";
             IDictionary<string, string> queryParams = TestUtils.CreateQueryParamsFromPaging();
 
             mockClient
@@ -62,12 +62,11 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
                 });
 
             var executor = new AiApiExecutor(mockClient.Object);
-            ResponseList<AiSupportedProviderModel>? response = await executor.ListSupportedAiProviderModelsEnterprise(userId: null);
+            ResponseList<AiSupportedProviderModel>? response = await executor.ListSupportedAiProviderModels(userId: null);
 
             Assert.NotNull(response);
             Assert.Single(response.Data);
         }
-
         #endregion
     }
 }

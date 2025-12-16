@@ -493,45 +493,24 @@ namespace Crowdin.Api.AI
         /// List Supported AI Provider Models. Documentation:
         /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.ai.providers.supported-models.crowdin.getMany">Crowdin File Based API</a>
         /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.ai.providers.supported-models.crowdin.getMany">Crowdin String Based API</a>
-        /// </summary>
-        [PublicAPI]
-        public async Task<ResponseList<AiSupportedProviderModel>> ListSupportedAiProviderModels(
-            long? userId,
-            int limit = 25,
-            int offset = 0,
-            string? providerType = null,
-            bool? enabled = null,
-            string? orderBy = null)
-        {
-            string url = AddUserIdIfAvailable(userId, "/ai/providers/supported-models/crowdin");
-            IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
-            queryParams.AddParamIfPresent("providerType", providerType);
-            queryParams.AddParamIfPresent("enabled", enabled);
-            queryParams.AddParamIfPresent("orderBy", orderBy);
-
-            CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
-            return _jsonParser.ParseResponseList<AiSupportedProviderModel>(result.JsonObject);
-        }
-
-        /// <summary>
-        /// List Supported AI Provider Models (Enterprise). Documentation:
         /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.providers.supported-models.enterprise.getMany">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<AiSupportedProviderModel>> ListSupportedAiProviderModelsEnterprise(
-            long? userId,
+        public async Task<ResponseList<AiSupportedProviderModel>> ListSupportedAiProviderModels(
+            long? userId = null,
             int limit = 25,
             int offset = 0,
             string? providerType = null,
             bool? enabled = null,
             string? orderBy = null)
         {
-            string url = AddUserIdIfAvailable(userId, "/ai/providers/supported-models/enterprise");
+            string url = AddUserIdIfAvailable(userId, $"/ai/providers/supported-models");
+    
             IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
             queryParams.AddParamIfPresent("providerType", providerType);
             queryParams.AddParamIfPresent("enabled", enabled);
             queryParams.AddParamIfPresent("orderBy", orderBy);
-
+    
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
             return _jsonParser.ParseResponseList<AiSupportedProviderModel>(result.JsonObject);
         }
