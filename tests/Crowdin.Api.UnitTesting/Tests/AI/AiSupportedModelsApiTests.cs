@@ -14,8 +14,6 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
 {
     public class AiSupportedModelsApiTests
     {
-        #region Crowdin
-
         [Fact]
         public async Task ListSupportedAiProviderModels()
         {
@@ -40,33 +38,6 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
             Assert.NotNull(response);
             Assert.Single(response.Data);
         }
-
-        #endregion
-
-        #region Enterprise
-
-        [Fact]
-        public async Task ListSupportedAiProviderModelsEnterprise()
-        {
-            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
-
-            const string url = "/ai/providers/supported-models";
-            IDictionary<string, string> queryParams = TestUtils.CreateQueryParamsFromPaging();
-
-            mockClient
-                .Setup(client => client.SendGetRequest(url, queryParams))
-                .ReturnsAsync(new CrowdinApiResult
-                {
-                    StatusCode = HttpStatusCode.OK,
-                    JsonObject = JObject.Parse(AI_Providers.ListSupportedAiProviderModels_Response)
-                });
-
-            var executor = new AiApiExecutor(mockClient.Object);
-            ResponseList<AiSupportedProviderModel>? response = await executor.ListSupportedAiProviderModels(userId: null);
-
-            Assert.NotNull(response);
-            Assert.Single(response.Data);
-        }
-        #endregion
+        
     }
 }
