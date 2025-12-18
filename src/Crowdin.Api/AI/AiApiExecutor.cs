@@ -488,6 +488,32 @@ namespace Crowdin.Api.AI
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
             return _jsonParser.ParseResponseObject<AiProxyChatCompletion>(result.JsonObject);
         }
+
+        /// <summary>
+        /// List Supported AI Provider Models. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.ai.providers.supported-models.crowdin.getMany">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.ai.providers.supported-models.crowdin.getMany">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.providers.supported-models.enterprise.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<AiSupportedProviderModel>> ListSupportedAiProviderModels(
+            long? userId = null,
+            int limit = 25,
+            int offset = 0,
+            string? providerType = null,
+            bool? enabled = null,
+            string? orderBy = null)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/providers/supported-models");
+    
+            IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
+            queryParams.AddParamIfPresent("providerType", providerType);
+            queryParams.AddParamIfPresent("enabled", enabled);
+            queryParams.AddParamIfPresent("orderBy", orderBy);
+    
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url, queryParams);
+            return _jsonParser.ParseResponseList<AiSupportedProviderModel>(result.JsonObject);
+        }
         
         #region Helper methods
         

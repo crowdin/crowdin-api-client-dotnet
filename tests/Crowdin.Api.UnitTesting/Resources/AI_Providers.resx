@@ -185,4 +185,47 @@
     }
 }</value>
     </data>
+    <data name="ListSupportedAiProviderModels_Response" xml:space="preserve">
+        <value>{
+  "data": [
+    {
+      "data": {
+        "providerId": 1,
+        "providerType": "open_ai",
+        "providerName": "OpenAI",
+        "id": "gpt-4-turbo",
+        "displayName": "GPT-4 Turbo",
+        "supportReasoning": true,
+        "intelligence": 95,
+        "speed": 80,
+        "price": {
+          "input": 0.01,
+          "output": 0.03
+        },
+        "modalities": {
+          "input": {
+            "text": true,
+            "image": true,
+            "audio": false
+          },
+          "output": {
+            "text": true,
+            "image": true,
+            "audio": false
+          }
+        },
+        "contextWindow": 128000,
+        "maxOutputTokens": 4096,
+        "knowledgeCutoff": "2024-04-09T00:00:00Z",
+        "releaseDate": "2024-04-09T00:00:00Z",
+        "features": {
+          "streaming": true,
+          "structuredOutput": true,
+          "functionCalling": true
+        }
+      }
+    }
+  ]
+}</value>
+    </data>
 </root>
