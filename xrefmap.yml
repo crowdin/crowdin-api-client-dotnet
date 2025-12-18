@@ -750,6 +750,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.AI.AiApiExecutor.ListAiProviders
   nameWithType: AiApiExecutor.ListAiProviders
+- uid: Crowdin.Api.AI.AiApiExecutor.ListSupportedAiProviderModels(System.Nullable{System.Int64},System.Int32,System.Int32,System.String,System.Nullable{System.Boolean},System.String)
+  name: ListSupportedAiProviderModels(long?, int, int, string?, bool?, string?)
+  href: api/Crowdin.Api.AI.AiApiExecutor.html#Crowdin_Api_AI_AiApiExecutor_ListSupportedAiProviderModels_System_Nullable_System_Int64__System_Int32_System_Int32_System_String_System_Nullable_System_Boolean__System_String_
+  commentId: M:Crowdin.Api.AI.AiApiExecutor.ListSupportedAiProviderModels(System.Nullable{System.Int64},System.Int32,System.Int32,System.String,System.Nullable{System.Boolean},System.String)
+  name.vb: ListSupportedAiProviderModels(Long?, Integer, Integer, String, Boolean?, String)
+  fullName: Crowdin.Api.AI.AiApiExecutor.ListSupportedAiProviderModels(long?, int, int, string?, bool?, string?)
+  fullName.vb: Crowdin.Api.AI.AiApiExecutor.ListSupportedAiProviderModels(Long?, Integer, Integer, String, Boolean?, String)
+  nameWithType: AiApiExecutor.ListSupportedAiProviderModels(long?, int, int, string?, bool?, string?)
+  nameWithType.vb: AiApiExecutor.ListSupportedAiProviderModels(Long?, Integer, Integer, String, Boolean?, String)
+- uid: Crowdin.Api.AI.AiApiExecutor.ListSupportedAiProviderModels*
+  name: ListSupportedAiProviderModels
+  href: api/Crowdin.Api.AI.AiApiExecutor.html#Crowdin_Api_AI_AiApiExecutor_ListSupportedAiProviderModels_
+  commentId: Overload:Crowdin.Api.AI.AiApiExecutor.ListSupportedAiProviderModels
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiApiExecutor.ListSupportedAiProviderModels
+  nameWithType: AiApiExecutor.ListSupportedAiProviderModels
 - uid: Crowdin.Api.AI.AiDatasetPurpose
   name: AiDatasetPurpose
   href: api/Crowdin.Api.AI.AiDatasetPurpose.html
@@ -1259,6 +1275,160 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.AI.AiHyperParameters.NEpochs
   nameWithType: AiHyperParameters.NEpochs
+- uid: Crowdin.Api.AI.AiModelFeatures
+  name: AiModelFeatures
+  href: api/Crowdin.Api.AI.AiModelFeatures.html
+  commentId: T:Crowdin.Api.AI.AiModelFeatures
+  fullName: Crowdin.Api.AI.AiModelFeatures
+  nameWithType: AiModelFeatures
+- uid: Crowdin.Api.AI.AiModelFeatures.FunctionCalling
+  name: FunctionCalling
+  href: api/Crowdin.Api.AI.AiModelFeatures.html#Crowdin_Api_AI_AiModelFeatures_FunctionCalling
+  commentId: P:Crowdin.Api.AI.AiModelFeatures.FunctionCalling
+  fullName: Crowdin.Api.AI.AiModelFeatures.FunctionCalling
+  nameWithType: AiModelFeatures.FunctionCalling
+- uid: Crowdin.Api.AI.AiModelFeatures.FunctionCalling*
+  name: FunctionCalling
+  href: api/Crowdin.Api.AI.AiModelFeatures.html#Crowdin_Api_AI_AiModelFeatures_FunctionCalling_
+  commentId: Overload:Crowdin.Api.AI.AiModelFeatures.FunctionCalling
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiModelFeatures.FunctionCalling
+  nameWithType: AiModelFeatures.FunctionCalling
+- uid: Crowdin.Api.AI.AiModelFeatures.Streaming
+  name: Streaming
+  href: api/Crowdin.Api.AI.AiModelFeatures.html#Crowdin_Api_AI_AiModelFeatures_Streaming
+  commentId: P:Crowdin.Api.AI.AiModelFeatures.Streaming
+  fullName: Crowdin.Api.AI.AiModelFeatures.Streaming
+  nameWithType: AiModelFeatures.Streaming
+- uid: Crowdin.Api.AI.AiModelFeatures.Streaming*
+  name: Streaming
+  href: api/Crowdin.Api.AI.AiModelFeatures.html#Crowdin_Api_AI_AiModelFeatures_Streaming_
+  commentId: Overload:Crowdin.Api.AI.AiModelFeatures.Streaming
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiModelFeatures.Streaming
+  nameWithType: AiModelFeatures.Streaming
+- uid: Crowdin.Api.AI.AiModelFeatures.StructuredOutput
+  name: StructuredOutput
+  href: api/Crowdin.Api.AI.AiModelFeatures.html#Crowdin_Api_AI_AiModelFeatures_StructuredOutput
+  commentId: P:Crowdin.Api.AI.AiModelFeatures.StructuredOutput
+  fullName: Crowdin.Api.AI.AiModelFeatures.StructuredOutput
+  nameWithType: AiModelFeatures.StructuredOutput
+- uid: Crowdin.Api.AI.AiModelFeatures.StructuredOutput*
+  name: StructuredOutput
+  href: api/Crowdin.Api.AI.AiModelFeatures.html#Crowdin_Api_AI_AiModelFeatures_StructuredOutput_
+  commentId: Overload:Crowdin.Api.AI.AiModelFeatures.StructuredOutput
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiModelFeatures.StructuredOutput
+  nameWithType: AiModelFeatures.StructuredOutput
+- uid: Crowdin.Api.AI.AiModelModalities
+  name: AiModelModalities
+  href: api/Crowdin.Api.AI.AiModelModalities.html
+  commentId: T:Crowdin.Api.AI.AiModelModalities
+  fullName: Crowdin.Api.AI.AiModelModalities
+  nameWithType: AiModelModalities
+- uid: Crowdin.Api.AI.AiModelModalities.Input
+  name: Input
+  href: api/Crowdin.Api.AI.AiModelModalities.html#Crowdin_Api_AI_AiModelModalities_Input
+  commentId: P:Crowdin.Api.AI.AiModelModalities.Input
+  fullName: Crowdin.Api.AI.AiModelModalities.Input
+  nameWithType: AiModelModalities.Input
+- uid: Crowdin.Api.AI.AiModelModalities.Input*
+  name: Input
+  href: api/Crowdin.Api.AI.AiModelModalities.html#Crowdin_Api_AI_AiModelModalities_Input_
+  commentId: Overload:Crowdin.Api.AI.AiModelModalities.Input
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiModelModalities.Input
+  nameWithType: AiModelModalities.Input
+- uid: Crowdin.Api.AI.AiModelModalities.Output
+  name: Output
+  href: api/Crowdin.Api.AI.AiModelModalities.html#Crowdin_Api_AI_AiModelModalities_Output
+  commentId: P:Crowdin.Api.AI.AiModelModalities.Output
+  fullName: Crowdin.Api.AI.AiModelModalities.Output
+  nameWithType: AiModelModalities.Output
+- uid: Crowdin.Api.AI.AiModelModalities.Output*
+  name: Output
+  href: api/Crowdin.Api.AI.AiModelModalities.html#Crowdin_Api_AI_AiModelModalities_Output_
+  commentId: Overload:Crowdin.Api.AI.AiModelModalities.Output
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiModelModalities.Output
+  nameWithType: AiModelModalities.Output
+- uid: Crowdin.Api.AI.AiModelModalityDetails
+  name: AiModelModalityDetails
+  href: api/Crowdin.Api.AI.AiModelModalityDetails.html
+  commentId: T:Crowdin.Api.AI.AiModelModalityDetails
+  fullName: Crowdin.Api.AI.AiModelModalityDetails
+  nameWithType: AiModelModalityDetails
+- uid: Crowdin.Api.AI.AiModelModalityDetails.Audio
+  name: Audio
+  href: api/Crowdin.Api.AI.AiModelModalityDetails.html#Crowdin_Api_AI_AiModelModalityDetails_Audio
+  commentId: P:Crowdin.Api.AI.AiModelModalityDetails.Audio
+  fullName: Crowdin.Api.AI.AiModelModalityDetails.Audio
+  nameWithType: AiModelModalityDetails.Audio
+- uid: Crowdin.Api.AI.AiModelModalityDetails.Audio*
+  name: Audio
+  href: api/Crowdin.Api.AI.AiModelModalityDetails.html#Crowdin_Api_AI_AiModelModalityDetails_Audio_
+  commentId: Overload:Crowdin.Api.AI.AiModelModalityDetails.Audio
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiModelModalityDetails.Audio
+  nameWithType: AiModelModalityDetails.Audio
+- uid: Crowdin.Api.AI.AiModelModalityDetails.Image
+  name: Image
+  href: api/Crowdin.Api.AI.AiModelModalityDetails.html#Crowdin_Api_AI_AiModelModalityDetails_Image
+  commentId: P:Crowdin.Api.AI.AiModelModalityDetails.Image
+  fullName: Crowdin.Api.AI.AiModelModalityDetails.Image
+  nameWithType: AiModelModalityDetails.Image
+- uid: Crowdin.Api.AI.AiModelModalityDetails.Image*
+  name: Image
+  href: api/Crowdin.Api.AI.AiModelModalityDetails.html#Crowdin_Api_AI_AiModelModalityDetails_Image_
+  commentId: Overload:Crowdin.Api.AI.AiModelModalityDetails.Image
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiModelModalityDetails.Image
+  nameWithType: AiModelModalityDetails.Image
+- uid: Crowdin.Api.AI.AiModelModalityDetails.Text
+  name: Text
+  href: api/Crowdin.Api.AI.AiModelModalityDetails.html#Crowdin_Api_AI_AiModelModalityDetails_Text
+  commentId: P:Crowdin.Api.AI.AiModelModalityDetails.Text
+  fullName: Crowdin.Api.AI.AiModelModalityDetails.Text
+  nameWithType: AiModelModalityDetails.Text
+- uid: Crowdin.Api.AI.AiModelModalityDetails.Text*
+  name: Text
+  href: api/Crowdin.Api.AI.AiModelModalityDetails.html#Crowdin_Api_AI_AiModelModalityDetails_Text_
+  commentId: Overload:Crowdin.Api.AI.AiModelModalityDetails.Text
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiModelModalityDetails.Text
+  nameWithType: AiModelModalityDetails.Text
+- uid: Crowdin.Api.AI.AiModelPrice
+  name: AiModelPrice
+  href: api/Crowdin.Api.AI.AiModelPrice.html
+  commentId: T:Crowdin.Api.AI.AiModelPrice
+  fullName: Crowdin.Api.AI.AiModelPrice
+  nameWithType: AiModelPrice
+- uid: Crowdin.Api.AI.AiModelPrice.Input
+  name: Input
+  href: api/Crowdin.Api.AI.AiModelPrice.html#Crowdin_Api_AI_AiModelPrice_Input
+  commentId: P:Crowdin.Api.AI.AiModelPrice.Input
+  fullName: Crowdin.Api.AI.AiModelPrice.Input
+  nameWithType: AiModelPrice.Input
+- uid: Crowdin.Api.AI.AiModelPrice.Input*
+  name: Input
+  href: api/Crowdin.Api.AI.AiModelPrice.html#Crowdin_Api_AI_AiModelPrice_Input_
+  commentId: Overload:Crowdin.Api.AI.AiModelPrice.Input
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiModelPrice.Input
+  nameWithType: AiModelPrice.Input
+- uid: Crowdin.Api.AI.AiModelPrice.Output
+  name: Output
+  href: api/Crowdin.Api.AI.AiModelPrice.html#Crowdin_Api_AI_AiModelPrice_Output
+  commentId: P:Crowdin.Api.AI.AiModelPrice.Output
+  fullName: Crowdin.Api.AI.AiModelPrice.Output
+  nameWithType: AiModelPrice.Output
+- uid: Crowdin.Api.AI.AiModelPrice.Output*
+  name: Output
+  href: api/Crowdin.Api.AI.AiModelPrice.html#Crowdin_Api_AI_AiModelPrice_Output_
+  commentId: Overload:Crowdin.Api.AI.AiModelPrice.Output
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiModelPrice.Output
+  nameWithType: AiModelPrice.Output
 - uid: Crowdin.Api.AI.AiPromptAction
   name: AiPromptAction
   href: api/Crowdin.Api.AI.AiPromptAction.html
@@ -2252,6 +2422,207 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.AI.AiSettingsShortcuts.Prompt
   nameWithType: AiSettingsShortcuts.Prompt
+- uid: Crowdin.Api.AI.AiSupportedProviderModel
+  name: AiSupportedProviderModel
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html
+  commentId: T:Crowdin.Api.AI.AiSupportedProviderModel
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel
+  nameWithType: AiSupportedProviderModel
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.ContextWindow
+  name: ContextWindow
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_ContextWindow
+  commentId: P:Crowdin.Api.AI.AiSupportedProviderModel.ContextWindow
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.ContextWindow
+  nameWithType: AiSupportedProviderModel.ContextWindow
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.ContextWindow*
+  name: ContextWindow
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_ContextWindow_
+  commentId: Overload:Crowdin.Api.AI.AiSupportedProviderModel.ContextWindow
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.ContextWindow
+  nameWithType: AiSupportedProviderModel.ContextWindow
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.DisplayName
+  name: DisplayName
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_DisplayName
+  commentId: P:Crowdin.Api.AI.AiSupportedProviderModel.DisplayName
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.DisplayName
+  nameWithType: AiSupportedProviderModel.DisplayName
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.DisplayName*
+  name: DisplayName
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_DisplayName_
+  commentId: Overload:Crowdin.Api.AI.AiSupportedProviderModel.DisplayName
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.DisplayName
+  nameWithType: AiSupportedProviderModel.DisplayName
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.Features
+  name: Features
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_Features
+  commentId: P:Crowdin.Api.AI.AiSupportedProviderModel.Features
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.Features
+  nameWithType: AiSupportedProviderModel.Features
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.Features*
+  name: Features
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_Features_
+  commentId: Overload:Crowdin.Api.AI.AiSupportedProviderModel.Features
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.Features
+  nameWithType: AiSupportedProviderModel.Features
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.Id
+  name: Id
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_Id
+  commentId: P:Crowdin.Api.AI.AiSupportedProviderModel.Id
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.Id
+  nameWithType: AiSupportedProviderModel.Id
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.Id*
+  name: Id
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_Id_
+  commentId: Overload:Crowdin.Api.AI.AiSupportedProviderModel.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.Id
+  nameWithType: AiSupportedProviderModel.Id
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.Intelligence
+  name: Intelligence
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_Intelligence
+  commentId: P:Crowdin.Api.AI.AiSupportedProviderModel.Intelligence
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.Intelligence
+  nameWithType: AiSupportedProviderModel.Intelligence
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.Intelligence*
+  name: Intelligence
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_Intelligence_
+  commentId: Overload:Crowdin.Api.AI.AiSupportedProviderModel.Intelligence
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.Intelligence
+  nameWithType: AiSupportedProviderModel.Intelligence
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.KnowledgeCutoff
+  name: KnowledgeCutoff
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_KnowledgeCutoff
+  commentId: P:Crowdin.Api.AI.AiSupportedProviderModel.KnowledgeCutoff
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.KnowledgeCutoff
+  nameWithType: AiSupportedProviderModel.KnowledgeCutoff
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.KnowledgeCutoff*
+  name: KnowledgeCutoff
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_KnowledgeCutoff_
+  commentId: Overload:Crowdin.Api.AI.AiSupportedProviderModel.KnowledgeCutoff
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.KnowledgeCutoff
+  nameWithType: AiSupportedProviderModel.KnowledgeCutoff
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.MaxOutputTokens
+  name: MaxOutputTokens
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_MaxOutputTokens
+  commentId: P:Crowdin.Api.AI.AiSupportedProviderModel.MaxOutputTokens
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.MaxOutputTokens
+  nameWithType: AiSupportedProviderModel.MaxOutputTokens
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.MaxOutputTokens*
+  name: MaxOutputTokens
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_MaxOutputTokens_
+  commentId: Overload:Crowdin.Api.AI.AiSupportedProviderModel.MaxOutputTokens
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.MaxOutputTokens
+  nameWithType: AiSupportedProviderModel.MaxOutputTokens
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.Modalities
+  name: Modalities
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_Modalities
+  commentId: P:Crowdin.Api.AI.AiSupportedProviderModel.Modalities
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.Modalities
+  nameWithType: AiSupportedProviderModel.Modalities
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.Modalities*
+  name: Modalities
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_Modalities_
+  commentId: Overload:Crowdin.Api.AI.AiSupportedProviderModel.Modalities
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.Modalities
+  nameWithType: AiSupportedProviderModel.Modalities
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.Price
+  name: Price
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_Price
+  commentId: P:Crowdin.Api.AI.AiSupportedProviderModel.Price
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.Price
+  nameWithType: AiSupportedProviderModel.Price
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.Price*
+  name: Price
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_Price_
+  commentId: Overload:Crowdin.Api.AI.AiSupportedProviderModel.Price
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.Price
+  nameWithType: AiSupportedProviderModel.Price
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.ProviderId
+  name: ProviderId
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_ProviderId
+  commentId: P:Crowdin.Api.AI.AiSupportedProviderModel.ProviderId
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.ProviderId
+  nameWithType: AiSupportedProviderModel.ProviderId
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.ProviderId*
+  name: ProviderId
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_ProviderId_
+  commentId: Overload:Crowdin.Api.AI.AiSupportedProviderModel.ProviderId
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.ProviderId
+  nameWithType: AiSupportedProviderModel.ProviderId
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.ProviderName
+  name: ProviderName
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_ProviderName
+  commentId: P:Crowdin.Api.AI.AiSupportedProviderModel.ProviderName
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.ProviderName
+  nameWithType: AiSupportedProviderModel.ProviderName
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.ProviderName*
+  name: ProviderName
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_ProviderName_
+  commentId: Overload:Crowdin.Api.AI.AiSupportedProviderModel.ProviderName
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.ProviderName
+  nameWithType: AiSupportedProviderModel.ProviderName
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.ProviderType
+  name: ProviderType
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_ProviderType
+  commentId: P:Crowdin.Api.AI.AiSupportedProviderModel.ProviderType
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.ProviderType
+  nameWithType: AiSupportedProviderModel.ProviderType
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.ProviderType*
+  name: ProviderType
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_ProviderType_
+  commentId: Overload:Crowdin.Api.AI.AiSupportedProviderModel.ProviderType
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.ProviderType
+  nameWithType: AiSupportedProviderModel.ProviderType
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.ReleaseDate
+  name: ReleaseDate
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_ReleaseDate
+  commentId: P:Crowdin.Api.AI.AiSupportedProviderModel.ReleaseDate
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.ReleaseDate
+  nameWithType: AiSupportedProviderModel.ReleaseDate
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.ReleaseDate*
+  name: ReleaseDate
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_ReleaseDate_
+  commentId: Overload:Crowdin.Api.AI.AiSupportedProviderModel.ReleaseDate
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.ReleaseDate
+  nameWithType: AiSupportedProviderModel.ReleaseDate
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.Speed
+  name: Speed
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_Speed
+  commentId: P:Crowdin.Api.AI.AiSupportedProviderModel.Speed
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.Speed
+  nameWithType: AiSupportedProviderModel.Speed
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.Speed*
+  name: Speed
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_Speed_
+  commentId: Overload:Crowdin.Api.AI.AiSupportedProviderModel.Speed
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.Speed
+  nameWithType: AiSupportedProviderModel.Speed
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.SupportReasoning
+  name: SupportReasoning
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_SupportReasoning
+  commentId: P:Crowdin.Api.AI.AiSupportedProviderModel.SupportReasoning
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.SupportReasoning
+  nameWithType: AiSupportedProviderModel.SupportReasoning
+- uid: Crowdin.Api.AI.AiSupportedProviderModel.SupportReasoning*
+  name: SupportReasoning
+  href: api/Crowdin.Api.AI.AiSupportedProviderModel.html#Crowdin_Api_AI_AiSupportedProviderModel_SupportReasoning_
+  commentId: Overload:Crowdin.Api.AI.AiSupportedProviderModel.SupportReasoning
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiSupportedProviderModel.SupportReasoning
+  nameWithType: AiSupportedProviderModel.SupportReasoning
 - uid: Crowdin.Api.AI.AiTool
   name: AiTool
   href: api/Crowdin.Api.AI.AiTool.html
@@ -3830,6 +4201,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.AI.IAiApiExecutor.ListAiProviders
   nameWithType: IAiApiExecutor.ListAiProviders
+- uid: Crowdin.Api.AI.IAiApiExecutor.ListSupportedAiProviderModels(System.Nullable{System.Int64},System.Int32,System.Int32,System.String,System.Nullable{System.Boolean},System.String)
+  name: ListSupportedAiProviderModels(long?, int, int, string?, bool?, string?)
+  href: api/Crowdin.Api.AI.IAiApiExecutor.html#Crowdin_Api_AI_IAiApiExecutor_ListSupportedAiProviderModels_System_Nullable_System_Int64__System_Int32_System_Int32_System_String_System_Nullable_System_Boolean__System_String_
+  commentId: M:Crowdin.Api.AI.IAiApiExecutor.ListSupportedAiProviderModels(System.Nullable{System.Int64},System.Int32,System.Int32,System.String,System.Nullable{System.Boolean},System.String)
+  name.vb: ListSupportedAiProviderModels(Long?, Integer, Integer, String, Boolean?, String)
+  fullName: Crowdin.Api.AI.IAiApiExecutor.ListSupportedAiProviderModels(long?, int, int, string?, bool?, string?)
+  fullName.vb: Crowdin.Api.AI.IAiApiExecutor.ListSupportedAiProviderModels(Long?, Integer, Integer, String, Boolean?, String)
+  nameWithType: IAiApiExecutor.ListSupportedAiProviderModels(long?, int, int, string?, bool?, string?)
+  nameWithType.vb: IAiApiExecutor.ListSupportedAiProviderModels(Long?, Integer, Integer, String, Boolean?, String)
+- uid: Crowdin.Api.AI.IAiApiExecutor.ListSupportedAiProviderModels*
+  name: ListSupportedAiProviderModels
+  href: api/Crowdin.Api.AI.IAiApiExecutor.html#Crowdin_Api_AI_IAiApiExecutor_ListSupportedAiProviderModels_
+  commentId: Overload:Crowdin.Api.AI.IAiApiExecutor.ListSupportedAiProviderModels
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.IAiApiExecutor.ListSupportedAiProviderModels
+  nameWithType: IAiApiExecutor.ListSupportedAiProviderModels
 - uid: Crowdin.Api.AI.MistralAiProviderCredentials
   name: MistralAiProviderCredentials
   href: api/Crowdin.Api.AI.MistralAiProviderCredentials.html
@@ -36585,6 +36972,19 @@ references:
   commentId: T:Crowdin.Api.StringComments.AddStringCommentRequest
   fullName: Crowdin.Api.StringComments.AddStringCommentRequest
   nameWithType: AddStringCommentRequest
+- uid: Crowdin.Api.StringComments.AddStringCommentRequest.Attachments
+  name: Attachments
+  href: api/Crowdin.Api.StringComments.AddStringCommentRequest.html#Crowdin_Api_StringComments_AddStringCommentRequest_Attachments
+  commentId: P:Crowdin.Api.StringComments.AddStringCommentRequest.Attachments
+  fullName: Crowdin.Api.StringComments.AddStringCommentRequest.Attachments
+  nameWithType: AddStringCommentRequest.Attachments
+- uid: Crowdin.Api.StringComments.AddStringCommentRequest.Attachments*
+  name: Attachments
+  href: api/Crowdin.Api.StringComments.AddStringCommentRequest.html#Crowdin_Api_StringComments_AddStringCommentRequest_Attachments_
+  commentId: Overload:Crowdin.Api.StringComments.AddStringCommentRequest.Attachments
+  isSpec: "True"
+  fullName: Crowdin.Api.StringComments.AddStringCommentRequest.Attachments
+  nameWithType: AddStringCommentRequest.Attachments
 - uid: Crowdin.Api.StringComments.AddStringCommentRequest.IssueType
   name: IssueType
   href: api/Crowdin.Api.StringComments.AddStringCommentRequest.html#Crowdin_Api_StringComments_AddStringCommentRequest_IssueType
@@ -36650,6 +37050,135 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringComments.AddStringCommentRequest.Type
   nameWithType: AddStringCommentRequest.Type
+- uid: Crowdin.Api.StringComments.CommentAttachment
+  name: CommentAttachment
+  href: api/Crowdin.Api.StringComments.CommentAttachment.html
+  commentId: T:Crowdin.Api.StringComments.CommentAttachment
+  fullName: Crowdin.Api.StringComments.CommentAttachment
+  nameWithType: CommentAttachment
+- uid: Crowdin.Api.StringComments.CommentAttachment.Category
+  name: Category
+  href: api/Crowdin.Api.StringComments.CommentAttachment.html#Crowdin_Api_StringComments_CommentAttachment_Category
+  commentId: P:Crowdin.Api.StringComments.CommentAttachment.Category
+  fullName: Crowdin.Api.StringComments.CommentAttachment.Category
+  nameWithType: CommentAttachment.Category
+- uid: Crowdin.Api.StringComments.CommentAttachment.Category*
+  name: Category
+  href: api/Crowdin.Api.StringComments.CommentAttachment.html#Crowdin_Api_StringComments_CommentAttachment_Category_
+  commentId: Overload:Crowdin.Api.StringComments.CommentAttachment.Category
+  isSpec: "True"
+  fullName: Crowdin.Api.StringComments.CommentAttachment.Category
+  nameWithType: CommentAttachment.Category
+- uid: Crowdin.Api.StringComments.CommentAttachment.DownloadUrl
+  name: DownloadUrl
+  href: api/Crowdin.Api.StringComments.CommentAttachment.html#Crowdin_Api_StringComments_CommentAttachment_DownloadUrl
+  commentId: P:Crowdin.Api.StringComments.CommentAttachment.DownloadUrl
+  fullName: Crowdin.Api.StringComments.CommentAttachment.DownloadUrl
+  nameWithType: CommentAttachment.DownloadUrl
+- uid: Crowdin.Api.StringComments.CommentAttachment.DownloadUrl*
+  name: DownloadUrl
+  href: api/Crowdin.Api.StringComments.CommentAttachment.html#Crowdin_Api_StringComments_CommentAttachment_DownloadUrl_
+  commentId: Overload:Crowdin.Api.StringComments.CommentAttachment.DownloadUrl
+  isSpec: "True"
+  fullName: Crowdin.Api.StringComments.CommentAttachment.DownloadUrl
+  nameWithType: CommentAttachment.DownloadUrl
+- uid: Crowdin.Api.StringComments.CommentAttachment.Id
+  name: Id
+  href: api/Crowdin.Api.StringComments.CommentAttachment.html#Crowdin_Api_StringComments_CommentAttachment_Id
+  commentId: P:Crowdin.Api.StringComments.CommentAttachment.Id
+  fullName: Crowdin.Api.StringComments.CommentAttachment.Id
+  nameWithType: CommentAttachment.Id
+- uid: Crowdin.Api.StringComments.CommentAttachment.Id*
+  name: Id
+  href: api/Crowdin.Api.StringComments.CommentAttachment.html#Crowdin_Api_StringComments_CommentAttachment_Id_
+  commentId: Overload:Crowdin.Api.StringComments.CommentAttachment.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.StringComments.CommentAttachment.Id
+  nameWithType: CommentAttachment.Id
+- uid: Crowdin.Api.StringComments.CommentAttachment.Mime
+  name: Mime
+  href: api/Crowdin.Api.StringComments.CommentAttachment.html#Crowdin_Api_StringComments_CommentAttachment_Mime
+  commentId: P:Crowdin.Api.StringComments.CommentAttachment.Mime
+  fullName: Crowdin.Api.StringComments.CommentAttachment.Mime
+  nameWithType: CommentAttachment.Mime
+- uid: Crowdin.Api.StringComments.CommentAttachment.Mime*
+  name: Mime
+  href: api/Crowdin.Api.StringComments.CommentAttachment.html#Crowdin_Api_StringComments_CommentAttachment_Mime_
+  commentId: Overload:Crowdin.Api.StringComments.CommentAttachment.Mime
+  isSpec: "True"
+  fullName: Crowdin.Api.StringComments.CommentAttachment.Mime
+  nameWithType: CommentAttachment.Mime
+- uid: Crowdin.Api.StringComments.CommentAttachment.Name
+  name: Name
+  href: api/Crowdin.Api.StringComments.CommentAttachment.html#Crowdin_Api_StringComments_CommentAttachment_Name
+  commentId: P:Crowdin.Api.StringComments.CommentAttachment.Name
+  fullName: Crowdin.Api.StringComments.CommentAttachment.Name
+  nameWithType: CommentAttachment.Name
+- uid: Crowdin.Api.StringComments.CommentAttachment.Name*
+  name: Name
+  href: api/Crowdin.Api.StringComments.CommentAttachment.html#Crowdin_Api_StringComments_CommentAttachment_Name_
+  commentId: Overload:Crowdin.Api.StringComments.CommentAttachment.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.StringComments.CommentAttachment.Name
+  nameWithType: CommentAttachment.Name
+- uid: Crowdin.Api.StringComments.CommentAttachment.Size
+  name: Size
+  href: api/Crowdin.Api.StringComments.CommentAttachment.html#Crowdin_Api_StringComments_CommentAttachment_Size
+  commentId: P:Crowdin.Api.StringComments.CommentAttachment.Size
+  fullName: Crowdin.Api.StringComments.CommentAttachment.Size
+  nameWithType: CommentAttachment.Size
+- uid: Crowdin.Api.StringComments.CommentAttachment.Size*
+  name: Size
+  href: api/Crowdin.Api.StringComments.CommentAttachment.html#Crowdin_Api_StringComments_CommentAttachment_Size_
+  commentId: Overload:Crowdin.Api.StringComments.CommentAttachment.Size
+  isSpec: "True"
+  fullName: Crowdin.Api.StringComments.CommentAttachment.Size
+  nameWithType: CommentAttachment.Size
+- uid: Crowdin.Api.StringComments.CommentAttachment.ThumbnailUrl
+  name: ThumbnailUrl
+  href: api/Crowdin.Api.StringComments.CommentAttachment.html#Crowdin_Api_StringComments_CommentAttachment_ThumbnailUrl
+  commentId: P:Crowdin.Api.StringComments.CommentAttachment.ThumbnailUrl
+  fullName: Crowdin.Api.StringComments.CommentAttachment.ThumbnailUrl
+  nameWithType: CommentAttachment.ThumbnailUrl
+- uid: Crowdin.Api.StringComments.CommentAttachment.ThumbnailUrl*
+  name: ThumbnailUrl
+  href: api/Crowdin.Api.StringComments.CommentAttachment.html#Crowdin_Api_StringComments_CommentAttachment_ThumbnailUrl_
+  commentId: Overload:Crowdin.Api.StringComments.CommentAttachment.ThumbnailUrl
+  isSpec: "True"
+  fullName: Crowdin.Api.StringComments.CommentAttachment.ThumbnailUrl
+  nameWithType: CommentAttachment.ThumbnailUrl
+- uid: Crowdin.Api.StringComments.CommentAttachment.Url
+  name: Url
+  href: api/Crowdin.Api.StringComments.CommentAttachment.html#Crowdin_Api_StringComments_CommentAttachment_Url
+  commentId: P:Crowdin.Api.StringComments.CommentAttachment.Url
+  fullName: Crowdin.Api.StringComments.CommentAttachment.Url
+  nameWithType: CommentAttachment.Url
+- uid: Crowdin.Api.StringComments.CommentAttachment.Url*
+  name: Url
+  href: api/Crowdin.Api.StringComments.CommentAttachment.html#Crowdin_Api_StringComments_CommentAttachment_Url_
+  commentId: Overload:Crowdin.Api.StringComments.CommentAttachment.Url
+  isSpec: "True"
+  fullName: Crowdin.Api.StringComments.CommentAttachment.Url
+  nameWithType: CommentAttachment.Url
+- uid: Crowdin.Api.StringComments.CommentAttachmentRequest
+  name: CommentAttachmentRequest
+  href: api/Crowdin.Api.StringComments.CommentAttachmentRequest.html
+  commentId: T:Crowdin.Api.StringComments.CommentAttachmentRequest
+  fullName: Crowdin.Api.StringComments.CommentAttachmentRequest
+  nameWithType: CommentAttachmentRequest
+- uid: Crowdin.Api.StringComments.CommentAttachmentRequest.Id
+  name: Id
+  href: api/Crowdin.Api.StringComments.CommentAttachmentRequest.html#Crowdin_Api_StringComments_CommentAttachmentRequest_Id
+  commentId: P:Crowdin.Api.StringComments.CommentAttachmentRequest.Id
+  fullName: Crowdin.Api.StringComments.CommentAttachmentRequest.Id
+  nameWithType: CommentAttachmentRequest.Id
+- uid: Crowdin.Api.StringComments.CommentAttachmentRequest.Id*
+  name: Id
+  href: api/Crowdin.Api.StringComments.CommentAttachmentRequest.html#Crowdin_Api_StringComments_CommentAttachmentRequest_Id_
+  commentId: Overload:Crowdin.Api.StringComments.CommentAttachmentRequest.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.StringComments.CommentAttachmentRequest.Id
+  nameWithType: CommentAttachmentRequest.Id
 - uid: Crowdin.Api.StringComments.IStringCommentsApiExecutor
   name: IStringCommentsApiExecutor
   href: api/Crowdin.Api.StringComments.IStringCommentsApiExecutor.html
@@ -36672,6 +37201,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringComments.IStringCommentsApiExecutor.AddStringComment
   nameWithType: IStringCommentsApiExecutor.AddStringComment
+- uid: Crowdin.Api.StringComments.IStringCommentsApiExecutor.DeleteCommentAttachment(System.Int64,System.Int64,System.Int64)
+  name: DeleteCommentAttachment(long, long, long)
+  href: api/Crowdin.Api.StringComments.IStringCommentsApiExecutor.html#Crowdin_Api_StringComments_IStringCommentsApiExecutor_DeleteCommentAttachment_System_Int64_System_Int64_System_Int64_
+  commentId: M:Crowdin.Api.StringComments.IStringCommentsApiExecutor.DeleteCommentAttachment(System.Int64,System.Int64,System.Int64)
+  name.vb: DeleteCommentAttachment(Long, Long, Long)
+  fullName: Crowdin.Api.StringComments.IStringCommentsApiExecutor.DeleteCommentAttachment(long, long, long)
+  fullName.vb: Crowdin.Api.StringComments.IStringCommentsApiExecutor.DeleteCommentAttachment(Long, Long, Long)
+  nameWithType: IStringCommentsApiExecutor.DeleteCommentAttachment(long, long, long)
+  nameWithType.vb: IStringCommentsApiExecutor.DeleteCommentAttachment(Long, Long, Long)
+- uid: Crowdin.Api.StringComments.IStringCommentsApiExecutor.DeleteCommentAttachment*
+  name: DeleteCommentAttachment
+  href: api/Crowdin.Api.StringComments.IStringCommentsApiExecutor.html#Crowdin_Api_StringComments_IStringCommentsApiExecutor_DeleteCommentAttachment_
+  commentId: Overload:Crowdin.Api.StringComments.IStringCommentsApiExecutor.DeleteCommentAttachment
+  isSpec: "True"
+  fullName: Crowdin.Api.StringComments.IStringCommentsApiExecutor.DeleteCommentAttachment
+  nameWithType: IStringCommentsApiExecutor.DeleteCommentAttachment
 - uid: Crowdin.Api.StringComments.IStringCommentsApiExecutor.DeleteStringComment(System.Int64,System.Int64)
   name: DeleteStringComment(long, long)
   href: api/Crowdin.Api.StringComments.IStringCommentsApiExecutor.html#Crowdin_Api_StringComments_IStringCommentsApiExecutor_DeleteStringComment_System_Int64_System_Int64_
@@ -36815,6 +37360,19 @@ references:
   commentId: T:Crowdin.Api.StringComments.StringComment
   fullName: Crowdin.Api.StringComments.StringComment
   nameWithType: StringComment
+- uid: Crowdin.Api.StringComments.StringComment.Attachments
+  name: Attachments
+  href: api/Crowdin.Api.StringComments.StringComment.html#Crowdin_Api_StringComments_StringComment_Attachments
+  commentId: P:Crowdin.Api.StringComments.StringComment.Attachments
+  fullName: Crowdin.Api.StringComments.StringComment.Attachments
+  nameWithType: StringComment.Attachments
+- uid: Crowdin.Api.StringComments.StringComment.Attachments*
+  name: Attachments
+  href: api/Crowdin.Api.StringComments.StringComment.html#Crowdin_Api_StringComments_StringComment_Attachments_
+  commentId: Overload:Crowdin.Api.StringComments.StringComment.Attachments
+  isSpec: "True"
+  fullName: Crowdin.Api.StringComments.StringComment.Attachments
+  nameWithType: StringComment.Attachments
 - uid: Crowdin.Api.StringComments.StringComment.CreatedAt
   name: CreatedAt
   href: api/Crowdin.Api.StringComments.StringComment.html#Crowdin_Api_StringComments_StringComment_CreatedAt
@@ -37345,6 +37903,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.StringComments.StringCommentsApiExecutor.AddStringComment
   nameWithType: StringCommentsApiExecutor.AddStringComment
+- uid: Crowdin.Api.StringComments.StringCommentsApiExecutor.DeleteCommentAttachment(System.Int64,System.Int64,System.Int64)
+  name: DeleteCommentAttachment(long, long, long)
+  href: api/Crowdin.Api.StringComments.StringCommentsApiExecutor.html#Crowdin_Api_StringComments_StringCommentsApiExecutor_DeleteCommentAttachment_System_Int64_System_Int64_System_Int64_
+  commentId: M:Crowdin.Api.StringComments.StringCommentsApiExecutor.DeleteCommentAttachment(System.Int64,System.Int64,System.Int64)
+  name.vb: DeleteCommentAttachment(Long, Long, Long)
+  fullName: Crowdin.Api.StringComments.StringCommentsApiExecutor.DeleteCommentAttachment(long, long, long)
+  fullName.vb: Crowdin.Api.StringComments.StringCommentsApiExecutor.DeleteCommentAttachment(Long, Long, Long)
+  nameWithType: StringCommentsApiExecutor.DeleteCommentAttachment(long, long, long)
+  nameWithType.vb: StringCommentsApiExecutor.DeleteCommentAttachment(Long, Long, Long)
+- uid: Crowdin.Api.StringComments.StringCommentsApiExecutor.DeleteCommentAttachment*
+  name: DeleteCommentAttachment
+  href: api/Crowdin.Api.StringComments.StringCommentsApiExecutor.html#Crowdin_Api_StringComments_StringCommentsApiExecutor_DeleteCommentAttachment_
+  commentId: Overload:Crowdin.Api.StringComments.StringCommentsApiExecutor.DeleteCommentAttachment
+  isSpec: "True"
+  fullName: Crowdin.Api.StringComments.StringCommentsApiExecutor.DeleteCommentAttachment
+  nameWithType: StringCommentsApiExecutor.DeleteCommentAttachment
 - uid: Crowdin.Api.StringComments.StringCommentsApiExecutor.DeleteStringComment(System.Int64,System.Int64)
   name: DeleteStringComment(long, long)
   href: api/Crowdin.Api.StringComments.StringCommentsApiExecutor.html#Crowdin_Api_StringComments_StringCommentsApiExecutor_DeleteStringComment_System_Int64_System_Int64_
@@ -50036,6 +50610,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Translations.ITranslationsApiExecutor.DownloadProjectTranslations
   nameWithType: ITranslationsApiExecutor.DownloadProjectTranslations
+- uid: Crowdin.Api.Translations.ITranslationsApiExecutor.DownloadTranslationImportReport(System.Int64,System.String)
+  name: DownloadTranslationImportReport(long, string)
+  href: api/Crowdin.Api.Translations.ITranslationsApiExecutor.html#Crowdin_Api_Translations_ITranslationsApiExecutor_DownloadTranslationImportReport_System_Int64_System_String_
+  commentId: M:Crowdin.Api.Translations.ITranslationsApiExecutor.DownloadTranslationImportReport(System.Int64,System.String)
+  name.vb: DownloadTranslationImportReport(Long, String)
+  fullName: Crowdin.Api.Translations.ITranslationsApiExecutor.DownloadTranslationImportReport(long, string)
+  fullName.vb: Crowdin.Api.Translations.ITranslationsApiExecutor.DownloadTranslationImportReport(Long, String)
+  nameWithType: ITranslationsApiExecutor.DownloadTranslationImportReport(long, string)
+  nameWithType.vb: ITranslationsApiExecutor.DownloadTranslationImportReport(Long, String)
+- uid: Crowdin.Api.Translations.ITranslationsApiExecutor.DownloadTranslationImportReport*
+  name: DownloadTranslationImportReport
+  href: api/Crowdin.Api.Translations.ITranslationsApiExecutor.html#Crowdin_Api_Translations_ITranslationsApiExecutor_DownloadTranslationImportReport_
+  commentId: Overload:Crowdin.Api.Translations.ITranslationsApiExecutor.DownloadTranslationImportReport
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.ITranslationsApiExecutor.DownloadTranslationImportReport
+  nameWithType: ITranslationsApiExecutor.DownloadTranslationImportReport
 - uid: Crowdin.Api.Translations.ITranslationsApiExecutor.EditPreTranslation(System.Int64,System.String,System.Collections.Generic.IEnumerable{Crowdin.Api.Translations.PreTranslationPatch})
   name: EditPreTranslation(long, string, IEnumerable<PreTranslationPatch>)
   href: api/Crowdin.Api.Translations.ITranslationsApiExecutor.html#Crowdin_Api_Translations_ITranslationsApiExecutor_EditPreTranslation_System_Int64_System_String_System_Collections_Generic_IEnumerable_Crowdin_Api_Translations_PreTranslationPatch__
@@ -50068,6 +50658,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Translations.ITranslationsApiExecutor.ExportProjectTranslation
   nameWithType: ITranslationsApiExecutor.ExportProjectTranslation
+- uid: Crowdin.Api.Translations.ITranslationsApiExecutor.GetImportStatus(System.Int64,System.String)
+  name: GetImportStatus(long, string)
+  href: api/Crowdin.Api.Translations.ITranslationsApiExecutor.html#Crowdin_Api_Translations_ITranslationsApiExecutor_GetImportStatus_System_Int64_System_String_
+  commentId: M:Crowdin.Api.Translations.ITranslationsApiExecutor.GetImportStatus(System.Int64,System.String)
+  name.vb: GetImportStatus(Long, String)
+  fullName: Crowdin.Api.Translations.ITranslationsApiExecutor.GetImportStatus(long, string)
+  fullName.vb: Crowdin.Api.Translations.ITranslationsApiExecutor.GetImportStatus(Long, String)
+  nameWithType: ITranslationsApiExecutor.GetImportStatus(long, string)
+  nameWithType.vb: ITranslationsApiExecutor.GetImportStatus(Long, String)
+- uid: Crowdin.Api.Translations.ITranslationsApiExecutor.GetImportStatus*
+  name: GetImportStatus
+  href: api/Crowdin.Api.Translations.ITranslationsApiExecutor.html#Crowdin_Api_Translations_ITranslationsApiExecutor_GetImportStatus_
+  commentId: Overload:Crowdin.Api.Translations.ITranslationsApiExecutor.GetImportStatus
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.ITranslationsApiExecutor.GetImportStatus
+  nameWithType: ITranslationsApiExecutor.GetImportStatus
 - uid: Crowdin.Api.Translations.ITranslationsApiExecutor.GetPreTranslationStatus(System.Int64,System.String)
   name: GetPreTranslationStatus(long, string)
   href: api/Crowdin.Api.Translations.ITranslationsApiExecutor.html#Crowdin_Api_Translations_ITranslationsApiExecutor_GetPreTranslationStatus_System_Int64_System_String_
@@ -50084,6 +50690,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Translations.ITranslationsApiExecutor.GetPreTranslationStatus
   nameWithType: ITranslationsApiExecutor.GetPreTranslationStatus
+- uid: Crowdin.Api.Translations.ITranslationsApiExecutor.ImportTranslations(System.Int64,Crowdin.Api.Translations.ImportTranslationsRequest)
+  name: ImportTranslations(long, ImportTranslationsRequest)
+  href: api/Crowdin.Api.Translations.ITranslationsApiExecutor.html#Crowdin_Api_Translations_ITranslationsApiExecutor_ImportTranslations_System_Int64_Crowdin_Api_Translations_ImportTranslationsRequest_
+  commentId: M:Crowdin.Api.Translations.ITranslationsApiExecutor.ImportTranslations(System.Int64,Crowdin.Api.Translations.ImportTranslationsRequest)
+  name.vb: ImportTranslations(Long, ImportTranslationsRequest)
+  fullName: Crowdin.Api.Translations.ITranslationsApiExecutor.ImportTranslations(long, Crowdin.Api.Translations.ImportTranslationsRequest)
+  fullName.vb: Crowdin.Api.Translations.ITranslationsApiExecutor.ImportTranslations(Long, Crowdin.Api.Translations.ImportTranslationsRequest)
+  nameWithType: ITranslationsApiExecutor.ImportTranslations(long, ImportTranslationsRequest)
+  nameWithType.vb: ITranslationsApiExecutor.ImportTranslations(Long, ImportTranslationsRequest)
+- uid: Crowdin.Api.Translations.ITranslationsApiExecutor.ImportTranslations*
+  name: ImportTranslations
+  href: api/Crowdin.Api.Translations.ITranslationsApiExecutor.html#Crowdin_Api_Translations_ITranslationsApiExecutor_ImportTranslations_
+  commentId: Overload:Crowdin.Api.Translations.ITranslationsApiExecutor.ImportTranslations
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.ITranslationsApiExecutor.ImportTranslations
+  nameWithType: ITranslationsApiExecutor.ImportTranslations
 - uid: Crowdin.Api.Translations.ITranslationsApiExecutor.ListPreTranslations(System.Int64,System.Int32,System.Int32)
   name: ListPreTranslations(long, int, int)
   href: api/Crowdin.Api.Translations.ITranslationsApiExecutor.html#Crowdin_Api_Translations_ITranslationsApiExecutor_ListPreTranslations_System_Int64_System_Int32_System_Int32_
@@ -50132,6 +50754,167 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Translations.ITranslationsApiExecutor.UploadTranslations
   nameWithType: ITranslationsApiExecutor.UploadTranslations
+- uid: Crowdin.Api.Translations.ImportFileStatistics
+  name: ImportFileStatistics
+  href: api/Crowdin.Api.Translations.ImportFileStatistics.html
+  commentId: T:Crowdin.Api.Translations.ImportFileStatistics
+  fullName: Crowdin.Api.Translations.ImportFileStatistics
+  nameWithType: ImportFileStatistics
+- uid: Crowdin.Api.Translations.ImportFileStatistics.Phrases
+  name: Phrases
+  href: api/Crowdin.Api.Translations.ImportFileStatistics.html#Crowdin_Api_Translations_ImportFileStatistics_Phrases
+  commentId: P:Crowdin.Api.Translations.ImportFileStatistics.Phrases
+  fullName: Crowdin.Api.Translations.ImportFileStatistics.Phrases
+  nameWithType: ImportFileStatistics.Phrases
+- uid: Crowdin.Api.Translations.ImportFileStatistics.Phrases*
+  name: Phrases
+  href: api/Crowdin.Api.Translations.ImportFileStatistics.html#Crowdin_Api_Translations_ImportFileStatistics_Phrases_
+  commentId: Overload:Crowdin.Api.Translations.ImportFileStatistics.Phrases
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.ImportFileStatistics.Phrases
+  nameWithType: ImportFileStatistics.Phrases
+- uid: Crowdin.Api.Translations.ImportFileStatistics.Words
+  name: Words
+  href: api/Crowdin.Api.Translations.ImportFileStatistics.html#Crowdin_Api_Translations_ImportFileStatistics_Words
+  commentId: P:Crowdin.Api.Translations.ImportFileStatistics.Words
+  fullName: Crowdin.Api.Translations.ImportFileStatistics.Words
+  nameWithType: ImportFileStatistics.Words
+- uid: Crowdin.Api.Translations.ImportFileStatistics.Words*
+  name: Words
+  href: api/Crowdin.Api.Translations.ImportFileStatistics.html#Crowdin_Api_Translations_ImportFileStatistics_Words_
+  commentId: Overload:Crowdin.Api.Translations.ImportFileStatistics.Words
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.ImportFileStatistics.Words
+  nameWithType: ImportFileStatistics.Words
+- uid: Crowdin.Api.Translations.ImportSkippedQaCheckCategories
+  name: ImportSkippedQaCheckCategories
+  href: api/Crowdin.Api.Translations.ImportSkippedQaCheckCategories.html
+  commentId: T:Crowdin.Api.Translations.ImportSkippedQaCheckCategories
+  fullName: Crowdin.Api.Translations.ImportSkippedQaCheckCategories
+  nameWithType: ImportSkippedQaCheckCategories
+- uid: Crowdin.Api.Translations.ImportSkippedQaCheckCategories.Duplicate
+  name: Duplicate
+  href: api/Crowdin.Api.Translations.ImportSkippedQaCheckCategories.html#Crowdin_Api_Translations_ImportSkippedQaCheckCategories_Duplicate
+  commentId: P:Crowdin.Api.Translations.ImportSkippedQaCheckCategories.Duplicate
+  fullName: Crowdin.Api.Translations.ImportSkippedQaCheckCategories.Duplicate
+  nameWithType: ImportSkippedQaCheckCategories.Duplicate
+- uid: Crowdin.Api.Translations.ImportSkippedQaCheckCategories.Duplicate*
+  name: Duplicate
+  href: api/Crowdin.Api.Translations.ImportSkippedQaCheckCategories.html#Crowdin_Api_Translations_ImportSkippedQaCheckCategories_Duplicate_
+  commentId: Overload:Crowdin.Api.Translations.ImportSkippedQaCheckCategories.Duplicate
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.ImportSkippedQaCheckCategories.Duplicate
+  nameWithType: ImportSkippedQaCheckCategories.Duplicate
+- uid: Crowdin.Api.Translations.ImportSkippedQaCheckCategories.Size
+  name: Size
+  href: api/Crowdin.Api.Translations.ImportSkippedQaCheckCategories.html#Crowdin_Api_Translations_ImportSkippedQaCheckCategories_Size
+  commentId: P:Crowdin.Api.Translations.ImportSkippedQaCheckCategories.Size
+  fullName: Crowdin.Api.Translations.ImportSkippedQaCheckCategories.Size
+  nameWithType: ImportSkippedQaCheckCategories.Size
+- uid: Crowdin.Api.Translations.ImportSkippedQaCheckCategories.Size*
+  name: Size
+  href: api/Crowdin.Api.Translations.ImportSkippedQaCheckCategories.html#Crowdin_Api_Translations_ImportSkippedQaCheckCategories_Size_
+  commentId: Overload:Crowdin.Api.Translations.ImportSkippedQaCheckCategories.Size
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.ImportSkippedQaCheckCategories.Size
+  nameWithType: ImportSkippedQaCheckCategories.Size
+- uid: Crowdin.Api.Translations.ImportTranslationsRequest
+  name: ImportTranslationsRequest
+  href: api/Crowdin.Api.Translations.ImportTranslationsRequest.html
+  commentId: T:Crowdin.Api.Translations.ImportTranslationsRequest
+  fullName: Crowdin.Api.Translations.ImportTranslationsRequest
+  nameWithType: ImportTranslationsRequest
+- uid: Crowdin.Api.Translations.ImportTranslationsRequest.AddToTm
+  name: AddToTm
+  href: api/Crowdin.Api.Translations.ImportTranslationsRequest.html#Crowdin_Api_Translations_ImportTranslationsRequest_AddToTm
+  commentId: P:Crowdin.Api.Translations.ImportTranslationsRequest.AddToTm
+  fullName: Crowdin.Api.Translations.ImportTranslationsRequest.AddToTm
+  nameWithType: ImportTranslationsRequest.AddToTm
+- uid: Crowdin.Api.Translations.ImportTranslationsRequest.AddToTm*
+  name: AddToTm
+  href: api/Crowdin.Api.Translations.ImportTranslationsRequest.html#Crowdin_Api_Translations_ImportTranslationsRequest_AddToTm_
+  commentId: Overload:Crowdin.Api.Translations.ImportTranslationsRequest.AddToTm
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.ImportTranslationsRequest.AddToTm
+  nameWithType: ImportTranslationsRequest.AddToTm
+- uid: Crowdin.Api.Translations.ImportTranslationsRequest.AutoApproveImported
+  name: AutoApproveImported
+  href: api/Crowdin.Api.Translations.ImportTranslationsRequest.html#Crowdin_Api_Translations_ImportTranslationsRequest_AutoApproveImported
+  commentId: P:Crowdin.Api.Translations.ImportTranslationsRequest.AutoApproveImported
+  fullName: Crowdin.Api.Translations.ImportTranslationsRequest.AutoApproveImported
+  nameWithType: ImportTranslationsRequest.AutoApproveImported
+- uid: Crowdin.Api.Translations.ImportTranslationsRequest.AutoApproveImported*
+  name: AutoApproveImported
+  href: api/Crowdin.Api.Translations.ImportTranslationsRequest.html#Crowdin_Api_Translations_ImportTranslationsRequest_AutoApproveImported_
+  commentId: Overload:Crowdin.Api.Translations.ImportTranslationsRequest.AutoApproveImported
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.ImportTranslationsRequest.AutoApproveImported
+  nameWithType: ImportTranslationsRequest.AutoApproveImported
+- uid: Crowdin.Api.Translations.ImportTranslationsRequest.FileId
+  name: FileId
+  href: api/Crowdin.Api.Translations.ImportTranslationsRequest.html#Crowdin_Api_Translations_ImportTranslationsRequest_FileId
+  commentId: P:Crowdin.Api.Translations.ImportTranslationsRequest.FileId
+  fullName: Crowdin.Api.Translations.ImportTranslationsRequest.FileId
+  nameWithType: ImportTranslationsRequest.FileId
+- uid: Crowdin.Api.Translations.ImportTranslationsRequest.FileId*
+  name: FileId
+  href: api/Crowdin.Api.Translations.ImportTranslationsRequest.html#Crowdin_Api_Translations_ImportTranslationsRequest_FileId_
+  commentId: Overload:Crowdin.Api.Translations.ImportTranslationsRequest.FileId
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.ImportTranslationsRequest.FileId
+  nameWithType: ImportTranslationsRequest.FileId
+- uid: Crowdin.Api.Translations.ImportTranslationsRequest.ImportEqSuggestions
+  name: ImportEqSuggestions
+  href: api/Crowdin.Api.Translations.ImportTranslationsRequest.html#Crowdin_Api_Translations_ImportTranslationsRequest_ImportEqSuggestions
+  commentId: P:Crowdin.Api.Translations.ImportTranslationsRequest.ImportEqSuggestions
+  fullName: Crowdin.Api.Translations.ImportTranslationsRequest.ImportEqSuggestions
+  nameWithType: ImportTranslationsRequest.ImportEqSuggestions
+- uid: Crowdin.Api.Translations.ImportTranslationsRequest.ImportEqSuggestions*
+  name: ImportEqSuggestions
+  href: api/Crowdin.Api.Translations.ImportTranslationsRequest.html#Crowdin_Api_Translations_ImportTranslationsRequest_ImportEqSuggestions_
+  commentId: Overload:Crowdin.Api.Translations.ImportTranslationsRequest.ImportEqSuggestions
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.ImportTranslationsRequest.ImportEqSuggestions
+  nameWithType: ImportTranslationsRequest.ImportEqSuggestions
+- uid: Crowdin.Api.Translations.ImportTranslationsRequest.LanguageIds
+  name: LanguageIds
+  href: api/Crowdin.Api.Translations.ImportTranslationsRequest.html#Crowdin_Api_Translations_ImportTranslationsRequest_LanguageIds
+  commentId: P:Crowdin.Api.Translations.ImportTranslationsRequest.LanguageIds
+  fullName: Crowdin.Api.Translations.ImportTranslationsRequest.LanguageIds
+  nameWithType: ImportTranslationsRequest.LanguageIds
+- uid: Crowdin.Api.Translations.ImportTranslationsRequest.LanguageIds*
+  name: LanguageIds
+  href: api/Crowdin.Api.Translations.ImportTranslationsRequest.html#Crowdin_Api_Translations_ImportTranslationsRequest_LanguageIds_
+  commentId: Overload:Crowdin.Api.Translations.ImportTranslationsRequest.LanguageIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.ImportTranslationsRequest.LanguageIds
+  nameWithType: ImportTranslationsRequest.LanguageIds
+- uid: Crowdin.Api.Translations.ImportTranslationsRequest.StorageId
+  name: StorageId
+  href: api/Crowdin.Api.Translations.ImportTranslationsRequest.html#Crowdin_Api_Translations_ImportTranslationsRequest_StorageId
+  commentId: P:Crowdin.Api.Translations.ImportTranslationsRequest.StorageId
+  fullName: Crowdin.Api.Translations.ImportTranslationsRequest.StorageId
+  nameWithType: ImportTranslationsRequest.StorageId
+- uid: Crowdin.Api.Translations.ImportTranslationsRequest.StorageId*
+  name: StorageId
+  href: api/Crowdin.Api.Translations.ImportTranslationsRequest.html#Crowdin_Api_Translations_ImportTranslationsRequest_StorageId_
+  commentId: Overload:Crowdin.Api.Translations.ImportTranslationsRequest.StorageId
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.ImportTranslationsRequest.StorageId
+  nameWithType: ImportTranslationsRequest.StorageId
+- uid: Crowdin.Api.Translations.ImportTranslationsRequest.TranslateHidden
+  name: TranslateHidden
+  href: api/Crowdin.Api.Translations.ImportTranslationsRequest.html#Crowdin_Api_Translations_ImportTranslationsRequest_TranslateHidden
+  commentId: P:Crowdin.Api.Translations.ImportTranslationsRequest.TranslateHidden
+  fullName: Crowdin.Api.Translations.ImportTranslationsRequest.TranslateHidden
+  nameWithType: ImportTranslationsRequest.TranslateHidden
+- uid: Crowdin.Api.Translations.ImportTranslationsRequest.TranslateHidden*
+  name: TranslateHidden
+  href: api/Crowdin.Api.Translations.ImportTranslationsRequest.html#Crowdin_Api_Translations_ImportTranslationsRequest_TranslateHidden_
+  commentId: Overload:Crowdin.Api.Translations.ImportTranslationsRequest.TranslateHidden
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.ImportTranslationsRequest.TranslateHidden
+  nameWithType: ImportTranslationsRequest.TranslateHidden
 - uid: Crowdin.Api.Translations.PreTranslateAttributes
   name: PreTranslateAttributes
   href: api/Crowdin.Api.Translations.PreTranslateAttributes.html
@@ -51082,6 +51865,367 @@ references:
   commentId: F:Crowdin.Api.Translations.TranslationFormat.Xliff
   fullName: Crowdin.Api.Translations.TranslationFormat.Xliff
   nameWithType: TranslationFormat.Xliff
+- uid: Crowdin.Api.Translations.TranslationImportAttributes
+  name: TranslationImportAttributes
+  href: api/Crowdin.Api.Translations.TranslationImportAttributes.html
+  commentId: T:Crowdin.Api.Translations.TranslationImportAttributes
+  fullName: Crowdin.Api.Translations.TranslationImportAttributes
+  nameWithType: TranslationImportAttributes
+- uid: Crowdin.Api.Translations.TranslationImportAttributes.AddToTm
+  name: AddToTm
+  href: api/Crowdin.Api.Translations.TranslationImportAttributes.html#Crowdin_Api_Translations_TranslationImportAttributes_AddToTm
+  commentId: P:Crowdin.Api.Translations.TranslationImportAttributes.AddToTm
+  fullName: Crowdin.Api.Translations.TranslationImportAttributes.AddToTm
+  nameWithType: TranslationImportAttributes.AddToTm
+- uid: Crowdin.Api.Translations.TranslationImportAttributes.AddToTm*
+  name: AddToTm
+  href: api/Crowdin.Api.Translations.TranslationImportAttributes.html#Crowdin_Api_Translations_TranslationImportAttributes_AddToTm_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportAttributes.AddToTm
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportAttributes.AddToTm
+  nameWithType: TranslationImportAttributes.AddToTm
+- uid: Crowdin.Api.Translations.TranslationImportAttributes.AutoApproveImported
+  name: AutoApproveImported
+  href: api/Crowdin.Api.Translations.TranslationImportAttributes.html#Crowdin_Api_Translations_TranslationImportAttributes_AutoApproveImported
+  commentId: P:Crowdin.Api.Translations.TranslationImportAttributes.AutoApproveImported
+  fullName: Crowdin.Api.Translations.TranslationImportAttributes.AutoApproveImported
+  nameWithType: TranslationImportAttributes.AutoApproveImported
+- uid: Crowdin.Api.Translations.TranslationImportAttributes.AutoApproveImported*
+  name: AutoApproveImported
+  href: api/Crowdin.Api.Translations.TranslationImportAttributes.html#Crowdin_Api_Translations_TranslationImportAttributes_AutoApproveImported_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportAttributes.AutoApproveImported
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportAttributes.AutoApproveImported
+  nameWithType: TranslationImportAttributes.AutoApproveImported
+- uid: Crowdin.Api.Translations.TranslationImportAttributes.FileId
+  name: FileId
+  href: api/Crowdin.Api.Translations.TranslationImportAttributes.html#Crowdin_Api_Translations_TranslationImportAttributes_FileId
+  commentId: P:Crowdin.Api.Translations.TranslationImportAttributes.FileId
+  fullName: Crowdin.Api.Translations.TranslationImportAttributes.FileId
+  nameWithType: TranslationImportAttributes.FileId
+- uid: Crowdin.Api.Translations.TranslationImportAttributes.FileId*
+  name: FileId
+  href: api/Crowdin.Api.Translations.TranslationImportAttributes.html#Crowdin_Api_Translations_TranslationImportAttributes_FileId_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportAttributes.FileId
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportAttributes.FileId
+  nameWithType: TranslationImportAttributes.FileId
+- uid: Crowdin.Api.Translations.TranslationImportAttributes.ImportEqSuggestions
+  name: ImportEqSuggestions
+  href: api/Crowdin.Api.Translations.TranslationImportAttributes.html#Crowdin_Api_Translations_TranslationImportAttributes_ImportEqSuggestions
+  commentId: P:Crowdin.Api.Translations.TranslationImportAttributes.ImportEqSuggestions
+  fullName: Crowdin.Api.Translations.TranslationImportAttributes.ImportEqSuggestions
+  nameWithType: TranslationImportAttributes.ImportEqSuggestions
+- uid: Crowdin.Api.Translations.TranslationImportAttributes.ImportEqSuggestions*
+  name: ImportEqSuggestions
+  href: api/Crowdin.Api.Translations.TranslationImportAttributes.html#Crowdin_Api_Translations_TranslationImportAttributes_ImportEqSuggestions_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportAttributes.ImportEqSuggestions
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportAttributes.ImportEqSuggestions
+  nameWithType: TranslationImportAttributes.ImportEqSuggestions
+- uid: Crowdin.Api.Translations.TranslationImportAttributes.LanguageIds
+  name: LanguageIds
+  href: api/Crowdin.Api.Translations.TranslationImportAttributes.html#Crowdin_Api_Translations_TranslationImportAttributes_LanguageIds
+  commentId: P:Crowdin.Api.Translations.TranslationImportAttributes.LanguageIds
+  fullName: Crowdin.Api.Translations.TranslationImportAttributes.LanguageIds
+  nameWithType: TranslationImportAttributes.LanguageIds
+- uid: Crowdin.Api.Translations.TranslationImportAttributes.LanguageIds*
+  name: LanguageIds
+  href: api/Crowdin.Api.Translations.TranslationImportAttributes.html#Crowdin_Api_Translations_TranslationImportAttributes_LanguageIds_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportAttributes.LanguageIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportAttributes.LanguageIds
+  nameWithType: TranslationImportAttributes.LanguageIds
+- uid: Crowdin.Api.Translations.TranslationImportAttributes.StorageId
+  name: StorageId
+  href: api/Crowdin.Api.Translations.TranslationImportAttributes.html#Crowdin_Api_Translations_TranslationImportAttributes_StorageId
+  commentId: P:Crowdin.Api.Translations.TranslationImportAttributes.StorageId
+  fullName: Crowdin.Api.Translations.TranslationImportAttributes.StorageId
+  nameWithType: TranslationImportAttributes.StorageId
+- uid: Crowdin.Api.Translations.TranslationImportAttributes.StorageId*
+  name: StorageId
+  href: api/Crowdin.Api.Translations.TranslationImportAttributes.html#Crowdin_Api_Translations_TranslationImportAttributes_StorageId_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportAttributes.StorageId
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportAttributes.StorageId
+  nameWithType: TranslationImportAttributes.StorageId
+- uid: Crowdin.Api.Translations.TranslationImportAttributes.TranslateHidden
+  name: TranslateHidden
+  href: api/Crowdin.Api.Translations.TranslationImportAttributes.html#Crowdin_Api_Translations_TranslationImportAttributes_TranslateHidden
+  commentId: P:Crowdin.Api.Translations.TranslationImportAttributes.TranslateHidden
+  fullName: Crowdin.Api.Translations.TranslationImportAttributes.TranslateHidden
+  nameWithType: TranslationImportAttributes.TranslateHidden
+- uid: Crowdin.Api.Translations.TranslationImportAttributes.TranslateHidden*
+  name: TranslateHidden
+  href: api/Crowdin.Api.Translations.TranslationImportAttributes.html#Crowdin_Api_Translations_TranslationImportAttributes_TranslateHidden_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportAttributes.TranslateHidden
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportAttributes.TranslateHidden
+  nameWithType: TranslationImportAttributes.TranslateHidden
+- uid: Crowdin.Api.Translations.TranslationImportFile
+  name: TranslationImportFile
+  href: api/Crowdin.Api.Translations.TranslationImportFile.html
+  commentId: T:Crowdin.Api.Translations.TranslationImportFile
+  fullName: Crowdin.Api.Translations.TranslationImportFile
+  nameWithType: TranslationImportFile
+- uid: Crowdin.Api.Translations.TranslationImportFile.Id
+  name: Id
+  href: api/Crowdin.Api.Translations.TranslationImportFile.html#Crowdin_Api_Translations_TranslationImportFile_Id
+  commentId: P:Crowdin.Api.Translations.TranslationImportFile.Id
+  fullName: Crowdin.Api.Translations.TranslationImportFile.Id
+  nameWithType: TranslationImportFile.Id
+- uid: Crowdin.Api.Translations.TranslationImportFile.Id*
+  name: Id
+  href: api/Crowdin.Api.Translations.TranslationImportFile.html#Crowdin_Api_Translations_TranslationImportFile_Id_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportFile.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportFile.Id
+  nameWithType: TranslationImportFile.Id
+- uid: Crowdin.Api.Translations.TranslationImportFile.Statistics
+  name: Statistics
+  href: api/Crowdin.Api.Translations.TranslationImportFile.html#Crowdin_Api_Translations_TranslationImportFile_Statistics
+  commentId: P:Crowdin.Api.Translations.TranslationImportFile.Statistics
+  fullName: Crowdin.Api.Translations.TranslationImportFile.Statistics
+  nameWithType: TranslationImportFile.Statistics
+- uid: Crowdin.Api.Translations.TranslationImportFile.Statistics*
+  name: Statistics
+  href: api/Crowdin.Api.Translations.TranslationImportFile.html#Crowdin_Api_Translations_TranslationImportFile_Statistics_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportFile.Statistics
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportFile.Statistics
+  nameWithType: TranslationImportFile.Statistics
+- uid: Crowdin.Api.Translations.TranslationImportLanguage
+  name: TranslationImportLanguage
+  href: api/Crowdin.Api.Translations.TranslationImportLanguage.html
+  commentId: T:Crowdin.Api.Translations.TranslationImportLanguage
+  fullName: Crowdin.Api.Translations.TranslationImportLanguage
+  nameWithType: TranslationImportLanguage
+- uid: Crowdin.Api.Translations.TranslationImportLanguage.Files
+  name: Files
+  href: api/Crowdin.Api.Translations.TranslationImportLanguage.html#Crowdin_Api_Translations_TranslationImportLanguage_Files
+  commentId: P:Crowdin.Api.Translations.TranslationImportLanguage.Files
+  fullName: Crowdin.Api.Translations.TranslationImportLanguage.Files
+  nameWithType: TranslationImportLanguage.Files
+- uid: Crowdin.Api.Translations.TranslationImportLanguage.Files*
+  name: Files
+  href: api/Crowdin.Api.Translations.TranslationImportLanguage.html#Crowdin_Api_Translations_TranslationImportLanguage_Files_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportLanguage.Files
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportLanguage.Files
+  nameWithType: TranslationImportLanguage.Files
+- uid: Crowdin.Api.Translations.TranslationImportLanguage.Id
+  name: Id
+  href: api/Crowdin.Api.Translations.TranslationImportLanguage.html#Crowdin_Api_Translations_TranslationImportLanguage_Id
+  commentId: P:Crowdin.Api.Translations.TranslationImportLanguage.Id
+  fullName: Crowdin.Api.Translations.TranslationImportLanguage.Id
+  nameWithType: TranslationImportLanguage.Id
+- uid: Crowdin.Api.Translations.TranslationImportLanguage.Id*
+  name: Id
+  href: api/Crowdin.Api.Translations.TranslationImportLanguage.html#Crowdin_Api_Translations_TranslationImportLanguage_Id_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportLanguage.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportLanguage.Id
+  nameWithType: TranslationImportLanguage.Id
+- uid: Crowdin.Api.Translations.TranslationImportLanguage.Skipped
+  name: Skipped
+  href: api/Crowdin.Api.Translations.TranslationImportLanguage.html#Crowdin_Api_Translations_TranslationImportLanguage_Skipped
+  commentId: P:Crowdin.Api.Translations.TranslationImportLanguage.Skipped
+  fullName: Crowdin.Api.Translations.TranslationImportLanguage.Skipped
+  nameWithType: TranslationImportLanguage.Skipped
+- uid: Crowdin.Api.Translations.TranslationImportLanguage.Skipped*
+  name: Skipped
+  href: api/Crowdin.Api.Translations.TranslationImportLanguage.html#Crowdin_Api_Translations_TranslationImportLanguage_Skipped_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportLanguage.Skipped
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportLanguage.Skipped
+  nameWithType: TranslationImportLanguage.Skipped
+- uid: Crowdin.Api.Translations.TranslationImportLanguage.SkippedQaCheckCategories
+  name: SkippedQaCheckCategories
+  href: api/Crowdin.Api.Translations.TranslationImportLanguage.html#Crowdin_Api_Translations_TranslationImportLanguage_SkippedQaCheckCategories
+  commentId: P:Crowdin.Api.Translations.TranslationImportLanguage.SkippedQaCheckCategories
+  fullName: Crowdin.Api.Translations.TranslationImportLanguage.SkippedQaCheckCategories
+  nameWithType: TranslationImportLanguage.SkippedQaCheckCategories
+- uid: Crowdin.Api.Translations.TranslationImportLanguage.SkippedQaCheckCategories*
+  name: SkippedQaCheckCategories
+  href: api/Crowdin.Api.Translations.TranslationImportLanguage.html#Crowdin_Api_Translations_TranslationImportLanguage_SkippedQaCheckCategories_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportLanguage.SkippedQaCheckCategories
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportLanguage.SkippedQaCheckCategories
+  nameWithType: TranslationImportLanguage.SkippedQaCheckCategories
+- uid: Crowdin.Api.Translations.TranslationImportReport
+  name: TranslationImportReport
+  href: api/Crowdin.Api.Translations.TranslationImportReport.html
+  commentId: T:Crowdin.Api.Translations.TranslationImportReport
+  fullName: Crowdin.Api.Translations.TranslationImportReport
+  nameWithType: TranslationImportReport
+- uid: Crowdin.Api.Translations.TranslationImportReport.Languages
+  name: Languages
+  href: api/Crowdin.Api.Translations.TranslationImportReport.html#Crowdin_Api_Translations_TranslationImportReport_Languages
+  commentId: P:Crowdin.Api.Translations.TranslationImportReport.Languages
+  fullName: Crowdin.Api.Translations.TranslationImportReport.Languages
+  nameWithType: TranslationImportReport.Languages
+- uid: Crowdin.Api.Translations.TranslationImportReport.Languages*
+  name: Languages
+  href: api/Crowdin.Api.Translations.TranslationImportReport.html#Crowdin_Api_Translations_TranslationImportReport_Languages_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportReport.Languages
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportReport.Languages
+  nameWithType: TranslationImportReport.Languages
+- uid: Crowdin.Api.Translations.TranslationImportResponse
+  name: TranslationImportResponse
+  href: api/Crowdin.Api.Translations.TranslationImportResponse.html
+  commentId: T:Crowdin.Api.Translations.TranslationImportResponse
+  fullName: Crowdin.Api.Translations.TranslationImportResponse
+  nameWithType: TranslationImportResponse
+- uid: Crowdin.Api.Translations.TranslationImportResponse.Attributes
+  name: Attributes
+  href: api/Crowdin.Api.Translations.TranslationImportResponse.html#Crowdin_Api_Translations_TranslationImportResponse_Attributes
+  commentId: P:Crowdin.Api.Translations.TranslationImportResponse.Attributes
+  fullName: Crowdin.Api.Translations.TranslationImportResponse.Attributes
+  nameWithType: TranslationImportResponse.Attributes
+- uid: Crowdin.Api.Translations.TranslationImportResponse.Attributes*
+  name: Attributes
+  href: api/Crowdin.Api.Translations.TranslationImportResponse.html#Crowdin_Api_Translations_TranslationImportResponse_Attributes_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportResponse.Attributes
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportResponse.Attributes
+  nameWithType: TranslationImportResponse.Attributes
+- uid: Crowdin.Api.Translations.TranslationImportResponse.CreatedAt
+  name: CreatedAt
+  href: api/Crowdin.Api.Translations.TranslationImportResponse.html#Crowdin_Api_Translations_TranslationImportResponse_CreatedAt
+  commentId: P:Crowdin.Api.Translations.TranslationImportResponse.CreatedAt
+  fullName: Crowdin.Api.Translations.TranslationImportResponse.CreatedAt
+  nameWithType: TranslationImportResponse.CreatedAt
+- uid: Crowdin.Api.Translations.TranslationImportResponse.CreatedAt*
+  name: CreatedAt
+  href: api/Crowdin.Api.Translations.TranslationImportResponse.html#Crowdin_Api_Translations_TranslationImportResponse_CreatedAt_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportResponse.CreatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportResponse.CreatedAt
+  nameWithType: TranslationImportResponse.CreatedAt
+- uid: Crowdin.Api.Translations.TranslationImportResponse.FinishedAt
+  name: FinishedAt
+  href: api/Crowdin.Api.Translations.TranslationImportResponse.html#Crowdin_Api_Translations_TranslationImportResponse_FinishedAt
+  commentId: P:Crowdin.Api.Translations.TranslationImportResponse.FinishedAt
+  fullName: Crowdin.Api.Translations.TranslationImportResponse.FinishedAt
+  nameWithType: TranslationImportResponse.FinishedAt
+- uid: Crowdin.Api.Translations.TranslationImportResponse.FinishedAt*
+  name: FinishedAt
+  href: api/Crowdin.Api.Translations.TranslationImportResponse.html#Crowdin_Api_Translations_TranslationImportResponse_FinishedAt_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportResponse.FinishedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportResponse.FinishedAt
+  nameWithType: TranslationImportResponse.FinishedAt
+- uid: Crowdin.Api.Translations.TranslationImportResponse.Identifier
+  name: Identifier
+  href: api/Crowdin.Api.Translations.TranslationImportResponse.html#Crowdin_Api_Translations_TranslationImportResponse_Identifier
+  commentId: P:Crowdin.Api.Translations.TranslationImportResponse.Identifier
+  fullName: Crowdin.Api.Translations.TranslationImportResponse.Identifier
+  nameWithType: TranslationImportResponse.Identifier
+- uid: Crowdin.Api.Translations.TranslationImportResponse.Identifier*
+  name: Identifier
+  href: api/Crowdin.Api.Translations.TranslationImportResponse.html#Crowdin_Api_Translations_TranslationImportResponse_Identifier_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportResponse.Identifier
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportResponse.Identifier
+  nameWithType: TranslationImportResponse.Identifier
+- uid: Crowdin.Api.Translations.TranslationImportResponse.Progress
+  name: Progress
+  href: api/Crowdin.Api.Translations.TranslationImportResponse.html#Crowdin_Api_Translations_TranslationImportResponse_Progress
+  commentId: P:Crowdin.Api.Translations.TranslationImportResponse.Progress
+  fullName: Crowdin.Api.Translations.TranslationImportResponse.Progress
+  nameWithType: TranslationImportResponse.Progress
+- uid: Crowdin.Api.Translations.TranslationImportResponse.Progress*
+  name: Progress
+  href: api/Crowdin.Api.Translations.TranslationImportResponse.html#Crowdin_Api_Translations_TranslationImportResponse_Progress_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportResponse.Progress
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportResponse.Progress
+  nameWithType: TranslationImportResponse.Progress
+- uid: Crowdin.Api.Translations.TranslationImportResponse.StartedAt
+  name: StartedAt
+  href: api/Crowdin.Api.Translations.TranslationImportResponse.html#Crowdin_Api_Translations_TranslationImportResponse_StartedAt
+  commentId: P:Crowdin.Api.Translations.TranslationImportResponse.StartedAt
+  fullName: Crowdin.Api.Translations.TranslationImportResponse.StartedAt
+  nameWithType: TranslationImportResponse.StartedAt
+- uid: Crowdin.Api.Translations.TranslationImportResponse.StartedAt*
+  name: StartedAt
+  href: api/Crowdin.Api.Translations.TranslationImportResponse.html#Crowdin_Api_Translations_TranslationImportResponse_StartedAt_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportResponse.StartedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportResponse.StartedAt
+  nameWithType: TranslationImportResponse.StartedAt
+- uid: Crowdin.Api.Translations.TranslationImportResponse.Status
+  name: Status
+  href: api/Crowdin.Api.Translations.TranslationImportResponse.html#Crowdin_Api_Translations_TranslationImportResponse_Status
+  commentId: P:Crowdin.Api.Translations.TranslationImportResponse.Status
+  fullName: Crowdin.Api.Translations.TranslationImportResponse.Status
+  nameWithType: TranslationImportResponse.Status
+- uid: Crowdin.Api.Translations.TranslationImportResponse.Status*
+  name: Status
+  href: api/Crowdin.Api.Translations.TranslationImportResponse.html#Crowdin_Api_Translations_TranslationImportResponse_Status_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportResponse.Status
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportResponse.Status
+  nameWithType: TranslationImportResponse.Status
+- uid: Crowdin.Api.Translations.TranslationImportResponse.UpdatedAt
+  name: UpdatedAt
+  href: api/Crowdin.Api.Translations.TranslationImportResponse.html#Crowdin_Api_Translations_TranslationImportResponse_UpdatedAt
+  commentId: P:Crowdin.Api.Translations.TranslationImportResponse.UpdatedAt
+  fullName: Crowdin.Api.Translations.TranslationImportResponse.UpdatedAt
+  nameWithType: TranslationImportResponse.UpdatedAt
+- uid: Crowdin.Api.Translations.TranslationImportResponse.UpdatedAt*
+  name: UpdatedAt
+  href: api/Crowdin.Api.Translations.TranslationImportResponse.html#Crowdin_Api_Translations_TranslationImportResponse_UpdatedAt_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportResponse.UpdatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportResponse.UpdatedAt
+  nameWithType: TranslationImportResponse.UpdatedAt
+- uid: Crowdin.Api.Translations.TranslationImportSkipped
+  name: TranslationImportSkipped
+  href: api/Crowdin.Api.Translations.TranslationImportSkipped.html
+  commentId: T:Crowdin.Api.Translations.TranslationImportSkipped
+  fullName: Crowdin.Api.Translations.TranslationImportSkipped
+  nameWithType: TranslationImportSkipped
+- uid: Crowdin.Api.Translations.TranslationImportSkipped.HiddenStrings
+  name: HiddenStrings
+  href: api/Crowdin.Api.Translations.TranslationImportSkipped.html#Crowdin_Api_Translations_TranslationImportSkipped_HiddenStrings
+  commentId: P:Crowdin.Api.Translations.TranslationImportSkipped.HiddenStrings
+  fullName: Crowdin.Api.Translations.TranslationImportSkipped.HiddenStrings
+  nameWithType: TranslationImportSkipped.HiddenStrings
+- uid: Crowdin.Api.Translations.TranslationImportSkipped.HiddenStrings*
+  name: HiddenStrings
+  href: api/Crowdin.Api.Translations.TranslationImportSkipped.html#Crowdin_Api_Translations_TranslationImportSkipped_HiddenStrings_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportSkipped.HiddenStrings
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportSkipped.HiddenStrings
+  nameWithType: TranslationImportSkipped.HiddenStrings
+- uid: Crowdin.Api.Translations.TranslationImportSkipped.QaCheck
+  name: QaCheck
+  href: api/Crowdin.Api.Translations.TranslationImportSkipped.html#Crowdin_Api_Translations_TranslationImportSkipped_QaCheck
+  commentId: P:Crowdin.Api.Translations.TranslationImportSkipped.QaCheck
+  fullName: Crowdin.Api.Translations.TranslationImportSkipped.QaCheck
+  nameWithType: TranslationImportSkipped.QaCheck
+- uid: Crowdin.Api.Translations.TranslationImportSkipped.QaCheck*
+  name: QaCheck
+  href: api/Crowdin.Api.Translations.TranslationImportSkipped.html#Crowdin_Api_Translations_TranslationImportSkipped_QaCheck_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportSkipped.QaCheck
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportSkipped.QaCheck
+  nameWithType: TranslationImportSkipped.QaCheck
+- uid: Crowdin.Api.Translations.TranslationImportSkipped.TranslationEqSource
+  name: TranslationEqSource
+  href: api/Crowdin.Api.Translations.TranslationImportSkipped.html#Crowdin_Api_Translations_TranslationImportSkipped_TranslationEqSource
+  commentId: P:Crowdin.Api.Translations.TranslationImportSkipped.TranslationEqSource
+  fullName: Crowdin.Api.Translations.TranslationImportSkipped.TranslationEqSource
+  nameWithType: TranslationImportSkipped.TranslationEqSource
+- uid: Crowdin.Api.Translations.TranslationImportSkipped.TranslationEqSource*
+  name: TranslationEqSource
+  href: api/Crowdin.Api.Translations.TranslationImportSkipped.html#Crowdin_Api_Translations_TranslationImportSkipped_TranslationEqSource_
+  commentId: Overload:Crowdin.Api.Translations.TranslationImportSkipped.TranslationEqSource
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationImportSkipped.TranslationEqSource
+  nameWithType: TranslationImportSkipped.TranslationEqSource
 - uid: Crowdin.Api.Translations.TranslationProjectBuild
   name: TranslationProjectBuild
   href: api/Crowdin.Api.Translations.TranslationProjectBuild.html
@@ -51435,6 +52579,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Translations.TranslationsApiExecutor.DownloadProjectTranslations
   nameWithType: TranslationsApiExecutor.DownloadProjectTranslations
+- uid: Crowdin.Api.Translations.TranslationsApiExecutor.DownloadTranslationImportReport(System.Int64,System.String)
+  name: DownloadTranslationImportReport(long, string)
+  href: api/Crowdin.Api.Translations.TranslationsApiExecutor.html#Crowdin_Api_Translations_TranslationsApiExecutor_DownloadTranslationImportReport_System_Int64_System_String_
+  commentId: M:Crowdin.Api.Translations.TranslationsApiExecutor.DownloadTranslationImportReport(System.Int64,System.String)
+  name.vb: DownloadTranslationImportReport(Long, String)
+  fullName: Crowdin.Api.Translations.TranslationsApiExecutor.DownloadTranslationImportReport(long, string)
+  fullName.vb: Crowdin.Api.Translations.TranslationsApiExecutor.DownloadTranslationImportReport(Long, String)
+  nameWithType: TranslationsApiExecutor.DownloadTranslationImportReport(long, string)
+  nameWithType.vb: TranslationsApiExecutor.DownloadTranslationImportReport(Long, String)
+- uid: Crowdin.Api.Translations.TranslationsApiExecutor.DownloadTranslationImportReport*
+  name: DownloadTranslationImportReport
+  href: api/Crowdin.Api.Translations.TranslationsApiExecutor.html#Crowdin_Api_Translations_TranslationsApiExecutor_DownloadTranslationImportReport_
+  commentId: Overload:Crowdin.Api.Translations.TranslationsApiExecutor.DownloadTranslationImportReport
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationsApiExecutor.DownloadTranslationImportReport
+  nameWithType: TranslationsApiExecutor.DownloadTranslationImportReport
 - uid: Crowdin.Api.Translations.TranslationsApiExecutor.EditPreTranslation(System.Int64,System.String,System.Collections.Generic.IEnumerable{Crowdin.Api.Translations.PreTranslationPatch})
   name: EditPreTranslation(long, string, IEnumerable<PreTranslationPatch>)
   href: api/Crowdin.Api.Translations.TranslationsApiExecutor.html#Crowdin_Api_Translations_TranslationsApiExecutor_EditPreTranslation_System_Int64_System_String_System_Collections_Generic_IEnumerable_Crowdin_Api_Translations_PreTranslationPatch__
@@ -51467,6 +52627,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Translations.TranslationsApiExecutor.ExportProjectTranslation
   nameWithType: TranslationsApiExecutor.ExportProjectTranslation
+- uid: Crowdin.Api.Translations.TranslationsApiExecutor.GetImportStatus(System.Int64,System.String)
+  name: GetImportStatus(long, string)
+  href: api/Crowdin.Api.Translations.TranslationsApiExecutor.html#Crowdin_Api_Translations_TranslationsApiExecutor_GetImportStatus_System_Int64_System_String_
+  commentId: M:Crowdin.Api.Translations.TranslationsApiExecutor.GetImportStatus(System.Int64,System.String)
+  name.vb: GetImportStatus(Long, String)
+  fullName: Crowdin.Api.Translations.TranslationsApiExecutor.GetImportStatus(long, string)
+  fullName.vb: Crowdin.Api.Translations.TranslationsApiExecutor.GetImportStatus(Long, String)
+  nameWithType: TranslationsApiExecutor.GetImportStatus(long, string)
+  nameWithType.vb: TranslationsApiExecutor.GetImportStatus(Long, String)
+- uid: Crowdin.Api.Translations.TranslationsApiExecutor.GetImportStatus*
+  name: GetImportStatus
+  href: api/Crowdin.Api.Translations.TranslationsApiExecutor.html#Crowdin_Api_Translations_TranslationsApiExecutor_GetImportStatus_
+  commentId: Overload:Crowdin.Api.Translations.TranslationsApiExecutor.GetImportStatus
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationsApiExecutor.GetImportStatus
+  nameWithType: TranslationsApiExecutor.GetImportStatus
 - uid: Crowdin.Api.Translations.TranslationsApiExecutor.GetPreTranslationStatus(System.Int64,System.String)
   name: GetPreTranslationStatus(long, string)
   href: api/Crowdin.Api.Translations.TranslationsApiExecutor.html#Crowdin_Api_Translations_TranslationsApiExecutor_GetPreTranslationStatus_System_Int64_System_String_
@@ -51483,6 +52659,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Translations.TranslationsApiExecutor.GetPreTranslationStatus
   nameWithType: TranslationsApiExecutor.GetPreTranslationStatus
+- uid: Crowdin.Api.Translations.TranslationsApiExecutor.ImportTranslations(System.Int64,Crowdin.Api.Translations.ImportTranslationsRequest)
+  name: ImportTranslations(long, ImportTranslationsRequest)
+  href: api/Crowdin.Api.Translations.TranslationsApiExecutor.html#Crowdin_Api_Translations_TranslationsApiExecutor_ImportTranslations_System_Int64_Crowdin_Api_Translations_ImportTranslationsRequest_
+  commentId: M:Crowdin.Api.Translations.TranslationsApiExecutor.ImportTranslations(System.Int64,Crowdin.Api.Translations.ImportTranslationsRequest)
+  name.vb: ImportTranslations(Long, ImportTranslationsRequest)
+  fullName: Crowdin.Api.Translations.TranslationsApiExecutor.ImportTranslations(long, Crowdin.Api.Translations.ImportTranslationsRequest)
+  fullName.vb: Crowdin.Api.Translations.TranslationsApiExecutor.ImportTranslations(Long, Crowdin.Api.Translations.ImportTranslationsRequest)
+  nameWithType: TranslationsApiExecutor.ImportTranslations(long, ImportTranslationsRequest)
+  nameWithType.vb: TranslationsApiExecutor.ImportTranslations(Long, ImportTranslationsRequest)
+- uid: Crowdin.Api.Translations.TranslationsApiExecutor.ImportTranslations*
+  name: ImportTranslations
+  href: api/Crowdin.Api.Translations.TranslationsApiExecutor.html#Crowdin_Api_Translations_TranslationsApiExecutor_ImportTranslations_
+  commentId: Overload:Crowdin.Api.Translations.TranslationsApiExecutor.ImportTranslations
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.TranslationsApiExecutor.ImportTranslations
+  nameWithType: TranslationsApiExecutor.ImportTranslations
 - uid: Crowdin.Api.Translations.TranslationsApiExecutor.ListPreTranslations(System.Int64,System.Int32,System.Int32)
   name: ListPreTranslations(long, int, int)
   href: api/Crowdin.Api.Translations.TranslationsApiExecutor.html#Crowdin_Api_Translations_TranslationsApiExecutor_ListPreTranslations_System_Int64_System_Int32_System_Int32_
