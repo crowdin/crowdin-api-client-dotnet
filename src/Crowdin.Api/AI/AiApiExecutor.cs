@@ -515,6 +515,22 @@ namespace Crowdin.Api.AI
             return _jsonParser.ParseResponseList<AiSupportedProviderModel>(result.JsonObject);
         }
         
+        /// <summary>
+        /// AI Translate Strings. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.translate.strings.post">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.translate.strings.post">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.translate.strings.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiTranslateStringsResponse> TranslateStrings(
+            long? userId,
+            AiTranslateStringsRequest request)
+        {
+            string url = AddUserIdIfAvailable(userId, "/ai/translate");
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<AiTranslateStringsResponse>(result.JsonObject);
+        }
+        
         #region Helper methods
         
         private static string AddUserIdIfAvailable(long? userId, string baseUrl)

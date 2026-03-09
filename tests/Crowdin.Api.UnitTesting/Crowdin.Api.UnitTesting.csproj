@@ -265,6 +265,10 @@
           <Generator>ResXFileCodeGenerator</Generator>
           <LastGenOutput>Tasks_Comments.Designer.cs</LastGenOutput>
         </EmbeddedResource>
+        <EmbeddedResource Update="Resources\AI_TranslateStrings.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+          <LastGenOutput>AI_TranslateStrings.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -562,6 +566,11 @@
           <DesignTime>True</DesignTime>
           <AutoGen>True</AutoGen>
           <DependentUpon>Tasks_Comments.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\AI_TranslateStrings.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>AI_TranslateStrings.resx</DependentUpon>
         </Compile>
     </ItemGroup>
     
