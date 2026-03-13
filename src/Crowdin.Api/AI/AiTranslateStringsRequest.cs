@@ -35,6 +35,6 @@ namespace Crowdin.Api.AI
         public ICollection<string>? Instructions { get; set; }
 
         [JsonProperty("attachmentIds")]
-        public ICollection<int>? AttachmentIds { get; set; }
+        public ICollection<long>? AttachmentIds { get; set; }
     }
 }
