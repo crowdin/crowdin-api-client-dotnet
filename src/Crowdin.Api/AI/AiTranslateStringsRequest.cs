@@ -17,10 +17,10 @@ namespace Crowdin.Api.AI
         public string? SourceLanguageId { get; set; }
 
         [JsonProperty("tmIds")]
-        public ICollection<int>? TmIds { get; set; }
+        public ICollection<long>? TmIds { get; set; }
 
         [JsonProperty("glossaryIds")]
-        public ICollection<int>? GlossaryIds { get; set; }
+        public ICollection<long>? GlossaryIds { get; set; }
 
         [JsonProperty("aiPromptId")]
         public int? AiPromptId { get; set; }
