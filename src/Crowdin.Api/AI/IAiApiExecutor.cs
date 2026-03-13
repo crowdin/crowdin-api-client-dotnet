@@ -120,5 +120,8 @@ namespace Crowdin.Api.AI
             string? providerType = null,
             bool? enabled = null,
             string? orderBy = null);
+        Task<AiTranslateStringsResponse> TranslateStrings(
+            long? userId,
+            AiTranslateStringsRequest request);
     }
 }
