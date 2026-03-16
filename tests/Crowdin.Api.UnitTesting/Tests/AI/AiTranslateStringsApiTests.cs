@@ -25,13 +25,13 @@ public class AiTranslateStringsApiTests
             Strings = new[] { "Some text to translate!" },
             TargetLanguageId = "uk",
             SourceLanguageId = "en",
-            TmIds = new[] { 123 },
-            GlossaryIds = new[] { 456 },
+            TmIds = new[] { 123L },
+            GlossaryIds = new[] { 456L },
             AiPromptId = 789,
             Instructions = new[] { "Keep a formal tone" },
-            AttachmentIds = new[] { 123 }
+            AttachmentIds = new[] { 123L }
         };
-
+        
         string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
         string expectedRequestJson = TestUtils.CompactJson(AI_TranslateStrings.TranslateStrings_Request);
         Assert.Equal(expectedRequestJson, actualRequestJson);
