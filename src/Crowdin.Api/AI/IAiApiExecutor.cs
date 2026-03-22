@@ -107,6 +107,20 @@ namespace Crowdin.Api.AI
         Task<AiSettings> EditAiSettings(long? userId, IEnumerable<AiSettingsPatch> patches);
         
         #endregion
+
+        #region File Translations
+
+        Task<AiFileTranslationsStatus> AiFileTranslations(long? userId, AiFileTranslationsRequest request);
+
+        Task<AiFileTranslationsStatus> GetFileTranslationsStatus(long? userId, string jobIdentifier);
+
+        Task CancelFileTranslations(long? userId, string jobIdentifier);
+
+        Task<DownloadLink> DownloadTranslatedFile(long? userId, string jobIdentifier);
+
+        Task<DownloadLink> DownloadTranslatedFileStrings(long? userId, string jobIdentifier);
+
+        #endregion
         
         Task<AiProxyChatCompletion> CreateAiProxyChatCompletion(
             long? userId,

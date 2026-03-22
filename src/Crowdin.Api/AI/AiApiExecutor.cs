@@ -471,6 +471,79 @@ namespace Crowdin.Api.AI
         }
 
         #endregion
+
+        #region File Translations
+
+        /// <summary>
+        /// AI File Translations. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.file-translations.post">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.file-translations.post">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.file-translations.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiFileTranslationsStatus> AiFileTranslations(long? userId, AiFileTranslationsRequest request)
+        {
+            string url = AddUserIdIfAvailable(userId, "/ai/file-translations");
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<AiFileTranslationsStatus>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Get File Translations Status. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.file-translations.get">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.file-translations.get">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.file-translations.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiFileTranslationsStatus> GetFileTranslationsStatus(long? userId, string jobIdentifier)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/file-translations/{jobIdentifier}");
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<AiFileTranslationsStatus>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Cancel File Translations. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.file-translations.delete">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.file-translations.delete">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.file-translations.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task CancelFileTranslations(long? userId, string jobIdentifier)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/file-translations/{jobIdentifier}");
+            HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
+            Utils.ThrowIfStatusNot204(statusCode, $"File Translation {jobIdentifier} removal failed");
+        }
+
+        /// <summary>
+        /// Download Translated File. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.file-translations.download">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.file-translations.download">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.file-translations.download">Crowdin Enterprise API</a>
+        /// </summary>
+        public async Task<DownloadLink> DownloadTranslatedFile(long? userId, string jobIdentifier)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/file-translations/{jobIdentifier}/download");
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<DownloadLink>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Download Translated File Strings. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.file-translations.download-strings">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.file-translations.download-strings">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.file-translations.download-strings">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<DownloadLink> DownloadTranslatedFileStrings(long? userId,  string jobIdentifier)
+        {
+            string url = AddUserIdIfAvailable(userId, $"/ai/file-translations/{jobIdentifier}/translations");
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return  _jsonParser.ParseResponseObject<DownloadLink>(result.JsonObject);
+        }
+
+        #endregion
         
         /// <summary>
         /// Create AI Proxy Chat Completion. Documentation:
