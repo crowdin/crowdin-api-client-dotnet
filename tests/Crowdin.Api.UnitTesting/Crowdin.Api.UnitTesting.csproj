@@ -269,6 +269,14 @@
           <Generator>ResXFileCodeGenerator</Generator>
           <LastGenOutput>AI_TranslateStrings.Designer.cs</LastGenOutput>
         </EmbeddedResource>
+        <EmbeddedResource Update="Resources\AI_FileTranslations.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+          <LastGenOutput>AI_FileTranslations.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="Resources\Common.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+          <LastGenOutput>Common.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -571,6 +579,16 @@
           <DesignTime>True</DesignTime>
           <AutoGen>True</AutoGen>
           <DependentUpon>AI_TranslateStrings.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\AI_FileTranslations.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>AI_FileTranslations.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\Common.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>Common.resx</DependentUpon>
         </Compile>
     </ItemGroup>
     
