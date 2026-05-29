@@ -522,6 +522,7 @@ namespace Crowdin.Api.AI
         /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.file-translations.download">Crowdin String Based API</a>
         /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.file-translations.download">Crowdin Enterprise API</a>
         /// </summary>
+        [PublicAPI]
         public async Task<DownloadLink> DownloadTranslatedFile(long? userId, string jobIdentifier)
         {
             string url = AddUserIdIfAvailable(userId, $"/ai/file-translations/{jobIdentifier}/download");

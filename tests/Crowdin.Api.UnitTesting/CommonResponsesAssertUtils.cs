@@ -6,12 +6,12 @@ namespace Crowdin.Api.UnitTesting
 {
     public static class CommonResponsesAssertUtils
     {
-        public static void Assert_DownloadLink(DownloadLink? expectedDownloadLink)
+        public static void Assert_DownloadLink(DownloadLink? downloadLink)
         {
-            ArgumentNullException.ThrowIfNull(expectedDownloadLink);
+            ArgumentNullException.ThrowIfNull(downloadLink);
             
-            Assert.Equal("https://test.com", expectedDownloadLink.Url);
-            Assert.Equal(DateTimeOffset.Parse("2019-09-20T10:31:21+00:00"), expectedDownloadLink.ExpireIn);
+            Assert.Equal("https://test.com", downloadLink.Url);
+            Assert.Equal(DateTimeOffset.Parse("2019-09-20T10:31:21+00:00"), downloadLink.ExpireIn);
         }
     }
 }
