@@ -83,6 +83,53 @@ namespace Crowdin.Api.UnitTesting.Tests.Translations
         }
 
         [Fact]
+        public async Task PreTranslationBatchOperations()
+        {
+            const int projectId = 1;
+            const string preTranslationId = "9e7de270-4f83-41cb-b606-2f90631f26e2";
+
+            var patches = new[]
+            {
+                new PreTranslationBatchOpPatch
+                {
+                    Operation = PatchOperation.Replace,
+                    Path = new PreTranslationBatchOpPatchPath
+                    {
+                        PreTranslationId = preTranslationId,
+                        Property = PreTranslationBatchOpPatchPath.PropertyEntry.Status
+                    },
+                    Value = BuildStatus.Canceled
+                }
+            };
+
+            string actualRequestJson = JsonConvert.SerializeObject(patches, JsonSettings);
+            string expectedRequestJson = TestUtils.CompactJson(Resources.Translations.PreTranslationBatchOperations_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/pre-translations";
+
+            mockClient
+                .Setup(client => client.SendPatchRequest(url, patches, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Resources.Translations.PreTranslationBatchOperations_Response)
+                });
+
+            var executor = new TranslationsApiExecutor(mockClient.Object);
+            ResponseList<PreTranslation> response = await executor.PreTranslationBatchOperations(projectId, patches);
+
+            Assert.Single(response.Data);
+            PreTranslation preTranslation = response.Data[0];
+            Assert.Equal(preTranslationId, preTranslation.Identifier);
+            Assert.Equal(BuildStatus.Canceled, preTranslation.Status);
+            Assert.Equal(90, preTranslation.Progress);
+            Assert.Equal(Priority.Normal, preTranslation.Priority);
+        }
+
+        [Fact]
         public async Task ApplyPreTranslationRequest()
         {
             const int projectId = 1;
