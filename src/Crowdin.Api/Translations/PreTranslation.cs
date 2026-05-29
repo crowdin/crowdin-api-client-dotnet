@@ -16,7 +16,10 @@ namespace Crowdin.Api.Translations
         
         [JsonProperty("progress")]
         public int Progress { get; set; }
-        
+
+        [JsonProperty("priority")]
+        public Priority? Priority { get; set; }
+
         [JsonProperty("attributes")]
         public PreTranslateAttributes Attributes { get; set; }
         

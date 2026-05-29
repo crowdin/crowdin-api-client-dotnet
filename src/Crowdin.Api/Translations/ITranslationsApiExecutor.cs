@@ -21,6 +21,10 @@ namespace Crowdin.Api.Translations
             string preTranslationId,
             IEnumerable<PreTranslationPatch> patches);
 
+        Task<ResponseList<PreTranslation>> PreTranslationBatchOperations(
+            long projectId,
+            IEnumerable<PreTranslationBatchOpPatch> patches);
+
         Task<PreTranslation> GetPreTranslationStatus(long projectId, string preTranslationId);
 
         Task<PreTranslation> ApplyPreTranslation(long projectId, ApplyPreTranslationRequest request);

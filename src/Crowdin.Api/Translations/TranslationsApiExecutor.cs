@@ -66,6 +66,22 @@ namespace Crowdin.Api.Translations
         }
 
         /// <summary>
+        /// Pre-Translation Batch Operations. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/Translations/operation/api.projects.pre-translations.patchBatch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/Translations/operation/api.projects.pre-translations.patchBatch">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Translations/operation/api.projects.pre-translations.patchBatch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<PreTranslation>> PreTranslationBatchOperations(
+            long projectId,
+            IEnumerable<PreTranslationBatchOpPatch> patches)
+        {
+            var url = $"/projects/{projectId}/pre-translations";
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            return _jsonParser.ParseResponseList<PreTranslation>(result.JsonObject);
+        }
+
+        /// <summary>
         /// Pre-Translation Report. Documentation:
         /// <a href="https://support.crowdin.com/developer/api/v2/#tag/Translations/operation/api.projects.pre-translations.report.getReport">Crowdin API</a>
         /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/Translations/operation/api.projects.pre-translations.report.getReport">Crowdin String Based API</a>
