@@ -107,6 +107,50 @@ namespace Crowdin.Api.AI
         Task<AiSettings> EditAiSettings(long? userId, IEnumerable<AiSettingsPatch> patches);
         
         #endregion
+
+        #region File Translations
+
+        /// <summary>
+        /// AI File Translations. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.file-translations.post">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.file-translations.post">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.file-translations.post">Crowdin Enterprise API</a>
+        /// </summary>
+        Task<AiFileTranslationsStatus> AiFileTranslations(long? userId, AiFileTranslationsRequest request);
+
+        /// <summary>
+        /// Get File Translations Status. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.file-translations.get">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.file-translations.get">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.file-translations.get">Crowdin Enterprise API</a>
+        /// </summary>
+        Task<AiFileTranslationsStatus> GetFileTranslationsStatus(long? userId, string jobIdentifier);
+
+        /// <summary>
+        /// Cancel File Translations. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.file-translations.delete">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.file-translations.delete">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.file-translations.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        Task CancelFileTranslations(long? userId, string jobIdentifier);
+
+        /// <summary>
+        /// Download Translated File. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.file-translations.download">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.file-translations.download">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.file-translations.download">Crowdin Enterprise API</a>
+        /// </summary>
+        Task<DownloadLink> DownloadTranslatedFile(long? userId, string jobIdentifier);
+
+        /// <summary>
+        /// Download Translated File Strings. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.file-translations.download-strings">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.file-translations.download-strings">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.file-translations.download-strings">Crowdin Enterprise API</a>
+        /// </summary>
+        Task<DownloadLink> DownloadTranslatedFileStrings(long? userId, string jobIdentifier);
+
+        #endregion
         
         Task<AiProxyChatCompletion> CreateAiProxyChatCompletion(
             long? userId,
