@@ -11,18 +11,10 @@ namespace Crowdin.Api.AI.Gateway
     public class AiGatewayApiExecutor : IAiGatewayApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
-        private readonly IJsonParser _jsonParser;
         
         public AiGatewayApiExecutor(ICrowdinApiClient apiClient)
         {
             _apiClient = apiClient;
-            _jsonParser = apiClient.DefaultJsonParser;
-        }
-        
-        public AiGatewayApiExecutor(ICrowdinApiClient apiClient, IJsonParser jsonParser)
-        {
-            _apiClient = apiClient;
-            _jsonParser = jsonParser;
         }
 
         /// <summary>
