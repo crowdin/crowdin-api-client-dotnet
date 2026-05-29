@@ -277,6 +277,10 @@
           <Generator>ResXFileCodeGenerator</Generator>
           <LastGenOutput>Common.Designer.cs</LastGenOutput>
         </EmbeddedResource>
+        <EmbeddedResource Update="Resources\StyleGuides.resx">
+          <Generator>ResXFileCodeGenerator</Generator>
+          <LastGenOutput>StyleGuides.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -589,6 +593,11 @@
           <DesignTime>True</DesignTime>
           <AutoGen>True</AutoGen>
           <DependentUpon>Common.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\StyleGuides.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>StyleGuides.resx</DependentUpon>
         </Compile>
     </ItemGroup>
     
