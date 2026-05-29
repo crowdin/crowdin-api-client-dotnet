@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 using JetBrains.Annotations;
 
+using Crowdin.Api.AI;
+using Crowdin.Api.AI.Gateway;
 using Crowdin.Api.Applications;
 using Crowdin.Api.Bundles;
 using Crowdin.Api.Core;
@@ -48,6 +50,11 @@ namespace Crowdin.Api
         IJsonParser DefaultJsonParser { get; }
 
         #region Public API
+        
+        // ReSharper disable once InconsistentNaming
+        IAiApiExecutor AI { get; }
+        
+        IAiGatewayApiExecutor AiGateway { get; }
         
         IBundlesApiExecutor Bundles { get; }
         

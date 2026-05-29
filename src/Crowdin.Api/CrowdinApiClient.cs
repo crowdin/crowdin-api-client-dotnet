@@ -13,6 +13,8 @@ using JetBrains.Annotations;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
+using Crowdin.Api.AI;
+using Crowdin.Api.AI.Gateway;
 using Crowdin.Api.Applications;
 using Crowdin.Api.Branches;
 using Crowdin.Api.Bundles;
@@ -56,6 +58,10 @@ namespace Crowdin.Api
     [PublicAPI]
     public class CrowdinApiClient : ICrowdinApiClient
     {
+        public IAiApiExecutor AI { get; }
+        
+        public IAiGatewayApiExecutor AiGateway { get; }
+        
         public IBranchesApiExecutor Branches { get; }
         
         public IBundlesApiExecutor Bundles { get; }
@@ -165,6 +171,8 @@ namespace Crowdin.Api
                 _graphBaseUrl = "https://api.crowdin.com/api/graphql";
             }
 
+            AI = new AiApiExecutor(this);
+            AiGateway = new AiGatewayApiExecutor(this);
             Branches = new BranchesApiExecutor(this);
             Bundles = new BundlesApiExecutor(this);
             Dictionaries = new DictionariesApiExecutor(this);
