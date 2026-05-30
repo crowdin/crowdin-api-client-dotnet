@@ -457,4 +457,47 @@
   }
 }</value>
   </data>
+    <data name="RevalidateQaChecks_Request" xml:space="preserve">
+        <value>{
+  "qaCheckCategories": ["terms", "ai"],
+  "languageIds": ["uk", "fr"],
+  "failedOnly": true
+}</value>
+    </data>
+    <data name="RevalidateQaChecks_Response" xml:space="preserve">
+        <value>{
+  "data": {
+    "identifier": "9e7de270-4f83-47a3-b2e9-8b49f1b2d5c3",
+    "status": "created",
+    "progress": 0,
+    "attributes": {
+      "languageIds": ["uk", "fr"],
+      "qaCheckCategories": ["terms", "ai"],
+      "failedOnly": true
+    },
+    "createdAt": "2023-09-20T14:05:50+00:00",
+    "updatedAt": "2023-09-20T14:05:50+00:00",
+    "startedAt": null,
+    "finishedAt": null
+  }
+}</value>
+    </data>
+    <data name="GetQaChecksRevalidationStatus_Response" xml:space="preserve">
+        <value>{
+  "data": {
+    "identifier": "9e7de270-4f83-47a3-b2e9-8b49f1b2d5c3",
+    "status": "finished",
+    "progress": 100,
+    "attributes": {
+      "languageIds": ["uk", "fr"],
+      "qaCheckCategories": ["terms", "ai"],
+      "failedOnly": true
+    },
+    "createdAt": "2023-09-20T14:05:50+00:00",
+    "updatedAt": "2023-09-20T14:10:00+00:00",
+    "startedAt": "2023-09-20T14:06:00+00:00",
+    "finishedAt": "2023-09-20T14:10:00+00:00"
+  }
+}</value>
+    </data>
 </root>

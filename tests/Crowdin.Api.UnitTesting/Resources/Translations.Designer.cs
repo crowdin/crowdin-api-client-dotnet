@@ -128,5 +128,23 @@ namespace Crowdin.Api.UnitTesting.Resources {
                 return ResourceManager.GetString("GetImportStatus_Response", resourceCulture);
             }
         }
+
+        internal static string RevalidateQaChecks_Request {
+            get {
+                return ResourceManager.GetString("RevalidateQaChecks_Request", resourceCulture);
+            }
+        }
+
+        internal static string RevalidateQaChecks_Response {
+            get {
+                return ResourceManager.GetString("RevalidateQaChecks_Response", resourceCulture);
+            }
+        }
+
+        internal static string GetQaChecksRevalidationStatus_Response {
+            get {
+                return ResourceManager.GetString("GetQaChecksRevalidationStatus_Response", resourceCulture);
+            }
+        }
     }
 }
