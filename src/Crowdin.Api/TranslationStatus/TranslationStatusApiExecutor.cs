@@ -1,5 +1,6 @@
 ﻿
 using System.Collections.Generic;
+using System.Net;
 using System.Threading.Tasks;
 
 using JetBrains.Annotations;
@@ -150,6 +151,46 @@ namespace Crowdin.Api.TranslationStatus
             var url = $"/projects/{projectId}/qa-checks";
             CrowdinApiResult result = await _apiClient.SendGetRequest(url, @params.ToQueryParams());
             return _jsonParser.ParseResponseList<QaCheckResource>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Revalidate QA Checks. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/Translation-Status/operation/api.projects.qa-checks.revalidate.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/Translation-Status/operation/api.projects.qa-checks.revalidate.post">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Translation-Status/operation/api.projects.qa-checks.revalidate.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<QaCheckRevalidationStatus> RevalidateQaChecks(long projectId, RevalidateQaChecksRequest request)
+        {
+            var url = $"/projects/{projectId}/qa-checks/revalidate";
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
+            return _jsonParser.ParseResponseObject<QaCheckRevalidationStatus>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Get QA Checks Revalidation Status. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/Translation-Status/operation/api.projects.qa-checks.revalidate.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/Translation-Status/operation/api.projects.qa-checks.revalidate.get">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Translation-Status/operation/api.projects.qa-checks.revalidate.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<QaCheckRevalidationStatus> GetQaChecksRevalidationStatus(long projectId, string revalidationId)
+        {
+            CrowdinApiResult result = await _apiClient.SendGetRequest($"/projects/{projectId}/qa-checks/revalidate/{revalidationId}");
+            return _jsonParser.ParseResponseObject<QaCheckRevalidationStatus>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Cancel QA Checks Revalidation. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/Translation-Status/operation/api.projects.qa-checks.revalidate.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/Translation-Status/operation/api.projects.qa-checks.revalidate.delete">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Translation-Status/operation/api.projects.qa-checks.revalidate.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task CancelQaChecksRevalidation(long projectId, string revalidationId)
+        {
+            HttpStatusCode statusCode = await _apiClient.SendDeleteRequest($"/projects/{projectId}/qa-checks/revalidate/{revalidationId}");
+            Utils.ThrowIfStatusNot204(statusCode, $"QA checks revalidation {revalidationId} cancellation failed");
         }
     }
 }

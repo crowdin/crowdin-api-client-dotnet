@@ -49,5 +49,11 @@ namespace Crowdin.Api.TranslationStatus
             ICollection<string>? languageIds = null);
 
         Task<ResponseList<QaCheckResource>> ListQaCheckIssues(long projectId, QaCheckIssuesListParams @params);
+
+        Task<QaCheckRevalidationStatus> RevalidateQaChecks(long projectId, RevalidateQaChecksRequest request);
+
+        Task<QaCheckRevalidationStatus> GetQaChecksRevalidationStatus(long projectId, string revalidationId);
+
+        Task CancelQaChecksRevalidation(long projectId, string revalidationId);
     }
 }
