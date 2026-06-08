@@ -18,6 +18,9 @@ namespace Crowdin.Api.Translations
         
         [JsonProperty("fileIds")]
         public ICollection<long>? FileIds { get; set; }
+
+        [JsonProperty("styleGuideIds")]
+        public ICollection<long>? StyleGuideIds { get; set; }
         
         [JsonProperty("method")]
         public PreTranslationMethod? Method { get; set; }
