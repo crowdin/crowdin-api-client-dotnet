@@ -40,6 +40,7 @@ using Crowdin.Api.Storage;
 using Crowdin.Api.StringComments;
 using Crowdin.Api.StringCorrections;
 using Crowdin.Api.StringTranslations;
+using Crowdin.Api.StyleGuides;
 using Crowdin.Api.Tasks;
 using Crowdin.Api.Teams;
 using Crowdin.Api.TranslationMemory;
@@ -99,7 +100,9 @@ namespace Crowdin.Api
         public IStringCorrectionsApiExecutor StringCorrections { get; }
         
         public IStringTranslationsApiExecutor StringTranslations { get; }
-        
+
+        public IStyleGuidesApiExecutor StyleGuides { get; }
+
         public ITasksApiExecutor Tasks { get; }
         
         public ITeamsApiExecutor Teams { get; }
@@ -192,6 +195,7 @@ namespace Crowdin.Api
             StringComments = new StringCommentsApiExecutor(this);
             StringCorrections = new StringCorrectionsApiExecutor(this);
             StringTranslations = new StringTranslationsApiExecutor(this);
+            StyleGuides = new StyleGuidesApiExecutor(this);
             Tasks = new TasksApiExecutor(this);
             Teams = new TeamsApiExecutor(this);
             TranslationMemory = new TranslationMemoryApiExecutor(this);
