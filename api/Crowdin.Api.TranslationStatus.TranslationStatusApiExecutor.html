@@ -129,7 +129,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor__ctor_Crowdin_Api_ICrowdinApiClient_.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.%23ctor(Crowdin.Api.ICrowdinApiClient)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L18">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L19">View Source</a>
   </span>
   <a id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor__ctor_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.#ctor*"></a>
   <h4 id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor__ctor_Crowdin_Api_ICrowdinApiClient_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.#ctor(Crowdin.Api.ICrowdinApiClient)">TranslationStatusApiExecutor(ICrowdinApiClient)</h4>
@@ -161,7 +161,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor__ctor_Crowdin_Api_ICrowdinApiClient_Crowdin_Api_Core_IJsonParser_.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.%23ctor(Crowdin.Api.ICrowdinApiClient%2CCrowdin.Api.Core.IJsonParser)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L24">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L25">View Source</a>
   </span>
   <a id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor__ctor_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.#ctor*"></a>
   <h4 id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor__ctor_Crowdin_Api_ICrowdinApiClient_Crowdin_Api_Core_IJsonParser_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.#ctor(Crowdin.Api.ICrowdinApiClient,Crowdin.Api.Core.IJsonParser)">TranslationStatusApiExecutor(ICrowdinApiClient, IJsonParser)</h4>
@@ -197,10 +197,67 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_CancelQaChecksRevalidation_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.CancelQaChecksRevalidation(System.Int64%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L189">View Source</a>
+  </span>
+  <a id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_CancelQaChecksRevalidation_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.CancelQaChecksRevalidation*"></a>
+  <h4 id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_CancelQaChecksRevalidation_System_Int64_System_String_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.CancelQaChecksRevalidation(System.Int64,System.String)">CancelQaChecksRevalidation(long, string)</h4>
+  <div class="markdown level1 summary"><p>Cancel QA Checks Revalidation. Documentation:
+<a href="https://support.crowdin.com/developer/api/v2/#tag/Translation-Status/operation/api.projects.qa-checks.revalidate.delete">Crowdin API</a>
+<a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/Translation-Status/operation/api.projects.qa-checks.revalidate.delete">Crowdin String Based API</a>
+<a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Translation-Status/operation/api.projects.qa-checks.revalidate.delete">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+public Task CancelQaChecksRevalidation(long projectId, string revalidationId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">revalidationId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_GetBranchProgress_System_Int64_System_Int64_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.GetBranchProgress(System.Int64%2CSystem.Int64%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L35">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L36">View Source</a>
   </span>
   <a id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_GetBranchProgress_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.GetBranchProgress*"></a>
   <h4 id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_GetBranchProgress_System_Int64_System_Int64_System_Int32_System_Int32_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.GetBranchProgress(System.Int64,System.Int64,System.Int32,System.Int32)">GetBranchProgress(long, long, int, int)</h4>
@@ -266,7 +323,7 @@ public Task&lt;ResponseList&lt;ProgressResource&gt;&gt; GetBranchProgress(long p
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_GetDirectoryProgress_System_Int64_System_Int64_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.GetDirectoryProgress(System.Int64%2CSystem.Int64%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L54">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L55">View Source</a>
   </span>
   <a id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_GetDirectoryProgress_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.GetDirectoryProgress*"></a>
   <h4 id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_GetDirectoryProgress_System_Int64_System_Int64_System_Int32_System_Int32_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.GetDirectoryProgress(System.Int64,System.Int64,System.Int32,System.Int32)">GetDirectoryProgress(long, long, int, int)</h4>
@@ -332,7 +389,7 @@ public Task&lt;ResponseList&lt;ProgressResource&gt;&gt; GetDirectoryProgress(lon
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_GetFileProgress_System_Int64_System_Int64_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.GetFileProgress(System.Int64%2CSystem.Int64%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L73">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L74">View Source</a>
   </span>
   <a id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_GetFileProgress_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.GetFileProgress*"></a>
   <h4 id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_GetFileProgress_System_Int64_System_Int64_System_Int32_System_Int32_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.GetFileProgress(System.Int64,System.Int64,System.Int32,System.Int32)">GetFileProgress(long, long, int, int)</h4>
@@ -398,7 +455,7 @@ public Task&lt;ResponseList&lt;FileProgressResource&gt;&gt; GetFileProgress(long
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_GetLanguageProgress_System_Int64_System_String_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.GetLanguageProgress(System.Int64%2CSystem.String%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L92">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L93">View Source</a>
   </span>
   <a id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_GetLanguageProgress_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.GetLanguageProgress*"></a>
   <h4 id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_GetLanguageProgress_System_Int64_System_String_System_Int32_System_Int32_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.GetLanguageProgress(System.Int64,System.String,System.Int32,System.Int32)">GetLanguageProgress(long, string, int, int)</h4>
@@ -464,7 +521,7 @@ public Task&lt;ResponseList&lt;LanguageProgressResource&gt;&gt; GetLanguageProgr
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_GetProjectProgress_System_Int64_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.GetProjectProgress(System.Int64%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L111">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L112">View Source</a>
   </span>
   <a id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_GetProjectProgress_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.GetProjectProgress*"></a>
   <h4 id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_GetProjectProgress_System_Int64_System_Int32_System_Int32_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.GetProjectProgress(System.Int64,System.Int32,System.Int32)">GetProjectProgress(long, int, int)</h4>
@@ -522,10 +579,67 @@ public Task&lt;ResponseList&lt;ProgressResource&gt;&gt; GetProjectProgress(long 
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_GetQaChecksRevalidationStatus_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.GetQaChecksRevalidationStatus(System.Int64%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L176">View Source</a>
+  </span>
+  <a id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_GetQaChecksRevalidationStatus_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.GetQaChecksRevalidationStatus*"></a>
+  <h4 id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_GetQaChecksRevalidationStatus_System_Int64_System_String_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.GetQaChecksRevalidationStatus(System.Int64,System.String)">GetQaChecksRevalidationStatus(long, string)</h4>
+  <div class="markdown level1 summary"><p>Get QA Checks Revalidation Status. Documentation:
+<a href="https://support.crowdin.com/developer/api/v2/#tag/Translation-Status/operation/api.projects.qa-checks.revalidate.get">Crowdin API</a>
+<a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/Translation-Status/operation/api.projects.qa-checks.revalidate.get">Crowdin String Based API</a>
+<a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Translation-Status/operation/api.projects.qa-checks.revalidate.get">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+public Task&lt;QaCheckRevalidationStatus&gt; GetQaChecksRevalidationStatus(long projectId, string revalidationId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">revalidationId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Crowdin.Api.TranslationStatus.QaCheckRevalidationStatus.html">QaCheckRevalidationStatus</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_ListQaCheckIssues_System_Int64_Crowdin_Api_TranslationStatus_QaCheckIssuesListParams_.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.ListQaCheckIssues(System.Int64%2CCrowdin.Api.TranslationStatus.QaCheckIssuesListParams)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L147">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L148">View Source</a>
   </span>
   <a id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_ListQaCheckIssues_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.ListQaCheckIssues*"></a>
   <h4 id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_ListQaCheckIssues_System_Int64_Crowdin_Api_TranslationStatus_QaCheckIssuesListParams_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.ListQaCheckIssues(System.Int64,Crowdin.Api.TranslationStatus.QaCheckIssuesListParams)">ListQaCheckIssues(long, QaCheckIssuesListParams)</h4>
@@ -581,7 +695,7 @@ public Task&lt;ResponseList&lt;QaCheckResource&gt;&gt; ListQaCheckIssues(long pr
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_ListQaCheckIssues_System_Int64_System_Int32_System_Int32_System_Collections_Generic_ICollection_Crowdin_Api_TranslationStatus_QaCheckIssueCategory__System_Collections_Generic_ICollection_Crowdin_Api_TranslationStatus_QaCheckIssueValidationType__System_Collections_Generic_ICollection_System_String__.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.ListQaCheckIssues(System.Int64%2CSystem.Int32%2CSystem.Int32%2CSystem.Collections.Generic.ICollection%7BCrowdin.Api.TranslationStatus.QaCheckIssueCategory%7D%2CSystem.Collections.Generic.ICollection%7BCrowdin.Api.TranslationStatus.QaCheckIssueValidationType%7D%2CSystem.Collections.Generic.ICollection%7BSystem.String%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L129">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L130">View Source</a>
   </span>
   <a id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_ListQaCheckIssues_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.ListQaCheckIssues*"></a>
   <h4 id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_ListQaCheckIssues_System_Int64_System_Int32_System_Int32_System_Collections_Generic_ICollection_Crowdin_Api_TranslationStatus_QaCheckIssueCategory__System_Collections_Generic_ICollection_Crowdin_Api_TranslationStatus_QaCheckIssueValidationType__System_Collections_Generic_ICollection_System_String__" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.ListQaCheckIssues(System.Int64,System.Int32,System.Int32,System.Collections.Generic.ICollection{Crowdin.Api.TranslationStatus.QaCheckIssueCategory},System.Collections.Generic.ICollection{Crowdin.Api.TranslationStatus.QaCheckIssueValidationType},System.Collections.Generic.ICollection{System.String})">ListQaCheckIssues(long, int, int, ICollection&lt;QaCheckIssueCategory&gt;?, ICollection&lt;QaCheckIssueValidationType&gt;?, ICollection&lt;string&gt;?)</h4>
@@ -652,6 +766,63 @@ public Task&lt;ResponseList&lt;QaCheckResource&gt;&gt; ListQaCheckIssues(long pr
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_RevalidateQaChecks_System_Int64_Crowdin_Api_TranslationStatus_RevalidateQaChecksRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.RevalidateQaChecks(System.Int64%2CCrowdin.Api.TranslationStatus.RevalidateQaChecksRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L162">View Source</a>
+  </span>
+  <a id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_RevalidateQaChecks_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.RevalidateQaChecks*"></a>
+  <h4 id="Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor_RevalidateQaChecks_System_Int64_Crowdin_Api_TranslationStatus_RevalidateQaChecksRequest_" data-uid="Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor.RevalidateQaChecks(System.Int64,Crowdin.Api.TranslationStatus.RevalidateQaChecksRequest)">RevalidateQaChecks(long, RevalidateQaChecksRequest)</h4>
+  <div class="markdown level1 summary"><p>Revalidate QA Checks. Documentation:
+<a href="https://support.crowdin.com/developer/api/v2/#tag/Translation-Status/operation/api.projects.qa-checks.revalidate.post">Crowdin API</a>
+<a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/Translation-Status/operation/api.projects.qa-checks.revalidate.post">Crowdin String Based API</a>
+<a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Translation-Status/operation/api.projects.qa-checks.revalidate.post">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+public Task&lt;QaCheckRevalidationStatus&gt; RevalidateQaChecks(long projectId, RevalidateQaChecksRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.TranslationStatus.RevalidateQaChecksRequest.html">RevalidateQaChecksRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Crowdin.Api.TranslationStatus.QaCheckRevalidationStatus.html">QaCheckRevalidationStatus</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="Crowdin.Api.TranslationStatus.ITranslationStatusApiExecutor.html">ITranslationStatusApiExecutor</a>
@@ -668,7 +839,7 @@ public Task&lt;ResponseList&lt;QaCheckResource&gt;&gt; ListQaCheckIssues(long pr
                     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationStatus_TranslationStatusApiExecutor.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationStatus.TranslationStatusApiExecutor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationStatus/TranslationStatusApiExecutor.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

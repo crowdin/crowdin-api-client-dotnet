@@ -198,6 +198,62 @@ public interface IAiApiExecutor</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_IAiApiExecutor_AiFileTranslations_System_Nullable_System_Int64__Crowdin_Api_AI_AiFileTranslationsRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.IAiApiExecutor.AiFileTranslations(System.Nullable%7BSystem.Int64%7D%2CCrowdin.Api.AI.AiFileTranslationsRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/IAiApiExecutor.cs/#L119">View Source</a>
+  </span>
+  <a id="Crowdin_Api_AI_IAiApiExecutor_AiFileTranslations_" data-uid="Crowdin.Api.AI.IAiApiExecutor.AiFileTranslations*"></a>
+  <h4 id="Crowdin_Api_AI_IAiApiExecutor_AiFileTranslations_System_Nullable_System_Int64__Crowdin_Api_AI_AiFileTranslationsRequest_" data-uid="Crowdin.Api.AI.IAiApiExecutor.AiFileTranslations(System.Nullable{System.Int64},Crowdin.Api.AI.AiFileTranslationsRequest)">AiFileTranslations(long?, AiFileTranslationsRequest)</h4>
+  <div class="markdown level1 summary"><p>AI File Translations. Documentation:
+<a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.file-translations.post">Crowdin File Based API</a>
+<a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.file-translations.post">Crowdin String Based API</a>
+<a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.file-translations.post">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;AiFileTranslationsStatus&gt; AiFileTranslations(long? userId, AiFileTranslationsRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.AI.AiFileTranslationsRequest.html">AiFileTranslationsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Crowdin.Api.AI.AiFileTranslationsStatus.html">AiFileTranslationsStatus</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_IAiApiExecutor_CancelAiPromptCompletion_System_Nullable_System_Int64__System_Int64_System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.IAiApiExecutor.CancelAiPromptCompletion(System.Nullable%7BSystem.Int64%7D%2CSystem.Int64%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -234,6 +290,62 @@ public interface IAiApiExecutor</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">completionId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_IAiApiExecutor_CancelFileTranslations_System_Nullable_System_Int64__System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.IAiApiExecutor.CancelFileTranslations(System.Nullable%7BSystem.Int64%7D%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/IAiApiExecutor.cs/#L135">View Source</a>
+  </span>
+  <a id="Crowdin_Api_AI_IAiApiExecutor_CancelFileTranslations_" data-uid="Crowdin.Api.AI.IAiApiExecutor.CancelFileTranslations*"></a>
+  <h4 id="Crowdin_Api_AI_IAiApiExecutor_CancelFileTranslations_System_Nullable_System_Int64__System_String_" data-uid="Crowdin.Api.AI.IAiApiExecutor.CancelFileTranslations(System.Nullable{System.Int64},System.String)">CancelFileTranslations(long?, string)</h4>
+  <div class="markdown level1 summary"><p>Cancel File Translations. Documentation:
+<a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.file-translations.delete">Crowdin File Based API</a>
+<a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.file-translations.delete">Crowdin String Based API</a>
+<a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.file-translations.delete">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task CancelFileTranslations(long? userId, string jobIdentifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">jobIdentifier</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -424,7 +536,7 @@ public interface IAiApiExecutor</code></pre>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_IAiApiExecutor_CreateAiProxyChatCompletion_System_Nullable_System_Int64__System_Int64_System_Collections_Generic_IDictionary_System_String_System_Object__.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.IAiApiExecutor.CreateAiProxyChatCompletion(System.Nullable%7BSystem.Int64%7D%2CSystem.Int64%2CSystem.Collections.Generic.IDictionary%7BSystem.String%2CSystem.Object%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/IAiApiExecutor.cs/#L111">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/IAiApiExecutor.cs/#L155">View Source</a>
   </span>
   <a id="Crowdin_Api_AI_IAiApiExecutor_CreateAiProxyChatCompletion_" data-uid="Crowdin.Api.AI.IAiApiExecutor.CreateAiProxyChatCompletion*"></a>
   <h4 id="Crowdin_Api_AI_IAiApiExecutor_CreateAiProxyChatCompletion_System_Nullable_System_Int64__System_Int64_System_Collections_Generic_IDictionary_System_String_System_Object__" data-uid="Crowdin.Api.AI.IAiApiExecutor.CreateAiProxyChatCompletion(System.Nullable{System.Int64},System.Int64,System.Collections.Generic.IDictionary{System.String,System.Object})">CreateAiProxyChatCompletion(long?, long, IDictionary&lt;string, object&gt;)</h4>
@@ -727,6 +839,118 @@ public interface IAiApiExecutor</code></pre>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">aiReportId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Crowdin.Api.DownloadLink.html">DownloadLink</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_IAiApiExecutor_DownloadTranslatedFile_System_Nullable_System_Int64__System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.IAiApiExecutor.DownloadTranslatedFile(System.Nullable%7BSystem.Int64%7D%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/IAiApiExecutor.cs/#L143">View Source</a>
+  </span>
+  <a id="Crowdin_Api_AI_IAiApiExecutor_DownloadTranslatedFile_" data-uid="Crowdin.Api.AI.IAiApiExecutor.DownloadTranslatedFile*"></a>
+  <h4 id="Crowdin_Api_AI_IAiApiExecutor_DownloadTranslatedFile_System_Nullable_System_Int64__System_String_" data-uid="Crowdin.Api.AI.IAiApiExecutor.DownloadTranslatedFile(System.Nullable{System.Int64},System.String)">DownloadTranslatedFile(long?, string)</h4>
+  <div class="markdown level1 summary"><p>Download Translated File. Documentation:
+<a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.file-translations.download">Crowdin File Based API</a>
+<a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.file-translations.download">Crowdin String Based API</a>
+<a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.file-translations.download">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DownloadLink&gt; DownloadTranslatedFile(long? userId, string jobIdentifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">jobIdentifier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Crowdin.Api.DownloadLink.html">DownloadLink</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_IAiApiExecutor_DownloadTranslatedFileStrings_System_Nullable_System_Int64__System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.IAiApiExecutor.DownloadTranslatedFileStrings(System.Nullable%7BSystem.Int64%7D%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/IAiApiExecutor.cs/#L151">View Source</a>
+  </span>
+  <a id="Crowdin_Api_AI_IAiApiExecutor_DownloadTranslatedFileStrings_" data-uid="Crowdin.Api.AI.IAiApiExecutor.DownloadTranslatedFileStrings*"></a>
+  <h4 id="Crowdin_Api_AI_IAiApiExecutor_DownloadTranslatedFileStrings_System_Nullable_System_Int64__System_String_" data-uid="Crowdin.Api.AI.IAiApiExecutor.DownloadTranslatedFileStrings(System.Nullable{System.Int64},System.String)">DownloadTranslatedFileStrings(long?, string)</h4>
+  <div class="markdown level1 summary"><p>Download Translated File Strings. Documentation:
+<a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.file-translations.download-strings">Crowdin File Based API</a>
+<a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.file-translations.download-strings">Crowdin String Based API</a>
+<a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.file-translations.download-strings">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DownloadLink&gt; DownloadTranslatedFileStrings(long? userId, string jobIdentifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">jobIdentifier</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -1402,6 +1626,62 @@ public interface IAiApiExecutor</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_IAiApiExecutor_GetFileTranslationsStatus_System_Nullable_System_Int64__System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.IAiApiExecutor.GetFileTranslationsStatus(System.Nullable%7BSystem.Int64%7D%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/IAiApiExecutor.cs/#L127">View Source</a>
+  </span>
+  <a id="Crowdin_Api_AI_IAiApiExecutor_GetFileTranslationsStatus_" data-uid="Crowdin.Api.AI.IAiApiExecutor.GetFileTranslationsStatus*"></a>
+  <h4 id="Crowdin_Api_AI_IAiApiExecutor_GetFileTranslationsStatus_System_Nullable_System_Int64__System_String_" data-uid="Crowdin.Api.AI.IAiApiExecutor.GetFileTranslationsStatus(System.Nullable{System.Int64},System.String)">GetFileTranslationsStatus(long?, string)</h4>
+  <div class="markdown level1 summary"><p>Get File Translations Status. Documentation:
+<a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.users.ai.file-translations.get">Crowdin File Based API</a>
+<a href="https://support.crowdin.com/developer/api/v2/string-based/#tag/AI/operation/api.users.ai.file-translations.get">Crowdin String Based API</a>
+<a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.file-translations.get">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;AiFileTranslationsStatus&gt; GetFileTranslationsStatus(long? userId, string jobIdentifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">jobIdentifier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Crowdin.Api.AI.AiFileTranslationsStatus.html">AiFileTranslationsStatus</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_IAiApiExecutor_ListAiPrompts_System_Nullable_System_Int64__System_Nullable_System_Int64__System_Nullable_Crowdin_Api_AI_AiPromptAction__System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.IAiApiExecutor.ListAiPrompts(System.Nullable%7BSystem.Int64%7D%2CSystem.Nullable%7BSystem.Int64%7D%2CSystem.Nullable%7BCrowdin.Api.AI.AiPromptAction%7D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -1581,7 +1861,7 @@ public interface IAiApiExecutor</code></pre>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_IAiApiExecutor_ListSupportedAiProviderModels_System_Nullable_System_Int64__System_Int32_System_Int32_System_String_System_Nullable_System_Boolean__System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.IAiApiExecutor.ListSupportedAiProviderModels(System.Nullable%7BSystem.Int64%7D%2CSystem.Int32%2CSystem.Int32%2CSystem.String%2CSystem.Nullable%7BSystem.Boolean%7D%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/IAiApiExecutor.cs/#L116">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/IAiApiExecutor.cs/#L160">View Source</a>
   </span>
   <a id="Crowdin_Api_AI_IAiApiExecutor_ListSupportedAiProviderModels_" data-uid="Crowdin.Api.AI.IAiApiExecutor.ListSupportedAiProviderModels*"></a>
   <h4 id="Crowdin_Api_AI_IAiApiExecutor_ListSupportedAiProviderModels_System_Nullable_System_Int64__System_Int32_System_Int32_System_String_System_Nullable_System_Boolean__System_String_" data-uid="Crowdin.Api.AI.IAiApiExecutor.ListSupportedAiProviderModels(System.Nullable{System.Int64},System.Int32,System.Int32,System.String,System.Nullable{System.Boolean},System.String)">ListSupportedAiProviderModels(long?, int, int, string?, bool?, string?)</h4>
@@ -1644,6 +1924,58 @@ public interface IAiApiExecutor</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Crowdin.Api.ResponseList-1.html">ResponseList</a>&lt;<a class="xref" href="Crowdin.Api.AI.AiSupportedProviderModel.html">AiSupportedProviderModel</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_AI_IAiApiExecutor_TranslateStrings_System_Nullable_System_Int64__Crowdin_Api_AI_AiTranslateStringsRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.AI.IAiApiExecutor.TranslateStrings(System.Nullable%7BSystem.Int64%7D%2CCrowdin.Api.AI.AiTranslateStringsRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/AI/IAiApiExecutor.cs/#L167">View Source</a>
+  </span>
+  <a id="Crowdin_Api_AI_IAiApiExecutor_TranslateStrings_" data-uid="Crowdin.Api.AI.IAiApiExecutor.TranslateStrings*"></a>
+  <h4 id="Crowdin_Api_AI_IAiApiExecutor_TranslateStrings_System_Nullable_System_Int64__Crowdin_Api_AI_AiTranslateStringsRequest_" data-uid="Crowdin.Api.AI.IAiApiExecutor.TranslateStrings(System.Nullable{System.Int64},Crowdin.Api.AI.AiTranslateStringsRequest)">TranslateStrings(long?, AiTranslateStringsRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;AiTranslateStringsResponse&gt; TranslateStrings(long? userId, AiTranslateStringsRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.AI.AiTranslateStringsRequest.html">AiTranslateStringsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Crowdin.Api.AI.AiTranslateStringsResponse.html">AiTranslateStringsResponse</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
