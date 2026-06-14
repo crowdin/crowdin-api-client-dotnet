@@ -170,6 +170,73 @@ namespace Crowdin.Api.UnitTesting.Tests.SourceStrings
             Assert_StringUploadResponseModel(response);
         }
 
+        [Fact]
+        public async Task EditString_WithUpdateOption()
+        {
+            const int projectId = 1;
+            const int stringId = 2814;
+
+            var patches = new[]
+            {
+                new SourceStringPatch
+                {
+                    Operation = PatchOperation.Replace,
+                    Path = StringPatchPath.Text,
+                    Value = "Update Text"
+                }
+            };
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            string url = $"/projects/{projectId}/strings/{stringId}";
+
+            var mockResponseObject = JObject.Parse(@"
+            {
+              ""data"": {
+                ""id"": 2814,
+                ""projectId"": 2,
+                ""fileId"": 48,
+                ""identifier"": ""name"",
+                ""text"": ""Updated text"",
+                ""type"": ""text"",
+                ""isHidden"": false,
+                ""isDuplicate"": false,
+                ""revision"": 2,
+                ""hasPlurals"": false,
+                ""isIcu"": false,
+                ""labelIds"": [],
+                ""createdAt"": ""2019-09-20T12:43:57+00:00"",
+                ""updatedAt"": ""2019-09-20T13:24:01+00:00""
+              }
+            }");
+
+            mockClient.Setup(
+                client => client.SendPatchRequest(
+                    url,
+                    patches,
+                    It.Is<IDictionary<string, string>>(queryParams =>
+                        queryParams.Count == 1 &&
+                        queryParams.ContainsKey("updateOption") &&
+                        queryParams["updateOption"] == "keep_translations")))
+                        .ReturnsAsync(new CrowdinApiResult
+                        {
+                            StatusCode = HttpStatusCode.OK,
+                            JsonObject = mockResponseObject
+                        });
+
+            var executor = new SourceStringsApiExecutor(mockClient.Object);
+
+            SourceString response = await executor.EditString(
+                projectId,
+                stringId,
+                patches,
+                UpdateOption.KeepTranslations);
+
+            Assert.NotNull(response);
+            Assert.Equal(stringId, response.Id);
+            Assert.Equal("Updated text", response.Text);
+        }
+
         private static void Assert_StringUploadResponseModel(StringUploadResponseModel? response)
         {
             Assert.NotNull(response);

@@ -90,10 +90,17 @@ namespace Crowdin.Api.SourceStrings
         [PublicAPI]
         public async Task<ResponseList<SourceString>> StringBatchOperations(
             long projectId,
-            IEnumerable<StringBatchOpPatch> patches)
+            IEnumerable<StringBatchOpPatch> patches,
+            UpdateOption? updateOption = null)
         {
+            IDictionary<string, string>? queryParams = updateOption.HasValue
+                ? new Dictionary<string, string>()
+                : null;
+
+            queryParams?.AddDescriptionEnumValueIfPresent("updateOption", updateOption);
+
             string url = FormUrl_Strings(projectId);
-            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches, queryParams);
             return _jsonParser.ParseResponseList<SourceString>(result.JsonObject);
         }
 
@@ -133,10 +140,20 @@ namespace Crowdin.Api.SourceStrings
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<SourceString> EditString(long projectId, long stringId, IEnumerable<SourceStringPatch> patches)
+        public async Task<SourceString> EditString(
+            long projectId,
+            long stringId,
+            IEnumerable<SourceStringPatch> patches,
+            UpdateOption? updateOption = null)
         {
+            IDictionary<string, string>? queryParams = updateOption.HasValue
+                ? new Dictionary<string, string>()
+                : null;
+
+            queryParams?.AddDescriptionEnumValueIfPresent("updateOption", updateOption);
+
             string url = FormUrl_StringId(projectId, stringId);
-            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches, queryParams);
             return _jsonParser.ParseResponseObject<SourceString>(result.JsonObject);
         }
         
