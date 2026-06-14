@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
@@ -120,6 +121,56 @@ namespace Crowdin.Api.UnitTesting.Tests.SourceStrings
             ResponseList<SourceString> response = await executor.StringBatchOperations(projectId, patches);
 
             Assert.NotNull(response);
+        }
+
+        [Fact]
+        public async Task StringBatchOperations_WithUpdateOption()
+        {
+            const int projectId = 1;
+            const int stringId = 2814;
+
+            var patches = new[]
+            {
+                new StringBatchOpPatch
+                {
+                    Operation = PatchOperation.Replace,
+                    Path = new StringBatchOpPatchPath
+                    {
+                        StringId = stringId,
+                        Property = StringBatchOpPatchPathEntry.Text
+                    },
+                    Value = "Updated Text"
+                }
+            };
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            string url = $"/projects/{projectId}/strings";
+
+            mockClient.Setup(
+                client => client.SendPatchRequest(
+                    url,
+                    patches,
+                    It.Is<IDictionary<string, string>>(queryParams =>
+                        queryParams.Count == 1 &&
+                        queryParams.ContainsKey("updateOption") &&
+                        queryParams["updateOption"] == "keep_translations")))
+                        .ReturnsAsync(new CrowdinApiResult
+                        {
+                            StatusCode = HttpStatusCode.OK,
+                            JsonObject = JObject.Parse(Resources.SourceStrings.CommonResponses_SingleStringInArray)
+                        });
+
+            var executor = new SourceStringsApiExecutor(mockClient.Object);
+            ResponseList<SourceString> response = await executor.StringBatchOperations(
+                projectId,
+                patches,
+                UpdateOption.KeepTranslations);
+
+            Assert.NotNull(response);
+
+            SourceString sourceString = Assert.Single(response.Data);
+            Assert.Equal(stringId, sourceString.Id);
         }
 
         private static void Assert_SourceString(SourceString? sourceString)
