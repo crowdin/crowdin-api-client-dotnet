@@ -88,16 +88,21 @@ namespace Crowdin.Api.SourceStrings
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.strings.batchPatch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<SourceString>> StringBatchOperations(
-            long projectId,
-            IEnumerable<StringBatchOpPatch> patches,
-            UpdateOption? updateOption = null)
+        public async Task<ResponseList<SourceString>> StringBatchOperations(long projectId, IEnumerable<StringBatchOpPatch> patches)
         {
-            IDictionary<string, string>? queryParams = updateOption.HasValue
-                ? new Dictionary<string, string>()
-                : null;
+            string url = FormUrl_Strings(projectId);
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            return _jsonParser.ParseResponseList<SourceString>(result.JsonObject);
+        }
 
-            queryParams?.AddDescriptionEnumValueIfPresent("updateOption", updateOption);
+        [PublicAPI]
+        public async Task<ResponseList<SourceString>> StringBatchOperations(long projectId, IEnumerable<StringBatchOpPatch> patches, UpdateOption updateOption)
+        {
+            IDictionary<string, string>? queryParams =
+                new Dictionary<string, string>
+                {
+                    ["updateOption"] = updateOption.ToDescriptionString()
+                };
 
             string url = FormUrl_Strings(projectId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches, queryParams);
@@ -140,17 +145,21 @@ namespace Crowdin.Api.SourceStrings
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<SourceString> EditString(
-            long projectId,
-            long stringId,
-            IEnumerable<SourceStringPatch> patches,
-            UpdateOption? updateOption = null)
+        public async Task<SourceString> EditString(long projectId, long stringId, IEnumerable<SourceStringPatch> patches)
         {
-            IDictionary<string, string>? queryParams = updateOption.HasValue
-                ? new Dictionary<string, string>()
-                : null;
+            string url = FormUrl_StringId(projectId, stringId);
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            return _jsonParser.ParseResponseObject<SourceString>(result.JsonObject);
+        }
 
-            queryParams?.AddDescriptionEnumValueIfPresent("updateOption", updateOption);
+        [PublicAPI]
+        public async Task<SourceString> EditString(long projectId, long stringId, IEnumerable<SourceStringPatch> patches, UpdateOption updateOption)
+        {
+            IDictionary<string, string> queryParams =
+                new Dictionary<string, string>
+                {
+                    ["updateOption"] = updateOption.ToDescriptionString()
+                };
 
             string url = FormUrl_StringId(projectId, stringId);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches, queryParams);

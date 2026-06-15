@@ -30,16 +30,17 @@ namespace Crowdin.Api.SourceStrings
 
         Task<SourceString> AddString(long projectId, AddStringRequest request);
 
-        Task<ResponseList<SourceString>> StringBatchOperations(
-            long projectId,
-            IEnumerable<StringBatchOpPatch> patches,
-            UpdateOption? updateOption = null);
+        Task<ResponseList<SourceString>> StringBatchOperations(long projectId, IEnumerable<StringBatchOpPatch> patches);
+
+        Task<ResponseList<SourceString>> StringBatchOperations(long projectId, IEnumerable<StringBatchOpPatch> patches, UpdateOption updateOption);
 
         Task<SourceString> GetString(long projectId, long stringId, bool denormalizePlaceholders = false);
 
         Task DeleteString(long projectId, long stringId);
 
-        Task<SourceString> EditString(long projectId, long stringId, IEnumerable<SourceStringPatch> patches, UpdateOption? updateOption = null);
+        Task<SourceString> EditString(long projectId, long stringId, IEnumerable<SourceStringPatch> patches);
+
+        Task<SourceString> EditString(long projectId, long stringId, IEnumerable<SourceStringPatch> patches, UpdateOption updateOption);
 
         Task<StringUploadResponseModel> UploadStringsStatus(long projectId, string uploadId);
 
