@@ -32,7 +32,10 @@ namespace Crowdin.Api.SourceStrings
 
         Task<ResponseList<SourceString>> StringBatchOperations(long projectId, IEnumerable<StringBatchOpPatch> patches);
 
-        Task<ResponseList<SourceString>> StringBatchOperations(long projectId, IEnumerable<StringBatchOpPatch> patches, UpdateOption updateOption);
+        Task<ResponseList<SourceString>> StringBatchOperations(
+            long projectId,
+            IEnumerable<StringBatchOpPatch> patches,
+            UpdateOption updateOption);
 
         Task<SourceString> GetString(long projectId, long stringId, bool denormalizePlaceholders = false);
 
@@ -40,7 +43,11 @@ namespace Crowdin.Api.SourceStrings
 
         Task<SourceString> EditString(long projectId, long stringId, IEnumerable<SourceStringPatch> patches);
 
-        Task<SourceString> EditString(long projectId, long stringId, IEnumerable<SourceStringPatch> patches, UpdateOption updateOption);
+        Task<SourceString> EditString(
+            long projectId,
+            long stringId,
+            IEnumerable<SourceStringPatch> patches,
+            UpdateOption updateOption);
 
         Task<StringUploadResponseModel> UploadStringsStatus(long projectId, string uploadId);
 

@@ -95,10 +95,18 @@ namespace Crowdin.Api.SourceStrings
             return _jsonParser.ParseResponseList<SourceString>(result.JsonObject);
         }
 
+        /// <summary>
+        /// String Batch Operations with an update option. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.strings.batchPatch">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.strings.batchPatch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<SourceString>> StringBatchOperations(long projectId, IEnumerable<StringBatchOpPatch> patches, UpdateOption updateOption)
+        public async Task<ResponseList<SourceString>> StringBatchOperations(
+            long projectId,
+            IEnumerable<StringBatchOpPatch> patches,
+            UpdateOption updateOption)
         {
-            IDictionary<string, string>? queryParams =
+            IDictionary<string, string> queryParams =
                 new Dictionary<string, string>
                 {
                     ["updateOption"] = updateOption.ToDescriptionString()
@@ -152,8 +160,17 @@ namespace Crowdin.Api.SourceStrings
             return _jsonParser.ParseResponseObject<SourceString>(result.JsonObject);
         }
 
+        /// <summary>
+        /// Edit string with an update option. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.strings.patch">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.strings.patch">Crowdin Enterprise API</a>
+        /// </summary>
         [PublicAPI]
-        public async Task<SourceString> EditString(long projectId, long stringId, IEnumerable<SourceStringPatch> patches, UpdateOption updateOption)
+        public async Task<SourceString> EditString(
+            long projectId,
+            long stringId,
+            IEnumerable<SourceStringPatch> patches,
+            UpdateOption updateOption)
         {
             IDictionary<string, string> queryParams =
                 new Dictionary<string, string>
