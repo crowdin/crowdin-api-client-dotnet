@@ -173,7 +173,7 @@ namespace Crowdin.Api.UnitTesting.Tests.SourceStrings
         [Fact]
         public async Task EditString_WithUpdateOption()
         {
-            const int projectId = 1;
+            const int projectId = 2;
             const int stringId = 2814;
 
             var patches = new[]

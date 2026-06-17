@@ -163,8 +163,8 @@ namespace Crowdin.Api.SourceStrings
 
         /// <summary>
         /// Edit string with an update option. Documentation:
-        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.strings.patch">Crowdin API</a>
-        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.strings.patch">Crowdin Enterprise API</a>
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.strings.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
         public async Task<SourceString> EditString(
