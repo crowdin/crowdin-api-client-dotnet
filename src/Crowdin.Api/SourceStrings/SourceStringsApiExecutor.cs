@@ -13,6 +13,7 @@ namespace Crowdin.Api.SourceStrings
 {
     public class SourceStringsApiExecutor : ISourceStringsApiExecutor
     {
+        private const string UpdateOptionKey = "updateOption";
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;
 
@@ -109,7 +110,7 @@ namespace Crowdin.Api.SourceStrings
             IDictionary<string, string> queryParams =
                 new Dictionary<string, string>
                 {
-                    ["updateOption"] = updateOption.ToDescriptionString()
+                    [UpdateOptionKey] = updateOption.ToDescriptionString()
                 };
 
             string url = FormUrl_Strings(projectId);
@@ -175,7 +176,7 @@ namespace Crowdin.Api.SourceStrings
             IDictionary<string, string> queryParams =
                 new Dictionary<string, string>
                 {
-                    ["updateOption"] = updateOption.ToDescriptionString()
+                    [UpdateOptionKey] = updateOption.ToDescriptionString()
                 };
 
             string url = FormUrl_StringId(projectId, stringId);
