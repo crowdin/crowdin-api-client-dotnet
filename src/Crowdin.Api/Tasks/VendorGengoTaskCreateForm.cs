@@ -2,15 +2,19 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using Crowdin.Api.Core.Converters;
+
 using JetBrains.Annotations;
 using Newtonsoft.Json;
+
+using Crowdin.Api.Core;
+using Crowdin.Api.Core.Converters;
 
 #nullable enable
 
 namespace Crowdin.Api.Tasks
 {
     [PublicAPI]
+    [Obsolete(MessageTexts.DeprecatedModel)]
     public class VendorGengoTaskCreateForm : AddTaskRequest
     {
         [JsonProperty("title")]

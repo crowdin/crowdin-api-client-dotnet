@@ -70,8 +70,11 @@ namespace Crowdin.Api.Tasks
         
         [JsonProperty("dateFrom")]
         public DateTimeOffset? DateFrom { get; set; }
-        
+
         [JsonProperty("dateTo")]
         public DateTimeOffset? DateTo { get; set; }
+
+        [JsonProperty("batchId")]
+        public long? BatchId { get; set; }
     }
 }

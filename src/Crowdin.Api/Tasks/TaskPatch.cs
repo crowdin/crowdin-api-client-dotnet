@@ -38,11 +38,17 @@ namespace Crowdin.Api.Tasks
         
         [Description("/dateFrom")]
         DateFrom,
-        
+
         [Description("/dateTo")]
         DateTo,
-        
-        [Description("labelIds")]
-        LabelIds
+
+        [Description("/labelIds")]
+        LabelIds,
+
+        [Description("/batchId")]
+        BatchId,
+
+        [Description("/resetScope")]
+        ResetScope
     }
 }
