@@ -23,10 +23,10 @@ namespace Crowdin.Api.AI
         public string? SourceLanguageId { get; set; }
 
         [JsonProperty("targetLanguageId")]
-        public string? TargetLanguageId { get; set; }
+        public string TargetLanguageId { get; set; } = null!;
 
         [JsonProperty("stringIds")]
-        public ICollection<long>? StringIds { get; set; }
+        public ICollection<long> StringIds { get; set; } = null!;
 
         [JsonProperty("overridePromptValues")]
         public PreTranslateOverridePromptValues? OverridePromptValues { get; set; }
@@ -42,10 +42,10 @@ namespace Crowdin.Api.AI
         public string? SourceLanguageId { get; set; }
 
         [JsonProperty("targetLanguageId")]
-        public string? TargetLanguageId { get; set; }
+        public string TargetLanguageId { get; set; } = null!;
 
         [JsonProperty("stringIds")]
-        public ICollection<long>? StringIds { get; set; }
+        public ICollection<long> StringIds { get; set; } = null!;
 
         [JsonProperty("overridePromptValues")]
         public QaCheckOverridePromptValues? OverridePromptValues { get; set; }
@@ -61,10 +61,10 @@ namespace Crowdin.Api.AI
         public string? SourceLanguageId { get; set; }
 
         [JsonProperty("targetLanguageId")]
-        public string? TargetLanguageId { get; set; }
+        public string TargetLanguageId { get; set; } = null!;
 
         [JsonProperty("stringIds")]
-        public ICollection<long>? StringIds { get; set; }
+        public ICollection<long> StringIds { get; set; } = null!;
 
         [JsonProperty("overridePromptValues")]
         public AlignmentOverridePromptValues? OverridePromptValues { get; set; }
@@ -80,10 +80,10 @@ namespace Crowdin.Api.AI
         public string? SourceLanguageId { get; set; }
 
         [JsonProperty("targetLanguageId")]
-        public string? TargetLanguageId { get; set; }
+        public string TargetLanguageId { get; set; } = null!;
 
         [JsonProperty("stringIds")]
-        public ICollection<long>? StringIds { get; set; }
+        public ICollection<long> StringIds { get; set; } = null!;
 
         [JsonProperty("customInstruction")]
         public string? CustomInstruction { get; set; }

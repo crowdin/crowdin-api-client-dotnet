@@ -71,7 +71,7 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
                 new AiSettingsPatch
                 {
                     Operation = PatchOperation.Replace,
-                    Path = AiSettingsPatchPath.AssistActionAiPromptId,
+                    Path = AiSettingsPatchPath.ShowSuggestion,
                     Value = true
                 }
             };
@@ -106,7 +106,7 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
                 new AiSettingsPatch
                 {
                     Operation = PatchOperation.Replace,
-                    Path = AiSettingsPatchPath.AssistActionAiPromptId,
+                    Path = AiSettingsPatchPath.ShowSuggestion,
                     Value = true
                 }
             };
@@ -135,7 +135,6 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
         {
             ArgumentNullException.ThrowIfNull(settings);
 
-            Assert.Equal(2, settings.AssistActionAiPromptId);
             Assert.True(settings.ShowSuggestion);
 
             AiSettingsShortcuts? shortcut = settings.Shortcuts?.FirstOrDefault();
