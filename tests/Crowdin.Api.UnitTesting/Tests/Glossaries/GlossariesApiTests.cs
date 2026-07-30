@@ -18,6 +18,50 @@ namespace Crowdin.Api.UnitTesting.Tests.Glossaries
         private static readonly JsonSerializerSettings DefaultSettings = TestUtils.CreateJsonSerializerOptions();
 
         [Fact]
+        public async Task ExportGlossary()
+        {
+            const int glossaryId = 2;
+
+            var request = new ExportGlossaryRequest
+            {
+                Format = GlossaryFormat.Csv,
+                ExportType = GlossaryExportType.Terms,
+                Statuses = [TermStatus.Preferred, TermStatus.Admitted],
+                PartsOfSpeech = [PartOfSpeech.Verb],
+                Types = [TermType.Abbreviation],
+                Genders = [TermGender.Masculine],
+                AuthorIds = [1L],
+                LanguageIds = ["en", "de"]
+            };
+
+            string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
+            string expectedRequestJson = TestUtils.CompactJson(Resources.Glossaries.ExportGlossary_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+
+            var url = $"/glossaries/{glossaryId}/exports";
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            mockClient
+                .Setup(client => client.SendPostRequest(url, request, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Resources.Glossaries.ExportGlossary_Response)
+                });
+
+            var executor = new GlossariesApiExecutor(mockClient.Object);
+            GlossaryExportStatus response = await executor.ExportGlossary(glossaryId, request);
+
+            Assert.NotNull(response);
+            Assert.Equal("50fb3506-4127-4ba8-8296-f97dc7e3e0c3", response.Identifier);
+            Assert.Equal(OperationStatus.Finished, response.Status);
+            Assert.Equal(100, response.Progress);
+            Assert.Equal(GlossaryFormat.Csv, response.Attributes.Format);
+            Assert.Equal(DateTimeOffset.Parse("2019-09-23T07:19:47+00:00"), response.CreatedAt);
+        }
+
+        [Fact]
         public async Task ListGlossaries()
         {
             const int groupId = 2;
@@ -39,13 +83,13 @@ namespace Crowdin.Api.UnitTesting.Tests.Glossaries
             var executor = new GlossariesApiExecutor(mockClient.Object);
             ResponseList<Glossary> response = await executor.ListGlossaries(
                 groupId: groupId,
-                orderBy: new[]
-                {
+                orderBy:
+                [
                     new SortingRule
                     {
                         Field = "createdAt"
                     }
-                });
+                ]);
 
             Assert.NotNull(response);
             Assert.Single(response.Data);
@@ -60,8 +104,8 @@ namespace Crowdin.Api.UnitTesting.Tests.Glossaries
             const string newName = "Be My Eyes iOS's Glossary";
             const string newLanguageId = "fr";
 
-            var patches = new[]
-            {
+            GlossaryPatch[] patches =
+            [
                 new GlossaryPatch
                 {
                     Operation = PatchOperation.Replace,
@@ -74,7 +118,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Glossaries
                     Path = GlossaryPatchPath.LanguageId,
                     Value = newLanguageId
                 }
-            };
+            ];
 
             string actualRequestJson = JsonConvert.SerializeObject(patches, DefaultSettings);
             string expectedRequestJson = TestUtils.CompactJson(Resources.Glossaries.EditGlossary_Request);
