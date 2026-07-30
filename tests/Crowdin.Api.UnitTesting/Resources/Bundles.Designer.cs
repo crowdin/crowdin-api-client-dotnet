@@ -122,20 +122,41 @@ namespace Crowdin.Api.UnitTesting.Resources {
         ///    &quot;identifier&quot;: &quot;50fb3506-4127-4ba8-8296-f97dc7e3e0c3&quot;,
         ///    &quot;status&quot;: &quot;finished&quot;,
         ///    &quot;progress&quot;: 100,
-        ///    &quot;attributes&quot;: {
-        ///        &quot;bundleId&quot;: 2
-        ///    },
-        ///    &quot;createdAt&quot;: &quot;2019-09-23T11:26:54+00:00&quot;,
-        ///    &quot;updatedAt&quot;: &quot;2019-09-23T11:26:54+00:00&quot;,
-        ///    &quot;startedAt&quot;: &quot;2019-09-23T11:26:54+00:00&quot;,
-        ///    &quot;finishedAt&quot;: &quot;2019-09-23T11:26:54+00:00&quot;,
-        ///    &quot;eta&quot;: &quot;1 second&quot;
+        ///    &quot;attributes&quot;: { &quot;bundleId&quot;: 2, &quot;targetLanguageIds&quot;: [&quot;uk&quot;], ... },
+        ///    ...
         ///  }
         ///}.
         /// </summary>
         internal static string CommonResponses_BundleExport {
             get {
                 return ResourceManager.GetString("CommonResponses_BundleExport", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to a bundle export response with enterprise-specific attributes.
+        /// </summary>
+        internal static string CommonResponses_EnterpriseBundleExport {
+            get {
+                return ResourceManager.GetString("CommonResponses_EnterpriseBundleExport", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to a Crowdin export bundle request body.
+        /// </summary>
+        internal static string ExportBundle_Request {
+            get {
+                return ResourceManager.GetString("ExportBundle_Request", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to an Enterprise export bundle request body.
+        /// </summary>
+        internal static string EnterpriseExportBundle_Request {
+            get {
+                return ResourceManager.GetString("EnterpriseExportBundle_Request", resourceCulture);
             }
         }
         

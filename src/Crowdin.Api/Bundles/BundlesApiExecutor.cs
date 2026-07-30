@@ -8,6 +8,8 @@ using JetBrains.Annotations;
 using Crowdin.Api.Core;
 using Crowdin.Api.SourceFiles;
 
+#nullable enable
+
 namespace Crowdin.Api.Bundles
 {
     public class BundlesApiExecutor : IBundlesApiExecutor
@@ -130,10 +132,10 @@ namespace Crowdin.Api.Bundles
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.bundles.exports.post">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<BundleExport> ExportBundle(long projectId, long bundleId)
+        public async Task<BundleExport> ExportBundle(long projectId, long bundleId, ExportBundleRequest? request = null)
         {
             string url = FormUrl_BundleExports(projectId, bundleId);
-            CrowdinApiResult result = await _apiClient.SendPostRequest(url);
+            CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
             return _jsonParser.ParseResponseObject<BundleExport>(result.JsonObject);
         }
 

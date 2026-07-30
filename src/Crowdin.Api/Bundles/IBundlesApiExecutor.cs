@@ -6,6 +6,8 @@ using JetBrains.Annotations;
 
 using Crowdin.Api.SourceFiles;
 
+#nullable enable
+
 namespace Crowdin.Api.Bundles
 {
     [PublicAPI]
@@ -25,7 +27,7 @@ namespace Crowdin.Api.Bundles
 
         Task<DownloadLink> DownloadBundle(long projectId, long bundleId, string exportId);
 
-        Task<BundleExport> ExportBundle(long projectId, long bundleId);
+        Task<BundleExport> ExportBundle(long projectId, long bundleId, ExportBundleRequest? request = null);
 
         Task<BundleExport> CheckBundleExportStatus(long projectId, long bundleId, string exportId);
 

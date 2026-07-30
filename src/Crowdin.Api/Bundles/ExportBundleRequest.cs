@@ -1,4 +1,5 @@
 
+using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
@@ -7,13 +8,15 @@ using Newtonsoft.Json;
 namespace Crowdin.Api.Bundles
 {
     [PublicAPI]
-    public class BundleExportAttributes
+    public class ExportBundleRequest
     {
-        [JsonProperty("bundleId")]
-        public long BundleId { get; set; }
+    }
 
+    [PublicAPI]
+    public class CrowdinExportBundleRequest : ExportBundleRequest
+    {
         [JsonProperty("targetLanguageIds")]
-        public string[]? TargetLanguageIds { get; set; }
+        public ICollection<string>? TargetLanguageIds { get; set; }
 
         [JsonProperty("skipUntranslatedStrings")]
         public bool? SkipUntranslatedStrings { get; set; }
@@ -23,6 +26,19 @@ namespace Crowdin.Api.Bundles
 
         [JsonProperty("exportApprovedOnly")]
         public bool? ExportApprovedOnly { get; set; }
+    }
+
+    [PublicAPI]
+    public class EnterpriseExportBundleRequest : ExportBundleRequest
+    {
+        [JsonProperty("targetLanguageIds")]
+        public ICollection<string>? TargetLanguageIds { get; set; }
+
+        [JsonProperty("skipUntranslatedStrings")]
+        public bool? SkipUntranslatedStrings { get; set; }
+
+        [JsonProperty("skipUntranslatedFiles")]
+        public bool? SkipUntranslatedFiles { get; set; }
 
         [JsonProperty("exportWithMinApprovalsCount")]
         public int? ExportWithMinApprovalsCount { get; set; }
