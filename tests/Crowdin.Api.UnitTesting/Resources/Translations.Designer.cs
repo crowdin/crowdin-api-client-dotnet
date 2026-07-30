@@ -129,6 +129,18 @@ namespace Crowdin.Api.UnitTesting.Resources {
             }
         }
 
+        internal static string ApplyPreTranslation_Request_WithNewFields {
+            get {
+                return ResourceManager.GetString("ApplyPreTranslation_Request_WithNewFields", resourceCulture);
+            }
+        }
+
+        internal static string ApplyPreTranslation_Response_WithNewFields {
+            get {
+                return ResourceManager.GetString("ApplyPreTranslation_Response_WithNewFields", resourceCulture);
+            }
+        }
+
         internal static string RevalidateQaChecks_Request {
             get {
                 return ResourceManager.GetString("RevalidateQaChecks_Request", resourceCulture);

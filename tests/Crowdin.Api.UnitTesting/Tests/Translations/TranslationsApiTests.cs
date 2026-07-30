@@ -169,6 +169,43 @@ namespace Crowdin.Api.UnitTesting.Tests.Translations
         }
 
         [Fact]
+        public async Task ApplyPreTranslation_WithNewFields()
+        {
+            const int projectId = 1;
+
+            var body = new ApplyPreTranslationRequest
+            {
+                LanguageIds = new HashSet<string> { "uk" },
+                Scope = PreTranslationScope.Translated,
+                TranslationModifiedBefore = new DateTimeOffset(2024, 1, 15, 0, 0, 0, TimeSpan.Zero),
+                ReplaceTranslationsOption = ReplaceTranslationsOption.AutoTranslated,
+                ResetApprovalStatus = true
+            };
+
+            var mockClient = new Mock<ICrowdinApiClient>();
+
+            mockClient
+                .Setup(client => client.SendPostRequest(
+                    $"/projects/{projectId}/pre-translations", body, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.Accepted,
+                    JsonObject = JObject.Parse(Resources.Translations.ApplyPreTranslation_Response_WithNewFields)
+                });
+
+            var executor = new TranslationsApiExecutor(mockClient.Object, TestUtils.CreateJsonParser());
+            PreTranslation preTranslation = await executor.ApplyPreTranslation(projectId, body);
+
+            Assert.NotNull(preTranslation);
+            PreTranslateAttributes? attributes = preTranslation.Attributes;
+            Assert.NotNull(attributes);
+            Assert.Equal(PreTranslationScope.Translated, attributes.Scope);
+            Assert.Equal(new DateTimeOffset(2024, 1, 15, 0, 0, 0, TimeSpan.Zero), attributes.TranslationModifiedBefore);
+            Assert.Equal(ReplaceTranslationsOption.AutoTranslated, attributes.ReplaceTranslationsOption);
+            Assert.True(attributes.ResetApprovalStatus);
+        }
+
+        [Fact]
         public async Task UploadTranslations()
         {
             const int projectId = 1;
