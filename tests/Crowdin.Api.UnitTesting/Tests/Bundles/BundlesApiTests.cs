@@ -1,14 +1,17 @@
-using Crowdin.Api.Bundles;
-using Crowdin.Api.Core;
-using Crowdin.Api.SourceFiles;
-using Moq;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+
 using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
+
+using Moq;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using Xunit;
+
+using Crowdin.Api.Bundles;
+using Crowdin.Api.Core;
+using Crowdin.Api.SourceFiles;
 
 namespace Crowdin.Api.UnitTesting.Tests.Bundles
 {
@@ -249,7 +252,78 @@ namespace Crowdin.Api.UnitTesting.Tests.Bundles
             var executor = new BundlesApiExecutor(mockClient.Object);
             BundleExport? response = await executor.ExportBundle(projectId, bundleId);
 
-            Assert_BundleExport(response);
+            Assert_BundleExport_Crowdin(response);
+        }
+
+        [Fact]
+        public async Task ExportBundle_WithCrowdinRequest()
+        {
+            const int projectId = 1, bundleId = 2;
+
+            var request = new CrowdinExportBundleRequest
+            {
+                TargetLanguageIds = ["uk"],
+                SkipUntranslatedStrings = false,
+                SkipUntranslatedFiles = false,
+                ExportApprovedOnly = true
+            };
+
+            string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
+            string expectedRequestJson = TestUtils.CompactJson(Resources.Bundles.ExportBundle_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/bundles/{bundleId}/exports";
+
+            mockClient
+                .Setup(client => client.SendPostRequest(url, request, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.Accepted,
+                    JsonObject = JObject.Parse(Resources.Bundles.CommonResponses_BundleExport)
+                });
+
+            var executor = new BundlesApiExecutor(mockClient.Object);
+            BundleExport? response = await executor.ExportBundle(projectId, bundleId, request);
+
+            Assert_BundleExport_Crowdin(response);
+        }
+
+        [Fact]
+        public async Task ExportBundle_WithEnterpriseRequest()
+        {
+            const int projectId = 1, bundleId = 2;
+
+            var request = new EnterpriseExportBundleRequest
+            {
+                TargetLanguageIds = ["uk"],
+                SkipUntranslatedStrings = false,
+                SkipUntranslatedFiles = false,
+                ExportWithMinApprovalsCount = 1,
+                ExportStringsThatPassedWorkflow = true
+            };
+
+            string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
+            string expectedRequestJson = TestUtils.CompactJson(Resources.Bundles.EnterpriseExportBundle_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/bundles/{bundleId}/exports";
+
+            mockClient
+                .Setup(client => client.SendPostRequest(url, request, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.Accepted,
+                    JsonObject = JObject.Parse(Resources.Bundles.CommonResponses_EnterpriseBundleExport)
+                });
+
+            var executor = new BundlesApiExecutor(mockClient.Object);
+            BundleExport? response = await executor.ExportBundle(projectId, bundleId, request);
+
+            Assert_BundleExport_Enterprise(response);
         }
 
         [Fact]
@@ -273,7 +347,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Bundles
             var executor = new BundlesApiExecutor(mockClient.Object);
             BundleExport? response = await executor.CheckBundleExportStatus(projectId, bundleId, exportId);
 
-            Assert_BundleExport(response);
+            Assert_BundleExport_Crowdin(response);
         }
 
         private static void Assert_Bundle(Bundle? model)
@@ -309,7 +383,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Bundles
             Assert.Equal(DateTimeOffset.Parse("2019-09-20T12:22:20+00:00"), model.UpdatedAt);
         }
 
-        private static void Assert_BundleExport(BundleExport? model)
+        private static void Assert_BundleExport_Common(BundleExport? model)
         {
             Assert.NotNull(model);
 
@@ -320,11 +394,34 @@ namespace Crowdin.Api.UnitTesting.Tests.Bundles
             Assert.NotNull(model.Attributes);
             Assert.Equal(2, model.Attributes.BundleId);
 
+            Assert.NotNull(model.Attributes.TargetLanguageIds);
+            Assert.Single(model.Attributes.TargetLanguageIds!);
+            Assert.Equal("uk", model.Attributes.TargetLanguageIds![0]);
+
+            Assert.False(model.Attributes.SkipUntranslatedStrings);
+            Assert.False(model.Attributes.SkipUntranslatedFiles);
+
             DateTimeOffset date = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00");
             Assert.Equal(date, model.CreatedAt);
             Assert.Equal(date, model.UpdatedAt);
             Assert.Equal(date, model.StartedAt);
             Assert.Equal(date, model.FinishedAt);
+        }
+
+        private static void Assert_BundleExport_Crowdin(BundleExport? model)
+        {
+            Assert_BundleExport_Common(model);
+            Assert.True(model!.Attributes.ExportApprovedOnly);
+            Assert.Null(model.Attributes.ExportWithMinApprovalsCount);
+            Assert.Null(model.Attributes.ExportStringsThatPassedWorkflow);
+        }
+
+        private static void Assert_BundleExport_Enterprise(BundleExport? model)
+        {
+            Assert_BundleExport_Common(model);
+            Assert.Null(model!.Attributes.ExportApprovedOnly);
+            Assert.Equal(1, model.Attributes.ExportWithMinApprovalsCount);
+            Assert.True(model.Attributes.ExportStringsThatPassedWorkflow);
         }
     }
 }

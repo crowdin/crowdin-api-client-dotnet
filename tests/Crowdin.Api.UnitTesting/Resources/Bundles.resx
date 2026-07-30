@@ -266,7 +266,11 @@
     "status": "finished",
     "progress": 100,
     "attributes": {
-        "bundleId": 2
+      "bundleId": 2,
+      "targetLanguageIds": ["uk"],
+      "skipUntranslatedStrings": false,
+      "skipUntranslatedFiles": false,
+      "exportApprovedOnly": true
     },
     "createdAt": "2019-09-23T11:26:54+00:00",
     "updatedAt": "2019-09-23T11:26:54+00:00",
@@ -274,6 +278,45 @@
     "finishedAt": "2019-09-23T11:26:54+00:00",
     "eta": "1 second"
   }
+}</value>
+  </data>
+  <data name="CommonResponses_EnterpriseBundleExport" xml:space="preserve">
+    <value>{
+  "data": {
+    "identifier": "50fb3506-4127-4ba8-8296-f97dc7e3e0c3",
+    "status": "finished",
+    "progress": 100,
+    "attributes": {
+      "bundleId": 2,
+      "targetLanguageIds": ["uk"],
+      "skipUntranslatedStrings": false,
+      "skipUntranslatedFiles": false,
+      "exportWithMinApprovalsCount": 1,
+      "exportStringsThatPassedWorkflow": true
+    },
+    "createdAt": "2019-09-23T11:26:54+00:00",
+    "updatedAt": "2019-09-23T11:26:54+00:00",
+    "startedAt": "2019-09-23T11:26:54+00:00",
+    "finishedAt": "2019-09-23T11:26:54+00:00",
+    "eta": "1 second"
+  }
+}</value>
+  </data>
+  <data name="ExportBundle_Request" xml:space="preserve">
+    <value>{
+  "targetLanguageIds": ["uk"],
+  "skipUntranslatedStrings": false,
+  "skipUntranslatedFiles": false,
+  "exportApprovedOnly": true
+}</value>
+  </data>
+  <data name="EnterpriseExportBundle_Request" xml:space="preserve">
+    <value>{
+  "targetLanguageIds": ["uk"],
+  "skipUntranslatedStrings": false,
+  "skipUntranslatedFiles": false,
+  "exportWithMinApprovalsCount": 1,
+  "exportStringsThatPassedWorkflow": true
 }</value>
   </data>
   <data name="CommonResponses_Bundle" xml:space="preserve">
