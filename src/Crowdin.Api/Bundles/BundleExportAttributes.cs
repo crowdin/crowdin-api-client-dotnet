@@ -16,10 +16,10 @@ namespace Crowdin.Api.Bundles
         public string[]? TargetLanguageIds { get; set; }
 
         [JsonProperty("skipUntranslatedStrings")]
-        public bool? SkipUntranslatedStrings { get; set; }
+        public bool SkipUntranslatedStrings { get; set; }
 
         [JsonProperty("skipUntranslatedFiles")]
-        public bool? SkipUntranslatedFiles { get; set; }
+        public bool SkipUntranslatedFiles { get; set; }
 
         [JsonProperty("exportApprovedOnly")]
         public bool? ExportApprovedOnly { get; set; }
