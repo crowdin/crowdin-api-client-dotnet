@@ -62,6 +62,35 @@ namespace Crowdin.Api.UnitTesting.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to {
+        ///  &quot;format&quot;: &quot;csv&quot;,
+        ///  &quot;exportType&quot;: &quot;terms&quot;,
+        ///  &quot;statuses&quot;: [ &quot;preferred&quot;, &quot;admitted&quot; ],
+        ///  ...
+        ///}.
+        /// </summary>
+        internal static string ExportGlossary_Request {
+            get {
+                return ResourceManager.GetString("ExportGlossary_Request", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;data&quot;: {
+        ///    &quot;identifier&quot;: &quot;50fb3506-4127-4ba8-8296-f97dc7e3e0c3&quot;,
+        ///    &quot;status&quot;: &quot;finished&quot;,
+        ///    &quot;progress&quot;: 100,
+        ///  ...
+        ///}.
+        /// </summary>
+        internal static string ExportGlossary_Response {
+            get {
+                return ResourceManager.GetString("ExportGlossary_Response", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to {
         ///  &quot;sourceLanguageId&quot;: &quot;en&quot;,
         ///  &quot;targetLanguageId&quot;: &quot;de&quot;,
         ///  &quot;expression&quot;: &quot;Welcome!&quot;
