@@ -398,7 +398,7 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
                     TmSuggestions = true,
                     FileContent = true,
                     FileContext = true,
-                    PublicProjectDescription = true
+                    ProjectContext = true
                 }
             };
 
@@ -596,6 +596,138 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
             Assert_AiPrompt(response);
         }
 
+        [Fact]
+        public async Task AddAiPrompt_QaCheck()
+        {
+            const int userId = 1;
+
+            var request = new AddAiPromptRequest
+            {
+                Name = "QA check prompt",
+                Action = AiPromptAction.QaCheck,
+                AiProviderId = 1,
+                AiModelId = "gpt-3.5-turbo-instruct",
+                IsEnabled = true,
+                EnabledProjectIds = [23],
+                Configuration = new BasicModeAiPromptConfiguration
+                {
+                    GlossaryTerms = true,
+                    ProjectContext = true,
+                    OrganizationContext = true,
+                    EvaluationSteps = ["Check grammar", "Check terminology"]
+                }
+            };
+
+            string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
+            string expectedRequestJson = TestUtils.CompactJson(AI_Prompts.AddAiPrompt_QaCheck_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/users/{userId}/ai/prompts";
+
+            mockClient
+                .Setup(client => client.SendPostRequest(url, request, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(AI_Prompts.CommonResponses_Single)
+                });
+
+            var executor = new AiApiExecutor(mockClient.Object);
+            AiPromptResource? response = await executor.AddAiPrompt(userId, request);
+
+            Assert.NotNull(response);
+        }
+
+        [Fact]
+        public async Task GenerateAiPromptCompletion_WithOverrideValues()
+        {
+            const int userId = 1;
+            const int aiPromptId = 2;
+
+            var request = new GenerateAiPromptCompletionRequest
+            {
+                Resources = new PreTranslateActionAiPromptContextResources
+                {
+                    ProjectId = 1,
+                    TargetLanguageId = "uk",
+                    StringIds = [1, 2, 3],
+                    OverridePromptValues = new PreTranslateOverridePromptValues
+                    {
+                        ProjectName = "My project",
+                        ProjectDescription = "My project description"
+                    }
+                }
+            };
+
+            string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
+            string expectedRequestJson = TestUtils.CompactJson(AI_Prompts.GenerateAiPromptCompletion_WithOverrideValues_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/users/{userId}/ai/prompts/{aiPromptId}/completions";
+
+            mockClient
+                .Setup(client => client.SendPostRequest(url, request, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.Created,
+                    JsonObject = JObject.Parse(AI_Prompts.CommonResponses_AiPromptCompletion)
+                });
+
+            var executor = new AiApiExecutor(mockClient.Object);
+            AiPromptCompletion? response = await executor.GenerateAiPromptCompletion(userId, aiPromptId, request);
+
+            Assert_AiPromptCompletion(response);
+        }
+
+        [Fact]
+        public async Task GenerateAiPromptCompletion_QaCheck()
+        {
+            const int userId = 1;
+            const int aiPromptId = 2;
+
+            var request = new GenerateAiPromptCompletionRequest
+            {
+                Resources = new QaCheckActionAiPromptContextResources
+                {
+                    ProjectId = 1,
+                    TargetLanguageId = "uk",
+                    StringIds = [1, 2, 3],
+                    OverridePromptValues = new QaCheckOverridePromptValues
+                    {
+                        ProjectName = "My project",
+                        ProjectDescription = "My project description",
+                        OrganizationName = "My org",
+                        OrganizationDescription = "My org description"
+                    }
+                }
+            };
+
+            string actualRequestJson = JsonConvert.SerializeObject(request, JsonSettings);
+            string expectedRequestJson = TestUtils.CompactJson(AI_Prompts.GenerateAiPromptCompletion_QaCheck_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/users/{userId}/ai/prompts/{aiPromptId}/completions";
+
+            mockClient
+                .Setup(client => client.SendPostRequest(url, request, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.Created,
+                    JsonObject = JObject.Parse(AI_Prompts.CommonResponses_AiPromptCompletion)
+                });
+
+            var executor = new AiApiExecutor(mockClient.Object);
+            AiPromptCompletion? response = await executor.GenerateAiPromptCompletion(userId, aiPromptId, request);
+
+            Assert_AiPromptCompletion(response);
+        }
+
         private static void Assert_AiPrompt(AiPromptResource? prompt)
         {
             Assert.NotNull(prompt);
@@ -618,7 +750,7 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
             Assert.True(config.GlossaryTerms);
             Assert.True(config.TmSuggestions);
             Assert.True(config.FileContent);
-            Assert.True(config.PublicProjectDescription);
+            Assert.True(config.ProjectContext);
 
             OtherLanguageTranslationsConfig? otherLanguageTranslations = config.OtherLanguageTranslations;
             ArgumentNullException.ThrowIfNull(otherLanguageTranslations);

@@ -8,6 +8,12 @@ namespace Crowdin.Api.AI
     public enum AiPromptAction
     {
         [Description("pre_translate")]
-        PreTranslate
+        PreTranslate,
+
+        [Description("alignment")]
+        Alignment,
+
+        [Description("qa_check")]
+        QaCheck
     }
 }

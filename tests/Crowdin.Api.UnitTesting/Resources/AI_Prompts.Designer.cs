@@ -61,6 +61,15 @@ namespace Crowdin.Api.UnitTesting.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string for AddAiPrompt_QaCheck_Request.
+        /// </summary>
+        internal static string AddAiPrompt_QaCheck_Request {
+            get {
+                return ResourceManager.GetString("AddAiPrompt_QaCheck_Request", resourceCulture);
+            }
+        }
+
+        /// <summary>
         ///   Looks up a localized string similar to {
         ///  &quot;name&quot;: &quot;Pre-translate prompt&quot;,
         ///  &quot;action&quot;: &quot;pre_translate&quot;,
@@ -237,6 +246,24 @@ namespace Crowdin.Api.UnitTesting.Resources {
         internal static string GenerateAiPromptCompletion_Request {
             get {
                 return ResourceManager.GetString("GenerateAiPromptCompletion_Request", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string for GenerateAiPromptCompletion_WithOverrideValues_Request.
+        /// </summary>
+        internal static string GenerateAiPromptCompletion_WithOverrideValues_Request {
+            get {
+                return ResourceManager.GetString("GenerateAiPromptCompletion_WithOverrideValues_Request", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string for GenerateAiPromptCompletion_QaCheck_Request.
+        /// </summary>
+        internal static string GenerateAiPromptCompletion_QaCheck_Request {
+            get {
+                return ResourceManager.GetString("GenerateAiPromptCompletion_QaCheck_Request", resourceCulture);
             }
         }
     }

@@ -15,12 +15,9 @@ namespace Crowdin.Api.AI
     [PublicAPI]
     public enum AiSettingsPatchPath
     {
-        [Description("/assistActionAiPromptId")]
-        AssistActionAiPromptId,
-        
         [Description("/shortcuts")]
         Shortcuts,
-        
+
         [Description("/showSuggestion")]
         ShowSuggestion
     }

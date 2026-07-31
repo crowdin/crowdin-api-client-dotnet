@@ -63,7 +63,6 @@ namespace Crowdin.Api.UnitTesting.Resources {
         /// <summary>
         ///   Looks up a localized string similar to {
         ///  &quot;data&quot;: {
-        ///    &quot;assistActionAiPromptId&quot;: 2,
         ///    &quot;showSuggestion&quot;: true,
         ///    &quot;shortcuts&quot;: [
         ///      {
@@ -84,7 +83,7 @@ namespace Crowdin.Api.UnitTesting.Resources {
         /// <summary>
         ///   Looks up a localized string similar to [
         ///  {
-        ///    &quot;path&quot;: &quot;/assistActionAiPromptId&quot;,
+        ///    &quot;path&quot;: &quot;/showSuggestion&quot;,
         ///    &quot;op&quot;: &quot;replace&quot;,
         ///    &quot;value&quot;: true
         ///  }
