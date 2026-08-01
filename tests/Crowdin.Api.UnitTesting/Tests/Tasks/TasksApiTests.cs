@@ -107,11 +107,14 @@ namespace Crowdin.Api.UnitTesting.Tests.Tasks
                 Description = "Vendor task description",
                 LabelIds = [10],
                 SkipAssignedStrings = true,
-                DeadLine = DateTimeOffset.Parse("2019-09-27T07:00:14+00:00").ToLocalTime()
+                DeadLine = DateTimeOffset.Parse("2019-09-27T07:00:14+00:00")
             };
 
-            string actualJson = JsonConvert.SerializeObject(request, Settings);
-            string expectedJson = TestUtils.CompactJson(Resources.Tasks.AddTask_CrowdinVendorTaskCreateForm);
+            var utcSettings = TestUtils.CreateJsonSerializerOptions();
+            utcSettings.DateParseHandling = DateParseHandling.DateTimeOffset;
+
+            string actualJson = JsonConvert.SerializeObject(request, utcSettings);
+            string expectedJson = TestUtils.CompactJson(Resources.Tasks.AddTask_CrowdinVendorTaskCreateForm, utcSettings);
             Assert.Equal(expectedJson, actualJson);
         }
 

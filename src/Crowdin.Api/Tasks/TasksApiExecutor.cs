@@ -40,10 +40,9 @@ namespace Crowdin.Api.Tasks
             int offset = 0,
             TaskStatus? status = null,
             long? assigneeId = null,
-            IEnumerable<SortingRule>? orderBy = null,
-            long? batchId = null)
+            IEnumerable<SortingRule>? orderBy = null)
         {
-            return ListTasks(projectId, new TasksListParams(limit, offset, status, assigneeId, orderBy, batchId));
+            return ListTasks(projectId, new TasksListParams(limit, offset, status, assigneeId, orderBy));
         }
 
         /// <summary>
@@ -58,10 +57,9 @@ namespace Crowdin.Api.Tasks
             int offset = 0,
             IEnumerable<TaskStatus>? statuses = null,
             long? assigneeId = null,
-            IEnumerable<SortingRule>? orderBy = null,
-            long? batchId = null)
+            IEnumerable<SortingRule>? orderBy = null)
         {
-            return ListTasks(projectId, new TasksListParams(limit, offset, statuses, assigneeId, orderBy, batchId));
+            return ListTasks(projectId, new TasksListParams(limit, offset, statuses, assigneeId, orderBy));
         }
 
         /// <summary>

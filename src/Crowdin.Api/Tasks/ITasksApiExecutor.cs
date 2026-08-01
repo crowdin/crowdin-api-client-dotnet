@@ -17,8 +17,7 @@ namespace Crowdin.Api.Tasks
             int offset = 0,
             TaskStatus? status = null,
             long? assigneeId = null,
-            IEnumerable<SortingRule>? orderBy = null,
-            long? batchId = null);
+            IEnumerable<SortingRule>? orderBy = null);
 
         Task<ResponseList<TaskResource>> ListTasks(
             long projectId,
@@ -26,8 +25,7 @@ namespace Crowdin.Api.Tasks
             int offset = 0,
             IEnumerable<TaskStatus>? statuses = null,
             long? assigneeId = null,
-            IEnumerable<SortingRule>? orderBy = null,
-            long? batchId = null);
+            IEnumerable<SortingRule>? orderBy = null);
 
         Task<ResponseList<TaskResource>> ListTasks(long projectId, TasksListParams @params);
 

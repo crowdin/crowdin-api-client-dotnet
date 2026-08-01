@@ -91,5 +91,8 @@ namespace Crowdin.Api.Tasks
 
         [JsonProperty("reportSettingsTemplateId")]
         public long? ReportSettingsTemplateId { get; set; }
+
+        [JsonProperty("batchId")]
+        public long? BatchId { get; set; }
     }
 }
