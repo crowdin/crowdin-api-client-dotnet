@@ -182,6 +182,10 @@ namespace Crowdin.Api.UnitTesting.Tests.Translations
                 ResetApprovalStatus = true
             };
 
+            string actualRequestJson = JsonConvert.SerializeObject(body, JsonSettings);
+            string expectedRequestJson = TestUtils.CompactJson(Resources.Translations.ApplyPreTranslation_Request_WithNewFields);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+
             var mockClient = new Mock<ICrowdinApiClient>();
 
             mockClient
