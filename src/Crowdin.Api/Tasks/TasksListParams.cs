@@ -1,8 +1,10 @@
 
 using System.Collections.Generic;
 using System.Linq;
-using Crowdin.Api.Core;
+
 using JetBrains.Annotations;
+
+using Crowdin.Api.Core;
 
 #nullable enable
 
@@ -12,18 +14,20 @@ namespace Crowdin.Api.Tasks
     public class TasksListParams : IQueryParamsProvider
     {
         public int Limit { get; set; } = 25;
-        
+
         public int Offset { get; set; }
 
         public IEnumerable<TaskStatus>? Statuses { get; set; }
 
         public long? AssigneeId { get; set; }
-        
+
+        public long? BatchId { get; set; }
+
         public IEnumerable<SortingRule>? OrderBy { get; set; }
 
         public TasksListParams()
         {
-            
+
         }
 
         public TasksListParams(
@@ -31,13 +35,15 @@ namespace Crowdin.Api.Tasks
             int offset,
             TaskStatus? status,
             long? assigneeId,
-            IEnumerable<SortingRule>? orderBy)
+            IEnumerable<SortingRule>? orderBy,
+            long? batchId = null)
         {
             Limit = limit;
             Offset = offset;
             Statuses = status.HasValue ? new[] { status.Value } : null;
             AssigneeId = assigneeId;
             OrderBy = orderBy;
+            BatchId = batchId;
         }
 
         public TasksListParams(
@@ -45,13 +51,15 @@ namespace Crowdin.Api.Tasks
             int offset,
             IEnumerable<TaskStatus>? statuses,
             long? assigneeId,
-            IEnumerable<SortingRule>? orderBy)
+            IEnumerable<SortingRule>? orderBy,
+            long? batchId = null)
         {
             Limit = limit;
             Offset = offset;
             Statuses = statuses;
             AssigneeId = assigneeId;
             OrderBy = orderBy;
+            BatchId = batchId;
         }
 
         public IDictionary<string, string> ToQueryParams()
@@ -63,8 +71,9 @@ namespace Crowdin.Api.Tasks
             {
                 queryParams.Add("status", string.Join(",", Statuses.Select(status => status.ToDescriptionString())));
             }
-            
+
             queryParams.AddParamIfPresent("assigneeId", AssigneeId);
+            queryParams.AddParamIfPresent("batchId", BatchId);
             queryParams.AddSortingRulesIfPresent(OrderBy);
             return queryParams;
         }

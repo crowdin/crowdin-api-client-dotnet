@@ -99,6 +99,18 @@ namespace Crowdin.Api.UnitTesting.Resources {
             }
         }
         
+        internal static string AddTask_CrowdinVendorTaskCreateForm {
+            get {
+                return ResourceManager.GetString("AddTask_CrowdinVendorTaskCreateForm", resourceCulture);
+            }
+        }
+
+        internal static string ListTasks_WithBatchId {
+            get {
+                return ResourceManager.GetString("ListTasks_WithBatchId", resourceCulture);
+            }
+        }
+
         internal static string GetTask_Response {
             get {
                 return ResourceManager.GetString("GetTask_Response", resourceCulture);

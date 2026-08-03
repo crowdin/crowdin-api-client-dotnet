@@ -5,11 +5,14 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
+using Crowdin.Api.Core;
+
 #nullable enable
 
 namespace Crowdin.Api.Tasks
 {
     [PublicAPI]
+    [Obsolete(MessageTexts.DeprecatedModel)]
     public class VendorManualPendingTaskCreateForm : AddTaskRequest
     {
         [JsonProperty("precedingTaskId")]

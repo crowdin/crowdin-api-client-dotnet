@@ -16,6 +16,7 @@ using Crowdin.Api.Languages;
 using Crowdin.Api.Tasks;
 
 using TaskStatus = Crowdin.Api.Tasks.TaskStatus;
+using TaskType = Crowdin.Api.Tasks.TaskType;
 
 namespace Crowdin.Api.UnitTesting.Tests.Tasks
 {
@@ -90,6 +91,101 @@ namespace Crowdin.Api.UnitTesting.Tests.Tasks
             string actualRequestJson = JsonConvert.SerializeObject(request, Settings);
             string expectedRequestJson = TestUtils.CompactJson(Resources.Tasks.AddTask_RightRequestJson_VendorManual);
             Assert.Equal(expectedRequestJson, actualRequestJson);
+        }
+
+        [Fact]
+        public void AddTask_CrowdinVendorTaskCreateForm_RequestSerialization()
+        {
+            var request = new CrowdinVendorTaskCreateForm
+            {
+                Title = "My vendor task",
+                LanguageId = "es",
+                Type = TaskType.TranslateByVendor,
+                Vendor = "crowdin_store_vendor",
+                FileIds = [1, 2],
+                Status = TaskStatus.Todo,
+                Description = "Vendor task description",
+                LabelIds = [10],
+                SkipAssignedStrings = true,
+                DeadLine = DateTimeOffset.Parse("2019-09-27T07:00:14+00:00")
+            };
+
+            var utcSettings = TestUtils.CreateJsonSerializerOptions();
+            utcSettings.DateParseHandling = DateParseHandling.DateTimeOffset;
+
+            string actualJson = JsonConvert.SerializeObject(request, utcSettings);
+            string expectedJson = TestUtils.CompactJson(Resources.Tasks.AddTask_CrowdinVendorTaskCreateForm, utcSettings);
+            Assert.Equal(expectedJson, actualJson);
+        }
+
+        [Fact]
+        public async System.Threading.Tasks.Task ListTasks_WithBatchId()
+        {
+            const int projectId = 1;
+            const long batchId = 5;
+
+            var url = $"/projects/{projectId}/tasks";
+
+            var queryParams = new Dictionary<string, string>
+            {
+                { "limit", "25" },
+                { "offset", "0" },
+                { "batchId", batchId.ToString() }
+            };
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            mockClient
+                .Setup(client => client.SendGetRequest(url, queryParams))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Resources.Tasks.ListTasks_WithBatchId)
+                });
+
+            var executor = new TasksApiExecutor(mockClient.Object);
+            var response = await executor.ListTasks(projectId, new TasksListParams { BatchId = batchId });
+
+            Assert.NotNull(response);
+            Assert.Single(response.Data);
+            Assert.Equal(2, response.Data[0].Id);
+            Assert.Equal(batchId, response.Data[0].BatchId);
+        }
+
+        [Fact]
+        public void EditTask_BatchId_PatchSerialization()
+        {
+            var patches = new[]
+            {
+                new TaskPatch
+                {
+                    Operation = PatchOperation.Replace,
+                    Path = TaskPatchPath.BatchId,
+                    Value = 7
+                }
+            };
+
+            string actualJson = JsonConvert.SerializeObject(patches, Settings);
+            Assert.Contains("\"path\":\"/batchId\"", actualJson);
+            Assert.Contains("\"value\":7", actualJson);
+        }
+
+        [Fact]
+        public void EditTask_ResetScope_PatchSerialization()
+        {
+            var patches = new[]
+            {
+                new TaskPatch
+                {
+                    Operation = PatchOperation.Replace,
+                    Path = TaskPatchPath.ResetScope,
+                    Value = true
+                }
+            };
+
+            string actualJson = JsonConvert.SerializeObject(patches, Settings);
+            Assert.Contains("\"path\":\"/resetScope\"", actualJson);
+            Assert.Contains("\"value\":true", actualJson);
         }
 
         [Fact]
