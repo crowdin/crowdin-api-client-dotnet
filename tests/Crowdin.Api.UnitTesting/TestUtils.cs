@@ -1,11 +1,13 @@
 
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Crowdin.Api.Core;
 using Crowdin.Api.Core.Converters;
 using Moq;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace Crowdin.Api.UnitTesting
 {
@@ -65,16 +67,11 @@ namespace Crowdin.Api.UnitTesting
 
         public static string CompactJson(string jsonToCompact, JsonSerializerSettings? settings = null)
         {
-            settings ??= CreateJsonSerializerOptions();
-
-            object? dataFromJson = JsonConvert.DeserializeObject(jsonToCompact, settings);
-
-            if (dataFromJson is null)
+            using var reader = new JsonTextReader(new StringReader(jsonToCompact))
             {
-                throw new ArgumentNullException(nameof(dataFromJson));
-            }
-
-            return JsonConvert.SerializeObject(dataFromJson, settings);
+                DateParseHandling = DateParseHandling.None
+            };
+            return JToken.Load(reader).ToString(Formatting.None);
         }
 
         public static IDictionary<string, string> CreateQueryParamsFromPaging(int limit = 25, int offset = 0)
