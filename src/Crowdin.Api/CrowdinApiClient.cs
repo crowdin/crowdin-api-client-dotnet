@@ -314,6 +314,33 @@ namespace Crowdin.Api
 
             return SendRequest(requestFn);
         }
+
+        Task<CrowdinApiResult> ICrowdinApiClient.SendDeleteRequest_FullResult(
+            string subUrl,
+            IDictionary<string, string>? queryParams,
+            IDictionary<string, string>? extraHeaders)
+        {
+            Func<HttpRequestMessage> requestFn = () =>
+            {
+                var request = new HttpRequestMessage
+                {
+                    Method = HttpMethod.Delete,
+                    RequestUri = new Uri(FormRequestUrl(subUrl, queryParams))
+                };
+
+                if (extraHeaders != null && extraHeaders.Count > 0)
+                {
+                    foreach (KeyValuePair<string, string> kvp in extraHeaders)
+                    {
+                        request.Headers.Add(kvp.Key, kvp.Value);
+                    }
+                }
+
+                return request;
+            };
+
+            return SendRequest(requestFn);
+        }
         
         Task<CrowdinApiResult> ICrowdinApiClient.SendGraphQLRequest(GraphQLRequest body)
         {

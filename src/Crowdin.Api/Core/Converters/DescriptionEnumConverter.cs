@@ -68,6 +68,9 @@ namespace Crowdin.Api.Core.Converters
                 if(objectType == typeof(BuildStatus) && descriptionValue.Equals("inProgress"))
                     return BuildStatus.InProgress;
 
+                if(objectType == typeof(OperationStatus) && descriptionValue.Equals("in_progress"))
+                    return OperationStatus.InProgress;
+
                 // Check if value has own string representation in [Description] attribute
                 MemberInfo? field = objectType
                     .GetMembers(BindingFlags.Public | BindingFlags.Static)

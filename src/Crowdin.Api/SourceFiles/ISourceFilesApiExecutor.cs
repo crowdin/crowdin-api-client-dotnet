@@ -33,6 +33,12 @@ namespace Crowdin.Api.SourceFiles
         Task DeleteBranch(long projectId, long branchId);
 
         [Obsolete(MessageTexts.UseBranchesNamespace)]
+        Task<DeleteJobStatus?> DeleteBranch(long projectId, long branchId, bool isAsync);
+
+        [Obsolete(MessageTexts.UseBranchesNamespace)]
+        Task<DeleteJobStatus> CheckBranchDeletionStatus(long projectId, long branchId, string jobIdentifier);
+
+        [Obsolete(MessageTexts.UseBranchesNamespace)]
         Task<Branch> EditBranch(long projectId, long branchId, IEnumerable<BranchPatch> patches);
 
         #endregion
@@ -56,6 +62,10 @@ namespace Crowdin.Api.SourceFiles
         Task<Directory> GetDirectory(long projectId, long directoryId);
 
         Task DeleteDirectory(long projectId, long directoryId);
+
+        Task<DeleteJobStatus?> DeleteDirectory(long projectId, long directoryId, bool isAsync);
+
+        Task<DeleteJobStatus> CheckDirectoryDeletionStatus(long projectId, long directoryId, string jobIdentifier);
 
         Task<Directory> EditDirectory(long projectId, long directoryId, IEnumerable<DirectoryPatch> patches);
 
@@ -82,6 +92,10 @@ namespace Crowdin.Api.SourceFiles
             UpdateOrRestoreFile(long projectId, long fileId, UpdateOrRestoreFileRequest request);
 
         Task DeleteFile(long projectId, long fileId);
+
+        Task<DeleteJobStatus?> DeleteFile(long projectId, long fileId, bool isAsync);
+
+        Task<DeleteJobStatus> CheckFileDeletionStatus(long projectId, long fileId, string jobIdentifier);
 
         Task<File> EditFile(long projectId, long fileId, IEnumerable<FilePatch> patches);
 
