@@ -1,4 +1,4 @@
-﻿
+
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
@@ -26,6 +26,37 @@ namespace Crowdin.Api.StringTranslations
         {
             _apiClient = apiClient;
             _jsonParser = jsonParser;
+        }
+
+        /// <summary>
+        /// Search translations. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#operation/api.translations.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/string-based/#operation/api.translations.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public Task<ResponseList<TranslationSearchResource>> SearchTranslations(
+            string filter,
+            IEnumerable<long>? projectIds = null,
+            long? userId = null,
+            IEnumerable<string>? languageIds = null,
+            int? denormalizePlaceholders = null,
+            int limit = 25,
+            int offset = 0)
+        {
+            return SearchTranslations(new TranslationsSearchParams(
+                filter, projectIds, userId, languageIds, denormalizePlaceholders, limit, offset));
+        }
+
+        /// <summary>
+        /// Search translations. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#operation/api.translations.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/string-based/#operation/api.translations.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<TranslationSearchResource>> SearchTranslations(TranslationsSearchParams @params)
+        {
+            CrowdinApiResult result = await _apiClient.SendGetRequest("/translations", @params.ToQueryParams());
+            return _jsonParser.ParseResponseList<TranslationSearchResource>(result.JsonObject);
         }
 
         #region Approvals

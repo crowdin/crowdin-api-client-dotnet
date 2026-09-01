@@ -29,6 +29,37 @@ namespace Crowdin.Api.SourceStrings
         }
 
         /// <summary>
+        /// Search strings. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#operation/api.strings.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/string-based/#operation/api.strings.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public Task<ResponseList<SourceString>> SearchStrings(
+            string filter,
+            IEnumerable<long>? projectIds = null,
+            long? userId = null,
+            StringSearchScope? scope = null,
+            int? denormalizePlaceholders = null,
+            int limit = 25,
+            int offset = 0)
+        {
+            return SearchStrings(new StringsSearchParams(
+                filter, projectIds, userId, scope, denormalizePlaceholders, limit, offset));
+        }
+
+        /// <summary>
+        /// Search strings. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#operation/api.strings.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/string-based/#operation/api.strings.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<SourceString>> SearchStrings(StringsSearchParams @params)
+        {
+            CrowdinApiResult result = await _apiClient.SendGetRequest("/strings", @params.ToQueryParams());
+            return _jsonParser.ParseResponseList<SourceString>(result.JsonObject);
+        }
+
+        /// <summary>
         /// List strings. Documentation:
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.strings.getMany">Crowdin API</a>
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.getMany">Crowdin Enterprise API</a>

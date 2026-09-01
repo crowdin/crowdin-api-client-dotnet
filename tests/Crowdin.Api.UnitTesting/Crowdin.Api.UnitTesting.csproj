@@ -606,4 +606,15 @@
         <NoWarn>0618</NoWarn>
     </PropertyGroup>
 
+    <ItemGroup>
+        <EmbeddedResource Update="Resources\OrganizationSearch.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>OrganizationSearch.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <Compile Update="Resources\OrganizationSearch.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>OrganizationSearch.resx</DependentUpon>
+        </Compile>
+    </ItemGroup>
 </Project>

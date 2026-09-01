@@ -11,6 +11,14 @@ namespace Crowdin.Api.Branches
     [PublicAPI]
     public interface IBranchesApiExecutor
     {
+        Task<ResponseList<Branch>> SearchBranches(
+            string filter,
+            IEnumerable<long>? projectIds = null,
+            long? userId = null,
+            int limit = 25,
+            int offset = 0);
+
+        Task<ResponseList<Branch>> SearchBranches(BranchesSearchParams @params);
         Task<Branch> GetClonedBranch(long projectId, long branchId, string cloneId);
 
         Task<BranchCloneStatus> CloneBranch(long projectId, long branchId, CloneBranchRequest request);
