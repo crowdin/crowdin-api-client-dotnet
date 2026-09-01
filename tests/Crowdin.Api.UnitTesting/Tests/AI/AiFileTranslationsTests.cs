@@ -33,6 +33,7 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
                 ParserVersion = 1,
                 TmIds = [123],
                 GlossaryIds = [456],
+                StyleGuideIds = [654],
                 AiPromptId = 789,
                 AiProviderId = 12,
                 AiModelId = "gpt-4.1",
