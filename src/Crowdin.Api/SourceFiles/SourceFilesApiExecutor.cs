@@ -125,6 +125,34 @@ namespace Crowdin.Api.SourceFiles
         #region Directories
 
         /// <summary>
+        /// Search directories. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/file-based/#operation/api.directories.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/file-based/#operation/api.directories.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public Task<ResponseList<Directory>> SearchDirectories(
+            string filter,
+            IEnumerable<long>? projectIds = null,
+            long? userId = null,
+            int limit = 25,
+            int offset = 0)
+        {
+            return SearchDirectories(new DirectoriesSearchParams(filter, projectIds, userId, limit, offset));
+        }
+
+        /// <summary>
+        /// Search directories. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/file-based/#operation/api.directories.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/file-based/#operation/api.directories.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<Directory>> SearchDirectories(DirectoriesSearchParams @params)
+        {
+            CrowdinApiResult result = await _apiClient.SendGetRequest("/directories", @params.ToQueryParams());
+            return _jsonParser.ParseResponseList<Directory>(result.JsonObject);
+        }
+
+        /// <summary>
         /// List directories. Documentation:
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.directories.getMany">Crowdin API</a>
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.directories.getMany">Crowdin Enterprise API</a>
@@ -223,6 +251,34 @@ namespace Crowdin.Api.SourceFiles
 
         #region Files
         
+        /// <summary>
+        /// Search files. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/file-based/#operation/api.files.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/file-based/#operation/api.files.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public Task<ResponseList<FileInfoCollectionResource>> SearchFiles(
+            string filter,
+            IEnumerable<long>? projectIds = null,
+            long? userId = null,
+            int limit = 25,
+            int offset = 0)
+        {
+            return SearchFiles(new FilesSearchParams(filter, projectIds, userId, limit, offset));
+        }
+
+        /// <summary>
+        /// Search files. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/file-based/#operation/api.files.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/file-based/#operation/api.files.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<FileInfoCollectionResource>> SearchFiles(FilesSearchParams @params)
+        {
+            CrowdinApiResult result = await _apiClient.SendGetRequest("/files", @params.ToQueryParams());
+            return _jsonParser.ParseResponseList<FileInfoCollectionResource>(result.JsonObject);
+        }
+
         /// <summary>
         /// List files. Documentation:
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.files.getMany">Crowdin API</a>

@@ -39,6 +39,14 @@ namespace Crowdin.Api.SourceFiles
 
         #region Directories
 
+        Task<ResponseList<Directory>> SearchDirectories(
+            string filter,
+            IEnumerable<long>? projectIds = null,
+            long? userId = null,
+            int limit = 25,
+            int offset = 0);
+
+        Task<ResponseList<Directory>> SearchDirectories(DirectoriesSearchParams @params);
         Task<ResponseList<Directory>> ListDirectories(
             long projectId,
             int limit = 25,
@@ -63,6 +71,14 @@ namespace Crowdin.Api.SourceFiles
 
         #region Files
 
+        Task<ResponseList<FileInfoCollectionResource>> SearchFiles(
+            string filter,
+            IEnumerable<long>? projectIds = null,
+            long? userId = null,
+            int limit = 25,
+            int offset = 0);
+
+        Task<ResponseList<FileInfoCollectionResource>> SearchFiles(FilesSearchParams @params);
         Task<ResponseList<T>> ListFiles<T>(long projectId,
             int limit = 25,
             int offset = 0,

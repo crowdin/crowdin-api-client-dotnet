@@ -29,6 +29,34 @@ namespace Crowdin.Api.Branches
         }
         
         /// <summary>
+        /// Search branches. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/file-based/#operation/api.branches.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/file-based/#operation/api.branches.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public Task<ResponseList<Branch>> SearchBranches(
+            string filter,
+            IEnumerable<long>? projectIds = null,
+            long? userId = null,
+            int limit = 25,
+            int offset = 0)
+        {
+            return SearchBranches(new BranchesSearchParams(filter, projectIds, userId, limit, offset));
+        }
+
+        /// <summary>
+        /// Search branches. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/file-based/#operation/api.branches.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/file-based/#operation/api.branches.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<Branch>> SearchBranches(BranchesSearchParams @params)
+        {
+            CrowdinApiResult result = await _apiClient.SendGetRequest("/branches", @params.ToQueryParams());
+            return _jsonParser.ParseResponseList<Branch>(result.JsonObject);
+        }
+
+        /// <summary>
         /// Get Cloned Branch. Documentation:
         /// <a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.branches.clones.branch.get">Crowdin API</a>
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.branches.clones.branch.get">Crowdin Enterprise API</a>

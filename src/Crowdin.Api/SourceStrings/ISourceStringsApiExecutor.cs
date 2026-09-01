@@ -11,6 +11,16 @@ namespace Crowdin.Api.SourceStrings
     [PublicAPI]
     public interface ISourceStringsApiExecutor
     {
+        Task<ResponseList<SourceString>> SearchStrings(
+            string filter,
+            IEnumerable<long>? projectIds = null,
+            long? userId = null,
+            StringSearchScope? scope = null,
+            int? denormalizePlaceholders = null,
+            int limit = 25,
+            int offset = 0);
+
+        Task<ResponseList<SourceString>> SearchStrings(StringsSearchParams @params);
         Task<ResponseList<SourceString>> ListStrings(
             long projectId,
             int limit = 25,

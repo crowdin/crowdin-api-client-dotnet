@@ -11,6 +11,16 @@ namespace Crowdin.Api.StringTranslations
     [PublicAPI]
     public interface IStringTranslationsApiExecutor
     {
+        Task<ResponseList<TranslationSearchResource>> SearchTranslations(
+            string filter,
+            IEnumerable<long>? projectIds = null,
+            long? userId = null,
+            IEnumerable<string>? languageIds = null,
+            int? denormalizePlaceholders = null,
+            int limit = 25,
+            int offset = 0);
+
+        Task<ResponseList<TranslationSearchResource>> SearchTranslations(TranslationsSearchParams @params);
         Task<ResponseList<LanguageTranslations>> ListLanguageTranslations(
             long projectId,
             string languageId,
