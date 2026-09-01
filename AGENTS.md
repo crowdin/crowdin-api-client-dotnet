@@ -1,84 +1,66 @@
 # AGENTS.md
 
-This file provides guidance to AI Agents when working with code in this repository.
+.NET client for the Crowdin API v2 and Crowdin Enterprise API v2 (NuGet: `Crowdin.Api`).
+
+`src/Crowdin.Api` targets .NET Standard 2.0 with C# 8 and Newtonsoft.Json — no records, no `init`, no file-scoped namespaces, no implicit usings in `src/`. The test project targets net8.0 and is freer. Nullable checking is per-file: start every new `src/` file with `#nullable enable`.
+
+## Layout
+
+`Crowdin.sln` holds four projects: `src/Crowdin.Api` (the library), `tests/Crowdin.Api.UnitTesting` (xUnit + Moq), and two `samples/` projects — a bare `dotnet build` builds all four.
+
+- `src/Crowdin.Api/<Module>/` — one directory per API module: models, request/patch types, `I<Module>ApiExecutor` + `<Module>ApiExecutor`
+- `src/Crowdin.Api/CrowdinApiClient.cs` — entry point; exposes executors as properties
+- `src/Crowdin.Api/Core/` — HTTP plumbing, `Utils`, JSON converters, `InternalExtensions` helpers
+- `tests/Crowdin.Api.UnitTesting/Tests/<Module>/` — tests; JSON fixtures live in `Resources/*.resx`
 
 ## Commands
 
-### Build
+- Build: `dotnet build` (CI: `dotnet build -c Release`)
+- Test (all): `dotnet test`
+- Test (one class): `dotnet test --filter "FullyQualifiedName~Crowdin.Api.UnitTesting.Tests.Clients.ClientsApiTests"`
 
-```bash
-dotnet build
-dotnet build --configuration Release
-```
+There is no lint/format gate — match the style of neighboring files by hand.
 
-### Run all tests
+## Executor pattern
 
-```bash
-dotnet test
-```
+Every module follows the same shape: `I<Module>ApiExecutor` (interface, `[PublicAPI]`) → `<Module>ApiExecutor` (takes `ICrowdinApiClient`, builds params, sends requests via `SendGetRequest`/`SendPostRequest`/..., parses via `IJsonParser.ParseResponseObject/List<T>()`, `[PublicAPI]` on each public method) → a property on `CrowdinApiClient`.
 
-### Run a single test class
+Registration is not universal: `ClientsApiExecutor` and `NotificationsApiExecutor` exist but are construct-it-yourself, and `Branches`/`Fields` sit on the concrete client but not on `ICrowdinApiClient` — check both files before assuming a module is reachable.
 
-```bash
-dotnet test --filter "FullyQualifiedName~Crowdin.Api.UnitTesting.Tests.Clients.ClientsApiTests"
-```
+## Adding or changing an endpoint
 
-## Architecture
+Fetch the endpoint spec first (see Crowdin API reference below). Then:
 
-This is a **.NET Standard 2.0** client library for the Crowdin API v2. The solution (`Crowdin.sln`) contains:
+1. Models in `src/Crowdin.Api/<Module>/`: `#nullable enable` at the top, `[PublicAPI]` on the type, `[JsonProperty("camelCase")]` on every property, non-nullable strings initialized `= null!`; optional request fields nullable so `NullValueHandling.Ignore` drops them. PATCH paths are a `<X>Patch : PatchEntry` class plus an enum whose members carry `[Description("/jsonPointer")]`.
+2. Executor: add the method to both `I<Module>ApiExecutor` and `<Module>ApiExecutor` (two constructors: `(ICrowdinApiClient)` and `(ICrowdinApiClient, IJsonParser)`). List params beyond limit/offset get a `<X>ListParams : IQueryParamsProvider` built with `Utils.CreateQueryParamsFromPaging(...)` plus `AddParamIfPresent(...)`/`AddSortingRulesIfPresent(...)` from `Core/InternalExtensions.cs`. XML-doc every method with the operation links (docfx publishes these), then `[PublicAPI]`.
+3. For a new module, register it in BOTH `CrowdinApiClient.cs` (using + property + constructor assignment) and `ICrowdinApiClient.cs` (using + property).
+4. A new JSON converter in `Core/Converters/` must be registered twice: in `Utils.CreateJsonSerializerSettings()` and in `TestUtils.CreateJsonSerializerOptions()` in the test project — the two lists are identical by design, and missing one makes tests diverge from runtime behavior.
+5. Tests in `tests/.../Tests/<Module>/`: `TestUtils.CreateMockClientWithDefaultParser()` for a `Mock<ICrowdinApiClient>`, then `mockClient.Setup(c => c.SendGetRequest(url, queryParams)).ReturnsAsync(new CrowdinApiResult {...})` — POST setups take a third `null` argument. Assert request serialization separately against `TestUtils.CompactJson(Resources.<Module>.<Name>)`.
+6. Fixtures: add a `<data>` entry to `Resources/<Module>.resx` AND hand-add the matching `internal static string` property to `<Module>.Designer.cs` — the `ResXFileCodeGenerator` runs only inside an IDE; `dotnet build` never regenerates designer files. A brand-new `.resx` also needs the `EmbeddedResource`/`Compile Update` pair in the test `.csproj` (copy an existing `Resources\`-prefixed block).
 
-- **`src/Crowdin.Api/`** — the main library (targets .NET Standard 2.0, C# 8)
-- **`tests/Crowdin.Api.UnitTesting/`** — xUnit tests (targets .NET 8)
+## Crowdin API reference
 
-### Executor Pattern
+Before implementing or changing any endpoint, fetch its spec from the llms.txt indexes (pick by environment, then project type):
 
-Every API domain (Branches, Glossaries, SourceFiles, etc.) follows the same pattern:
+- https://support.crowdin.com/_llms-txt/api/crowdin/file-based.txt — Crowdin API, file-based projects (start here)
+- https://support.crowdin.com/_llms-txt/api/crowdin/string-based.txt — Crowdin API, string-based projects
+- https://support.crowdin.com/_llms-txt/api/enterprise/file-based.txt — Crowdin Enterprise API, file-based projects
+- https://support.crowdin.com/_llms-txt/api/enterprise/string-based.txt — Crowdin Enterprise API, string-based projects
 
-1. **Interface**: `IXxxApiExecutor` — defines available operations
-2. **Implementation**: `XxxApiExecutor` — takes `ICrowdinApiClient` in constructor, builds query params, sends requests
-3. **Registration**: The executor is exposed as a property on `CrowdinApiClient` (e.g., `client.Branches`, `client.Glossaries`)
+Each index links one spec file per route (e.g. `.../api.projects.strings.get.txt`) with the exact request and response shapes.
 
-`CrowdinApiClient` (`src/Crowdin.Api/CrowdinApiClient.cs`) is the main entry point. It implements `ICrowdinApiClient` and instantiates all executors.
+## Conventions
 
-### Request/Response Flow
+- Conventional Commits for commit messages and PR titles; CI lints PR titles (e.g. `feat(ai): ...`, `fix(translations): ...`).
+- PRs target `main`.
+- Keep the public API backward compatible.
+- Never edit `<Version>` in `Crowdin.Api.csproj` by hand — the Release workflow rewrites it and every `x.y.z` occurrence in `README.md`.
 
-1. Caller invokes an executor method (e.g., `executor.ListClients(limit, offset)`)
-2. Executor builds query params using `Utils.CreateQueryParamsFromPaging()` and similar helpers
-3. Executor calls `_apiClient.SendGetRequest(url, queryParams)` (or `SendPostRequest`, `SendPutRequest`, etc.)
-4. Response is parsed via `IJsonParser.ParseResponseList<T>()` or `ParseResponseObject<T>()`
-5. Typed result returned to caller
+## PR checklist
 
-### Adding a New API Module
+A change is ready when:
 
-To add a new API module, follow the existing pattern:
-
-1. Create a directory under `src/Crowdin.Api/<ModuleName>/`
-2. Define model classes and request/response types
-3. Create `IModuleNameApiExecutor` interface
-4. Implement `ModuleNameApiExecutor : IModuleNameApiExecutor`
-5. Add the executor property to `CrowdinApiClient` and initialize it in the constructor
-6. Create corresponding test class under `tests/Crowdin.Api.UnitTesting/Tests/<ModuleName>/`
-7. Add test data as a `.resx` resource file under `tests/Crowdin.Api.UnitTesting/Resources/`
-
-### Testing Pattern
-
-Tests mock `ICrowdinApiClient` using Moq and verify that executors correctly parse responses. JSON fixture data is stored in `.resx` files under `tests/Crowdin.Api.UnitTesting/Resources/`.
-
-### Conventions
-
-- Use [Conventional Commits](https://www.conventionalcommits.org/) for commit messages and PR titles (e.g., `feat(ai): ...`, `fix(translations): ...`)
-- `[PublicAPI]` (JetBrains.Annotations) is applied to all public API types
-- Nullable reference types are enabled (`#nullable enable`)
-
-## Notes For API Details
-
-Always use Crowdin/Crowdin Enterprise `llms.txt` index files for API method details. Choose the correct index by environment first, then project type.
-
-Use these URLs:
-
-- https://support.crowdin.com/_llms-txt/api/crowdin/file-based.txt - Crowdin API (file-based projects, preferred first)
-- https://support.crowdin.com/_llms-txt/api/crowdin/string-based.txt - Crowdin API (string-based projects)
-- https://support.crowdin.com/_llms-txt/api/enterprise/file-based.txt - Crowdin Enterprise API (file-based projects)
-- https://support.crowdin.com/_llms-txt/api/enterprise/string-based.txt - Crowdin Enterprise API (string-based projects)
-
-Each index contains a list of links to the API method details (e.g. https://support.crowdin.com/_llms-txt/api/enterprise/file-based/api.projects.strings.get.txt).
+1. `dotnet build -c Release` compiles,
+2. `dotnet test` passes,
+3. every new or changed endpoint method has a test asserting the request URL/params and response parsing, and
+4. every new or changed public member has XML docs with the operation links.
