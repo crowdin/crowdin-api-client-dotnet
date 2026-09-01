@@ -29,6 +29,14 @@ namespace Crowdin.Api.Core
             }
         }
 
+        internal static void ThrowIfStatusNot202(HttpStatusCode statusCode, string message)
+        {
+            if (statusCode != HttpStatusCode.Accepted)
+            {
+                throw new CrowdinApiException(message);
+            }
+        }
+
         internal static JsonSerializerSettings CreateJsonSerializerSettings()
         {
             return new JsonSerializerSettings

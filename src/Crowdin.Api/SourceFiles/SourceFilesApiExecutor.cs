@@ -93,6 +93,42 @@ namespace Crowdin.Api.SourceFiles
         }
 
         /// <summary>
+        /// Delete Branch. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.branches.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.branches.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        [Obsolete(MessageTexts.UseBranchesNamespace)]
+        public async Task<DeleteJobStatus?> DeleteBranch(long projectId, long branchId, bool isAsync)
+        {
+            string url = FormUrl_ProjectIdBranchId(projectId, branchId);
+            if (!isAsync)
+            {
+                await DeleteBranch(projectId, branchId);
+                return null;
+            }
+
+            return await DeleteNode(url, $"Branch {branchId} removal failed");
+        }
+
+        /// <summary>
+        /// Check Branch Deletion Status. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.branches.jobs.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.branches.jobs.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        [Obsolete(MessageTexts.UseBranchesNamespace)]
+        public async Task<DeleteJobStatus> CheckBranchDeletionStatus(
+            long projectId,
+            long branchId,
+            string jobIdentifier)
+        {
+            string url = FormUrl_ProjectIdBranchId(projectId, branchId) + $"/jobs/{jobIdentifier}";
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<DeleteJobStatus>(result.JsonObject);
+        }
+
+        /// <summary>
         /// Edit branch. Documentation:
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.branches.patch">Crowdin API</a>
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.branches.patch">Crowdin Enterprise API</a>
@@ -107,6 +143,18 @@ namespace Crowdin.Api.SourceFiles
         }
         
         #region Helper methods
+
+        private async Task<DeleteJobStatus> DeleteNode(string url, string errorMessage)
+        {
+            var headers = new Dictionary<string, string>
+            {
+                { "Prefer", "respond-async" }
+            };
+
+            CrowdinApiResult result = await _apiClient.SendDeleteRequest_FullResult(url, null, headers);
+            Utils.ThrowIfStatusNot202(result.StatusCode, errorMessage);
+            return _jsonParser.ParseResponseObject<DeleteJobStatus>(result.JsonObject);
+        }
 
         private static string FormUrl_ProjectBranches(long projectId)
         {
@@ -218,6 +266,40 @@ namespace Crowdin.Api.SourceFiles
             string url = FormUrl_ProjectIdDirectoryId(projectId, directoryId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
             Utils.ThrowIfStatusNot204(statusCode, $"Directory {directoryId} removal failed");
+        }
+
+        /// <summary>
+        /// Delete directory. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.directories.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.directories.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<DeleteJobStatus?> DeleteDirectory(long projectId, long directoryId, bool isAsync)
+        {
+            string url = FormUrl_ProjectIdDirectoryId(projectId, directoryId);
+            if (!isAsync)
+            {
+                await DeleteDirectory(projectId, directoryId);
+                return null;
+            }
+
+            return await DeleteNode(url, $"Directory {directoryId} removal failed");
+        }
+
+        /// <summary>
+        /// Check Directory Deletion Status. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.directories.jobs.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.directories.jobs.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<DeleteJobStatus> CheckDirectoryDeletionStatus(
+            long projectId,
+            long directoryId,
+            string jobIdentifier)
+        {
+            string url = FormUrl_ProjectIdDirectoryId(projectId, directoryId) + $"/jobs/{jobIdentifier}";
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<DeleteJobStatus>(result.JsonObject);
         }
 
         /// <summary>
@@ -379,6 +461,40 @@ namespace Crowdin.Api.SourceFiles
             string url = FormUrl_ProjectIdFileId(projectId, fileId);
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
             Utils.ThrowIfStatusNot204(statusCode, $"File {fileId} from project {projectId} removal failed");
+        }
+
+        /// <summary>
+        /// Delete file. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.files.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<DeleteJobStatus?> DeleteFile(long projectId, long fileId, bool isAsync)
+        {
+            string url = FormUrl_ProjectIdFileId(projectId, fileId);
+            if (!isAsync)
+            {
+                await DeleteFile(projectId, fileId);
+                return null;
+            }
+
+            return await DeleteNode(url, $"File {fileId} from project {projectId} removal failed");
+        }
+
+        /// <summary>
+        /// Check File Deletion Status. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.files.jobs.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.files.jobs.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<DeleteJobStatus> CheckFileDeletionStatus(
+            long projectId,
+            long fileId,
+            string jobIdentifier)
+        {
+            string url = FormUrl_ProjectIdFileId(projectId, fileId) + $"/jobs/{jobIdentifier}";
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<DeleteJobStatus>(result.JsonObject);
         }
 
         /// <summary>

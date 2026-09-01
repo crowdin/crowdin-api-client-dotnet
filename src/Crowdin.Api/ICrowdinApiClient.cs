@@ -137,6 +137,11 @@ namespace Crowdin.Api
         
         internal Task<CrowdinApiResult> SendDeleteRequest_FullResult(string subUrl, IDictionary<string, string>? queryParams = null);
 
+        internal Task<CrowdinApiResult> SendDeleteRequest_FullResult(
+            string subUrl,
+            IDictionary<string, string>? queryParams,
+            IDictionary<string, string>? extraHeaders);
+
         internal Task<CrowdinApiResult> SendGraphQLRequest(GraphQLRequest body);
         
         internal Task<CrowdinApiResult> UploadFile(string subUrl, string filename, Stream fileStream);

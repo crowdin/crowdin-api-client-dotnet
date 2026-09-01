@@ -38,6 +38,10 @@ namespace Crowdin.Api.Branches
 
         Task DeleteBranch(long projectId, long branchId);
 
+        Task<DeleteJobStatus?> DeleteBranch(long projectId, long branchId, bool isAsync);
+
+        Task<DeleteJobStatus> CheckBranchDeletionStatus(long projectId, long branchId, string jobIdentifier);
+
         Task<Branch> EditBranch(long projectId, long branchId, IEnumerable<BranchPatch> patches);
 
         Task<BranchMergeStatus> MergeBranch(long projectId, long branchId, MergeBranchRequest request);

@@ -156,6 +156,40 @@ namespace Crowdin.Api.Branches
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
             Utils.ThrowIfStatusNot204(statusCode, $"Branch {branchId} removal failed");
         }
+
+        /// <summary>
+        /// Delete Branch. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.branches.delete">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.branches.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<DeleteJobStatus?> DeleteBranch(long projectId, long branchId, bool isAsync)
+        {
+            string url = FormUrl_BranchId(projectId, branchId);
+            if (!isAsync)
+            {
+                await DeleteBranch(projectId, branchId);
+                return null;
+            }
+
+            return await DeleteNode(url, $"Branch {branchId} removal failed");
+        }
+
+        /// <summary>
+        /// Check Branch Deletion Status. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/string-based/#operation/api.projects.branches.jobs.get">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/string-based/#operation/api.projects.branches.jobs.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<DeleteJobStatus> CheckBranchDeletionStatus(
+            long projectId,
+            long branchId,
+            string jobIdentifier)
+        {
+            string url = FormUrl_BranchId(projectId, branchId) + $"/jobs/{jobIdentifier}";
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url);
+            return _jsonParser.ParseResponseObject<DeleteJobStatus>(result.JsonObject);
+        }
         
         /// <summary>
         /// Edit Branch. Documentation:
@@ -210,6 +244,18 @@ namespace Crowdin.Api.Branches
         }
         
         #region Helper methods
+
+        private async Task<DeleteJobStatus> DeleteNode(string url, string errorMessage)
+        {
+            var headers = new Dictionary<string, string>
+            {
+                { "Prefer", "respond-async" }
+            };
+
+            CrowdinApiResult result = await _apiClient.SendDeleteRequest_FullResult(url, null, headers);
+            Utils.ThrowIfStatusNot202(result.StatusCode, errorMessage);
+            return _jsonParser.ParseResponseObject<DeleteJobStatus>(result.JsonObject);
+        }
         
         private static string FormUrl_Branches(long projectId)
         {
