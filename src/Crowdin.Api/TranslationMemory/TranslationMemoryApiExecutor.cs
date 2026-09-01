@@ -235,6 +235,21 @@ namespace Crowdin.Api.TranslationMemory
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
             return _jsonParser.ParseResponseObject<TmSegmentResource>(result.JsonObject);
         }
+
+        /// <summary>
+        /// TM Segment Batch Operations. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.tms.segments.patchBatch">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.tms.segments.patchBatch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<TmSegmentResource>> TmSegmentBatchOperations(
+            long tmId,
+            IEnumerable<TmSegmentBatchOpPatch> patches)
+        {
+            string url = FormUrl_TmSegments(tmId);
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            return _jsonParser.ParseResponseList<TmSegmentResource>(result.JsonObject);
+        }
         
         /// <summary>
         /// Get TM Segment. Documentation:

@@ -86,6 +86,98 @@ namespace Crowdin.Api.UnitTesting.Tests.TranslationMemory
         }
 
         [Fact]
+        public async Task TmSegmentBatchOperations()
+        {
+            const int tmId = 1;
+
+            var patches = new[]
+            {
+                new TmSegmentBatchOpPatch
+                {
+                    Operation = PatchOperation.Add,
+                    Path = TmSegmentBatchOpPatchPath.Empty,
+                    Value = new CreateTmSegmentRequest
+                    {
+                        Records = new[]
+                        {
+                            new TmSegmentRecordForm
+                            {
+                                LanguageId = "uk",
+                                Text = "Перекладений текст"
+                            }
+                        }
+                    }
+                },
+                new TmSegmentBatchOpPatch
+                {
+                    Operation = PatchOperation.Add,
+                    Path = new TmSegmentBatchOpPatchPath
+                    {
+                        SegmentId = 4,
+                        Property = TmSegmentBatchOpPatchPathEntry.Records
+                    },
+                    Value = new TmSegmentRecordForm
+                    {
+                        LanguageId = "it",
+                        Text = "Ciao, mondo!"
+                    }
+                },
+                new TmSegmentBatchOpPatch
+                {
+                    Operation = PatchOperation.Remove,
+                    Path = new TmSegmentBatchOpPatchPath
+                    {
+                        SegmentId = 5
+                    }
+                },
+                new TmSegmentBatchOpPatch
+                {
+                    Operation = PatchOperation.Remove,
+                    Path = new TmSegmentBatchOpPatchPath
+                    {
+                        SegmentId = 6,
+                        RecordId = 7
+                    }
+                },
+                new TmSegmentBatchOpPatch
+                {
+                    Operation = PatchOperation.Replace,
+                    Path = new TmSegmentBatchOpPatchPath
+                    {
+                        SegmentId = 4,
+                        RecordId = 1,
+                        Property = TmSegmentBatchOpPatchPathEntry.Text
+                    },
+                    Value = "Testo tradotto"
+                }
+            };
+
+            string actualRequestJson = JsonConvert.SerializeObject(patches, DefaultSettings);
+            string expectedRequestJson =
+                TestUtils.CompactJson(TranslationMemory_Segments.TmSegmentBatchOperations_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/tms/{tmId}/segments";
+
+            mockClient
+                .Setup(client => client.SendPatchRequest(url, patches, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(TranslationMemory_Segments.TmSegmentBatchOperations_Response)
+                });
+
+            var executor = new TranslationMemoryApiExecutor(mockClient.Object);
+            ResponseList<TmSegmentResource> response = await executor.TmSegmentBatchOperations(tmId, patches);
+
+            Assert.NotNull(response);
+            Assert.Equal(2, response.Data.Count);
+            Assert_TranslationMemorySegment(response.Data[0]);
+        }
+
+        [Fact]
         public async Task GetTmSegment()
         {
             const int tmId = 1;

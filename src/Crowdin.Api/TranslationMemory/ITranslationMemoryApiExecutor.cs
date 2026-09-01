@@ -54,6 +54,10 @@ namespace Crowdin.Api.TranslationMemory
 
         Task<TmSegmentResource> CreateTmSegment(long tmId, CreateTmSegmentRequest request);
 
+        Task<ResponseList<TmSegmentResource>> TmSegmentBatchOperations(
+            long tmId,
+            IEnumerable<TmSegmentBatchOpPatch> patches);
+
         Task<TmSegmentResource> GetTmSegment(long tmId, long segmentId);
 
         Task DeleteTmSegment(long tmId, long segmentId);

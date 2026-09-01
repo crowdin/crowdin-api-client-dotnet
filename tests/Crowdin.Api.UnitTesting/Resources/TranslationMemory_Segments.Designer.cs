@@ -116,6 +116,18 @@ namespace Crowdin.Api.UnitTesting.Resources {
                 return ResourceManager.GetString("CreateTmSegmentRecords_Request", resourceCulture);
             }
         }
+
+        internal static string TmSegmentBatchOperations_Request {
+            get {
+                return ResourceManager.GetString("TmSegmentBatchOperations_Request", resourceCulture);
+            }
+        }
+
+        internal static string TmSegmentBatchOperations_Response {
+            get {
+                return ResourceManager.GetString("TmSegmentBatchOperations_Response", resourceCulture);
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized string similar to [
