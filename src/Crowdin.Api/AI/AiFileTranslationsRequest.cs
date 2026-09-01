@@ -31,6 +31,9 @@ namespace Crowdin.Api.AI
         
         [JsonProperty("glossaryIds")]
         public ICollection<long>? GlossaryIds { get; set; }
+
+        [JsonProperty("styleGuideIds")]
+        public ICollection<long>? StyleGuideIds { get; set; }
         
         [JsonProperty("aiPromptId")]
         public long? AiPromptId { get; set; }

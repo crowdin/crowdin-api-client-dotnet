@@ -27,6 +27,7 @@ public class AiTranslateStringsApiTests
             SourceLanguageId = "en",
             TmIds = new[] { 123L },
             GlossaryIds = new[] { 456L },
+            StyleGuideIds = new[] { 654L },
             AiPromptId = 789,
             Instructions = new[] { "Keep a formal tone" },
             AttachmentIds = new[] { 123L }

@@ -31,6 +31,9 @@
   "glossaryIds": [
     456
   ],
+  "styleGuideIds": [
+    654
+  ],
   "aiPromptId": 789,
   "instructions": [
     "Keep a formal tone"
