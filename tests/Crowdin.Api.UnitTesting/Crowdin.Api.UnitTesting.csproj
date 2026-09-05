@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
@@ -29,6 +29,10 @@
     </ItemGroup>
 
     <ItemGroup>
+        <EmbeddedResource Update="Resources\Vendors.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Vendors.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
         <EmbeddedResource Update="Resources\Clients.resx">
             <Generator>ResXFileCodeGenerator</Generator>
             <LastGenOutput>Clients.Designer.cs</LastGenOutput>
@@ -284,6 +288,11 @@
     </ItemGroup>
 
     <ItemGroup>
+        <Compile Update="Resources\Vendors.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Vendors.resx</DependentUpon>
+        </Compile>
         <Compile Update="Resources\Clients.Designer.cs">
             <DesignTime>True</DesignTime>
             <AutoGen>True</AutoGen>
