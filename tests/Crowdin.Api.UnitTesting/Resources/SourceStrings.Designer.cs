@@ -116,6 +116,18 @@ namespace Crowdin.Api.UnitTesting.Resources {
                 return ResourceManager.GetString("CommonResponses_UploadStrings", resourceCulture);
             }
         }
+
+        internal static string EditString_Request {
+            get {
+                return ResourceManager.GetString("EditString_Request", resourceCulture);
+            }
+        }
+
+        internal static string EditString_Response {
+            get {
+                return ResourceManager.GetString("EditString_Response", resourceCulture);
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized string similar to {

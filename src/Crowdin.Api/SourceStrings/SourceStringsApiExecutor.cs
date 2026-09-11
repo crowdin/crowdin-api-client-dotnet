@@ -119,12 +119,33 @@ namespace Crowdin.Api.SourceStrings
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.strings.batchPatch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<ResponseList<SourceString>> StringBatchOperations(
+        public Task<ResponseList<SourceString>> StringBatchOperations(
             long projectId,
             IEnumerable<StringBatchOpPatch> patches)
         {
+            return StringBatchOperations(projectId, patches, null);
+        }
+
+        /// <summary>
+        /// String Batch Operations. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.projects.strings.batchPatch">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.projects.strings.batchPatch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<SourceString>> StringBatchOperations(
+            long projectId,
+            IEnumerable<StringBatchOpPatch> patches,
+            UpdateOption? updateOption)
+        {
             string url = FormUrl_Strings(projectId);
-            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            IDictionary<string, string>? queryParams = null;
+            if (updateOption.HasValue)
+            {
+                queryParams = new Dictionary<string, string>();
+                queryParams.AddDescriptionEnumValueIfPresent("updateOption", updateOption);
+            }
+
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches, queryParams);
             return _jsonParser.ParseResponseList<SourceString>(result.JsonObject);
         }
 
@@ -164,10 +185,32 @@ namespace Crowdin.Api.SourceStrings
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.patch">Crowdin Enterprise API</a>
         /// </summary>
         [PublicAPI]
-        public async Task<SourceString> EditString(long projectId, long stringId, IEnumerable<SourceStringPatch> patches)
+        public Task<SourceString> EditString(long projectId, long stringId, IEnumerable<SourceStringPatch> patches)
+        {
+            return EditString(projectId, stringId, patches, null);
+        }
+
+        /// <summary>
+        /// Edit string. Documentation:
+        /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.strings.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.strings.patch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<SourceString> EditString(
+            long projectId,
+            long stringId,
+            IEnumerable<SourceStringPatch> patches,
+            UpdateOption? updateOption)
         {
             string url = FormUrl_StringId(projectId, stringId);
-            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            IDictionary<string, string>? queryParams = null;
+            if (updateOption.HasValue)
+            {
+                queryParams = new Dictionary<string, string>();
+                queryParams.AddDescriptionEnumValueIfPresent("updateOption", updateOption);
+            }
+
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches, queryParams);
             return _jsonParser.ParseResponseObject<SourceString>(result.JsonObject);
         }
         

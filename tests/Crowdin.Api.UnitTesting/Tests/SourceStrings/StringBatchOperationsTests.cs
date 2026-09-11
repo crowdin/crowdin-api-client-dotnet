@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
@@ -81,9 +82,13 @@ namespace Crowdin.Api.UnitTesting.Tests.SourceStrings
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
 
             var url = $"/projects/{projectId}/strings";
+            IDictionary<string, string> queryParams = new Dictionary<string, string>
+            {
+                { "updateOption", "clear_translations_and_approvals" }
+            };
 
             mockClient
-                .Setup(client => client.SendPatchRequest(url, patches, null))
+                .Setup(client => client.SendPatchRequest(url, patches, queryParams))
                 .ReturnsAsync(new CrowdinApiResult
                 {
                     StatusCode = HttpStatusCode.OK,
@@ -91,7 +96,8 @@ namespace Crowdin.Api.UnitTesting.Tests.SourceStrings
                 });
 
             var executor = new SourceStringsApiExecutor(mockClient.Object);
-            ResponseList<SourceString> response = await executor.StringBatchOperations(projectId, patches);
+            ResponseList<SourceString> response = await executor.StringBatchOperations(
+                projectId, patches, UpdateOption.ClearTranslationsAndApprovals);
 
             Assert.NotNull(response);
             Assert_SourceString(response.Data?.Single());
