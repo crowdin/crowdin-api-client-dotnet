@@ -97,7 +97,7 @@ public interface IBranchesApiExecutor</code></pre>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Branches_IBranchesApiExecutor_AddBranch_System_Int64_Crowdin_Api_Branches_AddBranchRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Branches.IBranchesApiExecutor.AddBranch(System.Int64%2CCrowdin.Api.Branches.AddBranchRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L27">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L35">View Source</a>
   </span>
   <a id="Crowdin_Api_Branches_IBranchesApiExecutor_AddBranch_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.AddBranch*"></a>
   <h4 id="Crowdin_Api_Branches_IBranchesApiExecutor_AddBranch_System_Int64_Crowdin_Api_Branches_AddBranchRequest_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.AddBranch(System.Int64,Crowdin.Api.Branches.AddBranchRequest)">AddBranch(long, AddBranchRequest)</h4>
@@ -149,7 +149,7 @@ public interface IBranchesApiExecutor</code></pre>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Branches_IBranchesApiExecutor_CheckBranchCloneStatus_System_Int64_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Branches.IBranchesApiExecutor.CheckBranchCloneStatus(System.Int64%2CSystem.Int64%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L18">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L26">View Source</a>
   </span>
   <a id="Crowdin_Api_Branches_IBranchesApiExecutor_CheckBranchCloneStatus_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.CheckBranchCloneStatus*"></a>
   <h4 id="Crowdin_Api_Branches_IBranchesApiExecutor_CheckBranchCloneStatus_System_Int64_System_Int64_System_String_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.CheckBranchCloneStatus(System.Int64,System.Int64,System.String)">CheckBranchCloneStatus(long, long, string)</h4>
@@ -203,10 +203,67 @@ public interface IBranchesApiExecutor</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Branches_IBranchesApiExecutor_CheckBranchDeletionStatus_System_Int64_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Branches.IBranchesApiExecutor.CheckBranchDeletionStatus(System.Int64%2CSystem.Int64%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L43">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Branches_IBranchesApiExecutor_CheckBranchDeletionStatus_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.CheckBranchDeletionStatus*"></a>
+  <h4 id="Crowdin_Api_Branches_IBranchesApiExecutor_CheckBranchDeletionStatus_System_Int64_System_Int64_System_String_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.CheckBranchDeletionStatus(System.Int64,System.Int64,System.String)">CheckBranchDeletionStatus(long, long, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeleteJobStatus&gt; CheckBranchDeletionStatus(long projectId, long branchId, string jobIdentifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">branchId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">jobIdentifier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Crowdin.Api.DeleteJobStatus.html">DeleteJobStatus</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Branches_IBranchesApiExecutor_CheckBranchMergeStatus_System_Int64_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Branches.IBranchesApiExecutor.CheckBranchMergeStatus(System.Int64%2CSystem.Int64%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L37">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L49">View Source</a>
   </span>
   <a id="Crowdin_Api_Branches_IBranchesApiExecutor_CheckBranchMergeStatus_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.CheckBranchMergeStatus*"></a>
   <h4 id="Crowdin_Api_Branches_IBranchesApiExecutor_CheckBranchMergeStatus_System_Int64_System_Int64_System_String_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.CheckBranchMergeStatus(System.Int64,System.Int64,System.String)">CheckBranchMergeStatus(long, long, string)</h4>
@@ -263,7 +320,7 @@ public interface IBranchesApiExecutor</code></pre>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Branches_IBranchesApiExecutor_CloneBranch_System_Int64_System_Int64_Crowdin_Api_Branches_CloneBranchRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Branches.IBranchesApiExecutor.CloneBranch(System.Int64%2CSystem.Int64%2CCrowdin.Api.Branches.CloneBranchRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L16">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L24">View Source</a>
   </span>
   <a id="Crowdin_Api_Branches_IBranchesApiExecutor_CloneBranch_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.CloneBranch*"></a>
   <h4 id="Crowdin_Api_Branches_IBranchesApiExecutor_CloneBranch_System_Int64_System_Int64_Crowdin_Api_Branches_CloneBranchRequest_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.CloneBranch(System.Int64,System.Int64,Crowdin.Api.Branches.CloneBranchRequest)">CloneBranch(long, long, CloneBranchRequest)</h4>
@@ -320,7 +377,7 @@ public interface IBranchesApiExecutor</code></pre>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Branches_IBranchesApiExecutor_DeleteBranch_System_Int64_System_Int64_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Branches.IBranchesApiExecutor.DeleteBranch(System.Int64%2CSystem.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L31">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L39">View Source</a>
   </span>
   <a id="Crowdin_Api_Branches_IBranchesApiExecutor_DeleteBranch_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.DeleteBranch*"></a>
   <h4 id="Crowdin_Api_Branches_IBranchesApiExecutor_DeleteBranch_System_Int64_System_Int64_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.DeleteBranch(System.Int64,System.Int64)">DeleteBranch(long, long)</h4>
@@ -369,10 +426,67 @@ public interface IBranchesApiExecutor</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Branches_IBranchesApiExecutor_DeleteBranch_System_Int64_System_Int64_System_Boolean_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Branches.IBranchesApiExecutor.DeleteBranch(System.Int64%2CSystem.Int64%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L41">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Branches_IBranchesApiExecutor_DeleteBranch_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.DeleteBranch*"></a>
+  <h4 id="Crowdin_Api_Branches_IBranchesApiExecutor_DeleteBranch_System_Int64_System_Int64_System_Boolean_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.DeleteBranch(System.Int64,System.Int64,System.Boolean)">DeleteBranch(long, long, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;DeleteJobStatus?&gt; DeleteBranch(long projectId, long branchId, bool isAsync)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">branchId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isAsync</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Crowdin.Api.DeleteJobStatus.html">DeleteJobStatus</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Branches_IBranchesApiExecutor_EditBranch_System_Int64_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_Branches_BranchPatch__.md&amp;value=---%0Auid%3A%20Crowdin.Api.Branches.IBranchesApiExecutor.EditBranch(System.Int64%2CSystem.Int64%2CSystem.Collections.Generic.IEnumerable%7BCrowdin.Api.Branches.BranchPatch%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L33">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L45">View Source</a>
   </span>
   <a id="Crowdin_Api_Branches_IBranchesApiExecutor_EditBranch_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.EditBranch*"></a>
   <h4 id="Crowdin_Api_Branches_IBranchesApiExecutor_EditBranch_System_Int64_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_Branches_BranchPatch__" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.EditBranch(System.Int64,System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.Branches.BranchPatch})">EditBranch(long, long, IEnumerable&lt;BranchPatch&gt;)</h4>
@@ -429,7 +543,7 @@ public interface IBranchesApiExecutor</code></pre>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Branches_IBranchesApiExecutor_GetBranch_System_Int64_System_Int64_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Branches.IBranchesApiExecutor.GetBranch(System.Int64%2CSystem.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L29">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L37">View Source</a>
   </span>
   <a id="Crowdin_Api_Branches_IBranchesApiExecutor_GetBranch_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.GetBranch*"></a>
   <h4 id="Crowdin_Api_Branches_IBranchesApiExecutor_GetBranch_System_Int64_System_Int64_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.GetBranch(System.Int64,System.Int64)">GetBranch(long, long)</h4>
@@ -481,7 +595,7 @@ public interface IBranchesApiExecutor</code></pre>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Branches_IBranchesApiExecutor_GetBranchMergeSummary_System_Int64_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Branches.IBranchesApiExecutor.GetBranchMergeSummary(System.Int64%2CSystem.Int64%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L39">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L51">View Source</a>
   </span>
   <a id="Crowdin_Api_Branches_IBranchesApiExecutor_GetBranchMergeSummary_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.GetBranchMergeSummary*"></a>
   <h4 id="Crowdin_Api_Branches_IBranchesApiExecutor_GetBranchMergeSummary_System_Int64_System_Int64_System_String_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.GetBranchMergeSummary(System.Int64,System.Int64,System.String)">GetBranchMergeSummary(long, long, string)</h4>
@@ -538,7 +652,7 @@ public interface IBranchesApiExecutor</code></pre>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Branches_IBranchesApiExecutor_GetClonedBranch_System_Int64_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Branches.IBranchesApiExecutor.GetClonedBranch(System.Int64%2CSystem.Int64%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L14">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L22">View Source</a>
   </span>
   <a id="Crowdin_Api_Branches_IBranchesApiExecutor_GetClonedBranch_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.GetClonedBranch*"></a>
   <h4 id="Crowdin_Api_Branches_IBranchesApiExecutor_GetClonedBranch_System_Int64_System_Int64_System_String_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.GetClonedBranch(System.Int64,System.Int64,System.String)">GetClonedBranch(long, long, string)</h4>
@@ -595,7 +709,7 @@ public interface IBranchesApiExecutor</code></pre>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Branches_IBranchesApiExecutor_ListBranches_System_Int64_System_String_System_Int32_System_Int32_System_Collections_Generic_IEnumerable_Crowdin_Api_SortingRule__.md&amp;value=---%0Auid%3A%20Crowdin.Api.Branches.IBranchesApiExecutor.ListBranches(System.Int64%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Collections.Generic.IEnumerable%7BCrowdin.Api.SortingRule%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L20">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L28">View Source</a>
   </span>
   <a id="Crowdin_Api_Branches_IBranchesApiExecutor_ListBranches_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.ListBranches*"></a>
   <h4 id="Crowdin_Api_Branches_IBranchesApiExecutor_ListBranches_System_Int64_System_String_System_Int32_System_Int32_System_Collections_Generic_IEnumerable_Crowdin_Api_SortingRule__" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.ListBranches(System.Int64,System.String,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{Crowdin.Api.SortingRule})">ListBranches(long, string?, int, int, IEnumerable&lt;SortingRule&gt;?)</h4>
@@ -662,7 +776,7 @@ public interface IBranchesApiExecutor</code></pre>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Branches_IBranchesApiExecutor_MergeBranch_System_Int64_System_Int64_Crowdin_Api_Branches_MergeBranchRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Branches.IBranchesApiExecutor.MergeBranch(System.Int64%2CSystem.Int64%2CCrowdin.Api.Branches.MergeBranchRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L35">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L47">View Source</a>
   </span>
   <a id="Crowdin_Api_Branches_IBranchesApiExecutor_MergeBranch_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.MergeBranch*"></a>
   <h4 id="Crowdin_Api_Branches_IBranchesApiExecutor_MergeBranch_System_Int64_System_Int64_Crowdin_Api_Branches_MergeBranchRequest_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.MergeBranch(System.Int64,System.Int64,Crowdin.Api.Branches.MergeBranchRequest)">MergeBranch(long, long, MergeBranchRequest)</h4>
@@ -710,6 +824,120 @@ public interface IBranchesApiExecutor</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Crowdin.Api.Branches.BranchMergeStatus.html">BranchMergeStatus</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Branches_IBranchesApiExecutor_SearchBranches_Crowdin_Api_Branches_BranchesSearchParams_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Branches.IBranchesApiExecutor.SearchBranches(Crowdin.Api.Branches.BranchesSearchParams)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L21">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Branches_IBranchesApiExecutor_SearchBranches_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.SearchBranches*"></a>
+  <h4 id="Crowdin_Api_Branches_IBranchesApiExecutor_SearchBranches_Crowdin_Api_Branches_BranchesSearchParams_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.SearchBranches(Crowdin.Api.Branches.BranchesSearchParams)">SearchBranches(BranchesSearchParams)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseList&lt;Branch&gt;&gt; SearchBranches(BranchesSearchParams @params)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Branches.BranchesSearchParams.html">BranchesSearchParams</a></td>
+        <td><span class="parametername">params</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Crowdin.Api.ResponseList-1.html">ResponseList</a>&lt;<a class="xref" href="Crowdin.Api.Branches.Branch.html">Branch</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Branches_IBranchesApiExecutor_SearchBranches_System_String_System_Collections_Generic_IEnumerable_System_Int64__System_Nullable_System_Int64__System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Branches.IBranchesApiExecutor.SearchBranches(System.String%2CSystem.Collections.Generic.IEnumerable%7BSystem.Int64%7D%2CSystem.Nullable%7BSystem.Int64%7D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Branches/IBranchesApiExecutor.cs/#L14">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Branches_IBranchesApiExecutor_SearchBranches_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.SearchBranches*"></a>
+  <h4 id="Crowdin_Api_Branches_IBranchesApiExecutor_SearchBranches_System_String_System_Collections_Generic_IEnumerable_System_Int64__System_Nullable_System_Int64__System_Int32_System_Int32_" data-uid="Crowdin.Api.Branches.IBranchesApiExecutor.SearchBranches(System.String,System.Collections.Generic.IEnumerable{System.Int64},System.Nullable{System.Int64},System.Int32,System.Int32)">SearchBranches(string, IEnumerable&lt;long&gt;?, long?, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseList&lt;Branch&gt;&gt; SearchBranches(string filter, IEnumerable&lt;long&gt;? projectIds = null, long? userId = null, int limit = 25, int offset = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>&gt;</td>
+        <td><span class="parametername">projectIds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">limit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Crowdin.Api.ResponseList-1.html">ResponseList</a>&lt;<a class="xref" href="Crowdin.Api.Branches.Branch.html">Branch</a>&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
