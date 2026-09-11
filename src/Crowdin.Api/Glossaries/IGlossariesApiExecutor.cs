@@ -34,6 +34,9 @@ namespace Crowdin.Api.Glossaries
             long projectId,
             ConcordanceSearchRequest request);
 
+        Task<ResponseList<GlossaryConcordanceResultResource>> ConcordanceSearch(
+            OrganizationConcordanceSearchRequest request);
+
         #endregion
 
         #region Glossaries : Export

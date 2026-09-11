@@ -40,6 +40,9 @@ namespace Crowdin.Api.TranslationMemory
             long projectId,
             ConcordanceSearchRequest request);
 
+        Task<ResponseList<TmConcordanceResultResource>> ConcordanceSearch(
+            OrganizationConcordanceSearchRequest request);
+
         Task<TmImportStatus> ImportTm(long tmId, ImportTmRequest request);
 
         Task<TmImportStatus> CheckTmImportStatus(long tmId, string importId);
