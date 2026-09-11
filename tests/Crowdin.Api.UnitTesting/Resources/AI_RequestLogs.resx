@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="ListAiRequestLogs_Response" xml:space="preserve">
+        <value>{
+  "data": [
+    {
+      "id": 12345,
+      "requestId": "9d3b1c4e-2f3a-4b5c-8d6e-7f8a9b0c1d2e",
+      "createdAt": "2026-01-01T10:00:00+00:00",
+      "status": "success",
+      "httpStatus": 200,
+      "model": "gpt-5.6-sol",
+      "sourceAction": "ai_gateway",
+      "promptAction": "pre_translate",
+      "systemCredentials": false,
+      "isAutoTriggered": false,
+      "durationMs": 842,
+      "inputTokens": 512,
+      "outputTokens": 128,
+      "totalCost": 0.012345,
+      "userId": 42,
+      "projectId": 8,
+      "promptId": 5,
+      "aiProviderId": 3,
+      "tokenName": "Token name",
+      "oauthClientId": "gpbccUFxAKZDrLm5Nq8t",
+      "oauthClientName": "AI Pipeline",
+      "ip": "203.0.113.42",
+      "userAgent": "Mozilla/5.0",
+      "error": null
+    },
+    {
+      "id": 12346,
+      "requestId": "8c2b1c4e-2f3a-4b5c-8d6e-7f8a9b0c1d2e",
+      "createdAt": "2026-01-01T10:01:00+00:00",
+      "status": "pending",
+      "httpStatus": null,
+      "model": "gpt-5.6-sol",
+      "sourceAction": "ai_proxy",
+      "promptAction": null,
+      "systemCredentials": true,
+      "isAutoTriggered": true,
+      "durationMs": null,
+      "inputTokens": null,
+      "outputTokens": null,
+      "totalCost": null,
+      "userId": null,
+      "projectId": null,
+      "promptId": null,
+      "aiProviderId": 3,
+      "tokenName": null,
+      "oauthClientId": null,
+      "oauthClientName": null,
+      "ip": null,
+      "userAgent": null,
+      "error": null
+    }
+  ],
+  "pagination": {
+    "offset": 0,
+    "limit": 25
+  }
+}</value>
+    </data>
+</root>

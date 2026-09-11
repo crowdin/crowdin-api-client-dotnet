@@ -197,6 +197,10 @@
             <Generator>ResXFileCodeGenerator</Generator>
             <LastGenOutput>AI_Misc.Designer.cs</LastGenOutput>
         </EmbeddedResource>
+        <EmbeddedResource Update="Resources\AI_RequestLogs.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>AI_RequestLogs.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
         <EmbeddedResource Update="Resources\Branches.resx">
             <Generator>ResXFileCodeGenerator</Generator>
             <LastGenOutput>Branches.Designer.cs</LastGenOutput>
@@ -502,6 +506,11 @@
             <DesignTime>True</DesignTime>
             <AutoGen>True</AutoGen>
             <DependentUpon>AI_Misc.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Resources\AI_RequestLogs.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>AI_RequestLogs.resx</DependentUpon>
         </Compile>
         <Compile Update="Resources\AI_Prompts.Designer.cs">
             <DesignTime>True</DesignTime>
