@@ -8,12 +8,15 @@ using Newtonsoft.Json.Linq;
 
 using Crowdin.Api.Core;
 
+#nullable enable
+
 namespace Crowdin.Api.Applications
 {
     public class ApplicationsApiExecutor : IApplicationsApiExecutor
     {
         private readonly ICrowdinApiClient _apiClient;
         private readonly IJsonParser _jsonParser;
+        private const string ApplicationsConsentsUrl = "/applications/consents";
         private const string ApplicationsInstallationsUrl = "/applications/installations";
 
         public ApplicationsApiExecutor(ICrowdinApiClient apiClient)
@@ -26,6 +29,62 @@ namespace Crowdin.Api.Applications
         {
             _apiClient = apiClient;
             _jsonParser = jsonParser;
+        }
+
+        /// <summary>
+        /// List Application Consent Decisions. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#operation/api.applications.consents.getMany">Crowdin API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<ApplicationConsent>> ListApplicationConsents(
+            string? identifier = null,
+            int limit = 25,
+            int offset = 0,
+            IEnumerable<SortingRule>? orderBy = null)
+        {
+            IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
+            queryParams.AddParamIfPresent("identifier", identifier);
+            queryParams.AddSortingRulesIfPresent(orderBy);
+
+            CrowdinApiResult result = await _apiClient.SendGetRequest(ApplicationsConsentsUrl, queryParams);
+            return _jsonParser.ParseResponseList<ApplicationConsent>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Add Application Consent Decision. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#operation/api.applications.consents.post">Crowdin API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ApplicationConsent> AddApplicationConsent(AddApplicationConsentRequest request)
+        {
+            CrowdinApiResult result = await _apiClient.SendPostRequest(ApplicationsConsentsUrl, request);
+            return _jsonParser.ParseResponseObject<ApplicationConsent>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Edit Application Consent Decision. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#operation/api.applications.consents.patch">Crowdin API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ApplicationConsent> EditApplicationConsent(
+            long consentId,
+            IEnumerable<ApplicationConsentPatch> patches)
+        {
+            string url = FormUrl_ApplicationConsent(consentId);
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            return _jsonParser.ParseResponseObject<ApplicationConsent>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Delete Application Consent Decision. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#operation/api.applications.consents.delete">Crowdin API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task DeleteApplicationConsent(long consentId)
+        {
+            string url = FormUrl_ApplicationConsent(consentId);
+            HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
+            Utils.ThrowIfStatusNot204(statusCode, $"Application consent {consentId} removal failed");
         }
 
         /// <summary>
@@ -166,6 +225,11 @@ namespace Crowdin.Api.Applications
         private string FormUrl_ApplicationsInstallations(string applicationIdentifier)
         {
             return $"{ApplicationsInstallationsUrl}/{applicationIdentifier}";
+        }
+
+        private string FormUrl_ApplicationConsent(long consentId)
+        {
+            return $"{ApplicationsConsentsUrl}/{consentId}";
         }
     }
 }
