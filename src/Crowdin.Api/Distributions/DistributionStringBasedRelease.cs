@@ -23,5 +23,11 @@ namespace Crowdin.Api.Distributions
 
         [JsonProperty("date")]
         public DateTimeOffset? Date { get; set; }
+
+        /// <summary>
+        /// Details about a failed distribution release.
+        /// </summary>
+        [JsonProperty("error")]
+        public DistributionReleaseError? Error { get; set; }
     }
 }

@@ -165,5 +165,69 @@ namespace Crowdin.Api.UnitTesting.Tests.Distributions
 
             Assert.Equal(expectedRequestJson, actualRequestJson);
         }
+
+        [Fact]
+        public async Task GetDistributionRelease_DeserializesErrorDetails()
+        {
+            const int projectId = 1;
+            const string hash = "someHash";
+            const string errorMessage = "Distribution release failed";
+            var url = $"/projects/{projectId}/distributions/{hash}/release";
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+            mockClient
+                .Setup(client => client.SendGetRequest(url, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = CreateFailedDistributionReleaseResponse(errorMessage, "currentFileId", 123)
+                });
+
+            var executor = new DistributionsApiExecutor(mockClient.Object);
+            DistributionRelease response = await executor.GetDistributionRelease(projectId, hash);
+
+            Assert.Equal(DistributionReleaseStatus.Failed, response.Status);
+            Assert.Equal(errorMessage, response.Error?.Message);
+        }
+
+        [Fact]
+        public async Task GetDistributionReleaseStringBased_DeserializesErrorDetails()
+        {
+            const int projectId = 1;
+            const string hash = "someHash";
+            const string errorMessage = "Distribution release failed";
+            var url = $"/projects/{projectId}/distributions/{hash}/release";
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+            mockClient
+                .Setup(client => client.SendGetRequest(url, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = CreateFailedDistributionReleaseResponse(errorMessage, "currentBranchId", 456)
+                });
+
+            var executor = new DistributionsApiExecutor(mockClient.Object);
+            DistributionStringBasedRelease response = await executor.GetDistributionReleaseStringBased(projectId, hash);
+
+            Assert.Equal(DistributionReleaseStatus.Failed, response.Status);
+            Assert.Equal(errorMessage, response.Error?.Message);
+        }
+
+        private static JObject CreateFailedDistributionReleaseResponse(
+            string errorMessage,
+            string currentResourceIdProperty,
+            long currentResourceId)
+        {
+            return new JObject(
+                new JProperty("data", new JObject(
+                    new JProperty("status", "failed"),
+                    new JProperty("progress", 50),
+                    new JProperty("currentLanguageId", "uk"),
+                    new JProperty(currentResourceIdProperty, currentResourceId),
+                    new JProperty("date", "2019-09-23T09:04:29+00:00"),
+                    new JProperty("error", new JObject(
+                        new JProperty("message", errorMessage))))));
+        }
     }
 }
