@@ -440,6 +440,26 @@ namespace Crowdin.Api.AI
 
         #endregion
 
+        #region Request Logs
+
+        /// <summary>
+        /// List AI Request Logs. Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#operation/api.ai.requestLogs.getMany">Crowdin File Based API</a>
+        /// <a href="https://support.crowdin.com/developer/api/v2/string-based/#operation/api.ai.requestLogs.getMany">Crowdin String Based API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#operation/api.ai.requestLogs.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<AiRequestLog>> ListAiRequestLogs(
+            long? userId,
+            AiRequestLogsListParams @params)
+        {
+            string url = AddUserIdIfAvailable(userId, "/ai/request-logs");
+            CrowdinApiResult result = await _apiClient.SendGetRequest(url, @params.ToQueryParams());
+            return _jsonParser.ParseResponseList<AiRequestLog>(result.JsonObject);
+        }
+
+        #endregion
+
         #region Settings
 
         /// <summary>
