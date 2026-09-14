@@ -167,5 +167,29 @@ namespace Crowdin.Api.UnitTesting.Resources {
                 return ResourceManager.GetString("ListApplicationInstallation_Response", resourceCulture);
             }
         }
+
+        internal static string AddApplicationConsent_Request {
+            get {
+                return ResourceManager.GetString("AddApplicationConsent_Request", resourceCulture);
+            }
+        }
+
+        internal static string EditApplicationConsent_Request {
+            get {
+                return ResourceManager.GetString("EditApplicationConsent_Request", resourceCulture);
+            }
+        }
+
+        internal static string GetApplicationConsent_Response {
+            get {
+                return ResourceManager.GetString("GetApplicationConsent_Response", resourceCulture);
+            }
+        }
+
+        internal static string ListApplicationConsent_Response {
+            get {
+                return ResourceManager.GetString("ListApplicationConsent_Response", resourceCulture);
+            }
+        }
     }
 }
