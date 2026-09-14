@@ -170,6 +170,50 @@ namespace Crowdin.Api.UnitTesting.Tests.SourceStrings
             Assert_StringUploadResponseModel(response);
         }
 
+        [Fact]
+        public async Task EditString_WithUpdateOption()
+        {
+            const int projectId = 1;
+            const int stringId = 2814;
+
+            var patches = new[]
+            {
+                new SourceStringPatch
+                {
+                    Operation = PatchOperation.Replace,
+                    Path = StringPatchPath.Text,
+                    Value = "Updated string"
+                }
+            };
+
+            string actualRequestJson = JsonConvert.SerializeObject(patches, DefaultSettings);
+            string expectedRequestJson = TestUtils.CompactJson(Resources.SourceStrings.EditString_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/projects/{projectId}/strings/{stringId}";
+            IDictionary<string, string> queryParams = new Dictionary<string, string>
+            {
+                { "updateOption", "keep_translations" }
+            };
+
+            mockClient
+                .Setup(client => client.SendPatchRequest(url, patches, queryParams))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Resources.SourceStrings.EditString_Response)
+                });
+
+            var executor = new SourceStringsApiExecutor(mockClient.Object);
+            SourceString response = await executor.EditString(
+                projectId, stringId, patches, UpdateOption.KeepTranslations);
+
+            Assert.Equal(stringId, response.Id);
+            Assert.Equal("Updated string", response.Text);
+        }
+
         private static void Assert_StringUploadResponseModel(StringUploadResponseModel? response)
         {
             Assert.NotNull(response);
