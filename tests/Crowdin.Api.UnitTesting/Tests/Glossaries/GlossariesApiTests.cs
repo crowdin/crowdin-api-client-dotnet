@@ -206,6 +206,40 @@ namespace Crowdin.Api.UnitTesting.Tests.Glossaries
             Assert_Term(resource.TargetTerms?.Single());
         }
 
+        [Fact]
+        public async Task OrganizationConcordanceSearch()
+        {
+            var request = new OrganizationConcordanceSearchRequest
+            {
+                SourceLanguageId = "en",
+                TargetLanguageId = "de",
+                Expressions = ["Welcome!", "Save as..."],
+                UserId = 2
+            };
+
+            string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
+            string expectedRequestJson = TestUtils.CompactJson(Resources.Glossaries.OrganizationConcordanceSearch_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+
+            const string url = "/glossaries/concordance";
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            mockClient
+                .Setup(client => client.SendPostRequest(url, request, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Resources.Glossaries.ConcordanceSearch_Response)
+                });
+
+            var executor = new GlossariesApiExecutor(mockClient.Object);
+            ResponseList<GlossaryConcordanceResultResource> response = await executor.ConcordanceSearch(request);
+
+            Assert.NotNull(response);
+            Assert.Equal(2, response.Data.Single().Glossary.Id);
+        }
+
         private static void Assert_Term(Term? term)
         {
             Assert.NotNull(term);

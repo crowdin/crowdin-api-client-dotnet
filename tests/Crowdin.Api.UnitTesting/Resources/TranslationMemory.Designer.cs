@@ -202,6 +202,25 @@ namespace Crowdin.Api.UnitTesting.Resources {
                 return ResourceManager.GetString("ConcordanceSearch_Request", resourceCulture);
             }
         }
+
+        /// <summary>
+        ///   Looks up a localized string similar to {
+        ///  &quot;sourceLanguageId&quot;: &quot;en&quot;,
+        ///  &quot;targetLanguageId&quot;: &quot;de&quot;,
+        ///  &quot;autoSubstitution&quot;: true,
+        ///  &quot;minRelevant&quot;: 60,
+        ///  &quot;expressions&quot;: [
+        ///    &quot;Welcome!&quot;,
+        ///    &quot;Save as...&quot;
+        ///  ],
+        ///  &quot;userId&quot;: 2
+        ///}.
+        /// </summary>
+        internal static string OrganizationConcordanceSearch_Request {
+            get {
+                return ResourceManager.GetString("OrganizationConcordanceSearch_Request", resourceCulture);
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized string similar to {

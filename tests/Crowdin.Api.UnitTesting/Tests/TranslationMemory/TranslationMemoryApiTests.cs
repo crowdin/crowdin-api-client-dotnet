@@ -377,6 +377,42 @@ namespace Crowdin.Api.UnitTesting.Tests.TranslationMemory
             Assert.Equal(DateTimeOffset.Parse("2022-09-28T12:29:34+00:00"), resource.UpdatedAt);
         }
 
+        [Fact]
+        public async Task OrganizationConcordanceSearch()
+        {
+            var request = new OrganizationConcordanceSearchRequest
+            {
+                SourceLanguageId = "en",
+                TargetLanguageId = "de",
+                AutoSubstitution = true,
+                MinRelevant = 60,
+                Expressions = ["Welcome!", "Save as..."],
+                UserId = 2
+            };
+
+            string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
+            string expectedRequestJson = TestUtils.CompactJson(Resources.TranslationMemory.OrganizationConcordanceSearch_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+
+            const string url = "/tms/concordance";
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            mockClient
+                .Setup(client => client.SendPostRequest(url, request, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(Resources.TranslationMemory.ConcordanceSearch_Response)
+                });
+
+            var executor = new TranslationMemoryApiExecutor(mockClient.Object);
+            ResponseList<TmConcordanceResultResource>? response = await executor.ConcordanceSearch(request);
+
+            Assert.NotNull(response);
+            Assert.Equal(4, response.Data.Single().Tm.Id);
+        }
+
         private static void Assert_TmExportStatus(TmExportStatus? model)
         {
             Assert.NotNull(model);
