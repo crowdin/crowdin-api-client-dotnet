@@ -210,6 +210,43 @@ namespace Crowdin.Api.UnitTesting.Tests.Translations
         }
 
         [Fact]
+        public async Task ApplyPreTranslation_WithDirectoryIds()
+        {
+            const int projectId = 1;
+
+            var body = new ApplyPreTranslationRequest
+            {
+                LanguageIds = new HashSet<string> { "uk" },
+                BranchIds = new HashSet<long> { 5 },
+                DirectoryIds = new HashSet<long> { 10, 11 }
+            };
+
+            string actualRequestJson = JsonConvert.SerializeObject(body, JsonSettings);
+            string expectedRequestJson = TestUtils.CompactJson(Resources.Translations.ApplyPreTranslation_Request_WithDirectoryIds);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+
+            var mockClient = new Mock<ICrowdinApiClient>();
+
+            mockClient
+                .Setup(client => client.SendPostRequest(
+                    $"/projects/{projectId}/pre-translations", body, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.Accepted,
+                    JsonObject = JObject.Parse(Resources.Translations.ApplyPreTranslation_Response_WithDirectoryIds)
+                });
+
+            var executor = new TranslationsApiExecutor(mockClient.Object, TestUtils.CreateJsonParser());
+            PreTranslation preTranslation = await executor.ApplyPreTranslation(projectId, body);
+
+            Assert.NotNull(preTranslation);
+            PreTranslateAttributes? attributes = preTranslation.Attributes;
+            Assert.NotNull(attributes);
+            Assert.Equal(new long[] { 10, 11 }, attributes.DirectoryIds);
+            Assert.Equal(new[] { "5" }, attributes.BranchIds);
+        }
+
+        [Fact]
         public async Task UploadTranslations()
         {
             const int projectId = 1;
