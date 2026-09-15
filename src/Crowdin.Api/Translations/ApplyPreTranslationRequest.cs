@@ -19,6 +19,9 @@ namespace Crowdin.Api.Translations
         [JsonProperty("branchIds")]
         public ICollection<long>? BranchIds { get; set; }
 
+        [JsonProperty("directoryIds")]
+        public ICollection<long>? DirectoryIds { get; set; }
+
         [JsonProperty("fileIds")]
         public ICollection<long>? FileIds { get; set; }
 
