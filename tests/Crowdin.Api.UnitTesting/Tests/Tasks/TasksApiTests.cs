@@ -188,6 +188,27 @@ namespace Crowdin.Api.UnitTesting.Tests.Tasks
             Assert.Contains("\"value\":true", actualJson);
         }
 
+        [Theory]
+        [InlineData(VendorTaskPatchPath.GenerateCostEstimate, "/generateCostEstimate")]
+        [InlineData(VendorTaskPatchPath.GenerateTranslationCost, "/generateTranslationCost")]
+        [InlineData(VendorTaskPatchPath.ReportSettingsTemplateId, "/reportSettingsTemplateId")]
+        public void EditTask_VendorTaskPatch_NewPaths_PatchSerialization(VendorTaskPatchPath path, string expectedPath)
+        {
+            var patches = new[]
+            {
+                new VendorTaskPatch
+                {
+                    Operation = PatchOperation.Replace,
+                    Path = path,
+                    Value = 1
+                }
+            };
+
+            string actualJson = JsonConvert.SerializeObject(patches, Settings);
+            Assert.Contains($"\"path\":\"{expectedPath}\"", actualJson);
+            Assert.Contains("\"value\":1", actualJson);
+        }
+
         [Fact]
         public async System.Threading.Tasks.Task ListTasks()
         {
@@ -301,6 +322,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Tasks
             Assert.Equal("/proofread/9092638ac9f2a2d1b5571d08edc53763/all/en-fr/10?task=dac37aff364d83899128e68afe0de4994", task.TranslationUrl);
             Assert.Equal("https://crowdin.com/project/example-project/tasks/1", task.WebUrl);
             Assert.Equal(24, task.WordsCount);
+            Assert.Equal(30, task.OriginalWordsCount);
             Assert.Equal(0, task.CommentsCount);
 
             DateTimeOffset date = DateTimeOffset.Parse("2019-09-27T07:00:14+00:00");
@@ -331,6 +353,12 @@ namespace Crowdin.Api.UnitTesting.Tests.Tasks
             Assert.Equal("gengo", task.Vendor);
             Assert.Equal(3, task.FilesCount);
             Assert.Equal([24, 25, 38], task.FileIds);
+            
+            TaskSyncScope? syncScope = task.SyncScope;
+            ArgumentNullException.ThrowIfNull(syncScope);
+            Assert.Equal(820, syncScope.SyncedWords);
+            Assert.Equal(120, syncScope.PendingWords);
+            Assert.Equal(60, syncScope.SkippedWords);
         }
 
         private static void Assert_Language(Language? language)
