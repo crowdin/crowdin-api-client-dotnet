@@ -16,6 +16,9 @@ namespace Crowdin.Api.Translations
         [JsonProperty("branchIds")]
         public string[] BranchIds { get; set; } = Array.Empty<string>();
 
+        [JsonProperty("directoryIds")]
+        public long[]? DirectoryIds { get; set; }
+
         [JsonProperty("fileIds")]
         public long[]? FileIds { get; set; }
 
