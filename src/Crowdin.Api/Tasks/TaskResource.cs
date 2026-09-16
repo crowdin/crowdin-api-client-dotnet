@@ -36,6 +36,9 @@ namespace Crowdin.Api.Tasks
         [JsonProperty("wordsCount")]
         public int WordsCount { get; set; }
         
+        [JsonProperty("originalWordsCount")]
+        public int? OriginalWordsCount { get; set; }
+        
         [JsonProperty("filesCount")]
         public int FilesCount { get; set; }
         
@@ -137,5 +140,8 @@ namespace Crowdin.Api.Tasks
         
         [JsonProperty("actualCost")]
         public TaskCost? ActualCost { get; set; }
+        
+        [JsonProperty("syncScope")]
+        public TaskSyncScope? SyncScope { get; set; }
     }
 }

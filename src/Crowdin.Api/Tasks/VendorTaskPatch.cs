@@ -22,6 +22,15 @@ namespace Crowdin.Api.Tasks
         Description,
         
         [Description("/status")]
-        Status
+        Status,
+        
+        [Description("/generateCostEstimate")]
+        GenerateCostEstimate,
+        
+        [Description("/generateTranslationCost")]
+        GenerateTranslationCost,
+        
+        [Description("/reportSettingsTemplateId")]
+        ReportSettingsTemplateId
     }
 }
