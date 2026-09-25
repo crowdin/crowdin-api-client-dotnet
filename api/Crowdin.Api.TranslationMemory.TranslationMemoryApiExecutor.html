@@ -116,7 +116,7 @@
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Crowdin.html">Crowdin</a>.<a class="xref" href="Crowdin.Api.html">Api</a>.<a class="xref" href="Crowdin.Api.TranslationMemory.html">TranslationMemory</a></h6>
+  <h6><strong>Namespace</strong>: <span class="xref">Crowdin</span>.<a class="xref" href="Crowdin.Api.html">Api</a>.<a class="xref" href="Crowdin.Api.TranslationMemory.html">TranslationMemory</a></h6>
   <h6><strong>Assembly</strong>: Crowdin.Api.dll</h6>
   <h5 id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_syntax">Syntax</h5>
   <div class="codewrapper">
@@ -307,7 +307,7 @@ public Task&lt;TmExportStatus&gt; CheckTmExportStatus(long tmId, string exportId
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_CheckTmImportStatus_System_Int64_System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.CheckTmImportStatus(System.Int64%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationMemory/TranslationMemoryApiExecutor.cs/#L196">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationMemory/TranslationMemoryApiExecutor.cs/#L210">View Source</a>
   </span>
   <a id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_CheckTmImportStatus_" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.CheckTmImportStatus*"></a>
   <h4 id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_CheckTmImportStatus_System_Int64_System_String_" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.CheckTmImportStatus(System.Int64,System.String)">CheckTmImportStatus(long, string)</h4>
@@ -411,6 +411,57 @@ public Task ClearTm(long tmId)</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ConcordanceSearch_Crowdin_Api_TranslationMemory_OrganizationConcordanceSearchRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ConcordanceSearch(Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationMemory/TranslationMemoryApiExecutor.cs/#L183">View Source</a>
+  </span>
+  <a id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ConcordanceSearch_" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ConcordanceSearch*"></a>
+  <h4 id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ConcordanceSearch_Crowdin_Api_TranslationMemory_OrganizationConcordanceSearchRequest_" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ConcordanceSearch(Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest)">ConcordanceSearch(OrganizationConcordanceSearchRequest)</h4>
+  <div class="markdown level1 summary"><p>Concordance search in organization TMs. Documentation:
+<a href="https://support.crowdin.com/developer/api/v2/file-based/#operation/api.tms.concordance.post">Crowdin API</a>
+<a href="https://support.crowdin.com/developer/enterprise/api/v2/file-based/#operation/api.tms.concordance.post">Crowdin Enterprise API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+public Task&lt;ResponseList&lt;TmConcordanceResultResource&gt;&gt; ConcordanceSearch(OrganizationConcordanceSearchRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.html">OrganizationConcordanceSearchRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Crowdin.Api.ResponseList-1.html">ResponseList</a>&lt;<a class="xref" href="Crowdin.Api.TranslationMemory.TmConcordanceResultResource.html">TmConcordanceResultResource</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ConcordanceSearch_System_Int64_Crowdin_Api_TranslationMemory_ConcordanceSearchRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ConcordanceSearch(System.Int64%2CCrowdin.Api.TranslationMemory.ConcordanceSearchRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -470,7 +521,7 @@ public Task&lt;ResponseList&lt;TmConcordanceResultResource&gt;&gt; ConcordanceSe
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_CreateTmSegment_System_Int64_Crowdin_Api_TranslationMemory_CreateTmSegmentRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.CreateTmSegment(System.Int64%2CCrowdin.Api.TranslationMemory.CreateTmSegmentRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationMemory/TranslationMemoryApiExecutor.cs/#L231">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationMemory/TranslationMemoryApiExecutor.cs/#L245">View Source</a>
   </span>
   <a id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_CreateTmSegment_" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.CreateTmSegment*"></a>
   <h4 id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_CreateTmSegment_System_Int64_Crowdin_Api_TranslationMemory_CreateTmSegmentRequest_" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.CreateTmSegment(System.Int64,Crowdin.Api.TranslationMemory.CreateTmSegmentRequest)">CreateTmSegment(long, CreateTmSegmentRequest)</h4>
@@ -526,7 +577,7 @@ public Task&lt;TmSegmentResource&gt; CreateTmSegment(long tmId, CreateTmSegmentR
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_CreateTmSegmentRecords_System_Int64_System_Int64_Crowdin_Api_TranslationMemory_CreateTmSegmentRecordsRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.CreateTmSegmentRecords(System.Int64%2CSystem.Int64%2CCrowdin.Api.TranslationMemory.CreateTmSegmentRecordsRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationMemory/TranslationMemoryApiExecutor.cs/#L315">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationMemory/TranslationMemoryApiExecutor.cs/#L329">View Source</a>
   </span>
   <a id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_CreateTmSegmentRecords_" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.CreateTmSegmentRecords*"></a>
   <h4 id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_CreateTmSegmentRecords_System_Int64_System_Int64_Crowdin_Api_TranslationMemory_CreateTmSegmentRecordsRequest_" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.CreateTmSegmentRecords(System.Int64,System.Int64,Crowdin.Api.TranslationMemory.CreateTmSegmentRecordsRequest)">CreateTmSegmentRecords(long, long, CreateTmSegmentRecordsRequest)</h4>
@@ -638,7 +689,7 @@ public Task DeleteTm(long tmId)</code></pre>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_DeleteTmSegment_System_Int64_System_Int64_.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.DeleteTmSegment(System.Int64%2CSystem.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationMemory/TranslationMemoryApiExecutor.cs/#L272">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationMemory/TranslationMemoryApiExecutor.cs/#L286">View Source</a>
   </span>
   <a id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_DeleteTmSegment_" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.DeleteTmSegment*"></a>
   <h4 id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_DeleteTmSegment_System_Int64_System_Int64_" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.DeleteTmSegment(System.Int64,System.Int64)">DeleteTmSegment(long, long)</h4>
@@ -694,7 +745,7 @@ public Task DeleteTmSegment(long tmId, long segmentId)</code></pre>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_DeleteTmSegmentRecord_System_Int64_System_Int64_System_Int64_.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.DeleteTmSegmentRecord(System.Int64%2CSystem.Int64%2CSystem.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationMemory/TranslationMemoryApiExecutor.cs/#L285">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationMemory/TranslationMemoryApiExecutor.cs/#L299">View Source</a>
   </span>
   <a id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_DeleteTmSegmentRecord_" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.DeleteTmSegmentRecord*"></a>
   <h4 id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_DeleteTmSegmentRecord_System_Int64_System_Int64_System_Int64_" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.DeleteTmSegmentRecord(System.Int64,System.Int64,System.Int64)">DeleteTmSegmentRecord(long, long, long)</h4>
@@ -867,7 +918,7 @@ public Task&lt;TranslationMemory&gt; EditTm(long tmId, IEnumerable&lt;TmPatch&gt
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_EditTmSegmentRecord_System_Int64_System_Int64_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_TranslationMemory_TmSegmentRecordPatch__.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.EditTmSegmentRecord(System.Int64%2CSystem.Int64%2CSystem.Int64%2CSystem.Collections.Generic.IEnumerable%7BCrowdin.Api.TranslationMemory.TmSegmentRecordPatch%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationMemory/TranslationMemoryApiExecutor.cs/#L298">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationMemory/TranslationMemoryApiExecutor.cs/#L312">View Source</a>
   </span>
   <a id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_EditTmSegmentRecord_" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.EditTmSegmentRecord*"></a>
   <h4 id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_EditTmSegmentRecord_System_Int64_System_Int64_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_TranslationMemory_TmSegmentRecordPatch__" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.EditTmSegmentRecord(System.Int64,System.Int64,System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.TranslationMemory.TmSegmentRecordPatch})">EditTmSegmentRecord(long, long, long, IEnumerable&lt;TmSegmentRecordPatch&gt;)</h4>
@@ -1040,7 +1091,7 @@ public Task&lt;TranslationMemory&gt; GetTm(long tmId)</code></pre>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_GetTmSegment_System_Int64_System_Int64_.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.GetTmSegment(System.Int64%2CSystem.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationMemory/TranslationMemoryApiExecutor.cs/#L259">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationMemory/TranslationMemoryApiExecutor.cs/#L273">View Source</a>
   </span>
   <a id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_GetTmSegment_" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.GetTmSegment*"></a>
   <h4 id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_GetTmSegment_System_Int64_System_Int64_" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.GetTmSegment(System.Int64,System.Int64)">GetTmSegment(long, long)</h4>
@@ -1096,7 +1147,7 @@ public Task&lt;TmSegmentResource&gt; GetTmSegment(long tmId, long segmentId)</co
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ImportTm_System_Int64_Crowdin_Api_TranslationMemory_ImportTmRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ImportTm(System.Int64%2CCrowdin.Api.TranslationMemory.ImportTmRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationMemory/TranslationMemoryApiExecutor.cs/#L183">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationMemory/TranslationMemoryApiExecutor.cs/#L197">View Source</a>
   </span>
   <a id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ImportTm_" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ImportTm*"></a>
   <h4 id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ImportTm_System_Int64_Crowdin_Api_TranslationMemory_ImportTmRequest_" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ImportTm(System.Int64,Crowdin.Api.TranslationMemory.ImportTmRequest)">ImportTm(long, ImportTmRequest)</h4>
@@ -1152,7 +1203,7 @@ public Task&lt;TmImportStatus&gt; ImportTm(long tmId, ImportTmRequest request)</
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ListTmSegments_System_Int64_System_Int32_System_Int32_System_Collections_Generic_IEnumerable_Crowdin_Api_SortingRule__.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTmSegments(System.Int64%2CSystem.Int32%2CSystem.Int32%2CSystem.Collections.Generic.IEnumerable%7BCrowdin.Api.SortingRule%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationMemory/TranslationMemoryApiExecutor.cs/#L211">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationMemory/TranslationMemoryApiExecutor.cs/#L225">View Source</a>
   </span>
   <a id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ListTmSegments_" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTmSegments*"></a>
   <h4 id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ListTmSegments_System_Int64_System_Int32_System_Int32_System_Collections_Generic_IEnumerable_Crowdin_Api_SortingRule__" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ListTmSegments(System.Int64,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{Crowdin.Api.SortingRule})">ListTmSegments(long, int, int, IEnumerable&lt;SortingRule&gt;?)</h4>
@@ -1340,7 +1391,7 @@ public Task&lt;ResponseList&lt;TranslationMemory&gt;&gt; ListTms(long? userId = 
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_TmSegmentBatchOperations_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_TranslationMemory_TmSegmentBatchOpPatch__.md&amp;value=---%0Auid%3A%20Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.TmSegmentBatchOperations(System.Int64%2CSystem.Collections.Generic.IEnumerable%7BCrowdin.Api.TranslationMemory.TmSegmentBatchOpPatch%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationMemory/TranslationMemoryApiExecutor.cs/#L244">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/TranslationMemory/TranslationMemoryApiExecutor.cs/#L258">View Source</a>
   </span>
   <a id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_TmSegmentBatchOperations_" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.TmSegmentBatchOperations*"></a>
   <h4 id="Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_TmSegmentBatchOperations_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_TranslationMemory_TmSegmentBatchOpPatch__" data-uid="Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.TmSegmentBatchOperations(System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.TranslationMemory.TmSegmentBatchOpPatch})">TmSegmentBatchOperations(long, IEnumerable&lt;TmSegmentBatchOpPatch&gt;)</h4>

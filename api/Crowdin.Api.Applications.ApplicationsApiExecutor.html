@@ -116,7 +116,7 @@
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Crowdin.html">Crowdin</a>.<a class="xref" href="Crowdin.Api.html">Api</a>.<a class="xref" href="Crowdin.Api.Applications.html">Applications</a></h6>
+  <h6><strong>Namespace</strong>: <span class="xref">Crowdin</span>.<a class="xref" href="Crowdin.Api.html">Api</a>.<a class="xref" href="Crowdin.Api.Applications.html">Applications</a></h6>
   <h6><strong>Assembly</strong>: Crowdin.Api.dll</h6>
   <h5 id="Crowdin_Api_Applications_ApplicationsApiExecutor_syntax">Syntax</h5>
   <div class="codewrapper">
@@ -129,7 +129,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Applications_ApplicationsApiExecutor__ctor_Crowdin_Api_ICrowdinApiClient_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Applications.ApplicationsApiExecutor.%23ctor(Crowdin.Api.ICrowdinApiClient)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L19">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L22">View Source</a>
   </span>
   <a id="Crowdin_Api_Applications_ApplicationsApiExecutor__ctor_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.#ctor*"></a>
   <h4 id="Crowdin_Api_Applications_ApplicationsApiExecutor__ctor_Crowdin_Api_ICrowdinApiClient_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.#ctor(Crowdin.Api.ICrowdinApiClient)">ApplicationsApiExecutor(ICrowdinApiClient)</h4>
@@ -161,7 +161,7 @@
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Applications_ApplicationsApiExecutor__ctor_Crowdin_Api_ICrowdinApiClient_Crowdin_Api_Core_IJsonParser_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Applications.ApplicationsApiExecutor.%23ctor(Crowdin.Api.ICrowdinApiClient%2CCrowdin.Api.Core.IJsonParser)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L25">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L28">View Source</a>
   </span>
   <a id="Crowdin_Api_Applications_ApplicationsApiExecutor__ctor_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.#ctor*"></a>
   <h4 id="Crowdin_Api_Applications_ApplicationsApiExecutor__ctor_Crowdin_Api_ICrowdinApiClient_Crowdin_Api_Core_IJsonParser_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.#ctor(Crowdin.Api.ICrowdinApiClient,Crowdin.Api.Core.IJsonParser)">ApplicationsApiExecutor(ICrowdinApiClient, IJsonParser)</h4>
@@ -197,10 +197,60 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Applications_ApplicationsApiExecutor_AddApplicationConsent_Crowdin_Api_Applications_AddApplicationConsentRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Applications.ApplicationsApiExecutor.AddApplicationConsent(Crowdin.Api.Applications.AddApplicationConsentRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L57">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Applications_ApplicationsApiExecutor_AddApplicationConsent_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.AddApplicationConsent*"></a>
+  <h4 id="Crowdin_Api_Applications_ApplicationsApiExecutor_AddApplicationConsent_Crowdin_Api_Applications_AddApplicationConsentRequest_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.AddApplicationConsent(Crowdin.Api.Applications.AddApplicationConsentRequest)">AddApplicationConsent(AddApplicationConsentRequest)</h4>
+  <div class="markdown level1 summary"><p>Add Application Consent Decision. Documentation:
+<a href="https://support.crowdin.com/developer/api/v2/#operation/api.applications.consents.post">Crowdin API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+public Task&lt;ApplicationConsent&gt; AddApplicationConsent(AddApplicationConsentRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Crowdin.Api.Applications.AddApplicationConsentRequest.html">AddApplicationConsentRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Crowdin.Api.Applications.ApplicationConsent.html">ApplicationConsent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Applications_ApplicationsApiExecutor_AddApplicationData_System_String_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Applications.ApplicationsApiExecutor.AddApplicationData(System.String%2CSystem.String%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L128">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L187">View Source</a>
   </span>
   <a id="Crowdin_Api_Applications_ApplicationsApiExecutor_AddApplicationData_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.AddApplicationData*"></a>
   <h4 id="Crowdin_Api_Applications_ApplicationsApiExecutor_AddApplicationData_System_String_System_String_System_Object_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.AddApplicationData(System.String,System.String,System.Object)">AddApplicationData(string, string, object)</h4>
@@ -258,10 +308,60 @@ public Task&lt;JObject&gt; AddApplicationData(string applicationIdentifier, stri
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Applications_ApplicationsApiExecutor_DeleteApplicationConsent_System_Int64_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationConsent(System.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L82">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Applications_ApplicationsApiExecutor_DeleteApplicationConsent_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationConsent*"></a>
+  <h4 id="Crowdin_Api_Applications_ApplicationsApiExecutor_DeleteApplicationConsent_System_Int64_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationConsent(System.Int64)">DeleteApplicationConsent(long)</h4>
+  <div class="markdown level1 summary"><p>Delete Application Consent Decision. Documentation:
+<a href="https://support.crowdin.com/developer/api/v2/#operation/api.applications.consents.delete">Crowdin API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+public Task DeleteApplicationConsent(long consentId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">consentId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Applications_ApplicationsApiExecutor_DeleteApplicationData_System_String_System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationData(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L141">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L200">View Source</a>
   </span>
   <a id="Crowdin_Api_Applications_ApplicationsApiExecutor_DeleteApplicationData_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationData*"></a>
   <h4 id="Crowdin_Api_Applications_ApplicationsApiExecutor_DeleteApplicationData_System_String_System_String_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationData(System.String,System.String)">DeleteApplicationData(string, string)</h4>
@@ -317,7 +417,7 @@ public Task DeleteApplicationData(string applicationIdentifier, string path)</co
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Applications_ApplicationsApiExecutor_DeleteApplicationInstallation_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationInstallation(System.String%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L74">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L133">View Source</a>
   </span>
   <a id="Crowdin_Api_Applications_ApplicationsApiExecutor_DeleteApplicationInstallation_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationInstallation*"></a>
   <h4 id="Crowdin_Api_Applications_ApplicationsApiExecutor_DeleteApplicationInstallation_System_String_System_Boolean_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationInstallation(System.String,System.Boolean)">DeleteApplicationInstallation(string, bool)</h4>
@@ -370,10 +470,65 @@ public Task DeleteApplicationInstallation(string applicationIdentifier, bool for
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Applications_ApplicationsApiExecutor_EditApplicationConsent_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_Applications_ApplicationConsentPatch__.md&amp;value=---%0Auid%3A%20Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationConsent(System.Int64%2CSystem.Collections.Generic.IEnumerable%7BCrowdin.Api.Applications.ApplicationConsentPatch%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L68">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Applications_ApplicationsApiExecutor_EditApplicationConsent_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationConsent*"></a>
+  <h4 id="Crowdin_Api_Applications_ApplicationsApiExecutor_EditApplicationConsent_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_Applications_ApplicationConsentPatch__" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationConsent(System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.Applications.ApplicationConsentPatch})">EditApplicationConsent(long, IEnumerable&lt;ApplicationConsentPatch&gt;)</h4>
+  <div class="markdown level1 summary"><p>Edit Application Consent Decision. Documentation:
+<a href="https://support.crowdin.com/developer/api/v2/#operation/api.applications.consents.patch">Crowdin API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+public Task&lt;ApplicationConsent&gt; EditApplicationConsent(long consentId, IEnumerable&lt;ApplicationConsentPatch&gt; patches)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">consentId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Crowdin.Api.Applications.ApplicationConsentPatch.html">ApplicationConsentPatch</a>&gt;</td>
+        <td><span class="parametername">patches</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Crowdin.Api.Applications.ApplicationConsent.html">ApplicationConsent</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Applications_ApplicationsApiExecutor_EditApplicationData_System_String_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationData(System.String%2CSystem.String%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L154">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L213">View Source</a>
   </span>
   <a id="Crowdin_Api_Applications_ApplicationsApiExecutor_EditApplicationData_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationData*"></a>
   <h4 id="Crowdin_Api_Applications_ApplicationsApiExecutor_EditApplicationData_System_String_System_String_System_Object_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationData(System.String,System.String,System.Object)">EditApplicationData(string, string, object)</h4>
@@ -434,7 +589,7 @@ public Task&lt;JObject&gt; EditApplicationData(string applicationIdentifier, str
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Applications_ApplicationsApiExecutor_EditApplicationInstallation_System_String_System_Collections_Generic_IEnumerable_Crowdin_Api_Applications_InstallationPatch__.md&amp;value=---%0Auid%3A%20Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationInstallation(System.String%2CSystem.Collections.Generic.IEnumerable%7BCrowdin.Api.Applications.InstallationPatch%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L89">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L148">View Source</a>
   </span>
   <a id="Crowdin_Api_Applications_ApplicationsApiExecutor_EditApplicationInstallation_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationInstallation*"></a>
   <h4 id="Crowdin_Api_Applications_ApplicationsApiExecutor_EditApplicationInstallation_System_String_System_Collections_Generic_IEnumerable_Crowdin_Api_Applications_InstallationPatch__" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationInstallation(System.String,System.Collections.Generic.IEnumerable{Crowdin.Api.Applications.InstallationPatch})">EditApplicationInstallation(string, IEnumerable&lt;InstallationPatch&gt;)</h4>
@@ -490,7 +645,7 @@ public Task&lt;Application&gt; EditApplicationInstallation(string applicationIde
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Applications_ApplicationsApiExecutor_GetApplicationData_System_String_System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Applications.ApplicationsApiExecutor.GetApplicationData(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L102">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L161">View Source</a>
   </span>
   <a id="Crowdin_Api_Applications_ApplicationsApiExecutor_GetApplicationData_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.GetApplicationData*"></a>
   <h4 id="Crowdin_Api_Applications_ApplicationsApiExecutor_GetApplicationData_System_String_System_String_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.GetApplicationData(System.String,System.String)">GetApplicationData(string, string)</h4>
@@ -546,7 +701,7 @@ public Task&lt;JObject&gt; GetApplicationData(string applicationIdentifier, stri
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Applications_ApplicationsApiExecutor_GetApplicationInstallation_System_String_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Applications.ApplicationsApiExecutor.GetApplicationInstallation(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L49">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L108">View Source</a>
   </span>
   <a id="Crowdin_Api_Applications_ApplicationsApiExecutor_GetApplicationInstallation_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.GetApplicationInstallation*"></a>
   <h4 id="Crowdin_Api_Applications_ApplicationsApiExecutor_GetApplicationInstallation_System_String_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.GetApplicationInstallation(System.String)">GetApplicationInstallation(string)</h4>
@@ -597,7 +752,7 @@ public Task&lt;Application&gt; GetApplicationInstallation(string applicationIden
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Applications_ApplicationsApiExecutor_InstallApplication_Crowdin_Api_Applications_InstallApplicationRequest_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Applications.ApplicationsApiExecutor.InstallApplication(Crowdin.Api.Applications.InstallApplicationRequest)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L62">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L121">View Source</a>
   </span>
   <a id="Crowdin_Api_Applications_ApplicationsApiExecutor_InstallApplication_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.InstallApplication*"></a>
   <h4 id="Crowdin_Api_Applications_ApplicationsApiExecutor_InstallApplication_Crowdin_Api_Applications_InstallApplicationRequest_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.InstallApplication(Crowdin.Api.Applications.InstallApplicationRequest)">InstallApplication(InstallApplicationRequest)</h4>
@@ -645,10 +800,75 @@ public Task&lt;Application&gt; InstallApplication(InstallApplicationRequest requ
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Applications_ApplicationsApiExecutor_ListApplicationConsents_System_String_System_Int32_System_Int32_System_Collections_Generic_IEnumerable_Crowdin_Api_SortingRule__.md&amp;value=---%0Auid%3A%20Crowdin.Api.Applications.ApplicationsApiExecutor.ListApplicationConsents(System.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Collections.Generic.IEnumerable%7BCrowdin.Api.SortingRule%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L38">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Applications_ApplicationsApiExecutor_ListApplicationConsents_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.ListApplicationConsents*"></a>
+  <h4 id="Crowdin_Api_Applications_ApplicationsApiExecutor_ListApplicationConsents_System_String_System_Int32_System_Int32_System_Collections_Generic_IEnumerable_Crowdin_Api_SortingRule__" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.ListApplicationConsents(System.String,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{Crowdin.Api.SortingRule})">ListApplicationConsents(string?, int, int, IEnumerable&lt;SortingRule&gt;?)</h4>
+  <div class="markdown level1 summary"><p>List Application Consent Decisions. Documentation:
+<a href="https://support.crowdin.com/developer/api/v2/#operation/api.applications.consents.getMany">Crowdin API</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+public Task&lt;ResponseList&lt;ApplicationConsent&gt;&gt; ListApplicationConsents(string? identifier = null, int limit = 25, int offset = 0, IEnumerable&lt;SortingRule&gt;? orderBy = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">identifier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">limit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Crowdin.Api.SortingRule.html">SortingRule</a>&gt;</td>
+        <td><span class="parametername">orderBy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Crowdin.Api.ResponseList-1.html">ResponseList</a>&lt;<a class="xref" href="Crowdin.Api.Applications.ApplicationConsent.html">ApplicationConsent</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Applications_ApplicationsApiExecutor_ListApplicationInstallations_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Applications.ApplicationsApiExecutor.ListApplicationInstallations(System.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L36">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L95">View Source</a>
   </span>
   <a id="Crowdin_Api_Applications_ApplicationsApiExecutor_ListApplicationInstallations_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.ListApplicationInstallations*"></a>
   <h4 id="Crowdin_Api_Applications_ApplicationsApiExecutor_ListApplicationInstallations_System_Int32_System_Int32_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.ListApplicationInstallations(System.Int32,System.Int32)">ListApplicationInstallations(int, int)</h4>
@@ -704,7 +924,7 @@ public Task&lt;ResponseList&lt;Application&gt;&gt; ListApplicationInstallations(
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Applications_ApplicationsApiExecutor_UpdateOrRestoreApplicationData_System_String_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Applications.ApplicationsApiExecutor.UpdateOrRestoreApplicationData(System.String%2CSystem.String%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L115">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L174">View Source</a>
   </span>
   <a id="Crowdin_Api_Applications_ApplicationsApiExecutor_UpdateOrRestoreApplicationData_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.UpdateOrRestoreApplicationData*"></a>
   <h4 id="Crowdin_Api_Applications_ApplicationsApiExecutor_UpdateOrRestoreApplicationData_System_String_System_String_System_Object_" data-uid="Crowdin.Api.Applications.ApplicationsApiExecutor.UpdateOrRestoreApplicationData(System.String,System.String,System.Object)">UpdateOrRestoreApplicationData(string, string, object)</h4>
@@ -776,7 +996,7 @@ public Task&lt;JObject&gt; UpdateOrRestoreApplicationData(string applicationIden
                     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Applications_ApplicationsApiExecutor.md&amp;value=---%0Auid%3A%20Crowdin.Api.Applications.ApplicationsApiExecutor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Applications/ApplicationsApiExecutor.cs/#L15" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

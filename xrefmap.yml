@@ -830,6 +830,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.AI.AiApiExecutor.ListAiProviders
   nameWithType: AiApiExecutor.ListAiProviders
+- uid: Crowdin.Api.AI.AiApiExecutor.ListAiRequestLogs(System.Nullable{System.Int64},Crowdin.Api.AI.AiRequestLogsListParams)
+  name: ListAiRequestLogs(long?, AiRequestLogsListParams)
+  href: api/Crowdin.Api.AI.AiApiExecutor.html#Crowdin_Api_AI_AiApiExecutor_ListAiRequestLogs_System_Nullable_System_Int64__Crowdin_Api_AI_AiRequestLogsListParams_
+  commentId: M:Crowdin.Api.AI.AiApiExecutor.ListAiRequestLogs(System.Nullable{System.Int64},Crowdin.Api.AI.AiRequestLogsListParams)
+  name.vb: ListAiRequestLogs(Long?, AiRequestLogsListParams)
+  fullName: Crowdin.Api.AI.AiApiExecutor.ListAiRequestLogs(long?, Crowdin.Api.AI.AiRequestLogsListParams)
+  fullName.vb: Crowdin.Api.AI.AiApiExecutor.ListAiRequestLogs(Long?, Crowdin.Api.AI.AiRequestLogsListParams)
+  nameWithType: AiApiExecutor.ListAiRequestLogs(long?, AiRequestLogsListParams)
+  nameWithType.vb: AiApiExecutor.ListAiRequestLogs(Long?, AiRequestLogsListParams)
+- uid: Crowdin.Api.AI.AiApiExecutor.ListAiRequestLogs*
+  name: ListAiRequestLogs
+  href: api/Crowdin.Api.AI.AiApiExecutor.html#Crowdin_Api_AI_AiApiExecutor_ListAiRequestLogs_
+  commentId: Overload:Crowdin.Api.AI.AiApiExecutor.ListAiRequestLogs
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiApiExecutor.ListAiRequestLogs
+  nameWithType: AiApiExecutor.ListAiRequestLogs
 - uid: Crowdin.Api.AI.AiApiExecutor.ListSupportedAiProviderModels(System.Nullable{System.Int64},System.Int32,System.Int32,System.String,System.Nullable{System.Boolean},System.String)
   name: ListSupportedAiProviderModels(long?, int, int, string?, bool?, string?)
   href: api/Crowdin.Api.AI.AiApiExecutor.html#Crowdin_Api_AI_AiApiExecutor_ListSupportedAiProviderModels_System_Nullable_System_Int64__System_Int32_System_Int32_System_String_System_Nullable_System_Boolean__System_String_
@@ -2860,6 +2876,653 @@ references:
   commentId: F:Crowdin.Api.AI.AiReportType.TokensUsageRawData
   fullName: Crowdin.Api.AI.AiReportType.TokensUsageRawData
   nameWithType: AiReportType.TokensUsageRawData
+- uid: Crowdin.Api.AI.AiRequestLog
+  name: AiRequestLog
+  href: api/Crowdin.Api.AI.AiRequestLog.html
+  commentId: T:Crowdin.Api.AI.AiRequestLog
+  fullName: Crowdin.Api.AI.AiRequestLog
+  nameWithType: AiRequestLog
+- uid: Crowdin.Api.AI.AiRequestLog.AiProviderId
+  name: AiProviderId
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_AiProviderId
+  commentId: P:Crowdin.Api.AI.AiRequestLog.AiProviderId
+  fullName: Crowdin.Api.AI.AiRequestLog.AiProviderId
+  nameWithType: AiRequestLog.AiProviderId
+- uid: Crowdin.Api.AI.AiRequestLog.AiProviderId*
+  name: AiProviderId
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_AiProviderId_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.AiProviderId
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.AiProviderId
+  nameWithType: AiRequestLog.AiProviderId
+- uid: Crowdin.Api.AI.AiRequestLog.CreatedAt
+  name: CreatedAt
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_CreatedAt
+  commentId: P:Crowdin.Api.AI.AiRequestLog.CreatedAt
+  fullName: Crowdin.Api.AI.AiRequestLog.CreatedAt
+  nameWithType: AiRequestLog.CreatedAt
+- uid: Crowdin.Api.AI.AiRequestLog.CreatedAt*
+  name: CreatedAt
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_CreatedAt_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.CreatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.CreatedAt
+  nameWithType: AiRequestLog.CreatedAt
+- uid: Crowdin.Api.AI.AiRequestLog.DurationMs
+  name: DurationMs
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_DurationMs
+  commentId: P:Crowdin.Api.AI.AiRequestLog.DurationMs
+  fullName: Crowdin.Api.AI.AiRequestLog.DurationMs
+  nameWithType: AiRequestLog.DurationMs
+- uid: Crowdin.Api.AI.AiRequestLog.DurationMs*
+  name: DurationMs
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_DurationMs_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.DurationMs
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.DurationMs
+  nameWithType: AiRequestLog.DurationMs
+- uid: Crowdin.Api.AI.AiRequestLog.Error
+  name: Error
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_Error
+  commentId: P:Crowdin.Api.AI.AiRequestLog.Error
+  fullName: Crowdin.Api.AI.AiRequestLog.Error
+  nameWithType: AiRequestLog.Error
+- uid: Crowdin.Api.AI.AiRequestLog.Error*
+  name: Error
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_Error_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.Error
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.Error
+  nameWithType: AiRequestLog.Error
+- uid: Crowdin.Api.AI.AiRequestLog.HttpStatus
+  name: HttpStatus
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_HttpStatus
+  commentId: P:Crowdin.Api.AI.AiRequestLog.HttpStatus
+  fullName: Crowdin.Api.AI.AiRequestLog.HttpStatus
+  nameWithType: AiRequestLog.HttpStatus
+- uid: Crowdin.Api.AI.AiRequestLog.HttpStatus*
+  name: HttpStatus
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_HttpStatus_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.HttpStatus
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.HttpStatus
+  nameWithType: AiRequestLog.HttpStatus
+- uid: Crowdin.Api.AI.AiRequestLog.Id
+  name: Id
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_Id
+  commentId: P:Crowdin.Api.AI.AiRequestLog.Id
+  fullName: Crowdin.Api.AI.AiRequestLog.Id
+  nameWithType: AiRequestLog.Id
+- uid: Crowdin.Api.AI.AiRequestLog.Id*
+  name: Id
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_Id_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.Id
+  nameWithType: AiRequestLog.Id
+- uid: Crowdin.Api.AI.AiRequestLog.InputTokens
+  name: InputTokens
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_InputTokens
+  commentId: P:Crowdin.Api.AI.AiRequestLog.InputTokens
+  fullName: Crowdin.Api.AI.AiRequestLog.InputTokens
+  nameWithType: AiRequestLog.InputTokens
+- uid: Crowdin.Api.AI.AiRequestLog.InputTokens*
+  name: InputTokens
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_InputTokens_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.InputTokens
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.InputTokens
+  nameWithType: AiRequestLog.InputTokens
+- uid: Crowdin.Api.AI.AiRequestLog.Ip
+  name: Ip
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_Ip
+  commentId: P:Crowdin.Api.AI.AiRequestLog.Ip
+  fullName: Crowdin.Api.AI.AiRequestLog.Ip
+  nameWithType: AiRequestLog.Ip
+- uid: Crowdin.Api.AI.AiRequestLog.Ip*
+  name: Ip
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_Ip_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.Ip
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.Ip
+  nameWithType: AiRequestLog.Ip
+- uid: Crowdin.Api.AI.AiRequestLog.IsAutoTriggered
+  name: IsAutoTriggered
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_IsAutoTriggered
+  commentId: P:Crowdin.Api.AI.AiRequestLog.IsAutoTriggered
+  fullName: Crowdin.Api.AI.AiRequestLog.IsAutoTriggered
+  nameWithType: AiRequestLog.IsAutoTriggered
+- uid: Crowdin.Api.AI.AiRequestLog.IsAutoTriggered*
+  name: IsAutoTriggered
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_IsAutoTriggered_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.IsAutoTriggered
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.IsAutoTriggered
+  nameWithType: AiRequestLog.IsAutoTriggered
+- uid: Crowdin.Api.AI.AiRequestLog.Model
+  name: Model
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_Model
+  commentId: P:Crowdin.Api.AI.AiRequestLog.Model
+  fullName: Crowdin.Api.AI.AiRequestLog.Model
+  nameWithType: AiRequestLog.Model
+- uid: Crowdin.Api.AI.AiRequestLog.Model*
+  name: Model
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_Model_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.Model
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.Model
+  nameWithType: AiRequestLog.Model
+- uid: Crowdin.Api.AI.AiRequestLog.OauthClientId
+  name: OauthClientId
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_OauthClientId
+  commentId: P:Crowdin.Api.AI.AiRequestLog.OauthClientId
+  fullName: Crowdin.Api.AI.AiRequestLog.OauthClientId
+  nameWithType: AiRequestLog.OauthClientId
+- uid: Crowdin.Api.AI.AiRequestLog.OauthClientId*
+  name: OauthClientId
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_OauthClientId_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.OauthClientId
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.OauthClientId
+  nameWithType: AiRequestLog.OauthClientId
+- uid: Crowdin.Api.AI.AiRequestLog.OauthClientName
+  name: OauthClientName
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_OauthClientName
+  commentId: P:Crowdin.Api.AI.AiRequestLog.OauthClientName
+  fullName: Crowdin.Api.AI.AiRequestLog.OauthClientName
+  nameWithType: AiRequestLog.OauthClientName
+- uid: Crowdin.Api.AI.AiRequestLog.OauthClientName*
+  name: OauthClientName
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_OauthClientName_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.OauthClientName
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.OauthClientName
+  nameWithType: AiRequestLog.OauthClientName
+- uid: Crowdin.Api.AI.AiRequestLog.OutputTokens
+  name: OutputTokens
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_OutputTokens
+  commentId: P:Crowdin.Api.AI.AiRequestLog.OutputTokens
+  fullName: Crowdin.Api.AI.AiRequestLog.OutputTokens
+  nameWithType: AiRequestLog.OutputTokens
+- uid: Crowdin.Api.AI.AiRequestLog.OutputTokens*
+  name: OutputTokens
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_OutputTokens_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.OutputTokens
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.OutputTokens
+  nameWithType: AiRequestLog.OutputTokens
+- uid: Crowdin.Api.AI.AiRequestLog.ProjectId
+  name: ProjectId
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_ProjectId
+  commentId: P:Crowdin.Api.AI.AiRequestLog.ProjectId
+  fullName: Crowdin.Api.AI.AiRequestLog.ProjectId
+  nameWithType: AiRequestLog.ProjectId
+- uid: Crowdin.Api.AI.AiRequestLog.ProjectId*
+  name: ProjectId
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_ProjectId_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.ProjectId
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.ProjectId
+  nameWithType: AiRequestLog.ProjectId
+- uid: Crowdin.Api.AI.AiRequestLog.PromptAction
+  name: PromptAction
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_PromptAction
+  commentId: P:Crowdin.Api.AI.AiRequestLog.PromptAction
+  fullName: Crowdin.Api.AI.AiRequestLog.PromptAction
+  nameWithType: AiRequestLog.PromptAction
+- uid: Crowdin.Api.AI.AiRequestLog.PromptAction*
+  name: PromptAction
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_PromptAction_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.PromptAction
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.PromptAction
+  nameWithType: AiRequestLog.PromptAction
+- uid: Crowdin.Api.AI.AiRequestLog.PromptId
+  name: PromptId
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_PromptId
+  commentId: P:Crowdin.Api.AI.AiRequestLog.PromptId
+  fullName: Crowdin.Api.AI.AiRequestLog.PromptId
+  nameWithType: AiRequestLog.PromptId
+- uid: Crowdin.Api.AI.AiRequestLog.PromptId*
+  name: PromptId
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_PromptId_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.PromptId
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.PromptId
+  nameWithType: AiRequestLog.PromptId
+- uid: Crowdin.Api.AI.AiRequestLog.RequestId
+  name: RequestId
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_RequestId
+  commentId: P:Crowdin.Api.AI.AiRequestLog.RequestId
+  fullName: Crowdin.Api.AI.AiRequestLog.RequestId
+  nameWithType: AiRequestLog.RequestId
+- uid: Crowdin.Api.AI.AiRequestLog.RequestId*
+  name: RequestId
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_RequestId_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.RequestId
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.RequestId
+  nameWithType: AiRequestLog.RequestId
+- uid: Crowdin.Api.AI.AiRequestLog.SourceAction
+  name: SourceAction
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_SourceAction
+  commentId: P:Crowdin.Api.AI.AiRequestLog.SourceAction
+  fullName: Crowdin.Api.AI.AiRequestLog.SourceAction
+  nameWithType: AiRequestLog.SourceAction
+- uid: Crowdin.Api.AI.AiRequestLog.SourceAction*
+  name: SourceAction
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_SourceAction_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.SourceAction
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.SourceAction
+  nameWithType: AiRequestLog.SourceAction
+- uid: Crowdin.Api.AI.AiRequestLog.Status
+  name: Status
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_Status
+  commentId: P:Crowdin.Api.AI.AiRequestLog.Status
+  fullName: Crowdin.Api.AI.AiRequestLog.Status
+  nameWithType: AiRequestLog.Status
+- uid: Crowdin.Api.AI.AiRequestLog.Status*
+  name: Status
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_Status_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.Status
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.Status
+  nameWithType: AiRequestLog.Status
+- uid: Crowdin.Api.AI.AiRequestLog.SystemCredentials
+  name: SystemCredentials
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_SystemCredentials
+  commentId: P:Crowdin.Api.AI.AiRequestLog.SystemCredentials
+  fullName: Crowdin.Api.AI.AiRequestLog.SystemCredentials
+  nameWithType: AiRequestLog.SystemCredentials
+- uid: Crowdin.Api.AI.AiRequestLog.SystemCredentials*
+  name: SystemCredentials
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_SystemCredentials_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.SystemCredentials
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.SystemCredentials
+  nameWithType: AiRequestLog.SystemCredentials
+- uid: Crowdin.Api.AI.AiRequestLog.TokenName
+  name: TokenName
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_TokenName
+  commentId: P:Crowdin.Api.AI.AiRequestLog.TokenName
+  fullName: Crowdin.Api.AI.AiRequestLog.TokenName
+  nameWithType: AiRequestLog.TokenName
+- uid: Crowdin.Api.AI.AiRequestLog.TokenName*
+  name: TokenName
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_TokenName_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.TokenName
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.TokenName
+  nameWithType: AiRequestLog.TokenName
+- uid: Crowdin.Api.AI.AiRequestLog.TotalCost
+  name: TotalCost
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_TotalCost
+  commentId: P:Crowdin.Api.AI.AiRequestLog.TotalCost
+  fullName: Crowdin.Api.AI.AiRequestLog.TotalCost
+  nameWithType: AiRequestLog.TotalCost
+- uid: Crowdin.Api.AI.AiRequestLog.TotalCost*
+  name: TotalCost
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_TotalCost_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.TotalCost
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.TotalCost
+  nameWithType: AiRequestLog.TotalCost
+- uid: Crowdin.Api.AI.AiRequestLog.UserAgent
+  name: UserAgent
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_UserAgent
+  commentId: P:Crowdin.Api.AI.AiRequestLog.UserAgent
+  fullName: Crowdin.Api.AI.AiRequestLog.UserAgent
+  nameWithType: AiRequestLog.UserAgent
+- uid: Crowdin.Api.AI.AiRequestLog.UserAgent*
+  name: UserAgent
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_UserAgent_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.UserAgent
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.UserAgent
+  nameWithType: AiRequestLog.UserAgent
+- uid: Crowdin.Api.AI.AiRequestLog.UserId
+  name: UserId
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_UserId
+  commentId: P:Crowdin.Api.AI.AiRequestLog.UserId
+  fullName: Crowdin.Api.AI.AiRequestLog.UserId
+  nameWithType: AiRequestLog.UserId
+- uid: Crowdin.Api.AI.AiRequestLog.UserId*
+  name: UserId
+  href: api/Crowdin.Api.AI.AiRequestLog.html#Crowdin_Api_AI_AiRequestLog_UserId_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLog.UserId
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLog.UserId
+  nameWithType: AiRequestLog.UserId
+- uid: Crowdin.Api.AI.AiRequestLogSourceAction
+  name: AiRequestLogSourceAction
+  href: api/Crowdin.Api.AI.AiRequestLogSourceAction.html
+  commentId: T:Crowdin.Api.AI.AiRequestLogSourceAction
+  fullName: Crowdin.Api.AI.AiRequestLogSourceAction
+  nameWithType: AiRequestLogSourceAction
+- uid: Crowdin.Api.AI.AiRequestLogSourceAction.Advisor
+  name: Advisor
+  href: api/Crowdin.Api.AI.AiRequestLogSourceAction.html#Crowdin_Api_AI_AiRequestLogSourceAction_Advisor
+  commentId: F:Crowdin.Api.AI.AiRequestLogSourceAction.Advisor
+  fullName: Crowdin.Api.AI.AiRequestLogSourceAction.Advisor
+  nameWithType: AiRequestLogSourceAction.Advisor
+- uid: Crowdin.Api.AI.AiRequestLogSourceAction.AiAlignment
+  name: AiAlignment
+  href: api/Crowdin.Api.AI.AiRequestLogSourceAction.html#Crowdin_Api_AI_AiRequestLogSourceAction_AiAlignment
+  commentId: F:Crowdin.Api.AI.AiRequestLogSourceAction.AiAlignment
+  fullName: Crowdin.Api.AI.AiRequestLogSourceAction.AiAlignment
+  nameWithType: AiRequestLogSourceAction.AiAlignment
+- uid: Crowdin.Api.AI.AiRequestLogSourceAction.AiFileTranslate
+  name: AiFileTranslate
+  href: api/Crowdin.Api.AI.AiRequestLogSourceAction.html#Crowdin_Api_AI_AiRequestLogSourceAction_AiFileTranslate
+  commentId: F:Crowdin.Api.AI.AiRequestLogSourceAction.AiFileTranslate
+  fullName: Crowdin.Api.AI.AiRequestLogSourceAction.AiFileTranslate
+  nameWithType: AiRequestLogSourceAction.AiFileTranslate
+- uid: Crowdin.Api.AI.AiRequestLogSourceAction.AiGateway
+  name: AiGateway
+  href: api/Crowdin.Api.AI.AiRequestLogSourceAction.html#Crowdin_Api_AI_AiRequestLogSourceAction_AiGateway
+  commentId: F:Crowdin.Api.AI.AiRequestLogSourceAction.AiGateway
+  fullName: Crowdin.Api.AI.AiRequestLogSourceAction.AiGateway
+  nameWithType: AiRequestLogSourceAction.AiGateway
+- uid: Crowdin.Api.AI.AiRequestLogSourceAction.AiPromptCompletion
+  name: AiPromptCompletion
+  href: api/Crowdin.Api.AI.AiRequestLogSourceAction.html#Crowdin_Api_AI_AiRequestLogSourceAction_AiPromptCompletion
+  commentId: F:Crowdin.Api.AI.AiRequestLogSourceAction.AiPromptCompletion
+  fullName: Crowdin.Api.AI.AiRequestLogSourceAction.AiPromptCompletion
+  nameWithType: AiRequestLogSourceAction.AiPromptCompletion
+- uid: Crowdin.Api.AI.AiRequestLogSourceAction.AiProxy
+  name: AiProxy
+  href: api/Crowdin.Api.AI.AiRequestLogSourceAction.html#Crowdin_Api_AI_AiRequestLogSourceAction_AiProxy
+  commentId: F:Crowdin.Api.AI.AiRequestLogSourceAction.AiProxy
+  fullName: Crowdin.Api.AI.AiRequestLogSourceAction.AiProxy
+  nameWithType: AiRequestLogSourceAction.AiProxy
+- uid: Crowdin.Api.AI.AiRequestLogSourceAction.AiSuggestion
+  name: AiSuggestion
+  href: api/Crowdin.Api.AI.AiRequestLogSourceAction.html#Crowdin_Api_AI_AiRequestLogSourceAction_AiSuggestion
+  commentId: F:Crowdin.Api.AI.AiRequestLogSourceAction.AiSuggestion
+  fullName: Crowdin.Api.AI.AiRequestLogSourceAction.AiSuggestion
+  nameWithType: AiRequestLogSourceAction.AiSuggestion
+- uid: Crowdin.Api.AI.AiRequestLogSourceAction.AiTranslateStrings
+  name: AiTranslateStrings
+  href: api/Crowdin.Api.AI.AiRequestLogSourceAction.html#Crowdin_Api_AI_AiRequestLogSourceAction_AiTranslateStrings
+  commentId: F:Crowdin.Api.AI.AiRequestLogSourceAction.AiTranslateStrings
+  fullName: Crowdin.Api.AI.AiRequestLogSourceAction.AiTranslateStrings
+  nameWithType: AiRequestLogSourceAction.AiTranslateStrings
+- uid: Crowdin.Api.AI.AiRequestLogSourceAction.PreTranslateManual
+  name: PreTranslateManual
+  href: api/Crowdin.Api.AI.AiRequestLogSourceAction.html#Crowdin_Api_AI_AiRequestLogSourceAction_PreTranslateManual
+  commentId: F:Crowdin.Api.AI.AiRequestLogSourceAction.PreTranslateManual
+  fullName: Crowdin.Api.AI.AiRequestLogSourceAction.PreTranslateManual
+  nameWithType: AiRequestLogSourceAction.PreTranslateManual
+- uid: Crowdin.Api.AI.AiRequestLogSourceAction.PreTranslateWorkflow
+  name: PreTranslateWorkflow
+  href: api/Crowdin.Api.AI.AiRequestLogSourceAction.html#Crowdin_Api_AI_AiRequestLogSourceAction_PreTranslateWorkflow
+  commentId: F:Crowdin.Api.AI.AiRequestLogSourceAction.PreTranslateWorkflow
+  fullName: Crowdin.Api.AI.AiRequestLogSourceAction.PreTranslateWorkflow
+  nameWithType: AiRequestLogSourceAction.PreTranslateWorkflow
+- uid: Crowdin.Api.AI.AiRequestLogSourceAction.QaCheck
+  name: QaCheck
+  href: api/Crowdin.Api.AI.AiRequestLogSourceAction.html#Crowdin_Api_AI_AiRequestLogSourceAction_QaCheck
+  commentId: F:Crowdin.Api.AI.AiRequestLogSourceAction.QaCheck
+  fullName: Crowdin.Api.AI.AiRequestLogSourceAction.QaCheck
+  nameWithType: AiRequestLogSourceAction.QaCheck
+- uid: Crowdin.Api.AI.AiRequestLogStatus
+  name: AiRequestLogStatus
+  href: api/Crowdin.Api.AI.AiRequestLogStatus.html
+  commentId: T:Crowdin.Api.AI.AiRequestLogStatus
+  fullName: Crowdin.Api.AI.AiRequestLogStatus
+  nameWithType: AiRequestLogStatus
+- uid: Crowdin.Api.AI.AiRequestLogStatus.Error
+  name: Error
+  href: api/Crowdin.Api.AI.AiRequestLogStatus.html#Crowdin_Api_AI_AiRequestLogStatus_Error
+  commentId: F:Crowdin.Api.AI.AiRequestLogStatus.Error
+  fullName: Crowdin.Api.AI.AiRequestLogStatus.Error
+  nameWithType: AiRequestLogStatus.Error
+- uid: Crowdin.Api.AI.AiRequestLogStatus.Pending
+  name: Pending
+  href: api/Crowdin.Api.AI.AiRequestLogStatus.html#Crowdin_Api_AI_AiRequestLogStatus_Pending
+  commentId: F:Crowdin.Api.AI.AiRequestLogStatus.Pending
+  fullName: Crowdin.Api.AI.AiRequestLogStatus.Pending
+  nameWithType: AiRequestLogStatus.Pending
+- uid: Crowdin.Api.AI.AiRequestLogStatus.Success
+  name: Success
+  href: api/Crowdin.Api.AI.AiRequestLogStatus.html#Crowdin_Api_AI_AiRequestLogStatus_Success
+  commentId: F:Crowdin.Api.AI.AiRequestLogStatus.Success
+  fullName: Crowdin.Api.AI.AiRequestLogStatus.Success
+  nameWithType: AiRequestLogStatus.Success
+- uid: Crowdin.Api.AI.AiRequestLogStatus.Timeout
+  name: Timeout
+  href: api/Crowdin.Api.AI.AiRequestLogStatus.html#Crowdin_Api_AI_AiRequestLogStatus_Timeout
+  commentId: F:Crowdin.Api.AI.AiRequestLogStatus.Timeout
+  fullName: Crowdin.Api.AI.AiRequestLogStatus.Timeout
+  nameWithType: AiRequestLogStatus.Timeout
+- uid: Crowdin.Api.AI.AiRequestLogsListParams
+  name: AiRequestLogsListParams
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html
+  commentId: T:Crowdin.Api.AI.AiRequestLogsListParams
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams
+  nameWithType: AiRequestLogsListParams
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.AiProviderId
+  name: AiProviderId
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_AiProviderId
+  commentId: P:Crowdin.Api.AI.AiRequestLogsListParams.AiProviderId
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.AiProviderId
+  nameWithType: AiRequestLogsListParams.AiProviderId
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.AiProviderId*
+  name: AiProviderId
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_AiProviderId_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLogsListParams.AiProviderId
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.AiProviderId
+  nameWithType: AiRequestLogsListParams.AiProviderId
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.CreatedAfter
+  name: CreatedAfter
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_CreatedAfter
+  commentId: P:Crowdin.Api.AI.AiRequestLogsListParams.CreatedAfter
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.CreatedAfter
+  nameWithType: AiRequestLogsListParams.CreatedAfter
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.CreatedAfter*
+  name: CreatedAfter
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_CreatedAfter_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLogsListParams.CreatedAfter
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.CreatedAfter
+  nameWithType: AiRequestLogsListParams.CreatedAfter
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.CreatedBefore
+  name: CreatedBefore
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_CreatedBefore
+  commentId: P:Crowdin.Api.AI.AiRequestLogsListParams.CreatedBefore
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.CreatedBefore
+  nameWithType: AiRequestLogsListParams.CreatedBefore
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.CreatedBefore*
+  name: CreatedBefore
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_CreatedBefore_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLogsListParams.CreatedBefore
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.CreatedBefore
+  nameWithType: AiRequestLogsListParams.CreatedBefore
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.IsAutoTriggered
+  name: IsAutoTriggered
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_IsAutoTriggered
+  commentId: P:Crowdin.Api.AI.AiRequestLogsListParams.IsAutoTriggered
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.IsAutoTriggered
+  nameWithType: AiRequestLogsListParams.IsAutoTriggered
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.IsAutoTriggered*
+  name: IsAutoTriggered
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_IsAutoTriggered_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLogsListParams.IsAutoTriggered
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.IsAutoTriggered
+  nameWithType: AiRequestLogsListParams.IsAutoTriggered
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.Limit
+  name: Limit
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_Limit
+  commentId: P:Crowdin.Api.AI.AiRequestLogsListParams.Limit
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.Limit
+  nameWithType: AiRequestLogsListParams.Limit
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.Limit*
+  name: Limit
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_Limit_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLogsListParams.Limit
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.Limit
+  nameWithType: AiRequestLogsListParams.Limit
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.Model
+  name: Model
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_Model
+  commentId: P:Crowdin.Api.AI.AiRequestLogsListParams.Model
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.Model
+  nameWithType: AiRequestLogsListParams.Model
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.Model*
+  name: Model
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_Model_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLogsListParams.Model
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.Model
+  nameWithType: AiRequestLogsListParams.Model
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.OauthClientId
+  name: OauthClientId
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_OauthClientId
+  commentId: P:Crowdin.Api.AI.AiRequestLogsListParams.OauthClientId
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.OauthClientId
+  nameWithType: AiRequestLogsListParams.OauthClientId
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.OauthClientId*
+  name: OauthClientId
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_OauthClientId_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLogsListParams.OauthClientId
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.OauthClientId
+  nameWithType: AiRequestLogsListParams.OauthClientId
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.Offset
+  name: Offset
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_Offset
+  commentId: P:Crowdin.Api.AI.AiRequestLogsListParams.Offset
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.Offset
+  nameWithType: AiRequestLogsListParams.Offset
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.Offset*
+  name: Offset
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_Offset_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLogsListParams.Offset
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.Offset
+  nameWithType: AiRequestLogsListParams.Offset
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.ProjectId
+  name: ProjectId
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_ProjectId
+  commentId: P:Crowdin.Api.AI.AiRequestLogsListParams.ProjectId
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.ProjectId
+  nameWithType: AiRequestLogsListParams.ProjectId
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.ProjectId*
+  name: ProjectId
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_ProjectId_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLogsListParams.ProjectId
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.ProjectId
+  nameWithType: AiRequestLogsListParams.ProjectId
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.PromptAction
+  name: PromptAction
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_PromptAction
+  commentId: P:Crowdin.Api.AI.AiRequestLogsListParams.PromptAction
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.PromptAction
+  nameWithType: AiRequestLogsListParams.PromptAction
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.PromptAction*
+  name: PromptAction
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_PromptAction_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLogsListParams.PromptAction
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.PromptAction
+  nameWithType: AiRequestLogsListParams.PromptAction
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.RequestId
+  name: RequestId
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_RequestId
+  commentId: P:Crowdin.Api.AI.AiRequestLogsListParams.RequestId
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.RequestId
+  nameWithType: AiRequestLogsListParams.RequestId
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.RequestId*
+  name: RequestId
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_RequestId_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLogsListParams.RequestId
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.RequestId
+  nameWithType: AiRequestLogsListParams.RequestId
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.SourceAction
+  name: SourceAction
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_SourceAction
+  commentId: P:Crowdin.Api.AI.AiRequestLogsListParams.SourceAction
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.SourceAction
+  nameWithType: AiRequestLogsListParams.SourceAction
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.SourceAction*
+  name: SourceAction
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_SourceAction_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLogsListParams.SourceAction
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.SourceAction
+  nameWithType: AiRequestLogsListParams.SourceAction
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.Statuses
+  name: Statuses
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_Statuses
+  commentId: P:Crowdin.Api.AI.AiRequestLogsListParams.Statuses
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.Statuses
+  nameWithType: AiRequestLogsListParams.Statuses
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.Statuses*
+  name: Statuses
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_Statuses_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLogsListParams.Statuses
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.Statuses
+  nameWithType: AiRequestLogsListParams.Statuses
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.SystemCredentials
+  name: SystemCredentials
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_SystemCredentials
+  commentId: P:Crowdin.Api.AI.AiRequestLogsListParams.SystemCredentials
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.SystemCredentials
+  nameWithType: AiRequestLogsListParams.SystemCredentials
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.SystemCredentials*
+  name: SystemCredentials
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_SystemCredentials_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLogsListParams.SystemCredentials
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.SystemCredentials
+  nameWithType: AiRequestLogsListParams.SystemCredentials
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.ToQueryParams
+  name: ToQueryParams()
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_ToQueryParams
+  commentId: M:Crowdin.Api.AI.AiRequestLogsListParams.ToQueryParams
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.ToQueryParams()
+  nameWithType: AiRequestLogsListParams.ToQueryParams()
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.ToQueryParams*
+  name: ToQueryParams
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_ToQueryParams_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLogsListParams.ToQueryParams
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.ToQueryParams
+  nameWithType: AiRequestLogsListParams.ToQueryParams
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.TokenName
+  name: TokenName
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_TokenName
+  commentId: P:Crowdin.Api.AI.AiRequestLogsListParams.TokenName
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.TokenName
+  nameWithType: AiRequestLogsListParams.TokenName
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.TokenName*
+  name: TokenName
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_TokenName_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLogsListParams.TokenName
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.TokenName
+  nameWithType: AiRequestLogsListParams.TokenName
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.UserId
+  name: UserId
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_UserId
+  commentId: P:Crowdin.Api.AI.AiRequestLogsListParams.UserId
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.UserId
+  nameWithType: AiRequestLogsListParams.UserId
+- uid: Crowdin.Api.AI.AiRequestLogsListParams.UserId*
+  name: UserId
+  href: api/Crowdin.Api.AI.AiRequestLogsListParams.html#Crowdin_Api_AI_AiRequestLogsListParams_UserId_
+  commentId: Overload:Crowdin.Api.AI.AiRequestLogsListParams.UserId
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.AiRequestLogsListParams.UserId
+  nameWithType: AiRequestLogsListParams.UserId
 - uid: Crowdin.Api.AI.AiSettings
   name: AiSettings
   href: api/Crowdin.Api.AI.AiSettings.html
@@ -5516,6 +6179,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.AI.IAiApiExecutor.ListAiProviders
   nameWithType: IAiApiExecutor.ListAiProviders
+- uid: Crowdin.Api.AI.IAiApiExecutor.ListAiRequestLogs(System.Nullable{System.Int64},Crowdin.Api.AI.AiRequestLogsListParams)
+  name: ListAiRequestLogs(long?, AiRequestLogsListParams)
+  href: api/Crowdin.Api.AI.IAiApiExecutor.html#Crowdin_Api_AI_IAiApiExecutor_ListAiRequestLogs_System_Nullable_System_Int64__Crowdin_Api_AI_AiRequestLogsListParams_
+  commentId: M:Crowdin.Api.AI.IAiApiExecutor.ListAiRequestLogs(System.Nullable{System.Int64},Crowdin.Api.AI.AiRequestLogsListParams)
+  name.vb: ListAiRequestLogs(Long?, AiRequestLogsListParams)
+  fullName: Crowdin.Api.AI.IAiApiExecutor.ListAiRequestLogs(long?, Crowdin.Api.AI.AiRequestLogsListParams)
+  fullName.vb: Crowdin.Api.AI.IAiApiExecutor.ListAiRequestLogs(Long?, Crowdin.Api.AI.AiRequestLogsListParams)
+  nameWithType: IAiApiExecutor.ListAiRequestLogs(long?, AiRequestLogsListParams)
+  nameWithType.vb: IAiApiExecutor.ListAiRequestLogs(Long?, AiRequestLogsListParams)
+- uid: Crowdin.Api.AI.IAiApiExecutor.ListAiRequestLogs*
+  name: ListAiRequestLogs
+  href: api/Crowdin.Api.AI.IAiApiExecutor.html#Crowdin_Api_AI_IAiApiExecutor_ListAiRequestLogs_
+  commentId: Overload:Crowdin.Api.AI.IAiApiExecutor.ListAiRequestLogs
+  isSpec: "True"
+  fullName: Crowdin.Api.AI.IAiApiExecutor.ListAiRequestLogs
+  nameWithType: IAiApiExecutor.ListAiRequestLogs
 - uid: Crowdin.Api.AI.IAiApiExecutor.ListSupportedAiProviderModels(System.Nullable{System.Int64},System.Int32,System.Int32,System.String,System.Nullable{System.Boolean},System.String)
   name: ListSupportedAiProviderModels(long?, int, int, string?, bool?, string?)
   href: api/Crowdin.Api.AI.IAiApiExecutor.html#Crowdin_Api_AI_IAiApiExecutor_ListSupportedAiProviderModels_System_Nullable_System_Int64__System_Int32_System_Int32_System_String_System_Nullable_System_Boolean__System_String_
@@ -6219,6 +6898,64 @@ references:
   commentId: N:Crowdin.Api.Applications
   fullName: Crowdin.Api.Applications
   nameWithType: Crowdin.Api.Applications
+- uid: Crowdin.Api.Applications.AddApplicationConsentRequest
+  name: AddApplicationConsentRequest
+  href: api/Crowdin.Api.Applications.AddApplicationConsentRequest.html
+  commentId: T:Crowdin.Api.Applications.AddApplicationConsentRequest
+  fullName: Crowdin.Api.Applications.AddApplicationConsentRequest
+  nameWithType: AddApplicationConsentRequest
+- uid: Crowdin.Api.Applications.AddApplicationConsentRequest.Identifier
+  name: Identifier
+  href: api/Crowdin.Api.Applications.AddApplicationConsentRequest.html#Crowdin_Api_Applications_AddApplicationConsentRequest_Identifier
+  commentId: P:Crowdin.Api.Applications.AddApplicationConsentRequest.Identifier
+  fullName: Crowdin.Api.Applications.AddApplicationConsentRequest.Identifier
+  nameWithType: AddApplicationConsentRequest.Identifier
+- uid: Crowdin.Api.Applications.AddApplicationConsentRequest.Identifier*
+  name: Identifier
+  href: api/Crowdin.Api.Applications.AddApplicationConsentRequest.html#Crowdin_Api_Applications_AddApplicationConsentRequest_Identifier_
+  commentId: Overload:Crowdin.Api.Applications.AddApplicationConsentRequest.Identifier
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.AddApplicationConsentRequest.Identifier
+  nameWithType: AddApplicationConsentRequest.Identifier
+- uid: Crowdin.Api.Applications.AddApplicationConsentRequest.InstalledBy
+  name: InstalledBy
+  href: api/Crowdin.Api.Applications.AddApplicationConsentRequest.html#Crowdin_Api_Applications_AddApplicationConsentRequest_InstalledBy
+  commentId: P:Crowdin.Api.Applications.AddApplicationConsentRequest.InstalledBy
+  fullName: Crowdin.Api.Applications.AddApplicationConsentRequest.InstalledBy
+  nameWithType: AddApplicationConsentRequest.InstalledBy
+- uid: Crowdin.Api.Applications.AddApplicationConsentRequest.InstalledBy*
+  name: InstalledBy
+  href: api/Crowdin.Api.Applications.AddApplicationConsentRequest.html#Crowdin_Api_Applications_AddApplicationConsentRequest_InstalledBy_
+  commentId: Overload:Crowdin.Api.Applications.AddApplicationConsentRequest.InstalledBy
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.AddApplicationConsentRequest.InstalledBy
+  nameWithType: AddApplicationConsentRequest.InstalledBy
+- uid: Crowdin.Api.Applications.AddApplicationConsentRequest.Scopes
+  name: Scopes
+  href: api/Crowdin.Api.Applications.AddApplicationConsentRequest.html#Crowdin_Api_Applications_AddApplicationConsentRequest_Scopes
+  commentId: P:Crowdin.Api.Applications.AddApplicationConsentRequest.Scopes
+  fullName: Crowdin.Api.Applications.AddApplicationConsentRequest.Scopes
+  nameWithType: AddApplicationConsentRequest.Scopes
+- uid: Crowdin.Api.Applications.AddApplicationConsentRequest.Scopes*
+  name: Scopes
+  href: api/Crowdin.Api.Applications.AddApplicationConsentRequest.html#Crowdin_Api_Applications_AddApplicationConsentRequest_Scopes_
+  commentId: Overload:Crowdin.Api.Applications.AddApplicationConsentRequest.Scopes
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.AddApplicationConsentRequest.Scopes
+  nameWithType: AddApplicationConsentRequest.Scopes
+- uid: Crowdin.Api.Applications.AddApplicationConsentRequest.Status
+  name: Status
+  href: api/Crowdin.Api.Applications.AddApplicationConsentRequest.html#Crowdin_Api_Applications_AddApplicationConsentRequest_Status
+  commentId: P:Crowdin.Api.Applications.AddApplicationConsentRequest.Status
+  fullName: Crowdin.Api.Applications.AddApplicationConsentRequest.Status
+  nameWithType: AddApplicationConsentRequest.Status
+- uid: Crowdin.Api.Applications.AddApplicationConsentRequest.Status*
+  name: Status
+  href: api/Crowdin.Api.Applications.AddApplicationConsentRequest.html#Crowdin_Api_Applications_AddApplicationConsentRequest_Status_
+  commentId: Overload:Crowdin.Api.Applications.AddApplicationConsentRequest.Status
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.AddApplicationConsentRequest.Status
+  nameWithType: AddApplicationConsentRequest.Status
 - uid: Crowdin.Api.Applications.Application
   name: Application
   href: api/Crowdin.Api.Applications.Application.html
@@ -6381,6 +7118,229 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Applications.Application.Scopes
   nameWithType: Application.Scopes
+- uid: Crowdin.Api.Applications.ApplicationConsent
+  name: ApplicationConsent
+  href: api/Crowdin.Api.Applications.ApplicationConsent.html
+  commentId: T:Crowdin.Api.Applications.ApplicationConsent
+  fullName: Crowdin.Api.Applications.ApplicationConsent
+  nameWithType: ApplicationConsent
+- uid: Crowdin.Api.Applications.ApplicationConsent.CreatedAt
+  name: CreatedAt
+  href: api/Crowdin.Api.Applications.ApplicationConsent.html#Crowdin_Api_Applications_ApplicationConsent_CreatedAt
+  commentId: P:Crowdin.Api.Applications.ApplicationConsent.CreatedAt
+  fullName: Crowdin.Api.Applications.ApplicationConsent.CreatedAt
+  nameWithType: ApplicationConsent.CreatedAt
+- uid: Crowdin.Api.Applications.ApplicationConsent.CreatedAt*
+  name: CreatedAt
+  href: api/Crowdin.Api.Applications.ApplicationConsent.html#Crowdin_Api_Applications_ApplicationConsent_CreatedAt_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationConsent.CreatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationConsent.CreatedAt
+  nameWithType: ApplicationConsent.CreatedAt
+- uid: Crowdin.Api.Applications.ApplicationConsent.Id
+  name: Id
+  href: api/Crowdin.Api.Applications.ApplicationConsent.html#Crowdin_Api_Applications_ApplicationConsent_Id
+  commentId: P:Crowdin.Api.Applications.ApplicationConsent.Id
+  fullName: Crowdin.Api.Applications.ApplicationConsent.Id
+  nameWithType: ApplicationConsent.Id
+- uid: Crowdin.Api.Applications.ApplicationConsent.Id*
+  name: Id
+  href: api/Crowdin.Api.Applications.ApplicationConsent.html#Crowdin_Api_Applications_ApplicationConsent_Id_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationConsent.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationConsent.Id
+  nameWithType: ApplicationConsent.Id
+- uid: Crowdin.Api.Applications.ApplicationConsent.Identifier
+  name: Identifier
+  href: api/Crowdin.Api.Applications.ApplicationConsent.html#Crowdin_Api_Applications_ApplicationConsent_Identifier
+  commentId: P:Crowdin.Api.Applications.ApplicationConsent.Identifier
+  fullName: Crowdin.Api.Applications.ApplicationConsent.Identifier
+  nameWithType: ApplicationConsent.Identifier
+- uid: Crowdin.Api.Applications.ApplicationConsent.Identifier*
+  name: Identifier
+  href: api/Crowdin.Api.Applications.ApplicationConsent.html#Crowdin_Api_Applications_ApplicationConsent_Identifier_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationConsent.Identifier
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationConsent.Identifier
+  nameWithType: ApplicationConsent.Identifier
+- uid: Crowdin.Api.Applications.ApplicationConsent.InstalledBy
+  name: InstalledBy
+  href: api/Crowdin.Api.Applications.ApplicationConsent.html#Crowdin_Api_Applications_ApplicationConsent_InstalledBy
+  commentId: P:Crowdin.Api.Applications.ApplicationConsent.InstalledBy
+  fullName: Crowdin.Api.Applications.ApplicationConsent.InstalledBy
+  nameWithType: ApplicationConsent.InstalledBy
+- uid: Crowdin.Api.Applications.ApplicationConsent.InstalledBy*
+  name: InstalledBy
+  href: api/Crowdin.Api.Applications.ApplicationConsent.html#Crowdin_Api_Applications_ApplicationConsent_InstalledBy_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationConsent.InstalledBy
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationConsent.InstalledBy
+  nameWithType: ApplicationConsent.InstalledBy
+- uid: Crowdin.Api.Applications.ApplicationConsent.Name
+  name: Name
+  href: api/Crowdin.Api.Applications.ApplicationConsent.html#Crowdin_Api_Applications_ApplicationConsent_Name
+  commentId: P:Crowdin.Api.Applications.ApplicationConsent.Name
+  fullName: Crowdin.Api.Applications.ApplicationConsent.Name
+  nameWithType: ApplicationConsent.Name
+- uid: Crowdin.Api.Applications.ApplicationConsent.Name*
+  name: Name
+  href: api/Crowdin.Api.Applications.ApplicationConsent.html#Crowdin_Api_Applications_ApplicationConsent_Name_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationConsent.Name
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationConsent.Name
+  nameWithType: ApplicationConsent.Name
+- uid: Crowdin.Api.Applications.ApplicationConsent.Scopes
+  name: Scopes
+  href: api/Crowdin.Api.Applications.ApplicationConsent.html#Crowdin_Api_Applications_ApplicationConsent_Scopes
+  commentId: P:Crowdin.Api.Applications.ApplicationConsent.Scopes
+  fullName: Crowdin.Api.Applications.ApplicationConsent.Scopes
+  nameWithType: ApplicationConsent.Scopes
+- uid: Crowdin.Api.Applications.ApplicationConsent.Scopes*
+  name: Scopes
+  href: api/Crowdin.Api.Applications.ApplicationConsent.html#Crowdin_Api_Applications_ApplicationConsent_Scopes_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationConsent.Scopes
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationConsent.Scopes
+  nameWithType: ApplicationConsent.Scopes
+- uid: Crowdin.Api.Applications.ApplicationConsent.Status
+  name: Status
+  href: api/Crowdin.Api.Applications.ApplicationConsent.html#Crowdin_Api_Applications_ApplicationConsent_Status
+  commentId: P:Crowdin.Api.Applications.ApplicationConsent.Status
+  fullName: Crowdin.Api.Applications.ApplicationConsent.Status
+  nameWithType: ApplicationConsent.Status
+- uid: Crowdin.Api.Applications.ApplicationConsent.Status*
+  name: Status
+  href: api/Crowdin.Api.Applications.ApplicationConsent.html#Crowdin_Api_Applications_ApplicationConsent_Status_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationConsent.Status
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationConsent.Status
+  nameWithType: ApplicationConsent.Status
+- uid: Crowdin.Api.Applications.ApplicationConsent.UpdatedAt
+  name: UpdatedAt
+  href: api/Crowdin.Api.Applications.ApplicationConsent.html#Crowdin_Api_Applications_ApplicationConsent_UpdatedAt
+  commentId: P:Crowdin.Api.Applications.ApplicationConsent.UpdatedAt
+  fullName: Crowdin.Api.Applications.ApplicationConsent.UpdatedAt
+  nameWithType: ApplicationConsent.UpdatedAt
+- uid: Crowdin.Api.Applications.ApplicationConsent.UpdatedAt*
+  name: UpdatedAt
+  href: api/Crowdin.Api.Applications.ApplicationConsent.html#Crowdin_Api_Applications_ApplicationConsent_UpdatedAt_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationConsent.UpdatedAt
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationConsent.UpdatedAt
+  nameWithType: ApplicationConsent.UpdatedAt
+- uid: Crowdin.Api.Applications.ApplicationConsentPatch
+  name: ApplicationConsentPatch
+  href: api/Crowdin.Api.Applications.ApplicationConsentPatch.html
+  commentId: T:Crowdin.Api.Applications.ApplicationConsentPatch
+  fullName: Crowdin.Api.Applications.ApplicationConsentPatch
+  nameWithType: ApplicationConsentPatch
+- uid: Crowdin.Api.Applications.ApplicationConsentPatch.Path
+  name: Path
+  href: api/Crowdin.Api.Applications.ApplicationConsentPatch.html#Crowdin_Api_Applications_ApplicationConsentPatch_Path
+  commentId: P:Crowdin.Api.Applications.ApplicationConsentPatch.Path
+  fullName: Crowdin.Api.Applications.ApplicationConsentPatch.Path
+  nameWithType: ApplicationConsentPatch.Path
+- uid: Crowdin.Api.Applications.ApplicationConsentPatch.Path*
+  name: Path
+  href: api/Crowdin.Api.Applications.ApplicationConsentPatch.html#Crowdin_Api_Applications_ApplicationConsentPatch_Path_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationConsentPatch.Path
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationConsentPatch.Path
+  nameWithType: ApplicationConsentPatch.Path
+- uid: Crowdin.Api.Applications.ApplicationConsentPatchPath
+  name: ApplicationConsentPatchPath
+  href: api/Crowdin.Api.Applications.ApplicationConsentPatchPath.html
+  commentId: T:Crowdin.Api.Applications.ApplicationConsentPatchPath
+  fullName: Crowdin.Api.Applications.ApplicationConsentPatchPath
+  nameWithType: ApplicationConsentPatchPath
+- uid: Crowdin.Api.Applications.ApplicationConsentPatchPath.Scopes
+  name: Scopes
+  href: api/Crowdin.Api.Applications.ApplicationConsentPatchPath.html#Crowdin_Api_Applications_ApplicationConsentPatchPath_Scopes
+  commentId: F:Crowdin.Api.Applications.ApplicationConsentPatchPath.Scopes
+  fullName: Crowdin.Api.Applications.ApplicationConsentPatchPath.Scopes
+  nameWithType: ApplicationConsentPatchPath.Scopes
+- uid: Crowdin.Api.Applications.ApplicationConsentPatchPath.Status
+  name: Status
+  href: api/Crowdin.Api.Applications.ApplicationConsentPatchPath.html#Crowdin_Api_Applications_ApplicationConsentPatchPath_Status
+  commentId: F:Crowdin.Api.Applications.ApplicationConsentPatchPath.Status
+  fullName: Crowdin.Api.Applications.ApplicationConsentPatchPath.Status
+  nameWithType: ApplicationConsentPatchPath.Status
+- uid: Crowdin.Api.Applications.ApplicationConsentStatus
+  name: ApplicationConsentStatus
+  href: api/Crowdin.Api.Applications.ApplicationConsentStatus.html
+  commentId: T:Crowdin.Api.Applications.ApplicationConsentStatus
+  fullName: Crowdin.Api.Applications.ApplicationConsentStatus
+  nameWithType: ApplicationConsentStatus
+- uid: Crowdin.Api.Applications.ApplicationConsentStatus.Denied
+  name: Denied
+  href: api/Crowdin.Api.Applications.ApplicationConsentStatus.html#Crowdin_Api_Applications_ApplicationConsentStatus_Denied
+  commentId: F:Crowdin.Api.Applications.ApplicationConsentStatus.Denied
+  fullName: Crowdin.Api.Applications.ApplicationConsentStatus.Denied
+  nameWithType: ApplicationConsentStatus.Denied
+- uid: Crowdin.Api.Applications.ApplicationConsentStatus.Granted
+  name: Granted
+  href: api/Crowdin.Api.Applications.ApplicationConsentStatus.html#Crowdin_Api_Applications_ApplicationConsentStatus_Granted
+  commentId: F:Crowdin.Api.Applications.ApplicationConsentStatus.Granted
+  fullName: Crowdin.Api.Applications.ApplicationConsentStatus.Granted
+  nameWithType: ApplicationConsentStatus.Granted
+- uid: Crowdin.Api.Applications.ApplicationConsentUser
+  name: ApplicationConsentUser
+  href: api/Crowdin.Api.Applications.ApplicationConsentUser.html
+  commentId: T:Crowdin.Api.Applications.ApplicationConsentUser
+  fullName: Crowdin.Api.Applications.ApplicationConsentUser
+  nameWithType: ApplicationConsentUser
+- uid: Crowdin.Api.Applications.ApplicationConsentUser.AvatarUrl
+  name: AvatarUrl
+  href: api/Crowdin.Api.Applications.ApplicationConsentUser.html#Crowdin_Api_Applications_ApplicationConsentUser_AvatarUrl
+  commentId: P:Crowdin.Api.Applications.ApplicationConsentUser.AvatarUrl
+  fullName: Crowdin.Api.Applications.ApplicationConsentUser.AvatarUrl
+  nameWithType: ApplicationConsentUser.AvatarUrl
+- uid: Crowdin.Api.Applications.ApplicationConsentUser.AvatarUrl*
+  name: AvatarUrl
+  href: api/Crowdin.Api.Applications.ApplicationConsentUser.html#Crowdin_Api_Applications_ApplicationConsentUser_AvatarUrl_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationConsentUser.AvatarUrl
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationConsentUser.AvatarUrl
+  nameWithType: ApplicationConsentUser.AvatarUrl
+- uid: Crowdin.Api.Applications.ApplicationConsentUser.FullName
+  name: FullName
+  href: api/Crowdin.Api.Applications.ApplicationConsentUser.html#Crowdin_Api_Applications_ApplicationConsentUser_FullName
+  commentId: P:Crowdin.Api.Applications.ApplicationConsentUser.FullName
+  fullName: Crowdin.Api.Applications.ApplicationConsentUser.FullName
+  nameWithType: ApplicationConsentUser.FullName
+- uid: Crowdin.Api.Applications.ApplicationConsentUser.FullName*
+  name: FullName
+  href: api/Crowdin.Api.Applications.ApplicationConsentUser.html#Crowdin_Api_Applications_ApplicationConsentUser_FullName_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationConsentUser.FullName
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationConsentUser.FullName
+  nameWithType: ApplicationConsentUser.FullName
+- uid: Crowdin.Api.Applications.ApplicationConsentUser.Id
+  name: Id
+  href: api/Crowdin.Api.Applications.ApplicationConsentUser.html#Crowdin_Api_Applications_ApplicationConsentUser_Id
+  commentId: P:Crowdin.Api.Applications.ApplicationConsentUser.Id
+  fullName: Crowdin.Api.Applications.ApplicationConsentUser.Id
+  nameWithType: ApplicationConsentUser.Id
+- uid: Crowdin.Api.Applications.ApplicationConsentUser.Id*
+  name: Id
+  href: api/Crowdin.Api.Applications.ApplicationConsentUser.html#Crowdin_Api_Applications_ApplicationConsentUser_Id_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationConsentUser.Id
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationConsentUser.Id
+  nameWithType: ApplicationConsentUser.Id
+- uid: Crowdin.Api.Applications.ApplicationConsentUser.Username
+  name: Username
+  href: api/Crowdin.Api.Applications.ApplicationConsentUser.html#Crowdin_Api_Applications_ApplicationConsentUser_Username
+  commentId: P:Crowdin.Api.Applications.ApplicationConsentUser.Username
+  fullName: Crowdin.Api.Applications.ApplicationConsentUser.Username
+  nameWithType: ApplicationConsentUser.Username
+- uid: Crowdin.Api.Applications.ApplicationConsentUser.Username*
+  name: Username
+  href: api/Crowdin.Api.Applications.ApplicationConsentUser.html#Crowdin_Api_Applications_ApplicationConsentUser_Username_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationConsentUser.Username
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationConsentUser.Username
+  nameWithType: ApplicationConsentUser.Username
 - uid: Crowdin.Api.Applications.ApplicationModule
   name: ApplicationModule
   href: api/Crowdin.Api.Applications.ApplicationModule.html
@@ -6623,6 +7583,19 @@ references:
   fullName.vb: Crowdin.Api.Applications.ApplicationsApiExecutor.New
   nameWithType: ApplicationsApiExecutor.ApplicationsApiExecutor
   nameWithType.vb: ApplicationsApiExecutor.New
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.AddApplicationConsent(Crowdin.Api.Applications.AddApplicationConsentRequest)
+  name: AddApplicationConsent(AddApplicationConsentRequest)
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_AddApplicationConsent_Crowdin_Api_Applications_AddApplicationConsentRequest_
+  commentId: M:Crowdin.Api.Applications.ApplicationsApiExecutor.AddApplicationConsent(Crowdin.Api.Applications.AddApplicationConsentRequest)
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.AddApplicationConsent(Crowdin.Api.Applications.AddApplicationConsentRequest)
+  nameWithType: ApplicationsApiExecutor.AddApplicationConsent(AddApplicationConsentRequest)
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.AddApplicationConsent*
+  name: AddApplicationConsent
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_AddApplicationConsent_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationsApiExecutor.AddApplicationConsent
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.AddApplicationConsent
+  nameWithType: ApplicationsApiExecutor.AddApplicationConsent
 - uid: Crowdin.Api.Applications.ApplicationsApiExecutor.AddApplicationData(System.String,System.String,System.Object)
   name: AddApplicationData(string, string, object)
   href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_AddApplicationData_System_String_System_String_System_Object_
@@ -6639,6 +7612,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.AddApplicationData
   nameWithType: ApplicationsApiExecutor.AddApplicationData
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationConsent(System.Int64)
+  name: DeleteApplicationConsent(long)
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_DeleteApplicationConsent_System_Int64_
+  commentId: M:Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationConsent(System.Int64)
+  name.vb: DeleteApplicationConsent(Long)
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationConsent(long)
+  fullName.vb: Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationConsent(Long)
+  nameWithType: ApplicationsApiExecutor.DeleteApplicationConsent(long)
+  nameWithType.vb: ApplicationsApiExecutor.DeleteApplicationConsent(Long)
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationConsent*
+  name: DeleteApplicationConsent
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_DeleteApplicationConsent_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationConsent
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationConsent
+  nameWithType: ApplicationsApiExecutor.DeleteApplicationConsent
 - uid: Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationData(System.String,System.String)
   name: DeleteApplicationData(string, string)
   href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_DeleteApplicationData_System_String_System_String_
@@ -6671,6 +7660,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.DeleteApplicationInstallation
   nameWithType: ApplicationsApiExecutor.DeleteApplicationInstallation
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationConsent(System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.Applications.ApplicationConsentPatch})
+  name: EditApplicationConsent(long, IEnumerable<ApplicationConsentPatch>)
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_EditApplicationConsent_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_Applications_ApplicationConsentPatch__
+  commentId: M:Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationConsent(System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.Applications.ApplicationConsentPatch})
+  name.vb: EditApplicationConsent(Long, IEnumerable(Of ApplicationConsentPatch))
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationConsent(long, System.Collections.Generic.IEnumerable<Crowdin.Api.Applications.ApplicationConsentPatch>)
+  fullName.vb: Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationConsent(Long, System.Collections.Generic.IEnumerable(Of Crowdin.Api.Applications.ApplicationConsentPatch))
+  nameWithType: ApplicationsApiExecutor.EditApplicationConsent(long, IEnumerable<ApplicationConsentPatch>)
+  nameWithType.vb: ApplicationsApiExecutor.EditApplicationConsent(Long, IEnumerable(Of ApplicationConsentPatch))
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationConsent*
+  name: EditApplicationConsent
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_EditApplicationConsent_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationConsent
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationConsent
+  nameWithType: ApplicationsApiExecutor.EditApplicationConsent
 - uid: Crowdin.Api.Applications.ApplicationsApiExecutor.EditApplicationData(System.String,System.String,System.Object)
   name: EditApplicationData(string, string, object)
   href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_EditApplicationData_System_String_System_String_System_Object_
@@ -6748,6 +7753,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.InstallApplication
   nameWithType: ApplicationsApiExecutor.InstallApplication
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.ListApplicationConsents(System.String,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{Crowdin.Api.SortingRule})
+  name: ListApplicationConsents(string?, int, int, IEnumerable<SortingRule>?)
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_ListApplicationConsents_System_String_System_Int32_System_Int32_System_Collections_Generic_IEnumerable_Crowdin_Api_SortingRule__
+  commentId: M:Crowdin.Api.Applications.ApplicationsApiExecutor.ListApplicationConsents(System.String,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{Crowdin.Api.SortingRule})
+  name.vb: ListApplicationConsents(String, Integer, Integer, IEnumerable(Of SortingRule))
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.ListApplicationConsents(string?, int, int, System.Collections.Generic.IEnumerable<Crowdin.Api.SortingRule>?)
+  fullName.vb: Crowdin.Api.Applications.ApplicationsApiExecutor.ListApplicationConsents(String, Integer, Integer, System.Collections.Generic.IEnumerable(Of Crowdin.Api.SortingRule))
+  nameWithType: ApplicationsApiExecutor.ListApplicationConsents(string?, int, int, IEnumerable<SortingRule>?)
+  nameWithType.vb: ApplicationsApiExecutor.ListApplicationConsents(String, Integer, Integer, IEnumerable(Of SortingRule))
+- uid: Crowdin.Api.Applications.ApplicationsApiExecutor.ListApplicationConsents*
+  name: ListApplicationConsents
+  href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_ListApplicationConsents_
+  commentId: Overload:Crowdin.Api.Applications.ApplicationsApiExecutor.ListApplicationConsents
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.ApplicationsApiExecutor.ListApplicationConsents
+  nameWithType: ApplicationsApiExecutor.ListApplicationConsents
 - uid: Crowdin.Api.Applications.ApplicationsApiExecutor.ListApplicationInstallations(System.Int32,System.Int32)
   name: ListApplicationInstallations(int, int)
   href: api/Crowdin.Api.Applications.ApplicationsApiExecutor.html#Crowdin_Api_Applications_ApplicationsApiExecutor_ListApplicationInstallations_System_Int32_System_Int32_
@@ -6786,6 +7807,19 @@ references:
   commentId: T:Crowdin.Api.Applications.IApplicationsApiExecutor
   fullName: Crowdin.Api.Applications.IApplicationsApiExecutor
   nameWithType: IApplicationsApiExecutor
+- uid: Crowdin.Api.Applications.IApplicationsApiExecutor.AddApplicationConsent(Crowdin.Api.Applications.AddApplicationConsentRequest)
+  name: AddApplicationConsent(AddApplicationConsentRequest)
+  href: api/Crowdin.Api.Applications.IApplicationsApiExecutor.html#Crowdin_Api_Applications_IApplicationsApiExecutor_AddApplicationConsent_Crowdin_Api_Applications_AddApplicationConsentRequest_
+  commentId: M:Crowdin.Api.Applications.IApplicationsApiExecutor.AddApplicationConsent(Crowdin.Api.Applications.AddApplicationConsentRequest)
+  fullName: Crowdin.Api.Applications.IApplicationsApiExecutor.AddApplicationConsent(Crowdin.Api.Applications.AddApplicationConsentRequest)
+  nameWithType: IApplicationsApiExecutor.AddApplicationConsent(AddApplicationConsentRequest)
+- uid: Crowdin.Api.Applications.IApplicationsApiExecutor.AddApplicationConsent*
+  name: AddApplicationConsent
+  href: api/Crowdin.Api.Applications.IApplicationsApiExecutor.html#Crowdin_Api_Applications_IApplicationsApiExecutor_AddApplicationConsent_
+  commentId: Overload:Crowdin.Api.Applications.IApplicationsApiExecutor.AddApplicationConsent
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.IApplicationsApiExecutor.AddApplicationConsent
+  nameWithType: IApplicationsApiExecutor.AddApplicationConsent
 - uid: Crowdin.Api.Applications.IApplicationsApiExecutor.AddApplicationData(System.String,System.String,System.Object)
   name: AddApplicationData(string, string, object)
   href: api/Crowdin.Api.Applications.IApplicationsApiExecutor.html#Crowdin_Api_Applications_IApplicationsApiExecutor_AddApplicationData_System_String_System_String_System_Object_
@@ -6802,6 +7836,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Applications.IApplicationsApiExecutor.AddApplicationData
   nameWithType: IApplicationsApiExecutor.AddApplicationData
+- uid: Crowdin.Api.Applications.IApplicationsApiExecutor.DeleteApplicationConsent(System.Int64)
+  name: DeleteApplicationConsent(long)
+  href: api/Crowdin.Api.Applications.IApplicationsApiExecutor.html#Crowdin_Api_Applications_IApplicationsApiExecutor_DeleteApplicationConsent_System_Int64_
+  commentId: M:Crowdin.Api.Applications.IApplicationsApiExecutor.DeleteApplicationConsent(System.Int64)
+  name.vb: DeleteApplicationConsent(Long)
+  fullName: Crowdin.Api.Applications.IApplicationsApiExecutor.DeleteApplicationConsent(long)
+  fullName.vb: Crowdin.Api.Applications.IApplicationsApiExecutor.DeleteApplicationConsent(Long)
+  nameWithType: IApplicationsApiExecutor.DeleteApplicationConsent(long)
+  nameWithType.vb: IApplicationsApiExecutor.DeleteApplicationConsent(Long)
+- uid: Crowdin.Api.Applications.IApplicationsApiExecutor.DeleteApplicationConsent*
+  name: DeleteApplicationConsent
+  href: api/Crowdin.Api.Applications.IApplicationsApiExecutor.html#Crowdin_Api_Applications_IApplicationsApiExecutor_DeleteApplicationConsent_
+  commentId: Overload:Crowdin.Api.Applications.IApplicationsApiExecutor.DeleteApplicationConsent
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.IApplicationsApiExecutor.DeleteApplicationConsent
+  nameWithType: IApplicationsApiExecutor.DeleteApplicationConsent
 - uid: Crowdin.Api.Applications.IApplicationsApiExecutor.DeleteApplicationData(System.String,System.String)
   name: DeleteApplicationData(string, string)
   href: api/Crowdin.Api.Applications.IApplicationsApiExecutor.html#Crowdin_Api_Applications_IApplicationsApiExecutor_DeleteApplicationData_System_String_System_String_
@@ -6834,6 +7884,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Applications.IApplicationsApiExecutor.DeleteApplicationInstallation
   nameWithType: IApplicationsApiExecutor.DeleteApplicationInstallation
+- uid: Crowdin.Api.Applications.IApplicationsApiExecutor.EditApplicationConsent(System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.Applications.ApplicationConsentPatch})
+  name: EditApplicationConsent(long, IEnumerable<ApplicationConsentPatch>)
+  href: api/Crowdin.Api.Applications.IApplicationsApiExecutor.html#Crowdin_Api_Applications_IApplicationsApiExecutor_EditApplicationConsent_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_Applications_ApplicationConsentPatch__
+  commentId: M:Crowdin.Api.Applications.IApplicationsApiExecutor.EditApplicationConsent(System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.Applications.ApplicationConsentPatch})
+  name.vb: EditApplicationConsent(Long, IEnumerable(Of ApplicationConsentPatch))
+  fullName: Crowdin.Api.Applications.IApplicationsApiExecutor.EditApplicationConsent(long, System.Collections.Generic.IEnumerable<Crowdin.Api.Applications.ApplicationConsentPatch>)
+  fullName.vb: Crowdin.Api.Applications.IApplicationsApiExecutor.EditApplicationConsent(Long, System.Collections.Generic.IEnumerable(Of Crowdin.Api.Applications.ApplicationConsentPatch))
+  nameWithType: IApplicationsApiExecutor.EditApplicationConsent(long, IEnumerable<ApplicationConsentPatch>)
+  nameWithType.vb: IApplicationsApiExecutor.EditApplicationConsent(Long, IEnumerable(Of ApplicationConsentPatch))
+- uid: Crowdin.Api.Applications.IApplicationsApiExecutor.EditApplicationConsent*
+  name: EditApplicationConsent
+  href: api/Crowdin.Api.Applications.IApplicationsApiExecutor.html#Crowdin_Api_Applications_IApplicationsApiExecutor_EditApplicationConsent_
+  commentId: Overload:Crowdin.Api.Applications.IApplicationsApiExecutor.EditApplicationConsent
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.IApplicationsApiExecutor.EditApplicationConsent
+  nameWithType: IApplicationsApiExecutor.EditApplicationConsent
 - uid: Crowdin.Api.Applications.IApplicationsApiExecutor.EditApplicationData(System.String,System.String,System.Object)
   name: EditApplicationData(string, string, object)
   href: api/Crowdin.Api.Applications.IApplicationsApiExecutor.html#Crowdin_Api_Applications_IApplicationsApiExecutor_EditApplicationData_System_String_System_String_System_Object_
@@ -6911,6 +7977,22 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Applications.IApplicationsApiExecutor.InstallApplication
   nameWithType: IApplicationsApiExecutor.InstallApplication
+- uid: Crowdin.Api.Applications.IApplicationsApiExecutor.ListApplicationConsents(System.String,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{Crowdin.Api.SortingRule})
+  name: ListApplicationConsents(string?, int, int, IEnumerable<SortingRule>?)
+  href: api/Crowdin.Api.Applications.IApplicationsApiExecutor.html#Crowdin_Api_Applications_IApplicationsApiExecutor_ListApplicationConsents_System_String_System_Int32_System_Int32_System_Collections_Generic_IEnumerable_Crowdin_Api_SortingRule__
+  commentId: M:Crowdin.Api.Applications.IApplicationsApiExecutor.ListApplicationConsents(System.String,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{Crowdin.Api.SortingRule})
+  name.vb: ListApplicationConsents(String, Integer, Integer, IEnumerable(Of SortingRule))
+  fullName: Crowdin.Api.Applications.IApplicationsApiExecutor.ListApplicationConsents(string?, int, int, System.Collections.Generic.IEnumerable<Crowdin.Api.SortingRule>?)
+  fullName.vb: Crowdin.Api.Applications.IApplicationsApiExecutor.ListApplicationConsents(String, Integer, Integer, System.Collections.Generic.IEnumerable(Of Crowdin.Api.SortingRule))
+  nameWithType: IApplicationsApiExecutor.ListApplicationConsents(string?, int, int, IEnumerable<SortingRule>?)
+  nameWithType.vb: IApplicationsApiExecutor.ListApplicationConsents(String, Integer, Integer, IEnumerable(Of SortingRule))
+- uid: Crowdin.Api.Applications.IApplicationsApiExecutor.ListApplicationConsents*
+  name: ListApplicationConsents
+  href: api/Crowdin.Api.Applications.IApplicationsApiExecutor.html#Crowdin_Api_Applications_IApplicationsApiExecutor_ListApplicationConsents_
+  commentId: Overload:Crowdin.Api.Applications.IApplicationsApiExecutor.ListApplicationConsents
+  isSpec: "True"
+  fullName: Crowdin.Api.Applications.IApplicationsApiExecutor.ListApplicationConsents
+  nameWithType: IApplicationsApiExecutor.ListApplicationConsents
 - uid: Crowdin.Api.Applications.IApplicationsApiExecutor.ListApplicationInstallations(System.Int32,System.Int32)
   name: ListApplicationInstallations(int, int)
   href: api/Crowdin.Api.Applications.IApplicationsApiExecutor.html#Crowdin_Api_Applications_IApplicationsApiExecutor_ListApplicationInstallations_System_Int32_System_Int32_
@@ -11639,6 +12721,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Distributions.DistributionRelease.Date
   nameWithType: DistributionRelease.Date
+- uid: Crowdin.Api.Distributions.DistributionRelease.Error
+  name: Error
+  href: api/Crowdin.Api.Distributions.DistributionRelease.html#Crowdin_Api_Distributions_DistributionRelease_Error
+  commentId: P:Crowdin.Api.Distributions.DistributionRelease.Error
+  fullName: Crowdin.Api.Distributions.DistributionRelease.Error
+  nameWithType: DistributionRelease.Error
+- uid: Crowdin.Api.Distributions.DistributionRelease.Error*
+  name: Error
+  href: api/Crowdin.Api.Distributions.DistributionRelease.html#Crowdin_Api_Distributions_DistributionRelease_Error_
+  commentId: Overload:Crowdin.Api.Distributions.DistributionRelease.Error
+  isSpec: "True"
+  fullName: Crowdin.Api.Distributions.DistributionRelease.Error
+  nameWithType: DistributionRelease.Error
 - uid: Crowdin.Api.Distributions.DistributionRelease.Progress
   name: Progress
   href: api/Crowdin.Api.Distributions.DistributionRelease.html#Crowdin_Api_Distributions_DistributionRelease_Progress
@@ -11665,6 +12760,25 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Distributions.DistributionRelease.Status
   nameWithType: DistributionRelease.Status
+- uid: Crowdin.Api.Distributions.DistributionReleaseError
+  name: DistributionReleaseError
+  href: api/Crowdin.Api.Distributions.DistributionReleaseError.html
+  commentId: T:Crowdin.Api.Distributions.DistributionReleaseError
+  fullName: Crowdin.Api.Distributions.DistributionReleaseError
+  nameWithType: DistributionReleaseError
+- uid: Crowdin.Api.Distributions.DistributionReleaseError.Message
+  name: Message
+  href: api/Crowdin.Api.Distributions.DistributionReleaseError.html#Crowdin_Api_Distributions_DistributionReleaseError_Message
+  commentId: P:Crowdin.Api.Distributions.DistributionReleaseError.Message
+  fullName: Crowdin.Api.Distributions.DistributionReleaseError.Message
+  nameWithType: DistributionReleaseError.Message
+- uid: Crowdin.Api.Distributions.DistributionReleaseError.Message*
+  name: Message
+  href: api/Crowdin.Api.Distributions.DistributionReleaseError.html#Crowdin_Api_Distributions_DistributionReleaseError_Message_
+  commentId: Overload:Crowdin.Api.Distributions.DistributionReleaseError.Message
+  isSpec: "True"
+  fullName: Crowdin.Api.Distributions.DistributionReleaseError.Message
+  nameWithType: DistributionReleaseError.Message
 - uid: Crowdin.Api.Distributions.DistributionReleaseStatus
   name: DistributionReleaseStatus
   href: api/Crowdin.Api.Distributions.DistributionReleaseStatus.html
@@ -11734,6 +12848,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Distributions.DistributionStringBasedRelease.Date
   nameWithType: DistributionStringBasedRelease.Date
+- uid: Crowdin.Api.Distributions.DistributionStringBasedRelease.Error
+  name: Error
+  href: api/Crowdin.Api.Distributions.DistributionStringBasedRelease.html#Crowdin_Api_Distributions_DistributionStringBasedRelease_Error
+  commentId: P:Crowdin.Api.Distributions.DistributionStringBasedRelease.Error
+  fullName: Crowdin.Api.Distributions.DistributionStringBasedRelease.Error
+  nameWithType: DistributionStringBasedRelease.Error
+- uid: Crowdin.Api.Distributions.DistributionStringBasedRelease.Error*
+  name: Error
+  href: api/Crowdin.Api.Distributions.DistributionStringBasedRelease.html#Crowdin_Api_Distributions_DistributionStringBasedRelease_Error_
+  commentId: Overload:Crowdin.Api.Distributions.DistributionStringBasedRelease.Error
+  isSpec: "True"
+  fullName: Crowdin.Api.Distributions.DistributionStringBasedRelease.Error
+  nameWithType: DistributionStringBasedRelease.Error
 - uid: Crowdin.Api.Distributions.DistributionStringBasedRelease.Progress
   name: Progress
   href: api/Crowdin.Api.Distributions.DistributionStringBasedRelease.html#Crowdin_Api_Distributions_DistributionStringBasedRelease_Progress
@@ -13856,6 +14983,12 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ClearGlossary
   nameWithType: GlossariesApiExecutor.ClearGlossary
+- uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ConcordanceSearch(Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest)
+  name: ConcordanceSearch(OrganizationConcordanceSearchRequest)
+  href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ConcordanceSearch_Crowdin_Api_Glossaries_OrganizationConcordanceSearchRequest_
+  commentId: M:Crowdin.Api.Glossaries.GlossariesApiExecutor.ConcordanceSearch(Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest)
+  fullName: Crowdin.Api.Glossaries.GlossariesApiExecutor.ConcordanceSearch(Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest)
+  nameWithType: GlossariesApiExecutor.ConcordanceSearch(OrganizationConcordanceSearchRequest)
 - uid: Crowdin.Api.Glossaries.GlossariesApiExecutor.ConcordanceSearch(System.Int64,Crowdin.Api.Glossaries.ConcordanceSearchRequest)
   name: ConcordanceSearch(long, ConcordanceSearchRequest)
   href: api/Crowdin.Api.Glossaries.GlossariesApiExecutor.html#Crowdin_Api_Glossaries_GlossariesApiExecutor_ConcordanceSearch_System_Int64_Crowdin_Api_Glossaries_ConcordanceSearchRequest_
@@ -14939,6 +16072,12 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.IGlossariesApiExecutor.ClearGlossary
   nameWithType: IGlossariesApiExecutor.ClearGlossary
+- uid: Crowdin.Api.Glossaries.IGlossariesApiExecutor.ConcordanceSearch(Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest)
+  name: ConcordanceSearch(OrganizationConcordanceSearchRequest)
+  href: api/Crowdin.Api.Glossaries.IGlossariesApiExecutor.html#Crowdin_Api_Glossaries_IGlossariesApiExecutor_ConcordanceSearch_Crowdin_Api_Glossaries_OrganizationConcordanceSearchRequest_
+  commentId: M:Crowdin.Api.Glossaries.IGlossariesApiExecutor.ConcordanceSearch(Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest)
+  fullName: Crowdin.Api.Glossaries.IGlossariesApiExecutor.ConcordanceSearch(Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest)
+  nameWithType: IGlossariesApiExecutor.ConcordanceSearch(OrganizationConcordanceSearchRequest)
 - uid: Crowdin.Api.Glossaries.IGlossariesApiExecutor.ConcordanceSearch(System.Int64,Crowdin.Api.Glossaries.ConcordanceSearchRequest)
   name: ConcordanceSearch(long, ConcordanceSearchRequest)
   href: api/Crowdin.Api.Glossaries.IGlossariesApiExecutor.html#Crowdin_Api_Glossaries_IGlossariesApiExecutor_ConcordanceSearch_System_Int64_Crowdin_Api_Glossaries_ConcordanceSearchRequest_
@@ -15255,6 +16394,64 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Glossaries.ImportGlossaryRequest.StorageId
   nameWithType: ImportGlossaryRequest.StorageId
+- uid: Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest
+  name: OrganizationConcordanceSearchRequest
+  href: api/Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.html
+  commentId: T:Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest
+  fullName: Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest
+  nameWithType: OrganizationConcordanceSearchRequest
+- uid: Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.Expressions
+  name: Expressions
+  href: api/Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.html#Crowdin_Api_Glossaries_OrganizationConcordanceSearchRequest_Expressions
+  commentId: P:Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.Expressions
+  fullName: Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.Expressions
+  nameWithType: OrganizationConcordanceSearchRequest.Expressions
+- uid: Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.Expressions*
+  name: Expressions
+  href: api/Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.html#Crowdin_Api_Glossaries_OrganizationConcordanceSearchRequest_Expressions_
+  commentId: Overload:Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.Expressions
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.Expressions
+  nameWithType: OrganizationConcordanceSearchRequest.Expressions
+- uid: Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.SourceLanguageId
+  name: SourceLanguageId
+  href: api/Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.html#Crowdin_Api_Glossaries_OrganizationConcordanceSearchRequest_SourceLanguageId
+  commentId: P:Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.SourceLanguageId
+  fullName: Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.SourceLanguageId
+  nameWithType: OrganizationConcordanceSearchRequest.SourceLanguageId
+- uid: Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.SourceLanguageId*
+  name: SourceLanguageId
+  href: api/Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.html#Crowdin_Api_Glossaries_OrganizationConcordanceSearchRequest_SourceLanguageId_
+  commentId: Overload:Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.SourceLanguageId
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.SourceLanguageId
+  nameWithType: OrganizationConcordanceSearchRequest.SourceLanguageId
+- uid: Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.TargetLanguageId
+  name: TargetLanguageId
+  href: api/Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.html#Crowdin_Api_Glossaries_OrganizationConcordanceSearchRequest_TargetLanguageId
+  commentId: P:Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.TargetLanguageId
+  fullName: Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.TargetLanguageId
+  nameWithType: OrganizationConcordanceSearchRequest.TargetLanguageId
+- uid: Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.TargetLanguageId*
+  name: TargetLanguageId
+  href: api/Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.html#Crowdin_Api_Glossaries_OrganizationConcordanceSearchRequest_TargetLanguageId_
+  commentId: Overload:Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.TargetLanguageId
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.TargetLanguageId
+  nameWithType: OrganizationConcordanceSearchRequest.TargetLanguageId
+- uid: Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.UserId
+  name: UserId
+  href: api/Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.html#Crowdin_Api_Glossaries_OrganizationConcordanceSearchRequest_UserId
+  commentId: P:Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.UserId
+  fullName: Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.UserId
+  nameWithType: OrganizationConcordanceSearchRequest.UserId
+- uid: Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.UserId*
+  name: UserId
+  href: api/Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.html#Crowdin_Api_Glossaries_OrganizationConcordanceSearchRequest_UserId_
+  commentId: Overload:Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.UserId
+  isSpec: "True"
+  fullName: Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.UserId
+  nameWithType: OrganizationConcordanceSearchRequest.UserId
 - uid: Crowdin.Api.Glossaries.PartOfSpeech
   name: PartOfSpeech
   href: api/Crowdin.Api.Glossaries.PartOfSpeech.html
@@ -38314,6 +39511,15 @@ references:
   fullName.vb: Crowdin.Api.SourceStrings.ISourceStringsApiExecutor.EditString(Long, Long, System.Collections.Generic.IEnumerable(Of Crowdin.Api.SourceStrings.SourceStringPatch))
   nameWithType: ISourceStringsApiExecutor.EditString(long, long, IEnumerable<SourceStringPatch>)
   nameWithType.vb: ISourceStringsApiExecutor.EditString(Long, Long, IEnumerable(Of SourceStringPatch))
+- uid: Crowdin.Api.SourceStrings.ISourceStringsApiExecutor.EditString(System.Int64,System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.SourceStrings.SourceStringPatch},System.Nullable{Crowdin.Api.SourceStrings.UpdateOption})
+  name: EditString(long, long, IEnumerable<SourceStringPatch>, UpdateOption?)
+  href: api/Crowdin.Api.SourceStrings.ISourceStringsApiExecutor.html#Crowdin_Api_SourceStrings_ISourceStringsApiExecutor_EditString_System_Int64_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_SourceStrings_SourceStringPatch__System_Nullable_Crowdin_Api_SourceStrings_UpdateOption__
+  commentId: M:Crowdin.Api.SourceStrings.ISourceStringsApiExecutor.EditString(System.Int64,System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.SourceStrings.SourceStringPatch},System.Nullable{Crowdin.Api.SourceStrings.UpdateOption})
+  name.vb: EditString(Long, Long, IEnumerable(Of SourceStringPatch), UpdateOption?)
+  fullName: Crowdin.Api.SourceStrings.ISourceStringsApiExecutor.EditString(long, long, System.Collections.Generic.IEnumerable<Crowdin.Api.SourceStrings.SourceStringPatch>, Crowdin.Api.SourceStrings.UpdateOption?)
+  fullName.vb: Crowdin.Api.SourceStrings.ISourceStringsApiExecutor.EditString(Long, Long, System.Collections.Generic.IEnumerable(Of Crowdin.Api.SourceStrings.SourceStringPatch), Crowdin.Api.SourceStrings.UpdateOption?)
+  nameWithType: ISourceStringsApiExecutor.EditString(long, long, IEnumerable<SourceStringPatch>, UpdateOption?)
+  nameWithType.vb: ISourceStringsApiExecutor.EditString(Long, Long, IEnumerable(Of SourceStringPatch), UpdateOption?)
 - uid: Crowdin.Api.SourceStrings.ISourceStringsApiExecutor.EditString*
   name: EditString
   href: api/Crowdin.Api.SourceStrings.ISourceStringsApiExecutor.html#Crowdin_Api_SourceStrings_ISourceStringsApiExecutor_EditString_
@@ -38393,6 +39599,15 @@ references:
   fullName.vb: Crowdin.Api.SourceStrings.ISourceStringsApiExecutor.StringBatchOperations(Long, System.Collections.Generic.IEnumerable(Of Crowdin.Api.SourceStrings.StringBatchOpPatch))
   nameWithType: ISourceStringsApiExecutor.StringBatchOperations(long, IEnumerable<StringBatchOpPatch>)
   nameWithType.vb: ISourceStringsApiExecutor.StringBatchOperations(Long, IEnumerable(Of StringBatchOpPatch))
+- uid: Crowdin.Api.SourceStrings.ISourceStringsApiExecutor.StringBatchOperations(System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.SourceStrings.StringBatchOpPatch},System.Nullable{Crowdin.Api.SourceStrings.UpdateOption})
+  name: StringBatchOperations(long, IEnumerable<StringBatchOpPatch>, UpdateOption?)
+  href: api/Crowdin.Api.SourceStrings.ISourceStringsApiExecutor.html#Crowdin_Api_SourceStrings_ISourceStringsApiExecutor_StringBatchOperations_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_SourceStrings_StringBatchOpPatch__System_Nullable_Crowdin_Api_SourceStrings_UpdateOption__
+  commentId: M:Crowdin.Api.SourceStrings.ISourceStringsApiExecutor.StringBatchOperations(System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.SourceStrings.StringBatchOpPatch},System.Nullable{Crowdin.Api.SourceStrings.UpdateOption})
+  name.vb: StringBatchOperations(Long, IEnumerable(Of StringBatchOpPatch), UpdateOption?)
+  fullName: Crowdin.Api.SourceStrings.ISourceStringsApiExecutor.StringBatchOperations(long, System.Collections.Generic.IEnumerable<Crowdin.Api.SourceStrings.StringBatchOpPatch>, Crowdin.Api.SourceStrings.UpdateOption?)
+  fullName.vb: Crowdin.Api.SourceStrings.ISourceStringsApiExecutor.StringBatchOperations(Long, System.Collections.Generic.IEnumerable(Of Crowdin.Api.SourceStrings.StringBatchOpPatch), Crowdin.Api.SourceStrings.UpdateOption?)
+  nameWithType: ISourceStringsApiExecutor.StringBatchOperations(long, IEnumerable<StringBatchOpPatch>, UpdateOption?)
+  nameWithType.vb: ISourceStringsApiExecutor.StringBatchOperations(Long, IEnumerable(Of StringBatchOpPatch), UpdateOption?)
 - uid: Crowdin.Api.SourceStrings.ISourceStringsApiExecutor.StringBatchOperations*
   name: StringBatchOperations
   href: api/Crowdin.Api.SourceStrings.ISourceStringsApiExecutor.html#Crowdin_Api_SourceStrings_ISourceStringsApiExecutor_StringBatchOperations_
@@ -38792,6 +40007,15 @@ references:
   fullName.vb: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.EditString(Long, Long, System.Collections.Generic.IEnumerable(Of Crowdin.Api.SourceStrings.SourceStringPatch))
   nameWithType: SourceStringsApiExecutor.EditString(long, long, IEnumerable<SourceStringPatch>)
   nameWithType.vb: SourceStringsApiExecutor.EditString(Long, Long, IEnumerable(Of SourceStringPatch))
+- uid: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.EditString(System.Int64,System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.SourceStrings.SourceStringPatch},System.Nullable{Crowdin.Api.SourceStrings.UpdateOption})
+  name: EditString(long, long, IEnumerable<SourceStringPatch>, UpdateOption?)
+  href: api/Crowdin.Api.SourceStrings.SourceStringsApiExecutor.html#Crowdin_Api_SourceStrings_SourceStringsApiExecutor_EditString_System_Int64_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_SourceStrings_SourceStringPatch__System_Nullable_Crowdin_Api_SourceStrings_UpdateOption__
+  commentId: M:Crowdin.Api.SourceStrings.SourceStringsApiExecutor.EditString(System.Int64,System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.SourceStrings.SourceStringPatch},System.Nullable{Crowdin.Api.SourceStrings.UpdateOption})
+  name.vb: EditString(Long, Long, IEnumerable(Of SourceStringPatch), UpdateOption?)
+  fullName: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.EditString(long, long, System.Collections.Generic.IEnumerable<Crowdin.Api.SourceStrings.SourceStringPatch>, Crowdin.Api.SourceStrings.UpdateOption?)
+  fullName.vb: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.EditString(Long, Long, System.Collections.Generic.IEnumerable(Of Crowdin.Api.SourceStrings.SourceStringPatch), Crowdin.Api.SourceStrings.UpdateOption?)
+  nameWithType: SourceStringsApiExecutor.EditString(long, long, IEnumerable<SourceStringPatch>, UpdateOption?)
+  nameWithType.vb: SourceStringsApiExecutor.EditString(Long, Long, IEnumerable(Of SourceStringPatch), UpdateOption?)
 - uid: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.EditString*
   name: EditString
   href: api/Crowdin.Api.SourceStrings.SourceStringsApiExecutor.html#Crowdin_Api_SourceStrings_SourceStringsApiExecutor_EditString_
@@ -38871,6 +40095,15 @@ references:
   fullName.vb: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.StringBatchOperations(Long, System.Collections.Generic.IEnumerable(Of Crowdin.Api.SourceStrings.StringBatchOpPatch))
   nameWithType: SourceStringsApiExecutor.StringBatchOperations(long, IEnumerable<StringBatchOpPatch>)
   nameWithType.vb: SourceStringsApiExecutor.StringBatchOperations(Long, IEnumerable(Of StringBatchOpPatch))
+- uid: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.StringBatchOperations(System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.SourceStrings.StringBatchOpPatch},System.Nullable{Crowdin.Api.SourceStrings.UpdateOption})
+  name: StringBatchOperations(long, IEnumerable<StringBatchOpPatch>, UpdateOption?)
+  href: api/Crowdin.Api.SourceStrings.SourceStringsApiExecutor.html#Crowdin_Api_SourceStrings_SourceStringsApiExecutor_StringBatchOperations_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_SourceStrings_StringBatchOpPatch__System_Nullable_Crowdin_Api_SourceStrings_UpdateOption__
+  commentId: M:Crowdin.Api.SourceStrings.SourceStringsApiExecutor.StringBatchOperations(System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.SourceStrings.StringBatchOpPatch},System.Nullable{Crowdin.Api.SourceStrings.UpdateOption})
+  name.vb: StringBatchOperations(Long, IEnumerable(Of StringBatchOpPatch), UpdateOption?)
+  fullName: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.StringBatchOperations(long, System.Collections.Generic.IEnumerable<Crowdin.Api.SourceStrings.StringBatchOpPatch>, Crowdin.Api.SourceStrings.UpdateOption?)
+  fullName.vb: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.StringBatchOperations(Long, System.Collections.Generic.IEnumerable(Of Crowdin.Api.SourceStrings.StringBatchOpPatch), Crowdin.Api.SourceStrings.UpdateOption?)
+  nameWithType: SourceStringsApiExecutor.StringBatchOperations(long, IEnumerable<StringBatchOpPatch>, UpdateOption?)
+  nameWithType.vb: SourceStringsApiExecutor.StringBatchOperations(Long, IEnumerable(Of StringBatchOpPatch), UpdateOption?)
 - uid: Crowdin.Api.SourceStrings.SourceStringsApiExecutor.StringBatchOperations*
   name: StringBatchOperations
   href: api/Crowdin.Api.SourceStrings.SourceStringsApiExecutor.html#Crowdin_Api_SourceStrings_SourceStringsApiExecutor_StringBatchOperations_
@@ -47399,6 +48632,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TaskResource.LabelMatchRule
   nameWithType: TaskResource.LabelMatchRule
+- uid: Crowdin.Api.Tasks.TaskResource.OriginalWordsCount
+  name: OriginalWordsCount
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_OriginalWordsCount
+  commentId: P:Crowdin.Api.Tasks.TaskResource.OriginalWordsCount
+  fullName: Crowdin.Api.Tasks.TaskResource.OriginalWordsCount
+  nameWithType: TaskResource.OriginalWordsCount
+- uid: Crowdin.Api.Tasks.TaskResource.OriginalWordsCount*
+  name: OriginalWordsCount
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_OriginalWordsCount_
+  commentId: Overload:Crowdin.Api.Tasks.TaskResource.OriginalWordsCount
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskResource.OriginalWordsCount
+  nameWithType: TaskResource.OriginalWordsCount
 - uid: Crowdin.Api.Tasks.TaskResource.PrecedingTaskId
   name: PrecedingTaskId
   href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_PrecedingTaskId
@@ -47503,6 +48749,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Tasks.TaskResource.Status
   nameWithType: TaskResource.Status
+- uid: Crowdin.Api.Tasks.TaskResource.SyncScope
+  name: SyncScope
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_SyncScope
+  commentId: P:Crowdin.Api.Tasks.TaskResource.SyncScope
+  fullName: Crowdin.Api.Tasks.TaskResource.SyncScope
+  nameWithType: TaskResource.SyncScope
+- uid: Crowdin.Api.Tasks.TaskResource.SyncScope*
+  name: SyncScope
+  href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_SyncScope_
+  commentId: Overload:Crowdin.Api.Tasks.TaskResource.SyncScope
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskResource.SyncScope
+  nameWithType: TaskResource.SyncScope
 - uid: Crowdin.Api.Tasks.TaskResource.TargetLanguageId
   name: TargetLanguageId
   href: api/Crowdin.Api.Tasks.TaskResource.html#Crowdin_Api_Tasks_TaskResource_TargetLanguageId
@@ -47847,6 +49106,51 @@ references:
   commentId: F:Crowdin.Api.Tasks.TaskStatus.Todo
   fullName: Crowdin.Api.Tasks.TaskStatus.Todo
   nameWithType: TaskStatus.Todo
+- uid: Crowdin.Api.Tasks.TaskSyncScope
+  name: TaskSyncScope
+  href: api/Crowdin.Api.Tasks.TaskSyncScope.html
+  commentId: T:Crowdin.Api.Tasks.TaskSyncScope
+  fullName: Crowdin.Api.Tasks.TaskSyncScope
+  nameWithType: TaskSyncScope
+- uid: Crowdin.Api.Tasks.TaskSyncScope.PendingWords
+  name: PendingWords
+  href: api/Crowdin.Api.Tasks.TaskSyncScope.html#Crowdin_Api_Tasks_TaskSyncScope_PendingWords
+  commentId: P:Crowdin.Api.Tasks.TaskSyncScope.PendingWords
+  fullName: Crowdin.Api.Tasks.TaskSyncScope.PendingWords
+  nameWithType: TaskSyncScope.PendingWords
+- uid: Crowdin.Api.Tasks.TaskSyncScope.PendingWords*
+  name: PendingWords
+  href: api/Crowdin.Api.Tasks.TaskSyncScope.html#Crowdin_Api_Tasks_TaskSyncScope_PendingWords_
+  commentId: Overload:Crowdin.Api.Tasks.TaskSyncScope.PendingWords
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskSyncScope.PendingWords
+  nameWithType: TaskSyncScope.PendingWords
+- uid: Crowdin.Api.Tasks.TaskSyncScope.SkippedWords
+  name: SkippedWords
+  href: api/Crowdin.Api.Tasks.TaskSyncScope.html#Crowdin_Api_Tasks_TaskSyncScope_SkippedWords
+  commentId: P:Crowdin.Api.Tasks.TaskSyncScope.SkippedWords
+  fullName: Crowdin.Api.Tasks.TaskSyncScope.SkippedWords
+  nameWithType: TaskSyncScope.SkippedWords
+- uid: Crowdin.Api.Tasks.TaskSyncScope.SkippedWords*
+  name: SkippedWords
+  href: api/Crowdin.Api.Tasks.TaskSyncScope.html#Crowdin_Api_Tasks_TaskSyncScope_SkippedWords_
+  commentId: Overload:Crowdin.Api.Tasks.TaskSyncScope.SkippedWords
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskSyncScope.SkippedWords
+  nameWithType: TaskSyncScope.SkippedWords
+- uid: Crowdin.Api.Tasks.TaskSyncScope.SyncedWords
+  name: SyncedWords
+  href: api/Crowdin.Api.Tasks.TaskSyncScope.html#Crowdin_Api_Tasks_TaskSyncScope_SyncedWords
+  commentId: P:Crowdin.Api.Tasks.TaskSyncScope.SyncedWords
+  fullName: Crowdin.Api.Tasks.TaskSyncScope.SyncedWords
+  nameWithType: TaskSyncScope.SyncedWords
+- uid: Crowdin.Api.Tasks.TaskSyncScope.SyncedWords*
+  name: SyncedWords
+  href: api/Crowdin.Api.Tasks.TaskSyncScope.html#Crowdin_Api_Tasks_TaskSyncScope_SyncedWords_
+  commentId: Overload:Crowdin.Api.Tasks.TaskSyncScope.SyncedWords
+  isSpec: "True"
+  fullName: Crowdin.Api.Tasks.TaskSyncScope.SyncedWords
+  nameWithType: TaskSyncScope.SyncedWords
 - uid: Crowdin.Api.Tasks.TaskType
   name: TaskType
   href: api/Crowdin.Api.Tasks.TaskType.html
@@ -49545,6 +50849,24 @@ references:
   commentId: F:Crowdin.Api.Tasks.VendorTaskPatchPath.Description
   fullName: Crowdin.Api.Tasks.VendorTaskPatchPath.Description
   nameWithType: VendorTaskPatchPath.Description
+- uid: Crowdin.Api.Tasks.VendorTaskPatchPath.GenerateCostEstimate
+  name: GenerateCostEstimate
+  href: api/Crowdin.Api.Tasks.VendorTaskPatchPath.html#Crowdin_Api_Tasks_VendorTaskPatchPath_GenerateCostEstimate
+  commentId: F:Crowdin.Api.Tasks.VendorTaskPatchPath.GenerateCostEstimate
+  fullName: Crowdin.Api.Tasks.VendorTaskPatchPath.GenerateCostEstimate
+  nameWithType: VendorTaskPatchPath.GenerateCostEstimate
+- uid: Crowdin.Api.Tasks.VendorTaskPatchPath.GenerateTranslationCost
+  name: GenerateTranslationCost
+  href: api/Crowdin.Api.Tasks.VendorTaskPatchPath.html#Crowdin_Api_Tasks_VendorTaskPatchPath_GenerateTranslationCost
+  commentId: F:Crowdin.Api.Tasks.VendorTaskPatchPath.GenerateTranslationCost
+  fullName: Crowdin.Api.Tasks.VendorTaskPatchPath.GenerateTranslationCost
+  nameWithType: VendorTaskPatchPath.GenerateTranslationCost
+- uid: Crowdin.Api.Tasks.VendorTaskPatchPath.ReportSettingsTemplateId
+  name: ReportSettingsTemplateId
+  href: api/Crowdin.Api.Tasks.VendorTaskPatchPath.html#Crowdin_Api_Tasks_VendorTaskPatchPath_ReportSettingsTemplateId
+  commentId: F:Crowdin.Api.Tasks.VendorTaskPatchPath.ReportSettingsTemplateId
+  fullName: Crowdin.Api.Tasks.VendorTaskPatchPath.ReportSettingsTemplateId
+  nameWithType: VendorTaskPatchPath.ReportSettingsTemplateId
 - uid: Crowdin.Api.Tasks.VendorTaskPatchPath.Status
   name: Status
   href: api/Crowdin.Api.Tasks.VendorTaskPatchPath.html#Crowdin_Api_Tasks_VendorTaskPatchPath_Status
@@ -51397,6 +52719,12 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.TranslationMemory.ITranslationMemoryApiExecutor.ClearTm
   nameWithType: ITranslationMemoryApiExecutor.ClearTm
+- uid: Crowdin.Api.TranslationMemory.ITranslationMemoryApiExecutor.ConcordanceSearch(Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest)
+  name: ConcordanceSearch(OrganizationConcordanceSearchRequest)
+  href: api/Crowdin.Api.TranslationMemory.ITranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_ITranslationMemoryApiExecutor_ConcordanceSearch_Crowdin_Api_TranslationMemory_OrganizationConcordanceSearchRequest_
+  commentId: M:Crowdin.Api.TranslationMemory.ITranslationMemoryApiExecutor.ConcordanceSearch(Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest)
+  fullName: Crowdin.Api.TranslationMemory.ITranslationMemoryApiExecutor.ConcordanceSearch(Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest)
+  nameWithType: ITranslationMemoryApiExecutor.ConcordanceSearch(OrganizationConcordanceSearchRequest)
 - uid: Crowdin.Api.TranslationMemory.ITranslationMemoryApiExecutor.ConcordanceSearch(System.Int64,Crowdin.Api.TranslationMemory.ConcordanceSearchRequest)
   name: ConcordanceSearch(long, ConcordanceSearchRequest)
   href: api/Crowdin.Api.TranslationMemory.ITranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_ITranslationMemoryApiExecutor_ConcordanceSearch_System_Int64_Crowdin_Api_TranslationMemory_ConcordanceSearchRequest_
@@ -51704,6 +53032,90 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.TranslationMemory.ImportTmRequest.StorageId
   nameWithType: ImportTmRequest.StorageId
+- uid: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest
+  name: OrganizationConcordanceSearchRequest
+  href: api/Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.html
+  commentId: T:Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest
+  fullName: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest
+  nameWithType: OrganizationConcordanceSearchRequest
+- uid: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.AutoSubstitution
+  name: AutoSubstitution
+  href: api/Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_OrganizationConcordanceSearchRequest_AutoSubstitution
+  commentId: P:Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.AutoSubstitution
+  fullName: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.AutoSubstitution
+  nameWithType: OrganizationConcordanceSearchRequest.AutoSubstitution
+- uid: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.AutoSubstitution*
+  name: AutoSubstitution
+  href: api/Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_OrganizationConcordanceSearchRequest_AutoSubstitution_
+  commentId: Overload:Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.AutoSubstitution
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.AutoSubstitution
+  nameWithType: OrganizationConcordanceSearchRequest.AutoSubstitution
+- uid: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.Expressions
+  name: Expressions
+  href: api/Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_OrganizationConcordanceSearchRequest_Expressions
+  commentId: P:Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.Expressions
+  fullName: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.Expressions
+  nameWithType: OrganizationConcordanceSearchRequest.Expressions
+- uid: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.Expressions*
+  name: Expressions
+  href: api/Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_OrganizationConcordanceSearchRequest_Expressions_
+  commentId: Overload:Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.Expressions
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.Expressions
+  nameWithType: OrganizationConcordanceSearchRequest.Expressions
+- uid: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.MinRelevant
+  name: MinRelevant
+  href: api/Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_OrganizationConcordanceSearchRequest_MinRelevant
+  commentId: P:Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.MinRelevant
+  fullName: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.MinRelevant
+  nameWithType: OrganizationConcordanceSearchRequest.MinRelevant
+- uid: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.MinRelevant*
+  name: MinRelevant
+  href: api/Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_OrganizationConcordanceSearchRequest_MinRelevant_
+  commentId: Overload:Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.MinRelevant
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.MinRelevant
+  nameWithType: OrganizationConcordanceSearchRequest.MinRelevant
+- uid: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.SourceLanguageId
+  name: SourceLanguageId
+  href: api/Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_OrganizationConcordanceSearchRequest_SourceLanguageId
+  commentId: P:Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.SourceLanguageId
+  fullName: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.SourceLanguageId
+  nameWithType: OrganizationConcordanceSearchRequest.SourceLanguageId
+- uid: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.SourceLanguageId*
+  name: SourceLanguageId
+  href: api/Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_OrganizationConcordanceSearchRequest_SourceLanguageId_
+  commentId: Overload:Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.SourceLanguageId
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.SourceLanguageId
+  nameWithType: OrganizationConcordanceSearchRequest.SourceLanguageId
+- uid: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.TargetLanguageId
+  name: TargetLanguageId
+  href: api/Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_OrganizationConcordanceSearchRequest_TargetLanguageId
+  commentId: P:Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.TargetLanguageId
+  fullName: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.TargetLanguageId
+  nameWithType: OrganizationConcordanceSearchRequest.TargetLanguageId
+- uid: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.TargetLanguageId*
+  name: TargetLanguageId
+  href: api/Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_OrganizationConcordanceSearchRequest_TargetLanguageId_
+  commentId: Overload:Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.TargetLanguageId
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.TargetLanguageId
+  nameWithType: OrganizationConcordanceSearchRequest.TargetLanguageId
+- uid: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.UserId
+  name: UserId
+  href: api/Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_OrganizationConcordanceSearchRequest_UserId
+  commentId: P:Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.UserId
+  fullName: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.UserId
+  nameWithType: OrganizationConcordanceSearchRequest.UserId
+- uid: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.UserId*
+  name: UserId
+  href: api/Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.html#Crowdin_Api_TranslationMemory_OrganizationConcordanceSearchRequest_UserId_
+  commentId: Overload:Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.UserId
+  isSpec: "True"
+  fullName: Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.UserId
+  nameWithType: OrganizationConcordanceSearchRequest.UserId
 - uid: Crowdin.Api.TranslationMemory.TmConcordanceResultResource
   name: TmConcordanceResultResource
   href: api/Crowdin.Api.TranslationMemory.TmConcordanceResultResource.html
@@ -52862,6 +54274,12 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ClearTm
   nameWithType: TranslationMemoryApiExecutor.ClearTm
+- uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ConcordanceSearch(Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest)
+  name: ConcordanceSearch(OrganizationConcordanceSearchRequest)
+  href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ConcordanceSearch_Crowdin_Api_TranslationMemory_OrganizationConcordanceSearchRequest_
+  commentId: M:Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ConcordanceSearch(Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest)
+  fullName: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ConcordanceSearch(Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest)
+  nameWithType: TranslationMemoryApiExecutor.ConcordanceSearch(OrganizationConcordanceSearchRequest)
 - uid: Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.ConcordanceSearch(System.Int64,Crowdin.Api.TranslationMemory.ConcordanceSearchRequest)
   name: ConcordanceSearch(long, ConcordanceSearchRequest)
   href: api/Crowdin.Api.TranslationMemory.TranslationMemoryApiExecutor.html#Crowdin_Api_TranslationMemory_TranslationMemoryApiExecutor_ConcordanceSearch_System_Int64_Crowdin_Api_TranslationMemory_ConcordanceSearchRequest_
@@ -54499,6 +55917,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Translations.ApplyPreTranslationRequest.BranchIds
   nameWithType: ApplyPreTranslationRequest.BranchIds
+- uid: Crowdin.Api.Translations.ApplyPreTranslationRequest.DirectoryIds
+  name: DirectoryIds
+  href: api/Crowdin.Api.Translations.ApplyPreTranslationRequest.html#Crowdin_Api_Translations_ApplyPreTranslationRequest_DirectoryIds
+  commentId: P:Crowdin.Api.Translations.ApplyPreTranslationRequest.DirectoryIds
+  fullName: Crowdin.Api.Translations.ApplyPreTranslationRequest.DirectoryIds
+  nameWithType: ApplyPreTranslationRequest.DirectoryIds
+- uid: Crowdin.Api.Translations.ApplyPreTranslationRequest.DirectoryIds*
+  name: DirectoryIds
+  href: api/Crowdin.Api.Translations.ApplyPreTranslationRequest.html#Crowdin_Api_Translations_ApplyPreTranslationRequest_DirectoryIds_
+  commentId: Overload:Crowdin.Api.Translations.ApplyPreTranslationRequest.DirectoryIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.ApplyPreTranslationRequest.DirectoryIds
+  nameWithType: ApplyPreTranslationRequest.DirectoryIds
 - uid: Crowdin.Api.Translations.ApplyPreTranslationRequest.DuplicateTranslations
   name: DuplicateTranslations
   href: api/Crowdin.Api.Translations.ApplyPreTranslationRequest.html#Crowdin_Api_Translations_ApplyPreTranslationRequest_DuplicateTranslations
@@ -55884,6 +57315,19 @@ references:
   isSpec: "True"
   fullName: Crowdin.Api.Translations.PreTranslateAttributes.BranchIds
   nameWithType: PreTranslateAttributes.BranchIds
+- uid: Crowdin.Api.Translations.PreTranslateAttributes.DirectoryIds
+  name: DirectoryIds
+  href: api/Crowdin.Api.Translations.PreTranslateAttributes.html#Crowdin_Api_Translations_PreTranslateAttributes_DirectoryIds
+  commentId: P:Crowdin.Api.Translations.PreTranslateAttributes.DirectoryIds
+  fullName: Crowdin.Api.Translations.PreTranslateAttributes.DirectoryIds
+  nameWithType: PreTranslateAttributes.DirectoryIds
+- uid: Crowdin.Api.Translations.PreTranslateAttributes.DirectoryIds*
+  name: DirectoryIds
+  href: api/Crowdin.Api.Translations.PreTranslateAttributes.html#Crowdin_Api_Translations_PreTranslateAttributes_DirectoryIds_
+  commentId: Overload:Crowdin.Api.Translations.PreTranslateAttributes.DirectoryIds
+  isSpec: "True"
+  fullName: Crowdin.Api.Translations.PreTranslateAttributes.DirectoryIds
+  nameWithType: PreTranslateAttributes.DirectoryIds
 - uid: Crowdin.Api.Translations.PreTranslateAttributes.DuplicateTranslations
   name: DuplicateTranslations
   href: api/Crowdin.Api.Translations.PreTranslateAttributes.html#Crowdin_Api_Translations_PreTranslateAttributes_DuplicateTranslations

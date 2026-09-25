@@ -1,4 +1,5 @@
 {
+  "docfx_version": "2.81.0+ba844df625370a6bd7c1ecab0d0ec4d1d9128ac4",
   "source_base_path": "D:/a/crowdin-api-client-dotnet/crowdin-api-client-dotnet/docs",
   "xrefmap": "xrefmap.yml",
   "files": [
@@ -664,6 +665,62 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiRequestLog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiRequestLog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.AI.AiRequestLog",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiRequestLogSourceAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiRequestLogSourceAction.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.AI.AiRequestLogSourceAction",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiRequestLogStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiRequestLogStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.AI.AiRequestLogStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiRequestLogsListParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiRequestLogsListParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.AI.AiRequestLogsListParams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.AI.AiSettings.yml",
       "output": {
         ".html": {
@@ -1252,6 +1309,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Applications.AddApplicationConsentRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Applications.AddApplicationConsentRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Applications.AddApplicationConsentRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Applications.Application.yml",
       "output": {
         ".html": {
@@ -1262,6 +1333,76 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Crowdin.Api.Applications.Application",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Applications.ApplicationConsent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Applications.ApplicationConsent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Applications.ApplicationConsent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Applications.ApplicationConsentPatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Applications.ApplicationConsentPatch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Applications.ApplicationConsentPatch",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Applications.ApplicationConsentPatchPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Applications.ApplicationConsentPatchPath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Applications.ApplicationConsentPatchPath",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Applications.ApplicationConsentStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Applications.ApplicationConsentStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Applications.ApplicationConsentStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Applications.ApplicationConsentUser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Applications.ApplicationConsentUser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Applications.ApplicationConsentUser",
       "Summary": null
     },
     {
@@ -2428,6 +2569,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Distributions.DistributionReleaseError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Distributions.DistributionReleaseError.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Distributions.DistributionReleaseError",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Distributions.DistributionReleaseStatus.yml",
       "output": {
         ".html": {
@@ -3054,6 +3209,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Crowdin.Api.Glossaries.ImportGlossaryRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Glossaries.OrganizationConcordanceSearchRequest",
       "Summary": null
     },
     {
@@ -9610,6 +9779,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Tasks.TaskSyncScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Tasks.TaskSyncScope.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Tasks.TaskSyncScope",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Tasks.TaskType.yml",
       "output": {
         ".html": {
@@ -10222,6 +10405,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Crowdin.Api.TranslationMemory.ImportTmRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.TranslationMemory.OrganizationConcordanceSearchRequest",
       "Summary": null
     },
     {
