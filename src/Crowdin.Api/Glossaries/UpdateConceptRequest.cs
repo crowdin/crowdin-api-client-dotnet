@@ -1,4 +1,6 @@
 ﻿
+#nullable enable annotations
+
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
@@ -23,6 +25,9 @@ namespace Crowdin.Api.Glossaries
         [JsonProperty("figure")]
         public string Figure { get; set; }
         
+        [JsonProperty("fields")]
+        public IDictionary<string, object>? Fields { get; set; }
+
         [JsonProperty("languagesDetails")]
         public ICollection<ConceptLanguageDetailsForm> LanguagesDetails { get; set; }
     }

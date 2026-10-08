@@ -1,8 +1,10 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
+
+using Crowdin.Api.Core;
 
 #nullable enable
 
@@ -36,7 +38,11 @@ namespace Crowdin.Api.Tasks
         public string? Description { get; set; }
         
         [JsonProperty("splitFiles")]
+        [Obsolete(MessageTexts.UseSplitContentInstead, false)]
         public bool? SplitFiles { get; set; }
+
+        [JsonProperty("splitContent")]
+        public bool? SplitContent { get; set; }
         
         [JsonProperty("skipAssignedStrings")]
         public bool? SkipAssignedStrings { get; set; }

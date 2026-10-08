@@ -104,6 +104,7 @@
   "translateDuplicates": 1,
   "tagsDetection": 0,
   "glossaryAccess": false,
+  "glossaryAccessOption": "manageDrafts",
   "isMtAllowed": false,
   "hiddenStringsProofreadersAccess": true,
   "autoSubstitution": true,
@@ -208,7 +209,33 @@
   "assignedGlossaries": [
     2
   ],
+  "assignedStyleGuides": [3, 4],
+  "externalQaCheckIds": [5],
+  "savingsReportSettingsTemplateId": 44,
+  "editorSuggestionAiPromptId": 12,
+  "alignmentActionAiPromptId": 13,
+  "qaCheckActionAiPromptId": 14,
+  "contextReviewAiPromptId": 15,
+  "aiPreTranslate": {
+    "enabled": true,
+    "aiPrompts": [{"aiPromptId": 21, "languageIds": ["uk"]}]
+  },
+  "mtPreTranslate": {
+    "enabled": true,
+    "mts": [{"mtId": 31, "languageIds": ["uk"]}]
+  },
+  "tmPreTranslate": {
+    "enabled": true,
+    "autoApproveOption": "all",
+    "minimumMatchRatio": "100"
+  },
+  "fields": {
+    "priority": "urgent"
+  },
   "id": 8,
+  "publicUrl": "https://example.test/project-seven",
+  "externalProjectId": 107,
+  "externalOrganizationId": 207,
   "userId": 6,
   "sourceLanguageId": "en",
   "targetLanguageIds": [

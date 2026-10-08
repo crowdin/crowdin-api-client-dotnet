@@ -46,6 +46,7 @@ namespace Crowdin.Api.UnitTesting.Tests.StyleGuides
             var request = new AddStyleGuideRequest
             {
                 Name = "My Style Guide",
+                GroupId = 12,
                 StorageId = 61
             };
 
@@ -69,6 +70,7 @@ namespace Crowdin.Api.UnitTesting.Tests.StyleGuides
             Assert.NotNull(response);
             Assert.Equal(1, response.Id);
             Assert.Equal("My Style Guide", response.Name);
+            Assert.Equal(12, response.GroupId);
         }
 
         [Fact]
@@ -151,6 +153,7 @@ namespace Crowdin.Api.UnitTesting.Tests.StyleGuides
             Assert.Equal("My Style Guide", styleGuide.Name);
             Assert.Equal("Use formal language", styleGuide.AiInstructions);
             Assert.Equal(6, styleGuide.UserId);
+            Assert.Equal(12, styleGuide.GroupId);
             Assert.Equal(new[] { "en", "uk" }, styleGuide.LanguageIds);
             Assert.Equal(new long[] { 1, 2 }, styleGuide.ProjectIds);
             Assert.False(styleGuide.IsShared);

@@ -1,4 +1,6 @@
 ﻿
+#nullable enable annotations
+
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
@@ -623,6 +625,140 @@ namespace Crowdin.Api.AI
             string url = AddUserIdIfAvailable(userId, "/ai/translate");
             CrowdinApiResult result = await _apiClient.SendPostRequest(url, request);
             return _jsonParser.ParseResponseObject<AiTranslateStringsResponse>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// List AI snippets.
+        /// Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.ai.prompts.snippets.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.snippets.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<AiSnippet>> ListAiSnippets(long? userId, int limit = 25, int offset = 0)
+        {
+            IDictionary<string, string> query = Utils.CreateQueryParamsFromPaging(limit, offset);
+            CrowdinApiResult result = await _apiClient.SendGetRequest(AddUserIdIfAvailable(userId, "/ai/settings/snippets"), query);
+            return _jsonParser.ParseResponseList<AiSnippet>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Add an AI snippet.
+        /// Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.ai.prompts.snippets.post">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.snippets.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiSnippet> AddAiSnippet(long? userId, AddAiSnippetRequest request)
+        {
+            CrowdinApiResult result = await _apiClient.SendPostRequest(AddUserIdIfAvailable(userId, "/ai/settings/snippets"), request);
+            return _jsonParser.ParseResponseObject<AiSnippet>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Get an AI snippet.
+        /// Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.ai.prompts.snippets.get">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.snippets.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiSnippet> GetAiSnippet(long? userId, long aiSnippetId)
+        {
+            CrowdinApiResult result = await _apiClient.SendGetRequest(AddUserIdIfAvailable(userId, $"/ai/settings/snippets/{aiSnippetId}"));
+            return _jsonParser.ParseResponseObject<AiSnippet>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Edit an AI snippet.
+        /// Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.ai.prompts.snippets.patch">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.snippets.patch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiSnippet> EditAiSnippet(long? userId, long aiSnippetId, IEnumerable<AiSnippetPatch> patches)
+        {
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(AddUserIdIfAvailable(userId, $"/ai/settings/snippets/{aiSnippetId}"), patches);
+            return _jsonParser.ParseResponseObject<AiSnippet>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Delete an AI snippet.
+        /// Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.ai.prompts.snippets.delete">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.snippets.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task DeleteAiSnippet(long? userId, long aiSnippetId)
+        {
+            HttpStatusCode code = await _apiClient.SendDeleteRequest(AddUserIdIfAvailable(userId, $"/ai/settings/snippets/{aiSnippetId}"));
+            Utils.ThrowIfStatusNot204(code, $"AI snippet {aiSnippetId} removal failed");
+        }
+
+        /// <summary>
+        /// List AI usage members.
+        /// Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.usage.members.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<AiUsageMember>> ListAiUsageMembers(int limit = 25, int offset = 0, string? userIds = null, string? orderBy = null)
+        {
+            IDictionary<string, string> query = Utils.CreateQueryParamsFromPaging(limit, offset);
+            query.AddParamIfPresent("userIds", userIds);
+            query.AddParamIfPresent("orderBy", orderBy);
+            CrowdinApiResult result = await _apiClient.SendGetRequest("/ai/usage/members", query);
+            return _jsonParser.ParseResponseList<AiUsageMember>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Get an AI usage member.
+        /// Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.usage.members.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<AiUsageMember> GetAiUsageMember(long memberId)
+        {
+            CrowdinApiResult result = await _apiClient.SendGetRequest($"/ai/usage/members/{memberId}");
+            return _jsonParser.ParseResponseObject<AiUsageMember>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// List AI prompt fine-tuning events.
+        /// Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.jobs.events.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.prompts.fine-tuning.jobs.events.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<AiFineTuningEvent>> ListAiPromptFineTuningEvents(
+            long? userId, long aiPromptId, string jobIdentifier, int limit = 25, int offset = 0)
+        {
+            IDictionary<string, string> query = Utils.CreateQueryParamsFromPaging(limit, offset);
+            string path = $"/ai/prompts/{aiPromptId}/fine-tuning/jobs/{jobIdentifier}/events";
+            CrowdinApiResult result = await _apiClient.SendGetRequest(AddUserIdIfAvailable(userId, path), query);
+            return _jsonParser.ParseResponseList<AiFineTuningEvent>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Get project AI settings.
+        /// Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.projects.ai.settings.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ProjectAiSettings> GetProjectAiSettings(long projectId)
+        {
+            CrowdinApiResult result = await _apiClient.SendGetRequest($"/projects/{projectId}/ai/settings");
+            return _jsonParser.ParseResponseObject<ProjectAiSettings>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// List all AI provider models.
+        /// Documentation:
+        /// <a href="https://support.crowdin.com/developer/api/v2/#tag/AI/operation/api.ai.providers.models.crowdin.getMany">Crowdin API</a>
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/AI/operation/api.ai.providers.models.enterprise.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<AiProviderModelResource>> ListAllAiProviderModels(long? userId)
+        {
+            CrowdinApiResult result = await _apiClient.SendGetRequest(AddUserIdIfAvailable(userId, "/ai/providers/models"));
+            return _jsonParser.ParseResponseList<AiProviderModelResource>(result.JsonObject);
         }
         
         #region Helper methods

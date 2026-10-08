@@ -1,5 +1,6 @@
 
 using System.Collections.Generic;
+using Crowdin.Api.Core;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
@@ -114,7 +115,11 @@ namespace Crowdin.Api.ProjectsGroups
         public IDictionary<string, LanguageMapping>? LanguageMapping { get; set; }
         
         [JsonProperty("glossaryAccess")]
+        [System.Obsolete(MessageTexts.UseGlossaryAccessOptionInstead, false)]
         public bool? GlossaryAccess { get; set; }
+
+        [JsonProperty("glossaryAccessOption")]
+        public GlossaryAccessOption? GlossaryAccessOption { get; set; }
         
         [JsonProperty("notificationSettings")]
         public NotificationSettings? NotificationSettings { get; set; }
@@ -127,5 +132,35 @@ namespace Crowdin.Api.ProjectsGroups
 
         [JsonProperty("tmApprovedSuggestionsOnly")]
         public bool? TmApprovedSuggestionsOnly { get; set; }
+
+        [JsonProperty("externalQaCheckIds")]
+        public ICollection<long>? ExternalQaCheckIds { get; set; }
+
+        [JsonProperty("assignedStyleGuides")]
+        public ICollection<long>? AssignedStyleGuides { get; set; }
+
+        [JsonProperty("savingsReportSettingsTemplateId")]
+        public long? SavingsReportSettingsTemplateId { get; set; }
+
+        [JsonProperty("editorSuggestionAiPromptId")]
+        public long? EditorSuggestionAiPromptId { get; set; }
+
+        [JsonProperty("alignmentActionAiPromptId")]
+        public long? AlignmentActionAiPromptId { get; set; }
+
+        [JsonProperty("qaCheckActionAiPromptId")]
+        public long? QaCheckActionAiPromptId { get; set; }
+
+        [JsonProperty("contextReviewAiPromptId")]
+        public long? ContextReviewAiPromptId { get; set; }
+
+        [JsonProperty("aiPreTranslate")]
+        public ProjectAiPreTranslate? AiPreTranslate { get; set; }
+
+        [JsonProperty("mtPreTranslate")]
+        public ProjectMtPreTranslate? MtPreTranslate { get; set; }
+
+        [JsonProperty("tmPreTranslate")]
+        public ProjectTmPreTranslate? TmPreTranslate { get; set; }
     }
 }

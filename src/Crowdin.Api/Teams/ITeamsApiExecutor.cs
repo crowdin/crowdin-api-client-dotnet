@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using JetBrains.Annotations;
 
 using Crowdin.Api.ProjectsGroups;
+using Crowdin.Api.Users;
 
 #nullable enable
 
@@ -40,6 +41,11 @@ namespace Crowdin.Api.Teams
         Task DeleteAllTeamMembers(long teamId);
 
         Task DeleteTeamMember(long teamId, long memberId);
+
+        Task<ResponseList<TeamProjectPermissions>> ListTeamProjectPermissions(long teamId, int limit = 25, int offset = 0);
+
+        Task<ResponseList<TeamProjectPermissions>> EditTeamProjectPermissions(
+            long teamId, IEnumerable<ProjectPermissionsMassOperation> operations);
 
         #region Group Teams
 

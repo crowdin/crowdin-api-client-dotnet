@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="ApiResponses" xml:space="preserve">
+    <value>{"ListExternalQaChecks":{"data":[{"id":12,"name":"Term validation","description":"Checks terminology usage","config":{"endpoint":"https://qa.example.test","enabled":true},"createdAt":"2024-02-01T09:00:00+00:00","updatedAt":"2024-02-02T09:00:00+00:00"}],"pagination":{"limit":25,"offset":0,"total":1}},"GetExternalQaCheck":{"data":{"id":13,"name":"Placeholder validation","description":"Checks placeholders","config":{"endpoint":"https://qa.example.test/check","rules":["placeholders"]},"createdAt":"2024-02-03T09:00:00+00:00","updatedAt":null}}}</value>
+  </data>
+  <data name="ApiRequests" xml:space="preserve"><value>{}</value></data>
+</root>

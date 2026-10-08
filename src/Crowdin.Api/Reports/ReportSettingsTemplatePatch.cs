@@ -15,19 +15,19 @@ namespace Crowdin.Api.Reports
     [PublicAPI]
     public enum ReportSettingsTemplatePatchPath
     {
-        [Description("name")]
+        [Description("/name")]
         Name,
         
-        [Description("currency")]
+        [Description("/currency")]
         Currency,
         
-        [Description("unit")]
+        [Description("/unit")]
         Unit,
         
-        [Description("mode")]
+        [Description("/mode")]
         Mode,
         
-        [Description("config")]
+        [Description("/config")]
         Config
     }
 }

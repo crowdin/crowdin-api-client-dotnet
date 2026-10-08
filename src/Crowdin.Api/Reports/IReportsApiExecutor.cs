@@ -88,6 +88,19 @@ namespace Crowdin.Api.Reports
 
         Task DeleteReportSettingsTemplate(long projectId, long reportSettingsTemplateId);
 
+        Task<ResponseList<ReportSettingsTemplateBase>> ListOrganizationReportSettingsTemplates(
+            long? projectId = null, long? groupId = null, int limit = 25, int offset = 0);
+
+        Task<ReportSettingsTemplateBase> AddOrganizationReportSettingsTemplate(
+            AddReportSettingsTemplateRequest request);
+
+        Task<ReportSettingsTemplateBase> GetOrganizationReportSettingsTemplate(long reportSettingsTemplateId);
+
+        Task<ReportSettingsTemplateBase> EditOrganizationReportSettingsTemplate(
+            long reportSettingsTemplateId, IEnumerable<ReportSettingsTemplatePatch> patches);
+
+        Task DeleteOrganizationReportSettingsTemplate(long reportSettingsTemplateId);
+
         #endregion
     }
 }

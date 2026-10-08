@@ -45,7 +45,7 @@ namespace Crowdin.Api.SecurityLogs
         
         [Description("sso.disconnect")]
         SsoDisconnect,
-        
+
         [Description("user.remove")]
         UserRemove,
         
@@ -71,6 +71,72 @@ namespace Crowdin.Api.SecurityLogs
         DeviceVerificationEnabled,
         
         [Description("device_verification.disabled")]
-        DeviceVerificationDisabled
+        DeviceVerificationDisabled,
+
+        [Description("user.force_removed")]
+        UserForceRemoved,
+
+        [Description("user.blocked")]
+        UserBlocked,
+
+        [Description("user.unblocked")]
+        UserUnblocked,
+
+        [Description("team.member.added")]
+        TeamMemberAdded,
+
+        [Description("team.member.removed")]
+        TeamMemberRemoved,
+
+        [Description("role.admin.granted")]
+        RoleAdminGranted,
+
+        [Description("role.admin.revoked")]
+        RoleAdminRevoked,
+
+        [Description("role.group_manager.granted")]
+        RoleGroupManagerGranted,
+
+        [Description("role.group_manager.revoked")]
+        RoleGroupManagerRevoked,
+
+        [Description("organization.settings.saml.changed")]
+        OrganizationSettingsSamlChanged,
+
+        [Description("organization.settings.invite_restrict.changed")]
+        OrganizationSettingsInviteRestrictChanged,
+
+        [Description("organization.settings.device_verification.changed")]
+        OrganizationSettingsDeviceVerificationChanged,
+
+        [Description("organization.settings.mfa.changed")]
+        OrganizationSettingsMfaChanged,
+
+        [Description("organization.settings.remember_me.changed")]
+        OrganizationSettingsRememberMeChanged,
+
+        [Description("organization.settings.sign_up.changed")]
+        OrganizationSettingsSignUpChanged,
+
+        [Description("organization.settings.token_creation.changed")]
+        OrganizationSettingsTokenCreationChanged,
+
+        [Description("organization.settings.token_expiration.changed")]
+        OrganizationSettingsTokenExpirationChanged,
+
+        [Description("sso.custom_app.configured")]
+        SsoCustomAppConfigured,
+
+        [Description("sso.custom_app.disabled")]
+        SsoCustomAppDisabled,
+
+        [Description("organization.auth_method.disabled")]
+        OrganizationAuthMethodDisabled,
+
+        [Description("organization.auth_method.enabled")]
+        OrganizationAuthMethodEnabled,
+
+        [Description("user.registered")]
+        UserRegistered
     }
 }

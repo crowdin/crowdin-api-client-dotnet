@@ -1,4 +1,6 @@
-﻿
+
+#nullable enable annotations
+
 using System;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
@@ -31,5 +33,23 @@ namespace Crowdin.Api.StringTranslations
         
         [JsonProperty("createdAt")]
         public DateTimeOffset CreatedAt { get; set; }
+
+        [JsonProperty("providerId")]
+        public long? ProviderId { get; set; }
+
+        [JsonProperty("matchRate")]
+        public int? MatchRate { get; set; }
+
+        [JsonProperty("matchType")]
+        public string? MatchType { get; set; }
+
+        [JsonProperty("qaIssuesStatus")]
+        public string? QaIssuesStatus { get; set; }
+
+        [JsonProperty("url")]
+        public string? Url { get; set; }
+
+        [JsonProperty("workflowStepId")]
+        public long? WorkflowStepId { get; set; }
     }
 }

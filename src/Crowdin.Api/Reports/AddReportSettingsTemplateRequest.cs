@@ -9,6 +9,15 @@ namespace Crowdin.Api.Reports
     [PublicAPI]
     public abstract class AddReportSettingsTemplateRequest
     {
+        [JsonProperty("projectId")]
+        public long? ProjectId { get; set; }
+
+        [JsonProperty("groupId")]
+        public long? GroupId { get; set; }
+
+        [JsonProperty("isGlobal")]
+        public bool? IsGlobal { get; set; }
+
         [JsonProperty("name")]
 #pragma warning disable CS8618
         public string Name { get; set; }

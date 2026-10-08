@@ -27,8 +27,8 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
             {
                 Schema = new TokensUsageRawDataGenerateAiReport.GeneralSchema
                 {
-                    DateFrom = DateTimeOffset.Parse("2024-01-23T07:00:14+00:00").ToLocalTime(),
-                    DateTo = DateTimeOffset.Parse("2024-09-27T07:00:14+00:00").ToLocalTime(),
+                    DateFrom = DateTimeOffset.Parse("2024-01-23T07:00:14+00:00"),
+                    DateTo = DateTimeOffset.Parse("2024-09-27T07:00:14+00:00"),
                     Format = AiReportFormat.Json,
                     ProjectIds = [22],
                     PromptIds = [18],
@@ -65,8 +65,8 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
             {
                 Schema = new TokensUsageRawDataGenerateAiReport.GeneralSchema
                 {
-                    DateFrom = DateTimeOffset.Parse("2024-01-23T07:00:14+00:00").ToLocalTime(),
-                    DateTo = DateTimeOffset.Parse("2024-09-27T07:00:14+00:00").ToLocalTime(),
+                    DateFrom = DateTimeOffset.Parse("2024-01-23T07:00:14+00:00"),
+                    DateTo = DateTimeOffset.Parse("2024-09-27T07:00:14+00:00"),
                     Format = AiReportFormat.Json,
                     ProjectIds = [22],
                     PromptIds = [18],

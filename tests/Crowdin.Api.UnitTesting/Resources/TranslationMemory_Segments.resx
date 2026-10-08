@@ -74,6 +74,23 @@
   }
 }</value>
     </data>
+    <data name="EditTmSegment_Request" xml:space="preserve">
+        <value>[
+  {
+    "path": "/records/-",
+    "op": "add",
+    "value": {
+      "languageId": "it",
+      "text": "Ciao, mondo!"
+    }
+  },
+  {
+    "path": "/records/1/text",
+    "op": "replace",
+    "value": "Testo tradotto"
+  }
+]</value>
+    </data>
     <data name="EditTmSegmentRecord_Request" xml:space="preserve">
         <value>[
   {

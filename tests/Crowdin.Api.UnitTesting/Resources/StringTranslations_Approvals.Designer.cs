@@ -56,5 +56,17 @@ namespace Crowdin.Api.UnitTesting.Resources {
                 return ResourceManager.GetString("ApprovalBatchOperations_Response", resourceCulture);
             }
         }
+
+        internal static string CorrectionBasedApproval_Request {
+            get {
+                return ResourceManager.GetString("CorrectionBasedApproval_Request", resourceCulture);
+            }
+        }
+
+        internal static string CorrectionBasedApproval_Response {
+            get {
+                return ResourceManager.GetString("CorrectionBasedApproval_Response", resourceCulture);
+            }
+        }
     }
 }

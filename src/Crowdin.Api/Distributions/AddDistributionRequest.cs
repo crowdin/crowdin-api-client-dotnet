@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 
@@ -15,7 +15,7 @@ namespace Crowdin.Api.Distributions
     public class AddDistributionRequest
     {
         [JsonProperty("exportMode")]
-        [Obsolete(MessageTexts.DeprecatedProperty)]
+        [Obsolete(MessageTexts.UseBundleIdsInstead, false)]
         public DistributionExportMode? ExportMode { get; set; }
         
         [JsonProperty("name")]
@@ -24,7 +24,7 @@ namespace Crowdin.Api.Distributions
 #pragma warning restore CS8618
         
         [JsonProperty("fileIds")]
-        [Obsolete(MessageTexts.DeprecatedProperty)]
+        [Obsolete(MessageTexts.UseBundleIdsInstead, false)]
 #pragma warning disable CS8618
         public ICollection<long>? FileIds { get; set; }
 #pragma warning restore CS8618

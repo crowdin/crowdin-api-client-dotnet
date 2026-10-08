@@ -224,6 +224,42 @@ namespace Crowdin.Api.Users
         }
 
         /// <summary>
+        /// List a user's project permissions. Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Users/operation/api.users.projects.permissions.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<UserProjectPermissions>> ListUserProjectPermissions(long userId, int limit = 25, int offset = 0)
+        {
+            IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
+            CrowdinApiResult result = await _apiClient.SendGetRequest($"/users/{userId}/projects/permissions", queryParams);
+            return _jsonParser.ParseResponseList<UserProjectPermissions>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Edit a user's project permissions. Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Users/operation/api.users.projects.permissions.patch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<UserProjectPermissions>> EditUserProjectPermissions(
+            long userId, IEnumerable<ProjectPermissionsMassOperation> operations)
+        {
+            CrowdinApiResult result = await _apiClient.SendPatchRequest($"/users/{userId}/projects/permissions", operations);
+            return _jsonParser.ParseResponseList<UserProjectPermissions>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// List a user's project contributions. Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Users/operation/api.users.projects.contributions.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<UserProjectContribution>> ListUserProjectContributions(long userId, int limit = 25, int offset = 0)
+        {
+            IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
+            CrowdinApiResult result = await _apiClient.SendGetRequest($"/users/{userId}/projects/contributions", queryParams);
+            return _jsonParser.ParseResponseList<UserProjectContribution>(result.JsonObject);
+        }
+
+        /// <summary>
         /// Delete user. Documentation:
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.users.delete">Crowdin Enterprise API</a>
         /// </summary>

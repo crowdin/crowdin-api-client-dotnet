@@ -124,4 +124,10 @@
   }
 }</value>
     </data>
+  <data name="ApiResponses" xml:space="preserve">
+    <value>{"ListTeamProjectPermissions":{"data":[{"data":{"id":27,"roles":[{"name":"manager","permissions":{"allLanguages":false,"languagesAccess":{"uk":{"allContent":false,"workflowStepIds":[3]}}}}],"project":{"id":7,"type":0,"userId":2,"sourceLanguageId":"en","targetLanguageIds":["uk"],"name":"Project Seven","identifier":"project-seven","description":"Enterprise permissions fixture","createdAt":"2024-01-13T11:34:40+00:00","languageAccessPolicy":"moderate","cname":"","visibility":"private"}}}],"pagination":{"limit":25,"offset":0,"total":1}},"EditTeamProjectPermissions":{"data":[{"data":{"id":27,"roles":[{"name":"manager","permissions":{"allLanguages":false,"languagesAccess":{"uk":{"allContent":false,"workflowStepIds":[3]}}}}],"project":{"id":7,"type":0,"userId":2,"sourceLanguageId":"en","targetLanguageIds":["uk"],"name":"Project Seven","identifier":"project-seven","description":"Enterprise permissions fixture","createdAt":"2024-01-13T11:34:40+00:00","languageAccessPolicy":"moderate","cname":"","visibility":"private"}}}],"pagination":{"limit":25,"offset":0,"total":1}}}</value>
+  </data>
+  <data name="ApiRequests" xml:space="preserve">
+    <value>{"EditTeamProjectPermissions":[{"op":"remove","path":"/7"}]}</value>
+  </data>
 </root>

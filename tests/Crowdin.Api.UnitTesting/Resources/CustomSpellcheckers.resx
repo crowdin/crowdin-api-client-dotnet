@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="ApiResponses" xml:space="preserve">
+    <value>{"ListCustomSpellcheckers":{"data":[{"id":5,"name":"English spellchecker","config":{"identifier":"english","key":"secret-key","realTimeCheckEnabled":true,"enabledLanguageIds":["en","en-GB"]},"createdAt":"2024-02-01T09:00:00+00:00","updatedAt":"2024-02-02T09:00:00+00:00"}],"pagination":{"limit":25,"offset":0,"total":1}},"GetCustomSpellchecker":{"data":{"id":6,"name":"Ukrainian spellchecker","config":{"identifier":"ukrainian","key":"uk-key","realTimeCheckEnabled":false,"enabledLanguageIds":["uk"]},"createdAt":"2024-02-03T09:00:00+00:00","updatedAt":null}}}</value>
+  </data>
+  <data name="ApiRequests" xml:space="preserve"><value>{}</value></data>
+</root>

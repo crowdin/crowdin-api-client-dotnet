@@ -1,4 +1,4 @@
-﻿
+
 using System;
 
 using JetBrains.Annotations;
@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using Crowdin.Api.Core;
 using Crowdin.Api.Labels;
 using Crowdin.Api.Languages;
+using Newtonsoft.Json.Linq;
 
 #nullable enable
 
@@ -116,8 +117,14 @@ namespace Crowdin.Api.Tasks
         [JsonProperty("timeRange")]
         public string TimeRange { get; set; }
 
+        [JsonProperty("translationsUpdatedTimeRange")]
+        public string TranslationsUpdatedTimeRange { get; set; }
+
         [JsonProperty("buyUrl")]
         public string BuyUrl { get; set; }
+
+        [JsonProperty("fields")]
+        public JObject? Fields { get; set; }
 #pragma warning restore CS8618
         
         [JsonProperty("description")]
@@ -143,5 +150,14 @@ namespace Crowdin.Api.Tasks
         
         [JsonProperty("syncScope")]
         public TaskSyncScope? SyncScope { get; set; }
+
+        [JsonProperty("generateCostEstimate")]
+        public bool? GenerateCostEstimate { get; set; }
+
+        [JsonProperty("generateTranslationCost")]
+        public bool? GenerateTranslationCost { get; set; }
+
+        [JsonProperty("reportSettingsTemplateId")]
+        public long? ReportSettingsTemplateId { get; set; }
     }
 }

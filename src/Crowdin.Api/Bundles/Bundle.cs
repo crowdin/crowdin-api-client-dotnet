@@ -2,6 +2,7 @@
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 using System;
+using Crowdin.Api.Labels;
 
 namespace Crowdin.Api.Bundles
 {
@@ -32,11 +33,26 @@ namespace Crowdin.Api.Bundles
         [JsonProperty("includeProjectSourceLanguage")]
         public bool IncludeProjectSourceLanguage { get; set; }
 
+        [JsonProperty("includeInContextPseudoLanguage")]
+        public bool IncludeInContextPseudoLanguage { get; set; }
+
+        [JsonProperty("sourceLanguageExportPattern")]
+        public string SourceLanguageExportPattern { get; set; }
+
         [JsonProperty("labelIds")]
         public long[] LabelIds { get; set; }
 
         [JsonProperty("excludeLabelIds")]
         public long[] ExcludeLabelIds { get; set; }
+
+        [JsonProperty("labelMatchRule")]
+        public LabelMatchRule? LabelMatchRule { get; set; }
+
+        [JsonProperty("excludeLabelMatchRule")]
+        public LabelMatchRule? ExcludeLabelMatchRule { get; set; }
+
+        [JsonProperty("languageIds")]
+        public string[] LanguageIds { get; set; }
         
         [JsonProperty("webUrl")]
         public string WebUrl { get; set; }

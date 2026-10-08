@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
+using Crowdin.Api.Core;
+
 #nullable enable
 
 namespace Crowdin.Api.Reports
@@ -28,7 +30,11 @@ namespace Crowdin.Api.Reports
             public ReportFormat? Format { get; set; }
             
             [JsonProperty("postEditingCategories")]
+            [Obsolete(MessageTexts.UseMatchScoreCategoriesInstead, false)]
             public ICollection<string>? PostEditingCategories { get; set; }
+
+            [JsonProperty("matchScoreCategories")]
+            public ICollection<string>? MatchScoreCategories { get; set; }
         }
 
         [PublicAPI]

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="ApiResponses" xml:space="preserve">
+    <value>{"ListSystemPlaceholders":{"data":[{"id":"wrappedAmpersand","isEnabled":true,"label":"Wrapped ampersand","description":"Wrapped ampersand placeholder","examples":["&amp;name&amp;"]}],"pagination":{"limit":25,"offset":0,"total":1}},"SystemPlaceholdersBatchOperations":{"data":[{"id":"wrappedAmpersand","isEnabled":false,"label":"Wrapped ampersand","description":"Wrapped ampersand placeholder","examples":["&amp;name&amp;"]}]},"ListCustomPlaceholders":{"data":[{"id":2,"definition":"%name%","description":"Name placeholder","argumentDelimiter":"\""}],"pagination":{"limit":25,"offset":0,"total":1}},"AddCustomPlaceholder":{"data":{"id":2,"definition":"%name%","description":"Name placeholder","argumentDelimiter":"\""}},"GetCustomPlaceholder":{"data":{"id":3,"definition":"%email%","description":"Email placeholder","argumentDelimiter":"\""}},"EditCustomPlaceholder":{"data":{"id":2,"definition":"%name%","description":"Updated name placeholder","argumentDelimiter":"\""}},"ListProjectPlaceholders":{"data":[{"id":3,"customPlaceholderId":2,"type":"low","index":1,"isBlocking":false,"formats":["json","yaml"]}],"pagination":{"limit":25,"offset":0,"total":1}},"AddProjectPlaceholder":{"data":{"id":3,"customPlaceholderId":2,"type":"low","index":1,"isBlocking":false,"formats":["json","yaml"]}},"GetProjectPlaceholder":{"data":{"id":3,"customPlaceholderId":2,"type":"high","index":2,"isBlocking":true,"formats":["json"]}},"EditProjectPlaceholder":{"data":{"id":3,"customPlaceholderId":2,"type":"high","index":4,"isBlocking":true,"formats":["json","yaml"]}}}</value>
+  </data>
+  <data name="ApiRequests" xml:space="preserve">
+    <value>{"SystemPlaceholdersBatchOperations":[{"op":"replace","path":"/wrappedAmpersand/isEnabled","value":false}],"AddCustomPlaceholder":{"definition":"%name%","description":"Name placeholder","argumentDelimiter":"\""},"EditCustomPlaceholder":[{"op":"replace","path":"/description","value":"Updated name placeholder"}],"AddProjectPlaceholder":{"customPlaceholderId":2,"type":"low","index":1,"isBlocking":false,"formats":["json","yaml"]},"EditProjectPlaceholder":[{"op":"replace","path":"/index","value":4}]}</value>
+  </data>
+</root>

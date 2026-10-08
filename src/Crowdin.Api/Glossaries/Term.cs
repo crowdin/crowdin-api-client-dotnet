@@ -1,5 +1,8 @@
-﻿
+
+#nullable enable annotations
+
 using System;
+using System.Collections.Generic;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
@@ -55,5 +58,8 @@ namespace Crowdin.Api.Glossaries
         
         [JsonProperty("updatedAt")]
         public DateTimeOffset? UpdatedAt { get; set; }
+
+        [JsonProperty("fields")]
+        public IDictionary<string, object>? Fields { get; set; }
     }
 }

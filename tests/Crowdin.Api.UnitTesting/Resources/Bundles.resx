@@ -133,12 +133,18 @@
         ],
         "exportPattern": "strings-%two_letters_code%.resx",
         "isMultilingual": false,
+        "includeProjectSourceLanguage": false,
+        "includeInContextPseudoLanguage": true,
+        "sourceLanguageExportPattern": "source-%language%.json",
         "labelIds": [
           0
         ],
         "excludeLabelIds": [
           1
         ],
+        "labelMatchRule": "all",
+        "excludeLabelMatchRule": "any",
+        "languageIds": ["uk", "de"],
         "createdAt": "2019-09-20T11:11:05+00:00",
         "updatedAt": "2019-09-20T12:22:20+00:00"
       }
@@ -334,12 +340,17 @@
     "exportPattern": "strings-%two_letters_code%.resx",
     "isMultilingual": false,
     "includeProjectSourceLanguage": false,
+    "includeInContextPseudoLanguage": true,
+    "sourceLanguageExportPattern": "source-%language%.json",
     "labelIds": [
       0
     ],
     "excludeLabelIds": [
       1
     ],
+    "labelMatchRule": "all",
+    "excludeLabelMatchRule": "any",
+    "languageIds": ["uk", "de"],
     "createdAt": "2019-09-20T11:11:05+00:00",
     "updatedAt": "2019-09-20T12:22:20+00:00"
   }

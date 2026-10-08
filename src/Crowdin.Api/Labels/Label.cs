@@ -15,5 +15,8 @@ namespace Crowdin.Api.Labels
 
         [JsonProperty("isSystem")]
         public bool IsSystem { get; set; }
+
+        [JsonProperty("isShared")]
+        public bool IsShared { get; set; }
     }
 }

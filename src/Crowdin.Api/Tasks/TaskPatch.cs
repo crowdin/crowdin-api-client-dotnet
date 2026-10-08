@@ -1,7 +1,10 @@
 ﻿
+using System;
 using System.ComponentModel;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
+
+using Crowdin.Api.Core;
 
 namespace Crowdin.Api.Tasks
 {
@@ -28,7 +31,11 @@ namespace Crowdin.Api.Tasks
         DeadLine,
         
         [Description("/splitFiles")]
+        [Obsolete(MessageTexts.UseSplitContentInstead, false)]
         SplitFiles,
+
+        [Description("/splitContent")]
+        SplitContent,
         
         [Description("/fileIds")]
         FileIds,

@@ -464,6 +464,7 @@ namespace Crowdin.Api.UnitTesting.Tests.TranslationMemory
             Assert.Equal("el", model.LanguageIds[0]);
 
             Assert.Equal(21, model.SegmentsCount);
+            Assert.True(model.IsShared);
 
             Assert.NotNull(model.DefaultProjectIds);
             Assert.Single(model.DefaultProjectIds);

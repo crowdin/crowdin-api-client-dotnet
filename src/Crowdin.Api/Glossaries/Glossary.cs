@@ -37,5 +37,8 @@ namespace Crowdin.Api.Glossaries
         
         [JsonProperty("createdAt")]
         public DateTimeOffset CreatedAt { get; set; }
+
+        [JsonProperty("isShared")]
+        public bool IsShared { get; set; }
     }
 }

@@ -116,5 +116,11 @@ namespace Crowdin.Api.UnitTesting.Resources {
                 return ResourceManager.GetString("GetTask_Response", resourceCulture);
             }
         }
+
+        internal static string OrganizationTaskList_Response {
+            get {
+                return ResourceManager.GetString("OrganizationTaskList_Response", resourceCulture);
+            }
+        }
     }
 }

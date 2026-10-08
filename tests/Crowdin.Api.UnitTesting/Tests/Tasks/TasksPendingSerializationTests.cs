@@ -36,7 +36,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Tasks
                         WordsCount = 3
                     }
                 },
-                DeadLine = DateTimeOffset.Parse("2019-09-27T07:00:14+00:00").ToLocalTime()
+                DeadLine = DateTimeOffset.Parse("2019-09-27T07:00:14+00:00")
             };
 
             SerializeAndCompare(actualRequest, Resources.Tasks.Request_PendingTaskCreateForm);
@@ -52,7 +52,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Tasks
                 Vendor = TaskVendor.Alconost,
                 Title = "string",
                 Description = "string",
-                DeadLine = DateTimeOffset.Parse("2019-09-27T07:00:14+00:00").ToLocalTime()
+                DeadLine = DateTimeOffset.Parse("2019-09-27T07:00:14+00:00")
             };
 
             SerializeAndCompare(actualRequest, Resources.Tasks.Request_CrowdinLanguageServicePendingTaskCreateForm);
@@ -76,7 +76,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Tasks
                         WordsCount = 3
                     }
                 },
-                DeadLine = DateTimeOffset.Parse("2019-09-27T07:00:14+00:00").ToLocalTime()
+                DeadLine = DateTimeOffset.Parse("2019-09-27T07:00:14+00:00")
             };
 
             SerializeAndCompare(actualRequest, Resources.Tasks.Request_VendorManualPendingTaskCreateForm);
@@ -107,7 +107,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Tasks
                         WordsCount = 5
                     }
                 },
-                DeadLine = DateTimeOffset.Parse("2019-09-27T07:00:14+00:00").ToLocalTime()
+                DeadLine = DateTimeOffset.Parse("2019-09-27T07:00:14+00:00")
             };
 
             SerializeAndCompare(actualRequest, Resources.Tasks.Request_EnterprisePendingTaskCreateForm);

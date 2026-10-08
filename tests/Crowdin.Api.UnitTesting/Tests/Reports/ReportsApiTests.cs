@@ -49,8 +49,8 @@ namespace Crowdin.Api.UnitTesting.Tests.Reports
                     Format = ReportFormat.Xlsx,
                     PostEditingCategories = new[] { "0-10" },
                     LanguageId = "ach",
-                    DateFrom = DateTimeOffset.Parse("2019-09-23T07:00:14+00:00").ToLocalTime(),
-                    DateTo = DateTimeOffset.Parse("2019-09-27T07:00:14+00:00").ToLocalTime()
+                    DateFrom = DateTimeOffset.Parse("2019-09-23T07:00:14+00:00"),
+                    DateTo = DateTimeOffset.Parse("2019-09-27T07:00:14+00:00")
                 }
             };
 

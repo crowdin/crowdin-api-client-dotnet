@@ -31,6 +31,9 @@
         "note": "Any kind of note, such as a usage note, explanation, or instruction",
         "url": "Base URL",
         "figure": "Figure URL",
+        "fields": {
+          "priority": "high"
+        },
         "languagesDetails": [
           {
             "languageId": "en",
@@ -63,6 +66,9 @@
     "note": "Any kind of note, such as a usage note, explanation, or instruction",
     "url": "Base URL",
     "figure": "Figure URL",
+    "fields": {
+      "priority": "high"
+    },
     "languagesDetails": [
       {
         "languageId": "en",
@@ -85,6 +91,9 @@
   "note": "Any concept-level note information",
   "url": "string",
   "figure": "string",
+  "fields": {
+    "priority": "high"
+  },
   "languagesDetails": [
     {
       "languageId": "en",
@@ -105,6 +114,9 @@
     "note": "Any kind of note, such as a usage note, explanation, or instruction",
     "url": "Base URL",
     "figure": "Figure URL",
+    "fields": {
+      "priority": "high"
+    },
     "languagesDetails": [
       {
         "languageId": "en",

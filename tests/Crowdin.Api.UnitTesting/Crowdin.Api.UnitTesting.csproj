@@ -619,11 +619,6 @@
         </Compile>
     </ItemGroup>
     
-    <PropertyGroup>
-        <!-- CS0618: member is obsolete -->
-        <NoWarn>0618</NoWarn>
-    </PropertyGroup>
-
     <ItemGroup>
         <EmbeddedResource Update="Resources\OrganizationSearch.resx">
             <Generator>ResXFileCodeGenerator</Generator>
@@ -633,6 +628,72 @@
             <DesignTime>True</DesignTime>
             <AutoGen>True</AutoGen>
             <DependentUpon>OrganizationSearch.resx</DependentUpon>
+        </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Update="Resources\AI.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>AI.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <Compile Update="Resources\AI.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>AI.resx</DependentUpon>
+        </Compile>
+        <EmbeddedResource Update="Resources\Advisors.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Advisors.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <Compile Update="Resources\Advisors.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Advisors.resx</DependentUpon>
+        </Compile>
+        <EmbeddedResource Update="Resources\Placeholders.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Placeholders.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <Compile Update="Resources\Placeholders.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Placeholders.resx</DependentUpon>
+        </Compile>
+        <EmbeddedResource Update="Resources\CustomSpellcheckers.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>CustomSpellcheckers.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <Compile Update="Resources\CustomSpellcheckers.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>CustomSpellcheckers.resx</DependentUpon>
+        </Compile>
+        <EmbeddedResource Update="Resources\ExternalQaChecks.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>ExternalQaChecks.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <Compile Update="Resources\ExternalQaChecks.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>ExternalQaChecks.resx</DependentUpon>
+        </Compile>
+        <EmbeddedResource Update="Resources\Organization.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Organization.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <Compile Update="Resources\Organization.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Organization.resx</DependentUpon>
+        </Compile>
+        <EmbeddedResource Update="Resources\Integrations.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Integrations.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <Compile Update="Resources\Integrations.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Integrations.resx</DependentUpon>
         </Compile>
     </ItemGroup>
 </Project>

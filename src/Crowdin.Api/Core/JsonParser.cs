@@ -45,10 +45,13 @@ namespace Crowdin.Api.Core
 
         public TData ParseResponseObject<TData>(JObject rootElement)
         {
-            JToken pointer =
-                rootElement.TryGetValue("data", out JToken? dataObject)
-                    ? dataObject
-                    : rootElement;
+            JToken pointer = rootElement;
+            if (rootElement.Properties().Count() == 1
+                && rootElement.TryGetValue("data", out JToken? dataObject))
+            {
+                // A model may also have a "data" property; only unwrap a single-property response envelope.
+                pointer = dataObject!;
+            }
 
             return JsonConvert.DeserializeObject<TData>(pointer.ToString(), _options)!;
         }

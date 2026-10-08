@@ -25,14 +25,23 @@ namespace Crowdin.Api.Webhooks
         [Description("file.approved")]
         FileApproved,
 
+        [Description("file.qa.finished")]
+        FileQaFinished,
+
         [Description("project.translated")]
         ProjectTranslated,
 
         [Description("project.approved")]
         ProjectApproved,
 
+        [Description("project.qa.finished")]
+        ProjectQaFinished,
+
         [Description("project.built")]
         ProjectBuilt,
+
+        [Description("preTranslation.completed")]
+        PreTranslationCompleted,
 
         [Description("translation.updated")]
         TranslationUpdated,
@@ -79,7 +88,16 @@ namespace Crowdin.Api.Webhooks
         [Description("task.statusChanged")]
         TaskStatusChanged,
 
+        [Description("task.updated")]
+        TaskUpdated,
+
         [Description("task.deleted")]
         TaskDeleted,
+
+        [Description("group.created")]
+        GroupCreated,
+
+        [Description("group.deleted")]
+        GroupDeleted,
     }
 }

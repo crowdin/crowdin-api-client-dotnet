@@ -4,6 +4,8 @@ using System.Threading.Tasks;
 
 using JetBrains.Annotations;
 
+using Crowdin.Api.Core;
+
 #nullable enable
 
 namespace Crowdin.Api.TranslationMemory
@@ -65,14 +67,19 @@ namespace Crowdin.Api.TranslationMemory
 
         Task DeleteTmSegment(long tmId, long segmentId);
 
+        Task<TmSegmentResource> EditTmSegment(long tmId, long segmentId, IEnumerable<TmSegmentPatch> patches);
+
+        [System.Obsolete(MessageTexts.UseEditTmSegmentInstead, false)]
         Task DeleteTmSegmentRecord(long tmId, long segmentId, long recordId);
 
+        [System.Obsolete(MessageTexts.UseEditTmSegmentInstead, false)]
         Task<TmSegmentResource> EditTmSegmentRecord(
             long tmId,
             long segmentId,
             long recordId,
             IEnumerable<TmSegmentRecordPatch> patches);
 
+        [System.Obsolete(MessageTexts.UseEditTmSegmentInstead, false)]
         Task<TmSegmentResource> CreateTmSegmentRecords(
             long tmId,
             long segmentId,

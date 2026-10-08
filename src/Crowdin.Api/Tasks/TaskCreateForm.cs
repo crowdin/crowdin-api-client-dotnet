@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 
@@ -43,8 +43,11 @@ namespace Crowdin.Api.Tasks
         public string? Description { get; set; }
         
         [JsonProperty("splitFiles")]
-        [Obsolete("Use splitContent instead")]
+        [Obsolete(MessageTexts.UseSplitContentInstead, false)]
         public bool? SplitFiles { get; set; }
+
+        [JsonProperty("splitContent")]
+        public bool? SplitContent { get; set; }
         
         [JsonProperty("skipAssignedStrings")]
         public bool? SkipAssignedStrings { get; set; }
