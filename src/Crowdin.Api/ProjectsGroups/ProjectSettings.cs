@@ -1,9 +1,12 @@
 
+#nullable enable annotations
+
 using System.Collections.Generic;
 
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
+using Crowdin.Api.Core;
 using Crowdin.Api.Core.Converters;
 using Crowdin.Api.Languages;
 
@@ -22,7 +25,11 @@ namespace Crowdin.Api.ProjectsGroups
         public TagsDetectionAction TagsDetection { get; set; }
         
         [JsonProperty("glossaryAccess")]
+        [System.Obsolete(MessageTexts.UseGlossaryAccessOptionInstead, false)]
         public bool GlossaryAccess { get; set; }
+
+        [JsonProperty("glossaryAccessOption")]
+        public GlossaryAccessOption GlossaryAccessOption { get; set; }
         
         [JsonProperty("isMtAllowed")]
         public bool IsMachineTranslationAllowed { get; set; }
@@ -118,5 +125,39 @@ namespace Crowdin.Api.ProjectsGroups
 
         [JsonProperty("tmApprovedSuggestionsOnly")]
         public bool? TmApprovedSuggestionsOnly { get; set; }
+
+        [JsonProperty("assignedStyleGuides")]
+        public long[]? AssignedStyleGuides { get; set; }
+
+        [JsonProperty("externalQaCheckIds")]
+        public long[]? ExternalQaCheckIds { get; set; }
+
+        [JsonProperty("preTranslationAiPromptId")]
+        [System.Obsolete(MessageTexts.UseAiPreTranslateInstead, false)]
+        public long? PreTranslationAiPromptId { get; set; }
+
+        [JsonProperty("editorSuggestionAiPromptId")]
+        public long? EditorSuggestionAiPromptId { get; set; }
+
+        [JsonProperty("alignmentActionAiPromptId")]
+        public long? AlignmentActionAiPromptId { get; set; }
+
+        [JsonProperty("qaCheckActionAiPromptId")]
+        public long? QaCheckActionAiPromptId { get; set; }
+
+        [JsonProperty("contextReviewAiPromptId")]
+        public long? ContextReviewAiPromptId { get; set; }
+
+        [JsonProperty("aiPreTranslate")]
+        public ProjectAiPreTranslate? AiPreTranslate { get; set; }
+
+        [JsonProperty("mtPreTranslate")]
+        public ProjectMtPreTranslate? MtPreTranslate { get; set; }
+
+        [JsonProperty("tmPreTranslate")]
+        public ProjectTmPreTranslate? TmPreTranslate { get; set; }
+
+        [JsonProperty("fields")]
+        public IDictionary<string, object>? Fields { get; set; }
     }
 }

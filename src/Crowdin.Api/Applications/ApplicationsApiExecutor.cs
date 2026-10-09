@@ -1,4 +1,5 @@
 
+using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
@@ -151,6 +152,110 @@ namespace Crowdin.Api.Applications
             string url = FormUrl_ApplicationsInstallations(applicationIdentifier);
             CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
             return _jsonParser.ParseResponseObject<Application>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Get an application installation update.
+        /// Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Applications/operation/api.applications.installations.update.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ApplicationInstallationUpdate> GetApplicationInstallationUpdate(string identifier)
+        {
+            CrowdinApiResult result = await _apiClient.SendGetRequest($"/applications/installations/{identifier}/update");
+            return _jsonParser.ParseResponseObject<ApplicationInstallationUpdate>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Apply an application installation update.
+        /// Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Applications/operation/api.applications.installations.update.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<Application> ApplyApplicationInstallationUpdate(string identifier, ApplyApplicationInstallationUpdateRequest request)
+        {
+            CrowdinApiResult result = await _apiClient.SendPostRequest($"/applications/installations/{identifier}/update", request);
+            return _jsonParser.ParseResponseObject<Application>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Upload an application bundle.
+        /// Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Applications/operation/api.applications.installations.bundles.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<Application> UploadApplicationBundle(string identifier, UploadApplicationBundleRequest request)
+        {
+            CrowdinApiResult result = await _apiClient.SendPostRequest($"/applications/installations/{identifier}/bundles", request);
+            return _jsonParser.ParseResponseObject<Application>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// List application key-value records. Application access tokens are required; personal access tokens are not supported.
+        /// Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Applications/operation/api.applications.storage.kv.records.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<ApplicationKvRecord>> ListApplicationKvRecords(
+            string applicationIdentifier, string? prefix = null, int limit = 25, int offset = 0,
+            IEnumerable<SortingRule>? orderBy = null)
+        {
+            IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
+            queryParams.AddParamIfPresent("prefix", prefix);
+            queryParams.AddSortingRulesIfPresent(orderBy);
+            CrowdinApiResult result = await _apiClient.SendGetRequest($"/applications/{applicationIdentifier}/storage/kv/records", queryParams);
+            return _jsonParser.ParseResponseList<ApplicationKvRecord>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Add an application key-value record. Application access tokens are required; personal access tokens are not supported.
+        /// Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Applications/operation/api.applications.storage.kv.records.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ApplicationKvRecord> AddApplicationKvRecord(string applicationIdentifier, AddApplicationKvRecordRequest request)
+        {
+            CrowdinApiResult result = await _apiClient.SendPostRequest($"/applications/{applicationIdentifier}/storage/kv/records", request);
+            return _jsonParser.ParseResponseObject<ApplicationKvRecord>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Get an application key-value record. Application access tokens are required; personal access tokens are not supported.
+        /// Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Applications/operation/api.applications.storage.kv.records.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ApplicationKvRecord> GetApplicationKvRecord(string applicationIdentifier, string key)
+        {
+            string encodedKey = Uri.EscapeDataString(key);
+            CrowdinApiResult result = await _apiClient.SendGetRequest($"/applications/{applicationIdentifier}/storage/kv/records/{encodedKey}");
+            return _jsonParser.ParseResponseObject<ApplicationKvRecord>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Edit an application key-value record. Application access tokens are required; personal access tokens are not supported.
+        /// Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Applications/operation/api.applications.storage.kv.records.patch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ApplicationKvRecord> EditApplicationKvRecord(string applicationIdentifier, string key, IEnumerable<ApplicationKvRecordPatch> patches)
+        {
+            string encodedKey = Uri.EscapeDataString(key);
+            CrowdinApiResult result = await _apiClient.SendPatchRequest($"/applications/{applicationIdentifier}/storage/kv/records/{encodedKey}", patches);
+            return _jsonParser.ParseResponseObject<ApplicationKvRecord>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Delete an application key-value record. Application access tokens are required; personal access tokens are not supported.
+        /// Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Applications/operation/api.applications.storage.kv.records.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task DeleteApplicationKvRecord(string applicationIdentifier, string key)
+        {
+            string encodedKey = Uri.EscapeDataString(key);
+            HttpStatusCode code = await _apiClient.SendDeleteRequest($"/applications/{applicationIdentifier}/storage/kv/records/{encodedKey}");
+            Utils.ThrowIfStatusNot204(code, $"Application key-value record {key} removal failed");
         }
 
         /// <summary>

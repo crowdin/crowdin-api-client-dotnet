@@ -468,4 +468,10 @@
   }
 }</value>
     </data>
+  <data name="ApiResponses" xml:space="preserve">
+    <value>{"ListUserProjectPermissions":{"data":[{"data":{"id":27,"roles":[{"name":"manager","permissions":{"allLanguages":false,"languagesAccess":{"uk":{"allContent":false,"workflowStepIds":[3]}}}}],"project":{"id":7,"type":0,"userId":2,"sourceLanguageId":"en","targetLanguageIds":["uk"],"name":"Project Seven","identifier":"project-seven","description":"User permissions fixture","createdAt":"2024-01-13T11:34:40+00:00","languageAccessPolicy":"moderate","cname":"","visibility":"private"},"teams":[{"id":13,"name":"Review Team","totalMembers":4,"webUrl":"https://crowdin.com/teams/13","createdAt":"2024-01-13T11:34:40+00:00"}]}}],"pagination":{"limit":25,"offset":0,"total":1}},"EditUserProjectPermissions":{"data":[{"data":{"id":27,"roles":[{"name":"manager","permissions":{"allLanguages":false,"languagesAccess":{"uk":{"allContent":false,"workflowStepIds":[3]}}}}],"project":{"id":7,"type":0,"userId":2,"sourceLanguageId":"en","targetLanguageIds":["uk"],"name":"Project Seven","identifier":"project-seven","description":"User permissions fixture","createdAt":"2024-01-13T11:34:40+00:00","languageAccessPolicy":"moderate","cname":"","visibility":"private"},"teams":[]}}],"pagination":{"limit":25,"offset":0,"total":1}},"ListUserProjectContributions":{"data":[{"data":{"id":7,"translated":{"strings":12,"words":340},"approved":{"strings":8,"words":220},"voted":{"strings":5},"commented":{"strings":2},"project":{"id":7,"type":0,"userId":2,"sourceLanguageId":"en","targetLanguageIds":["uk"],"name":"Project Seven","identifier":"project-seven","description":"Contribution fixture","createdAt":"2024-01-13T11:34:40+00:00","languageAccessPolicy":"moderate","cname":"","visibility":"private"}}}],"pagination":{"limit":25,"offset":0,"total":1}}}</value>
+  </data>
+  <data name="ApiRequests" xml:space="preserve">
+    <value>{"EditUserProjectPermissions":[{"op":"remove","path":"/7"}]}</value>
+  </data>
 </root>

@@ -62,5 +62,17 @@ namespace Crowdin.Api.UnitTesting.Resources {
                 return ResourceManager.GetString("ListTeams_Response", resourceCulture);
             }
         }
+
+        internal static string ApiResponses {
+            get {
+                return ResourceManager.GetString("ApiResponses", resourceCulture);
+            }
+        }
+
+        internal static string ApiRequests {
+            get {
+                return ResourceManager.GetString("ApiRequests", resourceCulture);
+            }
+        }
     }
 }

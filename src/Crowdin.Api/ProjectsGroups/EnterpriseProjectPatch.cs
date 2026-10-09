@@ -105,6 +105,9 @@ namespace Crowdin.Api.ProjectsGroups
         [Description("/glossaryAccess")]
         GlossaryAccess,
 
+        [Description("/glossaryAccessOption")]
+        GlossaryAccessOption,
+
         [Description("/publicDownloads")]
         PublicDownloads,
         
@@ -139,6 +142,12 @@ namespace Crowdin.Api.ProjectsGroups
         
         [Description("/qaChecksIgnorableCategories")]
         QaChecksIgnorableCategories,
+
+        [Description("/customQaCheckIds")]
+        CustomQaCheckIds,
+
+        [Description("/externalQaCheckIds")]
+        ExternalQaCheckIds,
         
         // /qaChecksIgnorableCategories/{category}
         
@@ -166,6 +175,9 @@ namespace Crowdin.Api.ProjectsGroups
         
         [Description("/assignedGlossaries")]
         AssignedGlossaries,
+
+        [Description("/assignedStyleGuides")]
+        AssignedStyleGuides,
         
         [Description("/assignedTms")]
         AssignedTms,
@@ -173,7 +185,26 @@ namespace Crowdin.Api.ProjectsGroups
         // /assignedTms/{tmId}
         
         [Description("/tmPenalties")]
-        TmPenalties
+        TmPenalties,
+
+        [Description("/savingsReportSettingsTemplateId")]
+        SavingsReportSettingsTemplateId,
+
+        [Description("/editorSuggestionAiPromptId")]
+        EditorSuggestionAiPromptId,
+
+        [Description("/alignmentActionAiPromptId")]
+        AlignmentActionAiPromptId,
+
+        [Description("/qaCheckActionAiPromptId")]
+        QaCheckActionAiPromptId,
+
+        [Description("/contextReviewAiPromptId")]
+        ContextReviewAiPromptId,
+
+        [Description("/preTranslationAiPromptId")]
+        [System.Obsolete(MessageTexts.UseAiPreTranslateInstead, false)]
+        PreTranslationAiPromptId
         
         // /tmPenalties/{penaltyKey}
     }

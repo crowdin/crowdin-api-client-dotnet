@@ -54,6 +54,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Glossaries
             Assert.NotNull(response);
             Assert.Single(response.Data);
             Assert.Equal(glossaryId, response.Data[0].GlossaryId);
+            Assert.Equal("high", response.Data[0].Fields!["priority"].ToString());
         }
 
         [Fact]
@@ -80,6 +81,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Glossaries
             Assert.NotNull(response);
             Assert.Equal(conceptId, response.Id);
             Assert.Equal(glossaryId, response.GlossaryId);
+            Assert.Equal("high", response.Fields!["priority"].ToString());
 
             Assert.NotNull(response.LanguagesDetails);
             Assert.Single(response.LanguagesDetails);
@@ -99,6 +101,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Glossaries
                 Note = "Any concept-level note information",
                 Url = "string",
                 Figure = "string",
+                Fields = new Dictionary<string, object> { ["priority"] = "high" },
                 LanguagesDetails = new[]
                 {
                     new ConceptLanguageDetailsForm
@@ -130,6 +133,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Glossaries
             Concept response = await executor.UpdateConcept(glossaryId, conceptId, request);
 
             Assert.NotNull(response);
+            Assert.Equal("high", response.Fields!["priority"].ToString());
         }
     }
 }

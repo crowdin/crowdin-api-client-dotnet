@@ -46,5 +46,8 @@ namespace Crowdin.Api.Users
         
         [JsonProperty("givenAccessAt")]
         public DateTimeOffset? GivenAccessAt { get; set; }
+
+        [JsonProperty("isAdmin")]
+        public bool? IsAdmin { get; set; }
     }
 }

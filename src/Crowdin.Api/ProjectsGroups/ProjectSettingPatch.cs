@@ -86,6 +86,9 @@ namespace Crowdin.Api.ProjectsGroups
         
         [Description("/showTmSuggestionsDialects")]
         ShowTmSuggestionsDialects,
+
+        [Description("/glossaryAccessOption")]
+        GlossaryAccessOption,
         
         [Description("/normalizePlaceholder")]
         NormalizePlaceholder,
@@ -136,6 +139,31 @@ namespace Crowdin.Api.ProjectsGroups
         
         [Description("/mtPreTranslate")]
         MtPreTranslate,
+
+        [Description("/aiPreTranslate")]
+        AiPreTranslate,
+
+        [Description("/preTranslationAiPromptId")]
+        [System.Obsolete(MessageTexts.UseAiPreTranslateInstead, false)]
+        PreTranslationAiPromptId,
+
+        [Description("/editorSuggestionAiPromptId")]
+        EditorSuggestionAiPromptId,
+
+        [Description("/alignmentActionAiPromptId")]
+        AlignmentActionAiPromptId,
+
+        [Description("/qaCheckActionAiPromptId")]
+        QaCheckActionAiPromptId,
+
+        [Description("/contextReviewAiPromptId")]
+        ContextReviewAiPromptId,
+
+        [Description("/assignedStyleGuides")]
+        AssignedStyleGuides,
+
+        [Description("/savingsReportSettingsTemplateId")]
+        SavingsReportSettingsTemplateId,
         
         [Description("/defaultTmId")]
         DefaultTmId,

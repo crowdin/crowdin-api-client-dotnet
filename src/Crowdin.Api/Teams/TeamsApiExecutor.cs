@@ -7,6 +7,7 @@ using JetBrains.Annotations;
 
 using Crowdin.Api.Core;
 using Crowdin.Api.ProjectsGroups;
+using Crowdin.Api.Users;
 
 #nullable enable
 
@@ -177,6 +178,30 @@ namespace Crowdin.Api.Teams
             var url = $"{BaseUrl}/{teamId}/members/{memberId}";
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
             Utils.ThrowIfStatusNot204(statusCode, $"Team member {memberId} removal failed");
+        }
+
+        /// <summary>
+        /// List a team's project permissions. Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Teams/operation/api.teams.projects.permissions.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<TeamProjectPermissions>> ListTeamProjectPermissions(long teamId, int limit = 25, int offset = 0)
+        {
+            IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
+            CrowdinApiResult result = await _apiClient.SendGetRequest($"/teams/{teamId}/projects/permissions", queryParams);
+            return _jsonParser.ParseResponseList<TeamProjectPermissions>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Edit a team's project permissions. Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Teams/operation/api.teams.projects.permissions.patch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<TeamProjectPermissions>> EditTeamProjectPermissions(
+            long teamId, IEnumerable<ProjectPermissionsMassOperation> operations)
+        {
+            CrowdinApiResult result = await _apiClient.SendPatchRequest($"/teams/{teamId}/projects/permissions", operations);
+            return _jsonParser.ParseResponseList<TeamProjectPermissions>(result.JsonObject);
         }
 
         #region Helper methods

@@ -83,6 +83,14 @@ namespace Crowdin.Api.UnitTesting.Tests.StringTranslations
             Assert.NotNull(response);
             Assert.Equal(19, response.User.Id);
             Assert.Equal(PluralCategoryName.Few, response.PluralCategoryName);
+            Assert.Equal("crowdin", response.Provider);
+            Assert.True(response.IsPreTranslated);
+            Assert.Equal(17, response.ProviderId);
+            Assert.Equal(98, response.MatchRate);
+            Assert.Equal("tm", response.MatchType);
+            Assert.Equal("passed", response.QaIssuesStatus);
+            Assert.Equal("https://crowdin.com/translation/190695", response.Url);
+            Assert.Equal(3, response.WorkflowStepId);
         }
 
         [Fact]

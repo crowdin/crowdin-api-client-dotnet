@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="ApiResponses" xml:space="preserve">
+    <value>{"ListJobs":{"data":[{"jobId":"job-list","status":"finished","progress":100,"projectId":7}],"pagination":{"limit":10,"offset":0,"total":1}},"GetJobInfo":{"data":[{"jobId":"job-info","status":"inProgress","progress":40,"projectId":7}]},"GetJobs":{"data":[{"jobId":"job-get","status":"finished","projectId":7}]},"ListIntegrationCrowdinFiles":{"data":[{"id":11,"name":"messages.json","path":"/messages.json"}]},"UpdateIntegrationCrowdinFiles":{"data":{"jobId":"crowdin-update","status":"created","projectId":7}},"GetIntegrationFileProgress":{"data":{"languageId":"uk","eTag":"etag-1","words":{"total":100,"translated":75,"approved":50},"phrases":{"total":20,"translated":15,"approved":10},"translationProgress":75,"approvalProgress":50}},"ListIntegrationFiles":{"data":[{"id":12,"name":"integration.json","path":"/integration.json"}]},"UpdateIntegrationFiles":{"data":{"jobId":"integration-update","status":"created","projectId":7}},"IntegrationLogin":{"data":{"token":"session-token","userId":9}},"ListIntegrationLoginFields":{"data":[{"key":"token","name":"Access token"}]},"GetApplicationSettings":{"data":{"enabled":true,"branchId":2}},"GetSyncSettings":{"data":{"files":{"11":["uk","fr"]},"provider":"crowdin"}}}</value>
+  </data>
+  <data name="ApiRequests" xml:space="preserve">
+    <value>{"UpdateIntegrationCrowdinFiles":{"projectId":7,"files":[{"id":11}],"uploadTranslations":true},"UpdateIntegrationFiles":{"projectId":7,"files":{"11":["uk","fr"]}},"IntegrationLogin":{"projectId":7,"credentials":{"token":"secret"}},"UpdateApplicationSettings":{"projectId":7,"config":{"enabled":true}},"UpdateSyncSettings":{"projectId":7,"provider":"crowdin","files":{"11":["uk"]}}}</value>
+  </data>
+</root>

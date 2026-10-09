@@ -1,5 +1,7 @@
 
+using System;
 using System.Net;
+using System.Reflection;
 using System.Threading.Tasks;
 using Crowdin.Api.Core;
 using Crowdin.Api.Distributions;
@@ -19,6 +21,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Distributions
         {
             const int projectId = 1;
 
+#pragma warning disable CS0618
             var request = new AddDistributionRequest
             {
                 ExportMode = DistributionExportMode.Bundle,
@@ -30,6 +33,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Distributions
             string actualRequestJson = JsonConvert.SerializeObject(request, DefaultSettings);
             string expectedRequestJson = TestUtils.CompactJson(Resources.Distributions.AddDistribution_Request);
             Assert.Equal(expectedRequestJson, actualRequestJson);
+#pragma warning restore CS0618
 
             var url = $"/projects/{projectId}/distributions";
             Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
@@ -49,6 +53,22 @@ namespace Crowdin.Api.UnitTesting.Tests.Distributions
             Assert.Contains(0, response.FileIds);
             Assert.Contains(1, response.BundleIds);
             Assert.Contains(2, response.BundleIds);
+        }
+
+        [Fact]
+        public void AddDistributionLegacyPropertiesNameTheirReplacement()
+        {
+            ObsoleteAttribute exportMode = typeof(AddDistributionRequest)
+                .GetProperty("ExportMode")!
+                .GetCustomAttribute<ObsoleteAttribute>()!;
+            ObsoleteAttribute fileIds = typeof(AddDistributionRequest)
+                .GetProperty("FileIds")!
+                .GetCustomAttribute<ObsoleteAttribute>()!;
+
+            Assert.Equal(MessageTexts.UseBundleIdsInstead, exportMode.Message);
+            Assert.Equal(MessageTexts.UseBundleIdsInstead, fileIds.Message);
+            Assert.False(exportMode.IsError);
+            Assert.False(fileIds.IsError);
         }
 
         [Fact]

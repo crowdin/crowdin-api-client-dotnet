@@ -219,7 +219,7 @@ namespace Crowdin.Api.Translations
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.translations.postOnLanguage">Crowdin API</a>
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.translations.postOnLanguage">Crowdin Enterprise API</a>
         /// </summary>
-        [Obsolete]
+        [Obsolete(MessageTexts.UseImportTranslationsInstead, false)]
         [PublicAPI]
         public async Task<UploadTranslationsResponse> UploadTranslations(
             long projectId,

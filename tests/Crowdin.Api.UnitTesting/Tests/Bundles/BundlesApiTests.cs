@@ -11,6 +11,7 @@ using Xunit;
 
 using Crowdin.Api.Bundles;
 using Crowdin.Api.Core;
+using Crowdin.Api.Labels;
 using Crowdin.Api.SourceFiles;
 
 namespace Crowdin.Api.UnitTesting.Tests.Bundles
@@ -370,6 +371,11 @@ namespace Crowdin.Api.UnitTesting.Tests.Bundles
             Assert.False(model.IsMultilingual);
 
             Assert.False(model.IncludeProjectSourceLanguage);
+            Assert.True(model.IncludeInContextPseudoLanguage);
+            Assert.Equal("source-%language%.json", model.SourceLanguageExportPattern);
+            Assert.Equal(LabelMatchRule.All, model.LabelMatchRule!.Value);
+            Assert.Equal(LabelMatchRule.Any, model.ExcludeLabelMatchRule!.Value);
+            Assert.Equal(new[] { "uk", "de" }, model.LanguageIds);
 
             Assert.NotNull(model.LabelIds);
             Assert.Single(model.LabelIds);

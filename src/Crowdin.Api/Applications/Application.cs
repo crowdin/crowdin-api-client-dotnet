@@ -1,3 +1,5 @@
+#nullable enable annotations
+
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -45,5 +47,29 @@ namespace Crowdin.Api.Applications
 
         [JsonProperty("limitReached")]
         public bool LimitReached { get; set; }
+
+        [JsonProperty("installedBy")]
+        public JObject? InstalledBy { get; set; }
+
+        [JsonProperty("logoUrl")]
+        public string? LogoUrl { get; set; }
+
+        [JsonProperty("agent")]
+        public JObject? Agent { get; set; }
+
+        [JsonProperty("manifest")]
+        public JObject? Manifest { get; set; }
+
+        [JsonProperty("manifestUpdatedAt")]
+        public DateTimeOffset? ManifestUpdatedAt { get; set; }
+
+        [JsonProperty("isManifestOutdated")]
+        public bool? IsManifestOutdated { get; set; }
+
+        [JsonProperty("stringBasedAvailable")]
+        public bool? StringBasedAvailable { get; set; }
+
+        [JsonProperty("bundle")]
+        public JToken? Bundle { get; set; }
     }
 }

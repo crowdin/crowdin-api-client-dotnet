@@ -15,22 +15,30 @@ using Newtonsoft.Json.Linq;
 
 using Crowdin.Api.AI;
 using Crowdin.Api.AI.Gateway;
+using Crowdin.Api.Advisors;
 using Crowdin.Api.Applications;
 using Crowdin.Api.Branches;
 using Crowdin.Api.Bundles;
+using Crowdin.Api.Clients;
+using Crowdin.Api.CustomSpellcheckers;
 using Crowdin.Api.Core;
 using Crowdin.Api.Core.RateLimiting;
 using Crowdin.Api.Core.Resilience;
 using Crowdin.Api.Dictionaries;
 using Crowdin.Api.Distributions;
+using Crowdin.Api.ExternalQaChecks;
 using Crowdin.Api.Fields;
 using Crowdin.Api.Glossaries;
 using Crowdin.Api.GraphQL;
 using Crowdin.Api.Issues;
+using Crowdin.Api.Integrations;
 using Crowdin.Api.Labels;
 using Crowdin.Api.Languages;
 using Crowdin.Api.MachineTranslationEngines;
+using Crowdin.Api.Notifications;
+using Crowdin.Api.Organization;
 using Crowdin.Api.ProjectsGroups;
+using Crowdin.Api.Placeholders;
 using Crowdin.Api.Reports;
 using Crowdin.Api.Screenshots;
 using Crowdin.Api.SecurityLogs;
@@ -62,8 +70,14 @@ namespace Crowdin.Api
         public IAiApiExecutor AI { get; }
         
         public IAiGatewayApiExecutor AiGateway { get; }
+
+        public IAdvisorsApiExecutor Advisors { get; }
         
         public IBranchesApiExecutor Branches { get; }
+
+        public IClientsApiExecutor Clients { get; }
+
+        public ICustomSpellcheckersApiExecutor CustomSpellcheckers { get; }
         
         public IBundlesApiExecutor Bundles { get; }
         
@@ -126,6 +140,16 @@ namespace Crowdin.Api
         public IApplicationsApiExecutor Applications { get; }
 
         public IFieldsApiExecutor Fields { get; }
+
+        public IExternalQaChecksApiExecutor ExternalQaChecks { get; }
+
+        public INotificationsApiExecutor Notifications { get; }
+
+        public IOrganizationApiExecutor OrganizationInfo { get; }
+
+        public IPlaceholdersApiExecutor Placeholders { get; }
+
+        public IIntegrationsApiExecutor Integrations { get; }
         
         public IGraphQLApiExecutor GraphQL { get; }
 
@@ -176,7 +200,10 @@ namespace Crowdin.Api
 
             AI = new AiApiExecutor(this);
             AiGateway = new AiGatewayApiExecutor(this);
+            Advisors = new AdvisorsApiExecutor(this);
             Branches = new BranchesApiExecutor(this);
+            Clients = new ClientsApiExecutor(this);
+            CustomSpellcheckers = new CustomSpellcheckersApiExecutor(this);
             Bundles = new BundlesApiExecutor(this);
             Dictionaries = new DictionariesApiExecutor(this);
             Distributions = new DistributionsApiExecutor(this);
@@ -208,6 +235,11 @@ namespace Crowdin.Api
             OrganizationWebhooks = new OrganizationWebhooksApiExecutor(this);
             Applications = new ApplicationsApiExecutor(this);
             Fields = new FieldsApiExecutor(this);
+            ExternalQaChecks = new ExternalQaChecksApiExecutor(this);
+            Notifications = new NotificationsApiExecutor(this);
+            OrganizationInfo = new OrganizationApiExecutor(this);
+            Placeholders = new PlaceholdersApiExecutor(this);
+            Integrations = new IntegrationsApiExecutor(this);
             GraphQL = new GraphQLApiExecutor(this);
         }
 

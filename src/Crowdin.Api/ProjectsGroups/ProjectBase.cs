@@ -1,4 +1,6 @@
-﻿
+
+#nullable enable annotations
+
 using System;
 using Crowdin.Api.Languages;
 using JetBrains.Annotations;
@@ -53,5 +55,17 @@ namespace Crowdin.Api.ProjectsGroups
         
         [JsonProperty("targetLanguages")]
         public Language[] TargetLanguages { get; set; }
+
+        [JsonProperty("publicUrl")]
+        public string? PublicUrl { get; set; }
+
+        [JsonProperty("savingsReportSettingsTemplateId")]
+        public long? SavingsReportSettingsTemplateId { get; set; }
+
+        [JsonProperty("externalProjectId")]
+        public long? ExternalProjectId { get; set; }
+
+        [JsonProperty("externalOrganizationId")]
+        public long? ExternalOrganizationId { get; set; }
     }
 }

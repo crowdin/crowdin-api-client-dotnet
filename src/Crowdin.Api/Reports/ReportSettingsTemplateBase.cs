@@ -13,6 +13,12 @@ namespace Crowdin.Api.Reports
         [JsonProperty("id")]
         public long Id { get; set; }
 
+        [JsonProperty("projectId")]
+        public long? ProjectId { get; set; }
+
+        [JsonProperty("groupId")]
+        public long? GroupId { get; set; }
+
         [JsonProperty("name")]
 #pragma warning disable CS8618
         public string Name { get; set; }
@@ -26,6 +32,9 @@ namespace Crowdin.Api.Reports
 
         [JsonProperty("isPublic")]
         public bool IsPublic { get; set; }
+
+        [JsonProperty("isGlobal")]
+        public bool? IsGlobal { get; set; }
 
         [JsonProperty("mode")]
         public ReportSettingsTemplateMode Mode { get; set; }

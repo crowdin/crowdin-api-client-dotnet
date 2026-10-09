@@ -1,4 +1,5 @@
 ﻿
+using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
@@ -292,10 +293,27 @@ namespace Crowdin.Api.TranslationMemory
         }
         
         /// <summary>
+        /// Edit TM Segment. Documentation:
+        /// <a href="https://developer.crowdin.com/api/v2/#operation/api.tms.segments.patch">Crowdin API</a>
+        /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.tms.segments.patch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<TmSegmentResource> EditTmSegment(
+            long tmId,
+            long segmentId,
+            IEnumerable<TmSegmentPatch> patches)
+        {
+            string url = FormUrl_TmSegmentId(tmId, segmentId);
+            CrowdinApiResult result = await _apiClient.SendPatchRequest(url, patches);
+            return _jsonParser.ParseResponseObject<TmSegmentResource>(result.JsonObject);
+        }
+
+        /// <summary>
         /// Delete TM Segment Record. Documentation:
         /// <a href="https://developer.crowdin.com/api/v2/#operation/api.tms.segments.records.delete">Crowdin API</a>
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.tms.segments.records.delete">Crowdin Enterprise API</a>
         /// </summary>
+        [Obsolete(MessageTexts.UseEditTmSegmentInstead, false)]
         [PublicAPI]
         public async Task DeleteTmSegmentRecord(long tmId, long segmentId, long recordId)
         {
@@ -303,12 +321,13 @@ namespace Crowdin.Api.TranslationMemory
             HttpStatusCode statusCode = await _apiClient.SendDeleteRequest(url);
             Utils.ThrowIfStatusNot204(statusCode, $"TM Segment Record {recordId} removal failed");
         }
-        
+
         /// <summary>
         /// Edit TM Segment Record. Documentation:
         /// <a href="https://developer.crowdin.com/api/v2/#operation/api.tms.segments.records.patch">Crowdin API</a>
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.tms.segments.records.patch">Crowdin Enterprise API</a>
         /// </summary>
+        [Obsolete(MessageTexts.UseEditTmSegmentInstead, false)]
         [PublicAPI]
         public async Task<TmSegmentResource> EditTmSegmentRecord(
             long tmId,
@@ -326,6 +345,7 @@ namespace Crowdin.Api.TranslationMemory
         /// <a href="https://developer.crowdin.com/api/v2/#operation/api.tms.segments.records.post">Crowdin API</a>
         /// <a href="https://developer.crowdin.com/enterprise/api/v2/#operation/api.tms.segments.records.post">Crowdin Enterprise API</a>
         /// </summary>
+        [Obsolete(MessageTexts.UseEditTmSegmentInstead, false)]
         [PublicAPI]
         public async Task<TmSegmentResource> CreateTmSegmentRecords(
             long tmId,

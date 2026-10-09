@@ -1,6 +1,9 @@
+using System;
+
 using JetBrains.Annotations;
 using Newtonsoft.Json;
-using System;
+
+using Crowdin.Api.Core;
 
 namespace Crowdin.Api.Applications
 {
@@ -8,6 +11,7 @@ namespace Crowdin.Api.Applications
     public class ApplicationPermissions
     {
         [JsonProperty("user")]
+        [Obsolete(MessageTexts.UseModulePermissionsInstead, false)]
         public ApplicationUser User { get; set; }
 
         [JsonProperty("project")]

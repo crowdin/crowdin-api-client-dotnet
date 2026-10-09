@@ -29,8 +29,8 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
             {
                 ProjectIds = [1, 2, 3],
                 Purpose = AiDatasetPurpose.Training,
-                DateFrom = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
-                DateTo = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
+                DateFrom = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00"),
+                DateTo = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00"),
                 MaxFileSize = 100,
                 MinExamplesCount = 10,
                 MaxExamplesCount = 50
@@ -67,8 +67,8 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
             {
                 ProjectIds = [1, 2, 3],
                 Purpose = AiDatasetPurpose.Training,
-                DateFrom = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
-                DateTo = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
+                DateFrom = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00"),
+                DateTo = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00"),
                 MaxFileSize = 100,
                 MinExamplesCount = 10,
                 MaxExamplesCount = 50
@@ -163,8 +163,8 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
                 TrainingOptions = new AiTrainingOptions
                 {
                     ProjectIds = [1, 2, 3],
-                    DateFrom = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
-                    DateTo = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
+                    DateFrom = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00"),
+                    DateTo = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00"),
                     MaxFileSize = 100,
                     MinExamplesCount = 10,
                     MaxExamplesCount = 50
@@ -172,8 +172,8 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
                 ValidationOptions = new AiValidationOptions
                 {
                     ProjectIds = [1, 2, 3],
-                    DateFrom = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
-                    DateTo = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
+                    DateFrom = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00"),
+                    DateTo = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00"),
                     MaxFileSize = 100,
                     MinExamplesCount = 10,
                     MaxExamplesCount = 50
@@ -219,8 +219,8 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
                 TrainingOptions = new AiTrainingOptions
                 {
                     ProjectIds = [1, 2, 3],
-                    DateFrom = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
-                    DateTo = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
+                    DateFrom = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00"),
+                    DateTo = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00"),
                     MaxFileSize = 100,
                     MinExamplesCount = 10,
                     MaxExamplesCount = 50
@@ -228,8 +228,8 @@ namespace Crowdin.Api.UnitTesting.Tests.AI
                 ValidationOptions = new AiValidationOptions
                 {
                     ProjectIds = [1, 2, 3],
-                    DateFrom = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
-                    DateTo = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00").ToLocalTime(),
+                    DateFrom = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00"),
+                    DateTo = DateTimeOffset.Parse("2019-09-23T11:26:54+00:00"),
                     MaxFileSize = 100,
                     MinExamplesCount = 10,
                     MaxExamplesCount = 50

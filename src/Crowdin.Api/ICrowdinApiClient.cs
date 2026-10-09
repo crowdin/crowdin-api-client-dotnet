@@ -8,18 +8,28 @@ using JetBrains.Annotations;
 
 using Crowdin.Api.AI;
 using Crowdin.Api.AI.Gateway;
+using Crowdin.Api.Advisors;
 using Crowdin.Api.Applications;
+using Crowdin.Api.Branches;
 using Crowdin.Api.Bundles;
+using Crowdin.Api.Clients;
+using Crowdin.Api.CustomSpellcheckers;
 using Crowdin.Api.Core;
 using Crowdin.Api.Dictionaries;
 using Crowdin.Api.Distributions;
+using Crowdin.Api.ExternalQaChecks;
+using Crowdin.Api.Fields;
 using Crowdin.Api.Glossaries;
 using Crowdin.Api.GraphQL;
 using Crowdin.Api.Issues;
+using Crowdin.Api.Integrations;
 using Crowdin.Api.Labels;
 using Crowdin.Api.Languages;
 using Crowdin.Api.MachineTranslationEngines;
+using Crowdin.Api.Notifications;
+using Crowdin.Api.Organization;
 using Crowdin.Api.ProjectsGroups;
+using Crowdin.Api.Placeholders;
 using Crowdin.Api.Reports;
 using Crowdin.Api.Screenshots;
 using Crowdin.Api.SecurityLogs;
@@ -56,12 +66,24 @@ namespace Crowdin.Api
         IAiApiExecutor AI { get; }
         
         IAiGatewayApiExecutor AiGateway { get; }
+
+        IAdvisorsApiExecutor Advisors { get; }
+
+        IBranchesApiExecutor Branches { get; }
+
+        IClientsApiExecutor Clients { get; }
+
+        ICustomSpellcheckersApiExecutor CustomSpellcheckers { get; }
         
         IBundlesApiExecutor Bundles { get; }
         
         IDictionariesApiExecutor Dictionaries { get; }
         
         IDistributionsApiExecutor Distributions { get; }
+
+        IFieldsApiExecutor Fields { get; }
+
+        IExternalQaChecksApiExecutor ExternalQaChecks { get; }
         
         IGlossariesApiExecutor Glossaries { get; }
         
@@ -72,6 +94,14 @@ namespace Crowdin.Api
         ILanguagesApiExecutor Languages { get; }
         
         IMachineTranslationEnginesApiExecutor MachineTranslationEngines { get; }
+
+        INotificationsApiExecutor Notifications { get; }
+
+        IOrganizationApiExecutor OrganizationInfo { get; }
+
+        IPlaceholdersApiExecutor Placeholders { get; }
+
+        IIntegrationsApiExecutor Integrations { get; }
         
         IProjectsGroupsApiExecutor ProjectsGroups { get; }
         

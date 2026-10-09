@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
@@ -31,6 +31,9 @@ namespace Crowdin.Api.TranslationMemory
         
         [JsonProperty("projectIds")]
         public long[] ProjectIds { get; set; }
+
+        [JsonProperty("isShared")]
+        public bool IsShared { get; set; }
         
         [JsonProperty("createdAt")]
         public DateTimeOffset CreatedAt { get; set; }

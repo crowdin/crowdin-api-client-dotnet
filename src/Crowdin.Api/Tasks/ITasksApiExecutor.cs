@@ -29,6 +29,8 @@ namespace Crowdin.Api.Tasks
 
         Task<ResponseList<TaskResource>> ListTasks(long projectId, TasksListParams @params);
 
+        Task<ResponseList<TaskResource>> ListOrganizationTasks(OrganizationTasksListParams? @params = null);
+
         Task<TaskResource> AddTask(long projectId, AddTaskRequest request);
 
         Task<DownloadLink?> ExportTaskStrings(long projectId, long taskId);

@@ -16,17 +16,5 @@ namespace Crowdin.Api.StringTranslations
 
         [JsonProperty("languageId")]
         public string LanguageId { get; set; } = null!;
-
-        [JsonProperty("providerId")]
-        public long? ProviderId { get; set; }
-
-        [JsonProperty("matchRate")]
-        public int? MatchRate { get; set; }
-
-        [JsonProperty("matchType")]
-        public string? MatchType { get; set; }
-
-        [JsonProperty("workflowStepId")]
-        public long? WorkflowStepId { get; set; }
     }
 }

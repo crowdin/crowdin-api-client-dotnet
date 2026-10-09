@@ -74,6 +74,9 @@ namespace Crowdin.Api.ProjectsGroups
         
         [Description("/glossaryAccess")]
         GlossaryAccess,
+
+        [Description("/glossaryAccessOption")]
+        GlossaryAccessOption,
         
         [Description("/description")]
         Description,

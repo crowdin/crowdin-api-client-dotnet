@@ -13,6 +13,9 @@ namespace Crowdin.Api.StyleGuides
         [JsonProperty("name")]
         public string Name { get; set; } = null!;
 
+        [JsonProperty("groupId")]
+        public long? GroupId { get; set; }
+
         [JsonProperty("storageId")]
         public long StorageId { get; set; }
 

@@ -1,8 +1,11 @@
 
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 using JetBrains.Annotations;
+
+using Crowdin.Api.Core;
 
 #nullable enable
 
@@ -47,6 +50,7 @@ namespace Crowdin.Api.Translations
 
         Task<ProjectBuild> BuildProjectTranslation(long projectId, BuildProjectTranslationRequest request);
 
+        [Obsolete(MessageTexts.UseImportTranslationsInstead, false)]
         Task<UploadTranslationsResponse> UploadTranslations(
             long projectId,
             string languageId,

@@ -1,4 +1,6 @@
 ﻿
+#nullable enable annotations
+
 using System;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
@@ -34,5 +36,26 @@ namespace Crowdin.Api.Users
         
         [JsonProperty("timezone")]
         public string TimeZone { get; set; }
+
+        [JsonProperty("joinDetails")]
+        public UserJoinDetails? JoinDetails { get; set; }
+
+        [JsonProperty("deviceVerification")]
+        public string? DeviceVerification { get; set; }
+
+        [JsonProperty("trustedDevicesCount")]
+        public int? TrustedDevicesCount { get; set; }
+
+        [JsonProperty("apiTokensCount")]
+        public int? ApiTokensCount { get; set; }
+
+        [JsonProperty("loginMethods")]
+        public string[]? LoginMethods { get; set; }
+
+        [JsonProperty("mfaMethods")]
+        public string[]? MfaMethods { get; set; }
+
+        [JsonProperty("emailVerified")]
+        public bool? EmailVerified { get; set; }
     }
 }

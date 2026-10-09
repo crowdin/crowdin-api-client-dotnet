@@ -38,6 +38,29 @@ namespace Crowdin.Api.Applications
             string applicationIdentifier,
             IEnumerable<InstallationPatch> patches);
 
+        Task<ApplicationInstallationUpdate> GetApplicationInstallationUpdate(string identifier);
+
+        Task<Application> ApplyApplicationInstallationUpdate(
+            string identifier,
+            ApplyApplicationInstallationUpdateRequest request);
+
+        Task<Application> UploadApplicationBundle(string identifier, UploadApplicationBundleRequest request);
+
+        Task<ResponseList<ApplicationKvRecord>> ListApplicationKvRecords(
+            string applicationIdentifier, string? prefix = null, int limit = 25, int offset = 0,
+            IEnumerable<SortingRule>? orderBy = null);
+
+        Task<ApplicationKvRecord> AddApplicationKvRecord(
+            string applicationIdentifier,
+            AddApplicationKvRecordRequest request);
+
+        Task<ApplicationKvRecord> GetApplicationKvRecord(string applicationIdentifier, string key);
+
+        Task<ApplicationKvRecord> EditApplicationKvRecord(
+            string applicationIdentifier, string key, IEnumerable<ApplicationKvRecordPatch> patches);
+
+        Task DeleteApplicationKvRecord(string applicationIdentifier, string key);
+
         Task<JObject> GetApplicationData(string applicationIdentifier, string path);
 
         Task<JObject> UpdateOrRestoreApplicationData(string applicationIdentifier, string path, object request);

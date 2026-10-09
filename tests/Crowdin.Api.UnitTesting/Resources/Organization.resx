@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="ApiResponses" xml:space="preserve">
+    <value>{"GetOrganizationInfo":{"data":{"id":3,"domain":"example","name":"Example Organization","logo":"https://crowdin.com/logo.png","defaultLogo":"https://crowdin.com/default.png","description":"Localization team","internalDescription":"Internal note","cname":"translate.example.com","isVendor":false,"defaultPublicProjectsView":"grid","plan":{"name":"Enterprise","wordsLimit":1000000,"managersLimit":25},"defaults":[{"name":"sourceLanguageId","isLocked":true,"defaultValue":"en"}]}},"GetOrganizationAuthSettings":{"data":{"allowSignUp":false,"twoFactorAuthentication":true,"authMethods":[{"name":"saml","isEnabled":true,"isDefault":true},{"name":"password","isEnabled":false,"isDefault":false}]}}}</value>
+  </data>
+  <data name="ApiRequests" xml:space="preserve"><value>{}</value></data>
+</root>

@@ -28,5 +28,11 @@ namespace Crowdin.Api.StringTranslations
         
         [JsonProperty("createdAt")]
         public DateTimeOffset CreatedAt { get; set; }
+
+        [JsonProperty("fileId")]
+        public long? FileId { get; set; }
+
+        [JsonProperty("correctionId")]
+        public long? CorrectionId { get; set; }
     }
 }

@@ -47,6 +47,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Glossaries
             Term response = await executor.AddTerm(glossaryId, request);
 
             Assert.NotNull(response);
+            Assert.Equal("approved", response.Fields!["review_status"].ToString());
             Assert.Equal(request.Text, response.Text);
             Assert.Equal(request.Description, response.Description);
             Assert.Equal(request.PartOfSpeech, response.PartOfSpeech);
@@ -100,6 +101,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Glossaries
             Term response = await executor.EditTerm(glossaryId, termId, patches);
 
             Assert.NotNull(response);
+            Assert.Equal("approved", response.Fields!["review_status"].ToString());
             Assert.Equal(glossaryId, response.GlossaryId);
             Assert.Equal(newPartOfSpeech, response.PartOfSpeech);
         }

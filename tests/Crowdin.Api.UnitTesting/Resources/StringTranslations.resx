@@ -40,6 +40,14 @@
       "avatarUrl": ""
     },
     "rating": 10,
+    "provider": "crowdin",
+    "isPreTranslated": true,
+    "providerId": 17,
+    "matchRate": 98,
+    "matchType": "tm",
+    "qaIssuesStatus": "passed",
+    "url": "https://crowdin.com/translation/190695",
+    "workflowStepId": 3,
     "createdAt": "2019-09-23T11:26:54+00:00"
   }
 }</value>
@@ -165,6 +173,8 @@
                         "translationId": 190695,
                         "stringId": 2345,
                         "languageId": "uk",
+                        "fileId": 45,
+                        "correctionId": 90,
                         "createdAt": "2019-09-23T11:26:54+00:00"
                     }
                 },
@@ -180,6 +190,7 @@
                         "translationId": 200695,
                         "stringId": 1234,
                         "languageId": "uk",
+                        "fileId": 46,
                         "createdAt": "2020-09-23T11:26:54+00:00"
                     }
                 }

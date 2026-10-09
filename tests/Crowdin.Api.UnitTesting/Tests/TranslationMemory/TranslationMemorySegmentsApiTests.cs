@@ -220,6 +220,58 @@ namespace Crowdin.Api.UnitTesting.Tests.TranslationMemory
         }
 
         [Fact]
+        public async Task EditTmSegment()
+        {
+            const int tmId = 1;
+            const int segmentId = 4;
+
+            var patches = new[]
+            {
+                new TmSegmentPatch
+                {
+                    Operation = PatchOperation.Add,
+                    Path = TmSegmentPatchPath.NewRecord,
+                    Value = new TmSegmentRecordForm
+                    {
+                        LanguageId = "it",
+                        Text = "Ciao, mondo!"
+                    }
+                },
+                new TmSegmentPatch
+                {
+                    Operation = PatchOperation.Replace,
+                    Path = new TmSegmentPatchPath
+                    {
+                        RecordId = 1,
+                        Property = TmSegmentPatchPathEntry.Text
+                    },
+                    Value = "Testo tradotto"
+                }
+            };
+
+            string actualRequestJson = JsonConvert.SerializeObject(patches, DefaultSettings);
+            string expectedRequestJson = TestUtils.CompactJson(TranslationMemory_Segments.EditTmSegment_Request);
+            Assert.Equal(expectedRequestJson, actualRequestJson);
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+
+            var url = $"/tms/{tmId}/segments/{segmentId}";
+
+            mockClient
+                .Setup(client => client.SendPatchRequest(url, patches, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.OK,
+                    JsonObject = JObject.Parse(TranslationMemory_Segments.CommonResponses_TmSegment)
+                });
+
+            var executor = new TranslationMemoryApiExecutor(mockClient.Object);
+            TmSegmentResource? response = await executor.EditTmSegment(tmId, segmentId, patches);
+
+            Assert_TranslationMemorySegment(response);
+        }
+
+        [Fact]
         public async Task DeleteTmSegmentRecord()
         {
             const int tmId = 1;

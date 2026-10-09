@@ -140,6 +140,12 @@ namespace Crowdin.Api.UnitTesting.Resources {
         ///  }
         ///].
         /// </summary>
+        internal static string EditTmSegment_Request {
+            get {
+                return ResourceManager.GetString("EditTmSegment_Request", resourceCulture);
+            }
+        }
+
         internal static string EditTmSegmentRecord_Request {
             get {
                 return ResourceManager.GetString("EditTmSegmentRecord_Request", resourceCulture);

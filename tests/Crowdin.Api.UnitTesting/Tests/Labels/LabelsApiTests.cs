@@ -54,6 +54,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Labels
 
             Assert.Equal(34, response.Data.First().Id);
             Assert.Equal("main", response.Data.First().Title);
+            Assert.True(response.Data.First().IsShared);
         }
 
         [Fact]

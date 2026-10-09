@@ -70,6 +70,12 @@ namespace Crowdin.Api.Users
 
         Task<UserEnterprise> GetUser(long userId);
 
+        Task<ResponseList<UserProjectPermissions>> ListUserProjectPermissions(long userId, int limit = 25, int offset = 0);
+
+        Task<ResponseList<UserProjectPermissions>> EditUserProjectPermissions(long userId, IEnumerable<ProjectPermissionsMassOperation> operations);
+
+        Task<ResponseList<UserProjectContribution>> ListUserProjectContributions(long userId, int limit = 25, int offset = 0);
+
         Task DeleteUser(long userId);
 
         Task<UserEnterprise> EditUser(long userId, IEnumerable<EnterpriseUserPatch> patches);

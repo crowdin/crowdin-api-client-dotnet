@@ -261,7 +261,7 @@
     <value>[
   {
 
-    "path": "currency",
+    "path": "/currency",
     "op": "replace",
 
     "value": "AUD"
@@ -269,10 +269,16 @@
 
   {
 
-    "path": "mode",
+    "path": "/mode",
     "op": "replace",
     "value": "fuzzy"
   }
 ]</value>
+  </data>
+  <data name="ApiResponses" xml:space="preserve">
+    <value>{"ListOrganizationReportSettingsTemplates":{"data":[{"data":{"id":44,"groupId":12,"name":"Enterprise Quarterly","currency":"USD","unit":"words","isPublic":true,"isGlobal":true,"mode":"simple","config":{"regularRates":[],"individualRates":[]},"createdAt":"2024-01-13T11:34:40+00:00","updatedAt":"2024-01-14T11:34:40+00:00"}}],"pagination":{"limit":25,"offset":0,"total":1}},"AddOrganizationReportSettingsTemplate":{"data":{"id":45,"name":"New Quarterly","currency":"EUR","unit":"words","isPublic":false,"isGlobal":false,"mode":"simple","config":{"regularRates":[],"individualRates":[]},"createdAt":"2024-01-13T11:34:40+00:00"}},"GetOrganizationReportSettingsTemplate":{"data":{"id":44,"projectId":null,"groupId":12,"name":"Enterprise Quarterly","currency":"USD","unit":"words","isPublic":true,"isGlobal":true,"mode":"simple","config":{"regularRates":[],"individualRates":[]},"createdAt":"2024-01-13T11:34:40+00:00","updatedAt":"2024-01-14T11:34:40+00:00"}},"EditOrganizationReportSettingsTemplate":{"data":{"id":44,"groupId":12,"name":"Updated Quarterly","currency":"USD","unit":"words","isPublic":true,"isGlobal":true,"mode":"simple","config":{"regularRates":[],"individualRates":[]},"createdAt":"2024-01-13T11:34:40+00:00","updatedAt":"2024-01-15T11:34:40+00:00"}}}</value>
+  </data>
+  <data name="ApiRequests" xml:space="preserve">
+    <value>{"AddOrganizationReportSettingsTemplate":{"name":"New Quarterly","currency":"EUR","unit":"words","isPublic":false,"groupId":12,"isGlobal":false,"mode":"simple","config":{"regularRates":[],"individualRates":[]}},"EditOrganizationReportSettingsTemplate":[{"op":"replace","path":"/name","value":"Updated Quarterly"}]}</value>
   </data>
 </root>

@@ -76,6 +76,18 @@ namespace Crowdin.Api.Tasks
         }
 
         /// <summary>
+        /// List organization tasks. Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Tasks/operation/api.tasks.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<TaskResource>> ListOrganizationTasks(OrganizationTasksListParams? @params = null)
+        {
+            IDictionary<string, string> queryParams = @params?.ToQueryParams() ?? Utils.CreateQueryParamsFromPaging(25, 0);
+            CrowdinApiResult result = await _apiClient.SendGetRequest("/tasks", queryParams);
+            return _jsonParser.ParseResponseList<TaskResource>(result.JsonObject);
+        }
+
+        /// <summary>
         /// Add task. Documentation:
         /// <a href="https://support.crowdin.com/api/v2/#operation/api.projects.tasks.post">Crowdin API</a>
         /// <a href="https://support.crowdin.com/enterprise/api/#operation/api.projects.tasks.post">Crowdin Enterprise API</a>

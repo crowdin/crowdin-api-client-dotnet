@@ -22,6 +22,9 @@ namespace Crowdin.Api.StyleGuides
         [JsonProperty("userId")]
         public long UserId { get; set; }
 
+        [JsonProperty("groupId")]
+        public long? GroupId { get; set; }
+
         [JsonProperty("languageIds")]
         public string[]? LanguageIds { get; set; }
 

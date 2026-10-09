@@ -87,6 +87,28 @@ namespace Crowdin.Api.UnitTesting.Tests.ProjectsGroups
             Assert.NotNull(projectSettings);
             Assert.Equal(DupTranslateAction.Hide, projectSettings.TranslateDuplicates);
             Assert.Equal(TagsDetectionAction.Auto, projectSettings.TagsDetection);
+            Assert.Equal(GlossaryAccessOption.ManageDrafts, projectSettings.GlossaryAccessOption);
+            Assert.Equal(new long[] { 3, 4 }, projectSettings.AssignedStyleGuides);
+            Assert.Equal(new long[] { 5 }, projectSettings.ExternalQaCheckIds);
+            Assert.Equal(44, projectSettings.SavingsReportSettingsTemplateId);
+            Assert.Equal(12, projectSettings.EditorSuggestionAiPromptId);
+            Assert.Equal(13, projectSettings.AlignmentActionAiPromptId);
+            Assert.Equal(14, projectSettings.QaCheckActionAiPromptId);
+            Assert.Equal(15, projectSettings.ContextReviewAiPromptId);
+            Assert.Equal("urgent", projectSettings.Fields!["priority"].ToString());
+
+            Assert.True(projectSettings.AiPreTranslate!.Enabled);
+            Assert.Equal(21, projectSettings.AiPreTranslate.AiPrompts!.Single().AiPromptId);
+            Assert.Equal(new[] { "uk" }, projectSettings.AiPreTranslate.AiPrompts.Single().LanguageIds);
+
+            Assert.True(projectSettings.MtPreTranslate!.Enabled);
+            Assert.Equal(31, projectSettings.MtPreTranslate.Mts!.Single().MtId);
+            Assert.Equal("100", projectSettings.TmPreTranslate!.MinimumMatchRatio);
+            Assert.Equal("all", projectSettings.TmPreTranslate.AutoApproveOption);
+
+            Assert.Equal("https://example.test/project-seven", projectSettings.PublicUrl);
+            Assert.Equal(107, projectSettings.ExternalProjectId);
+            Assert.Equal(207, projectSettings.ExternalOrganizationId);
 
             IDictionary<long, AssignedTm>? assignedTms = projectSettings.AssignedTms;
             Assert.NotNull(assignedTms);

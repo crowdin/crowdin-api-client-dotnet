@@ -1,4 +1,6 @@
 ﻿
+#nullable enable annotations
+
 using System;
 using System.Collections.Generic;
 
@@ -6,8 +8,6 @@ using JetBrains.Annotations;
 using Newtonsoft.Json;
 
 using Crowdin.Api.Core;
-
-#nullable enable
 
 namespace Crowdin.Api.Users
 {
@@ -32,5 +32,8 @@ namespace Crowdin.Api.Users
         
         [JsonProperty("roles")]
         public ICollection<TranslatorRole>? Roles { get; set; }
+
+        [JsonProperty("message")]
+        public string? Message { get; set; }
     }
 }

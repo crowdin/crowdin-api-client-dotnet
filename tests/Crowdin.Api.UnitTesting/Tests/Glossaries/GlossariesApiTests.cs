@@ -94,6 +94,7 @@ namespace Crowdin.Api.UnitTesting.Tests.Glossaries
             Assert.NotNull(response);
             Assert.Single(response.Data);
             Assert.Equal(groupId, response.Data[0].GroupId);
+            Assert.True(response.Data[0].IsShared);
             Assert.Equal(2, response.Data[0].DefaultProjectIds?.Single());
         }
 
@@ -187,11 +188,13 @@ namespace Crowdin.Api.UnitTesting.Tests.Glossaries
             Assert.Equal("ro", glossary.LanguageIds.Single());
             Assert.Equal(6, glossary.ProjectIds.Single());
             Assert.Equal(DateTimeOffset.Parse("2019-09-16T13:42:04+00:00"), glossary.CreatedAt);
+            Assert.True(glossary.IsShared);
 
             Concept? concept = resource.Concept;
             Assert.NotNull(concept);
             Assert.Equal(2, concept.Id);
             Assert.Equal("general", concept.Subject);
+            Assert.Equal("high", concept.Fields!["priority"].ToString());
 
             ConceptLanguageDetails? languagesDetails = concept.LanguagesDetails?.Single();
             Assert.NotNull(languagesDetails);

@@ -334,6 +334,66 @@ namespace Crowdin.Api.Reports
             Utils.ThrowIfStatusNot204(statusCode, $"Report Settings Template {reportSettingsTemplateId} removal failed");
         }
 
+        /// <summary>
+        /// List organization report settings templates. Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Reports/operation/api.reports.settings-templates.getMany">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ResponseList<ReportSettingsTemplateBase>> ListOrganizationReportSettingsTemplates(
+            long? projectId = null, long? groupId = null, int limit = 25, int offset = 0)
+        {
+            IDictionary<string, string> queryParams = Utils.CreateQueryParamsFromPaging(limit, offset);
+            queryParams.AddParamIfPresent("projectId", projectId);
+            queryParams.AddParamIfPresent("groupId", groupId);
+            CrowdinApiResult result = await _apiClient.SendGetRequest("/reports/settings-templates", queryParams);
+            return _jsonParser.ParseResponseList<ReportSettingsTemplateBase>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Add an organization report settings template. Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Reports/operation/api.reports.settings-templates.post">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ReportSettingsTemplateBase> AddOrganizationReportSettingsTemplate(AddReportSettingsTemplateRequest request)
+        {
+            CrowdinApiResult result = await _apiClient.SendPostRequest("/reports/settings-templates", request);
+            return _jsonParser.ParseResponseObject<ReportSettingsTemplateBase>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Get an organization report settings template. Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Reports/operation/api.reports.settings-templates.get">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ReportSettingsTemplateBase> GetOrganizationReportSettingsTemplate(long reportSettingsTemplateId)
+        {
+            CrowdinApiResult result = await _apiClient.SendGetRequest($"/reports/settings-templates/{reportSettingsTemplateId}");
+            return _jsonParser.ParseResponseObject<ReportSettingsTemplateBase>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Edit an organization report settings template. Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Reports/operation/api.reports.settings-templates.patch">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task<ReportSettingsTemplateBase> EditOrganizationReportSettingsTemplate(
+            long reportSettingsTemplateId, IEnumerable<ReportSettingsTemplatePatch> patches)
+        {
+            CrowdinApiResult result = await _apiClient.SendPatchRequest($"/reports/settings-templates/{reportSettingsTemplateId}", patches);
+            return _jsonParser.ParseResponseObject<ReportSettingsTemplateBase>(result.JsonObject);
+        }
+
+        /// <summary>
+        /// Delete an organization report settings template. Documentation:
+        /// <a href="https://support.crowdin.com/developer/enterprise/api/v2/#tag/Reports/operation/api.reports.settings-templates.delete">Crowdin Enterprise API</a>
+        /// </summary>
+        [PublicAPI]
+        public async Task DeleteOrganizationReportSettingsTemplate(long reportSettingsTemplateId)
+        {
+            HttpStatusCode statusCode = await _apiClient.SendDeleteRequest($"/reports/settings-templates/{reportSettingsTemplateId}");
+            Utils.ThrowIfStatusNot204(statusCode, $"Organization report settings template {reportSettingsTemplateId} removal failed");
+        }
+
         #region Helper methods
 
         private static string FormUrl_SettingsTemplates(long projectId)

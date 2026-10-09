@@ -1,4 +1,6 @@
 
+#nullable enable annotations
+
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -181,5 +183,30 @@ namespace Crowdin.Api.AI
         Task<AiTranslateStringsResponse> TranslateStrings(
             long? userId,
             AiTranslateStringsRequest request);
+
+        Task<ResponseList<AiSnippet>> ListAiSnippets(long? userId, int limit = 25, int offset = 0);
+
+        Task<AiSnippet> AddAiSnippet(long? userId, AddAiSnippetRequest request);
+
+        Task<AiSnippet> GetAiSnippet(long? userId, long aiSnippetId);
+
+        Task<AiSnippet> EditAiSnippet(long? userId, long aiSnippetId, IEnumerable<AiSnippetPatch> patches);
+
+        Task DeleteAiSnippet(long? userId, long aiSnippetId);
+
+        Task<ResponseList<AiUsageMember>> ListAiUsageMembers(
+            int limit = 25,
+            int offset = 0,
+            string? userIds = null,
+            string? orderBy = null);
+
+        Task<AiUsageMember> GetAiUsageMember(long memberId);
+
+        Task<ResponseList<AiFineTuningEvent>> ListAiPromptFineTuningEvents(
+            long? userId, long aiPromptId, string jobIdentifier, int limit = 25, int offset = 0);
+
+        Task<ProjectAiSettings> GetProjectAiSettings(long projectId);
+
+        Task<ResponseList<AiProviderModelResource>> ListAllAiProviderModels(long? userId);
     }
 }

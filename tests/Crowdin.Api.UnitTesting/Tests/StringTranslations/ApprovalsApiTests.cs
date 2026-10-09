@@ -46,7 +46,47 @@ namespace Crowdin.Api.UnitTesting.Tests.StringTranslations
             TranslationApproval data = response.Data[1];
             Assert.Equal(200695, data.TranslationId);
             Assert.Equal(1234, data.StringId);
+            Assert.Equal(46, data.FileId);
+            Assert.Null(data.CorrectionId);
             Assert.IsType<User>(data.User);
+        }
+
+        [Fact]
+        public async Task AddCorrectionBasedApproval()
+        {
+            const int projectId = 1;
+            var request = new AddApprovalRequest { CorrectionId = 456 };
+            JToken expectedRequest = JObject.Parse(StringTranslations_Approvals.CorrectionBasedApproval_Request);
+            JToken actualRequest = JToken.Parse(JsonConvert.SerializeObject(request, JsonSettings));
+            Assert.True(JToken.DeepEquals(expectedRequest, actualRequest));
+
+            Mock<ICrowdinApiClient> mockClient = TestUtils.CreateMockClientWithDefaultParser();
+            mockClient
+                .Setup(client => client.SendPostRequest($"/projects/{projectId}/approvals", request, null))
+                .ReturnsAsync(new CrowdinApiResult
+                {
+                    StatusCode = HttpStatusCode.Created,
+                    JsonObject = JObject.Parse(StringTranslations_Approvals.CorrectionBasedApproval_Response)
+                });
+
+            var executor = new StringTranslationsApiExecutor(mockClient.Object);
+            TranslationApproval response = await executor.AddApproval(projectId, request);
+
+            Assert.Equal(190696, response.Id);
+            Assert.Equal(190696, response.TranslationId);
+            Assert.Equal(456, response.CorrectionId);
+            Assert.Equal(45, response.FileId);
+        }
+
+        [Fact]
+        public void AddApprovalPreservesZeroTranslationId()
+        {
+            var request = new AddApprovalRequest { TranslationId = 0 };
+            JObject actualRequest = JObject.Parse(JsonConvert.SerializeObject(request, JsonSettings));
+
+            Assert.True(actualRequest.ContainsKey("translationId"));
+            Assert.Equal(0, actualRequest["translationId"]!.Value<long>());
+            Assert.False(actualRequest.ContainsKey("correctionId"));
         }
         
         [Fact]

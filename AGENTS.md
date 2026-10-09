@@ -2,7 +2,7 @@
 
 .NET client for the Crowdin API v2 and Crowdin Enterprise API v2 (NuGet: `Crowdin.Api`).
 
-`src/Crowdin.Api` targets .NET Standard 2.0 with C# 8 and Newtonsoft.Json — no records, no `init`, no file-scoped namespaces, no implicit usings in `src/`. The test project targets net8.0 and is freer. Nullable checking is per-file: start every new `src/` file with `#nullable enable`.
+`src/Crowdin.Api` targets .NET Standard 2.0 with C# 8 and Newtonsoft.Json — no records, no `init`, no file-scoped namespaces, no implicit usings in `src/`. The test project targets net8.0 and is freer. Nullable checking is per-file: start every new `src/` file with `#nullable enable`. When adding nullable annotations to a legacy file that is not nullable-clean, `#nullable enable annotations` is acceptable to avoid broad unrelated nullability cleanup.
 
 ## Layout
 
@@ -25,7 +25,7 @@ There is no lint/format gate — match the style of neighboring files by hand.
 
 Every module follows the same shape: `I<Module>ApiExecutor` (interface, `[PublicAPI]`) → `<Module>ApiExecutor` (takes `ICrowdinApiClient`, builds params, sends requests via `SendGetRequest`/`SendPostRequest`/..., parses via `IJsonParser.ParseResponseObject/List<T>()`, `[PublicAPI]` on each public method) → a property on `CrowdinApiClient`.
 
-Registration is not universal: `ClientsApiExecutor` and `NotificationsApiExecutor` exist but are construct-it-yourself, and `Branches`/`Fields` sit on the concrete client but not on `ICrowdinApiClient` — check both files before assuming a module is reachable.
+All API modules are registered on both `CrowdinApiClient` and `ICrowdinApiClient`; verify both files when adding a module or changing client registration.
 
 ## Adding or changing an endpoint
 

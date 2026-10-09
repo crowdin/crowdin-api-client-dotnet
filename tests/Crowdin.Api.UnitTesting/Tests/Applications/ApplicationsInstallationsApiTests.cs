@@ -166,10 +166,11 @@ namespace Crowdin.Api.UnitTesting.Tests.Applications
             Assert.Equal("none", application.Modules[0].AuthenticationType);
 
             Assert.NotNull(application.Permissions);
+#pragma warning disable CS0618 // Testing compatibility for the deprecated property.
             Assert.Equal(ApplicationUserValue.Restricted, application.Permissions.User.Value);
+            Assert.Single(application.Permissions.User.Ids);
+#pragma warning restore CS0618
             Assert.Equal(ApplicationProjectValue.Restricted, application.Permissions.Project.Value);
-            Assert.Single(application.Permissions.User.Ids);
-            Assert.Single(application.Permissions.User.Ids);
         }
     }
 }

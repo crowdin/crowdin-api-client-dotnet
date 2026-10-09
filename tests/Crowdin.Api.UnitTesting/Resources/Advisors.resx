@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="ApiResponses" xml:space="preserve">
+    <value>{"CreateAdvisorCheck":{"data":{"identifier":"check-created","status":"inProgress","progress":25,"attributes":{"category":"context","inspectors":[{"key":"context"}]},"createdAt":"2024-01-13T11:34:40+00:00","updatedAt":"2024-01-13T11:35:40+00:00","startedAt":"2024-01-13T11:35:00+00:00","finishedAt":null}},"GetAdvisorCheckStatus":{"data":{"identifier":"check-status","status":"done","progress":100,"attributes":{"category":"context"},"createdAt":"2024-01-13T11:34:40+00:00","updatedAt":"2024-01-13T11:35:40+00:00","startedAt":"2024-01-13T11:35:00+00:00","finishedAt":"2024-01-13T11:36:00+00:00"}},"ListAdvisorInsights":{"data":[{"id":4,"inspectorKey":"context","category":"quality","isDismissed":false,"status":"done","outcome":"flagged","severity":"high","refreshPolicy":"daily","metrics":[{"key":"coverage","value":0.75,"unit":"percent","tone":"success","threshold":0.5}],"recommendations":[{"id":"add-context","primary":true,"params":{"count":2}}],"checkedAt":"2024-01-13T11:35:40+00:00","lastAiRun":{"mode":"auto","promptId":19,"at":"2024-01-13T11:35:40+00:00"},"payload":{"summary":"Add context"}}],"pagination":{"limit":25,"offset":0,"total":1}},"EditAdvisorInsight":{"data":{"id":4,"inspectorKey":"context","category":"quality","isDismissed":true,"status":"done","outcome":"clear","severity":"medium","refreshPolicy":"hourly","checkedAt":"2024-01-13T11:35:40+00:00","payload":{"summary":"Reviewed"}}}}</value>
+  </data>
+  <data name="ApiRequests" xml:space="preserve">
+    <value>{"CreateAdvisorCheck":{"category":"context"},"EditAdvisorInsight":[{"op":"replace","path":"/isDismissed","value":true}],"CreateOrUpdateApplicationAdvisorInsight":{"outcome":"clear","payload":{}}}</value>
+  </data>
+</root>

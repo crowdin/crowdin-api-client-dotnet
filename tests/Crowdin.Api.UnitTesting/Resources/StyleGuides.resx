@@ -25,6 +25,7 @@
     "name": "My Style Guide",
     "aiInstructions": "Use formal language",
     "userId": 6,
+    "groupId": 12,
     "languageIds": ["en", "uk"],
     "projectIds": [1, 2],
     "isShared": false,
@@ -44,6 +45,7 @@
         "name": "My Style Guide",
         "aiInstructions": "Use formal language",
         "userId": 6,
+        "groupId": 12,
         "languageIds": ["en", "uk"],
         "projectIds": [1, 2],
         "isShared": false,
@@ -63,6 +65,7 @@
     <data name="AddStyleGuideRequest" xml:space="preserve">
         <value>{
   "name": "My Style Guide",
+  "groupId": 12,
   "storageId": 61
 }</value>
     </data>
@@ -73,6 +76,7 @@
     "name": "My Style Guide",
     "aiInstructions": null,
     "userId": 6,
+    "groupId": 12,
     "languageIds": null,
     "projectIds": null,
     "isShared": false,
