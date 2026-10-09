@@ -201,7 +201,7 @@ public interface IUsersApiExecutor</code></pre>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Users_IUsersApiExecutor_DeleteUser_System_Int64_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Users.IUsersApiExecutor.DeleteUser(System.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Users/IUsersApiExecutor.cs/#L73">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Users/IUsersApiExecutor.cs/#L79">View Source</a>
   </span>
   <a id="Crowdin_Api_Users_IUsersApiExecutor_DeleteUser_" data-uid="Crowdin.Api.Users.IUsersApiExecutor.DeleteUser*"></a>
   <h4 id="Crowdin_Api_Users_IUsersApiExecutor_DeleteUser_System_Int64_" data-uid="Crowdin.Api.Users.IUsersApiExecutor.DeleteUser(System.Int64)">DeleteUser(long)</h4>
@@ -248,7 +248,7 @@ public interface IUsersApiExecutor</code></pre>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Users_IUsersApiExecutor_EditUser_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_Users_EnterpriseUserPatch__.md&amp;value=---%0Auid%3A%20Crowdin.Api.Users.IUsersApiExecutor.EditUser(System.Int64%2CSystem.Collections.Generic.IEnumerable%7BCrowdin.Api.Users.EnterpriseUserPatch%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Users/IUsersApiExecutor.cs/#L75">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Users/IUsersApiExecutor.cs/#L81">View Source</a>
   </span>
   <a id="Crowdin_Api_Users_IUsersApiExecutor_EditUser_" data-uid="Crowdin.Api.Users.IUsersApiExecutor.EditUser*"></a>
   <h4 id="Crowdin_Api_Users_IUsersApiExecutor_EditUser_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_Users_EnterpriseUserPatch__" data-uid="Crowdin.Api.Users.IUsersApiExecutor.EditUser(System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.Users.EnterpriseUserPatch})">EditUser(long, IEnumerable&lt;EnterpriseUserPatch&gt;)</h4>
@@ -297,10 +297,62 @@ public interface IUsersApiExecutor</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Users_IUsersApiExecutor_EditUserProjectPermissions_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_Users_ProjectPermissionsMassOperation__.md&amp;value=---%0Auid%3A%20Crowdin.Api.Users.IUsersApiExecutor.EditUserProjectPermissions(System.Int64%2CSystem.Collections.Generic.IEnumerable%7BCrowdin.Api.Users.ProjectPermissionsMassOperation%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Users/IUsersApiExecutor.cs/#L75">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Users_IUsersApiExecutor_EditUserProjectPermissions_" data-uid="Crowdin.Api.Users.IUsersApiExecutor.EditUserProjectPermissions*"></a>
+  <h4 id="Crowdin_Api_Users_IUsersApiExecutor_EditUserProjectPermissions_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_Users_ProjectPermissionsMassOperation__" data-uid="Crowdin.Api.Users.IUsersApiExecutor.EditUserProjectPermissions(System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.Users.ProjectPermissionsMassOperation})">EditUserProjectPermissions(long, IEnumerable&lt;ProjectPermissionsMassOperation&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseList&lt;UserProjectPermissions&gt;&gt; EditUserProjectPermissions(long userId, IEnumerable&lt;ProjectPermissionsMassOperation&gt; operations)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Crowdin.Api.Users.ProjectPermissionsMassOperation.html">ProjectPermissionsMassOperation</a>&gt;</td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Crowdin.Api.ResponseList-1.html">ResponseList</a>&lt;<a class="xref" href="Crowdin.Api.Users.UserProjectPermissions.html">UserProjectPermissions</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Users_IUsersApiExecutor_GetAuthenticatedUser__1.md&amp;value=---%0Auid%3A%20Crowdin.Api.Users.IUsersApiExecutor.GetAuthenticatedUser%60%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Users/IUsersApiExecutor.cs/#L77">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Users/IUsersApiExecutor.cs/#L83">View Source</a>
   </span>
   <a id="Crowdin_Api_Users_IUsersApiExecutor_GetAuthenticatedUser_" data-uid="Crowdin.Api.Users.IUsersApiExecutor.GetAuthenticatedUser*"></a>
   <h4 id="Crowdin_Api_Users_IUsersApiExecutor_GetAuthenticatedUser__1" data-uid="Crowdin.Api.Users.IUsersApiExecutor.GetAuthenticatedUser``1">GetAuthenticatedUser&lt;T&gt;()</h4>
@@ -345,7 +397,7 @@ public interface IUsersApiExecutor</code></pre>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Users_IUsersApiExecutor_GetGroupManager_System_Int64_System_Int64_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Users.IUsersApiExecutor.GetGroupManager(System.Int64%2CSystem.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Users/IUsersApiExecutor.cs/#L92">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Users/IUsersApiExecutor.cs/#L98">View Source</a>
   </span>
   <a id="Crowdin_Api_Users_IUsersApiExecutor_GetGroupManager_" data-uid="Crowdin.Api.Users.IUsersApiExecutor.GetGroupManager*"></a>
   <h4 id="Crowdin_Api_Users_IUsersApiExecutor_GetGroupManager_System_Int64_System_Int64_" data-uid="Crowdin.Api.Users.IUsersApiExecutor.GetGroupManager(System.Int64,System.Int64)">GetGroupManager(long, long)</h4>
@@ -397,7 +449,7 @@ public interface IUsersApiExecutor</code></pre>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Users_IUsersApiExecutor_GetMemberInfo_System_Int64_System_Int64_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Users.IUsersApiExecutor.GetMemberInfo(System.Int64%2CSystem.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Users/IUsersApiExecutor.cs/#L79">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Users/IUsersApiExecutor.cs/#L85">View Source</a>
   </span>
   <a id="Crowdin_Api_Users_IUsersApiExecutor_GetMemberInfo_" data-uid="Crowdin.Api.Users.IUsersApiExecutor.GetMemberInfo*"></a>
   <h4 id="Crowdin_Api_Users_IUsersApiExecutor_GetMemberInfo_System_Int64_System_Int64_" data-uid="Crowdin.Api.Users.IUsersApiExecutor.GetMemberInfo(System.Int64,System.Int64)">GetMemberInfo(long, long)</h4>
@@ -595,7 +647,7 @@ public interface IUsersApiExecutor</code></pre>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Users_IUsersApiExecutor_ListGroupManagers_System_Int64_System_Collections_Generic_IEnumerable_System_Int64__System_Collections_Generic_IEnumerable_Crowdin_Api_SortingRule__.md&amp;value=---%0Auid%3A%20Crowdin.Api.Users.IUsersApiExecutor.ListGroupManagers(System.Int64%2CSystem.Collections.Generic.IEnumerable%7BSystem.Int64%7D%2CSystem.Collections.Generic.IEnumerable%7BCrowdin.Api.SortingRule%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Users/IUsersApiExecutor.cs/#L83">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Users/IUsersApiExecutor.cs/#L89">View Source</a>
   </span>
   <a id="Crowdin_Api_Users_IUsersApiExecutor_ListGroupManagers_" data-uid="Crowdin.Api.Users.IUsersApiExecutor.ListGroupManagers*"></a>
   <h4 id="Crowdin_Api_Users_IUsersApiExecutor_ListGroupManagers_System_Int64_System_Collections_Generic_IEnumerable_System_Int64__System_Collections_Generic_IEnumerable_Crowdin_Api_SortingRule__" data-uid="Crowdin.Api.Users.IUsersApiExecutor.ListGroupManagers(System.Int64,System.Collections.Generic.IEnumerable{System.Int64},System.Collections.Generic.IEnumerable{Crowdin.Api.SortingRule})">ListGroupManagers(long, IEnumerable&lt;long&gt;?, IEnumerable&lt;SortingRule&gt;?)</h4>
@@ -902,6 +954,120 @@ public interface IUsersApiExecutor</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Users_IUsersApiExecutor_ListUserProjectContributions_System_Int64_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Users.IUsersApiExecutor.ListUserProjectContributions(System.Int64%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Users/IUsersApiExecutor.cs/#L77">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Users_IUsersApiExecutor_ListUserProjectContributions_" data-uid="Crowdin.Api.Users.IUsersApiExecutor.ListUserProjectContributions*"></a>
+  <h4 id="Crowdin_Api_Users_IUsersApiExecutor_ListUserProjectContributions_System_Int64_System_Int32_System_Int32_" data-uid="Crowdin.Api.Users.IUsersApiExecutor.ListUserProjectContributions(System.Int64,System.Int32,System.Int32)">ListUserProjectContributions(long, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseList&lt;UserProjectContribution&gt;&gt; ListUserProjectContributions(long userId, int limit = 25, int offset = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">limit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Crowdin.Api.ResponseList-1.html">ResponseList</a>&lt;<a class="xref" href="Crowdin.Api.Users.UserProjectContribution.html">UserProjectContribution</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Users_IUsersApiExecutor_ListUserProjectPermissions_System_Int64_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Users.IUsersApiExecutor.ListUserProjectPermissions(System.Int64%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Users/IUsersApiExecutor.cs/#L73">View Source</a>
+  </span>
+  <a id="Crowdin_Api_Users_IUsersApiExecutor_ListUserProjectPermissions_" data-uid="Crowdin.Api.Users.IUsersApiExecutor.ListUserProjectPermissions*"></a>
+  <h4 id="Crowdin_Api_Users_IUsersApiExecutor_ListUserProjectPermissions_System_Int64_System_Int32_System_Int32_" data-uid="Crowdin.Api.Users.IUsersApiExecutor.ListUserProjectPermissions(System.Int64,System.Int32,System.Int32)">ListUserProjectPermissions(long, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ResponseList&lt;UserProjectPermissions&gt;&gt; ListUserProjectPermissions(long userId, int limit = 25, int offset = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">userId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">limit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Crowdin.Api.ResponseList-1.html">ResponseList</a>&lt;<a class="xref" href="Crowdin.Api.Users.UserProjectPermissions.html">UserProjectPermissions</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Users_IUsersApiExecutor_ListUsers_Crowdin_Api_Users_EnterpriseUsersListParams_.md&amp;value=---%0Auid%3A%20Crowdin.Api.Users.IUsersApiExecutor.ListUsers(Crowdin.Api.Users.EnterpriseUsersListParams)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -1121,7 +1287,7 @@ public interface IUsersApiExecutor</code></pre>
     <a href="https://github.com/crowdin/crowdin-api-client-dotnet/new/main/apiSpec/new?filename=Crowdin_Api_Users_IUsersApiExecutor_UpdateGroupManagers_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_Users_GroupManagerPatch__.md&amp;value=---%0Auid%3A%20Crowdin.Api.Users.IUsersApiExecutor.UpdateGroupManagers(System.Int64%2CSystem.Collections.Generic.IEnumerable%7BCrowdin.Api.Users.GroupManagerPatch%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Users/IUsersApiExecutor.cs/#L88">View Source</a>
+    <a href="https://github.com/crowdin/crowdin-api-client-dotnet/blob/main/src/Crowdin.Api/Users/IUsersApiExecutor.cs/#L94">View Source</a>
   </span>
   <a id="Crowdin_Api_Users_IUsersApiExecutor_UpdateGroupManagers_" data-uid="Crowdin.Api.Users.IUsersApiExecutor.UpdateGroupManagers*"></a>
   <h4 id="Crowdin_Api_Users_IUsersApiExecutor_UpdateGroupManagers_System_Int64_System_Collections_Generic_IEnumerable_Crowdin_Api_Users_GroupManagerPatch__" data-uid="Crowdin.Api.Users.IUsersApiExecutor.UpdateGroupManagers(System.Int64,System.Collections.Generic.IEnumerable{Crowdin.Api.Users.GroupManagerPatch})">UpdateGroupManagers(long, IEnumerable&lt;GroupManagerPatch&gt;)</h4>

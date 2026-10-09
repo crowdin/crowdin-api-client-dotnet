@@ -105,6 +105,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AddAiSnippetRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AddAiSnippetRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.AI.AddAiSnippetRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.AI.AdvancedModeAiPromptConfiguration.yml",
       "output": {
         ".html": {
@@ -241,6 +255,34 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Crowdin.Api.AI.AiFineTuningDataset",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiFineTuningEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiFineTuningEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.AI.AiFineTuningEvent",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiFineTuningEventData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiFineTuningEventData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.AI.AiFineTuningEventData",
       "Summary": null
     },
     {
@@ -777,6 +819,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiSnippet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiSnippet.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.AI.AiSnippet",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiSnippetPatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiSnippetPatch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.AI.AiSnippetPatch",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiSnippetPatchPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiSnippetPatchPath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.AI.AiSnippetPatchPath",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.AI.AiSupportedProviderModel.yml",
       "output": {
         ".html": {
@@ -885,6 +969,34 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Crowdin.Api.AI.AiTranslateStringsResponse",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiUsageMember.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiUsageMember.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.AI.AiUsageMember",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.AiUsageMemberUser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.AiUsageMemberUser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.AI.AiUsageMemberUser",
       "Summary": null
     },
     {
@@ -1239,6 +1351,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.AI.ProjectAiSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.AI.ProjectAiSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.AI.ProjectAiSettings",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.AI.QaCheckActionAiPromptContextResources.yml",
       "output": {
         ".html": {
@@ -1309,6 +1435,384 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.AdvisorCheck.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.AdvisorCheck.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.AdvisorCheck",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.AdvisorCheckAttributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.AdvisorCheckAttributes.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.AdvisorCheckAttributes",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.AdvisorCheckInspector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.AdvisorCheckInspector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.AdvisorCheckInspector",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.AdvisorCheckInspectorOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.AdvisorCheckInspectorOptions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.AdvisorCheckInspectorOptions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.AdvisorCheckStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.AdvisorCheckStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.AdvisorCheckStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.AdvisorInsight.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.AdvisorInsight.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.AdvisorInsight",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.AdvisorInsightLastAiRun.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.AdvisorInsightLastAiRun.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.AdvisorInsightLastAiRun",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.AdvisorInsightMetric.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.AdvisorInsightMetric.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.AdvisorInsightMetric",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.AdvisorInsightMetricSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.AdvisorInsightMetricSource.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.AdvisorInsightMetricSource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.AdvisorInsightMetricTone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.AdvisorInsightMetricTone.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.AdvisorInsightMetricTone",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.AdvisorInsightMetricUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.AdvisorInsightMetricUnit.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.AdvisorInsightMetricUnit",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.AdvisorInsightMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.AdvisorInsightMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.AdvisorInsightMode",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.AdvisorInsightOutcome.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.AdvisorInsightOutcome.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.AdvisorInsightOutcome",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.AdvisorInsightRecommendation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.AdvisorInsightRecommendation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.AdvisorInsightRecommendation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.AdvisorInsightRefreshPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.AdvisorInsightRefreshPolicy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.AdvisorInsightRefreshPolicy",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.AdvisorInsightSeverity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.AdvisorInsightSeverity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.AdvisorInsightSeverity",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.AdvisorInsightStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.AdvisorInsightStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.AdvisorInsightStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.AdvisorInsightsListParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.AdvisorInsightsListParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.AdvisorInsightsListParams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.AdvisorInsightsPagination.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.AdvisorInsightsPagination.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.AdvisorInsightsPagination",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.AdvisorInsightsResponseList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.AdvisorInsightsResponseList.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.AdvisorInsightsResponseList",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.AdvisorsApiExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.AdvisorsApiExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.AdvisorsApiExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.CreateAdvisorCheckRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.CreateAdvisorCheckRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.CreateAdvisorCheckRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.CreateOrUpdateApplicationAdvisorInsightRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.CreateOrUpdateApplicationAdvisorInsightRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.CreateOrUpdateApplicationAdvisorInsightRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.EditAdvisorInsightPatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.EditAdvisorInsightPatch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.EditAdvisorInsightPatch",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.EditAdvisorInsightPatchPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.EditAdvisorInsightPatchPath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.EditAdvisorInsightPatchPath",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.IAdvisorsApiExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.IAdvisorsApiExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors.IAdvisorsApiExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Advisors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Advisors.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Advisors",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Applications.AddApplicationConsentRequest.yml",
       "output": {
         ".html": {
@@ -1319,6 +1823,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Crowdin.Api.Applications.AddApplicationConsentRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Applications.AddApplicationKvRecordRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Applications.AddApplicationKvRecordRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Applications.AddApplicationKvRecordRequest",
       "Summary": null
     },
     {
@@ -1403,6 +1921,76 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Crowdin.Api.Applications.ApplicationConsentUser",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Applications.ApplicationInstallationUpdate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Applications.ApplicationInstallationUpdate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Applications.ApplicationInstallationUpdate",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Applications.ApplicationInstallationUpdateChange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Applications.ApplicationInstallationUpdateChange.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Applications.ApplicationInstallationUpdateChange",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Applications.ApplicationKvRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Applications.ApplicationKvRecord.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Applications.ApplicationKvRecord",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Applications.ApplicationKvRecordPatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Applications.ApplicationKvRecordPatch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Applications.ApplicationKvRecordPatch",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Applications.ApplicationKvRecordPatchPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Applications.ApplicationKvRecordPatchPath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Applications.ApplicationKvRecordPatchPath",
       "Summary": null
     },
     {
@@ -1505,6 +2093,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Applications.ApplyApplicationInstallationUpdateRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Applications.ApplyApplicationInstallationUpdateRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Applications.ApplyApplicationInstallationUpdateRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Applications.IApplicationsApiExecutor.yml",
       "output": {
         ".html": {
@@ -1557,6 +2159,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Crowdin.Api.Applications.InstallationPatchPath",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Applications.UploadApplicationBundleRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Applications.UploadApplicationBundleRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Applications.UploadApplicationBundleRequest",
       "Summary": null
     },
     {
@@ -2345,6 +2961,76 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.CustomSpellcheckers.CustomSpellchecker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.CustomSpellcheckers.CustomSpellchecker.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.CustomSpellcheckers.CustomSpellchecker",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.CustomSpellcheckers.CustomSpellcheckerConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.CustomSpellcheckers.CustomSpellcheckerConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.CustomSpellcheckers.CustomSpellcheckerConfig",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.CustomSpellcheckers.CustomSpellcheckersApiExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.CustomSpellcheckers.CustomSpellcheckersApiExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.CustomSpellcheckers.CustomSpellcheckersApiExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.CustomSpellcheckers.ICustomSpellcheckersApiExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.CustomSpellcheckers.ICustomSpellcheckersApiExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.CustomSpellcheckers.ICustomSpellcheckersApiExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.CustomSpellcheckers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.CustomSpellcheckers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.CustomSpellcheckers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.DeleteJobStatus.AttributesData.yml",
       "output": {
         ".html": {
@@ -2677,6 +3363,76 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Crowdin.Api.ErrorResource",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.ExternalQaChecks.ExternalQaCheck.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.ExternalQaChecks.ExternalQaCheck.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.ExternalQaChecks.ExternalQaCheck",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.ExternalQaChecks.ExternalQaChecksApiExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.ExternalQaChecks.ExternalQaChecksApiExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.ExternalQaChecks.ExternalQaChecksApiExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.ExternalQaChecks.ExternalQaChecksListParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.ExternalQaChecks.ExternalQaChecksListParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.ExternalQaChecks.ExternalQaChecksListParams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.ExternalQaChecks.IExternalQaChecksApiExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.ExternalQaChecks.IExternalQaChecksApiExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.ExternalQaChecks.IExternalQaChecksApiExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.ExternalQaChecks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.ExternalQaChecks.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.ExternalQaChecks",
       "Summary": null
     },
     {
@@ -3447,6 +4203,216 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Crowdin.Api.IQueryParamsProvider",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Integrations.IIntegrationsApiExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Integrations.IIntegrationsApiExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Integrations.IIntegrationsApiExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Integrations.IntegrationFileProgress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Integrations.IntegrationFileProgress.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Integrations.IntegrationFileProgress",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Integrations.IntegrationFileProgressCount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Integrations.IntegrationFileProgressCount.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Integrations.IntegrationFileProgressCount",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Integrations.IntegrationFilesListParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Integrations.IntegrationFilesListParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Integrations.IntegrationFilesListParams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Integrations.IntegrationJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Integrations.IntegrationJob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Integrations.IntegrationJob",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Integrations.IntegrationJobsListParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Integrations.IntegrationJobsListParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Integrations.IntegrationJobsListParams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Integrations.IntegrationLoginField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Integrations.IntegrationLoginField.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Integrations.IntegrationLoginField",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Integrations.IntegrationLoginRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Integrations.IntegrationLoginRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Integrations.IntegrationLoginRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Integrations.IntegrationSettingsParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Integrations.IntegrationSettingsParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Integrations.IntegrationSettingsParams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Integrations.IntegrationsApiExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Integrations.IntegrationsApiExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Integrations.IntegrationsApiExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Integrations.UpdateApplicationSettingsRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Integrations.UpdateApplicationSettingsRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Integrations.UpdateApplicationSettingsRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Integrations.UpdateApplicationSyncSettingsRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Integrations.UpdateApplicationSyncSettingsRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Integrations.UpdateApplicationSyncSettingsRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Integrations.UpdateCrowdinFilesRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Integrations.UpdateCrowdinFilesRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Integrations.UpdateCrowdinFilesRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Integrations.UpdateIntegrationFilesRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Integrations.UpdateIntegrationFilesRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Integrations.UpdateIntegrationFilesRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Integrations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Integrations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Integrations",
       "Summary": null
     },
     {
@@ -4235,6 +5201,132 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Organization.IOrganizationApiExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Organization.IOrganizationApiExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Organization.IOrganizationApiExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Organization.OrganizationApiExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Organization.OrganizationApiExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Organization.OrganizationApiExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Organization.OrganizationAuthMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Organization.OrganizationAuthMethod.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Organization.OrganizationAuthMethod",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Organization.OrganizationAuthSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Organization.OrganizationAuthSettings.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Organization.OrganizationAuthSettings",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Organization.OrganizationDefault.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Organization.OrganizationDefault.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Organization.OrganizationDefault",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Organization.OrganizationInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Organization.OrganizationInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Organization.OrganizationInfo",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Organization.OrganizationPlan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Organization.OrganizationPlan.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Organization.OrganizationPlan",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Organization.OrganizationProjectsView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Organization.OrganizationProjectsView.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Organization.OrganizationProjectsView",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Organization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Organization.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Organization",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Pagination.yml",
       "output": {
         ".html": {
@@ -4273,6 +5365,216 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Crowdin.Api.PatchOperation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Placeholders.AddCustomPlaceholderRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Placeholders.AddCustomPlaceholderRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Placeholders.AddCustomPlaceholderRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Placeholders.AddProjectPlaceholderRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Placeholders.AddProjectPlaceholderRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Placeholders.AddProjectPlaceholderRequest",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Placeholders.CustomPlaceholder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Placeholders.CustomPlaceholder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Placeholders.CustomPlaceholder",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Placeholders.CustomPlaceholderPatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Placeholders.CustomPlaceholderPatch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Placeholders.CustomPlaceholderPatch",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Placeholders.CustomPlaceholderPatchPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Placeholders.CustomPlaceholderPatchPath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Placeholders.CustomPlaceholderPatchPath",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Placeholders.IPlaceholdersApiExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Placeholders.IPlaceholdersApiExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Placeholders.IPlaceholdersApiExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Placeholders.PlaceholdersApiExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Placeholders.PlaceholdersApiExecutor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Placeholders.PlaceholdersApiExecutor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Placeholders.ProjectPlaceholder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Placeholders.ProjectPlaceholder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Placeholders.ProjectPlaceholder",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Placeholders.ProjectPlaceholderPatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Placeholders.ProjectPlaceholderPatch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Placeholders.ProjectPlaceholderPatch",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Placeholders.ProjectPlaceholderPatchPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Placeholders.ProjectPlaceholderPatchPath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Placeholders.ProjectPlaceholderPatchPath",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Placeholders.ProjectPlaceholderType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Placeholders.ProjectPlaceholderType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Placeholders.ProjectPlaceholderType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Placeholders.SystemPlaceholder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Placeholders.SystemPlaceholder.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Placeholders.SystemPlaceholder",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Placeholders.SystemPlaceholderKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Placeholders.SystemPlaceholderKey.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Placeholders.SystemPlaceholderKey",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Placeholders.SystemPlaceholdersBatchPatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Placeholders.SystemPlaceholdersBatchPatch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Placeholders.SystemPlaceholdersBatchPatch",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Placeholders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Placeholders.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Placeholders",
       "Summary": null
     },
     {
@@ -4627,6 +5929,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.ProjectsGroups.GlossaryAccessOption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.ProjectsGroups.GlossaryAccessOption.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.ProjectsGroups.GlossaryAccessOption",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.ProjectsGroups.Group.yml",
       "output": {
         ".html": {
@@ -4921,6 +6237,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.ProjectsGroups.ProjectAiPreTranslate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.ProjectsGroups.ProjectAiPreTranslate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.ProjectsGroups.ProjectAiPreTranslate",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.ProjectsGroups.ProjectAiPrompt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.ProjectsGroups.ProjectAiPrompt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.ProjectsGroups.ProjectAiPrompt",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.ProjectsGroups.ProjectBase.yml",
       "output": {
         ".html": {
@@ -5033,6 +6377,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.ProjectsGroups.ProjectMt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.ProjectsGroups.ProjectMt.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.ProjectsGroups.ProjectMt",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.ProjectsGroups.ProjectMtPreTranslate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.ProjectsGroups.ProjectMtPreTranslate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.ProjectsGroups.ProjectMtPreTranslate",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.ProjectsGroups.ProjectPatch.yml",
       "output": {
         ".html": {
@@ -5141,6 +6513,20 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Crowdin.Api.ProjectsGroups.ProjectStringsExporterSettingsPatchPath",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.ProjectsGroups.ProjectTmPreTranslate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.ProjectsGroups.ProjectTmPreTranslate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.ProjectsGroups.ProjectTmPreTranslate",
       "Summary": null
     },
     {
@@ -9471,6 +10857,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Tasks.OrganizationTasksListParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Tasks.OrganizationTasksListParams.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Tasks.OrganizationTasksListParams",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Tasks.PendingTaskCreateForm.yml",
       "output": {
         ".html": {
@@ -10255,6 +11655,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Teams.TeamProjectPermissions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Teams.TeamProjectPermissions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Teams.TeamProjectPermissions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Teams.TeamsApiExecutor.yml",
       "output": {
         ".html": {
@@ -10573,6 +11987,48 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Crowdin.Api.TranslationMemory.TmSegmentBatchOpPatchPathEntry",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.TranslationMemory.TmSegmentPatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.TranslationMemory.TmSegmentPatch.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.TranslationMemory.TmSegmentPatch",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.TranslationMemory.TmSegmentPatchPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.TranslationMemory.TmSegmentPatchPath.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.TranslationMemory.TmSegmentPatchPath",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.TranslationMemory.TmSegmentPatchPathEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.TranslationMemory.TmSegmentPatchPathEntry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.TranslationMemory.TmSegmentPatchPathEntry",
       "Summary": null
     },
     {
@@ -11907,6 +13363,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Users.ProjectPermissionsMassOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Users.ProjectPermissionsMassOperation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Users.ProjectPermissionsMassOperation",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Users.ReplaceProjectMemberPermissionsRequest.yml",
       "output": {
         ".html": {
@@ -11963,6 +13433,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Users.UserContributionCount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Users.UserContributionCount.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Users.UserContributionCount",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Users.UserContributionVoteCount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Users.UserContributionVoteCount.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Users.UserContributionVoteCount",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Crowdin.Api.Users.UserEnterprise.yml",
       "output": {
         ".html": {
@@ -11973,6 +13471,104 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Crowdin.Api.Users.UserEnterprise",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Users.UserJoinDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Users.UserJoinDetails.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Users.UserJoinDetails",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Users.UserProjectContribution.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Users.UserProjectContribution.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Users.UserProjectContribution",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Users.UserProjectLanguageAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Users.UserProjectLanguageAccess.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Users.UserProjectLanguageAccess",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Users.UserProjectPermissions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Users.UserProjectPermissions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Users.UserProjectPermissions",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Users.UserProjectPermissionsTeam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Users.UserProjectPermissionsTeam.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Users.UserProjectPermissionsTeam",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Users.UserProjectRole.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Users.UserProjectRole.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Users.UserProjectRole",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Crowdin.Api.Users.UserProjectRolePermissions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Crowdin.Api.Users.UserProjectRolePermissions.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Crowdin.Api.Users.UserProjectRolePermissions",
       "Summary": null
     },
     {

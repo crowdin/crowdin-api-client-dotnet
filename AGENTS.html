@@ -73,7 +73,7 @@
 <h1 id="agentsmd">AGENTS.md</h1>
 
 <p>.NET client for the Crowdin API v2 and Crowdin Enterprise API v2 (NuGet: <code>Crowdin.Api</code>).</p>
-<p><code>src/Crowdin.Api</code> targets .NET Standard 2.0 with C# 8 and Newtonsoft.Json — no records, no <code>init</code>, no file-scoped namespaces, no implicit usings in <code>src/</code>. The test project targets net8.0 and is freer. Nullable checking is per-file: start every new <code>src/</code> file with <code>#nullable enable</code>.</p>
+<p><code>src/Crowdin.Api</code> targets .NET Standard 2.0 with C# 8 and Newtonsoft.Json — no records, no <code>init</code>, no file-scoped namespaces, no implicit usings in <code>src/</code>. The test project targets net8.0 and is freer. Nullable checking is per-file: start every new <code>src/</code> file with <code>#nullable enable</code>. When adding nullable annotations to a legacy file that is not nullable-clean, <code>#nullable enable annotations</code> is acceptable to avoid broad unrelated nullability cleanup.</p>
 <h2 id="layout">Layout</h2>
 <p><code>Crowdin.sln</code> holds four projects: <code>src/Crowdin.Api</code> (the library), <code>tests/Crowdin.Api.UnitTesting</code> (xUnit + Moq), and two <code>samples/</code> projects — a bare <code>dotnet build</code> builds all four.</p>
 <ul>
@@ -91,7 +91,7 @@
 <p>There is no lint/format gate — match the style of neighboring files by hand.</p>
 <h2 id="executor-pattern">Executor pattern</h2>
 <p>Every module follows the same shape: <code>I&lt;Module&gt;ApiExecutor</code> (interface, <code>[PublicAPI]</code>) → <code>&lt;Module&gt;ApiExecutor</code> (takes <code>ICrowdinApiClient</code>, builds params, sends requests via <code>SendGetRequest</code>/<code>SendPostRequest</code>/..., parses via <code>IJsonParser.ParseResponseObject/List&lt;T&gt;()</code>, <code>[PublicAPI]</code> on each public method) → a property on <code>CrowdinApiClient</code>.</p>
-<p>Registration is not universal: <code>ClientsApiExecutor</code> and <code>NotificationsApiExecutor</code> exist but are construct-it-yourself, and <code>Branches</code>/<code>Fields</code> sit on the concrete client but not on <code>ICrowdinApiClient</code> — check both files before assuming a module is reachable.</p>
+<p>All API modules are registered on both <code>CrowdinApiClient</code> and <code>ICrowdinApiClient</code>; verify both files when adding a module or changing client registration.</p>
 <h2 id="adding-or-changing-an-endpoint">Adding or changing an endpoint</h2>
 <p>Fetch the endpoint spec first (see Crowdin API reference below). Then:</p>
 <ol>
