@@ -56,7 +56,7 @@ jobs:
         run: dotnet test --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura
 
       - name: Generate code coverage report
-        uses: danielpalme/ReportGenerator-GitHub-Action@5.5.11
+        uses: danielpalme/ReportGenerator-GitHub-Action@5.5.12
         with:
           reports: '**/coverage.cobertura.xml'
           targetdir: 'CodeCoverage'
